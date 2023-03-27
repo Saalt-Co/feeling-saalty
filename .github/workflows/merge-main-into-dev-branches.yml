@@ -1,0 +1,48 @@
+name: Merge Main Into Dev Branches
+ 
+on:
+ push:
+   branches:
+     - main
+   paths-ignore:
+     - 'templates/*.json'
+     - 'config/*.json'
+     - 'locales/*.json'
+ pull_request:
+   branches:
+     - main
+   paths-ignore:
+     - 'templates/*.json'
+     - 'config/*.json'
+     - 'locales/*.json'
+
+ workflow_dispatch:
+
+jobs:
+ build:
+   runs-on: ubuntu-latest
+
+   steps:
+     - name: checkout
+       uses: actions/checkout@v3
+     - name: merge
+       uses: mtanzi/action-automerge@v1
+       id: merge-US-dev
+       with:
+         github_token: ${{ github.token }}
+         source: 'main'
+         target: 'dev/US'
+     - name: merge
+       uses: mtanzi/action-automerge@v1
+       id: merge-CAN-dev
+       with:
+         github_token: ${{ github.token }}
+         source: 'main'
+         target: 'dev/CAN'
+     - name: merge
+       uses: mtanzi/action-automerge@v1
+       id: merge-UK-dev
+       with:
+         github_token: ${{ github.token }}
+         source: 'main'
+         target: 'dev/UK'
