@@ -52,9 +52,8 @@ git config --global pull.ff only
 6. With that set, we can now pull changes from the upstream like so:
 ```sh
 git pull upstream main --no-ff
-
-**Note:** _Always_ check what is getting pulled in from the upstream before completing a merge. We owe it to ourselves to not just blindly merge in anything.
 ```
+**Note:** _Always_ check what is getting pulled in from the upstream before completing a merge. We owe it to ourselves to not just blindly merge in anything.
 
 ## Developer tools 
 
