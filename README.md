@@ -45,7 +45,7 @@ git remote add upstream https://github.com/Shopify/dawn.git
 git fetch upstream
 git pull upstream main
 ```
-5. After this is set, the preferred method here at Saalt is to globally set how to reconsilve divergent branches:
+5. After this is set, the preferred method here at Saalt is to globally set how to reconcile divergent branches:
 ```sh
 git config --global pull.ff only
 ```
