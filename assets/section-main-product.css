@@ -217,7 +217,7 @@ fieldset.product-form__input .form__label {
 }
 
 .product-form__input input[type='radio'] + label.variant_swatch {
-  padding: 2rem;
+  padding: 1.75rem;
 }
 
 .product-form__input input[type='radio'] + label:before {
