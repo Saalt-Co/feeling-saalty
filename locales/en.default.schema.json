@@ -1985,6 +1985,9 @@
               },
               "options__2": {
                 "label": "Pills"
+              },
+              "options__3": {
+                "label": "Color swatches"
               }
             }
           }
