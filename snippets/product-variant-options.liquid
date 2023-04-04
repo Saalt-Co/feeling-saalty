@@ -59,12 +59,24 @@
         class="disabled"
       {% endif %}
     >
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" {% if option.name == "Color" %} class="variant_swatch" {% endif %}>
-      {%- unless option.name == "Color" -%}
+      {%- if option.name == "Color" -%}
+        {%- assign current_color = value -%}
+        {%- assign hex_code = shop.metaobjects.color_swatches["color-swatch-data"].json.value[current_color] | replace: '"', "" | replace: "'", "" -%}
+        {%- if hex_code contains "," -%}
+          {%- assign split_hex_code = hex_code | split: "," -%}
+          {%- assign hex_1 = split_hex_code[0] | strip -%}
+          {%- assign hex_2 = split_hex_code[1] | strip -%}
+          {% capture swatch_style %}"background-image: linear-gradient({{ hex_1 }} 50%, {{ hex_2 }} 50%);"{% endcapture %}
+        {%- else -%}
+          {% capture swatch_style %}"background-color: {{ hex_code }};"{% endcapture %}
+      {%- endif -%}
+      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" {% if option.name == "Color" %} class="variant_swatch" style={{ swatch_style }} {% endif %}>
+      {%- else -%}
+      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
         {{- value -}}
-      {%- endunless -%}
-      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-    </label>
+      {%- endif -%}
+        <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+      </label>
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     <option
       value="{{ value | escape }}"
