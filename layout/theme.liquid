@@ -254,7 +254,7 @@
     {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      {%  capture swatches %}shop.metaobjects.color_swatches["color_swatches_list"].value{% endcapture %}
+      {%  capture swatches %}{{ shop.metaobjects.color_swatches["color_swatches_list"].value }}{% endcapture %}
       <h1>{{ swatches }}</h1>
       {{ content_for_layout }}
     </main>
