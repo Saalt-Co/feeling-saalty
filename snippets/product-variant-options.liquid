@@ -61,7 +61,7 @@
     >
       {%- if option.name == "Color" -%}
         {%- assign current_color = value -%}
-        {%- assign hex_code = shop.metaobjects.color_swatches["color-swatch-data"].json.value[current_color] | replace: '"', "" | replace: "'", "" -%}
+        {%- assign hex_code = shop.metaobjects.color_swatches["color-swatch-data"].json_data.value[current_color] | replace: '"', "" | replace: "'", "" -%}
         {%- if hex_code contains "," -%}
           {%- assign split_hex_code = hex_code | split: "," -%}
           {%- assign hex_1 = split_hex_code[0] | strip -%}
