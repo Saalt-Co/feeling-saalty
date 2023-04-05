@@ -228,23 +228,37 @@ fieldset.product-form__input .form__label {
 .product-form__input input[type='radio'] + label.variant_swatch .swatch-name-tooltip {
   display: block;
   position: absolute;
-  color: black;
-  transform: translateX(-50%);
-  padding: 0.5rem;
   background: #ffffff;
+  border-radius: .5rem;
   box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity));
-  transition: all .2s ease-in-out;
-  bottom: 50%;
+  bottom: 60%;
+  color: black;
+  padding: 0.5rem 1rem;
+  font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 16px));
   opacity: 0;
   pointer-events: none;
   white-space: nowrap;
-  font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 16px));
+  transition: all .2s ease-in-out;
+  transform: translateX(-50%);
   visibility: hidden;
+}
+
+.product-form__input input[type='radio'] + label.variant_swatch .swatch-name-tooltip:before {
+  content: "";
+  position: absolute;
+  top: 71%;
+  left: 50%;
+  border-right: 6px solid white;
+  border-bottom: 6px solid white;
+  border-top: 6px solid transparent;
+  border-left: 6px solid transparent;
+  box-shadow: 1px 1px 0 0 rgba(var(--color-foreground), var(--inputs-border-opacity));
+  transform: translateX(-50%) rotate(45deg);
 }
 
 @media(hover: hover) and (pointer: fine) {
   .product-form__input input[type='radio'] + label.variant_swatch:hover .swatch-name-tooltip {
-    bottom: 75%;
+    bottom: 85%;
     opacity: 1;
     transition: all .2s ease-in-out;
     visibility: visible;
