@@ -218,6 +218,37 @@ fieldset.product-form__input .form__label {
 
 .product-form__input input[type='radio'] + label.variant_swatch {
   padding: 1.75rem;
+  margin-right: 1rem;
+}
+
+.product-form__input input[type='radio'] + label.variant_swatch:hover {
+  z-index: 2;
+}
+
+.product-form__input input[type='radio'] + label.variant_swatch .swatch-name-tooltip {
+  display: block;
+  position: absolute;
+  color: black;
+  transform: translateX(-50%);
+  padding: 0.5rem;
+  background: #ffffff;
+  box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity));
+  transition: all .2s ease-in-out;
+  bottom: 50%;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 16px));
+  visibility: hidden;
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .product-form__input input[type='radio'] + label.variant_swatch:hover .swatch-name-tooltip {
+    bottom: 75%;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+    visibility: visible;
+  }
 }
 
 .product-form__input input[type='radio'] + label:before {

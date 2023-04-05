@@ -59,7 +59,7 @@
         class="disabled"
       {% endif %}
     >
-      {%- if option.name == "Color" -%}
+      {%- if option.name == "Color" and block.settings.picker_type == "color swatches" -%}
         {%- assign current_color = value -%}
         {%- assign hex_code = shop.metaobjects.color_swatches["color-swatch-data"].json_data.value[current_color] | replace: '"', "" | replace: "'", "" -%}
         {%- if hex_code contains "," -%}
@@ -85,7 +85,8 @@
         {%- else -%}
           {% capture swatch_style %}"background-color: {{ hex_code }};"{% endcapture %}
       {%- endif -%}
-      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" {% if option.name == "Color" %} class="variant_swatch" style={{ swatch_style }} {% endif %}>
+      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="variant_swatch" style={{ swatch_style }}>
+        <div class="swatch-name-tooltip">{{ value }}</div>
       {%- else -%}
       <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
         {{- value -}}
