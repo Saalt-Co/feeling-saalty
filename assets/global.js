@@ -826,6 +826,7 @@ class VariantSelects extends HTMLElement {
       this.updateVariantInput();
       this.renderProductInfo();
       this.updateShareUrl();
+      this.updateColorVariantName();
     }
   }
 
@@ -884,6 +885,13 @@ class VariantSelects extends HTMLElement {
       const availableOptionInputsValue = selectedOptionOneVariants.filter(variant => variant.available && variant[`option${ index }`] === previousOptionSelected).map(variantOption => variantOption[`option${ index + 1 }`]);
       this.setInputAvailability(optionInputs, availableOptionInputsValue)
     });
+  }
+
+  updateColorVariantName() {
+    const colorName = document.querySelector(".product-form__selected-color-name");
+    if (colorName) {
+      colorName.textContent = this.querySelector("input[type='radio'][name='Color']:checked").value;
+    }
   }
 
   setInputAvailability(listOfOptions, listOfAvailableOptions) {
