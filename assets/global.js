@@ -888,9 +888,9 @@ class VariantSelects extends HTMLElement {
   }
 
   updateColorVariantName() {
-    const colorName = document.querySelector(".product-form__selected-color-name");
+    const colorName = document.querySelector('.product-form__selected-color-name');
     if (colorName) {
-      colorName.textContent = this.querySelector("input[type='radio'][name='Color']:checked").value;
+      colorName.textContent = this.querySelector('input[type="radio"][name="Color"]:checked').value;
     }
   }
 
