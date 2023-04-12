@@ -904,7 +904,11 @@
         },
         "header__9": {
           "content": "Obserwuj w Shop",
+<<<<<<< HEAD
           "info": "Aby umożliwić klientom śledzenie Twojego sklepu w aplikacji Shop z poziomu Twojej witryny sklepu, należy włączyć funkcję Shop Pay. [Dowiedz się więcej](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/follow-on-shop)"
+=======
+          "info": "Aby umożliwić klientom śledzenie Twojego sklepu w aplikacji Shop z poziomu Twojej witryny sklepu, należy włączyć funkcję Shop Pay. [Dowiedz się więcej](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
+>>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
         },
         "enable_follow_on_shop": {
           "label": "Włącz opcję Obserwuj w Shop"
@@ -1015,10 +1019,6 @@
         },
         "stack_images_on_mobile": {
           "label": "Układaj obrazy w stosy na urządzeniu mobilnym"
-        },
-        "adapt_height_first_image": {
-          "label": "Dostosuj wysokość sekcji do rozmiaru pierwszego obrazu",
-          "info": "Nadpisuje ustawienie wysokości banera obrazu, jeżeli jest zaznaczone."
         },
         "show_text_box": {
           "label": "Pokaż kontener na komputerze"
@@ -1661,7 +1661,11 @@
             },
             "show_gift_card_recipient": {
               "label": "Pokaż formularz danych odbiorcy dla produktów typu karta prezentowa",
+<<<<<<< HEAD
               "info": "Produkty w postaci kart prezentowych mogą być wysyłane bezpośrednio do odbiorcy wraz z osobistą wiadomością. [Dowiedz się więcej](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
+=======
+              "info": "Produkty w postaci kart prezentowych mogą być wysyłane bezpośrednio do odbiorcy wraz z osobistą wiadomością. [Dowiedz się więcej](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
+>>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
             }
           }
         },
@@ -2508,7 +2512,11 @@
           "settings": {
             "show_dynamic_checkout": {
               "label": "Pokaż dynamiczne przyciski realizacji zakupu",
+<<<<<<< HEAD
               "info": "Korzystając z metod płatności dostępnych w Twoim sklepie, klienci widzą swoją preferowaną opcję, np. PayPal lub Apple Pay. [Dowiedz się więcej](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+=======
+              "info": "Korzystając z metod płatności dostępnych w Twoim sklepie, klienci widzą swoją preferowaną opcję, np. PayPal lub Apple Pay. [Dowiedz się więcej](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+>>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
             }
           }
         },

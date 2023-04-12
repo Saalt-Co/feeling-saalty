@@ -904,7 +904,11 @@
         },
         "header__9": {
           "content": "Seguir no Shop",
+<<<<<<< HEAD
           "info": "O Shop Pay tem de estar ativo para os clientes poderem seguir a sua loja na aplicação Shop a partir da sua frente de loja. [Saber mais](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/follow-on-shop)"
+=======
+          "info": "O Shop Pay tem de estar ativo para os clientes poderem seguir a sua loja na aplicação Shop a partir da sua frente de loja. [Saber mais](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
+>>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
         },
         "enable_follow_on_shop": {
           "label": "Ativar Seguir no Shop"
@@ -1015,10 +1019,6 @@
         },
         "stack_images_on_mobile": {
           "label": "Empilhar imagens em dispositivos móveis"
-        },
-        "adapt_height_first_image": {
-          "label": "Adaptar altura da secção ao tamanho da primeira imagem",
-          "info": "Quando marcada, substitui a definição de altura do banner da imagem."
         },
         "show_text_box": {
           "label": "Mostrar recetores no desktop"
@@ -1651,7 +1651,11 @@
             },
             "show_gift_card_recipient": {
               "label": "Apresentar o formulário de informações do destinatário para produtos de cartões de oferta",
+<<<<<<< HEAD
               "info": "Os produtos de cartões de oferta podem ser opcionalmente enviados a um destinatário com uma mensagem pessoal. [Saber mais](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
+=======
+              "info": "Os produtos de cartões de oferta podem ser opcionalmente enviados a um destinatário com uma mensagem pessoal. [Saber mais](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
+>>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
             }
           },
           "name": "Botão de compra"
@@ -2508,7 +2512,11 @@
           "settings": {
             "show_dynamic_checkout": {
               "label": "Mostrar botões dinâmicos de finalização da compra",
+<<<<<<< HEAD
               "info": "Utilizando os métodos de pagamento disponíveis na sua loja, os clientes poderão ver a sua opção preferida, como o PayPal ou Apple Pay. [Saber mais](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+=======
+              "info": "Utilizando os métodos de pagamento disponíveis na sua loja, os clientes poderão ver a sua opção preferida, como o PayPal ou Apple Pay. [Saber mais](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+>>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
             }
           }
         },

@@ -904,7 +904,11 @@
         },
         "header__9": {
           "content": "Follow on Shop",
+<<<<<<< HEAD
           "info": "Müşterilerin, Shop uygulamasındaki mağazanızı vitrininizden takip edebilmesi için Shop Pay'i etkinleştirmeniz gerekir. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/follow-on-shop)"
+=======
+          "info": "Müşterilerin, Shop uygulamasındaki mağazanızı vitrininizden takip edebilmesi için Shop Pay'i etkinleştirmeniz gerekir. [Daha fazla bilgi edinin](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
+>>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
         },
         "enable_follow_on_shop": {
           "label": "Follow on Shop'u etkinleştir"
@@ -1015,10 +1019,6 @@
         },
         "stack_images_on_mobile": {
           "label": "Mobilde görselleri üst üste ekle"
-        },
-        "adapt_height_first_image": {
-          "label": "Bölüm yüksekliğini ilk görselin boyutuna uyarla",
-          "info": "İşaretlendiğinde görüntü banner'ı yükseklik ayarının üzerine yazar."
         },
         "show_text_box": {
           "label": "Masaüstünde kapsayıcıyı göster"
@@ -1660,7 +1660,11 @@
             },
             "show_gift_card_recipient": {
               "label": "Hediye kartı ürünleri için alıcı bilgi formunu göster",
+<<<<<<< HEAD
               "info": "Hediye kartı ürünleri, isteğe bağlı olarak kişisel bir mesajla birlikte doğrudan bir alıcıya gönderilebilir. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
+=======
+              "info": "Hediye kartı ürünleri, isteğe bağlı olarak kişisel bir mesajla birlikte doğrudan bir alıcıya gönderilebilir. [Daha fazla bilgi edinin](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
+>>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
             }
           }
         },
@@ -2508,7 +2512,11 @@
           "settings": {
             "show_dynamic_checkout": {
               "label": "Dinamik ödeme düğmelerini göster",
+<<<<<<< HEAD
               "info": "Müşteriler, mağazanızda bulunan ödeme yöntemlerini kullanarak PayPal veya Apple Pay gibi tercih ettikleri seçeneği görür. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+=======
+              "info": "Müşteriler, mağazanızda bulunan ödeme yöntemlerini kullanarak PayPal veya Apple Pay gibi tercih ettikleri seçeneği görür. [Daha fazla bilgi edinin](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+>>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
             }
           }
         },

@@ -904,7 +904,11 @@
         },
         "header__9": {
           "content": "Följ på Shop",
+<<<<<<< HEAD
           "info": "Shop Pay måste aktiveras för att kunder ska kunna följa din butik i Shop-appen från ditt skyltfönster. [Mer information](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/follow-on-shop)"
+=======
+          "info": "Shop Pay måste aktiveras för att kunder ska kunna följa din butik i Shop-appen från ditt skyltfönster. [Mer information](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
+>>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
         },
         "enable_follow_on_shop": {
           "label": "Aktivera Följ på Shop"
@@ -1015,10 +1019,6 @@
         },
         "stack_images_on_mobile": {
           "label": "Stapla bilder på mobil"
-        },
-        "adapt_height_first_image": {
-          "label": "Anpassa avsnittets höjd till storleken på första bilden.",
-          "info": "Skriver över inställning för bildbanner-höjden när den markeras."
         },
         "show_text_box": {
           "label": "Visa ruta på skrivbord"
@@ -1651,7 +1651,11 @@
             },
             "show_gift_card_recipient": {
               "label": "Visa mottagarformulär för presentkortsprodukter",
+<<<<<<< HEAD
               "info": "Presentkortsprodukter kan skickas direkt till en mottagare med ett personligt meddelande. [Mer information](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
+=======
+              "info": "Presentkortsprodukter kan skickas direkt till en mottagare med ett personligt meddelande. [Mer information](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
+>>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
             }
           },
           "name": "Köpknappar"
@@ -2508,7 +2512,11 @@
           "settings": {
             "show_dynamic_checkout": {
               "label": "Visa dynamiska kassaknappar",
+<<<<<<< HEAD
               "info": "Genom att använda de betalningsmetoder som finns tillgängliga i din butik kan kunder se det alternativ de föredrar, som PayPal eller Apple Pay. [Mer information](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+=======
+              "info": "Genom att använda de betalningsmetoder som finns tillgängliga i din butik kan kunder se det alternativ de föredrar, som PayPal eller Apple Pay. [Mer information](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+>>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
             }
           }
         },

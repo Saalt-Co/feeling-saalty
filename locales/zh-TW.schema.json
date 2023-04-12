@@ -904,7 +904,11 @@
         },
         "header__9": {
           "content": "在 Shop 上追蹤",
+<<<<<<< HEAD
           "info": "若要允許顧客透過您的店面在 Shop 應用程式上追蹤您的商店，您必須啟用 Shop Pay。[瞭解詳情](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/follow-on-shop)"
+=======
+          "info": "若要允許顧客透過您的店面在 Shop 應用程式上追蹤您的商店，您必須啟用 Shop Pay。[瞭解詳情](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
+>>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
         },
         "enable_follow_on_shop": {
           "label": "啟用「在 Shop 上追蹤」"
@@ -1015,10 +1019,6 @@
         },
         "stack_images_on_mobile": {
           "label": "在行動裝置上堆疊圖片"
-        },
-        "adapt_height_first_image": {
-          "label": "配合的一張圖片尺寸的區段高度",
-          "info": "檢查時覆寫圖片橫幅高度設定。"
         },
         "show_text_box": {
           "label": "在桌面顯示容器"
@@ -1651,7 +1651,11 @@
             },
             "show_gift_card_recipient": {
               "label": "顯示禮品卡商品的收件人資訊表單",
+<<<<<<< HEAD
               "info": "可選擇將禮品卡商品與個人化訊息直接傳送給收件人。[瞭解詳情](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
+=======
+              "info": "可選擇將禮品卡商品與個人化訊息直接傳送給收件人。[瞭解詳情](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
+>>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
             }
           },
           "name": "購買按鈕"
@@ -2508,7 +2512,11 @@
           "settings": {
             "show_dynamic_checkout": {
               "label": "顯示動態結帳按鈕",
+<<<<<<< HEAD
               "info": "顧客可透過您商店的可用付款方式，看到其偏好選項 (如 PayPal 或 Apple Pay)。[瞭解詳情](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+=======
+              "info": "顧客可透過您商店的可用付款方式，看到其偏好選項 (如 PayPal 或 Apple Pay)。[瞭解詳情](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+>>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
             }
           }
         },
