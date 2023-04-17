@@ -905,10 +905,14 @@
         "header__9": {
           "content": "Theo dõi trên Shop",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "info": "Bạn phải bật Shop Pay để cho phép khách hàng theo dõi cửa hàng trên ứng dụng Shop từ cửa hàng của bạn. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/follow-on-shop)"
 =======
           "info": "Bạn phải bật Shop Pay để cho phép khách hàng theo dõi cửa hàng trên ứng dụng Shop từ cửa hàng của bạn. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
 >>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
+=======
+          "info": "Bạn phải bật Shop Pay để cho phép khách hàng theo dõi cửa hàng trên ứng dụng Shop từ cửa hàng của bạn. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
+>>>>>>> main
         },
         "enable_follow_on_shop": {
           "label": "Bật tính năng Theo dõi trên Shop"
@@ -1662,10 +1666,14 @@
             "show_gift_card_recipient": {
               "label": "Hiển thị biểu mẫu thông tin người nhận cho sản phẩm thẻ quà tặng",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "info": "Có thể tùy ý gửi các sản phẩm thẻ quà tặng trực tiếp cho người nhận kèm tin nhắn cá nhân. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
 =======
               "info": "Có thể tùy ý gửi các sản phẩm thẻ quà tặng trực tiếp cho người nhận kèm tin nhắn cá nhân. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
 >>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
+=======
+              "info": "Có thể tùy ý gửi các sản phẩm thẻ quà tặng trực tiếp cho người nhận kèm tin nhắn cá nhân. [Tìm hiểu thêm](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
+>>>>>>> main
             }
           }
         },
@@ -2513,10 +2521,14 @@
             "show_dynamic_checkout": {
               "label": "Hiển thị nút thanh toán động",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "info": "Khi sử dụng phương thức thanh toán được hỗ trợ trong cửa hàng của bạn, khách hàng sẽ thấy tùy chọn ưu tiên của mình, như PayPal hoặc Apple Pay. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
 =======
               "info": "Khi sử dụng phương thức thanh toán được hỗ trợ trong cửa hàng của bạn, khách hàng sẽ thấy tùy chọn ưu tiên của mình, như PayPal hoặc Apple Pay. [Tìm hiểu thêm](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
 >>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
+=======
+              "info": "Khi sử dụng phương thức thanh toán được hỗ trợ trong cửa hàng của bạn, khách hàng sẽ thấy tùy chọn ưu tiên của mình, như PayPal hoặc Apple Pay. [Tìm hiểu thêm](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+>>>>>>> main
             }
           }
         },

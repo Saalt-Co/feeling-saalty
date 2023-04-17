@@ -905,10 +905,14 @@
         "header__9": {
           "content": "Shopでフォロー",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "info": "お客様がストアフロントからShopアプリでストアをフォローできるようにするには、Shop Payを有効にする必要があります。[詳しくはこちら](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/follow-on-shop)"
 =======
           "info": "お客様がストアフロントからShopアプリでストアをフォローできるようにするには、Shop Payを有効にする必要があります。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
 >>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
+=======
+          "info": "お客様がストアフロントからShopアプリでストアをフォローできるようにするには、Shop Payを有効にする必要があります。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
+>>>>>>> main
         },
         "enable_follow_on_shop": {
           "label": "Shopでフォローを有効にする"
@@ -1652,10 +1656,14 @@
             "show_gift_card_recipient": {
               "label": "ギフトカード商品の受取人情報フォームを表示する",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "info": "ギフトカード商品は、オプションで、個人的なメッセージとともに受取人に直接送信できます。[詳しくはこちら](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
 =======
               "info": "ギフトカード商品は、オプションで、個人的なメッセージとともに受取人に直接送信できます。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
 >>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
+=======
+              "info": "ギフトカード商品は、オプションで、個人的なメッセージとともに受取人に直接送信できます。[詳しくはこちら](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
+>>>>>>> main
             }
           },
           "name": "購入ボタン"
@@ -2513,10 +2521,14 @@
             "show_dynamic_checkout": {
               "label": "動的チェックアウトボタンを表示",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "info": "ストアで利用可能な決済方法を使用すると、お客様にはPayPalやApple Payなど、希望のオプションが表示されます。[詳しくはこちら](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
 =======
               "info": "ストアで利用可能な決済方法を使用すると、お客様にはPayPalやApple Payなど、希望のオプションが表示されます。[詳しくはこちら](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
 >>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
+=======
+              "info": "ストアで利用可能な決済方法を使用すると、お客様にはPayPalやApple Payなど、希望のオプションが表示されます。[詳しくはこちら](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+>>>>>>> main
             }
           }
         },

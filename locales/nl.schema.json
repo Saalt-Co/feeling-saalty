@@ -905,10 +905,14 @@
         "header__9": {
           "content": "Volgen op Shop",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "info": "Klanten kunnen de winkel alleen vanuit de webshop volgen in de Shop-app als Shop Pay is ingeschakeld. [Meer informatie](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/follow-on-shop)"
 =======
           "info": "Klanten kunnen de winkel alleen vanuit de webshop volgen in de Shop-app als Shop Pay is ingeschakeld. [Meer informatie](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
 >>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
+=======
+          "info": "Klanten kunnen de winkel alleen vanuit de webshop volgen in de Shop-app als Shop Pay is ingeschakeld. [Meer informatie](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
+>>>>>>> main
         },
         "enable_follow_on_shop": {
           "label": "'Volgen op Shop' inschakelen"
@@ -1662,10 +1666,14 @@
             "show_gift_card_recipient": {
               "label": "Formulier voor gegevens van ontvanger weergeven voor cadeaubonnen",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "info": "Klanten kunnen cadeaubonnen rechtstreeks naar de ontvanger laten sturen met een persoonlijk bericht. [Meer informatie](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
 =======
               "info": "Klanten kunnen cadeaubonnen rechtstreeks naar de ontvanger laten sturen met een persoonlijk bericht. [Meer informatie](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
 >>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
+=======
+              "info": "Klanten kunnen cadeaubonnen rechtstreeks naar de ontvanger laten sturen met een persoonlijk bericht. [Meer informatie](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
+>>>>>>> main
             }
           }
         },
@@ -2513,10 +2521,14 @@
             "show_dynamic_checkout": {
               "label": "Dynamische checkout-knoppen weergeven",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "info": "Bij de betaalmethoden die bij je winkel beschikbaar zijn, zien klanten de optie die hun voorkeur heeft, zoals PayPal of Apple Pay. [Meer informatie](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
 =======
               "info": "Bij de betaalmethoden die bij je winkel beschikbaar zijn, zien klanten de optie die hun voorkeur heeft, zoals PayPal of Apple Pay. [Meer informatie](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
 >>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
+=======
+              "info": "Bij de betaalmethoden die bij je winkel beschikbaar zijn, zien klanten de optie die hun voorkeur heeft, zoals PayPal of Apple Pay. [Meer informatie](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+>>>>>>> main
             }
           }
         },

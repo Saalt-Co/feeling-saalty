@@ -905,10 +905,14 @@
         "header__9": {
           "content": "ติดตามบน Shop",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "info": "คุณต้องเปิดใช้งาน Shop Pay เพื่อให้ลูกค้าสามารถติดตามร้านค้าของคุณในแอป Shop ได้จากหน้าร้าน [ดูข้อมูลเพิ่มเติม](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/follow-on-shop)"
 =======
           "info": "คุณต้องเปิดใช้งาน Shop Pay เพื่อให้ลูกค้าสามารถติดตามร้านค้าของคุณในแอป Shop ได้จากหน้าร้าน [ดูข้อมูลเพิ่มเติม](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
 >>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
+=======
+          "info": "คุณต้องเปิดใช้งาน Shop Pay เพื่อให้ลูกค้าสามารถติดตามร้านค้าของคุณในแอป Shop ได้จากหน้าร้าน [ดูข้อมูลเพิ่มเติม](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
+>>>>>>> main
         },
         "enable_follow_on_shop": {
           "label": "เปิดใช้งานการติดตามบน Shop"
@@ -1652,10 +1656,14 @@
             "show_gift_card_recipient": {
               "label": "แสดงแบบฟอร์มข้อมูลผู้รับสำหรับผลิตภัณฑ์บัตรของขวัญ",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "info": "คุณสามารถเลือกส่งผลิตภัณฑ์บัตรของขวัญตรงถึงผู้รับพร้อมข้อความของตนเองได้ [ดูข้อมูลเพิ่มเติม](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
 =======
               "info": "คุณสามารถเลือกส่งผลิตภัณฑ์บัตรของขวัญตรงถึงผู้รับพร้อมข้อความของตนเองได้ [ดูข้อมูลเพิ่มเติม](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
 >>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
+=======
+              "info": "คุณสามารถเลือกส่งผลิตภัณฑ์บัตรของขวัญตรงถึงผู้รับพร้อมข้อความของตนเองได้ [ดูข้อมูลเพิ่มเติม](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
+>>>>>>> main
             }
           },
           "name": "ปุ่มซื้อ"
@@ -2513,10 +2521,14 @@
             "show_dynamic_checkout": {
               "label": "แสดงปุ่มชำระเงินแบบไดนามิก",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "info": "วิธีการชำระเงินที่พร้อมใช้งานบนร้านค้าของคุณจะช่วยให้ลูกค้าเห็นตัวเลือกที่พวกเขาต้องการ เช่น PayPal หรือ Apple Pay [ดูข้อมูลเพิ่มเติม](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
 =======
               "info": "วิธีการชำระเงินที่พร้อมใช้งานบนร้านค้าของคุณจะช่วยให้ลูกค้าเห็นตัวเลือกที่พวกเขาต้องการ เช่น PayPal หรือ Apple Pay [ดูข้อมูลเพิ่มเติม](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
 >>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
+=======
+              "info": "วิธีการชำระเงินที่พร้อมใช้งานบนร้านค้าของคุณจะช่วยให้ลูกค้าเห็นตัวเลือกที่พวกเขาต้องการ เช่น PayPal หรือ Apple Pay [ดูข้อมูลเพิ่มเติม](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+>>>>>>> main
             }
           }
         },

@@ -905,10 +905,14 @@
         "header__9": {
           "content": "Seuraa Shopissa",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "info": "Shop Pay on otettava käyttöön, jotta asiakkaat voivat seurata kauppaasi Shop-sovelluksessa myyntipaikkasi kautta. [Lisätietoja](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/follow-on-shop)"
 =======
           "info": "Shop Pay on otettava käyttöön, jotta asiakkaat voivat seurata kauppaasi Shop-sovelluksessa myyntipaikkasi kautta. [Lisätietoja](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
 >>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
+=======
+          "info": "Shop Pay on otettava käyttöön, jotta asiakkaat voivat seurata kauppaasi Shop-sovelluksessa myyntipaikkasi kautta. [Lisätietoja](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
+>>>>>>> main
         },
         "enable_follow_on_shop": {
           "label": "Ota Seuraa Shopissa käyttöön"
@@ -1661,10 +1665,14 @@
             "show_gift_card_recipient": {
               "label": "Näytä lahjakorttituotteiden vastaanottajien tietolomake",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "info": "Lahjakorttituotteet voidaan valinnaisesti lähettää suoraan vastaanottajalle siten, että niissä on mukana henkilökohtainen viesti. [Lisätietoja](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
 =======
               "info": "Lahjakorttituotteet voidaan valinnaisesti lähettää suoraan vastaanottajalle siten, että niissä on mukana henkilökohtainen viesti. [Lisätietoja](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
 >>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
+=======
+              "info": "Lahjakorttituotteet voidaan valinnaisesti lähettää suoraan vastaanottajalle siten, että niissä on mukana henkilökohtainen viesti. [Lisätietoja](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
+>>>>>>> main
             }
           }
         },
@@ -2513,10 +2521,14 @@
             "show_dynamic_checkout": {
               "label": "Näytä dynaamiset kassapainikkeet",
 <<<<<<< HEAD
+<<<<<<< HEAD
               "info": "Kun käytät kaupallesi saatavilla olevia maksutapoja, asiakkaat näkevät ensisijaisen vaihtoehtonsa, kuten PayPalin tai Apple Payn. [Lisätietoja](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
 =======
               "info": "Kun käytät kaupallesi saatavilla olevia maksutapoja, asiakkaat näkevät ensisijaisen vaihtoehtonsa, kuten PayPalin tai Apple Payn. [Lisätietoja](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
 >>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
+=======
+              "info": "Kun käytät kaupallesi saatavilla olevia maksutapoja, asiakkaat näkevät ensisijaisen vaihtoehtonsa, kuten PayPalin tai Apple Payn. [Lisätietoja](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+>>>>>>> main
             }
           }
         },
