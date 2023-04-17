@@ -904,15 +904,7 @@
         },
         "header__9": {
           "content": "In Shop folgen",
-<<<<<<< HEAD
-<<<<<<< HEAD
-          "info": "Damit Kunden deinem Shop in der Shop-App über deine Storefront folgen können, muss Shop Pay aktiviert sein. [Mehr Informationen](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/follow-on-shop)"
-=======
           "info": "Damit Kunden deinem Shop in der Shop-App über deine Storefront folgen können, muss Shop Pay aktiviert sein. [Mehr Informationen](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
->>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
-=======
-          "info": "Damit Kunden deinem Shop in der Shop-App über deine Storefront folgen können, muss Shop Pay aktiviert sein. [Mehr Informationen](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
->>>>>>> main
         },
         "enable_follow_on_shop": {
           "label": "\"In Shop folgen\" aktivieren"
@@ -1664,15 +1656,7 @@
             },
             "show_gift_card_recipient": {
               "label": "Formular für Empfängerinformationen für Geschenkgutscheinprodukte anzeigen",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "info": "Geschenkgutscheinprodukte können optional mit einer persönlichen Nachricht an einen Empfänger gesendet werden. [Mehr Informationen](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
-=======
               "info": "Geschenkgutscheinprodukte können optional mit einer persönlichen Nachricht an einen Empfänger gesendet werden. [Mehr Informationen](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
->>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
-=======
-              "info": "Geschenkgutscheinprodukte können optional mit einer persönlichen Nachricht an einen Empfänger gesendet werden. [Mehr Informationen](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
->>>>>>> main
             }
           }
         },
@@ -2520,15 +2504,7 @@
           "settings": {
             "show_dynamic_checkout": {
               "label": "Dynamischen Checkout-Button anzeigen",
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "info": "Wenn sie die Zahlungsmethoden verwenden, die in deinem Shop verfügbar sind, sehen Kunden ihre bevorzugte Option, z. B. PayPal oder Apple Pay. [Mehr Informationen](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
-=======
               "info": "Wenn sie die Zahlungsmethoden verwenden, die in deinem Shop verfügbar sind, sehen Kunden ihre bevorzugte Option, z. B. PayPal oder Apple Pay. [Mehr Informationen](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
->>>>>>> 109c485ba8394f5f5474d3769c5f5e8f5ae2f999
-=======
-              "info": "Wenn sie die Zahlungsmethoden verwenden, die in deinem Shop verfügbar sind, sehen Kunden ihre bevorzugte Option, z. B. PayPal oder Apple Pay. [Mehr Informationen](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
->>>>>>> main
             }
           }
         },
