@@ -333,7 +333,7 @@
           {%- endif -%}
         </div>
         {%- for option in card_product.options_with_values -%}
-          {%- if option.name == 'Color' or option.name == 'Colour' -%}
+          {%- if show_swatches == true and option.name == 'Color' or option.name == 'Colour' -%}
             <product-card-swatches>
               <form action='post'>
                 <fieldset>
@@ -435,6 +435,65 @@
               <div class='caption-with-letter-spacing light'>{{ 'products.product.vendor' | t }}</div>
             {%- endif -%}
             {% render 'price' %}
+            {%- for option in card_product.options_with_values -%}
+              {%- if show_swatches == true and option.name == 'Color' or option.name == 'Colour' -%}
+                <product-card-swatches>
+                  <form action='post'>
+                    <fieldset>
+                      {%- for value in option.values -%}
+                        <input
+                          type='radio'
+                          id='{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}'
+                          value='{{ value | escape }}'
+                          form='{{ product_form_id }}'
+                          {% if option.selected_value == value %}
+                            checked
+                          {% endif %}
+                          {% if option_disabled %}
+                            class='disabled'
+                          {% endif %}
+                        >
+                        {%- assign current_color = value -%}
+                        {%- assign hex_code = shop.metaobjects.color_swatches['color-swatch-data'].json_data.value[current_color]
+                          | replace: '"', ''
+                          | replace: "'", ''
+                        -%}
+                        {%- if hex_code contains ',' -%}
+                          {%- assign split_hex_code = hex_code | split: ',' -%}
+                          {%- assign gradient_string = '' -%}
+                          {%- assign num_of_hex = split_hex_code.size -%}
+                          {%- assign percentage = 100 | divided_by: num_of_hex -%}
+                          {% for hex in split_hex_code %}
+                            {%- assign hex = hex | strip -%}
+                            {%- if forloop.first or forloop.last -%}
+                              {%- assign num_of_hex = split_hex_code.size -%}
+                              {%- if forloop.first -%}
+                                {%- capture hex_string -%}{{ hex }} {{ forloop.index | times: percentage }}%, {%- endcapture -%}
+                              {%- else -%}
+                                {%- capture hex_string -%}{{ hex }} {{ forloop.index | minus: 1 | times: percentage }}%{%- endcapture -%}
+                              {%- endif -%}
+                            {%- else -%}
+                              {%- capture hex_string -%}{{ hex }} {{ forloop.index | minus: 1 | times: percentage }}%, {{ hex }} {{ forloop.index | times: percentage }}%, {%- endcapture -%}
+                            {%- endif -%}
+                            {%- assign gradient_string = gradient_string | append: hex_string -%}
+                          {% endfor %}
+                          {%- capture swatch_style -%}background-image: linear-gradient({{ gradient_string }});{%- endcapture -%}
+                        {%- else -%}
+                          {% capture swatch_style %}background-color: {{ hex_code }};{% endcapture %}
+                        {%- endif -%}
+                        <label
+                          for='{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}'
+                          class='variant_swatch'
+                          style='{{ swatch_style }}'
+                        >
+                          <div class='swatch-name-tooltip'>{{ value }}</div>
+                        </label>
+                      {%- endfor -%}
+                    </fieldset>
+                  </form>
+                </product-card-swatches>
+              {%- endif -%}
+            {%- endfor -%}
           </div>
         </div>
       </div>
