@@ -17,6 +17,17 @@ class ProductCardSwatches extends HTMLElement {
     }
   }
 
+  disconnectedCallback() {
+    const swatchWrapper = this;
+    const list = swatchWrapper.swatches;
+    for (const key in list) {
+      if (Object.hasOwnProperty.call(list, key)) {
+        const element = list[key];
+        element.removeEventListener('click', this.swatchClick);
+      }
+    }
+  }
+
   handleSwatchClick(e) {
     e.preventDefault();
     const target = e.target;
