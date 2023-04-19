@@ -30,8 +30,13 @@ class ProductCardSwatches extends HTMLElement {
 
   handleSwatchClick(e) {
     e.preventDefault();
-    const target = e.target;
-    console.log(`${target.querySelector('.swatch-name-tooltip').textContent}`);
+    this.checkSelected(e);
+  }
+
+  checkSelected(e) {
+    let currentlySelected = e.target.closest('product-card-swatches').querySelector('input[type="radio"]:checked');
+    currentlySelected.checked = false;
+    e.target.previousSibling.checked = true;
   }
 }
 
