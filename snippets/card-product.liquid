@@ -334,14 +334,33 @@
         </div>
         {%- for option in card_product.options_with_values -%}
           {%- if show_swatches == true and option.name == 'Color' or option.name == 'Colour' -%}
+            {%- assign variant_option = 'option' | append: forloop.index -%}
             <product-card-swatches>
               <form action='post'>
                 <fieldset>
                   {%- for value in option.values -%}
+                    {%- for variant in card_product.variants -%}
+                      {%- if variant[variant_option] == value -%}
+                        {%- assign variant_for_value = variant -%}
+                        {%- break -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                    {%- if variant_for_value.image -%}
+                      {%- capture supported_sizes -%}{%- render 'image-sizes', sizes: '165,360,600,533,720,940,1066,2029', image: variant_for_value.image -%}{%- endcapture -%}
+                      {%- capture img_width -%}_{{ variant_for_value.image.width }}x.{%- endcapture -%}
+                      {%- assign variant_image_url = variant_for_value.image
+                        | img_url: '1x1'
+                        | replace: '_1x1.', img_width
+                      -%}
+                    {%- endif -%}
                     <input
                       type='radio'
                       id='{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}'
                       value='{{ value | escape }}'
+                      {% if variant_for_value.image %}
+                        data-image-id='{{ variant_for_value.image.id }}' data-image-url='{{ variant_image_url }}'
+                        data-image-widths='[{{ supported_sizes }}]'
+                      {% endif %}
                       form='{{ product_form_id }}'
                       {% if option.selected_value == value %}
                         checked
@@ -485,6 +504,7 @@
                           for='{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}'
                           class='variant_swatch'
                           style='{{ swatch_style }}'
+                          data-img-url=''
                         >
                           <div class='swatch-name-tooltip'>{{ value }}</div>
                         </label>

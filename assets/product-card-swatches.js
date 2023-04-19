@@ -30,13 +30,37 @@ class ProductCardSwatches extends HTMLElement {
 
   handleSwatchClick(e) {
     e.preventDefault();
-    this.checkSelected(e);
+    const checkedRadio = this.checkSelected(e);
+    this.updateCardImage(checkedRadio);
   }
 
   checkSelected(e) {
     let currentlySelected = e.target.closest('product-card-swatches').querySelector('input[type="radio"]:checked');
     currentlySelected.checked = false;
     e.target.previousSibling.checked = true;
+    return e.target.closest('product-card-swatches').querySelector('input[type="radio"]:checked');
+  }
+
+  updateCardImage(checkedRadio) {
+    const imgUrl = checkedRadio.dataset.imageUrl;
+    const cardImg = checkedRadio
+      .closest('.card-wrapper.product-card-wrapper')
+      .querySelector('.media')
+      .querySelector('img');
+    cardImg.src = imgUrl;
+    cardImg.srcset = this.createNewSrcsetVals(cardImg.srcset, imgUrl);
+  }
+
+  createNewSrcsetVals(srcset, replacement) {
+    const splitSrcset = srcset.split(',');
+    const cleanedUrl = replacement.replace(new RegExp(/(?:_)?\d+x/, 'g'), '');
+    let srcsetString = '';
+    for (const url of splitSrcset) {
+      const size = url.split('&width=')[1];
+      size ? (srcsetString += `${cleanedUrl}&width=${size}, `) : null;
+    }
+    srcsetString = srcsetString.slice(0, -2);
+    return srcsetString;
   }
 }
 
