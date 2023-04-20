@@ -258,7 +258,7 @@ fieldset.product-form__input .form__label {
   transform: translateX(-50%) rotate(45deg);
 }
 
-@media(hover: hover) and (pointer: fine) {
+@media(hover: hover) and (pointer: fine) and (min-width: 750px) {
   .product-form__input input[type='radio'] + label.variant_swatch:hover .swatch-name-tooltip {
     bottom: 85%;
     opacity: 1;
