@@ -3,6 +3,9 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-search.css' | asset_url | stylesheet_tag }}
 
+{{ 'component-product-card-swatches.css' | asset_url | stylesheet_tag }}
+<script src='{{ 'product-card-swatches.js' | asset_url }}' defer='defer'></script>
+
 {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
   {{ 'component-facets.css' | asset_url | stylesheet_tag }}
   <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
@@ -228,6 +231,7 @@
                           image_shape: section.settings.image_shape,
                           show_secondary_image: section.settings.show_secondary_image,
                           show_vendor: section.settings.show_vendor,
+                          show_swatches: section.settings.show_swatches,
                           show_rating: section.settings.show_rating,
                           lazy_load: lazy_load
                         %}
@@ -374,6 +378,12 @@
       "default": false,
       "label": "t:sections.main-search.settings.show_rating.label",
       "info": "t:sections.main-search.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_swatches",
+      "default": false,
+      "label": "t:sections.main-search.settings.show_swatches.label"
     },
     {
       "type": "header",
