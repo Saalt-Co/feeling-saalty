@@ -368,6 +368,10 @@
                       type='radio'
                       id='{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}'
                       value='{{ value | escape }}'
+                      {%- if variant_for_value -%}
+                      data-variant-id='{{ variant_for_value.id }}'
+                      data-variant-url='{{ variant_for_value.url }}'
+                      {%- endif -%}
                       {% if variant_for_value.image %}
                         data-image-id='{{ variant_for_value.image.id }}' data-image-url='{{ variant_image_url }}'
                         data-image-widths='[{{ supported_sizes }}]'

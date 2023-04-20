@@ -32,6 +32,7 @@ class ProductCardSwatches extends HTMLElement {
     e.preventDefault();
     const checkedRadio = this.checkSelected(e);
     this.updateCardImage(checkedRadio);
+    this.updateLinkUrl(checkedRadio);
   }
 
   checkSelected(e) {
@@ -61,6 +62,13 @@ class ProductCardSwatches extends HTMLElement {
     }
     srcsetString = srcsetString.slice(0, -2);
     return srcsetString;
+  }
+
+  updateLinkUrl(checkedRadio) {
+    const cardLinks = checkedRadio.closest('.card-wrapper.product-card-wrapper').querySelectorAll('a');
+    for (const linkEl of cardLinks) {
+      linkEl.href = checkedRadio.dataset.variantUrl;
+    }
   }
 }
 
