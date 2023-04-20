@@ -82,7 +82,7 @@ product-card-swatches input[type='radio'] + label.variant_swatch .swatch-name-to
   transform: translateX(-50%) rotate(45deg);
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) and (pointer: fine) and (min-width: 750px) {
   product-card-swatches input[type='radio'] + label.variant_swatch:hover .swatch-name-tooltip {
     bottom: 85%;
     opacity: 1;
