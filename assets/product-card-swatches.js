@@ -33,6 +33,7 @@ class ProductCardSwatches extends HTMLElement {
     const checkedRadio = this.checkSelected(e);
     this.updateCardImage(checkedRadio);
     this.updateLinkUrl(checkedRadio);
+    this.updatePrice(checkedRadio);
   }
 
   checkSelected(e) {
@@ -68,6 +69,18 @@ class ProductCardSwatches extends HTMLElement {
     const cardLinks = checkedRadio.closest('.card-wrapper.product-card-wrapper').querySelectorAll('a');
     for (const linkEl of cardLinks) {
       linkEl.href = checkedRadio.dataset.variantUrl;
+    }
+  }
+
+  updatePrice(checkedRadio) {
+    const currentPrices = checkedRadio
+      .closest('.card__content')
+      .querySelector('.price__container')
+      .querySelectorAll('.price-item');
+    const regPrice = checkedRadio.dataset.variantPrice;
+    // const compareAtPrice = checkedRadio.dataset.compareAtPrice;
+    for (const priceEl of currentPrices) {
+      priceEl.textContent = regPrice;
     }
   }
 }

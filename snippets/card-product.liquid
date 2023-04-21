@@ -352,7 +352,19 @@
                   {%- for value in option.values -%}
                     {%- for variant in card_product.variants -%}
                       {%- if variant[variant_option] == value -%}
-                        {%- assign variant_for_value = variant -%}
+                        {%- liquid
+                          assign variant_for_value = variant
+                          assign money_price = variant_for_value.price | money
+                          if settings.currency_code_enabled
+                            assign money_price = variant_for_value.price | money_with_currency
+                          endif
+                          if variant_for_value.compare_at_price != 0
+                            assign compare_at_price = variant_for_value.compare_at_price | money
+                            if settings.currency_code_enabled
+                              assign compare_at_price = variant_for_value.compare_at_price | money_with_currency
+                            endif
+                          endif
+                        -%}
                         {%- break -%}
                       {%- endif -%}
                     {%- endfor -%}
@@ -364,6 +376,7 @@
                         | replace: '_1x1.', img_width
                       -%}
                     {%- endif -%}
+
                     <input
                       type='radio'
                       id='{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}'
@@ -371,6 +384,10 @@
                       {%- if variant_for_value -%}
                       data-variant-id='{{ variant_for_value.id }}'
                       data-variant-url='{{ variant_for_value.url }}'
+                      data-variant-price='{{ money_price }}'
+                      {%- if compare_at_price -%}
+                        data-variant-compare-at-price='{{ compare_at_price }}'
+                      {%- endif -%}
                       {%- endif -%}
                       {% if variant_for_value.image %}
                         data-image-id='{{ variant_for_value.image.id }}' data-image-url='{{ variant_image_url }}'
