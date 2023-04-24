@@ -1,0 +1,16 @@
+<li class="icon-wrapper">
+  {%- if block.settings.icon_svg != blank or block.settings.icon_svg != "" -%}
+    <div class="icon-svg-wrapper">
+      {{ block.settings.icon_svg }}
+    </div>
+  {%- else -%}
+    <div class="icon-svg-wrapper">
+      {{ "product-1" | placeholder_svg_tag }}
+    </div>
+  {%- endif -%}
+  {%- if block.settings.icon_text != blank -%}
+    <span class="icon-text">
+    {{- block.settings.icon_text -}}
+    </span>
+  {%- endif -%}
+</li>
