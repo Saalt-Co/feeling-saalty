@@ -1,0 +1,1092 @@
+{%- assign desktop_position = section.settings.desktop_text_position -%}
+{%- case desktop_position -%}
+  {%- when "right" -%}
+    {%- capture grid_template_order -%}
+    "grid-media grid-text-1"
+    "grid-media grid-text-2";
+    {%- endcapture -%}
+  {%- when "left" -%}
+    {%- capture grid_template_order -%}
+    "grid-text-1 grid-media"
+    "grid-text-2 grid-media";
+    {%- endcapture -%}
+{%- endcase -%}
+{%- case section.settings.title_font_size -%}
+  {%- when "x-large" -%}
+    {%- capture title_css -%}
+      font-size: 50px!important;
+      font-weight: 600;
+      line-height: 55px!important;
+    {%- endcapture -%}
+  {%- when "large" -%}
+    {%- capture title_css -%}
+      font-size: 48px!important;
+      font-weight: 600;
+      line-height: 55px!important;
+    {%- endcapture -%}
+  {%- when "medium" -%}
+    {%- capture title_css -%}
+      font-size: 40px!important;
+      font-weight: 600;
+      line-height: 44px!important;
+    {%- endcapture -%}
+  {%- else -%}
+  {%- capture title_css -%}
+    font-size: 30px!important;
+    font-weight: 600;
+    line-height: 34px!important;
+  {%- endcapture -%}
+{%- endcase -%}
+{%- case section.settings.content_font_size -%}
+  {%- when "x-large" -%}
+    {%- capture content_css -%}
+      font-size: 30px!important;
+      font-style: normal;
+      font-weight: 400!important;
+      line-height: 45px!important;
+      letter-spacing: 0em;
+    {%- endcapture -%}
+  {%- when "large" -%}
+    {%- capture content_css -%}
+      font-size: 25px!important;
+      font-weight: 400!important;
+      line-height: 41.25px!important;
+    {%- endcapture -%}
+  {%- when "medium" -%}
+    {%- capture content_css -%}
+      font-size: 18px!important;
+      font-weight: 400!important;
+      line-height: 27px!important;
+    {%- endcapture -%}
+  {%- else -%}
+  {%- capture content_css -%}
+    font-size: 16px!important;
+    font-weight: 400!important;
+    line-height: 24px!important;
+  {%- endcapture -%}
+{%- endcase -%}
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="section-image-with-text">
+  <div {% if section.settings.section_id != blank %}id="{{ section.settings.section_id | handleize }}" {% endif %}class="section-inner">
+    <div id="section-{{ section.id }}-text-1" class="inner-grid-wrapper">{%- render "saalt-img-vid-text-split-style", section: section, text_group_num: "1" -%}</div>
+    <div id="section-{{ section.id }}-media" class="inner-grid-wrapper">
+    {%- case section.settings.media_type -%}
+      {%- when "video" -%}
+        {%- render "saalt-video-for-media-section", video_obj: section.settings.video -%}
+      {%- when "image" -%}
+        {%- render "saalt-image-for-media-section", section: section -%}
+    {%- endcase -%}
+    </div>
+    <div id="section-{{ section.id }}-text-2" class="inner-grid-wrapper">{%- render "saalt-img-vid-text-split-style", section: section, text_group_num: "2" -%}</div>
+  </div>
+</section>
+
+{%- style -%}
+  #section-{{ section.id }} .section-inner {
+    display: grid;
+    position: relative;
+    background: {{ section.settings.background_color }};
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template: 
+        "grid-text-1"
+        "grid-media"
+        "grid-text-2";
+  }
+  #section-{{ section.id }} .section-inner .inner-grid-wrapper .media-wrapper, #section-{{ section.id }} .section-inner .inner-grid-wrapper .text-wrapper {
+    width: 100%;
+  }
+  #section-{{ section.id }} .section-inner #section-{{ section.id }}-text-1 {
+    grid-area: grid-text-1;
+  }
+  #section-{{ section.id }} .section-inner #section-{{ section.id }}-media {
+    grid-area: grid-media;
+  }
+  #section-{{ section.id }} .section-inner #section-{{ section.id }}-text-2 {
+    grid-area: grid-text-2;
+  }
+  #section-{{ section.id }} .media-wrapper, #section-{{ section.id }} .media-wrapper img, #section-{{ section.id }} .media-wrapper video {
+    display: block;
+    width: 100%;
+  }
+  #section-{{ section.id }} .media-wrapper video {
+    cursor: pointer;
+  }
+  #section-{{ section.id }} .text-wrapper {
+    width: 100%;
+    text-align: {{ section.settings.mobile_text_alignment }};
+    padding: 4rem 2rem;
+  }
+  #section-{{ section.id }} .text-wrapper > * {
+    margin-bottom: 3rem;
+  }
+  #section-{{ section.id }} .text-wrapper .section-title, #section-{{ section.id }} .text-wrapper .section-content, #section-{{ section.id }} .text-wrapper .section-content > p {
+    color: {{ section.settings.text_color }}!important;
+    width: 100%;
+  }
+  #section-{{ section.id }} .text-wrapper .section-title {
+    {{ title_css }}
+  }
+  #section-{{ section.id }} .text-wrapper .section-content {
+    {{ content_css }}
+  }
+  #section-{{ section.id }} .text-wrapper .contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 4rem;
+  }
+  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 1rem;
+  }
+  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact, #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
+    height: 8rem;
+  }
+  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact-content {
+    font-size: clamp(1.75rem, 1.5vw, 2.25rem);
+    line-height: 1.25;
+    text-align: left;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image svg {
+    height: 100%;
+    fill: {{ section.settings.text_color }};
+  }
+  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-content {
+    color: {{ section.settings.text_color }};
+  }
+  #section-{{ section.id }} .icons-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+    display: flex;
+    width: 100%;
+  }
+  #section-{{ section.id }} .icons-wrapper {
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  #section-{{ section.id }} .icons-wrapper .icon-wrapper {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    flex: 1 1 0;
+    overflow: hidden;
+  }
+  #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
+    width: 100%;
+    height: auto;
+  }
+  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }  #section-{{ section.id }} .section-inner .text-wrapper .button-group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
+    background: {{ section.settings.button_color }};
+    color: {{ section.settings.button_text_color }};
+    border-color: transparent;
+    transition: all ease-in-out .1s;
+  }
+  #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
+    width: 100%;
+  }
+  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt {
+    background: transparent;
+    border-color: {{ section.settings.button_color }};
+    color: {{ section.settings.button_text_color }};
+  }
+  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button:focus, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button:focus {
+    background: {{ section.settings.button_color_hover_focus }};
+    border-color: {{ section.settings.button_color_hover_focus }};
+    color: {{ section.settings.button_text_hover_focus }};
+  }
+  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt:focus, #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt:focus {
+    border-color: {{ section.settings.button_color_hover_focus }};
+    color: {{ section.settings.button_text_hover_focus }};
+  }
+  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
+    text-align: {{ section.settings.mobile_text_alignment }};
+  }
+  #section-{{ section.id }} .section-inner .text-wrapper > *:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 420px) {
+    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  @media screen and (min-width: 750px) {
+    #section-{{ section.id }} .text-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 4rem;
+      text-align: {{ section.settings.desktop_text_alignment }};
+    }
+    #section-{{ section.id }} .section-inner #section-{{ section.id }}-text-1, #section-{{ section.id }} .section-inner #section-{{ section.id }}-text-2 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+    #section-{{ section.id }} .section-inner #section-{{ section.id }}-text-1 {
+      align-items: flex-end;
+    }
+    #section-{{ section.id }} .section-inner #section-{{ section.id }}-text-2 {
+      align-items: flex-start;
+    }
+    #section-{{ section.id }} .section-inner #section-{{ section.id }}-text-1 .text-wrapper {
+      margin-bottom: 3rem;
+      padding-bottom: 0;
+    }
+    #section-{{ section.id }} .section-inner #section-{{ section.id }}-text-2 .text-wrapper {
+      padding-top: 0;
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper {
+      width: 100%;
+      gap: 4rem;
+      {%- if section.settings.desktop_text_alignment == "left" -%}
+      justify-content: flex-start;
+      {%- elsif section.settings.desktop_text_alignment == "right" -%}
+      justify-content: flex-end;
+      {%- endif -%};
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
+      height: auto;
+    }
+    #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
+      text-align: {{ section.settings.desktop_text_alignment }};
+    }
+    #section-{{ section.id }} .section-inner .text-wrapper .button-group {
+      flex-direction: row;
+    }
+    #section-{{ section.id }} .section-inner .text-wrapper .button-group .button, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt {
+      width: auto;
+    }
+  {%- if section.settings.use_max_text_width -%}
+    #section-{{ section.id }} .text-wrapper > *:not(.icons-wrapper) {
+      max-width: {{ section.settings.max_width }};
+    }
+  {%- endif -%}
+  {%- if section.settings.section_padding != "default" -%}
+    {%- case section.settings.section_padding -%}
+      {%- when "remove_top" -%}
+        {%- assign special_section_padding = "padding-top: 0;" -%}
+      {%- when "remove_bottom" -%}
+        {%- assign special_section_padding = "padding-bottom: 0;" -%}
+      {%- when "remove_both" -%}
+        {%- assign special_section_padding = "padding-top: 0; padding-bottom: 0;" -%}
+    {%- endcase -%}
+    #section-{{ section.id }} .text-wrapper {
+      {{ special_section_padding }}
+    }
+  {%- endif -%}
+    #section-{{ section.id }} .section-inner {
+      grid-template: {{ grid_template_order }}
+      grid-template-columns: repeat(2, 50%);
+    }
+  }
+{%- endstyle -%}
+{% schema %}
+{
+  "name": "Saalt Media & Split Text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID (Optional)",
+      "info": "Typically only used when setting this ID as a link's destination."
+    },
+    {
+      "type": "header",
+      "content": "Section styling"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#EEF0F4"
+    },
+    {
+      "type": "header",
+      "content": "Media Settings"
+    },
+    {
+      "type": "select",
+      "id": "media_type",
+      "label": "Media type",
+      "options": [
+        {
+          "value": "image",
+          "label": "Image"
+        },
+        {
+          "value": "video",
+          "label": "Video"
+        }
+      ],
+      "default": "image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Shopify-hosted *IMAGE*"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Shopify-hosted *VIDEO*"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_max_media_width",
+      "label": "Use desktop max width for media?",
+      "info": "This sets the max width of the media *ON DESKTOP*"
+    },
+    {
+      "type": "text",
+      "id": "max_media_width",
+      "label": "Max Width Value",
+      "info": "Any valid css value is accepted",
+      "default": "700px"
+    },
+    {
+      "type": "range",
+      "id": "media_width",
+      "label": "Image/Video width in % for *DESKTOP*",
+      "default": 50,
+      "min": 1,
+      "max": 100
+    },
+    {
+      "type": "header",
+      "content": "Text Settings"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#3F4759"
+    },
+    {
+      "type": "select",
+      "id": "section_padding",
+      "label": "Top & Bottom Padding",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "remove_top",
+          "label": "Remove top"
+        },
+        {
+          "value": "remove_bottom",
+          "label": "Remove bottom"
+        },
+        {
+          "value": "remove_both",
+          "label": "Remove both"
+        }
+      ],
+      "default": "default"
+    },
+    {
+      "type": "header",
+      "content": "Mobile Text Settings"
+    },
+    {
+      "type": "select",
+      "id": "mobile_text_alignment",
+      "label": "Text alignment on *MOBILE*",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "justify",
+          "label": "Justify"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Text Settings"
+    },
+    {
+      "type": "select",
+      "id": "desktop_text_position",
+      "label": "Text position on *DESKTOP*",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left of the media"
+        },
+        {
+          "value": "right",
+          "label": "Right of the media"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "select",
+      "id": "desktop_text_alignment",
+      "label": "Text alignment on *DESKTOP ONLY*",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "justify",
+          "label": "Justify"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_max_text_width",
+      "label": "Use desktop max width for text content?",
+      "info": "This sets the max width of the text content *ON DESKTOP*"
+    },
+    {
+      "type": "text",
+      "id": "max_width",
+      "label": "Max Width Value",
+      "info": "Any valid css value is accepted",
+      "default": "600px"
+    },
+    {
+      "type": "header",
+      "content": "Button Settings"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button style",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "alt",
+          "label": "Alt"
+        }
+      ],
+      "default": "primary"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button color",
+      "default": "#3F4759"
+    },
+    {
+      "type": "color",
+      "id": "button_color_hover_focus",
+      "label": "Button color hover/focus state",
+      "info": "Main button color on hover and focus",
+      "default": "#5A5F6F"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_text_hover_focus",
+      "label": "Button text hover/focus state",
+      "info": "Text color on hover and focus",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "section_title",
+      "name": "Section Title",
+      "settings": [
+        {
+          "type": "radio",
+          "id": "text_group_num",
+          "label": "Text Group Number",
+          "info": "This sets the text group that this block should appear in.",
+          "options": [
+            {
+              "value": "1",
+              "label": "Group 1"
+            },
+            {
+              "value": "2",
+              "label": "Group 2"
+            }
+          ],
+          "default": "1"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading Tag",
+          "options": [
+            {
+              "value": "1",
+              "label": "H1"
+            },
+            {
+              "value": "2",
+              "label": "H2"
+            },
+            {
+              "value": "3",
+              "label": "H3"
+            }
+          ],
+          "default": "1"
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "Section Title Goes Here"
+        },
+        {
+          "type": "select",
+          "id": "title_font_size",
+          "label": "Title font size",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small (30px)"
+            },
+            {
+              "value": "medium",
+              "label": "Medium (40px)"
+            },
+            {
+              "value": "large",
+              "label": "Large (48px)"
+            },
+            {
+              "value": "x-large",
+              "label": "X-Large (50px)"
+            }
+          ],
+          "default": "medium"
+        }
+      ]
+    },
+    {
+      "type": "section_content",
+      "name": "Section Content",
+      "settings": [
+        {
+          "type": "radio",
+          "id": "text_group_num",
+          "label": "Text Group Number",
+          "info": "This sets the text group that this block should appear in.",
+          "options": [
+            {
+              "value": "1",
+              "label": "Group 1"
+            },
+            {
+              "value": "2",
+              "label": "Group 2"
+            }
+          ],
+          "default": "1"
+        },
+        {
+          "type": "richtext",
+          "id": "text_content",
+          "label": "Text content",
+          "default": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.</p>"
+        },
+        {
+          "type": "select",
+          "id": "content_font_size",
+          "label": "Content font size",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small (16px)"
+            },
+            {
+              "value": "medium",
+              "label": "Medium (18px)"
+            },
+            {
+              "value": "large",
+              "label": "Large (25px)"
+            },
+            {
+              "value": "x-large",
+              "label": "X-Large (30px)"
+            }
+          ],
+          "default": "medium"
+        }
+      ]
+    },
+    {
+      "type": "section_buttons_group",
+      "name": "Section Buttons Group",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "❗️NOTE❗️: This is just a parent element/container to wrap around section button blocks. Please be sure to also add section button blocks or this will appear empty. Drag and drop this to move the buttons within the section."
+        },
+        {
+          "type": "radio",
+          "id": "text_group_num",
+          "label": "Text Group Number",
+          "info": "This sets the text group that this block should appear in.",
+          "options": [
+            {
+              "value": "1",
+              "label": "Group 1"
+            },
+            {
+              "value": "2",
+              "label": "Group 2"
+            }
+          ],
+          "default": "1"
+        },
+        {
+          "type": "select",
+          "id": "desktop_button_group_alignment",
+          "label": "Button Group Alignment on *DESKTOP*",
+          "info": "❗️Add section buttons in the previous menu ❗️",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "text",
+          "id": "desktop_buttons_group_gap",
+          "label": "Space Between Buttons on *DESKTOP*",
+          "info": "Distance between buttons for the entire buttons group. Any valid css value is accepted.",
+          "default": "1rem"
+        }
+      ]
+    },
+    {
+      "type": "section_button",
+      "name": "Section Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Button text"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button Destination"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Section Button Style",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "alt",
+              "label": "Alt"
+            }
+          ],
+          "default": "primary"
+        }
+      ]
+    },
+    {
+      "type": "section_icon_group",
+      "name": "SVG Icon Group",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "❗️NOTE❗️: This is just a parent element/container to wrap around SVG icon blocks. Please be sure to also add SVG icon blocks or this will appear empty. Drag and drop this to move the icons within the section."
+        },
+        {
+          "type": "radio",
+          "id": "text_group_num",
+          "label": "Text Group Number",
+          "info": "This sets the text group that this block should appear in.",
+          "options": [
+            {
+              "value": "1",
+              "label": "Group 1"
+            },
+            {
+              "value": "2",
+              "label": "Group 2"
+            }
+          ],
+          "default": "1"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_max_icon_group_width",
+          "label": "Use desktop max width for icons group?",
+          "info": "This sets the max width of the icons group *ON DESKTOP*"
+        },
+        {
+          "type": "text",
+          "id": "icon_group_max_width",
+          "label": "Icon *GROUP MAX* Width",
+          "info": "Max width for the entire icon group. Any valid css value is accepted.",
+          "default": "600px"
+        },
+        {
+          "type": "color",
+          "id": "icon_color",
+          "label": "Icon color",
+          "info": "This colors the svg as well as any optional text",
+          "default": "#3F4759"
+        },
+        {
+          "type": "header",
+          "content": "Mobile Settings"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_text_size",
+          "label": "Text Font Size On *MOBILE*",
+          "info": "Any valid css value for 'font-size' is accepted. Default is 1.5rem",
+          "default": "1.5rem"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_group_gap",
+          "label": "Space Between Icons On *MOBILE*",
+          "info": "Distance between icons for the entire icon group. Any valid css value is accepted.",
+          "default": "3.5rem"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_min_width",
+          "label": "Icon *WRAPPER MIN* Width On *MOBILE*",
+          "info": "Minimum width for icon wrapper elements. Any valid css value is accepted.",
+          "default": "80px"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_wrapper_max_width",
+          "label": "Icon *WRAPPER MAX* Width On *MOBILE*",
+          "info": "Max width for icon wrapper elements. Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_max_width",
+          "label": "Icon *MAX* Width On *MOBILE*",
+          "info": "Max width for icons inside of the icon wrappers. Any valid css value is accepted.",
+          "default": "100%"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_height",
+          "label": "Icon Height On *MOBILE*",
+          "info": "Minimum height for icons inside of the icon wrappers. This helps ensure they're all the same size vertically. Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "header",
+          "content": "Desktop Settings"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_text_size",
+          "label": "Text Font Size on *DESKTOP*",
+          "info": "Any valid css value for 'font-size' is accepted. Default is 1.5rem",
+          "default": "1.5rem"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_group_gap",
+          "label": "Space Between Icons on *DESKTOP*",
+          "info": "Distance between icons for the entire icon group. Any valid css value is accepted.",
+          "default": "3.5rem"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_min_width",
+          "label": "Icon *WRAPPER MIN* Width on *DESKTOP*",
+          "info": "Minimum width for icon wrapper elements. Any valid css value is accepted.",
+          "default": "80px"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_wrapper_max_width",
+          "label": "Icon *WRAPPER MAX* Width on *DESKTOP*",
+          "info": "Max width for icon wrapper elements. Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_max_width",
+          "label": "Icon *MAX* Width on *DESKTOP*",
+          "info": "Max width for icons inside of the icon wrappers. Any valid css value is accepted.",
+          "default": "100%"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_height",
+          "label": "Icon Height on *DESKTOP*",
+          "info": "Minimum height for icons inside of the icon wrappers. This helps ensure they're all the same size vertically. Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_alignment",
+          "label": "*ICON* Alignment on *DESKTOP*",
+          "info": "❗️Add SVG icons in the previous menu ❗️",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        }
+      ]
+    },
+    {
+      "type": "section_icon_with_text",
+      "name": "SVG Icon",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "❗️NOTE❗️ Be sure to add an 'SVG Icon Group' block or this will not show up!"
+        },
+        {
+          "type": "radio",
+          "id": "text_group_num",
+          "label": "Text Group Number",
+          "info": "This sets the text group that this block should appear in.",
+          "options": [
+            {
+              "value": "1",
+              "label": "Group 1"
+            },
+            {
+              "value": "2",
+              "label": "Group 2"
+            }
+          ],
+          "default": "1"
+        },
+        {
+          "type": "html",
+          "id": "icon_svg",
+          "label": "Icon SVG code",
+          "info": "Paste icon svg code here. Be sure to remove any 'fill' and 'stroke' attributes to ensure proper styling."
+        },
+        {
+          "type": "richtext",
+          "id": "icon_text",
+          "label": "Text",
+          "info": "Text is optional"
+        },
+        {
+          "type": "header",
+          "content": "Mobile Icon Overrides"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_max_width_override",
+          "label": "Icon *MAX* Width *MOBILE* Override",
+          "info": "This overrides the icon group's max width for this specific icon on *MOBILE*. Any valid css value is accepted."
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_max_height_override",
+          "label": "Icon Height *MOBILE* Override",
+          "info": "This overrides the icon group's height for this specific icon on *MOBILE*. Any valid css value is accepted."
+        },
+        {
+          "type": "header",
+          "content": "Desktop Icon Overrides"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_max_width_override",
+          "label": "Icon *MAX* Width *DESKTOP* Override",
+          "info": "This overrides the icon group's max width for this specific icon on *DESKTOP*. Any valid css value is accepted."
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_max_height_override",
+          "label": "Icon Height *DESKTOP* Override",
+          "info": "This overrides the icon group's height for this specific icon on *DESKTOP*. Any valid css value is accepted."
+        }
+      ]
+    },
+    {
+      "type": "saalt_contact_links",
+      "name": "Saalt Contact Links",
+      "settings": [
+        {
+          "type": "radio",
+          "id": "text_group_num",
+          "label": "Text Group Number",
+          "info": "This sets the text group that this block should appear in.",
+          "options": [
+            {
+              "value": "1",
+              "label": "Group 1"
+            },
+            {
+              "value": "2",
+              "label": "Group 2"
+            }
+          ],
+          "default": "1"
+        },
+        {
+          "type": "text",
+          "id": "sms_link",
+          "label": "Phone number for SMS",
+          "info": "The number should NOT include spaces or special characters. A leading '+' is not necessary.",
+          "default": "17752372258"
+        },
+        {
+          "type": "text",
+          "id": "email_link",
+          "label": "'Mail to' email address",
+          "default": "mailto:sayhey@saalt.com"
+        }
+      ]
+    },
+    {
+      "type": "custom_liquid_code",
+      "name": "Liquid Code",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "liquid_code",
+          "label": "Liquid Code",
+          "info": "This allows for a bit more customization within this section. There are limitations to using this however. [Read about that here.](https://shopify.dev/themes/architecture/settings/input-settings#liquid)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Saalt Media & Split Text",
+      "category": "custom saalt section",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "section_title",
+          "settings": {
+            "text_group_num": "1"
+          }
+        },
+        {
+          "type": "section_content",
+          "settings": {
+            "text_group_num": "1"
+          }
+        },
+        {
+          "type": "section_icon_group",
+          "settings": {
+            "text_group_num": "2"
+          }
+        },
+        {
+          "type": "section_icon_with_text",
+          "settings": {
+            "text_group_num": "2"
+          }
+        },
+        {
+          "type": "section_icon_with_text",
+          "settings": {
+            "text_group_num": "2"
+          }
+        },
+        {
+          "type": "section_icon_with_text",
+          "settings": {
+            "text_group_num": "2"
+          }
+        },
+        {
+          "type": "section_content",
+          "settings": {
+            "text_group_num": "2"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
