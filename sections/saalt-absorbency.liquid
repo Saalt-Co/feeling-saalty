@@ -1,0 +1,528 @@
+{%- capture tampon_icon -%}{% render "svg-tampon" %}{%- endcapture -%}
+{%- capture pad_icon -%}{% render "svg-pad" %}{%- endcapture -%}
+{%- capture drop_icon -%}{% render "svg-absorbency-drop" %}{%- endcapture -%}
+{%- assign drop_icon_filled = drop_icon | replace: '<svg class="absorbency-icon"', '<svg class="absorbency-icon  drop-icon-filled"' -%}
+{%- assign drop_icon_empty = drop_icon | replace: '<svg class="absorbency-icon"', '<svg class="absorbency-icon  drop-icon-empty"' -%}
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="section-headline-row">
+  <div {% if section.settings.section_id != blank %}id="{{ section.settings.section_id | handleize }}" {% endif %}class="section-inner">
+    <div class="card card-1">
+      <div class="card-header">
+        <div class="card-title-wrapper">
+          <h3 class="card-title">Light Absorbency</h3>
+        </div>
+        <div class="absorbency-icon-wrapper">
+          {%- for iter in (1..section.settings.light_absorbency_level) -%}
+            {{ drop_icon_filled }}
+          {%- endfor -%}
+          {%- assign light_drop_iter_diff = 4 | minus: section.settings.light_absorbency_level -%}
+          {%- for iter in (1..light_drop_iter_diff) -%}
+            {{ drop_icon_empty }}
+          {%- endfor -%}
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="hold-capacity-wrapper">
+          <div class="hold-capacity-text">Holds up to:</div>
+          <div class="hold-capacity-icons-wrapper">
+            <div class="icon-wrapper tampon-wrapper">
+              <div class="tampon-icon">
+                {{ tampon_icon }}
+              </div>
+              <div class="tampon-text">1-2 tampons</div>
+            </div>
+            <div class="icon-wrapper pad-wrapper">
+              <div class="pad-icon">
+                {{ pad_icon }}
+              </div>
+              <div class="pad-text">1 pad<br>or liner</div>
+            </div>
+          </div>
+        </div>
+        <div class="best-for-wrapper">
+          <div class="best-for-text">Best for:</div>
+          <ul class="uses-grid">
+            <li class="use">Sweat and discharge</li>
+            <li class="use">Worry-free backup to a cup, disc or tampon</li>
+            <li class="use">Light flow days and spotting</li>
+            <li class="use">Pantyliner replacement</li>
+          </ul>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <a href="{{ section.settings.light_absorbency_button_url }}" class="card-button btn btn-primary{% if section.settings.button_style == "alt" %} alt{% endif %}">{{ section.settings.light_absorbency_button_text }}</a>
+      </div>
+    </div>
+    <div class="card card-2">
+      <div class="card-header">
+        <div class="card-title-wrapper">
+          <h3 class="card-title">Regular Absorbency</h3>
+        </div>
+        <div class="absorbency-icon-wrapper">
+          {%- for iter in (1..section.settings.regular_absorbency_level) -%}
+            {{ drop_icon_filled }}
+          {%- endfor -%}
+          {%- assign regular_drop_iter_diff = 4 | minus: section.settings.regular_absorbency_level -%}
+          {%- for iter in (1..regular_drop_iter_diff) -%}
+            {{ drop_icon_empty }}
+          {%- endfor -%}
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="hold-capacity-wrapper">
+          <div class="hold-capacity-text">Holds up to:</div>
+          <div class="hold-capacity-icons-wrapper">
+            <div class="icon-wrapper tampon-wrapper">
+              <div class="tampon-icon">
+                {{ tampon_icon }}
+              </div>
+              <div class="tampon-text">2-3<br>tampons</div>
+            </div>
+            <div class="icon-wrapper pad-wrapper">
+              <div class="pad-icon">
+                {{ pad_icon }}
+              </div>
+              <div class="pad-text">2 pads</div>
+            </div>
+          </div>
+        </div>
+        <div class="best-for-wrapper">
+          <div class="best-for-text">Best for:</div>
+          <ul class="uses-grid">
+            <li class="use">Sweat and discharge</li>
+            <li class="use">Worry-free backup to a cup, disc or tampon</li>
+            <li class="use">Regular period flow</li>
+            <li class="use">Light bladder leaks</li>
+          </ul>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <a href="{{ section.settings.regular_absorbency_button_url }}" class="card-button btn btn-primary{% if section.settings.button_style == "alt" %} alt{% endif %}">{{ section.settings.regular_absorbency_button_text }}</a>
+      </div>
+    </div>
+    <div class="card card-3">
+      <div class="card-header">
+        <div class="card-title-wrapper">
+          <h3 class="card-title">Heavy Absorbency</h3>
+        </div>
+        <div class="absorbency-icon-wrapper">
+          {%- for iter in (1..section.settings.heavy_absorbency_level) -%}
+            {{ drop_icon_filled }}
+          {%- endfor -%}
+          {%- assign heavy_drop_iter_diff = 4 | minus: section.settings.heavy_absorbency_level -%}
+          {%- for iter in (1..heavy_drop_iter_diff) -%}
+            {{ drop_icon_empty }}
+          {%- endfor -%}
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="hold-capacity-wrapper">
+          <div class="hold-capacity-text">Holds up to:</div>
+          <div class="hold-capacity-icons-wrapper">
+            <div class="icon-wrapper tampon-wrapper">
+              <div class="tampon-icon">
+                {{ tampon_icon }}
+              </div>
+              <div class="tampon-text">3-4 tampons</div>
+            </div>
+            <div class="icon-wrapper pad-wrapper">
+              <div class="pad-icon">
+                {{ pad_icon }}
+              </div>
+              <div class="pad-text">3 pads or 1<br>overnight pad</div>
+            </div>
+          </div>
+        </div>
+        <div class="best-for-wrapper">
+          <div class="best-for-text">Best for:</div>
+          <ul class="uses-grid">
+            <li class="use">Heavy flow days and overnight</li>
+            <li class="use">Postpartum wear</li>
+            <li class="use">Bladder leaks</li>
+          </ul>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <a href="{{ section.settings.heavy_absorbency_button_url }}" class="card-button btn btn-primary{% if section.settings.button_style == "alt" %} alt{% endif %}">{{ section.settings.heavy_absorbency_button_text }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- style -%}
+#section-{{ section.id }} {
+  position: relative;
+  background: {{ section.settings.background_color }};
+  color: {{ section.settings.text_color }};
+  overflow: hidden;
+}
+
+#section-{{ section.id }} .bg-img {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+}
+
+#section-{{ section.id }} .section-inner .card .card-header .card-title-wrapper .card-title {
+  color: {{ section.settings.text_color }}!important;
+}
+
+#section-{{ section.id }} .section-inner, #section-{{ section.id }} .section-inner .card, #section-{{ section.id }} .section-inner .card .card-header, #section-{{ section.id }} .section-inner .card .absorbency-icon-wrapper, #section-{{ section.id }} .section-inner .card .content-wrapper, #section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper, #section-{{ section.id }} .section-inner .card .hold-capacity-icons-wrapper, #section-{{ section.id }} .section-inner .card .hold-capacity-icons-wrapper .icon-wrapper, #section-{{ section.id }} .section-inner .card .content-wrapper .best-for-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#section-{{ section.id }} .section-inner .card,  #section-{{ section.id }} .section-inner .card .card-header, #section-{{ section.id }} .section-inner .card .content-wrapper, #section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper, #section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper .icon-wrapper, #section-{{ section.id }} .section-inner .card .content-wrapper .best-for-wrapper {
+  flex-direction: column;
+}
+
+#section-{{ section.id }} .section-inner {
+  position: relative;
+  flex-direction: column;
+  z-index: 1;
+}
+
+#section-{{ section.id }} .section-inner .card {
+  position: relative;
+  width: 100%;
+  font-weight: 600;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 3.75rem 0;
+  text-align: center;
+}
+
+#section-{{ section.id }} .section-inner .card .card-header {
+  flex-wrap: wrap;
+}
+
+#section-{{ section.id }} .section-inner .card .card-header .card-title-wrapper {
+  flex-direction: row;
+  gap: .65rem;
+}
+
+#section-{{ section.id }} .section-inner .card .card-header .card-title-wrapper .card-title {
+  display: block;
+  font-size: 24px!important;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+#section-{{ section.id }} .section-inner .card .card-header .absorbency-icon-wrapper {
+  display: flex;
+  gap: .5rem;
+}
+
+#section-{{ section.id }} .section-inner .card .card-header .absorbency-icon-wrapper .absorbency-icon {
+  display: inline-block;
+  height: auto;
+  width: 12px;
+  stroke-width: 3px;
+  stroke: {{ section.settings.text_color }};
+  fill: {{ section.settings.text_color }};
+  opacity: .3;
+}
+
+#section-{{ section.id }} .section-inner .card .card-header .absorbency-icon-wrapper .absorbency-icon.drop-icon-filled {
+  fill: {{ section.settings.text_color }};
+  opacity: 1;
+}
+
+#section-{{ section.id }} .section-inner .card .content-wrapper {
+  gap: 2rem;
+  max-width: 300px;
+  margin: 0 auto 9rem;
+}
+
+#section-{{ section.id }} .section-inner .card .button-wrapper {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+#section-{{ section.id }} .section-inner .card .button-wrapper .card-button {
+  background: {{ section.settings.button_color }};
+  color: {{ section.settings.button_text_color }};
+  border-color: transparent;
+  transition: all ease-in-out .1s;
+}
+
+#section-{{ section.id }} .section-inner .card .button-wrapper .card-button.alt {
+  background: transparent;
+  border-color: {{ section.settings.button_color }};
+}
+
+#section-{{ section.id }} .section-inner .card .button-wrapper .card-button:hover, #section-{{ section.id }} .section-inner .card .button-wrapper .card-button:focus {
+  background: {{ section.settings.button_color_hover_focus }};
+}
+
+#section-{{ section.id }} .section-inner .card .button-wrapper .card-button.alt:hover, #section-{{ section.id }} .section-inner .card .button-wrapper .card-button.alt:focus {
+  border-color: {{ section.settings.button_color_hover_focus }};
+}
+
+#section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper, #section-{{ section.id }} .section-inner .card .content-wrapper .best-for-wrapper {
+  text-align: center;
+  gap: 2.5rem;
+}
+#section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper .hold-capacity-icons-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 1rem;
+}
+
+#section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper .hold-capacity-icons-wrapper .icon-wrapper {
+  justify-content: flex-start;
+  gap: .5rem;
+}
+
+#section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper .hold-capacity-icons-wrapper .icon-wrapper .tampon-icon .tampon-icon-svg, #section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper .hold-capacity-icons-wrapper .icon-wrapper .pad-icon .pad-icon-svg {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 48px;
+  stroke-width: 1.5px;
+  stroke: {{ section.settings.text_color }};
+  fill: {{ section.settings.text_color }};
+}
+
+#section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper .hold-capacity-text, #section-{{ section.id }} .section-inner .card .content-wrapper .best-for-wrapper .best-for-text {
+  background: #fff;
+  border-radius: 2px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#section-{{ section.id }} .section-inner .card .content-wrapper .best-for-wrapper .uses-grid {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2.25rem;
+  row-gap: 1rem;
+  list-style: disc;
+  left: 1rem;
+}
+
+#section-{{ section.id }} .section-inner .card .content-wrapper .best-for-wrapper .uses-grid .use {
+  text-align: left;
+}
+
+#section-{{ section.id }} .section-inner .card.card-1 {
+  background: {{ section.settings.light_absorbency_background_color }};
+}
+
+#section-{{ section.id }} .section-inner .card.card-2 {
+  background: {{ section.settings.regular_absorbency_background_color }};
+}
+
+#section-{{ section.id }} .section-inner .card.card-3 {
+  background: {{ section.settings.heavy_absorbency_background_color }};
+}
+
+@media screen and (min-width: 360px) {
+  #section-{{ section.id }} .section-inner .card {
+    min-width:360px;
+    padding: 3.75rem;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  #section-{{ section.id }} .section-inner {
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #section-{{ section.id }} .section-inner {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (min-width: 1076px) {
+  #section-{{ section.id }} .section-inner {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1290px) {
+  #section-{{ section.id }} .section-inner .card .card-header {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "Saalt Absorbency Chart",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID (Optional)",
+      "info": "Typically only used when setting this ID as a link's destination."
+    },
+    {
+      "type": "header",
+      "content": "Section styling"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#F7D6C5"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#575E6E"
+    },
+    {
+      "type": "header",
+      "content": "Button settings"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button style",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "alt",
+          "label": "Alt"
+        }
+      ],
+      "default": "primary"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button color",
+      "default": "#F7D6C5"
+    },
+    {
+      "type": "color",
+      "id": "button_color_hover_focus",
+      "label": "Button *HOVER* and *FOCUS* color",
+      "default": "#ffc4b2"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#575E6E"
+    },
+    {
+      "type": "header",
+      "content": "Light absorbency settings"
+    },
+    {
+      "type": "color",
+      "id": "light_absorbency_background_color",
+      "label": "Background color",
+      "default": "#edf0f4"
+    },
+    {
+      "type": "range",
+      "id": "light_absorbency_level",
+      "label": "Absorbency Level",
+      "min": 1,
+      "max": 4,
+      "default": 1
+    },
+    {
+      "type": "text",
+      "id": "light_absorbency_button_text",
+      "label": "Light Absorbency Button Text",
+      "default": "Shop Light"
+    },
+    {
+      "type": "url",
+      "id": "light_absorbency_button_url",
+      "label": "Light Absorbency Button Destination"
+    },
+    {
+      "type": "header",
+      "content": "Regular absorbency settings"
+    },
+    {
+      "type": "color",
+      "id": "regular_absorbency_background_color",
+      "label": "Background color",
+      "default": "#dce2e9"
+    },
+    {
+      "type": "range",
+      "id": "regular_absorbency_level",
+      "label": "Absorbency Level",
+      "min": 1,
+      "max": 4,
+      "default": 3
+    },
+    {
+      "type": "text",
+      "id": "regular_absorbency_button_text",
+      "label": "Regular Absorbency Button Text",
+      "default": "Shop Regular"
+    },
+    {
+      "type": "url",
+      "id": "regular_absorbency_button_url",
+      "label": "Regular Absorbency Button Destination"
+    },
+    {
+      "type": "header",
+      "content": "Heavy absorbency settings"
+    },
+    {
+      "type": "color",
+      "id": "heavy_absorbency_background_color",
+      "label": "Background color",
+      "default": "#a6b6c7"
+    },
+    {
+      "type": "range",
+      "id": "heavy_absorbency_level",
+      "label": "Absorbency Level",
+      "min": 1,
+      "max": 4,
+      "default": 4
+    },
+    {
+      "type": "text",
+      "id": "heavy_absorbency_button_text",
+      "label": "Heavy Absorbency Button Text",
+      "default": "Shop Heavy"
+    },
+    {
+      "type": "url",
+      "id": "heavy_absorbency_button_url",
+      "label": "Heavy Absorbency Button Destination"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Saalt Absorbency Chart",
+      "category": "custom saalt section"
+    }
+  ]
+}
+{% endschema %}

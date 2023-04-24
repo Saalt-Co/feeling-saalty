@@ -1,0 +1,231 @@
+{%- capture flickity_options -%}
+{
+"prevNextButtons": false,
+"wrapAround": true,
+"dragThreshold": 16,
+"pageDots": {% if section.blocks.size > 1 %}true{% else %}false{% endif %},
+"autoPlay": {% if section.settings.autoplay %}{{ section.settings.cycle_speed | times: 1000 }}{% else %}false{% endif %}
+}
+{%- endcapture -%}
+
+{%- capture mobile_bg_img_css -%}
+  background-image: url("{{ section.settings.bg_img_mobile | image_url }}");
+  background-origin: border-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+{%- endcapture -%}
+
+{%- capture desktop_bg_img_css -%}
+  background-image: url("{{ section.settings.bg_img_desktop | image_url }}");
+  background-origin: border-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+{%- endcapture -%}
+
+<section class="Section Section--spacingNormal" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="testimonials">
+  <div {% if section.settings.section_id != blank %}id="{{ section.settings.section_id | handleize }}" {% endif %}class="section-inner">
+    <div class="svg-wrapper">
+      <svg class="quote-icon" width="167" height="132" viewBox="0 0 167 132" xmlns="http://www.w3.org/2000/svg">
+        <path d="M51.43 65.19C57.96 67.72 63.01 71.81 66.58 77.44C70.44 82.79 72.3699 89.26 72.3699 96.86C72.3699 106.99 68.95 115.3 62.12 121.77C55.29 128.24 46.83 131.48 36.7299 131.48C26.04 131.48 17.28 128.24 10.45 121.77C3.60995 115.3 0.199951 107 0.199951 96.86C0.199951 91.79 0.78995 86.87 1.97995 82.08C3.45995 77.29 6.13995 70.12 9.99995 60.54L33.61 0.580017H69.25L51.43 65.19ZM145.87 65.19C152.4 67.72 157.45 71.81 161.02 77.44C164.88 82.79 166.81 89.26 166.81 96.86C166.81 106.99 163.4 115.3 156.56 121.77C149.73 128.24 141.27 131.48 131.17 131.48C120.48 131.48 111.72 128.24 104.89 121.77C98.06 115.3 94.64 106.99 94.64 96.86C94.64 91.79 95.23 86.87 96.42 82.08C97.9 77.29 100.58 70.12 104.44 60.54L128.05 0.580017H163.69L145.87 65.19Z"/>
+      </svg>
+    </div>
+    <div class="TestimonialList Carousel Carousel--fadeIn" data-flickity-config='{{ flickity_options }}'>
+      {%- for block in section.blocks -%}
+      <div id="block-{{ block.id }}" class="Carousel__Cell Testimonial {% if forloop.first %}is-selected{% endif %}" {{ block.shopify_attributes }} data-slide-index="{{ forloop.index0 }}">
+        <div class="Container">
+          {%- if block.settings.quote != blank -%}
+          <div class="Testimonial__Content">
+            {{ block.settings.quote }}
+          </div>
+          {%- endif -%}
+  
+          {%- if block.settings.quoted_person != blank -%}
+            <div class="quoted-person-wrapper">
+              <div class="quoted-person">
+                {{ block.settings.quoted_person }}
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{%- style -%}
+  #section-{{ section.id }} {
+    color: {{ section.settings.text_color }};
+    background: {{ section.settings.background_color }};
+    {%- if section.settings.bg_img_mobile != blank -%}{{ mobile_bg_img_css }}{%- endif -%}
+  }
+  #section-{{ section.id }} .section-inner .svg-wrapper, #section-{{ section.id }} .section-inner .quoted-person-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+    margin: 0 auto 4rem;
+  }
+  #section-{{ section.id }} .section-inner .svg-wrapper .quote-icon {
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+    fill: #354759;
+  }
+  #section-{{ section.id }} .section-inner .flickity-page-dots .dot {
+    border: transparent;
+  }
+  #section-{{ section.id }} .section-inner .flickity-page-dots .dot:not(.is-selected) {
+    background: {{ section.settings.inactive_dot_color }};
+  }
+  #section-{{ section.id }} .section-inner .flickity-page-dots .dot.is-selected {
+    background: {{ section.settings.active_dot_color }};
+  }
+  #section-{{ section.id }} .section-inner .Testimonial__Content p {
+    font-size: 1.5rem;
+  }
+  #section-{{ section.id }} .section-inner .quoted-person-wrapper {
+    margin: 2rem auto 0;
+  }
+  #section-{{ section.id }} .section-inner .quoted-person {
+    display: block;
+    font-weight: 600;
+  }
+  @media screen and (min-width: 641px){
+    .Testimonial {
+      font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 20px));
+    }
+  }
+  @media screen and (min-width: 750px) {
+    #section-{{ section.id }} {
+      {%- if section.settings.bg_img_desktop != blank -%}{{ desktop_bg_img_css }}{%- endif -%}
+    }
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "Saalt Testimonials",
+  "class": "shopify-section--bordered",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID (Optional)",
+      "info": "Typically only used when setting this ID as a link's destination."
+    },
+    {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Auto rotate between testimonials",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "cycle_speed",
+      "min": 3,
+      "max": 8,
+      "step": 1,
+      "unit": "sec",
+      "label": "Change testimonials every",
+      "default": 5
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#eaeaea"
+    },
+    {
+      "type": "header",
+      "content": "Optional Image Settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_img_desktop",
+      "label": "Optional Background image (Desktop)",
+      "info": "1300x443px recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_img_mobile",
+      "label": "Optional Background image (Mobile)",
+      "info": "750x384px recommended"
+    },
+    {
+      "type": "header",
+      "content": "Dot Settings"
+    },
+    {
+      "type": "color",
+      "id": "active_dot_color",
+      "label": "Color of the active dot",
+      "default": "#3F4759"
+    },
+    {
+      "type": "color",
+      "id": "inactive_dot_color",
+      "label": "Color of the inactive dot",
+      "default": "#F7D6C5"
+    },
+    {
+      "type": "header",
+      "content": "Text Settings"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#3F4759"
+    }
+  ],
+  "blocks": [
+    {
+    "type": "testimonial",
+    "name": "Testimonial",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "quote",
+        "label": "Quote",
+        "default": "<p>Share what your customers are saying about your products, your company...</p>",
+        "info": "For best results, keep the word count consistent in each quote."
+      },
+      {
+        "type": "text",
+        "id": "quoted_person",
+        "label": "Quoted person"
+      }
+    ]
+  }
+],
+  "presets": [
+    {
+      "category": "Text",
+      "name": "Saalt Testimonials",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "testimonial",
+          "settings": {}
+        },
+        {
+          "type": "testimonial",
+          "settings": {}
+        },
+        {
+          "type": "testimonial",
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
