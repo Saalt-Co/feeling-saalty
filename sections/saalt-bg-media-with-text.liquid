@@ -172,41 +172,9 @@
     width: 100%;
     height: auto;
   }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-group {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
-    background: {{ section.settings.button_color }};
-    color: {{ section.settings.button_text_color }};
-    border-color: transparent;
-    transition: all ease-in-out .1s;
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
-    width: 100%;
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt {
-    background: transparent;
-    border-color: {{ section.settings.button_color }};
-    color: {{ section.settings.button_text_color }};
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button:focus, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button:focus {
-    background: {{ section.settings.button_color_hover_focus }};
-    border-color: {{ section.settings.button_color_hover_focus }};
-    color: {{ section.settings.button_text_hover_focus }};
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt:focus, #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt:focus {
-    border-color: {{ section.settings.button_color_hover_focus }};
-    color: {{ section.settings.button_text_hover_focus }};
-  }
+
+  {%- render 'saalt-custom-section-button-css', section: section -%}
+
   #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
     text-align: {{ section.settings.mobile_text_alignment }};
   }
@@ -262,15 +230,6 @@
     }
     #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
       height: auto;
-    }
-    #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
-      text-align: {{ section.settings.desktop_text_alignment }};
-    }
-    #section-{{ section.id }} .section-inner .text-wrapper .button-group {
-      flex-direction: row;
-    }
-    #section-{{ section.id }} .section-inner .text-wrapper .button-group .button, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt {
-      width: auto;
     }
   {%- if section.settings.section_padding != "default" -%}
     {%- case section.settings.section_padding -%}
