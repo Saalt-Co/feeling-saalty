@@ -1,31 +1,33 @@
 {%- assign block_count = section.blocks | size -%}
-{%- assign all_icons = "" -%}
+{%- assign all_icons = '' -%}
 {%- unless block_count == 0 -%}
-<div class="text-wrapper">
-  {%- if block_count > 0 -%}
-    {%- for block in section.blocks -%}
-      {%- case block.type -%}
-        {%- when "section_title" -%}
-          {%- if block.settings.title != blank -%}
-            <h{{ block.settings.heading_tag }} class="section-title">{{ block.settings.title }}</h{{ block.settings.heading_tag }}>
-          {%- endif -%}
-        {%- when "section_content" -%}
-          {%- if block.settings.text_content != blank -%}
-            <div class="section-content">{{ block.settings.text_content }}</div>
-          {%- endif -%}
-        {%- when "section_buttons_group" -%}
-          {%- for block in section.blocks -%}
-            {%- case block.type -%}
-              {%- when "section_button" -%}   
-                {%- if block.settings.button_text != blank -%}
-                  {%- capture button_code -%}                      
-                    <a href="{{ block.settings.button_url }}" class="button btn btn-primary{% if block.settings.button_style == "alt" %} alt{% endif %}">{{ block.settings.button_text }}</a>
+  <div class="text-wrapper">
+    {%- if block_count > 0 -%}
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'section_title' -%}
+            {%- if block.settings.title != blank -%}
+              <h{{ block.settings.heading_tag }} class="section-title">
+                {{- block.settings.title -}}
+              </h{{ block.settings.heading_tag }}>
+            {%- endif -%}
+          {%- when 'section_content' -%}
+            {%- if block.settings.text_content != blank -%}
+              <div class="section-content">{{ block.settings.text_content }}</div>
+            {%- endif -%}
+          {%- when 'section_buttons_group' -%}
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'section_button' -%}
+                  {%- if block.settings.button_text != blank -%}
+                    {%- capture button_code -%}                      
+                    <a href="{{ block.settings.button_url }}" class="button{% if block.settings.button_style == "alt" %} alt{% endif %}">{{ block.settings.button_text }}</a>
                     {%- endcapture -%}
                     {%- assign buttons_code = buttons_code | append: button_code -%}
-                {%- endif -%}
-            {%- endcase -%}
-          {%- endfor -%}
-        {% capture buttons_group_css %}
+                  {%- endif -%}
+              {%- endcase -%}
+            {%- endfor -%}
+            {% capture buttons_group_css %}
           #section-{{ section.id }} .section-inner .text-wrapper .button-group {
             gap: 1.5rem;
             justify-content: center;
@@ -40,75 +42,75 @@
             }
           }
         {% endcapture %}
-        {% style %}
-        {{ buttons_group_css }}
-        {% endstyle %}
-        <div class="button-group">
-          {{ buttons_code }}
-        </div>
-        {%- when "section_icon_group" -%}
-          {%- for block in section.blocks -%}
-            {%- case block.type -%}
-              {%- when "section_icon_with_text" -%}
-                {%- capture icon_code -%}{% render "saalt-svg-icon", block: block %}{%- endcapture -%}
-                {%- assign all_icons = all_icons | append: icon_code -%}
-            {%- endcase -%}
-          {%- endfor -%}
-          {% style %}
-            #section-{{ section.id }} .icons-wrapper {
-              gap: {{ block.settings.mobile_icon_group_gap }};
-            }
-            #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
-              fill: {{ block.settings.icon_color }};
-            }
-            #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
-              color: {{ block.settings.icon_color }};
-              text-align: center;
-            }
-            #section-{{ section.id }} .icons-wrapper .icon-wrapper {
-              min-width: {{ block.settings.mobile_icon_min_width }};
-              max-width: {{ block.settings.mobile_icon_wrapper_max_width }};
-            }
-            #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
-              max-width: {{ block.settings.mobile_icon_max_width }};
-              min-height: {{ block.settings.mobile_icon_height }};
-              max-height: {{ block.settings.mobile_icon_height }};
-            }
-            #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
-              font-size: {{ block.settings.mobile_icon_text_size }};
-            }
-            @media screen and (min-width: 750px) {
+            {% style %}
+              {{ buttons_group_css }}
+            {% endstyle %}
+            <div class="button-group">
+              {{ buttons_code }}
+            </div>
+          {%- when 'section_icon_group' -%}
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'section_icon_with_text' -%}
+                  {%- capture icon_code -%}{% render "saalt-svg-icon", block: block %}{%- endcapture -%}
+                  {%- assign all_icons = all_icons | append: icon_code -%}
+              {%- endcase -%}
+            {%- endfor -%}
+            {% style %}
               #section-{{ section.id }} .icons-wrapper {
-                justify-content: {{ block.settings.desktop_icon_alignment }}!important;
-                gap: {{ block.settings.desktop_icon_group_gap }};
-                {%- if block.settings.use_max_icon_group_width -%}
-                max-width: {{ block.settings.icon_group_max_width }};
-                margin: 0 auto 3rem;
-                {%- endif -%}
+                gap: {{ block.settings.mobile_icon_group_gap }};
               }
-              #section-{{ section.id }} .icons-wrapper .icon-wrapper {
-                min-width: {{ block.settings.desktop_icon_min_width }};
-                max-width: {{ block.settings.desktop_icon_wrapper_max_width }};
-              }
-              #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
-                max-width: {{ block.settings.desktop_icon_max_width }};
-                min-height: {{ block.settings.desktop_icon_height }};
-                max-height: {{ block.settings.desktop_icon_height }};
+              #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
+                fill: {{ block.settings.icon_color }};
               }
               #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
-                font-size: {{ block.settings.desktop_icon_text_size }};
+                color: {{ block.settings.icon_color }};
+                text-align: center;
               }
-            }
-          {% endstyle %}
-          <ul class="icons-wrapper">
-            {{ all_icons }}
-          </ul>
-        {%- when "saalt_contact_links" -%}
-          {% render "saalt-contact-links", block: block %}
-        {%- when "custom_liquid_code" -%}
-          {{ block.settings.liquid_code }}
-      {%- endcase -%}
-    {%- endfor -%}
-  {%- endif -%}
-</div>
+              #section-{{ section.id }} .icons-wrapper .icon-wrapper {
+                min-width: {{ block.settings.mobile_icon_min_width }};
+                max-width: {{ block.settings.mobile_icon_wrapper_max_width }};
+              }
+              #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+                max-width: {{ block.settings.mobile_icon_max_width }};
+                min-height: {{ block.settings.mobile_icon_height }};
+                max-height: {{ block.settings.mobile_icon_height }};
+              }
+              #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
+                font-size: {{ block.settings.mobile_icon_text_size }};
+              }
+              @media screen and (min-width: 750px) {
+                #section-{{ section.id }} .icons-wrapper {
+                  justify-content: {{ block.settings.desktop_icon_alignment }}!important;
+                  gap: {{ block.settings.desktop_icon_group_gap }};
+                  {%- if block.settings.use_max_icon_group_width -%}
+                  max-width: {{ block.settings.icon_group_max_width }};
+                  margin: 0 auto 3rem;
+                  {%- endif -%}
+                }
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper {
+                  min-width: {{ block.settings.desktop_icon_min_width }};
+                  max-width: {{ block.settings.desktop_icon_wrapper_max_width }};
+                }
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+                  max-width: {{ block.settings.desktop_icon_max_width }};
+                  min-height: {{ block.settings.desktop_icon_height }};
+                  max-height: {{ block.settings.desktop_icon_height }};
+                }
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
+                  font-size: {{ block.settings.desktop_icon_text_size }};
+                }
+              }
+            {% endstyle %}
+            <ul class="icons-wrapper">
+              {{ all_icons }}
+            </ul>
+          {%- when 'saalt_contact_links' -%}
+            {% render 'saalt-contact-links', block: block %}
+          {%- when 'custom_liquid_code' -%}
+            {{ block.settings.liquid_code }}
+        {%- endcase -%}
+      {%- endfor -%}
+    {%- endif -%}
+  </div>
 {%- endunless -%}

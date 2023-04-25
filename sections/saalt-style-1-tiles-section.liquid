@@ -1,38 +1,38 @@
 {%- liquid
-  if section.settings.mobile_text_position == "below"
-    assign mobile_flex_direction = "column-reverse"
+  if section.settings.mobile_text_position == 'below'
+    assign mobile_flex_direction = 'column-reverse'
   else
-    assign mobile_flex_direction = "column"
+    assign mobile_flex_direction = 'column'
   endif
 -%}
 {%- case section.settings.title_font_size -%}
-  {%- when "x-large" -%}
+  {%- when 'x-large' -%}
     {%- capture title_css -%}
       font-size: 50px!important;
       font-weight: 600;
       line-height: 55px!important;
     {%- endcapture -%}
-  {%- when "large" -%}
+  {%- when 'large' -%}
     {%- capture title_css -%}
       font-size: 48px!important;
       font-weight: 600;
       line-height: 55px!important;
     {%- endcapture -%}
-  {%- when "medium" -%}
+  {%- when 'medium' -%}
     {%- capture title_css -%}
       font-size: 40px!important;
       font-weight: 600;
       line-height: 44px!important;
     {%- endcapture -%}
   {%- else -%}
-  {%- capture title_css -%}
+    {%- capture title_css -%}
     font-size: 30px!important;
     font-weight: 600;
     line-height: 34px!important;
   {%- endcapture -%}
 {%- endcase -%}
 {%- case section.settings.content_font_size -%}
-  {%- when "x-large" -%}
+  {%- when 'x-large' -%}
     {%- capture content_css -%}
       font-size: 30px!important;
       font-style: normal;
@@ -40,20 +40,20 @@
       line-height: 45px!important;
       letter-spacing: 0em;
     {%- endcapture -%}
-  {%- when "large" -%}
+  {%- when 'large' -%}
     {%- capture content_css -%}
       font-size: 25px!important;
       font-weight: 400!important;
       line-height: 41.25px!important;
     {%- endcapture -%}
-  {%- when "medium" -%}
+  {%- when 'medium' -%}
     {%- capture content_css -%}
       font-size: 18px!important;
       font-weight: 400!important;
       line-height: 27px!important;
     {%- endcapture -%}
   {%- else -%}
-  {%- capture content_css -%}
+    {%- capture content_css -%}
     font-size: 16px!important;
     font-weight: 400!important;
     line-height: 24px!important;
@@ -61,35 +61,42 @@
 {%- endcase -%}
 
 {%- assign block_count = section.blocks | size -%}
-{%- assign all_icons = "" -%}
-{%- assign tiles_code = "" -%}
+{%- assign all_icons = '' -%}
+{%- assign tiles_code = '' -%}
 <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="section-image-with-text">
-  <div {% if section.settings.section_id != blank %}id="{{ section.settings.section_id | handleize }}" {% endif %}class="section-inner">
+  <div
+    {% if section.settings.section_id != blank %}
+      id="{{ section.settings.section_id | handleize }}"
+    {% endif -%}
+    class="section-inner"
+  >
     <div class="text-wrapper">
       {%- if block_count > 0 -%}
         {%- for block in section.blocks -%}
           {% case block.type %}
-            {%- when "section_title" -%}
+            {%- when 'section_title' -%}
               {%- if block.settings.title != blank -%}
-                <h{{ block.settings.heading_tag }} class="section-title">{{ block.settings.title }}</h{{ block.settings.heading_tag }}>
+                <h{{ block.settings.heading_tag }} class="section-title">
+                  {{- block.settings.title -}}
+                </h{{ block.settings.heading_tag }}>
               {%- endif -%}
-            {%- when "section_content" -%}
+            {%- when 'section_content' -%}
               {%- if block.settings.text_content != blank -%}
                 <div class="section-content">{{ block.settings.text_content }}</div>
               {%- endif -%}
-            {%- when "section_buttons_group" -%}
+            {%- when 'section_buttons_group' -%}
               {%- for block in section.blocks -%}
                 {%- case block.type -%}
-                  {%- when "section_button" -%}   
+                  {%- when 'section_button' -%}
                     {%- if block.settings.button_text != blank -%}
                       {%- capture button_code -%}                      
-                        <a href="{{ block.settings.button_url }}" class="button btn btn-primary{% if block.settings.button_style == "alt" %} alt{% endif %}">{{ block.settings.button_text }}</a>
+                        <a href="{{ block.settings.button_url }}" class="button{% if block.settings.button_style == "alt" %} alt{% endif %}">{{ block.settings.button_text }}</a>
                         {%- endcapture -%}
-                        {%- assign buttons_code = buttons_code | append: button_code -%}
+                      {%- assign buttons_code = buttons_code | append: button_code -%}
                     {%- endif -%}
                 {%- endcase -%}
               {%- endfor -%}
-            {% capture buttons_group_css %}
+              {% capture buttons_group_css %}
               @media screen and (min-width: 750px) {
                 #section-{{ section.id }} .section-inner .text-wrapper .button-group {
                   gap: {{ block.settings.desktop_buttons_group_gap }};
@@ -100,21 +107,21 @@
                 }
               }
             {% endcapture %}
-            <div class="button-group">
-              {{ buttons_code }}
-            </div>
-            {%- when "section_tiles_group" -%}
+              <div class="button-group">
+                {{ buttons_code }}
+              </div>
+            {%- when 'section_tiles_group' -%}
               {%- for block in section.blocks -%}
                 {%- case block.type -%}
-                  {% when "saalt_style_1_tile" %}
+                  {% when 'saalt_style_1_tile' %}
                     {%- capture tile -%}{% render "saalt-style-1-tile", block: block %}{%- endcapture -%}
                     {%- assign tiles_code = tiles_code | append: tile -%}
                 {%- endcase -%}
               {%- endfor -%}
-            <div class="tiles-wrapper">
-              {{ tiles_code }}
-            </div>
-            {%- capture tiles_wrapper_css -%}
+              <div class="tiles-wrapper">
+                {{ tiles_code }}
+              </div>
+              {%- capture tiles_wrapper_css -%}
               #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper .tile-title, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper .tile-content {
                 color: {{ block.settings.mobile_text_color }}!important;
                 width: 100%;
@@ -159,65 +166,65 @@
                 }
               }
             {%- endcapture -%}
-            {%- when "section_icon_group" -%}
+            {%- when 'section_icon_group' -%}
               {%- for block in section.blocks -%}
                 {%- case block.type -%}
-                  {%- when "section_icon_with_text" -%}
+                  {%- when 'section_icon_with_text' -%}
                     {%- capture icon_code -%}{% render "saalt-svg-icon", block: block %}{%- endcapture -%}
                     {%- assign all_icons = all_icons | append: icon_code -%}
                 {%- endcase -%}
               {%- endfor -%}
               {% style %}
-              #section-{{ section.id }} .icons-wrapper {
-                justify-content: {{ block.settings.mobile_icon_alignment }}!important;
-                gap: {{ block.settings.mobile_icon_group_gap }};
-                {%- if block.settings.use_max_icon_group_width -%}
-                max-width: {{ block.settings.icon_group_max_width }};
-                margin: 0 auto 3rem;
-                {%- endif -%}
-              }
-              #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
-                fill: {{ block.settings.icon_color }};
-              }
-              #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
-                color: {{ block.settings.icon_color }};
-                text-align: center;
-              }
-              #section-{{ section.id }} .icons-wrapper .icon-wrapper {
-                min-width: {{ block.settings.mobile_icon_min_width }};
-                max-width: {{ block.settings.mobile_icon_wrapper_max_width }};
-              }
-              #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
-                max-width: {{ block.settings.mobile_icon_max_width }};
-                min-height: {{ block.settings.mobile_icon_height }};
-                max-height: {{ block.settings.mobile_icon_height }};
-              }
-              #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
-                font-size: {{ block.settings.mobile_icon_text_size }};
-              }
-              @media screen and (min-width: 750px) {
                 #section-{{ section.id }} .icons-wrapper {
-                  justify-content: {{ block.settings.desktop_icon_alignment }}!important;
-                  gap: {{ block.settings.desktop_icon_group_gap }};
+                  justify-content: {{ block.settings.mobile_icon_alignment }}!important;
+                  gap: {{ block.settings.mobile_icon_group_gap }};
                   {%- if block.settings.use_max_icon_group_width -%}
                   max-width: {{ block.settings.icon_group_max_width }};
                   margin: 0 auto 3rem;
                   {%- endif -%}
                 }
-                #section-{{ section.id }} .icons-wrapper .icon-wrapper {
-                  min-width: {{ block.settings.desktop_icon_min_width }};
-                  max-width: {{ block.settings.desktop_icon_wrapper_max_width }};
-                }
-                #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
-                  max-width: {{ block.settings.desktop_icon_max_width }};
-                  min-height: {{ block.settings.desktop_icon_height }};
-                  max-height: {{ block.settings.desktop_icon_height }};
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
+                  fill: {{ block.settings.icon_color }};
                 }
                 #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
-                  font-size: {{ block.settings.desktop_icon_text_size }};
+                  color: {{ block.settings.icon_color }};
+                  text-align: center;
                 }
-              }
-            {% endstyle %}
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper {
+                  min-width: {{ block.settings.mobile_icon_min_width }};
+                  max-width: {{ block.settings.mobile_icon_wrapper_max_width }};
+                }
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+                  max-width: {{ block.settings.mobile_icon_max_width }};
+                  min-height: {{ block.settings.mobile_icon_height }};
+                  max-height: {{ block.settings.mobile_icon_height }};
+                }
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
+                  font-size: {{ block.settings.mobile_icon_text_size }};
+                }
+                @media screen and (min-width: 750px) {
+                  #section-{{ section.id }} .icons-wrapper {
+                    justify-content: {{ block.settings.desktop_icon_alignment }}!important;
+                    gap: {{ block.settings.desktop_icon_group_gap }};
+                    {%- if block.settings.use_max_icon_group_width -%}
+                    max-width: {{ block.settings.icon_group_max_width }};
+                    margin: 0 auto 3rem;
+                    {%- endif -%}
+                  }
+                  #section-{{ section.id }} .icons-wrapper .icon-wrapper {
+                    min-width: {{ block.settings.desktop_icon_min_width }};
+                    max-width: {{ block.settings.desktop_icon_wrapper_max_width }};
+                  }
+                  #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+                    max-width: {{ block.settings.desktop_icon_max_width }};
+                    min-height: {{ block.settings.desktop_icon_height }};
+                    max-height: {{ block.settings.desktop_icon_height }};
+                  }
+                  #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
+                    font-size: {{ block.settings.desktop_icon_text_size }};
+                  }
+                }
+              {% endstyle %}
               <ul class="icons-wrapper">
                 {{ all_icons }}
               </ul>
@@ -252,11 +259,11 @@
                   text-align: center;
                 }
               {% endstyle %}
-            {%- when "saalt_contact_links" -%}
-              {% render "saalt-contact-links", block: block %}
-            {%- when "custom_liquid_code" -%}
+            {%- when 'saalt_contact_links' -%}
+              {% render 'saalt-contact-links', block: block %}
+            {%- when 'custom_liquid_code' -%}
               {{ block.settings.liquid_code }}
-          {% endcase %}     
+          {% endcase %}
         {%- endfor -%}
       {%- endif -%}
     </div>
