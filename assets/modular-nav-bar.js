@@ -23,32 +23,34 @@ class ModularNavBar extends HTMLElement {
 
   connectedCallback() {
     console.log(`HELLO WORLD! ${this.navId}`);
-    this.scrollNav();
+    this.addEventListeners();
   }
 
   disconnectedCallback() {
     console.log(`GOODBYE WORLD!`);
   }
 
-  handleNavLinkClick(e) {
-    e.preventDefault();
-    console.log(`${e}`);
+  addEventListeners() {
+    const thisNavsLinks = this.querySelectorAll('a');
+    for (const link of thisNavsLinks) {
+      link.addEventListener('click', this.navClick, false);
+    }
   }
 
-  scrollNav() {
-    //   $('a').click(function () {
-    //     $('a.active').removeClass('active');
-    //     $(this).addClass('active');
-    //     $('html, body')
-    //       .stop()
-    //       .animate(
-    //         {
-    //           scrollTop: $($(this).attr('href')).offset().top - 160,
-    //         },
-    //         1000
-    //       );
-    //     return false;
-    //   });
+  handleNavLinkClick(e) {
+    e.preventDefault();
+    this.querySelector('a.active').classList.remove('active');
+    e.target.classList.add('active');
+    this.scrollTo(document.getElementById(e.target.getAttribute('href').replace('#', '')));
+  }
+
+  scrollTo(element) {
+    const headerInfo = this.getHeaderInfo();
+    window.scroll({
+      behavior: 'smooth',
+      left: 0,
+      top: element.getBoundingClientRect().top + window.scrollY + headerInfo.totalHeaderHeight,
+    });
   }
 
   getHeaderInfo() {
@@ -61,6 +63,7 @@ class ModularNavBar extends HTMLElement {
     };
     return headerInfo;
   }
+
   nextSiblingYOffset(targetEl) {
     const nextSiblingOffset = {
       neighbor: targetEl.closest('.shopify-section').nextElementSibling,
@@ -70,6 +73,7 @@ class ModularNavBar extends HTMLElement {
     };
     return nextSiblingOffset;
   }
+
   isScrollingDown() {
     let goingDown = false;
     let scrollPosition = window.pageYOffset;
@@ -79,6 +83,7 @@ class ModularNavBar extends HTMLElement {
     this.previousScrollPosition = scrollPosition;
     return goingDown;
   }
+
   handleScroll() {
     const navBar = document.getElementById(this.navId);
     const navBarHeight = navBar.getBoundingClientRect().height;

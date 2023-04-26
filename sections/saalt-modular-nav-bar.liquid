@@ -1,53 +1,76 @@
 {%- assign nav_id = section.settings.section_id | handleize -%}
 
-<div id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="hero_learn_sec2_container_main">
-  <div {% if section.settings.section_id != blank %}id="{{ section.settings.section_id | handleize }}" {% endif %}class="section-inner hero_learn_sec2_container_inn">
-    <div class="bottom_banner_sec">
-      <ul>
-        {%- for block in section.blocks -%}  
-          {% if block.settings.nav_bar_link_text != blank %}
-            {%- liquid 
-              assign link_first_char = block.settings.nav_bar_link_dest | slice: 0
-              if link_first_char == "#"
-                assign current_link = block.settings.nav_bar_link_dest | handleize
-                assign current_link = "#" | append: current_link
-              else
-                assign current_link = block.settings.nav_bar_link_dest
-              endif
-            -%}
-            <li>
-              <a href="{{ current_link }}" {% if forloop.first %}class="active"{% endif %}>{{ block.settings.nav_bar_link_text }}</a>
-            </li>
-          {% endif %}
-        {%- endfor -%}
-      </ul>
-    </div>
-  </div>
+<script src="{{ 'modular-nav-bar.js' | asset_url }}" defer="defer"></script>
+
+<div id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="">
+  <modular-nav-bar
+    data-custom-val="{{ nav_id }}"
+    {% if section.settings.section_id != blank %}
+      id="{{ section.settings.section_id | handleize }}"
+    {% endif -%}
+    class="section-inner"
+  >
+    <ul>
+      {%- for block in section.blocks -%}
+        {% if block.settings.nav_bar_link_text != blank %}
+          {%- liquid
+            assign link_first_char = block.settings.nav_bar_link_dest | slice: 0
+            if link_first_char == '#'
+              assign current_link = block.settings.nav_bar_link_dest | handleize
+              assign current_link = '#' | append: current_link
+            else
+              assign current_link = block.settings.nav_bar_link_dest
+            endif
+          -%}
+          <li>
+            <a
+              href="{{ current_link }}"
+              {% if forloop.first %}
+                class="active"
+              {% endif %}
+            >
+              {{- block.settings.nav_bar_link_text -}}
+            </a>
+          </li>
+        {% endif %}
+      {%- endfor -%}
+    </ul>
+  </modular-nav-bar>
 </div>
 
 {%- style -%}
-  #section-{{ section.id }} .bottom_banner_sec {
+  #section-{{ section.id }} modular-nav-bar {
+    display: block;
     background: {{ section.settings.nav_bg_color }};
   }
-  #section-{{ section.id }} .bottom_banner_sec > ul {
+  #section-{{ section.id }} modular-nav-bar > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
     overflow-x: scroll;
     width: auto;
     column-gap: {{ section.settings.mobile_nav_link_gap }};
   }
-  #section-{{ section.id }} .bottom_banner_sec > ul > li {
+  #section-{{ section.id }} modular-nav-bar > ul > li {
     cursor: pointer;
   }
-  #section-{{ section.id }} .bottom_banner_sec > ul > li > a {
+  #section-{{ section.id }} modular-nav-bar > ul > li > a {
     color: {{ section.settings.nav_text_color }};
     width: 100%;
     padding: 0;
     white-space: nowrap;
+    font-size: 1.75rem;
+    font-weight: 600;
+    padding: 0 2rem;
+    text-decoration: none;
   }
-  #section-{{ section.id }} .bottom_banner_sec > ul > li > a.active, #section-{{ section.id }} .bottom_banner_sec > ul > li > a:hover, #section-{{ section.id }} .bottom_banner_sec > ul > li > a:focus {
+  #section-{{ section.id }} modular-nav-bar > ul > li > a.active, #section-{{ section.id }} modular-nav-bar > ul > li > a:hover, #section-{{ section.id }} modular-nav-bar > ul > li > a:focus {
     color: {{ section.settings.nav_text_hover_focus_color }};
   }
   @media screen and (min-width: 750px) {
-    #section-{{ section.id }} .bottom_banner_sec > ul {
+    #section-{{ section.id }} modular-nav-bar > ul {
       column-gap: {{ section.settings.desktop_nav_link_gap }};
     }
   }
@@ -55,222 +78,113 @@
   #{{ nav_id }}.sticky {
     position: fixed;
     width: 100%;
-    z-index: 3;
+    line-height: initial;
+    z-index: 10;
+  }
+  #{{ nav_id }}.sticky ul {
+    height: 0;
   }
   {%- endif -%}
 {%- endstyle -%}
 
 {% schema %}
-  {
-    "name": "Saalt Modular Nav Bar",
-    "class": "modular-nav-bar",
-    "settings": [
-      {
-        "type": "text",
-        "id": "section_id",
-        "label": "Section ID (Optional)",
-        "info": "Typically only used when setting this ID as a link's destination."
-      },
-      {
-        "type": "header",
-        "content": "Nav Bar Styling"
-      },
-      {
-        "type": "checkbox",
-        "id": "make_sticky",
-        "label": "Make sticky",
-        "info": "When enabled, this nav bar will become stuck to the header on scroll. See notes below!",
-        "default": false
-      },
-      {
-        "type":"paragraph",
-        "content": "❗️NOTE❗️: There should only be *1* sticky nav bar per page. If you set more than 1, only the 1st will be sticky. *THE SECTION ID ABOVE MUST BE FILLED IN FOR THIS FUNCTIONALITY TO WORK*. Additionally, the section ID MUST BE UNIQUE to the page."
-      },
-      {
-        "type": "color",
-        "id": "nav_bg_color",
-        "label": "Nav bar background color",
-        "default": "#F7D6C5"
-      },
-      {
-        "type": "color",
-        "id": "nav_text_color",
-        "label": "Nav bar text color",
-        "default": "#575E6E"
-      },
-      {
-        "type": "color",
-        "id": "nav_text_hover_focus_color",
-        "label": "Nav bar text *hover* and *focus* color",
-        "default": "#222C41"
-      },
-      {
-        "type": "text",
-        "id": "mobile_nav_link_gap",
-        "label": "Space between nav links on *MOBILE*",
-        "info": "Any valid css value is accepted",
-        "default": "3rem"
-      },
-      {
-        "type": "text",
-        "id": "desktop_nav_link_gap",
-        "label": "Space between nav links on *DESKTOP*",
-        "info": "Any valid css value is accepted",
-        "default": "7rem"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "nav_bar_link",
-        "name": "Nav Bar Link",
-        "settings": [
-          {
-            "type": "paragraph",
-            "content": "❗️NOTE❗️: When using an element ID for scrolling, you *MUST* add a '#' at the very beginning. You will also have to press enter/return after typing it in or the field will go blank."
-          },
-          {
-            "type": "text",
-            "id": "nav_bar_link_text",
-            "label": "Link Text",
-            "default": "New Link"
-          },
-          {
-            "type": "url",
-            "id": "nav_bar_link_dest",
-            "label": "Nav Bar Link Destination",
-            "info": "This can be selected from the dropdown *or* a typed in element ID starting with a '#'"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Saalt Modular Nav Bar",
-        "category": "custom saalt section",
-        "settings": {},
-        "blocks": [
-          {
-            "type": "nav_bar_link",
-            "settings": {
-              "nav_bar_link_text": "New Link",
-              "nav_bar_link_dest": "#"
-            }
-          }
-        ]
-      }
-    ]
-  }
-{% endschema %}
-
-<script>
-  $(document).ready(function() {
-    $('.custm_three_blk_data').slick({
-      responsive: [
+{
+  "name": "Saalt Modular Nav Bar",
+  "class": "modular-nav-bar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID (Optional)",
+      "info": "Typically only used when setting this ID as a link's destination."
+    },
+    {
+      "type": "header",
+      "content": "Nav Bar Styling"
+    },
+    {
+      "type": "checkbox",
+      "id": "make_sticky",
+      "label": "Make sticky",
+      "info": "When enabled, this nav bar will become stuck to the header on scroll. See notes below!",
+      "default": false
+    },
+    {
+      "type": "paragraph",
+      "content": "❗️NOTE❗️: There should only be *1* sticky nav bar per page. If you set more than 1, only the 1st will be sticky. *THE SECTION ID ABOVE MUST BE FILLED IN FOR THIS FUNCTIONALITY TO WORK*. Additionally, the section ID MUST BE UNIQUE to the page."
+    },
+    {
+      "type": "color",
+      "id": "nav_bg_color",
+      "label": "Nav bar background color",
+      "default": "#F7D6C5"
+    },
+    {
+      "type": "color",
+      "id": "nav_text_color",
+      "label": "Nav bar text color",
+      "default": "#575E6E"
+    },
+    {
+      "type": "color",
+      "id": "nav_text_hover_focus_color",
+      "label": "Nav bar text *hover* and *focus* color",
+      "default": "#222C41"
+    },
+    {
+      "type": "text",
+      "id": "mobile_nav_link_gap",
+      "label": "Space between nav links on *MOBILE*",
+      "info": "Any valid css value is accepted",
+      "default": "3rem"
+    },
+    {
+      "type": "text",
+      "id": "desktop_nav_link_gap",
+      "label": "Space between nav links on *DESKTOP*",
+      "info": "Any valid css value is accepted",
+      "default": "7rem"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "nav_bar_link",
+      "name": "Nav Bar Link",
+      "settings": [
         {
-          breakpoint: 9999,
-          settings: 'unslick'
-        }, {
-          breakpoint: 749,
-          settings: {
-            arrows: true,
-            dots: false,
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1
+          "type": "paragraph",
+          "content": "❗️NOTE❗️: When using an element ID for scrolling, you *MUST* add a '#' at the very beginning. You will also have to press enter/return after typing it in or the field will go blank."
+        },
+        {
+          "type": "text",
+          "id": "nav_bar_link_text",
+          "label": "Link Text",
+          "default": "New Link"
+        },
+        {
+          "type": "url",
+          "id": "nav_bar_link_dest",
+          "label": "Nav Bar Link Destination",
+          "info": "This can be selected from the dropdown *or* a typed in element ID starting with a '#'"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Saalt Modular Nav Bar",
+      "category": "custom saalt section",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "New Link",
+            "nav_bar_link_dest": "#"
           }
         }
       ]
-    });
-  });
-
-  function scrollNav() {
-    $('a').click(function() {
-      $('a.active').removeClass('active');
-      $(this).addClass('active');
-
-      $('html, body').stop().animate({
-        scrollTop: $($(this).attr('href')).offset().top - 160
-      }, 1000);
-      return false;
-    });
-  }
-  scrollNav();
-
-  $(function() {
-    $('.tabs').tabs();
-  });
-
-  {%- comment -%}
-  // Sticky nav bar //
-  {%- endcomment -%}
-
-  {%- if section.settings.make_sticky -%}
-  const saaltStickyModularNav = {
-    previousScrollPosition: 0,
-    getHeaderInfo: () => {
-      let mainNav = document.querySelector(".Header");
-      let announcementBar = document.querySelector(".AnnouncementBar");
-      let headerInfo = {
-        mainNavHeight: mainNav.getBoundingClientRect().height,
-        announcementBarHeight: announcementBar.getBoundingClientRect().height,
-        totalHeaderHeight: mainNav.getBoundingClientRect().height + announcementBar.getBoundingClientRect().height
-      };
-      return headerInfo;
-    },
-    nextSiblingYOffset: (targetEl) => {
-      const nextSiblingOffset = {
-        neighbor: targetEl.closest(".shopify-section").nextElementSibling,
-        offset: Math.ceil(targetEl.closest(".shopify-section").nextElementSibling.offsetTop - targetEl.getBoundingClientRect().height)
-      }
-      return nextSiblingOffset;
-    },
-    isScrollingDown: () => {
-      let goingDown = false;
-      let scrollPosition = window.pageYOffset;
-      if (scrollPosition > saaltStickyModularNav.previousScrollPosition) {
-        goingDown = true;
-      }
-      saaltStickyModularNav.previousScrollPosition = scrollPosition;
-      return goingDown;
-    },
-    handleScroll: () => {
-      const navBar = document.getElementById("{{ nav_id }}");
-      const navBarHeight = navBar.getBoundingClientRect().height;
-      const headerInfo = saaltStickyModularNav.getHeaderInfo();
-      const headerHeight = headerInfo.totalHeaderHeight;
-      const navBarUl = navBar.querySelector("ul");
-      const navBarUlStyle = navBarUl.currentStyle || window.getComputedStyle(navBarUl);
-      const topNavBarUlPadding = parseInt(navBarUlStyle.paddingTop);
-      const nextSiblingOffset = saaltStickyModularNav.nextSiblingYOffset(navBar);
-      const scrollLocation = Math.ceil(window.scrollY + headerHeight - navBarHeight);
-      const threshold = Math.ceil(navBar.offsetTop - navBarHeight + (topNavBarUlPadding * 2));
-      const scrollDownCondition = scrollLocation > threshold && !navBar.classList.contains("sticky");
-      const scrollUpCondition = scrollLocation < (nextSiblingOffset.offset - (navBarHeight / 2.25)) && navBar.classList.contains("sticky");
-  
-      if (saaltStickyModularNav.isScrollingDown()) {
-        if (scrollLocation > threshold) {
-          navBar.classList.add("sticky");
-          navBar.style.top = `${headerInfo.mainNavHeight}px`;
-          nextSiblingOffset.neighbor.style.marginTop = `${navBarHeight}px`;
-        }
-      } else {
-        if (scrollUpCondition) {
-          navBar.classList.remove("sticky");
-          navBar.removeAttribute("style");
-          nextSiblingOffset.neighbor.removeAttribute("style");
-        }
-      }
     }
-  }
-  
-  document.addEventListener("DOMContentLoaded", function(event) {
-    const throttleDelay = 50;
-    window.addEventListener("scroll", throttle(() => {
-      saaltStickyModularNav.handleScroll();
-    }, throttleDelay));
-    window.addEventListener("resize", throttle(() => {
-      saaltStickyModularNav.handleScroll();
-    }, throttleDelay));
-  });
-  {%- endif -%}
-</script>
+  ]
+}
+{% endschema %}
