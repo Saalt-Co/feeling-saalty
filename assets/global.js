@@ -1161,3 +1161,24 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+// START -- THROTTLER FUNCTION -- START //
+/**
+ *
+ * @param {function} func Name of the function to run on throttle
+ * @param {number} delay The amount of time between checks in milliseconds
+ * @returns null
+ */
+const throttle = (func, delay) => {
+  let time = Date.now();
+
+  return () => {
+    if (time + delay - Date.now() <= 0) {
+      // Run the function we've passed to our throttler,
+      // and reset the `time` variable (so we can check again).
+      func();
+      time = Date.now();
+    }
+  };
+};
+// END -- THROTTLER FUNCTION -- END //
