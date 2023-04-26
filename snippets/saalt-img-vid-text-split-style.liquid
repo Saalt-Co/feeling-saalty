@@ -24,7 +24,7 @@
                   {%- when 'section_button' -%}
                     {%- if block.settings.button_text != blank -%}
                       {%- capture button_code -%}                      
-                      <a href="{{ block.settings.button_url }}" class="button{% if block.settings.button_style == "alt" %} alt{% endif %}">{{ block.settings.button_text }}</a>
+                      <a href="{{ block.settings.button_url }}" class="button btn btn-primary{% if block.settings.button_style == "alt" %} alt{% endif %}">{{ block.settings.button_text }}</a>
                       {%- endcapture -%}
                       {%- assign buttons_code = buttons_code | append: button_code -%}
                     {%- endif -%}
@@ -55,35 +55,37 @@
               {%- for block in section.blocks -%}
                 {%- case block.type -%}
                   {%- when 'section_icon_with_text' -%}
-                    {%- capture icon_code -%}{% render "saalt-svg-icon", block: block %}{%- endcapture -%}
-                    {%- assign all_icons = all_icons | append: icon_code -%}
+                    {%- if block.settings.text_group_num == text_group_num -%}
+                      {%- capture icon_code -%}{% render "saalt-svg-icon", block: block %}{%- endcapture -%}
+                      {%- assign all_icons = all_icons | append: icon_code -%}
+                    {%- endif -%}
                 {%- endcase -%}
               {%- endfor -%}
               {% style %}
-                #section-{{ section.id }} .icons-wrapper {
+                #section-{{ section.id }} #{{ block.id }}.icons-wrapper {
                   gap: {{ block.settings.mobile_icon_group_gap }};
                 }
-                #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
+                #section-{{ section.id }} #{{ block.id }}.icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
                   fill: {{ block.settings.icon_color }};
                 }
-                #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
+                #section-{{ section.id }} #{{ block.id }}.icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} #{{ block.id }}.icons-wrapper .icon-wrapper .icon-text > * {
                   color: {{ block.settings.icon_color }};
                   text-align: center;
                 }
-                #section-{{ section.id }} .icons-wrapper .icon-wrapper {
+                #section-{{ section.id }} #{{ block.id }}.icons-wrapper .icon-wrapper {
                   min-width: {{ block.settings.mobile_icon_min_width }};
                   max-width: {{ block.settings.mobile_icon_wrapper_max_width }};
                 }
-                #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+                #section-{{ section.id }} #{{ block.id }}.icons-wrapper .icon-wrapper .icon-svg-wrapper {
                   max-width: {{ block.settings.mobile_icon_max_width }};
                   min-height: {{ block.settings.mobile_icon_height }};
                   max-height: {{ block.settings.mobile_icon_height }};
                 }
-                #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
+                #section-{{ section.id }} #{{ block.id }}.icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} #{{ block.id }}.icons-wrapper .icon-wrapper .icon-text > * {
                   font-size: {{ block.settings.mobile_icon_text_size }};
                 }
                 @media screen and (min-width: 750px) {
-                  #section-{{ section.id }} .icons-wrapper {
+                  #section-{{ section.id }} #{{ block.id }}.icons-wrapper {
                     justify-content: {{ block.settings.desktop_icon_alignment }}!important;
                     gap: {{ block.settings.desktop_icon_group_gap }};
                     {%- if block.settings.use_max_icon_group_width -%}
@@ -91,21 +93,21 @@
                     margin: 0 auto 3rem;
                     {%- endif -%}
                   }
-                  #section-{{ section.id }} .icons-wrapper .icon-wrapper {
+                  #section-{{ section.id }} #{{ block.id }}.icons-wrapper .icon-wrapper {
                     min-width: {{ block.settings.desktop_icon_min_width }};
                     max-width: {{ block.settings.desktop_icon_wrapper_max_width }};
                   }
-                  #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+                  #section-{{ section.id }} #{{ block.id }}.icons-wrapper .icon-wrapper .icon-svg-wrapper {
                     max-width: {{ block.settings.desktop_icon_max_width }};
                     min-height: {{ block.settings.desktop_icon_height }};
                     max-height: {{ block.settings.desktop_icon_height }};
                   }
-                  #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
+                  #section-{{ section.id }} #{{ block.id }}.icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} #{{ block.id }}.icons-wrapper .icon-wrapper .icon-text > * {
                     font-size: {{ block.settings.desktop_icon_text_size }};
                   }
                 }
               {% endstyle %}
-              <ul class="icons-wrapper">
+              <ul class="icons-wrapper" id="{{ block.id }}">
                 {{ all_icons }}
               </ul>
             {%- when 'saalt_contact_links' -%}
