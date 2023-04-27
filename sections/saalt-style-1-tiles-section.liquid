@@ -8,55 +8,55 @@
 {%- case section.settings.title_font_size -%}
   {%- when 'x-large' -%}
     {%- capture title_css -%}
-      font-size: 50px!important;
+      font-size: 50px;
       font-weight: 600;
-      line-height: 55px!important;
+      line-height: 55px;
     {%- endcapture -%}
   {%- when 'large' -%}
     {%- capture title_css -%}
-      font-size: 48px!important;
+      font-size: 48px;
       font-weight: 600;
-      line-height: 55px!important;
+      line-height: 55px;
     {%- endcapture -%}
   {%- when 'medium' -%}
     {%- capture title_css -%}
-      font-size: 40px!important;
+      font-size: 40px;
       font-weight: 600;
-      line-height: 44px!important;
+      line-height: 44px;
     {%- endcapture -%}
   {%- else -%}
     {%- capture title_css -%}
-    font-size: 30px!important;
+    font-size: 30px;
     font-weight: 600;
-    line-height: 34px!important;
+    line-height: 34px;
   {%- endcapture -%}
 {%- endcase -%}
 {%- case section.settings.content_font_size -%}
   {%- when 'x-large' -%}
     {%- capture content_css -%}
-      font-size: 30px!important;
+      font-size: 30px;
       font-style: normal;
-      font-weight: 400!important;
-      line-height: 45px!important;
+      font-weight: 400;
+      line-height: 45px;
       letter-spacing: 0em;
     {%- endcapture -%}
   {%- when 'large' -%}
     {%- capture content_css -%}
-      font-size: 25px!important;
-      font-weight: 400!important;
-      line-height: 41.25px!important;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 41.25px;
     {%- endcapture -%}
   {%- when 'medium' -%}
     {%- capture content_css -%}
-      font-size: 18px!important;
-      font-weight: 400!important;
-      line-height: 27px!important;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
     {%- endcapture -%}
   {%- else -%}
     {%- capture content_css -%}
-    font-size: 16px!important;
-    font-weight: 400!important;
-    line-height: 24px!important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
   {%- endcapture -%}
 {%- endcase -%}
 
@@ -123,7 +123,7 @@
               </div>
               {%- capture tiles_wrapper_css -%}
               #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper .tile-title, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper .tile-content {
-                color: {{ block.settings.mobile_text_color }}!important;
+                color: {{ block.settings.mobile_text_color }};
                 width: 100%;
                 text-align: {{ block.settings.tile_mobile_text_alignment }};
               }
@@ -144,7 +144,7 @@
                   transition: opacity ease-in-out .1s;
                 }
                 #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper .tile-title, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper .tile-content {
-                  color: {{ block.settings.desktop_text_color }}!important;
+                  color: {{ block.settings.desktop_text_color }};
                 }
                 #section-{{ section.id }} .section-inner .tiles-wrapper .tile .tile-link:hover + .tile-text-wrapper, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .tile-link:focus + .tile-text-wrapper {
                   top: 0;
@@ -155,8 +155,8 @@
                   text-align: {{ block.settings.tile_desktop_text_alignment }};
                 }
                 #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-link:hover + .tile-text-wrapper > .tile-title, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-link:focus + .tile-text-wrapper > .tile-title, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-link:hover + .tile-text-wrapper > .tile-content, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-link:focus + .tile-text-wrapper > .tile-content {
-                  color: {{ block.settings.desktop_text_hover_focus_color }}!important;
-                  align-content: {{ block.settings.desktop_text_hover_placement }}!important;
+                  color: {{ block.settings.desktop_text_hover_focus_color }};
+                  align-content: {{ block.settings.desktop_text_hover_placement }};
                   text-align: {{ block.settings.tile_desktop_text_alignment_hover_focus }};
                 }
               }
@@ -176,7 +176,7 @@
               {%- endfor -%}
               {% style %}
                 #section-{{ section.id }} .icons-wrapper {
-                  justify-content: {{ block.settings.mobile_icon_alignment }}!important;
+                  justify-content: {{ block.settings.mobile_icon_alignment }};
                   gap: {{ block.settings.mobile_icon_group_gap }};
                   {%- if block.settings.use_max_icon_group_width -%}
                   max-width: {{ block.settings.icon_group_max_width }};
@@ -204,7 +204,7 @@
                 }
                 @media screen and (min-width: 750px) {
                   #section-{{ section.id }} .icons-wrapper {
-                    justify-content: {{ block.settings.desktop_icon_alignment }}!important;
+                    justify-content: {{ block.settings.desktop_icon_alignment }};
                     gap: {{ block.settings.desktop_icon_group_gap }};
                     {%- if block.settings.use_max_icon_group_width -%}
                     max-width: {{ block.settings.icon_group_max_width }};
@@ -234,7 +234,7 @@
                 }
                 @media screen and (min-width: 750px) {
                   #section-{{ section.id }} .icons-wrapper {
-                    justify-content: {{ block.settings.desktop_icon_alignment }}!important;
+                    justify-content: {{ block.settings.desktop_icon_alignment }};
                     {%- if block.settings.use_max_icon_group_width -%}
                     max-width: {{ block.settings.icon_group_max_width }};
                     margin: 0 auto 3rem;
@@ -289,7 +289,7 @@
     margin-bottom: 3rem;
   }
   #section-{{ section.id }} .text-wrapper .section-title, #section-{{ section.id }} .text-wrapper .section-content, #section-{{ section.id }} .text-wrapper .section-content > p {
-    color: {{ section.settings.section_text_color }}!important;
+    color: {{ section.settings.section_text_color }};
     width: 100%;
   }
   #section-{{ section.id }} .text-wrapper .section-title {
@@ -454,7 +454,7 @@
   #section-{{ section.id }} .section-inner .text-wrapper *:last-child {
     margin-bottom: 0;
   }
-  #section-{{ section.id }} .section-inner .tiles-wrapper .tile .button-wrapper {
+  /* #section-{{ section.id }} .section-inner .tiles-wrapper .tile .button-wrapper {
     margin-bottom: 2rem;
   }
   #section-{{ section.id }} .section-inner .tiles-wrapper .tile .button-wrapper .button:hover, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .button-wrapper .button:focus {
@@ -465,7 +465,7 @@
     background: {{ section.settings.button_color_hover_focus }};
     border-color: {{ section.settings.button_color_hover_focus }};
     color: {{ section.settings.button_text_hover_focus }};
-  }
+  } */
   @media screen and (min-width: 420px) {
     #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
       flex-direction: row;
@@ -495,7 +495,7 @@
     #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
       height: auto;
     }
-    #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
+    /* #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
       text-align: {{ section.settings.desktop_text_alignment }};
     }
     #section-{{ section.id }} .section-inner .text-wrapper .button-group {
@@ -503,7 +503,7 @@
     }
     #section-{{ section.id }} .section-inner .text-wrapper .button-group .button, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt {
       width: auto;
-    }
+    } */
     {%- if section.settings.use_max_text_width -%}
     #section-{{ section.id }} .text-wrapper > *:not(.icons-wrapper) {
       max-width: {{ section.settings.max_width }};
@@ -530,7 +530,7 @@
       opacity: 0;
     }
     #section-{{ section.id }} .tile-link:hover + .tile-text-wrapper > .tile-title, #section-{{ section.id }} .tile-link:focus + .tile-text-wrapper > .tile-title {
-      font-size: 1.75rem!important;
+      font-size: 1.75rem;
       line-height: 1.5;
       margin-bottom: 1.75rem;
     }
@@ -554,6 +554,7 @@
   {%- endif -%}
   {{ buttons_group_css }}
   {{ tiles_wrapper_css }}
+  {% render 'saalt-custom-section-button-css', section: section %}
 {%- endstyle -%}
 
 {% schema %}
