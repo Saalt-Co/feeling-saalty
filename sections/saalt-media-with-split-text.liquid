@@ -14,55 +14,55 @@
 {%- case section.settings.title_font_size -%}
   {%- when 'x-large' -%}
     {%- capture title_css -%}
-      font-size: 50px!important;
+      font-size: 50px;
       font-weight: 600;
-      line-height: 55px!important;
+      line-height: 55px;
     {%- endcapture -%}
   {%- when 'large' -%}
     {%- capture title_css -%}
-      font-size: 48px!important;
+      font-size: 48px;
       font-weight: 600;
-      line-height: 55px!important;
+      line-height: 55px;
     {%- endcapture -%}
   {%- when 'medium' -%}
     {%- capture title_css -%}
-      font-size: 40px!important;
+      font-size: 40px;
       font-weight: 600;
-      line-height: 44px!important;
+      line-height: 44px;
     {%- endcapture -%}
   {%- else -%}
     {%- capture title_css -%}
-    font-size: 30px!important;
+    font-size: 30px;
     font-weight: 600;
-    line-height: 34px!important;
+    line-height: 34px;
   {%- endcapture -%}
 {%- endcase -%}
 {%- case section.settings.content_font_size -%}
   {%- when 'x-large' -%}
     {%- capture content_css -%}
-      font-size: 30px!important;
+      font-size: 30px;
       font-style: normal;
-      font-weight: 400!important;
-      line-height: 45px!important;
+      font-weight: 400;
+      line-height: 45px;
       letter-spacing: 0em;
     {%- endcapture -%}
   {%- when 'large' -%}
     {%- capture content_css -%}
-      font-size: 25px!important;
-      font-weight: 400!important;
-      line-height: 41.25px!important;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 41.25px;
     {%- endcapture -%}
   {%- when 'medium' -%}
     {%- capture content_css -%}
-      font-size: 18px!important;
-      font-weight: 400!important;
-      line-height: 27px!important;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
     {%- endcapture -%}
   {%- else -%}
     {%- capture content_css -%}
-    font-size: 16px!important;
-    font-weight: 400!important;
-    line-height: 24px!important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
   {%- endcapture -%}
 {%- endcase -%}
 <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="section-image-with-text">
@@ -131,7 +131,7 @@
     margin-bottom: 3rem;
   }
   #section-{{ section.id }} .text-wrapper .section-title, #section-{{ section.id }} .text-wrapper .section-content, #section-{{ section.id }} .text-wrapper .section-content > p {
-    color: {{ section.settings.text_color }}!important;
+    color: {{ section.settings.text_color }};
     width: 100%;
   }
   #section-{{ section.id }} .text-wrapper .section-title {

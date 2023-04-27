@@ -86,7 +86,7 @@
                 }
                 @media screen and (min-width: 750px) {
                   #section-{{ section.id }} #{{ block.id }}.icons-wrapper {
-                    justify-content: {{ block.settings.desktop_icon_alignment }}!important;
+                    justify-content: {{ block.settings.desktop_icon_alignment }};
                     gap: {{ block.settings.desktop_icon_group_gap }};
                     {%- if block.settings.use_max_icon_group_width -%}
                     max-width: {{ block.settings.icon_group_max_width }};
