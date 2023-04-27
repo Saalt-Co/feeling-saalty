@@ -454,18 +454,6 @@
   #section-{{ section.id }} .section-inner .text-wrapper *:last-child {
     margin-bottom: 0;
   }
-  /* #section-{{ section.id }} .section-inner .tiles-wrapper .tile .button-wrapper {
-    margin-bottom: 2rem;
-  }
-  #section-{{ section.id }} .section-inner .tiles-wrapper .tile .button-wrapper .button:hover, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .button-wrapper .button:focus {
-    background: {{ section.settings.button_color_hover_focus }};
-    color: {{ section.settings.button_text_hover_focus }};
-  }
-  #section-{{ section.id }} .section-inner .tiles-wrapper .tile .button-wrapper .button.alt:hover, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .button-wrapper .button.alt:focus {
-    background: {{ section.settings.button_color_hover_focus }};
-    border-color: {{ section.settings.button_color_hover_focus }};
-    color: {{ section.settings.button_text_hover_focus }};
-  } */
   @media screen and (min-width: 420px) {
     #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
       flex-direction: row;
@@ -495,15 +483,6 @@
     #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
       height: auto;
     }
-    /* #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
-      text-align: {{ section.settings.desktop_text_alignment }};
-    }
-    #section-{{ section.id }} .section-inner .text-wrapper .button-group {
-      flex-direction: row;
-    }
-    #section-{{ section.id }} .section-inner .text-wrapper .button-group .button, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt {
-      width: auto;
-    } */
     {%- if section.settings.use_max_text_width -%}
     #section-{{ section.id }} .text-wrapper > *:not(.icons-wrapper) {
       max-width: {{ section.settings.max_width }};
