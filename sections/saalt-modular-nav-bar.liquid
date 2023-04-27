@@ -108,18 +108,24 @@
     }
 
     connectedCallback() {
-      console.log(`HELLO WORLD! ${this.navId}`);
       this.addEventListeners();
     }
 
     disconnectedCallback() {
-      console.log(`GOODBYE WORLD!`);
+      this.removeEventListeners();
     }
 
     addEventListeners() {
       const thisNavsLinks = this.querySelectorAll('a');
       for (const link of thisNavsLinks) {
         link.addEventListener('click', this.navClick, false);
+      }
+    }
+
+    removeEventListeners() {
+      const thisNavsLinks = this.querySelectorAll('a');
+      for (const link of thisNavsLinks) {
+        link.removeEventListener('click', this.navClick, false);
       }
     }
 
