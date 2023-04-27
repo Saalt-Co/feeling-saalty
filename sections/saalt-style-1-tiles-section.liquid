@@ -424,7 +424,7 @@
     transition: opacity ease-in-out .1s;
     overflow: hidden;
   }
-  #section-{{ section.id }} .content-wrapper .tile-link .image-wrapper, #section-{{ section.id }} .content-wrapper .tile-link .image-wrapper > img {
+  #section-{{ section.id }} .content-wrapper .tile-link .image-wrapper, #section-{{ section.id }} .content-wrapper .tile-link .image-wrapper > * {
     display: block;
     width: auto;
     max-width: unset;
@@ -1261,7 +1261,30 @@
   "presets": [
     {
       "name": "Saalt Style 1 Tiles",
-      "category": "custom saalt section"
+      "category": "custom saalt section",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "section_tiles_group",
+          "settings": {}
+        },
+        {
+          "type": "saalt_style_1_tile",
+          "settings": {}
+        },
+        {
+          "type": "saalt_style_1_tile",
+          "settings": {}
+        },
+        {
+          "type": "saalt_style_1_tile",
+          "settings": {}
+        },
+        {
+          "type": "saalt_style_1_tile",
+          "settings": {}
+        }
+      ]
     }
   ]
 }
