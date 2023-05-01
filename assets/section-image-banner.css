@@ -147,6 +147,7 @@
   left: 0;
   top: 0;
   width: 100%;
+  z-index: 0;
 }
 
 .banner__media-half {
@@ -306,6 +307,8 @@
 .banner__box {
   padding: 4rem 3.5rem;
   position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   align-items: center;
   text-align: center;

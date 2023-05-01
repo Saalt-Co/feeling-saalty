@@ -8,7 +8,14 @@ document.addEventListener('shopify:block:select', function (event) {
   const blockSelectedIsSlide = event.target.classList.contains('slideshow__slide');
   if (!blockSelectedIsSlide) return;
 
-  const parentSlideshowComponent = event.target.closest('slideshow-component');
+  let targetParent = null;
+
+  event.target.closest('slideshow-component')
+    ? (targetParent = event.target.closest('slideshow-component'))
+    : event.target.closest('testimonial-component')
+    ? (targetParent = event.target.closest('testimonial-component'))
+    : null;
+  const parentSlideshowComponent = targetParent;
   parentSlideshowComponent.pause();
 
   setTimeout(function () {
@@ -21,7 +28,16 @@ document.addEventListener('shopify:block:select', function (event) {
 document.addEventListener('shopify:block:deselect', function (event) {
   const blockDeselectedIsSlide = event.target.classList.contains('slideshow__slide');
   if (!blockDeselectedIsSlide) return;
-  const parentSlideshowComponent = event.target.closest('slideshow-component');
+
+  let targetParent = null;
+
+  event.target.closest('slideshow-component')
+    ? (targetParent = event.target.closest('slideshow-component'))
+    : event.target.closest('testimonial-component')
+    ? (targetParent = event.target.closest('testimonial-component'))
+    : null;
+  const parentSlideshowComponent = targetParent;
+
   if (parentSlideshowComponent.autoplayButtonIsSetToPlay) parentSlideshowComponent.play();
 });
 

@@ -867,6 +867,33 @@ class SlideshowComponent extends SliderComponent {
 
 customElements.define('slideshow-component', SlideshowComponent);
 
+class TestimonialComponent extends SlideshowComponent {
+  constructor() {
+    super();
+    this.sliderControlWrapper = this.querySelector('.slider-buttons');
+    this.enableSliderLooping = true;
+
+    if (!this.sliderControlWrapper) return;
+
+    this.sliderFirstItemNode = this.slider.querySelector('.slideshow__slide');
+    if (this.sliderItemsToShow.length > 0) this.currentPage = 1;
+
+    this.sliderControlLinksArray = Array.from(this.sliderControlWrapper.querySelectorAll('.slider-counter__link'));
+    this.sliderControlLinksArray.forEach((link) => link.addEventListener('click', super.linkToSlide.bind(this)));
+    this.slider.addEventListener('scroll', super.setSlideVisibility.bind(this));
+    super.setSlideVisibility();
+
+    this.reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    this.reducedMotion.addEventListener('change', () => {
+      if (this.slider.getAttribute('data-autoplay') === 'true') super.setAutoPlay();
+    });
+
+    if (this.slider.getAttribute('data-autoplay') === 'true') super.setAutoPlay();
+  }
+}
+
+customElements.define('testimonial-component', TestimonialComponent);
+
 class VariantSelects extends HTMLElement {
   constructor() {
     super();
