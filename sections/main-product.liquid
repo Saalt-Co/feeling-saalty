@@ -88,6 +88,23 @@
                   </h2>
                 </a>
               </div>
+            {%- when 'absorbency' -%}
+              {% for option in product.options_with_values %}
+                {%- if option.name == 'Absorbency' -%}
+                  {%- assign absorbency_opt_index = forloop.index0 -%}
+                  {%- assign absorbency_val = product.selected_variant.options[absorbency_opt_index] -%}
+                  {%- assign drops_count = shop.metaobjects.absorbency[absorbency_val].number_of_drops -%}
+                  <div class="absorbency-wrapper">
+                    <span class='absorbency-rating'><span class='absorbency-name'>{{ absorbency_val }}</span> Absorbency</span>
+                    <div class="absorbency-icons-wrapper">
+                      {%- for i in (1..5) -%}
+                        <div class='svg-absorbency-drop-wrapper{% if i > drops_count %} empty{% endif %}'>{% render 'svg-absorbency-drop' %}</div>
+                      {%- endfor -%}
+                    </div>
+                    <span class='absorbency-replacements'>Replaces <span class='absorbency-replaces-pads'>{{ shop.metaobjects.absorbency[absorbency_val].pads_replaced }}</span> pads or <span class='absorbency-replaces-tampons'>{{ shop.metaobjects.absorbency[absorbency_val].tampons_replaced }} tampons</span></span>
+                  </div>
+                {%- endif -%}
+              {% endfor %}              
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
@@ -613,6 +630,11 @@
     {
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
+      "limit": 1
+    },
+    {
+      "type": "absorbency",
+      "name": "t:sections.main-product.blocks.absorbency.name",
       "limit": 1
     },
     {
