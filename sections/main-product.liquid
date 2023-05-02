@@ -101,7 +101,7 @@
                         <div class='svg-absorbency-drop-wrapper{% if i > drops_count %} empty{% endif %}'>{% render 'svg-absorbency-drop' %}</div>
                       {%- endfor -%}
                     </div>
-                    <span class='absorbency-replacements'>Replaces <span class='absorbency-replaces-pads'>{{ shop.metaobjects.absorbency[absorbency_val].pads_replaced }}</span> pads or <span class='absorbency-replaces-tampons'>{{ shop.metaobjects.absorbency[absorbency_val].tampons_replaced }} tampons</span></span>
+                    <span class='absorbency-replacements'>Replaces <span class='absorbency-replaces-pads'>{{ shop.metaobjects.absorbency[absorbency_val].pads_replaced }}</span> or <span class='absorbency-replaces-tampons'>{{ shop.metaobjects.absorbency[absorbency_val].tampons_replaced }}</span></span>
                   </div>
                 {%- endif -%}
               {% endfor %}              
