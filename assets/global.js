@@ -891,6 +891,7 @@ class VariantSelects extends HTMLElement {
       this.renderProductInfo();
       this.updateShareUrl();
       this.updateColorVariantName();
+      this.updateAbsorbencyInfo();
     }
   }
 
@@ -965,6 +966,29 @@ class VariantSelects extends HTMLElement {
     const colorName = document.querySelector('.product-form__selected-color-name');
     if (colorName) {
       colorName.textContent = this.querySelector('input[type="radio"][name="Color"]:checked').value;
+    }
+  }
+
+  updateAbsorbencyInfo() {
+    const selectedValue = this.querySelector('input[type="radio"][name="Absorbency"]:checked').value;
+    const absorbencyName = document.querySelector('.absorbency-name');
+    if (absorbencyName && absorbencyName.textContent == selectedValue) return;
+
+    const padsReplacement = document.querySelector('.absorbency-replaces-pads');
+    const tamponsReplacement = document.querySelector('.absorbency-replaces-tampons');
+    absorbencyName.textContent = selectedValue;
+    this.absorbencyData = this.getAbsorbencyData(selectedValue);
+    padsReplacement.textContent = this.selectedAbsorbency.pads_replaced;
+    tamponsReplacement.textContent = this.selectedAbsorbency.tampons_replaced;
+
+    const absorbencyDrops = document
+      .querySelector('.absorbency-wrapper')
+      .querySelectorAll('.svg-absorbency-drop-wrapper');
+    for (const [i, drop] of absorbencyDrops.entries()) {
+      drop.classList.remove('empty');
+      if (i + 1 > this.selectedAbsorbency.number_of_drops) {
+        drop.classList.add('empty');
+      }
     }
   }
 
@@ -1092,6 +1116,14 @@ class VariantSelects extends HTMLElement {
   getVariantData() {
     this.variantData = this.variantData || JSON.parse(this.querySelector('[type="application/json"]').textContent);
     return this.variantData;
+  }
+
+  getAbsorbencyData(selectedValue) {
+    this.absorbencyData = this.absorbencyData || JSON.parse(document.querySelector('[id*="AbsorbencyJSON"]').innerHTML);
+    this.selectedAbsorbency = this.absorbencyData.filter((obj) => {
+      return obj.absorbency_name == selectedValue;
+    })[0];
+    return this.absorbencyData;
   }
 }
 
