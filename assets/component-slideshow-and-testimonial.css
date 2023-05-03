@@ -211,3 +211,35 @@ testimonial-component:not(.page-width) .slider-buttons {
   opacity: 0;
   transform: scale(0.8);
 }
+
+/* Testimonials-Specific */
+
+.testimonial-svg-wrapper {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 10%;
+}
+
+.testimonial-svg-wrapper svg {
+  display: block;
+  width: 100%;
+  max-width: 1.5rem;
+  height: auto;
+  z-index: 10;
+}
+
+.testimonial__author {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .testimonial-svg-wrapper {
+    top: 25%;
+  }
+  .testimonial-svg-wrapper svg {
+    max-width: 4.75rem;
+  }
+}
