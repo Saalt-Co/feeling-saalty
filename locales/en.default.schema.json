@@ -1951,6 +1951,9 @@
         "title": {
           "name": "Title"
         },
+        "absorbency": {
+          "name": "Absorbency"
+        },
         "price": {
           "name": "Price"
         },

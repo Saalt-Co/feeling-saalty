@@ -1,0 +1,29 @@
+{% for option in product.options_with_values %}
+  {%- if option.name == 'Absorbency' -%}
+    {%- assign absorbency_opt_index = forloop.index0 -%}
+    {%- assign absorbency_val = option.selected_value -%}
+    {%- assign drops_count = shop.metaobjects.absorbency[absorbency_val].number_of_drops -%}
+    <div class="absorbency-wrapper">
+      <span class="absorbency-rating"
+        ><span class="absorbency-name">{{ absorbency_val }}</span> Absorbency</span
+      >
+      <div class="absorbency-icons-wrapper">
+        {%- for i in (1..5) -%}
+          <div class="svg-absorbency-drop-wrapper{% if i > drops_count %} empty{% endif %}">
+            {% render 'svg-absorbency-drop' %}
+          </div>
+        {%- endfor -%}
+      </div>
+      <span class="absorbency-replacements"
+        >Replaces
+        <span class="absorbency-replaces-pads">{{ shop.metaobjects.absorbency[absorbency_val].pads_replaced }}</span> or
+        <span class="absorbency-replaces-tampons">
+          {{- shop.metaobjects.absorbency[absorbency_val].tampons_replaced -}}
+        </span></span
+      >
+    </div>
+  {%- endif -%}
+{% endfor %}
+<script type="application/json" id="AbsorbencyJSON">
+  {{- shop.metaobjects.absorbency.values | json -}}
+</script>
