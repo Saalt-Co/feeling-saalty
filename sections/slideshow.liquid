@@ -1,6 +1,6 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
-{{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
+{{ 'component-slideshow-and-testimonial.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
@@ -142,11 +142,7 @@
             {{
               block.settings.image
               | image_url: width: 3840
-              | image_tag:
-                loading: 'lazy',
-                height: height,
-                sizes: sizes,
-                widths: widths
+              | image_tag: loading: 'lazy', height: height, sizes: sizes, widths: widths
             }}
           {%- else -%}
             {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}

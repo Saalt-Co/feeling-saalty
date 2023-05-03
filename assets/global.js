@@ -867,6 +867,33 @@ class SlideshowComponent extends SliderComponent {
 
 customElements.define('slideshow-component', SlideshowComponent);
 
+class TestimonialComponent extends SlideshowComponent {
+  constructor() {
+    super();
+    this.sliderControlWrapper = this.querySelector('.slider-buttons');
+    this.enableSliderLooping = true;
+
+    if (!this.sliderControlWrapper) return;
+
+    this.sliderFirstItemNode = this.slider.querySelector('.slideshow__slide');
+    if (this.sliderItemsToShow.length > 0) this.currentPage = 1;
+
+    this.sliderControlLinksArray = Array.from(this.sliderControlWrapper.querySelectorAll('.slider-counter__link'));
+    this.sliderControlLinksArray.forEach((link) => link.addEventListener('click', super.linkToSlide.bind(this)));
+    this.slider.addEventListener('scroll', super.setSlideVisibility.bind(this));
+    super.setSlideVisibility();
+
+    this.reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    this.reducedMotion.addEventListener('change', () => {
+      if (this.slider.getAttribute('data-autoplay') === 'true') super.setAutoPlay();
+    });
+
+    if (this.slider.getAttribute('data-autoplay') === 'true') super.setAutoPlay();
+  }
+}
+
+customElements.define('testimonial-component', TestimonialComponent);
+
 class VariantSelects extends HTMLElement {
   constructor() {
     super();
@@ -1193,3 +1220,24 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+// START -- THROTTLER FUNCTION -- START //
+/**
+ *
+ * @param {function} func Name of the function to run on throttle
+ * @param {number} delay The amount of time between checks in milliseconds
+ * @returns null
+ */
+const throttle = (func, delay) => {
+  let time = Date.now();
+
+  return () => {
+    if (time + delay - Date.now() <= 0) {
+      // Run the function we've passed to our throttler,
+      // and reset the `time` variable (so we can check again).
+      func();
+      time = Date.now();
+    }
+  };
+};
+// END -- THROTTLER FUNCTION -- END //
