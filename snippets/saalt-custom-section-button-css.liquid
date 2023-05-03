@@ -1,0 +1,76 @@
+{% comment %} The <style> tags are only present to have correct formatting and highlighting while working on the file. They MUST be commented out before saving the final version. {% endcomment %}
+{% comment %} <style> {% endcomment %}
+#section-{{ section.id }} .section-inner .card .button-wrapper { display: block; position: absolute; left: 0; bottom: 0;
+width: 100%; text-align: center; margin-bottom: 5rem; }
+
+#section-{{ section.id }} .section-inner .text-wrapper .button-group { display: flex; align-items: center;
+flex-direction: column; flex-wrap: wrap; width: 100%; }
+
+#section-{{ section.id }} .section-inner .card .button-wrapper .card-button { background:
+{{ section.settings.button_color }}; color: {{ section.settings.button_text_color }}; border-color: transparent;
+transition: all ease-in-out .1s; }
+
+#section-{{ section.id }} .section-inner .card .button-wrapper .card-button.alt { background: transparent; border-color:
+{{ section.settings.button_color }}; }
+
+#section-{{ section.id }} .section-inner .card .button-wrapper .card-button:hover, #section-
+{{- section.id }} .section-inner .card .button-wrapper .card-button:focus { background:
+{{ section.settings.button_color_hover_focus }}; }
+
+#section-{{ section.id }} .section-inner .card .button-wrapper .card-button:after { box-shadow: 0 0 0
+calc(var(--buttons-border-width) + var(--border-offset)),0 0 0 var(--buttons-border-width); color:
+{{ section.settings.button_color_hover_focus }}; }
+
+#section-{{ section.id }} .section-inner .card .button-wrapper .card-button:not(.alt):after { opacity:
+var(--border-opacity); }
+
+#section-{{ section.id }} .section-inner .card .button-wrapper .card-button:hover:after, #section-
+{{- section.id }} .section-inner .card .button-wrapper .card-button:focus:after { box-shadow: 0 0 0
+calc(var(--buttons-border-width) + var(--border-offset)), 0 0 0 var(--buttons-border-width); color:
+{{ section.settings.button_color_hover_focus }}; }
+
+#section-{{ section.id }} .section-inner .card .button-wrapper .card-button.alt:hover, #section-
+{{- section.id }} .section-inner .card .button-wrapper .card-button.alt:focus { border-color:
+{{ section.settings.button_color_hover_focus }}; }
+
+#section-{{ section.id }} .section-inner .text-wrapper .button-group { display: flex; align-items: center;
+flex-direction: column; flex-wrap: wrap; width: 100%; } #section-{{ section.id }} .section-inner .text-wrapper
+.button-wrapper .button, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button { background:
+{{ section.settings.button_color }}; color: {{ section.settings.button_text_color }}; border-color: transparent;
+transition: all ease-in-out .1s; } #section-{{ section.id }} .section-inner .text-wrapper .button-group .button { width:
+100%; } #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt, #section-
+{{- section.id }}
+.section-inner .text-wrapper .button-group .button.alt { background: transparent; border-color:
+{{ section.settings.button_color }}; color: {{ section.settings.button_text_color }}; } #section-
+{{- section.id }}
+.section-inner .text-wrapper .button-wrapper .button:after, #section-{{ section.id }} .section-inner .text-wrapper
+.button-group .button:after, #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt:after,
+#section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt:after { box-shadow: 0 0 0
+calc(var(--buttons-border-width) + var(--border-offset)),0 0 0 var(--buttons-border-width); color:
+{{ section.settings.button_color }}; } #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper
+.button:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button:focus, #section-
+{{- section.id }}
+.section-inner .text-wrapper .button-group .button:hover, #section-{{ section.id }} .section-inner .text-wrapper
+.button-group .button:focus { background: {{ section.settings.button_color_hover_focus }}; border-color:
+{{ section.settings.button_color_hover_focus }}; color: {{ section.settings.button_text_hover_focus }}; } #section-
+{{- section.id }}
+.section-inner .text-wrapper .button-wrapper .button.alt:hover, #section-{{ section.id }} .section-inner .text-wrapper
+.button-wrapper .button.alt:focus, #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper
+.button.alt:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt:focus {
+border-color: {{ section.settings.button_color_hover_focus }}; color: {{ section.settings.button_text_hover_focus }}; }
+
+#section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button:hover:after, #section-
+{{- section.id }}
+.section-inner .text-wrapper .button-wrapper .button:focus:after, #section-{{ section.id }} .section-inner .text-wrapper
+.button-group .button:hover:after, #section-{{ section.id }} .section-inner .text-wrapper .button-group
+.button:focus:after, #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt:hover:after,
+#section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt:focus:after, #section-
+{{- section.id }}
+.section-inner .text-wrapper .button-wrapper .button.alt:hover:after, #section-{{ section.id }} .section-inner
+.text-wrapper .button-group .button.alt:focus:after { color: {{ section.settings.button_color_hover_focus }}; }
+
+@media screen and (min-width: 750px) { #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
+text-align: {{ section.settings.desktop_text_alignment }}; } #section-{{ section.id }} .section-inner .text-wrapper
+.button-group { flex-direction: row; } #section-{{ section.id }} .section-inner .text-wrapper .button-group .button,
+#section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt { width: auto; } }
+{% comment %} </style> {% endcomment %}

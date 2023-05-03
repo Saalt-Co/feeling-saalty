@@ -1,82 +1,91 @@
 {%- assign desktop_position = section.settings.desktop_text_position -%}
 {%- case desktop_position -%}
-  {%- when "right" -%}
+  {%- when 'right' -%}
     {%- capture grid_template_order -%}
     "grid-media grid-text-1"
     "grid-media grid-text-2";
     {%- endcapture -%}
-  {%- when "left" -%}
+  {%- when 'left' -%}
     {%- capture grid_template_order -%}
     "grid-text-1 grid-media"
     "grid-text-2 grid-media";
     {%- endcapture -%}
 {%- endcase -%}
 {%- case section.settings.title_font_size -%}
-  {%- when "x-large" -%}
+  {%- when 'x-large' -%}
     {%- capture title_css -%}
-      font-size: 50px!important;
+      font-size: 50px;
       font-weight: 600;
-      line-height: 55px!important;
+      line-height: 55px;
     {%- endcapture -%}
-  {%- when "large" -%}
+  {%- when 'large' -%}
     {%- capture title_css -%}
-      font-size: 48px!important;
+      font-size: 48px;
       font-weight: 600;
-      line-height: 55px!important;
+      line-height: 55px;
     {%- endcapture -%}
-  {%- when "medium" -%}
+  {%- when 'medium' -%}
     {%- capture title_css -%}
-      font-size: 40px!important;
+      font-size: 40px;
       font-weight: 600;
-      line-height: 44px!important;
+      line-height: 44px;
     {%- endcapture -%}
   {%- else -%}
-  {%- capture title_css -%}
-    font-size: 30px!important;
+    {%- capture title_css -%}
+    font-size: 30px;
     font-weight: 600;
-    line-height: 34px!important;
+    line-height: 34px;
   {%- endcapture -%}
 {%- endcase -%}
 {%- case section.settings.content_font_size -%}
-  {%- when "x-large" -%}
+  {%- when 'x-large' -%}
     {%- capture content_css -%}
-      font-size: 30px!important;
+      font-size: 30px;
       font-style: normal;
-      font-weight: 400!important;
-      line-height: 45px!important;
+      font-weight: 400;
+      line-height: 45px;
       letter-spacing: 0em;
     {%- endcapture -%}
-  {%- when "large" -%}
+  {%- when 'large' -%}
     {%- capture content_css -%}
-      font-size: 25px!important;
-      font-weight: 400!important;
-      line-height: 41.25px!important;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 41.25px;
     {%- endcapture -%}
-  {%- when "medium" -%}
+  {%- when 'medium' -%}
     {%- capture content_css -%}
-      font-size: 18px!important;
-      font-weight: 400!important;
-      line-height: 27px!important;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
     {%- endcapture -%}
   {%- else -%}
-  {%- capture content_css -%}
-    font-size: 16px!important;
-    font-weight: 400!important;
-    line-height: 24px!important;
+    {%- capture content_css -%}
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
   {%- endcapture -%}
 {%- endcase -%}
 <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="section-image-with-text">
-  <div {% if section.settings.section_id != blank %}id="{{ section.settings.section_id | handleize }}" {% endif %}class="section-inner">
-    <div id="section-{{ section.id }}-text-1" class="inner-grid-wrapper">{%- render "saalt-img-vid-text-split-style", section: section, text_group_num: "1" -%}</div>
-    <div id="section-{{ section.id }}-media" class="inner-grid-wrapper">
-    {%- case section.settings.media_type -%}
-      {%- when "video" -%}
-        {%- render "saalt-video-for-media-section", video_obj: section.settings.video -%}
-      {%- when "image" -%}
-        {%- render "saalt-image-for-media-section", section: section -%}
-    {%- endcase -%}
+  <div
+    {% if section.settings.section_id != blank %}
+      id="{{ section.settings.section_id | handleize }}"
+    {% endif -%}
+    class="section-inner"
+  >
+    <div id="section-{{ section.id }}-text-1" class="inner-grid-wrapper">
+      {%- render 'saalt-img-vid-text-split-style', section: section, text_group_num: '1' -%}
     </div>
-    <div id="section-{{ section.id }}-text-2" class="inner-grid-wrapper">{%- render "saalt-img-vid-text-split-style", section: section, text_group_num: "2" -%}</div>
+    <div id="section-{{ section.id }}-media" class="inner-grid-wrapper">
+      {%- case section.settings.media_type -%}
+        {%- when 'video' -%}
+          {%- render 'saalt-video-for-media-section', video_obj: section.settings.video -%}
+        {%- when 'image' -%}
+          {%- render 'saalt-image-for-media-section', section: section -%}
+      {%- endcase -%}
+    </div>
+    <div id="section-{{ section.id }}-text-2" class="inner-grid-wrapper">
+      {%- render 'saalt-img-vid-text-split-style', section: section, text_group_num: '2' -%}
+    </div>
   </div>
 </section>
 
@@ -88,7 +97,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    grid-template: 
+    grid-template:
         "grid-text-1"
         "grid-media"
         "grid-text-2";
@@ -108,6 +117,7 @@
   #section-{{ section.id }} .media-wrapper, #section-{{ section.id }} .media-wrapper img, #section-{{ section.id }} .media-wrapper video {
     display: block;
     width: 100%;
+    height: auto;
   }
   #section-{{ section.id }} .media-wrapper video {
     cursor: pointer;
@@ -121,7 +131,7 @@
     margin-bottom: 3rem;
   }
   #section-{{ section.id }} .text-wrapper .section-title, #section-{{ section.id }} .text-wrapper .section-content, #section-{{ section.id }} .text-wrapper .section-content > p {
-    color: {{ section.settings.text_color }}!important;
+    color: {{ section.settings.text_color }};
     width: 100%;
   }
   #section-{{ section.id }} .text-wrapper .section-title {
@@ -172,6 +182,8 @@
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
   }
   #section-{{ section.id }} .icons-wrapper .icon-wrapper {
     flex-direction: column;
@@ -189,7 +201,8 @@
     display: block;
     width: 100%;
     text-align: center;
-  }  #section-{{ section.id }} .section-inner .text-wrapper .button-group {
+  }
+  #section-{{ section.id }} .section-inner .text-wrapper .button-group {
     display: flex;
     align-items: center;
     flex-direction: column;
