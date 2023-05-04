@@ -8,6 +8,70 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
+    "name": "t:settings_schema.store_settings.settings.custom_store_settings.content",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.store_settings.settings.cx_header.content"
+      },
+      {
+        "type": "text",
+        "id": "cx_email",
+        "label": "t:settings_schema.store_settings.settings.cx_email.label"
+      },
+      {
+        "type": "text",
+        "id": "cx_phone_number",
+        "label": "t:settings_schema.store_settings.settings.cx_phone_number.label"
+      },
+      {
+        "type": "text",
+        "id": "cx_text_number",
+        "label": "t:settings_schema.store_settings.settings.cx_text_number.label"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.store_settings.settings.third_party_header.content"
+      },
+      {
+        "type": "liquid",
+        "id": "third_party_pixels",
+        "label": "t:settings_schema.store_settings.settings.third_party_pixels.label",
+        "info": "t:settings_schema.store_settings.settings.third_party_pixels.info"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.store_settings.settings.email_capture_header.content"
+      },
+      {
+        "type": "liquid",
+        "id": "email_capture_code",
+        "label": "t:settings_schema.store_settings.settings.email_capture_code.label",
+        "info": "t:settings_schema.store_settings.settings.email_capture_code.info"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.store_settings.settings.reviews_platforms_header.content"
+      },
+      {
+        "type": "select",
+        "id": "reviews_platforms",
+        "options": [
+          {
+            "value": "yotpo",
+            "label": "t:settings_schema.store_settings.settings.reviews_platform.options.options__1.label"
+          },
+          {
+            "value": "bazaarvoice",
+            "label": "t:settings_schema.store_settings.settings.reviews_platform.options.options__2.label"
+          }
+        ],
+        "default": "yotpo",
+        "label": "t:settings_schema.store_settings.settings.reviews_platform.label"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.logo.name",
     "settings": [
       {
