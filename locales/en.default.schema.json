@@ -9,44 +9,29 @@
           "content": "Customer Experience"
         },
         "cx_email": {
-          "label": "CX Email Address"
+          "label": "CX Email Address",
+          "info": "'Mail to' email address"
         },
-        "cx_phone_number": {
-          "label": "CX Call Number"
-        },
-        "cx_text_number": {
-          "label": "CX Text Number"
-        },
-        "help_center": {
-          "label": "Help Center Link"
-        },
-        "third_party_header": {
-          "content": "3rd Party Pixels"
-        },
-        "third_party_pixels": {
-          "label": "3rd Party Pixel Code",
-          "info": "Adding 3rd party snippets here will load them at the end of the <head> tag in the 'theme.liquid' file"
-        },
-        "email_capture_header": {
-          "content": "Email Capture"
-        },
-        "email_capture_code": {
-          "label": "Email Capture Code",
-          "info": "Simply paste the given snippet into this field."
+        "cx_sms": {
+          "label": "CX SMS Number",
+          "info": "The number should NOT include spaces or special characters. A leading '+' is not necessary."
         },
         "reviews_platforms_header": {
           "content": "Reviews Platform"
         },
         "reviews_platform": {
           "label": "Selected Platform",
+          "info": "Note: You do NOT need to include snippets for these in the '3rd Party Pixel Code' up above, they are added automatically based on this selection",
           "options": {
             "options__1": {
-              "label": "Yotpo"
+              "label": "None"
             },
             "options__2": {
-              "label": "Bizaarvoice"
+              "label": "Yotpo"
             },
-            "label": "Text alignment"
+            "options__3": {
+              "label": "Bizaarvoice"
+            }
           }
         }
       }
