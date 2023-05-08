@@ -8,6 +8,54 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
+    "name": "t:settings_schema.store_settings.settings.custom_store_settings.content",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.store_settings.settings.cx_header.content"
+      },
+      {
+        "type": "text",
+        "id": "cx_email",
+        "label": "t:settings_schema.store_settings.settings.cx_email.label",
+        "info": "t:settings_schema.store_settings.settings.cx_email.info",
+        "default": "sayhey@saalt.com"
+      },
+      {
+        "type": "text",
+        "id": "cx_sms",
+        "label": "t:settings_schema.store_settings.settings.cx_sms.label",
+        "info": "t:settings_schema.store_settings.settings.cx_sms.info",
+        "default": "17752372258"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.store_settings.settings.reviews_platforms_header.content"
+      },
+      {
+        "type": "select",
+        "id": "reviews_platforms",
+        "info": "t:settings_schema.store_settings.settings.reviews_platform.info",
+        "options": [
+          {
+            "value": "none",
+            "label": "t:settings_schema.store_settings.settings.reviews_platform.options.options__1.label"
+          },
+          {
+            "value": "yotpo",
+            "label": "t:settings_schema.store_settings.settings.reviews_platform.options.options__2.label"
+          },
+          {
+            "value": "bazaarvoice",
+            "label": "t:settings_schema.store_settings.settings.reviews_platform.options.options__3.label"
+          }
+        ],
+        "default": "yotpo",
+        "label": "t:settings_schema.store_settings.settings.reviews_platform.label"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.logo.name",
     "settings": [
       {
