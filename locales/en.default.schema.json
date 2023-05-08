@@ -21,7 +21,7 @@
         },
         "reviews_platform": {
           "label": "Selected Platform",
-          "info": "Note: You do NOT need to include snippets for these in the '3rd Party Pixel Code' up above, they are added automatically based on this selection",
+          "info": "Note: You do NOT need to include snippets for these, they are added automatically based on this selection",
           "options": {
             "options__1": {
               "label": "None"
