@@ -1,0 +1,75 @@
+<!-- START Google Ads Dynamic Remarketing for Theme.Liquid -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7W8Y3JKF9"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z7W8Y3JKF9');
+
+  {% if template contains 'collection' %}
+  // Collection Page
+  // {{ collection.all_products.first.variants.first.sku }}
+  // {{ collection.all_products.first.id }}
+  // {{ collection.all_products.first.variants.first.id }}
+  gtag('event', 'view_item_list', {
+    'send_to': 'G-Z7W8Y3JKF9',
+    'items': [{% for item in collection.all_products %}
+        {'item_id': '{{ item.id }}',
+         'item_name': '{{ item.title }}',
+         'currency': '{{ shop.currency }}',
+         'price': {{ item.original_price | money_without_currency | remove: ',' }},
+         'quantity': '{{ item.quantity }}'
+        }
+       {% if forloop.last != true %},{% endif %}{% endfor %}]
+  });
+
+  {% elsif template contains 'product' %}
+  // Product Page
+  // {{ product.variants.first.sku }}
+  // {{ product.id }}
+  // {{ product.variants.first.id }}
+  gtag('event', 'view_item', {
+    'send_to': 'G-Z7W8Y3JKF9',
+    'item_id': '{{ product.id }}',
+    'currency': {{ shop.currency }},
+    'value': {{ product.price | money_without_currency | remove: ',' }}
+  });
+
+  {% elsif template contains 'cart' %}
+  // Cart Page
+  // {{ item.variant.sku }}
+  // {{ item.id }}
+  // {{ item.variant_id }}
+  gtag('event', 'view_cart', {
+    'send_to': 'G-Z7W8Y3JKF9',
+    'items': [{% for item in cart.items %}
+      {'item_id': '{{ item.id }}',
+       'item_name': '{{ item.title }}',
+       'currency': '{{ shop.currency }}',
+       'price': {{ item.original_price | money_without_currency | remove: ',' }},
+       'quantity': '{{ item.quantity }}'
+      }
+     {% if forloop.last != true %},{% endif %}{% endfor %}],
+    'currency': {{ shop.currency }},
+    'value': {{ cart.total_price | money_without_currency | remove: ',' }}
+  });
+
+  {% elsif template contains 'search' %}
+  // Search Page
+  gtag('event', 'search', {
+    'send_to': 'G-Z7W8Y3JKF9',
+    'search_term': {{ search.terms }}
+  });
+
+  {% else %}
+  // Other Page
+  gtag('event', 'page_view', {
+    'send_to': 'G-Z7W8Y3JKF9',
+    'page_title': {{ page_title }},
+    'page_location': {{ canonical_url }}
+  });
+  {% endif %}
+</script>
+<!-- END Google Ads Dynamic Remarketing for Theme.liquid -->
