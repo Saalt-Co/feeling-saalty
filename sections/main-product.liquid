@@ -88,8 +88,8 @@
                   </h2>
                 </a>
               </div>
-            {%- when 'reviews-summary' -%}
-              
+            {%- when 'reviews_summary' -%}
+              {% render 'reviews-summary' %}
             {%- when 'absorbency' -%}
               {% render 'product-absorbency', product: product %}        
             {%- when 'price' -%}
@@ -118,6 +118,8 @@
                   {{ form | payment_terms }}
                 {%- endform -%}
               </div>
+            {%- when 'afterpay_widget' -%}
+              {% render 'afterpay-widget' %}
             {%- when 'inventory' -%}
               <p
                 class="product__inventory no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
@@ -625,10 +627,6 @@
       "limit": 1,
       "settings": [
         {
-          "type": "header",
-          "content": "t:sections.main-product.blocks.reviews_summary.label"
-        },
-        {
           "type": "paragraph",
           "content": "t:sections.main-product.blocks.reviews_summary.info"
         }
@@ -642,6 +640,11 @@
     {
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
+      "limit": 1
+    },
+    {
+      "type": "afterpay_widget",
+      "name": "t:sections.main-product.blocks.afterpay_widget.name",
       "limit": 1
     },
     {

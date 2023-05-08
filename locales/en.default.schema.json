@@ -1988,15 +1988,17 @@
           "name": "Title"
         },
         "reviews_summary": {
-          "name": "PDP Reviews Summary",
-          "label": "Reviews Summary",
-          "info": "This is merely for placement on the PDP. You can toggle reviews on and off globally in 'Custom Saalt Settings'"
+          "name": "Reviews Summary",
+          "info": "This is merely for placement on the PDP. You can toggle reviews on and off or change platforms globally in 'Custom Saalt Settings'"
         },
         "absorbency": {
           "name": "Absorbency"
         },
         "price": {
           "name": "Price"
+        },
+        "afterpay_widget": {
+          "name": "Afterpay Widget"
         },
         "inventory": {
           "name": "Inventory status",
