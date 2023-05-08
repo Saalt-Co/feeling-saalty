@@ -1,5 +1,41 @@
 {
   "settings_schema": {
+    "store_settings": {
+      "settings": {
+        "custom_store_settings": {
+          "content": "Custom Saalt Settings"
+        },
+        "cx_header": {
+          "content": "Customer Experience"
+        },
+        "cx_email": {
+          "label": "CX Email Address",
+          "info": "'Mail to' email address"
+        },
+        "cx_sms": {
+          "label": "CX SMS Number",
+          "info": "The number should NOT include spaces or special characters. A leading '+' is not necessary."
+        },
+        "reviews_platforms_header": {
+          "content": "Reviews Platform"
+        },
+        "reviews_platform": {
+          "label": "Selected Platform",
+          "info": "Note: You do NOT need to include snippets for these in the '3rd Party Pixel Code' up above, they are added automatically based on this selection",
+          "options": {
+            "options__1": {
+              "label": "None"
+            },
+            "options__2": {
+              "label": "Yotpo"
+            },
+            "options__3": {
+              "label": "Bizaarvoice"
+            }
+          }
+        }
+      }
+    },
     "global": {
       "settings": {
         "header__border": {
