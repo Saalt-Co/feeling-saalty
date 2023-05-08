@@ -1,0 +1,63 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript
+  ><iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-585TK2T"
+    height="0"
+    width="0"
+    style="display:none;visibility:hidden"
+    google-site-verification:
+    google9f15dcc77603cdee.html
+  ></iframe
+></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+{% comment %} START-- Klayvio Product View Tracking {% endcomment %}
+{% render 'klaviyo-tracking.liquid' %}
+{% comment %} END-- Klayvio Product View Tracking {% endcomment %}
+
+<script>
+  (function (w, d, t, r, u) {
+    var f, n, i;
+    (w[u] = w[u] || []),
+      (f = function () {
+        var o = { ti: '148009717' };
+        (o.q = w[u]), (w[u] = new UET(o)), w[u].push('pageLoad');
+      }),
+      (n = d.createElement(t)),
+      (n.src = r),
+      (n.async = 1),
+      (n.onload = n.onreadystatechange =
+        function () {
+          var s = this.readyState;
+          (s && s !== 'loaded' && s !== 'complete') || (f(), (n.onload = n.onreadystatechange = null));
+        }),
+      (i = d.getElementsByTagName(t)[0]),
+      i.parentNode.insertBefore(n, i);
+  })(window, document, 'script', '//bat.bing.com/bat.js', 'uetq');
+</script>
+<script>
+  window.uetq = window.uetq || [];
+  window.uetq.push('event', '', { revenue_value: 50, currency: 'USD' });
+</script>
+
+<!-- CRITEO START -->
+{% render 'criteo-tracking' %}
+<!-- CRITEO END -->
+
+<!-- Gorgias Chat Widget Start -->
+<script
+  id="gorgias-chat-widget-install-v2"
+  src="https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=23931"
+></script>
+<script id="gorgias-chat-shopify-install">
+  !(function (_) {
+    (_.SHOPIFY_PERMANENT_DOMAIN = '{{shop.permanent_domain}}'),
+      (_.SHOPIFY_CUSTOMER_ID = '{{customer.id}}'),
+      (_.SHOPIFY_CUSTOMER_EMAIL = '{{customer.email}}');
+  })(window || {});
+</script>
+<!-- Gorgias Chat Widget End -->
+
+{% comment %} Friendbuy Add TO Cart Event Tracking {% endcomment %}
+{% render 'friendbuy-atc-event' %}
+{% comment %} Friendbuy Add TO Cart Event Tracking {% endcomment %}

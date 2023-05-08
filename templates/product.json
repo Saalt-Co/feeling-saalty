@@ -15,6 +15,11 @@
           "settings": {
           }
         },
+        "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7": {
+          "type": "absorbency",
+          "settings": {
+          }
+        },
         "caption": {
           "type": "text",
           "settings": {
@@ -71,7 +76,7 @@
         "collapsible-row-2": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Dimensions",
+            "heading": "How It Fits",
             "icon": "ruler",
             "content": "",
             "page": ""
@@ -96,6 +101,7 @@
       "block_order": [
         "vendor",
         "title",
+        "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7",
         "caption",
         "price",
         "variant_picker",
@@ -113,10 +119,10 @@
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "lightbox",
-        "mobile_thumbnails": "hide",
+        "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
@@ -215,6 +221,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "show_swatches": false,
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28
