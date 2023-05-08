@@ -8,55 +8,55 @@
 {%- case section.settings.title_font_size -%}
   {%- when 'x-large' -%}
     {%- capture title_css -%}
-      font-size: 50px!important;
+      font-size: 50px;
       font-weight: 600;
-      line-height: 55px!important;
+      line-height: 55px;
     {%- endcapture -%}
   {%- when 'large' -%}
     {%- capture title_css -%}
-      font-size: 48px!important;
+      font-size: 48px;
       font-weight: 600;
-      line-height: 55px!important;
+      line-height: 55px;
     {%- endcapture -%}
   {%- when 'medium' -%}
     {%- capture title_css -%}
-      font-size: 40px!important;
+      font-size: 40px;
       font-weight: 600;
-      line-height: 44px!important;
+      line-height: 44px;
     {%- endcapture -%}
   {%- else -%}
     {%- capture title_css -%}
-    font-size: 30px!important;
+    font-size: 30px;
     font-weight: 600;
-    line-height: 34px!important;
+    line-height: 34px;
   {%- endcapture -%}
 {%- endcase -%}
 {%- case section.settings.content_font_size -%}
   {%- when 'x-large' -%}
     {%- capture content_css -%}
-      font-size: 30px!important;
+      font-size: 30px;
       font-style: normal;
-      font-weight: 400!important;
-      line-height: 45px!important;
+      font-weight: 400;
+      line-height: 45px;
       letter-spacing: 0em;
     {%- endcapture -%}
   {%- when 'large' -%}
     {%- capture content_css -%}
-      font-size: 25px!important;
-      font-weight: 400!important;
-      line-height: 41.25px!important;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 41.25px;
     {%- endcapture -%}
   {%- when 'medium' -%}
     {%- capture content_css -%}
-      font-size: 18px!important;
-      font-weight: 400!important;
-      line-height: 27px!important;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
     {%- endcapture -%}
   {%- else -%}
     {%- capture content_css -%}
-    font-size: 16px!important;
-    font-weight: 400!important;
-    line-height: 24px!important;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
   {%- endcapture -%}
 {%- endcase -%}
 <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="section-image-with-text">
@@ -91,6 +91,7 @@
   #section-{{ section.id }} .media-wrapper, #section-{{ section.id }} .media-wrapper img, #section-{{ section.id }} .media-wrapper video {
     display: block;
     width: 100%;
+    height: auto;
   }
   #section-{{ section.id }} .media-wrapper.desktop {
     display: none;
@@ -108,7 +109,7 @@
     margin-bottom: 3rem;
   }
   #section-{{ section.id }} .text-wrapper .section-title, #section-{{ section.id }} .text-wrapper .section-content, #section-{{ section.id }} .text-wrapper .section-content > p {
-    color: {{ section.settings.text_color }}!important;
+    color: {{ section.settings.text_color }};
     width: 100%;
   }
   #section-{{ section.id }} .text-wrapper .section-title {
@@ -172,41 +173,9 @@
     width: 100%;
     height: auto;
   }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-group {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
-    background: {{ section.settings.button_color }};
-    color: {{ section.settings.button_text_color }};
-    border-color: transparent;
-    transition: all ease-in-out .1s;
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
-    width: 100%;
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt {
-    background: transparent;
-    border-color: {{ section.settings.button_color }};
-    color: {{ section.settings.button_text_color }};
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button:focus, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button:focus {
-    background: {{ section.settings.button_color_hover_focus }};
-    border-color: {{ section.settings.button_color_hover_focus }};
-    color: {{ section.settings.button_text_hover_focus }};
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt:focus, #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt:focus {
-    border-color: {{ section.settings.button_color_hover_focus }};
-    color: {{ section.settings.button_text_hover_focus }};
-  }
+
+  {%- render 'saalt-custom-section-button-css', section: section -%}
+
   #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
     text-align: {{ section.settings.mobile_text_alignment }};
   }
@@ -262,15 +231,6 @@
     }
     #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
       height: auto;
-    }
-    #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
-      text-align: {{ section.settings.desktop_text_alignment }};
-    }
-    #section-{{ section.id }} .section-inner .text-wrapper .button-group {
-      flex-direction: row;
-    }
-    #section-{{ section.id }} .section-inner .text-wrapper .button-group .button, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt {
-      width: auto;
     }
   {%- if section.settings.section_padding != "default" -%}
     {%- case section.settings.section_padding -%}
@@ -876,21 +836,7 @@
     {
       "type": "saalt_contact_links",
       "name": "Saalt Contact Links",
-      "settings": [
-        {
-          "type": "text",
-          "id": "sms_link",
-          "label": "Phone number for SMS",
-          "info": "The number should NOT include spaces or special characters. A leading '+' is not necessary.",
-          "default": "17752372258"
-        },
-        {
-          "type": "text",
-          "id": "email_link",
-          "label": "'Mail to' email address",
-          "default": "mailto:sayhey@saalt.com"
-        }
-      ]
+      "settings": []
     },
     {
       "type": "custom_liquid_code",
