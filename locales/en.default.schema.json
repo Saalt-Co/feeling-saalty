@@ -422,7 +422,7 @@
         "sold_out": "Sold Out",
         "pre_order": "Pre-order",
         "unavailable": "Unavailable"
-        }
+      }
     },
     "layout": {
       "name": "Layout",
