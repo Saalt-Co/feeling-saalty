@@ -89,7 +89,7 @@
                 </a>
               </div>
             {%- when 'reviews_summary' -%}
-              {% render 'reviews-summary' %}
+              {% render 'reviews-summary', product: product %}
             {%- when 'absorbency' -%}
               {% render 'product-absorbency', product: product %}        
             {%- when 'price' -%}
