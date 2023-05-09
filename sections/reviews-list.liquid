@@ -9,9 +9,23 @@
       data-product-id="{{ product.id }}"
       data-name="{{ product.title | escape }}"
       data-url="{{ shop.url }}{{ product.url }}"
-      data-image-url="{{ product.featured_image | product_img_url: "large" |replace: '?', '%3F' | replace: '&','%26'}}"
+      data-image-url="{{ product.featured_image | image_url: 'large' | replace: '?', '%3F' | replace: '&', '%26' }}"
       data-description="{{ product.description | escape }}"
     ></div>
   {%- when 'bazaarvoice' -%}
-    <div data-bv-show="reviews" data-bv-product-id="{{product.id}}"></div>
+    <div data-bv-show="reviews" data-bv-product-id="{{ product.id }}"></div>
 {%- endcase -%}
+
+{% schema %}
+{
+  "name": "Reviews List",
+  "class": "section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Reviews List",
+      "category": "custom saalt section"
+    }
+  ]
+}
+{% endschema %}
