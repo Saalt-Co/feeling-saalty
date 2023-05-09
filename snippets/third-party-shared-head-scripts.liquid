@@ -118,15 +118,15 @@
   };
 
   window.languages = {
-    cartAddNote: {{ 'cart.general.add_note' | t | json }},
-    cartEditNote: {{ 'cart.general.edit_note' | t | json }},
-    productImageLoadingError: {{ 'product.slideshow.image_loading_error' | t | json }},
-    productFormAddToCart: {% if product.template_suffix == 'pre-order'%}{{ 'product.form.pre_order' | t | json }}{% elsif product.template_suffix == 'new-pre-order'%} {{ 'product.form.add_to_cart' | t | json }}  {% else %}{{ 'product.form.add_to_cart' | t | json }}{% endif %},
-    productFormUnavailable: {{ 'product.form.unavailable' | t | json }},
-    productFormSoldOut: {{ 'product.form.sold_out' | t | json }},
-    shippingEstimatorOneResult: {{ 'cart.shipping_estimator.one_result_title' | t | json }},
-    shippingEstimatorMoreResults: {{ 'cart.shipping_estimator.more_results_title' | t | json }},
-    shippingEstimatorNoResults: {{ 'cart.shipping_estimator.no_results_title' | t | json }}
+    cartAddNote: {{ 't:settings_schema.cart.general.add_note' }},
+    cartEditNote: {{ 't:settings_schema.cart.general.edit_note' }},
+    productImageLoadingError: {{ 't:settings_schema.product.slideshow.image_loading_error' }},
+    productFormAddToCart: {% if product.template_suffix == 'pre-order'%}{{ 't:settings_schema.product.form.pre_order' }}{% elsif product.template_suffix == 'new-pre-order'%} {{ 't:settings_schema.product.form.add_to_cart' }}  {% else %}{{ 't:settings_schema.product.form.add_to_cart' }}{% endif %},
+    productFormUnavailable: {{ 't:settings_schema.product.form.unavailable' }},
+    productFormSoldOut: {{ 't:settings_schema.product.form.sold_out' }},
+    shippingEstimatorOneResult: {{ 't:settings_schema.cart.shipping_estimator.one_result_title' }},
+    shippingEstimatorMoreResults: {{ 't:settings_schema.cart.shipping_estimator.more_results_title' }},
+    shippingEstimatorNoResults: {{ 't:settings_schema.cart.shipping_estimator.no_results_title' }}
   };
   {% comment %} or product.template_suffix == 'new-pre-order'  {% endcomment %}
   window.lazySizesConfig = {

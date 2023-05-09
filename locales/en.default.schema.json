@@ -424,6 +424,12 @@
         "unavailable": "Unavailable"
       }
     },
+    "general": {
+      "meta": {
+        "tags": "Tagged \"{{ tags }}\"",
+        "page": "Page {{ page }}"
+      }
+    },
     "layout": {
       "name": "Layout",
       "settings": {

@@ -19,9 +19,10 @@
     <title>
       {{ page_title }}
       {% if current_tags -%}
-        {%- assign meta_tags = current_tags | join: ', ' %} &#124; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+        {%- assign meta_tags = current_tags | join: ', ' %} &#124;
+        {{ 't:settings_schema.general.meta.tags' -}}
       {%- endif %}
-      {% if current_page != 1 %} &#124; {{ 'general.meta.page' | t: page: current_page }}{% endif %}
+      {% if current_page != 1 %} &#124; {{ 't:settings_schema.general.meta.page' }}{% endif %}
       {% unless page_title contains shop.name %} &#124; {{ shop.name }}{% endunless %}
     </title>
 
