@@ -401,8 +401,28 @@
             "label": "Collection",
             "info": "Visible when cart drawer is empty."
           }
+        },
+        "general": {
+          "add_note": "Add Order Note",
+          "edit_note": "Edit Order Note"
+        },
+        "shipping_estimator": {
+          "one_result_title": "1 option available:",
+          "more_results_title": "{{count}} options available:",
+          "no_results_title": "No shipping could be found"
         }
       }
+    },
+    "product": {
+      "slideshow": {
+        "image_loading_error": "This image could not be loaded. Please try to reload the page."
+      },
+      "form": {
+        "add_to_cart": "Add to cart",
+        "sold_out": "Sold Out",
+        "pre_order": "Pre-order",
+        "unavailable": "Unavailable"
+        }
     },
     "layout": {
       "name": "Layout",
@@ -3494,6 +3514,14 @@
       },
       "presets": {
         "name": "Collapsible content"
+      }
+    },
+    "reviews_list": {
+      "name": "Reviews List",
+      "settings": {
+        "paragraph": {
+          "content": "The reviews displayed here are based on the reviews platform selected in the 'Custom Saalt Settings' section"
+        }
       }
     }
   }
