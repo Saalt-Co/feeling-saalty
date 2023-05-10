@@ -21,7 +21,7 @@
         },
         "reviews_platform": {
           "label": "Selected Platform",
-          "info": "Note: You do NOT need to include snippets for these in the '3rd Party Pixel Code' up above, they are added automatically based on this selection",
+          "info": "Note: You do NOT need to include snippets for these, they are added automatically based on this selection",
           "options": {
             "options__1": {
               "label": "None"
@@ -422,7 +422,7 @@
         "sold_out": "Sold Out",
         "pre_order": "Pre-order",
         "unavailable": "Unavailable"
-        }
+      }
     },
     "general": {
       "meta": {
@@ -2013,11 +2013,20 @@
         "title": {
           "name": "Title"
         },
+        "reviews_summary": {
+          "name": "Reviews Summary",
+          "info": "This is merely for placement on the PDP. You can toggle reviews on and off or change platforms globally in 'Custom Saalt Settings'"
+        },
         "absorbency": {
-          "name": "Absorbency"
+          "name": "Absorbency",
+          "info": "This will only populate for products that have a product option of 'Absorbency'"
         },
         "price": {
           "name": "Price"
+        },
+        "afterpay_widget": {
+          "name": "Afterpay Widget",
+          "info": "This doesn't have any options associated. NOTE: You need to add this to the template and then *hit save* in order for this to show up in the preview."
         },
         "inventory": {
           "name": "Inventory status",
