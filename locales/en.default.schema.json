@@ -2024,7 +2024,8 @@
           "name": "Price"
         },
         "afterpay_widget": {
-          "name": "Afterpay Widget"
+          "name": "Afterpay Widget",
+          "info": "This doesn't have any options associated. NOTE: You need to add this to the template and then *hit save* in order for this to show up in the preview."
         },
         "inventory": {
           "name": "Inventory status",
