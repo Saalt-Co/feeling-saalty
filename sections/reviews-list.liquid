@@ -1,0 +1,36 @@
+{%- case settings.reviews_platform -%}
+  {%- when 'yotpo' -%}
+    <div class="reviews-title custom_product_reviews_sect">
+      <h2>{{ section.settings.title }}</h2>
+    </div>
+    <div class="yotpo yotpo-pictures-widget" data-gallery-id="5fadb7fc67e2975100d617b6"></div>
+    <div
+      class="yotpo yotpo-main-widget"
+      data-product-id="{{ product.id }}"
+      data-name="{{ product.title | escape }}"
+      data-url="{{ shop.url }}{{ product.url }}"
+      data-image-url="{{ product.featured_image | image_url: 'large' | replace: '?', '%3F' | replace: '&', '%26' }}"
+      data-description="{{ product.description | escape }}"
+    ></div>
+  {%- when 'bazaarvoice' -%}
+    <div data-bv-show="reviews" data-bv-product-id="{{ product.id }}"></div>
+{%- endcase -%}
+
+{% schema %}
+{
+  "name": "t:sections.reviews_list.name",
+  "class": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:sections.reviews_list.settings.paragraph.content"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.reviews_list.name",
+      "category": "custom saalt section"
+    }
+  ]
+}
+{% endschema %}
