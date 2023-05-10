@@ -172,16 +172,18 @@
 </script>
 
 <!-- Yotpo Reviews -->
-<script type="text/javascript">
-  (function e() {
-    var e = document.createElement('script');
-    (e.type = 'text/javascript'),
-      (e.async = true),
-      (e.src = '//staticw2.yotpo.com/2BPjkSRu2swwJBLujLtxxrBFxxqEta1k91QDxm4V/widget.js');
-    var t = document.getElementsByTagName('script')[0];
-    t.parentNode.insertBefore(e, t);
-  })();
-</script>
+{%- if settings.reviews_platform == 'yotpo' -%}
+  <script type="text/javascript">
+    (function e() {
+      var e = document.createElement('script');
+      (e.type = 'text/javascript'),
+        (e.async = true),
+        (e.src = '//staticw2.yotpo.com/2BPjkSRu2swwJBLujLtxxrBFxxqEta1k91QDxm4V/widget.js');
+      var t = document.getElementsByTagName('script')[0];
+      t.parentNode.insertBefore(e, t);
+    })();
+  </script>
+{%- endif -%}
 <!-- End Yotpo Reviews -->
 
 <!-- Google Tag Manager -->
