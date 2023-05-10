@@ -2018,7 +2018,8 @@
           "info": "This is merely for placement on the PDP. You can toggle reviews on and off or change platforms globally in 'Custom Saalt Settings'"
         },
         "absorbency": {
-          "name": "Absorbency"
+          "name": "Absorbency",
+          "info": "This will only populate for products that have a product option of 'Absorbency'"
         },
         "price": {
           "name": "Price"
