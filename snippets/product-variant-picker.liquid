@@ -10,7 +10,7 @@
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
 {%- unless product.has_only_default_variant -%}
-  {%- if block.settings.picker_type == 'button' or block.settings.picker_type == "color swatches" -%}
+  {%- if block.settings.picker_type == 'button' or block.settings.picker_type == 'color swatches' -%}
     <variant-radios
       id="variant-radios-{{ section.id }}"
       class="no-js-hidden"
@@ -23,8 +23,16 @@
     >
       {%- for option in product.options_with_values -%}
         <fieldset class="js product-form__input">
-          <legend class="form__label">{{ option.name }}{% if block.settings.picker_type == "color swatches" and option.name == "Color" %}: <span class="product-form__selected-color-name">{{ option.selected_value }}</span>{% endif %}</legend>
+          <legend class="form__label">
+            {{ option.name -}}
+            {%- if block.settings.picker_type == 'color swatches' and option.name == 'Color' -%}
+              : <span class="product-form__selected-color-name">{{ option.selected_value }}</span>
+            {%- endif %}
+          </legend>
           {% render 'product-variant-options', product: product, option: option, block: block %}
+          {% if option.name == 'Size' %}
+            {% render 'size-chart-link', product: product, option: option %}
+          {% endif %}
         </fieldset>
       {%- endfor -%}
       <script type="application/json">
