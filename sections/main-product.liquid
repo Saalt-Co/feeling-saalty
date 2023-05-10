@@ -88,8 +88,78 @@
                   </h2>
                 </a>
               </div>
+            {%- when 'reviews_summary' -%}
+              {% render 'reviews-summary', product: product %}
             {%- when 'absorbency' -%}
-              {% render 'product-absorbency', product: product %}        
+              {% render 'product-absorbency', product: product %}
+            {%- when 'icon_group' -%}
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {%- when 'icon_with_text' -%}
+                    {%- capture icon_code -%}{% render "saalt-svg-icon", block: block %}{%- endcapture -%}
+                    {%- assign all_icons = all_icons | append: icon_code -%}
+                {%- endcase -%}
+              {%- endfor -%}
+              {% style %}
+                #MainProduct-{{ section.id }} ul.icons-wrapper {
+                  display: flex;
+                  list-style: none;
+                  gap: {{ block.settings.mobile_icon_group_gap }};
+                  padding-left: 0;
+                  flex-wrap: wrap;
+                }
+                #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+                  display: flex;
+                  margin: 0 auto;
+                }
+                #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
+                  width: 100%;
+                  height: auto;
+                  fill: {{ block.settings.icon_color }};
+                }
+                #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
+                  color: {{ block.settings.icon_color }};
+                  text-align: center;
+                }
+                #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper {
+                  min-width: {{ block.settings.mobile_icon_min_width }};
+                  max-width: {{ block.settings.mobile_icon_wrapper_max_width }};
+                }
+                #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+                  max-width: {{ block.settings.mobile_icon_max_width }};
+                  min-height: {{ block.settings.mobile_icon_height }};
+                  max-height: {{ block.settings.mobile_icon_height }};
+                }
+                #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
+                  font-size: {{ block.settings.mobile_icon_text_size }};
+                }
+                @media screen and (min-width: 750px) {
+                  #MainProduct-{{ section.id }} .icons-wrapper {
+                    flex: 1 1 0;
+                    justify-content: {{ block.settings.desktop_icon_alignment }};
+                    gap: {{ block.settings.desktop_icon_group_gap }};
+                    {%- if block.settings.use_max_icon_group_width -%}
+                    max-width: {{ block.settings.icon_group_max_width }};
+                    margin: 0 auto 3rem;
+                    {%- endif -%}
+                  }
+                  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper {
+                    min-width: {{ block.settings.desktop_icon_min_width }};
+                    max-width: {{ block.settings.desktop_icon_wrapper_max_width }};
+                  }
+                  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+                    max-width: {{ block.settings.desktop_icon_max_width }};
+                    min-height: {{ block.settings.desktop_icon_height }};
+                    max-height: {{ block.settings.desktop_icon_height }};
+                  }
+                  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
+                    font-size: {{ block.settings.desktop_icon_text_size }};
+                  }
+                }
+              {% endstyle %}
+              <ul class="icons-wrapper">
+                {{ all_icons }}
+              </ul>        
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
@@ -116,6 +186,8 @@
                   {{ form | payment_terms }}
                 {%- endform -%}
               </div>
+            {%- when 'afterpay_widget' -%}
+              {% render 'afterpay-widget' %}
             {%- when 'inventory' -%}
               <p
                 class="product__inventory no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
@@ -618,14 +690,42 @@
       "limit": 1
     },
     {
+      "type": "reviews_summary",
+      "name": "t:sections.main-product.blocks.reviews_summary.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.reviews_summary.info"
+        }
+      ]
+    },
+    {
       "type": "absorbency",
       "name": "t:sections.main-product.blocks.absorbency.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.absorbency.info"
+        }
+      ]
     },
     {
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
       "limit": 1
+    },
+    {
+      "type": "afterpay_widget",
+      "name": "t:sections.main-product.blocks.afterpay_widget.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.afterpay_widget.info"
+        }
+      ]
     },
     {
       "type": "sku",
@@ -1020,6 +1120,171 @@
         {
           "type": "paragraph",
           "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
+        }
+      ]
+    },
+    {
+      "type": "icon_group",
+      "name": "SVG Icon Group",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "❗️NOTE❗️: This is just a parent element/container to wrap around SVG icon blocks. Please be sure to also add SVG icon blocks or this will appear empty. Drag and drop this to move the icons within the section."
+        },
+        {
+          "type": "checkbox",
+          "id": "use_max_icon_group_width",
+          "label": "Use desktop max width for icons group?",
+          "info": "This sets the max width of the icons group *ON DESKTOP*"
+        },
+        {
+          "type": "text",
+          "id": "icon_group_max_width",
+          "label": "Icon *GROUP MAX* Width",
+          "info": "Max width for the entire icon group. Any valid css value is accepted.",
+          "default": "600px"
+        },
+        {
+          "type": "color",
+          "id": "icon_color",
+          "label": "Icon color",
+          "info": "This colors the svg as well as any optional text",
+          "default": "#3F4759"
+        },
+        {
+          "type": "header",
+          "content": "Mobile Settings"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_text_size",
+          "label": "Text Font Size On *MOBILE*",
+          "info": "Any valid css value for 'font-size' is accepted. Default is 1.5rem",
+          "default": "1.5rem"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_group_gap",
+          "label": "Space Between Icons On *MOBILE*",
+          "info": "Distance between icons for the entire icon group. Any valid css value is accepted.",
+          "default": "3.5rem"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_min_width",
+          "label": "Icon *WRAPPER MIN* Width On *MOBILE*",
+          "info": "Minimum width for icon wrapper elements. Any valid css value is accepted.",
+          "default": "80px"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_wrapper_max_width",
+          "label": "Icon *WRAPPER MAX* Width On *MOBILE*",
+          "info": "Max width for icon wrapper elements. Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_max_width",
+          "label": "Icon *MAX* Width On *MOBILE*",
+          "info": "Max width for icons inside of the icon wrappers. Any valid css value is accepted.",
+          "default": "100%"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_height",
+          "label": "Icon Height On *MOBILE*",
+          "info": "Minimum height for icons inside of the icon wrappers. This helps ensure they're all the same size vertically. Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "header",
+          "content": "Desktop Settings"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_text_size",
+          "label": "Text Font Size on *DESKTOP*",
+          "info": "Any valid css value for 'font-size' is accepted. Default is 1.5rem",
+          "default": "1.5rem"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_group_gap",
+          "label": "Space Between Icons on *DESKTOP*",
+          "info": "Distance between icons for the entire icon group. Any valid css value is accepted.",
+          "default": "3.5rem"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_min_width",
+          "label": "Icon *WRAPPER MIN* Width on *DESKTOP*",
+          "info": "Minimum width for icon wrapper elements. Any valid css value is accepted.",
+          "default": "80px"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_wrapper_max_width",
+          "label": "Icon *WRAPPER MAX* Width on *DESKTOP*",
+          "info": "Max width for icon wrapper elements. Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_max_width",
+          "label": "Icon *MAX* Width on *DESKTOP*",
+          "info": "Max width for icons inside of the icon wrappers. Any valid css value is accepted.",
+          "default": "100%"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_height",
+          "label": "Icon Height on *DESKTOP*",
+          "info": "Minimum height for icons inside of the icon wrappers. This helps ensure they're all the same size vertically. Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_alignment",
+          "label": "*ICON* Alignment on *DESKTOP*",
+          "info": "❗️Add SVG icons in the previous menu ❗️",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        }
+      ]
+    },
+    {
+      "type": "icon_with_text",
+      "name": "SVG Icon",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "❗️NOTE❗️ Be sure to add an 'SVG Icon Group' block or this will not show up!"
+        },
+        {
+          "type": "html",
+          "id": "icon_svg",
+          "label": "Icon SVG code",
+          "info": "Paste icon svg code here. Be sure to remove any 'fill' and 'stroke' attributes to ensure proper styling."
+        },
+        {
+          "type": "richtext",
+          "id": "icon_text",
+          "label": "Text",
+          "info": "Text is optional"
         }
       ]
     },
