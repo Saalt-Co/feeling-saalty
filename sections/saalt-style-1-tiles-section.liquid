@@ -170,7 +170,7 @@
               {%- for block in section.blocks -%}
                 {%- case block.type -%}
                   {%- when 'section_icon_with_text' -%}
-                    {%- capture icon_code -%}{% render "saalt-svg-icon", block: block %}{%- endcapture -%}
+                    {%- capture icon_code -%}{% render "saalt-svg-icon", icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text %}{%- endcapture -%}
                     {%- assign all_icons = all_icons | append: icon_code -%}
                 {%- endcase -%}
               {%- endfor -%}
