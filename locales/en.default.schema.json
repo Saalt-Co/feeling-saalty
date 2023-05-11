@@ -2028,6 +2028,59 @@
           "name": "Afterpay Widget",
           "info": "This doesn't have any options associated. NOTE: You need to add this to the template and then *hit save* in order for this to show up in the preview."
         },
+        "product_features": {
+          "name": "Product Features",
+          "content": "The icons visible in this section are controlled by a product-level metafield called 'Product Features'.",
+          "mobile_header": "Mobile Settings",
+          "desktop_header": "Desktop Settings",
+          "settings": {
+            "mobile_icon_max_width": {
+              "label": "Icon Width On Mobile",
+              "info": "Width for icons on mobile. Any valid css value is accepted."
+            },
+            "desktop_icon_width": {
+              "label": "Icon Width on Desktop",
+              "info": "Width for icons on desktop. Any valid css value is accepted."
+            },
+            "product_features_orientation": {
+              "label": "Desktop Orientation",
+              "info": "The direction in which the icons and text will be laid out on the page",
+              "options__1": {
+                "value": "vertical",
+                "label": "Vertical"
+              },
+              "options__2": {
+                "value": "horizontal",
+                "label": "Horizontal"
+              }
+            },
+            "horizontal_orientation_header": "Horizontal Orientation Settings",
+            "desktop_icon_max_width": {
+              "label": "Icon MAX Width On Horizontal Desktop",
+              "info": "Max width for icons in a horizontal orientation. Any valid css value is accepted."
+            },
+            "desktop_icon_height": {
+              "label": "Icon Height on Desktop",
+              "info": "Minimum height for icons inside of the icon wrappers. This helps ensure they're all the same size vertically. Any valid css value is accepted."
+            },
+            "desktop_text_alignment": {
+              "label": "Text Alignment on Desktop",
+              "info": "This controls the text alignment for icon text",
+              "options__1": {
+                "value": "left",
+                "label": "Left"
+              },
+              "options__2": {
+                "value": "center",
+                "label": "Center"
+              },
+              "options__3": {
+                "value": "right",
+                "label": "Right"
+              }
+            }
+          }
+        },
         "inventory": {
           "name": "Inventory status",
           "settings": {
