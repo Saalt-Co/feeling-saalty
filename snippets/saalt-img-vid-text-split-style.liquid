@@ -56,7 +56,7 @@
                 {%- case block.type -%}
                   {%- when 'section_icon_with_text' -%}
                     {%- if block.settings.text_group_num == text_group_num -%}
-                      {%- capture icon_code -%}{% render "saalt-svg-icon", block: block %}{%- endcapture -%}
+                      {%- capture icon_code -%}{% render "saalt-svg-icon", icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text %}{%- endcapture -%}
                       {%- assign all_icons = all_icons | append: icon_code -%}
                     {%- endif -%}
                 {%- endcase -%}
