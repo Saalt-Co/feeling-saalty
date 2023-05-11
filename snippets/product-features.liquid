@@ -1,0 +1,66 @@
+{% style %}
+  #MainProduct-{{ section.id }} .icons-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1.5rem;
+    padding-left: 0;
+  }
+  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    flex: 1 1 0;
+  }
+  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: {{ block.settings.mobile_icon_max_width }};
+  }
+  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text {
+    text-align: left;
+    line-height: 1.25;
+  }
+  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (min-width: 750px) {
+    #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper {
+      width: 100%;
+    }
+    #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+      max-width: {{ block.settings.desktop_icon_width }};
+    }
+    {%- if block.settings.product_features_orientation == 'horizontal' -%}
+      #MainProduct-{{ section.id }} .icons-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+        max-width: {{ block.settings.desktop_icon_max_width }};
+        min-height: {{ block.settings.desktop_icon_height }};
+        max-height: {{ block.settings.desktop_icon_height }};
+      }
+      #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper {
+        flex-direction: column;
+        gap: unset;
+        width: auto;
+      }
+      #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper, #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text {
+        text-align: {{ block.settings.desktop_text_alignment }};
+      }
+    {%- endif -%}
+  }
+{% endstyle %}
+{%- if product.metafields.saalt.product_features.value != blank -%}
+  {%- assign product_features = product.metafields.saalt.product_features.value -%}
+  <ul class="icons-wrapper">
+    {% for feature in product_features %}
+      {% render 'saalt-svg-icon', icon_svg: feature.product_feature_svg, icon_text: feature.product_feature_text %}
+    {% endfor %}
+  </ul>
+{%- endif -%}
