@@ -30,7 +30,7 @@
       },
       {
         "type": "header",
-        "content": "t:settings_schema.store_settings.settings.reviews_platforms_header.content"
+        "content": "t:settings_schema.store_settings.settings.reviews_platform_header.content"
       },
       {
         "type": "select",
