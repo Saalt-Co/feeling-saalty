@@ -4,8 +4,8 @@
     "theme_name": "Dawn",
     "theme_version": "9.0.0",
     "theme_author": "Shopify",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.store_settings.settings.custom_store_settings.content",
@@ -30,11 +30,11 @@
       },
       {
         "type": "header",
-        "content": "t:settings_schema.store_settings.settings.reviews_platforms_header.content"
+        "content": "t:settings_schema.store_settings.settings.reviews_platform_header.content"
       },
       {
         "type": "select",
-        "id": "reviews_platforms",
+        "id": "reviews_platform",
         "info": "t:settings_schema.store_settings.settings.reviews_platform.info",
         "options": [
           {
