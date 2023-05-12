@@ -66,6 +66,11 @@
             "show_gift_card_recipient": false
           }
         },
+        "3137c4b3-91c7-421f-b4f4-0516d73f11c2": {
+          "type": "afterpay_widget",
+          "settings": {
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -125,6 +130,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "3137c4b3-91c7-421f-b4f4-0516d73f11c2",
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
