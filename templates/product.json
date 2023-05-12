@@ -20,6 +20,11 @@
           "settings": {
           }
         },
+        "a540459f-701c-470e-bfa0-1112dcf7d16d": {
+          "type": "reviews_summary",
+          "settings": {
+          }
+        },
         "caption": {
           "type": "text",
           "settings": {
@@ -102,6 +107,7 @@
         "vendor",
         "title",
         "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7",
+        "a540459f-701c-470e-bfa0-1112dcf7d16d",
         "caption",
         "price",
         "variant_picker",
