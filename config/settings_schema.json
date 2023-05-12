@@ -34,7 +34,7 @@
       },
       {
         "type": "select",
-        "id": "reviews_platforms",
+        "id": "reviews_platform",
         "info": "t:settings_schema.store_settings.settings.reviews_platform.info",
         "options": [
           {
