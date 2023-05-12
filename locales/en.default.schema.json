@@ -16,7 +16,7 @@
           "label": "CX SMS Number",
           "info": "The number should NOT include spaces or special characters. A leading '+' is not necessary."
         },
-        "reviews_platforms_header": {
+        "reviews_platform_header": {
           "content": "Reviews Platform"
         },
         "reviews_platform": {
