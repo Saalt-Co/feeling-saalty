@@ -35,30 +35,28 @@
     #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
       max-width: {{ block.settings.desktop_icon_width }};
     }
-    {%- if block.settings.product_features_orientation == 'horizontal' -%}
-      #MainProduct-{{ section.id }} .icons-wrapper {
-        flex-direction: row;
-        justify-content: space-between;
-      }
-      #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
-        max-width: {{ block.settings.desktop_icon_max_width }};
-        min-height: {{ block.settings.desktop_icon_height }};
-        max-height: {{ block.settings.desktop_icon_height }};
-      }
-      #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper {
-        flex-direction: column;
-        gap: unset;
-        width: auto;
-      }
-      #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper, #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text {
-        text-align: {{ block.settings.desktop_text_alignment }};
-      }
-    {%- endif -%}
+    #MainProduct-{{ section.id }} .icons-wrapper.horizontal {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #MainProduct-{{ section.id }} .icons-wrapper.horizontal .icon-wrapper .icon-svg-wrapper {
+      max-width: {{ block.settings.desktop_icon_max_width }};
+      min-height: {{ block.settings.desktop_icon_height }};
+      max-height: {{ block.settings.desktop_icon_height }};
+    }
+    #MainProduct-{{ section.id }} .icons-wrapper.horizontal .icon-wrapper {
+      flex-direction: column;
+      gap: unset;
+      width: auto;
+    }
+    #MainProduct-{{ section.id }} .icons-wrapper.horizontal .icon-wrapper, #MainProduct-{{ section.id }} .icons-wrapper.horizontal .icon-wrapper .icon-text {
+      text-align: {{ block.settings.desktop_text_alignment }};
+    }
   }
 {% endstyle %}
 {%- if product.metafields.saalt.product_features.value != blank -%}
   {%- assign product_features = product.metafields.saalt.product_features.value -%}
-  <ul class="icons-wrapper">
+  <ul class="icons-wrapper{% if block.settings.product_features_orientation == 'horizontal' %} horizontal{% endif %}">
     {% for feature in product_features %}
       {% render 'saalt-svg-icon', icon_svg: feature.product_feature_svg, icon_text: feature.product_feature_text %}
     {% endfor %}

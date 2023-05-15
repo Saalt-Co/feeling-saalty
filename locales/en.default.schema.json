@@ -2046,11 +2046,9 @@
               "label": "Desktop Orientation",
               "info": "The direction in which the icons and text will be laid out on the page",
               "options__1": {
-                "value": "vertical",
                 "label": "Vertical"
               },
               "options__2": {
-                "value": "horizontal",
                 "label": "Horizontal"
               }
             },
