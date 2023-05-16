@@ -1,0 +1,108 @@
+{% style %}
+  .size-chart-modal {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    opacity: 0;
+    z-index: 10;
+  }
+  .size-chart-modal .size-chart-close-button-wrapper {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    text-align: right;
+  }
+  .size-chart-modal,
+  .size-chart-modal .size-chart-close-button-wrapper .size-chart-close-button {
+    cursor: pointer;
+  }
+  .size-chart-modal .size-chart-close-button-wrapper .size-chart-close-button {
+    display: inline-block;
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.25);
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 1;
+    padding: 0.5rem 1.125rem;
+    align-items: center;
+    transition: all ease-in-out 0.1s;
+  }
+  .size-chart-modal .size-chart-close-button-wrapper .size-chart-close-button:hover {
+    background: #fff;
+  }
+  .size-chart-modal .size-chart-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    z-index: 11;
+  }
+  .size-chart-modal .size-chart-wrapper .size-chart-content {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    cursor: initial;
+  }
+  .reveal-modal {
+    display: flex;
+    animation: 0.1s ease-in forwards RevealModal;
+  }
+  .hide-modal {
+    animation: 0.1s ease-in forwards HideModal;
+  }
+  @keyframes RevealModal {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes HideModal {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @media screen and (min-width: 750px) {
+    .size-chart-modal .size-chart-close-button-wrapper {
+      padding: 2rem;
+    }
+  }
+{% endstyle %}
+<div class="size-chart-modal">
+  <div class="size-chart-close-button-wrapper">
+    <button class="size-chart-close-button">&times;</button>
+  </div>
+  <div class="size-chart-wrapper">
+    <img class="size-chart-content" loading="lazy" src="https://i.redd.it/6lvwbrpr8ho21.jpg" width="502" height="499">
+  </div>
+</div>
+<script>
+  const handleClosePopup = (e) => {
+    if (e.target.classList.contains('size-chart-content')) return;
+    const modal = document.querySelector('.size-chart-modal');
+    modal.classList.add('hide-modal');
+    const timer = setTimeout(() => {
+      modal.classList.remove('hide-modal');
+      modal.classList.remove('reveal-modal');
+      clearTimeout(timer);
+    }, 500);
+  };
+  const modal = document.querySelector('.size-chart-modal');
+  modal.addEventListener('click', handleClosePopup, true);
+</script>

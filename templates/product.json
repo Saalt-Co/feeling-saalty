@@ -244,12 +244,18 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "bef772d0-6e13-4a64-bb1e-f22e9b4887ed": {
+      "type": "reviews-list",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "image-with-text",
     "multicolumn",
-    "related-products"
+    "related-products",
+    "bef772d0-6e13-4a64-bb1e-f22e9b4887ed"
   ]
 }

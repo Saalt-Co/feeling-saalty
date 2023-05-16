@@ -8,26 +8,26 @@
 {% endcomment %}
 
 {% style %}
-  .size-chart-wrapper .size-chart-inner-wrapper {
+  .size-chart-button-wrapper .size-chart-inner-button-wrapper {
     display: flex;
     position: relative;
     align-items: flex-end;
     margin-top: 0.75rem;
   }
-  .size-chart-wrapper .size-chart-inner-wrapper > * {
+  .size-chart-button-wrapper .size-chart-inner-button-wrapper > * {
     cursor: pointer;
     color: rgba(var(--color-foreground), 0.75);
   }
-  .size-chart-wrapper .size-chart-inner-wrapper > *:hover {
+  .size-chart-button-wrapper .size-chart-inner-button-wrapper > *:hover {
     text-decoration: underline;
   }
-  .size-chart-wrapper .size-chart-inner-wrapper svg {
+  .size-chart-button-wrapper .size-chart-inner-button-wrapper svg {
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
   }
-  .size-chart-wrapper .size-chart-inner-wrapper button {
+  .size-chart-button-wrapper .size-chart-inner-button-wrapper button {
     display: inline-block;
     background: none;
     border: transparent;
@@ -37,8 +37,8 @@
     z-index: 1;
   }
 {% endstyle %}
-<div class="size-chart-wrapper">
-  <div class="size-chart-inner-wrapper">
+<div class="size-chart-button-wrapper">
+  <div class="size-chart-inner-button-wrapper">
     <svg
       class="size-chart-icon"
       aria-hidden="true"
@@ -57,12 +57,12 @@
     <button class="size-chart-button" type="button">Size chart</button>
   </div>
 </div>
-<div class="size-chart-wrapper"></div>
 
 <script>
-  const sizeChartBtn = document.querySelector('.size-chart-inner-wrapper');
+  const sizeChartBtn = document.querySelector('.size-chart-inner-button-wrapper');
   const handleSizeChartClick = () => {
-    alert('Size chart hoooooooo!');
+    const modal = document.querySelector('.size-chart-modal');
+    modal.classList.add('reveal-modal');
   };
   for (const sizeChartChildEl of sizeChartBtn.children) {
     sizeChartChildEl.addEventListener('click', handleSizeChartClick, false);
