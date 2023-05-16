@@ -496,6 +496,10 @@
     <script src="{{ 'product-model.js' | asset_url }}" defer></script>
   {%- endif -%}
 
+  {%- if product.options contains "Size" -%}
+    {% render 'size-chart-modal' %}
+  {%- endif -%}
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       function isIE() {
@@ -1083,8 +1087,8 @@
         {
           "type": "text",
           "id": "desktop_icon_width",
-          "label": "t:sections.main-product.blocks.product_features.settings.mobile_icon_max_width.label",
-          "info": "t:sections.main-product.blocks.product_features.settings.mobile_icon_max_width.info",
+          "label": "t:sections.main-product.blocks.product_features.settings.desktop_icon_max_width.label",
+          "info": "t:sections.main-product.blocks.product_features.settings.desktop_icon_max_width.info",
           "default": "3rem"
         },
         {
@@ -1094,15 +1098,15 @@
           "info": "t:sections.main-product.blocks.product_features.settings.product_features_orientation.info",
           "options": [
             {
-              "value": "t:sections.main-product.blocks.product_features.settings.product_features_orientation.options__1.value",
+              "value": "vertical",
               "label": "t:sections.main-product.blocks.product_features.settings.product_features_orientation.options__1.label"
             },
             {
-              "value": "t:sections.main-product.blocks.product_features.settings.product_features_orientation.options__2.value",
+              "value": "horizontal",
               "label": "t:sections.main-product.blocks.product_features.settings.product_features_orientation.options__2.label"
             }
           ],
-          "default": "t:sections.main-product.blocks.product_features.settings.product_features_orientation.options__1.value"
+          "default": "vertical"
         },
         {
           "type": "header",
@@ -1129,19 +1133,19 @@
           "info": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.info",
           "options": [
             {
-              "value": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.options__1.value",
+              "value": "left",
               "label": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.options__1.label"
             },
             {
-              "value": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.options__2.value",
+              "value": "center",
               "label": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.options__2.label"
             },
             {
-              "value": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.options__3.value",
+              "value": "right",
               "label": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.options__3.label"
             }
           ],
-          "default": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.options__3.value"
+          "default": "center"
         }
       ]
     },

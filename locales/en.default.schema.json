@@ -30,7 +30,7 @@
               "label": "Yotpo"
             },
             "options__3": {
-              "label": "Bizaarvoice"
+              "label": "Bazaarvoice"
             }
           }
         }
@@ -2046,11 +2046,9 @@
               "label": "Desktop Orientation",
               "info": "The direction in which the icons and text will be laid out on the page",
               "options__1": {
-                "value": "vertical",
                 "label": "Vertical"
               },
               "options__2": {
-                "value": "horizontal",
                 "label": "Horizontal"
               }
             },
@@ -3588,7 +3586,7 @@
       "name": "Reviews List",
       "settings": {
         "paragraph": {
-          "content": "The reviews displayed here are based on the reviews platform selected in the 'Custom Saalt Settings' section"
+          "content": "The reviews displayed here are based on the reviews platform selected in the 'Custom Saalt Settings' section. NOTE: Using this over native app blocks is preferable since there is logic within this to display Yotpo *or* Bazaarvoice in this section resulting in a cleaner codebase."
         }
       }
     }
