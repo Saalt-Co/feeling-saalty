@@ -3586,7 +3586,7 @@
       "name": "Reviews List",
       "settings": {
         "paragraph": {
-          "content": "The reviews displayed here are based on the reviews platform selected in the 'Custom Saalt Settings' section"
+          "content": "The reviews displayed here are based on the reviews platform selected in the 'Custom Saalt Settings' section. NOTE: Using this over native app blocks is preferable since there is logic within this to display Yotpo *or* Bazaarvoice in this section resulting in a cleaner codebase."
         }
       }
     }
