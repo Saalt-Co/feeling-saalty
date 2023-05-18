@@ -1,0 +1,172 @@
+{%- assign block_count = section.blocks | size -%}
+
+<div class="window-display">
+  {%- if block_count > 0 -%}
+    {%- assign block_count = section.blocks | size -%}
+    {%- assign window_display_count = 0 -%}
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'window-feature' -%}
+        {%- assign window_display_count = window_display_count | plus: 1 -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'section_title' -%}
+          {%- if block.settings.title != blank -%}
+            <h{{ block.settings.heading_tag }} class="section-title">
+              {{- block.settings.title -}}
+            </h{{ block.settings.heading_tag }}>
+          {%- endif -%}
+        {%- when 'window-feature' -%}
+          {% render 'window-feature',
+            section: section,
+            block: block,
+            window_display_count: window_display_count,
+            forloop_index: forloop.index
+          %}
+      {%- endcase -%}
+    {%- endfor -%}
+  {%- endif -%}
+</div>
+
+{%- style -%}
+  #shopify-section-{{ section.id }} .window-display {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: scroll;
+  }
+  #shopify-section-{{ section.id }} .window-feature {
+    display: flex;
+    position: relative;
+    {% if section.settings.background_color != blank %}
+    background: {{ section.settings.background_color }};
+    {% endif %}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 22%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  #shopify-section-{{ section.id }} .window-feature .image-wrapper, #shopify-section-{{ section.id }} .window-feature .image-wrapper > * {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #shopify-section-{{ section.id }} .window-feature .text-wrapper {
+    display: block;
+    position: absolute;
+    top: 100%;
+  }
+
+  #shopify-section-{{ section.id }} .window-feature:focus .text-wrapper {
+    transition: .25s;
+    transform: translateY(-100%);
+  }
+
+  @media (hover: hover) and (pointer: fine) and (min-width: 750px) {
+    #shopify-section-{{ section.id }} .window-feature:hover .text-wrapper {
+      transition: .25s;
+      transform: translateY(-100%);
+    }
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "Saalt Window Display",
+  "class": "section page-width",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID (Optional)",
+      "info": "Typically only used when setting this ID as a link's destination."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "section_title",
+      "name": "Section Title (Optional)",
+      "settings": [
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading Tag",
+          "options": [
+            {
+              "value": "1",
+              "label": "H1"
+            },
+            {
+              "value": "2",
+              "label": "H2"
+            },
+            {
+              "value": "3",
+              "label": "H3"
+            }
+          ],
+          "default": "1"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title",
+          "default": "<p>Section Title Goes Here</p>"
+        }
+      ]
+    },
+    {
+      "type": "window-feature",
+      "name": "Window Display",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Window Display Image",
+          "info": "The background image for the window display"
+        },
+        {
+          "type": "richtext",
+          "id": "copy",
+          "label": "Window Display Copy",
+          "info": "This is the copy inside the popup on desktop and the content section on mobile",
+          "default": "<p>Window display copy</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Saalt Window Display",
+      "category": "custom saalt section",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "window-feature",
+          "settings": {}
+        },
+        {
+          "type": "window-feature",
+          "settings": {}
+        },
+        {
+          "type": "window-feature",
+          "settings": {}
+        },
+        {
+          "type": "window-feature",
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
