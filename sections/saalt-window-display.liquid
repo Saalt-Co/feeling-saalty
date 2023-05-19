@@ -1,6 +1,8 @@
 {%- assign block_count = section.blocks | size -%}
 
-<div class="window-display">
+<script src="{{ 'window-display.js' | asset_url }}" defer="defer"></script>
+
+<window-display class="window-display">
   {%- if block_count > 0 -%}
     {%- assign block_count = section.blocks | size -%}
     {%- assign window_display_count = 0 -%}
@@ -27,13 +29,13 @@
       {%- endcase -%}
     {%- endfor -%}
   {%- endif -%}
-</div>
+</window-display>
 
 {%- style -%}
   #shopify-section-{{ section.id }} .window-display {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-end;
     flex-wrap: nowrap;
     width: 100%;
     overflow-x: scroll;
@@ -48,7 +50,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-width: 22%;
+    min-width: 40%;
+    max-width: 280px;
     overflow: hidden;
     cursor: pointer;
   }
@@ -59,21 +62,56 @@
     height: auto;
   }
 
+  #shopify-section-{{ section.id }} .window-feature .image-wrapper {
+    height: min(100vh, 58vw);
+  }
+
+  #shopify-section-{{ section.id }} .window-feature .image-wrapper img {
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
   #shopify-section-{{ section.id }} .window-feature .text-wrapper {
     display: block;
     position: absolute;
-    top: 100%;
-  }
-
-  #shopify-section-{{ section.id }} .window-feature:focus .text-wrapper {
+    background: rgba(255, 255, 255, .9);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: calc(100% - 3.125rem);
     transition: .25s;
-    transform: translateY(-100%);
+    font-size: clamp(1rem, 1.5rem, 1.7rem);
   }
-
+  #shopify-section-{{ section.id }} .window-feature .text-wrapper .window-feature-title {
+    border-bottom: 1px solid black;
+    padding: .25rem;
+  }
+  #shopify-section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > p {
+    margin: 0;
+  }
+  @media screen and (max-width: 749px) {
+    #shopify-section-{{ section.id }} .window-feature .text-wrapper.visible {
+      top: 50%;
+      padding-bottom: 50%;
+    }
+  }
   @media (hover: hover) and (pointer: fine) and (min-width: 750px) {
+    #shopify-section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > p {
+      margin: 15px 0;
+    }
+    #shopify-section-{{ section.id }} .window-feature .image-wrapper {
+      height: min(100vh, 420px);
+    }
+    #shopify-section-{{ section.id }} .window-feature {
+      min-width: 280px;
+      max-width: 320px;
+    }
+    #shopify-section-{{ section.id }} .window-feature .text-wrapper {
+      top: calc(100% - 6rem);
+    }
     #shopify-section-{{ section.id }} .window-feature:hover .text-wrapper {
-      transition: .25s;
-      transform: translateY(-100%);
+      top: 50%;
+      padding-bottom: 50%;
     }
   }
 {%- endstyle -%}
@@ -132,6 +170,13 @@
           "id": "image",
           "label": "Window Display Image",
           "info": "The background image for the window display"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Window Display Title",
+          "info": "This is the title inside the popup on desktop and the content section on mobile",
+          "default": "<p>Window display title</p>"
         },
         {
           "type": "richtext",

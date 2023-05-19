@@ -26,8 +26,11 @@
     {%- endif -%}
   </div>
   <div class="text-wrapper">
+    {%- if block.settings.title != blank -%}
+      <div class="window-feature-title">{{ block.settings.title }}</div>
+    {%- endif -%}
     {%- if block.settings.copy != blank -%}
-      {{ block.settings.copy }}
+      <div class="window-feature-copy">{{ block.settings.copy }}</div>
     {%- endif -%}
   </div>
 </div>
