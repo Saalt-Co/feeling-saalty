@@ -60,7 +60,7 @@
     display: block;
     width: 100%;
     height: auto;
-    aspect-ratio: 1/1.5;
+    aspect-ratio: {{ section.settings.mobile_aspect_ratio }};
   }
 
   #shopify-section-{{ section.id }} .window-feature .image-wrapper img {
@@ -105,7 +105,7 @@
       width: {{ 100 | divided_by: block_count }}%;
     }
     #shopify-section-{{ section.id }} .window-feature .image-wrapper, #shopify-section-{{ section.id }} .window-feature .image-wrapper > * {
-      aspect-ratio: 1/1.5;
+      aspect-ratio: {{ section.settings.desktop_aspect_ratio }};
     }
   }
   @media (hover: hover) and (pointer: fine) {
@@ -125,6 +125,20 @@
       "id": "section_id",
       "label": "Section ID (Optional)",
       "info": "Typically only used when setting this ID as a link's destination."
+    },
+    {
+      "type": "text",
+      "id": "mobile_aspect_ratio",
+      "label": "Mobile Aspect Ratio for Window Features",
+      "info": "This sets the aspect ratio for all window features on *Mobile* using standard css forward slash syntax.",
+      "default": "1/1.5"
+    },
+    {
+      "type": "text",
+      "id": "desktop_aspect_ratio",
+      "label": "Desktop Aspect Ratio for Window Features",
+      "info": "This sets the aspect ratio for all window features on *Desktop* using standard css forward slash syntax.",
+      "default": "1/1.5"
     }
   ],
   "blocks": [
