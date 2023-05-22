@@ -14,7 +14,6 @@ class WindowDisplay extends HTMLElement {
   }
 
   handleWindowFeatureClick(e) {
-    if (window.innerWidth > 749) return;
     const clickedParent = e.target.closest('.window-feature');
     clickedParent.querySelector('.text-wrapper').classList.toggle('visible');
   }
