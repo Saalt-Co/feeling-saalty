@@ -2,37 +2,41 @@
 
 <script src="{{ 'window-display.js' | asset_url }}" defer="defer"></script>
 
-<window-display class="window-display">
-  {%- if block_count > 0 -%}
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="section">
+  <window-display class="window-display">
     {%- assign block_count = section.blocks | size -%}
-    {%- assign window_display_count = 0 -%}
-    {%- for block in section.blocks -%}
-      {%- if block.type == 'window-feature' -%}
-        {%- assign window_display_count = window_display_count | plus: 1 -%}
-      {%- endif -%}
-    {%- endfor -%}
-    {%- for block in section.blocks -%}
-      {%- case block.type -%}
-        {%- when 'section_title' -%}
-          {%- if block.settings.title != blank -%}
-            <h{{ block.settings.heading_tag }} class="section-title">
-              {{- block.settings.title -}}
-            </h{{ block.settings.heading_tag }}>
-          {%- endif -%}
-        {%- when 'window-feature' -%}
-          {% render 'window-feature',
-            section: section,
-            block: block,
-            window_display_count: window_display_count,
-            forloop_index: forloop.index
-          %}
-      {%- endcase -%}
-    {%- endfor -%}
-  {%- endif -%}
-</window-display>
+    {%- if block_count > 0 -%}
+      {%- assign window_display_count = 0 -%}
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'window-feature' -%}
+          {%- assign window_display_count = window_display_count | plus: 1 -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'liquid_code' -%}
+            {{ block.settings.custom_liquid_code }}
+          {%- when 'section_title' -%}
+            {%- if block.settings.title != blank -%}
+              <h{{ block.settings.heading_tag }} class="section-title">
+                {{- block.settings.title -}}
+              </h{{ block.settings.heading_tag }}>
+            {%- endif -%}
+          {%- when 'window-feature' -%}
+            {% render 'window-feature',
+              section: section,
+              block: block,
+              window_display_count: window_display_count,
+              forloop_index: forloop.index
+            %}
+        {%- endcase -%}
+      {%- endfor -%}
+    {%- endif -%}
+  </window-display>
+</section>
 
 {%- style -%}
-  #shopify-section-{{ section.id }} .window-display {
+  #section-{{ section.id }} .window-display {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -40,7 +44,7 @@
     width: 100%;
     overflow-x: scroll;
   }
-  #shopify-section-{{ section.id }} .window-feature {
+  #section-{{ section.id }} .window-feature {
     display: flex;
     position: relative;
     {% if section.settings.background_color != blank %}
@@ -56,19 +60,19 @@
     cursor: pointer;
   }
 
-  #shopify-section-{{ section.id }} .window-feature .image-wrapper, #shopify-section-{{ section.id }} .window-feature .image-wrapper > * {
+  #section-{{ section.id }} .window-feature .image-wrapper, #section-{{ section.id }} .window-feature .image-wrapper > * {
     display: block;
     width: 100%;
     height: auto;
     aspect-ratio: {{ section.settings.mobile_aspect_ratio }};
   }
 
-  #shopify-section-{{ section.id }} .window-feature .image-wrapper img {
+  #section-{{ section.id }} .window-feature .image-wrapper img {
     object-fit: cover;
     object-position: 50% 50%;
   }
 
-  #shopify-section-{{ section.id }} .window-feature .text-wrapper {
+  #section-{{ section.id }} .window-feature .text-wrapper {
     display: block;
     position: absolute;
     background: rgba(255, 255, 255, .9);
@@ -79,37 +83,37 @@
     top: calc(100% - 3.45rem);
     transition: .25s;
   }
-  #shopify-section-{{ section.id }} .window-feature .text-wrapper .window-feature-title {
+  #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title {
     border-bottom: 1px solid black;
     padding: .25rem;
   }
-  #shopify-section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > *:last-child,   #shopify-section-{{ section.id }} .window-feature .text-wrapper .window-feature-copy > *:last-child {
+  #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > *:last-child,   #section-{{ section.id }} .window-feature .text-wrapper .window-feature-copy > *:last-child {
     margin: 0;
   }
-  #shopify-section-{{ section.id }} .window-feature .text-wrapper .window-feature-copy {
+  #section-{{ section.id }} .window-feature .text-wrapper .window-feature-copy {
     display: block;
     position: relative;
     height: 100%;
     overflow: scroll;
   }
-  #shopify-section-{{ section.id }} .window-feature .text-wrapper.visible {
+  #section-{{ section.id }} .window-feature .text-wrapper.visible {
     top: 0;
   }
   @media (min-width: 750px) {
-    #shopify-section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > p {
+    #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > p {
       margin: 15px 0;
     }
-    #shopify-section-{{ section.id }} .window-feature {
+    #section-{{ section.id }} .window-feature {
       min-width: unset;
       max-width: unset;
-      width: {{ 100 | divided_by: block_count }}%;
+      width: {{ 100 | divided_by: window_display_count }}%;
     }
-    #shopify-section-{{ section.id }} .window-feature .image-wrapper, #shopify-section-{{ section.id }} .window-feature .image-wrapper > * {
-      aspect-ratio: {{ section.settings.desktop_aspect_ratio }};
+    #section-{{ section.id }} .window-feature .image-wrapper, #section-{{ section.id }} .window-feature .image-wrapper > * {
+      aspect-ratio: {{ section.settings.mobile_aspect_ratio }};
     }
   }
   @media (hover: hover) and (pointer: fine) {
-    #shopify-section-{{ section.id }} .window-feature:hover .text-wrapper {
+    #section-{{ section.id }} .window-feature:hover .text-wrapper {
       top: 0;
     }
   }
@@ -197,6 +201,18 @@
           "label": "Window Display Copy",
           "info": "This is the copy inside the popup on desktop and the content section on mobile",
           "default": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!</p>"
+        }
+      ]
+    },
+    {
+      "type": "custom_liquid_code",
+      "name": "Liquid Code",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "liquid_code",
+          "label": "Liquid Code",
+          "info": "This allows for a bit more customization within this section. There are limitations to using this however. [Read about that here.](https://shopify.dev/themes/architecture/settings/input-settings#liquid)"
         }
       ]
     }
