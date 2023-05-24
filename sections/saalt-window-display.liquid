@@ -14,8 +14,8 @@
       {%- endfor -%}
       {%- for block in section.blocks -%}
         {%- case block.type -%}
-          {%- when 'liquid_code' -%}
-            {{ block.settings.custom_liquid_code }}
+          {%- when 'custom_liquid_code' -%}
+            {{ block.settings.liquid_code }}
           {%- when 'section_title' -%}
             {%- if block.settings.title != blank -%}
               <h{{ block.settings.heading_tag }} class="section-title">
@@ -54,8 +54,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-width: 40%;
-    max-width: 280px;
+    width: 100%;
+    min-width: {{ section.settings.mobile_min_width }};
+    max-width: {{ section.settings.mobile_max_width }};
     overflow: hidden;
     cursor: pointer;
   }
@@ -99,17 +100,20 @@
   #section-{{ section.id }} .window-feature .text-wrapper.visible {
     top: 0;
   }
+  #section-{{ section.id }} .window-feature .text-wrapper ul, #section-{{ section.id }} .window-feature .text-wrapper ol {
+    padding-left: 1.5rem;
+  }
   @media (min-width: 750px) {
     #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > p {
       margin: 15px 0;
     }
     #section-{{ section.id }} .window-feature {
-      min-width: unset;
-      max-width: unset;
       width: {{ 100 | divided_by: window_display_count }}%;
+      min-width: {{ section.settings.desktop_min_width }};
+      max-width: {{ section.settings.desktop_max_width }};
     }
     #section-{{ section.id }} .window-feature .image-wrapper, #section-{{ section.id }} .window-feature .image-wrapper > * {
-      aspect-ratio: {{ section.settings.mobile_aspect_ratio }};
+      aspect-ratio: {{ section.settings.desktop_aspect_ratio }};
     }
   }
   @media (hover: hover) and (pointer: fine) {
@@ -131,11 +135,47 @@
       "info": "Typically only used when setting this ID as a link's destination."
     },
     {
+      "type": "header",
+      "content": "Mobile Settings"
+    },
+    {
+      "type": "text",
+      "id": "mobile_min_width",
+      "label": "Mobile Minimum Width for Window Features",
+      "info": "This sets the min width for all window features on *Mobile* using standard css values.",
+      "default": "40%"
+    },
+    {
+      "type": "text",
+      "id": "mobile_max_width",
+      "label": "Mobile Maximum Width for Window Features",
+      "info": "This sets the max width for all window features on *Mobile* using standard css values.",
+      "default": "280px"
+    },
+    {
       "type": "text",
       "id": "mobile_aspect_ratio",
       "label": "Mobile Aspect Ratio for Window Features",
       "info": "This sets the aspect ratio for all window features on *Mobile* using standard css forward slash syntax.",
       "default": "1/1.5"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Settings"
+    },
+    {
+      "type": "text",
+      "id": "desktop_min_width",
+      "label": "Desktop Minimum Width for Window Features",
+      "info": "This sets the min width for all window features on *Desktop* using standard css values.",
+      "default": "auto"
+    },
+    {
+      "type": "text",
+      "id": "desktop_max_width",
+      "label": "Desktop Maximum Width for Window Features",
+      "info": "This sets the max width for all window features on *Desktop* using standard css values.",
+      "default": "25%"
     },
     {
       "type": "text",
