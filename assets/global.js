@@ -1241,3 +1241,58 @@ const throttle = (func, delay) => {
   };
 };
 // END -- THROTTLER FUNCTION -- END //
+
+// START -- *ADD* MULTIPLE EVENT LISTENERS -- START //
+/**
+ *
+ * @param {array} target Target to add event listeners to
+ * @param {array} arrayOfEvents Array of events to listen for
+ * @param {array} arrayOfFuntions
+ * @param {boolean} useCapture
+ * @returns null
+ */
+const addEventListeners = (target, arrayOfEvents, arrayOfFuntions, useCapture) => {
+  console.log(target);
+  for (const event of arrayOfEvents) {
+    for (const func of arrayOfFuntions) {
+      target.addEventListener(event, func, useCapture);
+    }
+  }
+};
+// END -- *ADD* MULTIPLE EVENT LISTENERS -- END //
+
+// START -- *REMOVE* MULTIPLE EVENT LISTENERS -- START //
+/**
+ *
+ * @param {array} target Target to add event listeners to
+ * @param {array} arrayOfEvents Array of events to listen for
+ * @param {array} arrayOfFuntions
+ * @param {boolean} useCapture
+ * @returns null
+ */
+const removeEventListeners = (target, arrayOfEvents, useCapture) => {
+  for (const event of arrayOfEvents) {
+    for (const func of arrayOfFuntions) {
+      target.removeEventListener(event, func, useCapture);
+    }
+  }
+};
+// END -- *REMOVE* MULTIPLE EVENT LISTENERS -- END //
+
+// START -- A11YCLICK -- START //
+const a11yClick = (e) => {
+  if (e.type === 'click') {
+    return true;
+  } else if (e.type === 'keydown') {
+    var key = e.key;
+    if (key === 'Spacebar' || key === ' ' || key === 'Enter') {
+      if (key === 'Spacebar' || key === ' ') {
+        e.preventDefault();
+      }
+      return true;
+    }
+  } else {
+    return false;
+  }
+};
+// END -- A11YCLICK -- END //
