@@ -125,6 +125,10 @@
     }
   }
   @media (hover: hover) and (pointer: fine) {
+    #section-{{ section.id }} .window-feature-wrapper .window-feature-button {
+      display: none;
+      visibility: hidden;
+    }
     #section-{{ section.id }} .window-feature:hover .text-wrapper {
       top: 0;
     }
@@ -249,6 +253,25 @@
           "label": "Window Display Copy",
           "info": "This is the copy inside the popup on desktop and the content section on mobile",
           "default": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!</p>"
+        },
+        {
+          "type": "text",
+          "id": "filter_source",
+          "label": "Filter Source",
+          "info": "This is the value in the 2nd column of the \"Filters\" menu in the \"Search & Discovery App\" called \"Source\"."
+        },
+        {
+          "type": "text",
+          "id": "filter_val",
+          "label": "Filter Value",
+          "info": "This is the crtieria/value to be applied. Some examples include \"Light\", \"XL\", \"Disc\", and \"Volcanic Black\"."
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Mobile Button Text",
+          "info": "This button is only visible on devices with touch enabled.",
+          "default": "Filter"
         }
       ]
     },
