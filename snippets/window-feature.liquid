@@ -3,7 +3,7 @@
 {%- assign img_width_attr = img_width | times: 50 -%}
 <div
   class="window-feature-wrapper"
-  data-filter-source="filter.v.option.{{ block.settings.filter_source | handleize }}"
+  data-filter-name="{{ block.settings.filter_name }}"
   data-filter-val="{{ block.settings.filter_val }}"
 >
   <a class="window-feature" tabindex="0">
