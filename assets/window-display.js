@@ -44,15 +44,21 @@ class WindowDisplay extends HTMLElement {
 
   applyFilter(e) {
     const filterNames = Array.from(document.querySelectorAll('.filter-label'));
-    const foundMatch = filterNames
-      .filter((el) => {
-        console.log(el.innerText);
-        return el.innerText.trim() === e.target.closest('.window-feature-wrapper').dataset.filterName;
-      })[0]
-      .closest('details')
-      .querySelector(`input[value='${e.target.closest('.window-feature-wrapper').dataset.filterVal}']`);
-    console.log(foundMatch);
-    foundMatch.click();
+    const clickedName = e.target.closest('.window-feature-wrapper').dataset.filterName;
+    const clickedVal = e.target.closest('.window-feature-wrapper').dataset.filterVal;
+    let foundMatch = filterNames.filter((el) => {
+      return el.innerText.trim() === clickedName;
+    })[0];
+    try {
+      foundMatch.closest('details').querySelector(`input[value='${clickedVal}']`).click();
+    } catch (error) {
+      console.error(error);
+      console.warn(
+        `Could not find a match for ${e.target.closest('.window-feature-wrapper').dataset.filterName}: ${
+          e.target.closest('.window-feature-wrapper').dataset.filterVal
+        }`
+      );
+    }
   }
 }
 
