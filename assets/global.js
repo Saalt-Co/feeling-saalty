@@ -1252,7 +1252,6 @@ const throttle = (func, delay) => {
  * @returns null
  */
 const addEventListeners = (target, arrayOfEvents, arrayOfFuntions, useCapture) => {
-  console.log(target);
   for (const event of arrayOfEvents) {
     for (const func of arrayOfFuntions) {
       target.addEventListener(event, func, useCapture);
