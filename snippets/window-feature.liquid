@@ -6,7 +6,13 @@
   data-filter-name="{{ block.settings.filter_name }}"
   data-filter-val="{{ block.settings.filter_val }}"
 >
-  <a class="window-feature" tabindex="0">
+  <a
+    class="window-feature"
+    tabindex="0"
+    {% if block.settings.link_type == 'url' %}
+      href="{{ block.settings.link_url }}"
+    {% endif %}
+  >
     <div class="image-wrapper">
       {%- if block.settings.image != blank -%}
         {{
@@ -42,5 +48,16 @@
       </div>
     </div>
   </a>
-  <button class="window-feature-button">{{ block.settings.button_text }}</button>
+  {% if block.settings.link_type == 'url' %}
+    <a
+      class="window-feature-button"
+      href="{{ block.settings.link_url }}"
+    >
+      {{- block.settings.button_text -}}
+    </a>
+  {% else %}
+    <button class="window-feature-button">
+      {{ block.settings.button_text }}
+    </button>
+  {% endif %}
 </div>

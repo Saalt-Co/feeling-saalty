@@ -61,14 +61,13 @@
     cursor: pointer;
   }
   #section-{{ section.id }} .window-feature {
-    {% if section.settings.background_color != blank %}
-    background: {{ section.settings.background_color }};
-    {% endif %}
     width: 100%;
     overflow: hidden;
     cursor: pointer;
   }
-
+  #section-{{ section.id }} .window-feature:visited {
+    color: inherit;
+  }
   #section-{{ section.id }} .window-feature .image-wrapper, #section-{{ section.id }} .window-feature .image-wrapper > * {
     display: block;
     width: 100%;
@@ -104,6 +103,21 @@
     position: relative;
     height: 100%;
     overflow: scroll;
+  }
+  #section-{{ section.id }} .window-feature-wrapper .window-feature-button {
+    display: block;
+    position: relative;
+    background: #fff;
+    border: 1px solid;
+    color: var(--color-base-text);
+    width: auto;
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: inherit;
+    line-height: 1;
+    text-decoration: none;
   }
   #section-{{ section.id }} .window-feature .text-wrapper.visible {
     top: 0;
@@ -255,16 +269,39 @@
           "default": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!</p>"
         },
         {
+          "type": "radio",
+          "id": "link_type",
+          "label": "Link Type",
+          "info": "This sets the action for click events on this element. \"URL\" will navigate to another url while \"Filter\" is for applying available filters on the page like vendor, absorbency, size, color, etc.",
+          "options": [
+            {
+              "value": "url",
+              "label": "URL"
+            },
+            {
+              "value": "filter",
+              "label": "Filter"
+            }
+          ],
+          "default": "filter"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL",
+          "info": "Paste a URL here in order to link to another page on click. NOTE: *The option for \"Link Type\" MUST be set to \"URL\" in order to use this field.*"
+        },
+        {
           "type": "text",
           "id": "filter_name",
           "label": "Filter Name",
-          "info": "This is the name — or title — of the filter in the filtering menu. Some examples include \"Absorbency\", \"Size\", \"Product Type\", and \"Color\"."
+          "info": "This is the name — or title — of the filter in the filtering menu. Some examples include \"Absorbency\", \"Size\", \"Product Type\", and \"Color\". NOTE: *The option for \"Link Type\" MUST be set to \"Filter\" in order to use this field.*"
         },
         {
           "type": "text",
           "id": "filter_val",
           "label": "Filter Value",
-          "info": "This is the criteria/value to be applied. Some examples include \"Light\", \"XL\", \"Disc\", and \"Volcanic Black\"."
+          "info": "This is the criteria/value to be applied. Some examples include \"Light\", \"XL\", \"Disc\", and \"Volcanic Black\". NOTE: *The option for \"Link Type\" MUST be set to \"Filter\" in order to use this field.*"
         },
         {
           "type": "text",
