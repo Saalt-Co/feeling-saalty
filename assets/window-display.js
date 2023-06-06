@@ -50,19 +50,34 @@ class WindowDisplay extends HTMLElement {
     const clickedName = e.target.closest('.window-feature-wrapper').dataset.filterName;
     const clickedVal = e.target.closest('.window-feature-wrapper').dataset.filterVal;
     let foundMatch = filterNames.filter((el) => {
-      return el.innerText.trim() === clickedName;
+      return el.childNodes[0].data === clickedName;
     })[0];
-    try {
-      foundMatch.closest('details').querySelector(`input[value='${clickedVal}']`).click();
-    } catch (error) {
-      console.error(error);
-      console.warn(
-        `Could not find a match for ${e.target.closest('.window-feature-wrapper').dataset.filterName}: ${
-          e.target.closest('.window-feature-wrapper').dataset.filterVal
-        }`
-      );
+    const target = foundMatch.closest('details').querySelector(`input[value='${clickedVal}']`);
+    target.click();
+
+    if (window.innerWidth < 750) {
+      this.scrollTo('.facets-vertical', -16);
+    } else {
+      this.scrollTo('facet-filters-form', -16);
     }
   }
+
+  // START -- SCROLL TO -- START //
+  /**
+   *
+   * @param {array} targetElement Target to add event listeners to
+   * @param {array} bufferSpace A positive or negative number representing pixels at the top of the target element
+   * @returns null
+   */
+  scrollTo(targetElement, bufferSpace) {
+    const element = document.querySelector(targetElement);
+    window.scroll({
+      behavior: 'smooth',
+      left: 0,
+      top: element.getBoundingClientRect().top + bufferSpace,
+    });
+  }
 }
+// END -- SCROLL TO -- END //
 
 customElements.define('window-display', WindowDisplay);
