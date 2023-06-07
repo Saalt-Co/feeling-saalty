@@ -18,31 +18,62 @@
             {{ block.settings.liquid_code }}
           {%- when 'section_title' -%}
             {%- if block.settings.title != blank -%}
-              <h{{ block.settings.heading_tag }} class="section-title">
+              {%- capture section_title_code -%}
+              <h{{ block.settings.heading_tag }} class="section-title mobile-{{ block.settings.mobile_text_alignment }} desktop-{{ block.settings.desktop_text_alignment }}">
                 {{- block.settings.title -}}
               </h{{ block.settings.heading_tag }}>
+              {%- endcapture -%}
             {%- endif -%}
           {%- when 'window-feature' -%}
+            {%- capture captured_code -%}
             {% render 'window-feature',
               section: section,
               block: block,
               window_display_count: window_display_count,
               forloop_index: forloop.index
             %}
+            {%- endcapture -%}
+            {%- assign window_feature_code = window_feature_code | append: captured_code -%}
         {%- endcase -%}
       {%- endfor -%}
     {%- endif -%}
+    {{ section_title_code }}
+    <div class="window-display-inner-wrapper">
+      {{ window_feature_code }}
+    </div>
   </window-display>
 </section>
 
 {%- style -%}
-  #section-{{ section.id }} .window-display {
+  #section-{{ section.id }} .window-display, #section-{{ section.id }} .window-display .window-display-inner-wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     flex-wrap: nowrap;
     width: 100%;
     overflow-x: scroll;
+  }
+  #section-{{ section.id }} .window-display {
+    flex-direction: column;
+  }
+  #section-{{ section.id }} .window-display .section-title {
+    display: block;
+    width: 100%;
+  }
+  #section-{{ section.id }} .window-display .section-title > p {
+    margin: 0;
+  }
+  #section-{{ section.id }} .window-display .section-title.mobile-center {
+    text-align: center;
+  }
+  #section-{{ section.id }} .window-display .section-title.mobile-left {
+    text-align: left;
+  }
+  #section-{{ section.id }} .window-display .section-title.mobile-right {
+  text-align: right;
+  }
+  #section-{{ section.id }} .window-display .section-title.mobile-justify {
+    text-align: justify;
   }
   #section-{{ section.id }} .window-feature-wrapper, #section-{{ section.id }} .window-feature {
     display: flex;
@@ -119,11 +150,13 @@
     line-height: 1;
     text-decoration: none;
   }
-  #section-{{ section.id }} .window-feature .text-wrapper.visible {
-    top: 0;
-  }
   #section-{{ section.id }} .window-feature .text-wrapper ul, #section-{{ section.id }} .window-feature .text-wrapper ol {
     padding-left: 1.5rem;
+  }
+  @media (hover: none) {
+    #section-{{ section.id }} .window-feature .text-wrapper.visible {
+      top: 0;
+    }
   }
   @media (min-width: 750px) {
     #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > p {
@@ -136,6 +169,18 @@
     }
     #section-{{ section.id }} .window-feature .image-wrapper, #section-{{ section.id }} .window-feature .image-wrapper > * {
       aspect-ratio: {{ section.settings.desktop_aspect_ratio }};
+    }
+    #section-{{ section.id }} .window-display .section-title.desktop-center {
+      text-align: center;
+    }
+    #section-{{ section.id }} .window-display .section-title.desktop-left {
+      text-align: left;
+    }
+    #section-{{ section.id }} .window-display .section-title.desktop-right {
+    text-align: right;
+    }
+    #section-{{ section.id }} .window-display .section-title.desktop-justify {
+      text-align: justify;
     }
   }
   @media (hover: hover) and (pointer: fine) {
@@ -241,6 +286,54 @@
           "id": "title",
           "label": "Title",
           "default": "<p>Section Title Goes Here</p>"
+        },
+        {
+          "type": "select",
+          "id": "mobile_text_alignment",
+          "label": "Title alignment on *MOBILE*",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "justify",
+              "label": "Justify"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "desktop_text_alignment",
+          "label": "Title alignment on *DESKTOP ONLY*",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "justify",
+              "label": "Justify"
+            }
+          ],
+          "default": "center"
         }
       ]
     },
