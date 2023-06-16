@@ -1,5 +1,73 @@
 {
   "sections": {
+    "35251dc7-4eb4-46b5-9a5b-4759bf4effd7": {
+      "type": "saalt-window-display",
+      "blocks": {
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-0": {
+          "type": "window-feature",
+          "settings": {
+            "title": "<p>Window feature<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "filter",
+            "link_url": "",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        },
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-1": {
+          "type": "window-feature",
+          "settings": {
+            "title": "<p>Window feature<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "filter",
+            "link_url": "",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        },
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-2": {
+          "type": "window-feature",
+          "settings": {
+            "title": "<p>Window feature<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "filter",
+            "link_url": "",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        },
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-3": {
+          "type": "window-feature",
+          "settings": {
+            "title": "<p>Window feature<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "filter",
+            "link_url": "",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-0",
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-1",
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-2",
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-3"
+      ],
+      "settings": {
+        "section_id": "",
+        "mobile_min_width": "40%",
+        "mobile_max_width": "280px",
+        "mobile_aspect_ratio": "1\/1.5",
+        "desktop_min_width": "auto",
+        "desktop_max_width": "25%",
+        "desktop_aspect_ratio": "1\/1.5"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -255,6 +323,7 @@
     }
   },
   "order": [
+    "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
     "image_banner",
     "rich_text",
     "featured_collection",
