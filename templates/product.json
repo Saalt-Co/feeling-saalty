@@ -16,6 +16,13 @@
           "settings": {
           }
         },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
         "a540459f-701c-470e-bfa0-1112dcf7d16d": {
           "type": "reviews_summary",
           "settings": {
@@ -24,13 +31,6 @@
         "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7": {
           "type": "absorbency",
           "settings": {
-          }
-        },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
           }
         },
         "price": {
@@ -124,9 +124,9 @@
       "block_order": [
         "vendor",
         "title",
+        "caption",
         "a540459f-701c-470e-bfa0-1112dcf7d16d",
         "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7",
-        "caption",
         "price",
         "variant_picker",
         "quantity_selector",
