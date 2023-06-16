@@ -49,6 +49,11 @@
           "settings": {
           }
         },
+        "1c267ad4-7246-41e5-b2d7-dd8e6b65630e": {
+          "type": "afterpay_widget",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -110,6 +115,7 @@
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
           }
@@ -124,6 +130,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "1c267ad4-7246-41e5-b2d7-dd8e6b65630e",
         "buy_buttons",
         "8e16b700-b5d3-4d93-aa86-a2391fc38797",
         "description",
