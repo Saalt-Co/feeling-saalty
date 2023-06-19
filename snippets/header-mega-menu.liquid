@@ -65,24 +65,8 @@
                               >
                                 <div class="link-title">{{ grandchildlink.title | escape }}</div>
                                 {%- assign link_title = grandchildlink.title | escape | strip -%}
-                                {%- assign downcased_link_title = link_title | downcase -%}
-                                {%- assign capitalized_link_title = link_title | capitalize -%}
                                 {%- if split_absorbencies contains link_title -%}
-                                  <div class="mega-nav-spacer">-</div>
-                                  <div class="icons-wrapper">
-                                    {%- if shop.metaobjects.absorbency[link_title].number_of_drops -%}
-                                      {%- assign found_title = link_title -%}
-                                    {%- elsif shop.metaobjects.absorbency[downcased_link_title].number_of_drops -%}
-                                      {%- assign found_title = downcased_link_title -%}
-                                    {%- elsif shop.metaobjects.absorbency[capitalized_link_title].number_of_drops -%}
-                                      {%- assign found_title = capitalized_link_title -%}
-                                    {%- endif -%}
-                                    {%- for i in (1..5) -%}
-                                      <div class="inner-icon-wrapper{% if i > shop.metaobjects.absorbency[found_title].number_of_drops %} empty{% endif %}">
-                                        {% render 'svg-absorbency-drop' %}
-                                      </div>
-                                    {%- endfor -%}
-                                  </div>
+                                  {% render 'menu-absorbency-icons', link_title: link_title %}
                                 {%- endif -%}
                               </a>
                             </li>

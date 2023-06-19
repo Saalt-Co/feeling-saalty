@@ -191,27 +191,6 @@ details[open].menu-opening > .menu-drawer__submenu {
   display: inline-flex;
 }
 
-.menu-drawer__menu.list-menu a.menu-drawer__menu-item.link.link--text.list-menu__item.focus-inset .icons-wrapper {
-  display: flex;
-  gap: 0.125rem;
-  align-items: center;
-  padding-bottom: 2px;
-  margin-top: 3px;
-  border-bottom: 1px solid transparent;
-}
-
-.menu-drawer__menu.list-menu a.menu-drawer__menu-item.link.link--text.list-menu__item.focus-inset .icons-wrapper svg {
-  width: auto;
-  height: 1.1rem;
-}
-
-.menu-drawer__menu.list-menu a.menu-drawer__menu-item.link.link--text.list-menu__item.focus-inset .menu-spacer {
-  display: inline-block;
-  padding: 0 0.25rem;
-  font-size: 0;
-  border-bottom: 1px solid transparent;
-}
-
 .menu-drawer__close-button {
   margin-top: 1.5rem;
   padding: 1.2rem 2.6rem;
