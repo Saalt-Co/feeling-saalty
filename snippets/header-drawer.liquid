@@ -94,7 +94,10 @@
                                               <div class="link-title">{{ grandchildlink.title | escape }}</div>
                                               {%- assign link_title = grandchildlink.title | escape | strip -%}
                                               {%- if split_absorbencies contains link_title -%}
-                                                {% render 'menu-absorbency-icons', link_title: link_title %}
+                                                {% render 'menu-absorbency-icons',
+                                                  link_title: link_title,
+                                                  include_spacer: true
+                                                %}
                                               {%- endif -%}
                                             </a>
                                           </li>

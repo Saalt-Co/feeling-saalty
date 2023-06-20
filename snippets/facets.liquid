@@ -13,6 +13,7 @@
 {% endcomment %}
 
 {{ 'component-show-more.css' | asset_url | stylesheet_tag }}
+{{ 'menu-absorbency-icons.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
   assign sort_by = results.sort_by | default: results.default_sort_by
@@ -23,8 +24,16 @@
     assign terms = results.terms | escape
     assign results_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
   endif
--%}
 
+  assign absorbencies = ''
+  for entry in shop.metaobjects.absorbency.values
+    assign absorbencies = absorbencies | append: entry.absorbency_name
+    unless forloop.last
+      assign absorbencies = absorbencies | append: ', '
+    endunless
+  endfor
+  assign split_absorbencies = absorbencies | split: ', '
+-%}
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}">
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
     <facet-filters-form class="facets small-hide">
@@ -75,8 +84,12 @@
                       <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
                         <span class="active-facets__button-inner button button--tertiary">
                           {{ filter.label }}: {{ value.label | escape }}
-                          {% render 'icon-close-small' %}
                           <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
+                          {%- assign link_title = value.label | escape | strip -%}
+                          {%- if split_absorbencies contains link_title -%}
+                            {% render 'menu-absorbency-icons', link_title: link_title, include_spacer: false %}
+                          {%- endif -%}
+                          {% render 'icon-close-small' %}
                         </span>
                       </a>
                     </facet-remove>
@@ -204,8 +217,14 @@
                                     stroke-linecap="round"
                                     stroke-linejoin="round" />
                                 </svg>
-
-                                <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
+                                <span aria-hidden="true">
+                                  {{- value.label | escape }}
+                                  {%- assign link_title = value.label | escape | strip -%}
+                                  {%- if split_absorbencies contains link_title -%}
+                                    {% render 'menu-absorbency-icons', link_title: link_title, include_spacer: true %}
+                                  {%- endif -%}
+                                  ({{ value.count }})</span
+                                >
                                 <span class="visually-hidden">
                                   {{- value.label | escape }} (
                                   {%- if value.count == 1 -%}
@@ -269,7 +288,14 @@
                                     stroke-linejoin="round" />
                                 </svg>
 
-                                <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
+                                <span aria-hidden="true">
+                                  {{- value.label | escape }}
+                                  {%- assign link_title = value.label | escape | strip -%}
+                                  {%- if split_absorbencies contains link_title -%}
+                                    {% render 'menu-absorbency-icons', link_title: link_title, include_spacer: true %}
+                                  {%- endif -%}
+                                  ({{ value.count }})</span
+                                >
                                 <span class="visually-hidden">
                                   {{- value.label | escape }} (
                                   {%- if value.count == 1 -%}
@@ -417,8 +443,12 @@
                     <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
                       <span class="active-facets__button-inner button button--tertiary">
                         {{ filter.label }}: {{ value.label | escape }}
-                        {% render 'icon-close-small' %}
                         <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
+                        {%- assign link_title = value.label | escape | strip -%}
+                        {%- if split_absorbencies contains link_title -%}
+                          {% render 'menu-absorbency-icons', link_title: link_title, include_spacer: false %}
+                        {%- endif -%}
+                        {% render 'icon-close-small' %}
                       </span>
                     </a>
                   </facet-remove>
@@ -711,8 +741,14 @@
                                   >
                                     <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
                                   </svg>
-
-                                  <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
+                                  <span aria-hidden="true">
+                                    {{- value.label | escape }}
+                                    {%- assign link_title = value.label | escape | strip -%}
+                                    {%- if split_absorbencies contains link_title -%}
+                                      {% render 'menu-absorbency-icons', link_title: link_title, include_spacer: true %}
+                                    {%- endif -%}
+                                    ({{ value.count }})</span
+                                  >
                                   <span class="visually-hidden">
                                     {{- value.label | escape }} (
                                     {%- if value.count == '1' -%}
@@ -935,8 +971,12 @@
           <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
             <span class="active-facets__button-inner button button--tertiary">
               {{ filter.label }}: {{ value.label | escape }}
-              {% render 'icon-close-small' %}
               <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
+              {%- assign link_title = value.label | escape | strip -%}
+              {%- if split_absorbencies contains link_title -%}
+                {% render 'menu-absorbency-icons', link_title: link_title, include_spacer: false %}
+              {%- endif -%}
+              {% render 'icon-close-small' %}
             </span>
           </a>
         </facet-remove>
@@ -1062,8 +1102,12 @@
                 <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
                   <span class="active-facets__button-inner button button--tertiary">
                     {{ filter.label }}: {{ value.label | escape }}
-                    {% render 'icon-close-small' %}
                     <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
+                    {%- assign link_title = value.label | escape | strip -%}
+                    {%- if split_absorbencies contains link_title -%}
+                      {% render 'menu-absorbency-icons', link_title: link_title, include_spacer: false %}
+                    {%- endif -%}
+                    {% render 'icon-close-small' %}
                   </span>
                 </a>
               </facet-remove>

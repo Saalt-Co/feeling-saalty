@@ -1,7 +1,9 @@
 {%- assign link_title = link_title -%}
 {%- assign downcased_link_title = link_title | downcase -%}
 {%- assign capitalized_link_title = link_title | capitalize -%}
-<div class="menu-spacer">-</div>
+{%- if include_spacer -%}
+  <div class="menu-spacer">-</div>
+{%- endif -%}
 <div class="absorbency-drops_icons-wrapper">
   {%- if shop.metaobjects.absorbency[link_title].number_of_drops -%}
     {%- assign found_title = link_title -%}

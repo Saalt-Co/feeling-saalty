@@ -6,22 +6,21 @@ a.menu-drawer__menu-item.link.link--text.list-menu__item.focus-inset,
 }
 
 .absorbency-drops_icons-wrapper {
-  display: flex;
   gap: 0.125rem;
   align-items: center;
   padding-bottom: 2px;
-  margin-top: 3px;
+  margin-top: 0.5rem;
   border-bottom: 1px solid transparent;
 }
 
-a:hover .absorbency-drops_icons-wrapper {
-  border-bottom: 1px solid;
+.mobile-facets__item .absorbency-drops_icons-wrapper .absorbency-icon {
+  height: auto;
 }
 
-a .absorbency-drops_icons-wrapper svg,
-a .absorbency-drops_inner-icon-wrapper svg {
+label.facet-checkbox .absorbency-drops_icons-wrapper,
+label.facet-checkbox .absorbency-drops_icons-wrapper .absorbency-icon {
   width: auto;
-  height: 1.1rem;
+  height: 1.25rem;
 }
 
 .absorbency-drops_icons-wrapper .absorbency-drops_inner-icon-wrapper {
@@ -32,7 +31,15 @@ a .absorbency-drops_inner-icon-wrapper svg {
   height: auto;
 }
 
-.absorbency-drops_icons-wrapper .absorbency-drops_inner-icon-wrapper.empty svg {
+a .absorbency-drops_icons-wrapper svg.absorbency-icon,
+a .absorbency-drops_inner-icon-wrapper svg.absorbency-icon,
+.mobile-facets__item .absorbency-drops_icons-wrapper svg.absorbency-icon {
+  width: auto;
+  height: 1.125rem;
+  margin-left: 0.125rem;
+}
+
+.absorbency-drops_icons-wrapper .absorbency-drops_inner-icon-wrapper.empty svg.absorbency-icon {
   fill: transparent;
   color: transparent;
   stroke: rgba(var(--color-foreground), 0.75);
@@ -40,7 +47,7 @@ a .absorbency-drops_inner-icon-wrapper svg {
 }
 
 a .absorbency-drops_icons-wrapper {
-  display: flex;
+  display: inline-flex;
   gap: 0.125rem;
   align-items: center;
   padding-bottom: 2px;
@@ -48,14 +55,58 @@ a .absorbency-drops_icons-wrapper {
   border-bottom: 1px solid transparent;
 }
 
-a div.menu-spacer {
+.menu-drawer__menu-item .absorbency-drops_icons-wrapper {
+  margin-top: 0.5rem;
+}
+
+label.facet-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+label.facet-checkbox .absorbency-drops_icons-wrapper {
+  margin-top: 0;
+}
+
+a div.menu-spacer,
+label.facet-checkbox div.menu-spacer,
+.mobile-facets__item div.menu-spacer {
   display: inline-block;
   border-bottom: 1px solid transparent;
   color: transparent;
   font-size: 0;
-  padding: 0 0.25rem;
+  padding: 0 0.15rem;
 }
 
-a:hover div.menu-spacer {
-  border-color: rgb(var(--color-foreground));
+a:not(.active-facets__button):not(.menu-drawer__menu-item):hover div.menu-spacer,
+a:not(.active-facets__button):not(.menu-drawer__menu-item):hover .absorbency-drops_icons-wrapper {
+  border-bottom: 1px solid rgb(var(--color-foreground));
+}
+
+facet-remove a .absorbency-drops_icons-wrapper,
+facet-remove a .absorbency-drops_inner-icon-wrapper {
+  width: unset;
+  margin-top: unset;
+  height: unset;
+  margin-left: unset;
+}
+
+facet-remove a .absorbency-drops_icons-wrapper svg.absorbency-icon,
+facet-remove a .absorbency-drops_inner-icon-wrapper svg.absorbency-icon {
+  width: auto;
+  margin-top: 0.2rem;
+  height: 0.8rem;
+  margin-left: 0.25rem;
+}
+
+@media screen and (min-width: 990px) {
+  facet-remove a .absorbency-drops_inner-icon-wrapper {
+    margin-top: 0.125rem;
+  }
+  facet-remove a .absorbency-drops_icons-wrapper svg.absorbency-icon,
+  facet-remove a .absorbency-drops_inner-icon-wrapper svg.absorbency-icon {
+    width: auto;
+    height: 1.125rem;
+    margin-left: 0.5rem;
+  }
 }
