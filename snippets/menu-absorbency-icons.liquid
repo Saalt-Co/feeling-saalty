@@ -2,7 +2,7 @@
 {%- assign downcased_link_title = link_title | downcase -%}
 {%- assign capitalized_link_title = link_title | capitalize -%}
 <div class="menu-spacer">-</div>
-<div class="icons-wrapper">
+<div class="absorbency-drops_icons-wrapper">
   {%- if shop.metaobjects.absorbency[link_title].number_of_drops -%}
     {%- assign found_title = link_title -%}
   {%- elsif shop.metaobjects.absorbency[downcased_link_title].number_of_drops -%}
@@ -11,7 +11,7 @@
     {%- assign found_title = capitalized_link_title -%}
   {%- endif -%}
   {%- for i in (1..5) -%}
-    <div class="inner-icon-wrapper{% if i > shop.metaobjects.absorbency[found_title].number_of_drops %} empty{% endif %}">
+    <div class="absorbency-drops_inner-icon-wrapper{% if i > shop.metaobjects.absorbency[found_title].number_of_drops %} empty{% endif %}">
       {% render 'svg-absorbency-drop' %}
     </div>
   {%- endfor -%}
