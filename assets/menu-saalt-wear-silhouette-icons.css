@@ -1,0 +1,115 @@
+.mega-menu__link--level-3 > a.mega-menu__link.link,
+a.menu-drawer__menu-item.link.link--text.list-menu__item.focus-inset,
+.saalt-wear-silhouettes_icons-wrapper,
+.saalt-wear-silhouettes_icons-wrapper .inner-wrapper {
+  display: inline-flex;
+}
+
+.saalt-wear-silhouettes_icons-wrapper {
+  gap: 0.125rem;
+  align-items: center;
+  border-bottom: 1px solid transparent;
+}
+
+.mobile-facets__item .saalt-wear-silhouettes_icons-wrapper .silhouette-icon {
+  height: auto;
+}
+
+label.facet-checkbox .saalt-wear-silhouettes_icons-wrapper,
+label.facet-checkbox .saalt-wear-silhouettes_icons-wrapper .silhouette-icon {
+  width: auto;
+  height: 1rem;
+}
+
+.saalt-wear-silhouettes_icons-wrapper .saalt-wear-silhouettes_inner-icon-wrapper {
+  display: inline-flex;
+  flex: 1 1 0;
+  width: 100%;
+  max-width: 1.5rem;
+  height: auto;
+}
+
+a .saalt-wear-silhouettes_icons-wrapper {
+  display: inline-flex;
+  gap: 0.125rem;
+  align-items: center;
+  padding-bottom: 2px;
+  margin-top: 3px;
+  border-bottom: 1px solid transparent;
+}
+
+a .saalt-wear-silhouettes_icons-wrapper svg.silhouette-icon,
+a .saalt-wear-silhouettes_inner-icon-wrapper svg.silhouette-icon,
+.mobile-facets__item .saalt-wear-silhouettes_icons-wrapper svg.silhouette-icon {
+  width: auto;
+  height: 1.125rem;
+  margin-left: 0.125rem;
+}
+
+a.menu-drawer__menu-item .saalt-wear-silhouettes_icons-wrapper svg.silhouette-icon,
+a.menu-drawer__menu-item .saalt-wear-silhouettes_inner-icon-wrapper svg.silhouette-icon {
+  height: 1.25rem;
+}
+
+.menu-drawer__menu-item .saalt-wear-silhouettes_icons-wrapper {
+  margin-top: 0.5rem;
+}
+
+.saalt-wear-silhouettes_icons-wrapper .saalt-wear-silhouettes_inner-icon-wrapper.empty svg.silhouette-icon {
+  fill: transparent;
+  color: transparent;
+  stroke: rgba(var(--color-foreground), 0.75);
+  stroke-width: 1.75rem;
+}
+
+label.facet-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+label.facet-checkbox .saalt-wear-silhouettes_icons-wrapper {
+  margin-top: 0;
+}
+
+a div.menu-spacer,
+label.facet-checkbox div.menu-spacer,
+.mobile-facets__item div.menu-spacer {
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  color: transparent;
+  font-size: 0;
+  padding: 0 0.15rem;
+}
+
+a:not(.active-facets__button):not(.menu-drawer__menu-item):hover div.menu-spacer,
+a:not(.active-facets__button):not(.menu-drawer__menu-item):hover .saalt-wear-silhouettes_icons-wrapper {
+  border-bottom: 1px solid rgb(var(--color-foreground));
+}
+
+facet-remove a .saalt-wear-silhouettes_icons-wrapper,
+facet-remove a .saalt-wear-silhouettes_inner-icon-wrapper {
+  width: unset;
+  margin-top: unset;
+  height: unset;
+  margin-left: unset;
+}
+
+facet-remove a .saalt-wear-silhouettes_icons-wrapper svg.silhouette-icon,
+facet-remove a .saalt-wear-silhouettes_inner-icon-wrapper svg.silhouette-icon {
+  width: auto;
+  margin-top: 0.2rem;
+  height: 0.8rem;
+  margin-left: 0.25rem;
+}
+
+@media screen and (min-width: 990px) {
+  facet-remove a .saalt-wear-silhouettes_inner-icon-wrapper {
+    margin-top: 0.125rem;
+  }
+  facet-remove a .saalt-wear-silhouettes_icons-wrapper svg.silhouette-icon,
+  facet-remove a .saalt-wear-silhouettes_inner-icon-wrapper svg.silhouette-icon {
+    width: auto;
+    height: 1.125rem;
+    margin-left: 0.5rem;
+  }
+}

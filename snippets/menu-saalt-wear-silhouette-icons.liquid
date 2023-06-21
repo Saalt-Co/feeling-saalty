@@ -1,0 +1,20 @@
+{%- assign link_title = link_title -%}
+{%- assign downcased_link_title = link_title | downcase -%}
+{%- assign capitalized_link_title = link_title | capitalize -%}
+{%- if include_spacer -%}
+  <div class="menu-spacer">-</div>
+{%- endif -%}
+<div class="saalt-wear-silhouettes_icons-wrapper">
+  {%- if shop.metaobjects.saalt_wear_silhouettes[link_title].silhouette_svg -%}
+    {%- assign found_title = link_title -%}
+  {%- elsif shop.metaobjects.saalt_wear_silhouettes[downcased_link_title].silhouette_svg -%}
+    {%- assign found_title = downcased_link_title -%}
+  {%- elsif shop.metaobjects.saalt_wear_silhouettes[capitalized_link_title].silhouette_svg -%}
+    {%- assign found_title = capitalized_link_title -%}
+  {%- endif -%}
+  <div class="saalt-wear-silhouettes_inner-icon-wrapper">
+    <div class="silhouette-icon">
+      {{ shop.metaobjects.saalt_wear_silhouettes[found_title].silhouette_svg }}
+    </div>
+  </div>
+</div>

@@ -25,6 +25,9 @@
     assign results_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
   endif
 
+  comment
+    FOR ABSORBENCY ICONS
+  endcomment
   assign absorbencies = ''
   for entry in shop.metaobjects.absorbency.values
     assign absorbencies = absorbencies | append: entry.absorbency_name
@@ -33,6 +36,17 @@
     endunless
   endfor
   assign split_absorbencies = absorbencies | split: ', '
+  comment
+    FOR SILHOUETTE ICONS
+  endcomment
+  assign silhouettes = ''
+  for entry in shop.metaobjects.saalt_wear_silhouettes.values
+    assign silhouettes = silhouettes | append: entry.silhouette_name
+    unless forloop.last
+      assign silhouettes = silhouettes | append: ', '
+    endunless
+  endfor
+  assign split_silhouettes = silhouettes | split: ', '
 -%}
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}">
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
@@ -85,10 +99,14 @@
                         <span class="active-facets__button-inner button button--tertiary">
                           {{ filter.label }}: {{ value.label | escape }}
                           <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
-                          {%- assign link_title = value.label | escape | strip -%}
-                          {%- if split_absorbencies contains link_title -%}
-                            {% render 'menu-absorbency-icons', link_title: link_title, include_spacer: false %}
-                          {%- endif -%}
+                          {%- liquid
+                            assign link_title = value.label | escape | strip
+                            if split_absorbencies contains link_title
+                              render 'menu-absorbency-icons', link_title: link_title, include_spacer: false
+                            elsif split_silhouettes contains link_title
+                              render 'menu-saalt-wear-silhouette-icons', link_title: link_title, include_spacer: false
+                            endif
+                          -%}
                           {% render 'icon-close-small' %}
                         </span>
                       </a>
@@ -217,14 +235,7 @@
                                     stroke-linecap="round"
                                     stroke-linejoin="round" />
                                 </svg>
-                                <span aria-hidden="true">
-                                  {{- value.label | escape }}
-                                  {%- assign link_title = value.label | escape | strip -%}
-                                  {%- if split_absorbencies contains link_title -%}
-                                    {% render 'menu-absorbency-icons', link_title: link_title, include_spacer: false %}
-                                  {%- endif -%}
-                                  ({{ value.count }})</span
-                                >
+                                <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
                                 <span class="visually-hidden">
                                   {{- value.label | escape }} (
                                   {%- if value.count == 1 -%}
@@ -234,6 +245,14 @@
                                   {%- endif -%}
                                   )</span
                                 >
+                                {%- liquid
+                                  assign link_title = value.label | escape | strip
+                                  if split_absorbencies contains link_title
+                                    render 'menu-absorbency-icons', link_title: link_title, include_spacer: false
+                                  elsif split_silhouettes contains link_title
+                                    render 'menu-saalt-wear-silhouette-icons', link_title: link_title, include_spacer: false
+                                  endif
+                                -%}
                               </label>
                             </li>
                           {%- endfor -%}
@@ -288,14 +307,7 @@
                                     stroke-linejoin="round" />
                                 </svg>
 
-                                <span aria-hidden="true">
-                                  {{- value.label | escape }}
-                                  {%- assign link_title = value.label | escape | strip -%}
-                                  {%- if split_absorbencies contains link_title -%}
-                                    {% render 'menu-absorbency-icons', link_title: link_title, include_spacer: true %}
-                                  {%- endif -%}
-                                  ({{ value.count }})</span
-                                >
+                                <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
                                 <span class="visually-hidden">
                                   {{- value.label | escape }} (
                                   {%- if value.count == 1 -%}
@@ -305,6 +317,9 @@
                                   {%- endif -%}
                                   )</span
                                 >
+                                {%- if split_absorbencies contains link_title -%}
+                                  {% render 'menu-absorbency-icons', link_title: link_title, include_spacer: false %}
+                                {%- endif -%}
                               </label>
                             </li>
                           {%- endfor -%}
@@ -444,10 +459,14 @@
                       <span class="active-facets__button-inner button button--tertiary">
                         {{ filter.label }}: {{ value.label | escape }}
                         <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
-                        {%- assign link_title = value.label | escape | strip -%}
-                        {%- if split_absorbencies contains link_title -%}
-                          {% render 'menu-absorbency-icons', link_title: link_title, include_spacer: false %}
-                        {%- endif -%}
+                        {%- liquid
+                          assign link_title = value.label | escape | strip
+                          if split_absorbencies contains link_title
+                            render 'menu-absorbency-icons', link_title: link_title, include_spacer: false
+                          elsif split_silhouettes contains link_title
+                            render 'menu-saalt-wear-silhouette-icons', link_title: link_title, include_spacer: false
+                          endif
+                        -%}
                         {% render 'icon-close-small' %}
                       </span>
                     </a>
@@ -741,14 +760,7 @@
                                   >
                                     <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
                                   </svg>
-                                  <span aria-hidden="true">
-                                    {{- value.label | escape }}
-                                    {%- assign link_title = value.label | escape | strip -%}
-                                    {%- if split_absorbencies contains link_title -%}
-                                      {% render 'menu-absorbency-icons', link_title: link_title, include_spacer: true %}
-                                    {%- endif -%}
-                                    ({{ value.count }})</span
-                                  >
+                                  <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
                                   <span class="visually-hidden">
                                     {{- value.label | escape }} (
                                     {%- if value.count == '1' -%}
@@ -758,6 +770,14 @@
                                     {%- endif -%}
                                     )</span
                                   >
+                                  {%- liquid
+                                    assign link_title = value.label | escape | strip
+                                    if split_absorbencies contains link_title
+                                      render 'menu-absorbency-icons', link_title: link_title, include_spacer: false
+                                    elsif split_silhouettes contains link_title
+                                      render 'menu-saalt-wear-silhouette-icons', link_title: link_title, include_spacer: false
+                                    endif
+                                  -%}
                                 </label>
                               </li>
                             {%- endfor -%}
@@ -972,10 +992,14 @@
             <span class="active-facets__button-inner button button--tertiary">
               {{ filter.label }}: {{ value.label | escape }}
               <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
-              {%- assign link_title = value.label | escape | strip -%}
-              {%- if split_absorbencies contains link_title -%}
-                {% render 'menu-absorbency-icons', link_title: link_title, include_spacer: false %}
-              {%- endif -%}
+              {%- liquid
+                assign link_title = value.label | escape | strip
+                if split_absorbencies contains link_title
+                  render 'menu-absorbency-icons', link_title: link_title, include_spacer: false
+                elsif split_silhouettes contains link_title
+                  render 'menu-saalt-wear-silhouette-icons', link_title: link_title, include_spacer: false
+                endif
+              -%}
               {% render 'icon-close-small' %}
             </span>
           </a>
@@ -1103,10 +1127,14 @@
                   <span class="active-facets__button-inner button button--tertiary">
                     {{ filter.label }}: {{ value.label | escape }}
                     <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
-                    {%- assign link_title = value.label | escape | strip -%}
-                    {%- if split_absorbencies contains link_title -%}
-                      {% render 'menu-absorbency-icons', link_title: link_title, include_spacer: false %}
-                    {%- endif -%}
+                    {%- liquid
+                      assign link_title = value.label | escape | strip
+                      if split_absorbencies contains link_title
+                        render 'menu-absorbency-icons', link_title: link_title, include_spacer: false
+                      elsif split_silhouettes contains link_title
+                        render 'menu-saalt-wear-silhouette-icons', link_title: link_title, include_spacer: false
+                      endif
+                    -%}
                     {% render 'icon-close-small' %}
                   </span>
                 </a>
