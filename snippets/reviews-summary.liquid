@@ -14,4 +14,9 @@
     ></div>
   {%- when 'bazaarvoice' -%}
     <div data-bv-show="rating_summary" data-bv-product-id="{{product.id}}"></div>
+    {%- style -%}
+      div[data-bv-show='inpage_submission']:empty {
+        display: block;
+      }
+    {%- endstyle -%}
 {%- endcase -%}
