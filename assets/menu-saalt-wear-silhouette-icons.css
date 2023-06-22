@@ -125,13 +125,7 @@ facet-remove a .saalt-wear-silhouettes_inner-icon-wrapper .silhouette-icon {
   .saalt-wear-silhouettes_inner-icon-wrapper
   .silhouette-icon
   svg,
-.active-facets-mobile
-  facet-remove
-  a
-  .saalt-wear-silhouettes_inner-icon-wrapper
-  .saalt-wear-silhouettes_inner-icon-wrapper
-  .silhouette-icon
-  svg {
+.active-facets-mobilem facet-remove a .saalt-wear-silhouettes_inner-icon-wrapper .silhouette-icon svg {
   width: auto;
   height: 1rem;
   margin-left: 0;
@@ -173,6 +167,7 @@ label.mobile-facets__label
 
 label.mobile-facets__label .saalt-wear-silhouettes_icons-wrapper,
 .active-facets-mobile facet-remove a .saalt-wear-silhouettes_icons-wrapper {
+  display: inline-flex;
   margin-top: 2px;
   margin-left: 0.25rem;
 }
