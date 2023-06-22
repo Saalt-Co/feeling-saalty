@@ -1,6 +1,6 @@
-{%- assign link_title = link_title -%}
-{%- assign downcased_link_title = link_title | downcase -%}
-{%- assign capitalized_link_title = link_title | capitalize -%}
+{%- assign link_title = link_title | handleize -%}
+{%- assign downcased_link_title = link_title | downcase | handleize -%}
+{%- assign capitalized_link_title = link_title | capitalize | handleize -%}
 {%- if include_spacer -%}
   <div class="menu-spacer">-</div>
 {%- endif -%}
