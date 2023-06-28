@@ -89,60 +89,16 @@
     "12b223cc-366c-40a6-9b61-19d26f7436fc": {
       "type": "video",
       "settings": {
-        "heading": "Video",
+        "heading": "Do leakproof underwear work? Watch the magic.",
         "heading_size": "h1",
         "enable_video_looping": true,
         "video": "shopify:\/\/files\/videos\/Saalt Layers V6.mp4",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "",
         "description": "",
         "full_width": false,
         "color_scheme": "background-1",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "06d014b5-ef9d-4acd-b2ac-36b2c6780c88": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--18370419720465__06d014b5-ef9d-4acd-b2ac-36b2c6780c88-16879620027ac692fa-0": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "Section Title Goes Here"
-          }
-        },
-        "template--18370419720465__06d014b5-ef9d-4acd-b2ac-36b2c6780c88-16879620027ac692fa-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--18370419720465__06d014b5-ef9d-4acd-b2ac-36b2c6780c88-16879620027ac692fa-0",
-        "template--18370419720465__06d014b5-ef9d-4acd-b2ac-36b2c6780c88-16879620027ac692fa-1"
-      ],
-      "settings": {
-        "section_id": "",
-        "background_color": "#EEF0F4",
-        "media_type": "image",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "text_color": "#3F4759",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "section_padding": "default",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "button_color": "#3F4759",
-        "button_color_hover_focus": "#5A5F6F",
-        "button_text_color": "#ffffff",
-        "button_text_hover_focus": "#ffffff"
       }
     },
     "b669d397-8323-4464-ae96-9712fbc8ea35": {
@@ -170,7 +126,7 @@
             "text_group_num": "2",
             "use_max_icon_group_width": false,
             "icon_group_max_width": "600px",
-            "icon_color": "#3F4759",
+            "icon_color": "#3f4759",
             "mobile_icon_text_size": "1.5rem",
             "mobile_icon_group_gap": "3.5rem",
             "mobile_icon_min_width": "80px",
@@ -241,13 +197,13 @@
       ],
       "settings": {
         "section_id": "",
-        "background_color": "#EEF0F4",
+        "background_color": "#eef0f4",
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/saalt-wear-mesh-bag-with-hands.png",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
-        "text_color": "#3F4759",
+        "text_color": "#3f4759",
         "section_padding": "default",
         "mobile_text_alignment": "center",
         "content_font_size": "small",
@@ -256,8 +212,8 @@
         "use_max_text_width": false,
         "max_width": "600px",
         "button_style": "primary",
-        "button_color": "#3F4759",
-        "button_color_hover_focus": "#5A5F6F",
+        "button_color": "#3f4759",
+        "button_color_hover_focus": "#5a5f6f",
         "button_text_color": "#ffffff",
         "button_text_hover_focus": "#ffffff"
       }
@@ -268,7 +224,6 @@
     "4b7bcf70-9b6b-48c4-a538-0e13cf35a435",
     "product-grid",
     "12b223cc-366c-40a6-9b61-19d26f7436fc",
-    "06d014b5-ef9d-4acd-b2ac-36b2c6780c88",
     "b669d397-8323-4464-ae96-9712fbc8ea35"
   ]
 }
