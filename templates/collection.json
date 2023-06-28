@@ -335,7 +335,7 @@
         "template--18370419720465__6f86141b-6e50-4f99-a4bf-ce75e198df4c-1687976107730f0061-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
+            "text_content": "<p>When you purchase, Saalt gives 2% to donate period care in areas with the most need and fund initiatives in menstrual health, girls education, and sustainability. Invest in your comfort and make a difference with every purchase. Thank you for (period) caring.<\/p>"
           }
         },
         "2fcca7a3-941c-4dcb-b9d2-1315997612d0": {
@@ -523,6 +523,64 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "8c4a0b05-fe36-4c97-9368-6117bd4422e3": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-0": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "We're here to get you to period bliss."
+          }
+        },
+        "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>If you're not happy with your leakproof underwear or other Saalt products, we'll send you a replacement you'll love or your money back per our Period Bliss Guarantee.<\/p>"
+          }
+        },
+        "b2ee0a35-d994-4a99-9c1b-24b9c7973252": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "3",
+            "title": "Reach out to our Saalt Coaches"
+          }
+        },
+        "a97b9c6f-ca1f-4195-a315-328e0406cdd6": {
+          "type": "saalt_contact_links",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-0",
+        "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-1",
+        "b2ee0a35-d994-4a99-9c1b-24b9c7973252",
+        "a97b9c6f-ca1f-4195-a315-328e0406cdd6"
+      ],
+      "settings": {
+        "section_id": "",
+        "background_color": "#EEF0F4",
+        "media_type": "image",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "text_color": "#3F4759",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "section_padding": "default",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "center",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "600px",
+        "button_style": "primary",
+        "button_color": "#3F4759",
+        "button_color_hover_focus": "#5A5F6F",
+        "button_text_color": "#ffffff",
+        "button_text_hover_focus": "#ffffff"
+      }
     }
   },
   "order": [
@@ -534,6 +592,7 @@
     "608ca706-ad50-41fb-bcb5-660ee4c39ec0",
     "6f86141b-6e50-4f99-a4bf-ce75e198df4c",
     "2fd45acc-e549-4e62-ae27-9527c6b16e36",
-    "b4f29bbb-7268-4349-91b5-1ab1f590f3c0"
+    "b4f29bbb-7268-4349-91b5-1ab1f590f3c0",
+    "8c4a0b05-fe36-4c97-9368-6117bd4422e3"
   ]
 }
