@@ -37,16 +37,16 @@
   endfor
   assign split_absorbencies = absorbencies | split: ', '
   comment
-    FOR SILHOUETTE ICONS
+    FOR STYLE ICONS
   endcomment
-  assign silhouettes = ''
-  for entry in shop.metaobjects.saalt_wear_silhouettes.values
-    assign silhouettes = silhouettes | append: entry.silhouette_name
+  assign style = ''
+  for entry in shop.metaobjects.saalt_wear_styles.values
+    assign style = style | append: entry.style_name
     unless forloop.last
-      assign silhouettes = silhouettes | append: ', '
+      assign style = style | append: ', '
     endunless
   endfor
-  assign split_silhouettes = silhouettes | split: ', '
+  assign split_style = style | split: ', '
 -%}
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}">
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
@@ -93,6 +93,7 @@
                   </facet-remove>
                 </div>
                 {%- for filter in results.filters -%}
+                  {%- assign filter_label_downcased = filter.label | downcase -%}
                   {%- for value in filter.active_values -%}
                     <facet-remove>
                       <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
@@ -101,10 +102,10 @@
                           <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
                           {%- liquid
                             assign link_title = value.label | escape | strip
-                            if split_absorbencies contains link_title
+                            if split_absorbencies contains link_title and filter_label_downcased == 'absorbency'
                               render 'menu-absorbency-icons', link_title: link_title, include_spacer: false
-                            elsif split_silhouettes contains link_title
-                              render 'menu-saalt-wear-silhouette-icons', link_title: link_title, include_spacer: false
+                            elsif split_style contains link_title
+                              render 'menu-saalt-wear-style-icons', link_title: link_title, include_spacer: false
                             endif
                           -%}
                           {% render 'icon-close-small' %}
@@ -142,6 +143,7 @@
             <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
             {% comment %} Filters for both horizontal and vertical filter {% endcomment %}
             {%- for filter in results.filters -%}
+              {%- assign filter_label_downcased = filter.label | downcase -%}
               {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
               {% case filter.type %}
                 {% when 'boolean', 'list' %}
@@ -239,10 +241,10 @@
                                   {{- value.label | escape }}
                                   {%- liquid
                                     assign link_title = value.label | escape | strip
-                                    if split_absorbencies contains link_title
+                                    if split_absorbencies contains link_title and filter_label_downcased == 'absorbency'
                                       render 'menu-absorbency-icons', link_title: link_title, include_spacer: false
-                                    elsif split_silhouettes contains link_title
-                                      render 'menu-saalt-wear-silhouette-icons', link_title: link_title, include_spacer: false
+                                    elsif split_style contains link_title
+                                      render 'menu-saalt-wear-style-icons', link_title: link_title, include_spacer: false
                                     endif
                                   -%}
                                   ({{ value.count }})</span
@@ -456,6 +458,7 @@
           {%- if filter_type == 'horizontal' -%}
             <div class="active-facets active-facets-desktop">
               {%- for filter in results.filters -%}
+                {%- assign filter_label_downcased = filter.label | downcase -%}
                 {%- for value in filter.active_values -%}
                   <facet-remove>
                     <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
@@ -464,10 +467,10 @@
                         <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
                         {%- liquid
                           assign link_title = value.label | escape | strip
-                          if split_absorbencies contains link_title
+                          if split_absorbencies contains link_title and filter_label_downcased == 'absorbency'
                             render 'menu-absorbency-icons', link_title: link_title, include_spacer: false
-                          elsif split_silhouettes contains link_title
-                            render 'menu-saalt-wear-silhouette-icons', link_title: link_title, include_spacer: false
+                          elsif split_style contains link_title
+                            render 'menu-saalt-wear-style-icons', link_title: link_title, include_spacer: false
                           endif
                         -%}
                         {% render 'icon-close-small' %}
@@ -693,6 +696,7 @@
             <div class="mobile-facets__main has-submenu gradient">
               {%- if enable_filtering -%}
                 {%- for filter in results.filters -%}
+                  {%- assign filter_label_downcased = filter.label | downcase -%}
                   {% case filter.type %}
                     {% when 'boolean', 'list' %}
                       <details
@@ -767,10 +771,10 @@
                                     {{- value.label | escape }}
                                     {%- liquid
                                       assign link_title = value.label | escape | strip
-                                      if split_absorbencies contains link_title
+                                      if split_absorbencies contains link_title and filter_label_downcased == 'absorbency'
                                         render 'menu-absorbency-icons', link_title: link_title, include_spacer: false
-                                      elsif split_silhouettes contains link_title
-                                        render 'menu-saalt-wear-silhouette-icons', link_title: link_title, include_spacer: false
+                                      elsif split_style contains link_title
+                                        render 'menu-saalt-wear-style-icons', link_title: link_title, include_spacer: false
                                       endif
                                     -%}
                                     ({{ value.count }})</span
@@ -992,6 +996,7 @@
 
   <div class="active-facets active-facets-mobile medium-hide large-up-hide">
     {%- for filter in results.filters -%}
+      {%- assign filter_label_downcased = filter.label | downcase -%}
       {%- for value in filter.active_values -%}
         <facet-remove>
           <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
@@ -1000,10 +1005,10 @@
               <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
               {%- liquid
                 assign link_title = value.label | escape | strip
-                if split_absorbencies contains link_title
+                if split_absorbencies contains link_title and filter_label_downcased == 'absorbency'
                   render 'menu-absorbency-icons', link_title: link_title, include_spacer: false
-                elsif split_silhouettes contains link_title
-                  render 'menu-saalt-wear-silhouette-icons', link_title: link_title, include_spacer: false
+                elsif split_style contains link_title
+                  render 'menu-saalt-wear-style-icons', link_title: link_title, include_spacer: false
                 endif
               -%}
               {% render 'icon-close-small' %}
@@ -1127,6 +1132,7 @@
       <form id="FacetFiltersPillsForm" class="facets__form">
         <div class="active-facets active-facets-desktop">
           {%- for filter in results.filters -%}
+            {%- assign filter_label_downcased = filter.label | downcase -%}
             {%- for value in filter.active_values -%}
               <facet-remove>
                 <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
@@ -1135,10 +1141,10 @@
                     <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
                     {%- liquid
                       assign link_title = value.label | escape | strip
-                      if split_absorbencies contains link_title
+                      if split_absorbencies contains link_title and filter_label_downcased == 'absorbency'
                         render 'menu-absorbency-icons', link_title: link_title, include_spacer: false
-                      elsif split_silhouettes contains link_title
-                        render 'menu-saalt-wear-silhouette-icons', link_title: link_title, include_spacer: false
+                      elsif split_style contains link_title
+                        render 'menu-saalt-wear-style-icons', link_title: link_title, include_spacer: false
                       endif
                     -%}
                     {% render 'icon-close-small' %}
