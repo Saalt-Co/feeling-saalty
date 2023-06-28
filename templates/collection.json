@@ -324,6 +324,7 @@
     },
     "6f86141b-6e50-4f99-a4bf-ce75e198df4c": {
       "type": "saalt-media-with-text",
+      "disabled": true,
       "blocks": {
         "template--18370419720465__6f86141b-6e50-4f99-a4bf-ce75e198df4c-1687976107730f0061-0": {
           "type": "section_title",
@@ -421,46 +422,120 @@
         "button_text_hover_focus": "#ffffff"
       }
     },
-    "2fd45acc-e549-4e62-ae27-9527c6b16e36": {
-      "type": "saalt-testimonials",
+    "835cabec-b298-4b76-9a74-2ae85e6ea4be": {
+      "type": "multicolumn",
       "blocks": {
-        "template--18370419720465__2fd45acc-e549-4e62-ae27-9527c6b16e36-1687976800918675a1-0": {
-          "type": "testimonial",
+        "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-0": {
+          "type": "column",
           "settings": {
-            "quote": "Saalt is the best",
-            "author": "Sarah",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
+            "image": "shopify:\/\/shop_images\/chelsea2.jpg",
+            "title": "Customer name",
+            "text": "<p>UGC quotes here<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "template--18370419720465__2fd45acc-e549-4e62-ae27-9527c6b16e36-1687976800918675a1-1": {
-          "type": "testimonial",
+        "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2": {
+          "type": "column",
           "settings": {
-            "quote": "Changed my life",
-            "author": "- every customer ever",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
+            "image": "shopify:\/\/shop_images\/Photo_Dec_28_2022_3_54_10_PM.jpg",
+            "title": "Customer 2",
+            "text": "<p>UGC quotes again<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "8ad13ac4-10e5-4131-bf07-17d6ff34bba2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/synclaire_2.jpg",
+            "title": "Customer 3",
+            "text": "<p>UGC UGC UGC<\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "template--18370419720465__2fd45acc-e549-4e62-ae27-9527c6b16e36-1687976800918675a1-0",
-        "template--18370419720465__2fd45acc-e549-4e62-ae27-9527c6b16e36-1687976800918675a1-1"
+        "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-0",
+        "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2",
+        "8ad13ac4-10e5-4131-bf07-17d6ff34bba2"
       ],
       "settings": {
-        "layout": "full_bleed",
-        "slide_height": "medium",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "bg_color": "",
-        "include_img": true,
-        "image": "shopify:\/\/shop_images\/Testimonials_2f13b6a1-4f8c-457b-8330-103ae6dd286f.jpg",
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "8c4a0b05-fe36-4c97-9368-6117bd4422e3": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-0": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "We're here to get you to period bliss."
+          }
+        },
+        "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>If you're not happy with your leakproof underwear or other Saalt products, we'll send you a replacement you'll love or your money back per our Period Bliss Guarantee.<\/p>"
+          }
+        },
+        "b2ee0a35-d994-4a99-9c1b-24b9c7973252": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "3",
+            "title": "Reach out to our Saalt Coaches"
+          }
+        },
+        "a97b9c6f-ca1f-4195-a315-328e0406cdd6": {
+          "type": "saalt_contact_links",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-0",
+        "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-1",
+        "b2ee0a35-d994-4a99-9c1b-24b9c7973252",
+        "a97b9c6f-ca1f-4195-a315-328e0406cdd6"
+      ],
+      "settings": {
+        "section_id": "",
+        "background_color": "#EEF0F4",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/solid_color_background.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/solid_color_background_desktop.jpg",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "text_color": "#3F4759",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "section_padding": "default",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "center",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "600px",
+        "button_style": "primary",
+        "button_color": "#3F4759",
+        "button_color_hover_focus": "#5A5F6F",
+        "button_text_color": "#ffffff",
+        "button_text_hover_focus": "#ffffff"
       }
     },
     "b4f29bbb-7268-4349-91b5-1ab1f590f3c0": {
@@ -523,64 +598,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "8c4a0b05-fe36-4c97-9368-6117bd4422e3": {
-      "type": "saalt-bg-media-with-text",
-      "blocks": {
-        "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-0": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "We're here to get you to period bliss."
-          }
-        },
-        "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>If you're not happy with your leakproof underwear or other Saalt products, we'll send you a replacement you'll love or your money back per our Period Bliss Guarantee.<\/p>"
-          }
-        },
-        "b2ee0a35-d994-4a99-9c1b-24b9c7973252": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "3",
-            "title": "Reach out to our Saalt Coaches"
-          }
-        },
-        "a97b9c6f-ca1f-4195-a315-328e0406cdd6": {
-          "type": "saalt_contact_links",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-0",
-        "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-1",
-        "b2ee0a35-d994-4a99-9c1b-24b9c7973252",
-        "a97b9c6f-ca1f-4195-a315-328e0406cdd6"
-      ],
-      "settings": {
-        "section_id": "",
-        "background_color": "#EEF0F4",
-        "media_type": "image",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "text_color": "#3F4759",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "section_padding": "default",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "center",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": true,
-        "max_width": "600px",
-        "button_style": "primary",
-        "button_color": "#3F4759",
-        "button_color_hover_focus": "#5A5F6F",
-        "button_text_color": "#ffffff",
-        "button_text_hover_focus": "#ffffff"
-      }
     }
   },
   "order": [
@@ -591,8 +608,8 @@
     "fc031dea-6661-47b1-b752-79fa446b4dee",
     "608ca706-ad50-41fb-bcb5-660ee4c39ec0",
     "6f86141b-6e50-4f99-a4bf-ce75e198df4c",
-    "2fd45acc-e549-4e62-ae27-9527c6b16e36",
-    "b4f29bbb-7268-4349-91b5-1ab1f590f3c0",
-    "8c4a0b05-fe36-4c97-9368-6117bd4422e3"
+    "835cabec-b298-4b76-9a74-2ae85e6ea4be",
+    "8c4a0b05-fe36-4c97-9368-6117bd4422e3",
+    "b4f29bbb-7268-4349-91b5-1ab1f590f3c0"
   ]
 }
