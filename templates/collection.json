@@ -90,7 +90,7 @@
       "type": "video",
       "settings": {
         "heading": "Do leakproof underwear work? Watch the magic.",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "enable_video_looping": true,
         "video": "shopify:\/\/files\/videos\/Saalt Layers V6.mp4",
         "video_url": "",
@@ -109,7 +109,7 @@
           "settings": {
             "text_group_num": "1",
             "heading_tag": "2",
-            "title": "Take good care of Saalt Wear period underwear and it will take great care of you.",
+            "title": "How to care for Saalt Wear:",
             "title_font_size": "medium"
           }
         },
@@ -117,7 +117,7 @@
           "type": "section_content",
           "settings": {
             "text_group_num": "1",
-            "text_content": ""
+            "text_content": "<p>Take good care of Saalt Wear and it will take great care of you.<\/p>"
           }
         },
         "template--18370419720465__b669d397-8323-4464-ae96-9712fbc8ea35-1687963500cdf5b27a-2": {
