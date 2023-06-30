@@ -10,6 +10,7 @@
     },
     "4b7bcf70-9b6b-48c4-a538-0e13cf35a435": {
       "type": "saalt-window-display",
+      "disabled": true,
       "blocks": {
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-0": {
           "type": "window-feature",
