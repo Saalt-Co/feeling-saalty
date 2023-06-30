@@ -49,12 +49,26 @@
             "filter_val": "",
             "button_text": "Shop Heavy"
           }
+        },
+        "b8c80227-4dc1-412a-ac0a-2512bb438904": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Homepage_Mobile_Teen.png",
+            "title": "<p>Teen<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "url",
+            "link_url": "",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
         }
       },
       "block_order": [
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-0",
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-1",
-        "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-2"
+        "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-2",
+        "b8c80227-4dc1-412a-ac0a-2512bb438904"
       ],
       "settings": {
         "section_id": "",
