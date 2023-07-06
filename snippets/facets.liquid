@@ -100,14 +100,12 @@
                         <span class="active-facets__button-inner button button--tertiary">
                           {{ filter.label }}: {{ value.label | escape }}
                           <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
-                          {%- liquid
-                            assign link_title = value.label | escape | strip
-                            if split_absorbencies contains link_title and filter_label_downcased == 'absorbency'
-                              render 'menu-absorbency-icons', link_title: link_title, include_spacer: false
-                            elsif split_style contains link_title
-                              render 'menu-saalt-wear-style-icons', link_title: link_title, include_spacer: false
-                            endif
-                          -%}
+                          {% render 'filter-icons',
+                            value: value,
+                            split_absorbencies: split_absorbencies,
+                            filter_label_downcased: filter_label_downcased,
+                            split_style: split_style
+                          %}
                           {% render 'icon-close-small' %}
                         </span>
                       </a>
@@ -463,14 +461,12 @@
                       <span class="active-facets__button-inner button button--tertiary">
                         {{ filter.label }}: {{ value.label | escape }}
                         <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
-                        {%- liquid
-                          assign link_title = value.label | escape | strip
-                          if split_absorbencies contains link_title and filter_label_downcased == 'absorbency'
-                            render 'menu-absorbency-icons', link_title: link_title, include_spacer: false
-                          elsif split_style contains link_title
-                            render 'menu-saalt-wear-style-icons', link_title: link_title, include_spacer: false
-                          endif
-                        -%}
+                        {% render 'filter-icons',
+                          value: value,
+                          split_absorbencies: split_absorbencies,
+                          filter_label_downcased: filter_label_downcased,
+                          split_style: split_style
+                        %}
                         {% render 'icon-close-small' %}
                       </span>
                     </a>
