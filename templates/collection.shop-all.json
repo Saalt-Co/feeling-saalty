@@ -56,10 +56,10 @@
             "image": "shopify:\/\/shop_images\/Homepage_Mobile_Teen.png",
             "title": "<p>Teen<\/p>",
             "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
-            "link_type": "url",
+            "link_type": "filter",
             "link_url": "",
-            "filter_name": "",
-            "filter_val": "",
+            "filter_name": "Collection",
+            "filter_val": "Cotton",
             "button_text": ""
           }
         }
