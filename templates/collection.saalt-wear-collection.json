@@ -10,16 +10,15 @@
     },
     "4b7bcf70-9b6b-48c4-a538-0e13cf35a435": {
       "type": "saalt-window-display",
-      "disabled": true,
       "blocks": {
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-0": {
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/SW-SM-Light-Day-Workout-3-Pack-Bundle-PDP-3_01.jpg",
-            "title": "<p>Period Underwear<\/p>",
+            "title": "<p>Light Absorbency<\/p>",
             "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
-            "link_type": "url",
-            "link_url": "shopify:\/\/collections\/saalt-period-underwear",
+            "link_type": "filter",
+            "link_url": "",
             "filter_name": "Absorbency",
             "filter_val": "Light",
             "button_text": "Shop Light"
@@ -29,12 +28,12 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/Deep_Marine.jpg",
-            "title": "<p>Cups & Discs<\/p>",
+            "title": "<p>Regular Absorbency<\/p>",
             "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
             "link_type": "filter",
             "link_url": "",
-            "filter_name": "Product Type",
-            "filter_val": "Cups",
+            "filter_name": "Absorbency",
+            "filter_val": "Regular",
             "button_text": "Shop Regular"
           }
         },
@@ -42,34 +41,20 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/SW-CT-BR-VB-Nichole-11028.jpg",
-            "title": "<p>Bundles<\/p>",
+            "title": "<p>Heavy Absorbency<\/p>",
             "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
-            "link_type": "url",
-            "link_url": "shopify:\/\/collections\/preset-bundles",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Shop Heavy"
-          }
-        },
-        "b8c80227-4dc1-412a-ac0a-2512bb438904": {
-          "type": "window-feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Homepage_Mobile_Teen.png",
-            "title": "<p>Teen<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
-            "link_type": "url",
+            "link_type": "filter",
             "link_url": "",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Filter"
+            "filter_name": "Absorbency",
+            "filter_val": "Heavy",
+            "button_text": "Shop Heavy"
           }
         }
       },
       "block_order": [
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-0",
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-1",
-        "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-2",
-        "b8c80227-4dc1-412a-ac0a-2512bb438904"
+        "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-2"
       ],
       "settings": {
         "section_id": "",
@@ -119,7 +104,6 @@
     },
     "fc031dea-6661-47b1-b752-79fa446b4dee": {
       "type": "saalt-media-with-split-text",
-      "disabled": true,
       "blocks": {
         "template--18370419720465__fc031dea-6661-47b1-b752-79fa446b4dee-1687976507446c2c25-0": {
           "type": "section_title",
@@ -234,15 +218,14 @@
         "use_max_text_width": false,
         "max_width": "600px",
         "button_style": "primary",
-        "button_color": "#3f4759",
-        "button_color_hover_focus": "#5a5f6f",
+        "button_color": "#3F4759",
+        "button_color_hover_focus": "#5A5F6F",
         "button_text_color": "#ffffff",
         "button_text_hover_focus": "#ffffff"
       }
     },
     "608ca706-ad50-41fb-bcb5-660ee4c39ec0": {
       "type": "saalt-media-with-text",
-      "disabled": true,
       "blocks": {
         "template--18370419720465__608ca706-ad50-41fb-bcb5-660ee4c39ec0-1687976107730f0061-0": {
           "type": "section_title",
@@ -262,7 +245,7 @@
           "settings": {
             "use_max_icon_group_width": false,
             "icon_group_max_width": "600px",
-            "icon_color": "#3f4759",
+            "icon_color": "#3F4759",
             "mobile_icon_text_size": "1.5rem",
             "mobile_icon_group_gap": "3.5rem",
             "mobile_icon_min_width": "80px",
@@ -317,13 +300,13 @@
       ],
       "settings": {
         "section_id": "",
-        "background_color": "#eef0f4",
+        "background_color": "#EEF0F4",
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/saalt-wear-mesh-bag-with-hands.png",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
-        "text_color": "#3f4759",
+        "text_color": "#3F4759",
         "title_font_size": "small",
         "content_font_size": "small",
         "section_padding": "default",
@@ -333,14 +316,15 @@
         "desktop_text_alignment": "center",
         "use_max_text_width": false,
         "max_width": "600px",
-        "button_color": "#3f4759",
-        "button_color_hover_focus": "#5a5f6f",
+        "button_color": "#3F4759",
+        "button_color_hover_focus": "#5A5F6F",
         "button_text_color": "#ffffff",
         "button_text_hover_focus": "#ffffff"
       }
     },
     "6f86141b-6e50-4f99-a4bf-ce75e198df4c": {
       "type": "saalt-media-with-text",
+      "disabled": true,
       "blocks": {
         "template--18370419720465__6f86141b-6e50-4f99-a4bf-ce75e198df4c-1687976107730f0061-0": {
           "type": "section_title",
@@ -360,7 +344,7 @@
           "settings": {
             "use_max_icon_group_width": false,
             "icon_group_max_width": "600px",
-            "icon_color": "#3f4759",
+            "icon_color": "#3F4759",
             "mobile_icon_text_size": "1.5rem",
             "mobile_icon_group_gap": "3.5rem",
             "mobile_icon_min_width": "80px",
@@ -422,7 +406,7 @@
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
-        "text_color": "#3f4759",
+        "text_color": "#3F4759",
         "title_font_size": "small",
         "content_font_size": "small",
         "section_padding": "default",
@@ -432,8 +416,8 @@
         "desktop_text_alignment": "center",
         "use_max_text_width": false,
         "max_width": "600px",
-        "button_color": "#3f4759",
-        "button_color_hover_focus": "#5a5f6f",
+        "button_color": "#3F4759",
+        "button_color_hover_focus": "#5A5F6F",
         "button_text_color": "#ffffff",
         "button_text_hover_focus": "#ffffff"
       }
@@ -444,7 +428,7 @@
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bright_girl_guide_7_4b71619e-73ed-4d07-ac16-6a0fb255671f.jpg",
+            "image": "shopify:\/\/shop_images\/chelsea2.jpg",
             "title": "Customer name",
             "text": "<p>UGC quotes here<\/p>",
             "link_label": "",
@@ -454,7 +438,7 @@
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Teen_Lifestyle-57.jpg",
+            "image": "shopify:\/\/shop_images\/Photo_Dec_28_2022_3_54_10_PM.jpg",
             "title": "Customer 2",
             "text": "<p>UGC quotes again<\/p>",
             "link_label": "",
@@ -464,7 +448,7 @@
         "8ad13ac4-10e5-4131-bf07-17d6ff34bba2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Chelsea.jpg",
+            "image": "shopify:\/\/shop_images\/synclaire_2.jpg",
             "title": "Customer 3",
             "text": "<p>UGC UGC UGC<\/p>",
             "link_label": "",
@@ -507,7 +491,7 @@
         "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>If you're not happy with your Saalt product, we'll send you a replacement you'll love or your money back per our Period Bliss Guarantee.<\/p>"
+            "text_content": "<p>If you're not happy with your leakproof underwear or other Saalt products, we'll send you a replacement you'll love or your money back per our Period Bliss Guarantee.<\/p>"
           }
         },
         "b2ee0a35-d994-4a99-9c1b-24b9c7973252": {
@@ -531,13 +515,13 @@
       ],
       "settings": {
         "section_id": "",
-        "background_color": "#eef0f4",
+        "background_color": "#EEF0F4",
         "media_type": "image",
         "mobile_image": "shopify:\/\/shop_images\/solid_color_background.jpg",
         "desktop_image": "shopify:\/\/shop_images\/solid_color_background_desktop.jpg",
         "use_max_media_width": false,
         "max_media_width": "700px",
-        "text_color": "#3f4759",
+        "text_color": "#3F4759",
         "title_font_size": "small",
         "content_font_size": "small",
         "section_padding": "default",
@@ -548,15 +532,14 @@
         "use_max_text_width": true,
         "max_width": "600px",
         "button_style": "primary",
-        "button_color": "#3f4759",
-        "button_color_hover_focus": "#5a5f6f",
+        "button_color": "#3F4759",
+        "button_color_hover_focus": "#5A5F6F",
         "button_text_color": "#ffffff",
         "button_text_hover_focus": "#ffffff"
       }
     },
     "b4f29bbb-7268-4349-91b5-1ab1f590f3c0": {
       "type": "collapsible-content",
-      "disabled": true,
       "blocks": {
         "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-0": {
           "type": "collapsible_row",
