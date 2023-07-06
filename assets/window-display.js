@@ -53,6 +53,8 @@ class WindowDisplay extends HTMLElement {
       return el.childNodes[0].data === clickedName;
     })[0];
     const target = foundMatch.closest('details').querySelector(`input[value='${clickedVal}']`);
+    window.WindowDisplay = window.WindowDisplay || {};
+    window.WindowDisplay.clicked = true;
     target.click();
 
     if (window.innerWidth < 750) {
