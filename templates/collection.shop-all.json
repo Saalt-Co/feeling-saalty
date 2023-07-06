@@ -16,12 +16,12 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/SW-SM-Light-Day-Workout-3-Pack-Bundle-PDP-3_01.jpg",
             "title": "<p>Period Underwear<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "copy": "<p>This is period underwear. It's great.<\/p>",
             "link_type": "url",
             "link_url": "shopify:\/\/collections\/saalt-period-underwear",
             "filter_name": "Absorbency",
-            "filter_val": "Light",
-            "button_text": "Shop Light"
+            "filter_val": "",
+            "button_text": "Shop Underwear"
           }
         },
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-1": {
@@ -34,7 +34,7 @@
             "link_url": "",
             "filter_name": "Product Type",
             "filter_val": "Cups",
-            "button_text": "Shop Regular"
+            "button_text": "Shop Cups & Discs"
           }
         },
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-2": {
@@ -47,7 +47,7 @@
             "link_url": "shopify:\/\/collections\/preset-bundles",
             "filter_name": "",
             "filter_val": "",
-            "button_text": "Shop Heavy"
+            "button_text": "Shop Bundles"
           }
         },
         "b8c80227-4dc1-412a-ac0a-2512bb438904": {
@@ -60,7 +60,7 @@
             "link_url": "",
             "filter_name": "",
             "filter_val": "",
-            "button_text": "Filter"
+            "button_text": ""
           }
         }
       },
