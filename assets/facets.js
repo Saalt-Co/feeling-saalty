@@ -173,7 +173,20 @@ class FacetFiltersForm extends HTMLElement {
   }
 
   onSubmitForm(searchParams, event) {
-    FacetFiltersForm.renderPage(searchParams, event);
+    console.log(searchParams);
+    console.log(event);
+    if (window.WindowDisplay && window.WindowDisplay.clicked && window.location.href.indexOf('filter') > -1) {
+      const splitSearchParams = searchParams.split('&');
+      let updatedSearchParams = splitSearchParams.filter(
+        (filter) => filter == `${event.target.name}=${event.target.value.replace(' ', '+').replace('&', '%26')}`
+      );
+      console.log(`event.name = ${event.target.name}`);
+      console.log(`updatedSearchParams = ${updatedSearchParams}`);
+      FacetFiltersForm.renderPage(updatedSearchParams, event);
+      window.WindowDisplay.clicked = false;
+    } else {
+      FacetFiltersForm.renderPage(searchParams, event);
+    }
   }
 
   onSubmitHandler(event) {
