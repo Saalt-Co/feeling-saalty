@@ -13,7 +13,7 @@
 {% endcomment %}
 
 {{ 'component-show-more.css' | asset_url | stylesheet_tag }}
-{{ 'menu-absorbency-icons.css' | asset_url | stylesheet_tag }}
+{{ 'menu-and-filter-absorbency-icons.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
   assign sort_by = results.sort_by | default: results.default_sort_by
@@ -46,7 +46,7 @@
       assign style = style | append: ', '
     endunless
   endfor
-  assign split_style = style | split: ', '
+  assign split_styles = style | split: ', '
 -%}
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}">
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
@@ -93,18 +93,18 @@
                   </facet-remove>
                 </div>
                 {%- for filter in results.filters -%}
-                  {%- assign filter_label_downcased = filter.label | downcase -%}
+                  {%- assign downcased_label = filter.label | downcase -%}
                   {%- for value in filter.active_values -%}
                     <facet-remove>
                       <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
                         <span class="active-facets__button-inner button button--tertiary">
                           {{ filter.label }}: {{ value.label | escape }}
                           <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
-                          {% render 'filter-icons',
-                            value: value,
+                          {% render 'menu-and-filter-icons',
+                            value: value.label,
                             split_absorbencies: split_absorbencies,
-                            filter_label_downcased: filter_label_downcased,
-                            split_style: split_style
+                            downcased_label: downcased_label,
+                            split_styles: split_styles
                           %}
                           {% render 'icon-close-small' %}
                         </span>
@@ -141,7 +141,7 @@
             <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
             {% comment %} Filters for both horizontal and vertical filter {% endcomment %}
             {%- for filter in results.filters -%}
-              {%- assign filter_label_downcased = filter.label | downcase -%}
+              {%- assign downcased_label = filter.label | downcase -%}
               {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
               {% case filter.type %}
                 {% when 'boolean', 'list' %}
@@ -237,11 +237,11 @@
                                 </svg>
                                 <span aria-hidden="true">
                                   {{- value.label | escape }}
-                                  {% render 'filter-icons',
-                                    value: value,
+                                  {% render 'menu-and-filter-icons',
+                                    value: value.label,
                                     split_absorbencies: split_absorbencies,
-                                    filter_label_downcased: filter_label_downcased,
-                                    split_style: split_style
+                                    downcased_label: downcased_label,
+                                    split_styles: split_styles
                                   %}
                                   ({{ value.count }})</span
                                 >
@@ -318,9 +318,12 @@
                                   {%- endif -%}
                                   )</span
                                 >
-                                {%- if split_absorbencies contains link_title -%}
-                                  {% render 'menu-absorbency-icons', link_title: link_title, include_spacer: false %}
-                                {%- endif -%}
+                                {% render 'menu-and-filter-icons',
+                                  value: value.label,
+                                  split_absorbencies: split_absorbencies,
+                                  downcased_label: downcased_label,
+                                  split_styles: split_styles
+                                %}
                               </label>
                             </li>
                           {%- endfor -%}
@@ -454,18 +457,18 @@
           {%- if filter_type == 'horizontal' -%}
             <div class="active-facets active-facets-desktop">
               {%- for filter in results.filters -%}
-                {%- assign filter_label_downcased = filter.label | downcase -%}
+                {%- assign downcased_label = filter.label | downcase -%}
                 {%- for value in filter.active_values -%}
                   <facet-remove>
                     <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
                       <span class="active-facets__button-inner button button--tertiary">
                         {{ filter.label }}: {{ value.label | escape }}
                         <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
-                        {% render 'filter-icons',
-                          value: value,
+                        {% render 'menu-and-filter-icons',
+                          value: value.label,
                           split_absorbencies: split_absorbencies,
-                          filter_label_downcased: filter_label_downcased,
-                          split_style: split_style
+                          downcased_label: downcased_label,
+                          split_styles: split_styles
                         %}
                         {% render 'icon-close-small' %}
                       </span>
@@ -690,7 +693,7 @@
             <div class="mobile-facets__main has-submenu gradient">
               {%- if enable_filtering -%}
                 {%- for filter in results.filters -%}
-                  {%- assign filter_label_downcased = filter.label | downcase -%}
+                  {%- assign downcased_label = filter.label | downcase -%}
                   {% case filter.type %}
                     {% when 'boolean', 'list' %}
                       <details
@@ -763,11 +766,11 @@
                                   </svg>
                                   <span aria-hidden="true">
                                     {{- value.label | escape }}
-                                    {% render 'filter-icons',
-                                      value: value,
+                                    {% render 'menu-and-filter-icons',
+                                      value: value.label,
                                       split_absorbencies: split_absorbencies,
-                                      filter_label_downcased: filter_label_downcased,
-                                      split_style: split_style
+                                      downcased_label: downcased_label,
+                                      split_styles: split_styles
                                     %}
                                     ({{ value.count }})</span
                                   >
@@ -988,18 +991,18 @@
 
   <div class="active-facets active-facets-mobile medium-hide large-up-hide">
     {%- for filter in results.filters -%}
-      {%- assign filter_label_downcased = filter.label | downcase -%}
+      {%- assign downcased_label = filter.label | downcase -%}
       {%- for value in filter.active_values -%}
         <facet-remove>
           <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
             <span class="active-facets__button-inner button button--tertiary">
               {{ filter.label }}: {{ value.label | escape }}
               <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
-              {% render 'filter-icons',
-                value: value,
+              {% render 'menu-and-filter-icons',
+                value: value.label,
                 split_absorbencies: split_absorbencies,
-                filter_label_downcased: filter_label_downcased,
-                split_style: split_style
+                downcased_label: downcased_label,
+                split_styles: split_styles
               %}
               {% render 'icon-close-small' %}
             </span>
@@ -1122,18 +1125,18 @@
       <form id="FacetFiltersPillsForm" class="facets__form">
         <div class="active-facets active-facets-desktop">
           {%- for filter in results.filters -%}
-            {%- assign filter_label_downcased = filter.label | downcase -%}
+            {%- assign downcased_label = filter.label | downcase -%}
             {%- for value in filter.active_values -%}
               <facet-remove>
                 <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
                   <span class="active-facets__button-inner button button--tertiary">
                     {{ filter.label }}: {{ value.label | escape }}
                     <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
-                    {% render 'filter-icons',
-                      value: value,
+                    {% render 'menu-and-filter-icons',
+                      value: value.label,
                       split_absorbencies: split_absorbencies,
-                      filter_label_downcased: filter_label_downcased,
-                      split_style: split_style
+                      downcased_label: downcased_label,
+                      split_styles: split_styles
                     %}
                     {% render 'icon-close-small' %}
                   </span>
