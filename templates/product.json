@@ -82,7 +82,16 @@
           "settings": {
             "heading": "Materials",
             "icon": "plant",
-            "content": "",
+            "content": "{{ product.metafields.saalt.product_material | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "b353a8cb-d34f-4c9e-9e49-2879eadc10c3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Fabric",
+            "icon": "leather",
+            "content": "{{ product.metafields.saalt.product_fabric | metafield_tag }}",
             "page": ""
           }
         },
@@ -135,6 +144,7 @@
         "8e16b700-b5d3-4d93-aa86-a2391fc38797",
         "description",
         "collapsible-row-0",
+        "b353a8cb-d34f-4c9e-9e49-2879eadc10c3",
         "collapsible-row-2",
         "collapsible-row-3",
         "collapsible-row-1",

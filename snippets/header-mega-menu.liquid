@@ -5,8 +5,8 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
-{{ 'menu-absorbency-icons.css' | asset_url | stylesheet_tag }}
-{{ 'menu-saalt-wear-style-icons.css' | asset_url | stylesheet_tag }}
+{{ 'menu-and-filter-absorbency-icons.css' | asset_url | stylesheet_tag }}
+{{ 'menu-and-filter-saalt-wear-style-icons.css' | asset_url | stylesheet_tag }}
 
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
@@ -82,14 +82,14 @@
                               >
                                 <div class="link-title">{{ grandchildlink.title | escape }}</div>
                                 {%- liquid
-                                  assign link_title = grandchildlink.title | escape | strip
                                   assign child_link_downcased = childlink.title | downcase | strip
-                                  if split_absorbencies contains link_title and child_link_downcased == 'absorbency'
-                                    render 'menu-absorbency-icons', link_title: link_title, include_spacer: true
-                                  elsif split_styles contains link_title
-                                    render 'menu-saalt-wear-style-icons', link_title: link_title, include_spacer: true
-                                  endif
                                 -%}
+                                {% render 'menu-and-filter-icons',
+                                  value: grandchildlink.title,
+                                  split_absorbencies: split_absorbencies,
+                                  downcased_label: child_link_downcased,
+                                  split_styles: split_styles
+                                %}
                               </a>
                             </li>
                           {%- endfor -%}

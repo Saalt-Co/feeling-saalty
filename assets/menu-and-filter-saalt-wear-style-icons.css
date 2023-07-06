@@ -49,6 +49,7 @@ a .saalt-wear-styles_inner-icon-wrapper .style-icon svg,
 .mobile-facets__item .saalt-wear-styles_icons-wrapper .style-icon svg {
   width: auto;
   height: 1.125rem;
+  margin-left: 0.25rem;
 }
 
 a.menu-drawer__menu-item .saalt-wear-styles_icons-wrapper .style-icon svg,
@@ -149,6 +150,10 @@ label.mobile-facets__label .saalt-wear-styles_icons-wrapper,
   display: inline-flex;
   margin-top: 2px;
   margin-left: 0.25rem;
+}
+
+label.mobile-facets__label .saalt-wear-styles_icons-wrapper {
+  margin-left: 0;
 }
 
 @media screen and (min-width: 990px) {
