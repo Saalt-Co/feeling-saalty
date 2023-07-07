@@ -55,8 +55,8 @@ class WindowDisplay extends HTMLElement {
     const target = foundMatch.closest('details').querySelector(`input[value='${clickedVal}']`);
     window.WindowDisplay = window.WindowDisplay || {};
     window.WindowDisplay.clicked = true;
+    if (window.location.href.indexOf(clickedVal) > -1) return;
     target.click();
-
     if (window.innerWidth < 750) {
       this.scrollTo('.facets-vertical', -16);
     } else {
