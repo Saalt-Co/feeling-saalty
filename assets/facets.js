@@ -173,17 +173,22 @@ class FacetFiltersForm extends HTMLElement {
   }
 
   onSubmitForm(searchParams, event) {
-    console.log(searchParams);
-    console.log(event);
+    if (window.history.hasOwnProperty('state') && window.history.state.hasOwnProperty('searchParams')) {
+    }
     if (window.WindowDisplay && window.WindowDisplay.clicked && window.location.href.indexOf('filter') > -1) {
-      const splitSearchParams = searchParams.split('&');
-      let updatedSearchParams = splitSearchParams.filter(
-        (filter) => filter == `${event.target.name}=${event.target.value.replace(' ', '+').replace('&', '%26')}`
+      const splitParams = window.history.state.searchParams
+        ? window.history.state.searchParams.split('&')
+        : searchParams.split('&');
+      let baseFilters = splitParams.filter(
+        (filter) => filter.indexOf('filter.v.price') > -1 || filter.indexOf('sort_by') > -1
       );
-      console.log(`event.name = ${event.target.name}`);
-      console.log(`updatedSearchParams = ${updatedSearchParams}`);
+      let newParam = `${event.target.name}=${event.target.value}`;
+      let updatedSearchParams = [...baseFilters, newParam];
+      updatedSearchParams = updatedSearchParams.join(',').replaceAll(',', '&');
+
       FacetFiltersForm.renderPage(updatedSearchParams, event);
       window.WindowDisplay.clicked = false;
+      FacetFiltersForm.updateURLHash(updatedSearchParams);
     } else {
       FacetFiltersForm.renderPage(searchParams, event);
     }
