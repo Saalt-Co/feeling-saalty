@@ -100,7 +100,7 @@
           "settings": {
             "heading": "How It Fits",
             "icon": "ruler",
-            "content": "",
+            "content": "{{ product.metafields.saalt.how_it_fits | metafield_tag }}",
             "page": ""
           }
         },
