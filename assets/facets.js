@@ -173,8 +173,6 @@ class FacetFiltersForm extends HTMLElement {
   }
 
   onSubmitForm(searchParams, event) {
-    if (window.history.hasOwnProperty('state') && window.history.state.hasOwnProperty('searchParams')) {
-    }
     if (window.WindowDisplay && window.WindowDisplay.clicked && window.location.href.indexOf('filter') > -1) {
       const splitParams = window.history.state.searchParams
         ? window.history.state.searchParams.split('&')
