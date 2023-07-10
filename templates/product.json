@@ -91,7 +91,7 @@
           "settings": {
             "heading": "Fabric",
             "icon": "leather",
-            "content": "{{ product.metafields.saalt.product_fabric | metafield_tag }}",
+            "content": "{{ product.metafields.saalt.product_fabric.value.fabric_details | metafield_tag }}",
             "page": ""
           }
         },
