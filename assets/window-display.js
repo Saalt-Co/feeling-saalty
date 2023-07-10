@@ -53,6 +53,8 @@ class WindowDisplay extends HTMLElement {
       return el.childNodes[0].data === clickedName;
     })[0];
     const target = foundMatch.closest('details').querySelector(`input[value='${clickedVal}']`);
+    target.disabled ? target.removeAttribute('disabled') : null;
+
     window.WindowDisplay = window.WindowDisplay || {};
     window.WindowDisplay.clicked = true;
     if (window.location.href.indexOf(clickedVal) > -1) return;
