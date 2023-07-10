@@ -78,7 +78,7 @@ class WindowDisplay extends HTMLElement {
     window.scroll({
       behavior: 'smooth',
       left: 0,
-      top: element.getBoundingClientRect().top + bufferSpace,
+      top: window.scrollY + element.getBoundingClientRect().top + bufferSpace,
     });
   }
 }
