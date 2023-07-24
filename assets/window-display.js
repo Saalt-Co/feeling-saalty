@@ -23,7 +23,7 @@ class WindowDisplay extends HTMLElement {
 
   isTouchDevice() {
     return (
-      matchMedia('(hover: none), (pointer: coarse)').matches ||
+      matchMedia('(hover: none)').matches ||
       'ontouchstart' in window ||
       navigator.maxTouchPoints > 0 ||
       navigator.msMaxTouchPoints > 0
