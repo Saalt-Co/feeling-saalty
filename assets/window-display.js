@@ -22,7 +22,12 @@ class WindowDisplay extends HTMLElement {
   }
 
   isTouchDevice() {
-    return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+    return (
+      matchMedia('(hover: none), (pointer: coarse)').matches ||
+      'ontouchstart' in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0
+    );
   }
 
   handleWindowFeatureClick(e) {
