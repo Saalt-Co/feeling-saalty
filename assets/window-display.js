@@ -39,7 +39,6 @@ class WindowDisplay extends HTMLElement {
 
   toggleVisibility(e) {
     alert(`in toggleVisibility. this.isTouchDevice() returned: ${this.isTouchDevice()}`);
-    alert(``);
     if (this.isTouchDevice() == false || e.target.classList.contains('window-feature-button')) return;
     const clickedParent = e.target.closest('.window-feature-wrapper');
     clickedParent.querySelector('.text-wrapper').classList.toggle('visible');
