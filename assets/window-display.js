@@ -24,7 +24,7 @@ class WindowDisplay extends HTMLElement {
   isTouchDevice() {
     alert("in isTouchDevice");
     return (
-      matchMedia('(hover: none)').matches ||
+      matchMedia('(hover: none), (pointer: coarse)').matches ||
       'ontouchstart' in window ||
       navigator.maxTouchPoints > 0 ||
       navigator.msMaxTouchPoints > 0
@@ -39,6 +39,7 @@ class WindowDisplay extends HTMLElement {
 
   toggleVisibility(e) {
     alert("in toggleVisibility");
+    alert(`this.isTouchDevice(): ${this.isTouchDevice()}`)
     if (this.isTouchDevice() == false || e.target.classList.contains('window-feature-button')) return;
     const clickedParent = e.target.closest('.window-feature-wrapper');
     clickedParent.querySelector('.text-wrapper').classList.toggle('visible');
