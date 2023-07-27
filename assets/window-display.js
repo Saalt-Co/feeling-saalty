@@ -42,11 +42,11 @@ class WindowDisplay extends HTMLElement {
     if (this.isTouchDevice() == false || e.target.classList.contains('window-feature-button')) return;
     const clickedParent = e.target.closest('.window-feature-wrapper');
     clickedParent.querySelector('.text-wrapper').classList.toggle('visible');
-    alert(
-      `text wrapper element has '.visible' class: ${clickedParent
-        .querySelector('.text-wrapper')
-        .classList.contains('visible')}`
-    );
+    // alert(
+    //   `text wrapper element has '.visible' class: ${clickedParent
+    //     .querySelector('.text-wrapper')
+    //     .classList.contains('visible')}`
+    // );
   }
 
   filterByClicked(e) {
