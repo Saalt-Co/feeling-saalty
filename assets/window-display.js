@@ -22,7 +22,7 @@ class WindowDisplay extends HTMLElement {
   }
 
   isTouchDevice() {
-    alert('in isTouchDevice');
+    // alert('in isTouchDevice');
     return (
       matchMedia('(hover: none), (pointer: coarse)').matches ||
       'ontouchstart' in window ||
@@ -32,21 +32,26 @@ class WindowDisplay extends HTMLElement {
   }
 
   handleWindowFeatureClick(e) {
-    alert('in handleWindowFeatureClick');
+    // alert('in handleWindowFeatureClick');
     this.toggleVisibility(e);
     this.filterByClicked(e);
   }
 
   toggleVisibility(e) {
-    alert(`in toggleVisibility. this.isTouchDevice() returned: ${this.isTouchDevice()}`);
+    // alert(`in toggleVisibility. this.isTouchDevice() returned: ${this.isTouchDevice()}`);
     if (this.isTouchDevice() == false || e.target.classList.contains('window-feature-button')) return;
     const clickedParent = e.target.closest('.window-feature-wrapper');
     clickedParent.querySelector('.text-wrapper').classList.toggle('visible');
+    alert(
+      `clickedParent element has '.window-feature-wrapper' class: ${clickedParent.classList.contains(
+        'window-feature-wrapper'
+      )}`
+    );
   }
 
   filterByClicked(e) {
     if (!a11yClick(e)) return;
-    alert('in filterByClicked');
+    // alert('in filterByClicked');
     if (this.isTouchDevice() == true && !e.target.classList.contains('window-feature-button')) {
       e.preventDefault();
       return;
