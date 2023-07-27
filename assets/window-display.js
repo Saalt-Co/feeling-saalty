@@ -43,9 +43,9 @@ class WindowDisplay extends HTMLElement {
     const clickedParent = e.target.closest('.window-feature-wrapper');
     clickedParent.querySelector('.text-wrapper').classList.toggle('visible');
     alert(
-      `clickedParent element has '.window-feature-wrapper' class: ${clickedParent.classList.contains(
-        'window-feature-wrapper'
-      )}`
+      `text wrapper element has '.visible' class: ${clickedParent
+        .querySelector('.text-wrapper')
+        .classList.contains('visible')}`
     );
   }
 
