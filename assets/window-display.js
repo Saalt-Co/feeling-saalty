@@ -95,9 +95,9 @@ class WindowDisplay extends HTMLElement {
     const featureWindowTitlePara = titleWrapper.querySelector('p');
     if (!titleWrapper) return;
     titleWrapper.style.fontSize = 'inherit';
-    if (feature.getBoundingClientRect().width < featureWindowTitlePara.getBoundingClientRect().width) {
+    if (titleWrapper.getBoundingClientRect().width < featureWindowTitlePara.getBoundingClientRect().width) {
       const { width: max_width, height: max_height } = titleWrapper.getBoundingClientRect();
-      const { width, height } = titleWrapper.children[0].getBoundingClientRect();
+      const { width, height } = featureWindowTitlePara.getBoundingClientRect();
       titleWrapper.style.fontSize = `${Math.min(max_width / width, max_height / height)}em`;
     }
   }
