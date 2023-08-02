@@ -3,6 +3,7 @@ class WindowDisplay extends HTMLElement {
     super();
 
     this.windowFeatureClick = this.handleWindowFeatureClick.bind(this);
+    this.windowResize = this.handleWindowResize.bind(this);
   }
 
   connectedCallback() {
@@ -11,6 +12,11 @@ class WindowDisplay extends HTMLElement {
     for (const feature of [...windowFeatures, ...windowFeatureBtns]) {
       addEventListeners(feature, ['click', 'keydown'], [this.windowFeatureClick], false);
     }
+    window.addEventListener('resize', this.windowResize, false);
+    waitForElementToExist('window-display').then(() => this.windowResize());
+    waitForElementToExist('window-display').then((element) => {
+      console.log('The element exists', element);
+    });
   }
 
   disconnectedCallback() {
@@ -19,6 +25,7 @@ class WindowDisplay extends HTMLElement {
     for (const feature of [...windowFeatures, ...windowFeatureBtns]) {
       removeEventListeners(feature, ['click', 'keydown'], [this.windowFeatureClick], false);
     }
+    removeEventListeners(window, ['resize'], [this.windowResize], false);
   }
 
   isTouchDevice() {
@@ -68,6 +75,30 @@ class WindowDisplay extends HTMLElement {
       this.scrollTo('.facets-vertical', -16);
     } else {
       this.scrollTo('facet-filters-form', -16);
+    }
+  }
+
+  handleWindowResize(e) {
+    debounce(this.handleResizeText(e), 500);
+  }
+
+  handleResizeText(e) {
+    const windowFeatures = document.querySelectorAll('.window-feature');
+    for (const feature of [...windowFeatures]) {
+      this.resizeText(feature);
+    }
+  }
+
+  resizeText(windowFeatureEl) {
+    const feature = windowFeatureEl;
+    const titleWrapper = feature.querySelector('.window-feature-title');
+    const featureWindowTitlePara = titleWrapper.querySelector('p');
+    if (!titleWrapper) return;
+    titleWrapper.style.fontSize = 'inherit';
+    if (feature.getBoundingClientRect().width < featureWindowTitlePara.getBoundingClientRect().width) {
+      const { width: max_width, height: max_height } = titleWrapper.getBoundingClientRect();
+      const { width, height } = titleWrapper.children[0].getBoundingClientRect();
+      titleWrapper.style.fontSize = `${Math.min(max_width / width, max_height / height)}em`;
     }
   }
 
