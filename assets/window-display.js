@@ -14,9 +14,6 @@ class WindowDisplay extends HTMLElement {
     }
     window.addEventListener('resize', this.windowResize, false);
     waitForElementToExist('window-display').then(() => this.windowResize());
-    waitForElementToExist('window-display').then((element) => {
-      console.log('The element exists', element);
-    });
   }
 
   disconnectedCallback() {
@@ -83,22 +80,28 @@ class WindowDisplay extends HTMLElement {
   }
 
   handleResizeText(e) {
-    const windowFeatures = document.querySelectorAll('.window-feature');
-    for (const feature of [...windowFeatures]) {
-      this.resizeText(feature);
+    const windowFeatureWrappers = document.querySelectorAll('.window-feature-wrapper');
+    const resizeableEls = [];
+    for (const featureWrapper of [...windowFeatureWrappers]) {
+      resizeableEls.push(featureWrapper.querySelector('.window-feature-title p'));
+      resizeableEls.push(featureWrapper.querySelector('.window-feature-button span'));
+    }
+    console.log([...resizeableEls]);
+    for (const el of [...resizeableEls]) {
+      this.resizeText(el);
     }
   }
 
-  resizeText(windowFeatureEl) {
-    const feature = windowFeatureEl;
-    const titleWrapper = feature.querySelector('.window-feature-title');
-    const featureWindowTitlePara = titleWrapper.querySelector('p');
-    if (!titleWrapper) return;
-    titleWrapper.style.fontSize = 'inherit';
-    if (titleWrapper.getBoundingClientRect().width < featureWindowTitlePara.getBoundingClientRect().width) {
-      const { width: max_width, height: max_height } = titleWrapper.getBoundingClientRect();
-      const { width, height } = featureWindowTitlePara.getBoundingClientRect();
-      titleWrapper.style.fontSize = `${Math.min(max_width / width, max_height / height)}em`;
+  resizeText(resizeableTextEl) {
+    const el = resizeableTextEl;
+    console.log(el);
+    const parentEl = el.parentElement;
+    if (!el || !parentEl) return;
+    parentEl.style.fontSize = 'inherit';
+    if (parentEl.getBoundingClientRect().width < el.getBoundingClientRect().width) {
+      const { width: max_width, height: max_height } = parentEl.getBoundingClientRect();
+      const { width, height } = el.getBoundingClientRect();
+      parentEl.style.fontSize = `${Math.min(max_width / width, max_height / height)}em`;
     }
   }
 

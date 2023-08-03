@@ -45,167 +45,172 @@
 </section>
 
 {%- style -%}
-    #section-{{ section.id }} .window-display, #section-{{ section.id }} .window-display .window-display-inner-wrapper {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-end;
-      flex-wrap: nowrap;
-      width: 100%;
-      overflow-x: auto;
-    }
-    #section-{{ section.id }} .window-display {
-      flex-direction: column;
-    }
-    #section-{{ section.id }} .window-display .section-title {
-      display: block;
-      width: 100%;
-    }
-    #section-{{ section.id }} .window-display .section-title > p {
-      margin: 0;
-    }
-    #section-{{ section.id }} .window-display .section-title.mobile-center {
-      text-align: center;
-    }
-    #section-{{ section.id }} .window-display .section-title.mobile-left {
-      text-align: left;
-    }
-    #section-{{ section.id }} .window-display .section-title.mobile-right {
-    text-align: right;
-    }
-    #section-{{ section.id }} .window-display .section-title.mobile-justify {
-      text-align: justify;
-    }
-    #section-{{ section.id }} .window-feature-wrapper, #section-{{ section.id }} .window-feature {
-      display: flex;
-      position: relative;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      width: 100%;
-    }
-    #section-{{ section.id }} .window-feature-wrapper {
-      min-width: {{ section.settings.mobile_min_width }};
-      max-width: {{ section.settings.mobile_max_width }};
-    }
-    #section-{{ section.id }} .window-feature-wrapper button {
-      cursor: pointer;
-    }
-    #section-{{ section.id }} .window-feature {
-      width: 100%;
-      overflow: hidden;
-      cursor: pointer;
-    }
-    #section-{{ section.id }} .window-feature, #section-{{ section.id }} .window-feature:visited {
-      color: inherit;
-    }
-    #section-{{ section.id }} .window-feature .image-wrapper, #section-{{ section.id }} .window-feature .image-wrapper > * {
-      display: block;
-      width: 100%;
-      height: auto;
-      aspect-ratio: {{ section.settings.mobile_aspect_ratio }};
-    }
-
-    #section-{{ section.id }} .window-feature .image-wrapper img {
-      object-fit: cover;
-      object-position: 50% 50%;
-    }
-
-    #section-{{ section.id }} .window-feature .text-wrapper {
-      display: block;
-      position: absolute;
-      background: rgba(255, 255, 255, .9);
-      width: 100%;
-      height: 100%;
-      padding: .25rem 1rem 25% 1rem;
-      font-size: clamp(1rem, 1.5rem, 1.7rem);
-      top: calc(100% - 3.45rem);
-      transition: .25s;
-    }
-    #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: inherit;
-      white-space: nowrap;
-      flex-wrap: nowrap;
-      width: 100%;
-      height: 34px;
-      border-bottom: 1px solid black;
-      padding: .25rem;
-    }
-    #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > * {
-    display: inline-block;
+  #section-{{ section.id }} .window-display, #section-{{ section.id }} .window-display .window-display-inner-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto;
+  }
+  #section-{{ section.id }} .window-display {
+    flex-direction: column;
+  }
+  #section-{{ section.id }} .window-display .section-title {
+    display: block;
+    width: 100%;
+  }
+  #section-{{ section.id }} .window-display .section-title > p {
+    margin: 0;
+  }
+  #section-{{ section.id }} .window-display .section-title.mobile-center {
+    text-align: center;
+  }
+  #section-{{ section.id }} .window-display .section-title.mobile-left {
+    text-align: left;
+  }
+  #section-{{ section.id }} .window-display .section-title.mobile-right {
+  text-align: right;
+  }
+  #section-{{ section.id }} .window-display .section-title.mobile-justify {
+    text-align: justify;
+  }
+  #section-{{ section.id }} .window-feature-wrapper, #section-{{ section.id }} .window-feature {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  #section-{{ section.id }} .window-feature-wrapper {
+    min-width: {{ section.settings.mobile_min_width }};
+    max-width: {{ section.settings.mobile_max_width }};
+  }
+  #section-{{ section.id }} .window-feature-wrapper button {
+    cursor: pointer;
+  }
+  #section-{{ section.id }} .window-feature {
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #section-{{ section.id }} .window-feature, #section-{{ section.id }} .window-feature:visited {
+    color: inherit;
+  }
+  #section-{{ section.id }} .window-feature .image-wrapper, #section-{{ section.id }} .window-feature .image-wrapper > * {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: {{ section.settings.mobile_aspect_ratio }};
   }
 
-    #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > *:last-child,   #section-{{ section.id }} .window-feature .text-wrapper .window-feature-copy > *:last-child {
-      margin: 0;
+  #section-{{ section.id }} .window-feature .image-wrapper img {
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  #section-{{ section.id }} .window-feature .text-wrapper {
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .9);
+    width: 100%;
+    height: 100%;
+    padding: .25rem 1rem 25% 1rem;
+    font-size: clamp(1rem, 1.5rem, 1.7rem);
+    top: calc(100% - 3.45rem);
+    transition: .25s;
+  }
+
+  #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title, #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper, #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper .window-feature-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: inherit;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 34px;
+    border-bottom: 1px solid;
+    padding: .25rem;
+  }
+  #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper {
+    border-bottom: none;
+    padding: 0;
+  }
+  #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper .window-feature-button {
+    padding: 0;
+  }
+  #section-{{ section.id }} .window-feature-wrapper:last-of-type .window-feature-button-wrapper .window-feature-button {
+    border-right: 1px solid;
+  }
+  #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper .window-feature-button > span {
+    padding: 0 1rem;
+  }
+  #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > * {
+    display: inline-block;
+  }
+  #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > *:last-child,   #section-{{ section.id }} .window-feature .text-wrapper .window-feature-copy > *:last-child {
+    margin: 0;
+  }
+  #section-{{ section.id }} .window-feature .text-wrapper .window-feature-copy {
+    display: block;
+    position: relative;
+    height: 100%;
+    overflow: auto;
+  }
+  #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper .window-feature-button {
+    background: #fff;
+    border: 1px solid;
+    border-right: none;
+    color: var(--color-base-text);
+    width: 100%;
+    height: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    text-decoration: none;
+  }
+  #section-{{ section.id }} .window-feature .text-wrapper ul, #section-{{ section.id }} .window-feature .text-wrapper ol {
+    padding-left: 1.5rem;
+  }
+  #section-{{ section.id }} .window-feature .text-wrapper.visible {
+    top: 0;
+  }
+  @media (min-width: 750px) {
+    #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > p {
+      margin: 15px 0;
     }
-    #section-{{ section.id }} .window-feature .text-wrapper .window-feature-copy {
-      display: block;
-      position: relative;
-      height: 100%;
-      overflow: auto;
+    #section-{{ section.id }} .window-feature-wrapper {
+      width: {{ 100 | divided_by: window_display_count }}%;
+      min-width: {{ section.settings.desktop_min_width }};
+      max-width: {{ section.settings.desktop_max_width }};
     }
-    #section-{{ section.id }} .window-feature-wrapper .window-feature-button {
-      display: block;
-      position: relative;
-      background: #fff;
-      border: 1px solid;
-      border-right: none;
-      color: var(--color-base-text);
-      width: auto;
-      margin: 0 auto;
-      padding: 1rem 3rem;
-      font-size: 1.5rem;
-      font-weight: 300;
-      font-family: inherit;
-      line-height: 1;
-      text-decoration: none;
+    #section-{{ section.id }} .window-feature .image-wrapper, #section-{{ section.id }} .window-feature .image-wrapper > * {
+      aspect-ratio: {{ section.settings.desktop_aspect_ratio }};
     }
-    #section-{{ section.id }} .window-feature-wrapper:last-of-type .window-feature-button {
-      border-right: 1px solid;
+    #section-{{ section.id }} .window-display .section-title.desktop-center {
+      text-align: center;
     }
-    #section-{{ section.id }} .window-feature .text-wrapper ul, #section-{{ section.id }} .window-feature .text-wrapper ol {
-      padding-left: 1.5rem;
+    #section-{{ section.id }} .window-display .section-title.desktop-left {
+      text-align: left;
     }
-    #section-{{ section.id }} .window-feature .text-wrapper.visible {
+    #section-{{ section.id }} .window-display .section-title.desktop-right {
+    text-align: right;
+    }
+    #section-{{ section.id }} .window-display .section-title.desktop-justify {
+      text-align: justify;
+    }
+  }
+  @media (hover: hover) and (pointer: fine) {
+    #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper, #section-{{ section.id }} .window-feature-wrapper .window-feature-button {
+      display: none;
+      visibility: hidden;
+    }
+    #section-{{ section.id }} .window-feature:hover .text-wrapper {
       top: 0;
     }
-    @media (min-width: 750px) {
-      #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > p {
-        margin: 15px 0;
-      }
-      #section-{{ section.id }} .window-feature-wrapper {
-        width: {{ 100 | divided_by: window_display_count }}%;
-        min-width: {{ section.settings.desktop_min_width }};
-        max-width: {{ section.settings.desktop_max_width }};
-      }
-      #section-{{ section.id }} .window-feature .image-wrapper, #section-{{ section.id }} .window-feature .image-wrapper > * {
-        aspect-ratio: {{ section.settings.desktop_aspect_ratio }};
-      }
-      #section-{{ section.id }} .window-display .section-title.desktop-center {
-        text-align: center;
-      }
-      #section-{{ section.id }} .window-display .section-title.desktop-left {
-        text-align: left;
-      }
-      #section-{{ section.id }} .window-display .section-title.desktop-right {
-      text-align: right;
-      }
-      #section-{{ section.id }} .window-display .section-title.desktop-justify {
-        text-align: justify;
-      }
-    }
-    @media (hover: hover) and (pointer: fine) {
-      #section-{{ section.id }} .window-feature-wrapper .window-feature-button {
-        display: none;
-        visibility: hidden;
-      }
-      #section-{{ section.id }} .window-feature:hover .text-wrapper {
-        top: 0;
-      }
-    }
+  }
 {%- endstyle -%}
 
 {% schema %}
@@ -414,7 +419,7 @@
           "type": "text",
           "id": "button_text",
           "label": "Mobile Button Text",
-          "info": "This button is only visible on devices with touch enabled.",
+          "info": "This button is only visible on touch-enabled devices.",
           "default": "Filter"
         }
       ]
