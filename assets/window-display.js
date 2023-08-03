@@ -25,6 +25,10 @@ class WindowDisplay extends HTMLElement {
     removeEventListeners(window, ['resize'], [this.windowResize], false);
   }
 
+  /**
+   *
+   * @returns Boolean value if current device is touch-enabled or not
+   */
   isTouchDevice() {
     return (
       matchMedia('(hover: none), (pointer: coarse)').matches ||
@@ -34,17 +38,32 @@ class WindowDisplay extends HTMLElement {
     );
   }
 
+  /**
+   *
+   * @param {event} e Click event
+   * @returns null
+   */
   handleWindowFeatureClick(e) {
     this.toggleVisibility(e);
     this.filterByClicked(e);
   }
 
+  /**
+   *
+   * @param {event} e Click event
+   * @returns null
+   */
   toggleVisibility(e) {
     if (this.isTouchDevice() == false || e.target.classList.contains('window-feature-button')) return;
     const clickedParent = e.target.closest('.window-feature-wrapper');
     clickedParent.querySelector('.text-wrapper').classList.toggle('visible');
   }
 
+  /**
+   *
+   * @param {event} e Click event
+   * @returns null
+   */
   filterByClicked(e) {
     if (!a11yClick(e)) return;
     if (this.isTouchDevice() == true && !e.target.classList.contains('window-feature-button')) {
@@ -54,6 +73,11 @@ class WindowDisplay extends HTMLElement {
     this.applyFilter(e);
   }
 
+  /**
+   *
+   * @param {event} e Click event
+   * @returns null
+   */
   applyFilter(e) {
     const filterNames = Array.from(document.querySelectorAll('.filter-label'));
     const clickedName = e.target.closest('.window-feature-wrapper').dataset.filterName;
@@ -75,10 +99,18 @@ class WindowDisplay extends HTMLElement {
     }
   }
 
+  /**
+   *
+   * @param {event} e Resize event
+   */
   handleWindowResize(e) {
     debounce(this.handleResizeText(e), 500);
   }
 
+  /**
+   *
+   * @param {event} e Resize event
+   */
   handleResizeText(e) {
     const windowFeatureWrappers = document.querySelectorAll('.window-feature-wrapper');
     const resizeableEls = [];
@@ -92,17 +124,65 @@ class WindowDisplay extends HTMLElement {
     }
   }
 
+  /**
+   *
+   * @param {*} resizeableTextEl Target element to resize
+   * @returns null
+   */
   resizeText(resizeableTextEl) {
     const el = resizeableTextEl;
-    console.log(el);
     const parentEl = el.parentElement;
     if (!el || !parentEl) return;
     parentEl.style.fontSize = 'inherit';
     if (parentEl.getBoundingClientRect().width < el.getBoundingClientRect().width) {
-      const { width: max_width, height: max_height } = parentEl.getBoundingClientRect();
-      const { width, height } = el.getBoundingClientRect();
-      parentEl.style.fontSize = `${Math.min(max_width / width, max_height / height)}em`;
+      const fontSizeVal = this.calcFontSize(el);
+      this.setFontSize(parentEl, fontSizeVal);
+      if (fontSizeVal <= 0.7) {
+        this.setFontWeight(el, fontSizeVal);
+      }
     }
+  }
+
+  /**
+   *
+   * @param {*} el Target element to resize
+   * @returns Returns the font-size integer
+   */
+  calcFontSize(el) {
+    const { width: max_width, height: max_height } = el.parentElement.getBoundingClientRect();
+    const { width, height } = el.getBoundingClientRect();
+    const fontSizeVal = Math.min(max_width / width, max_height / height);
+    return fontSizeVal;
+  }
+
+  /**
+   *
+   * @param {*} parentEl Parent element that will have its font-size set
+   * @param {*} fontSizeVal The integer returned from the calcFontSize function
+   */
+  setFontSize(parentEl, fontSizeVal) {
+    const fontSize = `${fontSizeVal}em`;
+    parentEl.style.fontSize = fontSize;
+  }
+
+  /**
+   * This calculation aims to create a font-weight that improves legibility as
+   * the font-size gets smaller.
+   *
+   * @param {*} fontSizeVal The integer returned from the calcFontSize function
+   * @returns Returns the calculated font-weight as an integer
+   */
+  calcFontWeight(fontSizeVal) {
+    return 1000 - fontSizeVal * 1000;
+  }
+
+  /**
+   *
+   * @param {*} el Target element to resize
+   * @param {*} fontSizeVal The integer returned from the calcFontSize function
+   */
+  setFontWeight(el, fontSizeVal) {
+    el.parentElement.style.fontWeight = this.calcFontWeight(fontSizeVal);
   }
 
   // START -- SCROLL TO -- START //
