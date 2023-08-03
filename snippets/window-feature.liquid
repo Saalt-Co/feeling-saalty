@@ -48,16 +48,18 @@
       </div>
     </div>
   </a>
-  {% if block.settings.link_type == 'url' %}
-    <a
-      class="window-feature-button"
-      href="{{ block.settings.link_url }}"
-    >
-      {{- block.settings.button_text -}}
-    </a>
-  {% else %}
-    <button class="window-feature-button">
-      {{ block.settings.button_text }}
-    </button>
-  {% endif %}
+  <div class="window-feature-button-wrapper">
+    {% if block.settings.link_type == 'url' %}
+      <a
+        class="window-feature-button"
+        href="{{ block.settings.link_url }}"
+      >
+        <span>{{- block.settings.button_text -}}</span>
+      </a>
+    {% else %}
+      <button class="window-feature-button">
+        <span>{{- block.settings.button_text -}}</span>
+      </button>
+    {% endif %}
+  </div>
 </div>
