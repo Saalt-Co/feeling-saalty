@@ -13,7 +13,15 @@ class WindowDisplay extends HTMLElement {
       addEventListeners(feature, ['click', 'keydown'], [this.windowFeatureClick], false);
     }
     window.addEventListener('resize', this.windowResize, false);
-    waitForElementToExist('window-display').then(() => this.windowResize());
+    waitForElementToExist('window-display')
+      .then(() => {
+        this.windowResize();
+      })
+      .then(() => {
+        setTimeout(() => {
+          this.fadeInWindowFeatures(windowFeatures);
+        }, 500);
+      });
   }
 
   disconnectedCallback() {
@@ -36,6 +44,15 @@ class WindowDisplay extends HTMLElement {
       navigator.maxTouchPoints > 0 ||
       navigator.msMaxTouchPoints > 0
     );
+  }
+
+  fadeInWindowFeatures(windowFeatures) {
+    const windowFeatureEls = [...windowFeatures];
+    for (let i = 0; i < windowFeatureEls.length; i++) {
+      setTimeout(() => {
+        windowFeatureEls[i].closest('.window-feature-wrapper').classList.add('window-feature-fade-in');
+      }, i * 125);
+    }
   }
 
   /**

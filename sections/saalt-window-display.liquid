@@ -87,6 +87,12 @@
   #section-{{ section.id }} .window-feature-wrapper {
     min-width: {{ section.settings.mobile_min_width }};
     max-width: {{ section.settings.mobile_max_width }};
+    opacity: 0;
+  }
+  #section-{{ section.id }} .window-feature-wrapper.window-feature-fade-in {
+    /* Animation from base.css */
+    -webkit-animation: var(--animation-slide-in);
+    animation: var(--animation-slide-in);
   }
   #section-{{ section.id }} .window-feature-wrapper button {
     cursor: pointer;
