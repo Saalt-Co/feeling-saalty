@@ -118,7 +118,6 @@ class WindowDisplay extends HTMLElement {
       resizeableEls.push(featureWrapper.querySelector('.window-feature-title p'));
       resizeableEls.push(featureWrapper.querySelector('.window-feature-button span'));
     }
-    console.log([...resizeableEls]);
     for (const el of [...resizeableEls]) {
       this.resizeText(el);
     }
