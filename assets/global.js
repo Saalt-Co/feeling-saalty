@@ -1295,3 +1295,29 @@ const a11yClick = (e) => {
   }
 };
 // END -- A11YCLICK -- END //
+
+// START -- WAIT FOR ELEMENT TO EXIST -- START //
+function waitForElementToExist(selector) {
+  return new Promise((resolve) => {
+    if (document.querySelector(selector)) {
+      return resolve(document.querySelector(selector));
+    }
+
+    const observer = new MutationObserver(() => {
+      if (document.querySelector(selector)) {
+        resolve(document.querySelector(selector));
+        observer.disconnect();
+      }
+    });
+
+    observer.observe(document.body, {
+      subtree: true,
+      childList: true,
+    });
+  });
+}
+// USAGE:
+// waitForElementToExist('#box').then(element => {
+//   console.log('The element exists', element);
+// });
+// END -- WAIT FOR ELEMENT TO EXIST -- END //
