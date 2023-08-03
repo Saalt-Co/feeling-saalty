@@ -134,6 +134,7 @@ class WindowDisplay extends HTMLElement {
     const parentEl = el.parentElement;
     if (!el || !parentEl) return;
     parentEl.style.fontSize = 'inherit';
+    parentEl.style.fontWeight = 'inherit';
     if (parentEl.getBoundingClientRect().width < el.getBoundingClientRect().width) {
       const fontSizeVal = this.calcFontSize(el);
       this.setFontSize(parentEl, fontSizeVal);
