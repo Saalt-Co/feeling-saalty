@@ -83,7 +83,11 @@ class WindowDisplay extends HTMLElement {
    */
   filterByClicked(e) {
     if (!a11yClick(e)) return;
-    if (this.isTouchDevice() == true && !e.target.classList.contains('window-feature-button')) {
+    if (
+      this.isTouchDevice() == true &&
+      !e.target.classList.contains('window-feature-button') &&
+      !e.target.parentElement.classList.contains('window-feature-button')
+    ) {
       e.preventDefault();
       return;
     }
