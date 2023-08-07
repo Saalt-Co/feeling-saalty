@@ -56,11 +56,6 @@
             "show_gift_card_recipient": false
           }
         },
-        "1c267ad4-7246-41e5-b2d7-dd8e6b65630e": {
-          "type": "afterpay_widget",
-          "settings": {
-          }
-        },
         "8e16b700-b5d3-4d93-aa86-a2391fc38797": {
           "type": "product_features",
           "settings": {
