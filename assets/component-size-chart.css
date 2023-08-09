@@ -1,3 +1,7 @@
+size-chart .size-chart-titles {
+  overflow-x: auto;
+}
+
 size-chart .size-chart-titles .size-chart-titles-ul {
   display: inline-flex;
   justify-content: flex-start;
@@ -13,12 +17,22 @@ size-chart .size-chart-titles .size-chart-titles-ul .size-chart-titles-li button
   display: inline-block;
   background: transparent;
   border: none;
+  border-top: 1px solid;
   border-right: 1px solid;
   color: inherit;
   padding: 1rem 3rem;
+  white-space: nowrap;
   cursor: pointer;
 }
 
 size-chart .size-chart-titles .size-chart-titles-ul .size-chart-titles-li:first-of-type button.size-chart-title-button {
   border-left: 1px solid;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container {
+  display: none;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.visible {
+  display: block;
 }
