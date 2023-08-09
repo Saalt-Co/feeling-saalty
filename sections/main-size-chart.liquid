@@ -52,14 +52,14 @@
       <ul class="size-chart-titles-ul">
         {%- for title in split_titles -%}
           <li class="size-chart-titles-li">
-            <button class="size-chart-title-button" name="tab-{{ forloop.index }}">{{ title }}</button>
+            <button class="size-chart-title-button{% if forloop.first %} active{% endif %}" name="tab-{{ forloop.index }}">{{ title }}</button>
           </li>
         {%- endfor -%}
       </ul>
     </div>
     <div class="size-chart-content-containers">
       {%- for content in split_content -%}
-        <div class="size-chart-content-container" name="content-container-{{ forloop.index }}">{{ content }}</div>
+        <div class="size-chart-content-container{% if forloop.first %} visible{% endif %}" name="content-container-{{ forloop.index }}">{{ content }}</div>
       {%- endfor -%}
     </div>
   </div>

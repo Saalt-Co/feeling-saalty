@@ -1,21 +1,29 @@
 class SizeChart extends HTMLElement {
   constructor() {
     super();
-
+    this.tabs = null;
+    this.contentContainers = null;
     this.tabClick = this.handleTabClick.bind(this);
   }
+
   connectedCallback() {
-    const tabs = document.querySelectorAll('.size-chart-title-button');
+    this.tabs = document.querySelectorAll('.size-chart-title-button');
+    this.contentContainers = document.querySelectorAll('.size-chart-content-container');
 
-    console.log(tabs);
-
-    for (const tab of [...tabs]) {
+    for (const tab of [...this.tabs]) {
       addEventListeners(tab, ['click', 'keydown'], [this.tabClick], false);
     }
   }
-  disconnectedCallback() {}
+
+  disconnectedCallback() {
+    for (const tab of [...this.tabs]) {
+      removeEventListeners(tab, ['click', 'keydown'], [this.tabClick], false);
+    }
+  }
 
   handleTabClick(e) {
+    this.disableAllActiveTabs();
+    this.setActiveTab(e);
     this.hideAllContent();
     this.showClickedContent(e);
   }
@@ -25,19 +33,31 @@ class SizeChart extends HTMLElement {
     return splitName[splitName.length - 1];
   }
 
+  setActiveTab(e) {
+    e.target.classList.add('active');
+  }
+
+  disableAllActiveTabs() {
+    this.bulkRemoveClass([...this.tabs], 'active');
+  }
+
   hideAllContent() {
-    const contentContainers = document.querySelectorAll('.size-chart-content-container');
-    for (const container of [...contentContainers]) {
-      container.style.display = 'none';
-      container.style.visibility = 'hidden';
+    this.bulkRemoveClass([...this.contentContainers], 'visible');
+  }
+
+  removeClass(element, className) {
+    element.classList.remove(className);
+  }
+
+  bulkRemoveClass(elements, className) {
+    for (const element of [...elements]) {
+      this.removeClass(element, className);
     }
   }
 
   showClickedContent(e) {
     const tabIndex = this.getClickedIndex(e);
-    const contentContainers = document.querySelectorAll('.size-chart-content-container');
-    contentContainers[tabIndex - 1].style.display = 'block';
-    contentContainers[tabIndex - 1].style.visibility = 'visible';
+    [...this.contentContainers][tabIndex - 1].classList.add('visible');
   }
 }
 
