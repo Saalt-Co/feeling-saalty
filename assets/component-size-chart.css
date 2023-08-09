@@ -1,0 +1,24 @@
+size-chart .size-chart-titles .size-chart-titles-ul {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+size-chart .size-chart-titles .size-chart-titles-ul .size-chart-titles-li button.size-chart-title-button {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  border-right: 1px solid;
+  color: inherit;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+size-chart .size-chart-titles .size-chart-titles-ul .size-chart-titles-li:first-of-type button.size-chart-title-button {
+  border-left: 1px solid;
+}
