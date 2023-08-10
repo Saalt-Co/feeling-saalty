@@ -497,7 +497,7 @@
   {%- endif -%}
 
   {%- if product.options contains "Size" -%}
-    {% render 'size-chart-modal', popup_content: section.settings.size_chart_popup_content %}
+    {% render 'size-chart-modal', popup_content: section.settings.size_chart_popup_content.content %}
   {%- endif -%}
 
   <script>
