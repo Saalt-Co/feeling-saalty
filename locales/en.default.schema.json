@@ -2448,6 +2448,10 @@
         "enable_sticky_info": {
           "label": "Enable sticky content on desktop"
         },
+        "size_chart_popup_page": {
+          "header": "Size Chart",
+          "label": "Size chart popup content"
+        },
         "gallery_layout": {
           "label": "Desktop layout",
           "options__1": {
