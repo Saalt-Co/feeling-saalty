@@ -20,15 +20,15 @@
         "template--20384998129937__8773a8b0-55c0-4b15-bec6-d69d8008b903-saalt-size-chart-2": {
           "type": "saalt-size-chart",
           "settings": {
-            "size_chart_title": "",
-            "size_chart_page": ""
+            "size_chart_title": "Saalt Cup",
+            "size_chart_page": "size-chart-cups"
           }
         },
         "template--20384998129937__8773a8b0-55c0-4b15-bec6-d69d8008b903-saalt-size-chart-3": {
           "type": "saalt-size-chart",
           "settings": {
-            "size_chart_title": "",
-            "size_chart_page": ""
+            "size_chart_title": "Saalt Disc",
+            "size_chart_page": "size-chart-disc"
           }
         }
       },
