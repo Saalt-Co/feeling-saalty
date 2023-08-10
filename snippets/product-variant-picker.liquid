@@ -23,16 +23,23 @@
     >
       {%- for option in product.options_with_values -%}
         <fieldset class="js product-form__input">
-          <legend class="form__label">
-            {{ option.name -}}
-            {%- if block.settings.picker_type == 'color swatches' and option.name == 'Color' -%}
+          {%- if block.settings.picker_type == 'color swatches' and option.name == 'Color' -%}
+            <legend class="form__label">
+              {{ option.name -}}
               : <span class="product-form__selected-color-name">{{ option.selected_value }}</span>
-            {%- endif %}
-          </legend>
-          {% render 'product-variant-options', product: product, option: option, block: block %}
-          {% if option.name == 'Size' %}
+            </legend>
+          {% elsif option.name == 'Size' %}
+            <legend class="form__label has-size-chart">
+              <span>{{ option.name -}}</span>
+              <button class="size-chart-button" type="button">Size chart</button>
+            </legend>
             {% render 'size-chart-link', product: product, option: option %}
-          {% endif %}
+          {%- else -%}
+            <legend class="form__label">
+              {{ option.name -}}
+            </legend>
+          {%- endif %}
+          {% render 'product-variant-options', product: product, option: option, block: block %}
         </fieldset>
       {%- endfor -%}
       <script type="application/json">
