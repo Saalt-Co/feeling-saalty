@@ -83,18 +83,60 @@
       padding: 2rem;
     }
   }
+
+  .missing-content-message {
+    display: block;
+    background: #fff;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+    max-width: 600px;
+    cursor: initial;
+  }
+
+  .missing-content-message p {
+    display: block;
+    padding: 0 1rem;
+  }
+
+  .missing-content-message p a {
+    color: inherit;
+  }
+
+  .missing-content-message p a:hover {
+    color: rgb(var(--color-link));
+  }
 {% endstyle %}
 <div class="size-chart-modal">
   <div class="size-chart-close-button-wrapper">
     <button class="size-chart-close-button">&times;</button>
   </div>
   <div class="size-chart-wrapper">
-    <img class="size-chart-content" loading="lazy" src="https://i.redd.it/6lvwbrpr8ho21.jpg" width="502" height="499">
+    {%- if popup_content -%}
+      {{ popup_content }}
+    {%- else -%}
+      <div class="missing-content-message">
+        <p>Whoops! Looks like we haven't set any content here yet.</p>
+        <p>That's embarrassing. 😬</p>
+        <p>
+          Please reach out to via text at <a href="sms:+17752372258">Text us at 775-23SAALT</a> (M-F, 8-3 Pacific time),
+          or email us at
+          <a href="mailto:sayhey@saalt.com" target="_blank"
+            >sayhey@saalt.com<span aria-label="(opens in new tab)"></span
+          ></a>
+        </p>
+      </div>
+    {%- endif -%}
   </div>
 </div>
 <script>
   const handleClosePopup = (e) => {
-    if (e.target.classList.contains('size-chart-content')) return;
+    if (
+      e.target.classList.contains('size-chart-content') ||
+      e.target.classList.contains('missing-content-message') ||
+      e.target.parentElement.classList.contains('missing-content-message')
+    )
+      return;
     const modal = document.querySelector('.size-chart-modal');
     modal.classList.add('hide-modal');
     const timer = setTimeout(() => {
