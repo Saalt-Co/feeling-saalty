@@ -10,15 +10,31 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 2rem;
+    padding: 1rem;
     opacity: 0;
-    z-index: 10;
+    z-index: 3000000000;
+  }
+  .size-chart-modal-inner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+  }
+  @media screen and (min-width: 750px) {
+    .size-chart-modal-inner-wrapper {
+      max-width: 750px;
+      max-height: 80%;
+    }
   }
   .size-chart-modal .size-chart-close-button-wrapper {
     display: block;
     width: 100%;
     min-width: 100%;
     text-align: right;
+    padding: 0 0 1rem 0;
   }
   .size-chart-modal,
   .size-chart-modal .size-chart-close-button-wrapper .size-chart-close-button {
@@ -29,10 +45,10 @@
     border: none;
     border-radius: 5rem;
     box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.25);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 200;
     line-height: 1;
-    padding: 0.5rem 1.125rem;
+    padding: 0.5rem 1rem;
     align-items: center;
     transition: all ease-in-out 0.1s;
   }
@@ -41,12 +57,11 @@
   }
   .size-chart-modal .size-chart-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    padding: 2rem;
-    z-index: 11;
+    background: rgba(var(--color-base-background-1), 1);
+    align-items: flex-start;
+    max-width: 100%;
+    height: auto;
+    overflow: auto;
   }
   .size-chart-modal .size-chart-wrapper .size-chart-content {
     display: block;
@@ -78,11 +93,6 @@
       opacity: 0;
     }
   }
-  @media screen and (min-width: 750px) {
-    .size-chart-modal .size-chart-close-button-wrapper {
-      padding: 2rem;
-    }
-  }
 
   .missing-content-message {
     display: block;
@@ -108,36 +118,19 @@
   }
 {% endstyle %}
 <div class="size-chart-modal">
-  <div class="size-chart-close-button-wrapper">
-    <button class="size-chart-close-button">&times;</button>
-  </div>
-  <div class="size-chart-wrapper">
-    {%- if popup_content -%}
-      {{ popup_content.content }}
-    {%- else -%}
-      <div class="missing-content-message">
-        <p>Whoops! Looks like we haven't set any content here yet.</p>
-        <p>That's embarrassing. 😬</p>
-        <p>
-          Please reach out to via text at <a href="sms:+17752372258">Text us at 775-23SAALT</a> (M-F, 8-3 Pacific time),
-          or email us at
-          <a href="mailto:sayhey@saalt.com" target="_blank"
-            >sayhey@saalt.com<span aria-label="(opens in new tab)"></span
-          ></a>
-        </p>
-      </div>
-    {%- endif -%}
+  <div class="size-chart-modal-inner-wrapper">
+    <div class="size-chart-close-button-wrapper">
+      <button class="size-chart-close-button">&times;</button>
+    </div>
+    <div class="size-chart-wrapper">
+      {% render 'saalt-main-size-chart' %}
+    </div>
   </div>
 </div>
 <script>
   const handleClosePopup = (e) => {
-    if (
-      e.target.classList.contains('size-chart-content') ||
-      e.target.classList.contains('missing-content-message') ||
-      e.target.parentElement.classList.contains('missing-content-message')
-    )
-      return;
     const modal = document.querySelector('.size-chart-modal');
+    if (e.target.closest('.size-chart-wrapper')) return;
     modal.classList.add('hide-modal');
     const timer = setTimeout(() => {
       modal.classList.remove('hide-modal');
@@ -146,5 +139,5 @@
     }, 500);
   };
   const modal = document.querySelector('.size-chart-modal');
-  modal.addEventListener('click', handleClosePopup, true);
+  modal.addEventListener('click', handleClosePopup, false);
 </script>
