@@ -45,10 +45,10 @@
     border: none;
     border-radius: 5rem;
     box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.25);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 200;
     line-height: 1;
-    padding: 0.5rem 1.125rem;
+    padding: 0.5rem 1rem;
     align-items: center;
     transition: all ease-in-out 0.1s;
   }
@@ -130,6 +130,7 @@
 <script>
   const handleClosePopup = (e) => {
     const modal = document.querySelector('.size-chart-modal');
+    if (e.target.closest('.size-chart-wrapper')) return;
     modal.classList.add('hide-modal');
     const timer = setTimeout(() => {
       modal.classList.remove('hide-modal');
@@ -138,5 +139,5 @@
     }, 500);
   };
   const modal = document.querySelector('.size-chart-modal');
-  modal.addEventListener('click', handleClosePopup, true);
+  modal.addEventListener('click', handleClosePopup, false);
 </script>
