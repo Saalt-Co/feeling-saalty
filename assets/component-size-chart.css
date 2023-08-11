@@ -1,5 +1,12 @@
 size-chart {
   color: var(--color-base-text);
+  background: rgba(var(--color-base-background-1), 1);
+  width: 100%;
+}
+
+size-chart .size-chart-tabs {
+  position: relative;
+  cursor: initial;
 }
 
 size-chart .size-chart-titles {
@@ -42,16 +49,10 @@ size-chart .size-chart-titles .size-chart-titles-ul .size-chart-titles-li button
 }
 
 size-chart .size-chart-content-containers {
+  display: flex;
+  justify-content: center;
   border-top: 1px solid rgba(var(--color-button), var(--alpha-button-background));
-  text-align: center;
   overflow: auto;
-  padding: 1rem;
-}
-
-@media screen and (min-width: 750px) {
-  size-chart .size-chart-content-containers {
-    padding: 3rem 1rem;
-  }
 }
 
 size-chart .size-chart-content-containers .size-chart-content-container {
