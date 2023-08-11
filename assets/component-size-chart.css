@@ -6,6 +6,7 @@ size-chart {
 
 size-chart .size-chart-tabs {
   position: relative;
+  cursor: initial;
 }
 
 size-chart .size-chart-titles {
