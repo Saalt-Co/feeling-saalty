@@ -27,9 +27,16 @@
     <div class="size-chart-titles">
       <ul class="size-chart-titles-ul">
         {%- for title in split_titles -%}
+          {% liquid
+            if product.metafields.saalt.product_size_chart.value.title == title
+              assign size_chart_match = true
+            else
+              assign size_chart_match = false
+            endif
+          %}
           <li class="size-chart-titles-li">
             <button
-              class="size-chart-title-button{% if forloop.first %} active{% endif %}"
+              class="size-chart-title-button{% if size_chart_match or product.metafields.saalt.product_size_chart.value == blank and forloop.first %} active{% endif %}"
               name="tab-{{ forloop.index }}"
             >
               {{ title }}
@@ -40,8 +47,15 @@
     </div>
     <div class="size-chart-content-containers">
       {%- for content in split_content -%}
+        {% liquid
+          if pages[product.metafields.saalt.product_size_chart.value.page].content == content
+            assign size_chart_match = true
+          else
+            assign size_chart_match = false
+          endif
+        %}
         <div
-          class="size-chart-content-container{% if forloop.first %} visible{% endif %}"
+          class="size-chart-content-container{% if size_chart_match or product.metafields.saalt.product_size_chart.value == blank and forloop.first %} visible{% endif %}"
           name="content-container-{{ forloop.index }}"
         >
           {{ content }}
