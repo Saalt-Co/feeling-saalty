@@ -61,6 +61,7 @@
     align-items: flex-start;
     max-width: 100%;
     height: auto;
+    padding: 1.5rem;
     overflow: auto;
   }
   .size-chart-modal .size-chart-wrapper .size-chart-content {
@@ -106,6 +107,7 @@
 </div>
 <script>
   const handleClosePopup = (e) => {
+    if (!a11yClick(e) && !a11yEsc(e)) return;
     const modal = document.querySelector('.size-chart-modal');
     if (e.target.closest('.size-chart-wrapper')) return;
     modal.classList.add('hide-modal');
@@ -114,7 +116,17 @@
       modal.classList.remove('reveal-modal');
       clearTimeout(timer);
     }, 500);
+    document.querySelector('.size-chart-button').focus();
   };
   const modal = document.querySelector('.size-chart-modal');
   modal.addEventListener('click', handleClosePopup, false);
+  window.addEventListener(
+    'keydown',
+    (e) => {
+      if (e.key === 'Escape') {
+        handleClosePopup(e);
+      }
+    },
+    false
+  );
 </script>
