@@ -23,9 +23,11 @@
 
 <script>
   const sizeChartBtn = document.querySelector('.size-chart-button');
-  const handleSizeChartBtnClick = () => {
+  const handleSizeChartBtnClick = (e) => {
+    if (!a11yClick(e)) return;
     const modal = document.querySelector('.size-chart-modal');
     modal.classList.add('reveal-modal');
+    document.querySelector('.size-chart-close-button').focus();
   };
   sizeChartBtn.addEventListener('click', handleSizeChartBtnClick, false);
 </script>
