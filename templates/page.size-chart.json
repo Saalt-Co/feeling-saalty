@@ -6,34 +6,9 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "80a8598a-8b09-4efd-84a5-13db9bacae5d": {
-      "type": "saalt-absorbency",
-      "settings": {
-        "section_id": "",
-        "background_color": "#F7D6C5",
-        "text_color": "#575E6E",
-        "button_style": "primary",
-        "button_color": "#F7D6C5",
-        "button_color_hover_focus": "#ffc4b2",
-        "button_text_color": "#575E6E",
-        "light_absorbency_background_color": "#edf0f4",
-        "light_absorbency_level": 2,
-        "light_absorbency_button_text": "Shop Light",
-        "light_absorbency_button_url": "",
-        "regular_absorbency_background_color": "#dce2e9",
-        "regular_absorbency_level": 3,
-        "regular_absorbency_button_text": "Shop Regular",
-        "regular_absorbency_button_url": "",
-        "heavy_absorbency_background_color": "#a6b6c7",
-        "heavy_absorbency_level": 4,
-        "heavy_absorbency_button_text": "Shop Heavy",
-        "heavy_absorbency_button_url": ""
-      }
     }
   },
   "order": [
-    "main",
-    "80a8598a-8b09-4efd-84a5-13db9bacae5d"
+    "main"
   ]
 }
