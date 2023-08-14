@@ -1296,6 +1296,18 @@ const a11yClick = (e) => {
 };
 // END -- A11YCLICK -- END //
 
+// START -- A11YESC -- START //
+const a11yEsc = (e) => {
+  if (e.type === 'keydown') {
+    var key = e.key;
+    if (key === 'Escape' || key === 'Esc' || key === 'escape' || key === 'esc') {
+      return true;
+    }
+  } else {
+    return false;
+  }
+};
+// END -- A11YESC -- END //
 // START -- WAIT FOR ELEMENT TO EXIST -- START //
 function waitForElementToExist(selector) {
   return new Promise((resolve) => {
