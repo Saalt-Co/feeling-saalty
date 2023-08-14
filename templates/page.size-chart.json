@@ -6,16 +6,9 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "c60dc4a0-903e-4a22-924e-6b43735e6ff6": {
-      "type": "saalt-size-chart",
-      "settings": {
-        "section_id": ""
-      }
     }
   },
   "order": [
-    "main",
-    "c60dc4a0-903e-4a22-924e-6b43735e6ff6"
+    "main"
   ]
 }
