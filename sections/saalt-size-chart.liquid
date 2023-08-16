@@ -1,0 +1,23 @@
+{% render 'saalt-main-size-chart', section: section %}
+
+{% schema %}
+{
+  "name": "Saalt Size Chart",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID (Optional)",
+      "info": "Typically only used when setting this ID as a link's destination."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Saalt Size Chart",
+      "category": "custom saalt section",
+      "settings": {},
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

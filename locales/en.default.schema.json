@@ -2024,10 +2024,6 @@
         "price": {
           "name": "Price"
         },
-        "afterpay_widget": {
-          "name": "Afterpay Widget",
-          "info": "This doesn't have any options associated. NOTE: You need to add this to the template and then *hit save* in order for this to show up in the preview."
-        },
         "product_features": {
           "name": "Product Features",
           "content": "The icons visible in this section are controlled by a product-level metafield called 'Product Features'.",
@@ -2451,6 +2447,10 @@
         },
         "enable_sticky_info": {
           "label": "Enable sticky content on desktop"
+        },
+        "size_chart_popup_page": {
+          "header": "Size Chart",
+          "label": "Size chart popup content"
         },
         "gallery_layout": {
           "label": "Desktop layout",

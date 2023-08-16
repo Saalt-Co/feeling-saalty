@@ -2,7 +2,11 @@
 
 <script src="{{ 'window-display.js' | asset_url }}" defer="defer"></script>
 
-<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="section">
+<section
+  id="section-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  class="section{% if section.settings.make_full_width == false %} page-width{% endif %}"
+>
   <window-display class="window-display">
     {%- assign block_count = section.blocks | size -%}
     {%- if block_count > 0 -%}
@@ -222,13 +226,20 @@
 {% schema %}
 {
   "name": "Saalt Window Display",
-  "class": "section page-width",
+  "class": "section",
   "settings": [
     {
       "type": "text",
       "id": "section_id",
       "label": "Section ID (Optional)",
       "info": "Typically only used when setting this ID as a link's destination."
+    },
+    {
+      "type": "checkbox",
+      "id": "make_full_width",
+      "label": "Make full-width",
+      "info": "Check to make this full-width. Uncheck to set this to page width.",
+      "default": false
     },
     {
       "type": "header",
