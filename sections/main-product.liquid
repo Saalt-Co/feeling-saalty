@@ -120,8 +120,6 @@
                   {{ form | payment_terms }}
                 {%- endform -%}
               </div>
-            {%- when 'afterpay_widget' -%}
-              {% render 'afterpay-widget' %}
             {%- when 'inventory' -%}
               <p
                 class="product__inventory no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
@@ -499,7 +497,7 @@
   {%- endif -%}
 
   {%- if product.options contains "Size" -%}
-    {% render 'size-chart-modal' %}
+    {% render 'size-chart-modal', popup_content: section.settings.size_chart_popup_content.content %}
   {%- endif -%}
 
   <script>
@@ -686,17 +684,6 @@
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
       "limit": 1
-    },
-    {
-      "type": "afterpay_widget",
-      "name": "t:sections.main-product.blocks.afterpay_widget.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "paragraph",
-          "content": "t:sections.main-product.blocks.afterpay_widget.info"
-        }
-      ]
     },
     {
       "type": "sku",
@@ -2080,6 +2067,15 @@
       "id": "enable_sticky_info",
       "default": true,
       "label": "t:sections.main-product.settings.enable_sticky_info.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.settings.size_chart_popup_page.header"
+    },
+    {
+      "type": "page",
+      "id": "size_chart_popup_content",
+      "label": "t:sections.main-product.settings.size_chart_popup_page.label"
     },
     {
       "type": "header",
