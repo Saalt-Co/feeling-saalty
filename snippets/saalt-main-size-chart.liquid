@@ -1,0 +1,102 @@
+{{ 'component-size-chart.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'size-chart.js' | asset_url }}" defer="defer"></script>
+
+<size-chart>
+  {%- liquid
+    assign titles = ''
+    assign content = ''
+    assign sorted_size_charts = shop.metaobjects.size_chart.values | sort: 'sort_order'
+    for size_chart in sorted_size_charts
+      assign titles = titles | append: size_chart.title
+      unless forloop.last
+        assign titles = titles | append: 'ʕ•ᴥ•ʔ'
+      endunless
+      capture page_content
+        echo pages[size_chart.page].content
+      endcapture
+      assign content = content | append: page_content
+      unless forloop.last
+        assign content = content | append: 'ʕ•ᴥ•ʔ'
+      endunless
+    endfor
+    assign split_titles = titles | split: 'ʕ•ᴥ•ʔ'
+    assign split_content = content | split: 'ʕ•ᴥ•ʔ'
+  -%}
+
+  <div class="size-chart-tabs">
+    <div class="size-chart-titles">
+      <ul class="size-chart-titles-ul">
+        {%- for title in split_titles -%}
+          {% liquid
+            if product.metafields.saalt.product_size_chart.value.title == title
+              assign size_chart_match = true
+            else
+              assign size_chart_match = false
+            endif
+          %}
+          <li class="size-chart-titles-li">
+            <button
+              class="size-chart-title-button{% if size_chart_match or product.metafields.saalt.product_size_chart.value == blank and forloop.first %} active{% endif %}"
+              name="tab-{{ forloop.index }}"
+            >
+              {{ title }}
+            </button>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+    <div class="size-chart-content-containers">
+      {%- for content in split_content -%}
+        {% liquid
+          if pages[product.metafields.saalt.product_size_chart.value.page].content == content
+            assign size_chart_match = true
+          else
+            assign size_chart_match = false
+          endif
+        %}
+        <div
+          class="size-chart-content-container{% if size_chart_match or product.metafields.saalt.product_size_chart.value == blank and forloop.first %} visible{% endif %}"
+          name="content-container-{{ forloop.index }}"
+        >
+          {{ content }}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</size-chart>
+
+{%- style -%}
+  #section-{{ section.id }} size-chart .section-title {
+    display: block;
+    width: 100%;
+  }
+  #section-{{ section.id }} size-chart .section-title > p {
+    margin: 0;
+  }
+  #section-{{ section.id }} size-chart .section-title.mobile-center {
+    text-align: center;
+  }
+  #section-{{ section.id }} size-chart .section-title.mobile-left {
+    text-align: left;
+  }
+  #section-{{ section.id }} size-chart .section-title.mobile-right {
+    text-align: right;
+  }
+  #section-{{ section.id }} size-chart .section-title.mobile-justify {
+    text-align: justify;
+  }
+  @media (min-width: 750px) {
+    #section-{{ section.id }} size-chart .section-title.desktop-center {
+      text-align: center;
+    }
+    #section-{{ section.id }} size-chart .section-title.desktop-left {
+      text-align: left;
+    }
+    #section-{{ section.id }} size-chart .section-title.desktop-right {
+    text-align: right;
+    }
+    #section-{{ section.id }} size-chart .section-title.desktop-justify {
+      text-align: justify;
+    }
+  }
+{%- endstyle -%}
