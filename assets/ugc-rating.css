@@ -1,0 +1,21 @@
+.ugc-rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.25rem;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.ugc-rating .ugc-rating-star:before {
+  content: '\2606';
+  display: inline-block;
+  width: auto;
+  height: 1rem;
+  color: var(--color-base-text);
+}
+
+.ugc-rating .ugc-rating-star.filled:before {
+  content: '\2605';
+}
