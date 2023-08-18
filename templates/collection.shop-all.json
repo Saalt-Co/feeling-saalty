@@ -29,7 +29,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Deep_Marine.jpg",
             "title": "<p>Cups & Discs A-HOOOOY!<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Product Type",
@@ -85,6 +85,7 @@
       ],
       "settings": {
         "section_id": "",
+        "make_full_width": false,
         "mobile_min_width": "40%",
         "mobile_max_width": "280px",
         "mobile_aspect_ratio": "1\/1.5",
@@ -131,7 +132,6 @@
     },
     "fc031dea-6661-47b1-b752-79fa446b4dee": {
       "type": "saalt-media-with-split-text",
-      "disabled": true,
       "blocks": {
         "template--18370419720465__fc031dea-6661-47b1-b752-79fa446b4dee-1687976507446c2c25-0": {
           "type": "section_title",
@@ -229,6 +229,7 @@
         "template--18370419720465__fc031dea-6661-47b1-b752-79fa446b4dee-1687976507446c2c25-5",
         "d23d2a87-3c59-4374-8a45-bff84584b5ea"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "background_color": "#cc8771",
@@ -254,7 +255,6 @@
     },
     "608ca706-ad50-41fb-bcb5-660ee4c39ec0": {
       "type": "saalt-media-with-text",
-      "disabled": true,
       "blocks": {
         "template--18370419720465__608ca706-ad50-41fb-bcb5-660ee4c39ec0-1687976107730f0061-0": {
           "type": "section_title",
@@ -327,6 +327,7 @@
         "f0812bee-53a0-45c2-acf8-a06f24b6d71d",
         "c8cb7502-f102-47a4-a6fd-3ea00c892598"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "background_color": "#eef0f4",
@@ -458,6 +459,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/bright_girl_guide_7_4b71619e-73ed-4d07-ac16-6a0fb255671f.jpg",
             "title": "Customer name",
+            "rating": 0,
             "text": "<p>UGC quotes here<\/p>",
             "link_label": "",
             "link": ""
@@ -468,6 +470,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Teen_Lifestyle-57.jpg",
             "title": "Customer 2",
+            "rating": 0,
             "text": "<p>UGC quotes again<\/p>",
             "link_label": "",
             "link": ""
@@ -478,6 +481,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Chelsea.jpg",
             "title": "Customer 3",
+            "rating": 0,
             "text": "<p>UGC UGC UGC<\/p>",
             "link_label": "",
             "link": ""
@@ -568,7 +572,6 @@
     },
     "b4f29bbb-7268-4349-91b5-1ab1f590f3c0": {
       "type": "collapsible-content",
-      "disabled": true,
       "blocks": {
         "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-0": {
           "type": "collapsible_row",
@@ -613,6 +616,7 @@
         "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-2",
         "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-3"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Saalt Wear FAQs",
