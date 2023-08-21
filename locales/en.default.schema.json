@@ -195,6 +195,57 @@
         }
       }
     },
+    "color_palette": {
+      "name": "Color Palette",
+      "settings": {
+        "header__1": {
+          "content": "Primary colors"
+        },
+        "palette_color_0": {
+          "label": "Theme color 0"
+        },
+        "palette_color_1": {
+          "label": "Theme color 1"
+        },
+        "palette_color_2": {
+          "label": "Theme color 2"
+        },
+        "palette_color_3": {
+          "label": "Theme color 3"
+        },
+        "palette_color_4": {
+          "label": "Theme color 4"
+        },
+        "palette_color_5": {
+          "label": "Theme color 5"
+        },
+        "header__2": {
+          "content": "Secondary colors"
+        },
+        "palette_color_6": {
+          "label": "Theme color 6"
+        },
+        "palette_color_7": {
+          "label": "Theme color 7"
+        }
+      }
+    },
+    "theme_colors": {
+      "name": "Theme colors",
+      "settings": {
+        "text": {
+          "header": "Text",
+          "label": "Primary text color"
+        },
+        "primary_button": {
+          "header": "Primary Button",
+          "solid_label": "Button color",
+          "hover_label": "Hover color",
+          "text_label": "Text color",
+          "text_hover": "Hover text color"
+        }
+      }
+    },
     "logo": {
       "name": "Logo",
       "settings": {
