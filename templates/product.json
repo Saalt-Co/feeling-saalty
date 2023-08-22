@@ -104,7 +104,7 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "washing",
-            "content": "",
+            "content": "<p>Here's how to wash<\/p>",
             "page": ""
           }
         },
@@ -119,6 +119,7 @@
         },
         "8e2f85d3-2d82-4239-820b-c26872aaf01a": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Shipping",
             "icon": "truck",
