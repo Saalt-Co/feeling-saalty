@@ -111,9 +111,18 @@
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Guarantee & Shipping",
+            "heading": "Guarantee",
             "icon": "heart",
-            "content": "",
+            "content": "<p>We're here to get you to period bliss. If you're not happy with your Saalt product, we'll send you a replacement you'll love or your money back per our Saalt Bliss Guarantee. Reach out to our Saalt Coaches at<a href=\"mailto:sayhey@saalt.com\" target=\"_blank\">sayhey@saalt.com<\/a>for personalized help.<\/p>",
+            "page": ""
+          }
+        },
+        "8e2f85d3-2d82-4239-820b-c26872aaf01a": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping",
+            "icon": "truck",
+            "content": "<p>Free shipping for orders domestic orders over $39 via USPS. Orders under $39 will ship for a flat rate of $7. International shipping fees vary.<\/p><p>Please allow 1-3 business days for your order to be processed and shipped. Please allow an additional 3-10 business days for domestic orders to arrive. For international orders, please allow up to 25 business days for orders to arrive.<\/p>",
             "page": ""
           }
         },
@@ -135,7 +144,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "1c267ad4-7246-41e5-b2d7-dd8e6b65630e",
         "8e16b700-b5d3-4d93-aa86-a2391fc38797",
         "description",
         "collapsible-row-0",
@@ -143,10 +151,12 @@
         "collapsible-row-2",
         "collapsible-row-3",
         "collapsible-row-1",
+        "8e2f85d3-2d82-4239-820b-c26872aaf01a",
         "share"
       ],
       "settings": {
         "enable_sticky_info": true,
+        "size_chart_popup_content": "",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "cover",
@@ -203,6 +213,7 @@
           "type": "column",
           "settings": {
             "title": "Free Shipping",
+            "rating": 0,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
@@ -212,6 +223,7 @@
           "type": "column",
           "settings": {
             "title": "Hassle-Free Exchanges",
+            "rating": 0,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
