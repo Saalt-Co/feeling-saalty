@@ -23,6 +23,11 @@
             "text_style": "subtitle"
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "a540459f-701c-470e-bfa0-1112dcf7d16d": {
           "type": "reviews_summary",
           "settings": {
@@ -67,11 +72,6 @@
             "desktop_text_alignment": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.options__3.value"
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
@@ -111,9 +111,9 @@
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Guarantee",
+            "heading": "Refund Guarantee",
             "icon": "heart",
-            "content": "<p>We're here to get you to period bliss. If you're not happy with your Saalt product, we'll send you a replacement you'll love or your money back per our Saalt Bliss Guarantee. Reach out to our Saalt Coaches at<a href=\"mailto:sayhey@saalt.com\" target=\"_blank\">sayhey@saalt.com<\/a>for personalized help.<\/p>",
+            "content": "<p>We're here to get you to period bliss. If you're not happy with your Saalt product, we'll send you a replacement you'll love or your money back per our Saalt Bliss Guarantee. Reach out to our Saalt Coaches at <a href=\"mailto:sayhey@saalt.com\" target=\"_blank\">sayhey@saalt.com <\/a>for personalized help.<\/p>",
             "page": ""
           }
         },
@@ -138,6 +138,7 @@
         "vendor",
         "title",
         "caption",
+        "description",
         "a540459f-701c-470e-bfa0-1112dcf7d16d",
         "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7",
         "price",
@@ -145,7 +146,6 @@
         "quantity_selector",
         "buy_buttons",
         "8e16b700-b5d3-4d93-aa86-a2391fc38797",
-        "description",
         "collapsible-row-0",
         "b353a8cb-d34f-4c9e-9e49-2879eadc10c3",
         "collapsible-row-2",
