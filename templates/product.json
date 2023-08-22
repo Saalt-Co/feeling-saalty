@@ -85,7 +85,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Fabric",
-            "icon": "leather",
+            "icon": "leaf",
             "content": "{{ product.metafields.saalt.product_fabric.value.fabric_details | metafield_tag }}",
             "page": ""
           }
