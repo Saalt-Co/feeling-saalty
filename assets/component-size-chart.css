@@ -1,3 +1,7 @@
+.size-chart-section {
+  margin: 4rem auto;
+}
+
 size-chart {
   color: var(--color-base-text);
   background: rgba(var(--color-base-background-1), 1);
