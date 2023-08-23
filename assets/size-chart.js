@@ -13,6 +13,8 @@ class SizeChart extends HTMLElement {
     for (const tab of [...this.tabs]) {
       addEventListeners(tab, ['click', 'keydown'], [this.tabClick], false);
     }
+
+    this.sanitizeSizeChartTable();
   }
 
   disconnectedCallback() {
@@ -58,6 +60,29 @@ class SizeChart extends HTMLElement {
   showClickedContent(e) {
     const tabIndex = this.getClickedIndex(e);
     [...this.contentContainers][tabIndex - 1].classList.add('visible');
+  }
+
+  sanitizeSizeChartTable() {
+    const tableEl = document.querySelector('size-chart table');
+    this.recursivelyRemoveAttributes(tableEl);
+  }
+
+  removeAttributes(element, attributesArray) {
+    console.log(element);
+    for (const attr of attributesArray) {
+      element.removeAttribute(attr);
+    }
+  }
+
+  recursivelyRemoveAttributes(element) {
+    const attrs = ['width', 'height', 'style'];
+    this.removeAttributes(element, attrs);
+    for (const child of [...element.children]) {
+      this.removeAttributes(child, attrs);
+      if ([...child.children].length > 0) {
+        this.recursivelyRemoveAttributes(child);
+      }
+    }
   }
 }
 
