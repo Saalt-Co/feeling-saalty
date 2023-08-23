@@ -178,7 +178,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Chelsea.jpg",
-            "title": "Column",
+            "title": "UGC test",
             "rating": 1,
             "text": "<p>Kinda sus, tbh<\/p>",
             "link_label": "",
@@ -189,7 +189,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/synclaire_2.jpg",
-            "title": "Column",
+            "title": "UGC test",
             "rating": 5,
             "text": "<p>Best thing since sliced bread<\/p>",
             "link_label": "",
@@ -200,7 +200,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Photo_Dec_28_2022_3_54_10_PM.jpg",
-            "title": "Column",
+            "title": "UGC test",
             "rating": 3,
             "text": "<p>Mid<\/p>",
             "link_label": "",
