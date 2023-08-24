@@ -78,9 +78,7 @@ class SizeChart extends HTMLElement {
     this.removeAttributes(element, attrs);
     for (const child of [...element.children]) {
       this.removeAttributes(child, attrs);
-      if ([...child.children].length > 0) {
-        this.recursivelyRemoveAttributes(child, attrs);
-      }
+      this.recursivelyRemoveAttributes(child, attrs);
     }
   }
 }
