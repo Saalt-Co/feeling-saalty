@@ -8,7 +8,8 @@ size-chart {
   width: 100%;
 }
 
-size-chart .size-chart-tabs {
+size-chart .size-chart-tabs,
+size-chart .size-chart-modal .size-chart-wrapper {
   position: relative;
   cursor: initial;
 }
@@ -66,11 +67,91 @@ size-chart .size-chart-content-containers .size-chart-content-container {
 }
 
 size-chart .size-chart-content-containers .size-chart-content-container.visible {
-  display: inline-flex;
+  display: inline-grid;
   visibility: visible;
   overflow: auto;
   -webkit-animation: fadeIn 0.2s forwards cubic-bezier(1, 0, 0, 1);
   animation: fadeIn 0.2s forwards cubic-bezier(1, 0, 0, 1);
+  gap: var(--grid-desktop-horizontal-spacing) var(--grid-desktop-vertical-spacing);
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container .saalt-monogram-svg {
+  grid-area: monogram;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container .saalt-monogram-svg svg {
+  display: block;
+  max-width: 5rem;
+  height: auto;
+  margin: 2rem auto 0.5rem;
+  fill: rgb(var(--color-base-text));
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear table {
+  grid-area: size-table;
+  max-width: 100%;
+  overflow: auto;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear img {
+  grid-area: waist-diagram;
+  width: 100%;
+  height: auto;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper {
+  grid-area: fit-instructions-wrapper;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper ol {
+  list-style: none;
+  counter-reset: steps;
+  padding-left: 0;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper ol li {
+  counter-increment: steps;
+}
+
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-wear
+  .fit-instructions-wrapper
+  ol
+  li:before {
+  content: counter(steps);
+  margin-right: 0.5rem;
+  background: rgba(var(--color-base-accent-2), var(--alpha-button-background));
+  color: rgb(var(--color-base-text));
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  line-height: 1.2em;
+  padding: 0 0 0 1px;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-range-wrapper {
+  grid-area: fit-range-wrapper;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear {
+  grid-template-columns: repeat(2, minmax(0, 50%));
+  grid-template-areas:
+    'monogram monogram'
+    'size-table size-table'
+    'waist-diagram fit-instructions-wrapper'
+    'waist-diagram fit-range-wrapper';
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup {
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc {
 }
 
 @-webkit-keyframes fadeIn {
@@ -93,6 +174,9 @@ size-chart .size-chart-content-containers .size-chart-content-container.visible 
 
 size-chart table {
   display: inline-block;
+}
+
+size-chart table:not([class]) {
   box-shadow: none;
 }
 
