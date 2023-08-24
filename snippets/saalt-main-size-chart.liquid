@@ -55,7 +55,7 @@
           endif
         %}
         <div
-          class="size-chart-content-container{% if size_chart_match or product.metafields.saalt.product_size_chart.value == blank and forloop.first %} visible{% endif %}"
+          class="size-chart-content-container {{ split_titles[forloop.index0] | handleize }}{% if size_chart_match or product.metafields.saalt.product_size_chart.value == blank and forloop.first %} visible{% endif %}"
           name="content-container-{{ forloop.index }}"
         >
           {{ content }}
