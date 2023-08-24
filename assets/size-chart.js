@@ -64,23 +64,22 @@ class SizeChart extends HTMLElement {
 
   sanitizeSizeChartTable() {
     const tableEl = document.querySelector('size-chart table');
-    this.recursivelyRemoveAttributes(tableEl);
+    const attrs = ['width', 'height', 'style'];
+    this.recursivelyRemoveAttributes(tableEl, attrs);
   }
 
   removeAttributes(element, attributesArray) {
-    console.log(element);
     for (const attr of attributesArray) {
       element.removeAttribute(attr);
     }
   }
 
-  recursivelyRemoveAttributes(element) {
-    const attrs = ['width', 'height', 'style'];
+  recursivelyRemoveAttributes(element, attrs) {
     this.removeAttributes(element, attrs);
     for (const child of [...element.children]) {
       this.removeAttributes(child, attrs);
       if ([...child.children].length > 0) {
-        this.recursivelyRemoveAttributes(child);
+        this.recursivelyRemoveAttributes(child, attrs);
       }
     }
   }
