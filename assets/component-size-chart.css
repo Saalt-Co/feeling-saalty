@@ -99,26 +99,35 @@ size-chart .size-chart-content-containers .size-chart-content-container.saalt-we
   height: auto;
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper {
-  grid-area: fit-instructions-wrapper;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-wrapper {
+  grid-area: fit-wrapper;
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper ol {
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-wear
+  .fit-wrapper
+  .fit-instructions-wrapper
+  ol {
   list-style: none;
   counter-reset: steps;
   padding-left: 0;
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper ol li {
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-wear
+  .fit-wrapper
+  .fit-instructions-wrapper
+  ol
+  li {
   counter-increment: steps;
 }
 
 size-chart
   .size-chart-content-containers
   .size-chart-content-container.saalt-wear
+  .fit-wrapper
   .fit-instructions-wrapper
   ol
   li:before {
@@ -135,17 +144,12 @@ size-chart
   padding: 0 0 0 1px;
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-range-wrapper {
-  grid-area: fit-range-wrapper;
-}
-
 size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear {
   grid-template-columns: repeat(2, minmax(0, 50%));
   grid-template-areas:
     'monogram monogram'
     'size-table size-table'
-    'waist-diagram fit-instructions-wrapper'
-    'waist-diagram fit-range-wrapper';
+    'waist-diagram fit-wrapper';
 }
 
 size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup {
