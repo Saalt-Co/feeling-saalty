@@ -52,7 +52,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
         },
@@ -61,7 +61,7 @@
           "settings": {
             "mobile_icon_max_width": "3rem",
             "desktop_icon_width": "3rem",
-            "product_features_orientation": "t:sections.main-product.blocks.product_features.settings.product_features_orientation.options__2.value",
+            "product_features_orientation": "vertical",
             "desktop_icon_max_width": "50%",
             "desktop_icon_height": "75px",
             "desktop_text_alignment": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.options__3.value"
@@ -85,7 +85,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Fabric",
-            "icon": "leather",
+            "icon": "leaf",
             "content": "{{ product.metafields.saalt.product_fabric.value.fabric_details | metafield_tag }}",
             "page": ""
           }
@@ -104,16 +104,26 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "washing",
-            "content": "",
+            "content": "<p>Here's how to wash<\/p>",
             "page": ""
           }
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Guarantee & Shipping",
+            "heading": "Saalt Money-Back Guarantee",
             "icon": "heart",
-            "content": "",
+            "content": "<p>We're here to get you to period bliss. If you're not happy with your Saalt product, we'll send you a replacement you'll love or your money back per our Saalt Bliss Guarantee. Reach out to our Saalt Coaches at <a href=\"mailto:sayhey@saalt.com\" target=\"_blank\">sayhey@saalt.com <\/a>for personalized help.<\/p>",
+            "page": ""
+          }
+        },
+        "8e2f85d3-2d82-4239-820b-c26872aaf01a": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Shipping",
+            "icon": "truck",
+            "content": "<p>Free shipping for orders domestic orders over $39 via USPS. Orders under $39 will ship for a flat rate of $7. International shipping fees vary.<\/p><p>Please allow 1-3 business days for your order to be processed and shipped. Please allow an additional 3-10 business days for domestic orders to arrive. For international orders, please allow up to 25 business days for orders to arrive.<\/p>",
             "page": ""
           }
         },
@@ -135,7 +145,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "1c267ad4-7246-41e5-b2d7-dd8e6b65630e",
         "8e16b700-b5d3-4d93-aa86-a2391fc38797",
         "description",
         "collapsible-row-0",
@@ -143,10 +152,12 @@
         "collapsible-row-2",
         "collapsible-row-3",
         "collapsible-row-1",
+        "8e2f85d3-2d82-4239-820b-c26872aaf01a",
         "share"
       ],
       "settings": {
         "enable_sticky_info": true,
+        "size_chart_popup_content": "",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "cover",
@@ -158,6 +169,65 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "2e4ed4ed-2f94-40cb-9564-c7df19d1376a": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chelsea.jpg",
+            "title": "UGC test",
+            "rating": 1,
+            "text": "<p>Kinda sus, tbh<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/synclaire_2.jpg",
+            "title": "UGC test",
+            "rating": 5,
+            "text": "<p>Best thing since sliced bread<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Photo_Dec_28_2022_3_54_10_PM.jpg",
+            "title": "UGC test",
+            "rating": 3,
+            "text": "<p>Mid<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-1",
+        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-2",
+        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "image-with-text": {
@@ -203,6 +273,7 @@
           "type": "column",
           "settings": {
             "title": "Free Shipping",
+            "rating": 0,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
@@ -212,6 +283,7 @@
           "type": "column",
           "settings": {
             "title": "Hassle-Free Exchanges",
+            "rating": 0,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
@@ -266,6 +338,7 @@
   },
   "order": [
     "main",
+    "2e4ed4ed-2f94-40cb-9564-c7df19d1376a",
     "image-with-text",
     "multicolumn",
     "related-products",
