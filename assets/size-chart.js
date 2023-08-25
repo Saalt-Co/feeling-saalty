@@ -7,7 +7,7 @@ class SizeChart extends HTMLElement {
   }
 
   connectedCallback() {
-    this.tabs = document.querySelectorAll('.size-chart-title-button');
+    this.tabs = document.querySelectorAll('.size-chart-tab-title-button');
     this.contentContainers = document.querySelectorAll('.size-chart-content-container');
 
     for (const tab of [...this.tabs]) {
