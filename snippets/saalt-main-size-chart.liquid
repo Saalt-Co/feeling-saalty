@@ -61,7 +61,7 @@
           <div class="saalt-monogram-svg">
             {%- render 'svg-saalt-monogram' -%}
           </div>
-          {{ content }}
+          {{ content | replace: '[[[ fit-content ]]]', 'Fit slider goes here' }}
         </div>
       {%- endfor -%}
     </div>
