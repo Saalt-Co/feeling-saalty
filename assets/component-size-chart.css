@@ -193,14 +193,16 @@ size-chart .size-chart-content-containers .size-chart-content-container.saalt-we
     'waist-diagram fit-wrapper';
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup.visible {
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup.visible,
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc.visible {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row {
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row,
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc .discs-row {
   display: inline-flex;
   flex-direction: column;
   gap: calc(var(--grid-desktop-horizontal-spacing) * 4);
@@ -211,12 +213,14 @@ size-chart .size-chart-content-containers .size-chart-content-container.saalt-cu
 }
 
 @media screen and (min-width: 750px) {
-  size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row {
+  size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row,
+  size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc .discs-row {
     flex-direction: row;
   }
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row .cup-wrapper {
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row .cup-wrapper,
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc .discs-row .disc-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -228,7 +232,13 @@ size-chart
   .size-chart-content-container.saalt-cup
   .cups-row
   .cup-wrapper
-  .cup-wrapper-inner {
+  .cup-wrapper-inner,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper
+  .disc-wrapper-inner {
   display: flex;
   position: relative;
   justify-content: center;
@@ -243,7 +253,14 @@ size-chart
   .cups-row
   .cup-wrapper
   .cup-wrapper-inner
-  .cup-measurement-wrapper {
+  .cup-measurement-wrapper,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper
+  .disc-wrapper-inner
+  .disc-measurement-wrapper {
   display: flex;
   width: auto;
   height: 100%;
@@ -259,6 +276,14 @@ size-chart
   .cup-wrapper
   .cup-wrapper-inner
   .cup-measurement-wrapper
+  div:empty.measurement-line,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper
+  .disc-wrapper-inner
+  .disc-measurement-wrapper
   div:empty.measurement-line {
   display: block;
   width: 2rem;
@@ -273,6 +298,13 @@ size-chart
   .cups-row
   .cup-wrapper
   .cup-wrapper-inner
+  img,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper
+  .disc-wrapper-inner
   img {
   width: auto;
   max-height: 250px;
@@ -295,7 +327,30 @@ size-chart
   padding-top: 1.75rem;
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row .cup-wrapper .text-wrapper {
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper.size-small
+  .disc-wrapper-inner
+  .disc-measurement-wrapper,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper.size-small
+  .disc-wrapper-inner
+  img {
+  padding-top: 4rem;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row .cup-wrapper .text-wrapper,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper
+  .text-wrapper {
   display: flex;
   flex-direction: column;
   width: 200px;
@@ -317,7 +372,22 @@ size-chart
   .cup-wrapper
   .text-wrapper
   .cup-ul
-  .cup-li {
+  .cup-li,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper
+  .text-wrapper
+  h3,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper
+  .text-wrapper
+  .disc-ul
+  .disc-li {
   margin-bottom: 1rem;
 }
 
@@ -327,13 +397,17 @@ size-chart
   .cups-row
   .cup-wrapper
   .text-wrapper
-  .cup-ul {
+  .cup-ul,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper
+  .text-wrapper
+  .disc-ul {
   margin: 0;
   padding-left: 0;
   list-style: none;
-}
-
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc {
 }
 
 @-webkit-keyframes fadeIn {
