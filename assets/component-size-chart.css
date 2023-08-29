@@ -122,6 +122,7 @@ size-chart .size-chart-content-containers .size-chart-content-container .size-ch
 size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear table {
   grid-area: size-table;
   max-width: 100%;
+  margin: 0 auto;
   overflow: auto;
 }
 
@@ -205,17 +206,25 @@ size-chart .size-chart-content-containers .size-chart-content-container.saalt-cu
 size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc .discs-row {
   display: inline-flex;
   flex-direction: column;
-  gap: calc(var(--grid-desktop-horizontal-spacing) * 4);
+  gap: calc(var(--grid-desktop-horizontal-spacing) * 2);
   width: 100%;
   height: auto;
   padding: 0 calc(var(--grid-desktop-horizontal-spacing) * 2) calc(var(--grid-desktop-horizontal-spacing) * 2);
   overflow: auto;
 }
 
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc .discs-row {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @media screen and (min-width: 750px) {
   size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row,
   size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc .discs-row {
     flex-direction: row;
+  }
+  size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc .discs-row {
+    padding: 0 calc(var(--grid-desktop-horizontal-spacing) * 2) calc(var(--grid-desktop-horizontal-spacing) * 2);
   }
 }
 
@@ -298,7 +307,10 @@ size-chart
   .cups-row
   .cup-wrapper
   .cup-wrapper-inner
-  img,
+  img {
+  width: auto;
+  max-height: 250px;
+}
 size-chart
   .size-chart-content-containers
   .size-chart-content-container.saalt-disc
@@ -307,7 +319,7 @@ size-chart
   .disc-wrapper-inner
   img {
   width: auto;
-  max-height: 250px;
+  max-height: 200px;
 }
 
 size-chart
@@ -327,6 +339,10 @@ size-chart
   padding-top: 1.75rem;
 }
 
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row .cup-wrapper.size-teen {
+  margin-top: -1.75rem;
+}
+
 size-chart
   .size-chart-content-containers
   .size-chart-content-container.saalt-disc
@@ -342,6 +358,21 @@ size-chart
   .disc-wrapper-inner
   img {
   padding-top: 4rem;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc .discs-row .disc-wrapper.size-small {
+  margin-top: -4rem;
+}
+
+@media screen and (min-width: 750px) {
+  size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row .cup-wrapper.size-teen,
+  size-chart
+    .size-chart-content-containers
+    .size-chart-content-container.saalt-disc
+    .discs-row
+    .disc-wrapper.size-small {
+    margin-top: 0;
+  }
 }
 
 size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row .cup-wrapper .text-wrapper,
