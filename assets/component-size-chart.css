@@ -1,19 +1,24 @@
+.size-chart-section {
+  margin: 4rem auto;
+}
+
 size-chart {
   color: var(--color-base-text);
   background: rgba(var(--color-base-background-1), 1);
   width: 100%;
 }
 
-size-chart .size-chart-tabs {
+size-chart .size-chart-tabs,
+size-chart .size-chart-modal .size-chart-wrapper {
   position: relative;
   cursor: initial;
 }
 
-size-chart .size-chart-titles {
+size-chart .size-chart-tab-titles {
   overflow-x: auto;
 }
 
-size-chart .size-chart-titles .size-chart-titles-ul {
+size-chart .size-chart-tab-titles .size-chart-tab-titles-ul {
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
@@ -24,7 +29,11 @@ size-chart .size-chart-titles .size-chart-titles-ul {
   list-style: none;
 }
 
-size-chart .size-chart-titles .size-chart-titles-ul .size-chart-titles-li button.size-chart-title-button {
+size-chart
+  .size-chart-tab-titles
+  .size-chart-tab-titles-ul
+  .size-chart-tab-titles-li
+  button.size-chart-tab-title-button {
   display: inline-block;
   background: transparent;
   border: none;
@@ -36,13 +45,29 @@ size-chart .size-chart-titles .size-chart-titles-ul .size-chart-titles-li button
   cursor: pointer;
 }
 
-size-chart .size-chart-titles .size-chart-titles-ul .size-chart-titles-li:first-of-type button.size-chart-title-button {
+size-chart
+  .size-chart-tab-titles
+  .size-chart-tab-titles-ul
+  .size-chart-tab-titles-li:first-of-type
+  button.size-chart-tab-title-button {
   border-left: 1px solid;
 }
 
-size-chart .size-chart-titles .size-chart-titles-ul .size-chart-titles-li button.size-chart-title-button:hover,
-size-chart .size-chart-titles .size-chart-titles-ul .size-chart-titles-li button.size-chart-title-button:focus,
-size-chart .size-chart-titles .size-chart-titles-ul .size-chart-titles-li button.size-chart-title-button.active {
+size-chart
+  .size-chart-tab-titles
+  .size-chart-tab-titles-ul
+  .size-chart-tab-titles-li
+  button.size-chart-tab-title-button:hover,
+size-chart
+  .size-chart-tab-titles
+  .size-chart-tab-titles-ul
+  .size-chart-tab-titles-li
+  button.size-chart-tab-title-button:focus,
+size-chart
+  .size-chart-tab-titles
+  .size-chart-tab-titles-ul
+  .size-chart-tab-titles-li
+  button.size-chart-tab-title-button.active {
   background-color: rgba(var(--color-button), var(--alpha-button-background));
   color: rgb(var(--color-button-text));
   border-color: rgba(var(--color-button), var(--alpha-button-background));
@@ -62,11 +87,358 @@ size-chart .size-chart-content-containers .size-chart-content-container {
 }
 
 size-chart .size-chart-content-containers .size-chart-content-container.visible {
-  display: inline-flex;
+  display: inline-grid;
   visibility: visible;
   overflow: auto;
   -webkit-animation: fadeIn 0.2s forwards cubic-bezier(1, 0, 0, 1);
   animation: fadeIn 0.2s forwards cubic-bezier(1, 0, 0, 1);
+  gap: var(--grid-desktop-horizontal-spacing) var(--grid-desktop-vertical-spacing);
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container .saalt-monogram-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  grid-area: monogram;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container .saalt-monogram-svg svg {
+  display: block;
+  max-width: 5rem;
+  height: auto;
+  margin: 2rem auto 0.5rem;
+  fill: rgb(var(--color-base-text));
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container .size-chart-title {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  grid-area: size-chart-title;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear table {
+  grid-area: size-table;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container img {
+  width: 100%;
+  height: auto;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear img {
+  grid-area: waist-diagram;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-wrapper {
+  grid-area: fit-wrapper;
+}
+
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-wear
+  .fit-wrapper
+  .fit-instructions-wrapper
+  ol {
+  list-style: none;
+  counter-reset: steps;
+  padding-left: 3.25rem;
+}
+
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-wear
+  .fit-wrapper
+  .fit-instructions-wrapper
+  ol
+  li {
+  counter-increment: steps;
+  text-indent: -2.75rem;
+}
+
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-wear
+  .fit-wrapper
+  .fit-instructions-wrapper
+  ol
+  li:before {
+  content: counter(steps);
+  display: inline-grid;
+  background: rgba(var(--color-base-accent-2), var(--alpha-button-background));
+  color: rgb(var(--color-base-text));
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-right: 0.5rem;
+  padding: 0 0 0 1px;
+  font-weight: 600;
+  border-radius: 50%;
+  place-items: center;
+  line-height: 1.2em;
+  text-indent: 0rem;
+  right: 0.5rem;
+  position: relative;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear {
+  grid-template-columns: repeat(2, minmax(0, 50%));
+  grid-template-areas:
+    'monogram monogram'
+    'size-chart-title size-chart-title'
+    'size-table size-table'
+    'waist-diagram fit-wrapper';
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup.visible,
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc.visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row,
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc .discs-row {
+  display: inline-flex;
+  flex-direction: column;
+  gap: calc(var(--grid-desktop-horizontal-spacing) * 2);
+  width: 100%;
+  height: auto;
+  padding: 0 calc(var(--grid-desktop-horizontal-spacing) * 2) calc(var(--grid-desktop-horizontal-spacing) * 2);
+  overflow: auto;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc .discs-row {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media screen and (min-width: 750px) {
+  size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row,
+  size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc .discs-row {
+    flex-direction: row;
+  }
+  size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc .discs-row {
+    padding: 0 calc(var(--grid-desktop-horizontal-spacing) * 2) calc(var(--grid-desktop-horizontal-spacing) * 2);
+  }
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row .cup-wrapper,
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc .discs-row .disc-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-cup
+  .cups-row
+  .cup-wrapper
+  .cup-wrapper-inner,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper
+  .disc-wrapper-inner {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+  gap: var(--grid-desktop-horizontal-spacing);
+  margin: 0;
+}
+
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-cup
+  .cups-row
+  .cup-wrapper
+  .cup-wrapper-inner
+  .cup-measurement-wrapper,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper
+  .disc-wrapper-inner
+  .disc-measurement-wrapper {
+  display: flex;
+  width: auto;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--grid-desktop-horizontal-spacing);
+}
+
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-cup
+  .cups-row
+  .cup-wrapper
+  .cup-wrapper-inner
+  .cup-measurement-wrapper
+  div:empty.measurement-line,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper
+  .disc-wrapper-inner
+  .disc-measurement-wrapper
+  div:empty.measurement-line {
+  display: block;
+  width: 2rem;
+  height: 100%;
+  border: 1px solid;
+  border-right: transparent;
+}
+
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-cup
+  .cups-row
+  .cup-wrapper
+  .cup-wrapper-inner
+  img {
+  width: auto;
+  max-height: 250px;
+}
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper
+  .disc-wrapper-inner
+  img {
+  width: auto;
+  max-height: 200px;
+}
+
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-cup
+  .cups-row
+  .cup-wrapper.size-teen
+  .cup-wrapper-inner
+  .cup-measurement-wrapper,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-cup
+  .cups-row
+  .cup-wrapper.size-teen
+  .cup-wrapper-inner
+  img {
+  padding-top: 1.75rem;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row .cup-wrapper.size-teen {
+  margin-top: -1.75rem;
+}
+
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper.size-small
+  .disc-wrapper-inner
+  .disc-measurement-wrapper,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper.size-small
+  .disc-wrapper-inner
+  img {
+  padding-top: 4rem;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-disc .discs-row .disc-wrapper.size-small {
+  margin-top: -4rem;
+}
+
+@media screen and (min-width: 750px) {
+  size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row .cup-wrapper.size-teen,
+  size-chart
+    .size-chart-content-containers
+    .size-chart-content-container.saalt-disc
+    .discs-row
+    .disc-wrapper.size-small {
+    margin-top: 0;
+  }
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup .cups-row .cup-wrapper .text-wrapper,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper
+  .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-left: 7rem;
+  line-height: 1.5;
+}
+
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-cup
+  .cups-row
+  .cup-wrapper
+  .text-wrapper
+  h3,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-cup
+  .cups-row
+  .cup-wrapper
+  .text-wrapper
+  .cup-ul
+  .cup-li,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper
+  .text-wrapper
+  h3,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper
+  .text-wrapper
+  .disc-ul
+  .disc-li {
+  margin-bottom: 1rem;
+}
+
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-cup
+  .cups-row
+  .cup-wrapper
+  .text-wrapper
+  .cup-ul,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-disc
+  .discs-row
+  .disc-wrapper
+  .text-wrapper
+  .disc-ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
 @-webkit-keyframes fadeIn {
@@ -89,6 +461,9 @@ size-chart .size-chart-content-containers .size-chart-content-container.visible 
 
 size-chart table {
   display: inline-block;
+}
+
+size-chart table:not([class]) {
   box-shadow: none;
 }
 
