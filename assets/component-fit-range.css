@@ -1,3 +1,7 @@
+detals .accordion__content fit-range {
+  padding: 0 3rem;
+}
+
 fit-range,
 fit-range .range-wrapper,
 fit-range .range-wrapper .range-bar {
@@ -27,12 +31,30 @@ fit-range:last-of-type {
 }
 
 fit-range h4 {
-  margin: 0;
+  margin: 1rem 0;
 }
 
 fit-range .range-wrapper .range-text {
   font-size: 1.25rem;
   text-align: center;
+}
+
+fit-range h4,
+fit-range .range-wrapper > .range-text {
+  padding-left: 1.6rem;
+}
+
+fit-range .range-wrapper > .range-text:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgb(var(--color-base-text), 0.75);
+  width: 1px;
+  height: 2rem;
+  margin-left: 0.75rem;
+  left: 50%;
+  top: 2.45rem;
+  transform: translate(-50%);
 }
 
 fit-range .range-wrapper .range-wrapper-inner {
@@ -57,7 +79,8 @@ fit-range .range-wrapper .range-bar .range-marker {
   display: block;
   position: absolute;
   background: rgb(var(--color-base-text));
-  width: 2px;
+  width: 3px;
   height: 1rem;
-  top: -0.5rem;
+  margin-left: -1px;
+  top: -0.4rem;
 }
