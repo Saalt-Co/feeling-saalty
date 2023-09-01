@@ -1,5 +1,7 @@
 {{ 'component-size-chart.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'size-chart.js' | asset_url }}" defer="defer"></script>
+{{ 'component-fit-range.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'fit-range.js' | asset_url }}" defer="defer"></script>
 
 <size-chart>
   {%- liquid
@@ -27,6 +29,14 @@
     assign split_titles = titles | split: 'ʕ•ᴥ•ʔ'
     assign split_page_titles = page_titles | split: 'ʕ•ᴥ•ʔ'
     assign split_content = content | split: 'ʕ•ᴥ•ʔ'
+
+    assign fit_ranges = ''
+    for fit_range in shop.metaobjects.fit_range.values
+      capture fit_range_markup
+        render 'saalt-main-fit-range', fit_range: fit_range
+      endcapture
+      assign fit_ranges = fit_ranges | append: fit_range_markup
+    endfor
   -%}
 
   <div class="size-chart-tabs">
@@ -68,7 +78,7 @@
             {%- render 'svg-saalt-monogram' -%}
           </div>
           <h2 class="size-chart-title">{{ split_page_titles[forloop.index0] }}</h2>
-          {{ content | replace: '[[[ fit-content ]]]', 'Fit slider goes here' }}
+          {{ content | replace: '[[[ fit-content ]]]', fit_ranges }}
         </div>
       {%- endfor -%}
     </div>

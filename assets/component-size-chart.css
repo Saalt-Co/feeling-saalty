@@ -133,38 +133,52 @@ size-chart .size-chart-content-containers .size-chart-content-container img {
 
 size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear img {
   grid-area: waist-diagram;
+  max-width: 200px;
+  margin-left: auto;
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-wrapper {
-  grid-area: fit-wrapper;
+@media screen and (min-width: 750px) {
+  size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear img {
+    max-width: 360px;
+  }
 }
 
-size-chart
-  .size-chart-content-containers
-  .size-chart-content-container.saalt-wear
-  .fit-wrapper
-  .fit-instructions-wrapper
-  ol {
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper {
+  grid-area: fit-instructions;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 750px) {
+  size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper {
+    max-width: 80%;
+  }
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper ol {
   list-style: none;
   counter-reset: steps;
   padding-left: 3.25rem;
 }
 
-size-chart
-  .size-chart-content-containers
-  .size-chart-content-container.saalt-wear
-  .fit-wrapper
-  .fit-instructions-wrapper
-  ol
-  li {
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper ol li {
   counter-increment: steps;
   text-indent: -2.75rem;
+  margin-bottom: 1rem;
 }
 
 size-chart
   .size-chart-content-containers
   .size-chart-content-container.saalt-wear
-  .fit-wrapper
+  .fit-instructions-wrapper
+  ol
+  li:last-of-type {
+  margin-bottom: unset;
+}
+
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.saalt-wear
   .fit-instructions-wrapper
   ol
   li:before {
@@ -185,13 +199,36 @@ size-chart
   position: relative;
 }
 
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper {
+  grid-area: fit-instructions;
+}
+
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-ranges {
+  grid-area: fit-ranges;
+  padding-bottom: calc(var(--grid-desktop-horizontal-spacing) * 2);
+}
+
 size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear {
-  grid-template-columns: repeat(2, minmax(0, 50%));
+  grid-template-columns: repeat(2, minmax(0, auto));
   grid-template-areas:
     'monogram monogram'
     'size-chart-title size-chart-title'
     'size-table size-table'
-    'waist-diagram fit-wrapper';
+    'waist-diagram fit-instructions'
+    'fit-ranges fit-ranges';
+}
+
+@media screen and (min-width: 750px) {
+  size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear {
+    grid-template-columns: unset;
+    grid-template-areas:
+      'monogram monogram'
+      'size-chart-title size-chart-title'
+      'size-table size-table'
+      'waist-diagram fit-instructions'
+      'waist-diagram fit-ranges';
+    /* grid-template-rows: repeat(4, auto) 1fr; */
+  }
 }
 
 size-chart .size-chart-content-containers .size-chart-content-container.saalt-cup.visible,
