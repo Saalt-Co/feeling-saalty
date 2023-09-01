@@ -200,6 +200,20 @@
                     <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                       {{ block.settings.content }}
                       {{ block.settings.page.content }}
+                      {%- liquid
+                        if product.metafields.saalt.saalt_wear_collection != blank
+                          assign downcased_block_heading = block.settings.heading | downcase
+                          assign downcased_product_collection = product.metafields.saalt.saalt_wear_collection.value[0] | downcase
+                          if downcased_block_heading == "how it fits"
+                            for entry in shop.metaobjects.fit_range.values
+                            assign downcased_collection_name = entry.collection_name | downcase
+                              if downcased_collection_name == downcased_product_collection
+                                render 'saalt-main-fit-range', fit_range: entry
+                              endif
+                            endfor
+                          endif
+                        endif
+                      -%}
                     </div>
                   </details>
                 </div>
