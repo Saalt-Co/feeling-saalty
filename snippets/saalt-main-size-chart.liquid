@@ -1,15 +1,22 @@
 {{ 'component-size-chart.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'size-chart.js' | asset_url }}" defer="defer"></script>
+{{ 'component-fit-range.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'fit-range.js' | asset_url }}" defer="defer"></script>
 
 <size-chart>
   {%- liquid
     assign titles = ''
     assign content = ''
+    assign page_titles = ''
     assign sorted_size_charts = shop.metaobjects.size_chart.values | sort: 'sort_order'
     for size_chart in sorted_size_charts
       assign titles = titles | append: size_chart.title
       unless forloop.last
         assign titles = titles | append: 'ʕ•ᴥ•ʔ'
+      endunless
+      assign page_titles = page_titles | append: pages[size_chart.page].title
+      unless forloop.last
+        assign page_titles = page_titles | append: 'ʕ•ᴥ•ʔ'
       endunless
       capture page_content
         echo pages[size_chart.page].content
@@ -20,12 +27,21 @@
       endunless
     endfor
     assign split_titles = titles | split: 'ʕ•ᴥ•ʔ'
+    assign split_page_titles = page_titles | split: 'ʕ•ᴥ•ʔ'
     assign split_content = content | split: 'ʕ•ᴥ•ʔ'
+
+    assign fit_ranges = ''
+    for fit_range in shop.metaobjects.fit_range.values
+      capture fit_range_markup
+        render 'saalt-main-fit-range', fit_range: fit_range
+      endcapture
+      assign fit_ranges = fit_ranges | append: fit_range_markup
+    endfor
   -%}
 
   <div class="size-chart-tabs">
-    <div class="size-chart-titles">
-      <ul class="size-chart-titles-ul">
+    <div class="size-chart-tab-titles">
+      <ul class="size-chart-tab-titles-ul">
         {%- for title in split_titles -%}
           {% liquid
             if product.metafields.saalt.product_size_chart.value.title == title
@@ -34,9 +50,9 @@
               assign size_chart_match = false
             endif
           %}
-          <li class="size-chart-titles-li">
+          <li class="size-chart-tab-titles-li">
             <button
-              class="size-chart-title-button{% if size_chart_match or product.metafields.saalt.product_size_chart.value == blank and forloop.first %} active{% endif %}"
+              class="size-chart-tab-title-button{% if size_chart_match or product.metafields.saalt.product_size_chart.value == blank and forloop.first %} active{% endif %}"
               name="tab-{{ forloop.index }}"
             >
               {{ title }}
@@ -48,17 +64,21 @@
     <div class="size-chart-content-containers">
       {%- for content in split_content -%}
         {% liquid
-          if pages[product.metafields.saalt.product_size_chart.value.page].content == content
+          if product.metafields.saalt.product_size_chart.value.page.value.content == content
             assign size_chart_match = true
           else
             assign size_chart_match = false
           endif
         %}
         <div
-          class="size-chart-content-container{% if size_chart_match or product.metafields.saalt.product_size_chart.value == blank and forloop.first %} visible{% endif %}"
+          class="size-chart-content-container {{ split_titles[forloop.index0] | handleize }}{% if size_chart_match or product.metafields.saalt.product_size_chart.value == blank and forloop.first %} visible{% endif %}"
           name="content-container-{{ forloop.index }}"
         >
-          {{ content }}
+          <div class="saalt-monogram-svg">
+            {%- render 'svg-saalt-monogram' -%}
+          </div>
+          <h2 class="size-chart-title">{{ split_page_titles[forloop.index0] }}</h2>
+          {{ content | replace: '[[[ fit-content ]]]', fit_ranges }}
         </div>
       {%- endfor -%}
     </div>
