@@ -4,7 +4,7 @@
 
 size-chart {
   color: var(--color-base-text);
-  background: rgba(var(--color-base-background-1), 1);
+  background: rgba(var(--palette-color-0), 1);
   width: 100%;
 }
 
@@ -39,6 +39,7 @@ size-chart
   border: none;
   border-top: 1px solid;
   border-right: 1px solid;
+  border-color: rgba(var(--color-button-primary-background), var(--alpha-button-background));
   color: inherit;
   padding: 1rem 3rem;
   white-space: nowrap;
@@ -68,15 +69,15 @@ size-chart
   .size-chart-tab-titles-ul
   .size-chart-tab-titles-li
   button.size-chart-tab-title-button.active {
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
-  color: rgb(var(--color-button-text));
-  border-color: rgba(var(--color-button), var(--alpha-button-background));
+  background-color: rgba(var(--color-button-primary-background), var(--alpha-button-background));
+  color: rgb(var(--color-button-primary-text));
+  border-color: rgba(var(--color-button-primary-background), var(--alpha-button-background));
 }
 
 size-chart .size-chart-content-containers {
   display: flex;
   justify-content: center;
-  border-top: 1px solid rgba(var(--color-button), var(--alpha-button-background));
+  border-top: 1px solid rgba(var(--color-button-primary-background), var(--alpha-button-background));
   overflow: auto;
 }
 

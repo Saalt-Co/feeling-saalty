@@ -92,11 +92,20 @@
   --color-button-text: var(--color-foreground);
 }
 
+.button.button--secondary,
+.button--secondary {
+  background-color: rgb(var(--color-button-secondary-background));
+  color: rgb(var(--color-button-secondary-text));
+}
+
+.button.button--tertiary,
 .button--tertiary {
   --color-button: var(--color-base-outline-button-labels);
   --color-button-text: var(--color-base-outline-button-labels);
   --alpha-button-background: 0;
   --alpha-button-border: 0.2;
+  background-color: rgb(var(--palette-color-0));
+  color: rgba(var(--color-base-text));
 }
 
 .color-background-2 .button--tertiary,
@@ -105,6 +114,12 @@
 .color-accent-2 .button--tertiary {
   --color-button: var(--color-foreground);
   --color-button-text: var(--color-foreground);
+}
+
+.button.button--tertiary:not([disabled]):hover,
+.button--tertiary:not([disabled]):hover {
+  background-color: rgb(var(--palette-color-0));
+  color: rgba(var(--color-base-text));
 }
 
 :root,
@@ -1395,12 +1410,12 @@ button.shopify-payment-button__button--unbranded {
   font: inherit;
   font-size: 1.5rem;
   text-decoration: none;
-  color: rgb(var(--color-button-text));
+  color: rgb(var(--color-button-primary-text));
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
+  background-color: rgba(var(--color-button-primary-background), var(--alpha-button-background));
 }
 
 .button:before,
@@ -1435,8 +1450,16 @@ button.shopify-payment-button__button--unbranded {
   border-radius: var(--buttons-radius);
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
       rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
+    0 0 0 var(--buttons-border-width) rgba(var(--color-button-primary-background), var(--alpha-button-background));
   transition: box-shadow var(--duration-short) ease;
+}
+
+.button:not([disabled]):hover,
+.shopify-challenge__button:hover,
+.customer button:hover,
+.shopify-payment-button__button--unbranded:hover {
+  background-color: rgb(var(--color-button-hover));
+  color: rgb(var(--color-button-hover-text));
 }
 
 .button:not([disabled]):hover::after,
@@ -1445,8 +1468,8 @@ button.shopify-payment-button__button--unbranded {
 .shopify-payment-button__button--unbranded:hover::after {
   --border-offset: 1.3px;
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
+      rgba(var(--color-button-hover), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button-hover), var(--alpha-button-background));
 }
 
 .button--secondary:after {
@@ -1469,6 +1492,78 @@ button.shopify-payment-button__button--unbranded {
 .shopify-payment-button__button--unbranded:focus:not(:focus-visible):not(.focused),
 .shopify-payment-button [role='button']:focus:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
+}
+
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
 }
 
 .button::-moz-selection,
@@ -1961,6 +2056,366 @@ details[open] > .share-button__fallback {
   opacity: 0;
 }
 
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
 .field__input::placeholder,
 .customer .field input::placeholder {
   opacity: 0;
@@ -2291,7 +2746,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 .cart-count-bubble {
   position: absolute;
-  background-color: rgb(var(--color-button));
+  background-color: rgb(var(--color-button-primary-background));
   color: rgb(var(--color-button-text));
   height: 1.7rem;
   width: 1.7rem;
@@ -3392,6 +3847,7 @@ details-disclosure > details {
   .scroll-trigger--design-mode.animate--slide-in,
   .scroll-trigger--design-mode .slider {
     opacity: 1;
+    -webkit-animation: none;
     animation: none;
     transition: none;
   }

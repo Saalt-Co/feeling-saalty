@@ -270,12 +270,172 @@
       },
       {
         "type": "header",
-        "content": "t:settings_schema.theme_colors.settings.primary_button.header"
+        "content": "t:settings_schema.theme_colors.settings.buttons.header"
       },
       {
         "type": "select",
         "id": "theme_color_button_primary_background",
-        "label": "t:settings_schema.theme_colors.settings.primary_button.solid_label",
+        "label": "t:settings_schema.theme_colors.settings.buttons.primary_bg_label",
+        "options": [
+          {
+            "value": "--palette-color-0",
+            "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+          },
+          {
+            "value": "--palette-color-1",
+            "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+          },
+          {
+            "value": "--palette-color-2",
+            "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+          },
+          {
+            "value": "--palette-color-3",
+            "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+          },
+          {
+            "value": "--palette-color-4",
+            "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+          },
+          {
+            "value": "--palette-color-5",
+            "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+          },
+          {
+            "value": "--palette-color-6",
+            "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+          },
+          {
+            "value": "--palette-color-7",
+            "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+          }
+        ],
+        "default": "--palette-color-2"
+      },
+            {
+        "type": "select",
+        "id": "theme_color_button_primary_text",
+        "label": "t:settings_schema.theme_colors.settings.buttons.primary_text_label",
+        "options": [
+          {
+            "value": "--palette-color-0",
+            "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+          },
+          {
+            "value": "--palette-color-1",
+            "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+          },
+          {
+            "value": "--palette-color-2",
+            "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+          },
+          {
+            "value": "--palette-color-3",
+            "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+          },
+          {
+            "value": "--palette-color-4",
+            "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+          },
+          {
+            "value": "--palette-color-5",
+            "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+          },
+          {
+            "value": "--palette-color-6",
+            "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+          },
+          {
+            "value": "--palette-color-7",
+            "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+          }
+        ],
+        "default": "--palette-color-0"
+      },
+      {
+        "type": "select",
+        "id": "theme_color_button_secondary_background",
+        "label": "t:settings_schema.theme_colors.settings.buttons.secondary_bg_label",
+        "options": [
+          {
+            "value": "--palette-color-0",
+            "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+          },
+          {
+            "value": "--palette-color-1",
+            "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+          },
+          {
+            "value": "--palette-color-2",
+            "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+          },
+          {
+            "value": "--palette-color-3",
+            "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+          },
+          {
+            "value": "--palette-color-4",
+            "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+          },
+          {
+            "value": "--palette-color-5",
+            "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+          },
+          {
+            "value": "--palette-color-6",
+            "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+          },
+          {
+            "value": "--palette-color-7",
+            "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+          }
+        ],
+        "default": "--palette-color-0"
+      },
+            {
+        "type": "select",
+        "id": "theme_color_button_secondary_text",
+        "label": "t:settings_schema.theme_colors.settings.buttons.secondary_text_label",
+        "options": [
+          {
+            "value": "--palette-color-0",
+            "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+          },
+          {
+            "value": "--palette-color-1",
+            "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+          },
+          {
+            "value": "--palette-color-2",
+            "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+          },
+          {
+            "value": "--palette-color-3",
+            "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+          },
+          {
+            "value": "--palette-color-4",
+            "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+          },
+          {
+            "value": "--palette-color-5",
+            "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+          },
+          {
+            "value": "--palette-color-6",
+            "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+          },
+          {
+            "value": "--palette-color-7",
+            "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+          }
+        ],
+        "default": "--palette-color-2"
+      },
+      {
+        "type": "select",
+        "id": "theme_color_button_hover",
+        "label": "t:settings_schema.theme_colors.settings.buttons.hover_bg_label",
         "options": [
           {
             "value": "--palette-color-0",
@@ -311,6 +471,46 @@
           }
         ],
         "default": "--palette-color-1"
+      },
+      {
+        "type": "select",
+        "id": "theme_color_button_hover_text",
+        "label": "t:settings_schema.theme_colors.settings.buttons.hover_text_label",
+        "options": [
+          {
+            "value": "--palette-color-0",
+            "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+          },
+          {
+            "value": "--palette-color-1",
+            "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+          },
+          {
+            "value": "--palette-color-2",
+            "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+          },
+          {
+            "value": "--palette-color-3",
+            "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+          },
+          {
+            "value": "--palette-color-4",
+            "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+          },
+          {
+            "value": "--palette-color-5",
+            "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+          },
+          {
+            "value": "--palette-color-6",
+            "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+          },
+          {
+            "value": "--palette-color-7",
+            "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+          }
+        ],
+        "default": "--palette-color-0"
       }
     ]
   },

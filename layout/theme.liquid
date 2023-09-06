@@ -79,9 +79,11 @@
         --color-base-text: var({{ settings.theme_color_text }});
         --color-shadow: var({{ settings.theme_color_text }});
         --color-button-primary-background: var({{ settings.theme_color_button_primary_background }});
-        --color-button-primary-hover: var({{ settings.theme_color_button_primary_hover }});
-        --color-button-primary-text: var({{ settings.theme_color_button_text }});
-        --color-button-primary-hover-text: var({{ settings.theme_color_button_primary_hover_text }});
+        --color-button-primary-text: var({{ settings.theme_color_button_primary_text }});
+        --color-button-secondary-background: var({{ settings.theme_color_button_secondary_background }});
+        --color-button-secondary-text: var({{ settings.theme_color_button_secondary_text }});
+        --color-button-hover: var({{ settings.theme_color_button_hover }});
+        --color-button-hover-text: var({{ settings.theme_color_button_hover_text }});
 
 
 
@@ -94,10 +96,19 @@
         --color-base-accent-2: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
         --payment-terms-background-color: {{ settings.colors_background_1 }};
 
+
+
+
+
         --gradient-base-background-1: {% if settings.gradient_background_1 != blank %}{{ settings.gradient_background_1 }}{% else %}{{ settings.colors_background_1 }}{% endif %};
         --gradient-base-background-2: {% if settings.gradient_background_2 != blank %}{{ settings.gradient_background_2 }}{% else %}{{ settings.colors_background_2 }}{% endif %};
         --gradient-base-accent-1: {% if settings.gradient_accent_1 != blank %}{{ settings.gradient_accent_1 }}{% else %}{{ settings.colors_accent_1 }}{% endif %};
         --gradient-base-accent-2: {% if settings.gradient_accent_2 != blank %}{{ settings.gradient_accent_2 }}{% else %}{{ settings.colors_accent_2 }}{% endif %};
+
+
+
+
+
 
         --media-padding: {{ settings.media_padding }}px;
         --media-border-opacity: {{ settings.media_border_opacity | divided_by: 100.0 }};

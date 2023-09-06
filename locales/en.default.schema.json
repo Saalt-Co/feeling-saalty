@@ -234,15 +234,17 @@
       "name": "Theme colors",
       "settings": {
         "text": {
-          "header": "Text",
+          "header": "Text Color",
           "label": "Primary text color"
         },
-        "primary_button": {
-          "header": "Primary Button",
-          "solid_label": "Button color",
-          "hover_label": "Hover color",
-          "text_label": "Text color",
-          "text_hover": "Hover text color"
+        "buttons": {
+          "header": "Buttons",
+          "primary_bg_label": "Primary button color",
+          "primary_text_label": "Primary button text color",
+          "secondary_bg_label": "Secondary button color",
+          "secondary_text_label": "Secondary button text color",
+          "hover_bg_label": "Button hover background color",
+          "hover_text_label": "Button hover text color"
         }
       }
     },
