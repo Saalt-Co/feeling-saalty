@@ -234,8 +234,26 @@
       "name": "Theme colors",
       "settings": {
         "text": {
-          "header": "Text Color",
-          "label": "Primary text color"
+          "header": "Text",
+          "main_color_label": "Main text color",
+          "main_opacity_label": "Main text opacity",
+          "headings_color_label": "Headings color",
+          "headings_opacity_label": "Headings opacity",
+          "link_color_label": "Link color",
+          "link_opacity_label": "Link opacity",
+          "link_hover_color_label": "Link hover color",
+          "link_hover_opacity_label": "Link hover opacity"
+        },
+        "icons": {
+          "header": "Icons",
+          "icons_color_label": "Icons svg color",
+          "icons_opacity_label": "Icons svg opacity",
+          "icons_text_color_label": "Icons text color",
+          "icons_text_opacity_label": "Icons text opacity"
+        },
+        "variant_options": {
+          "header": "Variant Options",
+          "variant_options_color_label": "Variant options color"
         },
         "buttons": {
           "header": "Buttons",

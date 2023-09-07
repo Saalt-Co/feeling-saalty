@@ -13,7 +13,7 @@
   display: inline-block;
   width: auto;
   height: 1rem;
-  color: var(--color-base-text);
+  color: var(--color-main-text);
 }
 
 .ugc-rating .ugc-rating-star.filled:before {

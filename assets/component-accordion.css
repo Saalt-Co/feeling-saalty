@@ -36,7 +36,7 @@
 
 .accordion .icon-accordion {
   align-self: center;
-  fill: rgb(var(--color-foreground));
+  fill: rgba(var(--color-icons), var(--color-icons-opacity));
   height: calc(var(--font-heading-scale) * 2rem);
   margin-right: calc(var(--font-heading-scale) * 1rem);
   width: calc(var(--font-heading-scale) * 2rem);

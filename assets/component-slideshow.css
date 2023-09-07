@@ -187,7 +187,7 @@ testimonial-component:not(.page-width) .slider-buttons {
 }
 
 .slideshow__autoplay path {
-  fill: rgba(var(--color-foreground), 0.75);
+  fill: rgba(var(--color-main-text), var(--color-main-text-opacity));
 }
 
 .slideshow__autoplay:hover path {

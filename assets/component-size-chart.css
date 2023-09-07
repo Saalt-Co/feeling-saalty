@@ -3,8 +3,8 @@
 }
 
 size-chart {
-  color: var(--color-base-text);
-  background: rgba(var(--palette-color-0), 1);
+  color: var(--color-main-text);
+  background: rgba(var(--color-site-background), 1);
   width: 100%;
 }
 
@@ -109,7 +109,7 @@ size-chart .size-chart-content-containers .size-chart-content-container .saalt-m
   max-width: 5rem;
   height: auto;
   margin: 2rem auto 0.5rem;
-  fill: rgb(var(--color-base-text));
+  fill: rgb(var(--color-main-text));
 }
 
 size-chart .size-chart-content-containers .size-chart-content-container .size-chart-title {
@@ -186,7 +186,7 @@ size-chart
   content: counter(steps);
   display: inline-grid;
   background: rgba(var(--color-base-accent-2), var(--alpha-button-background));
-  color: rgb(var(--color-base-text));
+  color: rgb(var(--color-main-text));
   width: 2.25rem;
   height: 2.25rem;
   margin-right: 0.5rem;

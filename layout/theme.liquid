@@ -76,14 +76,33 @@
         --palette-color-6: {{ settings.palette_color_6.red }}, {{ settings.palette_color_6.green }}, {{ settings.palette_color_6.blue }};
         --palette-color-7: {{ settings.palette_color_7.red }}, {{ settings.palette_color_7.green }}, {{ settings.palette_color_7.blue }};
 
-        --color-base-text: var({{ settings.theme_color_text }});
+        --color-site-background: var(--palette-color-0);
         --color-shadow: var({{ settings.theme_color_text }});
+
+        --color-main-text: var({{ settings.theme_color_text }});
+        --color-main-text-opacity: {{ settings.theme_color_text_opacity }}%;
+
+        --color-headings-text: var({{ settings.theme_color_headings_text }});
+        --color-headings-text-opacity: {{ settings.theme_color_headings_text_opacity }}%;
+
+        --color-link-text: var({{ settings.theme_color_link_text }});
+        --color-link-text-opacity: {{ settings.theme_color_link_text_opacity }}%;
+        --color-link-text-hover: var({{ settings.theme_color_link_hover_text }});
+        --color-link-text-hover-opacity: {{ settings.theme_color_link_hover_text_opacity }}%;
+
+        --color-icons: var({{ settings.theme_color_icons }});
+        --color-icons-opacity: {{ settings.theme_color_icons_opacity }}%;
+        --color-icons-text: var({{ settings.theme_color_icons_text }});
+        --color-icons-text-opacity: var({{ settings.theme_color_icons_text_opacity }});
+
         --color-button-primary-background: var({{ settings.theme_color_button_primary_background }});
         --color-button-primary-text: var({{ settings.theme_color_button_primary_text }});
         --color-button-secondary-background: var({{ settings.theme_color_button_secondary_background }});
         --color-button-secondary-text: var({{ settings.theme_color_button_secondary_text }});
         --color-button-hover: var({{ settings.theme_color_button_hover }});
         --color-button-hover-text: var({{ settings.theme_color_button_hover_text }});
+
+        --color-variant-options-color: var({{ settings.theme_color_variant_options_color }});
 
 
 

@@ -61,7 +61,7 @@ a.menu-drawer__menu-item .saalt-wear-styles_inner-icon-wrapper .style-icon svg {
 .saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper.empty .style-icon svg {
   fill: transparent;
   color: transparent;
-  stroke: rgba(var(--color-foreground), 0.75);
+  stroke: rgba(var(--color-main-text), var(--color-main-text-opacity));
   stroke-width: 1.75rem;
 }
 
