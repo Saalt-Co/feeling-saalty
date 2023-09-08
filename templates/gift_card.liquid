@@ -106,7 +106,7 @@
           {% endif %}
         </h1>
         {%- if gift_card.enabled == false or gift_card.expired -%}
-          <p class="badge badge--{{ settings.sold_out_badge_color_scheme }}">{{ 'gift_cards.issued.expired' | t }}</p>
+          <p class="badge sold-out">{{ 'gift_cards.issued.expired' | t }}</p>
         {%- endif -%}
       </div>
       {% if gift_card.expires_on %}
