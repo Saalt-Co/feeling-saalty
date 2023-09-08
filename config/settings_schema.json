@@ -807,6 +807,186 @@
           }
         ],
         "default": "--palette-color-0"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.theme_colors.settings.badges.header"
+      },
+      {
+        "type": "select",
+        "id": "theme_color_badges",
+        "label": "t:settings_schema.theme_colors.settings.badges.badges_color_label",
+        "options": [
+          {
+            "value": "--palette-color-0",
+            "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+          },
+          {
+            "value": "--palette-color-1",
+            "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+          },
+          {
+            "value": "--palette-color-2",
+            "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+          },
+          {
+            "value": "--palette-color-3",
+            "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+          },
+          {
+            "value": "--palette-color-4",
+            "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+          },
+          {
+            "value": "--palette-color-5",
+            "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+          },
+          {
+            "value": "--palette-color-6",
+            "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+          },
+          {
+            "value": "--palette-color-7",
+            "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+          }
+        ],
+        "default": "--palette-color-2"
+      },
+      {
+        "type": "select",
+        "id": "theme_color_badges_text",
+        "label": "t:settings_schema.theme_colors.settings.badges.badges_text_color_label",
+        "options": [
+          {
+            "value": "--palette-color-0",
+            "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+          },
+          {
+            "value": "--palette-color-1",
+            "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+          },
+          {
+            "value": "--palette-color-2",
+            "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+          },
+          {
+            "value": "--palette-color-3",
+            "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+          },
+          {
+            "value": "--palette-color-4",
+            "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+          },
+          {
+            "value": "--palette-color-5",
+            "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+          },
+          {
+            "value": "--palette-color-6",
+            "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+          },
+          {
+            "value": "--palette-color-7",
+            "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+          }
+        ],
+        "default": "--palette-color-0"
+      },
+      {
+        "type": "range",
+        "id": "theme_color_badges_opacity",
+        "label": "t:settings_schema.theme_colors.settings.badges.badges_opacity_label",
+        "min": 1,
+        "max": 100,
+        "default": 90
+      },
+      {
+        "type": "select",
+        "id": "theme_color_badges_sold_out",
+        "label": "t:settings_schema.theme_colors.settings.badges.badges_sold_out_color_label",
+        "options": [
+          {
+            "value": "--palette-color-0",
+            "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+          },
+          {
+            "value": "--palette-color-1",
+            "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+          },
+          {
+            "value": "--palette-color-2",
+            "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+          },
+          {
+            "value": "--palette-color-3",
+            "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+          },
+          {
+            "value": "--palette-color-4",
+            "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+          },
+          {
+            "value": "--palette-color-5",
+            "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+          },
+          {
+            "value": "--palette-color-6",
+            "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+          },
+          {
+            "value": "--palette-color-7",
+            "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+          }
+        ],
+        "default": "--palette-color-1"
+      },
+      {
+        "type": "select",
+        "id": "theme_color_badges_sold_out_text",
+        "label": "t:settings_schema.theme_colors.settings.badges.badges_sold_out_text_color_label",
+        "options": [
+          {
+            "value": "--palette-color-0",
+            "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+          },
+          {
+            "value": "--palette-color-1",
+            "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+          },
+          {
+            "value": "--palette-color-2",
+            "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+          },
+          {
+            "value": "--palette-color-3",
+            "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+          },
+          {
+            "value": "--palette-color-4",
+            "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+          },
+          {
+            "value": "--palette-color-5",
+            "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+          },
+          {
+            "value": "--palette-color-6",
+            "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+          },
+          {
+            "value": "--palette-color-7",
+            "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+          }
+        ],
+        "default": "--palette-color-0"
+      },
+      {
+        "type": "range",
+        "id": "theme_color_badges_sold_out_opacity",
+        "label": "t:settings_schema.theme_colors.settings.badges.badges_sold_out_opacity_label",
+        "min": 1,
+        "max": 100,
+        "default": 90
       }
     ]
   },
@@ -2007,42 +2187,6 @@
         "unit": "px",
         "label": "t:settings_schema.global.settings.corner_radius.label",
         "default": 40
-      },
-      {
-        "type": "select",
-        "id": "sale_badge_color_scheme",
-        "options": [
-          {
-            "value": "accent-1",
-            "label": "t:sections.all.colors.accent_1.label"
-          },
-          {
-            "value": "accent-2",
-            "label": "t:sections.all.colors.accent_2.label"
-          },
-          {
-            "value": "background-2",
-            "label": "t:sections.all.colors.background_2.label"
-          }
-        ],
-        "default": "accent-2",
-        "label": "t:settings_schema.badges.settings.sale_badge_color_scheme.label"
-      },
-      {
-        "type": "select",
-        "id": "sold_out_badge_color_scheme",
-        "options": [
-          {
-            "value": "background-1",
-            "label": "t:sections.all.colors.background_1.label"
-          },
-          {
-            "value": "inverse",
-            "label": "t:sections.all.colors.inverse.label"
-          }
-        ],
-        "default": "inverse",
-        "label": "t:settings_schema.badges.settings.sold_out_badge_color_scheme.label"
       }
     ]
   },

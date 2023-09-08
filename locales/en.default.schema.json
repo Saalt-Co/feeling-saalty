@@ -196,7 +196,7 @@
       }
     },
     "color_palette": {
-      "name": "Color Palette",
+      "name": "🎨 Color Palette",
       "settings": {
         "header__1": {
           "content": "Primary colors"
@@ -231,10 +231,10 @@
       }
     },
     "theme_colors": {
-      "name": "Theme colors",
+      "name": "🧑‍🎨 Theme colors",
       "settings": {
         "text": {
-          "header": "Text",
+          "header": "🌈 Text",
           "main_color_label": "Main text color",
           "main_opacity_label": "Main text opacity",
           "headings_color_label": "Headings color",
@@ -245,24 +245,33 @@
           "link_hover_opacity_label": "Link hover opacity"
         },
         "icons": {
-          "header": "Icons",
+          "header": "🌈 Icons",
           "icons_color_label": "Icons svg color",
           "icons_opacity_label": "Icons svg opacity",
           "icons_text_color_label": "Icons text color",
           "icons_text_opacity_label": "Icons text opacity"
         },
         "variant_options": {
-          "header": "Variant Options",
+          "header": "🌈 Variant Options",
           "variant_options_color_label": "Variant options color"
         },
         "buttons": {
-          "header": "Buttons",
+          "header": "🌈 Buttons",
           "primary_bg_label": "Primary button color",
           "primary_text_label": "Primary button text color",
           "secondary_bg_label": "Secondary button color",
           "secondary_text_label": "Secondary button text color",
           "hover_bg_label": "Button hover background color",
           "hover_text_label": "Button hover text color"
+        },
+        "badges": {
+          "header": "🌈 Badges",
+          "badges_color_label": "Badges color",
+          "badges_text_color_label": "Badges text color",
+          "badges_opacity_label": "Badges opacity",
+          "badges_sold_out_color_label": "Sold out badge color",
+          "badges_sold_out_text_color_label": "Sold out badge text color",
+          "badges_sold_out_opacity_label": "Sold out badge opacity"
         }
       }
     },

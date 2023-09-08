@@ -3635,10 +3635,18 @@ details-disclosure > details {
   line-height: 1;
   padding: 0.5rem 1.3rem 0.6rem 1.3rem;
   text-align: center;
-  background-color: rgb(var(--color-badge-background));
-  border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
-  color: rgb(var(--color-foreground));
+  background-color: rgb(var(--color-badges));
+  border-color: rgb(var(--color-badges));
+  color: rgb(var(--color-badges-text));
+  opacity: var(--color-badges-opacity);
   word-break: break-word;
+}
+
+.badge.sold-out {
+  background-color: rgb(var(--color-badges-sold-out));
+  border-color: rgb(var(--color-badges-sold-out));
+  color: rgb(var(--color-badges-sold-out-text));
+  opacity: var(--color-badges-sold-out-opacity);
 }
 
 .gradient {
