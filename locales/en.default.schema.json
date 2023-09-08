@@ -251,6 +251,11 @@
           "icons_text_color_label": "Icons text color",
           "icons_text_opacity_label": "Icons text opacity"
         },
+        "review_stars": {
+          "header": "🌈 Review Stars",
+          "review_stars_color_label": "Review stars color",
+          "review_stars_opacity_label": "Review stars opacity"
+        },
         "variant_options": {
           "header": "🌈 Variant Options",
           "variant_options_color_label": "Variant options color"

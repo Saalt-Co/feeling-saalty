@@ -13,7 +13,8 @@
   display: inline-block;
   width: auto;
   height: 1rem;
-  color: var(--color-main-text);
+  color: rgb(var(--color-review-stars));
+  opacity: var(--color-review-stars-opacity);
 }
 
 .ugc-rating .ugc-rating-star.filled:before {

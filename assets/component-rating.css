@@ -32,11 +32,12 @@
   content: '★★★★★';
   background: linear-gradient(
     90deg,
-    var(--color-icon) var(--percent),
-    rgba(var(--color-foreground), 0.15) var(--percent)
+    var(--color-review-stars) var(--percent),
+    rgba(var(--color-site-background), 0.15) var(--percent)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: var(--color-review-stars-opacity);
 }
 
 .rating-text {
