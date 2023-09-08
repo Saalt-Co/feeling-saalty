@@ -1517,102 +1517,6 @@ button.shopify-payment-button__button--unbranded {
   background-color: rgba(var(--color-button-text), 0.3);
 }
 
-.button::-moz-selection,
-.shopify-challenge__button::-moz-selection,
-.customer button::-moz-selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-}
-
-.button::-moz-selection,
-.shopify-challenge__button::-moz-selection,
-.customer button::-moz-selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-}
-
-.button::-moz-selection,
-.shopify-challenge__button::-moz-selection,
-.customer button::-moz-selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-}
-
-.button::-moz-selection,
-.shopify-challenge__button::-moz-selection,
-.customer button::-moz-selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-}
-
-.button::-moz-selection,
-.shopify-challenge__button::-moz-selection,
-.customer button::-moz-selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-}
-
-.button::-moz-selection,
-.shopify-challenge__button::-moz-selection,
-.customer button::-moz-selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-}
-
-.button::-moz-selection,
-.shopify-challenge__button::-moz-selection,
-.customer button::-moz-selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-}
-
-.button::-moz-selection,
-.shopify-challenge__button::-moz-selection,
-.customer button::-moz-selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-}
-
-.button::-moz-selection,
-.shopify-challenge__button::-moz-selection,
-.customer button::-moz-selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-}
-
-.button::-moz-selection,
-.shopify-challenge__button::-moz-selection,
-.customer button::-moz-selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-}
-
-.button::-moz-selection,
-.shopify-challenge__button::-moz-selection,
-.customer button::-moz-selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-}
-
-.button::-moz-selection,
-.shopify-challenge__button::-moz-selection,
-.customer button::-moz-selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-}
-
-.button::-moz-selection,
-.shopify-challenge__button::-moz-selection,
-.customer button::-moz-selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-}
-
-.button::-moz-selection,
-.shopify-challenge__button::-moz-selection,
-.customer button::-moz-selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-}
-
-.button::-moz-selection,
-.shopify-challenge__button::-moz-selection,
-.customer button::-moz-selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-}
-
-.button::-moz-selection,
-.shopify-challenge__button::-moz-selection,
-.customer button::-moz-selection {
-  background-color: rgba(var(--color-button-text), 0.3);
-}
-
 .button::selection,
 .shopify-challenge__button::selection,
 .customer button::selection {
@@ -1633,6 +1537,12 @@ button.shopify-payment-button__button--unbranded {
   padding: 1rem 1.5rem;
   min-width: calc(9rem + var(--buttons-border-width) * 2);
   min-height: calc(3.5rem + var(--buttons-border-width) * 2);
+}
+
+.button.button--primary,
+.button.button--secondary {
+  transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-width 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
 }
 
 .button--small {
@@ -2075,6 +1985,66 @@ details[open] > .share-button__fallback {
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
   display: none;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
 }
 
 .field__input::-webkit-input-placeholder,
