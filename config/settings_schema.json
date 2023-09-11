@@ -1039,6 +1039,298 @@
         "min": 1,
         "max": 100,
         "default": 90
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.theme_colors.settings.cards.header"
+      },
+      {
+        "type": "select",
+        "id": "theme_color_product_card",
+        "label": "t:settings_schema.theme_colors.settings.cards.cards_product_color_label",
+        "options": [
+          {
+            "value": "--palette-color-0",
+            "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+          },
+          {
+            "value": "--palette-color-1",
+            "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+          },
+          {
+            "value": "--palette-color-2",
+            "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+          },
+          {
+            "value": "--palette-color-3",
+            "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+          },
+          {
+            "value": "--palette-color-4",
+            "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+          },
+          {
+            "value": "--palette-color-5",
+            "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+          },
+          {
+            "value": "--palette-color-6",
+            "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+          },
+          {
+            "value": "--palette-color-7",
+            "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+          }
+        ],
+        "default": "--palette-color-1"
+      },
+      {
+        "type": "range",
+        "id": "theme_color_product_card_opacity",
+        "label": "t:settings_schema.theme_colors.settings.cards.cards_product_color_opacity_label",
+        "min": 1,
+        "max": 100,
+        "default": 20
+      },
+      {
+        "type": "select",
+        "id": "theme_color_product_card_text",
+        "label": "t:settings_schema.theme_colors.settings.cards.cards_product_text_color_label",
+        "options": [
+          {
+            "value": "--palette-color-0",
+            "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+          },
+          {
+            "value": "--palette-color-1",
+            "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+          },
+          {
+            "value": "--palette-color-2",
+            "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+          },
+          {
+            "value": "--palette-color-3",
+            "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+          },
+          {
+            "value": "--palette-color-4",
+            "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+          },
+          {
+            "value": "--palette-color-5",
+            "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+          },
+          {
+            "value": "--palette-color-6",
+            "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+          },
+          {
+            "value": "--palette-color-7",
+            "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+          }
+        ],
+        "default": "--palette-color-1"
+      },
+      {
+        "type": "range",
+        "id": "theme_color_product_card_text_opacity",
+        "label": "t:settings_schema.theme_colors.settings.cards.cards_product_text_opacity_label",
+        "min": 1,
+        "max": 100,
+        "default": 90
+      },
+      {
+        "type": "select",
+        "id": "theme_color_collection_card",
+        "label": "t:settings_schema.theme_colors.settings.cards.cards_collection_color_label",
+        "options": [
+          {
+            "value": "--palette-color-0",
+            "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+          },
+          {
+            "value": "--palette-color-1",
+            "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+          },
+          {
+            "value": "--palette-color-2",
+            "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+          },
+          {
+            "value": "--palette-color-3",
+            "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+          },
+          {
+            "value": "--palette-color-4",
+            "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+          },
+          {
+            "value": "--palette-color-5",
+            "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+          },
+          {
+            "value": "--palette-color-6",
+            "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+          },
+          {
+            "value": "--palette-color-7",
+            "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+          }
+        ],
+        "default": "--palette-color-1"
+      },
+      {
+        "type": "range",
+        "id": "theme_color_collection_card_opacity",
+        "label": "t:settings_schema.theme_colors.settings.cards.cards_collection_color_opacity_label",
+        "min": 1,
+        "max": 100,
+        "default": 20
+      },
+      {
+        "type": "select",
+        "id": "theme_color_collection_card_text",
+        "label": "t:settings_schema.theme_colors.settings.cards.cards_collection_text_color_label",
+        "options": [
+          {
+            "value": "--palette-color-0",
+            "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+          },
+          {
+            "value": "--palette-color-1",
+            "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+          },
+          {
+            "value": "--palette-color-2",
+            "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+          },
+          {
+            "value": "--palette-color-3",
+            "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+          },
+          {
+            "value": "--palette-color-4",
+            "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+          },
+          {
+            "value": "--palette-color-5",
+            "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+          },
+          {
+            "value": "--palette-color-6",
+            "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+          },
+          {
+            "value": "--palette-color-7",
+            "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+          }
+        ],
+        "default": "--palette-color-1"
+      },
+      {
+        "type": "range",
+        "id": "theme_color_collection_card_text_opacity",
+        "label": "t:settings_schema.theme_colors.settings.cards.cards_collection_text_opacity_label",
+        "min": 1,
+        "max": 100,
+        "default": 90
+      },
+      {
+        "type": "select",
+        "id": "theme_color_blog_card",
+        "label": "t:settings_schema.theme_colors.settings.cards.cards_blog_color_label",
+        "options": [
+          {
+            "value": "--palette-color-0",
+            "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+          },
+          {
+            "value": "--palette-color-1",
+            "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+          },
+          {
+            "value": "--palette-color-2",
+            "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+          },
+          {
+            "value": "--palette-color-3",
+            "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+          },
+          {
+            "value": "--palette-color-4",
+            "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+          },
+          {
+            "value": "--palette-color-5",
+            "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+          },
+          {
+            "value": "--palette-color-6",
+            "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+          },
+          {
+            "value": "--palette-color-7",
+            "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+          }
+        ],
+        "default": "--palette-color-1"
+      },
+      {
+        "type": "range",
+        "id": "theme_color_blog_card_opacity",
+        "label": "t:settings_schema.theme_colors.settings.cards.cards_blog_color_opacity_label",
+        "min": 1,
+        "max": 100,
+        "default": 20
+      },
+      {
+        "type": "select",
+        "id": "theme_color_blog_card_text",
+        "label": "t:settings_schema.theme_colors.settings.cards.cards_blog_text_color_label",
+        "options": [
+          {
+            "value": "--palette-color-0",
+            "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+          },
+          {
+            "value": "--palette-color-1",
+            "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+          },
+          {
+            "value": "--palette-color-2",
+            "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+          },
+          {
+            "value": "--palette-color-3",
+            "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+          },
+          {
+            "value": "--palette-color-4",
+            "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+          },
+          {
+            "value": "--palette-color-5",
+            "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+          },
+          {
+            "value": "--palette-color-6",
+            "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+          },
+          {
+            "value": "--palette-color-7",
+            "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+          }
+        ],
+        "default": "--palette-color-1"
+      },
+      {
+        "type": "range",
+        "id": "theme_color_blog_card_text_opacity",
+        "label": "t:settings_schema.theme_colors.settings.cards.cards_blog_text_opacity_label",
+        "min": 1,
+        "max": 100,
+        "default": 90
       }
     ]
   },

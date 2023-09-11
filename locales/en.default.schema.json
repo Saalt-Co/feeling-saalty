@@ -277,6 +277,21 @@
           "badges_sold_out_color_label": "Sold out badge color",
           "badges_sold_out_text_color_label": "Sold out badge text color",
           "badges_sold_out_opacity_label": "Sold out badge opacity"
+        },
+        "cards": {
+          "header": "🌈 Cards",
+          "cards_product_color_label": "Product card background color",
+          "cards_product_color_opacity_label": "Product card color opacity",
+          "cards_product_text_color_label": "Product card text color",
+          "cards_product_text_opacity_label": "Product card text opacity",
+          "cards_collection_color_label": "Collection card background color",
+          "cards_collection_color_opacity_label": "Collection card color opacity",
+          "cards_collection_text_color_label": "Collection card text color",
+          "cards_collection_text_opacity_label": "Collection card text opacity",
+          "cards_blog_color_label": "Blog card background color",
+          "cards_blog_color_opacity_label": "Blog card color opacity",
+          "cards_blog_text_color_label": "Blog card text color",
+          "cards_blog_text_opacity_label": "Blog card text opacity"
         }
       }
     },
