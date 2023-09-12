@@ -474,3 +474,12 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+/* Saalt Card Colors */
+.card-wrapper.product-card-wrapper .card--card {
+  background: rgba(var(--color-product-card), var(--color-product-card-color-opacity));
+}
+
+.card-wrapper.product-card-wrapper .card--card .card__content .card__information * {
+  color: rgba(var(--color-product-card-text), var(--color-product-card-text-opacity));
+}
