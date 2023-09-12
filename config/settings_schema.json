@@ -1238,8 +1238,8 @@
       },
       {
         "type": "select",
-        "id": "theme_color_blog_card",
-        "label": "t:settings_schema.theme_colors.settings.cards.cards_blog_color_label",
+        "id": "theme_color_article_card",
+        "label": "t:settings_schema.theme_colors.settings.cards.cards_article_color_label",
         "options": [
           {
             "value": "--palette-color-0",
@@ -1278,16 +1278,16 @@
       },
       {
         "type": "range",
-        "id": "theme_color_blog_card_opacity",
-        "label": "t:settings_schema.theme_colors.settings.cards.cards_blog_color_opacity_label",
+        "id": "theme_color_article_card_opacity",
+        "label": "t:settings_schema.theme_colors.settings.cards.cards_article_color_opacity_label",
         "min": 1,
         "max": 100,
         "default": 20
       },
       {
         "type": "select",
-        "id": "theme_color_blog_card_text",
-        "label": "t:settings_schema.theme_colors.settings.cards.cards_blog_text_color_label",
+        "id": "theme_color_article_card_text",
+        "label": "t:settings_schema.theme_colors.settings.cards.cards_article_text_color_label",
         "options": [
           {
             "value": "--palette-color-0",
@@ -1326,8 +1326,8 @@
       },
       {
         "type": "range",
-        "id": "theme_color_blog_card_text_opacity",
-        "label": "t:settings_schema.theme_colors.settings.cards.cards_blog_text_opacity_label",
+        "id": "theme_color_article_card_text_opacity",
+        "label": "t:settings_schema.theme_colors.settings.cards.cards_article_text_opacity_label",
         "min": 1,
         "max": 100,
         "default": 90

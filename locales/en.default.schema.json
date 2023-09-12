@@ -288,10 +288,10 @@
           "cards_collection_color_opacity_label": "Collection card color opacity",
           "cards_collection_text_color_label": "Collection card text color",
           "cards_collection_text_opacity_label": "Collection card text opacity",
-          "cards_blog_color_label": "Blog card background color",
-          "cards_blog_color_opacity_label": "Blog card color opacity",
-          "cards_blog_text_color_label": "Blog card text color",
-          "cards_blog_text_opacity_label": "Blog card text opacity"
+          "cards_article_color_label": "Blog card background color",
+          "cards_article_color_opacity_label": "Blog card color opacity",
+          "cards_article_text_color_label": "Blog card text color",
+          "cards_article_text_opacity_label": "Blog card text opacity"
         }
       }
     },
