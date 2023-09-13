@@ -3501,3 +3501,68 @@ details-disclosure > details {
     }
   }
 }
+
+/* Theme color overrides using color palette values */
+.theme-color-bg-0 {
+  background-color: rgb(var(--palette-color-0));
+}
+
+.theme-color-bg-1 {
+  background-color: rgb(var(--palette-color-1));
+}
+
+.theme-color-bg-2 {
+  background-color: rgb(var(--palette-color-2));
+}
+
+.theme-color-bg-3 {
+  background-color: rgb(var(--palette-color-3));
+}
+
+.theme-color-bg-4 {
+  background-color: rgb(var(--palette-color-4));
+}
+
+.theme-color-bg-5 {
+  background-color: rgb(var(--palette-color-5));
+}
+
+.theme-color-bg-6 {
+  background-color: rgb(var(--palette-color-6));
+}
+
+.theme-color-bg-7 {
+  background-color: rgb(var(--palette-color-7));
+}
+
+.theme-color-text-0 * {
+  color: rgb(var(--palette-color-0));
+}
+
+.theme-color-text-1 * {
+  color: rgb(var(--palette-color-1));
+}
+
+.theme-color-text-2 * {
+  color: rgb(var(--palette-color-2));
+}
+
+.theme-color-text-3 * {
+  color: rgb(var(--palette-color-3));
+}
+
+.theme-color-text-4 * {
+  color: rgb(var(--palette-color-4));
+}
+
+.theme-color-text-5 * {
+  color: rgb(var(--palette-color-5));
+}
+
+.theme-color-text-6 * {
+  color: rgb(var(--palette-color-6));
+}
+
+.theme-color-text-7 * {
+  color: rgb(var(--palette-color-7));
+}
