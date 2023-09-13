@@ -201,6 +201,9 @@
         "header__1": {
           "content": "Primary colors"
         },
+        "theme_default": {
+          "label": "Theme default"
+        },
         "palette_color_0": {
           "label": "Theme color 0"
         },
@@ -292,6 +295,10 @@
           "cards_article_color_opacity_label": "Blog card color opacity",
           "cards_article_text_color_label": "Blog card text color",
           "cards_article_text_opacity_label": "Blog card text opacity"
+        },
+        "sections": {
+          "background_color_label": "Background color for this element",
+          "text_color_label": "Text color for this element"
         }
       }
     },
