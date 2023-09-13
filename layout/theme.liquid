@@ -93,7 +93,7 @@
         --color-icons: var({{ settings.theme_color_icons }});
         --color-icons-opacity: {{ settings.theme_color_icons_opacity }}%;
         --color-icons-text: var({{ settings.theme_color_icons_text }});
-        --color-icons-text-opacity: var({{ settings.theme_color_icons_text_opacity }});
+        --color-icons-text-opacity: {{ settings.theme_color_icons_text_opacity }}%;
 
         --color-review-stars: var({{ settings.theme_color_review_stars }});
         --color-review-stars-opacity: {{ settings.theme_color_review_stars_opacity }}%;
@@ -289,7 +289,6 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
-    {{ 'theme-color-classes.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
