@@ -3655,43 +3655,43 @@ details-disclosure > details {
   background-color: rgb(var(--palette-color-7));
 }
 
-.theme-color-text-0 *,
-[class*='theme-color-text-'] .theme-color-text-0 * {
+.theme-color-text-0 *:not(.button),
+[class*='theme-color-text-'] .theme-color-text-0 *:not(.button) {
   color: rgb(var(--palette-color-0));
 }
 
-.theme-color-text-1 *,
-[class*='theme-color-text-'] .theme-color-text-1 * {
+.theme-color-text-1 *:not(.button),
+[class*='theme-color-text-'] .theme-color-text-1 *:not(.button) {
   color: rgb(var(--palette-color-1));
 }
 
-.theme-color-text-2 *,
-[class*='theme-color-text-'] .theme-color-text-2 * {
+.theme-color-text-2 *:not(.button),
+[class*='theme-color-text-'] .theme-color-text-2 *:not(.button) {
   color: rgb(var(--palette-color-2));
 }
 
-.theme-color-text-3 *,
-[class*='theme-color-text-'] .theme-color-text-3 * {
+.theme-color-text-3 *:not(.button),
+[class*='theme-color-text-'] .theme-color-text-3 *:not(.button) {
   color: rgb(var(--palette-color-3));
 }
 
-.theme-color-text-4 *,
-[class*='theme-color-text-'] .theme-color-text-4 * {
+.theme-color-text-4 *:not(.button),
+[class*='theme-color-text-'] .theme-color-text-4 *:not(.button) {
   color: rgb(var(--palette-color-4));
 }
 
-.theme-color-text-5 *,
-[class*='theme-color-text-'] .theme-color-text-5 * {
+.theme-color-text-5 *:not(.button),
+[class*='theme-color-text-'] .theme-color-text-5 *:not(.button) {
   color: rgb(var(--palette-color-5));
 }
 
-.theme-color-text-6 *,
-[class*='theme-color-text-'] .theme-color-text-6 * {
+.theme-color-text-6 *:not(.button),
+[class*='theme-color-text-'] .theme-color-text-6 *:not(.button) {
   color: rgb(var(--palette-color-6));
 }
 
-.theme-color-text-7 *,
-[class*='theme-color-text-'] .theme-color-text-7 * {
+.theme-color-text-7 *:not(.button),
+[class*='theme-color-text-'] .theme-color-text-7 *:not(.button) {
   color: rgb(var(--palette-color-7));
 }
 
