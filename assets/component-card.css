@@ -75,6 +75,10 @@
   border-bottom-left-radius: 0;
 }
 
+.card--standard .card__inner {
+  background: rgba(var(--palette-color-1), 5%);
+}
+
 .card--standard.card--text {
   background-color: transparent;
 }
