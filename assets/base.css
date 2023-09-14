@@ -3655,66 +3655,82 @@ details-disclosure > details {
   background-color: rgb(var(--palette-color-7));
 }
 
-.theme-color-text-0 * {
+.theme-color-text-0 *,
+[class*='theme-color-text-'] .theme-color-text-0 * {
   color: rgb(var(--palette-color-0));
 }
 
-.theme-color-text-1 * {
+.theme-color-text-1 *,
+[class*='theme-color-text-'] .theme-color-text-1 * {
   color: rgb(var(--palette-color-1));
 }
 
-.theme-color-text-2 * {
+.theme-color-text-2 *,
+[class*='theme-color-text-'] .theme-color-text-2 * {
   color: rgb(var(--palette-color-2));
 }
 
-.theme-color-text-3 * {
+.theme-color-text-3 *,
+[class*='theme-color-text-'] .theme-color-text-3 * {
   color: rgb(var(--palette-color-3));
 }
 
-.theme-color-text-4 * {
+.theme-color-text-4 *,
+[class*='theme-color-text-'] .theme-color-text-4 * {
   color: rgb(var(--palette-color-4));
 }
 
-.theme-color-text-5 * {
+.theme-color-text-5 *,
+[class*='theme-color-text-'] .theme-color-text-5 * {
   color: rgb(var(--palette-color-5));
 }
 
-.theme-color-text-6 * {
+.theme-color-text-6 *,
+[class*='theme-color-text-'] .theme-color-text-6 * {
   color: rgb(var(--palette-color-6));
 }
 
-.theme-color-text-7 * {
+.theme-color-text-7 *,
+[class*='theme-color-text-'] .theme-color-text-7 * {
   color: rgb(var(--palette-color-7));
 }
 
-.theme-color-text-0 svg.color-fill {
+.theme-color-text-0 svg.color-fill,
+[class*='theme-color-text-'] .theme-color-text-0 svg.color-fill {
   fill: rgb(var(--palette-color-0));
 }
 
-.theme-color-text-1 svg.color-fill {
+.theme-color-text-1 svg.color-fill,
+[class*='theme-color-text-'] .theme-color-text-1 svg.color-fill {
   fill: rgb(var(--palette-color-1));
 }
 
-.theme-color-text-2 svg.color-fill {
+.theme-color-text-2 svg.color-fill,
+[class*='theme-color-text-'] .theme-color-text-2 svg.color-fill {
   fill: rgb(var(--palette-color-2));
 }
 
-.theme-color-text-3 svg.color-fill {
+.theme-color-text-3 svg.color-fill,
+[class*='theme-color-text-'] .theme-color-text-3 svg.color-fill {
   fill: rgb(var(--palette-color-3));
 }
 
-.theme-color-text-4 svg.color-fill {
+.theme-color-text-4 svg.color-fill,
+[class*='theme-color-text-'] .theme-color-text-4 svg.color-fill {
   fill: rgb(var(--palette-color-4));
 }
 
-.theme-color-text-5 svg.color-fill {
+.theme-color-text-5 svg.color-fill,
+[class*='theme-color-text-'] .theme-color-text-5 svg.color-fill {
   fill: rgb(var(--palette-color-5));
 }
 
-.theme-color-text-6 svg.color-fill {
+.theme-color-text-6 svg.color-fill,
+[class*='theme-color-text-'] .theme-color-text-6 svg.color-fill {
   fill: rgb(var(--palette-color-6));
 }
 
-.theme-color-text-7 svg.color-fill {
+.theme-color-text-7 svg.color-fill,
+[class*='theme-color-text-'] .theme-color-text-7 svg.color-fill {
   fill: rgb(var(--palette-color-7));
 }
