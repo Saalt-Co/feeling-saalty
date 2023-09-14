@@ -298,7 +298,9 @@
         },
         "sections": {
           "background_color_label": "Background color for this element",
-          "text_color_label": "Text color for this element"
+          "text_color_label": "Text color for this element",
+          "section_background_color_label": "Background color for the selected section element(s)",
+          "section_text_color_label": "Text color for the selected section element(s)"
         }
       }
     },
