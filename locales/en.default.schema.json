@@ -269,6 +269,8 @@
           "primary_text_label": "Primary button text color",
           "secondary_bg_label": "Secondary button color",
           "secondary_text_label": "Secondary button text color",
+          "section_bg_label": "Section button color",
+          "section_text_label": "Section text color",
           "hover_bg_label": "Button hover background color",
           "hover_text_label": "Button hover text color"
         },
@@ -804,6 +806,7 @@
           "label": "Number of columns on desktop"
         },
         "show_view_all": {
+          "content": "View all button",
           "label": "Enable \"View all\" button if list includes more collections than shown"
         },
         "header_mobile": {
