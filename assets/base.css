@@ -1541,8 +1541,8 @@ button.shopify-payment-button__button--unbranded {
 
 .button.button--primary,
 .button.button--secondary {
-  transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-width 0.2s ease-in-out,
-    border-color 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    border-width 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
 .button--small {
@@ -3623,6 +3623,7 @@ details-disclosure > details {
 }
 
 /* Theme color overrides using color palette values */
+/* Background colors */
 .theme-color-bg-0 {
   background-color: rgb(var(--palette-color-0));
 }
@@ -3655,6 +3656,7 @@ details-disclosure > details {
   background-color: rgb(var(--palette-color-7));
 }
 
+/* Text color, excluding buttons */
 .theme-color-text-0 *:not(.button),
 [class*='theme-color-text-'] .theme-color-text-0 *:not(.button) {
   color: rgb(var(--palette-color-0));
@@ -3695,6 +3697,7 @@ details-disclosure > details {
   color: rgb(var(--palette-color-7));
 }
 
+/* SVG colors based on parent text color */
 .theme-color-text-0 svg.color-fill,
 [class*='theme-color-text-'] .theme-color-text-0 svg.color-fill {
   fill: rgb(var(--palette-color-0));
@@ -3733,4 +3736,457 @@ details-disclosure > details {
 .theme-color-text-7 svg.color-fill,
 [class*='theme-color-text-'] .theme-color-text-7 svg.color-fill {
   fill: rgb(var(--palette-color-7));
+}
+
+/* PRIMARY Button color overrides based on background color class */
+.button.button--primary.theme-color-bg-0 {
+  background-color: rgb(var(--palette-color-0));
+}
+.button.button--primary.theme-color-bg-0:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-0-background), var(--alpha-button-background));
+}
+
+.button.button--primary.theme-color-bg-1 {
+  background-color: rgb(var(--palette-color-1));
+}
+.button.button--primary.theme-color-bg-1:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-1-background), var(--alpha-button-background));
+}
+
+.button.button--primary.theme-color-bg-2 {
+  background-color: rgb(var(--palette-color-2));
+}
+.button.button--primary.theme-color-bg-2:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-2-background), var(--alpha-button-background));
+}
+
+.button.button--primary.theme-color-bg-3 {
+  background-color: rgb(var(--palette-color-3));
+}
+.button.button--primary.theme-color-bg-3:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-3-background), var(--alpha-button-background));
+}
+
+.button.button--primary.theme-color-bg-4 {
+  background-color: rgb(var(--palette-color-4));
+}
+.button.button--primary.theme-color-bg-4:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-4-background), var(--alpha-button-background));
+}
+
+.button.button--primary.theme-color-bg-5 {
+  background-color: rgb(var(--palette-color-5));
+}
+.button.button--primary.theme-color-bg-5:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-5-background), var(--alpha-button-background));
+}
+
+.button.button--primary.theme-color-bg-6 {
+  background-color: rgb(var(--palette-color-6));
+}
+.button.button--primary.theme-color-bg-6:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-6-background), var(--alpha-button-background));
+}
+
+.button.button--primary.theme-color-bg-7 {
+  background-color: rgb(var(--palette-color-7));
+}
+.button.button--primary.theme-color-bg-7:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-7-background), var(--alpha-button-background));
+}
+
+/* PRIMARY Button HOVER color overrides based on background color class */
+.button.button--primary.theme-color-bg-0-hover:hover {
+  background-color: rgb(var(--palette-color-0));
+}
+.button.button--primary.theme-color-bg-0-hover:hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-0), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-0), var(--alpha-button-background));
+}
+
+.button.button--primary.theme-color-bg-1-hover:hover {
+  background-color: rgb(var(--palette-color-1));
+}
+.button.button--primary.theme-color-bg-1-hover:hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-1), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-1), var(--alpha-button-background));
+}
+
+.button.button--primary.theme-color-bg-2-hover:hover {
+  background-color: rgb(var(--palette-color-2));
+}
+.button.button--primary.theme-color-bg-2-hover:hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-2), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-2), var(--alpha-button-background));
+}
+
+.button.button--primary.theme-color-bg-3-hover:hover {
+  background-color: rgb(var(--palette-color-3));
+}
+.button.button--primary.theme-color-bg-3-hover:hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-3), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-3), var(--alpha-button-background));
+}
+
+.button.button--primary.theme-color-bg-4-hover:hover {
+  background-color: rgb(var(--palette-color-4));
+}
+.button.button--primary.theme-color-bg-4-hover:hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-4), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-4), var(--alpha-button-background));
+}
+
+.button.button--primary.theme-color-bg-5-hover:hover {
+  background-color: rgb(var(--palette-color-5));
+}
+.button.button--primary.theme-color-bg-5-hover:hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-5), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-5), var(--alpha-button-background));
+}
+
+.button.button--primary.theme-color-bg-6-hover:hover {
+  background-color: rgb(var(--palette-color-6));
+}
+.button.button--primary.theme-color-bg-6-hover:hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-6), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-6), var(--alpha-button-background));
+}
+
+.button.button--primary.theme-color-bg-7-hover:hover {
+  background-color: rgb(var(--palette-color-7));
+}
+.button.button--primary.theme-color-bg-7-hover:hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-7), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-7), var(--alpha-button-background));
+}
+
+/* PRIMARY Button text color overrides based on background color class */
+.button.button--primary.theme-color-text-0 {
+  color: rgb(var(--palette-color-0));
+}
+
+.button.button--primary.theme-color-text-1 {
+  color: rgb(var(--palette-color-1));
+}
+
+.button.button--primary.theme-color-text-2 {
+  color: rgb(var(--palette-color-2));
+}
+
+.button.button--primary.theme-color-text-3 {
+  color: rgb(var(--palette-color-3));
+}
+
+.button.button--primary.theme-color-text-4 {
+  color: rgb(var(--palette-color-4));
+}
+
+.button.button--primary.theme-color-text-5 {
+  color: rgb(var(--palette-color-5));
+}
+
+.button.button--primary.theme-color-text-6 {
+  color: rgb(var(--palette-color-6));
+}
+
+.button.button--primary.theme-color-text-7 {
+  color: rgb(var(--palette-color-7));
+}
+
+/* PRIMARY Button text HOVER color overrides based on background color class */
+.button.button--primary.theme-color-text-0-hover:hover {
+  color: rgb(var(--palette-color-0));
+}
+
+.button.button--primary.theme-color-text-1-hover:hover {
+  color: rgb(var(--palette-color-1));
+}
+
+.button.button--primary.theme-color-text-2-hover:hover {
+  color: rgb(var(--palette-color-2));
+}
+
+.button.button--primary.theme-color-text-3-hover:hover {
+  color: rgb(var(--palette-color-3));
+}
+
+.button.button--primary.theme-color-text-4-hover:hover {
+  color: rgb(var(--palette-color-4));
+}
+
+.button.button--primary.theme-color-text-5-hover:hover {
+  color: rgb(var(--palette-color-5));
+}
+
+.button.button--primary.theme-color-text-6-hover:hover {
+  color: rgb(var(--palette-color-6));
+}
+
+.button.button--primary.theme-color-text-7-hover:hover {
+  color: rgb(var(--palette-color-7));
+}
+
+/* SECONDARY Button color overrides based on background color class */
+.button.button--secondary.theme-color-bg-0 {
+  background-color: rgb(var(--palette-color-0));
+}
+.button.button--secondary.theme-color-bg-0:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-0), var(--alpha-button-background));
+}
+
+.button.button--secondary.theme-color-bg-1 {
+  background-color: rgb(var(--palette-color-1));
+}
+.button.button--secondary.theme-color-bg-1:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-1), var(--alpha-button-background));
+}
+
+.button.button--secondary.theme-color-bg-2 {
+  background-color: rgb(var(--palette-color-2));
+}
+.button.button--secondary.theme-color-bg-2:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-2), var(--alpha-button-background));
+}
+
+.button.button--secondary.theme-color-bg-3 {
+  background-color: rgb(var(--palette-color-3));
+}
+.button.button--secondary.theme-color-bg-3:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-3), var(--alpha-button-background));
+}
+
+.button.button--secondary.theme-color-bg-4 {
+  background-color: rgb(var(--palette-color-4));
+}
+.button.button--secondary.theme-color-bg-4:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-4), var(--alpha-button-background));
+}
+
+.button.button--secondary.theme-color-bg-5 {
+  background-color: rgb(var(--palette-color-5));
+}
+.button.button--secondary.theme-color-bg-5:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-5), var(--alpha-button-background));
+}
+
+.button.button--secondary.theme-color-bg-6 {
+  background-color: rgb(var(--palette-color-6));
+}
+.button.button--secondary.theme-color-bg-6:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-6), var(--alpha-button-background));
+}
+
+.button.button--secondary.theme-color-bg-7 {
+  background-color: rgb(var(--palette-color-7));
+}
+.button.button--secondary.theme-color-bg-7:after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-text), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-7), var(--alpha-button-background));
+}
+
+/* SECONDARY Button HOVER color overrides based on background color class */
+.button.button--secondary.theme-color-bg-0-hover:hover {
+  background-color: rgb(var(--palette-color-0));
+}
+.button.button--secondary.theme-color-bg-0-hover:hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-0), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-0), var(--alpha-button-background));
+}
+
+.button.button--secondary.theme-color-bg-1-hover:hover {
+  background-color: rgb(var(--palette-color-1));
+}
+.button.button--secondary.theme-color-bg-1-hover:hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-1), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-1), var(--alpha-button-background));
+}
+
+.button.button--secondary.theme-color-bg-2-hover:hover {
+  background-color: rgb(var(--palette-color-2));
+}
+.button.button--secondary.theme-color-bg-2-hover:hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-2), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-2), var(--alpha-button-background));
+}
+
+.button.button--secondary.theme-color-bg-3-hover:hover {
+  background-color: rgb(var(--palette-color-3));
+}
+.button.button--secondary.theme-color-bg-3-hover:hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-3), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-3), var(--alpha-button-background));
+}
+
+.button.button--secondary.theme-color-bg-4-hover:hover {
+  background-color: rgb(var(--palette-color-4));
+}
+.button.button--secondary.theme-color-bg-4-hover:hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-4), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-4), var(--alpha-button-background));
+}
+
+.button.button--secondary.theme-color-bg-5-hover:hover {
+  background-color: rgb(var(--palette-color-5));
+}
+.button.button--secondary.theme-color-bg-5-hover:hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-5), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-5), var(--alpha-button-background));
+}
+
+.button.button--secondary.theme-color-bg-6-hover:hover {
+  background-color: rgb(var(--palette-color-6));
+}
+.button.button--secondary.theme-color-bg-6-hover:hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-6), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-6), var(--alpha-button-background));
+}
+
+.button.button--secondary.theme-color-bg-7-hover:hover {
+  background-color: rgb(var(--palette-color-7));
+}
+.button.button--secondary.theme-color-bg-7-hover:hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-7), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-7), var(--alpha-button-background));
+
+  /* SECONDARY Button text color overrides based on background color class */
+  .button.button--secondary.theme-color-text-0 {
+    color: rgb(var(--palette-color-0));
+  }
+
+  .button.button--secondary.theme-color-text-1 {
+    color: rgb(var(--palette-color-1));
+  }
+
+  .button.button--secondary.theme-color-text-2 {
+    color: rgb(var(--palette-color-2));
+  }
+
+  .button.button--secondary.theme-color-text-3 {
+    color: rgb(var(--palette-color-3));
+  }
+
+  .button.button--secondary.theme-color-text-4 {
+    color: rgb(var(--palette-color-4));
+  }
+
+  .button.button--secondary.theme-color-text-5 {
+    color: rgb(var(--palette-color-5));
+  }
+
+  .button.button--secondary.theme-color-text-6 {
+    color: rgb(var(--palette-color-6));
+  }
+
+  .button.button--secondary.theme-color-text-7 {
+    color: rgb(var(--palette-color-7));
+  }
+
+  /* SECONDARY Button text HOVER color overrides based on background color class */
+  .button.button--secondary.theme-color-text-0-hover:hover {
+    color: rgb(var(--palette-color-0));
+  }
+
+  .button.button--secondary.theme-color-text-1-hover:hover {
+    color: rgb(var(--palette-color-1));
+  }
+
+  .button.button--secondary.theme-color-text-2-hover:hover {
+    color: rgb(var(--palette-color-2));
+  }
+
+  .button.button--secondary.theme-color-text-3-hover:hover {
+    color: rgb(var(--palette-color-3));
+  }
+
+  .button.button--secondary.theme-color-text-4-hover:hover {
+    color: rgb(var(--palette-color-4));
+  }
+
+  .button.button--secondary.theme-color-text-5-hover:hover {
+    color: rgb(var(--palette-color-5));
+  }
+
+  .button.button--secondary.theme-color-text-6-hover:hover {
+    color: rgb(var(--palette-color-6));
+  }
+
+  .button.button--secondary.theme-color-text-7-hover:hover {
+    color: rgb(var(--palette-color-7));
+  }
+}
+
+/* PRIMARY & SECONDARY color override HOVER defaults */
+.button[class*='button--'][class*='theme-color-bg-'].default:not(disabled):hover {
+  background-color: rgb(var(--color-button-hover));
+  color: rgb(var(--color-button-hover-text));
+}
+
+.button[class*='button--'][class*='theme-color-bg-'].default:not(disabled):hover::after {
+  --border-offset: 1.3px;
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--color-button-hover), var(--border-opacity)),
+    0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button-hover), var(--alpha-button-background));
 }
