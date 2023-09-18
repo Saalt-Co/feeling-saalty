@@ -115,7 +115,7 @@
           href="{{ routes.collections_url }}"
           class="
             button
-            button--primary
+            {% if section.settings.button_type == "secondary" %}button--secondary{% else %}button--primary{% endif %}
             {% if section.settings.theme_color_section_button_background != 'theme_default' %}{{ section.settings.theme_color_section_button_background }}{% endif %}
             {% if section.settings.theme_color_text_section_button_text != 'theme_default' %}{{ section.settings.theme_color_text_section_button_text }}{% endif %}
             {% if section.settings.theme_color_section_button_background_hover != 'theme_default' %}{{ section.settings.theme_color_section_button_background_hover }}{% endif %}
@@ -297,6 +297,23 @@
       "id": "show_view_all",
       "default": false,
       "label": "t:sections.collection-list.settings.show_view_all.label"
+    },
+    {
+      "type": "select",
+      "id": "button_type",
+      "label": "t:settings_schema.theme_colors.settings.buttons.button_type_label",
+      "info": "The type of button",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        }
+      ],
+      "default": "primary"
     },
     {
       "type": "select",
