@@ -204,6 +204,9 @@
         "theme_default": {
           "label": "Theme default"
         },
+        "transparent": {
+          "label": "Transparent"
+        },
         "palette_color_0": {
           "label": "Theme color 0"
         },
