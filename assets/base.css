@@ -3959,76 +3959,53 @@ details-disclosure > details {
 }
 
 /* SECONDARY Button color overrides based on background color class */
-.button.button--secondary.theme-color-bg-0 {
-  background-color: rgb(var(--palette-color-0));
+.button.button--secondary[class*='theme-color-bg-'] {
+  background-color: var(--color-button-secondary-background);
 }
-.button.button--secondary.theme-color-bg-0:after {
+.button.button--secondary.theme-color-bg-0::after {
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-0), var(--alpha-button-background));
+      rgba(var(--palette-color-0), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--palette-color-0), var(--alpha-button-background));
+}
+.button.button--secondary.theme-color-bg-1::after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-1), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--palette-color-1), var(--alpha-button-background));
+}
+.button.button--secondary.theme-color-bg-2::after {
+  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
+      rgba(var(--palette-color-2), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--palette-color-2), var(--alpha-button-background));
 }
 
-.button.button--secondary.theme-color-bg-1 {
-  background-color: rgb(var(--palette-color-1));
-}
-.button.button--secondary.theme-color-bg-1:after {
+.button.button--secondary.theme-color-bg-3::after {
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-1), var(--alpha-button-background));
+      rgba(var(--palette-color-3), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--palette-color-3), var(--alpha-button-background));
 }
 
-.button.button--secondary.theme-color-bg-2 {
-  background-color: rgb(var(--palette-color-2));
-}
-.button.button--secondary.theme-color-bg-2:after {
+.button.button--secondary.theme-color-bg-4::after {
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-2), var(--alpha-button-background));
+      rgba(var(--palette-color-4), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--palette-color-4), var(--alpha-button-background));
 }
 
-.button.button--secondary.theme-color-bg-3 {
-  background-color: rgb(var(--palette-color-3));
-}
-.button.button--secondary.theme-color-bg-3:after {
+.button.button--secondary.theme-color-bg-5::after {
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-3), var(--alpha-button-background));
+      rgba(var(--palette-color-5), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--palette-color-5), var(--alpha-button-background));
 }
 
-.button.button--secondary.theme-color-bg-4 {
-  background-color: rgb(var(--palette-color-4));
-}
-.button.button--secondary.theme-color-bg-4:after {
+.button.button--secondary.theme-color-bg-6::after {
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-4), var(--alpha-button-background));
+      rgba(var(--palette-color-6), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--palette-color-6), var(--alpha-button-background));
 }
 
-.button.button--secondary.theme-color-bg-5 {
-  background-color: rgb(var(--palette-color-5));
-}
-.button.button--secondary.theme-color-bg-5:after {
+.button.button--secondary.theme-color-bg-7::after {
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-5), var(--alpha-button-background));
-}
-
-.button.button--secondary.theme-color-bg-6 {
-  background-color: rgb(var(--palette-color-6));
-}
-.button.button--secondary.theme-color-bg-6:after {
-  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-6), var(--alpha-button-background));
-}
-
-.button.button--secondary.theme-color-bg-7 {
-  background-color: rgb(var(--palette-color-7));
-}
-.button.button--secondary.theme-color-bg-7:after {
-  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 var(--buttons-border-width) rgba(var(--theme-color-bg-7), var(--alpha-button-background));
+      rgba(var(--palette-color-7), var(--border-opacity)),
+    0 0 0 var(--buttons-border-width) rgba(var(--palette-color-7), var(--alpha-button-background));
 }
 
 /* SECONDARY Button HOVER color overrides based on background color class */
@@ -4110,72 +4087,71 @@ details-disclosure > details {
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
       rgba(var(--palette-color-7), var(--border-opacity)),
     0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--palette-color-7), var(--alpha-button-background));
+}
+/* SECONDARY Button text color overrides based on background color class */
+.button.button--secondary.theme-color-text-0 {
+  color: rgb(var(--palette-color-0));
+}
 
-  /* SECONDARY Button text color overrides based on background color class */
-  .button.button--secondary.theme-color-text-0 {
-    color: rgb(var(--palette-color-0));
-  }
+.button.button--secondary.theme-color-text-1 {
+  color: rgb(var(--palette-color-1));
+}
 
-  .button.button--secondary.theme-color-text-1 {
-    color: rgb(var(--palette-color-1));
-  }
+.button.button--secondary.theme-color-text-2 {
+  color: rgb(var(--palette-color-2));
+}
 
-  .button.button--secondary.theme-color-text-2 {
-    color: rgb(var(--palette-color-2));
-  }
+.button.button--secondary.theme-color-text-3 {
+  color: rgb(var(--palette-color-3));
+}
 
-  .button.button--secondary.theme-color-text-3 {
-    color: rgb(var(--palette-color-3));
-  }
+.button.button--secondary.theme-color-text-4 {
+  color: rgb(var(--palette-color-4));
+}
 
-  .button.button--secondary.theme-color-text-4 {
-    color: rgb(var(--palette-color-4));
-  }
+.button.button--secondary.theme-color-text-5 {
+  color: rgb(var(--palette-color-5));
+}
 
-  .button.button--secondary.theme-color-text-5 {
-    color: rgb(var(--palette-color-5));
-  }
+.button.button--secondary.theme-color-text-6 {
+  color: rgb(var(--palette-color-6));
+}
 
-  .button.button--secondary.theme-color-text-6 {
-    color: rgb(var(--palette-color-6));
-  }
+.button.button--secondary.theme-color-text-7 {
+  color: rgb(var(--palette-color-7));
+}
 
-  .button.button--secondary.theme-color-text-7 {
-    color: rgb(var(--palette-color-7));
-  }
+/* SECONDARY Button text HOVER color overrides based on background color class */
+.button.button--secondary.theme-color-text-0-hover:hover {
+  color: rgb(var(--palette-color-0));
+}
 
-  /* SECONDARY Button text HOVER color overrides based on background color class */
-  .button.button--secondary.theme-color-text-0-hover:hover {
-    color: rgb(var(--palette-color-0));
-  }
+.button.button--secondary.theme-color-text-1-hover:hover {
+  color: rgb(var(--palette-color-1));
+}
 
-  .button.button--secondary.theme-color-text-1-hover:hover {
-    color: rgb(var(--palette-color-1));
-  }
+.button.button--secondary.theme-color-text-2-hover:hover {
+  color: rgb(var(--palette-color-2));
+}
 
-  .button.button--secondary.theme-color-text-2-hover:hover {
-    color: rgb(var(--palette-color-2));
-  }
+.button.button--secondary.theme-color-text-3-hover:hover {
+  color: rgb(var(--palette-color-3));
+}
 
-  .button.button--secondary.theme-color-text-3-hover:hover {
-    color: rgb(var(--palette-color-3));
-  }
+.button.button--secondary.theme-color-text-4-hover:hover {
+  color: rgb(var(--palette-color-4));
+}
 
-  .button.button--secondary.theme-color-text-4-hover:hover {
-    color: rgb(var(--palette-color-4));
-  }
+.button.button--secondary.theme-color-text-5-hover:hover {
+  color: rgb(var(--palette-color-5));
+}
 
-  .button.button--secondary.theme-color-text-5-hover:hover {
-    color: rgb(var(--palette-color-5));
-  }
+.button.button--secondary.theme-color-text-6-hover:hover {
+  color: rgb(var(--palette-color-6));
+}
 
-  .button.button--secondary.theme-color-text-6-hover:hover {
-    color: rgb(var(--palette-color-6));
-  }
-
-  .button.button--secondary.theme-color-text-7-hover:hover {
-    color: rgb(var(--palette-color-7));
-  }
+.button.button--secondary.theme-color-text-7-hover:hover {
+  color: rgb(var(--palette-color-7));
 }
 
 /* PRIMARY & SECONDARY color override HOVER defaults */
