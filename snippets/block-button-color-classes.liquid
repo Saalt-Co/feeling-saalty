@@ -1,0 +1,24 @@
+{%- comment -%} The 'block' object is fed in as a variable {%- endcomment -%}
+{% liquid
+  if block.settings.theme_color_block_button_background != 'theme_default'
+    assign bg_color = block.settings.theme_color_block_button_background
+  endif
+  if block.settings.theme_color_text_block_button_text != 'theme_default'
+    assign text_color = block.settings.theme_color_text_block_button_text
+  endif
+  if block.settings.theme_color_block_button_background_hover != 'theme_default'
+    assign bg_hover = block.settings.theme_color_block_button_background_hover
+  endif
+  if block.settings.theme_color_text_block_button_text_hover != 'theme_default'
+    assign text_hover = block.settings.theme_color_text_block_button_text_hover
+  endif
+  if block.settings.theme_color_block_button_background_hover == 'theme_default' and block.settings.theme_color_text_block_button_text_hover == 'theme_default'
+    assign default = 'default'
+  endif
+%}
+button--{% if block.settings.button_type == 'secondary' %}secondary{% else %}primary{% endif %}
+{{ bg_color }}
+{{ text_color }}
+{{ bg_hover }}
+{{ text_hover }}
+{{ default }}
