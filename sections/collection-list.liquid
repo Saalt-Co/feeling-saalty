@@ -115,12 +115,7 @@
           href="{{ routes.collections_url }}"
           class="
             button
-            {% if section.settings.button_type == "secondary" %}button--secondary{% else %}button--primary{% endif %}
-            {% if section.settings.theme_color_section_button_background != 'theme_default' %}{{ section.settings.theme_color_section_button_background }}{% endif %}
-            {% if section.settings.theme_color_text_section_button_text != 'theme_default' %}{{ section.settings.theme_color_text_section_button_text }}{% endif %}
-            {% if section.settings.theme_color_section_button_background_hover != 'theme_default' %}{{ section.settings.theme_color_section_button_background_hover }}{% endif %}
-            {% if section.settings.theme_color_text_section_button_text_hover != 'theme_default' %}{{ section.settings.theme_color_text_section_button_text_hover }}{% endif %}
-            {% if section.settings.theme_color_section_button_background_hover == 'theme_default' and section.settings.theme_color_text_section_button_text_hover == 'theme_default' %}default{% endif %}
+            {% render 'section-button-color-classes' section: section %}
           "
           id="ViewAllButton-{{ section.id }}"
           aria-labelledby="ViewAllButton-{{ section.id }} SectionHeading-{{ section.id }}"
@@ -306,11 +301,11 @@
       "options": [
         {
           "value": "primary",
-          "label": "Primary"
+          "label": "Solid"
         },
         {
           "value": "secondary",
-          "label": "Secondary"
+          "label": "Outlined"
         }
       ],
       "default": "primary"
@@ -319,7 +314,7 @@
       "type": "select",
       "id": "theme_color_section_button_background",
       "label": "t:settings_schema.theme_colors.settings.buttons.section_bg_label",
-      "info": "The static background color for the section's button(s)'",
+      "info": "The static background color for the section's button(s). Sets text and outline color for outlined buttons",
       "options": [
         {
           "value": "theme_default",
@@ -364,7 +359,7 @@
       "type": "select",
       "id": "theme_color_text_section_button_text",
       "label": "t:settings_schema.theme_colors.settings.buttons.section_text_label",
-      "info": "The static text color for the section's button(s)'",
+      "info": "The static text color for the section's button(s). Overriden by background color for outlined buttons",
       "options": [
         {
           "value": "theme_default",
@@ -409,7 +404,7 @@
       "type": "select",
       "id": "theme_color_section_button_background_hover",
       "label": "t:settings_schema.theme_colors.settings.buttons.hover_bg_label",
-      "info": "The hover background color for the section's button(s)'",
+      "info": "The hover background color for the section's button(s)",
       "options": [
         {
           "value": "theme_default",
@@ -454,7 +449,7 @@
       "type": "select",
       "id": "theme_color_text_section_button_text_hover",
       "label": "t:settings_schema.theme_colors.settings.buttons.hover_text_label",
-      "info": "The hover text color for the section's button(s)'",
+      "info": "The hover text color for the section's button(s)",
       "options": [
         {
           "value": "theme_default",
