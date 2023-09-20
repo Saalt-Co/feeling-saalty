@@ -16,7 +16,11 @@
     assign default = 'default'
   endif
 %}
-button--{% if block.settings.button_type == 'secondary' %}secondary{% else %}primary{% endif %}
+{% if button.settings.button_type %}
+  button--{% if button.settings.button_type == 'secondary' %}secondary{% else %}primary{% endif %}
+{% elsif button.settings.view_all_style %}
+  button--{% if button.settings.view_all_style == 'secondary' %}secondary{% else %}primary{% endif %}
+{% endif %}
 {{ bg_color }}
 {{ text_color }}
 {{ bg_hover }}
