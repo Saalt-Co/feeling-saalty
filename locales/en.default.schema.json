@@ -268,6 +268,7 @@
         },
         "buttons": {
           "header": "🌈 Buttons",
+          "settings_header": "Button settings",
           "primary_bg_label": "Primary button color",
           "primary_text_label": "Primary button text color",
           "secondary_bg_label": "Secondary button color",
@@ -303,6 +304,9 @@
           "cards_article_text_opacity_label": "Blog card text opacity"
         },
         "sections": {
+          "section_color_header": "Color settings for this section",
+          "block_color_header": "Color settings for this section",
+          "selected_element_color_header": "Color settings for the selected element",
           "background_color_label": "Background color for this element",
           "text_color_label": "Text color for this element",
           "section_background_color_label": "Background color for the selected section element(s)",
@@ -936,10 +940,7 @@
             "label": "Link"
           },
           "options__2": {
-            "label": "Outline button"
-          },
-          "options__3": {
-            "label": "Solid button"
+            "label": "Button"
           }
         },
         "enable_desktop_slider": {
