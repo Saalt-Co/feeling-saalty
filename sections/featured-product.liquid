@@ -53,8 +53,7 @@
     onload="this.media='all'"
   >
 {%- endif -%}
-
-<section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
+<section class="{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.secondary_background %} background-secondary{% endif %}">
   <div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
     <div class="featured-product product product--{{ section.settings.media_size }} grid grid--1-col gradient color-{{ section.settings.color_scheme }} product--{{ section.settings.media_position }}{% if section.settings.secondary_background == false %} isolate{% endif %} {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
@@ -1327,31 +1326,48 @@
     },
     {
       "type": "select",
-      "id": "color_scheme",
+      "id": "theme_color_background",
+      "label": "t:settings_schema.theme_colors.settings.sections.background_color_label",
+      "info": "Sets the background color",
       "options": [
         {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
         },
         {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
+          "value": "theme-color-bg-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
         },
         {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
+          "value": "theme-color-bg-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
         },
         {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
+          "value": "theme-color-bg-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
         },
         {
-          "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
+          "value": "theme-color-bg-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-bg-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-bg-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-bg-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-bg-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
         }
       ],
-      "default": "background-1",
-      "label": "t:sections.all.colors.label"
+      "default": "theme_default"
     },
     {
       "type": "checkbox",
