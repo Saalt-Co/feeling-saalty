@@ -4191,3 +4191,17 @@ details-disclosure > details {
       rgba(var(--color-button-hover), var(--border-opacity)),
     0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button-hover), var(--alpha-button-background));
 }
+
+/* IGNORE classes to override the color classes */
+
+.theme-color-bg-ignore {
+  background: rgb(var(--color-site-background));
+}
+
+.theme-color-text-ignore {
+  color: rgba(var(--color-main-text), var(--color-main-text-opacity));
+}
+
+.theme-color-text-ignore-children *:not(.button) {
+  color: rgba(var(--color-main-text), var(--color-main-text-opacity));
+}
