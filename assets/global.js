@@ -1309,6 +1309,11 @@ const a11yEsc = (e) => {
 };
 // END -- A11YESC -- END //
 // START -- WAIT FOR ELEMENT TO EXIST -- START //
+/**
+ *
+ * @param {*} selector The element to wait for
+ * @returns a resolved Promise
+ */
 function waitForElementToExist(selector) {
   return new Promise((resolve) => {
     if (document.querySelector(selector)) {
