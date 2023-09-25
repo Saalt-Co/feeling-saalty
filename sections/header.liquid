@@ -119,6 +119,7 @@
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart-count-bubble.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
 {%- if settings.cart_type == "drawer" -%}
   <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
@@ -327,23 +328,26 @@
         {%- endcase -%}
       {%- endfor -%}
 
-      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+      {%- if cart != empty -%}
         {%- liquid
-          if cart == empty
-            render 'icon-cart-empty'
-          else
-            render 'icon-cart'
+          if section.settings.theme_color_background != 'theme_default'
+            assign bg_color_num = section.settings.theme_color_background | slice: -1, 1
           endif
+          if section.settings.theme_color_text != 'theme_default'
+            assign text_color_num = section.settings.theme_color_text | slice: -1, 1
+          endif
+          assign bg_color_class = 'theme-color-bg-' | append: text_color_num
+          assign text_color_class = 'theme-color-text-' | append: bg_color_num
         -%}
-        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
-        {%- if cart != empty -%}
-          <div class="cart-count-bubble">
-            {%- if cart.item_count < 100 -%}
-              <span aria-hidden="true">{{ cart.item_count }}</span>
-            {%- endif -%}
-            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
-          </div>
-        {%- endif -%}
+        <script type="application/json" id="CartCountBubbleClasses">
+          {%- capture bubbleClassesJsonVals -%}
+          {"bg": {% if bg_color_class != 'theme-color-bg-' %}"{{ bg_color_class }}"{% else %}""{% endif %}, "text": {% if text_color_class != 'theme-color-text-' %}"{{ text_color_class }}"{% else %}""{% endif %}}
+          {%- endcapture -%}
+          {{- bubbleClassesJsonVals -}}
+        </script>
+      {%- endif -%}
+      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+        {% render 'cart-count-bubble', section: section %}
       </a>
     </div>
   </header>
