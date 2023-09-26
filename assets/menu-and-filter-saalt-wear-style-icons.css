@@ -40,7 +40,9 @@ a .saalt-wear-styles_icons-wrapper {
   gap: 0.125rem;
   align-items: center;
   border-bottom: 1px solid transparent;
+  height: 1.55rem;
   margin-top: 0.1rem;
+  padding-left: 0.125rem;
 }
 
 a .saalt-wear-styles_icons-wrapper .style-icon,
