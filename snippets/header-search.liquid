@@ -10,32 +10,32 @@
 {% endcomment %}
 
 {%- liquid
-  if section.settings.theme_color_text != 'theme_default'
-    assign color_class = section.settings.theme_color_text | slice: -1, 1
+  if theme_color_text != 'theme_default'
+    assign color_class = theme_color_text | slice: -1, 1
     assign border_var = '--palette-color-' | append: color_class
   endif
 -%}
 
 {%- style -%}
-  #section-{{ section.id }} form input.field__input {
-    background-color: rgba(var(--color-site-background), {{ section.settings.search_input_opacity }}%);
+  #section-{{ section_id }} form input.field__input {
+    background-color: rgba(var(--color-site-background), {{ search_input_opacity }}%);
   }
 
-  {% if section.settings.theme_color_text != 'theme_default' %}
-  #section-{{ section.id }} .field::after {
+  {% if theme_color_text != 'theme_default' %}
+  #section-{{ section_id }} .field::after {
     box-shadow: 0 0 0 var(--inputs-border-width) rgba(var({{ border_var }}), var(--inputs-border-opacity));
   }
-  #section-{{ section.id }} .field:hover.field:after {
+  #section-{{ section_id }} .field:hover.field:after {
     box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width))
     rgba(var({{ border_var }}), var(--inputs-border-opacity));
   }
-  #section-{{ section.id }} .field__input:focus-visible, #section-{{ section.id }} .field__input:focus {
+  #section-{{ section_id }} .field__input:focus-visible, #section-{{ section_id }} .field__input:focus {
     box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var({{ border_var }}));
   }
   {% endif %}
 {%- endstyle -%}
 
-<details-modal id="section-{{ section.id }}" class="header__search">
+<details-modal id="section-{{ section_id }}" class="header__search">
   <details>
     <summary
       class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle"
@@ -51,8 +51,9 @@
         </svg>
       </span>
     </summary>
+
     <div
-      class="search-modal modal__content{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}"
+      class="search-modal modal__content{% if theme_color_background != 'theme_default' %} {{ theme_color_background }}{% endif %}"
       role="dialog"
       aria-modal="true"
       aria-label="{{ 'general.search.search' | t }}"
@@ -109,7 +110,7 @@
 
           {%- if settings.predictive_search_enabled -%}
             <div
-              class="predictive-search predictive-search--header{% if section.settings.theme_color_text != 'theme_default' %} theme-color-text-ignore-children{% endif %}"
+              class="predictive-search predictive-search--header{% if theme_color_text != 'theme_default' %} theme-color-text-ignore-children{% endif %}"
               tabindex="-1"
               data-predictive-search
             >

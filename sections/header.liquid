@@ -304,7 +304,7 @@
           </localization-form>
         {%- endif -%}
       </div>
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
+      {% render 'header-search', section: section, section_id: section.id, theme_color_background: section.settings.theme_color_background, theme_color_text: section.settings.theme_color_text, search_input_opacity: section.settings.search_input_opacity, input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
