@@ -5,6 +5,8 @@
 
   Usage:
   {% render 'saalt-button-color-classes', obj.settings: [section/block] %}
+
+  Note: This was intentionally NOT refactored to have specific variables passed to it in order to avoid overspecificity in its usage and make code more readable
 {% endcomment %}
 {% liquid
   if obj.settings.theme_color_section_button_background != 'theme_default'
