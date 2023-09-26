@@ -35,7 +35,9 @@ a .absorbency-drops_icons-wrapper {
   align-items: center;
   padding-bottom: 2px;
   margin-top: 3px;
+  padding-left: 0.5rem;
   border-bottom: 1px solid transparent;
+  height: 1.35rem;
 }
 
 a .absorbency-drops_icons-wrapper svg.absorbency-icon,
@@ -92,6 +94,10 @@ facet-remove a .absorbency-drops_inner-icon-wrapper {
   margin-top: unset;
   height: unset;
   margin-left: unset;
+}
+
+facet-remove a .absorbency-drops_icons-wrapper {
+  padding-left: 0;
 }
 
 facet-remove a .absorbency-drops_icons-wrapper svg.absorbency-icon,
