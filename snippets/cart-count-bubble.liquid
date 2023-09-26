@@ -2,7 +2,8 @@
   Renders cart icon bubble
 
   Accepts:
-  - section: {Object} passed so we know if the parent section has background and/or text colors set which allows us to style the bubble and count correctly (optional)
+  - theme_color_background: {String} Background color class (optional)
+  - theme_color_text: {String} Text color class (optional)
 
   Usage:
   {% render 'cart-icon-bubble' %}
@@ -18,17 +19,17 @@
 <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
 {%- if cart != empty -%}
   {%- liquid
-    if section.settings.theme_color_background != 'theme_default'
-      assign bg_color_num = section.settings.theme_color_background | slice: -1, 1
+    if theme_color_background != 'theme_default'
+      assign bg_color_num = theme_color_background | slice: -1, 1
     endif
-    if section.settings.theme_color_text != 'theme_default'
-      assign text_color_num = section.settings.theme_color_text | slice: -1, 1
+    if theme_color_text != 'theme_default'
+      assign text_color_num = theme_color_text | slice: -1, 1
     endif
     assign bg_color_class = 'theme-color-bg-' | append: text_color_num
     assign text_color_class = 'theme-color-text-' | append: bg_color_num
   -%}
   <cart-count-bubble
-    class="cart-count-bubble{% if section.settings.theme_color_text != 'theme_default' and bg_color_class != 'theme-color-bg-' %} {{ bg_color_class }}{% endif %}{% if section.settings.theme_color_background != 'theme_default' and text_color_class != 'theme-color-text-' %} {{ text_color_class }}{% endif %}"
+    class="cart-count-bubble{% if theme_color_text != 'theme_default' and bg_color_class != 'theme-color-bg-' %} {{ bg_color_class }}{% endif %}{% if theme_color_background != 'theme_default' and text_color_class != 'theme-color-text-' %} {{ text_color_class }}{% endif %}"
   >
     {%- if cart.item_count < 100 -%}
       <span class="cart-count-number" aria-hidden="true">{{ cart.item_count }}</span>

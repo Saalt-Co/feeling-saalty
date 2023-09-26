@@ -1,1 +1,4 @@
-{% render 'cart-count-bubble', section: section %}
+{% render 'cart-count-bubble',
+  theme_color_background: section.settings.theme_color_background,
+  theme_color_text: section.settings.theme_color_text
+%}
