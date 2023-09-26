@@ -108,7 +108,7 @@
     </div>
   {%- endif -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    <div class="banner__box content-container content-container--full-width-mobile {% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}">
+    <div class="banner__box content-container content-container--full-width-mobile {% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }} {% else %} theme-color-bg-0{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
