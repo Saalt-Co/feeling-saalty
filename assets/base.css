@@ -3652,6 +3652,14 @@ details-disclosure > details {
   opacity: 25%;
 }
 
+@media screen and (max-width: 750px) {
+  .shopify-placeholder > svg {
+    position: absolute;
+    height: 100%;
+    left: -50%;
+  }
+}
+
 /* Theme color overrides using color palette values */
 /* Background colors */
 .theme-color-bg-0 {
