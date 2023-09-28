@@ -24,7 +24,7 @@
                   {%- when 'section_button' -%}
                     {%- if block.settings.button_text != blank -%}
                       {%- capture button_code -%}                      
-                      <a href="{{ block.settings.button_url }}" class="button btn btn-primary{% if block.settings.button_style == "alt" %} alt{% endif %}">{{ block.settings.button_text }}</a>
+                      <a href="{{ block.settings.button_url }}" class="button btn btn-primary{% render 'saalt-button-color-classes', obj: block %}">{{ block.settings.button_text }}</a>
                       {%- endcapture -%}
                       {%- assign buttons_code = buttons_code | append: button_code -%}
                     {%- endif -%}
