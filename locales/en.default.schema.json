@@ -262,6 +262,13 @@
           "review_stars_color_label": "Review stars color",
           "review_stars_opacity_label": "Review stars opacity"
         },
+        "size_chart": {
+          "header": "🌈 Size Chart",
+          "size_chart_color_1_label": "Size chart accent color",
+          "size_chart_opacity_1_label": "Size chart accent color opacity",
+          "size_chart_color_2_label": "Size chart accent color",
+          "size_chart_opacity_2_label": "Size chart accent color opacity"
+        },
         "variant_options": {
           "header": "🌈 Variant Options",
           "variant_options_color_label": "Variant options color"

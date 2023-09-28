@@ -185,7 +185,7 @@ size-chart
   li:before {
   content: counter(steps);
   display: inline-grid;
-  background: rgba(var(--color-base-accent-2), var(--alpha-button-background));
+  background: rgba(var(--color-size-chart-accent-color-1), var(--color-size-chart-accent-color-1-opacity));
   color: rgb(var(--color-main-text));
   width: 2.25rem;
   height: 2.25rem;
@@ -511,7 +511,7 @@ size-chart tr td {
 }
 
 size-chart tr td {
-  background: #fff;
+  background: rgba(var(--color-site-background), 1);
 }
 
 size-chart tr {
@@ -520,7 +520,7 @@ size-chart tr {
 
 size-chart .size-chart-content-container.visible tr:first-of-type td,
 size-chart .size-chart-content-container.visible tr td:first-of-type {
-  background-color: rgba(var(--color-base-accent-2), var(--alpha-button-background));
+  background-color: rgba(var(--color-size-chart-accent-color-1), var(--color-size-chart-accent-color-1-opacity));
   font-weight: 600;
 }
 
@@ -529,15 +529,16 @@ size-chart .size-chart-content-container.visible tr:first-of-type td:first-of-ty
   padding: 0;
   margin: 0;
   line-height: 3.8;
-  border-color: rgba(var(--color-base-accent-1), 25%);
+  border: 1px solid;
+  border-color: rgb(var(--color-main-text), 0.2);
 }
 
 size-chart .size-chart-content-container.visible tr:first-of-type td:first-of-type::before {
   content: '.';
   display: inline-block;
   position: absolute;
-  background-color: rgba(var(--color-base-accent-1), 15%);
-  border-color: rgba(var(--color-base-accent-1), 15%);
+  background-color: rgba(var(--color-size-chart-accent-color-2), var(--color-size-chart-accent-color-2-opacity));
+  box-shadow: 0 0 1px 1px rgba(var(--color-main-text), 0.1);
   color: transparent;
   width: 100%;
   height: 100%;

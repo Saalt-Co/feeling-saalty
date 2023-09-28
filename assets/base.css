@@ -602,14 +602,14 @@ table:not([class]) {
   border-collapse: collapse;
   font-size: 1.4rem;
   border-style: hidden;
-  box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.2);
+  box-shadow: 0 0 0 0.1rem rgba(var(--color-main-text), 0.2);
   /* draws the table border  */
 }
 
 table:not([class]) td,
 table:not([class]) th {
   padding: 1em;
-  border: 0.1rem solid rgba(var(--color-foreground), 0.2);
+  border: 0.1rem solid rgba(var(--color-main-text), 0.2);
 }
 
 @media screen and (max-width: 749px) {
@@ -1523,6 +1523,18 @@ button.shopify-payment-button__button--unbranded {
   background-color: rgba(var(--color-button-text), 0.3);
 }
 
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
 .button::selection,
 .shopify-challenge__button::selection,
 .customer button::selection {
@@ -1990,6 +2002,46 @@ details[open] > .share-button__fallback {
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
   display: none;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
 }
 
 .field__input::-webkit-input-placeholder,
