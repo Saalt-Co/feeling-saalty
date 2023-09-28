@@ -273,11 +273,16 @@
           "primary_text_label": "Primary button text color",
           "secondary_bg_label": "Secondary button color",
           "secondary_text_label": "Secondary button text color",
-          "section_bg_label": "Section button color",
-          "section_text_label": "Section button text color",
-          "hover_bg_label": "Button hover background color",
-          "hover_text_label": "Button hover text color",
-          "button_type_label": "Button type"
+          "static_bg_label": "Main button color",
+          "static_bg_info": "Static main button color. Sets text and outline color for outlined buttons.",
+          "static_text_label": "Button text color",
+          "static_text_info": "Static button text color",
+          "hover_bg_label": "Button color hover/focus state",
+          "hover_bg_info": "Main button color on hover and focus",
+          "hover_text_label": "Button text hover/focus state",
+          "hover_text_info": "Text color on hover and focus",
+          "button_type_label": "Button type",
+          "button_type_info": "Primary/Solid or Secondary/Outlined"
         },
         "badges": {
           "header": "🌈 Badges",
