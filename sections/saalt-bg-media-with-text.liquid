@@ -68,7 +68,7 @@
   >
     {%- case section.settings.media_type -%}
       {%- when 'video' -%}
-        {%- render 'saalt-video-for-media-section', video_obj: section.settings.video -%}
+        {%- render 'saalt-video-for-media-section', video_obj: section.settings.video, is_bg_vid: true -%}
       {%- when 'image' -%}
         {%- render 'saalt-image-for-media-section', section: section, is_bg_img: true, device: 'desktop' -%}
         {%- render 'saalt-image-for-media-section', section: section, is_bg_img: true, device: 'mobile' -%}
@@ -145,10 +145,6 @@
   }
   #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image svg {
     height: 100%;
-    fill: {{ section.settings.text_color }};
-  }
-  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-content {
-    color: {{ section.settings.text_color }};
   }
   #section-{{ section.id }} .icons-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
     display: flex;
