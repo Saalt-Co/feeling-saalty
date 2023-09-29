@@ -2,7 +2,7 @@
     Renders an svg icon
 
     Accepts:
-    - color_fill: {Boolean} Triggers the addition or omission of the 'color-fill' class.
+    - color_fill: {Boolean} Triggers the addition or omission of the 'svg-color-fill' class.
                   This class is in 'base.css' and sets the fill color of the svg based on a
                   parent element having a 'theme-color-text-[number]' class set.
   Usage:
@@ -10,7 +10,7 @@
 {% endcomment %}
 {%- if icon != 'none' -%}
   <svg
-    class="icon icon-accordion{% if color_fill == true %} color-fill{% endif %}"
+    class="icon icon-accordion{% if color_fill == true %} svg-color-fill{% endif %}"
     aria-hidden="true"
     focusable="false"
     xmlns="http://www.w3.org/2000/svg"

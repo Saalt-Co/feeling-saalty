@@ -2,17 +2,17 @@
 {%- capture pad_icon -%}{% render "svg-pad" %}{%- endcapture -%}
 {%- capture drop_icon -%}{% render "svg-absorbency-drop" %}{%- endcapture -%}
 {%- assign drop_icon_filled = drop_icon
-  | replace: '<svg class="absorbency-icon"', '<svg class="absorbency-icon  drop-icon-filled color-fill"'
+  | replace: '<svg class="absorbency-icon"', '<svg class="absorbency-icon  drop-icon-filled"'
 -%}
 {%- assign drop_icon_empty = drop_icon
-  | replace: '<svg class="absorbency-icon"', '<svg class="absorbency-icon  drop-icon-empty color-fill"'
+  | replace: '<svg class="absorbency-icon"', '<svg class="absorbency-icon  drop-icon-empty"'
 -%}
 <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="section-headline-row">
   <div
     {% if section.settings.section_id != blank %}
       id="{{ section.settings.section_id | handleize }}"
     {% endif -%}
-    class="section-inner{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}"
+    class="section-inner{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }} svg-color-fill{% endif %}"
   >
     <div class="card card-1">
       <div class="card-header">
