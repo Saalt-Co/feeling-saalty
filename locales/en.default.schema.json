@@ -204,6 +204,9 @@
         "theme_default": {
           "label": "Theme default"
         },
+        "match_text": {
+          "label": "Match section text color"
+        },
         "transparent": {
           "label": "Transparent"
         },
@@ -252,8 +255,9 @@
         },
         "icons": {
           "header": "🌈 Icons",
-          "icons_color_label": "Icons svg color",
-          "icons_opacity_label": "Icons svg opacity",
+          "icons_color_label": "Icons color",
+          "icons_color_info": "This colors the svg as well as any optional text",
+          "icons_opacity_label": "Icons opacity",
           "icons_text_color_label": "Icons text color",
           "icons_text_opacity_label": "Icons text opacity"
         },
