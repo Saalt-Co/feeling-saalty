@@ -68,7 +68,7 @@
     {% if section.settings.section_id != blank %}
       id="{{ section.settings.section_id | handleize }}"
     {% endif -%}
-    class="section-inner"
+    class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }} svg-color-fill{% endif %}"
   >
     <div class="text-wrapper">
       {%- if block_count > 0 -%}
@@ -123,7 +123,7 @@
               </div>
               {%- capture tiles_wrapper_css -%}
               #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper .tile-title, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper .tile-content {
-                color: {{ block.settings.mobile_text_color }};
+                {% if block.settings.theme_color_mobile_text_color != "match_text" %}color: rgb(var({{ block.settings.theme_color_mobile_text_color }}));{% endif %}
                 width: 100%;
                 text-align: {{ block.settings.tile_mobile_text_alignment }};
               }
@@ -142,10 +142,10 @@
                   pointer-events: none;
                   transform: translateY(-50%);
                   transition: opacity ease-in-out .1s;
-                }
+                }{% if block.settings.theme_color_desktop_text_color != "match_text" %}
                 #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper .tile-title, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper .tile-content {
-                  color: {{ block.settings.desktop_text_color }};
-                }
+                  color: rgb(var({{ block.settings.theme_color_desktop_text_color }}));
+                }{% endif %}
                 #section-{{ section.id }} .section-inner .tiles-wrapper .tile .tile-link:hover + .tile-text-wrapper, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .tile-link:focus + .tile-text-wrapper {
                   top: 0;
                   transform: translateY(0);
@@ -155,7 +155,7 @@
                   text-align: {{ block.settings.tile_desktop_text_alignment }};
                 }
                 #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-link:hover + .tile-text-wrapper > .tile-title, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-link:focus + .tile-text-wrapper > .tile-title, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-link:hover + .tile-text-wrapper > .tile-content, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-link:focus + .tile-text-wrapper > .tile-content {
-                  color: {{ block.settings.desktop_text_hover_focus_color }};
+                  color: rgb(var({{ block.settings.theme_color_desktop_text_hover_focus_color }}));
                   align-content: {{ block.settings.desktop_text_hover_placement }};
                   text-align: {{ block.settings.tile_desktop_text_alignment_hover_focus }};
                 }
@@ -170,7 +170,7 @@
               {%- for block in section.blocks -%}
                 {%- case block.type -%}
                   {%- when 'section_icon_with_text' -%}
-                    {%- capture icon_code -%}{% render "saalt-svg-icon", icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text %}{%- endcapture -%}
+                    {%- capture icon_code -%}{% render "saalt-svg-icon", theme_color_text: section.settings.theme_color_text, icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text, icon_color: block.settings.theme_color_icon_color, icon_text_color: block.settings.theme_color_icon_text_color %}{%- endcapture -%}
                     {%- assign all_icons = all_icons | append: icon_code -%}
                 {%- endcase -%}
               {%- endfor -%}
@@ -551,16 +551,94 @@
       "content": "Text Settings"
     },
     {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background color",
-      "default": "#EEF0F4"
+      "type": "select",
+      "id": "theme_color_background",
+      "label": "t:settings_schema.theme_colors.settings.sections.background_color_label",
+      "info": "Sets the background color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-bg-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-bg-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-bg-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-bg-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-bg-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-bg-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-bg-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-bg-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
     },
     {
-      "type": "color",
-      "id": "section_text_color",
-      "label": "Section Text color",
-      "default": "#3F4759"
+      "type": "select",
+      "id": "theme_color_text",
+      "label": "t:settings_schema.theme_colors.settings.sections.text_color_label",
+      "info": "Sets the text color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-text-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-text-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-text-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-text-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-text-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-text-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-text-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-text-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
     },
     {
       "type": "select",
@@ -750,10 +828,48 @@
           "content": "Tile Text Settings"
         },
         {
-          "type": "color",
-          "id": "mobile_text_color",
+          "type": "select",
+          "id": "theme_color_mobile_text_color",
           "label": "Mobile Tile Text Color",
-          "default": "#3F4759"
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "--palette-color-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "--palette-color-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "--palette-color-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "--palette-color-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "--palette-color-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "--palette-color-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "--palette-color-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "--palette-color-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
         },
         {
           "type": "select",
@@ -780,17 +896,93 @@
           "default": "center"
         },
         {
-          "type": "color",
-          "id": "desktop_text_color",
+          "type": "select",
+          "id": "theme_color_desktop_text_color",
           "label": "Desktop Tile Text Color",
-          "default": "#3F4759"
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "--palette-color-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "--palette-color-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "--palette-color-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "--palette-color-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "--palette-color-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "--palette-color-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "--palette-color-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "--palette-color-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
         },
         {
-          "type": "color",
-          "id": "desktop_text_hover_focus_color",
+          "type": "select",
+          "id": "theme_color_desktop_text_hover_focus_color",
           "label": "Desktop Hover & Focus Color",
           "info": "The color of the tile's text during hover or focus",
-          "default": "#3F4759"
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "--palette-color-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "--palette-color-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "--palette-color-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "--palette-color-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "--palette-color-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "--palette-color-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "--palette-color-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "--palette-color-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
         },
         {
           "type": "select",
