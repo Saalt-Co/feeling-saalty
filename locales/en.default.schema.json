@@ -3379,17 +3379,8 @@
     "testimonial-slideshow": {
       "name": "Testimonial Slideshow",
       "settings": {
-        "layout": {
-          "label": "Layout",
-          "options__1": {
-            "label": "Full width"
-          },
-          "options__2": {
-            "label": "Grid"
-          }
-        },
-        "slide_height": {
-          "label": "Slide height",
+        "testimonial_height": {
+          "label": "Testimonial height",
           "options__1": {
             "label": "Adapt to image"
           },
