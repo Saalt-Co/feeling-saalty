@@ -1,3 +1,13 @@
+{% comment %}
+  Renders a reviews summary
+
+  Accepts:
+  - product: {Object} The current product
+  - block: {Object} The absorbency block
+
+  Usage:
+  {% render "reviews-summary", product: product, block: block %}
+{% endcomment %}
 {%- case settings.reviews_platform -%}
   {%- when 'yotpo' -%}
     <div
@@ -11,9 +21,10 @@
       data-image-url="{{ product.featured_image | image_url: 'large' | replace: '?', '%3F' | replace: '&', '%26' }}"
       data-description="{{ product.description | escape }}"
       data-bread-crumbs="{% for tag in product.tags %}{{ tag | escape }};{% endfor %}"
+      {{ block.shopify_attributes }}
     ></div>
   {%- when 'bazaarvoice' -%}
-    <div data-bv-show="rating_summary" data-bv-product-id="{{product.id}}"></div>
+    <div data-bv-show="rating_summary" data-bv-product-id="{{product.id}}" {{ block.shopify_attributes }}></div>
     {%- style -%}
       div[data-bv-show='inpage_submission']:empty {
         display: block;
