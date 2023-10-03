@@ -155,7 +155,7 @@
                   text-align: {{ block.settings.tile_desktop_text_alignment }};
                 }
                 #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-link:hover + .tile-text-wrapper > .tile-title, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-link:focus + .tile-text-wrapper > .tile-title, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-link:hover + .tile-text-wrapper > .tile-content, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-link:focus + .tile-text-wrapper > .tile-content {
-                  {% if theme_color_desktop_text_hover_focus_color != "match_text" %}color: rgb(var({{ block.settings.theme_color_desktop_text_hover_focus_color }}));{% endif %}
+                  {% if block.settings.theme_color_desktop_text_hover_focus_color != "match_text" %}color: rgb(var({{ block.settings.theme_color_desktop_text_hover_focus_color }}));{% endif %}
                   align-content: {{ block.settings.desktop_text_hover_placement }};
                   text-align: {{ block.settings.tile_desktop_text_alignment_hover_focus }};
                 }
