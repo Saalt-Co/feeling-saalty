@@ -268,10 +268,10 @@
         },
         "size_chart": {
           "header": "🌈 Size Chart",
-          "size_chart_color_1_label": "Size chart accent color",
-          "size_chart_opacity_1_label": "Size chart accent color opacity",
-          "size_chart_color_2_label": "Size chart accent color",
-          "size_chart_opacity_2_label": "Size chart accent color opacity"
+          "size_chart_color_1_label": "Size chart accent color 1",
+          "size_chart_opacity_1_label": "Size chart accent color 1 opacity",
+          "size_chart_color_2_label": "Size chart accent color 2",
+          "size_chart_opacity_2_label": "Size chart accent color 2 opacity"
         },
         "variant_options": {
           "header": "🌈 Variant Options",
