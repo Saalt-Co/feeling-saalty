@@ -87,16 +87,16 @@
               {%- if block.settings.text -%}
                 <div class="image-with-text__text rte {{ section.settings.text_style }}">{{ block.settings.text }}</div>
               {%- endif -%}
-              {%- if block.settings.button_label != blank -%}
+              {%- if block.settings.button_text != blank -%}
                 <a
-                  {% if block.settings.button_link == blank %}
+                  class="button{% render 'saalt-button-color-classes', obj: block %}"
+                  {% if block.settings.button_url == blank %}
                     role="link" aria-disabled="true"
                   {% else %}
-                    href="{{ block.settings.button_link }}"
+                    href="{{ block.settings.button_url }}"
                   {% endif %}
-                  class="button button--{{ section.settings.button_style }}"
                 >
-                  {{ block.settings.button_label | escape }}
+                  {{ block.settings.button_text | escape }}
                 </a>
               {%- endif -%}
             </div>
@@ -195,22 +195,6 @@
       ],
       "default": "body",
       "label": "t:sections.multirow.settings.text_style.label"
-    },
-    {
-      "type": "select",
-      "id": "button_style",
-      "options": [
-        {
-          "value": "primary",
-          "label": "t:sections.multirow.settings.button_style.options__1.label"
-        },
-        {
-          "value": "secondary",
-          "label": "t:sections.multirow.settings.button_style.options__2.label"
-        }
-      ],
-      "default": "secondary",
-      "label": "t:sections.multirow.settings.button_style.label"
     },
     {
       "type": "select",
@@ -535,16 +519,214 @@
           ],
           "default": "theme_default"
         },
+
         {
           "type": "text",
-          "id": "button_label",
-          "default": "Button label",
-          "label": "t:sections.multirow.blocks.row.settings.button_label.label"
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Button text"
         },
         {
           "type": "url",
-          "id": "button_link",
-          "label": "t:sections.multirow.blocks.row.settings.button_link.label"
+          "id": "button_url",
+          "label": "Button Destination"
+        },
+        {
+          "type": "select",
+          "id": "button_type",
+          "label": "t:settings_schema.theme_colors.settings.buttons.button_type_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.button_type_info",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary"
+            }
+          ],
+          "default": "primary"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_section_button_background",
+          "label": "t:settings_schema.theme_colors.settings.buttons.static_bg_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.static_bg_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-bg-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-bg-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-bg-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-bg-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-bg-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-bg-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-bg-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-bg-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_text_section_button_text",
+          "label": "t:settings_schema.theme_colors.settings.buttons.static_text_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.static_text_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_section_button_background_hover",
+          "label": "t:settings_schema.theme_colors.settings.buttons.hover_bg_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.hover_bg_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-bg-0-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-bg-1-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-bg-2-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-bg-3-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-bg-4-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-bg-5-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-bg-6-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-bg-7-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_text_section_button_text_hover",
+          "label": "t:settings_schema.theme_colors.settings.buttons.hover_text_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.hover_text_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-text-0-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
         }
       ]
     }
