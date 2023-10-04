@@ -319,6 +319,12 @@
           "cards_article_text_color_label": "Blog card text color",
           "cards_article_text_opacity_label": "Blog card text opacity"
         },
+        "multicolumn": {
+          "column_secondary_bg_color_label": "Secondary column background color",
+          "column_secondary_bg_color_info": "Sets the color of the secondary column background",
+          "column_secondary_bg_opacity_label": "Secondary column background opacity",
+          "column_secondary_bg_opacity_info": "Sets the color of the secondary column background"
+        },
         "sections": {
           "section_color_header": "Color settings for this section",
           "block_color_header": "Color settings for this block",
