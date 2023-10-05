@@ -21,7 +21,16 @@
                 {%- when 'section_button' -%}
                   {%- if block.settings.button_text != blank -%}
                     {%- capture button_code -%}
-                    <a href="{{ block.settings.button_url }}" class="button{% render 'saalt-button-color-classes', obj: block %}">{{ block.settings.button_text }}</a>
+                      <a
+                        class="button{% render 'saalt-button-color-classes', obj: block %}"
+                        {% if block.settings.button_url == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.button_url }}"
+                        {% endif %}
+                      >
+                        {{ block.settings.button_text | escape }}
+                      </a>
                     {%- endcapture -%}
                     {%- assign buttons_code = buttons_code | append: button_code -%}
                   {%- endif -%}
@@ -45,7 +54,7 @@
             {% style %}
               {{ buttons_group_css }}
             {% endstyle %}
-            <div class="button-group">
+            <div class="button-group" {{ block.shopify_attributes }}>
               {{ buttons_code }}
             </div>
           {%- when 'section_icon_group' -%}

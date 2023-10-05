@@ -165,7 +165,7 @@
             {% style %}
               {{ buttons_group_css }}
             {% endstyle %}
-            <div class="button-group">
+            <div class="button-group" {{ block.shopify_attributes }}>
               {{ buttons_code }}
             </div>
         {%- endcase -%}
