@@ -10,9 +10,10 @@
     letter-spacing: 0.04rem;
     cursor: pointer;
     text-decoration: underline;
+    text-underline-offset: calc(var(--buttons-border-offset) * 10);
   }
   button.size-chart-button:hover {
-    color: rgb(var(--color-link));
+    text-decoration-thickness: var(--buttons-border-width);
   }
   legend.has-size-chart {
     display: flex;
