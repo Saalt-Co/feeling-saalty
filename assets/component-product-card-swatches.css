@@ -54,13 +54,13 @@ product-card-swatches input[type='radio'] + label.variant_swatch:hover {
 product-card-swatches input[type='radio'] + label.variant_swatch .swatch-name-tooltip {
   display: block;
   position: absolute;
-  background: #ffffff;
+  background: rgb(var(--color-site-background));
   border-radius: 0.5rem;
   box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity));
   bottom: 60%;
   color: black;
   padding: 0.5rem 1rem;
-  font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 16px));
+  font-size: calc(var(--main-text-font-size) - (var(--default-text-font-size) - 16px));
   opacity: 0;
   pointer-events: none;
   white-space: nowrap;
@@ -78,7 +78,7 @@ product-card-swatches input[type='radio'] + label.variant_swatch .swatch-name-to
   border-bottom: 6px solid white;
   border-top: 6px solid transparent;
   border-left: 6px solid transparent;
-  box-shadow: 1px 1px 0 0 rgba(var(--color-foreground), var(--inputs-border-opacity));
+  box-shadow: 1px 1px 0 0 rgba(var(--color-main-text), var(--inputs-border-opacity));
   transform: translateX(-50%) rotate(45deg);
 }
 
@@ -105,17 +105,17 @@ product-card-swatches input[type='radio'] + label:before {
 }
 
 product-card-swatches input[type='radio'] + label:hover {
-  border-color: rgb(var(--color-foreground));
+  border-color: rgb(var(--color-button-primary-background));
 }
 
 product-card-swatches input[type='radio']:checked + label {
-  background-color: rgb(var(--color-foreground));
-  color: rgb(var(--color-background));
+  background-color: rgb(var(--color-button-primary-background));
+  color: rgb(var(--color-button-primary-text));
 }
 
 product-card-swatches input[type='radio']:checked + label.variant_swatch {
-  border-color: rgb(var(--color-foreground));
-  box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgb(var(--color-foreground));
+  border-color: rgb(var(--color-button-primary-background));
+  box-shadow: 0 0 0 2px rgb(var(--color-site-background)), 0 0 0 4px rgb(var(--color-button-primary-background));
 }
 
 product-card-swatches input[type='radio']:not(.disabled) + label > .visually-hidden {

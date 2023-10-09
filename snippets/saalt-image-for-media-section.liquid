@@ -1,39 +1,40 @@
 {%- if is_bg_img -%}
   {%- case device -%}
-    {%- when "desktop" -%}
+    {%- when 'desktop' -%}
       {%- assign img_width_attr = 2400 -%}
     {%- else -%}
       {%- assign img_width_attr = 1200 -%}
   {%- endcase -%}
   {%- capture img_sizes_attr -%}100vw{%- endcapture -%}
-{%- else -%}  
+{%- else -%}
   {%- capture img_sizes_attr -%}(min-width: 750px) {{ section.settings.media_width | append: "vw" }}, 100vw{%- endcapture -%}
   {%- assign img_width_attr = section.settings.media_width | times: 50 -%}
 {%- endif -%}
-{%- if device == "desktop" -%}
-  {%- assign  additional_class = " desktop" -%}
-  {%- assign  image_obj = section.settings.desktop_image -%}
-{%- elsif device == "mobile" -%}
-  {%- assign  additional_class = " mobile" -%}
-  {%- assign  image_obj = section.settings.mobile_image -%}
+{%- if device == 'desktop' -%}
+  {%- assign additional_class = ' desktop' -%}
+  {%- assign image_obj = section.settings.desktop_image -%}
+{%- elsif device == 'mobile' -%}
+  {%- assign additional_class = ' mobile' -%}
+  {%- assign image_obj = section.settings.mobile_image -%}
 {%- else -%}
   {%- assign image_obj = section.settings.image -%}
 {%- endif -%}
 <div class="media-wrapper image-wrapper{{ additional_class }}">
   {%- if image_obj != blank -%}
-    {{ image_obj 
-      | image_url: width: img_width_attr 
+    {{
+      image_obj
+      | image_url: width: img_width_attr
       | image_tag:
-          class: "image-element",
-          loading: "lazy",
-          width: 1,
-          height: 1,
-          sizes: img_sizes_attr,
-          alt: image_obj.alt
+        class: 'image-element',
+        loading: 'lazy',
+        width: 1,
+        height: 1,
+        sizes: img_sizes_attr,
+        alt: image_obj.alt
     }}
   {%- elsif is_bg_img -%}
-    {{ "lifestyle-2" | placeholder_svg_tag }}
+    <div class="shopify-placeholder">{{ 'lifestyle-2' | placeholder_svg_tag }}</div>
   {%- else -%}
-    {{ "collection-1" | placeholder_svg_tag }}
+    {{ 'collection-1' | placeholder_svg_tag }}
   {%- endif -%}
 </div>

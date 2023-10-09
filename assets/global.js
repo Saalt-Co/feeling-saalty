@@ -881,14 +881,14 @@ class TestimonialComponent extends SlideshowComponent {
     this.sliderControlLinksArray = Array.from(this.sliderControlWrapper.querySelectorAll('.slider-counter__link'));
     this.sliderControlLinksArray.forEach((link) => link.addEventListener('click', super.linkToSlide.bind(this)));
     this.slider.addEventListener('scroll', super.setSlideVisibility.bind(this));
-    super.setSlideVisibility();
+    super.setSlideVisibility.bind(this);
 
     this.reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     this.reducedMotion.addEventListener('change', () => {
-      if (this.slider.getAttribute('data-autoplay') === 'true') super.setAutoPlay();
+      if (this.slider.getAttribute('data-autoplay') === 'true') super.setAutoPlay.bind(this);
     });
 
-    if (this.slider.getAttribute('data-autoplay') === 'true') super.setAutoPlay();
+    if (this.slider.getAttribute('data-autoplay') === 'true') super.setAutoPlay.bind(this);
   }
 }
 
@@ -1309,6 +1309,11 @@ const a11yEsc = (e) => {
 };
 // END -- A11YESC -- END //
 // START -- WAIT FOR ELEMENT TO EXIST -- START //
+/**
+ *
+ * @param {*} selector The element to wait for
+ * @returns a resolved Promise
+ */
 function waitForElementToExist(selector) {
   return new Promise((resolve) => {
     if (document.querySelector(selector)) {

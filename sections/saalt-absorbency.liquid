@@ -12,14 +12,14 @@
     {% if section.settings.section_id != blank %}
       id="{{ section.settings.section_id | handleize }}"
     {% endif -%}
-    class="section-inner"
+    class="section-inner{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }} svg-color-fill{% endif %}"
   >
     <div class="card card-1">
       <div class="card-header">
         <div class="card-title-wrapper">
           <h3 class="card-title">Light Absorbency</h3>
         </div>
-        <div class="absorbency-icon-wrapper">
+        <div class="absorbency-icon-wrapper{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}">
           {%- for iter in (1..section.settings.light_absorbency_level) -%}
             {{ drop_icon_filled }}
           {%- endfor -%}
@@ -63,7 +63,7 @@
       <div class="button-wrapper">
         <a
           href="{{ section.settings.light_absorbency_button_url }}"
-          class="card-button button{% if section.settings.button_style == "alt" %} alt{% endif %}"
+          class="card-button button{% render 'saalt-button-color-classes', obj: section %}"
         >
           {{- section.settings.light_absorbency_button_text -}}
         </a>
@@ -118,7 +118,7 @@
       <div class="button-wrapper">
         <a
           href="{{ section.settings.regular_absorbency_button_url }}"
-          class="card-button button{% if section.settings.button_style == "alt" %} alt{% endif %}"
+          class="card-button button{% render 'saalt-button-color-classes', obj: section %}"
         >
           {{- section.settings.regular_absorbency_button_text -}}
         </a>
@@ -172,7 +172,7 @@
       <div class="button-wrapper">
         <a
           href="{{ section.settings.heavy_absorbency_button_url }}"
-          class="card-button button{% if section.settings.button_style == "alt" %} alt{% endif %}"
+          class="card-button button{% render 'saalt-button-color-classes', obj: section %}"
         >
           {{- section.settings.heavy_absorbency_button_text -}}
         </a>
@@ -184,13 +184,7 @@
 {%- style -%}
   #section-{{ section.id }} {
     position: relative;
-    background: {{ section.settings.background_color }};
-    color: {{ section.settings.text_color }};
     overflow: hidden;
-  }
-
-  #section-{{ section.id }} .section-inner .card .card-header .card-title-wrapper .card-title {
-    color: {{ section.settings.text_color }};
   }
 
   #section-{{ section.id }} .section-inner, #section-{{ section.id }} .section-inner .card, #section-{{ section.id }} .section-inner .card .card-header, #section-{{ section.id }} .section-inner .card .absorbency-icon-wrapper, #section-{{ section.id }} .section-inner .card .content-wrapper, #section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper, #section-{{ section.id }} .section-inner .card .hold-capacity-icons-wrapper, #section-{{ section.id }} .section-inner .card .hold-capacity-icons-wrapper .icon-wrapper, #section-{{ section.id }} .section-inner .card .content-wrapper .best-for-wrapper {
@@ -247,13 +241,10 @@
     height: auto;
     width: 12px;
     stroke-width: 3px;
-    stroke: {{ section.settings.text_color }};
-    fill: {{ section.settings.text_color }};
     opacity: .3;
   }
 
   #section-{{ section.id }} .section-inner .card .card-header .absorbency-icon-wrapper .absorbency-icon.drop-icon-filled {
-    fill: {{ section.settings.text_color }};
     opacity: 1;
   }
 
@@ -263,7 +254,7 @@
     margin: 0 auto 9rem;
   }
 
-  {%- render 'saalt-custom-section-button-css', section: section -%}
+  {%- render 'saalt-custom-section-button-css' -%}
 
   #section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper, #section-{{ section.id }} .section-inner .card .content-wrapper .best-for-wrapper {
     text-align: center;
@@ -286,8 +277,6 @@
     max-width: 100%;
     max-height: 48px;
     stroke-width: 1.5px;
-    stroke: {{ section.settings.text_color }};
-    fill: {{ section.settings.text_color }};
   }
 
   #section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper .hold-capacity-text, #section-{{ section.id }} .section-inner .card .content-wrapper .best-for-wrapper .best-for-text {
@@ -377,16 +366,49 @@
       "content": "Section styling"
     },
     {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background color",
-      "default": "#F7D6C5"
-    },
-    {
-      "type": "color",
-      "id": "text_color",
-      "label": "Text color",
-      "default": "#575E6E"
+      "type": "select",
+      "id": "theme_color_text",
+      "label": "t:settings_schema.theme_colors.settings.sections.text_color_label",
+      "info": "Sets the text color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-text-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-text-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-text-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-text-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-text-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-text-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-text-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-text-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
     },
     {
       "type": "header",
@@ -394,37 +416,200 @@
     },
     {
       "type": "select",
-      "id": "button_style",
-      "label": "Button style",
+      "id": "button_type",
+      "label": "t:settings_schema.theme_colors.settings.buttons.button_type_label",
+      "info": "t:settings_schema.theme_colors.settings.buttons.button_type_info",
       "options": [
         {
           "value": "primary",
           "label": "Primary"
         },
         {
-          "value": "alt",
-          "label": "Alt"
+          "value": "secondary",
+          "label": "Secondary"
         }
       ],
       "default": "primary"
     },
     {
-      "type": "color",
-      "id": "button_color",
-      "label": "Button color",
-      "default": "#F7D6C5"
+      "type": "select",
+      "id": "theme_color_section_button_background",
+      "label": "t:settings_schema.theme_colors.settings.buttons.static_bg_label",
+      "info": "t:settings_schema.theme_colors.settings.buttons.static_bg_info",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-bg-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-bg-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-bg-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-bg-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-bg-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-bg-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-bg-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-bg-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
     },
     {
-      "type": "color",
-      "id": "button_color_hover_focus",
-      "label": "Button *HOVER* and *FOCUS* color",
-      "default": "#ffc4b2"
+      "type": "select",
+      "id": "theme_color_text_section_button_text",
+      "label": "t:settings_schema.theme_colors.settings.buttons.static_text_label",
+      "info": "t:settings_schema.theme_colors.settings.buttons.static_text_info",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-text-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-text-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-text-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-text-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-text-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-text-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-text-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-text-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
     },
     {
-      "type": "color",
-      "id": "button_text_color",
-      "label": "Button text color",
-      "default": "#575E6E"
+      "type": "select",
+      "id": "theme_color_section_button_background_hover",
+      "label": "t:settings_schema.theme_colors.settings.buttons.hover_bg_label",
+      "info": "t:settings_schema.theme_colors.settings.buttons.hover_bg_info",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-bg-0-hover",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-bg-1-hover",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-bg-2-hover",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-bg-3-hover",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-bg-4-hover",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-bg-5-hover",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-bg-6-hover",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-bg-7-hover",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
+    },
+    {
+      "type": "select",
+      "id": "theme_color_text_section_button_text_hover",
+      "label": "t:settings_schema.theme_colors.settings.buttons.hover_text_label",
+      "info": "t:settings_schema.theme_colors.settings.buttons.hover_text_info",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-text-0-hover",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-text-1-hover",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-text-2-hover",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-text-3-hover",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-text-4-hover",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-text-5-hover",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-text-6-hover",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-text-7-hover",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
     },
     {
       "type": "header",
