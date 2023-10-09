@@ -1,9 +1,19 @@
+{% comment %}
+  Renders a product's absorbency rating
+
+  Accepts:
+  - product: {Object} The current product
+  - block: {Object} The absorbency block
+
+  Usage:
+  {% render "product-absorbency", product: product, block: block %}
+{% endcomment %}
 {% for option in product.options_with_values %}
   {%- if option.name == 'Absorbency' -%}
     {%- assign absorbency_opt_index = forloop.index0 -%}
     {%- assign absorbency_val = option.selected_value -%}
     {%- assign drops_count = shop.metaobjects.absorbency[absorbency_val].number_of_drops -%}
-    <div class="absorbency-wrapper">
+    <div class="absorbency-wrapper" {{ block.shopify_attributes }}>
       <span class="absorbency-rating"
         ><span class="absorbency-name">{{ absorbency_val }}</span> Absorbency</span
       >

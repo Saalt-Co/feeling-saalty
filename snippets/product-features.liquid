@@ -1,3 +1,14 @@
+{% comment %}
+  Renders a list of product features
+
+  Accepts:
+  - product: {Object} The current product
+  - section: {Object} The product information section
+  - block: {Object} The product features block
+
+  Usage:
+  {% render "product-features", product: product, section: section, block: block %}
+{% endcomment %}
 {% style %}
   #MainProduct-{{ section.id }} .icons-wrapper {
     display: flex;
@@ -56,7 +67,10 @@
 {% endstyle %}
 {%- if product.metafields.saalt.product_features.value != blank -%}
   {%- assign product_features = product.metafields.saalt.product_features.value -%}
-  <ul class="icons-wrapper{% if block.settings.product_features_orientation == 'horizontal' %} horizontal{% endif %}">
+  <ul
+    class="icons-wrapper{% if block.settings.product_features_orientation == 'horizontal' %} horizontal{% endif %}"
+    {{ block.shopify_attributes }}
+  >
     {% for feature in product_features %}
       {% render 'saalt-svg-icon', icon_svg: feature.product_feature_svg, icon_text: feature.product_feature_text %}
     {% endfor %}
