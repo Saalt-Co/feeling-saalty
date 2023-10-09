@@ -20,8 +20,17 @@
               {%- case block.type -%}
                 {%- when 'section_button' -%}
                   {%- if block.settings.button_text != blank -%}
-                    {%- capture button_code -%}                      
-                    <a href="{{ block.settings.button_url }}" class="button{% if block.settings.button_style == "alt" %} alt{% endif %}">{{ block.settings.button_text }}</a>
+                    {%- capture button_code -%}
+                      <a
+                        class="button{% render 'saalt-button-color-classes', obj: block %}"
+                        {% if block.settings.button_url == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.button_url }}"
+                        {% endif %}
+                      >
+                        {{ block.settings.button_text | escape }}
+                      </a>
                     {%- endcapture -%}
                     {%- assign buttons_code = buttons_code | append: button_code -%}
                   {%- endif -%}
@@ -45,14 +54,14 @@
             {% style %}
               {{ buttons_group_css }}
             {% endstyle %}
-            <div class="button-group">
+            <div class="button-group" {{ block.shopify_attributes }}>
               {{ buttons_code }}
             </div>
           {%- when 'section_icon_group' -%}
             {%- for block in section.blocks -%}
               {%- case block.type -%}
                 {%- when 'section_icon_with_text' -%}
-                  {%- capture icon_code -%}{% render "saalt-svg-icon", icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text %}{%- endcapture -%}
+                  {%- capture icon_code -%}{% render "saalt-svg-icon", theme_color_text: section.settings.theme_color_text, icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text, icon_color: block.settings.theme_color_icon_color, icon_text_color: block.settings.theme_color_icon_text_color %}{%- endcapture -%}
                   {%- assign all_icons = all_icons | append: icon_code -%}
               {%- endcase -%}
             {%- endfor -%}

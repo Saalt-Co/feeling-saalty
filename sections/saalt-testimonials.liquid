@@ -1,10 +1,32 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
-
+{%- liquid
+  if section.settings.theme_color_text != 'theme_default'
+    assign color_class_num = section.settings.theme_color_text | slice: -1, 1
+    assign text_color = ' --palette-color-' | append: color_class_num
+  else
+    assign text_color = ' --color-main-text'
+  endif
+-%}
 {%- style -%}
-  testimonial-component {
-    background: {{ section.settings.bg_color }};
+  #section-{{ section.id }} .slider-counter__link--dots .dot, #section-{{ section.id }} .slider-counter__link--dots:not(.slider-counter__link--active):hover .dot {
+    border: 0.1rem solid rgba(var({{ text_color }}), 0.5);
+  }
+  #section-{{ section.id }} .slider-counter__link--active.slider-counter__link--numbers, #section-{{ section.id }} .slider-counter__link--numbers:hover {
+    color: rgb(var({{ text_color }}));
+  }
+  #section-{{ section.id }} .slider-counter__link--active.slider-counter__link--numbers {
+    text-decoration: underline;
+  }
+  #section-{{ section.id }} .slider-counter__link--active.slider-counter__link--dots .dot {
+    background-color: rgb(var({{ text_color }}));
+  }
+  #section-{{ section.id }} .slideshow__autoplay .icon.icon-play,
+  #section-{{ section.id }} .slideshow__autoplay .icon.icon-pause,
+  #section-{{ section.id }} .slideshow__autoplay .icon.icon-play path,
+  #section-{{ section.id }} .slideshow__autoplay .icon.icon-pause path {
+    fill: rgb(var({{ text_color }}));
   }
   {%- if section.settings.slide_height == 'adapt_image' and section.settings.image != blank -%}
     @media screen and (max-width: 749px) {
@@ -29,7 +51,8 @@
 {%- endstyle -%}
 
 <testimonial-component
-  class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}"
+  id="section-{{ section.id }}"
+  class="slider-mobile-gutter{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }} svg-color-fill{% endif %}"
   role="region"
   aria-roledescription="{{ 'sections.testimonial-slideshow.carousel' | t }}"
   aria-label="{{ section.settings.accessibility_info | escape }}"
@@ -263,43 +286,27 @@
   "settings": [
     {
       "type": "select",
-      "id": "layout",
-      "options": [
-        {
-          "value": "full_bleed",
-          "label": "t:sections.testimonial-slideshow.settings.layout.options__1.label"
-        },
-        {
-          "value": "grid",
-          "label": "t:sections.testimonial-slideshow.settings.layout.options__2.label"
-        }
-      ],
-      "default": "full_bleed",
-      "label": "t:sections.testimonial-slideshow.settings.layout.label"
-    },
-    {
-      "type": "select",
       "id": "slide_height",
       "options": [
         {
           "value": "adapt_image",
-          "label": "t:sections.testimonial-slideshow.settings.slide_height.options__1.label"
+          "label": "t:sections.testimonial-slideshow.settings.testimonial_height.options__1.label"
         },
         {
           "value": "small",
-          "label": "t:sections.testimonial-slideshow.settings.slide_height.options__2.label"
+          "label": "t:sections.testimonial-slideshow.settings.testimonial_height.options__2.label"
         },
         {
           "value": "medium",
-          "label": "t:sections.testimonial-slideshow.settings.slide_height.options__3.label"
+          "label": "t:sections.testimonial-slideshow.settings.testimonial_height.options__3.label"
         },
         {
           "value": "large",
-          "label": "t:sections.testimonial-slideshow.settings.slide_height.options__4.label"
+          "label": "t:sections.testimonial-slideshow.settings.testimonial_height.options__4.label"
         }
       ],
-      "default": "medium",
-      "label": "t:sections.testimonial-slideshow.settings.slide_height.label"
+      "default": "adapt_image",
+      "label": "t:sections.testimonial-slideshow.settings.testimonial_height.label"
     },
     {
       "type": "select",
@@ -338,14 +345,98 @@
       "default": 5
     },
     {
-      "type": "header",
-      "content": "t:sections.testimonial-slideshow.settings.background.label"
+      "type": "select",
+      "id": "theme_color_background",
+      "label": "t:settings_schema.theme_colors.settings.sections.background_color_label",
+      "info": "Sets the background color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-bg-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-bg-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-bg-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-bg-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-bg-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-bg-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-bg-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-bg-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
     },
     {
-      "type": "color_background",
-      "id": "bg_color",
-      "label": "t:sections.testimonial-slideshow.settings.background_color.label",
-      "info": "t:sections.testimonial-slideshow.settings.background_color.info"
+      "type": "select",
+      "id": "theme_color_text",
+      "label": "t:settings_schema.theme_colors.settings.sections.text_color_label",
+      "info": "Sets the text color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-text-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-text-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-text-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-text-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-text-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-text-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-text-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-text-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.testimonial-slideshow.settings.background.label"
     },
     {
       "type": "checkbox",

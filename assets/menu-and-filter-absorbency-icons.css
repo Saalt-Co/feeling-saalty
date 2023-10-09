@@ -60,7 +60,7 @@ a.menu-drawer__menu-item .absorbency-drops_inner-icon-wrapper svg.absorbency-ico
 .absorbency-drops_icons-wrapper .absorbency-drops_inner-icon-wrapper.empty svg.absorbency-icon {
   fill: transparent;
   color: transparent;
-  stroke: rgba(var(--color-foreground), 0.75);
+  stroke: rgba(var(--color-icons), var(--color-icons-opacity));
   stroke-width: 1.75rem;
 }
 
