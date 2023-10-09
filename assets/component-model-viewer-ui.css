@@ -4,7 +4,7 @@
 }
 
 .shopify-model-viewer-ui .shopify-model-viewer-ui__button {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-main-text), var(--color-main-text-opacity));
 }
 
 .shopify-model-viewer-ui .shopify-model-viewer-ui__button--control:hover {

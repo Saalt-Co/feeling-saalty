@@ -48,7 +48,7 @@ fit-range .range-wrapper > .range-text:after {
   content: '';
   display: block;
   position: absolute;
-  background: rgb(var(--color-base-text), 0.75);
+  background: rgb(var(--color-main-text), 0.75);
   width: 1px;
   height: 2rem;
   margin-left: 0.75rem;
@@ -63,7 +63,7 @@ fit-range .range-wrapper .range-wrapper-inner {
 }
 
 fit-range .range-wrapper .range-wrapper-inner .range-bar {
-  background: rgba(var(--color-foreground), 0.75);
+  background: rgba(var(--color-main-text), var(--color-main-text-opacity));
   max-width: 48%;
   height: 0.125rem;
   flex: 3 3 0;
@@ -78,7 +78,7 @@ fit-range .range-wrapper .range-wrapper-inner .range-bar {
 fit-range .range-wrapper .range-bar .range-marker {
   display: block;
   position: absolute;
-  background: rgb(var(--color-base-text));
+  background: rgb(var(--color-main-text));
   width: 3px;
   height: 1rem;
   margin-left: -1px;
