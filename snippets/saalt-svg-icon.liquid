@@ -1,15 +1,44 @@
+{% comment %}
+  Renders an svg icon
+
+  Accepts:
+  - theme_color_text: {String} The text color class assigned to the parent section (optional)
+  - icon_svg: {String} Block-level svg code
+  - icon_text: {String} Block-level text (optional)
+  - icon_color: {String} Block-level svg color using 'text-color' and 'svg-color-fill' classes (optional)
+  - icon_text_color: {String} Block-level svg text color using 'text-color' and 'svg-color-fill'
+    classes (optional)
+
+  Usage:
+  {% render "saalt-svg-icon", theme_color_text: section.settings.theme_color_text, icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text, icon_color: block.settings.theme_color_icon_color, icon_text_color: block.settings.theme_color_icon_text_color %}
+{% endcomment %}
+
+{%- liquid
+  if icon_color and icon_color != 'match_text'
+    assign icon_classes = ' '
+    if icon_color != theme_color_text
+      assign icon_classes = icon_classes | append: icon_color | append: ' svg-color-fill'
+    endif
+  endif
+  if icon_text_color and icon_text_color != 'match_text'
+    assign icon_text_class = ' '
+    if icon_text_color != theme_color_text
+      assign icon_text_class = icon_text_class | append: icon_text_color
+    endif
+  endif
+-%}
 <li class="icon-wrapper">
   {%- if icon_svg != blank or icon_svg != '' -%}
-    <div class="icon-svg-wrapper">
+    <div class="icon-svg-wrapper{{ icon_classes }}">
       {{ icon_svg }}
     </div>
   {%- else -%}
-    <div class="icon-svg-wrapper">
+    <div class="icon-svg-wrapper{{ icon_classes }}">
       {{ 'product-1' | placeholder_svg_tag }}
     </div>
   {%- endif -%}
   {%- if icon_text != blank -%}
-    <span class="icon-text">
+    <span class="icon-text{{ icon_text_class }}">
       {{- icon_text -}}
     </span>
   {%- endif -%}
