@@ -17,7 +17,8 @@
         "announcement-bar-0"
       ],
       "settings": {
-        "color_scheme": "accent-1",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
         "show_line_separator": true,
         "auto_rotate": false,
         "change_slides_speed": 5
@@ -29,9 +30,11 @@
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
-        "sticky_header_type": "on-scroll-up",
+        "sticky_header_type": "always",
         "show_line_separator": true,
-        "color_scheme": "background-1",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "search_input_opacity": 25,
         "enable_country_selector": true,
         "enable_language_selector": true,
         "mobile_logo_position": "center",
