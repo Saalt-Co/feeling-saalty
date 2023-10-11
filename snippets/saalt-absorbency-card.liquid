@@ -35,11 +35,15 @@
     </div>
     <div class="absorbency-icon-wrapper svg-color-fill">
       {%- for iter in (1..abs_entry.number_of_drops) -%}
-        {{ drop_icon_filled }}
+        {%- if iter <= max_num_of_drops -%}
+          {{ drop_icon_filled }}
+        {%- endif -%}
       {%- endfor -%}
       {%- assign drop_iter_diff = max_num_of_drops | minus: abs_entry.number_of_drops -%}
       {%- for iter in (1..drop_iter_diff) -%}
-        {{ drop_icon_empty }}
+        {%- if iter <= max_num_of_drops -%}
+          {{ drop_icon_empty }}
+        {%- endif -%}
       {%- endfor -%}
     </div>
   </div>
