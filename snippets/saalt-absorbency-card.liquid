@@ -1,0 +1,85 @@
+{% comment %}
+  Renders a card within the absorbency chart
+
+  Accepts:
+
+  - block: {Object} The block object for the given absorbency
+  - index: {Number} The index of the forloop to generate absorbency cards
+  - tampon_icon: {String} A captured string of the tampon icon's svg code
+  - pad_icon: {String} A captured string of the pad icon's svg code
+  - drop_icon_filled: {String}
+  - drop_icon_empty: {String}
+  - max_num_of_drops: {Number}
+  - bg_opacity: {Number}
+
+  Usage:
+  {% render "saalt-absorbency-card", block: block, index: index, tampon_icon: tampon_icon, pad_icon: pad_icon, drop_icon_filled: drop_icon_filled, drop_icon_empty: drop_icon_empty, max_num_of_drops: section.settings.max_num_of_drops, bg_opacity: bg_opacity %}
+{% endcomment %}
+
+{%- liquid
+  assign name_downcased = block.settings.absorbency_name | downcase
+  assign trimmed_name = name_downcased | remove: ' ' | remove: 'absorbency' | strip | capitalize
+  assign abs_entry = shop.metaobjects.absorbency[trimmed_name]
+-%}
+
+<div
+  class="card card-{{ index }}{% if block.settings.theme_color_card_text != 'theme_default' %} {{ block.settings.theme_color_card_text }} svg-color-fill{% endif %}"
+  {% if block.settings.theme_color_card_background != 'theme_default' %}
+    style="background: rgba(var({{ block.settings.theme_color_card_background }}), {{ bg_opacity }}%)"
+  {% endif %}
+  {{ block.shopify_attributes }}
+>
+  <div class="card-header">
+    <div class="card-title-wrapper">
+      <h3 class="card-title">{{ trimmed_name }} Absorbency</h3>
+    </div>
+    <div class="absorbency-icon-wrapper svg-color-fill">
+      {%- for iter in (1..abs_entry.number_of_drops) -%}
+        {{ drop_icon_filled }}
+      {%- endfor -%}
+      {%- assign drop_iter_diff = max_num_of_drops | minus: abs_entry.number_of_drops -%}
+      {%- for iter in (1..drop_iter_diff) -%}
+        {{ drop_icon_empty }}
+      {%- endfor -%}
+    </div>
+  </div>
+  <div class="content-wrapper">
+    <div class="hold-capacity-wrapper">
+      <div class="hold-capacity-text">Holds up to:</div>
+      <div class="hold-capacity-icons-wrapper">
+        <div class="icon-wrapper tampon-wrapper">
+          <div class="tampon-icon">
+            {{ tampon_icon }}
+          </div>
+          <div class="tampon-text">{{ abs_entry.tampons_replaced }}</div>
+        </div>
+        <div class="icon-wrapper pad-wrapper">
+          <div class="pad-icon">
+            {{ pad_icon }}
+          </div>
+          <div class="pad-text">{{ abs_entry.pads_replaced }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="best-for-wrapper">
+      <div class="best-for-text">Best for:</div>
+      <ul class="uses-grid">
+        {%- for use in abs_entry.absorbency_uses.value -%}
+          <li class="use">{{ use }}</li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+  <div class="button-wrapper">
+    <a
+      class="card-button button{% render 'saalt-button-color-classes', obj: block %}"
+      {% if block.settings.button_url == blank %}
+        role="link" aria-disabled="true"
+      {% else %}
+        href="{{ block.settings.button_url }}"
+      {% endif %}
+    >
+      {{ block.settings.button_text | escape }}
+    </a>
+  </div>
+</div>
