@@ -7,177 +7,33 @@
 {%- assign drop_icon_empty = drop_icon
   | replace: '<svg class="absorbency-icon"', '<svg class="absorbency-icon  drop-icon-empty"'
 -%}
-<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="section-headline-row">
+<section
+  id="section-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  class="section-headline-row{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}"
+  {{ block.shopify_attributes }}
+>
   <div
     {% if section.settings.section_id != blank %}
       id="{{ section.settings.section_id | handleize }}"
     {% endif -%}
-    class="section-inner{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }} svg-color-fill{% endif %}"
+    class="section-inner"
   >
-    <div class="card card-1">
-      <div class="card-header">
-        <div class="card-title-wrapper">
-          <h3 class="card-title">Light Absorbency</h3>
-        </div>
-        <div class="absorbency-icon-wrapper{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}">
-          {%- for iter in (1..section.settings.light_absorbency_level) -%}
-            {{ drop_icon_filled }}
-          {%- endfor -%}
-          {%- assign light_drop_iter_diff = 4 | minus: section.settings.light_absorbency_level -%}
-          {%- for iter in (1..light_drop_iter_diff) -%}
-            {{ drop_icon_empty }}
-          {%- endfor -%}
-        </div>
-      </div>
-      <div class="content-wrapper">
-        <div class="hold-capacity-wrapper">
-          <div class="hold-capacity-text">Holds up to:</div>
-          <div class="hold-capacity-icons-wrapper">
-            <div class="icon-wrapper tampon-wrapper">
-              <div class="tampon-icon">
-                {{ tampon_icon }}
-              </div>
-              <div class="tampon-text">1-2 tampons</div>
-            </div>
-            <div class="icon-wrapper pad-wrapper">
-              <div class="pad-icon">
-                {{ pad_icon }}
-              </div>
-              <div class="pad-text">
-                1 pad<br>
-                or liner
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="best-for-wrapper">
-          <div class="best-for-text">Best for:</div>
-          <ul class="uses-grid">
-            <li class="use">Sweat and discharge</li>
-            <li class="use">Worry-free backup to a cup, disc or tampon</li>
-            <li class="use">Light flow days and spotting</li>
-            <li class="use">Pantyliner replacement</li>
-          </ul>
-        </div>
-      </div>
-      <div class="button-wrapper">
-        <a
-          href="{{ section.settings.light_absorbency_button_url }}"
-          class="card-button button{% render 'saalt-button-color-classes', obj: section %}"
-        >
-          {{- section.settings.light_absorbency_button_text -}}
-        </a>
-      </div>
-    </div>
-    <div class="card card-2">
-      <div class="card-header">
-        <div class="card-title-wrapper">
-          <h3 class="card-title">Regular Absorbency</h3>
-        </div>
-        <div class="absorbency-icon-wrapper">
-          {%- for iter in (1..section.settings.regular_absorbency_level) -%}
-            {{ drop_icon_filled }}
-          {%- endfor -%}
-          {%- assign regular_drop_iter_diff = 4 | minus: section.settings.regular_absorbency_level -%}
-          {%- for iter in (1..regular_drop_iter_diff) -%}
-            {{ drop_icon_empty }}
-          {%- endfor -%}
-        </div>
-      </div>
-      <div class="content-wrapper">
-        <div class="hold-capacity-wrapper">
-          <div class="hold-capacity-text">Holds up to:</div>
-          <div class="hold-capacity-icons-wrapper">
-            <div class="icon-wrapper tampon-wrapper">
-              <div class="tampon-icon">
-                {{ tampon_icon }}
-              </div>
-              <div class="tampon-text">
-                2-3<br>
-                tampons
-              </div>
-            </div>
-            <div class="icon-wrapper pad-wrapper">
-              <div class="pad-icon">
-                {{ pad_icon }}
-              </div>
-              <div class="pad-text">2 pads</div>
-            </div>
-          </div>
-        </div>
-        <div class="best-for-wrapper">
-          <div class="best-for-text">Best for:</div>
-          <ul class="uses-grid">
-            <li class="use">Sweat and discharge</li>
-            <li class="use">Worry-free backup to a cup, disc or tampon</li>
-            <li class="use">Regular period flow</li>
-            <li class="use">Light bladder leaks</li>
-          </ul>
-        </div>
-      </div>
-      <div class="button-wrapper">
-        <a
-          href="{{ section.settings.regular_absorbency_button_url }}"
-          class="card-button button{% render 'saalt-button-color-classes', obj: section %}"
-        >
-          {{- section.settings.regular_absorbency_button_text -}}
-        </a>
-      </div>
-    </div>
-    <div class="card card-3">
-      <div class="card-header">
-        <div class="card-title-wrapper">
-          <h3 class="card-title">Heavy Absorbency</h3>
-        </div>
-        <div class="absorbency-icon-wrapper">
-          {%- for iter in (1..section.settings.heavy_absorbency_level) -%}
-            {{ drop_icon_filled }}
-          {%- endfor -%}
-          {%- assign heavy_drop_iter_diff = 4 | minus: section.settings.heavy_absorbency_level -%}
-          {%- for iter in (1..heavy_drop_iter_diff) -%}
-            {{ drop_icon_empty }}
-          {%- endfor -%}
-        </div>
-      </div>
-      <div class="content-wrapper">
-        <div class="hold-capacity-wrapper">
-          <div class="hold-capacity-text">Holds up to:</div>
-          <div class="hold-capacity-icons-wrapper">
-            <div class="icon-wrapper tampon-wrapper">
-              <div class="tampon-icon">
-                {{ tampon_icon }}
-              </div>
-              <div class="tampon-text">3-4 tampons</div>
-            </div>
-            <div class="icon-wrapper pad-wrapper">
-              <div class="pad-icon">
-                {{ pad_icon }}
-              </div>
-              <div class="pad-text">
-                3 pads or 1<br>
-                overnight pad
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="best-for-wrapper">
-          <div class="best-for-text">Best for:</div>
-          <ul class="uses-grid">
-            <li class="use">Heavy flow days and overnight</li>
-            <li class="use">Postpartum wear</li>
-            <li class="use">Bladder leaks</li>
-          </ul>
-        </div>
-      </div>
-      <div class="button-wrapper">
-        <a
-          href="{{ section.settings.heavy_absorbency_button_url }}"
-          class="card-button button{% render 'saalt-button-color-classes', obj: section %}"
-        >
-          {{- section.settings.heavy_absorbency_button_text -}}
-        </a>
-      </div>
-    </div>
+    {%- liquid
+      assign block_count = section.blocks.size
+      for block in section.blocks
+        assign index = forloop.index
+        if section.settings.use_graduated_bgs
+          assign bg_opacity = 100 | divided_by: block_count | times: index
+        else
+          assign bg_opacity = block.settings.theme_color_card_background_opacity
+        endif
+        case block.type
+          when 'absorbency_card'
+            render 'saalt-absorbency-card', block: block, index: index, tampon_icon: tampon_icon, pad_icon: pad_icon, drop_icon_filled: drop_icon_filled, drop_icon_empty: drop_icon_empty, max_num_of_drops: section.settings.max_num_of_drops, bg_opacity: bg_opacity
+        endcase
+      endfor
+    -%}
   </div>
 </section>
 
@@ -199,6 +55,7 @@
 
   #section-{{ section.id }} .section-inner {
     position: relative;
+    background: rgba(var(--color-site-background));
     flex-direction: column;
     z-index: 1;
   }
@@ -241,11 +98,16 @@
     height: auto;
     width: 12px;
     stroke-width: 3px;
-    opacity: .3;
+    fill: transparent;
+    color: transparent;
+    stroke: rgba(var(--color-icons), var(--color-icons-opacity));
+    stroke-width: 1.75rem;
   }
 
   #section-{{ section.id }} .section-inner .card .card-header .absorbency-icon-wrapper .absorbency-icon.drop-icon-filled {
-    opacity: 1;
+    fill: rgba(var(--color-icons), var(--color-icons-opacity));
+    color: rgba(var(--color-icons), var(--color-icons-opacity));
+    stroke: rgba(var(--color-icons), var(--color-icons-opacity));
   }
 
   #section-{{ section.id }} .section-inner .card .content-wrapper {
@@ -270,6 +132,8 @@
   #section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper .hold-capacity-icons-wrapper .icon-wrapper {
     justify-content: flex-start;
     gap: .5rem;
+    width: 100%;
+    max-width: 80px;
   }
 
   #section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper .hold-capacity-icons-wrapper .icon-wrapper .tampon-icon .tampon-icon-svg, #section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper .hold-capacity-icons-wrapper .icon-wrapper .pad-icon .pad-icon-svg {
@@ -296,22 +160,11 @@
     row-gap: 1rem;
     list-style: disc;
     left: 1rem;
+    padding-left: 0;
   }
 
   #section-{{ section.id }} .section-inner .card .content-wrapper .best-for-wrapper .uses-grid .use {
     text-align: left;
-  }
-
-  #section-{{ section.id }} .section-inner .card.card-1 {
-    background: {{ section.settings.light_absorbency_background_color }};
-  }
-
-  #section-{{ section.id }} .section-inner .card.card-2 {
-    background: {{ section.settings.regular_absorbency_background_color }};
-  }
-
-  #section-{{ section.id }} .section-inner .card.card-3 {
-    background: {{ section.settings.heavy_absorbency_background_color }};
   }
 
   @media screen and (min-width: 360px) {
@@ -362,80 +215,10 @@
       "info": "Typically only used when setting this ID as a link's destination."
     },
     {
-      "type": "header",
-      "content": "Section styling"
-    },
-    {
       "type": "select",
-      "id": "theme_color_text",
-      "label": "t:settings_schema.theme_colors.settings.sections.text_color_label",
-      "info": "Sets the text color",
-      "options": [
-        {
-          "value": "theme_default",
-          "label": "t:settings_schema.color_palette.settings.theme_default.label"
-        },
-        {
-          "value": "theme-color-text-0",
-          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
-        },
-        {
-          "value": "theme-color-text-1",
-          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
-        },
-        {
-          "value": "theme-color-text-2",
-          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
-        },
-        {
-          "value": "theme-color-text-3",
-          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
-        },
-        {
-          "value": "theme-color-text-4",
-          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
-        },
-        {
-          "value": "theme-color-text-5",
-          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
-        },
-        {
-          "value": "theme-color-text-6",
-          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
-        },
-        {
-          "value": "theme-color-text-7",
-          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
-        }
-      ],
-      "default": "theme_default"
-    },
-    {
-      "type": "header",
-      "content": "Button settings"
-    },
-    {
-      "type": "select",
-      "id": "button_type",
-      "label": "t:settings_schema.theme_colors.settings.buttons.button_type_label",
-      "info": "t:settings_schema.theme_colors.settings.buttons.button_type_info",
-      "options": [
-        {
-          "value": "primary",
-          "label": "Primary"
-        },
-        {
-          "value": "secondary",
-          "label": "Secondary"
-        }
-      ],
-      "default": "primary"
-    },
-    {
-      "type": "select",
-      "id": "theme_color_section_button_background",
-      "label": "t:settings_schema.theme_colors.settings.buttons.static_bg_label",
-      "info": "t:settings_schema.theme_colors.settings.buttons.static_bg_info",
+      "id": "theme_color_background",
+      "label": "t:settings_schema.theme_colors.settings.sections.background_color_label",
+      "info": "Sets the background color",
       "options": [
         {
           "value": "theme_default",
@@ -477,232 +260,373 @@
       "default": "theme_default"
     },
     {
-      "type": "select",
-      "id": "theme_color_text_section_button_text",
-      "label": "t:settings_schema.theme_colors.settings.buttons.static_text_label",
-      "info": "t:settings_schema.theme_colors.settings.buttons.static_text_info",
-      "options": [
+      "type": "number",
+      "id": "max_num_of_drops",
+      "label": "Max number of absorbency drops",
+      "info": "This is the maximum number of drops displayed for all absorbencies. The default is 5.",
+      "default": 5
+    },
+    {
+      "type": "checkbox",
+      "id": "use_graduated_bgs",
+      "label": "Use progressively darker backgrounds",
+      "info": "When checked, this makes each card slightly darker than the last based on the total number of cards, regardless of individual card color. ❗️NOTE❗️: Enabling this overrides the opacity setting in the absorbency card blocks.",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "absorbency_card",
+      "name": "Absorbency Card",
+      "settings": [
         {
-          "value": "theme_default",
-          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+          "type": "text",
+          "id": "absorbency_name",
+          "label": "Absorbency name",
+          "info": "Please enter the name of an absorbency here. This should match at least one entry name within the Absorbency metaobject.",
+          "default": "Light"
         },
         {
-          "value": "theme-color-text-0",
-          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+          "type": "select",
+          "id": "theme_color_card_background",
+          "label": "t:settings_schema.theme_colors.settings.sections.background_color_label",
+          "info": "Sets the background color",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "--palette-color-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "--palette-color-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "--palette-color-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "--palette-color-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "--palette-color-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "--palette-color-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "--palette-color-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "--palette-color-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "--palette-color-3"
         },
         {
-          "value": "theme-color-text-1",
-          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+          "type": "range",
+          "id": "theme_color_card_background_opacity",
+          "label": "Background opacity for the card color",
+          "info": "❗️NOTE❗️: This is overridden by the \"Use progressively darker backgrounds\" checkbox in the section settings.",
+          "min": 0,
+          "max": 100,
+          "default": 25
         },
         {
-          "value": "theme-color-text-2",
-          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+          "type": "select",
+          "id": "theme_color_card_text",
+          "label": "t:settings_schema.theme_colors.settings.sections.text_color_label",
+          "info": "Sets the text color",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
         },
         {
-          "value": "theme-color-text-3",
-          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Button text"
         },
         {
-          "value": "theme-color-text-4",
-          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+          "type": "url",
+          "id": "button_url",
+          "label": "Button Destination"
         },
         {
-          "value": "theme-color-text-5",
-          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+          "type": "select",
+          "id": "button_type",
+          "label": "t:settings_schema.theme_colors.settings.buttons.button_type_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.button_type_info",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary"
+            }
+          ],
+          "default": "primary"
         },
         {
-          "value": "theme-color-text-6",
-          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+          "type": "select",
+          "id": "theme_color_section_button_background",
+          "label": "t:settings_schema.theme_colors.settings.buttons.static_bg_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.static_bg_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-bg-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-bg-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-bg-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-bg-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-bg-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-bg-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-bg-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-bg-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
         },
         {
-          "value": "theme-color-text-7",
-          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+          "type": "select",
+          "id": "theme_color_text_section_button_text",
+          "label": "t:settings_schema.theme_colors.settings.buttons.static_text_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.static_text_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_section_button_background_hover",
+          "label": "t:settings_schema.theme_colors.settings.buttons.hover_bg_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.hover_bg_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-bg-0-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-bg-1-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-bg-2-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-bg-3-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-bg-4-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-bg-5-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-bg-6-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-bg-7-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_text_section_button_text_hover",
+          "label": "t:settings_schema.theme_colors.settings.buttons.hover_text_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.hover_text_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-text-0-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
         }
-      ],
-      "default": "theme_default"
-    },
-    {
-      "type": "select",
-      "id": "theme_color_section_button_background_hover",
-      "label": "t:settings_schema.theme_colors.settings.buttons.hover_bg_label",
-      "info": "t:settings_schema.theme_colors.settings.buttons.hover_bg_info",
-      "options": [
-        {
-          "value": "theme_default",
-          "label": "t:settings_schema.color_palette.settings.theme_default.label"
-        },
-        {
-          "value": "theme-color-bg-0-hover",
-          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
-        },
-        {
-          "value": "theme-color-bg-1-hover",
-          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
-        },
-        {
-          "value": "theme-color-bg-2-hover",
-          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
-        },
-        {
-          "value": "theme-color-bg-3-hover",
-          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
-        },
-        {
-          "value": "theme-color-bg-4-hover",
-          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
-        },
-        {
-          "value": "theme-color-bg-5-hover",
-          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
-        },
-        {
-          "value": "theme-color-bg-6-hover",
-          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
-        },
-        {
-          "value": "theme-color-bg-7-hover",
-          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
-        }
-      ],
-      "default": "theme_default"
-    },
-    {
-      "type": "select",
-      "id": "theme_color_text_section_button_text_hover",
-      "label": "t:settings_schema.theme_colors.settings.buttons.hover_text_label",
-      "info": "t:settings_schema.theme_colors.settings.buttons.hover_text_info",
-      "options": [
-        {
-          "value": "theme_default",
-          "label": "t:settings_schema.color_palette.settings.theme_default.label"
-        },
-        {
-          "value": "theme-color-text-0-hover",
-          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
-        },
-        {
-          "value": "theme-color-text-1-hover",
-          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
-        },
-        {
-          "value": "theme-color-text-2-hover",
-          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
-        },
-        {
-          "value": "theme-color-text-3-hover",
-          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
-        },
-        {
-          "value": "theme-color-text-4-hover",
-          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
-        },
-        {
-          "value": "theme-color-text-5-hover",
-          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
-        },
-        {
-          "value": "theme-color-text-6-hover",
-          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
-        },
-        {
-          "value": "theme-color-text-7-hover",
-          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
-        }
-      ],
-      "default": "theme_default"
-    },
-    {
-      "type": "header",
-      "content": "Light absorbency settings"
-    },
-    {
-      "type": "color",
-      "id": "light_absorbency_background_color",
-      "label": "Background color",
-      "default": "#edf0f4"
-    },
-    {
-      "type": "range",
-      "id": "light_absorbency_level",
-      "label": "Absorbency Level",
-      "min": 1,
-      "max": 4,
-      "default": 2
-    },
-    {
-      "type": "text",
-      "id": "light_absorbency_button_text",
-      "label": "Light Absorbency Button Text",
-      "default": "Shop Light"
-    },
-    {
-      "type": "url",
-      "id": "light_absorbency_button_url",
-      "label": "Light Absorbency Button Destination"
-    },
-    {
-      "type": "header",
-      "content": "Regular absorbency settings"
-    },
-    {
-      "type": "color",
-      "id": "regular_absorbency_background_color",
-      "label": "Background color",
-      "default": "#dce2e9"
-    },
-    {
-      "type": "range",
-      "id": "regular_absorbency_level",
-      "label": "Absorbency Level",
-      "min": 1,
-      "max": 4,
-      "default": 3
-    },
-    {
-      "type": "text",
-      "id": "regular_absorbency_button_text",
-      "label": "Regular Absorbency Button Text",
-      "default": "Shop Regular"
-    },
-    {
-      "type": "url",
-      "id": "regular_absorbency_button_url",
-      "label": "Regular Absorbency Button Destination"
-    },
-    {
-      "type": "header",
-      "content": "Heavy absorbency settings"
-    },
-    {
-      "type": "color",
-      "id": "heavy_absorbency_background_color",
-      "label": "Background color",
-      "default": "#a6b6c7"
-    },
-    {
-      "type": "range",
-      "id": "heavy_absorbency_level",
-      "label": "Absorbency Level",
-      "min": 1,
-      "max": 4,
-      "default": 4
-    },
-    {
-      "type": "text",
-      "id": "heavy_absorbency_button_text",
-      "label": "Heavy Absorbency Button Text",
-      "default": "Shop Heavy"
-    },
-    {
-      "type": "url",
-      "id": "heavy_absorbency_button_url",
-      "label": "Heavy Absorbency Button Destination"
+      ]
     }
   ],
   "presets": [
     {
       "name": "Saalt Absorbency Chart",
-      "category": "custom saalt section"
+      "category": "custom saalt section",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Light"
+          }
+        },
+        {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Regular"
+          }
+        },
+        {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Heavy"
+          }
+        },
+        {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Super"
+          }
+        }
+      ]
     }
   ]
 }
