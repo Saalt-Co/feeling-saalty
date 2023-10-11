@@ -73,6 +73,7 @@
 
   #section-{{ section.id }} .section-inner .card .card-header {
     flex-wrap: wrap;
+    gap: 1rem;
   }
 
   #section-{{ section.id }} .section-inner .card .card-header .card-title-wrapper {
@@ -167,9 +168,9 @@
     text-align: left;
   }
 
-  @media screen and (min-width: 360px) {
+  @media screen and (min-width: 380px) {
     #section-{{ section.id }} .section-inner .card {
-      min-width:360px;
+      min-width: 380px;
       padding: 3.75rem;
     }
   }
@@ -184,13 +185,13 @@
 
   @media screen and (min-width: 1024px) {
     #section-{{ section.id }} .section-inner {
-      max-width: 1500px;
+      max-width: {{ section.blocks.size | times: 380 }}px;
       margin: 0 auto;
     }
   }
 
 
-  @media screen and (min-width: 1076px) {
+  @media screen and (min-width: {{ section.blocks.size | times: 380 }}px) {
     #section-{{ section.id }} .section-inner {
       justify-content: center;
     }
