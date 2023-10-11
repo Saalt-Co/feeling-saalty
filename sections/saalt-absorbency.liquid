@@ -97,11 +97,16 @@
     height: auto;
     width: 12px;
     stroke-width: 3px;
-    opacity: .3;
+    fill: transparent;
+    color: transparent;
+    stroke: rgba(var(--color-icons), var(--color-icons-opacity));
+    stroke-width: 1.75rem;
   }
 
   #section-{{ section.id }} .section-inner .card .card-header .absorbency-icon-wrapper .absorbency-icon.drop-icon-filled {
-    opacity: 1;
+    fill: rgba(var(--color-icons), var(--color-icons-opacity));
+    color: rgba(var(--color-icons), var(--color-icons-opacity));
+    stroke: rgba(var(--color-icons), var(--color-icons-opacity));
   }
 
   #section-{{ section.id }} .section-inner .card .content-wrapper {
@@ -126,6 +131,8 @@
   #section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper .hold-capacity-icons-wrapper .icon-wrapper {
     justify-content: flex-start;
     gap: .5rem;
+    width: 100%;
+    max-width: 80px;
   }
 
   #section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper .hold-capacity-icons-wrapper .icon-wrapper .tampon-icon .tampon-icon-svg, #section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper .hold-capacity-icons-wrapper .icon-wrapper .pad-icon .pad-icon-svg {
@@ -156,18 +163,6 @@
 
   #section-{{ section.id }} .section-inner .card .content-wrapper .best-for-wrapper .uses-grid .use {
     text-align: left;
-  }
-
-  #section-{{ section.id }} .section-inner .card.card-1 {
-    background: {{ section.settings.light_absorbency_background_color }};
-  }
-
-  #section-{{ section.id }} .section-inner .card.card-2 {
-    background: {{ section.settings.regular_absorbency_background_color }};
-  }
-
-  #section-{{ section.id }} .section-inner .card.card-3 {
-    background: {{ section.settings.heavy_absorbency_background_color }};
   }
 
   @media screen and (min-width: 360px) {
