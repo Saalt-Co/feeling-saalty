@@ -10,7 +10,7 @@
 <section
   id="section-{{ section.id }}"
   data-section-id="{{ section.id }}"
-  class="section-headline-row"
+  class="section-headline-row{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}"
   {{ block.shopify_attributes }}
 >
   <div
@@ -55,6 +55,7 @@
 
   #section-{{ section.id }} .section-inner {
     position: relative;
+    background: rgba(var(--color-site-background));
     flex-direction: column;
     z-index: 1;
   }
@@ -159,6 +160,7 @@
     row-gap: 1rem;
     list-style: disc;
     left: 1rem;
+    padding-left: 0;
   }
 
   #section-{{ section.id }} .section-inner .card .content-wrapper .best-for-wrapper .uses-grid .use {
@@ -213,6 +215,51 @@
       "info": "Typically only used when setting this ID as a link's destination."
     },
     {
+      "type": "select",
+      "id": "theme_color_background",
+      "label": "t:settings_schema.theme_colors.settings.sections.background_color_label",
+      "info": "Sets the background color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-bg-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-bg-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-bg-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-bg-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-bg-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-bg-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-bg-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-bg-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
+    },
+    {
       "type": "number",
       "id": "max_num_of_drops",
       "label": "Max number of absorbency drops",
@@ -223,7 +270,7 @@
       "type": "checkbox",
       "id": "use_graduated_bgs",
       "label": "Use progressively darker backgrounds",
-      "info": "When checked, this makes each card slightly darker than the last based on the total number of cards, regardless of individual card color. This also overrides the opacity setting in the absorbency card blocks.",
+      "info": "When checked, this makes each card slightly darker than the last based on the total number of cards, regardless of individual card color. ❗️NOTE❗️: Enabling this overrides the opacity setting in the absorbency card blocks.",
       "default": true
     }
   ],
@@ -571,6 +618,12 @@
           "type": "absorbency_card",
           "settings": {
             "absorbency_name": "Heavy"
+          }
+        },
+        {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Super"
           }
         }
       ]
