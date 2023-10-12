@@ -5,6 +5,9 @@
   {% render 'header-drawer' %}
 {% endcomment %}
 
+{{ 'menu-and-filter-absorbency-icons.css' | asset_url | stylesheet_tag }}
+{{ 'menu-and-filter-saalt-wear-style-icons.css' | asset_url | stylesheet_tag }}
+
 <header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
   <details id="Details-menu-drawer-container" class="menu-drawer-container">
     <summary
