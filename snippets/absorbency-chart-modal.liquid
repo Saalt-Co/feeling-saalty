@@ -1,0 +1,137 @@
+{% style %}
+  .absorbency-chart-modal {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    opacity: 0;
+    z-index: 3000000000;
+  }
+  .absorbency-chart-modal-inner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+  }
+  @media screen and (min-width: 750px) {
+    .absorbency-chart-modal-inner-wrapper {
+      width: 100%;
+      max-width: 980px;
+      max-height: 90%;
+    }
+  }
+  .absorbency-chart-modal .absorbency-chart-close-button-wrapper {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    text-align: right;
+    padding: 0 0 1rem 0;
+  }
+  .absorbency-chart-modal,
+  .absorbency-chart-modal .absorbency-chart-close-button-wrapper .absorbency-chart-close-button {
+    cursor: pointer;
+  }
+  .absorbency-chart-modal .absorbency-chart-close-button-wrapper .absorbency-chart-close-button {
+    display: inline-block;
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.25);
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    transition: all ease-in-out 0.1s;
+  }
+  .absorbency-chart-modal .absorbency-chart-close-button-wrapper .absorbency-chart-close-button:hover {
+    background: #fff;
+  }
+  .absorbency-chart-modal .absorbency-chart-wrapper {
+    display: flex;
+    background: rgba(var(--color-site-background), 1);
+    align-items: flex-start;
+    max-width: 100%;
+    height: auto;
+    padding: 1.25rem;
+    overflow: auto;
+  }
+  .absorbency-chart-modal .absorbency-chart-wrapper .absorbency-chart-content {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+  .absorbency-chart-modal .absorbency-chart-wrapper,
+  .absorbency-chart-modal .absorbency-chart-wrapper .absorbency-chart-content {
+    cursor: initial;
+    width: 100%;
+  }
+  .reveal-modal {
+    display: flex;
+    animation: 0.1s ease-in forwards RevealModal;
+  }
+  .hide-modal {
+    animation: 0.1s ease-in forwards HideModal;
+  }
+  @keyframes RevealModal {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes HideModal {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+{% endstyle %}
+<div class="absorbency-chart-modal">
+  <div class="absorbency-chart-modal-inner-wrapper">
+    <div class="absorbency-chart-close-button-wrapper">
+      <button class="absorbency-chart-close-button">&times;</button>
+    </div>
+    <div class="absorbency-chart-wrapper">
+      {% render 'saalt-main-absorbency-chart' %}
+    </div>
+  </div>
+</div>
+<script>
+  const handleClosePopup = (e) => {
+    if (!a11yClick(e) && !a11yEsc(e)) return;
+    const modal = document.querySelector('.absorbency-chart-modal');
+    if (e.target.closest('.absorbency-chart-wrapper')) return;
+    modal.classList.add('hide-modal');
+    const timer = setTimeout(() => {
+      modal.classList.remove('hide-modal');
+      modal.classList.remove('reveal-modal');
+      clearTimeout(timer);
+    }, 500);
+    document.querySelector('.absorbency-chart-button').focus();
+  };
+  const modal = document.querySelector('.absorbency-chart-modal');
+  modal.addEventListener('click', handleClosePopup, false);
+  window.addEventListener(
+    'keydown',
+    (e) => {
+      if (e.key === 'Escape') {
+        handleClosePopup(e);
+      }
+    },
+    false
+  );
+</script>
