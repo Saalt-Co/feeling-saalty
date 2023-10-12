@@ -32,6 +32,7 @@
     if ratio == 0 or ratio == null
       assign ratio = 1
     endif
+    assign downcased_prod_type = card_product.type | downcase
   -%}
   <div class="card-wrapper product-card-wrapper{% unless show_swatches == true %} underline-links-hover{% endunless %}{% if show_swatches == true %} show-swatches{% endif %}">
     <div
@@ -133,7 +134,10 @@
               >
                 {{- 'products.product.sold_out' | t -}}
               </span>
-            {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
+            {%- elsif card_product.compare_at_price > card_product.price
+              and card_product.available
+              and downcased_prod_type != 'preset bundle'
+            -%}
               <span
                 id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
                 class="badge badge--bottom-left"
@@ -333,7 +337,10 @@
             >
               {{- 'products.product.sold_out' | t -}}
             </span>
-          {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
+          {%- elsif card_product.compare_at_price > card_product.price
+            and card_product.available
+            and downcased_prod_type != 'preset bundle'
+          -%}
             <span
               id="Badge-{{ section_id }}-{{ card_product.id }}"
               class="badge badge--bottom-left"
