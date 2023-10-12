@@ -28,6 +28,8 @@
   if target == product and product.price_varies
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
+
+  assign downcased_prod_type = product.type | downcase
 -%}
 
 <div
@@ -86,10 +88,11 @@
     </small>
   </div>
   {%- if show_badges -%}
-    <span class="badge price__badge-sale">
-      {{ 'products.product.on_sale' | t }}
-    </span>
-
+    {%- if downcased_prod_type != 'preset bundle' -%}
+      <span class="badge price__badge-sale">
+        {{ 'products.product.on_sale' | t }}
+      </span>
+    {%- endif -%}
     <span class="badge price__badge-sold-out sold-out">
       {{ 'products.product.sold_out' | t }}
     </span>
