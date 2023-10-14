@@ -235,7 +235,7 @@
         "background_style": "primary",
         "theme_color_column_secondary_bg": "theme_default",
         "column_secondary_bg_opacity": 100,
-        "button_text": "Button text",
+        "button_text": "",
         "button_url": "",
         "button_type": "primary",
         "theme_color_section_button_background": "theme_default",
