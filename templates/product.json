@@ -90,6 +90,15 @@
             "page": ""
           }
         },
+        "e36443e9-994e-4493-962d-3a4290cafaad": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "leaf",
+            "content": "{{ product.metafields.saalt.product_ingredients | metafield_tag }}",
+            "page": ""
+          }
+        },
         "collapsible-row-2": {
           "type": "collapsible_tab",
           "settings": {
@@ -149,6 +158,7 @@
         "description",
         "collapsible-row-0",
         "b353a8cb-d34f-4c9e-9e49-2879eadc10c3",
+        "e36443e9-994e-4493-962d-3a4290cafaad",
         "collapsible-row-2",
         "collapsible-row-3",
         "collapsible-row-1",
