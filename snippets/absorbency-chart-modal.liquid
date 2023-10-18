@@ -14,7 +14,7 @@
     opacity: 0;
     z-index: 3000000000;
   }
-  .absorbency-chart-modal-inner-wrapper {
+  .absorbency-chart-modal .inner-wrapper {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -24,13 +24,13 @@
     height: 100%;
   }
   @media screen and (min-width: 750px) {
-    .absorbency-chart-modal-inner-wrapper {
+    .absorbency-chart-modal .inner-wrapper {
       width: 100%;
       max-width: 980px;
       max-height: 90%;
     }
   }
-  .absorbency-chart-modal .absorbency-chart-close-button-wrapper {
+  .absorbency-chart-modal .close-button-wrapper {
     display: block;
     width: 100%;
     min-width: 100%;
@@ -38,10 +38,10 @@
     padding: 0 0 1rem 0;
   }
   .absorbency-chart-modal,
-  .absorbency-chart-modal .absorbency-chart-close-button-wrapper .absorbency-chart-close-button {
+  .absorbency-chart-modal .close-button-wrapper .close-button {
     cursor: pointer;
   }
-  .absorbency-chart-modal .absorbency-chart-close-button-wrapper .absorbency-chart-close-button {
+  .absorbency-chart-modal .close-button-wrapper .close-button {
     display: inline-block;
     border: none;
     border-radius: 5rem;
@@ -53,10 +53,10 @@
     align-items: center;
     transition: all ease-in-out 0.1s;
   }
-  .absorbency-chart-modal .absorbency-chart-close-button-wrapper .absorbency-chart-close-button:hover {
+  .absorbency-chart-modal .close-button-wrapper .close-button:hover {
     background: #fff;
   }
-  .absorbency-chart-modal .absorbency-chart-wrapper {
+  .absorbency-chart-modal .chart-wrapper {
     display: flex;
     background: rgba(var(--color-site-background), 1);
     align-items: flex-start;
@@ -65,22 +65,22 @@
     padding: 1.25rem;
     overflow: auto;
   }
-  .absorbency-chart-modal .absorbency-chart-wrapper .absorbency-chart-content {
+  .absorbency-chart-modal .chart-wrapper .content {
     display: block;
     width: 100%;
     height: auto;
     max-width: 500px;
   }
-  .absorbency-chart-modal .absorbency-chart-wrapper,
-  .absorbency-chart-modal .absorbency-chart-wrapper .absorbency-chart-content {
+  .absorbency-chart-modal .chart-wrapper,
+  .absorbency-chart-modal .chart-wrapper .content {
     cursor: initial;
     width: 100%;
   }
-  .reveal-modal {
+  .absorbency-chart-modal.reveal-modal {
     display: flex;
     animation: 0.1s ease-in forwards RevealModal;
   }
-  .hide-modal {
+  .absorbency-chart-modal.hide-modal {
     animation: 0.1s ease-in forwards HideModal;
   }
   @keyframes RevealModal {
@@ -100,38 +100,20 @@
     }
   }
 {% endstyle %}
-<div class="absorbency-chart-modal">
-  <div class="absorbency-chart-modal-inner-wrapper">
-    <div class="absorbency-chart-close-button-wrapper">
-      <button class="absorbency-chart-close-button">&times;</button>
+
+<saalt-modal class="saalt-modal absorbency-chart-modal" data-modal-button=".absorbency-chart-button">
+  <div class="inner-wrapper">
+    <div class="close-button-wrapper">
+      <button class="close-button">&times;</button>
     </div>
-    <div class="absorbency-chart-wrapper">
+    <div class="chart-wrapper">
+      {%- liquid
+        for entry in shop.metaobjects.absorbency_chart.value
+          echo entry.page.content
+        endfor
+      -%}
+      Hi diddly ho, neighbor!
       {% render 'saalt-main-absorbency-chart' %}
     </div>
   </div>
-</div>
-<script>
-  const handleClosePopup = (e) => {
-    if (!a11yClick(e) && !a11yEsc(e)) return;
-    const modal = document.querySelector('.absorbency-chart-modal');
-    if (e.target.closest('.absorbency-chart-wrapper')) return;
-    modal.classList.add('hide-modal');
-    const timer = setTimeout(() => {
-      modal.classList.remove('hide-modal');
-      modal.classList.remove('reveal-modal');
-      clearTimeout(timer);
-    }, 500);
-    document.querySelector('.absorbency-chart-button').focus();
-  };
-  const modal = document.querySelector('.absorbency-chart-modal');
-  modal.addEventListener('click', handleClosePopup, false);
-  window.addEventListener(
-    'keydown',
-    (e) => {
-      if (e.key === 'Escape') {
-        handleClosePopup(e);
-      }
-    },
-    false
-  );
-</script>
+</saalt-modal>

@@ -14,7 +14,7 @@
     opacity: 0;
     z-index: 3000000000;
   }
-  .size-chart-modal-inner-wrapper {
+  .size-chart-modal .inner-wrapper {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -24,13 +24,13 @@
     height: 100%;
   }
   @media screen and (min-width: 750px) {
-    .size-chart-modal-inner-wrapper {
+    .size-chart-modal .inner-wrapper {
       width: 100%;
       max-width: 980px;
       max-height: 90%;
     }
   }
-  .size-chart-modal .size-chart-close-button-wrapper {
+  .size-chart-modal .close-button-wrapper {
     display: block;
     width: 100%;
     min-width: 100%;
@@ -38,10 +38,10 @@
     padding: 0 0 1rem 0;
   }
   .size-chart-modal,
-  .size-chart-modal .size-chart-close-button-wrapper .size-chart-close-button {
+  .size-chart-modal .close-button-wrapper .close-button {
     cursor: pointer;
   }
-  .size-chart-modal .size-chart-close-button-wrapper .size-chart-close-button {
+  .size-chart-modal .close-button-wrapper .close-button {
     display: inline-block;
     border: none;
     border-radius: 5rem;
@@ -53,7 +53,7 @@
     align-items: center;
     transition: all ease-in-out 0.1s;
   }
-  .size-chart-modal .size-chart-close-button-wrapper .size-chart-close-button:hover {
+  .size-chart-modal .close-button-wrapper .close-button:hover {
     background: #fff;
   }
   .size-chart-modal .size-chart-wrapper {
@@ -100,38 +100,13 @@
     }
   }
 {% endstyle %}
-<div class="size-chart-modal">
-  <div class="size-chart-modal-inner-wrapper">
-    <div class="size-chart-close-button-wrapper">
-      <button class="size-chart-close-button">&times;</button>
+<saalt-modal class="saalt-modal size-chart-modal" data-modal-button=".size-chart-button">
+  <div class="inner-wrapper">
+    <div class="close-button-wrapper">
+      <button class="close-button">&times;</button>
     </div>
-    <div class="size-chart-wrapper">
+    <div class="chart-wrapper">
       {% render 'saalt-main-size-chart' %}
     </div>
   </div>
-</div>
-<script>
-  const handleClosePopup = (e) => {
-    if (!a11yClick(e) && !a11yEsc(e)) return;
-    const modal = document.querySelector('.size-chart-modal');
-    if (e.target.closest('.size-chart-wrapper')) return;
-    modal.classList.add('hide-modal');
-    const timer = setTimeout(() => {
-      modal.classList.remove('hide-modal');
-      modal.classList.remove('reveal-modal');
-      clearTimeout(timer);
-    }, 500);
-    document.querySelector('.size-chart-button').focus();
-  };
-  const modal = document.querySelector('.size-chart-modal');
-  modal.addEventListener('click', handleClosePopup, false);
-  window.addEventListener(
-    'keydown',
-    (e) => {
-      if (e.key === 'Escape') {
-        handleClosePopup(e);
-      }
-    },
-    false
-  );
-</script>
+</saalt-modal>

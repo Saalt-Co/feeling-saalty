@@ -510,6 +510,10 @@
     <script src="{{ 'product-model.js' | asset_url }}" defer></script>
   {%- endif -%}
 
+  {%- if product.options contains "Absorbency" -%}
+    {% render 'absorbency-chart-modal' %}
+  {%- endif -%}
+
   {%- if product.options contains "Size" -%}
     {% render 'size-chart-modal' %}
   {%- endif -%}
