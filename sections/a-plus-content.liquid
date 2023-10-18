@@ -1,38 +1,4 @@
-<script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-{% comment %}
-  {%- liquid
-    for content in shop.metaobjects.a_plus_content.values
-      echo content.content_type
-      echo content.pages
-      echo 'WHAT UP?!'
-      for page in content.pages.value
-        if page.content == blank
-          echo 'BLANK!'
-        else
-          echo page.content
-          echo page.values
-        endif
-      endfor
-    endfor
-  -%}
-{% endcomment %}
-<h1>A+ Content</h1>
-<div class="a-plus-content"></div>
-
-{% comment %}
-  <script>
-    const sectionName = 'saalt-absorbency';
-    const element = document.querySelector('.a-plus-content');
-    function handleResponse() {
-      //alert(JSON.parse(this.responseText)[sectionName]);
-      element.innerHTML = JSON.parse(this.responseText)[sectionName];
-    }
-    const request = new XMLHttpRequest();
-    request.addEventListener('load', handleResponse);
-    request.open('GET', `/?sections=${sectionName}`, true);
-    request.send();
-  </script>
-{% endcomment %}
+<div class="a-plus-content">.</div>
 
 <script>
   function waitForElementToExist(selector) {
@@ -54,32 +20,35 @@
       });
     });
   }
-  const sectionName = 'article';
-  const targetElement = document.querySelector('.a-plus-content');
-  waitForElementToExist('.a-plus-content').then((element) => {
-    //    fetch(window.Shopify.routes.root + `?sections=${sectionName}`)
-    //      .then((res) => res.json())
-    //      .then((data) => {
-    //        console.log(data[sectionName]);
-    //        targetElement.innerHTML = data[sectionName];
-    //      });
 
-    // *** NOTE THAT THE LINE BELOW IS FETCHING A TEMPLATE NOT A SECTION *** //
-    fetch(window.Shopify.routes.root + `?templates=${sectionName}`)
-      .then((res) => res.text())
-      .then((data) => {
-        const parser = new DOMParser();
-        const pageCode = parser.parseFromString(data, 'text/html');
-        const sectionEls = pageCode.querySelectorAll('section');
-        for (section of sectionEls) {
-          console.log(section);
-          //targetElement.appendChild(section);
-        }
-
-        // targetElement.innerHTML = parser.parseFromString(data, 'text/html');
-      });
+  const requestName = 'saalt-absorbency';
+  const targetSelector = '.a-plus-content';
+  const targetElement = document.querySelector(targetSelector);
+  const requestType = 'sections';
+  const el = document.createElement('h1');
+  el.textContent = 'HELLO!';
+  waitForElementToExist(targetSelector).then((element) => {
+    console.clear();
+    fetch(window.location.pathname + `?${requestType}=${requestName}`)
+      .then((res) => res.json())
+      .then((data) => (targetElement.innerHTML = data[requestName]));
   });
 </script>
+
+{% comment %}
+  <script>
+    const sectionName = 'saalt-absorbency';
+    const element = document.querySelector('.a-plus-content');
+    function handleResponse() {
+      console.log(JSON.parse(this.responseText)[sectionName]);
+      element.innerHTML = JSON.parse(this.responseText)[sectionName];
+    }
+    const request = new XMLHttpRequest();
+    request.addEventListener('load', handleResponse);
+    request.open('GET', `/?sections=${sectionName}`, true);
+    request.send();
+  </script>
+{% endcomment %}
 
 {% schema %}
 {
