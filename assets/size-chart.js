@@ -1,6 +1,6 @@
 class SizeChart extends SaaltModal {
   constructor() {
-    this.super();
+    super();
     this.tabs = null;
     this.contentContainers = null;
     this.tabClick = this.handleTabClick.bind(this);

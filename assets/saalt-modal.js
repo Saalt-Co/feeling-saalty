@@ -29,7 +29,6 @@ class SaaltModal extends HTMLElement {
 
   handleClosePopup = (e) => {
     if (!a11yClick(e) && !a11yEsc(e)) return;
-    e.target.closest('.chart-wrapper') ? alert('found .chart-wrapper') : alert('no .chart-wrapper found');
     if (e.target.closest('.chart-wrapper')) return;
     this.modal.classList.add('hide-modal');
     const timer = setTimeout(() => {
