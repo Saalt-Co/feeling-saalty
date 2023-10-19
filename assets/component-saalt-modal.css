@@ -59,6 +59,7 @@ saalt-modal .chart-wrapper {
   display: flex;
   background: rgba(var(--color-site-background), 1);
   align-items: flex-start;
+  flex-direction: column;
   max-width: 100%;
   height: auto;
   padding: 1.25rem;

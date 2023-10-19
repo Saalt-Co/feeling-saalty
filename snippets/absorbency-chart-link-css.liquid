@@ -2,22 +2,23 @@
   button.absorbency-chart-button {
     display: inline-block;
     background: none;
-    border: transparent;
+    border: var(--variant-pills-border-width) solid rgba(var(--color-main-text), var(--variant-pills-border-opacity));
+    border-radius: 10rem;
     color: inherit;
     font-family: inherit;
     font-size: 1.3rem;
     line-height: calc(1 + 0.5 / var(--font-body-scale));
     letter-spacing: 0.04rem;
+    padding: 0.125rem 0.75rem;
     cursor: pointer;
-    text-decoration: underline;
-    text-underline-offset: calc(var(--buttons-border-offset) * 10);
   }
   button.absorbency-chart-button:hover {
-    text-decoration-thickness: var(--buttons-border-width);
+    border: var(--variant-pills-border-width) solid rgba(var(--color-main-text), 1);
   }
   legend.has-absorbency-chart {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
   }
 {% endstyle %}
