@@ -1,16 +1,11 @@
+{{ 'component-saalt-modal.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'saalt-modal.js' | asset_url }}" defer="defer"></script>
+
 <saalt-modal class="saalt-modal absorbency-chart-modal" data-modal-button=".absorbency-chart-button">
   <div class="inner-wrapper">
     <div class="close-button-wrapper">
       <button class="close-button">&times;</button>
     </div>
-    <div class="chart-wrapper">
-      {%- liquid
-        for entry in shop.metaobjects.absorbency_chart.value
-          echo entry.page.content
-        endfor
-      -%}
-      Hi diddly ho, neighbor!
-      {% render 'saalt-main-absorbency-chart' %}
-    </div>
+    <div class="chart-wrapper">.</div>
   </div>
 </saalt-modal>
