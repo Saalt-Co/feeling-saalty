@@ -154,11 +154,20 @@
   }
 
   #section-{{ section.id }} .section-inner .card .content-wrapper .best-for-wrapper .uses-grid {
-    display: grid;
+    {% liquid
+      if section.settings.best_for_list_style == "grid"
+        echo "display: grid;"
+        echo "grid-template-columns: repeat(2, 1fr);"
+        echo "column-gap: 2.25rem;"
+        echo "row-gap: 1rem;"
+      else
+        echo "display: flex;"
+        echo "flex-direction: column;"
+      endif
+    %}
     position: relative;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2.25rem;
-    row-gap: 1rem;
+    max-width: 76%;
+    margin: 0 auto;
     list-style: disc;
     left: 1rem;
     padding-left: 0;
@@ -166,6 +175,8 @@
 
   #section-{{ section.id }} .section-inner .card .content-wrapper .best-for-wrapper .uses-grid .use {
     text-align: left;
+    line-height: 1.5;
+    margin-bottom: 1rem;
   }
 
   @media screen and (min-width: 380px) {
@@ -266,6 +277,23 @@
       "label": "Max number of absorbency drops",
       "info": "This is the maximum number of drops displayed for all absorbencies. The default is 5.",
       "default": 5
+    },
+    {
+      "type": "select",
+      "id": "best_for_list_style",
+      "label": "\"Best for\" list style",
+      "info": "This changes the presentation of the \"Best for\" list",
+      "options": [
+        {
+          "value": "vertical",
+          "label": "Vertical"
+        },
+        {
+          "value": "grid",
+          "label": "Grid"
+        }
+      ],
+      "default": "vertical"
     },
     {
       "type": "checkbox",
