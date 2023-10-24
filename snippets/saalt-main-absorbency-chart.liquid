@@ -1,3 +1,6 @@
+{{ 'component-saalt-modal.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'saalt-modal.js' | asset_url }}" defer="defer"></script>
+
 {%- capture tampon_icon -%}{% render "svg-tampon" %}{%- endcapture -%}
 {%- capture pad_icon -%}{% render "svg-pad" %}{%- endcapture -%}
 {%- capture drop_icon -%}{% render "svg-absorbency-drop" %}{%- endcapture -%}
@@ -18,6 +21,7 @@
       id="{{ section.settings.section_id | handleize }}"
     {% endif -%}
     class="section-inner"
+    tabindex="0"
   >
     {%- liquid
       assign block_count = section.blocks.size
@@ -41,6 +45,7 @@
   #section-{{ section.id }} {
     position: relative;
     overflow: hidden;
+    max-width: 100%;
   }
 
   #section-{{ section.id }} .section-inner, #section-{{ section.id }} .section-inner .card, #section-{{ section.id }} .section-inner .card .card-header, #section-{{ section.id }} .section-inner .card .absorbency-icon-wrapper, #section-{{ section.id }} .section-inner .card .content-wrapper, #section-{{ section.id }} .section-inner .card .content-wrapper .hold-capacity-wrapper, #section-{{ section.id }} .section-inner .card .hold-capacity-icons-wrapper, #section-{{ section.id }} .section-inner .card .hold-capacity-icons-wrapper .icon-wrapper, #section-{{ section.id }} .section-inner .card .content-wrapper .best-for-wrapper {
@@ -57,7 +62,13 @@
     position: relative;
     background: rgba(var(--color-site-background));
     flex-direction: column;
+    border: 2px solid transparent;
     z-index: 1;
+  }
+
+  #section-{{ section.id }} .section-inner:focus {
+    border: 2px solid rgba(var(--color-main-text), .75);
+    overflow: scroll;
   }
 
   #section-{{ section.id }} .section-inner .card {
