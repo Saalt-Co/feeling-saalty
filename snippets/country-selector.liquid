@@ -1,0 +1,87 @@
+{%- liquid
+  case shop.permanent_domain
+    when 'saalt-uk.myshopify.com'
+      assign current_country = 'U.K.'
+    when 'saalt-canada.myshopify.com'
+      assign current_country = 'CAN'
+    else
+      assign current_country = 'U.S.'
+  endcase
+-%}
+
+{%- style -%}
+  .country-selector {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .country-selector .current-country-label {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .country-selector .current-country-caret {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0;
+    max-width: 2.5rem;
+  }
+
+  .country-selector .current-country-caret > svg {
+    width: 100%;
+  }
+
+  .country-selector .country-selector-menu {
+    position: absolute;
+    background: rgb(var(--color-site-background));
+    border: 1px solid;
+    list-style: none;
+    padding: 1rem 3rem;
+    top: 1.25rem;
+    left: -70%;
+    z-index: 10;
+  }
+
+  .country-selector input[type='checkbox'],
+  .country-selector .country-selector-menu {
+    display: none;
+  }
+
+  .country-selector input[type='checkbox']:checked ~ .country-selector-menu {
+    display: inline-block;
+  }
+
+  .country-selector input[type='checkbox']:checked ~ .current-country-label .current-country-caret {
+    transform: rotate(180deg);
+  }
+
+  .country-selector .country-selector-option > a {
+    color: rgb(var(--color-main-text));
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  .country-selector .country-selector-option > a:hover {
+    border-bottom: 1px solid;
+  }
+{%- endstyle -%}
+
+<div class="country-selector">
+  <input type="checkbox" name="country-selector-toggle" id="country-selector-toggle" class="current-country">
+  <label class="current-country-label" for="country-selector-toggle">
+    {{ current_country }}
+    <div class="current-country-caret">
+      {% render 'icon-caret' %}
+    </div>
+  </label>
+  <ul class="country-selector-menu">
+    <li class="country-selector-option" value="us"><a target="_blank" href="https://www.google.com">U.S.</a></li>
+    <li class="country-selector-option" value="uk"><a target="_blank" href="https://www.google.com">U.K.</a></li>
+    <li class="country-selector-option" value="can"><a target="_blank" href="https://www.google.com">CAN</a></li>
+  </ul>
+</div>

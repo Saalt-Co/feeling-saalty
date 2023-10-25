@@ -304,6 +304,9 @@
           </localization-form>
         {%- endif -%}
       </div>
+
+      {% render 'country-selector' %}
+
       {% render 'header-search', section_id: section.id, theme_color_background: section.settings.theme_color_background, theme_color_text: section.settings.theme_color_text, search_input_opacity: section.settings.search_input_opacity, input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
