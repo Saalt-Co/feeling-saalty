@@ -36,7 +36,7 @@ class SaaltModal extends HTMLElement {
       this.modal.classList.remove('reveal-modal');
       clearTimeout(timer);
     }, 500);
-    this.modal.querySelector('.chart-button').focus();
+    this.modalBtn.focus();
   };
 }
 
