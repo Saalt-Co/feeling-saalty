@@ -1,9 +1,32 @@
-{% render 'saalt-main-absorbency-chart', section: section %}
+{{ 'component-saalt-modal.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'saalt-modal.js' | asset_url }}" defer="defer"></script>
+
+{%- style -%}
+  button.absorbency-chart-button {
+    display: inline-block;
+    visibility: visible;
+  }
+{%- endstyle -%}
+
+<saalt-modal class="saalt-modal absorbency-chart-modal" data-modal-button=".absorbency-chart-button" role="dialog">
+  <div class="inner-wrapper">
+    <div class="close-button-wrapper">
+      <button class="close-button">&times;</button>
+    </div>
+    <div class="chart-wrapper">
+      {% render 'saalt-main-absorbency-chart', section: section %}
+    </div>
+  </div>
+</saalt-modal>
 
 {% schema %}
 {
-  "name": "Saalt Absorbency Chart",
+  "name": "Saalt Absorbency Modal",
   "settings": [
+    {
+      "type": "paragraph",
+      "content": "❗️NOTE❗️: This section *MUST* be placed *AFTER/BELOW* the \"Product information\" section and set to visible in order for the code to show/hide the question mark button correctly."
+    },
     {
       "type": "text",
       "id": "section_id",
@@ -411,7 +434,7 @@
   ],
   "presets": [
     {
-      "name": "Saalt Absorbency Chart",
+      "name": "Saalt Absorbency Modal",
       "category": "custom saalt section",
       "settings": {},
       "blocks": [
