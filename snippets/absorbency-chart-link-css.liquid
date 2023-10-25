@@ -1,0 +1,25 @@
+{% style %}
+  button.absorbency-chart-button {
+    display: none;
+    visibility: hidden;
+    background: none;
+    border: var(--variant-pills-border-width) solid rgba(var(--color-main-text), var(--variant-pills-border-opacity));
+    border-radius: 10rem;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.125rem;
+    line-height: calc(1 + 0.5 / var(--font-body-scale));
+    letter-spacing: 0.04rem;
+    padding: 0.15rem 0.7rem;
+    cursor: pointer;
+  }
+  button.absorbency-chart-button:hover {
+    border: var(--variant-pills-border-width) solid rgba(var(--color-main-text), 1);
+  }
+  legend.has-absorbency-chart {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 0.5rem;
+  }
+{% endstyle %}
