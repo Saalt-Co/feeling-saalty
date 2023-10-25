@@ -1,6 +1,13 @@
 {{ 'component-saalt-modal.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'saalt-modal.js' | asset_url }}" defer="defer"></script>
 
+{%- style -%}
+  button.absorbency-chart-button {
+    display: inline-block;
+    visibility: visible;
+  }
+{%- endstyle -%}
+
 <saalt-modal class="saalt-modal absorbency-chart-modal" data-modal-button=".absorbency-chart-button">
   <div class="inner-wrapper">
     <div class="close-button-wrapper">
