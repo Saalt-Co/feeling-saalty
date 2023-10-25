@@ -1,0 +1,119 @@
+saalt-modal {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  opacity: 0;
+  z-index: 3000000000;
+}
+saalt-modal .inner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 750px) {
+  saalt-modal .inner-wrapper {
+    width: 100%;
+    max-width: 980px;
+    max-height: 90%;
+  }
+}
+saalt-modal .close-button-wrapper {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  text-align: right;
+  padding: 0 0 1rem 0;
+}
+saalt-modal,
+saalt-modal .close-button-wrapper .close-button {
+  cursor: pointer;
+}
+saalt-modal .close-button-wrapper .close-button {
+  display: inline-block;
+  border: none;
+  border-radius: 5rem;
+  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.25);
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 1;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  transition: all ease-in-out 0.1s;
+}
+saalt-modal .close-button-wrapper .close-button:hover {
+  background: #fff;
+}
+saalt-modal .chart-wrapper {
+  display: flex;
+  background: rgba(var(--color-site-background), 1);
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 100%;
+  height: auto;
+  padding: 1.25rem;
+  overflow: auto;
+}
+saalt-modal .chart-wrapper .content {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+saalt-modal .chart-wrapper,
+saalt-modal .chart-wrapper .content {
+  cursor: initial;
+  width: 100%;
+}
+.reveal-modal {
+  display: flex;
+  -webkit-animation: 0.1s ease-in forwards RevealModal;
+  animation: 0.1s ease-in forwards RevealModal;
+}
+.hide-modal {
+  -webkit-animation: 0.1s ease-in forwards HideModal;
+  animation: 0.1s ease-in forwards HideModal;
+}
+@-webkit-keyframes RevealModal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes RevealModal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes HideModal {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes HideModal {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

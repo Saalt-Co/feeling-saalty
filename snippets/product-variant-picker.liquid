@@ -33,7 +33,13 @@
               <span>{{ option.name -}}</span>
               <button class="size-chart-button" type="button">Size chart</button>
             </legend>
-            {% render 'size-chart-link', product: product, option: option %}
+            {% render 'size-chart-link-css', product: product, option: option %}
+          {% elsif option.name == 'Absorbency' %}
+            <legend class="form__label has-absorbency-chart">
+              <span>{{ option.name -}}</span>
+              <button class="absorbency-chart-button" type="button">?</button>
+            </legend>
+            {% render 'absorbency-chart-link-css', product: product, option: option %}
           {%- else -%}
             <legend class="form__label">
               {{ option.name -}}

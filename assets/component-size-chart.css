@@ -228,7 +228,6 @@ size-chart .size-chart-content-containers .size-chart-content-container.saalt-we
       'size-table size-table'
       'waist-diagram fit-instructions'
       'waist-diagram fit-ranges';
-    /* grid-template-rows: repeat(4, auto) 1fr; */
   }
 }
 
