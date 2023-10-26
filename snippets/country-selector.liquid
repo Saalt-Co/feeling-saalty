@@ -8,17 +8,6 @@
   {% render 'country-selector', section: section %}
 {% endcomment %}
 
-{%- liquid
-  case shop.permanent_domain
-    when 'saalt-uk.myshopify.com'
-      assign current_country = 'U.K.'
-    when 'saalt-canada.myshopify.com'
-      assign current_country = 'CAN'
-    else
-      assign current_country = 'U.S.'
-  endcase
--%}
-
 {%- style -%}
   .country-selector {
     display: flex;
@@ -81,6 +70,34 @@
   }
 {%- endstyle -%}
 
+{%- assign current_country = '' -%}
+{%- for country in shop.metaobjects.country_selector.country_data.json_data.value -%}
+  {%- assign cleaned_country = country.first | downcase | replace: '.', '' -%}
+  {%- if shop.url == country.last -%}
+    {%- assign current_country = country.first -%}
+  {%- elsif shop.url contains 'dev' and cleaned_country contains 'us' -%}
+    {%- assign current_country = country.first -%}
+  {%- endif -%}
+  {%- assign cleared_current_country = current_country | downcase | replace: '.', '' -%}
+  {%- unless cleaned_country == cleared_current_country
+    and section.settings.saalt_country_selector_include_current == false
+  -%}
+    {%- capture country_code -%}
+      <li class="country-selector-option" value="{{ country.first }}">
+        <a
+          {% if section.settings.saalt_country_selector_new_tab %}
+            target="_blank"
+          {% endif %}
+          href="{{ country.last }}"
+        >
+          {{- country.first -}}
+        </a>
+      </li>
+      {%- endcapture -%}
+    {%- assign country_code_block = country_code_block | append: country_code -%}
+  {%- endunless -%}
+{%- endfor -%}
+
 <div class="country-selector">
   <input type="checkbox" name="country-selector-toggle" id="country-selector-toggle" class="current-country">
   <label class="current-country-label" for="country-selector-toggle">
@@ -90,21 +107,6 @@
     </div>
   </label>
   <ul class="country-selector-menu">
-    {%- for country in shop.metaobjects.country_selector.country_data.json_data.value -%}
-      {%- unless country.first == current_country
-        and section.settings.saalt_country_selector_include_current == false
-      -%}
-        <li class="country-selector-option" value="{{ country.first }}">
-          <a
-            {% if section.settings.saalt_country_selector_new_tab %}
-              target="_blank"
-            {% endif %}
-            href="{{ country.last }}"
-          >
-            {{- country.first -}}
-          </a>
-        </li>
-      {%- endunless -%}
-    {%- endfor -%}
+    {{ country_code_block }}
   </ul>
 </div>
