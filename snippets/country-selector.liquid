@@ -1,3 +1,13 @@
+{% comment %}
+  Renders an svg icon
+
+  Accepts:
+  - section: {String} The header section object.
+
+  Usage:
+  {% render 'country-selector', section: section %}
+{% endcomment %}
+
 {%- liquid
   case shop.permanent_domain
     when 'saalt-uk.myshopify.com'
@@ -43,7 +53,7 @@
     list-style: none;
     padding: 1rem 3rem;
     top: 1.25rem;
-    left: -70%;
+    left: -65%;
     z-index: 10;
   }
 
@@ -80,8 +90,21 @@
     </div>
   </label>
   <ul class="country-selector-menu">
-    <li class="country-selector-option" value="us"><a target="_blank" href="https://www.google.com">U.S.</a></li>
-    <li class="country-selector-option" value="uk"><a target="_blank" href="https://www.google.com">U.K.</a></li>
-    <li class="country-selector-option" value="can"><a target="_blank" href="https://www.google.com">CAN</a></li>
+    {%- for country in shop.metaobjects.country_selector.country_data.json_data.value -%}
+      {%- unless country.first == current_country
+        and section.settings.saalt_country_selector_include_current == false
+      -%}
+        <li class="country-selector-option" value="{{ country.first }}">
+          <a
+            {% if section.settings.saalt_country_selector_new_tab %}
+              target="_blank"
+            {% endif %}
+            href="{{ country.last }}"
+          >
+            {{- country.first -}}
+          </a>
+        </li>
+      {%- endunless -%}
+    {%- endfor -%}
   </ul>
 </div>
