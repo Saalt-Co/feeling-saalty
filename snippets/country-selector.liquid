@@ -76,7 +76,7 @@
 {%- assign current_country = '' -%}
 {%- for country in shop.metaobjects.country_selector.country_data.json_data.value -%}
   {%- assign cleaned_country = country.first | downcase | replace: '.', '' -%}
-  {%- if shop.url == country.last -%}
+  {%- if shop.url contains country.last or country.last contains shop.url -%}
     {%- assign current_country = country.first -%}
   {%- elsif shop.url contains 'dev' and cleaned_country contains 'us' -%}
     {%- assign current_country = country.first -%}
