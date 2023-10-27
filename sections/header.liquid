@@ -304,6 +304,11 @@
           </localization-form>
         {%- endif -%}
       </div>
+
+      {%- if section.settings.enable_saalt_country_selector -%}        
+        {% render 'country-selector', section: section %}
+      {%- endif -%}
+
       {% render 'header-search', section_id: section.id, theme_color_background: section.settings.theme_color_background, theme_color_text: section.settings.theme_color_text, search_input_opacity: section.settings.search_input_opacity, input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
@@ -694,6 +699,31 @@
       "min": 0,
       "max": 100,
       "default": 25
+    },
+    {
+      "type": "header",
+      "content": "Saalt Country Selector",
+      "info": "This is a custom dropdown to allow customers the ability to travel between our country-specific stores. ❗️NOTE❗️: This list is populated based on the json data within the \"Country Selector\" metaobject."
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_saalt_country_selector",
+      "default": true,
+      "label": "Show custom Saalt country selector"
+    },
+    {
+      "type": "checkbox",
+      "id": "saalt_country_selector_new_tab",
+      "default": true,
+      "label": "Open in new tab",
+      "info": "Open country selector links in a new tab. Default is checked."
+    },
+    {
+      "type": "checkbox",
+      "id": "saalt_country_selector_include_current",
+      "default": false,
+      "label": "Include current country",
+      "info": "Includes the current store in the country selector. Default is UNchecked."
     },
     {
       "type": "header",
