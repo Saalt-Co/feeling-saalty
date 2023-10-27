@@ -13,6 +13,8 @@
     display: flex;
     position: relative;
     flex-direction: column;
+    font-size: 1.25rem;
+    font-weight: 400;
   }
 
   .country-selector .current-country-label {
@@ -70,6 +72,28 @@
 
   .country-selector .country-selector-option > a:hover {
     border-bottom: 1px solid;
+  }
+
+  .header__icons.header__icons--localization.header__localization .header__search details {
+    max-width: 2rem;
+    height: 3rem;
+    max-height: 3rem;
+    margin: 0 0 0 1rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .header__icons.header__icons--localization.header__localization .header__search details {
+      margin: 0 1rem 0 2rem;
+    }
+  }
+
+  .header__icons.header__icons--localization.header__localization .header__search details summary {
+    width: 100%;
+    height: auto;
+  }
+
+  .header__icons.header__icons--localization.header__localization .header__search details summary > span {
+    height: 3rem;
   }
 {%- endstyle -%}
 
