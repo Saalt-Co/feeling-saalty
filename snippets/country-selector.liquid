@@ -16,19 +16,22 @@
   }
 
   .country-selector .current-country-label {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 0.5rem;
-    width: 100%;
+    display: inline-flex;
+    gap: 0.25rem;
+    min-width: 4.5rem;
     cursor: pointer;
+  }
+
+  .country-selector .current-country-label > * {
+    width: 100%;
+    flex: 1 1 0;
   }
 
   .country-selector .current-country-caret {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 1 0;
-    max-width: 2.5rem;
+    width: 1.125rem;
   }
 
   .country-selector .current-country-caret > svg {
@@ -78,8 +81,8 @@
   {%- elsif shop.url contains 'dev' and cleaned_country contains 'us' -%}
     {%- assign current_country = country.first -%}
   {%- endif -%}
-  {%- assign cleared_current_country = current_country | downcase | replace: '.', '' -%}
-  {%- unless cleaned_country == cleared_current_country
+  {%- assign cleaned_current_country = current_country | downcase | replace: '.', '' -%}
+  {%- unless cleaned_country == cleaned_current_country
     and section.settings.saalt_country_selector_include_current == false
   -%}
     {%- capture country_code -%}
@@ -101,7 +104,9 @@
 <div class="country-selector">
   <input type="checkbox" name="country-selector-toggle" id="country-selector-toggle" class="current-country">
   <label class="current-country-label" for="country-selector-toggle">
-    {{ current_country }}
+    <div class="current-country">
+      {{ current_country }}
+    </div>
     <div class="current-country-caret">
       {% render 'icon-caret' %}
     </div>
