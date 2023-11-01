@@ -1716,13 +1716,14 @@ a.product__text {
   fill: rgba(var(--color-icons), var(--color-icons-opacity));
   color: rgba(var(--color-icons), var(--color-icons-opacity));
   stroke: rgba(var(--color-icons), var(--color-icons-opacity));
+  stroke-width: 1px;
 }
 
 .absorbency-wrapper .absorbency-icons-wrapper .svg-absorbency-drop-wrapper.empty svg {
-  fill: transparent;
+  fill: rgba(var(--color-site-background), 1);
   color: transparent;
-  stroke: rgba(var(--color-icons), var(--color-icons-opacity));
-  stroke-width: 1.75rem;
+  width: 98%;
+  height: 98%;
 }
 
 .absorbency-replacements {
