@@ -57,11 +57,16 @@ a.menu-drawer__menu-item .absorbency-drops_inner-icon-wrapper svg.absorbency-ico
   margin-top: 0.5rem;
 }
 
-.absorbency-drops_icons-wrapper .absorbency-drops_inner-icon-wrapper.empty svg.absorbency-icon {
-  fill: transparent;
-  color: transparent;
+.absorbency-drops_icons-wrapper .absorbency-drops_inner-icon-wrapper svg.absorbency-icon {
+  fill: rgba(var(--color-icons), var(--color-icons-opacity));
+  color: rgba(var(--color-icons), var(--color-icons-opacity));
   stroke: rgba(var(--color-icons), var(--color-icons-opacity));
-  stroke-width: 1.75rem;
+  stroke-width: 1px;
+}
+
+.absorbency-drops_icons-wrapper .absorbency-drops_inner-icon-wrapper.empty svg.absorbency-icon {
+  fill: rgba(var(--color-site-background), 1);
+  color: transparent;
 }
 
 label.facet-checkbox {

@@ -50,6 +50,30 @@
                           id="HeaderMenu-SubMenuList-{{ forloop.index }}"
                           class="header__submenu list-menu motion-reduce"
                         >
+                          {%- liquid
+                            comment
+                              FOR ABSORBENCY ICONS
+                            endcomment
+                            assign absorbencies = ''
+                            for entry in shop.metaobjects.absorbency.values
+                              assign absorbencies = absorbencies | append: entry.absorbency_name
+                              unless forloop.last
+                                assign absorbencies = absorbencies | append: ', '
+                              endunless
+                            endfor
+                            assign split_absorbencies = absorbencies | split: ', '
+                            comment
+                              FOR STYLE ICONS
+                            endcomment
+                            assign styles = ''
+                            for entry in shop.metaobjects.saalt_wear_styles.values
+                              assign styles = styles | append: entry.style_name
+                              unless forloop.last
+                                assign styles = styles | append: ', '
+                              endunless
+                            endfor
+                            assign split_styles = styles | split: ', '
+                          -%}
                           {%- for grandchildlink in childlink.links -%}
                             <li>
                               <a
@@ -59,7 +83,16 @@
                                   aria-current="page"
                                 {% endif %}
                               >
-                                {{ grandchildlink.title | escape }}
+                                <div class="link-title">{{ grandchildlink.title | escape }}</div>
+                                {%- liquid
+                                  assign child_link_downcased = childlink.title | downcase | strip
+                                -%}
+                                {% render 'menu-and-filter-icons',
+                                  value: grandchildlink.title,
+                                  split_absorbencies: split_absorbencies,
+                                  downcased_label: child_link_downcased,
+                                  split_styles: split_styles
+                                %}
                               </a>
                             </li>
                           {%- endfor -%}
