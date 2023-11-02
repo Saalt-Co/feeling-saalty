@@ -38,7 +38,7 @@
         "info": "t:settings_schema.store_settings.settings.reviews_platform.info",
         "options": [
           {
-            "value": "none",
+            "value": "shopify",
             "label": "t:settings_schema.store_settings.settings.reviews_platform.options.options__1.label"
           },
           {
