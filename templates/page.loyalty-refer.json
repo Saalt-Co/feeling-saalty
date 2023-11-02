@@ -2,13 +2,23 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "cfab101d-42c3-49a3-bbe8-e75326ecc991": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script src=\"https:\/\/cdn-widgetsrepository.yotpo.com\/v1\/loader\/1ob5zLVl0tGNVDAihObqpQ\" async><\/script>\n<div class=\"yotpo-widget-instance\" data-yotpo-instance-id=\"508042\"><\/div>",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "cfab101d-42c3-49a3-bbe8-e75326ecc991"
   ]
 }
