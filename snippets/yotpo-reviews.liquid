@@ -1,0 +1,80 @@
+{% capture star_rating %}
+    <div class="yotpo-widget-instance" data-yotpo-instance-id="511447" data-yotpo-product-id="{{product.id}}" data-yotpo-cart-product-id="{{item.product.id}}"></div>
+{% endcapture %}
+
+<!-- snippets > yotpo-reviews.liquid -->
+{% if yotpo_widget == 'yotpo-js' %}
+  <script
+    src="https://cdn-widgetsrepository.yotpo.com/v1/loader/2BPjkSRu2swwJBLujLtxxrBFxxqEta1k91QDxm4V"
+    async
+  ></script>
+{% elsif yotpo_widget == 'reviews' %}
+  <div
+    class="yotpo-widget-instance"
+    data-yotpo-instance-id="508050"
+    data-yotpo-product-id="{{product.id}}"
+    data-yotpo-name="{{ product.title | escape }}"
+    data-yotpo-url="{{ shop.url }}{{ product.url }}"
+    data-yotpo-image-url="{{ product.featured_image | product_img_url: "large" | prepend: "https:" | replace: '?', '%3F' | replace: '&','%26'}}"
+    data-yotpo-price="{{ product.price | divided_by: 100.00 }}"
+    data-yotpo-currency="{{ shop.currency }}"
+    data-yotpo-description="{{ product.description | escape }}"
+    {{ block.shopify_attributes }}
+  ></div>
+{% elsif yotpo_widget == 'pdp_star_rating' %}
+  <div
+    id="yotpo-pdp-stars"
+    style="padding-bottom: 8.6645px;"
+    {{ block.shopify_attributes }}
+  >
+    {{ star_rating }}
+  </div>
+  {% comment %}
+    <style>
+    	@media only screen and (max-width: 768px) {
+    		#yotpo-pdp-stars .yotpo-reviews-star-ratings-widget {
+    			justify-content: center !important;
+    		}
+    	}
+    </style>
+  {% endcomment %}
+{% elsif yotpo_widget == 'category_star_rating' %}
+  {% comment %} <a href="{{ product.url }}"> {% endcomment %}
+  <style>
+    #yotpo-category-stars * {
+      font-family: var(--font-body-family) !important;
+      font-weight: 400 !important;
+      font-size: 1.25rem !important;
+    }
+    #yotpo-category-stars .yotpo-widget-clear .yotpo-sr-bottom-line-summary {
+      display: flex !important;
+      align-items: center !important;
+    }
+    #yotpo-category-stars div.star-container {
+      width: 100% !important;
+      min-width: 1rem !important;
+      max-width: 1.125rem !important;
+      height: 100% !important;
+    }
+  </style>
+  <div
+    id="yotpo-category-stars"
+    {{ block.shopify_attributes }}
+  >
+    {{ star_rating }}
+  </div>
+  {% comment %} </a> {% endcomment %}
+{% elsif yotpo_widget == 'center_category_star_rating' %}
+  <style>
+    #yotpo-category-stars {
+      text-align: center !important;
+      /* display: block !important; */
+    }
+    #yotpo-category-stars .yotpo-reviews-star-ratings-widget {
+      justify-content: center !important;
+    }
+  </style>
+{% else %}
+
+{% endif %}
+<!-- end | snippets > yotpo-reviews.liquid -->
