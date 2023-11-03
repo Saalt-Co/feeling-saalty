@@ -2,13 +2,169 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "e64c7234-9808-405e-9c58-b7e318300e8e": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "template--15053077250129__e64c7234-9808-405e-9c58-b7e318300e8e-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "We're creating a reusable revolution, and you're invited."
+          }
+        },
+        "template--15053077250129__e64c7234-9808-405e-9c58-b7e318300e8e-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Live simply and sustainably<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15053077250129__e64c7234-9808-405e-9c58-b7e318300e8e-section_title-1",
+        "template--15053077250129__e64c7234-9808-405e-9c58-b7e318300e8e-section_content-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/About_Us_Hero-mobile_ef9a768a-4462-4ec4-a54f-e202d619166b.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/About_Us_Hero_f9ce7cc7-dc33-4f92-9701-5918425bbc27.jpg",
+        "use_max_media_width": false,
+        "max_media_width": "60%",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "section_padding": "default",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "flex-end",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "33%"
+      }
+    },
+    "7f641a80-2973-4cbe-8deb-d5232f6ed04b": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--15053077250129__7f641a80-2973-4cbe-8deb-d5232f6ed04b-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Simple. Sustainable. Saalt"
+          }
+        },
+        "template--15053077250129__7f641a80-2973-4cbe-8deb-d5232f6ed04b-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Toxin-laden, single-use disposable products are harming our bodies and polluting our planet. We deserve better. That's why we create premium, reusable products that are healthy for our bodies and the environment without sacrificing comfort and performance. And we give 2% back to help end global period poverty in the process. Thank you for joining our cause.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15053077250129__7f641a80-2973-4cbe-8deb-d5232f6ed04b-section_title-1",
+        "template--15053077250129__7f641a80-2973-4cbe-8deb-d5232f6ed04b-section_content-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "none",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "section_padding": "default",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px"
+      }
+    },
+    "ed94ed07-6b14-4ffa-9ea8-52ccf28ea5b2": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<iframe width=\"1271\" height=\"715\" src=\"https:\/\/www.youtube.com\/embed\/O7wZ1V7JQFQ?rel=0\" title=\"The Saalt Story - The Inspiration Behind Our Reusable Period Care Products\" frameborder=\"0\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"><\/iframe>",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "ada1c325-4f89-4bb5-a917-d6aa63fb225a": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--15053077250129__ada1c325-4f89-4bb5-a917-d6aa63fb225a-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "This is the Saalt story."
+          }
+        },
+        "template--15053077250129__ada1c325-4f89-4bb5-a917-d6aa63fb225a-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p><strong>It begins with Cherie, our CEO and co-founder. She has a period and 5 daughters. You could say, she gets period care.  <\/strong><\/p><p>“It all started with a phone call I had with my aunt in Venezuela, where pads and tampons hadn’t been available in stores for years. I immediately thought of my daughters and what I would do in the same situation. Our dependence on disposables kept me up at night.<\/p><p><em><strong>Why have we been using the same single-use disposable products for the past 100 years? <\/strong><\/em><\/p><p>I also learned that lack of access to period products extended beyond just Venezuela—over 62% of the world lives in period poverty, which makes girls miss school and women miss out on economic progress every day. So why is the default option something that most people can’t access or afford?<\/p><p>There had to be a better way.<\/p><p>Three months later, I started sourcing long-lasting reusable products for hundreds of friends. But when I went to source menstrual cups and period underwear, I couldn’t find products that met my expectations. So I started custom designing products I actually wanted to use myself and could share with friends.<\/p><p>In February of 2018, we launched Saalt with the vision of making life-changing  period and body care products accessible to everyone.”<\/p>"
+          }
+        },
+        "c49968e4-892d-4808-9620-b0b2b980d291": {
+          "type": "section_icon_group",
+          "settings": {
+            "use_max_icon_group_width": false,
+            "icon_group_max_width": "600px",
+            "mobile_icon_text_size": "1.5rem",
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_min_width": "80px",
+            "mobile_icon_wrapper_max_width": "200px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "100px",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_min_width": "80px",
+            "desktop_icon_wrapper_max_width": "200px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "100px",
+            "desktop_icon_alignment": "flex-start"
+          }
+        }
+      },
+      "block_order": [
+        "template--15053077250129__ada1c325-4f89-4bb5-a917-d6aa63fb225a-section_title-1",
+        "template--15053077250129__ada1c325-4f89-4bb5-a917-d6aa63fb225a-section_content-1",
+        "c49968e4-892d-4808-9620-b0b2b980d291"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/RedAspenxSaalt2044_1c047c9f-a5aa-4c61-8c40-1fe7792decc0.jpg",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "section_padding": "default",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "e64c7234-9808-405e-9c58-b7e318300e8e",
+    "7f641a80-2973-4cbe-8deb-d5232f6ed04b",
+    "ed94ed07-6b14-4ffa-9ea8-52ccf28ea5b2",
+    "ada1c325-4f89-4bb5-a917-d6aa63fb225a"
   ]
 }
