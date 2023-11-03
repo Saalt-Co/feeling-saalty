@@ -1,15 +1,7 @@
 <section class="section page-width">
   {%- case settings.reviews_platform -%}
     {%- when 'yotpo' -%}
-      <div class="yotpo yotpo-pictures-widget" data-gallery-id="5fadb7fc67e2975100d617b6"></div>
-      <div
-        class="yotpo yotpo-main-widget"
-        data-product-id="{{ product.id }}"
-        data-name="{{ product.title | escape }}"
-        data-url="{{ shop.url }}{{ product.url }}"
-        data-image-url="{{ product.featured_image | image_url: 'large' | replace: '?', '%3F' | replace: '&', '%26' }}"
-        data-description="{{ product.description | escape }}"
-      ></div>
+      {% render 'yotpo-reviews', yotpo_widget: 'reviews', product: product %}
     {%- when 'bazaarvoice' -%}
       {%- style -%}
         div[data-bv-show='reviews']:empty {
