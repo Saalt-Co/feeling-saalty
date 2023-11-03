@@ -10,19 +10,7 @@
 {% endcomment %}
 {%- case settings.reviews_platform -%}
   {%- when 'yotpo' -%}
-    <div
-      class="yotpo bottomLine"
-      data-appkey="0qQlpuRiV93Ffisa5v4EXIrKOAXVnb1yX9gOx8xu"
-      data-domain="{{ shop.permanent_domain | escape }}"
-      data-product-id="{{ product.id }}"
-      data-product-models="{{ product.id }}"
-      data-name="{{ product.title | escape }}"
-      data-url="{{ shop.url }}{{ product.url }}"
-      data-image-url="{{ product.featured_image | image_url: 'large' | replace: '?', '%3F' | replace: '&', '%26' }}"
-      data-description="{{ product.description | escape }}"
-      data-bread-crumbs="{% for tag in product.tags %}{{ tag | escape }};{% endfor %}"
-      {{ block.shopify_attributes }}
-    ></div>
+    {% render 'yotpo-reviews', yotpo_widget: 'pdp_star_rating', product: product %}
   {%- when 'bazaarvoice' -%}
     <div data-bv-show="rating_summary" data-bv-product-id="{{product.id}}" {{ block.shopify_attributes }}></div>
     {%- style -%}
