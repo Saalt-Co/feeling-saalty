@@ -1,3 +1,10 @@
+<style>
+  *[class*='yotpo-'] {
+    font-family: var(--font-body-family) !important;
+    font-weight: 400 !important;
+  }
+</style>
+
 {% capture star_rating %}
     <div class="yotpo-widget-instance" data-yotpo-instance-id="511447" data-yotpo-product-id="{{product.id}}" data-yotpo-cart-product-id="{{item.product.id}}"></div>
 {% endcapture %}
@@ -24,7 +31,6 @@
 {% elsif yotpo_widget == 'pdp_star_rating' %}
   <div
     id="yotpo-pdp-stars"
-    style="padding-bottom: 8.6645px;"
     {{ block.shopify_attributes }}
   >
     {{ star_rating }}
@@ -42,8 +48,6 @@
   {% comment %} <a href="{{ product.url }}"> {% endcomment %}
   <style>
     #yotpo-category-stars * {
-      font-family: var(--font-body-family) !important;
-      font-weight: 400 !important;
       font-size: 1.25rem !important;
     }
     #yotpo-category-stars .yotpo-widget-clear .yotpo-sr-bottom-line-summary {

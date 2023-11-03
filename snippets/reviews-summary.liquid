@@ -10,7 +10,7 @@
 {% endcomment %}
 {%- case settings.reviews_platform -%}
   {%- when 'yotpo' -%}
-    {% render 'yotpo-reviews', yotpo_widget: 'reviews', product: product %}
+    {% render 'yotpo-reviews', yotpo_widget: 'pdp_star_rating', product: product %}
   {%- when 'bazaarvoice' -%}
     <div data-bv-show="rating_summary" data-bv-product-id="{{product.id}}" {{ block.shopify_attributes }}></div>
     {%- style -%}
