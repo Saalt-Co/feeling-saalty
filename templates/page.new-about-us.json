@@ -317,7 +317,7 @@
             "desktop_icon_wrapper_max_width": "100px",
             "desktop_icon_max_width": "100%",
             "desktop_icon_height": "100px",
-            "desktop_icon_alignment": "center"
+            "desktop_icon_alignment": "flex-start"
           }
         },
         "template--15053077250129__f1b16d01-d3ea-4457-bea4-1ce2d36e34aa-section_icon_with_text-1": {
