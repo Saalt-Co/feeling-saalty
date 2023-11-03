@@ -288,12 +288,12 @@
           "static_bg_info": "Static main button color. Only sets the outline color for outlined buttons.",
           "static_text_label": "Button text color",
           "static_text_info": "Static button text color",
-          "hover_bg_label": "Button color hover/focus state",
+          "hover_bg_label": "Button color hover\/focus state",
           "hover_bg_info": "Main button color on hover and focus",
-          "hover_text_label": "Button text hover/focus state",
+          "hover_text_label": "Button text hover\/focus state",
           "hover_text_info": "Text color on hover and focus",
           "button_type_label": "Button type",
-          "button_type_info": "Primary/Solid or Secondary/Outlined"
+          "button_type_info": "Primary\/Solid or Secondary\/Outlined"
         },
         "badges": {
           "header": "🌈 Badges",
