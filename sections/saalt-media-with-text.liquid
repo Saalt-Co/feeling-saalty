@@ -78,6 +78,12 @@
     class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }} svg-color-fill{% endif %}"
   >
     {%- case section.settings.media_type -%}
+      {%- when 'code' -%}
+        <div class="media-wrapper">
+          <div class="code-wrapper">
+            {{ section.settings.custom_code }}
+          </div>
+        </div>
       {%- when 'video' -%}
         {%- render 'saalt-video-for-media-section', video_obj: section.settings.video -%}
       {%- when 'image' -%}
@@ -103,6 +109,19 @@
   }
   #section-{{ section.id }} .media-wrapper video {
     cursor: pointer;
+  }
+  #section-{{ section.id }} .media-wrapper .code-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+  #section-{{ section.id }} .media-wrapper .code-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
   }
   #section-{{ section.id }} .text-wrapper {
     width: 100%;
@@ -393,6 +412,10 @@
           "label": "Video"
         },
         {
+          "value": "code",
+          "label": "Custom Code"
+        },
+        {
           "value": "none",
           "label": "None"
         }
@@ -408,6 +431,12 @@
       "type": "video",
       "id": "video",
       "label": "Shopify-hosted *VIDEO*"
+    },
+    {
+      "type": "liquid",
+      "id": "custom_code",
+      "label": "Custom Code (HTML or Liquid)",
+      "info": "This custom code area accepts HTML or Liquid. Css inside of html style tags are also accepted but probably better added as \"Liquid Code\" blocks if that's all you want to add."
     },
     {
       "type": "checkbox",
