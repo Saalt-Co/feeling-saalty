@@ -90,12 +90,45 @@
         "max_width": "600px"
       }
     },
-    "ed94ed07-6b14-4ffa-9ea8-52ccf28ea5b2": {
-      "type": "custom-liquid",
+    "d7d7a243-f632-45c8-b506-96a010b8e74e": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "731bda26-c495-4563-9ea2-e40001ce191f": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<h3 style=\"margin-bottom: 0; font-size: 1.5rem;\">Watch The Saalt Story<\/h3>"
+          }
+        },
+        "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "The Inspiration Behind Our Products"
+          }
+        }
+      },
+      "block_order": [
+        "731bda26-c495-4563-9ea2-e40001ce191f",
+        "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_title-1"
+      ],
       "settings": {
-        "custom_liquid": "<iframe width=\"1271\" height=\"715\" src=\"https:\/\/www.youtube.com\/embed\/O7wZ1V7JQFQ?rel=0\" title=\"The Saalt Story - The Inspiration Behind Our Reusable Period Care Products\" frameborder=\"0\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"><\/iframe>",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "media_type": "code",
+        "custom_code": "<iframe width=\"1271\" height=\"715\" src=\"https:\/\/www.youtube.com\/embed\/O7wZ1V7JQFQ?rel=0\" title=\"The Saalt Story - The Inspiration Behind Our Reusable Period Care Products\" frameborder=\"0\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"><\/iframe>",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "section_padding": "default",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "above",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px"
       }
     },
     "ada1c325-4f89-4bb5-a917-d6aa63fb225a": {
@@ -885,54 +918,13 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "d7d7a243-f632-45c8-b506-96a010b8e74e": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "731bda26-c495-4563-9ea2-e40001ce191f": {
-          "type": "custom_liquid_code",
-          "settings": {
-            "liquid_code": "<h3 style=\"margin-bottom: 0; font-size: 1.5rem;\">Watch The Saalt Story<\/h3>"
-          }
-        },
-        "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "2",
-            "title": "The Inspiration Behind Our Products"
-          }
-        }
-      },
-      "block_order": [
-        "731bda26-c495-4563-9ea2-e40001ce191f",
-        "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_title-1"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme-color-bg-5",
-        "theme_color_text": "theme_default",
-        "media_type": "code",
-        "custom_code": "<iframe width=\"1271\" height=\"715\" src=\"https:\/\/www.youtube.com\/embed\/O7wZ1V7JQFQ?rel=0\" title=\"The Saalt Story - The Inspiration Behind Our Reusable Period Care Products\" frameborder=\"0\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"><\/iframe>",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "section_padding": "default",
-        "mobile_text_position": "above",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "above",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px"
-      }
     }
   },
   "order": [
     "main",
     "e64c7234-9808-405e-9c58-b7e318300e8e",
     "7f641a80-2973-4cbe-8deb-d5232f6ed04b",
-    "ed94ed07-6b14-4ffa-9ea8-52ccf28ea5b2",
+    "d7d7a243-f632-45c8-b506-96a010b8e74e",
     "ada1c325-4f89-4bb5-a917-d6aa63fb225a",
     "303350fa-3085-44b8-bb82-8d7345eba2e2",
     "c2901525-3b0d-4212-83f5-38810d396e66",
@@ -945,7 +937,6 @@
     "295e4f08-0542-49f0-adea-71b77b8d1067",
     "1eb65275-73ad-4234-9945-f8db040b3522",
     "a7eed842-0517-4e44-a1a7-b2dc8be30f45",
-    "adef0161-cadd-425a-908d-5de3ece928a1",
-    "d7d7a243-f632-45c8-b506-96a010b8e74e"
+    "adef0161-cadd-425a-908d-5de3ece928a1"
   ]
 }
