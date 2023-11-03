@@ -889,60 +889,40 @@
     "d7d7a243-f632-45c8-b506-96a010b8e74e": {
       "type": "saalt-media-with-text",
       "blocks": {
+        "731bda26-c495-4563-9ea2-e40001ce191f": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<h3 style=\"margin-bottom: 0; font-size: 1.5rem;\">Watch The Saalt Story<\/h3>"
+          }
+        },
         "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_title-1": {
           "type": "section_title",
           "settings": {
-            "heading_tag": "1",
-            "title": "Section Title Goes Here"
-          }
-        },
-        "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
-          }
-        },
-        "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_buttons_group-1": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "flex-start",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_button-1": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Button text",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
+            "heading_tag": "2",
+            "title": "The Inspiration Behind Our Products"
           }
         }
       },
       "block_order": [
-        "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_title-1",
-        "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_content-1",
-        "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_buttons_group-1",
-        "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_button-1"
+        "731bda26-c495-4563-9ea2-e40001ce191f",
+        "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_title-1"
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme_default",
+        "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
-        "media_type": "image",
+        "media_type": "code",
+        "custom_code": "<iframe width=\"1271\" height=\"715\" src=\"https:\/\/www.youtube.com\/embed\/O7wZ1V7JQFQ?rel=0\" title=\"The Saalt Story - The Inspiration Behind Our Reusable Period Care Products\" frameborder=\"0\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"><\/iframe>",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
         "title_font_size": "small",
         "content_font_size": "small",
         "section_padding": "default",
-        "mobile_text_position": "below",
+        "mobile_text_position": "above",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
-        "desktop_text_alignment": "left",
+        "desktop_text_position": "above",
+        "desktop_text_alignment": "center",
         "use_max_text_width": false,
         "max_width": "600px"
       }
