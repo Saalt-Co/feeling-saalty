@@ -827,6 +827,58 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "a7eed842-0517-4e44-a1a7-b2dc8be30f45": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "adef0161-cadd-425a-908d-5de3ece928a1": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15053077250129__adef0161-cadd-425a-908d-5de3ece928a1-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Do you have a period? Great, we're here to make it better (starting with 15% off your first order). 😉",
+            "heading_size": "h1"
+          }
+        },
+        "template--15053077250129__adef0161-cadd-425a-908d-5de3ece928a1-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Subscribe to receive all you need to know about the period flow, pointers, and perks that come as often as your period does.<\/p>"
+          }
+        },
+        "template--15053077250129__adef0161-cadd-425a-908d-5de3ece928a1-email_form-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15053077250129__adef0161-cadd-425a-908d-5de3ece928a1-heading-1",
+        "template--15053077250129__adef0161-cadd-425a-908d-5de3ece928a1-paragraph-1",
+        "template--15053077250129__adef0161-cadd-425a-908d-5de3ece928a1-email_form-1"
+      ],
+      "settings": {
+        "theme_color_background": "theme-color-bg-4",
+        "theme_color_text": "theme_default",
+        "input_opacity": 25,
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -845,6 +897,8 @@
     "e8f8ad80-7890-480a-8074-f9883439de49",
     "295e4f08-0542-49f0-adea-71b77b8d1067",
     "1eb65275-73ad-4234-9945-f8db040b3522",
-    "ce2e56b3-b27c-437c-8db1-f74d4867b864"
+    "ce2e56b3-b27c-437c-8db1-f74d4867b864",
+    "a7eed842-0517-4e44-a1a7-b2dc8be30f45",
+    "adef0161-cadd-425a-908d-5de3ece928a1"
   ]
 }
