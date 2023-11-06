@@ -62,7 +62,7 @@
             {%- for block in section.blocks -%}
               {%- case block.type -%}
                 {%- when 'section_icon_with_text' -%}
-                  {%- capture icon_code -%}{% render "saalt-svg-icon", theme_color_text: section.settings.theme_color_text, icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text, icon_color: block.settings.theme_color_icon_color, icon_text_color: block.settings.theme_color_icon_text_color %}{%- endcapture -%}
+                  {%- capture icon_code -%}{% render "saalt-svg-icon", block: block, theme_color_text: section.settings.theme_color_text, icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text, icon_color: block.settings.theme_color_icon_color, icon_text_color: block.settings.theme_color_icon_text_color %}{%- endcapture -%}
                   {%- assign all_icons = all_icons | append: icon_code -%}
               {%- endcase -%}
             {%- endfor -%}
