@@ -65,7 +65,12 @@
     line-height: 24px;
   {%- endcapture -%}
 {%- endcase -%}
-<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="section-image-with-text">
+<section
+  id="section-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  class="section-image-with-text"
+  {{ block.shopify_attributes }}
+>
   <div
     {% if section.settings.section_id != blank %}
       id="{{ section.settings.section_id | handleize }}"

@@ -27,18 +27,18 @@
     endif
   endif
 -%}
-<li class="icon-wrapper">
+<li class="icon-wrapper" {{ block.shopify_attributes }}>
   {%- if icon_svg != blank or icon_svg != '' -%}
-    <div class="icon-svg-wrapper{{ icon_classes }}">
+    <div class="icon-svg-wrapper{{ icon_classes }}" {{ block.shopify_attributes }}>
       {{ icon_svg }}
     </div>
   {%- else -%}
-    <div class="icon-svg-wrapper{{ icon_classes }}">
+    <div class="icon-svg-wrapper{{ icon_classes }}" {{ block.shopify_attributes }}>
       {{ 'product-1' | placeholder_svg_tag }}
     </div>
   {%- endif -%}
   {%- if icon_text != blank -%}
-    <span class="icon-text{{ icon_text_class }}">
+    <span class="icon-text{{ icon_text_class }}" {{ block.shopify_attributes }}>
       {{- icon_text -}}
     </span>
   {%- endif -%}

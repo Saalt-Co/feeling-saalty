@@ -63,7 +63,12 @@
 {%- assign block_count = section.blocks | size -%}
 {%- assign all_icons = '' -%}
 {%- assign tiles_code = '' -%}
-<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="section-image-with-text">
+<section
+  id="section-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  class="section-image-with-text"
+  {{ block.shopify_attributes }}
+>
   <div
     {% if section.settings.section_id != blank %}
       id="{{ section.settings.section_id | handleize }}"
@@ -76,13 +81,13 @@
           {% case block.type %}
             {%- when 'section_title' -%}
               {%- if block.settings.title != blank -%}
-                <h{{ block.settings.heading_tag }} class="section-title">
+                <h{{ block.settings.heading_tag }} class="section-title" {{ block.shopify_attributes }}>
                   {{- block.settings.title -}}
                 </h{{ block.settings.heading_tag }}>
               {%- endif -%}
             {%- when 'section_content' -%}
               {%- if block.settings.text_content != blank -%}
-                <div class="section-content">{{ block.settings.text_content }}</div>
+                <div class="section-content" {{ block.shopify_attributes }}>{{ block.settings.text_content }}</div>
               {%- endif -%}
             {%- when 'section_buttons_group' -%}
               {%- for block in section.blocks -%}
@@ -97,6 +102,7 @@
                           {% else %}
                             href="{{ block.settings.button_url }}"
                           {% endif %}
+                          {{ block.shopify_attributes }}
                         >
                           {{ block.settings.button_text | escape }}
                         </a>
@@ -127,7 +133,7 @@
                     {%- assign tiles_code = tiles_code | append: tile -%}
                 {%- endcase -%}
               {%- endfor -%}
-              <div class="tiles-wrapper">
+              <div class="tiles-wrapper" {{ block.shopify_attributes }}>
                 {{ tiles_code }}
               </div>
               {%- capture tiles_wrapper_css -%}
@@ -230,7 +236,7 @@
                   }
                 }
               {% endstyle %}
-              <ul class="icons-wrapper">
+              <ul class="icons-wrapper" {{ block.shopify_attributes }}>
                 {{ all_icons }}
               </ul>
               {% style %}
@@ -267,7 +273,9 @@
             {%- when 'saalt_contact_links' -%}
               {% render 'saalt-contact-links', block: block %}
             {%- when 'custom_liquid_code' -%}
-              {{ block.settings.liquid_code }}
+              <div {{ block.shopify_attributes }}>
+                {{ block.settings.liquid_code }}
+              </div>
           {% endcase %}
         {%- endfor -%}
       {%- endif -%}
