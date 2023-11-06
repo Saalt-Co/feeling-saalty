@@ -1,10 +1,10 @@
 {%- assign img_width = 25 -%}
 {%- capture img_sizes_attr -%}(min-width: 750px) {{ img_width | append: "vw" }}, 100vw{%- endcapture -%}
 {%- assign img_width_attr = img_width | times: 50 -%}
-<div class="tile">
+<div class="tile" {{ block.shopify_attributes }}>
   <div class="content-wrapper">
     <a class="tile-link" href="{{ block.settings.button_url }}">
-      <div class="image-wrapper">
+      <div class="image-wrapper" {{ block.shopify_attributes }}>
         {%- if block.settings.image != blank -%}
           {{
             block.settings.image
@@ -24,10 +24,10 @@
     </a>
     <div class="tile-text-wrapper">
       {%- if block.settings.title != blank -%}
-        <h3 class="tile-title">{{ block.settings.title }}</h3>
+        <h3 class="tile-title" {{ block.shopify_attributes }}>{{ block.settings.title }}</h3>
       {%- endif -%}
       {%- if block.settings.text_content != blank -%}
-        <p class="tile-content">{{ block.settings.text_content }}</p>
+        <p class="tile-content" {{ block.shopify_attributes }}>{{ block.settings.text_content }}</p>
       {%- endif -%}
     </div>
   </div>
@@ -35,10 +35,11 @@
     and block.settings.button_text != ''
     and block.settings.button_text != null
   -%}
-    <div class="button-wrapper">
+    <div class="button-wrapper" {{ block.shopify_attributes }}>
       <a
         href="{{ block.settings.button_url }}"
         class="button{% render 'saalt-button-color-classes', obj: block %}"
+        {{ block.shopify_attributes }}
       >
         {{- block.settings.button_text -}}
       </a>

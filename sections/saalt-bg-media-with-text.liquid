@@ -151,7 +151,6 @@
     width: 100%;
   }
   #section-{{ section.id }} .icons-wrapper {
-    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     padding-left: 0;
@@ -176,6 +175,11 @@
   }
   #section-{{ section.id }} .section-inner .text-wrapper > *:last-child {
     margin-bottom: 0;
+  }
+  @media screen and (max-width: 749px) {
+    #section-{{ section.id }} .icons-wrapper {
+      justify-content: center;
+    }
   }
   @media screen and (min-width: 420px) {
     #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
