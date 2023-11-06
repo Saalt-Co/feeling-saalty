@@ -7,13 +7,13 @@
         {%- case block.type -%}
           {%- when 'section_title' -%}
             {%- if block.settings.title != blank -%}
-              <h{{ block.settings.heading_tag }} class="section-title">
+              <h{{ block.settings.heading_tag }} class="section-title" {{ block.shopify_attributes }}>
                 {{- block.settings.title -}}
               </h{{ block.settings.heading_tag }}>
             {%- endif -%}
           {%- when 'section_content' -%}
             {%- if block.settings.text_content != blank -%}
-              <div class="section-content">{{ block.settings.text_content }}</div>
+              <div class="section-content" {{ block.shopify_attributes }}>{{ block.settings.text_content }}</div>
             {%- endif -%}
           {%- when 'section_buttons_group' -%}
             {%- for block in section.blocks -%}
@@ -28,6 +28,7 @@
                         {% else %}
                           href="{{ block.settings.button_url }}"
                         {% endif %}
+                        {{ block.shopify_attributes }}
                       >
                         {{ block.settings.button_text | escape }}
                       </a>
@@ -61,7 +62,7 @@
             {%- for block in section.blocks -%}
               {%- case block.type -%}
                 {%- when 'section_icon_with_text' -%}
-                  {%- capture icon_code -%}{% render "saalt-svg-icon", theme_color_text: section.settings.theme_color_text, icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text, icon_color: block.settings.theme_color_icon_color, icon_text_color: block.settings.theme_color_icon_text_color %}{%- endcapture -%}
+                  {%- capture icon_code -%}{% render "saalt-svg-icon", block: block, theme_color_text: section.settings.theme_color_text, icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text, icon_color: block.settings.theme_color_icon_color, icon_text_color: block.settings.theme_color_icon_text_color %}{%- endcapture -%}
                   {%- assign all_icons = all_icons | append: icon_code -%}
               {%- endcase -%}
             {%- endfor -%}
@@ -111,13 +112,15 @@
                 }
               }
             {% endstyle %}
-            <ul class="icons-wrapper">
+            <ul class="icons-wrapper" {{ block.shopify_attributes }}>
               {{ all_icons }}
             </ul>
           {%- when 'saalt_contact_links' -%}
             {% render 'saalt-contact-links', block: block %}
           {%- when 'custom_liquid_code' -%}
-            {{ block.settings.liquid_code }}
+            <div {{ block.shopify_attributes }}>
+              {{ block.settings.liquid_code }}
+            </div>
         {%- endcase -%}
       {%- endfor -%}
     {%- endif -%}

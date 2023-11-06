@@ -3,6 +3,7 @@
 
   Accepts:
   - theme_color_text: {String} The text color class assigned to the parent section (optional)
+  - block: {Object} The block object used to create the SVG icon (optional)
   - icon_svg: {String} Block-level svg code
   - icon_text: {String} Block-level text (optional)
   - icon_color: {String} Block-level svg color using 'text-color' and 'svg-color-fill' classes (optional)
@@ -10,7 +11,7 @@
     classes (optional)
 
   Usage:
-  {% render "saalt-svg-icon", theme_color_text: section.settings.theme_color_text, icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text, icon_color: block.settings.theme_color_icon_color, icon_text_color: block.settings.theme_color_icon_text_color %}
+  {% render "saalt-svg-icon", block: block, theme_color_text: section.settings.theme_color_text, icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text, icon_color: block.settings.theme_color_icon_color, icon_text_color: block.settings.theme_color_icon_text_color %}
 {% endcomment %}
 
 {%- liquid
@@ -27,18 +28,18 @@
     endif
   endif
 -%}
-<li class="icon-wrapper">
+<li class="icon-wrapper" {{ block.shopify_attributes }}>
   {%- if icon_svg != blank or icon_svg != '' -%}
-    <div class="icon-svg-wrapper{{ icon_classes }}">
+    <div class="icon-svg-wrapper{{ icon_classes }}" {{ block.shopify_attributes }}>
       {{ icon_svg }}
     </div>
   {%- else -%}
-    <div class="icon-svg-wrapper{{ icon_classes }}">
+    <div class="icon-svg-wrapper{{ icon_classes }}" {{ block.shopify_attributes }}>
       {{ 'product-1' | placeholder_svg_tag }}
     </div>
   {%- endif -%}
   {%- if icon_text != blank -%}
-    <span class="icon-text{{ icon_text_class }}">
+    <span class="icon-text{{ icon_text_class }}" {{ block.shopify_attributes }}>
       {{- icon_text -}}
     </span>
   {%- endif -%}
