@@ -1,7 +1,3 @@
-{%- if settings.reviews_platform == 'yotpo' -%}
-  <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/1ob5zLVl0tGNVDAihObqpQ" async></script>
-{%- endif -%}
-
 <link rel="preconnect dns-prefetch" href="https://triplewhale-pixel.web.app/" crossorigin>
 <link rel="preconnect dns-prefetch" href="https://api.config-security.com/" crossorigin>
 
@@ -172,16 +168,9 @@
 
 <!-- Yotpo Reviews -->
 {%- if settings.reviews_platform == 'yotpo' -%}
-  <script type="text/javascript">
-    (function e() {
-      var e = document.createElement('script');
-      (e.type = 'text/javascript'),
-        (e.async = true),
-        (e.src = '//staticw2.yotpo.com/2BPjkSRu2swwJBLujLtxxrBFxxqEta1k91QDxm4V/widget.js');
-      var t = document.getElementsByTagName('script')[0];
-      t.parentNode.insertBefore(e, t);
-    })();
-  </script>
+  <!-- YOTPO JAVASCRIPT | location: layout > theme.liquid -->
+  {% render 'yotpo-reviews', yotpo_widget: 'yotpo-js' %}
+  <!-- END | YOTPO JAVASCRIPT -->
 {%- endif -%}
 <!-- End Yotpo Reviews -->
 
@@ -214,8 +203,6 @@
 
 <script src="https://www.dwin1.com/19038.js" type="text/javascript" defer="defer"></script>
 <meta name="p:domain_verify" content="51d0da6b2699d780a7c409871ce0109d">
-
-<script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/1ob5zLVl0tGNVDAihObqpQ" async></script>
 
 <script type="text/javascript">
   window.zESettings = {
@@ -290,4 +277,10 @@
   })(window, document, 'ttq');
 </script>
 
-{% render 'friendbuy' %}
+<!-- START Digioh Lightbox Javascript -->
+<script
+  async
+  type="text/javascript"
+  src="https://www.lightboxcdn.com/vendor/{{ settings.digioh_script_id }}/lightbox_inline.js"
+></script>
+<!-- END Digioh Lightbox Javascript -->

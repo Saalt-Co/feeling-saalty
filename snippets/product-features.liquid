@@ -72,7 +72,11 @@
     {{ block.shopify_attributes }}
   >
     {% for feature in product_features %}
-      {% render 'saalt-svg-icon', icon_svg: feature.product_feature_svg, icon_text: feature.product_feature_text %}
+      {% render 'saalt-svg-icon',
+        block: block,
+        icon_svg: feature.product_feature_svg,
+        icon_text: feature.product_feature_text
+      %}
     {% endfor %}
   </ul>
 {%- endif -%}
