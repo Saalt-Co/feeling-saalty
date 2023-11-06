@@ -70,7 +70,12 @@
     line-height: 24px;
   {%- endcapture -%}
 {%- endcase -%}
-<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="section-image-with-text">
+<section
+  id="section-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  class="section-image-with-text"
+  {{ block.shopify_attributes }}
+>
   <div
     {% if section.settings.section_id != blank %}
       id="{{ section.settings.section_id | handleize }}"
@@ -79,8 +84,8 @@
   >
     {%- case section.settings.media_type -%}
       {%- when 'code' -%}
-        <div class="media-wrapper">
-          <div class="code-wrapper">
+        <div class="media-wrapper" {{ block.shopify_attributes }}>
+          <div class="code-wrapper" {{ block.shopify_attributes }}>
             {{ section.settings.custom_code }}
           </div>
         </div>

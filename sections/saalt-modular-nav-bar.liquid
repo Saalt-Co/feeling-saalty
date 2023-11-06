@@ -26,6 +26,7 @@
               {% if forloop.first %}
                 class="active"
               {% endif %}
+              {{ block.shopify_attributes }}
             >
               {{- block.settings.nav_bar_link_text -}}
             </a>

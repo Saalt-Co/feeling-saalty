@@ -87,7 +87,9 @@
                             {% else %}
                               href="{{ block.settings.button_url }}"
                             {% endif %}
-                            class="button{% render 'saalt-button-color-classes', obj: block %}">
+                            class="button{% render 'saalt-button-color-classes', obj: block %}"
+                            {{ block.shopify_attributes }}
+                          >
                             {{- block.settings.button_text -}}
                           </a>
                           {%- endcapture -%}
