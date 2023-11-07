@@ -1,4 +1,4 @@
-class SizeChart extends HTMLElement {
+class SizeChart extends SaaltModal {
   constructor() {
     super();
     this.tabs = null;
@@ -7,8 +7,8 @@ class SizeChart extends HTMLElement {
   }
 
   connectedCallback() {
-    this.tabs = document.querySelectorAll('.size-chart-tab-title-button');
-    this.contentContainers = document.querySelectorAll('.size-chart-content-container');
+    this.tabs = this.querySelectorAll('.size-chart-tab-title-button');
+    this.contentContainers = this.querySelectorAll('.size-chart-content-container');
 
     for (const tab of [...this.tabs]) {
       addEventListeners(tab, ['click', 'keydown'], [this.tabClick], false);
@@ -63,7 +63,7 @@ class SizeChart extends HTMLElement {
   }
 
   sanitizeSizeChartTable() {
-    const tableEl = document.querySelector('size-chart table');
+    const tableEl = this.querySelector('size-chart table');
     const attrs = ['width', 'height', 'style'];
     this.recursivelyRemoveAttributes(tableEl, attrs);
   }

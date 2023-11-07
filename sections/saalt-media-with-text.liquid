@@ -70,14 +70,25 @@
     line-height: 24px;
   {%- endcapture -%}
 {%- endcase -%}
-<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="section-image-with-text">
+<section
+  id="section-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  class="section-image-with-text"
+  {{ block.shopify_attributes }}
+>
   <div
     {% if section.settings.section_id != blank %}
       id="{{ section.settings.section_id | handleize }}"
     {% endif -%}
-    class="section-inner"
+    class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }} svg-color-fill{% endif %}"
   >
     {%- case section.settings.media_type -%}
+      {%- when 'code' -%}
+        <div class="media-wrapper" {{ block.shopify_attributes }}>
+          <div class="code-wrapper" {{ block.shopify_attributes }}>
+            {{ section.settings.custom_code }}
+          </div>
+        </div>
       {%- when 'video' -%}
         {%- render 'saalt-video-for-media-section', video_obj: section.settings.video -%}
       {%- when 'image' -%}
@@ -91,7 +102,6 @@
   #section-{{ section.id }} .section-inner {
     display: flex;
     position: relative;
-    background: {{ section.settings.background_color }};
     flex-direction: {{ mobile_flex_direction }};
     justify-content: center;
     align-items: center;
@@ -105,6 +115,19 @@
   #section-{{ section.id }} .media-wrapper video {
     cursor: pointer;
   }
+  #section-{{ section.id }} .media-wrapper .code-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+  #section-{{ section.id }} .media-wrapper .code-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
   #section-{{ section.id }} .text-wrapper {
     width: 100%;
     text-align: {{ section.settings.mobile_text_alignment }};
@@ -114,7 +137,6 @@
     margin-bottom: 3rem;
   }
   #section-{{ section.id }} .text-wrapper .section-title, #section-{{ section.id }} .text-wrapper .section-content, #section-{{ section.id }} .text-wrapper .section-content > p {
-    color: {{ section.settings.text_color }};
     width: 100%;
   }
   #section-{{ section.id }} .text-wrapper .section-title {
@@ -152,19 +174,15 @@
   }
   #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image svg {
     height: 100%;
-    fill: {{ section.settings.text_color }};
-  }
-  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-content {
-    color: {{ section.settings.text_color }};
   }
   #section-{{ section.id }} .icons-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
     display: flex;
     width: 100%;
   }
   #section-{{ section.id }} .icons-wrapper {
-    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    padding-left: 0;
   }
   #section-{{ section.id }} .icons-wrapper .icon-wrapper {
     flex-direction: column;
@@ -190,34 +208,19 @@
     flex-wrap: wrap;
     width: 100%;
   }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
-    background: {{ section.settings.button_color }};
-    color: {{ section.settings.button_text_color }};
-    border-color: transparent;
-    transition: all ease-in-out .1s;
-  }
   #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
     width: 100%;
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt {
-    background: transparent;
-    border-color: {{ section.settings.button_color }};
-    color: {{ section.settings.button_text_color }};
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button:focus, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button:focus {
-    background: {{ section.settings.button_color_hover_focus }};
-    border-color: {{ section.settings.button_color_hover_focus }};
-    color: {{ section.settings.button_text_hover_focus }};
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt:focus, #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper .button.alt:hover, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt:focus {
-    border-color: {{ section.settings.button_color_hover_focus }};
-    color: {{ section.settings.button_text_hover_focus }};
   }
   #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
     text-align: {{ section.settings.mobile_text_alignment }};
   }
   #section-{{ section.id }} .section-inner .text-wrapper > *:last-child {
     margin-bottom: 0;
+  }
+  @media screen and (max-width: 749px) {
+    #section-{{ section.id }} .icons-wrapper {
+      justify-content: center;
+    }
   }
   @media screen and (min-width: 420px) {
     #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
@@ -274,7 +277,7 @@
     #section-{{ section.id }} .section-inner .text-wrapper .button-group {
       flex-direction: row;
     }
-    #section-{{ section.id }} .section-inner .text-wrapper .button-group .button, #section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt {
+    #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
       width: auto;
     }
   {%- if section.settings.use_max_text_width -%}
@@ -312,10 +315,94 @@
       "content": "Section styling"
     },
     {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background color",
-      "default": "#EEF0F4"
+      "type": "select",
+      "id": "theme_color_background",
+      "label": "t:settings_schema.theme_colors.settings.sections.background_color_label",
+      "info": "Sets the background color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-bg-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-bg-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-bg-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-bg-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-bg-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-bg-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-bg-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-bg-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
+    },
+    {
+      "type": "select",
+      "id": "theme_color_text",
+      "label": "t:settings_schema.theme_colors.settings.sections.text_color_label",
+      "info": "Sets the text color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-text-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-text-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-text-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-text-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-text-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-text-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-text-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-text-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
     },
     {
       "type": "header",
@@ -335,6 +422,10 @@
           "label": "Video"
         },
         {
+          "value": "code",
+          "label": "Custom Code"
+        },
+        {
           "value": "none",
           "label": "None"
         }
@@ -350,6 +441,12 @@
       "type": "video",
       "id": "video",
       "label": "Shopify-hosted *VIDEO*"
+    },
+    {
+      "type": "liquid",
+      "id": "custom_code",
+      "label": "Custom Code (HTML or Liquid)",
+      "info": "This custom code area accepts HTML or Liquid. Css inside of html style tags are also accepted but probably better added as \"Liquid Code\" blocks if that's all you want to add."
     },
     {
       "type": "checkbox",
@@ -375,12 +472,6 @@
     {
       "type": "header",
       "content": "Text Settings"
-    },
-    {
-      "type": "color",
-      "id": "text_color",
-      "label": "Text color",
-      "default": "#3F4759"
     },
     {
       "type": "select",
@@ -564,36 +655,6 @@
       "label": "Max Width Value",
       "info": "Any valid css value is accepted",
       "default": "600px"
-    },
-    {
-      "type": "header",
-      "content": "Button Settings"
-    },
-    {
-      "type": "color",
-      "id": "button_color",
-      "label": "Button color",
-      "default": "#3F4759"
-    },
-    {
-      "type": "color",
-      "id": "button_color_hover_focus",
-      "label": "Button color hover/focus state",
-      "info": "Main button color on hover and focus",
-      "default": "#5A5F6F"
-    },
-    {
-      "type": "color",
-      "id": "button_text_color",
-      "label": "Button text color",
-      "default": "#ffffff"
-    },
-    {
-      "type": "color",
-      "id": "button_text_hover_focus",
-      "label": "Button text hover/focus state",
-      "info": "Text color on hover and focus",
-      "default": "#ffffff"
     }
   ],
   "blocks": [
@@ -644,6 +705,7 @@
     {
       "type": "section_buttons_group",
       "name": "Section Buttons Group",
+      "limit": 1,
       "settings": [
         {
           "type": "paragraph",
@@ -668,7 +730,7 @@
               "label": "Right"
             }
           ],
-          "default": "center"
+          "default": "flex-start"
         },
         {
           "type": "text",
@@ -696,19 +758,200 @@
         },
         {
           "type": "select",
-          "id": "button_style",
-          "label": "Section Button Style",
+          "id": "button_type",
+          "label": "t:settings_schema.theme_colors.settings.buttons.button_type_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.button_type_info",
           "options": [
             {
               "value": "primary",
               "label": "Primary"
             },
             {
-              "value": "alt",
-              "label": "Alt"
+              "value": "secondary",
+              "label": "Secondary"
             }
           ],
           "default": "primary"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_section_button_background",
+          "label": "t:settings_schema.theme_colors.settings.buttons.static_bg_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.static_bg_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-bg-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-bg-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-bg-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-bg-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-bg-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-bg-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-bg-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-bg-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_text_section_button_text",
+          "label": "t:settings_schema.theme_colors.settings.buttons.static_text_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.static_text_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_section_button_background_hover",
+          "label": "t:settings_schema.theme_colors.settings.buttons.hover_bg_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.hover_bg_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-bg-0-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-bg-1-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-bg-2-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-bg-3-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-bg-4-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-bg-5-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-bg-6-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-bg-7-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_text_section_button_text_hover",
+          "label": "t:settings_schema.theme_colors.settings.buttons.hover_text_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.hover_text_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-text-0-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
         }
       ]
     },
@@ -732,13 +975,6 @@
           "label": "Icon *GROUP MAX* Width",
           "info": "Max width for the entire icon group. Any valid css value is accepted.",
           "default": "600px"
-        },
-        {
-          "type": "color",
-          "id": "icon_color",
-          "label": "Icon color",
-          "info": "This colors the svg as well as any optional text",
-          "default": "#3F4759"
         },
         {
           "type": "header",
@@ -874,6 +1110,94 @@
           "id": "icon_text",
           "label": "Text",
           "info": "Text is optional"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_icon_color",
+          "label": "t:settings_schema.theme_colors.settings.icons.icons_color_label",
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_icon_text_color",
+          "label": "t:settings_schema.theme_colors.settings.icons.icons_text_color_label",
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
         }
       ]
     },
@@ -907,6 +1231,14 @@
         },
         {
           "type": "section_content",
+          "settings": {}
+        },
+        {
+          "type": "section_buttons_group",
+          "settings": {}
+        },
+        {
+          "type": "section_button",
           "settings": {}
         }
       ]

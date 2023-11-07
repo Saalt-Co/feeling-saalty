@@ -7,7 +7,7 @@
   data-section-id="{{ section.id }}"
   class="section{% if section.settings.make_full_width == false %} page-width{% endif %}"
 >
-  <window-display class="window-display">
+  <window-display class="window-display" {{ block.shopify_attributes }}>
     {%- assign block_count = section.blocks | size -%}
     {%- if block_count > 0 -%}
       {%- assign window_display_count = 0 -%}
@@ -19,11 +19,13 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'custom_liquid_code' -%}
-            {{ block.settings.liquid_code }}
+            <div {{ block.shopify_attributes }}>
+              {{ block.settings.liquid_code }}
+            </div>
           {%- when 'section_title' -%}
             {%- if block.settings.title != blank -%}
               {%- capture section_title_code -%}
-              <h{{ block.settings.heading_tag }} class="section-title mobile-{{ block.settings.mobile_text_alignment }} desktop-{{ block.settings.desktop_text_alignment }}">
+              <h{{ block.settings.heading_tag }} class="section-title mobile-{{ block.settings.mobile_text_alignment }} desktop-{{ block.settings.desktop_text_alignment }}" {{ block.shopify_attributes }}>
                 {{- block.settings.title -}}
               </h{{ block.settings.heading_tag }}>
               {%- endcapture -%}
@@ -174,7 +176,7 @@
     background: #fff;
     border: 1px solid;
     border-right: none;
-    color: var(--color-base-text);
+    color: var(--color-main-text);
     width: 100%;
     height: 100%;
     font-size: inherit;

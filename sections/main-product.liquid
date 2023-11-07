@@ -351,7 +351,7 @@
                 >
                   <span
                     aria-hidden="true"
-                    class="rating-star color-icon-{{ settings.accent_icons }}"
+                    class="rating-star"
                     style="--rating: {{ product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ product.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"
                   ></span>
                 </div>
@@ -511,7 +511,7 @@
   {%- endif -%}
 
   {%- if product.options contains "Size" -%}
-    {% render 'size-chart-modal', popup_content: section.settings.size_chart_popup_content.content %}
+    {% render 'size-chart-modal' %}
   {%- endif -%}
 
   <script>
@@ -2081,15 +2081,6 @@
       "id": "enable_sticky_info",
       "default": true,
       "label": "t:sections.main-product.settings.enable_sticky_info.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.main-product.settings.size_chart_popup_page.header"
-    },
-    {
-      "type": "page",
-      "id": "size_chart_popup_content",
-      "label": "t:sections.main-product.settings.size_chart_popup_page.label"
     },
     {
       "type": "header",

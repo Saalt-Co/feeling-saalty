@@ -12,6 +12,7 @@
     {% if block.settings.link_type == 'url' %}
       href="{{ block.settings.link_url }}"
     {% endif %}
+    {{ block.shopify_attributes }}
   >
     <div class="image-wrapper">
       {%- if block.settings.image != blank -%}

@@ -24,7 +24,7 @@
           "info": "Note: You do NOT need to include snippets for these, they are added automatically based on this selection",
           "options": {
             "options__1": {
-              "label": "None"
+              "label": "Shopify"
             },
             "options__2": {
               "label": "Yotpo"
@@ -33,6 +33,10 @@
               "label": "Bazaarvoice"
             }
           }
+        },
+        "digioh_script_id": {
+          "label": "Digioh Script ID",
+          "info": "This is the ID number used in the Digioh loader script. The default value above is for the US store."
         }
       }
     },
@@ -192,6 +196,147 @@
         },
         "gradient_background_2": {
           "label": "Background 2 gradient"
+        }
+      }
+    },
+    "color_palette": {
+      "name": "🎨 Color Palette",
+      "settings": {
+        "header__1": {
+          "content": "Primary colors"
+        },
+        "theme_default": {
+          "label": "Theme default"
+        },
+        "match_text": {
+          "label": "Match section text color"
+        },
+        "transparent": {
+          "label": "Transparent"
+        },
+        "palette_color_0": {
+          "label": "Theme color 0"
+        },
+        "palette_color_1": {
+          "label": "Theme color 1"
+        },
+        "palette_color_2": {
+          "label": "Theme color 2"
+        },
+        "palette_color_3": {
+          "label": "Theme color 3"
+        },
+        "palette_color_4": {
+          "label": "Theme color 4"
+        },
+        "palette_color_5": {
+          "label": "Theme color 5"
+        },
+        "header__2": {
+          "content": "Secondary colors"
+        },
+        "palette_color_6": {
+          "label": "Theme color 6"
+        },
+        "palette_color_7": {
+          "label": "Theme color 7"
+        }
+      }
+    },
+    "theme_colors": {
+      "name": "🧑‍🎨 Theme colors",
+      "settings": {
+        "text": {
+          "header": "🌈 Text",
+          "main_color_label": "Main text color",
+          "main_opacity_label": "Main text opacity",
+          "headings_color_label": "Headings color",
+          "headings_opacity_label": "Headings opacity",
+          "link_color_label": "Link color",
+          "link_opacity_label": "Link opacity",
+          "link_hover_color_label": "Link hover color",
+          "link_hover_opacity_label": "Link hover opacity"
+        },
+        "icons": {
+          "header": "🌈 Icons",
+          "icons_color_label": "Icons color",
+          "icons_color_info": "This colors the svg as well as any optional text",
+          "icons_opacity_label": "Icons opacity",
+          "icons_text_color_label": "Icons text color",
+          "icons_text_opacity_label": "Icons text opacity"
+        },
+        "review_stars": {
+          "header": "🌈 Review Stars",
+          "review_stars_color_label": "Review stars color",
+          "review_stars_opacity_label": "Review stars opacity"
+        },
+        "size_chart": {
+          "header": "🌈 Size Chart",
+          "size_chart_color_1_label": "Size chart accent color 1",
+          "size_chart_opacity_1_label": "Size chart accent color 1 opacity",
+          "size_chart_color_2_label": "Size chart accent color 2",
+          "size_chart_opacity_2_label": "Size chart accent color 2 opacity"
+        },
+        "variant_options": {
+          "header": "🌈 Variant Options",
+          "variant_options_color_label": "Variant options color"
+        },
+        "buttons": {
+          "header": "🌈 Buttons",
+          "settings_header": "Button settings",
+          "primary_bg_label": "Primary button color",
+          "primary_text_label": "Primary button text color",
+          "secondary_bg_label": "Secondary button color",
+          "secondary_text_label": "Secondary button text color",
+          "static_bg_label": "Main button color",
+          "static_bg_info": "Static main button color. Only sets the outline color for outlined buttons.",
+          "static_text_label": "Button text color",
+          "static_text_info": "Static button text color",
+          "hover_bg_label": "Button color hover\/focus state",
+          "hover_bg_info": "Main button color on hover and focus",
+          "hover_text_label": "Button text hover\/focus state",
+          "hover_text_info": "Text color on hover and focus",
+          "button_type_label": "Button type",
+          "button_type_info": "Primary\/Solid or Secondary\/Outlined"
+        },
+        "badges": {
+          "header": "🌈 Badges",
+          "badges_color_label": "Badges color",
+          "badges_text_color_label": "Badges text color",
+          "badges_opacity_label": "Badges opacity",
+          "badges_sold_out_color_label": "Sold out badge color",
+          "badges_sold_out_text_color_label": "Sold out badge text color",
+          "badges_sold_out_opacity_label": "Sold out badge opacity"
+        },
+        "cards": {
+          "header": "🌈 Cards",
+          "cards_product_color_label": "Product card background color",
+          "cards_product_color_opacity_label": "Product card color opacity",
+          "cards_product_text_color_label": "Product card text color",
+          "cards_product_text_opacity_label": "Product card text opacity",
+          "cards_collection_color_label": "Collection card background color",
+          "cards_collection_color_opacity_label": "Collection card color opacity",
+          "cards_collection_text_color_label": "Collection card text color",
+          "cards_collection_text_opacity_label": "Collection card text opacity",
+          "cards_article_color_label": "Blog card background color",
+          "cards_article_color_opacity_label": "Blog card color opacity",
+          "cards_article_text_color_label": "Blog card text color",
+          "cards_article_text_opacity_label": "Blog card text opacity"
+        },
+        "multicolumn": {
+          "column_secondary_bg_color_label": "Secondary column background color",
+          "column_secondary_bg_color_info": "Sets the color of the secondary column background",
+          "column_secondary_bg_opacity_label": "Secondary column background opacity",
+          "column_secondary_bg_opacity_info": "Sets the color of the secondary column background"
+        },
+        "sections": {
+          "section_color_header": "Color settings for this section",
+          "block_color_header": "Color settings for this block",
+          "selected_element_color_header": "Color settings for the selected element",
+          "background_color_label": "Background color for this element",
+          "text_color_label": "Text color for this element",
+          "section_background_color_label": "Background color for the selected section element(s)",
+          "section_text_color_label": "Text color for the selected section element(s)"
         }
       }
     },
@@ -695,6 +840,7 @@
           "label": "Number of columns on desktop"
         },
         "show_view_all": {
+          "content": "View all button",
           "label": "Enable \"View all\" button if list includes more collections than shown"
         },
         "header_mobile": {
@@ -820,10 +966,7 @@
             "label": "Link"
           },
           "options__2": {
-            "label": "Outline button"
-          },
-          "options__3": {
-            "label": "Solid button"
+            "label": "Button"
           }
         },
         "enable_desktop_slider": {
@@ -3246,17 +3389,8 @@
     "testimonial-slideshow": {
       "name": "Testimonial Slideshow",
       "settings": {
-        "layout": {
-          "label": "Layout",
-          "options__1": {
-            "label": "Full width"
-          },
-          "options__2": {
-            "label": "Grid"
-          }
-        },
-        "slide_height": {
-          "label": "Slide height",
+        "testimonial_height": {
+          "label": "Testimonial height",
           "options__1": {
             "label": "Adapt to image"
           },
