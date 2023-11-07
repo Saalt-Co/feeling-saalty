@@ -41,9 +41,13 @@
             </legend>
             {% render 'absorbency-chart-link-css', product: product, option: option %}
           {%- else -%}
-            <legend class="form__label">
+            <legend class="form__label has-size-chart">
               {{ option.name -}}
+              {%- if product.metafields.saalt.product_size_chart != blank -%}
+                <button class="size-chart-button" type="button">Size chart</button>
+              {%- endif -%}
             </legend>
+            {% render 'size-chart-link-css', product: product, option: option %}
           {%- endif %}
           {% render 'product-variant-options', product: product, option: option, block: block %}
         </fieldset>
