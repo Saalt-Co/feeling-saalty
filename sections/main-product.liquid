@@ -510,7 +510,7 @@
     <script src="{{ 'product-model.js' | asset_url }}" defer></script>
   {%- endif -%}
 
-  {%- if product.options contains "Size" -%}
+  {%- if product.metafields.saalt.product_size_chart != blank -%}
     {% render 'size-chart-modal' %}
   {%- endif -%}
 
