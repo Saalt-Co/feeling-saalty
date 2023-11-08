@@ -1,5 +1,8 @@
 {%- liquid
-  if section.settings.mobile_text_position == 'above'
+  if section.settings.mobile_text_position == 'overlay'
+    assign overlay_media = 'true'
+    assign mobile_flex_direction = 'column'
+  elsif section.settings.mobile_text_position == 'above'
     assign mobile_flex_direction = 'column-reverse'
   else
     assign mobile_flex_direction = 'column'
@@ -78,164 +81,176 @@
 </section>
 
 {%- style -%}
-  #section-{{ section.id }} .section-inner {
-    display: flex;
-    position: relative;
-    flex-direction: {{ mobile_flex_direction }};
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    #section-{{ section.id }} .section-inner {
+      display: flex;
+      position: relative;
+      flex-direction: {{ mobile_flex_direction }};
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       overflow: hidden;
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
     #section-{{ section.id }} .media-wrapper, #section-{{ section.id }} .media-wrapper img, #section-{{ section.id }} .media-wrapper video {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  #section-{{ section.id }} .media-wrapper.desktop {
-    display: none;
-    visibility: hidden;
-  }
-  #section-{{ section.id }} .media-wrapper video {
-    cursor: pointer;
-  }
-  #section-{{ section.id }} .text-wrapper {
-    width: 100%;
-    text-align: {{ section.settings.mobile_text_alignment }};
-    padding: 4rem 2rem;
-  }
-  #section-{{ section.id }} .text-wrapper > * {
-    margin-bottom: 3rem;
-  }
-  #section-{{ section.id }} .text-wrapper > *:first-child {
-    margin-top: 0;
-  }
-  #section-{{ section.id }} .text-wrapper .section-title, #section-{{ section.id }} .text-wrapper .section-content, #section-{{ section.id }} .text-wrapper .section-content > p {
-    width: 100%;
-  }
-  #section-{{ section.id }} .text-wrapper .section-title {
-    {{ title_css }}
-  }
-  #section-{{ section.id }} .text-wrapper .section-content {
-    {{ content_css }}
-  }
-  #section-{{ section.id }} .text-wrapper .contact-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 4rem;
-  }
-  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
-    flex-direction: column;
-    font-size: 2rem;
-    gap: 1rem;
-  }
-  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact, #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
-    height: 8rem;
-  }
-  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact-content {
-    font-size: clamp(1.75rem, 1.5vw, 2.25rem);
-    line-height: 1.25;
-    text-align: left;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image svg {
-    height: 100%;
-  }
-  #section-{{ section.id }} .icons-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
-    display: flex;
-    width: 100%;
-  }
-  #section-{{ section.id }} .icons-wrapper {
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding-left: 0;
-  }
-  #section-{{ section.id }} .icons-wrapper .icon-wrapper {
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1rem;
-    flex: 1 1 0;
-    overflow: hidden;
-  }
-  #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
-    width: 100%;
-    height: auto;
-  }
-
-  {%- render 'saalt-custom-section-button-css', section: section -%}
-
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
-    text-align: {{ section.settings.mobile_text_alignment }};
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper > *:last-child {
-    margin-bottom: 0;
-  }
-  @media screen and (max-width: 749px) {
-    #section-{{ section.id }} .icons-wrapper {
-      justify-content: center;
+      display: block;
+      width: 100%;
+      height: auto;
     }
-  }
-  @media screen and (min-width: 420px) {
+    #section-{{ section.id }} .media-wrapper.desktop {
+      display: none;
+      visibility: hidden;
+    }
+    #section-{{ section.id }} .media-wrapper video {
+      cursor: pointer;
+    }
+    #section-{{ section.id }} .text-wrapper {
+      {% if overlay_media %}
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      {% endif %}
+      width: 100%;
+      text-align: {{ section.settings.mobile_text_alignment }};
+      padding: 4rem 2rem;
+    }
+    #section-{{ section.id }} .text-wrapper > * {
+      margin-bottom: 3rem;
+    }
+    #section-{{ section.id }} .text-wrapper > *:first-child {
+      margin-top: 0;
+    }
+    #section-{{ section.id }} .text-wrapper .section-title, #section-{{ section.id }} .text-wrapper .section-content, #section-{{ section.id }} .text-wrapper .section-content > p {
+      width: 100%;
+    }
+    #section-{{ section.id }} .text-wrapper .section-title {
+      {{ title_css }}
+    }
+    #section-{{ section.id }} .text-wrapper .section-content {
+      {{ content_css }}
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 4rem;
+    }
     #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
-      flex-direction: row;
+      flex-direction: column;
+      font-size: 2rem;
+      gap: 1rem;
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact, #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
+      display: flex;
       justify-content: center;
       align-items: center;
     }
-  }
-  @media screen and (min-width: 750px) {
-    #section-{{ section.id }} .section-inner {
+    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
+      height: 8rem;
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact-content {
+      font-size: clamp(1.75rem, 1.5vw, 2.25rem);
+      line-height: 1.25;
+      text-align: left;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image svg {
+      height: 100%;
+    }
+    #section-{{ section.id }} .icons-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+      display: flex;
+      width: 100%;
+    }
+    #section-{{ section.id }} .icons-wrapper {
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding-left: 0;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper {
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1rem;
+      flex: 1 1 0;
+      overflow: hidden;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
+      width: 100%;
+      height: auto;
+    }
+
+    {%- render 'saalt-custom-section-button-css', section: section -%}
+
+    #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
+      text-align: {{ section.settings.mobile_text_alignment }};
+    }
+    #section-{{ section.id }} .section-inner .text-wrapper > *:last-child {
+      margin-bottom: 0;
+    }
+    @media screen and (max-width: 749px) {
+      #section-{{ section.id }} .icons-wrapper {
+        justify-content: center;
+      }
+      #section-{{ section.id }} .section-inner .shopify-placeholder > svg {
+        position: unset;
+        height: unset;
+        left: unset;
+      }
+    }
+    @media screen and (min-width: 420px) {
+      #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    @media screen and (min-width: 750px) {
+      #section-{{ section.id }} .section-inner {
         flex-direction: row;
         justify-content: {{ section.settings.desktop_text_position }};
         padding-top: {{ section.settings.padding_top }}px;
         padding-bottom: {{ section.settings.padding_bottom }}px;
       }
       {%- if section.settings.use_max_media_width -%}
-    #section-{{ section.id }} .media-wrapper {
-      max-width: {{ section.settings.max_media_width }};
-      margin: 0 auto;
-    }
-    {%- endif -%}
-    #section-{{ section.id }} .media-wrapper.mobile {
-      display: none;
-      visibility: hidden;
-    }
-    #section-{{ section.id }} .media-wrapper.desktop {
-      display: block;
-      visibility: visible;
-    }
-    #section-{{ section.id }} .text-wrapper {
-      display: flex;
-      position: absolute;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 4rem;
-      text-align: {{ section.settings.desktop_text_alignment }};
-      {%- if section.settings.use_max_text_width -%}
-      max-width: calc({{ section.settings.max_width }} + 8rem);
+      #section-{{ section.id }} .media-wrapper {
+        max-width: {{ section.settings.max_media_width }};
+        margin: 0 auto;
+      }
       {%- endif -%}
-    }
-    #section-{{ section.id }} .text-wrapper .contact-wrapper {
-      width: 100%;
-      gap: 4rem;
-      {%- if section.settings.desktop_text_alignment == "left" -%}
-      justify-content: flex-start;
-      {%- elsif section.settings.desktop_text_alignment == "right" -%}
-      justify-content: flex-end;
-      {%- endif -%};
-    }
-    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
+      #section-{{ section.id }} .media-wrapper.mobile {
+        display: none;
+        visibility: hidden;
+      }
+      #section-{{ section.id }} .media-wrapper.desktop {
+        display: block;
+        visibility: visible;
+      }
+      #section-{{ section.id }} .text-wrapper {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 4rem;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: {{ section.settings.desktop_text_alignment }};
+        {%- if section.settings.use_max_text_width -%}
+        max-width: calc({{ section.settings.max_width }} + 8rem);
+        {%- endif -%}
+      }
+      #section-{{ section.id }} .text-wrapper .contact-wrapper {
+        width: 100%;
+        gap: 4rem;
+        {%- if section.settings.desktop_text_alignment == "left" -%}
+        justify-content: flex-start;
+        {%- elsif section.settings.desktop_text_alignment == "right" -%}
+        justify-content: flex-end;
+        {%- endif -%};
+      }
+      #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
         height: auto;
       }
   }
@@ -456,6 +471,10 @@
       "label": "Text position on *MOBILE*",
       "options": [
         {
+          "value": "overlay",
+          "label": "Overlay the media"
+        },
+        {
           "value": "above",
           "label": "Above any media"
         },
@@ -464,7 +483,7 @@
           "label": "Below any media"
         }
       ],
-      "default": "below"
+      "default": "overlay"
     },
     {
       "type": "select",
