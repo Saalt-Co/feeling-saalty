@@ -34,9 +34,12 @@
             }
           }
         },
+        "digioh_header": {
+          "content": "Digioh"
+        },
         "digioh_script_id": {
           "label": "Digioh Script ID",
-          "info": "This is the ID number used in the Digioh loader script. The default value above is for the US store."
+          "info": "This is the ID number used in the Digioh loader script. You WILL have to save this change in order to see the element appear in the "
         }
       }
     },
