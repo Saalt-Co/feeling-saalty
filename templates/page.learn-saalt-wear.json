@@ -90,7 +90,7 @@
       ],
       "settings": {
         "section_id": "",
-        "make_sticky": false,
+        "make_sticky": true,
         "theme_color_background": "theme-color-bg-4",
         "theme_color_text": "theme_default",
         "mobile_nav_link_gap": "3rem",
