@@ -591,6 +591,105 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "24bfdb1d-9a25-447e-86cc-489d73bf61a4": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--15078825525329__24bfdb1d-9a25-447e-86cc-489d73bf61a4-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "See how your Saalt Wear is made."
+          }
+        }
+      },
+      "block_order": [
+        "template--15078825525329__24bfdb1d-9a25-447e-86cc-489d73bf61a4-section_title-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "video",
+        "video": "shopify:\/\/files\/videos\/5bc5fb4532b743fbab45daf3d7516501.mp4",
+        "custom_code": "",
+        "use_max_media_width": true,
+        "max_media_width": "400px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "above",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "b0e32c79-33fb-47c5-91b5-6c4ccc4ca927": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--15078825525329__b0e32c79-33fb-47c5-91b5-6c4ccc4ca927-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Section Title Goes Here"
+          }
+        },
+        "template--15078825525329__b0e32c79-33fb-47c5-91b5-6c4ccc4ca927-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
+          }
+        },
+        "template--15078825525329__b0e32c79-33fb-47c5-91b5-6c4ccc4ca927-section_buttons_group-1": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "flex-start",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "template--15078825525329__b0e32c79-33fb-47c5-91b5-6c4ccc4ca927-section_button-1": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--15078825525329__b0e32c79-33fb-47c5-91b5-6c4ccc4ca927-section_title-1",
+        "template--15078825525329__b0e32c79-33fb-47c5-91b5-6c4ccc4ca927-section_content-1",
+        "template--15078825525329__b0e32c79-33fb-47c5-91b5-6c4ccc4ca927-section_buttons_group-1",
+        "template--15078825525329__b0e32c79-33fb-47c5-91b5-6c4ccc4ca927-section_button-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -603,6 +702,8 @@
     "959d5c15-d6c3-425c-a8d3-5e2f73ff8944",
     "18d097a2-ade7-4b43-b9b1-92ab9a1e2e95",
     "2962b7c9-d4c6-4356-a45d-61b549a0df16",
-    "4c9959e6-dc6b-446a-8308-172a787dab27"
+    "4c9959e6-dc6b-446a-8308-172a787dab27",
+    "24bfdb1d-9a25-447e-86cc-489d73bf61a4",
+    "b0e32c79-33fb-47c5-91b5-6c4ccc4ca927"
   ]
 }
