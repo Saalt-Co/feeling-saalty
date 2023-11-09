@@ -489,6 +489,13 @@
     "4c9959e6-dc6b-446a-8308-172a787dab27": {
       "type": "saalt-style-1-tiles-section",
       "blocks": {
+        "5888a568-3fd4-418e-aec9-017317a01d65": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Meet the collections"
+          }
+        },
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-section_tiles_group-1": {
           "type": "section_tiles_group",
           "settings": {
@@ -498,16 +505,17 @@
             "theme_color_desktop_text_hover_focus_color": "match_text",
             "tile_desktop_text_alignment": "center",
             "desktop_text_placement": "center",
-            "tile_desktop_text_alignment_hover_focus": "center",
-            "desktop_text_hover_placement": "center"
+            "tile_desktop_text_alignment_hover_focus": "left",
+            "desktop_text_hover_placement": "flex-start"
           }
         },
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-1": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "title": "Tile Title Goes Here",
-            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
-            "button_text": "",
+            "image": "shopify:\/\/shop_images\/Seamless-darker_13d40341-040b-47f6-9114-dcce512216ef.jpg",
+            "title": "SEAMLESS",
+            "text_content": "Made with ultra-durable LYCRA®️ XTRA LIFE™️ fiber which resists fit loss and provides you with the confidence that your garment will last after repeated wash and wear.",
+            "button_text": "Shop Seamless",
             "button_url": "",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
@@ -519,9 +527,10 @@
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-2": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "title": "Tile Title Goes Here",
-            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
-            "button_text": "",
+            "image": "shopify:\/\/shop_images\/Comfort-Modal-darker_9e2ea548-2027-4917-9ea4-cb7c2e9eec6e.jpg",
+            "title": "COMFORT",
+            "text_content": "Made from soft-stretch TENCEL™️ Modal, aka dreamy soft fabric made from sustainably regenerated cellulose fiber that comes from renewable beech wood.",
+            "button_text": "Shop Comfort",
             "button_url": "",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
@@ -533,9 +542,10 @@
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-3": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "title": "Tile Title Goes Here",
-            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
-            "button_text": "",
+            "image": "shopify:\/\/shop_images\/Lace-Mesh-darker_e2aa5a6b-1178-40db-8db8-22f818056c91.jpg",
+            "title": "LACE & MESH",
+            "text_content": "Each pair is made with an average of 3 post-consumer recycled water bottles to help clean up landfill and ocean-bound plastic.",
+            "button_text": "Shop Lace & Mesh",
             "button_url": "",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
@@ -547,9 +557,10 @@
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-4": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "title": "Tile Title Goes Here",
-            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
-            "button_text": "",
+            "image": "shopify:\/\/shop_images\/Cotton-darker_f472d7e6-dd7d-4378-9deb-095706b48d43.jpg",
+            "title": "Cotton",
+            "text_content": "Made of soft and breathable biodegradable natural cotton that is Standard 100 OEKO-TEX®️ Certified.\nThis is a 3rd party certification that our product is free from a wide list of harmful chemicals.",
+            "button_text": "Shop Cotton",
             "button_url": "",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
@@ -560,6 +571,7 @@
         }
       },
       "block_order": [
+        "5888a568-3fd4-418e-aec9-017317a01d65",
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-section_tiles_group-1",
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-1",
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-2",
@@ -569,7 +581,7 @@
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
+        "theme_color_text": "theme-color-text-0",
         "title_font_size": "small",
         "content_font_size": "small",
         "mobile_text_alignment": "center",
@@ -578,6 +590,140 @@
         "max_width": "600px",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "24bfdb1d-9a25-447e-86cc-489d73bf61a4": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--15078825525329__24bfdb1d-9a25-447e-86cc-489d73bf61a4-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "See how your Saalt Wear is made."
+          }
+        }
+      },
+      "block_order": [
+        "template--15078825525329__24bfdb1d-9a25-447e-86cc-489d73bf61a4-section_title-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "video",
+        "video": "shopify:\/\/files\/videos\/5bc5fb4532b743fbab45daf3d7516501.mp4",
+        "custom_code": "",
+        "use_max_media_width": true,
+        "max_media_width": "400px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "above",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "b0e32c79-33fb-47c5-91b5-6c4ccc4ca927": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "ec63860f-c1f5-41e6-a69b-636f8e22dfc5": {
+          "type": "section_icon_group",
+          "settings": {
+            "use_max_icon_group_width": true,
+            "icon_group_max_width": "1100px",
+            "mobile_icon_text_size": "clamp(.75rem, 1.5vw, 1.5rem)",
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_min_width": "100px",
+            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "100px",
+            "desktop_icon_text_size": "clamp(.75rem, 1.5vw, 1.25rem)",
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_min_width": "140px",
+            "desktop_icon_wrapper_max_width": "200px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "100px",
+            "desktop_icon_alignment": "center"
+          }
+        },
+        "a382d81f-3d37-4b1b-bd0c-20257c00cf28": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"193\" height=\"193\" viewbox=\"0 0 193 193\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M96.6246 192.712C77.5979 192.712 58.9985 187.059 43.1788 176.468C27.3591 165.877 15.0297 150.824 7.74994 133.213C0.470158 115.601 -1.433 96.2227 2.28118 77.5276C5.99537 58.8326 15.16 41.6608 28.6161 28.1843C42.0722 14.7078 59.2153 5.53169 77.8771 1.8167C96.539 -1.89829 115.881 0.0148053 133.458 7.31371C151.034 14.6126 166.056 26.9696 176.622 42.8219C187.188 58.6742 192.825 77.3097 192.818 96.3715C192.786 121.918 182.639 146.408 164.606 164.469C146.572 182.53 122.124 192.687 96.6246 192.712ZM96.6246 2.21296C78.0361 2.21296 59.8649 7.73527 44.4091 18.0815C28.9534 28.4278 16.9071 43.1332 9.79356 60.3385C2.68005 77.5437 0.818854 96.4759 4.44529 114.741C8.07173 133.006 17.0229 149.783 30.167 162.952C43.311 176.12 60.0577 185.088 78.289 188.721C96.5203 192.354 115.418 190.489 132.591 183.363C149.765 176.236 164.443 164.167 174.77 148.683C185.097 133.199 190.61 114.994 190.61 96.3715C190.585 71.4067 180.675 47.4714 163.055 29.8186C145.434 12.1658 121.543 2.23771 96.6246 2.21296V2.21296Z\" fill=\"currentColor\"><\/path>\n<path d=\"M130.286 98.3973C130.426 98.634 130.469 98.916 130.405 99.1835C130.341 99.4511 130.175 99.6834 129.944 99.8311L128.668 100.673C123.421 104.128 118.908 108.589 115.39 113.799C111.871 119.009 109.416 124.866 108.166 131.03C108.132 131.201 108.054 131.36 107.94 131.492C107.825 131.623 107.678 131.722 107.513 131.778C105.611 132.371 103.626 132.655 101.633 132.62C99.5328 132.624 97.4408 132.351 95.4111 131.809C95.2342 131.754 95.0749 131.653 94.9493 131.516C94.8238 131.379 94.7363 131.212 94.6957 131.03C93.6312 127.252 92.1056 123.619 90.1535 120.215C90.5579 119.467 90.9 118.656 91.2422 117.877C93.5298 121.657 95.3082 125.723 96.5311 129.97C99.6906 130.73 102.985 130.73 106.144 129.97C107.531 123.483 110.204 117.34 114.003 111.906C117.803 106.472 122.652 101.857 128.264 98.3349L128.7 98.0545C128.823 97.9643 128.965 97.9011 129.115 97.8694C129.265 97.8377 129.42 97.8382 129.569 97.8705C129.719 97.9029 129.86 97.9666 129.984 98.0574C130.107 98.1481 130.21 98.2639 130.286 98.3973V98.3973Z\" fill=\"currentColor\"><\/path>\n<path d=\"M160.837 82.907C160.849 83.042 160.835 83.1781 160.794 83.3076C160.754 83.4371 160.689 83.5574 160.602 83.6616C160.515 83.7658 160.409 83.8518 160.289 83.9148C160.169 83.9779 160.038 84.0167 159.903 84.029C159.769 84.0412 159.633 84.0267 159.503 83.9864C159.374 83.946 159.254 83.8807 159.15 83.7938C159.046 83.707 158.96 83.6004 158.897 83.4803C158.834 83.3602 158.796 83.229 158.783 83.094V81.9718L157.415 66.6684C120.346 72.0262 82.7024 72.0262 45.6342 66.6684L43.8297 87.5822C55.0273 89.0186 65.7061 93.1696 74.9403 99.6754H71.2382C62.5615 94.1644 52.7579 90.6809 42.5542 89.4834C42.2928 89.4446 42.0563 89.3064 41.8941 89.0974C41.7318 88.8884 41.6562 88.6248 41.6831 88.3614L43.6431 65.3906C43.6593 65.2501 43.7035 65.1142 43.773 64.9911C43.8424 64.868 43.9358 64.76 44.0475 64.6736C44.2789 64.4988 44.5688 64.4206 44.8565 64.4554C82.408 70.0484 120.578 70.0484 158.13 64.4554C158.273 64.4327 158.418 64.4406 158.558 64.4782C158.697 64.5158 158.827 64.5823 158.939 64.6736C159.052 64.7558 159.145 64.8634 159.21 64.9879C159.275 65.1123 159.31 65.2503 159.312 65.3906L160.775 81.8472L160.837 82.907Z\" fill=\"currentColor\"><\/path>\n<path d=\"M150.415 147.705H149.637C148.545 147.705 147.497 147.273 146.722 146.502C145.947 145.731 145.507 144.685 145.499 143.591V128.63C135.419 125.139 128.17 110.335 128.17 92.974C128.17 92.3195 128.17 91.6339 128.17 90.917C127.29 90.6912 126.508 90.181 125.946 89.4656C125.384 88.7501 125.072 87.8692 125.059 86.9587V86.1795C125.059 85.0854 125.491 84.0357 126.26 83.2592C127.03 82.4827 128.074 82.0423 129.166 82.0341H170.543C171.638 82.0422 172.686 82.4816 173.46 83.2573C174.234 84.0329 174.673 85.0826 174.681 86.1795V86.9587C174.668 87.8692 174.357 88.7501 173.794 89.4656C173.232 90.181 172.45 90.6912 171.57 90.917C171.57 91.6339 171.57 92.3195 171.57 92.974C171.57 110.335 164.352 125.139 154.241 128.63V143.591C154.244 144.635 153.85 145.641 153.139 146.405C152.429 147.169 151.455 147.634 150.415 147.705V147.705ZM129.415 84.0289C128.868 84.037 128.345 84.2606 127.961 84.6513C127.577 85.042 127.362 85.5686 127.362 86.1171V86.8963C127.362 87.4365 127.574 87.955 127.952 88.3399C128.33 88.7248 128.845 88.9453 129.384 88.9534C129.663 88.9574 129.931 89.069 130.13 89.2651C130.314 89.4826 130.414 89.7592 130.411 90.0443C130.411 91.0105 130.411 92.0078 130.411 92.9117C130.411 109.524 137.535 124.08 146.993 126.822C147.206 126.878 147.396 127.003 147.531 127.178C147.666 127.353 147.739 127.567 147.739 127.789V143.373C147.747 143.921 147.97 144.444 148.36 144.829C148.751 145.214 149.276 145.43 149.824 145.43H150.601C151.143 145.422 151.661 145.202 152.044 144.818C152.428 144.434 152.646 143.916 152.655 143.373V127.789C152.66 127.569 152.735 127.356 152.869 127.183C153.004 127.009 153.19 126.882 153.401 126.822C162.735 124.111 169.983 109.524 169.983 92.9117C169.983 92.0078 169.983 91.0105 169.983 90.0443C169.98 89.7592 170.079 89.4826 170.263 89.2651C170.452 89.0709 170.709 88.959 170.979 88.9534C171.518 88.9453 172.032 88.7248 172.411 88.3399C172.789 87.955 173.001 87.4365 173.001 86.8963V86.1171C173.005 85.8443 172.955 85.5735 172.854 85.3204C172.752 85.0672 172.602 84.8367 172.411 84.6424C172.22 84.448 171.992 84.2936 171.741 84.1883C171.49 84.0829 171.22 84.0288 170.948 84.0289H129.415Z\" fill=\"currentColor\"><\/path>\n<path d=\"M60.3806 140.225C57.4067 140.218 54.4465 139.82 51.5763 139.04C45.8574 137.338 40.6649 134.207 36.4876 129.939C33.7974 127.271 31.5217 124.214 29.7366 120.87C29.2388 119.903 28.8033 118.906 28.3677 117.909C27.6787 116.072 26.7363 114.341 25.5678 112.766C25.432 112.582 25.2867 112.405 25.1323 112.236L24.7278 111.987C24.1679 111.644 23.6389 111.27 23.1412 110.896C22.1854 110.098 21.5274 108.999 21.2745 107.779C21.1519 107.321 21.0789 106.85 21.0568 106.376V104.787C21.0418 104.61 21.0418 104.433 21.0568 104.257C21.2778 103.347 21.7078 102.501 22.3127 101.787C22.9176 101.072 23.6808 100.509 24.5412 100.143H24.9767C25.1559 100.052 25.3434 99.9791 25.5367 99.9246H25.7545L26.8433 99.6442C28.1056 99.3245 29.3995 99.1466 30.701 99.1142H88.4112C90.1524 99.0667 91.8937 99.2026 93.6066 99.5194H94.1355H94.3844L94.6956 99.7064L95.7844 100.112H96.0334H96.2512C97.4091 100.651 98.3651 101.546 98.9805 102.667C99.596 103.788 99.8386 105.077 99.6732 106.345V106.345C99.6732 106.875 99.6732 107.343 99.4554 107.779C99.1913 108.995 98.5355 110.09 97.5889 110.896C97.0772 111.308 96.5365 111.683 95.9711 112.018L95.5355 112.267C95.4407 112.436 95.3258 112.593 95.1933 112.735C94.0215 114.285 93.0784 115.996 92.3933 117.815L92.1757 118.283C91.8469 119.103 91.4729 119.904 91.0556 120.683C89.2797 124.141 86.9698 127.297 84.2112 130.033C80.0435 134.319 74.8487 137.463 69.1226 139.165C66.2674 139.9 63.3283 140.256 60.3806 140.225V140.225ZM26.5012 101.452H26.0656H25.6611H25.35C24.7713 101.709 24.2565 102.091 23.8423 102.57C23.4282 103.05 23.125 103.615 22.9545 104.226V105.909C22.9918 106.266 23.0542 106.62 23.1412 106.969C23.2922 107.784 23.721 108.522 24.3545 109.057C24.804 109.394 25.2713 109.706 25.7545 109.992L26.4389 110.491C26.7189 110.771 26.9055 111.02 27.0922 111.239C28.3873 112.93 29.4349 114.798 30.2032 116.787C30.6388 117.722 31.0433 118.688 31.5411 119.623C33.2405 122.792 35.4003 125.691 37.9498 128.225C41.8823 132.272 46.7898 135.235 52.1985 136.828C57.6354 138.324 63.3745 138.324 68.8115 136.828C74.2202 135.235 79.1276 132.272 83.0601 128.225C85.6192 125.7 87.7802 122.799 89.4689 119.623V119.405C89.8422 118.657 90.1845 117.909 90.5267 117.129L90.7134 116.662C91.4965 114.71 92.5433 112.874 93.8244 111.207C94.0471 110.924 94.286 110.653 94.5399 110.397L95.1933 110.304C95.5977 110.023 96.0022 109.774 96.3755 109.462C96.9892 108.942 97.4064 108.227 97.5577 107.436C97.6501 107.057 97.7125 106.672 97.7444 106.283H98.7088H97.7444C97.8665 105.395 97.6954 104.49 97.2574 103.708C96.8193 102.926 96.1382 102.309 95.3177 101.951H95.0689L94.0111 101.545H93.7933H93.6378H93.2645C91.6427 101.255 89.9958 101.13 88.3489 101.171H30.7633C29.5267 101.198 28.2962 101.355 27.0922 101.639L26.5012 101.452Z\"><\/path>\n<\/svg>",
+            "icon_text": "<p>HIGH-PERFORMANCE PRODUCTS<\/p>",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "fff7fb9e-844c-4a4f-b50c-4e312ddfebdd": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "",
+            "icon_text": "",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "9c3e450b-c7b4-4c0e-a1fc-812e6c27d7ea": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "",
+            "icon_text": "",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "8a83cc0d-be52-4afa-bb5b-5809bfbc0588": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "",
+            "icon_text": "",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "5c1a7759-eb59-4939-9eea-cdd2f94d074a": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "",
+            "icon_text": "",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        }
+      },
+      "block_order": [
+        "ec63860f-c1f5-41e6-a69b-636f8e22dfc5",
+        "a382d81f-3d37-4b1b-bd0c-20257c00cf28",
+        "fff7fb9e-844c-4a4f-b50c-4e312ddfebdd",
+        "9c3e450b-c7b4-4c0e-a1fc-812e6c27d7ea",
+        "8a83cc0d-be52-4afa-bb5b-5809bfbc0588",
+        "5c1a7759-eb59-4939-9eea-cdd2f94d074a"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -591,6 +737,8 @@
     "959d5c15-d6c3-425c-a8d3-5e2f73ff8944",
     "18d097a2-ade7-4b43-b9b1-92ab9a1e2e95",
     "2962b7c9-d4c6-4356-a45d-61b549a0df16",
-    "4c9959e6-dc6b-446a-8308-172a787dab27"
+    "4c9959e6-dc6b-446a-8308-172a787dab27",
+    "24bfdb1d-9a25-447e-86cc-489d73bf61a4",
+    "b0e32c79-33fb-47c5-91b5-6c4ccc4ca927"
   ]
 }
