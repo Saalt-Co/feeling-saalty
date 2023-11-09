@@ -489,6 +489,13 @@
     "4c9959e6-dc6b-446a-8308-172a787dab27": {
       "type": "saalt-style-1-tiles-section",
       "blocks": {
+        "5888a568-3fd4-418e-aec9-017317a01d65": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Meet the collections"
+          }
+        },
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-section_tiles_group-1": {
           "type": "section_tiles_group",
           "settings": {
@@ -498,16 +505,17 @@
             "theme_color_desktop_text_hover_focus_color": "match_text",
             "tile_desktop_text_alignment": "center",
             "desktop_text_placement": "center",
-            "tile_desktop_text_alignment_hover_focus": "center",
-            "desktop_text_hover_placement": "center"
+            "tile_desktop_text_alignment_hover_focus": "left",
+            "desktop_text_hover_placement": "flex-start"
           }
         },
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-1": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "title": "Tile Title Goes Here",
-            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
-            "button_text": "",
+            "image": "shopify:\/\/shop_images\/Seamless-darker_13d40341-040b-47f6-9114-dcce512216ef.jpg",
+            "title": "SEAMLESS",
+            "text_content": "Made with ultra-durable LYCRA®️ XTRA LIFE™️ fiber which resists fit loss and provides you with the confidence that your garment will last after repeated wash and wear.",
+            "button_text": "Shop Seamless",
             "button_url": "",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
@@ -519,9 +527,10 @@
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-2": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "title": "Tile Title Goes Here",
-            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
-            "button_text": "",
+            "image": "shopify:\/\/shop_images\/Comfort-Modal-darker_9e2ea548-2027-4917-9ea4-cb7c2e9eec6e.jpg",
+            "title": "COMFORT",
+            "text_content": "Made from soft-stretch TENCEL™️ Modal, aka dreamy soft fabric made from sustainably regenerated cellulose fiber that comes from renewable beech wood.",
+            "button_text": "Shop Comfort",
             "button_url": "",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
@@ -533,9 +542,10 @@
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-3": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "title": "Tile Title Goes Here",
-            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
-            "button_text": "",
+            "image": "shopify:\/\/shop_images\/Lace-Mesh-darker_e2aa5a6b-1178-40db-8db8-22f818056c91.jpg",
+            "title": "LACE & MESH",
+            "text_content": "Each pair is made with an average of 3 post-consumer recycled water bottles to help clean up landfill and ocean-bound plastic.",
+            "button_text": "Shop Lace & Mesh",
             "button_url": "",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
@@ -547,9 +557,10 @@
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-4": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "title": "Tile Title Goes Here",
-            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
-            "button_text": "",
+            "image": "shopify:\/\/shop_images\/Cotton-darker_f472d7e6-dd7d-4378-9deb-095706b48d43.jpg",
+            "title": "Cotton",
+            "text_content": "Made of soft and breathable biodegradable natural cotton that is Standard 100 OEKO-TEX®️ Certified.\nThis is a 3rd party certification that our product is free from a wide list of harmful chemicals.",
+            "button_text": "Shop Cotton",
             "button_url": "",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
@@ -560,6 +571,7 @@
         }
       },
       "block_order": [
+        "5888a568-3fd4-418e-aec9-017317a01d65",
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-section_tiles_group-1",
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-1",
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-2",
@@ -569,7 +581,7 @@
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
+        "theme_color_text": "theme-color-text-0",
         "title_font_size": "small",
         "content_font_size": "small",
         "mobile_text_alignment": "center",
