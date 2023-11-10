@@ -547,12 +547,7 @@
         "template--19641079136529__6484ec1d-c35f-44e1-975e-1cd40fab13b6-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>If you're not happy with your Saalt product, we'll send you a replacement you'll love or your money back up to a full year from purchase.<\/p><h4>Reach out to our Saalt Coaches<\/h4>"
-          }
-        },
-        "c2c913c0-eaee-4af7-acdb-a8ee2cbc8a05": {
-          "type": "saalt_contact_links",
-          "settings": {
+            "text_content": "<p>If you're not happy with your Saalt product, we'll send you a replacement you'll love or your money back up to a full year from purchase.<\/p>"
           }
         }
       },
@@ -560,8 +555,7 @@
         "bde0df6c-3a77-41ec-80ad-6697f3a338a9",
         "d9d6e5ea-b07c-4d6f-b50c-6d7ac0b7af5d",
         "template--19641079136529__6484ec1d-c35f-44e1-975e-1cd40fab13b6-section_title-1",
-        "template--19641079136529__6484ec1d-c35f-44e1-975e-1cd40fab13b6-section_content-1",
-        "c2c913c0-eaee-4af7-acdb-a8ee2cbc8a05"
+        "template--19641079136529__6484ec1d-c35f-44e1-975e-1cd40fab13b6-section_content-1"
       ],
       "settings": {
         "section_id": "",
