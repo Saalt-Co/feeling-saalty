@@ -330,7 +330,11 @@
           "column_secondary_bg_color_label": "Secondary column background color",
           "column_secondary_bg_color_info": "Sets the color of the secondary column background",
           "column_secondary_bg_opacity_label": "Secondary column background opacity",
-          "column_secondary_bg_opacity_info": "Sets the color of the secondary column background"
+          "column_secondary_bg_opacity_info": "Sets the color of the secondary column background",
+          "review_stars_color_override_label": "Review stars color override",
+          "review_stars_color_override_info": "Leave on \"Theme default\" or override by changing the color",
+          "review_stars_opacity_override_label": "Review stars opacity override",
+          "review_stars_opacity_override_info": "Leave on \"Theme default\" or override by changing the color"
         },
         "sections": {
           "section_color_header": "Color settings for this section",
