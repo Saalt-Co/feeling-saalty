@@ -501,7 +501,7 @@
           "settings": {
             "theme_color_mobile_text_color": "match_text",
             "tile_mobile_text_alignment": "center",
-            "theme_color_desktop_text_color": "match_text",
+            "theme_color_desktop_text_color": "--palette-color-0",
             "theme_color_desktop_text_hover_focus_color": "match_text",
             "tile_desktop_text_alignment": "center",
             "desktop_text_placement": "center",
@@ -581,7 +581,7 @@
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
-        "theme_color_text": "theme-color-text-0",
+        "theme_color_text": "theme_default",
         "title_font_size": "small",
         "content_font_size": "small",
         "mobile_text_alignment": "center",
