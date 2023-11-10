@@ -33,9 +33,12 @@
         "footer-2"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
+        "input_opacity": 25,
+        "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
