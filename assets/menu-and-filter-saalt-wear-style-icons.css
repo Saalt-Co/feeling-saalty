@@ -60,11 +60,10 @@ a.menu-drawer__menu-item .saalt-wear-styles_inner-icon-wrapper .style-icon svg {
   margin-bottom: 4px;
 }
 
-.saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper.empty .style-icon svg {
-  fill: transparent;
+.saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper .style-icon svg {
+  fill: rgba(var(--color-icons), var(--color-icons-opacity));
   color: transparent;
-  stroke: rgba(var(--color-main-text), var(--color-main-text-opacity));
-  stroke-width: 1.75rem;
+  stroke: none;
 }
 
 label.facet-checkbox {
