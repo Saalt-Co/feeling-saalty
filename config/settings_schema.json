@@ -38,7 +38,7 @@
         "info": "t:settings_schema.store_settings.settings.reviews_platform.info",
         "options": [
           {
-            "value": "none",
+            "value": "shopify",
             "label": "t:settings_schema.store_settings.settings.reviews_platform.options.options__1.label"
           },
           {
@@ -52,6 +52,17 @@
         ],
         "default": "yotpo",
         "label": "t:settings_schema.store_settings.settings.reviews_platform.label"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.store_settings.settings.digioh_header.content"
+      },
+      {
+        "type": "text",
+        "id": "digioh_script_id",
+        "label": "t:settings_schema.store_settings.settings.digioh_script_id.label",
+        "info": "t:settings_schema.store_settings.settings.digioh_script_id.info",
+        "default": "357ae127-e66b-4e0b-a8d7-51c895139da9"
       }
     ]
   },

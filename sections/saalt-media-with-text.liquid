@@ -70,7 +70,12 @@
     line-height: 24px;
   {%- endcapture -%}
 {%- endcase -%}
-<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="section-image-with-text">
+<section
+  id="section-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  class="section-image-with-text"
+  {{ block.shopify_attributes }}
+>
   <div
     {% if section.settings.section_id != blank %}
       id="{{ section.settings.section_id | handleize }}"
@@ -78,6 +83,12 @@
     class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }} svg-color-fill{% endif %}"
   >
     {%- case section.settings.media_type -%}
+      {%- when 'code' -%}
+        <div class="media-wrapper" {{ block.shopify_attributes }}>
+          <div class="code-wrapper" {{ block.shopify_attributes }}>
+            {{ section.settings.custom_code }}
+          </div>
+        </div>
       {%- when 'video' -%}
         {%- render 'saalt-video-for-media-section', video_obj: section.settings.video -%}
       {%- when 'image' -%}
@@ -88,187 +99,196 @@
 </section>
 
 {%- style -%}
-  #section-{{ section.id }} .section-inner {
-    display: flex;
-    position: relative;
-    flex-direction: {{ mobile_flex_direction }};
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  #section-{{ section.id }} .media-wrapper, #section-{{ section.id }} .media-wrapper img, #section-{{ section.id }} .media-wrapper video {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  #section-{{ section.id }} .media-wrapper video {
-    cursor: pointer;
-  }
-  #section-{{ section.id }} .text-wrapper {
-    width: 100%;
-    text-align: {{ section.settings.mobile_text_alignment }};
-    padding: 4rem 2rem;
-  }
-  #section-{{ section.id }} .text-wrapper > * {
-    margin-bottom: 3rem;
-  }
-  #section-{{ section.id }} .text-wrapper .section-title, #section-{{ section.id }} .text-wrapper .section-content, #section-{{ section.id }} .text-wrapper .section-content > p {
-    width: 100%;
-  }
-  #section-{{ section.id }} .text-wrapper .section-title {
-    {{ title_css }}
-  }
-  #section-{{ section.id }} .text-wrapper .section-content > p {
-    {{ content_css }}
-  }
-  #section-{{ section.id }} .text-wrapper .contact-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 4rem;
-  }
-  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
-    flex-direction: column;
-    font-size: 2rem;
-    gap: 1rem;
-  }
-  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact, #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
-    height: 8rem;
-  }
-  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact-content {
-    font-size: clamp(1.75rem, 1.5vw, 2.25rem);
-    line-height: 1.25;
-    text-align: left;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image svg {
-    height: 100%;
-  }
-  #section-{{ section.id }} .icons-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
-    display: flex;
-    width: 100%;
-  }
-  #section-{{ section.id }} .icons-wrapper {
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  #section-{{ section.id }} .icons-wrapper .icon-wrapper {
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1rem;
-    flex: 1 1 0;
-    overflow: hidden;
-  }
-  #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
-    width: 100%;
-    height: auto;
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-group {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
-    width: 100%;
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
-    text-align: {{ section.settings.mobile_text_alignment }};
-  }
-  #section-{{ section.id }} .section-inner .text-wrapper > *:last-child {
-    margin-bottom: 0;
-  }
-  @media screen and (min-width: 420px) {
-    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
-      flex-direction: row;
+    #section-{{ section.id }} .section-inner {
+      display: flex;
+      position: relative;
+      flex-direction: {{ mobile_flex_direction }};
       justify-content: center;
       align-items: center;
+      text-align: center;
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     }
-  }
-  @media screen and (min-width: 750px) {
-    #section-{{ section.id }} .section-inner {
-      flex-direction: {{ desktop_flex_direction }};
+    #section-{{ section.id }} .media-wrapper, #section-{{ section.id }} .media-wrapper img, #section-{{ section.id }} .media-wrapper video {
+      display: block;
+      width: 100%;
+      height: auto;
     }
-  {%- if section.settings.media_type != "none" -%}
-    {%- if desktop_position == "left" or desktop_position == "right" -%}
-    #section-{{ section.id }} .media-wrapper {
-      max-width: {{ section.settings.media_width }}%;
+    #section-{{ section.id }} .media-wrapper video {
+      cursor: pointer;
     }
-    {%- endif -%}
-    {%- if section.settings.use_max_media_width -%}
-    #section-{{ section.id }} .media-wrapper {
-      max-width: {{ section.settings.max_media_width }};
-      margin: 0 auto;
+    #section-{{ section.id }} .media-wrapper .code-wrapper {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
     }
-    {%- endif -%}
-  {%- endif -%}
+    #section-{{ section.id }} .media-wrapper .code-wrapper iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
     #section-{{ section.id }} .text-wrapper {
+      width: 100%;
+      text-align: {{ section.settings.mobile_text_alignment }};
+      padding: 4rem 2rem;
+    }
+    #section-{{ section.id }} .text-wrapper > * {
+      margin-top: 0;
+      margin-bottom: 3rem;
+    }
+    #section-{{ section.id }} .text-wrapper .section-title, #section-{{ section.id }} .text-wrapper .section-content, #section-{{ section.id }} .text-wrapper .section-content > p {
+      width: 100%;
+    }
+    #section-{{ section.id }} .text-wrapper .section-title {
+      {{ title_css }}
+    }
+    #section-{{ section.id }} .text-wrapper .section-content > p {
+      {{ content_css }}
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-    {%- if section.settings.media_type == "none" or desktop_position == "above" or desktop_position == "below" -%}
-      width: 100%;
-    {%- else -%}
-      width: {{ section.settings.media_width | minus: 100 | times: -1 | append: "%" }};
-    {%- endif -%}
-      padding: 4rem;
-      text-align: {{ section.settings.desktop_text_alignment }};
-    }
-    #section-{{ section.id }} .text-wrapper .contact-wrapper {
       width: 100%;
       gap: 4rem;
-      {%- if section.settings.desktop_text_alignment == "left" -%}
-      justify-content: flex-start;
-      {%- elsif section.settings.desktop_text_alignment == "right" -%}
-      justify-content: flex-end;
-      {%- endif -%};
     }
-    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
+    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
+      flex-direction: column;
+      font-size: 2rem;
+      gap: 1rem;
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact, #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact-content {
+      font-size: clamp(1.75rem, 1.5vw, 2.25rem);
+      line-height: 1.25;
+      text-align: left;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image svg {
+      width: auto;
+      max-width: 3rem;
+      max-height: 3rem;
+    }
+    #section-{{ section.id }} .icons-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+      display: flex;
+      width: 100%;
+    }
+    #section-{{ section.id }} .icons-wrapper {
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding-left: 0;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper {
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1rem;
+      flex: 1 1 0;
+      overflow: hidden;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
+      width: 100%;
       height: auto;
     }
     #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
-      text-align: {{ section.settings.desktop_text_alignment }};
+      display: block;
+      width: 100%;
+      text-align: center;
     }
     #section-{{ section.id }} .section-inner .text-wrapper .button-group {
-      flex-direction: row;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
     }
     #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
-      width: auto;
+      width: 100%;
     }
-  {%- if section.settings.use_max_text_width -%}
-    #section-{{ section.id }} .text-wrapper > *:not(.icons-wrapper) {
-      max-width: {{ section.settings.max_width }};
+    #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
+      text-align: {{ section.settings.mobile_text_alignment }};
     }
-  {%- endif -%}
-  {%- if section.settings.section_padding != "default" -%}
-    {%- case section.settings.section_padding -%}
-      {%- when "remove_top" -%}
-        {%- assign special_section_padding = "padding-top: 0;" -%}
-      {%- when "remove_bottom" -%}
-        {%- assign special_section_padding = "padding-bottom: 0;" -%}
-      {%- when "remove_both" -%}
-        {%- assign special_section_padding = "padding-top: 0; padding-bottom: 0;" -%}
-    {%- endcase -%}
-    #section-{{ section.id }} .text-wrapper {
-      {{ special_section_padding }}
+    #section-{{ section.id }} .section-inner .text-wrapper > *:last-child {
+      margin-bottom: 0;
     }
-  {%- endif -%}
+    @media screen and (max-width: 749px) {
+      #section-{{ section.id }} .icons-wrapper {
+        justify-content: center;
+      }
+    }
+    @media screen and (min-width: 420px) {
+      #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    @media screen and (min-width: 750px) {
+      #section-{{ section.id }} .section-inner {
+        flex-direction: {{ desktop_flex_direction }};
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    {%- if section.settings.media_type != "none" -%}
+      {%- if desktop_position == "left" or desktop_position == "right" -%}
+      #section-{{ section.id }} .media-wrapper {
+        max-width: {{ section.settings.media_width }}%;
+      }
+      {%- endif -%}
+      {%- if section.settings.use_max_media_width -%}
+      #section-{{ section.id }} .media-wrapper {
+        max-width: {{ section.settings.max_media_width }};
+        margin: 0 auto;
+      }
+      {%- endif -%}
+    {%- endif -%}
+      #section-{{ section.id }} .text-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      {%- if section.settings.media_type == "none" or desktop_position == "above" or desktop_position == "below" -%}
+        width: 100%;
+      {%- else -%}
+        width: {{ section.settings.media_width | minus: 100 | times: -1 | append: "%" }};
+      {%- endif -%}
+        padding: 4rem;
+        text-align: {{ section.settings.desktop_text_alignment }};
+      }
+      #section-{{ section.id }} .text-wrapper .contact-wrapper {
+        width: 100%;
+        gap: 4rem;
+        {%- if section.settings.desktop_text_alignment == "left" -%}
+        justify-content: flex-start;
+        {%- elsif section.settings.desktop_text_alignment == "right" -%}
+        justify-content: flex-end;
+        {%- endif -%};
+      }
+      #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
+        height: auto;
+      }
+      #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
+        text-align: {{ section.settings.desktop_text_alignment }};
+      }
+      #section-{{ section.id }} .section-inner .text-wrapper .button-group {
+        flex-direction: row;
+      }
+      #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
+        width: auto;
+      }
+    {%- if section.settings.use_max_text_width -%}
+      #section-{{ section.id }} .text-wrapper > *:not(.icons-wrapper) {
+        max-width: {{ section.settings.max_width }};
+      }
+    {%- endif -%}
   }
 {%- endstyle -%}
 {% schema %}
@@ -393,6 +413,10 @@
           "label": "Video"
         },
         {
+          "value": "code",
+          "label": "Custom Code"
+        },
+        {
           "value": "none",
           "label": "None"
         }
@@ -408,6 +432,12 @@
       "type": "video",
       "id": "video",
       "label": "Shopify-hosted *VIDEO*"
+    },
+    {
+      "type": "liquid",
+      "id": "custom_code",
+      "label": "Custom Code (HTML or Liquid)",
+      "info": "This custom code area accepts HTML or Liquid. Css inside of html style tags are also accepted but probably better added as \"Liquid Code\" blocks if that's all you want to add."
     },
     {
       "type": "checkbox",
@@ -483,30 +513,6 @@
         }
       ],
       "default": "small"
-    },
-    {
-      "type": "select",
-      "id": "section_padding",
-      "label": "Top & Bottom Padding",
-      "options": [
-        {
-          "value": "default",
-          "label": "Default"
-        },
-        {
-          "value": "remove_top",
-          "label": "Remove top"
-        },
-        {
-          "value": "remove_bottom",
-          "label": "Remove bottom"
-        },
-        {
-          "value": "remove_both",
-          "label": "Remove both"
-        }
-      ],
-      "default": "default"
     },
     {
       "type": "header",
@@ -616,6 +622,30 @@
       "label": "Max Width Value",
       "info": "Any valid css value is accepted",
       "default": "600px"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 0
     }
   ],
   "blocks": [
@@ -1165,7 +1195,52 @@
     {
       "type": "saalt_contact_links",
       "name": "Saalt Contact Links",
-      "settings": []
+      "settings": [
+        {
+          "type": "select",
+          "id": "theme_color_contacts_icon_text_color",
+          "label": "t:settings_schema.theme_colors.settings.icons.icons_text_color_label",
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
+        }
+      ]
     },
     {
       "type": "custom_liquid_code",

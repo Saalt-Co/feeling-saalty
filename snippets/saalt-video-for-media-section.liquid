@@ -4,7 +4,7 @@
     assign final_video_code = video_code | replace: '<video', '<video class="video-element" '
   endif
 -%}
-<div class="media-wrapper video-wrapper">
+<div class="media-wrapper video-wrapper" {{ block.shopify_attributes }}>
   {%- if final_video_code -%}
     {{ final_video_code }}
   {%- else -%}

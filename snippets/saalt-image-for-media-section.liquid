@@ -19,7 +19,7 @@
 {%- else -%}
   {%- assign image_obj = section.settings.image -%}
 {%- endif -%}
-<div class="media-wrapper image-wrapper{{ additional_class }}">
+<div class="media-wrapper image-wrapper{{ additional_class }}" {{ block.shopify_attributes }}>
   {%- if image_obj != blank -%}
     {{
       image_obj
@@ -33,8 +33,14 @@
         alt: image_obj.alt
     }}
   {%- elsif is_bg_img -%}
-    <div class="shopify-placeholder">{{ 'lifestyle-2' | placeholder_svg_tag }}</div>
+    <div class="shopify-placeholder" {{ block.shopify_attributes }}>
+      {%- if device == 'mobile' -%}
+        {{ 'image' | placeholder_svg_tag }}
+      {%- else -%}
+        {{ 'lifestyle-2' | placeholder_svg_tag }}
+      {%- endif -%}
+    </div>
   {%- else -%}
-    {{ 'collection-1' | placeholder_svg_tag }}
+    <div {{ block.shopify_attributes }}>{{ 'collection-1' | placeholder_svg_tag }}</div>
   {%- endif -%}
 </div>

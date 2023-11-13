@@ -39,6 +39,12 @@
     width: 100%;
     height: auto;
   }
+  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg * {
+    fill: none;
+  }
+  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg g path {
+    stroke: rgba(var(--color-icons), var(--color-icons-opacity));
+  }
   @media screen and (min-width: 750px) {
     #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper {
       width: 100%;
@@ -72,7 +78,11 @@
     {{ block.shopify_attributes }}
   >
     {% for feature in product_features %}
-      {% render 'saalt-svg-icon', icon_svg: feature.product_feature_svg, icon_text: feature.product_feature_text %}
+      {% render 'saalt-svg-icon',
+        block: block,
+        icon_svg: feature.product_feature_svg,
+        icon_text: feature.product_feature_text
+      %}
     {% endfor %}
   </ul>
 {%- endif -%}

@@ -63,7 +63,12 @@
 {%- assign block_count = section.blocks | size -%}
 {%- assign all_icons = '' -%}
 {%- assign tiles_code = '' -%}
-<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="section-image-with-text">
+<section
+  id="section-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  class="section-image-with-text"
+  {{ block.shopify_attributes }}
+>
   <div
     {% if section.settings.section_id != blank %}
       id="{{ section.settings.section_id | handleize }}"
@@ -76,13 +81,13 @@
           {% case block.type %}
             {%- when 'section_title' -%}
               {%- if block.settings.title != blank -%}
-                <h{{ block.settings.heading_tag }} class="section-title">
+                <h{{ block.settings.heading_tag }} class="section-title" {{ block.shopify_attributes }}>
                   {{- block.settings.title -}}
                 </h{{ block.settings.heading_tag }}>
               {%- endif -%}
             {%- when 'section_content' -%}
               {%- if block.settings.text_content != blank -%}
-                <div class="section-content">{{ block.settings.text_content }}</div>
+                <div class="section-content" {{ block.shopify_attributes }}>{{ block.settings.text_content }}</div>
               {%- endif -%}
             {%- when 'section_buttons_group' -%}
               {%- for block in section.blocks -%}
@@ -97,6 +102,7 @@
                           {% else %}
                             href="{{ block.settings.button_url }}"
                           {% endif %}
+                          {{ block.shopify_attributes }}
                         >
                           {{ block.settings.button_text | escape }}
                         </a>
@@ -127,7 +133,7 @@
                     {%- assign tiles_code = tiles_code | append: tile -%}
                 {%- endcase -%}
               {%- endfor -%}
-              <div class="tiles-wrapper">
+              <div class="tiles-wrapper" {{ block.shopify_attributes }}>
                 {{ tiles_code }}
               </div>
               {%- capture tiles_wrapper_css -%}
@@ -179,7 +185,7 @@
               {%- for block in section.blocks -%}
                 {%- case block.type -%}
                   {%- when 'section_icon_with_text' -%}
-                    {%- capture icon_code -%}{% render "saalt-svg-icon", theme_color_text: section.settings.theme_color_text, icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text, icon_color: block.settings.theme_color_icon_color, icon_text_color: block.settings.theme_color_icon_text_color %}{%- endcapture -%}
+                    {%- capture icon_code -%}{% render "saalt-svg-icon", block: block, theme_color_text: section.settings.theme_color_text, icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text, icon_color: block.settings.theme_color_icon_color, icon_text_color: block.settings.theme_color_icon_text_color %}{%- endcapture -%}
                     {%- assign all_icons = all_icons | append: icon_code -%}
                 {%- endcase -%}
               {%- endfor -%}
@@ -230,7 +236,7 @@
                   }
                 }
               {% endstyle %}
-              <ul class="icons-wrapper">
+              <ul class="icons-wrapper" {{ block.shopify_attributes }}>
                 {{ all_icons }}
               </ul>
               {% style %}
@@ -265,9 +271,15 @@
                 }
               {% endstyle %}
             {%- when 'saalt_contact_links' -%}
-              {% render 'saalt-contact-links', block: block %}
+              {% render 'saalt-contact-links',
+                section_id: section.id,
+                section_text_color: section.settings.theme_color_text,
+                block: block
+              %}
             {%- when 'custom_liquid_code' -%}
-              {{ block.settings.liquid_code }}
+              <div {{ block.shopify_attributes }}>
+                {{ block.settings.liquid_code }}
+              </div>
           {% endcase %}
         {%- endfor -%}
       {%- endif -%}
@@ -283,6 +295,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
   #section-{{ section.id }} .text-wrapper {
     width: 100%;
@@ -291,6 +305,7 @@
     margin: 0 auto;
   }
   #section-{{ section.id }} .text-wrapper > * {
+    margin-top: 0;
     margin-bottom: 3rem;
   }
   #section-{{ section.id }} .text-wrapper .section-title, #section-{{ section.id }} .text-wrapper .section-content, #section-{{ section.id }} .text-wrapper .section-content > p {
@@ -320,9 +335,6 @@
     justify-content: center;
     align-items: center;
   }
-  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
-    height: 8rem;
-  }
   #section-{{ section.id }} .text-wrapper .contact-wrapper .contact-content {
     font-size: clamp(1.75rem, 1.5vw, 2.25rem);
     line-height: 1.25;
@@ -331,7 +343,6 @@
     text-underline-offset: 4px;
   }
   #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image svg {
-    height: 100%;
     fill: {{ section.settings.text_color }};
   }
   #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-content {
@@ -342,9 +353,9 @@
     width: 100%;
   }
   #section-{{ section.id }} .icons-wrapper {
-    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    padding-left: 0;
   }
   #section-{{ section.id }} .icons-wrapper .icon-wrapper {
     flex-direction: column;
@@ -424,6 +435,11 @@
   #section-{{ section.id }} .section-inner .text-wrapper *:last-child {
     margin-bottom: 0;
   }
+  @media screen and (max-width: 749px) {
+    #section-{{ section.id }} .icons-wrapper {
+      justify-content: center;
+    }
+  }
   @media screen and (min-width: 420px) {
     #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
       flex-direction: row;
@@ -432,6 +448,10 @@
     }
   }
   @media screen and (min-width: 750px) {
+    #section-{{ section.id }} .section-inner {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
     #section-{{ section.id }} .text-wrapper {
       display: flex;
       justify-content: center;
@@ -488,19 +508,7 @@
       height: auto;
     }
   }
-  {%- if section.settings.section_padding != "default" -%}
-    {%- case section.settings.section_padding -%}
-      {%- when "remove_top" -%}
-        {%- assign special_section_padding = "padding-top: 0;" -%}
-      {%- when "remove_bottom" -%}
-        {%- assign special_section_padding = "padding-bottom: 0;" -%}
-      {%- when "remove_both" -%}
-        {%- assign special_section_padding = "padding-top: 0; padding-bottom: 0;" -%}
-    {%- endcase -%}
-    #section-{{ section.id }} .text-wrapper {
-      {{ special_section_padding }}
-    }
-  {%- endif -%}
+
   {{ buttons_group_css }}
   {{ tiles_wrapper_css }}
   {% render 'saalt-custom-section-button-css', section: section %}
@@ -660,30 +668,7 @@
       ],
       "default": "small"
     },
-    {
-      "type": "select",
-      "id": "section_padding",
-      "label": "Top & Bottom Padding",
-      "options": [
-        {
-          "value": "default",
-          "label": "Default"
-        },
-        {
-          "value": "remove_top",
-          "label": "Remove top"
-        },
-        {
-          "value": "remove_bottom",
-          "label": "Remove bottom"
-        },
-        {
-          "value": "remove_both",
-          "label": "Remove both"
-        }
-      ],
-      "default": "default"
-    },
+
     {
       "type": "header",
       "content": "Mobile Text Settings"
@@ -752,6 +737,30 @@
       "label": "Max Width Value",
       "info": "Any valid css value is accepted",
       "default": "600px"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 0
     }
   ],
   "blocks": [
@@ -1797,7 +1806,52 @@
     {
       "type": "saalt_contact_links",
       "name": "Saalt Contact Links",
-      "settings": []
+      "settings": [
+        {
+          "type": "select",
+          "id": "theme_color_contacts_icon_text_color",
+          "label": "t:settings_schema.theme_colors.settings.icons.icons_text_color_label",
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
+        }
+      ]
     },
     {
       "type": "custom_liquid_code",

@@ -173,10 +173,110 @@
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
             {%- endif -%}
+            {% render 'price', product: card_product, price_class: '' %}
+            {%- for option in card_product.options_with_values -%}
+              {%- if show_swatches == true and option.name == 'Color' or option.name == 'Colour' -%}
+                {%- assign variant_option = 'option' | append: forloop.index -%}
+                <product-card-swatches>
+                  <form action="post">
+                    <fieldset>
+                      {%- for value in option.values -%}
+                        {%- for variant in card_product.variants -%}
+                          {%- if variant[variant_option] == value -%}
+                            {%- liquid
+                              assign variant_for_value = variant
+                              assign money_price = variant_for_value.price | money
+                              if settings.currency_code_enabled
+                                assign money_price = variant_for_value.price | money_with_currency
+                              endif
+                              if variant_for_value.compare_at_price != 0
+                                assign compare_at_price = variant_for_value.compare_at_price | money
+                                if settings.currency_code_enabled
+                                  assign compare_at_price = variant_for_value.compare_at_price | money_with_currency
+                                endif
+                              endif
+                            -%}
+                            {%- break -%}
+                          {%- endif -%}
+                        {%- endfor -%}
+                        {%- if variant_for_value.image -%}
+                          {%- capture supported_sizes -%}{%- render 'image-sizes', sizes: '165,360,600,533,720,940,1066,2029', image: variant_for_value.image -%}{%- endcapture -%}
+                          {%- capture img_width -%}_{{ variant_for_value.image.width }}x.{%- endcapture -%}
+                          {%- assign variant_image_url = variant_for_value.image
+                            | img_url: '1x1'
+                            | replace: '_1x1.', img_width
+                          -%}
+                        {%- endif -%}
 
+                        <input
+                          type="radio"
+                          id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                          value="{{ value | escape }}"
+                          {%- if variant_for_value -%}
+                            data-variant-id="{{ variant_for_value.id }}"
+                            data-variant-url="{{ variant_for_value.url }}"
+                            data-variant-price="{{ money_price }}"
+                            {%- if compare_at_price -%}
+                              data-variant-compare-at-price="{{ compare_at_price }}"
+                            {%- endif -%}
+                          {%- endif -%}
+                          {% if variant_for_value.image %}
+                            data-image-id="{{ variant_for_value.image.id }}" data-image-url="{{ variant_image_url }}"
+                            data-image-widths="[{{ supported_sizes }}]"
+                          {% endif %}
+                          form="{{ product_form_id }}"
+                          {% if option.selected_value == value %}
+                            checked
+                          {% endif %}
+                          {% if option_disabled %}
+                            class="disabled"
+                          {% endif %}
+                        >
+                        {%- assign current_color = value -%}
+                        {%- assign hex_code = shop.metaobjects.color_swatches['color-swatch-data'].json_data.value[current_color]
+                          | replace: '"', ''
+                          | replace: "'", ''
+                        -%}
+                        {%- if hex_code contains ',' -%}
+                          {%- assign split_hex_code = hex_code | split: ',' -%}
+                          {%- assign gradient_string = '' -%}
+                          {%- assign num_of_hex = split_hex_code.size -%}
+                          {%- assign percentage = 100 | divided_by: num_of_hex -%}
+                          {% for hex in split_hex_code %}
+                            {%- assign hex = hex | strip -%}
+                            {%- if forloop.first or forloop.last -%}
+                              {%- assign num_of_hex = split_hex_code.size -%}
+                              {%- if forloop.first -%}
+                                {%- capture hex_string -%}{{ hex }} {{ forloop.index | times: percentage }}%, {%- endcapture -%}
+                              {%- else -%}
+                                {%- capture hex_string -%}{{ hex }} {{ forloop.index | minus: 1 | times: percentage }}%{%- endcapture -%}
+                              {%- endif -%}
+                            {%- else -%}
+                              {%- capture hex_string -%}{{ hex }} {{ forloop.index | minus: 1 | times: percentage }}%, {{ hex }} {{ forloop.index | times: percentage }}%, {%- endcapture -%}
+                            {%- endif -%}
+                            {%- assign gradient_string = gradient_string | append: hex_string -%}
+                          {% endfor %}
+                          {%- capture swatch_style -%}background-image: linear-gradient({{ gradient_string }});{%- endcapture -%}
+                        {%- else -%}
+                          {% capture swatch_style %}background-color: {{ hex_code }};{% endcapture %}
+                        {%- endif -%}
+                        <label
+                          for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                          class="variant_swatch"
+                          style="{{ swatch_style }}"
+                        >
+                          <div class="swatch-name-tooltip">{{ value }}</div>
+                        </label>
+                      {%- endfor -%}
+                    </fieldset>
+                  </form>
+                </product-card-swatches>
+              {%- endif -%}
+            {%- endfor -%}
             <span class="caption-large light">{{ block.settings.description | escape }}</span>
-
-            {%- if show_rating and card_product.metafields.reviews.rating.value != blank -%}
+            {%- if show_rating and settings.reviews_platform == 'yotpo' -%}
+              {% render 'yotpo-reviews', yotpo_widget: 'category_star_rating', product: card_product, item: item %}
+            {%- elsif show_rating and card_product.metafields.reviews.rating.value != blank -%}
               {% liquid
                 assign rating_decimal = 0
                 assign decimal = card_product.metafields.reviews.rating.value.rating | modulo: 1
@@ -211,8 +311,6 @@
                 </span>
               </p>
             {%- endif -%}
-
-            {% render 'price', product: card_product, price_class: '' %}
           </div>
         </div>
         {%- if show_quick_add -%}
@@ -349,105 +447,6 @@
             </span>
           {%- endif -%}
         </div>
-        {%- for option in card_product.options_with_values -%}
-          {%- if show_swatches == true and option.name == 'Color' or option.name == 'Colour' -%}
-            {%- assign variant_option = 'option' | append: forloop.index -%}
-            <product-card-swatches>
-              <form action="post">
-                <fieldset>
-                  {%- for value in option.values -%}
-                    {%- for variant in card_product.variants -%}
-                      {%- if variant[variant_option] == value -%}
-                        {%- liquid
-                          assign variant_for_value = variant
-                          assign money_price = variant_for_value.price | money
-                          if settings.currency_code_enabled
-                            assign money_price = variant_for_value.price | money_with_currency
-                          endif
-                          if variant_for_value.compare_at_price != 0
-                            assign compare_at_price = variant_for_value.compare_at_price | money
-                            if settings.currency_code_enabled
-                              assign compare_at_price = variant_for_value.compare_at_price | money_with_currency
-                            endif
-                          endif
-                        -%}
-                        {%- break -%}
-                      {%- endif -%}
-                    {%- endfor -%}
-                    {%- if variant_for_value.image -%}
-                      {%- capture supported_sizes -%}{%- render 'image-sizes', sizes: '165,360,600,533,720,940,1066,2029', image: variant_for_value.image -%}{%- endcapture -%}
-                      {%- capture img_width -%}_{{ variant_for_value.image.width }}x.{%- endcapture -%}
-                      {%- assign variant_image_url = variant_for_value.image
-                        | img_url: '1x1'
-                        | replace: '_1x1.', img_width
-                      -%}
-                    {%- endif -%}
-
-                    <input
-                      type="radio"
-                      id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                      value="{{ value | escape }}"
-                      {%- if variant_for_value -%}
-                        data-variant-id="{{ variant_for_value.id }}"
-                        data-variant-url="{{ variant_for_value.url }}"
-                        data-variant-price="{{ money_price }}"
-                        {%- if compare_at_price -%}
-                          data-variant-compare-at-price="{{ compare_at_price }}"
-                        {%- endif -%}
-                      {%- endif -%}
-                      {% if variant_for_value.image %}
-                        data-image-id="{{ variant_for_value.image.id }}" data-image-url="{{ variant_image_url }}"
-                        data-image-widths="[{{ supported_sizes }}]"
-                      {% endif %}
-                      form="{{ product_form_id }}"
-                      {% if option.selected_value == value %}
-                        checked
-                      {% endif %}
-                      {% if option_disabled %}
-                        class="disabled"
-                      {% endif %}
-                    >
-                    {%- assign current_color = value -%}
-                    {%- assign hex_code = shop.metaobjects.color_swatches['color-swatch-data'].json_data.value[current_color]
-                      | replace: '"', ''
-                      | replace: "'", ''
-                    -%}
-                    {%- if hex_code contains ',' -%}
-                      {%- assign split_hex_code = hex_code | split: ',' -%}
-                      {%- assign gradient_string = '' -%}
-                      {%- assign num_of_hex = split_hex_code.size -%}
-                      {%- assign percentage = 100 | divided_by: num_of_hex -%}
-                      {% for hex in split_hex_code %}
-                        {%- assign hex = hex | strip -%}
-                        {%- if forloop.first or forloop.last -%}
-                          {%- assign num_of_hex = split_hex_code.size -%}
-                          {%- if forloop.first -%}
-                            {%- capture hex_string -%}{{ hex }} {{ forloop.index | times: percentage }}%, {%- endcapture -%}
-                          {%- else -%}
-                            {%- capture hex_string -%}{{ hex }} {{ forloop.index | minus: 1 | times: percentage }}%{%- endcapture -%}
-                          {%- endif -%}
-                        {%- else -%}
-                          {%- capture hex_string -%}{{ hex }} {{ forloop.index | minus: 1 | times: percentage }}%, {{ hex }} {{ forloop.index | times: percentage }}%, {%- endcapture -%}
-                        {%- endif -%}
-                        {%- assign gradient_string = gradient_string | append: hex_string -%}
-                      {% endfor %}
-                      {%- capture swatch_style -%}background-image: linear-gradient({{ gradient_string }});{%- endcapture -%}
-                    {%- else -%}
-                      {% capture swatch_style %}background-color: {{ hex_code }};{% endcapture %}
-                    {%- endif -%}
-                    <label
-                      for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                      class="variant_swatch"
-                      style="{{ swatch_style }}"
-                    >
-                      <div class="swatch-name-tooltip">{{ value }}</div>
-                    </label>
-                  {%- endfor -%}
-                </fieldset>
-              </form>
-            </product-card-swatches>
-          {%- endif -%}
-        {%- endfor -%}
       </div>
     </div>
   </div>

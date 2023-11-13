@@ -523,6 +523,9 @@ a.active-facets__button.focused .active-facets__button-inner,
     margin-top: 0.1rem;
     width: 1.4rem;
   }
+  .active-facets__button .backup-to-icons svg {
+    margin: 0;
+  }
 }
 
 .active-facets facet-remove:only-child {
