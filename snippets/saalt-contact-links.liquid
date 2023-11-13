@@ -9,10 +9,10 @@
   endif
 -%}
 <style>
-  #section-{{ section_id  }} .text-wrapper .contact-wrapper.contact-list a {
+  #section-{{ section_id }} .text-wrapper .contact-wrapper.contact-list a {
     text-decoration: none;
   }
-  #section-{{ section_id  }} .text-wrapper .contact-wrapper .contact .contact-image svg {
+  #section-{{ section_id }} .text-wrapper .contact-wrapper .contact .contact-image svg {
     {% if icon_color %}
       fill: rgba(var({{ icon_color }}), var(--color-icons-opacity));
     {% elsif text_color %}
@@ -22,7 +22,7 @@
     {% endif %}
     stroke: none;
   }
-  #section-{{ section_id  }} .text-wrapper .contact-wrapper.contact-list > a .contact .contact-content {
+  #section-{{ section_id }} .text-wrapper .contact-wrapper.contact-list > a .contact .contact-content {
     {% if text_color %}
     color: rgba(var({{ text_color }}), var(--color-main-text-opacity));
     {% else %}
@@ -31,6 +31,9 @@
     text-decoration: underline;
     text-underline-offset: calc(var(--buttons-border-offset) * 10);
     text-decoration-thickness: 0.1rem;
+  }
+  #section-{{ section_id }} .text-wrapper .contact-wrapper.contact-list > a:hover .contact .contact-content {
+    text-decoration-thickness: var(--buttons-border-width) !important;
   }
 </style>
 
