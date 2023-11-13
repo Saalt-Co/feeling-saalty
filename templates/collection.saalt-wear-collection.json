@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/SW-SM-Light-Day-Workout-3-Pack-Bundle-PDP-3_01.jpg",
             "title": "<p>Light Absorbency<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "copy": "<p>Tampon comparison and use cases<\/p>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Absorbency",
@@ -84,8 +84,8 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
+        "products_per_page": 24,
+        "columns_desktop": 3,
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
