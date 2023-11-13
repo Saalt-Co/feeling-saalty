@@ -271,7 +271,11 @@
                 }
               {% endstyle %}
             {%- when 'saalt_contact_links' -%}
-              {% render 'saalt-contact-links', block: block %}
+              {% render 'saalt-contact-links',
+                section_id: section.id,
+                section_text_color: section.settings.theme_color_text,
+                block: block
+              %}
             {%- when 'custom_liquid_code' -%}
               <div {{ block.shopify_attributes }}>
                 {{ block.settings.liquid_code }}
@@ -333,9 +337,6 @@
     justify-content: center;
     align-items: center;
   }
-  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
-    height: 8rem;
-  }
   #section-{{ section.id }} .text-wrapper .contact-wrapper .contact-content {
     font-size: clamp(1.75rem, 1.5vw, 2.25rem);
     line-height: 1.25;
@@ -344,7 +345,6 @@
     text-underline-offset: 4px;
   }
   #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image svg {
-    height: 100%;
     fill: {{ section.settings.text_color }};
   }
   #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-content {
@@ -1808,7 +1808,52 @@
     {
       "type": "saalt_contact_links",
       "name": "Saalt Contact Links",
-      "settings": []
+      "settings": [
+        {
+          "type": "select",
+          "id": "theme_color_contacts_icon_text_color",
+          "label": "t:settings_schema.theme_colors.settings.icons.icons_text_color_label",
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
+        }
+      ]
     },
     {
       "type": "custom_liquid_code",

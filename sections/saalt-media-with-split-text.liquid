@@ -165,9 +165,6 @@
       justify-content: center;
       align-items: center;
     }
-    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
-      height: 8rem;
-    }
     #section-{{ section.id }} .text-wrapper .contact-wrapper .contact-content {
       font-size: clamp(1.75rem, 1.5vw, 2.25rem);
       line-height: 1.25;
@@ -176,7 +173,9 @@
       text-underline-offset: 4px;
     }
     #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image svg {
-      height: 100%;
+      width: auto;
+      max-width: 3rem;
+      max-height: 3rem;
     }
     #section-{{ section.id }} .icons-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
       display: flex;
