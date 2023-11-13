@@ -39,6 +39,12 @@
     width: 100%;
     height: auto;
   }
+  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg * {
+    fill: none;
+  }
+  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg g path {
+    stroke: rgba(var(--color-icons), var(--color-icons-opacity));
+  }
   @media screen and (min-width: 750px) {
     #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper {
       width: 100%;
