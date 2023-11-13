@@ -116,7 +116,11 @@
               {{ all_icons }}
             </ul>
           {%- when 'saalt_contact_links' -%}
-            {% render 'saalt-contact-links', block: block %}
+            {% render 'saalt-contact-links',
+              section_id: section.id,
+              section_text_color: section.settings.theme_color_text,
+              block: block
+            %}
           {%- when 'custom_liquid_code' -%}
             <div {{ block.shopify_attributes }}>
               {{ block.settings.liquid_code }}
