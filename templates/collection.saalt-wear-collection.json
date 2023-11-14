@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/SW-SM-Light-Day-Workout-3-Pack-Bundle-PDP-3_01.jpg",
             "title": "<p>Light Absorbency<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "copy": "<p>Tampon comparison and use cases<\/p>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Absorbency",
@@ -72,7 +72,7 @@
       ],
       "settings": {
         "section_id": "",
-        "make_full_width": true,
+        "make_full_width": false,
         "mobile_min_width": "40%",
         "mobile_max_width": "280px",
         "mobile_aspect_ratio": "1\/1.5",
@@ -84,8 +84,8 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
+        "products_per_page": 24,
+        "columns_desktop": 3,
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -99,6 +99,49 @@
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "826ab071-d85e-4cc1-981e-0f5623d9ae40": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--19610655392017__826ab071-d85e-4cc1-981e-0f5623d9ae40-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Do leakproof underwear work? Watch the magic."
+          }
+        },
+        "template--19610655392017__826ab071-d85e-4cc1-981e-0f5623d9ae40-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Yes! Saalt Wear period underwear and leakproof panties are designed to replace liners, pads, and tampons while leaving you feeling (magically) dry.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19610655392017__826ab071-d85e-4cc1-981e-0f5623d9ae40-section_title-1",
+        "template--19610655392017__826ab071-d85e-4cc1-981e-0f5623d9ae40-section_content-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "video",
+        "video": "shopify:\/\/files\/videos\/New Tech for PDP.mp4",
+        "custom_code": "",
+        "use_max_media_width": true,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "above",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "700px",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "fc031dea-6661-47b1-b752-79fa446b4dee": {
@@ -191,6 +234,7 @@
         "template--18370419720465__fc031dea-6661-47b1-b752-79fa446b4dee-1687976507446c2c25-5",
         "d23d2a87-3c59-4374-8a45-bff84584b5ea"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -213,17 +257,10 @@
     "608ca706-ad50-41fb-bcb5-660ee4c39ec0": {
       "type": "saalt-media-with-text",
       "blocks": {
-        "template--18370419720465__608ca706-ad50-41fb-bcb5-660ee4c39ec0-1687976107730f0061-0": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "Saalt Wear Care:"
-          }
-        },
         "template--18370419720465__608ca706-ad50-41fb-bcb5-660ee4c39ec0-1687976107730f0061-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Take good care of Saalt Wear and it will take great care of you.<\/p>"
+            "text_content": "<h2>Take good care of Saalt Wear leakproof underwear and it will take great care of you.<\/h2>"
           }
         },
         "a2a5abc9-3c1a-4339-a852-c8f31ebb0d08": {
@@ -259,7 +296,7 @@
           "type": "section_icon_with_text",
           "settings": {
             "icon_svg": "<!--?xml version=\"1.0\" encoding=\"utf-8\"?-->\n<svg width=\"90px\" height=\"90px\" viewbox=\"0 0 90 90\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n  <g id=\"Washing-mashine\" transform=\"translate(1 1)\">\n    <path d=\"M0 0L88 0L88 88L0 88L0 0Z\" id=\"bg\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"none\"><\/path>\n    <g id=\"washing-mashine\" transform=\"translate(18.5 12.5)\">\n      <path d=\"M0 0L51 0L51 63L0 63L0 0Z\" id=\"Rectangle\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"#3F4759\" stroke-width=\"2\"><\/path>\n      <path d=\"M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z\" transform=\"translate(9 23.000244)\" id=\"Ellipse-2\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"#3F4759\" stroke-width=\"2\"><\/path>\n      <path d=\"M0 3C0 1.34315 1.34315 0 3 0C4.65685 0 6 1.34315 6 3C6 4.65685 4.65685 6 3 6C1.34315 6 0 4.65685 0 3Z\" transform=\"translate(30 5)\" id=\"Ellipse-3\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"#3F4759\" stroke-width=\"2\"><\/path>\n      <path d=\"M0 3C0 1.34315 1.34315 0 3 0C4.65685 0 6 1.34315 6 3C6 4.65685 4.65685 6 3 6C1.34315 6 0 4.65685 0 3Z\" transform=\"translate(40.000977 5)\" id=\"Ellipse-3-Copy\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"#3F4759\" stroke-width=\"2\"><\/path>\n      <path d=\"M0 0L2.81047 2.81047Q2.95363 2.95363 3.10926 3.08311Q3.2649 3.2126 3.43171 3.32732Q3.59852 3.44205 3.77512 3.54105Q3.95171 3.64006 4.13661 3.72253Q4.32151 3.80499 4.51317 3.87022Q4.70483 3.93545 4.90164 3.9829Q5.09846 4.03035 5.29879 4.05963Q5.49911 4.0889 5.70128 4.09976Q5.90344 4.11061 6.10575 4.10296Q6.30806 4.0953 6.50883 4.06919Q6.70959 4.04309 6.90714 3.99876Q7.10468 3.95442 7.29734 3.89223Q7.49001 3.83004 7.67619 3.75051Q7.86237 3.67097 8.04051 3.57477Q8.21864 3.47857 8.38725 3.36649Q8.55585 3.25442 8.71351 3.12741L9.15624 2.77077Q9.33673 2.62538 9.52897 2.49592Q9.72121 2.36647 9.9238 2.25389Q10.1264 2.14132 10.3379 2.04645Q10.5493 1.95158 10.7681 1.87511Q10.9869 1.79864 11.2114 1.74113Q11.4359 1.68361 11.6645 1.64547Q11.8931 1.60734 12.1242 1.58885Q12.3552 1.57037 12.587 1.57167Q12.8187 1.57298 13.0495 1.59406Q13.2803 1.61514 13.5085 1.65585Q13.7367 1.69656 13.9605 1.7566Q14.1844 1.81664 14.4023 1.89557Q14.6202 1.9745 14.8306 2.07174Q15.041 2.16898 15.2423 2.28383Q15.4436 2.39868 15.6344 2.53029Q15.8251 2.6619 16.004 2.80932L16.2179 2.98563Q16.3822 3.12109 16.558 3.24128Q16.7338 3.36147 16.9197 3.46543Q17.1055 3.56939 17.2999 3.65629Q17.4944 3.74319 17.6958 3.81233Q17.8972 3.88147 18.104 3.93229Q18.3108 3.98311 18.5213 4.0152Q18.7318 4.0473 18.9444 4.06041Q19.157 4.07352 19.3698 4.06754Q19.5827 4.06156 19.7942 4.03654Q20.0057 4.01152 20.214 3.96766Q20.4224 3.9238 20.6261 3.86145Q20.8297 3.7991 21.0269 3.71877Q21.2241 3.63844 21.4134 3.54076Q21.6026 3.44309 21.7823 3.32886Q21.9621 3.21463 22.1308 3.08476Q22.2996 2.95489 22.4561 2.81043L22.5697 2.70554Q22.7159 2.57055 22.8743 2.45011Q23.0327 2.32967 23.2018 2.22487Q23.371 2.12007 23.5494 2.03187Q23.7277 1.94367 23.9137 1.87287Q24.0997 1.80207 24.2916 1.74931Q24.4834 1.69655 24.6794 1.66232Q24.8755 1.62809 25.0739 1.61269Q25.2723 1.59729 25.4712 1.60087Q25.6702 1.60445 25.8679 1.62697Q26.0656 1.64949 26.2603 1.69075Q26.4549 1.73201 26.6448 1.79163Q26.8346 1.85126 27.0179 1.9287Q27.2012 2.00614 27.3763 2.1007Q27.5514 2.19526 27.7167 2.30607Q27.882 2.41689 28.0359 2.54295Q28.1899 2.66901 28.3311 2.80916L31.1636 5.61967\" transform=\"translate(9.5 36)\" id=\"New-shape\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"#3F4759\" stroke-width=\"2\"><\/path>\n    <\/g>\n  <\/g>\n<\/svg>",
-            "icon_text": "<p>Machine wash cold & gentle<\/p>",
+            "icon_text": "<p>Machine wash cold<\/p>",
             "theme_color_icon_color": "match_text",
             "theme_color_icon_text_color": "match_text"
           }
@@ -281,7 +318,6 @@
         }
       },
       "block_order": [
-        "template--18370419720465__608ca706-ad50-41fb-bcb5-660ee4c39ec0-1687976107730f0061-0",
         "template--18370419720465__608ca706-ad50-41fb-bcb5-660ee4c39ec0-1687976107730f0061-1",
         "a2a5abc9-3c1a-4339-a852-c8f31ebb0d08",
         "c1cc25af-1f98-49ea-84e9-2f2221f5ad9e",
@@ -423,9 +459,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/chelsea2.jpg",
-            "title": "Customer name",
+            "title": "Kelsey R.",
             "rating": 5,
-            "text": "<p>UGC quotes here<\/p>",
+            "text": "<p>I am in love with these undies! I wore them on my heavier days for half a day, and they did a great job. No leaks, no stains! The fit was perfect; great for when you are wearing low rise pants.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -434,9 +470,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Photo_Dec_28_2022_3_54_10_PM.jpg",
-            "title": "Customer 2",
+            "title": "Natalie E.",
             "rating": 5,
-            "text": "<p>UGC quotes again<\/p>",
+            "text": "<p>Is it weird that I was actually looking forward to my period to be able to rock these cute undies? Like lots of people said, these are cuter than a lot of my regular underwear and it's so nice to finally ditch the backup pad. Can't wait to get more in different colors to get me through period week!<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -445,9 +481,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/synclaire_2.jpg",
-            "title": "Customer 3",
+            "title": "Michelle C.",
             "rating": 5,
-            "text": "<p>UGC UGC UGC<\/p>",
+            "text": "<p>These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties. These are cute, they work, and I'm definitely going to buy more!<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -483,9 +519,91 @@
         "padding_bottom": 36
       }
     },
+    "2421f247-3fb3-4d3e-83cf-d7f8823ef0a9": {
+      "type": "saalt-testimonials",
+      "blocks": {
+        "6331703f-fdcf-4aae-96c7-ab9cddb1af19": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "I am in love with these undies! I wore them on my heavier days for half a day, and they did a great job. No leaks, no stains! The fit was perfect; great for when you are wearing low rise pants.",
+            "author": "<strong>Kelsey R.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--19610655392017__2421f247-3fb3-4d3e-83cf-d7f8823ef0a9-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Is it weird that I was actually looking forward to my period to be able to rock these cute undies? Like lots of people said, these are cuter than a lot of my regular underwear and it's so nice to finally ditch the backup pad. Can't wait to get more in different colors to get me through period week!",
+            "author": "<strong>Natalie E.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--19610655392017__2421f247-3fb3-4d3e-83cf-d7f8823ef0a9-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties. These are cute, they work, and I'm definitely going to buy more!",
+            "author": "<strong>Michelle C.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "6331703f-fdcf-4aae-96c7-ab9cddb1af19",
+        "template--19610655392017__2421f247-3fb3-4d3e-83cf-d7f8823ef0a9-testimonial-2",
+        "template--19610655392017__2421f247-3fb3-4d3e-83cf-d7f8823ef0a9-testimonial-1"
+      ],
+      "settings": {
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "include_img": true,
+        "image": "shopify:\/\/shop_images\/Testimonials_1.jpg",
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow of customer reviews"
+      }
+    },
     "8c4a0b05-fe36-4c97-9368-6117bd4422e3": {
       "type": "saalt-bg-media-with-text",
       "blocks": {
+        "8d9bd788-e50b-4fe4-a151-9c54a28eee08": {
+          "type": "section_icon_group",
+          "settings": {
+            "use_max_icon_group_width": false,
+            "icon_group_max_width": "600px",
+            "mobile_icon_text_size": "1.5rem",
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_min_width": "80px",
+            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "100px",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_min_width": "80px",
+            "desktop_icon_wrapper_max_width": "100px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "100px",
+            "desktop_icon_alignment": "center"
+          }
+        },
+        "825f8cba-267b-4957-932e-9c58a4a65ea8": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"126\" height=\"126\" viewbox=\"0 0 126 126\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g clip-path=\"url(#clip0_493_7014)\">\n<path d=\"M110.097 42.4007L109.907 42.4467C109.637 44.6838 107.874 47.5699 101.278 49.1463C93.7613 50.9449 85.8645 48.5329 80.9821 45.0098C80.273 44.4986 79.5535 43.9727 78.8132 43.4645C78.429 43.1978 78.0462 42.9267 77.6605 42.6556C71.9815 38.6465 65.3056 35.7085 58.0362 36.3011H57.9932C57.9695 36.3011 57.9443 36.3011 57.922 36.31C53.1836 36.7145 49.7492 38.1605 47.0373 40.088C44.584 41.6747 42.4611 43.7203 40.7856 46.1121C37.6821 50.5849 36.559 55.7422 37.6257 60.6447C37.6687 60.8432 37.737 61.0329 37.7874 61.2373C36.5746 61.1828 35.3595 61.2065 34.1498 61.3085C27.1178 61.8922 22.0144 66.368 18.9034 71.1949C16.3876 75.1063 15.326 79.7754 15.9037 84.3883L16.0936 84.3438C16.3681 82.1052 18.129 79.2206 24.7263 77.6427C32.2434 75.8456 40.1403 78.2561 45.0226 81.7792C45.7318 82.2918 46.4513 82.8163 47.1916 83.3245C47.5758 83.5912 47.9585 83.8623 48.3443 84.1334C54.0218 88.1411 60.6932 91.079 67.9626 90.4864H68.0071L68.0783 90.4775C72.8153 90.0715 76.2496 88.627 78.963 86.6995C81.4167 85.112 83.5396 83.0654 85.2147 80.6725C88.3182 76.1997 89.4413 71.0423 88.3746 66.1413C88.3316 65.9413 88.2633 65.7517 88.2129 65.5487C89.4257 65.603 90.6407 65.5798 91.8505 65.4791C98.8825 64.8864 103.986 60.418 107.097 55.5911C109.612 51.6805 110.674 47.0126 110.097 42.4007V42.4007ZM87.753 66.3013C87.8613 66.8021 87.9355 67.3073 87.9963 67.814C88.7381 75.0188 82.8039 78.9746 77.5003 79.4724C70.1894 80.1599 64.7077 75.3063 57.9175 70.3919C57.4117 70.0275 56.8895 69.6511 56.345 69.257C50.1972 64.6835 45.0701 61.7307 38.4669 61.267C38.3957 61.0047 38.3081 60.7484 38.2488 60.4788C38.1405 59.978 38.0663 59.4728 38.0055 58.9661C37.2103 51.4101 43.1979 47.8055 48.5015 47.3077C55.8109 46.6262 61.3 51.4857 68.0842 56.3926C68.5901 56.7586 69.1123 57.1334 69.6568 57.5275C75.8046 62.1011 80.9317 65.0538 87.5349 65.5176C87.6061 65.7813 87.6937 66.0361 87.753 66.3013Z\"><\/path>\n<\/g>\n<defs>\n<clippath id=\"clip0_493_7014\">\n<rect width=\"126\" height=\"126\"><\/rect>\n<\/clippath>\n<\/defs>\n<\/svg>",
+            "icon_text": "",
+            "theme_color_icon_color": "theme-color-text-4",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
         "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-0": {
           "type": "section_title",
           "settings": {
@@ -496,7 +614,7 @@
         "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>If you're not happy with your leakproof underwear or other Saalt products, we'll send you a replacement you'll love or your money back per our Period Bliss Guarantee.<\/p>"
+            "text_content": "<p>If you're not happy with your leakproof underwear or other Saalt products, we'll send you a replacement you'll love or your money back per our Saalt Bliss Guarantee.<\/p>"
           }
         },
         "b2ee0a35-d994-4a99-9c1b-24b9c7973252": {
@@ -513,6 +631,8 @@
         }
       },
       "block_order": [
+        "8d9bd788-e50b-4fe4-a151-9c54a28eee08",
+        "825f8cba-267b-4957-932e-9c58a4a65ea8",
         "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-0",
         "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-1",
         "b2ee0a35-d994-4a99-9c1b-24b9c7973252",
@@ -585,6 +705,7 @@
         "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-2",
         "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-3"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Saalt Wear FAQs",
@@ -601,17 +722,56 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "f3d28335-7123-4133-9323-a99fd5d9e99e": {
+      "type": "newsletter",
+      "blocks": {
+        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Do you have a period? Great, we're here to make it better (starting with 15% off your first order). 😉",
+            "heading_size": "h1"
+          }
+        },
+        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Subscribe to receive all you need to know about the period flow, pointers, and perks that come as often as your period does.<\/p>"
+          }
+        },
+        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-email_form-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-heading-1",
+        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-paragraph-1",
+        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-email_form-1"
+      ],
+      "settings": {
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "input_opacity": 25,
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "banner",
     "4b7bcf70-9b6b-48c4-a538-0e13cf35a435",
     "product-grid",
+    "826ab071-d85e-4cc1-981e-0f5623d9ae40",
     "fc031dea-6661-47b1-b752-79fa446b4dee",
     "608ca706-ad50-41fb-bcb5-660ee4c39ec0",
     "6f86141b-6e50-4f99-a4bf-ce75e198df4c",
     "835cabec-b298-4b76-9a74-2ae85e6ea4be",
+    "2421f247-3fb3-4d3e-83cf-d7f8823ef0a9",
     "8c4a0b05-fe36-4c97-9368-6117bd4422e3",
-    "b4f29bbb-7268-4349-91b5-1ab1f590f3c0"
+    "b4f29bbb-7268-4349-91b5-1ab1f590f3c0",
+    "f3d28335-7123-4133-9323-a99fd5d9e99e"
   ]
 }
