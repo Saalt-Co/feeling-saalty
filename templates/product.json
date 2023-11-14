@@ -238,7 +238,7 @@
             "theme_color_card_background": "--palette-color-3",
             "theme_color_card_background_opacity": 25,
             "theme_color_card_text": "theme_default",
-            "button_text": "Shop Super",
+            "button_text": "",
             "button_url": "",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
