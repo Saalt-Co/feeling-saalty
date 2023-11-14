@@ -27,7 +27,9 @@
       assign icon_text_class = icon_text_class | append: icon_text_color
     endif
   endif
-  assign icon_svg = icon_svg | replace: 'fill=', '' | replace: 'stroke=', ''
+  unless icon_svg contains 'fill="url('
+    assign icon_svg = icon_svg | replace: 'fill="', 'data-fill="' | replace: 'stroke="', 'data-stroke="'
+  endunless
 -%}
 <li class="icon-wrapper" {{ block.shopify_attributes }}>
   {%- if icon_svg != blank or icon_svg != '' -%}
