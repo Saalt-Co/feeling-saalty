@@ -54,6 +54,10 @@
         "label": "t:settings_schema.store_settings.settings.reviews_platform.label"
       },
       {
+        "type": "header",
+        "content": "t:settings_schema.store_settings.settings.digioh_header.content"
+      },
+      {
         "type": "text",
         "id": "digioh_script_id",
         "label": "t:settings_schema.store_settings.settings.digioh_script_id.label",

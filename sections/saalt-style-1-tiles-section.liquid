@@ -305,10 +305,8 @@
     margin: 0 auto;
   }
   #section-{{ section.id }} .text-wrapper > * {
-    margin-bottom: 3rem;
-  }
-  #section-{{ section.id }} .text-wrapper > *:first-child {
     margin-top: 0;
+    margin-bottom: 3rem;
   }
   #section-{{ section.id }} .text-wrapper .section-title, #section-{{ section.id }} .text-wrapper .section-content, #section-{{ section.id }} .text-wrapper .section-content > p {
     color: {{ section.settings.section_text_color }};
@@ -752,7 +750,7 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 36
+      "default": 0
     },
     {
       "type": "range",
@@ -762,7 +760,7 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
+      "default": 0
     }
   ],
   "blocks": [
