@@ -1,6 +1,6 @@
 {%- liquid
-  if block.settings.theme_color_contacts_icon_text_color != 'match_text'
-    assign color_class = block.settings.theme_color_contacts_icon_text_color | slice: -1, 1
+  if block.settings.theme_color_contacts_icon_color != 'match_text'
+    assign color_class = block.settings.theme_color_contacts_icon_color | slice: -1, 1
     assign icon_color = '--palette-color-' | append: color_class
   endif
   if section_text_color != 'theme_default'
