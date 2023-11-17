@@ -75,16 +75,18 @@
       </ul>
     </div>
   </div>
-  <div class="button-wrapper">
-    <a
-      class="card-button button{% render 'saalt-button-color-classes', obj: block %}"
-      {% if block.settings.button_url == blank %}
-        role="link" aria-disabled="true"
-      {% else %}
-        href="{{ block.settings.button_url }}"
-      {% endif %}
-    >
-      {{ block.settings.button_text | escape }}
-    </a>
-  </div>
+  {%- if block.settings.button_text != blank -%}
+    <div class="button-wrapper">
+      <a
+        class="card-button button{% render 'saalt-button-color-classes', obj: block %}"
+        {% if block.settings.button_url == blank %}
+          role="link" aria-disabled="true"
+        {% else %}
+          href="{{ block.settings.button_url }}"
+        {% endif %}
+      >
+        {{ block.settings.button_text | escape }}
+      </a>
+    </div>
+  {%- endif -%}
 </div>
