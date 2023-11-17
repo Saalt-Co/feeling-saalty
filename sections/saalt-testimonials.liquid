@@ -10,6 +10,31 @@
   endif
 -%}
 {%- style -%}
+  #section-{{ section.id }} .slideshow.banner {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    gap: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  #section-{{ section.id }} .testimonial-svg-wrapper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #section-{{ section.id }} .testimonial-svg-wrapper svg {
+    display: block;
+    width: 100%;
+    max-width: 3.25rem;
+    height: auto;
+    z-index: 1;
+  }
+  #section-{{ section.id }} .testimonial__author {
+    font-size: calc(var(--font-body-scale) * 85%);
+  }
   #section-{{ section.id }} .slider-counter__link--dots .dot, #section-{{ section.id }} .slider-counter__link--dots:not(.slider-counter__link--active):hover .dot {
     border: 0.1rem solid rgba(var({{ text_color }}), 0.5);
   }
@@ -28,26 +53,69 @@
   #section-{{ section.id }} .slideshow__autoplay .icon.icon-pause path {
     fill: rgb(var({{ text_color }}));
   }
+  #section-{{ section.id }} .testimonial-svg-wrapper {
+    padding-top: 10%;
+  }
+  #section-{{ section.id }} .slideshow.banner {
+    padding-bottom: 10%;
+  }
+  #section-{{ section.id }} .slideshow__text.banner__box {
+    justify-content: flex-start;
+    font-size: calc(var(--font-body-scale) * 115%);
+    padding-bottom: 0;
+  }
   {%- if section.settings.slide_height == 'adapt_image' and section.settings.image != blank -%}
-    @media screen and (max-width: 749px) {
-      #Slider-{{ section.id }}::before,
-      #Slider-{{ section.id }} .media::before,
-      #Slider-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
-        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
-        content: '';
-        display: block;
-      }
+    #section-{{ section.id }} .testimonial-svg-wrapper {
+      padding-top: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 20 }}%;
     }
-
-    @media screen and (min-width: 750px) {
-      #Slider-{{ section.id }}::before,
-      #Slider-{{ section.id }} .media::before {
-        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
-        content: '';
-        display: block;
-      }
+    #section-{{ section.id }} .slideshow.banner.banner--adapt_image {
+      padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 16 }}%;
     }
   {%- endif -%}
+  #section-{{ section.id }}{
+    --small-padding: 4rem;
+    --medium-padding: 8rem;
+    --large-padding: 12rem;
+  }
+  #section-{{ section.id }} .banner--small:not(.banner--adapt) {
+      min-height: auto;
+      padding-bottom: calc(var(--small-padding));
+    }
+    #section-{{ section.id }} .banner--medium:not(.banner--adapt) {
+      min-height: auto;
+      padding-bottom: calc(var(--medium-padding));
+    }
+    #section-{{ section.id }} .banner--large:not(.banner--adapt) {
+      min-height: auto;
+      padding-bottom: calc(var(--large-padding));
+    }
+    #section-{{ section.id }} .testimonial-svg-wrapper.padding--small {
+      padding-top: calc(var(--small-padding));
+    }
+    #section-{{ section.id }} .testimonial-svg-wrapper.padding--medium {
+      padding-top: calc(var(--medium-padding));
+    }
+    #section-{{ section.id }} .testimonial-svg-wrapper.padding--large {
+      padding-top: calc(var(--large-padding));
+  }
+  @media screen and (min-width: 750px) {
+    /* #section-{{ section.id }}{
+      --small-padding: 10rem;
+      --medium-padding: 17rem;
+      --large-padding: 24rem;
+    } */
+    #section-{{ section.id }} .testimonial-svg-wrapper svg {
+      max-width: 4.25rem;
+    }
+    #section-{{ section.id }} .slideshow--placeholder.banner--adapt_image {
+      height: unset;
+    }
+    #section-{{ section.id }} .slideshow__text-wrapper.banner__content {
+      height: auto;
+      padding: 0 5rem;
+    }
+
+  }
 {%- endstyle -%}
 
 <testimonial-component
@@ -57,11 +125,11 @@
   aria-roledescription="{{ 'sections.testimonial-slideshow.carousel' | t }}"
   aria-label="{{ section.settings.accessibility_info | escape }}"
 >
-  <div class="testimonial-svg-wrapper">
+  <div class="testimonial-svg-wrapper{% if section.settings.slide_height != "adapt_image" %} padding--{{ section.settings.slide_height }}{% endif %}">
     {% render 'svg-quote' %}
   </div>
   {%- if section.settings.auto_rotate and section.blocks.size > 1 -%}
-    <div class="slideshow__controls slideshow__controls--top slider-buttons no-js-hidden{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
+    <div class="slideshow__controls slideshow__controls--top slider-buttons no-js-hidden">
       <button
         type="button"
         class="slider-button slider-button--prev"
@@ -133,7 +201,7 @@
     </noscript>
   {%- endif -%}
   <div
-    class="slideshow banner banner--{{ section.settings.slide_height }} grid grid--1-col slider slider--everywhere{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}{% if section.settings.image == blank and section.settings.include_img %} slideshow--placeholder{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+    class="slideshow banner banner--{{ section.settings.slide_height }} grid grid--1-col slider slider--everywhere{% if section.settings.image == blank and section.settings.include_img %} slideshow--placeholder{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
     id="Slider-{{ section.id }}"
     aria-live="polite"
     aria-atomic="true"
@@ -174,7 +242,7 @@
   </div>
 
   {%- if section.blocks.size > 1 and section.settings.auto_rotate == false -%}
-    <div class="slideshow__controls slider-buttons no-js-hidden{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
+    <div class="slideshow__controls slider-buttons no-js-hidden">
       <button
         type="button"
         class="slider-button slider-button--prev"
@@ -468,12 +536,6 @@
     {
       "type": "header",
       "content": "t:sections.testimonial-slideshow.settings.mobile.content"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_text_below",
-      "label": "t:sections.testimonial-slideshow.settings.show_text_below.label",
-      "default": true
     },
     {
       "type": "header",

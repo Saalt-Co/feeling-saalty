@@ -21,7 +21,27 @@
   if section.settings.swipe_on_mobile and section.blocks.size > columns_mobile_int
     assign show_mobile_slider = true
   endif
+  assign review_star_color_override = section.settings.review_star_color_override
+  assign review_star_opacity_override = section.settings.review_star_opacity_override
 -%}
+
+<style>
+  {% if review_star_color_override != 'theme_default' %}
+    #section-{{ section.id }} .multicolumn-card__info .ugc-rating .ugc-rating-star:before {
+      color: rgb(var({{ review_star_color_override }}));
+    }
+  {% endif %}
+  {% if review_star_opacity_override != 'theme_default' %}
+    #section-{{ section.id }} .multicolumn-card__info .ugc-rating .ugc-rating-star:before {
+      opacity: {{ review_star_opacity_override | append: "%" }};
+    }
+  {% endif %}
+  {% if section.settings.column_alignment == 'center' %}
+    #section-{{ section.id }} .multicolumn-card__info .ugc-rating {
+      justify-content: center;
+    }
+  {% endif %}
+</style>
 
 <div
   id="section-{{ section.id }}"
@@ -472,7 +492,60 @@
       "max": 100,
       "default": 100
     },
-
+    {
+      "type": "select",
+      "id": "review_star_color_override",
+      "label": "t:settings_schema.theme_colors.settings.multicolumn.review_stars_color_override_label",
+      "info": "t:settings_schema.theme_colors.settings.multicolumn.review_stars_color_override_info",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "--palette-color-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "--palette-color-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "--palette-color-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "--palette-color-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "--palette-color-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "--palette-color-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "--palette-color-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "--palette-color-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
+    },
+    {
+      "type": "range",
+      "id": "review_star_opacity_override",
+      "label": "t:settings_schema.theme_colors.settings.multicolumn.review_stars_opacity_override_label",
+      "info": "t:settings_schema.theme_colors.settings.multicolumn.review_stars_opacity_override_info",
+      "min": 0,
+      "max": 100,
+      "default": 100
+    },
     {
       "type": "text",
       "id": "button_text",

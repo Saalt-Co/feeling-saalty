@@ -3788,52 +3788,116 @@ details-disclosure > details {
 }
 
 /* SVG colors based on parent text color */
-.theme-color-text-0.svg-color-fill svg,
-[class*='theme-color-text-'] .theme-color-text-0.svg-color-fill svg,
-svg.svg-color-fill {
+.theme-color-text-0.svg-color-fill svg *:only-child,
+.theme-color-text-0.svg-color-fill svg *[fill]:not([fill='none']),
+.theme-color-text-0.svg-color-fill svg g[clip-path],
+[class*='theme-color-text-'] .theme-color-text-0.svg-color-fill svg *:only-child,
+[class*='theme-color-text-'] .theme-color-text-0.svg-color-fill svg *[fill]:not([fill='none']),
+[class*='theme-color-text-'] .theme-color-text-0.svg-color-fill svg g[clip-path] {
   fill: rgb(var(--palette-color-0));
 }
 
-.theme-color-text-1.svg-color-fill svg,
-[class*='theme-color-text-'] .theme-color-text-1.svg-color-fill svg,
-svg.svg-color-fill {
+.theme-color-text-0.svg-color-fill svg *[stroke]:not([stroke='none']),
+[class*='theme-color-text-'] .theme-color-text-0.svg-color-fill svg *[stroke]:not([stroke='none']) {
+  stroke: rgb(var(--palette-color-0));
+}
+
+.theme-color-text-1.svg-color-fill svg *:only-child,
+.theme-color-text-1.svg-color-fill svg *[fill]:not([fill='none']),
+.theme-color-text-1.svg-color-fill svg g[clip-path],
+[class*='theme-color-text-'] .theme-color-text-1.svg-color-fill svg *:only-child,
+[class*='theme-color-text-'] .theme-color-text-1.svg-color-fill svg *[fill]:not([fill='none']),
+[class*='theme-color-text-'] .theme-color-text-1.svg-color-fill svg g[clip-path] {
   fill: rgb(var(--palette-color-1));
 }
 
-.theme-color-text-2.svg-color-fill svg,
-[class*='theme-color-text-'] .theme-color-text-2.svg-color-fill svg,
-svg.svg-color-fill {
+.theme-color-text-1.svg-color-fill svg *[stroke]:not([stroke='none']),
+[class*='theme-color-text-'] .theme-color-text-1.svg-color-fill svg *[stroke]:not([stroke='none']) {
+  stroke: rgb(var(--palette-color-1));
+}
+
+.theme-color-text-2.svg-color-fill svg *:only-child,
+.theme-color-text-2.svg-color-fill svg *[fill]:not([fill='none']),
+.theme-color-text-2.svg-color-fill svg g[clip-path],
+[class*='theme-color-text-'] .theme-color-text-2.svg-color-fill svg *:only-child,
+[class*='theme-color-text-'] .theme-color-text-2.svg-color-fill svg *[fill]:not([fill='none']),
+[class*='theme-color-text-'] .theme-color-text-2.svg-color-fill svg g[clip-path] {
   fill: rgb(var(--palette-color-2));
 }
 
-.theme-color-text-3.svg-color-fill svg,
-[class*='theme-color-text-'] .theme-color-text-3.svg-color-fill svg,
-svg.svg-color-fill {
+.theme-color-text-2.svg-color-fill svg *[stroke]:not([stroke='none']),
+[class*='theme-color-text-'] .theme-color-text-2.svg-color-fill svg *[stroke]:not([stroke='none']) {
+  stroke: rgb(var(--palette-color-2));
+}
+
+.theme-color-text-3.svg-color-fill svg *:only-child,
+.theme-color-text-3.svg-color-fill svg *[fill]:not([fill='none']),
+.theme-color-text-3.svg-color-fill svg g[clip-path],
+[class*='theme-color-text-'] .theme-color-text-3.svg-color-fill svg *:only-child,
+[class*='theme-color-text-'] .theme-color-text-3.svg-color-fill svg *[fill]:not([fill='none']),
+[class*='theme-color-text-'] .theme-color-text-3.svg-color-fill svg g[clip-path] {
   fill: rgb(var(--palette-color-3));
 }
 
-.theme-color-text-4.svg-color-fill svg,
-[class*='theme-color-text-'] .theme-color-text-4.svg-color-fill svg,
-svg.svg-color-fill {
+.theme-color-text-3.svg-color-fill svg *[stroke]:not([stroke='none']),
+[class*='theme-color-text-'] .theme-color-text-3.svg-color-fill svg *[stroke]:not([stroke='none']) {
+  stroke: rgb(var(--palette-color-3));
+}
+
+.theme-color-text-4.svg-color-fill svg *:only-child,
+.theme-color-text-4.svg-color-fill svg *[fill]:not([fill='none']),
+.theme-color-text-4.svg-color-fill svg g[clip-path],
+[class*='theme-color-text-'] .theme-color-text-4.svg-color-fill svg *:only-child,
+[class*='theme-color-text-'] .theme-color-text-4.svg-color-fill svg *[fill]:not([fill='none']),
+[class*='theme-color-text-'] .theme-color-text-4.svg-color-fill svg g[clip-path] {
   fill: rgb(var(--palette-color-4));
 }
 
-.theme-color-text-5.svg-color-fill svg,
-[class*='theme-color-text-'] .theme-color-text-5.svg-color-fill svg,
-svg.svg-color-fill {
+.theme-color-text-4.svg-color-fill svg *[stroke]:not([stroke='none']),
+[class*='theme-color-text-'] .theme-color-text-4.svg-color-fill svg *[stroke]:not([stroke='none']) {
+  stroke: rgb(var(--palette-color-4));
+}
+
+.theme-color-text-5.svg-color-fill svg *:only-child,
+.theme-color-text-5.svg-color-fill svg *[fill]:not([fill='none']),
+.theme-color-text-5.svg-color-fill svg g[clip-path],
+[class*='theme-color-text-'] .theme-color-text-5.svg-color-fill svg *:only-child,
+[class*='theme-color-text-'] .theme-color-text-5.svg-color-fill svg *[fill]:not([fill='none']),
+[class*='theme-color-text-'] .theme-color-text-5.svg-color-fill svg g[clip-path] {
   fill: rgb(var(--palette-color-5));
 }
 
-.theme-color-text-6.svg-color-fill svg,
-[class*='theme-color-text-'] .theme-color-text-6.svg-color-fill svg,
-svg.svg-color-fill {
+.theme-color-text-5.svg-color-fill svg *[stroke]:not([stroke='none']),
+[class*='theme-color-text-'] .theme-color-text-5.svg-color-fill svg *[stroke]:not([stroke='none']) {
+  stroke: rgb(var(--palette-color-5));
+}
+
+.theme-color-text-6.svg-color-fill svg *:only-child,
+.theme-color-text-6.svg-color-fill svg *[fill]:not([fill='none']),
+.theme-color-text-6.svg-color-fill svg g[clip-path],
+[class*='theme-color-text-'] .theme-color-text-6.svg-color-fill svg *:only-child,
+[class*='theme-color-text-'] .theme-color-text-6.svg-color-fill svg *[fill]:not([fill='none']),
+[class*='theme-color-text-'] .theme-color-text-6.svg-color-fill svg g[clip-path] {
   fill: rgb(var(--palette-color-6));
 }
 
-.theme-color-text-7.svg-color-fill svg,
-[class*='theme-color-text-'] .theme-color-text-7.svg-color-fill svg,
-svg.svg-color-fill {
+.theme-color-text-6.svg-color-fill svg *[stroke]:not([stroke='none']),
+[class*='theme-color-text-'] .theme-color-text-6.svg-color-fill svg *[stroke]:not([stroke='none']) {
+  stroke: rgb(var(--palette-color-6));
+}
+
+.theme-color-text-7.svg-color-fill svg *:only-child,
+.theme-color-text-7.svg-color-fill svg *[fill]:not([fill='none']),
+.theme-color-text-7.svg-color-fill svg g[clip-path],
+[class*='theme-color-text-'] .theme-color-text-7.svg-color-fill svg *:only-child,
+[class*='theme-color-text-'] .theme-color-text-7.svg-color-fill svg *[fill]:not([fill='none']),
+[class*='theme-color-text-'] .theme-color-text-7.svg-color-fill svg g[clip-path] {
   fill: rgb(var(--palette-color-7));
+}
+
+.theme-color-text-7.svg-color-fill svg *[stroke]:not([stroke='none']),
+[class*='theme-color-text-'] .theme-color-text-7.svg-color-fill svg *[stroke]:not([stroke='none']) {
+  stroke: rgb(var(--palette-color-7));
 }
 
 /* PRIMARY Button color overrides based on background color class */
@@ -4277,4 +4341,5 @@ svg.svg-color-fill {
 
 .theme-color-text-ignore-children *:not(.button) {
   color: rgba(var(--color-main-text), var(--color-main-text-opacity));
+}
 }

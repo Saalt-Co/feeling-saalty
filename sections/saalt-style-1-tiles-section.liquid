@@ -198,9 +198,6 @@
                   margin: 0 auto 3rem;
                   {%- endif -%}
                 }
-                #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
-                  fill: {{ block.settings.icon_color }};
-                }
                 #section-{{ section.id }} .icons-wrapper .icon-wrapper {
                   min-width: {{ block.settings.mobile_icon_min_width }};
                   max-width: {{ block.settings.mobile_icon_wrapper_max_width }};
@@ -261,11 +258,7 @@
                   min-height: {{ block.settings.desktop_icon_height }};
                   max-height: {{ block.settings.desktop_icon_height }};
                 }
-                #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
-                  fill: {{ block.settings.icon_color }};
-                }
                 #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text {
-                  color: {{ block.settings.icon_color }};
                   font-size: {{ block.settings.icon_text_size }};
                   text-align: center;
                 }
@@ -1809,8 +1802,8 @@
       "settings": [
         {
           "type": "select",
-          "id": "theme_color_contacts_icon_text_color",
-          "label": "t:settings_schema.theme_colors.settings.icons.icons_text_color_label",
+          "id": "theme_color_contacts_icon_color",
+          "label": "t:settings_schema.theme_colors.settings.icons.icons_color_label",
           "options": [
             {
               "value": "match_text",
