@@ -20,10 +20,40 @@
   assign name_downcased = block.settings.absorbency_name | downcase
   assign trimmed_name = name_downcased | remove: ' ' | remove: 'absorbency' | strip | capitalize
   assign abs_entry = shop.metaobjects.absorbency[trimmed_name]
+
+  assign text_color_class = block.settings.theme_color_card_text
+  if text_color_class != 'theme_default'
+    assign color_number = text_color_class | slice: -1, 1
+    assign icon_color = '--palette-color-' | append: color_number
+  endif
 -%}
 
+{% style %}
+  #section-{{ section.id }} .section-inner .card.card-{{ index }} .card-header .absorbency-icon-wrapper .absorbency-icon * {
+    {% if icon_color %}
+      fill: rgba(var({{ icon_color }}),var(--color-icons-opacity));
+      stroke: rgba(var({{ icon_color }}),var(--color-icons-opacity));
+    {% else %}
+      fill: rgba(var(--color-main-text),var(--color-icons-opacity));
+      stroke: rgba(var(--color-main-text),var(--color-icons-opacity));
+    {% endif %}
+  }
+
+  #section-{{ section.id }} .section-inner .card.card-{{ index }} .card-header .absorbency-icon-wrapper .absorbency-icon.empty * {
+    fill: transparent;
+  }
+  #section-{{ section.id }} .section-inner .card.card-{{ index }} .content-wrapper .icon-wrapper svg,
+  #section-{{ section.id }} .section-inner .card.card-{{ index }} .content-wrapper .icon-wrapper svg * {
+    {% if icon_color %}
+      fill: rgba(var({{ icon_color }}),var(--color-icons-opacity));
+    {% else %}
+      fill: rgba(var(--color-main-text),var(--color-icons-opacity));
+    {% endif %}
+  }
+{% endstyle %}
+
 <div
-  class="card card-{{ index }}{% if block.settings.theme_color_card_text != 'theme_default' %} {{ block.settings.theme_color_card_text }} svg-color-fill{% endif %}"
+  class="card card-{{ index }}{% if text_color_class != "theme_default" %} {{ text_color_class }}{% endif %} svg-color-fill"
   {% if block.settings.theme_color_card_background != 'theme_default' %}
     style="background: rgba(var({{ block.settings.theme_color_card_background }}), {{ bg_opacity }}%)"
   {% endif %}

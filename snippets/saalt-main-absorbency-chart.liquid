@@ -4,11 +4,9 @@
 {%- capture tampon_icon -%}{% render "svg-tampon" %}{%- endcapture -%}
 {%- capture pad_icon -%}{% render "svg-pad" %}{%- endcapture -%}
 {%- capture drop_icon -%}{% render "svg-absorbency-drop" %}{%- endcapture -%}
-{%- assign drop_icon_filled = drop_icon
-  | replace: '<svg class="absorbency-icon"', '<svg class="absorbency-icon  drop-icon-filled"'
--%}
+{%- assign drop_icon_filled = drop_icon | replace: '<svg class="absorbency-icon"', '<svg class="absorbency-icon"' -%}
 {%- assign drop_icon_empty = drop_icon
-  | replace: '<svg class="absorbency-icon"', '<svg class="absorbency-icon  drop-icon-empty"'
+  | replace: '<svg class="absorbency-icon"', '<svg class="absorbency-icon empty"'
 -%}
 <section
   id="section-{{ section.id }}"
@@ -33,7 +31,8 @@
         endif
         case block.type
           when 'absorbency_card'
-            render 'saalt-absorbency-card', block: block, index: index, tampon_icon: tampon_icon, pad_icon: pad_icon, drop_icon_filled: drop_icon_filled, drop_icon_empty: drop_icon_empty, max_num_of_drops: section.settings.max_num_of_drops, bg_opacity: bg_opacity
+            assign card_text_color = block.settings.theme_color_card_text
+            render 'saalt-absorbency-card', section_id: section.id, block: block, index: index, tampon_icon: tampon_icon, pad_icon: pad_icon, drop_icon_filled: drop_icon_filled, drop_icon_empty: drop_icon_empty, max_num_of_drops: section.settings.max_num_of_drops, bg_opacity: bg_opacity, card_text_color: card_text_color
         endcase
       endfor
     -%}
@@ -80,7 +79,7 @@
   }
 
   #section-{{ section.id }} .section-inner .card:focus, #section-{{ section.id }} .section-inner .card:focus-within {
-    position: relative:
+    position: relative;
     z-index: 5;
   }
 
@@ -109,23 +108,23 @@
 
   #section-{{ section.id }} .section-inner .card .card-header .absorbency-icon-wrapper .absorbency-icon {
     display: inline-block;
+    width: 100%;
+    max-width: 12px;
     height: auto;
-    width: 12px;
-    fill: transparent;
-    color: transparent;
-    stroke: rgba(var(--color-icons), var(--color-icons-opacity));
   }
 
-  #section-{{ section.id }} .section-inner .card .card-header .absorbency-icon-wrapper .absorbency-icon.drop-icon-filled {
-    fill: rgba(var(--color-icons), var(--color-icons-opacity));
-    color: rgba(var(--color-icons), var(--color-icons-opacity));
-    stroke: rgba(var(--color-icons), var(--color-icons-opacity));
+  #section-{{ section.id }} .section-inner .card .card-header .absorbency-icon-wrapper .absorbency-icon * {
+    stroke-width: 1px;
+  }
+
+  #section-{{ section.id }} .section-inner .card .card-header .absorbency-icon-wrapper .absorbency-icon.empty * {
+    width: 98%;
+    height: 98%;
   }
 
   #section-{{ section.id }} .section-inner .card .content-wrapper {
     gap: 2rem;
     max-width: 300px;
-    margin: 0 auto 9rem;
   }
 
   {%- render 'saalt-custom-section-button-css' -%}
