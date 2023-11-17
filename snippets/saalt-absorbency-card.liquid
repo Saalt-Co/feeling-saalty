@@ -76,6 +76,11 @@
     </div>
   </div>
   {%- if block.settings.button_text != blank -%}
+    {%- style -%}
+      #section-{{ section.id }} .section-inner .card.card-{{ index }} .content-wrapper {
+        margin: 0 auto 9rem;
+      }
+    {%- endstyle -%}
     <div class="button-wrapper">
       <a
         class="card-button button{% render 'saalt-button-color-classes', obj: block %}"

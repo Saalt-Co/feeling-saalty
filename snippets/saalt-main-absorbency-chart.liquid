@@ -96,7 +96,7 @@
 
   #section-{{ section.id }} .section-inner .card .card-header .card-title-wrapper .card-title {
     display: block;
-    font-size: 24px;
+    font-size: 22px;
     width: 100%;
     margin: 0;
     text-align: center;
@@ -190,9 +190,9 @@
     margin-bottom: 1rem;
   }
 
-  @media screen and (min-width: 380px) {
+  @media screen and (min-width: 330px) {
     #section-{{ section.id }} .section-inner .card {
-      min-width: 380px;
+      min-width: 330px;
       padding: 3.75rem;
     }
   }
@@ -201,13 +201,18 @@
     #section-{{ section.id }} .section-inner {
       flex-direction: row;
       justify-content: flex-start;
-      overflow: auto;
+    }
+  }
+
+  @media screen and (min-width: 750) {
+    #section-{{ section.id }} .section-inner .card .card-header .card-title-wrapper .card-title {
+      font-size: 24px;
     }
   }
 
   @media screen and (min-width: 1024px) {
     #section-{{ section.id }} .section-inner {
-      max-width: {{ section.blocks.size | times: 380 }}px;
+      max-width: {{ section.blocks.size | times: 330 }}px;
       margin: 0 auto;
     }
   }
