@@ -75,7 +75,7 @@
     {% if section.settings.section_id != blank %}
       id="{{ section.settings.section_id | handleize }}"
     {% endif -%}
-    class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }} svg-color-fill{% endif %}"
+    class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}"
   >
     <div id="section-{{ section.id }}-text-1" class="inner-grid-wrapper">
       {%- render 'saalt-img-vid-text-split-style', section: section, text_group_num: '1' -%}
@@ -1177,6 +1177,10 @@
             {
               "value": "match_text",
               "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "ignore_text_color",
+              "label": "t:settings_schema.color_palette.settings.ignore_text_color.label"
             },
             {
               "value": "theme-color-text-0",
