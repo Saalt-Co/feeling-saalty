@@ -214,6 +214,9 @@
         "match_text": {
           "label": "Match section text color"
         },
+        "ignore_text_color": {
+          "label": "Ignore section text color"
+        },
         "transparent": {
           "label": "Transparent"
         },
