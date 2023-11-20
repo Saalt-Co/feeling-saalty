@@ -4342,4 +4342,3 @@ details-disclosure > details {
 .theme-color-text-ignore-children *:not(.button) {
   color: rgba(var(--color-main-text), var(--color-main-text-opacity));
 }
-}
