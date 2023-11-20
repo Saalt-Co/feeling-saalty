@@ -15,16 +15,16 @@
 {% endcomment %}
 
 {%- liquid
-  if icon_color and icon_color != 'match_text'
-    assign icon_classes = ' '
-    if icon_color != theme_color_text
-      assign icon_classes = icon_classes | append: icon_color | append: ' svg-color-fill'
-    endif
+  assign icon_classes = ' '
+  if icon_color and icon_color == 'match_text'
+    assign icon_classes = icon_classes | append: theme_color_text | append: ' svg-color-fill'
+  elsif icon_color and icon_color != 'match_text' and icon_color != 'ignore_text_color'
+    assign icon_classes = icon_classes | append: icon_color | append: ' svg-color-fill'
   endif
   if icon_text_color and icon_text_color != 'match_text'
     assign icon_text_class = ' '
     if icon_text_color != theme_color_text
-      assign icon_text_class = icon_text_class | append: icon_text_color
+      assign icon_text_class = icon_text_class | append: ' ' | append: icon_text_color
     endif
   endif
 -%}
