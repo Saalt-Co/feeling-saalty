@@ -24,7 +24,11 @@ class SaaltModal extends HTMLElement {
   openPopup = (e) => {
     if (!a11yClick(e)) return;
     this.modal.classList.add('reveal-modal');
-    this.modal.querySelector('.close-button').focus();
+    if (e.type === 'keydown') {
+      this.modal.querySelector('.close-button').focus();
+    } else {
+      this.modal.focus();
+    }
   };
 
   handleClosePopup = (e) => {

@@ -57,28 +57,28 @@
           "type": "nav_bar_link",
           "settings": {
             "nav_bar_link_text": "How it works",
-            "nav_bar_link_dest": "#"
+            "nav_bar_link_dest": "#how it works"
           }
         },
         "4527afb6-04da-4f97-a477-496cd83f6322": {
           "type": "nav_bar_link",
           "settings": {
             "nav_bar_link_text": "Why it's better",
-            "nav_bar_link_dest": ""
+            "nav_bar_link_dest": "#why it's better"
           }
         },
         "bd2e6f19-eb06-4cd9-a36b-c83a7d840938": {
           "type": "nav_bar_link",
           "settings": {
             "nav_bar_link_text": "Absorbency guide",
-            "nav_bar_link_dest": ""
+            "nav_bar_link_dest": "#absorbency guide"
           }
         },
         "203f953b-dc7d-482f-9e5d-c6bb8a366b86": {
           "type": "nav_bar_link",
           "settings": {
             "nav_bar_link_text": "How to wash",
-            "nav_bar_link_dest": ""
+            "nav_bar_link_dest": "#how to wash"
           }
         }
       },
@@ -278,7 +278,7 @@
         "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_content-1"
       ],
       "settings": {
-        "section_id": "",
+        "section_id": "absorbency guide",
         "theme_color_background": "theme-color-bg-2",
         "theme_color_text": "theme-color-text-0",
         "media_type": "none",
@@ -309,7 +309,7 @@
             "theme_color_card_background_opacity": 25,
             "theme_color_card_text": "theme_default",
             "button_text": "SHOP LIGHT",
-            "button_url": "",
+            "button_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.v.option.absorbency=Light",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -325,7 +325,7 @@
             "theme_color_card_background_opacity": 25,
             "theme_color_card_text": "theme_default",
             "button_text": "SHOP REGULAR",
-            "button_url": "",
+            "button_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.v.option.absorbency=Regular",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -341,7 +341,7 @@
             "theme_color_card_background_opacity": 25,
             "theme_color_card_text": "theme_default",
             "button_text": "SHOP HEAVY",
-            "button_url": "",
+            "button_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.v.option.absorbency=Heavy",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -357,7 +357,7 @@
             "theme_color_card_background_opacity": 25,
             "theme_color_card_text": "theme_default",
             "button_text": "SHOP SUPER",
-            "button_url": "",
+            "button_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.v.option.absorbency=Super",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -516,7 +516,7 @@
             "title": "SEAMLESS",
             "text_content": "Made with ultra-durable LYCRA®️ XTRA LIFE™️ fiber which resists fit loss and provides you with the confidence that your garment will last after repeated wash and wear.",
             "button_text": "Shop Seamless",
-            "button_url": "",
+            "button_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.p.m.saalt.saalt_wear_collection=Seamless",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -531,7 +531,7 @@
             "title": "COMFORT",
             "text_content": "Made from soft-stretch TENCEL™️ Modal, aka dreamy soft fabric made from sustainably regenerated cellulose fiber that comes from renewable beech wood.",
             "button_text": "Shop Comfort",
-            "button_url": "",
+            "button_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.p.m.saalt.saalt_wear_collection=Comfort",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -546,7 +546,7 @@
             "title": "LACE & MESH",
             "text_content": "Each pair is made with an average of 3 post-consumer recycled water bottles to help clean up landfill and ocean-bound plastic.",
             "button_text": "Shop Lace & Mesh",
-            "button_url": "",
+            "button_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.p.m.saalt.saalt_wear_collection=Lace+%26+Mesh",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -561,7 +561,7 @@
             "title": "COTTON",
             "text_content": "Made of soft and breathable biodegradable natural cotton that is Standard 100 OEKO-TEX®️ Certified.\nThis is a 3rd party certification that our product is free from a wide list of harmful chemicals.",
             "button_text": "Shop Cotton",
-            "button_url": "",
+            "button_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.p.m.saalt.saalt_wear_collection=Cotton",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -872,6 +872,7 @@
         "0f95b15d-936c-4ea7-81c0-9ce53aceb9f9": {
           "type": "saalt_contact_links",
           "settings": {
+            "theme_color_contacts_icon_text_color": "match_text"
           }
         }
       },
@@ -951,7 +952,6 @@
         "include_img": true,
         "image": "shopify:\/\/shop_images\/Testimonials_1_42fa139a-fe87-4a3e-bcb6-933cdb64ac5f.jpg",
         "image_behavior": "none",
-        "show_text_below": false,
         "accessibility_info": "Slideshow of customer testimonials"
       }
     },
