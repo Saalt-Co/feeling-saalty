@@ -2695,18 +2695,33 @@
     "name": "t:settings_schema.currency_format.name",
     "settings": [
       {
-        "type": "header",
-        "content": "t:settings_schema.currency_format.settings.content"
-      },
-      {
         "type": "paragraph",
         "content": "t:settings_schema.currency_format.settings.paragraph"
       },
       {
-        "type": "checkbox",
-        "id": "currency_code_enabled",
-        "label": "t:settings_schema.currency_format.settings.currency_code_enabled.label",
-        "default": true
+        "type": "select",
+        "id": "currency_format",
+        "label": "t:settings_schema.currency_format.name",
+        "info": "t:settings_schema.currency_format.settings.info",
+        "options": [
+          {
+            "value": "default",
+            "label": "t:settings_schema.currency_format.settings.default_label"
+          },
+          {
+            "value": "no_trailing_zeros",
+            "label": "t:settings_schema.currency_format.settings.no_trailing_zeros_label"
+          },
+          {
+            "value": "with_currency",
+            "label": "t:settings_schema.currency_format.settings.with_currency_label"
+          },
+          {
+            "value": "without_currency",
+            "label": "t:settings_schema.currency_format.settings.without_currency_label"
+          }
+        ],
+        "default": "no_trailing_zeros"
       }
     ]
   },
