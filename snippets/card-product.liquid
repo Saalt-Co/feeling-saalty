@@ -220,15 +220,9 @@
                           {%- if variant[variant_option] == value -%}
                             {%- liquid
                               assign variant_for_value = variant
-                              assign money_price = variant_for_value.price | money
-                              if settings.currency_code_enabled
-                                assign money_price = variant_for_value.price | money_with_currency
-                              endif
+                              assign money_price = variant_for_value.price
                               if variant_for_value.compare_at_price != 0
-                                assign compare_at_price = variant_for_value.compare_at_price | money
-                                if settings.currency_code_enabled
-                                  assign compare_at_price = variant_for_value.compare_at_price | money_with_currency
-                                endif
+                                assign compare_at_price = variant_for_value.compare_at_price
                               endif
                             -%}
                             {%- break -%}
@@ -250,9 +244,9 @@
                           {%- if variant_for_value -%}
                             data-variant-id="{{ variant_for_value.id }}"
                             data-variant-url="{{ variant_for_value.url }}"
-                            data-variant-price="{{ money_price }}"
+                            data-variant-price="{% render 'format-price', price: money_price %}"
                             {%- if compare_at_price -%}
-                              data-variant-compare-at-price="{{ compare_at_price }}"
+                              data-variant-compare-at-price="{% render 'format-price', price: compare_at_price %}"
                             {%- endif -%}
                           {%- endif -%}
                           {% if variant_for_value.image %}
