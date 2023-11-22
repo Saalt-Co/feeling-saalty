@@ -520,7 +520,7 @@
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ 'products.product.vendor' | t }}</div>
             {%- endif -%}
-            {% render 'price', collection: collection, collection: collection %}
+            {% render 'price', collection: collection %}
             {%- for option in card_product.options_with_values -%}
               {%- if show_swatches == true and option.name == 'Color' or option.name == 'Colour' -%}
                 <product-card-swatches>

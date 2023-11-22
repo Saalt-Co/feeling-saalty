@@ -2722,6 +2722,19 @@
           }
         ],
         "default": "no_trailing_zeros"
+      },
+      {
+        "type": "text",
+        "id": "price_prefix",
+        "label": "t:settings_schema.currency_format.settings.price_prefix_label",
+        "info": "t:settings_schema.currency_format.settings.price_prefix_info"
+      },
+      {
+        "type": "text",
+        "id": "price_separator",
+        "label": "t:settings_schema.currency_format.settings.price_separator_label",
+        "info": "t:settings_schema.currency_format.settings.price_separator_info",
+        "default": "-"
       }
     ]
   },

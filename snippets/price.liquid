@@ -21,21 +21,6 @@
   assign price = target.price | default: 1999
   assign available = target.available | default: false
 
-  case settings.currency_format
-    when 'no_trailing_zeros'
-      assign money_price = price | money_without_trailing_zeros
-    when 'with_currency'
-      assign money_price = price | money_with_currency
-    when 'without_currency'
-      assign money_price = price | money_without_currency
-    else
-      assign money_price = price | money
-  endcase
-
-  if target == product and product.price_varies
-    assign money_price = 'products.product.price.from_price_html' | t: price: money_price
-  endif
-
   assign downcased_prod_type = product.type | downcase
 -%}
 
@@ -58,7 +43,16 @@
     <div class="price__regular">
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       <span class="price-item price-item--regular">
-        {{ money_price }}
+        {% if product.price_varies %}
+          {% if settings.price_prefix %}
+            {{ settings.price_prefix }}
+          {% endif %}
+          {% render 'format-price', price: product.price_min, control_white_space: true %}
+          {{ settings.price_separator }}
+          {% render 'format-price', price: product.price_max, control_white_space: true %}
+        {% else %}
+          {% render 'format-price', price: price, control_white_space: true %}
+        {% endif %}
       </span>
     </div>
     <div class="price__sale">
@@ -66,13 +60,13 @@
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
         <span>
           <s class="price-item price-item--regular">
-            {% render 'format-price', price: compare_at_price %}
+            {% render 'format-price', price: compare_at_price, control_white_space: true %}
           </s>
         </span>
       {%- endunless -%}
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
       <span class="price-item price-item--sale price-item--last">
-        {{ money_price }}
+        {% render 'format-price', price: price, control_white_space: true %}
       </span>
     </div>
     <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
