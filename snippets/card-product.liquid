@@ -14,6 +14,7 @@
   - section_id: {String} The ID of the section that contains this card.
   - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false (optional)
   - horizontal_quick_add: {Boolean} Changes the quick add button styles when set to true. Default: false (optional)
+  - use_lowest_priced_variant: {Boolean} Uses the lowest-priced variant as the pre-selected variant on page load (optional)
 
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
@@ -24,10 +25,10 @@
 {%- if card_product and card_product != empty -%}
   {%- liquid
     assign ratio = 1
-    if selected_variant.featured_media and media_aspect_ratio == 'portrait'
+    if card_product.featured_media and media_aspect_ratio == 'portrait'
       assign ratio = 0.8
-    elsif selected_variant.featured_media and media_aspect_ratio == 'adapt'
-      assign ratio = selected_variant.featured_media.aspect_ratio
+    elsif card_product.featured_media and media_aspect_ratio == 'adapt'
+      assign ratio = card_product.featured_media.aspect_ratio
     endif
     if ratio == 0 or ratio == null
       assign ratio = 1
@@ -35,8 +36,8 @@
     assign downcased_prod_type = card_product.type | downcase
 
     assign downcased_collection_title = collection.title | downcase
-    # Check to see if this is on a sale collection page
-    if downcased_collection_title contains 'sale'
+    # Check to see if we should be using variants
+    if use_lowest_priced_variant
       # Check to see if there are multiple variants with different prices
       if card_product.price_varies and card_product.variants.size > 0
         for variant in card_product.variants
