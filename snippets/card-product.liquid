@@ -172,13 +172,10 @@
               >
                 {{- 'products.product.sold_out' | t -}}
               </span>
-            {%- elsif card_data.compare_at_price > card_data.price
-              and card_data.available
-              and downcased_prod_type != 'preset bundle'
-            -%}
+            {%- else -%}
               <span
                 id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-                class="badge badge--bottom-left"
+                class="badge badge--bottom-left{% if card_data.compare_at_price > card_data.price and card_data.available and downcased_prod_type != 'preset bundle' %} visible{% endif %}"
               >
                 {{- 'products.product.on_sale' | t -}}
               </span>
@@ -473,13 +470,15 @@
             >
               {{- 'products.product.sold_out' | t -}}
             </span>
-          {%- elsif card_data.compare_at_price > card_data.price
-            and card_data.available
-            and downcased_prod_type != 'preset bundle'
-          -%}
+          {%- else -%}
             <span
               id="Badge-{{ section_id }}-{{ card_product.id }}"
-              class="badge badge--bottom-left"
+              class="
+                badge badge--bottom-left{% if card_data.compare_at_price > card_data.price
+                  and card_data.available
+                  and downcased_prod_type != 'preset bundle'
+                %} visible{% endif %}
+              "
             >
               {{- 'products.product.on_sale' | t -}}
             </span>

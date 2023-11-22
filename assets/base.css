@@ -3286,7 +3286,8 @@ details-disclosure > details {
 .badge {
   border: 1px solid transparent;
   border-radius: var(--badge-corner-radius);
-  display: inline-block;
+  display: none;
+  visibility: hidden;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
   line-height: 1;
@@ -3299,7 +3300,14 @@ details-disclosure > details {
   word-break: break-word;
 }
 
+.badge.visible {
+  display: inline-block;
+  visibility: visible;
+}
+
 .badge.sold-out {
+  display: inline-block;
+  visibility: visible;
   background-color: rgb(var(--color-badges-sold-out));
   border-color: rgb(var(--color-badges-sold-out));
   color: rgb(var(--color-badges-sold-out-text));
