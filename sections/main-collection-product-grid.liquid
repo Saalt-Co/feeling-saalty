@@ -178,7 +178,8 @@
                     show_swatches: section.settings.show_swatches,
                     lazy_load: lazy_load,
                     show_quick_add: section.settings.enable_quick_add,
-                    section_id: section.id
+                    section_id: section.id,
+                    use_lowest_priced_variant: section.settings.use_lowest_priced_variant
                   %}
                 </li>
               {%- endfor -%}
@@ -290,6 +291,13 @@
       "id": "show_secondary_image",
       "default": false,
       "label": "t:sections.main-collection-product-grid.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_lowest_priced_variant",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.variant_options.lowest_variant_label",
+      "info": "t:sections.main-collection-product-grid.settings.variant_options.lowest_variant_info"
     },
     {
       "type": "checkbox",

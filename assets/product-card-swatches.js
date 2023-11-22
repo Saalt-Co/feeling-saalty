@@ -34,6 +34,7 @@ class ProductCardSwatches extends HTMLElement {
     this.updateCardImage(checkedRadio);
     this.updateLinkUrl(checkedRadio);
     this.updatePrice(checkedRadio);
+    this.toggleSaleBadge(checkedRadio);
   }
 
   checkSelected(e) {
@@ -81,6 +82,21 @@ class ProductCardSwatches extends HTMLElement {
     // const compareAtPrice = checkedRadio.dataset.compareAtPrice;
     for (const priceEl of currentPrices) {
       priceEl.textContent = regPrice;
+    }
+  }
+
+  toggleSaleBadge(checkedRadio) {
+    const price = checkedRadio.dataset.variantPrice;
+    const compareAtPrice = checkedRadio.dataset.variantCompareAtPrice;
+    const badgeEls = checkedRadio.closest('.card').querySelectorAll('.badge');
+    if (compareAtPrice && price < compareAtPrice) {
+      for (const badgeEl of badgeEls) {
+        badgeEl.classList.add('visible');
+      }
+    } else {
+      for (const badgeEl of badgeEls) {
+        badgeEl.classList.remove('visible');
+      }
     }
   }
 }

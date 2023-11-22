@@ -1535,6 +1535,18 @@ button.shopify-payment-button__button--unbranded {
   background-color: rgba(var(--color-button-text), 0.3);
 }
 
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
 .button::selection,
 .shopify-challenge__button::selection,
 .customer button::selection {
@@ -2002,6 +2014,46 @@ details[open] > .share-button__fallback {
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
   display: none;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
 }
 
 .field__input::-webkit-input-placeholder,
@@ -3286,7 +3338,8 @@ details-disclosure > details {
 .badge {
   border: 1px solid transparent;
   border-radius: var(--badge-corner-radius);
-  display: inline-block;
+  display: none;
+  visibility: hidden;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
   line-height: 1;
@@ -3299,11 +3352,42 @@ details-disclosure > details {
   word-break: break-word;
 }
 
+.badge.visible {
+  display: inline-block;
+  -webkit-animation: revealBadge forwards ease-in 0.1s;
+  animation: revealBadge forwards ease-in 0.1s;
+}
+
 .badge.sold-out {
+  display: inline-block;
   background-color: rgb(var(--color-badges-sold-out));
   border-color: rgb(var(--color-badges-sold-out));
   color: rgb(var(--color-badges-sold-out-text));
   opacity: var(--color-badges-sold-out-opacity);
+  -webkit-animation: revealBadge forwards ease-in 0.1s;
+  animation: revealBadge forwards ease-in 0.1s;
+}
+
+@-webkit-keyframes revealBadge {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes revealBadge {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .gradient {
