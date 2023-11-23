@@ -607,17 +607,18 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "We're here to get you to period bliss."
+            "title": "Saalt Bliss Guarantee"
           }
         },
         "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>If you're not happy with your leakproof underwear or other Saalt products, we'll send you a replacement you'll love or your money back per our Saalt Bliss Guarantee.<\/p>"
+            "text_content": "<p>If you're not happy with your Saalt product, <a href=\"\/pages\/replacements\" title=\"Replacements\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/a>. Why? We know that learning to use reusables can take time, but we're here to help and cheer you to Saalt bliss. <br\/>Your Saalt(isfaction) guaranteed.<\/p>"
           }
         },
         "b2ee0a35-d994-4a99-9c1b-24b9c7973252": {
           "type": "section_title",
+          "disabled": true,
           "settings": {
             "heading_tag": "3",
             "title": "Reach out to our Saalt Coaches"
@@ -625,6 +626,7 @@
         },
         "a97b9c6f-ca1f-4195-a315-328e0406cdd6": {
           "type": "saalt_contact_links",
+          "disabled": true,
           "settings": {
             "theme_color_contacts_icon_color": "match_text"
           }
