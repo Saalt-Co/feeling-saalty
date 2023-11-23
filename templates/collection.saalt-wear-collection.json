@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/SW-SM-Light-Day-Workout-3-Pack-Bundle-PDP-3_01.jpg",
             "title": "<p>Light Absorbency<\/p>",
-            "copy": "<p>Holds as much as 1 liner or 1-2 light tampons. <\/p><p>Best for sweat and discharge, Light flow days and spotting, a worry-free backup to a cup, disc or tampon, or as a pantyliner replacement.<\/p>",
+            "copy": "<p>Holds as much as 1 liner or 1-2 light tampons. <\/p><p>Best for sweat and discharge, light flow days and spotting, a worry-free backup to a cup, disc or tampon, or as a pantyliner replacement.<\/p>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Absorbency",
@@ -30,7 +30,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Deep_Marine.jpg",
             "title": "<p>Regular Absorbency<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "copy": "<p>Holds as much as 2 pads or 2-3 tampons. <\/p><p>Best for sweat and discharge, regular period flow, light bladder leaks, or as a worry-free backup to a cup, disc or tampon.<\/p>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Absorbency",
@@ -43,7 +43,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/SW-CT-BR-VB-Nichole-11028.jpg",
             "title": "<p>Heavy Absorbency<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "copy": "<p>Holds as much as 3 pads or 3-4 tampons. <\/p><p>Best for heavy flow days and overnight, postpartum wear, and bladder leaks.<\/p>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Absorbency",
@@ -55,12 +55,12 @@
           "type": "window-feature",
           "settings": {
             "title": "<p>Super Absorbency<\/p>",
-            "copy": "",
+            "copy": "<p>Holds as much as 6+ pads or 8+ tampons. <\/p><p>Best for your heaviset flow days and overnight, postpartum wear, and bladder leaks.<\/p>",
             "link_type": "filter",
             "link_url": "",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Filter"
+            "filter_name": "Absorbency",
+            "filter_val": "Super",
+            "button_text": "Shop Super"
           }
         }
       },
@@ -127,7 +127,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "video",
-        "video": "shopify:\/\/files\/videos\/New Tech for PDP.mp4",
+        "video": "shopify:\/\/files\/videos\/Nov New PDP.mp4",
         "custom_code": "",
         "use_max_media_width": true,
         "max_media_width": "700px",
@@ -287,7 +287,7 @@
           "type": "section_icon_with_text",
           "settings": {
             "icon_svg": "<!--?xml version=\"1.0\" encoding=\"utf-8\"?-->\n<svg width=\"90px\" height=\"90px\" viewbox=\"0 0 90 90\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n  <g id=\"Water\" transform=\"translate(1 1)\">\n    <path d=\"M0 0L88 0L88 88L0 88L0 0Z\" id=\"bg\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"none\"><\/path>\n    <path d=\"M0 36.9359C0 25.0618 21.5 0 21.5 0C21.5 0 43 25.0618 43 36.9359C43 48.81 33.3741 58.4359 21.5 58.4359C9.62588 58.4359 0 48.81 0 36.9359Z\" transform=\"translate(22.5 14.782227)\" id=\"water\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"#3F4759\" stroke-width=\"2\"><\/path>\n  <\/g>\n<\/svg>",
-            "icon_text": "<p>Rinse in cold water<\/p>",
+            "icon_text": "<h4>Rinse in cold water<\/h4>",
             "theme_color_icon_color": "match_text",
             "theme_color_icon_text_color": "match_text"
           }
@@ -296,7 +296,7 @@
           "type": "section_icon_with_text",
           "settings": {
             "icon_svg": "<!--?xml version=\"1.0\" encoding=\"utf-8\"?-->\n<svg width=\"90px\" height=\"90px\" viewbox=\"0 0 90 90\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n  <g id=\"Washing-mashine\" transform=\"translate(1 1)\">\n    <path d=\"M0 0L88 0L88 88L0 88L0 0Z\" id=\"bg\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"none\"><\/path>\n    <g id=\"washing-mashine\" transform=\"translate(18.5 12.5)\">\n      <path d=\"M0 0L51 0L51 63L0 63L0 0Z\" id=\"Rectangle\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"#3F4759\" stroke-width=\"2\"><\/path>\n      <path d=\"M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z\" transform=\"translate(9 23.000244)\" id=\"Ellipse-2\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"#3F4759\" stroke-width=\"2\"><\/path>\n      <path d=\"M0 3C0 1.34315 1.34315 0 3 0C4.65685 0 6 1.34315 6 3C6 4.65685 4.65685 6 3 6C1.34315 6 0 4.65685 0 3Z\" transform=\"translate(30 5)\" id=\"Ellipse-3\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"#3F4759\" stroke-width=\"2\"><\/path>\n      <path d=\"M0 3C0 1.34315 1.34315 0 3 0C4.65685 0 6 1.34315 6 3C6 4.65685 4.65685 6 3 6C1.34315 6 0 4.65685 0 3Z\" transform=\"translate(40.000977 5)\" id=\"Ellipse-3-Copy\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"#3F4759\" stroke-width=\"2\"><\/path>\n      <path d=\"M0 0L2.81047 2.81047Q2.95363 2.95363 3.10926 3.08311Q3.2649 3.2126 3.43171 3.32732Q3.59852 3.44205 3.77512 3.54105Q3.95171 3.64006 4.13661 3.72253Q4.32151 3.80499 4.51317 3.87022Q4.70483 3.93545 4.90164 3.9829Q5.09846 4.03035 5.29879 4.05963Q5.49911 4.0889 5.70128 4.09976Q5.90344 4.11061 6.10575 4.10296Q6.30806 4.0953 6.50883 4.06919Q6.70959 4.04309 6.90714 3.99876Q7.10468 3.95442 7.29734 3.89223Q7.49001 3.83004 7.67619 3.75051Q7.86237 3.67097 8.04051 3.57477Q8.21864 3.47857 8.38725 3.36649Q8.55585 3.25442 8.71351 3.12741L9.15624 2.77077Q9.33673 2.62538 9.52897 2.49592Q9.72121 2.36647 9.9238 2.25389Q10.1264 2.14132 10.3379 2.04645Q10.5493 1.95158 10.7681 1.87511Q10.9869 1.79864 11.2114 1.74113Q11.4359 1.68361 11.6645 1.64547Q11.8931 1.60734 12.1242 1.58885Q12.3552 1.57037 12.587 1.57167Q12.8187 1.57298 13.0495 1.59406Q13.2803 1.61514 13.5085 1.65585Q13.7367 1.69656 13.9605 1.7566Q14.1844 1.81664 14.4023 1.89557Q14.6202 1.9745 14.8306 2.07174Q15.041 2.16898 15.2423 2.28383Q15.4436 2.39868 15.6344 2.53029Q15.8251 2.6619 16.004 2.80932L16.2179 2.98563Q16.3822 3.12109 16.558 3.24128Q16.7338 3.36147 16.9197 3.46543Q17.1055 3.56939 17.2999 3.65629Q17.4944 3.74319 17.6958 3.81233Q17.8972 3.88147 18.104 3.93229Q18.3108 3.98311 18.5213 4.0152Q18.7318 4.0473 18.9444 4.06041Q19.157 4.07352 19.3698 4.06754Q19.5827 4.06156 19.7942 4.03654Q20.0057 4.01152 20.214 3.96766Q20.4224 3.9238 20.6261 3.86145Q20.8297 3.7991 21.0269 3.71877Q21.2241 3.63844 21.4134 3.54076Q21.6026 3.44309 21.7823 3.32886Q21.9621 3.21463 22.1308 3.08476Q22.2996 2.95489 22.4561 2.81043L22.5697 2.70554Q22.7159 2.57055 22.8743 2.45011Q23.0327 2.32967 23.2018 2.22487Q23.371 2.12007 23.5494 2.03187Q23.7277 1.94367 23.9137 1.87287Q24.0997 1.80207 24.2916 1.74931Q24.4834 1.69655 24.6794 1.66232Q24.8755 1.62809 25.0739 1.61269Q25.2723 1.59729 25.4712 1.60087Q25.6702 1.60445 25.8679 1.62697Q26.0656 1.64949 26.2603 1.69075Q26.4549 1.73201 26.6448 1.79163Q26.8346 1.85126 27.0179 1.9287Q27.2012 2.00614 27.3763 2.1007Q27.5514 2.19526 27.7167 2.30607Q27.882 2.41689 28.0359 2.54295Q28.1899 2.66901 28.3311 2.80916L31.1636 5.61967\" transform=\"translate(9.5 36)\" id=\"New-shape\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"#3F4759\" stroke-width=\"2\"><\/path>\n    <\/g>\n  <\/g>\n<\/svg>",
-            "icon_text": "<p>Machine wash cold<\/p>",
+            "icon_text": "<h4>Machine wash cold<\/h4>",
             "theme_color_icon_color": "match_text",
             "theme_color_icon_text_color": "match_text"
           }
@@ -305,7 +305,7 @@
           "type": "section_icon_with_text",
           "settings": {
             "icon_svg": "<!--?xml version=\"1.0\" encoding=\"utf-8\"?-->\n<svg width=\"90px\" height=\"90px\" viewbox=\"0 0 90 90\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n  <g id=\"Under\" transform=\"translate(1 1)\">\n    <path d=\"M0 0L88 0L88 88L0 88L0 0Z\" id=\"bg\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"none\"><\/path>\n    <path d=\"M1.48164 0C5.57733 1.50425 20.7222 5.28054 38.4324 4.93918C56.1426 4.59781 75.5947 1.80413e-06 75.5947 1.80413e-06L78.1287 16.1646C78.1287 16.1646 51.1438 27.3599 45.1896 45.3507C42.5007 45.9792 32.9425 45.3506 32.9425 45.3506C32.9425 45.3506 24.637 26.2941 0.00324903 16.1646C-0.0793657 16.093 1.44058 -0.00723511 1.48164 0Z\" transform=\"translate(4.935547 21.185059)\" id=\"under\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"#3F4759\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <\/g>\n<\/svg>",
-            "icon_text": "<p>Proudly hang dry<\/p>",
+            "icon_text": "<h4>Proudly hang dry<\/h4>",
             "theme_color_icon_color": "match_text",
             "theme_color_icon_text_color": "match_text"
           }
@@ -458,7 +458,6 @@
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/chelsea2.jpg",
             "title": "Kelsey R.",
             "rating": 5,
             "text": "<p>I am in love with these undies! I wore them on my heavier days for half a day, and they did a great job. No leaks, no stains! The fit was perfect; great for when you are wearing low rise pants.<\/p>",
@@ -469,7 +468,6 @@
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Photo_Dec_28_2022_3_54_10_PM.jpg",
             "title": "Natalie E.",
             "rating": 5,
             "text": "<p>Is it weird that I was actually looking forward to my period to be able to rock these cute undies? Like lots of people said, these are cuter than a lot of my regular underwear and it's so nice to finally ditch the backup pad. Can't wait to get more in different colors to get me through period week!<\/p>",
@@ -480,7 +478,6 @@
         "8ad13ac4-10e5-4131-bf07-17d6ff34bba2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/synclaire_2.jpg",
             "title": "Michelle C.",
             "rating": 5,
             "text": "<p>These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties. These are cute, they work, and I'm definitely going to buy more!<\/p>",
@@ -494,6 +491,7 @@
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2",
         "8ad13ac4-10e5-4131-bf07-17d6ff34bba2"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -501,7 +499,7 @@
         "image_ratio": "square",
         "columns_desktop": 3,
         "column_alignment": "left",
-        "theme_color_background": "theme_default",
+        "theme_color_background": "theme-color-bg-4",
         "theme_color_text": "theme_default",
         "background_style": "primary",
         "theme_color_column_secondary_bg": "theme_default",
@@ -563,7 +561,7 @@
       "settings": {
         "slide_height": "adapt_image",
         "slider_visual": "dots",
-        "auto_rotate": false,
+        "auto_rotate": true,
         "change_slides_speed": 5,
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
