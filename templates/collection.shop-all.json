@@ -350,10 +350,9 @@
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bright_girl_guide_7_4b71619e-73ed-4d07-ac16-6a0fb255671f.jpg",
-            "title": "Melody",
+            "title": "Kelsey R.",
             "rating": 5,
-            "text": "<p>“These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties.”<\/p>",
+            "text": "<p>\"I am in love with these undies! I wore them on my heavier days for half a day, and they did a great job. no leaks, no stains! The fit was perfect; great for when you are wearing low rise pants.\"<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -361,10 +360,9 @@
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Teen_Lifestyle-57.jpg",
-            "title": "Melody",
+            "title": "Natalie E.",
             "rating": 5,
-            "text": "<p>“These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties. These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties.”<\/p>",
+            "text": "<p>“Is it weird that I was actually looking forward to my period to be able to rock these cute undies? Like lots of people said, these are cuter than a lot of my regular underwear and it's so nice to finally ditch the backup pad. Can't wait to get more in different colors to get me through period week!”<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -372,10 +370,9 @@
         "8ad13ac4-10e5-4131-bf07-17d6ff34bba2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Chelsea.jpg",
-            "title": "Melody",
+            "title": "Michelle C.",
             "rating": 5,
-            "text": "<p>“These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties.”<\/p>",
+            "text": "<p>“These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties. These are cute, they work, and I'm definitely going to buy more!”<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -398,6 +395,8 @@
         "background_style": "none",
         "theme_color_column_secondary_bg": "theme_default",
         "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
         "button_text": "",
         "button_url": "",
         "button_type": "primary",
@@ -483,6 +482,7 @@
         "01fe6699-0b68-4f95-98df-7681701008ae",
         "ebc0fde7-67ee-4028-b730-3745cb413dac"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-2",
@@ -641,6 +641,42 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa": {
+      "type": "newsletter",
+      "blocks": {
+        "template--19641079136529__7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Do you have a period? Great, we're here to make it better (starting with 15% off your first order). 😉",
+            "heading_size": "h2"
+          }
+        },
+        "template--19641079136529__7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Subscribe to receive all you need to know about the period flow, pointers, and perks that come as often as your period does.<\/p>"
+          }
+        },
+        "template--19641079136529__7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa-email_form-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--19641079136529__7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa-heading-1",
+        "template--19641079136529__7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa-paragraph-1",
+        "template--19641079136529__7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa-email_form-1"
+      ],
+      "settings": {
+        "theme_color_background": "theme-color-bg-4",
+        "theme_color_text": "theme_default",
+        "input_opacity": 25,
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -653,6 +689,7 @@
     "835cabec-b298-4b76-9a74-2ae85e6ea4be",
     "6f86141b-6e50-4f99-a4bf-ce75e198df4c",
     "6484ec1d-c35f-44e1-975e-1cd40fab13b6",
-    "b4f29bbb-7268-4349-91b5-1ab1f590f3c0"
+    "b4f29bbb-7268-4349-91b5-1ab1f590f3c0",
+    "7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa"
   ]
 }
