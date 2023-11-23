@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/SW-SM-Light-Day-Workout-3-Pack-Bundle-PDP-3_01.jpg",
             "title": "<p>Light Absorbency<\/p>",
-            "copy": "<p>Tampon comparison and use cases<\/p>",
+            "copy": "<p>Holds as much as 1 liner or 1-2 light tampons. <\/p><p>Best for sweat and discharge, Light flow days and spotting, a worry-free backup to a cup, disc or tampon, or as a pantyliner replacement.<\/p>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Absorbency",
@@ -506,6 +506,8 @@
         "background_style": "primary",
         "theme_color_column_secondary_bg": "theme_default",
         "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
         "button_text": "",
         "button_url": "",
         "button_type": "primary",
@@ -568,7 +570,6 @@
         "include_img": true,
         "image": "shopify:\/\/shop_images\/Testimonials_1.jpg",
         "image_behavior": "none",
-        "show_text_below": true,
         "accessibility_info": "Slideshow of customer reviews"
       }
     },
@@ -627,6 +628,7 @@
         "a97b9c6f-ca1f-4195-a315-328e0406cdd6": {
           "type": "saalt_contact_links",
           "settings": {
+            "theme_color_contacts_icon_color": "match_text"
           }
         }
       },
