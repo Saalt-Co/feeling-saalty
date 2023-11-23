@@ -41,41 +41,56 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "0aeeebd1-22ec-415e-ae81-387f53f40e27": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        },
         "footer-0": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "Shop",
             "menu": "footer"
           }
         },
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Info",
+            "heading": "Resources",
             "menu": "footer"
           }
         },
-        "footer-2": {
-          "type": "text",
+        "145cfba4-b7eb-42c4-9791-72f73c77ab02": {
+          "type": "link_list",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "heading": "Company",
+            "menu": "footer"
+          }
+        },
+        "52db0905-c8f6-43a5-9fa0-f8d4688dbb34": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Support",
+            "menu": "footer"
           }
         }
       },
       "block_order": [
+        "0aeeebd1-22ec-415e-ae81-387f53f40e27",
         "footer-0",
         "footer-1",
-        "footer-2"
+        "145cfba4-b7eb-42c4-9791-72f73c77ab02",
+        "52db0905-c8f6-43a5-9fa0-f8d4688dbb34"
       ],
       "settings": {
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
-        "newsletter_enable": true,
+        "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "input_opacity": 25,
         "enable_follow_on_shop": true,
-        "show_social": true,
+        "show_social": false,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": true,
