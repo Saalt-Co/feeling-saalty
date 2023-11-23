@@ -669,6 +669,7 @@
         "template--19641079136529__7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa-paragraph-1",
         "template--19641079136529__7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa-email_form-1"
       ],
+      "disabled": true,
       "settings": {
         "theme_color_background": "theme-color-bg-4",
         "theme_color_text": "theme_default",
