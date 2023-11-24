@@ -241,12 +241,55 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "2243f424-7d1b-47ed-81dd-8aa7ae84f6ae": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "a3ae1389-dc51-46b7-9d16-aee2082d2972": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<h3 style=\"margin-bottom: 0; font-size: 1.5rem;\">Watch The Saalt Story<\/h3>"
+          }
+        },
+        "template--21546030465297__2243f424-7d1b-47ed-81dd-8aa7ae84f6ae-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "The Inspiration Behind Our Products"
+          }
+        }
+      },
+      "block_order": [
+        "a3ae1389-dc51-46b7-9d16-aee2082d2972",
+        "template--21546030465297__2243f424-7d1b-47ed-81dd-8aa7ae84f6ae-section_title-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "media_type": "code",
+        "custom_code": "<iframe width=\"1271\" height=\"715\" src=\"https:\/\/www.youtube.com\/embed\/O7wZ1V7JQFQ?rel=0\" title=\"The Saalt Story - The Inspiration Behind Our Reusable Period Care Products\" frameborder=\"0\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"><\/iframe>",
+        "use_max_media_width": true,
+        "max_media_width": "90%",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "above",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "800px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "707d104a-00ea-4bf5-b0b8-b4a634b27b08",
     "987fa4b1-6c8d-4641-8e59-b88a4eb6c3f4",
-    "6e6939a0-95f3-41ee-ad01-bb83c2b0cb9b"
+    "6e6939a0-95f3-41ee-ad01-bb83c2b0cb9b",
+    "2243f424-7d1b-47ed-81dd-8aa7ae84f6ae"
   ]
 }
