@@ -484,7 +484,7 @@
           "settings": {
             "theme_color_mobile_text_color": "match_text",
             "tile_mobile_text_alignment": "left",
-            "theme_color_desktop_text_color": "match_text",
+            "theme_color_desktop_text_color": "--palette-color-7",
             "theme_color_desktop_text_hover_focus_color": "--palette-color-4",
             "tile_desktop_text_alignment": "center",
             "desktop_text_placement": "center",
