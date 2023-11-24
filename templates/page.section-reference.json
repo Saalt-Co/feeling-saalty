@@ -597,6 +597,51 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "3bfed0ad-2076-4915-9bfe-ae4df1a5d8d9": {
+      "type": "saalt-unstyled-liquid-section",
+      "blocks": {
+        "bcb5ea54-c7c6-4894-a1f4-d2a64df65878": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<style>\n  .background {\n  display: block;\n  background: rgb(var(--palette-color-5));\n  padding: 2.5rem 1rem 4rem;\n  }\n  .content {\n    display: block;\n    max-width: 700px;\n    margin: 0 auto;\n  }\n  .list-wrapper {\n    display: block;\n    text-align: center;\n  }\n  .liquid-code-example-list {\n    display: flex;\n    max-width: 600px;\n    align-items: center;\n    justify-content: center;\n    margin: 1rem auto;\n    list-style: none;\n    gap: 1.5rem;\n    flex-wrap: wrap;\n  }\n  .liquid-code-example-bullet {\n    display: inline-block;\n    background: rgb(var(--palette-color-2));\n    border-radius: 1rem;\n    text-align: center;\n    padding: 1rem 2rem;\n    color: rgb(var(--palette-color-0));\n  }\n  p {\n    display: inline-block;\n    max-width: 700px;\n  }\n  <\/style>"
+          }
+        },
+        "9b481d2a-9584-4b01-aa2d-e2701587edda": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<div class=\"background\">"
+          }
+        },
+        "b31e0cac-e180-4156-afba-3e412c39c24f": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<div class=\"content\">\n  <h2>Custom Liquid Section<\/h2>\n  <p>Yup, you read that write! This entire section is written right inside of the theme customizer. What's even cooler, is that the list below is made up of entries within the Saalt Wear Styles metaobject — none of that is actually written in this section!<\/p>\n  <p>Plus! All of the styling for this section is written in the theme customizer as well. The style tag is even using css variables from the theme.liquid file for the section's colors.🤯<\/p>\n<\/div>"
+          }
+        },
+        "template--21546030465297__3bfed0ad-2076-4915-9bfe-ae4df1a5d8d9-custom_liquid_code-1": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "{% liquid \nassign styles = ''\n\nfor entry in shop.metaobjects.saalt_wear_styles.values\n  assign styles = styles | append: entry.style_name\n                              \n  unless forloop.last                              \n    assign styles = styles | append: ', '         \n  endunless\nendfor\n\nassign split_styles = styles | split: ', '\n%}\n<div class=\"list-wrapper\">\n<ul class=\"liquid-code-example-list\">\n{% for style in split_styles %}\n<li class=\"liquid-code-example-bullet\">{{ style }}<\/li>\n{% endfor %}\n<\/ul>\n<\/div>"
+          }
+        },
+        "dbf59b59-b7ad-4079-8d17-78fe55abab1a": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "bcb5ea54-c7c6-4894-a1f4-d2a64df65878",
+        "9b481d2a-9584-4b01-aa2d-e2701587edda",
+        "b31e0cac-e180-4156-afba-3e412c39c24f",
+        "template--21546030465297__3bfed0ad-2076-4915-9bfe-ae4df1a5d8d9-custom_liquid_code-1",
+        "dbf59b59-b7ad-4079-8d17-78fe55abab1a"
+      ],
+      "settings": {
+        "section_id": ""
+      }
     }
   },
   "order": [
@@ -607,6 +652,7 @@
     "6e6939a0-95f3-41ee-ad01-bb83c2b0cb9b",
     "2243f424-7d1b-47ed-81dd-8aa7ae84f6ae",
     "a1fce857-de0e-41c5-b206-da6927d1cf15",
-    "39e65c1d-23ce-4912-aae4-a5b47d2a7f43"
+    "39e65c1d-23ce-4912-aae4-a5b47d2a7f43",
+    "3bfed0ad-2076-4915-9bfe-ae4df1a5d8d9"
   ]
 }
