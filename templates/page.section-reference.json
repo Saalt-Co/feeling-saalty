@@ -486,10 +486,10 @@
             "tile_mobile_text_alignment": "left",
             "theme_color_desktop_text_color": "--palette-color-7",
             "theme_color_desktop_text_hover_focus_color": "--palette-color-4",
-            "tile_desktop_text_alignment": "center",
-            "desktop_text_placement": "center",
-            "tile_desktop_text_alignment_hover_focus": "center",
-            "desktop_text_hover_placement": "center"
+            "tile_desktop_text_alignment": "left",
+            "desktop_text_placement": "flex-end",
+            "tile_desktop_text_alignment_hover_focus": "right",
+            "desktop_text_hover_placement": "flex-start"
           }
         },
         "template--21546030465297__39e65c1d-23ce-4912-aae4-a5b47d2a7f43-saalt_style_1_tile-1": {
@@ -557,6 +557,21 @@
           "settings": {
             "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
           }
+        },
+        "17d03068-84d5-4b48-8642-d01163b19db5": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/How_We_Give_Back-1.jpg",
+            "title": "Tile Title Goes Here",
+            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
         }
       },
       "block_order": [
@@ -566,7 +581,8 @@
         "template--21546030465297__39e65c1d-23ce-4912-aae4-a5b47d2a7f43-saalt_style_1_tile-2",
         "template--21546030465297__39e65c1d-23ce-4912-aae4-a5b47d2a7f43-saalt_style_1_tile-3",
         "template--21546030465297__39e65c1d-23ce-4912-aae4-a5b47d2a7f43-saalt_style_1_tile-4",
-        "31dea52f-7ba9-4010-9271-7ad238233560"
+        "31dea52f-7ba9-4010-9271-7ad238233560",
+        "17d03068-84d5-4b48-8642-d01163b19db5"
       ],
       "settings": {
         "section_id": "",
