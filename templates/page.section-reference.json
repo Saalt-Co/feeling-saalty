@@ -468,6 +468,119 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "c3ad7c71-80f2-434a-ab45-5a75df552a25": {
+      "type": "saalt-style-1-tiles-section",
+      "blocks": {
+        "5c347032-e170-4e88-b0ca-0658497522dc": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Section Title Goes Here"
+          }
+        },
+        "template--21546030465297__c3ad7c71-80f2-434a-ab45-5a75df552a25-section_tiles_group-1": {
+          "type": "section_tiles_group",
+          "settings": {
+            "theme_color_mobile_text_color": "match_text",
+            "tile_mobile_text_alignment": "center",
+            "theme_color_desktop_text_color": "match_text",
+            "theme_color_desktop_text_hover_focus_color": "match_text",
+            "tile_desktop_text_alignment": "center",
+            "desktop_text_placement": "center",
+            "tile_desktop_text_alignment_hover_focus": "center",
+            "desktop_text_hover_placement": "center"
+          }
+        },
+        "template--21546030465297__c3ad7c71-80f2-434a-ab45-5a75df552a25-saalt_style_1_tile-1": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/How_We_Give_Back.jpg",
+            "title": "Tile 1",
+            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21546030465297__c3ad7c71-80f2-434a-ab45-5a75df552a25-saalt_style_1_tile-2": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Impact-HER-2019-0244_cropped.jpg",
+            "title": "Tile 2",
+            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21546030465297__c3ad7c71-80f2-434a-ab45-5a75df552a25-saalt_style_1_tile-3": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Naturally_Inspired-mobile.jpg",
+            "title": "Tile 3",
+            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
+            "button_text": "dfgsdfg",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21546030465297__c3ad7c71-80f2-434a-ab45-5a75df552a25-saalt_style_1_tile-4": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/How_We_have_Your_Back_side.jpg",
+            "title": "Tile 4",
+            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "af6e2c6f-2fd8-4945-8034-9014dde7b7cb": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5c347032-e170-4e88-b0ca-0658497522dc",
+        "template--21546030465297__c3ad7c71-80f2-434a-ab45-5a75df552a25-section_tiles_group-1",
+        "template--21546030465297__c3ad7c71-80f2-434a-ab45-5a75df552a25-saalt_style_1_tile-1",
+        "template--21546030465297__c3ad7c71-80f2-434a-ab45-5a75df552a25-saalt_style_1_tile-2",
+        "template--21546030465297__c3ad7c71-80f2-434a-ab45-5a75df552a25-saalt_style_1_tile-3",
+        "template--21546030465297__c3ad7c71-80f2-434a-ab45-5a75df552a25-saalt_style_1_tile-4",
+        "af6e2c6f-2fd8-4945-8034-9014dde7b7cb"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_alignment": "center",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -477,6 +590,7 @@
     "987fa4b1-6c8d-4641-8e59-b88a4eb6c3f4",
     "6e6939a0-95f3-41ee-ad01-bb83c2b0cb9b",
     "2243f424-7d1b-47ed-81dd-8aa7ae84f6ae",
-    "a1fce857-de0e-41c5-b206-da6927d1cf15"
+    "a1fce857-de0e-41c5-b206-da6927d1cf15",
+    "c3ad7c71-80f2-434a-ab45-5a75df552a25"
   ]
 }
