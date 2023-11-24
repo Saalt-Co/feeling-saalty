@@ -597,6 +597,51 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "83a72176-1d79-4d11-a109-2bbbc3ac9c37": {
+      "type": "saalt-unstyled-liquid-section",
+      "blocks": {
+        "600474b5-a53d-4bdd-bef6-88daecdfa3cd": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<style>\n  .background {\n  display: block;\n  background: rgb(var(--palette-color-5));\n  padding: 2.5rem 1rem 4rem;\n  }\n  .content {\n    display: block;\n    max-width: 700px;\n    margin: 0 auto;\n  }\n  .list-wrapper {\n    display: block;\n    text-align: center;\n  }\n  .liquid-code-example-list {\n    display: block;\n    max-width: 180px;\n    text-align: left;\n    margin: 1rem auto;\n  }\n  p {\n    display: inline-block;\n    max-width: 700px;\n  }\n  <\/style>"
+          }
+        },
+        "d5a2d3ac-95b0-4e93-90b5-dc3375115ce8": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<div class=\"background\">"
+          }
+        },
+        "02eb9660-ab48-41be-b4e9-c97aaa86ca5e": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<div class=\"content\">\n  <h2>Custom Liquid Section<\/h2>\n  <p>Yup, you read that write! This entire section is written right inside of the theme customizer. What's even cooler, is that the list below is made up of entries within the Saalt Wear Styles metaobject — none of that is actually written in this section!<\/p>\n  <p>Plus! All of the styling for this section is written in the theme customizer as well. As a matter of fact, it's even written in its own Liquid code block! 🤯<\/p>\n<\/div>"
+          }
+        },
+        "template--21546030465297__83a72176-1d79-4d11-a109-2bbbc3ac9c37-custom_liquid_code-1": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "{% liquid \nassign styles = ''\n\nfor entry in shop.metaobjects.saalt_wear_styles.values\n  assign styles = styles | append: entry.style_name\n                              \n  unless forloop.last                              \n    assign styles = styles | append: ', '         \n  endunless\nendfor\n\nassign split_styles = styles | split: ', '\n%}\n<div class=\"list-wrapper\">\n<ul class=\"liquid-code-example-list\">\n{% for style in split_styles %}\n<li class=\"liquid-code-example-bullet\">{{ style }}<\/li>\n{% endfor %}\n<\/ul>\n<\/div>"
+          }
+        },
+        "fbcf6596-ba9e-4408-af36-5140d6ade5bf": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "600474b5-a53d-4bdd-bef6-88daecdfa3cd",
+        "d5a2d3ac-95b0-4e93-90b5-dc3375115ce8",
+        "02eb9660-ab48-41be-b4e9-c97aaa86ca5e",
+        "template--21546030465297__83a72176-1d79-4d11-a109-2bbbc3ac9c37-custom_liquid_code-1",
+        "fbcf6596-ba9e-4408-af36-5140d6ade5bf"
+      ],
+      "settings": {
+        "section_id": ""
+      }
     }
   },
   "order": [
@@ -607,6 +652,7 @@
     "6e6939a0-95f3-41ee-ad01-bb83c2b0cb9b",
     "2243f424-7d1b-47ed-81dd-8aa7ae84f6ae",
     "a1fce857-de0e-41c5-b206-da6927d1cf15",
-    "39e65c1d-23ce-4912-aae4-a5b47d2a7f43"
+    "39e65c1d-23ce-4912-aae4-a5b47d2a7f43",
+    "83a72176-1d79-4d11-a109-2bbbc3ac9c37"
   ]
 }
