@@ -2,44 +2,95 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "b87941dd-a9cd-484d-861b-44ca88dec413": {
+      "type": "newsletter",
+      "blocks": {
+        "sections--18370419523857__b87941dd-a9cd-484d-861b-44ca88dec413-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Do you have a period? Great, we're here to make it better (starting with 15% off your first order). 😉",
+            "heading_size": "h2"
+          }
+        },
+        "sections--18370419523857__b87941dd-a9cd-484d-861b-44ca88dec413-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Subscribe to receive all you need to know about the period flow, pointers, and perks that come as often as your period does.<\/p>"
+          }
+        },
+        "sections--18370419523857__b87941dd-a9cd-484d-861b-44ca88dec413-email_form-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "sections--18370419523857__b87941dd-a9cd-484d-861b-44ca88dec413-heading-1",
+        "sections--18370419523857__b87941dd-a9cd-484d-861b-44ca88dec413-paragraph-1",
+        "sections--18370419523857__b87941dd-a9cd-484d-861b-44ca88dec413-email_form-1"
+      ],
+      "settings": {
+        "theme_color_background": "theme-color-bg-4",
+        "theme_color_text": "theme_default",
+        "input_opacity": 25,
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
+        "0aeeebd1-22ec-415e-ae81-387f53f40e27": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        },
         "footer-0": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "Shop",
             "menu": "footer"
           }
         },
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Info",
+            "heading": "Resources",
             "menu": "footer"
           }
         },
-        "footer-2": {
-          "type": "text",
+        "145cfba4-b7eb-42c4-9791-72f73c77ab02": {
+          "type": "link_list",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "heading": "Company",
+            "menu": "footer"
+          }
+        },
+        "52db0905-c8f6-43a5-9fa0-f8d4688dbb34": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Support",
+            "menu": "footer"
           }
         }
       },
       "block_order": [
+        "0aeeebd1-22ec-415e-ae81-387f53f40e27",
         "footer-0",
         "footer-1",
-        "footer-2"
+        "145cfba4-b7eb-42c4-9791-72f73c77ab02",
+        "52db0905-c8f6-43a5-9fa0-f8d4688dbb34"
       ],
       "settings": {
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
-        "newsletter_enable": true,
+        "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "input_opacity": 25,
         "enable_follow_on_shop": true,
-        "show_social": true,
+        "show_social": false,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": true,
@@ -51,6 +102,7 @@
     }
   },
   "order": [
+    "b87941dd-a9cd-484d-861b-44ca88dec413",
     "footer"
   ]
 }
