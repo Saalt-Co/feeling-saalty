@@ -74,14 +74,26 @@ class ProductCardSwatches extends HTMLElement {
   }
 
   updatePrice(checkedRadio) {
-    const currentPrices = checkedRadio
-      .closest('.card__content')
-      .querySelector('.price__container')
-      .querySelectorAll('.price-item');
+    const closestCardEl = checkedRadio.closest('.card__content');
+    const priceEl = closestCardEl
+      .querySelector('.card__information')
+      .querySelector('.card-information')
+      .querySelector('.price');
+    const closestPriceContainer = closestCardEl.querySelector('.price__container');
+    const salePriceContainer = closestPriceContainer.querySelector('.price__sale');
+    const regPriceContainer = closestPriceContainer.querySelector('.price__regular');
+    const compareAtPrice = checkedRadio.dataset.variantCompareAtPrice;
     const regPrice = checkedRadio.dataset.variantPrice;
-    // const compareAtPrice = checkedRadio.dataset.compareAtPrice;
-    for (const priceEl of currentPrices) {
-      priceEl.textContent = regPrice;
+
+    if (compareAtPrice && regPrice !== compareAtPrice) {
+      priceEl.classList.add('price--on-sale');
+      salePriceContainer.querySelector('.price-item.price-item--sale').textContent = regPrice;
+      salePriceContainer.querySelector('.price-item.price-item--regular').textContent = compareAtPrice;
+      regPriceContainer.querySelector('.price-item.price-item--regular').textContent = regPrice;
+    } else {
+      priceEl.classList.remove('price--on-sale');
+      regPriceContainer.querySelector('.price-item.price-item--regular').textContent = regPrice;
+      salePriceContainer.querySelector('.price-item.price-item--regular').textContent = regPrice;
     }
   }
 
