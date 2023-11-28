@@ -111,7 +111,7 @@
         "template--21565118808337__1b1a8a2d-3c30-4b6e-9b18-bc773eed6266-row-1": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-03_ffa34792-1691-4733-a078-04dcebf94f04.jpg",
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-03-removebg-preview.png",
             "caption": "STEP 1",
             "heading": "PINCH",
             "text": "<p>With clean hands, pinch the disc by pressing the rim together in the center to form an “8” shape with the removal notch at one end.<\/p>",
@@ -129,12 +129,13 @@
         "template--21565118808337__1b1a8a2d-3c30-4b6e-9b18-bc773eed6266-row-2": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-07-removebg-preview.png",
+            "caption": "STEP 2",
+            "heading": "INSERT",
+            "text": "<p>With your disc pinched, you are ready to insert.<\/p><p>Inserting your Saalt Disc is easier when using water as a natural lubricant.<\/p><p>You can insert your Saalt Disc while sitting, squatting, or standing with one leg raised. The most popular way to insert the disc is on the toilet with your legs spread wide apart.<\/p><p>Gently separate your labia (inner vaginal lips) with one hand. Use the other hand to hold the pinched disc rim side up and insert it so the removal notch is the last part of the disc to enter the vagina.<\/p><p>Slide the disc in at a horizontal angle (pointed towards your tailbone), until it is completely inside your vaginal canal.<\/p><p>Push upwards on the front of the rim, resting the front of the disc above the pubic bone (aka the pubic symphysis).<\/p>",
             "theme_color_row_background": "theme_default",
             "theme_color_row_text": "theme_default",
-            "button_text": "Button text",
+            "button_text": "",
             "button_url": "",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
