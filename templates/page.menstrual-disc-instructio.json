@@ -608,6 +608,9 @@
         "template--21565118808337__d557b0ed-c42d-4e3e-b7c3-49f914c262d9-collapsible_row-4",
         "62a7ea47-3809-4f18-a9ae-7fc7741e936c"
       ],
+      "custom_css": [
+        ".accordion .icon-accordion {fill: #5A5F6F;}"
+      ],
       "settings": {
         "caption": "",
         "heading": "RESOURCES",
