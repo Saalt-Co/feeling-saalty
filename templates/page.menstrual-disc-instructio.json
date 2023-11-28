@@ -17,7 +17,7 @@
         "cover_opacity": 7,
         "button_background_color": "#ffffff",
         "button_text_color": "#ffffff",
-        "text_color": "#8f9097",
+        "text_color": "#585e71",
         "box_alignment": "left",
         "text_alignment": "left",
         "max_width": 3000,
@@ -33,61 +33,72 @@
         "button_corner_radius": 5
       }
     },
-    "99d3c1fb-8191-4c79-bd49-36275dee4909": {
-      "type": "image-with-text",
+    "d25076fd-cb4a-48e0-a61f-84c6b2e749f2": {
+      "type": "multicolumn",
       "blocks": {
-        "template--21565118808337__99d3c1fb-8191-4c79-bd49-36275dee4909-heading-1": {
-          "type": "heading",
+        "template--21565118808337__d25076fd-cb4a-48e0-a61f-84c6b2e749f2-column-1": {
+          "type": "column",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg",
+            "title": "",
+            "rating": 0,
+            "text": "<p>You did it. You chose the best period care on planet Earth. Bravo! And you’re not alone. Every day people trust the Saalt Disc to simplify their period care and keep toxins out of their body.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "template--21565118808337__99d3c1fb-8191-4c79-bd49-36275dee4909-text-1": {
-          "type": "text",
+        "template--21565118808337__d25076fd-cb4a-48e0-a61f-84c6b2e749f2-column-2": {
+          "type": "column",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-01_333d21d5-f5bb-4bb0-8ca1-47b03c3e3742.jpg",
+            "title": "",
+            "rating": 0,
+            "text": "<p>Saalt Discs are not supplied in a sterile state. Sanitize your disc by boiling it in water for 4–5 min (no more than 7 min). Use tongs or a whisk to ensure the disc doesn’t rest on the bottom of the pot.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "template--21565118808337__99d3c1fb-8191-4c79-bd49-36275dee4909-section_buttons_group-1": {
-          "type": "section_buttons_group",
+        "template--21565118808337__d25076fd-cb4a-48e0-a61f-84c6b2e749f2-column-3": {
+          "type": "column",
           "settings": {
-            "desktop_button_group_alignment": "center",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "template--21565118808337__99d3c1fb-8191-4c79-bd49-36275dee4909-section_button-1": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Button text",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-14_3b7b368f-58d1-42fb-b3d0-443f6baaf745.jpg",
+            "title": "",
+            "rating": 0,
+            "text": "<p>Wash your hands and your Saalt Disc with water and a pH-balanced cleanser. Rinse thoroughly.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "template--21565118808337__99d3c1fb-8191-4c79-bd49-36275dee4909-heading-1",
-        "template--21565118808337__99d3c1fb-8191-4c79-bd49-36275dee4909-text-1",
-        "template--21565118808337__99d3c1fb-8191-4c79-bd49-36275dee4909-section_buttons_group-1",
-        "template--21565118808337__99d3c1fb-8191-4c79-bd49-36275dee4909-section_button-1"
+        "template--21565118808337__d25076fd-cb4a-48e0-a61f-84c6b2e749f2-column-1",
+        "template--21565118808337__d25076fd-cb4a-48e0-a61f-84c6b2e749f2-column-2",
+        "template--21565118808337__d25076fd-cb4a-48e0-a61f-84c6b2e749f2-column-3"
       ],
       "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+        "title": "Let's Get Started",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
+        "background_style": "none",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
         "padding_bottom": 36
       }
     }
@@ -95,6 +106,6 @@
   "order": [
     "main",
     "68097338-14d8-4ae5-834d-09eb7848e33e",
-    "99d3c1fb-8191-4c79-bd49-36275dee4909"
+    "d25076fd-cb4a-48e0-a61f-84c6b2e749f2"
   ]
 }
