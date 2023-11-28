@@ -469,14 +469,7 @@
           "type": "heading",
           "settings": {
             "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
+            "heading_size": "h0"
           }
         },
         "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-section_buttons_group-1": {
@@ -501,11 +494,9 @@
       },
       "block_order": [
         "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-heading-1",
-        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-text-1",
         "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-section_buttons_group-1",
         "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-section_button-1"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-05.jpg",
         "height": "small",
@@ -521,63 +512,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "77dbc84d-2ac4-41a0-b705-728234fe76c6": {
-      "type": "saalt-style-1-tiles-section",
-      "blocks": {
-        "3ba17cfe-4aef-43a6-8d12-ba8a6b03e94e": {
-          "type": "section_tiles_group",
-          "settings": {
-            "theme_color_mobile_text_color": "match_text",
-            "tile_mobile_text_alignment": "center",
-            "theme_color_desktop_text_color": "match_text",
-            "theme_color_desktop_text_hover_focus_color": "match_text",
-            "tile_desktop_text_alignment": "center",
-            "desktop_text_placement": "flex-end",
-            "tile_desktop_text_alignment_hover_focus": "center",
-            "desktop_text_hover_placement": "center"
-          }
-        },
-        "c070c686-7236-461f-99b9-f174d0e7b5ed": {
-          "type": "saalt_style_1_tile",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-05.jpg",
-            "title": "",
-            "text_content": "",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "secondary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme-color-text-2",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
-        "5c4f707a-acd8-4077-9a00-a62a191a1576": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "3ba17cfe-4aef-43a6-8d12-ba8a6b03e94e",
-        "c070c686-7236-461f-99b9-f174d0e7b5ed",
-        "5c4f707a-acd8-4077-9a00-a62a191a1576"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme-color-text-1",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_alignment": "center",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "800px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
@@ -591,7 +525,6 @@
     "a8714d00-ddb5-425d-a5b7-3f3c509757d2",
     "4b07caad-f16e-4fff-883b-1fe16d3dde5b",
     "44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5",
-    "15fd34a1-f710-4107-b1d5-f4421d38487f",
-    "77dbc84d-2ac4-41a0-b705-728234fe76c6"
+    "15fd34a1-f710-4107-b1d5-f4421d38487f"
   ]
 }
