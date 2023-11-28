@@ -402,9 +402,9 @@
         "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "REMOVAL BLISS",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Your first time using the disc, consider removing your disc in the shower or while sitting on a toilet.<\/p><p>Insert your finger behind your pubic bone to feel for the rim of the disc. Hook your finger behind the removal notch, gently pulling down on the grip lines to untuck the Saalt Disc.<\/p><p>Gently pull the disc out at a horizontal angle. Keep it upright to avoid spilling.<\/p><p>If you can’t reach your disc when inserted, don’t sweat it! The disc won’t get lost inside the vagina. Your disc can move higher if you have a high cervix.<\/p><p>Walk around, wait 30 minutes, and try again, or switch to a different position. If you are sitting on the toilet, try squatting low in the shower or vice versa.<\/p><p>You can use your pelvic muscles to move your disc lower; this will feel similar to having an easy bowel movement. Do not strain and keep breathing deeply while doing this.<\/p><p>Once in reach, hook your finger in the removal notch and gently remove your disc. Though the removal notch is helpful for easier removal, you can hook your finger on any part of the rim to remove your disc. Refrain from only gripping and pulling the thin basin of the disc to remove, as this can damage the silicone.<\/p><p>If you are struggling to remove your disc, please email us with the subject line #RemovalMagic at sayhey@<a href=\"https:\/\/saalt.com\/\">saalt.com<\/a>.<\/p>",
             "page": ""
           }
         },
@@ -433,9 +433,12 @@
         "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-3",
         "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-4"
       ],
+      "custom_css": [
+        ".accordion .icon-accordion {fill: #5a5f6f;}"
+      ],
       "settings": {
         "caption": "",
-        "heading": "Collapsible content",
+        "heading": "MORE FEATURES",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "section",
