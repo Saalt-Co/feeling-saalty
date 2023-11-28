@@ -17,7 +17,7 @@
         "cover_opacity": 7,
         "button_background_color": "#ffffff",
         "button_text_color": "#ffffff",
-        "text_color": "#585e71",
+        "text_color": "#ffffff",
         "box_alignment": "left",
         "text_alignment": "left",
         "max_width": 3000,
@@ -26,7 +26,7 @@
         "padding_left": 10,
         "padding_right": 10,
         "headline": "Menstrual Disc Instructions",
-        "content": "This is the default content for your image banner. Customize this text to fit your brand's message.",
+        "content": "",
         "hero_image": "shopify:\/\/shop_images\/Disc-instructions-hero-01.jpg",
         "cta": "",
         "cta_link": "",
@@ -76,7 +76,7 @@
         "template--21565118808337__d25076fd-cb4a-48e0-a61f-84c6b2e749f2-column-3"
       ],
       "custom_css": [
-        ".multicolumn .title {margin-left: 35%; margin-bottom: 5%;}"
+        ".multicolumn .title {margin-left: 35%; margin-bottom: 5%; color: #5a5f6f;}"
       ],
       "settings": {
         "title": "Let's Get Started",
@@ -104,11 +104,88 @@
         "padding_top": 60,
         "padding_bottom": 36
       }
+    },
+    "1b1a8a2d-3c30-4b6e-9b18-bc773eed6266": {
+      "type": "multirow",
+      "blocks": {
+        "template--21565118808337__1b1a8a2d-3c30-4b6e-9b18-bc773eed6266-row-1": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-03_ffa34792-1691-4733-a078-04dcebf94f04.jpg",
+            "caption": "",
+            "heading": "PINCH",
+            "text": "<p>With clean hands, pinch the disc by pressing the rim together in the center to form an “8” shape with the removal notch at one end.<\/p>",
+            "theme_color_row_background": "theme_default",
+            "theme_color_row_text": "theme_default",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21565118808337__1b1a8a2d-3c30-4b6e-9b18-bc773eed6266-row-2": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "theme_color_row_background": "theme_default",
+            "theme_color_row_text": "theme_default",
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21565118808337__1b1a8a2d-3c30-4b6e-9b18-bc773eed6266-row-3": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "theme_color_row_background": "theme_default",
+            "theme_color_row_text": "theme_default",
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--21565118808337__1b1a8a2d-3c30-4b6e-9b18-bc773eed6266-row-1",
+        "template--21565118808337__1b1a8a2d-3c30-4b6e-9b18-bc773eed6266-row-2",
+        "template--21565118808337__1b1a8a2d-3c30-4b6e-9b18-bc773eed6266-row-3"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "68097338-14d8-4ae5-834d-09eb7848e33e",
-    "d25076fd-cb4a-48e0-a61f-84c6b2e749f2"
+    "d25076fd-cb4a-48e0-a61f-84c6b2e749f2",
+    "1b1a8a2d-3c30-4b6e-9b18-bc773eed6266"
   ]
 }
