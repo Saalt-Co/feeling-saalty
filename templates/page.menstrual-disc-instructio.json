@@ -240,73 +240,6 @@
         "padding_bottom": 56
       }
     },
-    "44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-1": {
-          "type": "column",
-          "settings": {
-            "title": "WASH",
-            "rating": 0,
-            "text": "<p>Rinse your Saalt Disc in cold water after use to prevent staining.<\/p><p>Wash thoroughly after each use with warm water and Saalt Wash, or a mild pH-balanced cleanser. Avoid strong cleansers or anything that may irritate your skin.<\/p><p>Use a soft rag to wipe away any buildup.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-2": {
-          "type": "column",
-          "settings": {
-            "title": "SANITIZE",
-            "rating": 0,
-            "text": "<p>You should sanitize your Saalt Disc between cycles by boiling your cup in water for 4–5 min (not more than 7 min). Use tongs or a wire whisk to ensure the disc doesn’t touch the bottom of the pot.<\/p><p>You may also rinse your Saalt Disc thoroughly with water, allow it to dry, and then wipe it with a soft rag and 70% isopropyl alcohol. Make sure all surfaces are sufficiently wet by the alcohol and allow it to air dry.<\/p><p>Meanwhile, toss your storage bag in the laundry to thoroughly clean.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-3": {
-          "type": "column",
-          "settings": {
-            "title": "STORE",
-            "rating": 0,
-            "text": "<p>Dry your Saalt Disc thoroughly and store it in the bag provided (or another breathable container). Never use a plastic bag or airtight container for storage.<\/p><p>Some discoloration may occur over time. This is normal, and may vary from one person to another.<\/p><p>If your Saalt Disc is ripped or torn, or the silicone shows signs of deterioration (which can happen after using non-recommended cleaners) it’s time to replace the disc.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-1",
-        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-2",
-        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Cleaning & Storing",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "background_style": "none",
-        "theme_color_column_secondary_bg": "theme_default",
-        "column_secondary_bg_opacity": 100,
-        "review_star_color_override": "theme_default",
-        "review_star_opacity_override": 100,
-        "button_text": "Button text",
-        "button_url": "",
-        "button_type": "primary",
-        "theme_color_section_button_background": "theme_default",
-        "theme_color_text_section_button_text": "theme_default",
-        "theme_color_section_button_background_hover": "theme_default",
-        "theme_color_text_section_button_text_hover": "theme_default",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "821e56a6-02d1-4a89-9461-612609225d51": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -447,6 +380,7 @@
         "8fb76795-c167-44e3-8fd8-199e6fb2558b",
         "f27bb0d1-b056-4905-8034-949d1f564619"
       ],
+      "disabled": true,
       "custom_css": [
         ".collage-wrapper-title {margin-left: 30%; color: #5a5f6f;}"
       ],
@@ -458,6 +392,72 @@
         "card_styles": "none",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "WASH",
+            "rating": 0,
+            "text": "<p>Rinse your Saalt Disc in cold water after use to prevent staining.<\/p><p>Wash thoroughly after each use with warm water and Saalt Wash, or a mild pH-balanced cleanser. Avoid strong cleansers or anything that may irritate your skin.<\/p><p>Use a soft rag to wipe away any buildup.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "SANITIZE",
+            "rating": 0,
+            "text": "<p>You should sanitize your Saalt Disc between cycles by boiling your cup in water for 4–5 min (not more than 7 min). Use tongs or a wire whisk to ensure the disc doesn’t touch the bottom of the pot.<\/p><p>You may also rinse your Saalt Disc thoroughly with water, allow it to dry, and then wipe it with a soft rag and 70% isopropyl alcohol. Make sure all surfaces are sufficiently wet by the alcohol and allow it to air dry.<\/p><p>Meanwhile, toss your storage bag in the laundry to thoroughly clean.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "STORE",
+            "rating": 0,
+            "text": "<p>Dry your Saalt Disc thoroughly and store it in the bag provided (or another breathable container). Never use a plastic bag or airtight container for storage.<\/p><p>Some discoloration may occur over time. This is normal, and may vary from one person to another.<\/p><p>If your Saalt Disc is ripped or torn, or the silicone shows signs of deterioration (which can happen after using non-recommended cleaners) it’s time to replace the disc.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-1",
+        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-2",
+        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-3"
+      ],
+      "settings": {
+        "title": "Cleaning & Storing",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "background_style": "none",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -529,10 +529,10 @@
     "1b1a8a2d-3c30-4b6e-9b18-bc773eed6266",
     "770db88e-ca54-4c3a-87bc-52d98d996f29",
     "45857d07-d3ba-4a98-a5d3-e76bb7881c89",
-    "44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5",
     "821e56a6-02d1-4a89-9461-612609225d51",
     "a8714d00-ddb5-425d-a5b7-3f3c509757d2",
     "4b07caad-f16e-4fff-883b-1fe16d3dde5b",
+    "44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5",
     "15fd34a1-f710-4107-b1d5-f4421d38487f"
   ]
 }
