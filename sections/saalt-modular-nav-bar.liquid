@@ -78,13 +78,6 @@
       column-gap: {{ section.settings.desktop_nav_link_gap }};
     }
   }
-  {%- if section.settings.make_sticky -%}
-  #{{ nav_id }}.sticky {
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-  }
-  {%- endif -%}
 {%- endstyle -%}
 
 {% javascript %}
@@ -93,16 +86,8 @@
       super();
 
       this.navClick = this.handleNavLinkClick.bind(this);
-      this.previousScrollPosition = 0;
-      this.navId = this.dataset.customVal;
       this.throttleDelay = 50;
 
-      window.addEventListener(
-        'scroll',
-        throttle(() => {
-          this.handleScroll();
-        }, this.throttleDelay)
-      );
       window.addEventListener(
         'resize',
         throttle(() => {
@@ -159,59 +144,6 @@
       };
       return headerInfo;
     }
-
-    nextSiblingYOffset(targetEl) {
-      const nextSiblingOffset = {
-        neighbor: targetEl.closest('.shopify-section').nextElementSibling,
-        offset: Math.ceil(
-          targetEl.closest('.shopify-section').nextElementSibling.offsetTop - targetEl.getBoundingClientRect().height
-        ),
-      };
-      return nextSiblingOffset;
-    }
-
-    isScrollingDown() {
-      let goingDown = false;
-      let scrollPosition = window.pageYOffset;
-      if (scrollPosition > this.previousScrollPosition) {
-        goingDown = true;
-      }
-      this.previousScrollPosition = scrollPosition;
-      return goingDown;
-    }
-
-    handleScroll() {
-      const headerBottom = document.querySelector('header').getBoundingClientRect().bottom;
-      const navBar = document.getElementById(this.navId);
-      const navBarHeight = navBar.getBoundingClientRect().height;
-      const headerInfo = this.getHeaderInfo();
-      const headerHeight = headerInfo.totalHeaderHeight;
-      const navBarUl = navBar.querySelector('ul');
-      const navBarUlStyle = navBarUl.currentStyle || window.getComputedStyle(navBarUl);
-      const topNavBarUlPadding = parseInt(navBarUlStyle.paddingTop);
-      const nextSiblingOffset = this.nextSiblingYOffset(navBar);
-      const scrollLocation = Math.ceil(window.scrollY + headerHeight - navBarHeight);
-      const threshold = Math.ceil(navBar.offsetTop - navBarHeight + topNavBarUlPadding * 2);
-      // const scrollDownCondition = scrollLocation > threshold && !navBar.classList.contains('sticky');
-      const scrollUpCondition =
-        scrollLocation < nextSiblingOffset.offset - navBarHeight / 2.25 && navBar.classList.contains('sticky');
-
-      navBar.style.top = `${headerBottom}px`;
-
-      if (this.isScrollingDown()) {
-        if (scrollLocation > threshold) {
-          navBar.classList.add('sticky');
-          // navBar.style.top = `${headerInfo.mainNavHeight}px`;
-          nextSiblingOffset.neighbor.style.marginTop = `${navBarHeight}px`;
-        }
-      } else {
-        if (scrollUpCondition) {
-          navBar.classList.remove('sticky');
-          navBar.removeAttribute('style');
-          nextSiblingOffset.neighbor.removeAttribute('style');
-        }
-      }
-    }
   }
 
   customElements.define('modular-nav-bar', ModularNavBar);
@@ -231,13 +163,6 @@
     {
       "type": "header",
       "content": "Nav Bar Styling"
-    },
-    {
-      "type": "checkbox",
-      "id": "make_sticky",
-      "label": "Make sticky",
-      "info": "When enabled, this nav bar will become stuck to the header on scroll. See notes below!",
-      "default": false
     },
     {
       "type": "paragraph",
