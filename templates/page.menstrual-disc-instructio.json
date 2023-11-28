@@ -471,31 +471,10 @@
             "heading": "Image with text",
             "heading_size": "h0"
           }
-        },
-        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-section_buttons_group-1": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "center",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-section_button-1": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Button text",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
         }
       },
       "block_order": [
-        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-heading-1",
-        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-section_buttons_group-1",
-        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-section_button-1"
+        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-heading-1"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-05.jpg",
