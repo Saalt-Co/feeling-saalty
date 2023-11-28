@@ -240,14 +240,10 @@
         "padding_bottom": 36
       }
     },
-    "29c47333-c55c-4dca-a7e4-794e40b1c201": {
+    "c6716fe1-f625-447e-8a20-6a7b61c97ce8": {
       "type": "sl-image-banner",
-      "custom_css": [
-        "#image-banner-template--21565118808337__29c47333-c55c-4dca-a7e4-794e40b1c201.image-banner-wrap {max-width: 80%; margin-left: 10%;}",
-        "#image-banner-template--21565118808337__29c47333-c55c-4dca-a7e4-794e40b1c201 .image-banner a.image-banner-cta {color: #ffffff00; background-color: #00000000;}"
-      ],
       "settings": {
-        "cover_opacity": 0,
+        "cover_opacity": 25,
         "button_background_color": "#000000",
         "button_text_color": "#ffffff",
         "text_color": "#ffffff",
@@ -258,8 +254,8 @@
         "padding_bottom": 25,
         "padding_left": 10,
         "padding_right": 10,
-        "headline": "asdkjasdjhaksdjhasdasd",
-        "content": "",
+        "headline": "This is your banner headline",
+        "content": "This is the default content for your image banner. Customize this text to fit your brand's message.",
         "hero_image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-13.jpg",
         "cta": "Shop Now",
         "cta_link": "",
@@ -274,6 +270,6 @@
     "1b1a8a2d-3c30-4b6e-9b18-bc773eed6266",
     "770db88e-ca54-4c3a-87bc-52d98d996f29",
     "45857d07-d3ba-4a98-a5d3-e76bb7881c89",
-    "29c47333-c55c-4dca-a7e4-794e40b1c201"
+    "c6716fe1-f625-447e-8a20-6a7b61c97ce8"
   ]
 }
