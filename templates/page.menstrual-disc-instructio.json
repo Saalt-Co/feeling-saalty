@@ -243,10 +243,11 @@
     "29c47333-c55c-4dca-a7e4-794e40b1c201": {
       "type": "sl-image-banner",
       "custom_css": [
-
+        "#image-banner-template--21565118808337__29c47333-c55c-4dca-a7e4-794e40b1c201.image-banner-wrap {max-width: 80%; margin-left: 10%;}",
+        "#image-banner-template--21565118808337__29c47333-c55c-4dca-a7e4-794e40b1c201 .image-banner a.image-banner-cta {color: #ffffff00; background-color: #00000000;}"
       ],
       "settings": {
-        "cover_opacity": 25,
+        "cover_opacity": 0,
         "button_background_color": "#000000",
         "button_text_color": "#ffffff",
         "text_color": "#ffffff",
@@ -257,7 +258,7 @@
         "padding_bottom": 25,
         "padding_left": 10,
         "padding_right": 10,
-        "headline": "",
+        "headline": "asdkjasdjhaksdjhasdasd",
         "content": "",
         "hero_image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-13.jpg",
         "cta": "Shop Now",
