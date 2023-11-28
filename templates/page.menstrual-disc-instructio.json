@@ -538,6 +538,7 @@
         "3dccdc4b-5d11-48f1-a57f-bda0d04e8c27",
         "aa89aa0a-f8aa-46f9-bb0b-4119b53e5249"
       ],
+      "disabled": true,
       "settings": {
         "section-background": "transparent",
         "main-heading": "RESOURCES",
@@ -609,7 +610,7 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "Collapsible content",
+        "heading": "RESOURCES",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
