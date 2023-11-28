@@ -438,7 +438,7 @@
         "heading": "Collapsible content",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "none",
+        "layout": "section",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "theme_color_container_background": "theme_default",
