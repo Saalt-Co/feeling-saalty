@@ -10,6 +10,9 @@
     },
     "68097338-14d8-4ae5-834d-09eb7848e33e": {
       "type": "sl-image-banner",
+      "custom_css": [
+        "#image-banner-template--21565118808337__68097338-14d8-4ae5-834d-09eb7848e33e .image-banner a.image-banner-cta {display: none;}"
+      ],
       "settings": {
         "cover_opacity": 7,
         "button_background_color": "#ffffff",
