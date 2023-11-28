@@ -240,31 +240,6 @@
         "padding_bottom": 56
       }
     },
-    "c6716fe1-f625-447e-8a20-6a7b61c97ce8": {
-      "type": "sl-image-banner",
-      "custom_css": [
-        "#image-banner-template--21565118808337__c6716fe1-f625-447e-8a20-6a7b61c97ce8 .image-banner a.image-banner-cta {display: none;}"
-      ],
-      "settings": {
-        "cover_opacity": 8,
-        "button_background_color": "#000000",
-        "button_text_color": "#ffffff",
-        "text_color": "#ffffff",
-        "box_alignment": "left",
-        "text_alignment": "left",
-        "max_width": 3000,
-        "padding_top": 50,
-        "padding_bottom": 25,
-        "padding_left": 10,
-        "padding_right": 10,
-        "headline": "",
-        "content": "",
-        "hero_image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-13.jpg",
-        "cta": "",
-        "cta_link": "",
-        "button_corner_radius": 5
-      }
-    },
     "44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5": {
       "type": "multicolumn",
       "blocks": {
@@ -332,6 +307,122 @@
         "padding_bottom": 36
       }
     },
+    "821e56a6-02d1-4a89-9461-612609225d51": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--21565118808337__821e56a6-02d1-4a89-9461-612609225d51-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "PRECAUTIONS"
+          }
+        },
+        "template--21565118808337__821e56a6-02d1-4a89-9461-612609225d51-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p><\/p><p><strong>IMPORTANT<\/strong>: Menstrual discs have been associated with Toxic Shock Syndrome (TSS). TSS is a rare but serious disease that may cause death. Symptoms of Toxic Shock Syndrome (TSS) include fever, abdominal cramps, black vaginal discharge or pus, and muscle pain. Read and keep this information. If you experience these symptoms, contact your doctor right away. Learn more about TSS <a href=\"https:\/\/saalt.com\/blogs\/news\/how-to-prevent-tss\">here.<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21565118808337__821e56a6-02d1-4a89-9461-612609225d51-section_title-1",
+        "template--21565118808337__821e56a6-02d1-4a89-9461-612609225d51-section_content-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "a8714d00-ddb5-425d-a5b7-3f3c509757d2": {
+      "type": "saalt-style-1-tiles-section",
+      "blocks": {
+        "488ee06b-2cc7-4ee2-b41d-1c5f5cdf4bfe": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "GUIDE"
+          }
+        },
+        "template--21565118808337__a8714d00-ddb5-425d-a5b7-3f3c509757d2-section_tiles_group-1": {
+          "type": "section_tiles_group",
+          "settings": {
+            "theme_color_mobile_text_color": "match_text",
+            "tile_mobile_text_alignment": "center",
+            "theme_color_desktop_text_color": "match_text",
+            "theme_color_desktop_text_hover_focus_color": "match_text",
+            "tile_desktop_text_alignment": "center",
+            "desktop_text_placement": "flex-end",
+            "tile_desktop_text_alignment_hover_focus": "center",
+            "desktop_text_hover_placement": "center"
+          }
+        },
+        "template--21565118808337__a8714d00-ddb5-425d-a5b7-3f3c509757d2-saalt_style_1_tile-2": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-10_aec4ef91-9666-4a0d-b713-7a7bc60dc0ad.jpg",
+            "title": "REMOVE",
+            "text_content": "",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "secondary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme-color-text-2",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21565118808337__a8714d00-ddb5-425d-a5b7-3f3c509757d2-saalt_style_1_tile-1": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-08_7eec2e05-77c7-407a-9dba-93addc97f4e2.jpg",
+            "title": "REINSERT",
+            "text_content": "",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-2",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "488ee06b-2cc7-4ee2-b41d-1c5f5cdf4bfe",
+        "template--21565118808337__a8714d00-ddb5-425d-a5b7-3f3c509757d2-section_tiles_group-1",
+        "template--21565118808337__a8714d00-ddb5-425d-a5b7-3f3c509757d2-saalt_style_1_tile-2",
+        "template--21565118808337__a8714d00-ddb5-425d-a5b7-3f3c509757d2-saalt_style_1_tile-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme-color-text-1",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_alignment": "center",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "4b07caad-f16e-4fff-883b-1fe16d3dde5b": {
       "type": "collage",
       "blocks": {
@@ -379,8 +470,9 @@
     "1b1a8a2d-3c30-4b6e-9b18-bc773eed6266",
     "770db88e-ca54-4c3a-87bc-52d98d996f29",
     "45857d07-d3ba-4a98-a5d3-e76bb7881c89",
-    "c6716fe1-f625-447e-8a20-6a7b61c97ce8",
     "44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5",
+    "821e56a6-02d1-4a89-9461-612609225d51",
+    "a8714d00-ddb5-425d-a5b7-3f3c509757d2",
     "4b07caad-f16e-4fff-883b-1fe16d3dde5b"
   ]
 }
