@@ -4,11 +4,13 @@ class ProductCardSwatches extends HTMLElement {
 
     this.swatches = this.querySelectorAll('.variant_swatch');
     this.swatchClick = this.handleSwatchClick.bind(this);
+    this.showStrikeThroughPrice = this.dataset.showStrikethroughPrice;
   }
 
   connectedCallback() {
     const swatchWrapper = this;
     const list = swatchWrapper.swatches;
+
     for (const key in list) {
       if (Object.hasOwnProperty.call(list, key)) {
         const element = list[key];
@@ -34,6 +36,7 @@ class ProductCardSwatches extends HTMLElement {
     this.updateCardImage(checkedRadio);
     this.updateLinkUrl(checkedRadio);
     this.updatePrice(checkedRadio);
+    this.toggleSaleBadge(checkedRadio);
   }
 
   checkSelected(e) {
@@ -73,14 +76,41 @@ class ProductCardSwatches extends HTMLElement {
   }
 
   updatePrice(checkedRadio) {
-    const currentPrices = checkedRadio
-      .closest('.card__content')
-      .querySelector('.price__container')
-      .querySelectorAll('.price-item');
+    const closestCardEl = checkedRadio.closest('.card__content');
+    const priceEl = closestCardEl
+      .querySelector('.card__information')
+      .querySelector('.card-information')
+      .querySelector('.price');
+    const closestPriceContainer = closestCardEl.querySelector('.price__container');
+    const salePriceContainer = closestPriceContainer.querySelector('.price__sale');
+    const regPriceContainer = closestPriceContainer.querySelector('.price__regular');
+    const compareAtPrice = checkedRadio.dataset.variantCompareAtPrice;
     const regPrice = checkedRadio.dataset.variantPrice;
-    // const compareAtPrice = checkedRadio.dataset.compareAtPrice;
-    for (const priceEl of currentPrices) {
-      priceEl.textContent = regPrice;
+
+    if (this.showStrikeThroughPrice === 'true' && compareAtPrice && regPrice !== compareAtPrice) {
+      priceEl.classList.add('price--on-sale');
+      salePriceContainer.querySelector('.price-item.price-item--sale').textContent = regPrice;
+      salePriceContainer.querySelector('.price-item.price-item--regular').textContent = compareAtPrice;
+      regPriceContainer.querySelector('.price-item.price-item--regular').textContent = regPrice;
+    } else {
+      priceEl.classList.remove('price--on-sale');
+      regPriceContainer.querySelector('.price-item.price-item--regular').textContent = regPrice;
+      salePriceContainer.querySelector('.price-item.price-item--regular').textContent = regPrice;
+    }
+  }
+
+  toggleSaleBadge(checkedRadio) {
+    const price = checkedRadio.dataset.variantPrice;
+    const compareAtPrice = checkedRadio.dataset.variantCompareAtPrice;
+    const badgeEls = checkedRadio.closest('.card').querySelectorAll('.badge');
+    if (compareAtPrice && price < compareAtPrice) {
+      for (const badgeEl of badgeEls) {
+        badgeEl.classList.add('visible');
+      }
+    } else {
+      for (const badgeEl of badgeEls) {
+        badgeEl.classList.remove('visible');
+      }
     }
   }
 }

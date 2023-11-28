@@ -21,7 +21,7 @@
         },
         "reviews_platform": {
           "label": "Selected Platform",
-          "info": "Note: You do NOT need to include snippets for these, they are added automatically based on this selection",
+          "info": "NOTE: You do NOT need to include snippets for these, they are added automatically based on this selection",
           "options": {
             "options__1": {
               "label": "Shopify"
@@ -520,13 +520,18 @@
       }
     },
     "currency_format": {
-      "name": "Currency format",
+      "name": "Currency formatting",
       "settings": {
-        "content": "Currency codes",
-        "paragraph": "Cart and checkout prices always show currency codes. Example: $1.00 USD.",
-        "currency_code_enabled": {
-          "label": "Show currency codes"
-        }
+        "paragraph": "This sets the display for prices throughout the store, including the cart page. For more information about these options view the [Shopify Liquid money filters documentation](https://shopify.dev/docs/api/liquid/filters/money-filters)",
+        "info": "\"Just currency symbol\" = $10.00, \"No trailing zeros\" = $10, \"Full currency\" = $10.00 USD, \"Just decimal\" = 10.00",
+        "default_label": "Just currency symbol",
+        "no_trailing_zeros_label": "No trailing zeros",
+        "with_currency_label": "Full currency",
+        "without_currency_label": "Just decimal",
+        "price_prefix_label": "Price prefix",
+        "price_prefix_info": "This is what shows up before prices when a product's variant prices vary. ie: \"From [price] - [price]\". If nothing is wanted here, this should be left blank. NOTE: This supersedes whatever is in the \"from_price_html\" within the theme's language settings.",
+        "price_separator_label": "Price separator",
+        "price_separator_info": "This is what shows up between prices when a product's variant prices vary."
       }
     },
     "cart": {
@@ -2057,6 +2062,15 @@
           "options__2": {
             "label": "2 columns"
           }
+        },
+        "variant_options": {
+          "header": "Variant options",
+          "lowest_variant_label": "Use lowest-priced variant",
+          "lowest_variant_info": "Use the lowest-priced variant as the pre-selected variant on page load. If multiples are available, the code goes with the first one found, based on the variant order in the product setup.",
+          "show_price_range_label": "Show price range",
+          "show_price_range_info": "When enabled, this shows a price range from lowest to highest price among a product's variants. This uses the Price Separator and Price Prefix values.",
+          "show_strikethrough_price_label": "Show strikethrough price",
+          "show_strikethrough_price_info": "When enabled, the compared-at (aka strikethrough price) is shown when a product only has a single variant that is on sale, or the selected swatch variant is on sale."
         }
       }
     },
