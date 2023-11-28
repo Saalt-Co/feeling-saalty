@@ -15,7 +15,7 @@
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-0": {
           "type": "window-feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SW-SM-Light-Day-Workout-3-Pack-Bundle-PDP-3_01.jpg",
+            "image": "shopify:\/\/shop_images\/SW-TH-QB-Meuller-7092-Web.jpg",
             "title": "<p>Light Absorbency<\/p>",
             "copy": "<p>Holds as much as 1 liner or 1-2 light tampons. <\/p><p>Best for sweat and discharge, light flow days and spotting, a worry-free backup to a cup, disc or tampon, or as a pantyliner replacement.<\/p>",
             "link_type": "filter",
@@ -28,7 +28,7 @@
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-1": {
           "type": "window-feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Deep_Marine.jpg",
+            "image": "shopify:\/\/shop_images\/SW-SM-HW-MS-Ampersand-278.jpg",
             "title": "<p>Regular Absorbency<\/p>",
             "copy": "<p>Holds as much as 2 pads or 2-3 tampons. <\/p><p>Best for sweat and discharge, regular period flow, light bladder leaks, or as a worry-free backup to a cup, disc or tampon.<\/p>",
             "link_type": "filter",
@@ -89,6 +89,9 @@
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
+        "show_price_range": true,
+        "show_strikethrough_price": true,
+        "use_lowest_priced_variant": false,
         "show_vendor": false,
         "show_rating": false,
         "show_swatches": true,
