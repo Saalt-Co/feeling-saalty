@@ -26,7 +26,7 @@
         "padding_left": 10,
         "padding_right": 10,
         "headline": "Menstrual Disc Instructions",
-        "content": "",
+        "content": "With clean hands, pinch the disc by pressing the rim together in the center to form an “8” shape with the removal notch at one end.",
         "hero_image": "shopify:\/\/shop_images\/Disc-instructions-hero-01.jpg",
         "cta": "",
         "cta_link": "",
@@ -112,7 +112,7 @@
           "type": "row",
           "settings": {
             "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-03_ffa34792-1691-4733-a078-04dcebf94f04.jpg",
-            "caption": "",
+            "caption": "STEP 1",
             "heading": "PINCH",
             "text": "<p>With clean hands, pinch the disc by pressing the rim together in the center to form an “8” shape with the removal notch at one end.<\/p>",
             "theme_color_row_background": "theme_default",
