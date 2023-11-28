@@ -243,7 +243,7 @@
     "c6716fe1-f625-447e-8a20-6a7b61c97ce8": {
       "type": "sl-image-banner",
       "custom_css": [
-        "#image-banner-template--21565118808337__c6716fe1-f625-447e-8a20-6a7b61c97ce8 .image-banner a.image-banner-cta {display: none;}"
+
       ],
       "settings": {
         "cover_opacity": 25,
