@@ -239,6 +239,23 @@
         "padding_top": 4,
         "padding_bottom": 36
       }
+    },
+    "33c2f322-2e0c-4253-af02-2103b8266d40": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-13.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -247,6 +264,7 @@
     "d25076fd-cb4a-48e0-a61f-84c6b2e749f2",
     "1b1a8a2d-3c30-4b6e-9b18-bc773eed6266",
     "770db88e-ca54-4c3a-87bc-52d98d996f29",
-    "45857d07-d3ba-4a98-a5d3-e76bb7881c89"
+    "45857d07-d3ba-4a98-a5d3-e76bb7881c89",
+    "33c2f322-2e0c-4253-af02-2103b8266d40"
   ]
 }
