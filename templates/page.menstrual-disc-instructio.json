@@ -33,53 +33,54 @@
         "button_corner_radius": 5
       }
     },
-    "d25076fd-cb4a-48e0-a61f-84c6b2e749f2": {
+    "c436e99b-cf99-4e73-a7b8-4f1fede66b5d": {
       "type": "multicolumn",
       "blocks": {
-        "template--21565118808337__d25076fd-cb4a-48e0-a61f-84c6b2e749f2-column-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg",
-            "title": "",
-            "rating": 0,
-            "text": "<p>You did it. You chose the best period care on planet Earth. Bravo! And you’re not alone. Every day people trust the Saalt Disc to simplify their period care and keep toxins out of their body.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--21565118808337__d25076fd-cb4a-48e0-a61f-84c6b2e749f2-column-2": {
+        "d8fa7087-4376-4bb2-a902-0116fc5be5c6": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-01_333d21d5-f5bb-4bb0-8ca1-47b03c3e3742.jpg",
-            "title": "",
+            "title": "WASH",
             "rating": 0,
-            "text": "<p>Saalt Discs are not supplied in a sterile state. Sanitize your disc by boiling it in water for 4–5 min (no more than 7 min). Use tongs or a whisk to ensure the disc doesn’t rest on the bottom of the pot.<\/p>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
         },
-        "template--21565118808337__d25076fd-cb4a-48e0-a61f-84c6b2e749f2-column-3": {
+        "c04c23d8-418f-4d6b-bd8e-a1253bcfadb3": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-14_3b7b368f-58d1-42fb-b3d0-443f6baaf745.jpg",
-            "title": "",
+            "title": "SANITIZE",
             "rating": 0,
-            "text": "<p>Wash your hands and your Saalt Disc with water and a pH-balanced cleanser. Rinse thoroughly.<\/p>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg",
+            "title": "STORE",
+            "rating": 0,
+            "text": "",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "template--21565118808337__d25076fd-cb4a-48e0-a61f-84c6b2e749f2-column-1",
-        "template--21565118808337__d25076fd-cb4a-48e0-a61f-84c6b2e749f2-column-2",
-        "template--21565118808337__d25076fd-cb4a-48e0-a61f-84c6b2e749f2-column-3"
+        "d8fa7087-4376-4bb2-a902-0116fc5be5c6",
+        "c04c23d8-418f-4d6b-bd8e-a1253bcfadb3",
+        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b"
       ],
       "custom_css": [
-        ".multicolumn .title {margin-left: 35%; margin-bottom: 5%; color: #5a5f6f;}"
+        ".multicolumn .title {margin-left: 30%;}",
+        ".multicolumn-list h3,.multicolumn-list p {text-align: center;}"
       ],
       "settings": {
-        "title": "Let's Get Started",
+        "title": "Cleaning & Storing",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -102,6 +103,36 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 60,
+        "padding_bottom": 36
+      }
+    },
+    "15fd34a1-f710-4107-b1d5-f4421d38487f": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-heading-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-05.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -356,211 +387,65 @@
         "padding_bottom": 0
       }
     },
-    "c436e99b-cf99-4e73-a7b8-4f1fede66b5d": {
-      "type": "multicolumn",
+    "bb08c00e-21e0-4e2f-bc3d-10df48ec5c81": {
+      "type": "collapsible-content",
       "blocks": {
-        "d8fa7087-4376-4bb2-a902-0116fc5be5c6": {
-          "type": "column",
+        "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-1": {
+          "type": "collapsible_row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-01_333d21d5-f5bb-4bb0-8ca1-47b03c3e3742.jpg",
-            "title": "WASH",
-            "rating": 0,
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "heading": "HEALTHY USE",
+            "icon": "check_mark",
+            "row_content": "<p>Empty at least twice a day (every 12 hours*); we recommend before bed and after waking up.<\/p><p>Always wash your hands and the Saalt Disc thoroughly before and after handling.<\/p><p>Don’t share the Saalt Disc.<\/p><p>Replace the Saalt Disc if torn or damaged.<\/p><p>Sanitize your disc between every period.<\/p><p>Saalt Disc is not recommended for use during postpartum bleeding.<\/p><p>You can use the Saalt Disc with an IUD or contraceptive ring, but check with your doctor first.<\/p><p>If you drop your disc in the toilet, no need to replace it. Before using your disc again, sanitize it by boiling it in water for 4–5 min (no more than 7 min) or wiping it thoroughly with a soft cloth and 70% isopropyl alcohol, allowing the alcohol to evaporate.<\/p><p><em>* 8 hours for our Australian friends<\/em><\/p>",
+            "page": ""
           }
         },
-        "c04c23d8-418f-4d6b-bd8e-a1253bcfadb3": {
-          "type": "column",
+        "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-2": {
+          "type": "collapsible_row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-14_3b7b368f-58d1-42fb-b3d0-443f6baaf745.jpg",
-            "title": "SANITIZE",
-            "rating": 0,
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
           }
         },
-        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b": {
-          "type": "column",
+        "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-3": {
+          "type": "collapsible_row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg",
-            "title": "STORE",
-            "rating": 0,
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "d8fa7087-4376-4bb2-a902-0116fc5be5c6",
-        "c04c23d8-418f-4d6b-bd8e-a1253bcfadb3",
-        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b"
+        "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-1",
+        "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-2",
+        "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-3",
+        "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-4"
       ],
       "settings": {
-        "title": "Cleaning & Storing",
+        "caption": "",
+        "heading": "Collapsible content",
         "heading_size": "h1",
-        "image_width": "full",
+        "heading_alignment": "center",
+        "layout": "none",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "theme_color_container_background": "theme_default",
+        "theme_color_container_text": "theme_default",
+        "open_first_collapsible_row": false,
         "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "background_style": "none",
-        "theme_color_column_secondary_bg": "theme_default",
-        "column_secondary_bg_opacity": 100,
-        "review_star_color_override": "theme_default",
-        "review_star_opacity_override": 100,
-        "button_text": "",
-        "button_url": "",
-        "button_type": "primary",
-        "theme_color_section_button_background": "theme_default",
-        "theme_color_text_section_button_text": "theme_default",
-        "theme_color_section_button_background_hover": "theme_default",
-        "theme_color_text_section_button_text_hover": "theme_default",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 60,
-        "padding_bottom": 36
-      }
-    },
-    "4b07caad-f16e-4fff-883b-1fe16d3dde5b": {
-      "type": "collage",
-      "blocks": {
-        "template--21565118808337__4b07caad-f16e-4fff-883b-1fe16d3dde5b-image-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-01_333d21d5-f5bb-4bb0-8ca1-47b03c3e3742.jpg"
-          }
-        },
-        "8fb76795-c167-44e3-8fd8-199e6fb2558b": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-14_3b7b368f-58d1-42fb-b3d0-443f6baaf745.jpg"
-          }
-        },
-        "ead73e33-980c-489f-85fd-175365f88762": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "template--21565118808337__4b07caad-f16e-4fff-883b-1fe16d3dde5b-image-1",
-        "8fb76795-c167-44e3-8fd8-199e6fb2558b",
-        "ead73e33-980c-489f-85fd-175365f88762"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".collage-wrapper-title {margin-left: 30%; color: #5a5f6f;}"
-      ],
-      "settings": {
-        "heading": "CLEANING & STORING",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "column",
-        "card_styles": "none",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-1": {
-          "type": "column",
-          "settings": {
-            "title": "WASH",
-            "rating": 0,
-            "text": "<p>Rinse your Saalt Disc in cold water after use to prevent staining.<\/p><p>Wash thoroughly after each use with warm water and Saalt Wash, or a mild pH-balanced cleanser. Avoid strong cleansers or anything that may irritate your skin.<\/p><p>Use a soft rag to wipe away any buildup.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-2": {
-          "type": "column",
-          "settings": {
-            "title": "SANITIZE",
-            "rating": 0,
-            "text": "<p>You should sanitize your Saalt Disc between cycles by boiling your cup in water for 4–5 min (not more than 7 min). Use tongs or a wire whisk to ensure the disc doesn’t touch the bottom of the pot.<\/p><p>You may also rinse your Saalt Disc thoroughly with water, allow it to dry, and then wipe it with a soft rag and 70% isopropyl alcohol. Make sure all surfaces are sufficiently wet by the alcohol and allow it to air dry.<\/p><p>Meanwhile, toss your storage bag in the laundry to thoroughly clean.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-3": {
-          "type": "column",
-          "settings": {
-            "title": "STORE",
-            "rating": 0,
-            "text": "<p>Dry your Saalt Disc thoroughly and store it in the bag provided (or another breathable container). Never use a plastic bag or airtight container for storage.<\/p><p>Some discoloration may occur over time. This is normal, and may vary from one person to another.<\/p><p>If your Saalt Disc is ripped or torn, or the silicone shows signs of deterioration (which can happen after using non-recommended cleaners) it’s time to replace the disc.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-1",
-        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-2",
-        "template--21565118808337__44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5-column-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Cleaning & Storing",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "background_style": "none",
-        "theme_color_column_secondary_bg": "theme_default",
-        "column_secondary_bg_opacity": 100,
-        "review_star_color_override": "theme_default",
-        "review_star_opacity_override": 100,
-        "button_text": "",
-        "button_url": "",
-        "button_type": "primary",
-        "theme_color_section_button_background": "theme_default",
-        "theme_color_text_section_button_text": "theme_default",
-        "theme_color_section_button_background_hover": "theme_default",
-        "theme_color_text_section_button_text_hover": "theme_default",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "15fd34a1-f710-4107-b1d5-f4421d38487f": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h0"
-          }
-        }
-      },
-      "block_order": [
-        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-heading-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-05.jpg",
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
+        "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -569,15 +454,13 @@
   "order": [
     "main",
     "68097338-14d8-4ae5-834d-09eb7848e33e",
-    "d25076fd-cb4a-48e0-a61f-84c6b2e749f2",
+    "c436e99b-cf99-4e73-a7b8-4f1fede66b5d",
+    "15fd34a1-f710-4107-b1d5-f4421d38487f",
     "1b1a8a2d-3c30-4b6e-9b18-bc773eed6266",
     "770db88e-ca54-4c3a-87bc-52d98d996f29",
     "45857d07-d3ba-4a98-a5d3-e76bb7881c89",
     "821e56a6-02d1-4a89-9461-612609225d51",
     "a8714d00-ddb5-425d-a5b7-3f3c509757d2",
-    "c436e99b-cf99-4e73-a7b8-4f1fede66b5d",
-    "4b07caad-f16e-4fff-883b-1fe16d3dde5b",
-    "44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5",
-    "15fd34a1-f710-4107-b1d5-f4421d38487f"
+    "bb08c00e-21e0-4e2f-bc3d-10df48ec5c81"
   ]
 }
