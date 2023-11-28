@@ -461,6 +461,65 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "15fd34a1-f710-4107-b1d5-f4421d38487f": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-section_buttons_group-1": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-section_button-1": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-heading-1",
+        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-text-1",
+        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-section_buttons_group-1",
+        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-section_button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-05.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -473,6 +532,7 @@
     "44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5",
     "821e56a6-02d1-4a89-9461-612609225d51",
     "a8714d00-ddb5-425d-a5b7-3f3c509757d2",
-    "4b07caad-f16e-4fff-883b-1fe16d3dde5b"
+    "4b07caad-f16e-4fff-883b-1fe16d3dde5b",
+    "15fd34a1-f710-4107-b1d5-f4421d38487f"
   ]
 }
