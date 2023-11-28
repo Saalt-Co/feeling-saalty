@@ -22,6 +22,14 @@
   assign available = target.available | default: false
 
   assign downcased_prod_type = product.type | downcase
+
+  if show_price_range == null
+    assign show_price_range = true
+  endif
+
+  if show_strikethrough_price == null
+    assign show_strikethrough_price = true
+  endif
 -%}
 
 <div
@@ -29,7 +37,7 @@
     price
     {%- if price_class %} {{ price_class }}{% endif -%}
     {%- if available == false %} price--sold-out {% endif -%}
-    {%- if compare_at_price > price %} price--on-sale {% endif -%}
+    {%- if compare_at_price > price and show_strikethrough_price != false %} price--on-sale {% endif -%}
     {%- if product.price_varies == false and product.compare_at_price_varies %} price--no-compare{% endif -%}
     {%- if show_badges %} price--show-badge{% endif -%}
   "
@@ -43,7 +51,7 @@
     <div class="price__regular">
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       <span class="price-item price-item--regular">
-        {% if product.price_varies %}
+        {% if product.price_varies and template.name != 'product' and show_price_range != false %}
           {% if settings.price_prefix %}
             {{ settings.price_prefix }}
           {% endif %}

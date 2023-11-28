@@ -14,6 +14,8 @@
   - section_id: {String} The ID of the section that contains this card.
   - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false (optional)
   - horizontal_quick_add: {Boolean} Changes the quick add button styles when set to true. Default: false (optional)
+  - show_price_range: {Boolean} Include the price range when applicable (optional)
+  - show_strikethrough_price: {Boolean} Include the strikethrough price when applicable (optional)
   - use_lowest_priced_variant: {Boolean} Uses the lowest-priced variant as the pre-selected variant on page load (optional)
 
   Usage:
@@ -208,11 +210,17 @@
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
             {%- endif -%}
-            {% render 'price', product: card_product, price_class: '' %}
+            {% render 'price',
+              product: card_product,
+              price_class: '',
+              show_price_range: show_price_range,
+              show_strikethrough_price: show_strikethrough_price
+            %}
             {%- for option in card_product.options_with_values -%}
+              {%- assign option_index = forloop.index0 -%}
               {%- if show_swatches == true and option.name == 'Color' or option.name == 'Colour' -%}
                 {%- assign variant_option = 'option' | append: forloop.index -%}
-                <product-card-swatches>
+                <product-card-swatches data-show-strikethrough-price="{{ show_strikethrough_price }}">
                   <form action="post">
                     <fieldset>
                       {%- for value in option.values -%}
@@ -254,7 +262,7 @@
                             data-image-widths="[{{ supported_sizes }}]"
                           {% endif %}
                           form="{{ product_form_id }}"
-                          {% if option.selected_value == value %}
+                          {% if card_data.options[option_index] == value %}
                             checked
                           {% endif %}
                           {% if option_disabled %}
@@ -520,10 +528,16 @@
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ 'products.product.vendor' | t }}</div>
             {%- endif -%}
-            {% render 'price', collection: collection %}
+            {% render 'price',
+              product: card_product,
+              price_class: '',
+              show_price_range: show_price_range,
+              show_strikethrough_price: show_strikethrough_price
+            %}
             {%- for option in card_product.options_with_values -%}
+              {%- assign option_index = forloop.index0 -%}
               {%- if show_swatches == true and option.name == 'Color' or option.name == 'Colour' -%}
-                <product-card-swatches>
+                <product-card-swatches data-show-strikethrough-price="{{ show_strikethrough_price }}">
                   <form action="post">
                     <fieldset>
                       {%- for value in option.values -%}
@@ -532,7 +546,7 @@
                           id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                           value="{{ value | escape }}"
                           form="{{ product_form_id }}"
-                          {% if option.selected_value == value %}
+                          {% if card_data.options[option_index] == value %}
                             checked
                           {% endif %}
                           {% if option_disabled %}

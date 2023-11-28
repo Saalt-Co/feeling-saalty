@@ -4,11 +4,13 @@ class ProductCardSwatches extends HTMLElement {
 
     this.swatches = this.querySelectorAll('.variant_swatch');
     this.swatchClick = this.handleSwatchClick.bind(this);
+    this.showStrikeThroughPrice = this.dataset.showStrikethroughPrice;
   }
 
   connectedCallback() {
     const swatchWrapper = this;
     const list = swatchWrapper.swatches;
+
     for (const key in list) {
       if (Object.hasOwnProperty.call(list, key)) {
         const element = list[key];
@@ -85,7 +87,7 @@ class ProductCardSwatches extends HTMLElement {
     const compareAtPrice = checkedRadio.dataset.variantCompareAtPrice;
     const regPrice = checkedRadio.dataset.variantPrice;
 
-    if (compareAtPrice && regPrice !== compareAtPrice) {
+    if (this.showStrikeThroughPrice === 'true' && compareAtPrice && regPrice !== compareAtPrice) {
       priceEl.classList.add('price--on-sale');
       salePriceContainer.querySelector('.price-item.price-item--sale').textContent = regPrice;
       salePriceContainer.querySelector('.price-item.price-item--regular').textContent = compareAtPrice;

@@ -179,6 +179,8 @@
                     lazy_load: lazy_load,
                     show_quick_add: section.settings.enable_quick_add,
                     section_id: section.id,
+                    show_price_range: section.settings.show_price_range,
+                    show_strikethrough_price: section.settings.show_strikethrough_price,
                     use_lowest_priced_variant: section.settings.use_lowest_priced_variant
                   %}
                 </li>
@@ -291,6 +293,20 @@
       "id": "show_secondary_image",
       "default": false,
       "label": "t:sections.main-collection-product-grid.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_price_range",
+      "label": "t:sections.main-collection-product-grid.settings.variant_options.show_price_range_label",
+      "info": "t:sections.main-collection-product-grid.settings.variant_options.show_price_range_info",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_strikethrough_price",
+      "label": "t:sections.main-collection-product-grid.settings.variant_options.show_strikethrough_price_label",
+      "info": "t:sections.main-collection-product-grid.settings.variant_options.show_strikethrough_price_info",
+      "default": true
     },
     {
       "type": "checkbox",

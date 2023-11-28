@@ -2066,7 +2066,11 @@
         "variant_options": {
           "header": "Variant options",
           "lowest_variant_label": "Use lowest-priced variant",
-          "lowest_variant_info": "Use the lowest-priced variant as the pre-selected variant on page load. If multiples are available, the code goes with the first one found, based on the variant order in the product setup."
+          "lowest_variant_info": "Use the lowest-priced variant as the pre-selected variant on page load. If multiples are available, the code goes with the first one found, based on the variant order in the product setup.",
+          "show_price_range_label": "Show price range",
+          "show_price_range_info": "When enabled, this shows a price range from lowest to highest price among a product's variants. This uses the Price Separator and Price Prefix values.",
+          "show_strikethrough_price_label": "Show strikethrough price",
+          "show_strikethrough_price_info": "When enabled, the compared-at (aka strikethrough price) is shown when a product only has a single variant that is on sale, or the selected swatch variant is on sale."
         }
       }
     },
