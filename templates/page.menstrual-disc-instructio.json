@@ -356,6 +356,75 @@
         "padding_bottom": 0
       }
     },
+    "c436e99b-cf99-4e73-a7b8-4f1fede66b5d": {
+      "type": "multicolumn",
+      "blocks": {
+        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg",
+            "title": "STORE",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "d8fa7087-4376-4bb2-a902-0116fc5be5c6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-01_333d21d5-f5bb-4bb0-8ca1-47b03c3e3742.jpg",
+            "title": "WASH",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c04c23d8-418f-4d6b-bd8e-a1253bcfadb3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-14_3b7b368f-58d1-42fb-b3d0-443f6baaf745.jpg",
+            "title": "SANITIZE",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b",
+        "d8fa7087-4376-4bb2-a902-0116fc5be5c6",
+        "c04c23d8-418f-4d6b-bd8e-a1253bcfadb3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "background_style": "none",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 36
+      }
+    },
     "4b07caad-f16e-4fff-883b-1fe16d3dde5b": {
       "type": "collage",
       "blocks": {
@@ -383,6 +452,7 @@
         "8fb76795-c167-44e3-8fd8-199e6fb2558b",
         "ead73e33-980c-489f-85fd-175365f88762"
       ],
+      "disabled": true,
       "custom_css": [
         ".collage-wrapper-title {margin-left: 30%; color: #5a5f6f;}"
       ],
@@ -494,75 +564,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "c436e99b-cf99-4e73-a7b8-4f1fede66b5d": {
-      "type": "multicolumn",
-      "blocks": {
-        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg",
-            "title": "STORE",
-            "rating": 0,
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "d8fa7087-4376-4bb2-a902-0116fc5be5c6": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-01_333d21d5-f5bb-4bb0-8ca1-47b03c3e3742.jpg",
-            "title": "WASH",
-            "rating": 0,
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "c04c23d8-418f-4d6b-bd8e-a1253bcfadb3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-14_3b7b368f-58d1-42fb-b3d0-443f6baaf745.jpg",
-            "title": "SANITIZE",
-            "rating": 0,
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b",
-        "d8fa7087-4376-4bb2-a902-0116fc5be5c6",
-        "c04c23d8-418f-4d6b-bd8e-a1253bcfadb3"
-      ],
-      "settings": {
-        "title": "Let's Get Started",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "background_style": "none",
-        "theme_color_column_secondary_bg": "theme_default",
-        "column_secondary_bg_opacity": 100,
-        "review_star_color_override": "theme_default",
-        "review_star_opacity_override": 100,
-        "button_text": "",
-        "button_url": "",
-        "button_type": "primary",
-        "theme_color_section_button_background": "theme_default",
-        "theme_color_text_section_button_text": "theme_default",
-        "theme_color_section_button_background_hover": "theme_default",
-        "theme_color_text_section_button_text_hover": "theme_default",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 60,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -574,9 +575,9 @@
     "45857d07-d3ba-4a98-a5d3-e76bb7881c89",
     "821e56a6-02d1-4a89-9461-612609225d51",
     "a8714d00-ddb5-425d-a5b7-3f3c509757d2",
+    "c436e99b-cf99-4e73-a7b8-4f1fede66b5d",
     "4b07caad-f16e-4fff-883b-1fe16d3dde5b",
     "44a07b6c-a0af-44bf-b3ec-dab4ead2a1b5",
-    "15fd34a1-f710-4107-b1d5-f4421d38487f",
-    "c436e99b-cf99-4e73-a7b8-4f1fede66b5d"
+    "15fd34a1-f710-4107-b1d5-f4421d38487f"
   ]
 }
