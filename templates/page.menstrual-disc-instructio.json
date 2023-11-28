@@ -362,23 +362,26 @@
         "template--21565118808337__4b07caad-f16e-4fff-883b-1fe16d3dde5b-image-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-01_333d21d5-f5bb-4bb0-8ca1-47b03c3e3742.jpg"
           }
         },
         "8fb76795-c167-44e3-8fd8-199e6fb2558b": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-14_3b7b368f-58d1-42fb-b3d0-443f6baaf745.jpg"
           }
         },
-        "f27bb0d1-b056-4905-8034-949d1f564619": {
+        "ead73e33-980c-489f-85fd-175365f88762": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg"
           }
         }
       },
       "block_order": [
         "template--21565118808337__4b07caad-f16e-4fff-883b-1fe16d3dde5b-image-1",
         "8fb76795-c167-44e3-8fd8-199e6fb2558b",
-        "f27bb0d1-b056-4905-8034-949d1f564619"
+        "ead73e33-980c-489f-85fd-175365f88762"
       ],
       "custom_css": [
         ".collage-wrapper-title {margin-left: 30%; color: #5a5f6f;}"
