@@ -108,25 +108,6 @@
     "1b1a8a2d-3c30-4b6e-9b18-bc773eed6266": {
       "type": "multirow",
       "blocks": {
-        "669a847f-e75a-463e-85a0-ed28d4b655f7": {
-          "type": "row",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-03-removebg-preview.png",
-            "caption": "STEP 1",
-            "heading": "PINCH",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "theme_color_row_background": "theme_default",
-            "theme_color_row_text": "theme_default",
-            "button_text": "Button text",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
         "78bd6f06-82e0-4810-b05f-0e014170581f": {
           "type": "row",
           "settings": {
@@ -147,7 +128,6 @@
         }
       },
       "block_order": [
-        "669a847f-e75a-463e-85a0-ed28d4b655f7",
         "78bd6f06-82e0-4810-b05f-0e014170581f"
       ],
       "settings": {
@@ -162,7 +142,7 @@
         "theme_color_text": "theme_default",
         "mobile_content_alignment": "left",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 12
       }
     },
     "770db88e-ca54-4c3a-87bc-52d98d996f29": {
@@ -216,31 +196,13 @@
         "theme_color_text": "theme_default",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 12
       }
     },
     "45857d07-d3ba-4a98-a5d3-e76bb7881c89": {
       "type": "multirow",
       "blocks": {
-        "template--21565118808337__45857d07-d3ba-4a98-a5d3-e76bb7881c89-row-1": {
-          "type": "row",
-          "disabled": true,
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "theme_color_row_background": "theme_default",
-            "theme_color_row_text": "theme_default",
-            "button_text": "Button text",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
         "template--21565118808337__45857d07-d3ba-4a98-a5d3-e76bb7881c89-row-2": {
           "type": "row",
           "settings": {
@@ -250,7 +212,7 @@
             "text": "<p>As you tuck the front end of the disc behind your pubic bone, the rim will pop open.<\/p><p>The disc should sit below your cervix in order to catch your flow. To check its position, insert a finger underneath the disc basin to feel for your cervix.<\/p><p>If you can feel your cervix outside of the basin, remove your disc and insert again.<\/p>",
             "theme_color_row_background": "theme_default",
             "theme_color_row_text": "theme_default",
-            "button_text": "Button text",
+            "button_text": "",
             "button_url": "",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
@@ -261,7 +223,6 @@
         }
       },
       "block_order": [
-        "template--21565118808337__45857d07-d3ba-4a98-a5d3-e76bb7881c89-row-1",
         "template--21565118808337__45857d07-d3ba-4a98-a5d3-e76bb7881c89-row-2"
       ],
       "settings": {
@@ -271,11 +232,11 @@
         "text_style": "body",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
+        "image_layout": "alternate-right",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
+        "padding_top": 4,
         "padding_bottom": 36
       }
     }
