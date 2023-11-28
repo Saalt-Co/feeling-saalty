@@ -356,6 +356,9 @@
         "8fb76795-c167-44e3-8fd8-199e6fb2558b",
         "f27bb0d1-b056-4905-8034-949d1f564619"
       ],
+      "custom_css": [
+        ".collage-wrapper-title {margin-left: 30%; color: #5a5f6f;}"
+      ],
       "settings": {
         "heading": "CLEANING & STORING",
         "heading_size": "h1",
