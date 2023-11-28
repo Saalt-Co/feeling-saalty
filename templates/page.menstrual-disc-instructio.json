@@ -108,7 +108,26 @@
     "1b1a8a2d-3c30-4b6e-9b18-bc773eed6266": {
       "type": "multirow",
       "blocks": {
-        "template--21565118808337__1b1a8a2d-3c30-4b6e-9b18-bc773eed6266-row-1": {
+        "669a847f-e75a-463e-85a0-ed28d4b655f7": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-03-removebg-preview.png",
+            "caption": "STEP 1",
+            "heading": "PINCH",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "theme_color_row_background": "theme_default",
+            "theme_color_row_text": "theme_default",
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "78bd6f06-82e0-4810-b05f-0e014170581f": {
           "type": "row",
           "settings": {
             "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-03-removebg-preview.png",
@@ -125,47 +144,11 @@
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default"
           }
-        },
-        "template--21565118808337__1b1a8a2d-3c30-4b6e-9b18-bc773eed6266-row-2": {
-          "type": "row",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-07-removebg-preview.png",
-            "caption": "STEP 2",
-            "heading": "INSERT",
-            "text": "<p>With your disc pinched, you are ready to insert.<\/p><p>Inserting your Saalt Disc is easier when using water as a natural lubricant.<\/p><p>You can insert your Saalt Disc while sitting, squatting, or standing with one leg raised. The most popular way to insert the disc is on the toilet with your legs spread wide apart.<\/p><p>Gently separate your labia (inner vaginal lips) with one hand. Use the other hand to hold the pinched disc rim side up and insert it so the removal notch is the last part of the disc to enter the vagina.<\/p><p>Slide the disc in at a horizontal angle (pointed towards your tailbone), until it is completely inside your vaginal canal.<\/p><p>Push upwards on the front of the rim, resting the front of the disc above the pubic bone (aka the pubic symphysis).<\/p>",
-            "theme_color_row_background": "theme_default",
-            "theme_color_row_text": "theme_default",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
-        "template--21565118808337__1b1a8a2d-3c30-4b6e-9b18-bc773eed6266-row-3": {
-          "type": "row",
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "theme_color_row_background": "theme_default",
-            "theme_color_row_text": "theme_default",
-            "button_text": "Button text",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
         }
       },
       "block_order": [
-        "template--21565118808337__1b1a8a2d-3c30-4b6e-9b18-bc773eed6266-row-1",
-        "template--21565118808337__1b1a8a2d-3c30-4b6e-9b18-bc773eed6266-row-2",
-        "template--21565118808337__1b1a8a2d-3c30-4b6e-9b18-bc773eed6266-row-3"
+        "669a847f-e75a-463e-85a0-ed28d4b655f7",
+        "78bd6f06-82e0-4810-b05f-0e014170581f"
       ],
       "settings": {
         "image_height": "medium",
@@ -174,9 +157,64 @@
         "text_style": "body",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
+        "image_layout": "alternate-right",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "770db88e-ca54-4c3a-87bc-52d98d996f29": {
+      "type": "image-with-text",
+      "blocks": {
+        "d71193ee-28b7-4235-a557-2750fb8f803d": {
+          "type": "caption",
+          "settings": {
+            "caption": "STEP 2",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--21565118808337__770db88e-ca54-4c3a-87bc-52d98d996f29-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "INSERT",
+            "heading_size": "h1"
+          }
+        },
+        "template--21565118808337__770db88e-ca54-4c3a-87bc-52d98d996f29-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--21565118808337__770db88e-ca54-4c3a-87bc-52d98d996f29-section_buttons_group-1": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        }
+      },
+      "block_order": [
+        "d71193ee-28b7-4235-a557-2750fb8f803d",
+        "template--21565118808337__770db88e-ca54-4c3a-87bc-52d98d996f29-heading-1",
+        "template--21565118808337__770db88e-ca54-4c3a-87bc-52d98d996f29-text-1",
+        "template--21565118808337__770db88e-ca54-4c3a-87bc-52d98d996f29-section_buttons_group-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-07-removebg-preview.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
@@ -187,6 +225,7 @@
     "main",
     "68097338-14d8-4ae5-834d-09eb7848e33e",
     "d25076fd-cb4a-48e0-a61f-84c6b2e749f2",
-    "1b1a8a2d-3c30-4b6e-9b18-bc773eed6266"
+    "1b1a8a2d-3c30-4b6e-9b18-bc773eed6266",
+    "770db88e-ca54-4c3a-87bc-52d98d996f29"
   ]
 }
