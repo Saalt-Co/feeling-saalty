@@ -359,17 +359,6 @@
     "c436e99b-cf99-4e73-a7b8-4f1fede66b5d": {
       "type": "multicolumn",
       "blocks": {
-        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg",
-            "title": "STORE",
-            "rating": 0,
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "d8fa7087-4376-4bb2-a902-0116fc5be5c6": {
           "type": "column",
           "settings": {
@@ -391,12 +380,23 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg",
+            "title": "STORE",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b",
         "d8fa7087-4376-4bb2-a902-0116fc5be5c6",
-        "c04c23d8-418f-4d6b-bd8e-a1253bcfadb3"
+        "c04c23d8-418f-4d6b-bd8e-a1253bcfadb3",
+        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b"
       ],
       "settings": {
         "title": "",
