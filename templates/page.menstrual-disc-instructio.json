@@ -75,6 +75,9 @@
         "template--21565118808337__d25076fd-cb4a-48e0-a61f-84c6b2e749f2-column-2",
         "template--21565118808337__d25076fd-cb4a-48e0-a61f-84c6b2e749f2-column-3"
       ],
+      "custom_css": [
+        ".multicolumn .title {margin-left: 30%; margin-bottom: 5%;}"
+      ],
       "settings": {
         "title": "Let's Get Started",
         "heading_size": "h1",
