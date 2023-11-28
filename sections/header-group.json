@@ -30,7 +30,7 @@
         "logo_position": "top-left",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
-        "sticky_header_type": "always",
+        "sticky_header_type": "none",
         "show_line_separator": true,
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
