@@ -240,21 +240,29 @@
         "padding_bottom": 36
       }
     },
-    "33c2f322-2e0c-4253-af02-2103b8266d40": {
-      "type": "image-banner",
+    "29c47333-c55c-4dca-a7e4-794e40b1c201": {
+      "type": "sl-image-banner",
+      "custom_css": [
+
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-13.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "cover_opacity": 25,
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "text_color": "#ffffff",
+        "box_alignment": "left",
+        "text_alignment": "left",
+        "max_width": 3000,
+        "padding_top": 25,
+        "padding_bottom": 25,
+        "padding_left": 10,
+        "padding_right": 10,
+        "headline": "",
+        "content": "",
+        "hero_image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-13.jpg",
+        "cta": "Shop Now",
+        "cta_link": "",
+        "button_corner_radius": 5
       }
     }
   },
@@ -265,6 +273,6 @@
     "1b1a8a2d-3c30-4b6e-9b18-bc773eed6266",
     "770db88e-ca54-4c3a-87bc-52d98d996f29",
     "45857d07-d3ba-4a98-a5d3-e76bb7881c89",
-    "33c2f322-2e0c-4253-af02-2103b8266d40"
+    "29c47333-c55c-4dca-a7e4-794e40b1c201"
   ]
 }
