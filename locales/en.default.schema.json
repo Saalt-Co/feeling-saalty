@@ -3733,6 +3733,64 @@
           "content": "The reviews displayed here are based on the reviews platform selected in the 'Custom Saalt Settings' section. NOTE: Using this over native app blocks is preferable since there is logic within this to display Yotpo *or* Bazaarvoice in this section resulting in a cleaner codebase."
         }
       }
+    },
+    "marquee": {
+      "name": "Scrolling text",
+      "settings": {
+        "text": {
+          "label": "Text"
+        },
+        "link": {
+          "label": "Link"
+        },
+        "text_size": {
+          "label": "Text size"
+        },
+        "text_spacing": {
+          "label": "Add spacing"
+        },
+        "color_scheme": {
+          "label": "Color scheme",
+          "options": {
+            "button": {
+              "label": "Button"
+            },
+            "text": {
+              "label": "Text"
+            }
+          }
+        },
+        "direction": {
+          "label": "Direction",
+          "options": {
+            "left": {
+              "label": "Left"
+            },
+            "right": {
+              "label": "Right"
+            }
+          }
+        },
+        "speed": {
+          "label": "Speed",
+          "options": {
+            "fast": {
+              "label": "Fast"
+            },
+            "normal": {
+              "label": "Normal"
+            },
+            "slow": {
+              "label": "Slow"
+            }
+          }
+        }
+      },
+      "presets": {
+        "scrolling_text": {
+          "name": "Scrolling text"
+        }
+      }
     }
   }
 }
