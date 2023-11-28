@@ -11,7 +11,7 @@
     "68097338-14d8-4ae5-834d-09eb7848e33e": {
       "type": "sl-image-banner",
       "settings": {
-        "cover_opacity": 17,
+        "cover_opacity": 7,
         "button_background_color": "#ffffff",
         "button_text_color": "#ffffff",
         "text_color": "#ffffff",
@@ -22,7 +22,7 @@
         "padding_bottom": 25,
         "padding_left": 10,
         "padding_right": 10,
-        "headline": "This is your banner headline",
+        "headline": "Menstrual Disc Instructions",
         "content": "This is the default content for your image banner. Customize this text to fit your brand's message.",
         "hero_image": "shopify:\/\/shop_images\/Disc-instructions-hero-01.jpg",
         "cta": "",
