@@ -37,11 +37,15 @@
   -%}
     <div class="button-wrapper" {{ block.shopify_attributes }}>
       <a
-        href="{{ block.settings.button_url }}"
         class="button{% render 'saalt-button-color-classes', obj: block %}"
+        {% if block.settings.button_url == blank %}
+          role="link" aria-disabled="true"
+        {% else %}
+          href="{{ block.settings.button_url }}"
+        {% endif %}
         {{ block.shopify_attributes }}
       >
-        {{- block.settings.button_text -}}
+        {{ block.settings.button_text | escape }}
       </a>
     </div>
   {%- endif -%}
