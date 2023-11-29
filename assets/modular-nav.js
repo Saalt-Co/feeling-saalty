@@ -53,12 +53,30 @@ class ModularNavBar extends HTMLElement {
   }
 
   scrollTo(element) {
-    const headerInfo = this.getHeaderInfo();
     const elementTop = element.getBoundingClientRect().top;
+    const headerInfo = this.getHeaderInfo();
+    let scrollDistance = 0;
 
+    if (
+      document.querySelector('sticky-header') &&
+      document.querySelector('sticky-header').dataset.stickyType !== 'on-scroll-up'
+    ) {
+      scrollDistance = element.getBoundingClientRect().top + window.scrollY - headerInfo.mainNavHeight;
+    } else if (
+      document.querySelector('sticky-header') &&
+      document.querySelector('sticky-header').dataset.stickyType === 'on-scroll-up'
+    ) {
+      if (element.getBoundingClientRect().top < this.getBoundingClientRect().top) {
+        scrollDistance = element.getBoundingClientRect().top + window.scrollY - headerInfo.mainNavHeight;
+      } else {
+        scrollDistance = element.getBoundingClientRect().top + window.scrollY;
+      }
+    } else {
+      scrollDistance = elementTop + window.scrollY;
+    }
     window.scrollTo({
       left: 0,
-      top: elementTop - headerInfo.totalHeaderHeight,
+      top: scrollDistance,
       behavior: 'smooth',
     });
   }
@@ -66,24 +84,15 @@ class ModularNavBar extends HTMLElement {
   getHeaderInfo() {
     let headerInfo = {};
 
-    let selectors = JSON.parse(this.querySelector('[id*="headerSelectors_"]').innerHTML);
+    let selector = JSON.parse(this.querySelector('[id*="headerSelector_"]').innerHTML);
 
-    headerInfo.mainNav = document.querySelector(selectors[0]);
-    headerInfo.announcementBar = document.querySelector(selectors[1]);
+    headerInfo.mainNav = document.querySelector(selector);
 
     if (headerInfo.mainNav) {
       headerInfo.mainNavHeight = headerInfo.mainNav.getBoundingClientRect().height;
     } else {
       headerInfo.mainNavHeight = 0;
     }
-
-    if (headerInfo.announcementBar) {
-      headerInfo.announcementBarHeight = headerInfo.announcementBar.getBoundingClientRect().height;
-    } else {
-      headerInfo.announcementBarHeight = 0;
-    }
-
-    headerInfo.totalHeaderHeight = headerInfo.mainNavHeight + headerInfo.announcementBarHeight;
 
     return headerInfo;
   }

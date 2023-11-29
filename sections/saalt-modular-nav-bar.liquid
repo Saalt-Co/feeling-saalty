@@ -3,8 +3,6 @@
 {% liquid
   assign nav_id = section.settings.section_id | handleize
   assign header_info = section.settings.header_selector
-  assign header_info = header_info | append: ',' | append: section.settings.banner_selector
-  assign header_info = header_info | split: ','
 %}
 
 <div id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="">
@@ -14,7 +12,7 @@
     {% endif -%}
     class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% else %} default{% endif %}"
   >
-    <script type="application/json" id="headerSelectors_{{ section.id }}">
+    <script type="application/json" id="headerSelector_{{ section.id }}">
       {{- header_info | json -}}
     </script>
     <ul>
@@ -126,18 +124,8 @@
       "default": "header.header"
     },
     {
-      "type": "text",
-      "id": "banner_selector",
-      "label": "Banner element selector",
-      "info": "This is needs to be a unique element ID or class used to identify and target any banner element above the header in order to account for its height when scrolling to an element on click. ID selector's start with a \"#\" while class selectors start with a \".\". ie: #elementIDHere or .some-class-here"
-    },
-    {
       "type": "header",
       "content": "Nav Bar Styling"
-    },
-    {
-      "type": "paragraph",
-      "content": "❗️NOTE❗️: There should only be *1* sticky nav bar per page. If you set more than 1, only the 1st will be sticky. *THE SECTION ID ABOVE MUST BE FILLED IN FOR THIS FUNCTIONALITY TO WORK*. Additionally, the section ID MUST BE UNIQUE to the page."
     },
     {
       "type": "select",
