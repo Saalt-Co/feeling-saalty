@@ -320,16 +320,19 @@
         "template--21570056913169__f2735a30-7dee-4956-b5d3-9fa9ba13563a-image-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Office_6_7055e155-acdc-4ccf-99f1-2bff20ee5b50.png"
           }
         },
         "6218ea50-b6e8-4ec3-a743-bf879e084f92": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Office_5_8363ef4f-9a89-4a03-be56-1865faa17f02.png"
           }
         },
         "7a2ecb79-f97a-4487-99eb-f3b44d7cb355": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Office_4_5c281c17-2d8d-4783-952c-54edf35773ec.png"
           }
         }
       },
