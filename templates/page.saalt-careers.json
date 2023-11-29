@@ -385,6 +385,44 @@
         "padding_bottom": 0
       }
     },
+    "1ff76f1e-0e96-4c24-aa68-87350b83c0cd": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21570056913169__1ff76f1e-0e96-4c24-aa68-87350b83c0cd-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Our Team<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "template--21570056913169__1ff76f1e-0e96-4c24-aa68-87350b83c0cd-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Saalt, we immerse our team in an exceptional work environment with opportunities to learn and grow. You will be surrounded by colleagues who are committed to ensuring your success by celebrating both big and small things, because we believe our impact is limitless when we work together.<\/p><p>If you are looking to make a worldwide impact, Saalt is the place for you. Saalt HQ is located in beautiful Boise, Idaho.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--21570056913169__1ff76f1e-0e96-4c24-aa68-87350b83c0cd-heading-1",
+        "template--21570056913169__1ff76f1e-0e96-4c24-aa68-87350b83c0cd-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Office_f164360f-9aaf-4d2b-a381-811654bfddb8.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
     "fdb36f97-c9ef-4b6e-9cd1-76f520a6947e": {
       "type": "saalt-media-with-text",
       "settings": {
@@ -405,7 +443,7 @@
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
         "max_width": "900px",
-        "padding_top": 0,
+        "padding_top": 40,
         "padding_bottom": 0
       }
     },
@@ -460,6 +498,7 @@
     "d6b12009-894f-4938-8275-85c5ce276677",
     "81684a1c-6be7-46d3-a49c-9d1fa86d1d41",
     "34e427f0-317c-4b16-baae-3a81139d92b7",
+    "1ff76f1e-0e96-4c24-aa68-87350b83c0cd",
     "fdb36f97-c9ef-4b6e-9cd1-76f520a6947e",
     "f2735a30-7dee-4956-b5d3-9fa9ba13563a"
   ]
