@@ -237,7 +237,6 @@
         "template--18370419720465__fc031dea-6661-47b1-b752-79fa446b4dee-1687976507446c2c25-5",
         "d23d2a87-3c59-4374-8a45-bff84584b5ea"
       ],
-      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -616,7 +615,7 @@
         "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>If you're not happy with your Saalt product, <a href=\"\/pages\/replacements\" title=\"Replacements\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/a>. Why? We know that learning to use reusables can take time, but we're here to help and cheer you to Saalt bliss. <br\/>Your Saalt(isfaction) guaranteed.<\/p>"
+            "text_content": "<p>If you're not happy with your Saalt product,<strong> <\/strong><a href=\"\/pages\/replacements\" title=\"Replacements\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/a><strong>.<\/strong> Why? We know that learning to use reusables can take time, but we're here to help and cheer you to Saalt bliss. <br\/>Your Saalt(isfaction) guaranteed.<\/p>"
           }
         },
         "b2ee0a35-d994-4a99-9c1b-24b9c7973252": {
