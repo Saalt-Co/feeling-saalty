@@ -103,12 +103,13 @@
         "template--21570056913169__f5a1de42-aa91-485d-b6d9-c55247702954-image-1": {
           "type": "image",
           "settings": {
-            "feature_title": "Fast delivery",
-            "feature_text": "Receive your order in 3 days",
+            "feature_title": "Company Paid Employee",
+            "feature_text": "Health Insurance",
+            "feature_image": "shopify:\/\/shop_images\/Health_Insurance_d6db634b-6253-4b53-b073-0e4c3da5b079.png",
             "icon_url": "",
             "feature_image_width": "40px",
-            "feature_use_svg": true,
-            "feature_svg_code": "<svg class=\"icon icon--medium icon--type-truck\" stroke-width=\"1\" aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 16 16\"><path d=\"M15.64 6.92L9.5 5.12V4a.5.5 0 00-.5-.5H1a.5.5 0 00-.5.5v8.5c0 .28.22.5.5.5h1.27a2.1 2.1 0 004.06 0h3.94a2.1 2.1 0 004.06 0h1.17a.5.5 0 00.5-.5V7.4a.5.5 0 00-.36-.48zM4.3 13.6a1.1 1.1 0 110-2.2 1.1 1.1 0 010 2.2zM6.33 12a2.1 2.1 0 00-4.06 0H1.5V4.5h7V12H6.33zm5.97 1.6a1.1 1.1 0 110-2.2 1.1 1.1 0 010 2.2zM15 12h-.67a2.1 2.1 0 00-4.06 0H9.5V6.17l5.5 1.6V12z\"><\/path><\/svg>"
+            "feature_use_svg": false,
+            "feature_svg_code": ""
           }
         },
         "template--21570056913169__f5a1de42-aa91-485d-b6d9-c55247702954-image-2": {
