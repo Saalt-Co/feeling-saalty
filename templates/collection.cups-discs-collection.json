@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/SC-HP-SOManifest-1597.jpg",
             "title": "<p>Saalt Cups<\/p>",
-            "copy": "<ul><li>Seal keeps the cup in place<\/li><li>Rests in the vaginal canal<\/li><li>Great for beginners<\/li><li>Two firmness options<\/li><li>Collects 3—4x more than a tampon<\/li><\/ul>",
+            "copy": "<p>No pads. No strings. Just comfort. Wear all day or night, stress free.<\/p>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Product Type",
@@ -28,8 +28,9 @@
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-1": {
           "type": "window-feature",
           "settings": {
+            "image": "shopify:\/\/shop_images\/SD-CB-Alani-Jessie-9242.jpg",
             "title": "<p>Saalt Discs<\/p>",
-            "copy": "<ul><li>No suction<\/li><li>Rests in the vaginal fornix<\/li><li>Custom removal notch<\/li><li>No-mess period sex<\/li><li>Collects 4—6x more than a tampon<\/li><\/ul>",
+            "copy": "<p>Flexible, flat fit allows for no-mess period sex. Custom finger notch for easy removal. 4 to 6 tampon capacity.<\/p>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Product Type",
@@ -602,6 +603,7 @@
         "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-paragraph-1",
         "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-email_form-1"
       ],
+      "disabled": true,
       "settings": {
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
