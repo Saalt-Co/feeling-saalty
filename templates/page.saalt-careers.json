@@ -140,21 +140,45 @@
             "feature_use_svg": true,
             "feature_svg_code": "<svg class=\"icon icon--medium icon--type-star\" stroke-width=\"1\" aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 16 16\"><path d=\"M8 1c.21 0 .4.13.47.33l1.62 4.54 4.92.1a.5.5 0 01.29.9l-3.92 2.9 1.42 4.58a.5.5 0 01-.75.56L8 12.17 3.95 14.9a.5.5 0 01-.75-.56l1.42-4.58L.7 6.87a.5.5 0 01.29-.9l4.92-.1 1.62-4.54A.5.5 0 018 1zm0 2L6.74 6.52a.5.5 0 01-.46.33l-3.8.08L5.5 9.17a.5.5 0 01.18.55l-1.1 3.56 3.14-2.13a.5.5 0 01.56 0l3.15 2.13-1.1-3.56a.5.5 0 01.17-.55l3.02-2.23-3.8-.08a.5.5 0 01-.46-.33L8 2.99z\"><\/path><\/svg>"
           }
+        },
+        "69b3366d-9552-4f74-bd9a-3a2325db8538": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Item Title",
+            "feature_text": "Item text",
+            "icon_url": "",
+            "feature_image_width": "40px",
+            "feature_use_svg": true,
+            "feature_svg_code": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"50\" height=\"50\"><rect x=\"2\" y=\"2\" width=\"46\" height=\"46\" style=\"fill:#DEDEDE;stroke:#555555;stroke-width:2\"><\/rect><text x=\"50%\" y=\"50%\" font-size=\"18\" text-anchor=\"middle\" alignment-baseline=\"middle\" font-family=\"monospace, sans-serif\" fill=\"#555555\">50__50<\/text><\/svg>"
+          }
+        },
+        "69a491b7-91ae-496b-9e21-d10d73a7daf8": {
+          "type": "image",
+          "settings": {
+            "feature_title": "Item Title",
+            "feature_text": "Item text",
+            "icon_url": "",
+            "feature_image_width": "40px",
+            "feature_use_svg": true,
+            "feature_svg_code": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"50\" height=\"50\"><rect x=\"2\" y=\"2\" width=\"46\" height=\"46\" style=\"fill:#DEDEDE;stroke:#555555;stroke-width:2\"><\/rect><text x=\"50%\" y=\"50%\" font-size=\"18\" text-anchor=\"middle\" alignment-baseline=\"middle\" font-family=\"monospace, sans-serif\" fill=\"#555555\">50__50<\/text><\/svg>"
+          }
         }
       },
       "block_order": [
         "template--21570056913169__f5a1de42-aa91-485d-b6d9-c55247702954-image-1",
         "template--21570056913169__f5a1de42-aa91-485d-b6d9-c55247702954-image-2",
         "template--21570056913169__f5a1de42-aa91-485d-b6d9-c55247702954-image-3",
-        "template--21570056913169__f5a1de42-aa91-485d-b6d9-c55247702954-image-4"
+        "template--21570056913169__f5a1de42-aa91-485d-b6d9-c55247702954-image-4",
+        "69b3366d-9552-4f74-bd9a-3a2325db8538",
+        "69a491b7-91ae-496b-9e21-d10d73a7daf8"
       ],
       "settings": {
         "section_bg_color": "#ffffff",
         "row_on_mobile": false,
-        "feature_title_color": "#000",
+        "feature_title_color": "#000000",
         "feature_title_font_size": 16,
         "feature_title_font_mob_size": 16,
-        "feature_text_color": "#1D1D1D",
+        "feature_text_color": "#1d1d1d",
         "feature_text_font_size": 14,
         "feature_text_font_mob_size": 14,
         "use_custom_font": false,
@@ -221,12 +245,129 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "34e427f0-317c-4b16-baae-3a81139d92b7": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--21570056913169__34e427f0-317c-4b16-baae-3a81139d92b7-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Section Title Goes Here"
+          }
+        },
+        "template--21570056913169__34e427f0-317c-4b16-baae-3a81139d92b7-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
+          }
+        },
+        "template--21570056913169__34e427f0-317c-4b16-baae-3a81139d92b7-section_buttons_group-1": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "template--21570056913169__34e427f0-317c-4b16-baae-3a81139d92b7-section_button-1": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--21570056913169__34e427f0-317c-4b16-baae-3a81139d92b7-section_title-1",
+        "template--21570056913169__34e427f0-317c-4b16-baae-3a81139d92b7-section_content-1",
+        "template--21570056913169__34e427f0-317c-4b16-baae-3a81139d92b7-section_buttons_group-1",
+        "template--21570056913169__34e427f0-317c-4b16-baae-3a81139d92b7-section_button-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-4",
+        "theme_color_text": "theme-color-text-2",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "c9ae8652-7047-4db6-a351-03043ad88377": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f2735a30-7dee-4956-b5d3-9fa9ba13563a": {
+      "type": "collage",
+      "blocks": {
+        "template--21570056913169__f2735a30-7dee-4956-b5d3-9fa9ba13563a-image-1": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "6218ea50-b6e8-4ec3-a743-bf879e084f92": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "7a2ecb79-f97a-4487-99eb-f3b44d7cb355": {
+          "type": "image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--21570056913169__f2735a30-7dee-4956-b5d3-9fa9ba13563a-image-1",
+        "6218ea50-b6e8-4ec3-a743-bf879e084f92",
+        "7a2ecb79-f97a-4487-99eb-f3b44d7cb355"
+      ],
+      "settings": {
+        "heading": "Day in the Life at Saalt",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "636e4f0f-cff7-490f-8b02-b8c7260cb10b",
     "f5a1de42-aa91-485d-b6d9-c55247702954",
-    "81684a1c-6be7-46d3-a49c-9d1fa86d1d41"
+    "81684a1c-6be7-46d3-a49c-9d1fa86d1d41",
+    "34e427f0-317c-4b16-baae-3a81139d92b7",
+    "c9ae8652-7047-4db6-a351-03043ad88377",
+    "f2735a30-7dee-4956-b5d3-9fa9ba13563a"
   ]
 }
