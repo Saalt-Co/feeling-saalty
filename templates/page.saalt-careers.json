@@ -246,7 +246,7 @@
       ],
       "settings": {
         "section_bg_color": "#ffffff",
-        "row_on_mobile": true,
+        "row_on_mobile": false,
         "feature_title_color": "#000000",
         "feature_title_font_size": 16,
         "feature_title_font_mob_size": 16,
