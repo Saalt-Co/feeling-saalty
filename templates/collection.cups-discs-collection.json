@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/SC-HP-SOManifest-1597.jpg",
             "title": "<p>Saalt Cups<\/p>",
-            "copy": "<p>Saalt Cup<\/p><ul><li>Seal keeps the cup in place<\/li><li>Rests in the vaginal canal<\/li><li>Great for beginners<\/li><li>Two firmness options<\/li><li>Collects 3—4x more than a tampon<\/li><\/ul>",
+            "copy": "<ul><li>Seal keeps the cup in place<\/li><li>Rests in the vaginal canal<\/li><li>Great for beginners<\/li><li>Two firmness options<\/li><li>Collects 3—4x more than a tampon<\/li><\/ul>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Product Type",
@@ -29,7 +29,7 @@
           "type": "window-feature",
           "settings": {
             "title": "<p>Saalt Discs<\/p>",
-            "copy": "<p>Saalt Disc<\/p><ul><li>No suction<\/li><li>Rests in vaginal fornix<\/li><li>Custom removal notch<\/li><li>No-mess period sex<\/li><li>Collects 4—6x more than a tampon<\/li><\/ul>",
+            "copy": "<ul><li>No suction<\/li><li>Rests in the vaginal fornix<\/li><li>Custom removal notch<\/li><li>No-mess period sex<\/li><li>Collects 4—6x more than a tampon<\/li><\/ul>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Product Type",
@@ -42,11 +42,11 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Bundle-Preset-1080x1080-Web-0995.jpg",
             "title": "<p>Bundles<\/p>",
-            "copy": "<p>Skip the guesswork with bundles custom-designed by our Saalt Coaches for all your leak needs.<\/p>",
+            "copy": "<p>Save up to 20% and skip the guesswork with bundles custom-designed by our Saalt Coaches for all your leak needs. <\/p>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Product Type",
-            "filter_val": "Preset Bundle",
+            "filter_val": "Bundle",
             "button_text": "Shop Bundles"
           }
         },
