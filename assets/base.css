@@ -1535,6 +1535,18 @@ button.shopify-payment-button__button--unbranded {
   background-color: rgba(var(--color-button-text), 0.3);
 }
 
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
 .button::selection,
 .shopify-challenge__button::selection,
 .customer button::selection {
@@ -2002,6 +2014,46 @@ details[open] > .share-button__fallback {
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
   display: none;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-webkit-input-placeholder,
+.customer .field input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder,
+.customer .field input::-moz-placeholder {
+  opacity: 0;
+}
+
+.field__input:-ms-input-placeholder,
+.customer .field input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.field__input::-ms-input-placeholder,
+.customer .field input::-ms-input-placeholder {
+  opacity: 0;
 }
 
 .field__input::-webkit-input-placeholder,
@@ -3565,6 +3617,10 @@ details-disclosure > details {
 
 .rte blockquote > * {
   margin: -0.5rem 0 -0.5rem 0;
+}
+
+p a {
+  color: rgba(var(--color-link-text), var(--color-link-opacity));
 }
 
 /* Image mask global styles */
