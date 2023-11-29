@@ -256,8 +256,8 @@
         "use_custom_font": false,
         "type_header_font": "assistant_n4",
         "max_container_width": 120,
-        "padding_top": 48,
-        "padding_bottom": 64
+        "padding_top": 76,
+        "padding_bottom": 100
       }
     },
     "d6b12009-894f-4938-8275-85c5ce276677": {
@@ -321,7 +321,7 @@
         "theme_color_text": "theme_default",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 56,
+        "padding_top": 100,
         "padding_bottom": 88
       }
     },
@@ -411,7 +411,7 @@
         "template--21570056913169__1ff76f1e-0e96-4c24-aa68-87350b83c0cd-text-1"
       ],
       "custom_css": [
-        ".media>*:not(.zoom):not(.deferred-media__poster-button), .media model-viewer {border-radius: 10px;}"
+        ".media > *:not(.zoom):not(.deferred-media__poster-button),.media model-viewer {border-radius: 10px;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Office_f164360f-9aaf-4d2b-a381-811654bfddb8.png",
