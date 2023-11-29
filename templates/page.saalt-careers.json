@@ -306,6 +306,9 @@
         "template--21570056913169__81684a1c-6be7-46d3-a49c-9d1fa86d1d41-heading-1",
         "template--21570056913169__81684a1c-6be7-46d3-a49c-9d1fa86d1d41-text-1"
       ],
+      "custom_css": [
+        ".media > *:not(.zoom):not(.deferred-media__poster-button),.media model-viewer {border-radius: 10px;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Office_6_7055e155-acdc-4ccf-99f1-2bff20ee5b50.png",
         "height": "adapt",
@@ -406,6 +409,9 @@
       "block_order": [
         "template--21570056913169__1ff76f1e-0e96-4c24-aa68-87350b83c0cd-heading-1",
         "template--21570056913169__1ff76f1e-0e96-4c24-aa68-87350b83c0cd-text-1"
+      ],
+      "custom_css": [
+        ".media>*:not(.zoom):not(.deferred-media__poster-button), .media model-viewer {border-radius: 10px;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Office_f164360f-9aaf-4d2b-a381-811654bfddb8.png",
