@@ -418,6 +418,30 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "fdb36f97-c9ef-4b6e-9cd1-76f520a6947e": {
+      "type": "saalt-media-with-text",
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Saalt-Careers-Adjectives-centere_7917b9fa-c69a-47bf-bc79-6609a380a5bf.gif",
+        "custom_code": "",
+        "use_max_media_width": true,
+        "max_media_width": "1900px",
+        "media_width": 100,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "900px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -428,6 +452,7 @@
     "81684a1c-6be7-46d3-a49c-9d1fa86d1d41",
     "34e427f0-317c-4b16-baae-3a81139d92b7",
     "c9ae8652-7047-4db6-a351-03043ad88377",
-    "f2735a30-7dee-4956-b5d3-9fa9ba13563a"
+    "f2735a30-7dee-4956-b5d3-9fa9ba13563a",
+    "fdb36f97-c9ef-4b6e-9cd1-76f520a6947e"
   ]
 }
