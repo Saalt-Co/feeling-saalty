@@ -18,10 +18,10 @@
             "heading": "<strong>Let's sync up.<\/strong>",
             "heading_size": "h0",
             "subheading": "Together we are dedicated to empowering and equipping people to live their best lives and change the world every single day.",
-            "button_text": "",
+            "button_text": "CURRENT OPPORTUNITIES",
             "button_url": "",
             "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
+            "theme_color_section_button_background": "theme-color-bg-5",
             "theme_color_text_section_button_text": "theme_default",
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default",
@@ -37,9 +37,9 @@
         "template--21570056913169__636e4f0f-cff7-490f-8b02-b8c7260cb10b-slide-2": {
           "type": "slide",
           "settings": {
-            "heading": "Image slide",
+            "heading": "Let's sync up.",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
+            "subheading": "Together we are dedicated to empowering and equipping people to live their best lives and change the world every single day.",
             "button_text": "Button text",
             "button_url": "",
             "button_type": "primary",
@@ -47,13 +47,13 @@
             "theme_color_text_section_button_text": "theme_default",
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default",
-            "box_align": "middle-center",
+            "box_align": "middle-right",
             "show_text_box": false,
-            "text_alignment": "center",
+            "text_alignment": "right",
             "image_overlay_opacity": 0,
             "theme_color_background": "theme_default",
             "theme_color_text": "theme_default",
-            "text_alignment_mobile": "center"
+            "text_alignment_mobile": "right"
           }
         },
         "ec20ccb4-0e8b-4891-93f2-edb4e68263c8": {
