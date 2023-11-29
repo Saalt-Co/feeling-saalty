@@ -120,9 +120,9 @@
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Saalt Money-Back Guarantee",
+            "heading": "Saalt Bliss Guarantee",
             "icon": "heart",
-            "content": "<p>We're here to get you to period bliss. If you're not happy with your Saalt product, we'll send you a replacement you'll love or your money back per our Saalt Bliss Guarantee. Reach out to our Saalt Coaches at <a href=\"mailto:sayhey@saalt.com\" target=\"_blank\">sayhey@saalt.com <\/a>for personalized help.<\/p>",
+            "content": "<p>If you're not happy with your Saalt product, we'll send you a replacement you'll love or your money back up to a full year from purchase. Why? We know that learning to use reusable options can take some time, but we promise to be with you every step of the way. From video tutorials to live tips and personalized help from our dedicated Saalt Coaches, we’re here to help and cheer you to Saalt bliss. Your Saalt(isfaction) guaranteed.<\/p>",
             "page": ""
           }
         },
@@ -316,6 +316,8 @@
         "background_style": "primary",
         "theme_color_column_secondary_bg": "theme_default",
         "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
         "button_text": "",
         "button_url": "",
         "button_type": "primary",
@@ -406,6 +408,8 @@
         "background_style": "none",
         "theme_color_column_secondary_bg": "theme_default",
         "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
         "button_text": "Button text",
         "button_url": "",
         "button_type": "primary",
