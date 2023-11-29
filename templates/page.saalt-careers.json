@@ -14,6 +14,7 @@
         "template--21570056913169__636e4f0f-cff7-490f-8b02-b8c7260cb10b-slide-1": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Careers-Home-Header2_copy.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -24,9 +25,9 @@
             "theme_color_text_section_button_text": "theme_default",
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default",
-            "box_align": "bottom-center",
+            "box_align": "middle-right",
             "show_text_box": false,
-            "text_alignment": "center",
+            "text_alignment": "left",
             "image_overlay_opacity": 0,
             "theme_color_background": "theme_default",
             "theme_color_text": "theme_default",
