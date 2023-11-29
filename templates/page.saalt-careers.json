@@ -302,8 +302,10 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "enable_video_looping": true,
+        "video": "shopify:\/\/files\/videos\/Saalt-Careers-Adjectives-centered.mp4",
+        "video_url": "",
+        "cover_image": "shopify:\/\/shop_images\/Saalt-Careers-Adjectives-centere_7917b9fa-c69a-47bf-bc79-6609a380a5bf.gif",
         "description": "",
         "full_width": true,
         "theme_color_background": "theme_default",
