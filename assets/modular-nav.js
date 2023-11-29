@@ -8,8 +8,7 @@ class ModularNavBar extends HTMLElement {
     window.addEventListener(
       'resize',
       throttle(() => {
-        // this.handleScroll();
-        console.log(window.width);
+        console.log(window.innerWidth);
       }, this.throttleDelay)
     );
   }
@@ -46,8 +45,6 @@ class ModularNavBar extends HTMLElement {
 
   handleNavLinkClick(e) {
     e.stopPropagation();
-    console.clear();
-    console.log(e.target);
     this.querySelector('.active').classList.remove('active');
     e.target.classList.add('active');
     if (e.target.getAttribute('data-target-element')) {
@@ -57,15 +54,11 @@ class ModularNavBar extends HTMLElement {
 
   scrollTo(element) {
     const headerInfo = this.getHeaderInfo();
-    console.clear();
-    console.log('——————————————————————————');
-    console.log(element);
-    console.log('——————————————————————————');
-    console.log(headerInfo);
-    console.log('——————————————————————————');
-    window.scroll({
+    const elementTop = element.getBoundingClientRect().top;
+
+    window.scrollTo({
       left: 0,
-      top: element.getBoundingClientRect().top + window.scrollY + headerInfo.totalHeaderHeight,
+      top: elementTop - headerInfo.totalHeaderHeight,
       behavior: 'smooth',
     });
   }
