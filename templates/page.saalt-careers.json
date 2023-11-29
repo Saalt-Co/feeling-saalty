@@ -21,9 +21,9 @@
             "button_text": "CURRENT OPPORTUNITIES",
             "button_url": "",
             "button_type": "primary",
-            "theme_color_section_button_background": "theme-color-bg-5",
+            "theme_color_section_button_background": "theme-color-bg-2",
             "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_section_button_background_hover": "theme-color-bg-2-hover",
             "theme_color_text_section_button_text_hover": "theme_default",
             "box_align": "middle-right",
             "show_text_box": false,
@@ -34,44 +34,46 @@
             "text_alignment_mobile": "center"
           }
         },
-        "template--21570056913169__636e4f0f-cff7-490f-8b02-b8c7260cb10b-slide-2": {
+        "2907521c-63cd-43d3-bd61-3e7bad23c9ec": {
           "type": "slide",
           "settings": {
-            "heading": "Let's sync up.",
-            "heading_size": "h1",
+            "image": "shopify:\/\/shop_images\/Saalt-Careers-Home-Header_copy.jpg",
+            "heading": "<strong>Let's sync up.<\/strong>",
+            "heading_size": "h0",
             "subheading": "Together we are dedicated to empowering and equipping people to live their best lives and change the world every single day.",
-            "button_text": "Button text",
+            "button_text": "CURRENT OPPORTUNITIES",
             "button_url": "",
             "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
+            "theme_color_section_button_background": "theme-color-bg-2",
             "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_section_button_background_hover": "theme-color-bg-2-hover",
             "theme_color_text_section_button_text_hover": "theme_default",
             "box_align": "middle-right",
             "show_text_box": false,
-            "text_alignment": "right",
+            "text_alignment": "left",
             "image_overlay_opacity": 0,
             "theme_color_background": "theme_default",
             "theme_color_text": "theme_default",
-            "text_alignment_mobile": "right"
+            "text_alignment_mobile": "center"
           }
         },
-        "ec20ccb4-0e8b-4891-93f2-edb4e68263c8": {
+        "d13afc70-c8b6-46dc-9d90-227d6552a3e6": {
           "type": "slide",
           "settings": {
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_text": "Button text",
+            "image": "shopify:\/\/shop_images\/Saalt-Careers-Home-Header-3_copy.jpg",
+            "heading": "<strong>Let's sync up.<\/strong>",
+            "heading_size": "h0",
+            "subheading": "Together we are dedicated to empowering and equipping people to live their best lives and change the world every single day.",
+            "button_text": "CURRENT OPPORTUNITIES",
             "button_url": "",
             "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
+            "theme_color_section_button_background": "theme-color-bg-2",
             "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_section_button_background_hover": "theme-color-bg-2-hover",
             "theme_color_text_section_button_text_hover": "theme_default",
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
+            "box_align": "middle-right",
+            "show_text_box": false,
+            "text_alignment": "left",
             "image_overlay_opacity": 0,
             "theme_color_background": "theme_default",
             "theme_color_text": "theme_default",
@@ -81,8 +83,8 @@
       },
       "block_order": [
         "template--21570056913169__636e4f0f-cff7-490f-8b02-b8c7260cb10b-slide-1",
-        "template--21570056913169__636e4f0f-cff7-490f-8b02-b8c7260cb10b-slide-2",
-        "ec20ccb4-0e8b-4891-93f2-edb4e68263c8"
+        "2907521c-63cd-43d3-bd61-3e7bad23c9ec",
+        "d13afc70-c8b6-46dc-9d90-227d6552a3e6"
       ],
       "settings": {
         "layout": "full_bleed",
