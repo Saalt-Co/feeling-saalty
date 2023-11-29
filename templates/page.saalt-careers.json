@@ -245,8 +245,8 @@
         "69a491b7-91ae-496b-9e21-d10d73a7daf8"
       ],
       "settings": {
-        "section_bg_color": "#ffffff",
-        "row_on_mobile": false,
+        "section_bg_color": "#f7d6c5",
+        "row_on_mobile": true,
         "feature_title_color": "#000000",
         "feature_title_font_size": 16,
         "feature_title_font_mob_size": 16,
@@ -262,6 +262,7 @@
     },
     "d6b12009-894f-4938-8275-85c5ce276677": {
       "type": "saalt-bg-media-with-text",
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
