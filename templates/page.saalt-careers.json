@@ -8,6 +8,68 @@
         "padding_bottom": 28
       }
     },
+    "8c128cdb-e682-4c62-a67f-6b2f59ec9487": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Let's sync up."
+          }
+        },
+        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Together we are dedicated to empowering and equipping people to live their best lives and change the world every single day.<\/p>"
+          }
+        },
+        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_buttons_group-1": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "flex-start",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_button-1": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "CURRENT OPPORTUNITIES",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_title-1",
+        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_content-1",
+        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_buttons_group-1",
+        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_button-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Careers-Home-Header_copy_0cff5d1a-cba1-4682-90e7-bcf2610c6588.jpg",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "overlay",
+        "mobile_text_alignment": "right",
+        "desktop_text_position": "flex-end",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "636e4f0f-cff7-490f-8b02-b8c7260cb10b": {
       "type": "slideshow",
       "blocks": {
@@ -86,6 +148,7 @@
         "2907521c-63cd-43d3-bd61-3e7bad23c9ec",
         "d13afc70-c8b6-46dc-9d90-227d6552a3e6"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
@@ -355,77 +418,16 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "8c128cdb-e682-4c62-a67f-6b2f59ec9487": {
-      "type": "saalt-bg-media-with-text",
-      "blocks": {
-        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "Section Title Goes Here"
-          }
-        },
-        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
-          }
-        },
-        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_buttons_group-1": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "center",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_button-1": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Button text",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_title-1",
-        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_content-1",
-        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_buttons_group-1",
-        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_button-1"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "overlay",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "center",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": true,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
     "main",
+    "8c128cdb-e682-4c62-a67f-6b2f59ec9487",
     "636e4f0f-cff7-490f-8b02-b8c7260cb10b",
     "f5a1de42-aa91-485d-b6d9-c55247702954",
     "81684a1c-6be7-46d3-a49c-9d1fa86d1d41",
     "34e427f0-317c-4b16-baae-3a81139d92b7",
     "c9ae8652-7047-4db6-a351-03043ad88377",
-    "f2735a30-7dee-4956-b5d3-9fa9ba13563a",
-    "8c128cdb-e682-4c62-a67f-6b2f59ec9487"
+    "f2735a30-7dee-4956-b5d3-9fa9ba13563a"
   ]
 }
