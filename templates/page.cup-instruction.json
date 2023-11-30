@@ -422,6 +422,78 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "b1c192fc-b9bb-4572-8dc5-cddb9acc920b": {
+      "type": "saalt-style-1-tiles-section",
+      "blocks": {
+        "a1640b89-5010-455a-961b-223b3ec24587": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Removing & Reinserting"
+          }
+        },
+        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-section_tiles_group-1": {
+          "type": "section_tiles_group",
+          "settings": {
+            "theme_color_mobile_text_color": "match_text",
+            "tile_mobile_text_alignment": "center",
+            "theme_color_desktop_text_color": "match_text",
+            "theme_color_desktop_text_hover_focus_color": "match_text",
+            "tile_desktop_text_alignment": "center",
+            "desktop_text_placement": "flex-end",
+            "tile_desktop_text_alignment_hover_focus": "center",
+            "desktop_text_hover_placement": "center"
+          }
+        },
+        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-saalt_style_1_tile-1": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "title": "REMOVE",
+            "text_content": "",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-saalt_style_1_tile-2": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "title": "REINSERT",
+            "text_content": "",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "a1640b89-5010-455a-961b-223b3ec24587",
+        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-section_tiles_group-1",
+        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-saalt_style_1_tile-1",
+        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-saalt_style_1_tile-2"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_alignment": "center",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -433,6 +505,7 @@
     "f873015c-a2ab-4eaf-9ecf-81e0504c73cc",
     "5ce2b26e-8e8f-433a-b0c7-572a905d34ca",
     "7d2ee6ed-7387-44d2-b27f-0bed60ced2d3",
-    "45fb2450-63be-479e-a92e-1e810a74551a"
+    "45fb2450-63be-479e-a92e-1e810a74551a",
+    "b1c192fc-b9bb-4572-8dc5-cddb9acc920b"
   ]
 }
