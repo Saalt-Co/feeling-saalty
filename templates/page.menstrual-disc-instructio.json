@@ -22,16 +22,48 @@
         "box_alignment": "left",
         "text_alignment": "left",
         "max_width": 3000,
-        "padding_top": 25,
-        "padding_bottom": 41,
+        "padding_top": 100,
+        "padding_bottom": 100,
         "padding_left": 10,
         "padding_right": 10,
-        "headline": "Menstrual Disc Instructions",
+        "headline": "",
         "content": "",
         "hero_image": "shopify:\/\/shop_images\/Disc-instructions-hero-01.jpg",
         "cta": "",
         "cta_link": "",
         "button_corner_radius": 5
+      }
+    },
+    "528e9349-6732-4cf9-938c-19cc585e6a6d": {
+      "type": "multicolumn",
+      "custom_css": [
+        ".multicolumn-list h3 {text-align: center;}"
+      ],
+      "settings": {
+        "title": "SAALT DISC INSTRUCTION",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "background_style": "none",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 36
       }
     },
     "c436e99b-cf99-4e73-a7b8-4f1fede66b5d": {
@@ -41,9 +73,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-01_333d21d5-f5bb-4bb0-8ca1-47b03c3e3742.jpg",
-            "title": "WASH",
+            "title": "",
             "rating": 0,
-            "text": "",
+            "text": "<p>Saalt Discs are not supplied in a sterile state. Sanitize your disc by boiling it in water for 4–5 min (no more than 7 min). Use tongs or a whisk to ensure the disc doesn’t rest on the bottom of the pot.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -52,9 +84,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-14_3b7b368f-58d1-42fb-b3d0-443f6baaf745.jpg",
-            "title": "SANITIZE",
+            "title": "",
             "rating": 0,
-            "text": "",
+            "text": "<p>Wash your hands and your Saalt Disc with water and a pH-balanced cleanser. Rinse thoroughly.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -63,9 +95,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg",
-            "title": "STORE",
+            "title": "",
             "rating": 0,
-            "text": "",
+            "text": "<p>Saalt Discs are not supplied in a sterile state. Sanitize your disc by boiling it in water for 4–5 min (no more than 7 min). Use tongs or a whisk to ensure the disc doesn’t rest on the bottom of the pot.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -77,11 +109,11 @@
         "a82180c6-ec90-4917-8b3b-cefb34aa5c0b"
       ],
       "custom_css": [
-        ".multicolumn .title {margin-left: 30%;}",
-        ".multicolumn-list h3,.multicolumn-list p {text-align: center;}"
+        ".multicolumn .title {margin-left: 32%;}",
+        ".multicolumn-list h3 {text-align: center;}"
       ],
       "settings": {
-        "title": "Cleaning & Storing",
+        "title": "LET'S GET STARTED",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -272,48 +304,6 @@
         "padding_bottom": 56
       }
     },
-    "821e56a6-02d1-4a89-9461-612609225d51": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--21565118808337__821e56a6-02d1-4a89-9461-612609225d51-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "PRECAUTIONS"
-          }
-        },
-        "template--21565118808337__821e56a6-02d1-4a89-9461-612609225d51-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p><\/p><p><strong>IMPORTANT<\/strong>: Menstrual discs have been associated with Toxic Shock Syndrome (TSS). TSS is a rare but serious disease that may cause death. Symptoms of Toxic Shock Syndrome (TSS) include fever, abdominal cramps, black vaginal discharge or pus, and muscle pain. Read and keep this information. If you experience these symptoms, contact your doctor right away. Learn more about TSS <a href=\"https:\/\/saalt.com\/blogs\/news\/how-to-prevent-tss\">here.<\/a><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--21565118808337__821e56a6-02d1-4a89-9461-612609225d51-section_title-1",
-        "template--21565118808337__821e56a6-02d1-4a89-9461-612609225d51-section_content-1"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme-color-bg-2",
-        "theme_color_text": "theme-color-text-0",
-        "media_type": "none",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "a8714d00-ddb5-425d-a5b7-3f3c509757d2": {
       "type": "saalt-style-1-tiles-section",
       "blocks": {
@@ -321,7 +311,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "2",
-            "title": "GUIDE"
+            "title": "REMOVE & REINSERTING"
           }
         },
         "template--21565118808337__a8714d00-ddb5-425d-a5b7-3f3c509757d2-section_tiles_group-1": {
@@ -388,70 +378,75 @@
         "padding_bottom": 0
       }
     },
-    "bb08c00e-21e0-4e2f-bc3d-10df48ec5c81": {
-      "type": "collapsible-content",
+    "06d37be4-d8e3-4103-b918-88fd1c508243": {
+      "type": "multicolumn",
       "blocks": {
-        "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-1": {
-          "type": "collapsible_row",
+        "f14c4992-51d2-4dc7-be1d-cb2e838b8e03": {
+          "type": "column",
           "settings": {
-            "heading": "HEALTHY USE",
-            "icon": "check_mark",
-            "row_content": "<p>Empty at least twice a day (every 12 hours*); we recommend before bed and after waking up.<\/p><p>Always wash your hands and the Saalt Disc thoroughly before and after handling.<\/p><p>Don’t share the Saalt Disc.<\/p><p>Replace the Saalt Disc if torn or damaged.<\/p><p>Sanitize your disc between every period.<\/p><p>Saalt Disc is not recommended for use during postpartum bleeding.<\/p><p>You can use the Saalt Disc with an IUD or contraceptive ring, but check with your doctor first.<\/p><p>If you drop your disc in the toilet, no need to replace it. Before using your disc again, sanitize it by boiling it in water for 4–5 min (no more than 7 min) or wiping it thoroughly with a soft cloth and 70% isopropyl alcohol, allowing the alcohol to evaporate.<\/p><p><em>* 8 hours for our Australian friends<\/em><\/p>",
-            "page": ""
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-01_333d21d5-f5bb-4bb0-8ca1-47b03c3e3742.jpg",
+            "title": "WASH",
+            "rating": 0,
+            "text": "<p>Rinse your Saalt Disc in cold water after use to prevent staining.<\/p><p>Wash thoroughly after each use with warm water and Saalt Wash, or a mild pH-balanced cleanser. Avoid strong cleansers or anything that may irritate your skin.<\/p><p>Use a soft rag to wipe away any buildup.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-2": {
-          "type": "collapsible_row",
+        "2658dcaa-6470-4f80-bcb7-c1ab11746ed7": {
+          "type": "column",
           "settings": {
-            "heading": "REMOVAL BLISS",
-            "icon": "check_mark",
-            "row_content": "<p>Your first time using the disc, consider removing your disc in the shower or while sitting on a toilet.<\/p><p>Insert your finger behind your pubic bone to feel for the rim of the disc. Hook your finger behind the removal notch, gently pulling down on the grip lines to untuck the Saalt Disc.<\/p><p>Gently pull the disc out at a horizontal angle. Keep it upright to avoid spilling.<\/p><p>If you can’t reach your disc when inserted, don’t sweat it! The disc won’t get lost inside the vagina. Your disc can move higher if you have a high cervix.<\/p><p>Walk around, wait 30 minutes, and try again, or switch to a different position. If you are sitting on the toilet, try squatting low in the shower or vice versa.<\/p><p>You can use your pelvic muscles to move your disc lower; this will feel similar to having an easy bowel movement. Do not strain and keep breathing deeply while doing this.<\/p><p>Once in reach, hook your finger in the removal notch and gently remove your disc. Though the removal notch is helpful for easier removal, you can hook your finger on any part of the rim to remove your disc. Refrain from only gripping and pulling the thin basin of the disc to remove, as this can damage the silicone.<\/p><p>If you are struggling to remove your disc, please email us with the subject line #RemovalMagic at sayhey@<a href=\"https:\/\/saalt.com\/\">saalt.com<\/a>.<\/p>",
-            "page": ""
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-14_3b7b368f-58d1-42fb-b3d0-443f6baaf745.jpg",
+            "title": "SANITIZE",
+            "rating": 0,
+            "text": "<p>You should sanitize your Saalt Disc between cycles by boiling your cup in water for 4–5 min (not more than 7 min). Use tongs or a wire whisk to ensure the disc doesn’t touch the bottom of the pot.<\/p><p>You may also rinse your Saalt Disc thoroughly with water, allow it to dry, and then wipe it with a soft rag and 70% isopropyl alcohol. Make sure all surfaces are sufficiently wet by the alcohol and allow it to air dry.<\/p><p>Meanwhile, toss your storage bag in the laundry to thoroughly clean.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-3": {
-          "type": "collapsible_row",
+        "c250f893-a581-47a3-b4c2-0ee08971c6e9": {
+          "type": "column",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-4": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg",
+            "title": "STORE",
+            "rating": 0,
+            "text": "<p>Dry your Saalt Disc thoroughly and store it in the bag provided (or another breathable container). Never use a plastic bag or airtight container for storage.<\/p><p>Some discoloration may occur over time. This is normal, and may vary from one person to another.<\/p><p>If your Saalt Disc is ripped or torn, or the silicone shows signs of deterioration (which can happen after using non-recommended cleaners) it’s time to replace the disc.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-1",
-        "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-2",
-        "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-3",
-        "template--21565118808337__bb08c00e-21e0-4e2f-bc3d-10df48ec5c81-collapsible_row-4"
+        "f14c4992-51d2-4dc7-be1d-cb2e838b8e03",
+        "2658dcaa-6470-4f80-bcb7-c1ab11746ed7",
+        "c250f893-a581-47a3-b4c2-0ee08971c6e9"
       ],
-      "disabled": true,
       "custom_css": [
-        ".accordion .icon-accordion {fill: #5a5f6f;}"
+        ".multicolumn .title {margin-left: 32%;}"
       ],
       "settings": {
-        "caption": "",
-        "heading": "MORE FEATURES",
+        "title": "CLEANING & STORING",
         "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "section",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
-        "theme_color_container_background": "theme_default",
-        "theme_color_container_text": "theme_default",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
+        "background_style": "none",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
         "padding_bottom": 36
       }
     },
@@ -592,6 +587,15 @@
             "page": ""
           }
         },
+        "c081b1a6-d4d0-4a8a-bd5e-f42962cc7484": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "PRECAUTIONS",
+            "icon": "check_mark",
+            "row_content": "<p><\/p><p><strong>IMPORTANT<\/strong>: Menstrual discs have been associated with Toxic Shock Syndrome (TSS). TSS is a rare but serious disease that may cause death. Symptoms of Toxic Shock Syndrome (TSS) include fever, abdominal cramps, black vaginal discharge or pus, and muscle pain. Read and keep this information. If you experience these symptoms, contact your doctor right away. Learn more about TSS <a href=\"https:\/\/saalt.com\/blogs\/news\/how-to-prevent-tss\">here.<\/a><\/p>",
+            "page": ""
+          }
+        },
         "62a7ea47-3809-4f18-a9ae-7fc7741e936c": {
           "type": "collapsible_row",
           "settings": {
@@ -607,6 +611,7 @@
         "template--21565118808337__d557b0ed-c42d-4e3e-b7c3-49f914c262d9-collapsible_row-2",
         "template--21565118808337__d557b0ed-c42d-4e3e-b7c3-49f914c262d9-collapsible_row-3",
         "template--21565118808337__d557b0ed-c42d-4e3e-b7c3-49f914c262d9-collapsible_row-4",
+        "c081b1a6-d4d0-4a8a-bd5e-f42962cc7484",
         "62a7ea47-3809-4f18-a9ae-7fc7741e936c"
       ],
       "custom_css": [
@@ -633,14 +638,14 @@
   "order": [
     "main",
     "68097338-14d8-4ae5-834d-09eb7848e33e",
+    "528e9349-6732-4cf9-938c-19cc585e6a6d",
     "c436e99b-cf99-4e73-a7b8-4f1fede66b5d",
     "15fd34a1-f710-4107-b1d5-f4421d38487f",
     "1b1a8a2d-3c30-4b6e-9b18-bc773eed6266",
     "770db88e-ca54-4c3a-87bc-52d98d996f29",
     "45857d07-d3ba-4a98-a5d3-e76bb7881c89",
-    "821e56a6-02d1-4a89-9461-612609225d51",
     "a8714d00-ddb5-425d-a5b7-3f3c509757d2",
-    "bb08c00e-21e0-4e2f-bc3d-10df48ec5c81",
+    "06d37be4-d8e3-4103-b918-88fd1c508243",
     "4e2b1556-632c-41d6-a8de-86bf8d8a867b",
     "d17c203a-dd71-4434-af81-4762628b1ee5",
     "d557b0ed-c42d-4e3e-b7c3-49f914c262d9"
