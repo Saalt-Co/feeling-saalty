@@ -14,7 +14,7 @@
 <!-- snippets > yotpo-reviews.liquid -->
 {% if yotpo_widget == 'yotpo-js' %}
   <script
-    src="https://cdn-widgetsrepository.yotpo.com/v1/loader/2BPjkSRu2swwJBLujLtxxrBFxxqEta1k91QDxm4V"
+    src="https://cdn-widgetsrepository.yotpo.com/v1/loader/{{ settings.yotpo_script_id }}"
     async
   ></script>
 {% elsif yotpo_widget == 'reviews' %}

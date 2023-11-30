@@ -59,6 +59,17 @@
       },
       {
         "type": "text",
+        "id": "yotpo_script_id",
+        "label": "t:settings_schema.store_settings.settings.yotpo_script_id.label",
+        "info": "t:settings_schema.store_settings.settings.yotpo_script_id.info",
+        "default": "2BPjkSRu2swwJBLujLtxxrBFxxqEta1k91QDxm4V"
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.store_settings.settings.digioh_header.content"
+      },
+      {
+        "type": "text",
         "id": "digioh_script_id",
         "label": "t:settings_schema.store_settings.settings.digioh_script_id.label",
         "info": "t:settings_schema.store_settings.settings.digioh_script_id.info",
