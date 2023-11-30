@@ -55,7 +55,7 @@
       },
       {
         "type": "header",
-        "content": "t:settings_schema.store_settings.settings.digioh_header.content"
+        "content": "t:settings_schema.store_settings.settings.yotpo_header.content"
       },
       {
         "type": "text",
