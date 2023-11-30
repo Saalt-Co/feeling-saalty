@@ -322,7 +322,7 @@
       ],
       "custom_css": [
         ".multicolumn .title {margin-left: 43%; font-size: 40px; margin-bottom: 50px;}",
-        ".multicolumn-list h3, .multicolumn-list p {text-align: center;}"
+        ".multicolumn-list h3,.multicolumn-list p {text-align: center;}"
       ],
       "settings": {
         "title": "7-FOLD",
@@ -432,7 +432,7 @@
         "a1640b89-5010-455a-961b-223b3ec24587": {
           "type": "section_title",
           "settings": {
-            "heading_tag": "2",
+            "heading_tag": "3",
             "title": "REMOVING & REINSERTING"
           }
         },
