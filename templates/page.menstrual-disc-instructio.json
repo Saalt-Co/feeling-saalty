@@ -420,7 +420,8 @@
         "c250f893-a581-47a3-b4c2-0ee08971c6e9"
       ],
       "custom_css": [
-        ".multicolumn .title {margin-left: 30%;}"
+        ".multicolumn .title {margin-left: 30%;}",
+        ".multicolumn-list h3 {text-align: center;}"
       ],
       "settings": {
         "title": "CLEANING & STORING",
