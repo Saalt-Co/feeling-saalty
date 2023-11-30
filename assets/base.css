@@ -3651,6 +3651,10 @@ details-disclosure > details {
   margin: -0.5rem 0 -0.5rem 0;
 }
 
+p a {
+  color: rgba(var(--color-link-text), var(--color-link-opacity));
+}
+
 /* Image mask global styles */
 
 .shape--mask {

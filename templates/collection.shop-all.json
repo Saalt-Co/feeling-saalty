@@ -15,7 +15,7 @@
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-0": {
           "type": "window-feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SW-SM-Light-Day-Workout-3-Pack-Bundle-PDP-3_01.jpg",
+            "image": "shopify:\/\/shop_images\/SW-SM-HW-MS-Ampersand-278_1.jpg",
             "title": "<p>Leakproof Underwear<\/p>",
             "copy": "<p>Saalt Wear absorbs periods, bladder leaks, and more. Live life leak-free with the thinnest and driest leakproof and period underwear.<\/p>",
             "link_type": "url",
@@ -28,7 +28,7 @@
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-1": {
           "type": "window-feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Deep_Marine.jpg",
+            "image": "shopify:\/\/shop_images\/SC-HP-SOManifest-1597.jpg",
             "title": "<p>Cups & Discs<\/p>",
             "copy": "<p>Upgrade your period with Saalt reusable menstrual cups and discs. Easy to use and comfortable. Live free of the tampon aisle—forever. Wear up to 12 hours to swim, run, bike, hike, or fly to Bora Bora.<\/p>",
             "link_type": "url",
@@ -41,7 +41,7 @@
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-2": {
           "type": "window-feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SW-CT-BR-VB-Nichole-11028.jpg",
+            "image": "shopify:\/\/shop_images\/Bundle-Preset-1080x1080-Web-0995.jpg",
             "title": "<p>Bundles<\/p>",
             "copy": "<p>Skip the guesswork with bundles custom-designed by our Saalt Coaches for all your leak needs. Save up to 20% when you bundle.<\/p>",
             "link_type": "url",
@@ -67,6 +67,7 @@
         "728939cb-8dd3-4a68-adec-a40e3de544b3": {
           "type": "window-feature",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Shop_by_Category_-_Accessories_1.jpg",
             "title": "<p>Extras<\/p>",
             "copy": "<p>All the extras that make it easy to care for your underwear, cups, and discs. <\/p>",
             "link_type": "filter",
@@ -92,7 +93,7 @@
         "mobile_aspect_ratio": "1\/1.5",
         "desktop_min_width": "auto",
         "desktop_max_width": "25%",
-        "desktop_aspect_ratio": "1\/1.5"
+        "desktop_aspect_ratio": "3\/4"
       }
     },
     "product-grid": {
@@ -103,6 +104,9 @@
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
+        "show_price_range": true,
+        "show_strikethrough_price": true,
+        "use_lowest_priced_variant": false,
         "show_vendor": false,
         "show_rating": false,
         "show_swatches": true,
@@ -384,7 +388,7 @@
         "8ad13ac4-10e5-4131-bf07-17d6ff34bba2"
       ],
       "settings": {
-        "title": "9\/10 People Never Go Back",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
@@ -395,7 +399,7 @@
         "background_style": "none",
         "theme_color_column_secondary_bg": "theme_default",
         "column_secondary_bg_opacity": 100,
-        "review_star_color_override": "theme_default",
+        "review_star_color_override": "--palette-color-4",
         "review_star_opacity_override": 100,
         "button_text": "",
         "button_url": "",
