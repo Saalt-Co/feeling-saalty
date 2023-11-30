@@ -231,6 +231,64 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "5ce2b26e-8e8f-433a-b0c7-572a905d34ca": {
+      "type": "multicolumn",
+      "blocks": {
+        "631911a4-020d-493c-bb41-663d76d87f8e": {
+          "type": "column",
+          "settings": {
+            "title": "Press down on rim to collapse cup",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "8175a6fc-897b-462d-8b25-2ff8c25f9419": {
+          "type": "column",
+          "settings": {
+            "title": "Pinch to hold in place",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "631911a4-020d-493c-bb41-663d76d87f8e",
+        "8175a6fc-897b-462d-8b25-2ff8c25f9419"
+      ],
+      "custom_css": [
+        ".multicolumn .title {margin-left: 35%; font-size: 40px; margin-bottom: 50px;}"
+      ],
+      "settings": {
+        "title": "Punch-down fold",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "background_style": "none",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -239,6 +297,7 @@
     "efad1e86-a666-4d86-92f0-4041337d74f9",
     "a74a1e17-040a-4a83-a782-5856e874b3dd",
     "82724714-bd68-4a82-af3b-f07c52a175da",
-    "f873015c-a2ab-4eaf-9ecf-81e0504c73cc"
+    "f873015c-a2ab-4eaf-9ecf-81e0504c73cc",
+    "5ce2b26e-8e8f-433a-b0c7-572a905d34ca"
   ]
 }
