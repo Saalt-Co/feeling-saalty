@@ -3,18 +3,22 @@ class ModularNavBar extends HTMLElement {
     super();
 
     this.navClick = this.handleNavLinkClick.bind(this);
-    this.throttleDelay = 50;
+    this.winResize = this.handleResize.bind(this);
+    this.throttleDelay = 100;
 
     window.addEventListener(
       'resize',
       throttle(() => {
-        console.log(window.innerWidth);
+        this.winResize();
       }, this.throttleDelay)
     );
   }
 
   connectedCallback() {
     this.addEventListeners();
+    (() => {
+      this.winResize();
+    })();
   }
 
   disconnectedCallback() {
@@ -43,6 +47,12 @@ class ModularNavBar extends HTMLElement {
     }
   }
 
+  handleResize() {
+    const winWidth = window.innerWidth;
+    const ulWidth = this.querySelector('ul').getBoundingClientRect().width;
+    winWidth < ulWidth ? this.classList.remove('centered') : this.classList.add('centered');
+  }
+
   handleNavLinkClick(e) {
     e.stopPropagation();
     this.querySelector('.active').classList.remove('active');
@@ -50,6 +60,12 @@ class ModularNavBar extends HTMLElement {
     if (e.target.getAttribute('data-target-element')) {
       this.scrollTo(document.querySelector(e.target.getAttribute('data-target-element')));
     }
+  }
+
+  getHeaderElHeight() {
+    let headerEl = document.querySelector('header.header');
+    let headerElHeight = headerEl.getBoundingClientRect().height || 0;
+    return headerElHeight;
   }
 
   scrollTo(element) {
@@ -79,12 +95,6 @@ class ModularNavBar extends HTMLElement {
       top: scrollDistance,
       behavior: 'smooth',
     });
-  }
-
-  getHeaderElHeight() {
-    let headerEl = document.querySelector('header.header');
-    let headerElHeight = headerEl.getBoundingClientRect().height || 0;
-    return headerElHeight;
   }
 }
 

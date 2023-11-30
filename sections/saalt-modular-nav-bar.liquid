@@ -14,7 +14,7 @@
     <ul>
       {%- for block in section.blocks -%}
         {% if block.settings.nav_bar_link_text != blank %}
-          <li>
+          <li class="scroll-trigger animate--fade-in">
             {%- if block.settings.click_behavior == 'link' -%}
               <a
                 href="{{ block.settings.nav_bar_link_dest }}"
@@ -45,18 +45,24 @@
 
 {%- style -%}
   #section-{{ section.id }} modular-nav-bar {
-    display: block;
+    display: flex;
+    position: relative;
+    height: 7.5rem;
+    overflow: auto;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #section-{{ section.id }} modular-nav-bar.centered {
+    justify-content: center;
   }
   #section-{{ section.id }} modular-nav-bar > ul {
-    list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 2rem;
-    overflow-x: scroll;
+    position: absolute;
     width: auto;
     column-gap: {{ section.settings.mobile_nav_link_gap }};
+    margin: 0;
+    padding: 2rem;
+    list-style: none;
   }
   #section-{{ section.id }} modular-nav-bar > ul > li, #section-{{ section.id }} modular-nav-bar > ul > li > button {
     cursor: pointer;
