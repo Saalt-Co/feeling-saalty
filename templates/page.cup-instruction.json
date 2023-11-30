@@ -43,6 +43,9 @@
       "block_order": [
         "template--21580602507537__efad1e86-a666-4d86-92f0-4041337d74f9-section_title-1"
       ],
+      "custom_css": [
+        "#section-template--21580602507537__efad1e86-a666-4d86-92f0-4041337d74f9 .section-inner .text-wrapper > *:last-child {text-align: center;}"
+      ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -103,6 +106,9 @@
         "template--21580602507537__a74a1e17-040a-4a83-a782-5856e874b3dd-column-2",
         "template--21580602507537__a74a1e17-040a-4a83-a782-5856e874b3dd-column-3"
       ],
+      "custom_css": [
+        ".multicolumn .title {margin-left: 30%; font-size: 40px; margin-bottom: 50px;}"
+      ],
       "settings": {
         "title": "BEFORE FIRST USE",
         "heading_size": "h2",
@@ -143,6 +149,9 @@
       },
       "block_order": [
         "c16357ff-29a3-4a78-bb57-3a0471a9b73a"
+      ],
+      "custom_css": [
+        "#section-template--21580602507537__82724714-bd68-4a82-af3b-f07c52a175da .section-inner .text-wrapper > *:last-child {text-align: center; font-size: 35px;}"
       ],
       "settings": {
         "section_id": "",
