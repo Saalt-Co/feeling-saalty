@@ -2,7 +2,6 @@
 
 {% liquid
   assign nav_id = section.settings.section_id | handleize
-  assign header_info = section.settings.header_selector
 %}
 
 <div id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="">
@@ -12,9 +11,6 @@
     {% endif -%}
     class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% else %} default{% endif %}"
   >
-    <script type="application/json" id="headerSelector_{{ section.id }}">
-      {{- header_info | json -}}
-    </script>
     <ul>
       {%- for block in section.blocks -%}
         {% if block.settings.nav_bar_link_text != blank %}
@@ -114,14 +110,7 @@
       "type": "text",
       "id": "section_id",
       "label": "Section ID (Optional)",
-      "info": "Typically only used when setting this ID as a link's destination."
-    },
-    {
-      "type": "text",
-      "id": "header_selector",
-      "label": "Header element selector",
-      "info": "This is needs to be a unique element ID or class used to identify and target the header element in order to account for its height when scrolling to an element on click. ID selector's start with a \"#\" while class selectors start with a \".\". ie: #elementIDHere or .some-class-here",
-      "default": "header.header"
+      "info": "Typically only used when setting this ID as a link's destination. NOTE: This should NOT start with a \"#\""
     },
     {
       "type": "header",
@@ -254,27 +243,27 @@
           "info": "The type of behavior the link should have on click",
           "options": [
             {
-              "value": "link",
-              "label": "Link"
-            },
-            {
               "value": "scroll_to",
               "label": "Scroll to element"
+            },
+            {
+              "value": "link",
+              "label": "Link"
             }
           ],
-          "default": "link"
-        },
-        {
-          "type": "url",
-          "id": "nav_bar_link_dest",
-          "label": "Link destination",
-          "info": "This can be selected from the popup menu *or* a typed in url"
+          "default": "scroll_to"
         },
         {
           "type": "text",
           "id": "nav_bar_element_selector",
           "label": "Element selector",
           "info": "This is used to scroll to another element on the page. Enter any valid javascript selector such as an element ID (starting with a \"#\") or a class (starting with a \".\"), though others are possible as well. NOTE: Whatever selector you use MUST be unique on the page."
+        },
+        {
+          "type": "url",
+          "id": "nav_bar_link_dest",
+          "label": "Link destination",
+          "info": "This can be selected from the popup menu *or* a typed in url"
         }
       ]
     }

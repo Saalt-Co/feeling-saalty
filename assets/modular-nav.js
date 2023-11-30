@@ -54,20 +54,20 @@ class ModularNavBar extends HTMLElement {
 
   scrollTo(element) {
     const elementTop = element.getBoundingClientRect().top;
-    const headerInfo = this.getHeaderInfo();
+    const headerElHeight = this.getHeaderElHeight();
     let scrollDistance = 0;
 
     if (
       document.querySelector('sticky-header') &&
       document.querySelector('sticky-header').dataset.stickyType !== 'on-scroll-up'
     ) {
-      scrollDistance = element.getBoundingClientRect().top + window.scrollY - headerInfo.mainNavHeight;
+      scrollDistance = element.getBoundingClientRect().top + window.scrollY - headerElHeight;
     } else if (
       document.querySelector('sticky-header') &&
       document.querySelector('sticky-header').dataset.stickyType === 'on-scroll-up'
     ) {
       if (element.getBoundingClientRect().top < this.getBoundingClientRect().top) {
-        scrollDistance = element.getBoundingClientRect().top + window.scrollY - headerInfo.mainNavHeight;
+        scrollDistance = element.getBoundingClientRect().top + window.scrollY - headerElHeight;
       } else {
         scrollDistance = element.getBoundingClientRect().top + window.scrollY;
       }
@@ -81,20 +81,10 @@ class ModularNavBar extends HTMLElement {
     });
   }
 
-  getHeaderInfo() {
-    let headerInfo = {};
-
-    let selector = JSON.parse(this.querySelector('[id*="headerSelector_"]').innerHTML);
-
-    headerInfo.mainNav = document.querySelector(selector);
-
-    if (headerInfo.mainNav) {
-      headerInfo.mainNavHeight = headerInfo.mainNav.getBoundingClientRect().height;
-    } else {
-      headerInfo.mainNavHeight = 0;
-    }
-
-    return headerInfo;
+  getHeaderElHeight() {
+    let headerEl = document.querySelector('header.header');
+    let headerElHeight = headerEl.getBoundingClientRect().height || 0;
+    return headerElHeight;
   }
 }
 
