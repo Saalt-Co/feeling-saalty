@@ -488,66 +488,6 @@
         "padding_bottom": 36
       }
     },
-    "d17c203a-dd71-4434-af81-4762628b1ee5": {
-      "type": "sl-faq-1",
-      "blocks": {
-        "template--21565118808337__d17c203a-dd71-4434-af81-4762628b1ee5-faq-1": {
-          "type": "faq",
-          "settings": {
-            "faq-heading": "HEALTHY USE",
-            "faq-content": "<ul><li>Empty at least twice a day (every 12 hours*); we recommend before bed and after waking up.<\/li><li>Always wash your hands and the Saalt Disc thoroughly before and after handling.<\/li><li>Don’t share the Saalt Disc.<\/li><li>Replace the Saalt Disc if torn or damaged.<\/li><li>Sanitize your disc between every period.<\/li><li>Saalt Disc is not recommended for use during postpartum bleeding.<\/li><li>You can use the Saalt Disc with an IUD or contraceptive ring, but check with your doctor first.<\/li><li>If you drop your disc in the toilet, no need to replace it. Before using your disc again, sanitize it by boiling it in water for 4–5 min (no more than 7 min) or wiping it thoroughly with a soft cloth and 70% isopropyl alcohol, allowing the alcohol to evaporate.<\/li><li><em>* 8 hours for our Australian friends<\/em><\/li><\/ul>"
-          }
-        },
-        "template--21565118808337__d17c203a-dd71-4434-af81-4762628b1ee5-faq-2": {
-          "type": "faq",
-          "settings": {
-            "faq-heading": "REMOVAL BLISS",
-            "faq-content": "<ul><li>Your first time using the disc, consider removing your disc in the shower or while sitting on a toilet.<\/li><li>Insert your finger behind your pubic bone to feel for the rim of the disc. Hook your finger behind the removal notch, gently pulling down on the grip lines to untuck the Saalt Disc.<\/li><li>Gently pull the disc out at a horizontal angle. Keep it upright to avoid spilling.<\/li><li>If you can’t reach your disc when inserted, don’t sweat it! The disc won’t get lost inside the vagina. Your disc can move higher if you have a high cervix.<\/li><li>Walk around, wait 30 minutes, and try again, or switch to a different position. If you are sitting on the toilet, try squatting low in the shower or vice versa.<\/li><li>You can use your pelvic muscles to move your disc lower; this will feel similar to having an easy bowel movement. Do not strain and keep breathing deeply while doing this.<\/li><li>Once in reach, hook your finger in the removal notch and gently remove your disc. Though the removal notch is helpful for easier removal, you can hook your finger on any part of the rim to remove your disc. Refrain from only gripping and pulling the thin basin of the disc to remove, as this can damage the silicone.<\/li><li>If you are struggling to remove your disc, please email us with the subject line #RemovalMagic at sayhey@<a href=\"https:\/\/saalt.com\/\">saalt.com<\/a>.<\/li><\/ul>"
-          }
-        },
-        "5f76d1cd-4053-4d5b-bd96-77f3aef3c2da": {
-          "type": "faq",
-          "settings": {
-            "faq-heading": "PREVENT SPOTTING",
-            "faq-content": "<ul><li>Wipe or rinse your labia after insertion to prevent spotting. Spotting can also be caused by blood left in the vagina after inserting.<\/li><li>After inserting your Saalt Disc, wipe your finger underneath the basin to remove any excess blood, then wash your hands.<\/li><li>You can supplement your Saalt Disc with a pad, liner, or Saalt Wear period underwear while you are learning to use it or on your heaviest days.<\/li><\/ul>"
-          }
-        },
-        "3dccdc4b-5d11-48f1-a57f-bda0d04e8c27": {
-          "type": "faq",
-          "settings": {
-            "faq-heading": "CRITICAL CARE",
-            "faq-content": "<ul><li>Keep your Saalt Disc away from children and pets.<\/li><li>Never use your Saalt Disc for more than 12 hours* at a time without washing properly.<\/li><li>Never wash your Saalt Disc with anything that may irritate your vagina.<\/li><li>Avoid harsh cleansers like vinegar or bleach and strongly scented or fragranced cleansers that may disrupt your natural pH or cause the silicone to deteriorate.<\/li><li>Avoid soaking your Saalt Disc in anything other than water. Silicone is a porous material and can absorb oils or cleansers if exposed for longer periods of time. These substances may irritate your vagina or cause the silicone to deteriorate.<\/li><li><em>*8 hours for our Australian friends<\/em><\/li><\/ul>"
-          }
-        },
-        "aa89aa0a-f8aa-46f9-bb0b-4119b53e5249": {
-          "type": "faq",
-          "settings": {
-            "faq-heading": "INTIMACY WITH YOUR SAALT DISC",
-            "faq-content": "<ul><li>Saalt Disc will not prevent pregnancy or protect against sexually transmitted infections (STIs).<\/li><li>It is safe to use with most contraceptives, but check with your doctor first.<\/li><li>Wash your Saalt Disc after intercourse.<\/li><li>If your disc moves higher during arousal, allow it to return to a lower position before removing it.<\/li><li>If you experience discomfort during intercourse, we recommend adjusting your Saalt Disc or trying a different position that is more comfortable for you and your partner.<\/li><li><em>**Saalt Disc will not prevent pregnancy or protect against sexually transmitted infections (STIs).<\/em><\/li><\/ul>"
-          }
-        }
-      },
-      "block_order": [
-        "template--21565118808337__d17c203a-dd71-4434-af81-4762628b1ee5-faq-1",
-        "template--21565118808337__d17c203a-dd71-4434-af81-4762628b1ee5-faq-2",
-        "5f76d1cd-4053-4d5b-bd96-77f3aef3c2da",
-        "3dccdc4b-5d11-48f1-a57f-bda0d04e8c27",
-        "aa89aa0a-f8aa-46f9-bb0b-4119b53e5249"
-      ],
-      "disabled": true,
-      "settings": {
-        "section-background": "rgba(0,0,0,0)",
-        "main-heading": "RESOURCES",
-        "main-heading-size": 28,
-        "main-heading-color": "",
-        "question-size": 20,
-        "question-color": "",
-        "question-color-bg": "",
-        "answer-size": 16,
-        "answer-color": "",
-        "answer-color-bg": ""
-      }
-    },
     "d557b0ed-c42d-4e3e-b7c3-49f914c262d9": {
       "type": "collapsible-content",
       "blocks": {
@@ -647,7 +587,6 @@
     "a8714d00-ddb5-425d-a5b7-3f3c509757d2",
     "06d37be4-d8e3-4103-b918-88fd1c508243",
     "4e2b1556-632c-41d6-a8de-86bf8d8a867b",
-    "d17c203a-dd71-4434-af81-4762628b1ee5",
     "d557b0ed-c42d-4e3e-b7c3-49f914c262d9"
   ]
 }
