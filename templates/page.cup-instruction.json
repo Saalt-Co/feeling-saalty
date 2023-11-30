@@ -173,6 +173,64 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "f873015c-a2ab-4eaf-9ecf-81e0504c73cc": {
+      "type": "multicolumn",
+      "blocks": {
+        "165ef43c-2fa9-479e-864f-1a6d93a75d4e": {
+          "type": "column",
+          "settings": {
+            "title": "Flatten",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "4d3092b2-a11a-4900-9d4f-0b4dd2c7012f": {
+          "type": "column",
+          "settings": {
+            "title": "Bring ends together",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165ef43c-2fa9-479e-864f-1a6d93a75d4e",
+        "4d3092b2-a11a-4900-9d4f-0b4dd2c7012f"
+      ],
+      "custom_css": [
+        ".multicolumn .title {margin-left: 43%; font-size: 40px; margin-bottom: 50px;}"
+      ],
+      "settings": {
+        "title": "C-FOLD",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "background_style": "none",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -180,6 +238,7 @@
     "df91142e-8ca7-4858-a3d3-ae2cb44cf780",
     "efad1e86-a666-4d86-92f0-4041337d74f9",
     "a74a1e17-040a-4a83-a782-5856e874b3dd",
-    "82724714-bd68-4a82-af3b-f07c52a175da"
+    "82724714-bd68-4a82-af3b-f07c52a175da",
+    "f873015c-a2ab-4eaf-9ecf-81e0504c73cc"
   ]
 }
