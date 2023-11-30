@@ -289,6 +289,139 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "7d2ee6ed-7387-44d2-b27f-0bed60ced2d3": {
+      "type": "multicolumn",
+      "blocks": {
+        "e3bba082-f711-485e-acbe-695527700d66": {
+          "type": "column",
+          "settings": {
+            "title": "Squeeze and flatten cup",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "0d90aacc-a0e8-4fe7-a60b-28bcd6b2606c": {
+          "type": "column",
+          "settings": {
+            "title": "Fold top right corner down, so rim forms the number 7.",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "e3bba082-f711-485e-acbe-695527700d66",
+        "0d90aacc-a0e8-4fe7-a60b-28bcd6b2606c"
+      ],
+      "custom_css": [
+        ".multicolumn .title {margin-left: 43%; font-size: 40px; margin-bottom: 50px;}"
+      ],
+      "settings": {
+        "title": "7-FOLD",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "background_style": "none",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "45fb2450-63be-479e-a92e-1e810a74551a": {
+      "type": "multirow",
+      "blocks": {
+        "template--21580602507537__45fb2450-63be-479e-a92e-1e810a74551a-row-1": {
+          "type": "row",
+          "settings": {
+            "caption": "STEP 1",
+            "heading": "Insert",
+            "text": "<p>With your cup folded, you are ready to insert<\/p><p>Inserting your Saalt Cup is easier when using water as a natural lubricant.<\/p><p>You can insert your Saalt Cup while sitting, squatting, or standing with one leg raised.<\/p><p>Hold your folded Saalt Cup firmly below the upper rim. Get comfortable.<\/p><p>With one hand, gently separate your labia and with the other, insert your cup slowly, rim-first into your vagina.<\/p><p>Slide it up and back at an angle (towards your tailbone, not straight upward), until the body of cup is completely inside.<\/p>",
+            "theme_color_row_background": "theme_default",
+            "theme_color_row_text": "theme_default",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21580602507537__45fb2450-63be-479e-a92e-1e810a74551a-row-2": {
+          "type": "row",
+          "settings": {
+            "caption": "STEP 2",
+            "heading": "POSITION",
+            "text": "<p>Position your cup lower than a tampon, but feel free to move it up a little if that's more comfortable.<\/p><p>As you release the cup, it will pop open. It’s okay for your Saalt Cup to pop open once inside the vaginal opening but before it’s completely inserted.<\/p><p>To make sure it has fully opened, creating a seal against the vaginal wall, rotate your cup by pinching the base (not just the stem) and turning it. When the cup is fully open, it will prevent leaking.<\/p><p>Your cup is in the right place when the rim is below or around your cervix.<\/p>",
+            "theme_color_row_background": "theme_default",
+            "theme_color_row_text": "theme_default",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21580602507537__45fb2450-63be-479e-a92e-1e810a74551a-row-3": {
+          "type": "row",
+          "settings": {
+            "caption": "STEP 3",
+            "heading": "SECURE",
+            "text": "<p>Double check to make sure the cup has opened by running a finger around the body of the cup. If you feel any folds, rotate the cup again until it opens completely, creating a seal.<\/p><p>No folds? You’ve successfully inserted your Saalt Cup! Feel free to do a heel click or summersault and go enjoy 12 hours* worry free!<\/p><p>You can check the seal by tugging lightly on the stem. If you feel resistance as you softly pull down, you have a good seal!<\/p><p>*8 hours for our Australian friends<\/p>",
+            "theme_color_row_background": "theme_default",
+            "theme_color_row_text": "theme_default",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--21580602507537__45fb2450-63be-479e-a92e-1e810a74551a-row-1",
+        "template--21580602507537__45fb2450-63be-479e-a92e-1e810a74551a-row-2",
+        "template--21580602507537__45fb2450-63be-479e-a92e-1e810a74551a-row-3"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -298,6 +431,8 @@
     "a74a1e17-040a-4a83-a782-5856e874b3dd",
     "82724714-bd68-4a82-af3b-f07c52a175da",
     "f873015c-a2ab-4eaf-9ecf-81e0504c73cc",
-    "5ce2b26e-8e8f-433a-b0c7-572a905d34ca"
+    "5ce2b26e-8e8f-433a-b0c7-572a905d34ca",
+    "7d2ee6ed-7387-44d2-b27f-0bed60ced2d3",
+    "45fb2450-63be-479e-a92e-1e810a74551a"
   ]
 }
