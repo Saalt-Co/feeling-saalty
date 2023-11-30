@@ -206,7 +206,6 @@
     #section-{{ section.id }} .section-inner .text-wrapper .button-group {
       display: flex;
       align-items: center;
-      flex-direction: column;
       flex-wrap: wrap;
       width: 100%;
     }
@@ -277,9 +276,6 @@
       }
       #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
         text-align: {{ section.settings.desktop_text_alignment }};
-      }
-      #section-{{ section.id }} .section-inner .text-wrapper .button-group {
-        flex-direction: row;
       }
       #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
         width: auto;
