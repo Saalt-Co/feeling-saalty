@@ -529,7 +529,7 @@
     "currency_format": {
       "name": "Currency formatting",
       "settings": {
-        "paragraph": "This sets the display for prices throughout the store, including the cart page. For more information about these options view the [Shopify Liquid money filters documentation](https://shopify.dev/docs/api/liquid/filters/money-filters)",
+        "paragraph": "This sets the display for prices throughout the store, including the cart page. For more information about these options view the [Shopify Liquid money filters documentation](https:\/\/shopify.dev\/docs\/api\/liquid\/filters\/money-filters)",
         "info": "\"Just currency symbol\" = $10.00, \"No trailing zeros\" = $10, \"Full currency\" = $10.00 USD, \"Just decimal\" = 10.00",
         "default_label": "Just currency symbol",
         "no_trailing_zeros_label": "No trailing zeros",
