@@ -70,7 +70,7 @@
         "template--21580602507537__a74a1e17-040a-4a83-a782-5856e874b3dd-column-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "title": "",
             "rating": 0,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -80,7 +80,7 @@
         "template--21580602507537__a74a1e17-040a-4a83-a782-5856e874b3dd-column-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "title": "",
             "rating": 0,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -90,7 +90,7 @@
         "template--21580602507537__a74a1e17-040a-4a83-a782-5856e874b3dd-column-3": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "title": "",
             "rating": 0,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -112,7 +112,7 @@
         "column_alignment": "left",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
-        "background_style": "primary",
+        "background_style": "none",
         "theme_color_column_secondary_bg": "theme_default",
         "column_secondary_bg_opacity": 100,
         "review_star_color_override": "theme_default",
