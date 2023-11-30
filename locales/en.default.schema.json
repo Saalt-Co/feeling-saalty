@@ -34,6 +34,13 @@
             }
           }
         },
+        "yotpo_header": {
+          "content": "Yotpo"
+        },
+        "yotpo_script_id": {
+          "label": "Yotpo Script ID",
+          "info": "This is the ID number used in the Yotpo loader script. You WILL have to save this change in order to see the Yotpo elements appear in the customizer."
+        },
         "digioh_header": {
           "content": "Digioh"
         },
