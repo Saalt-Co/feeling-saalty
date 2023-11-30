@@ -206,12 +206,11 @@
     #section-{{ section.id }} .section-inner .text-wrapper .button-group {
       display: flex;
       align-items: center;
-      flex-direction: column;
       flex-wrap: wrap;
       width: 100%;
     }
     #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
-      width: 100%;
+      width: auto;
     }
     #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
       text-align: {{ section.settings.mobile_text_alignment }};
@@ -278,9 +277,6 @@
       #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
         text-align: {{ section.settings.desktop_text_alignment }};
       }
-      #section-{{ section.id }} .section-inner .text-wrapper .button-group {
-        flex-direction: row;
-      }
       #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
         width: auto;
       }
@@ -299,7 +295,7 @@
       "type": "text",
       "id": "section_id",
       "label": "Section ID (Optional)",
-      "info": "Typically only used when setting this ID as a link's destination."
+      "info": "Typically only used when setting this ID as a link's destination. NOTE: This should NOT start with a \"#\""
     },
     {
       "type": "header",

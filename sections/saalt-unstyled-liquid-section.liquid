@@ -3,49 +3,49 @@
   {%- if block_count > 0 -%}
     {%- for block in section.blocks -%}
       {%- case block.type -%}
-        {%- when "custom_liquid_code" -%}
+        {%- when 'custom_liquid_code' -%}
           {{ block.settings.liquid_code }}
       {%- endcase -%}
     {%- endfor -%}
   {%- endif -%}
 {%- endunless -%}
 {% schema %}
-  {
-    "name": "Saalt Unstyled Liquid",
-    "settings": [
-      {
-        "type": "text",
-        "id": "section_id",
-        "label": "Section ID (Optional)",
-        "info": "Typically only used when setting this ID as a link's destination."
-      }
-    ],
-    "blocks": [
-      {
-        "type": "custom_liquid_code",
-        "name": "Liquid Code",
-        "settings": [
-          {
-            "type": "liquid",
-            "id": "liquid_code",
-            "label": "Liquid Code",
-            "info": "This a completely unstyled section which allows for the most customzation. There are limitations to using this however. [Read about that here.](https://shopify.dev/themes/architecture/settings/input-settings#liquid)"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Saalt Unstyled Liquid",
-        "category": "custom saalt section",
-        "settings": {},
-        "blocks": [
-          {
-            "type": "custom_liquid_code",
-            "settings": {}
-          }
-        ]
-      }
-    ]
-  }
+{
+  "name": "Saalt Unstyled Liquid",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID (Optional)",
+      "info": "Typically only used when setting this ID as a link's destination. NOTE: This should NOT start with a \"#\""
+    }
+  ],
+  "blocks": [
+    {
+      "type": "custom_liquid_code",
+      "name": "Liquid Code",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "liquid_code",
+          "label": "Liquid Code",
+          "info": "This a completely unstyled section which allows for the most customzation. There are limitations to using this however. [Read about that here.](https://shopify.dev/themes/architecture/settings/input-settings#liquid)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Saalt Unstyled Liquid",
+      "category": "custom saalt section",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "custom_liquid_code",
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
