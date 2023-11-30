@@ -37,7 +37,7 @@
     "528e9349-6732-4cf9-938c-19cc585e6a6d": {
       "type": "multicolumn",
       "custom_css": [
-        ".multicolumn-list h3 {text-align: center;}"
+        ".multicolumn .title {margin-left: 25%;}"
       ],
       "settings": {
         "title": "SAALT DISC INSTRUCTION",
