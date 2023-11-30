@@ -45,7 +45,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "background_style": "none",
