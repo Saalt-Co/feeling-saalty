@@ -15,6 +15,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
+        "desktop_image": "shopify:\/\/shop_images\/Home.webp",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "title_font_size": "small",
@@ -73,6 +74,7 @@
         "template--21580602507537__a74a1e17-040a-4a83-a782-5856e874b3dd-column-1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Blue-cup-no-grip-rings.png",
             "title": "",
             "rating": 0,
             "text": "<p>Check the four air holes at the top of your cup to make sure they are open; these help break the seal so you can remove your Saalt Cup later.<\/p>",
