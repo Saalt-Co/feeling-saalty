@@ -43,7 +43,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Bundle-Preset-1080x1080-Web-0995.jpg",
             "title": "<p>Bundles<\/p>",
-            "copy": "<p>Skip the guesswork with bundles custom-designed by our Saalt Coaches for all your leak needs. Save up to 20% when you bundle.<\/p>",
+            "copy": "<p>Save up to 20% and skip the guesswork with bundles custom-designed by our Saalt Coaches for all your leak needs. <\/p>",
             "link_type": "url",
             "link_url": "shopify:\/\/collections\/preset-bundles",
             "filter_name": "",
@@ -144,8 +144,7 @@
           "settings": {
             "text_group_num": "1",
             "heading_tag": "1",
-            "title": "Do leakproof underwear work? Watch the magic.",
-            "title_font_size": "medium"
+            "title": "Do leakproof underwear work? Watch the magic."
           }
         },
         "template--18370419720465__fc031dea-6661-47b1-b752-79fa446b4dee-1687976507446c2c25-1": {
@@ -236,8 +235,9 @@
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
-        "mobile_text_alignment": "center",
+        "title_font_size": "small",
         "content_font_size": "small",
+        "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
@@ -551,7 +551,7 @@
         "template--19641079136529__6484ec1d-c35f-44e1-975e-1cd40fab13b6-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>If you're not happy with your Saalt product, <strong>we'll send you a replacement you'll love or your money back up to a full year from purchase. <\/strong>Why? We know that learning to use reusables can take time, but we’re here to help and cheer you to Saalt bliss. Your Saalt(isfaction) guaranteed.<\/p>"
+            "text_content": "<p>If you're not happy with your Saalt product, <a href=\"\/pages\/replacements\" title=\"\/pages\/replacements\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/a><strong>. <\/strong>Why? We know that learning to use reusables can take time, but we’re here to help and cheer you to Saalt bliss. Your Saalt(isfaction) guaranteed.<\/p>"
           }
         }
       },
@@ -580,70 +580,6 @@
         "max_width": "650px",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "b4f29bbb-7268-4349-91b5-1ab1f590f3c0": {
-      "type": "collapsible-content",
-      "blocks": {
-        "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-0": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Will period underwear smell?",
-            "icon": "none",
-            "row_content": "<p>No, when cared for properly, your Saalt Wear should not smell! Saalt Wear is treated with a bio-based solution for odor control that removes sweat odor and eliminates bacteria to keep you fresh and odor-free.<\/p>",
-            "page": ""
-          }
-        },
-        "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-1": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I put it in the dryer?",
-            "icon": "none",
-            "row_content": "<p>Take good care of Saalt Wear, and it will take great care of you. <\/p><p>After use, rinse your Saalt Wear leakproof underwear in cold water to help avoid staining. Then, hand wash or machine wash on cold, preferably in a <a href=\"\/products\/saalt-mesh-laundry-bag\" title=\"\/products\/saalt-mesh-laundry-bag\"><span style=\"text-decoration:underline\">Saalt Mesh Laundry Bag<\/span><\/a> intended for delicates. You can use detergent but pass on the fabric softener, bleach, and iron to protect the tech. Proudly hang dry—energy efficient and free. We recommend avoiding putting Saalt Wear in the dryer, as high temperatures can degrade the elastics and fabric over time.<\/p>",
-            "page": ""
-          }
-        },
-        "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-2": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I wear them all day?",
-            "icon": "none",
-            "row_content": "<p>Go with your flow! How long you can wear your Saalt Wear leakproof underwear before needing to change will depend on your flow and the absorbency level of the style you choose. If you are free bleeding on your heavy day, you may need to change into a fresh pair after a few hours of wear. If you’re wearing your Saalt Wear as a backup to a cup or on a light day, you may be able to wear it all day. We recommend trying Saalt Wear for the first time at home so you can see how your pair works best for your body and ~flow~.<\/p>",
-            "page": ""
-          }
-        },
-        "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Does Saalt Wear have PFAS",
-            "icon": "none",
-            "row_content": "<p>You can rest easy knowing that Saalt does not use any PFAS in our fabric finishes. We test all materials for a wide range of known hazardous substances, including PFAS and other known harmful chemicals. As a B Corp, we’re committed to providing the safest, most effective, and responsibly-produced leakproof underwear on the market for our customers. We source our materials from factories known for making safe, green textiles. Some of our fabrics are OEKO-TEX®️ and bluesign®️ approved, which are internationally recognized standards for making textiles cleaner and more environmentally friendly. You can <a href=\"\/blogs\/news\/everything-you-need-to-know-about-pfas-and-period-underwear\" title=\"\/blogs\/news\/everything-you-need-to-know-about-pfas-and-period-underwear\"><span style=\"text-decoration:underline\">learn even more about PFAS on our blog<\/span><\/a>.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-0",
-        "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-1",
-        "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-2",
-        "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "caption": "",
-        "heading": "Saalt Wear FAQs",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "theme_color_container_background": "theme_default",
-        "theme_color_container_text": "theme_default",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa": {
@@ -694,7 +630,6 @@
     "835cabec-b298-4b76-9a74-2ae85e6ea4be",
     "6f86141b-6e50-4f99-a4bf-ce75e198df4c",
     "6484ec1d-c35f-44e1-975e-1cd40fab13b6",
-    "b4f29bbb-7268-4349-91b5-1ab1f590f3c0",
     "7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa"
   ]
 }
