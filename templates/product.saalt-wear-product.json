@@ -312,6 +312,7 @@
         "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-3",
         "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -481,14 +482,14 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme_default",
+        "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/img_1_3043d608-040b-4204-b349-9ad52e901faf.png",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
-        "media_width": 50,
+        "media_width": 33,
         "title_font_size": "small",
         "content_font_size": "small",
         "mobile_text_position": "below",
