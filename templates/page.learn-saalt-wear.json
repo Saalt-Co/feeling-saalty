@@ -34,8 +34,8 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-Wear-Learn-More-First-Things-First-Leakproof-Period-Underwear-Absorbent-mobile_bfc73327-17b5-44f1-a433-4304dca88b84.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Wear-Learn-Page-Hero_4248a92d-1909-4b9a-bcf7-7e8b9687fb20.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Wear-Learn-More-First-Things-First-Leakproof-Period-Underwear-Absorbent-mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Wear-Learn-Page-Hero.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
@@ -175,7 +175,7 @@
         "theme_color_background": "theme-color-bg-4",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/What_makes_saalt_better__2_096f2d5a-1d15-4a82-906f-1ef099876038.jpg",
+        "image": "shopify:\/\/shop_images\/What_makes_saalt_better__2.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -521,7 +521,7 @@
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-1": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Seamless-darker_13d40341-040b-47f6-9114-dcce512216ef.jpg",
+            "image": "shopify:\/\/shop_images\/Seamless-darker.jpg",
             "title": "SEAMLESS",
             "text_content": "Made with ultra-durable LYCRA®️ XTRA LIFE™️ fiber which resists fit loss and provides you with the confidence that your garment will last after repeated wash and wear.",
             "button_text": "Shop Seamless",
@@ -536,7 +536,7 @@
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-2": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Comfort-Modal-darker_9e2ea548-2027-4917-9ea4-cb7c2e9eec6e.jpg",
+            "image": "shopify:\/\/shop_images\/Comfort-Modal-darker.jpg",
             "title": "COMFORT",
             "text_content": "Made from soft-stretch TENCEL™️ Modal, aka dreamy soft fabric made from sustainably regenerated cellulose fiber that comes from renewable beech wood.",
             "button_text": "Shop Comfort",
@@ -551,7 +551,7 @@
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-3": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Lace-Mesh-darker_e2aa5a6b-1178-40db-8db8-22f818056c91.jpg",
+            "image": "shopify:\/\/shop_images\/Lace-Mesh-darker.jpg",
             "title": "LACE & MESH",
             "text_content": "Each pair is made with an average of 3 post-consumer recycled water bottles to help clean up landfill and ocean-bound plastic.",
             "button_text": "Shop Lace & Mesh",
@@ -566,7 +566,7 @@
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-4": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Cotton-darker_f472d7e6-dd7d-4378-9deb-095706b48d43.jpg",
+            "image": "shopify:\/\/shop_images\/Cotton-darker.jpg",
             "title": "COTTON",
             "text_content": "Made of soft and breathable biodegradable natural cotton that is Standard 100 OEKO-TEX®️ Certified.\nThis is a 3rd party certification that our product is free from a wide list of harmful chemicals.",
             "button_text": "Shop Cotton",
@@ -895,7 +895,7 @@
         "theme_color_background": "theme-color-bg-6",
         "theme_color_text": "theme-color-text-0",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Untitled-1_2fce8737-b824-44a9-88b2-dfa3f502bf02.jpg",
+        "image": "shopify:\/\/shop_images\/Untitled-1.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -959,7 +959,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "include_img": true,
-        "image": "shopify:\/\/shop_images\/Testimonials_1_42fa139a-fe87-4a3e-bcb6-933cdb64ac5f.jpg",
+        "image": "shopify:\/\/shop_images\/Testimonials_1.jpg",
         "image_behavior": "none",
         "accessibility_info": "Slideshow of customer testimonials"
       }
