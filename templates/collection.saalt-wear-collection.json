@@ -756,6 +756,7 @@
         "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-paragraph-1",
         "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-email_form-1"
       ],
+      "disabled": true,
       "settings": {
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
