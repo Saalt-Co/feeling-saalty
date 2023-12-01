@@ -55,7 +55,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/Shop_by_Category_-_Accessories_1.jpg",
-            "title": "<p>Extras & Accessories<\/p>",
+            "title": "<p>Extras<\/p>",
             "copy": "<p>Everything you need for a fully sustainable flow.<\/p>",
             "link_type": "url",
             "link_url": "\/collections\/extras",
