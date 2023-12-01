@@ -466,6 +466,7 @@
         "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-saalt_style_1_tile-1": {
           "type": "saalt_style_1_tile",
           "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-09.jpg",
             "title": "REMOVE",
             "text_content": "",
             "button_text": "",
@@ -480,6 +481,7 @@
         "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-saalt_style_1_tile-2": {
           "type": "saalt_style_1_tile",
           "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-08_9ddca6b4-ce40-4fd6-a2fb-e3375092bab7.jpg",
             "title": "REINSERT",
             "text_content": "",
             "button_text": "",
