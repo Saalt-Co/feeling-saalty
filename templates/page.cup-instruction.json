@@ -210,7 +210,7 @@
         "4d3092b2-a11a-4900-9d4f-0b4dd2c7012f"
       ],
       "custom_css": [
-        ".multicolumn .title {margin-left: 43%; font-size: 40px; margin-bottom: 50px;}",
+        ".multicolumn .title {margin-left: 40%; font-size: 40px; margin-bottom: 50px;}",
         ".multicolumn-list h3,.multicolumn-list p {text-align: center;}",
         ".grid__item {margin-left: 130px;}",
         "@media (max-width: 1200px) {.grid__item {margin-left: 100px; }}",
