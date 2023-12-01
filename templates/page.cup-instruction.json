@@ -15,6 +15,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Home.webp",
         "desktop_image": "shopify:\/\/shop_images\/Home.webp",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -111,7 +112,7 @@
         "template--21580602507537__a74a1e17-040a-4a83-a782-5856e874b3dd-column-3"
       ],
       "custom_css": [
-        ".multicolumn .title {margin-left: 32%; font-size: 40px; margin-bottom: 50px;}",
+        ".multicolumn .title {font-size: 40px; margin-bottom: 50px;}",
         ".background-none .multicolumn-card-spacing {width: 50%; margin-left: 30%;}"
       ],
       "settings": {
@@ -210,7 +211,7 @@
         "4d3092b2-a11a-4900-9d4f-0b4dd2c7012f"
       ],
       "custom_css": [
-        ".multicolumn .title {margin-left: 42%; font-size: 40px; margin-bottom: 50px;}",
+        ".multicolumn .title {font-size: 40px; margin-bottom: 50px;}",
         ".multicolumn-list h3,.multicolumn-list p {text-align: center;}",
         ".grid__item {margin-left: 130px;}",
         "@media (max-width: 1200px) {.grid__item {margin-left: 100px; }}",
@@ -275,7 +276,7 @@
         "8175a6fc-897b-462d-8b25-2ff8c25f9419"
       ],
       "custom_css": [
-        ".multicolumn .title {margin-left: 35%; font-size: 40px; margin-bottom: 50px;}",
+        ".multicolumn .title {font-size: 40px; margin-bottom: 50px;}",
         ".multicolumn-list h3,.multicolumn-list p {text-align: center;}"
       ],
       "settings": {
@@ -336,7 +337,7 @@
         "0d90aacc-a0e8-4fe7-a60b-28bcd6b2606c"
       ],
       "custom_css": [
-        ".multicolumn .title {margin-left: 43%; font-size: 40px; margin-bottom: 50px;}",
+        ".multicolumn .title {font-size: 40px; margin-bottom: 50px;}",
         ".multicolumn-list h3,.multicolumn-list p {text-align: center;}",
         ".grid__item {margin-left: 130px;}",
         "@media (max-width: 1200px) {.grid__item {margin-left: 100px; }}",
