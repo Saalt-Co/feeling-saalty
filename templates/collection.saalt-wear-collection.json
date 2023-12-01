@@ -41,9 +41,9 @@
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-2": {
           "type": "window-feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SW-CT-BR-VB-Nichole-11028.jpg",
+            "image": "shopify:\/\/shop_images\/Saalt-Window-Display-Shop-Heavy_03.jpg",
             "title": "<p>Heavy Absorbency<\/p>",
-            "copy": "<p>Holds as much as 3 pads or 3&nbsp-&nbsp4 tampons. <\/p><p>Best for heavy flow days and overnight, postpartum wear, and bladder leaks.<\/p>",
+            "copy": "<p>Holds as much as 3 pads or 3 - 4 tampons. <\/p><p>Best for heavy flow days and overnight, postpartum wear, and bladder leaks.<\/p>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Absorbency",
@@ -54,6 +54,7 @@
         "b556c8a4-bad2-43ac-8e69-1b5b4650d635": {
           "type": "window-feature",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Window-Display-Shop-Super_02.jpg",
             "title": "<p>Super Absorbency<\/p>",
             "copy": "<p>Holds as much as 6+ pads or 8+ tampons. <\/p><p>Best for your heaviest flow days and overnight, postpartum wear, and bladder leaks.<\/p>",
             "link_type": "filter",
