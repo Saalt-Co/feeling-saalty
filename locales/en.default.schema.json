@@ -702,6 +702,9 @@
         },
         "label": "Image shape",
         "info": "Standard-styled cards have no borders when an image shape is active."
+      },
+      "section_id": {
+        "info": "Typically only used when setting this ID as a link's destination. Do NOT start this with a \"#\" symbol. NOTE: All spaces will be replaced with dashes (-) so when referencing this ID elsewhere, please do the same. So if you used \"how it works\" as an ID, reference it elsewhere — like the modular nav section — as \"#how-it-works\"."
       }
     },
     "announcement-bar": {
