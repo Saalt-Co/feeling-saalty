@@ -85,6 +85,7 @@
         "template--21580602507537__a74a1e17-040a-4a83-a782-5856e874b3dd-column-2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Boil.jpg",
             "title": "",
             "rating": 0,
             "text": "<p>Saalt Cups are not supplied in a sterile state. Boil your cup in water for 4–5 min (not more than 7 min) to sanitize it before first use and again between cycles. Use tongs or a wire whisk to ensure the cup doesn’t touch the bottom of the pot.<\/p>",
@@ -95,6 +96,7 @@
         "template--21580602507537__a74a1e17-040a-4a83-a782-5856e874b3dd-column-3": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Wash_hands.jpg",
             "title": "",
             "rating": 0,
             "text": "<p>Wash your hands with water and mild soap, and rinse thoroughly.<\/p>",
@@ -110,7 +112,7 @@
       ],
       "custom_css": [
         ".multicolumn .title {margin-left: 32%; font-size: 40px; margin-bottom: 50px;}",
-        ".background-none .multicolumn-card-spacing {width: 30%; margin-left: 30%;}"
+        ".background-none .multicolumn-card-spacing {width: 50%; margin-left: 30%;}"
       ],
       "settings": {
         "title": "BEFORE FIRST USE",
