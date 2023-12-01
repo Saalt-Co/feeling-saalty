@@ -514,80 +514,6 @@
         "padding_bottom": 0
       }
     },
-    "616c0f13-827c-4fec-a970-a08ec0d7cb24": {
-      "type": "saalt-style-1-tiles-section",
-      "blocks": {
-        "e1c0ea24-1116-4fd0-aa5a-a3f5ba2e3fb2": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "3",
-            "title": "REMOVING & REINSERTING"
-          }
-        },
-        "f06f9a2c-cdcf-4ae8-9270-a6bc8c15271e": {
-          "type": "section_tiles_group",
-          "settings": {
-            "theme_color_mobile_text_color": "match_text",
-            "tile_mobile_text_alignment": "center",
-            "theme_color_desktop_text_color": "match_text",
-            "theme_color_desktop_text_hover_focus_color": "match_text",
-            "tile_desktop_text_alignment": "center",
-            "desktop_text_placement": "flex-end",
-            "tile_desktop_text_alignment_hover_focus": "center",
-            "desktop_text_hover_placement": "center"
-          }
-        },
-        "a65b3f00-1587-42e9-883b-110b84079587": {
-          "type": "saalt_style_1_tile",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Flatten.png",
-            "title": "REMOVE",
-            "text_content": "",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
-        "32a7cbd4-cd19-4bf1-b90e-554f62df13c4": {
-          "type": "saalt_style_1_tile",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-08_9ddca6b4-ce40-4fd6-a2fb-e3375092bab7.jpg",
-            "title": "REINSERT",
-            "text_content": "",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "e1c0ea24-1116-4fd0-aa5a-a3f5ba2e3fb2",
-        "f06f9a2c-cdcf-4ae8-9270-a6bc8c15271e",
-        "a65b3f00-1587-42e9-883b-110b84079587",
-        "32a7cbd4-cd19-4bf1-b90e-554f62df13c4"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_alignment": "center",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "642fc74f-0994-49f6-b77d-5de71f78a897": {
       "type": "multicolumn",
       "blocks": {
@@ -769,7 +695,6 @@
     "7d2ee6ed-7387-44d2-b27f-0bed60ced2d3",
     "45fb2450-63be-479e-a92e-1e810a74551a",
     "b1c192fc-b9bb-4572-8dc5-cddb9acc920b",
-    "616c0f13-827c-4fec-a970-a08ec0d7cb24",
     "642fc74f-0994-49f6-b77d-5de71f78a897",
     "57bfdc1a-03e7-470b-bbb3-a190db33a0be"
   ]
