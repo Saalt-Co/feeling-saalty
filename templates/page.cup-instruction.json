@@ -211,7 +211,8 @@
       ],
       "custom_css": [
         ".multicolumn .title {margin-left: 43%; font-size: 40px; margin-bottom: 50px;}",
-        ".multicolumn-list h3,.multicolumn-list p {text-align: center;}"
+        ".multicolumn-list h3,.multicolumn-list p {text-align: center;}",
+        ".grid__item {margin-left: 130px;}"
       ],
       "settings": {
         "title": "C-FOLD",
@@ -272,7 +273,8 @@
       ],
       "custom_css": [
         ".multicolumn .title {margin-left: 35%; font-size: 40px; margin-bottom: 50px;}",
-        ".multicolumn-list h3,.multicolumn-list p {text-align: center;}"
+        ".multicolumn-list h3,.multicolumn-list p {text-align: center;}",
+        ".grid__item {margin-left: 130px;}"
       ],
       "settings": {
         "title": "Punch-down fold",
@@ -333,7 +335,8 @@
       ],
       "custom_css": [
         ".multicolumn .title {margin-left: 43%; font-size: 40px; margin-bottom: 50px;}",
-        ".multicolumn-list h3,.multicolumn-list p {text-align: center;}"
+        ".multicolumn-list h3,.multicolumn-list p {text-align: center;}",
+        ".grid__item {margin-left: 130px;}"
       ],
       "settings": {
         "title": "7-FOLD",
