@@ -685,6 +685,48 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1ec3b9cd-3031-4017-a5f9-b0f67f0f8df7": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--21580602507537__1ec3b9cd-3031-4017-a5f9-b0f67f0f8df7-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "We'd love to help you."
+          }
+        },
+        "template--21580602507537__1ec3b9cd-3031-4017-a5f9-b0f67f0f8df7-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>More questions? Reach out to us at<a href=\"mailto:sayhey@saalt.com\">sayhey@saalt.com<\/a>, or visit our<a href=\"https:\/\/www.facebook.com\/groups\/saaltcupacademy\/?ref=bookmarks\" target=\"_blank\">Saalt Cup Academy<\/a>on Facebook to get tips from Saalt users in real time.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21580602507537__1ec3b9cd-3031-4017-a5f9-b0f67f0f8df7-section_title-1",
+        "template--21580602507537__1ec3b9cd-3031-4017-a5f9-b0f67f0f8df7-section_content-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme-color-text-2",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -699,6 +741,7 @@
     "45fb2450-63be-479e-a92e-1e810a74551a",
     "b1c192fc-b9bb-4572-8dc5-cddb9acc920b",
     "642fc74f-0994-49f6-b77d-5de71f78a897",
-    "57bfdc1a-03e7-470b-bbb3-a190db33a0be"
+    "57bfdc1a-03e7-470b-bbb3-a190db33a0be",
+    "1ec3b9cd-3031-4017-a5f9-b0f67f0f8df7"
   ]
 }
