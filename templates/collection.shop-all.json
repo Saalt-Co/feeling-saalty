@@ -72,8 +72,8 @@
             "copy": "<p>All the extras that make it easy to care for your underwear, cups, and discs. <\/p>",
             "link_type": "filter",
             "link_url": "",
-            "filter_name": "Style",
-            "filter_val": "Brief",
+            "filter_name": "Product Type",
+            "filter_val": "Extras",
             "button_text": "Filter"
           }
         }
