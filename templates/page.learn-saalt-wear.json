@@ -36,6 +36,8 @@
         "media_type": "image",
         "mobile_image": "shopify:\/\/shop_images\/Saalt-Wear-Learn-More-First-Things-First-Leakproof-Period-Underwear-Absorbent-mobile_bfc73327-17b5-44f1-a433-4304dca88b84.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Saalt-Wear-Learn-Page-Hero_4248a92d-1909-4b9a-bcf7-7e8b9687fb20.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
         "use_max_media_width": false,
         "max_media_width": "60%",
         "title_font_size": "small",
@@ -57,6 +59,8 @@
           "type": "nav_bar_link",
           "settings": {
             "nav_bar_link_text": "How it works",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "#how-it-works",
             "nav_bar_link_dest": "#how it works"
           }
         },
@@ -64,6 +68,8 @@
           "type": "nav_bar_link",
           "settings": {
             "nav_bar_link_text": "Why it's better",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "#why-its-better",
             "nav_bar_link_dest": "#why it's better"
           }
         },
@@ -71,6 +77,8 @@
           "type": "nav_bar_link",
           "settings": {
             "nav_bar_link_text": "Absorbency guide",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "#absorbency-chart",
             "nav_bar_link_dest": "#absorbency guide"
           }
         },
@@ -78,6 +86,8 @@
           "type": "nav_bar_link",
           "settings": {
             "nav_bar_link_text": "How to wash",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "#how-to-wash",
             "nav_bar_link_dest": "#how to wash"
           }
         }
@@ -90,7 +100,6 @@
       ],
       "settings": {
         "section_id": "",
-        "make_sticky": true,
         "theme_color_background": "theme-color-bg-4",
         "theme_color_text": "theme_default",
         "mobile_nav_link_gap": "3rem",
@@ -373,7 +382,7 @@
         "template--15078825525329__18d097a2-ade7-4b43-b9b1-92ab9a1e2e95-absorbency_card-4"
       ],
       "settings": {
-        "section_id": "",
+        "section_id": "absorbency chart",
         "theme_color_background": "theme_default",
         "max_num_of_drops": 5,
         "best_for_list_style": "vertical",
@@ -388,8 +397,7 @@
           "settings": {
             "text_group_num": "1",
             "heading_tag": "2",
-            "title": "How do you wash it?",
-            "title_font_size": "medium"
+            "title": "How do you wash it?"
           }
         },
         "template--15078825525329__2962b7c9-d4c6-4356-a45d-61b549a0df16-section_content-1": {
@@ -476,8 +484,9 @@
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
-        "mobile_text_alignment": "center",
+        "title_font_size": "small",
         "content_font_size": "small",
+        "mobile_text_alignment": "center",
         "desktop_text_position": "left",
         "desktop_text_alignment": "center",
         "use_max_text_width": false,
@@ -872,7 +881,7 @@
         "0f95b15d-936c-4ea7-81c0-9ce53aceb9f9": {
           "type": "saalt_contact_links",
           "settings": {
-            "theme_color_contacts_icon_text_color": "match_text"
+            "theme_color_contacts_icon_color": "match_text"
           }
         }
       },
