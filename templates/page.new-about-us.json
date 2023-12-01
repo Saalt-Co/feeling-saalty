@@ -36,6 +36,8 @@
         "media_type": "image",
         "mobile_image": "shopify:\/\/shop_images\/About_Us_Hero-mobile.jpg",
         "desktop_image": "shopify:\/\/shop_images\/About_Us_Hero.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
         "use_max_media_width": false,
         "max_media_width": "60%",
         "title_font_size": "small",
@@ -378,8 +380,7 @@
           "settings": {
             "text_group_num": "2",
             "heading_tag": "1",
-            "title": "What We Do",
-            "title_font_size": "medium"
+            "title": "What We Do"
           }
         },
         "template--15053077250129__f1b16d01-d3ea-4457-bea4-1ce2d36e34aa-section_content-1": {
@@ -405,8 +406,9 @@
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
-        "mobile_text_alignment": "center",
+        "title_font_size": "small",
         "content_font_size": "small",
+        "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
@@ -454,8 +456,7 @@
           "settings": {
             "text_group_num": "2",
             "heading_tag": "2",
-            "title": "How We Do It",
-            "title_font_size": "medium"
+            "title": "How We Do It"
           }
         },
         "template--15053077250129__91242708-420b-4a93-8b84-092c3575b865-section_content-2": {
@@ -481,8 +482,9 @@
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
-        "mobile_text_alignment": "center",
+        "title_font_size": "small",
         "content_font_size": "small",
+        "mobile_text_alignment": "center",
         "desktop_text_position": "left",
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
@@ -530,8 +532,7 @@
           "settings": {
             "text_group_num": "2",
             "heading_tag": "2",
-            "title": "How We Give Back",
-            "title_font_size": "medium"
+            "title": "How We Give Back"
           }
         },
         "template--15053077250129__0add3966-7c7f-4a60-bd20-c12dd57c3a86-section_content-2": {
@@ -557,8 +558,9 @@
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
-        "mobile_text_alignment": "center",
+        "title_font_size": "small",
         "content_font_size": "small",
+        "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
@@ -606,8 +608,7 @@
           "settings": {
             "text_group_num": "2",
             "heading_tag": "2",
-            "title": "We Have Your Back(side)",
-            "title_font_size": "medium"
+            "title": "We Have Your Back(side)"
           }
         },
         "template--15053077250129__82bcc90b-426f-4a75-9f94-ab0146413a5d-section_content-2": {
@@ -633,8 +634,9 @@
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
-        "mobile_text_alignment": "center",
+        "title_font_size": "small",
         "content_font_size": "small",
+        "mobile_text_alignment": "center",
         "desktop_text_position": "left",
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
@@ -787,6 +789,8 @@
         "media_type": "image",
         "mobile_image": "shopify:\/\/shop_images\/Naturally_Inspired-mobile.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Naturally_Inspired-desktop.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
         "use_max_media_width": false,
         "max_media_width": "700px",
         "title_font_size": "small",
@@ -924,6 +928,7 @@
         "template--15053077250129__adef0161-cadd-425a-908d-5de3ece928a1-paragraph-1",
         "template--15053077250129__adef0161-cadd-425a-908d-5de3ece928a1-email_form-1"
       ],
+      "disabled": true,
       "settings": {
         "theme_color_background": "theme-color-bg-4",
         "theme_color_text": "theme_default",
