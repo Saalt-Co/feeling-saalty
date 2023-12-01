@@ -84,14 +84,23 @@
     }
   }
 
+  #section-{{ section.id }} .breadcrumbs {
+    display: block;
+    width: 100%;
+    overflow: scroll;
+    min-height: 5rem;
+  }
+
   #section-{{ section.id }} .breadcrumbs ol {
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
     list-style: none;
     gap: 1rem;
+    width: auto;
     padding-left: 0;
     font-size: 1.3rem;
+    flex-wrap: nowrap;
   }
 
   #section-{{ section.id }} .breadcrumbs ol li a {
@@ -99,6 +108,7 @@
     text-decoration: underline;
     text-decoration-color: transparent;
     text-underline-offset: calc(var(--buttons-border-offset) * 10);
+    white-space: nowrap;
   }
 
   #section-{{ section.id }} .breadcrumbs ol li a:hover {
