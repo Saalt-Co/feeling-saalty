@@ -425,6 +425,9 @@
         "template--21580602507537__45fb2450-63be-479e-a92e-1e810a74551a-row-2",
         "template--21580602507537__45fb2450-63be-479e-a92e-1e810a74551a-row-3"
       ],
+      "custom_css": [
+        ".image-with-text .grid__item {width: 30%; height: 50%; margin-top: 10%;}"
+      ],
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
