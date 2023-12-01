@@ -176,6 +176,7 @@
         "f0812bee-53a0-45c2-acf8-a06f24b6d71d",
         "c8cb7502-f102-47a4-a6fd-3ea00c892598"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -498,6 +499,8 @@
         "media_type": "image",
         "mobile_image": "shopify:\/\/shop_images\/solid_color_background.jpg",
         "desktop_image": "shopify:\/\/shop_images\/solid_color_background_desktop.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
         "use_max_media_width": false,
         "max_media_width": "700px",
         "title_font_size": "small",

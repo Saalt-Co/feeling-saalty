@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/SW-TH-QB-Meuller-7092-Web.jpg",
             "title": "<p>Light Absorbency<\/p>",
-            "copy": "<p>Holds as much as 1 liner or 1-2 light tampons. <\/p><p>Best for sweat and discharge, light flow days and spotting, a worry-free backup to a cup, disc or tampon, or as a pantyliner replacement.<\/p>",
+            "copy": "<p>Holds as much as 1 liner or 1&nbsp-&nbsp2 light tampons. <\/p><p>Best for sweat and discharge, light flow days and spotting, a worry-free backup to a cup, disc or tampon, or as a pantyliner replacement.<\/p>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Absorbency",
@@ -30,7 +30,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/SW-SM-HW-MS-Ampersand-278.jpg",
             "title": "<p>Regular Absorbency<\/p>",
-            "copy": "<p>Holds as much as 2 pads or 2-3 tampons. <\/p><p>Best for sweat and discharge, regular period flow, light bladder leaks, or as a worry-free backup to a cup, disc or tampon.<\/p>",
+            "copy": "<p>Holds as much as 2 pads or 2 - 3 tampons. <\/p><p>Best for sweat and discharge, regular period flow, light bladder leaks, or as a worry-free backup to a cup, disc or tampon.<\/p>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Absorbency",
@@ -41,9 +41,9 @@
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-2": {
           "type": "window-feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SW-CT-BR-VB-Nichole-11028.jpg",
+            "image": "shopify:\/\/shop_images\/Saalt-Window-Display-Shop-Heavy_03.jpg",
             "title": "<p>Heavy Absorbency<\/p>",
-            "copy": "<p>Holds as much as 3 pads or 3-4 tampons. <\/p><p>Best for heavy flow days and overnight, postpartum wear, and bladder leaks.<\/p>",
+            "copy": "<p>Holds as much as 3 pads or 3 - 4 tampons. <\/p><p>Best for heavy flow days and overnight, postpartum wear, and bladder leaks.<\/p>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Absorbency",
@@ -54,8 +54,9 @@
         "b556c8a4-bad2-43ac-8e69-1b5b4650d635": {
           "type": "window-feature",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Window-Display-Shop-Super_02.jpg",
             "title": "<p>Super Absorbency<\/p>",
-            "copy": "<p>Holds as much as 6+ pads or 8+ tampons. <\/p><p>Best for your heaviset flow days and overnight, postpartum wear, and bladder leaks.<\/p>",
+            "copy": "<p>Holds as much as 6+ pads or 8+ tampons. <\/p><p>Best for your heaviest flow days and overnight, postpartum wear, and bladder leaks.<\/p>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Absorbency",
@@ -155,8 +156,7 @@
           "settings": {
             "text_group_num": "1",
             "heading_tag": "1",
-            "title": "Do leakproof underwear work? Watch the magic.",
-            "title_font_size": "medium"
+            "title": "Do leakproof underwear work? Watch the magic."
           }
         },
         "template--18370419720465__fc031dea-6661-47b1-b752-79fa446b4dee-1687976507446c2c25-1": {
@@ -237,6 +237,7 @@
         "template--18370419720465__fc031dea-6661-47b1-b752-79fa446b4dee-1687976507446c2c25-5",
         "d23d2a87-3c59-4374-8a45-bff84584b5ea"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -246,8 +247,9 @@
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
-        "mobile_text_alignment": "center",
+        "title_font_size": "small",
         "content_font_size": "small",
+        "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
@@ -649,6 +651,8 @@
         "media_type": "image",
         "mobile_image": "shopify:\/\/shop_images\/solid_color_background.jpg",
         "desktop_image": "shopify:\/\/shop_images\/solid_color_background_desktop.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
         "use_max_media_width": false,
         "max_media_width": "700px",
         "title_font_size": "small",
@@ -754,6 +758,7 @@
         "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-paragraph-1",
         "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-email_form-1"
       ],
+      "disabled": true,
       "settings": {
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
