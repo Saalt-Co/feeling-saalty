@@ -429,14 +429,14 @@
         "template--21580602507537__45fb2450-63be-479e-a92e-1e810a74551a-row-3"
       ],
       "custom_css": [
-        ".image-with-text .grid__item {width: 30%; height: 50%; margin-top: 10%;}"
+        ".image-with-text .grid__item {height: 50%; margin-top: 10%;}"
       ],
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
         "heading_size": "h1",
         "text_style": "body",
-        "desktop_content_position": "middle",
+        "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "image_layout": "alternate-left",
         "theme_color_background": "theme_default",
