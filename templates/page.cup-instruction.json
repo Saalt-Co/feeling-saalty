@@ -520,6 +520,7 @@
         "template--21580602507537__642fc74f-0994-49f6-b77d-5de71f78a897-column-1": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-01_dc80a4c9-afb3-4b4d-9270-c62d3689319a.jpg",
             "title": "WASH",
             "rating": 0,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -530,6 +531,7 @@
         "template--21580602507537__642fc74f-0994-49f6-b77d-5de71f78a897-column-2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-14_a7fdee1e-7044-4a1d-80ea-5bc83e660adb.jpg",
             "title": "SANITIZE",
             "rating": 0,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -540,6 +542,7 @@
         "template--21580602507537__642fc74f-0994-49f6-b77d-5de71f78a897-column-3": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_f6cc5066-b817-435f-a6ce-26ffb2eae682.jpg",
             "title": "STORE",
             "rating": 0,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
