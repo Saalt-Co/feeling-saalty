@@ -1,0 +1,376 @@
+{
+  "sections": {
+    "afb57bcf-95f9-4c58-bcb0-46be33b273c1": {
+      "type": "breadcrumbs",
+      "settings": {
+        "user_section_id": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "a540459f-701c-470e-bfa0-1112dcf7d16d": {
+          "type": "reviews_summary",
+          "settings": {
+          }
+        },
+        "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7": {
+          "type": "absorbency",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "color swatches"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "8e16b700-b5d3-4d93-aa86-a2391fc38797": {
+          "type": "product_features",
+          "settings": {
+            "mobile_icon_max_width": "3rem",
+            "desktop_icon_width": "3rem",
+            "product_features_orientation": "vertical",
+            "desktop_icon_max_width": "50%",
+            "desktop_icon_height": "75px",
+            "desktop_text_alignment": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.options__3.value"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials",
+            "icon": "plant",
+            "content": "{{ product.metafields.saalt.product_material | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "b353a8cb-d34f-4c9e-9e49-2879eadc10c3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Fabric",
+            "icon": "leaf",
+            "content": "{{ product.metafields.saalt.product_fabric.value.fabric_details | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "e36443e9-994e-4493-962d-3a4290cafaad": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "leaf",
+            "content": "{{ product.metafields.saalt.product_ingredients | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How It Fits",
+            "icon": "ruler",
+            "content": "{{ product.metafields.saalt.how_it_fits | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "washing",
+            "content": "{{ product.metafields.saalt.care_instructions.value.care_details | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Saalt Bliss Guarantee",
+            "icon": "heart",
+            "content": "<p>If you're not happy with your Saalt product, <a href=\"\/pages\/replacements\" title=\"\/pages\/replacements\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/a>. Why? We know that learning to use reusable options can take some time, but we promise to be with you every step of the way. From video tutorials to live tips and personalized help from our dedicated Saalt Coaches, we’re here to help and cheer you to Saalt bliss. Your Saalt(isfaction) guaranteed.<\/p>",
+            "page": ""
+          }
+        },
+        "8e2f85d3-2d82-4239-820b-c26872aaf01a": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Shipping",
+            "icon": "truck",
+            "content": "<p>Free shipping for orders domestic orders over $39 via USPS. Orders under $39 will ship for a flat rate of $7. International shipping fees vary.<\/p><p>Please allow 1-3 business days for your order to be processed and shipped. Please allow an additional 3-10 business days for domestic orders to arrive. For international orders, please allow up to 25 business days for orders to arrive.<\/p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "a540459f-701c-470e-bfa0-1112dcf7d16d",
+        "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "8e16b700-b5d3-4d93-aa86-a2391fc38797",
+        "description",
+        "collapsible-row-0",
+        "b353a8cb-d34f-4c9e-9e49-2879eadc10c3",
+        "e36443e9-994e-4493-962d-3a4290cafaad",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "collapsible-row-1",
+        "8e2f85d3-2d82-4239-820b-c26872aaf01a",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "0b3e0dea-b65b-440a-97a7-f90ea555dd6d": {
+      "type": "absorbency-chart-modal",
+      "blocks": {
+        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-1": {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Light",
+            "theme_color_card_background": "--palette-color-3",
+            "theme_color_card_background_opacity": 25,
+            "theme_color_card_text": "theme_default",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-2": {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Regular",
+            "theme_color_card_background": "--palette-color-3",
+            "theme_color_card_background_opacity": 25,
+            "theme_color_card_text": "theme_default",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-3": {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Heavy",
+            "theme_color_card_background": "--palette-color-3",
+            "theme_color_card_background_opacity": 25,
+            "theme_color_card_text": "theme_default",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-4": {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Super",
+            "theme_color_card_background": "--palette-color-3",
+            "theme_color_card_background_opacity": 25,
+            "theme_color_card_text": "theme_default",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-1",
+        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-2",
+        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-3",
+        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-4"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "max_num_of_drops": 5,
+        "best_for_list_style": "vertical",
+        "use_graduated_bgs": true
+      }
+    },
+    "2e4ed4ed-2f94-40cb-9564-c7df19d1376a": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/euna.ugc.png",
+            "title": "Euna",
+            "rating": 5,
+            "text": "<p>I wanted to avoid panty lines and the bulk of pads while still wearing leggings at the gym. My solution was Saalt's seamless underwear. I was skeptical at first, but honestly they're <strong>very thin and comfortable making it the perfect thing to wear under leggings.<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kelsvaughne.png",
+            "title": "Kels",
+            "rating": 5,
+            "text": "<p><strong>The Saalt Cup is my new bestie! <\/strong>Well technically not new, we've been best friends for about 5 years. <strong>Imagine how much money I've saved not buying tampons<\/strong>!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/peyttonb.png",
+            "title": "Peytton",
+            "rating": 5,
+            "text": "<p>I stopped using tampons about a year ago and it's the best decision I've ever made! <strong>The Saalt Cup has saved me so much money<\/strong> because I'm not buying tampons every single month. I was so worried when I switched to a period cup that I would be uncomfortable. This is flexible, it molds to your body, it's soft, and when you insert it<strong> you can't even feel it.<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-1",
+        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-3",
+        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "--palette-color-4",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "bef772d0-6e13-4a64-bb1e-f22e9b4887ed": {
+      "type": "reviews-list",
+      "settings": {
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "More to Love",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_swatches": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "afb57bcf-95f9-4c58-bcb0-46be33b273c1",
+    "main",
+    "0b3e0dea-b65b-440a-97a7-f90ea555dd6d",
+    "2e4ed4ed-2f94-40cb-9564-c7df19d1376a",
+    "bef772d0-6e13-4a64-bb1e-f22e9b4887ed",
+    "related-products"
+  ]
+}
