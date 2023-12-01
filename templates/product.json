@@ -1,5 +1,13 @@
 {
   "sections": {
+    "afb57bcf-95f9-4c58-bcb0-46be33b273c1": {
+      "type": "breadcrumbs",
+      "settings": {
+        "user_section_id": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -176,7 +184,7 @@
         "mobile_thumbnails": "show",
         "hide_variants": false,
         "enable_video_looping": false,
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 12
       }
     },
@@ -358,6 +366,7 @@
     }
   },
   "order": [
+    "afb57bcf-95f9-4c58-bcb0-46be33b273c1",
     "main",
     "0b3e0dea-b65b-440a-97a7-f90ea555dd6d",
     "2e4ed4ed-2f94-40cb-9564-c7df19d1376a",
