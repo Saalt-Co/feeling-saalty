@@ -164,7 +164,7 @@
         "template--21580602507537__b7db5103-2c7b-4c05-a774-90295600e617-section_content-1"
       ],
       "custom_css": [
-
+        "#section-template--21580602507537__b7db5103-2c7b-4c05-a774-90295600e617 .text-wrapper .section-title {text-align: center;}"
       ],
       "settings": {
         "section_id": "",
@@ -574,7 +574,8 @@
       ],
       "custom_css": [
         ".multicolumn .title {margin-left: 30%;}",
-        ".multicolumn-list h3 {text-align: center;}"
+        ".multicolumn-list h3 {text-align: center;}",
+        ".grid:last-child {margin-top: 12%;}"
       ],
       "settings": {
         "title": "CLEANING & STORING",
