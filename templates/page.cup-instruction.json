@@ -623,7 +623,7 @@
         "ecb509e1-5ef0-46f1-947a-b98ba95d021c": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "TO TRIM OR NOT TO RIM",
+            "heading": "TO TRIM OR NOT TO TRIM",
             "icon": "check_mark",
             "row_content": "<ul><li>The Saalt Cup’s stem is designed to be soft and comfortable so you can keep it to help locate the cup. Depending on how you wear your Saalt Cup, you may decide to trim off part or all of the stem. If you do, trim on one of the indentations.<\/li><li>Never trim the stem while your Saalt Cup is inserted. Make sure you know the desired length before trimming. Take care not to cut or scratch any part of the cup when trimming to avoid unwanted tearing of the cup.<\/li><\/ul>",
             "page": ""
@@ -708,7 +708,7 @@
         "template--21580602507537__1ec3b9cd-3031-4017-a5f9-b0f67f0f8df7-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>More questions? Reach out to us at<a href=\"mailto:sayhey@saalt.com\">sayhey@saalt.com<\/a>, or visit our<a href=\"https:\/\/www.facebook.com\/groups\/saaltcupacademy\/?ref=bookmarks\" target=\"_blank\">Saalt Cup Academy<\/a>on Facebook to get tips from Saalt users in real time.<\/p>"
+            "text_content": "<p>More questions? Reach out to us at <a href=\"mailto:sayhey@saalt.com\">sayhey@saalt.com<\/a>, or visit our <a href=\"https:\/\/www.facebook.com\/groups\/saaltcupacademy\/?ref=bookmarks\" target=\"_blank\">Saalt Cup Academy<\/a> on Facebook to get tips from Saalt users in real time.<\/p>"
           }
         }
       },
