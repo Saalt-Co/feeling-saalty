@@ -142,22 +142,29 @@
         "padding_bottom": 36
       }
     },
-    "82724714-bd68-4a82-af3b-f07c52a175da": {
+    "b7db5103-2c7b-4c05-a774-90295600e617": {
       "type": "saalt-media-with-text",
       "blocks": {
-        "c16357ff-29a3-4a78-bb57-3a0471a9b73a": {
+        "template--21580602507537__b7db5103-2c7b-4c05-a774-90295600e617-section_title-1": {
           "type": "section_title",
           "settings": {
-            "heading_tag": "2",
-            "title": "INSTRUCTION"
+            "heading_tag": "1",
+            "title": "INSTRUCTIONS"
+          }
+        },
+        "template--21580602507537__b7db5103-2c7b-4c05-a774-90295600e617-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>You’re doing great. See it’s easy. Now we are going to do a little origami.<\/p><ul><li>The Saalt Cup folds before you insert it. Here are three of the most common ways to fold your cup. They all work! Pick the one that you like best.<\/li><li>C-Fold: Fold the cup into a C-shape by flattening the cup and bending it in the middle to bring the two ends together.<\/li><li>Punch-Down: Use your index finger to press down on the rim to collapse the cup. Pinch to hold in place.<\/li><li>7-Fold: Fold the cup so the rim makes a 7-shape by flattening the cup and then folding the top right corner of the rim across to the opposite side of the body of the cup.<\/li><\/ul>"
           }
         }
       },
       "block_order": [
-        "c16357ff-29a3-4a78-bb57-3a0471a9b73a"
+        "template--21580602507537__b7db5103-2c7b-4c05-a774-90295600e617-section_title-1",
+        "template--21580602507537__b7db5103-2c7b-4c05-a774-90295600e617-section_content-1"
       ],
       "custom_css": [
-        "#section-template--21580602507537__82724714-bd68-4a82-af3b-f07c52a175da .section-inner .text-wrapper > *:last-child {text-align: center; font-size: 35px;}"
+
       ],
       "settings": {
         "section_id": "",
@@ -480,7 +487,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-09.jpg",
             "title": "REMOVE",
-            "text_content": "",
+            "text_content": "Wash your hands thoroughly with warm water and mild soap.\nYou can stand, sit, or squat, but removing your cup is much easier if you are relaxed.\nThe stem is not a pull tab, do not pull hard on the stem to remove.\nUse the stem as a guide to locate the grip rings and break the seal by pinching the base of the cup with your thumb and index finger. Do not pull on the stem.\nWiggle the cup side to side as you gently pull it out. Keep it upright to avoid spilling.\nHelpful hint: To keep the cup upright, pull until the grip rings are past the vaginal opening. Then tilt the cup forward to remove the front of the rim first, followed by the rest of the cup.\nHolding your cup firmly, empty it into a toilet or sink.",
             "button_text": "",
             "button_url": "",
             "button_type": "primary",
@@ -495,7 +502,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-08_9ddca6b4-ce40-4fd6-a2fb-e3375092bab7.jpg",
             "title": "REINSERT",
-            "text_content": "",
+            "text_content": "Wash your Saalt Cup by rinsing in cold water first to prevent staining, then wash using warm water with mild soap. Rinse thoroughly.\nYour Saalt Cup is ready to reinsert! If you need more insertion coaching, refer to section “How to Saalt”. You got this.",
             "button_text": "",
             "button_url": "",
             "button_type": "primary",
@@ -532,10 +539,9 @@
         "template--21580602507537__642fc74f-0994-49f6-b77d-5de71f78a897-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-14_a7fdee1e-7044-4a1d-80ea-5bc83e660adb.jpg",
             "title": "WASH",
             "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<ul><li>Rinse your Saalt Cup in cold water after use to prevent staining.<\/li><li>Wash thoroughly using hot water and a mild soap, or Saalt Wash. Avoid strong cleaners or anything that may irritate your skin.<\/li><li>Use a soft rag to wipe away any buildup.<\/li><li>Clear the four holes at the top of your Saalt Cup by passing water through the holes. Or, fold your cup at each air hole, and wipe the inside of the hole with a damp cloth. Flip your cup inside out and repeat.<\/li><\/ul>",
             "link_label": "",
             "link": ""
           }
@@ -543,10 +549,9 @@
         "template--21580602507537__642fc74f-0994-49f6-b77d-5de71f78a897-column-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-01_f566e0a6-241d-4481-aa44-f17636d78ed2.jpg",
             "title": "SANITIZE",
             "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<ul><li>You should disinfect your Saalt Cup between cycles by boiling your cup in water for 4–5 min (not more than 7 min) to sanitize it. Use tongs or a wire whisk to ensure the cup doesn’t touch the bottom of the pot.<\/li><li>You may also rinse your Saalt Cup thoroughly with water, allow it to dry, and then wipe it with a soft rag and 70% isopropyl alcohol. Make sure all surfaces are sufficiently wet by the alcohol and allow it to air dry.<\/li><li>Meanwhile, toss your storage bag in the laundry to thoroughly clean.<\/li><\/ul>",
             "link_label": "",
             "link": ""
           }
@@ -554,10 +559,9 @@
         "template--21580602507537__642fc74f-0994-49f6-b77d-5de71f78a897-column-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_f6cc5066-b817-435f-a6ce-26ffb2eae682.jpg",
             "title": "STORE",
             "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<ul><li>Dry your Saalt Cup thoroughly and store it in the bag provided (or another breathable container). Never use a plastic bag or airtight container for storage.<\/li><li>Some discoloration may occur over time. This is normal, and may vary from one person to another.<\/li><li>If your Saalt Cup is ripped or torn, or the silicone shows signs of deterioration (which can happen after using non-recommended cleaners) it’s time to replace the cup.<\/li><\/ul>",
             "link_label": "",
             "link": ""
           }
@@ -743,7 +747,7 @@
     "df91142e-8ca7-4858-a3d3-ae2cb44cf780",
     "efad1e86-a666-4d86-92f0-4041337d74f9",
     "a74a1e17-040a-4a83-a782-5856e874b3dd",
-    "82724714-bd68-4a82-af3b-f07c52a175da",
+    "b7db5103-2c7b-4c05-a774-90295600e617",
     "f873015c-a2ab-4eaf-9ecf-81e0504c73cc",
     "5ce2b26e-8e8f-433a-b0c7-572a905d34ca",
     "7d2ee6ed-7387-44d2-b27f-0bed60ced2d3",
