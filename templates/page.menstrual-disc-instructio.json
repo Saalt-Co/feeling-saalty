@@ -455,44 +455,6 @@
         "padding_bottom": 36
       }
     },
-    "4e2b1556-632c-41d6-a8de-86bf8d8a867b": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--21565118808337__4e2b1556-632c-41d6-a8de-86bf8d8a867b-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "SAY NO TO LEAKS AND DISCOMFORT",
-            "heading_size": "h1"
-          }
-        },
-        "template--21565118808337__4e2b1556-632c-41d6-a8de-86bf8d8a867b-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>When your disc is inserted correctly, you shouldn’t experience any discomfort or leaking.<\/p><p>First check the position by inserting a finger underneath the basin to ensure that your disc is covering your cervix. If you can feel your cervix outside of the basin, remove your disc and reinsert.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "template--21565118808337__4e2b1556-632c-41d6-a8de-86bf8d8a867b-heading-1",
-        "template--21565118808337__4e2b1556-632c-41d6-a8de-86bf8d8a867b-text-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-04.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "bottom",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "d557b0ed-c42d-4e3e-b7c3-49f914c262d9": {
       "type": "collapsible-content",
       "blocks": {
@@ -549,6 +511,15 @@
             "row_content": "<p>Saalt Disc will not prevent pregnancy or protect against sexually transmitted infections (STIs).<\/p><p>It is safe to use with most contraceptives, but check with your doctor first.<\/p><p>Wash your Saalt Disc after intercourse.<\/p><p>If your disc moves higher during arousal, allow it to return to a lower position before removing it.<\/p><p>If you experience discomfort during intercourse, we recommend adjusting your Saalt Disc or trying a different position that is more comfortable for you and your partner.<\/p><p><em>**Saalt Disc will not prevent pregnancy or protect against sexually transmitted infections (STIs).<\/em><\/p>",
             "page": ""
           }
+        },
+        "5bc4422d-9b71-4e56-b64a-a83ee1d26f1e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "SAY NO TO LEAKS AND DISCOMFORT",
+            "icon": "check_mark",
+            "row_content": "<p>When your disc is inserted correctly, you shouldn’t experience any discomfort or leaking.<\/p><p>First check the position by inserting a finger underneath the basin to ensure that your disc is covering your cervix. If you can feel your cervix outside of the basin, remove your disc and reinsert.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -557,7 +528,8 @@
         "template--21565118808337__d557b0ed-c42d-4e3e-b7c3-49f914c262d9-collapsible_row-3",
         "template--21565118808337__d557b0ed-c42d-4e3e-b7c3-49f914c262d9-collapsible_row-4",
         "c081b1a6-d4d0-4a8a-bd5e-f42962cc7484",
-        "62a7ea47-3809-4f18-a9ae-7fc7741e936c"
+        "62a7ea47-3809-4f18-a9ae-7fc7741e936c",
+        "5bc4422d-9b71-4e56-b64a-a83ee1d26f1e"
       ],
       "custom_css": [
         ".accordion .icon-accordion {fill: #5a5f6f;}"
@@ -578,6 +550,48 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "ad4587b5-87ed-4424-9460-342d59ace46b": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--21565118808337__ad4587b5-87ed-4424-9460-342d59ace46b-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "We'd love to help you."
+          }
+        },
+        "template--21565118808337__ad4587b5-87ed-4424-9460-342d59ace46b-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>More questions? Reach out to us at<a href=\"mailto:sayhey@saalt.com\">sayhey@saalt.com<\/a>, or visit our<a href=\"https:\/\/www.facebook.com\/groups\/saaltcupacademy\/?ref=bookmarks\" target=\"_blank\">Saalt Cup Academy<\/a>on Facebook to get tips from Saalt users in real time.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21565118808337__ad4587b5-87ed-4424-9460-342d59ace46b-section_title-1",
+        "template--21565118808337__ad4587b5-87ed-4424-9460-342d59ace46b-section_content-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -591,7 +605,7 @@
     "45857d07-d3ba-4a98-a5d3-e76bb7881c89",
     "a8714d00-ddb5-425d-a5b7-3f3c509757d2",
     "06d37be4-d8e3-4103-b918-88fd1c508243",
-    "4e2b1556-632c-41d6-a8de-86bf8d8a867b",
-    "d557b0ed-c42d-4e3e-b7c3-49f914c262d9"
+    "d557b0ed-c42d-4e3e-b7c3-49f914c262d9",
+    "ad4587b5-87ed-4424-9460-342d59ace46b"
   ]
 }
