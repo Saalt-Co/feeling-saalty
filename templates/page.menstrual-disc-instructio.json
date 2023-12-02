@@ -393,7 +393,7 @@
           "settings": {
             "title": "WASH",
             "rating": 0,
-            "text": "<p>Rinse your Saalt Disc in cold water after use to prevent staining.<\/p><p>Wash thoroughly after each use with warm water and Saalt Wash, or a mild pH-balanced cleanser. Avoid strong cleansers or anything that may irritate your skin.<\/p><p>Use a soft rag to wipe away any buildup.<\/p>",
+            "text": "<ul><li>Rinse your Saalt Disc in cold water after use to prevent staining.<\/li><li>Wash thoroughly after each use with warm water and Saalt Wash, or a mild pH-balanced cleanser. Avoid strong cleansers or anything that may irritate your skin.<\/li><li>Use a soft rag to wipe away any buildup.<\/li><\/ul>",
             "link_label": "",
             "link": ""
           }
@@ -403,7 +403,7 @@
           "settings": {
             "title": "SANITIZE",
             "rating": 0,
-            "text": "<p>You should sanitize your Saalt Disc between cycles by boiling your cup in water for 4–5 min (not more than 7 min). Use tongs or a wire whisk to ensure the disc doesn’t touch the bottom of the pot.<\/p><p>You may also rinse your Saalt Disc thoroughly with water, allow it to dry, and then wipe it with a soft rag and 70% isopropyl alcohol. Make sure all surfaces are sufficiently wet by the alcohol and allow it to air dry.<\/p><p>Meanwhile, toss your storage bag in the laundry to thoroughly clean.<\/p>",
+            "text": "<ul><li>You should sanitize your Saalt Disc between cycles by boiling your cup in water for 4–5 min (not more than 7 min). Use tongs or a wire whisk to ensure the disc doesn’t touch the bottom of the pot.<\/li><li>You may also rinse your Saalt Disc thoroughly with water, allow it to dry, and then wipe it with a soft rag and 70% isopropyl alcohol. Make sure all surfaces are sufficiently wet by the alcohol and allow it to air dry.<\/li><li>Meanwhile, toss your storage bag in the laundry to thoroughly clean.<\/li><\/ul>",
             "link_label": "",
             "link": ""
           }
@@ -413,7 +413,7 @@
           "settings": {
             "title": "STORE",
             "rating": 0,
-            "text": "<p>Dry your Saalt Disc thoroughly and store it in the bag provided (or another breathable container). Never use a plastic bag or airtight container for storage.<\/p><p>Some discoloration may occur over time. This is normal, and may vary from one person to another.<\/p><p>If your Saalt Disc is ripped or torn, or the silicone shows signs of deterioration (which can happen after using non-recommended cleaners) it’s time to replace the disc.<\/p>",
+            "text": "<ul><li>Dry your Saalt Disc thoroughly and store it in the bag provided (or another breathable container). Never use a plastic bag or airtight container for storage.<\/li><li>Some discoloration may occur over time. This is normal, and may vary from one person to another.<\/li><li>If your Saalt Disc is ripped or torn, or the silicone shows signs of deterioration (which can happen after using non-recommended cleaners) it’s time to replace the disc.<\/li><\/ul>",
             "link_label": "",
             "link": ""
           }
