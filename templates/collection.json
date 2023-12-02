@@ -91,6 +91,9 @@
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
+        "show_price_range": true,
+        "show_strikethrough_price": true,
+        "use_lowest_priced_variant": false,
         "show_vendor": false,
         "show_rating": true,
         "show_swatches": true,
@@ -128,8 +131,7 @@
           "settings": {
             "text_group_num": "1",
             "heading_tag": "1",
-            "title": "Do leakproof underwear work? Watch the magic.",
-            "title_font_size": "medium"
+            "title": "Do leakproof underwear work? Watch the magic."
           }
         },
         "template--18370419720465__fc031dea-6661-47b1-b752-79fa446b4dee-1687976507446c2c25-1": {
@@ -220,8 +222,9 @@
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
-        "mobile_text_alignment": "center",
+        "title_font_size": "small",
         "content_font_size": "small",
+        "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
@@ -479,6 +482,7 @@
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2",
         "8ad13ac4-10e5-4131-bf07-17d6ff34bba2"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -493,7 +497,7 @@
         "column_secondary_bg_opacity": 100,
         "review_star_color_override": "theme_default",
         "review_star_opacity_override": 100,
-        "button_text": "Button text",
+        "button_text": "",
         "button_url": "",
         "button_type": "primary",
         "theme_color_section_button_background": "theme_default",
