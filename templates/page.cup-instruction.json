@@ -620,6 +620,15 @@
             "page": ""
           }
         },
+        "ecb509e1-5ef0-46f1-947a-b98ba95d021c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "TO TRIM OR NOT TO RIM",
+            "icon": "check_mark",
+            "row_content": "<ul><li>The Saalt Cup’s stem is designed to be soft and comfortable so you can keep it to help locate the cup. Depending on how you wear your Saalt Cup, you may decide to trim off part or all of the stem. If you do, trim on one of the indentations.<\/li><li>Never trim the stem while your Saalt Cup is inserted. Make sure you know the desired length before trimming. Take care not to cut or scratch any part of the cup when trimming to avoid unwanted tearing of the cup.<\/li><\/ul>",
+            "page": ""
+          }
+        },
         "template--21580602507537__57bfdc1a-03e7-470b-bbb3-a190db33a0be-collapsible_row-3": {
           "type": "collapsible_row",
           "settings": {
@@ -629,12 +638,12 @@
             "page": ""
           }
         },
-        "template--21580602507537__57bfdc1a-03e7-470b-bbb3-a190db33a0be-collapsible_row-4": {
+        "b2d81bbd-7ff4-480c-b023-2249d0e7099c": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "CRITICAL CARE",
+            "heading": "SAY NO TO LEAKS AND DISCOMFORT",
             "icon": "check_mark",
-            "row_content": "<ul><li>Keep your Saalt Cup away from children and pets.<\/li><li>Never use your Saalt Cup for more than 12 hours* at a time without washing properly.<\/li><li>Never wash your Saalt Cup with anything that may irritate your vagina.<\/li><li>Avoid harsh cleansers like vinegar or bleach and strongly scented or fragranced cleansers that may cause the silicone to deteriorate.<\/li><li>Avoid soaking your Saalt Cup in anything other than water. Silicone is a porous material and can absorb oils or cleansers if exposed for longer periods of time; these substances may irritate your vagina or cause the silicone to deteriorate.<\/li><li>*8 hours for our Australian friends<\/li><\/ul>",
+            "row_content": "<ul><li>When your cup is inserted correctly, you shouldn’t experience any discomfort or leaking.<\/li><li>First, check the position. Your Saalt Cup sits lower in the vagina than a tampon. If it is too high or too close to the cervix, it can leak or cause discomfort and cramping.<\/li><li>Use your vaginal muscles to bear the cup down to a lower position.<\/li><li>Your vagina has a natural slant, so make sure the cup is inserted at the right angle to match it.<\/li><li>Leaking can also be caused by a poor seal. Make sure the four air holes are not clogged and that the cup has fully opened. Swirl a finger around the base of the cup to check for any folds or indentations.<\/li><li>Pinch the base of the cup and rotate it to make sure it is opened completely. If the cup still does not pop open, gently push outward against the inside of your vaginal walls to create space for the cup to unfold. If leaking persists or you cannot obtain a good seal, consider changing to a different size or softness. Most importantly, keep trying small adjustments; everyone’s anatomy is different.<\/li><\/ul>",
             "page": ""
           }
         },
@@ -647,21 +656,12 @@
             "page": ""
           }
         },
-        "ecb509e1-5ef0-46f1-947a-b98ba95d021c": {
+        "template--21580602507537__57bfdc1a-03e7-470b-bbb3-a190db33a0be-collapsible_row-4": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "TO TRIM OR NOT TO RIM",
+            "heading": "CRITICAL CARE",
             "icon": "check_mark",
-            "row_content": "<ul><li>The Saalt Cup’s stem is designed to be soft and comfortable so you can keep it to help locate the cup. Depending on how you wear your Saalt Cup, you may decide to trim off part or all of the stem. If you do, trim on one of the indentations.<\/li><li>Never trim the stem while your Saalt Cup is inserted. Make sure you know the desired length before trimming. Take care not to cut or scratch any part of the cup when trimming to avoid unwanted tearing of the cup.<\/li><\/ul>",
-            "page": ""
-          }
-        },
-        "b2d81bbd-7ff4-480c-b023-2249d0e7099c": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible roSAY NO TO LEAKS AND DISCOMFORT",
-            "icon": "check_mark",
-            "row_content": "<ul><li>When your cup is inserted correctly, you shouldn’t experience any discomfort or leaking.<\/li><li>First, check the position. Your Saalt Cup sits lower in the vagina than a tampon. If it is too high or too close to the cervix, it can leak or cause discomfort and cramping.<\/li><li>Use your vaginal muscles to bear the cup down to a lower position.<\/li><li>Your vagina has a natural slant, so make sure the cup is inserted at the right angle to match it.<\/li><li>Leaking can also be caused by a poor seal. Make sure the four air holes are not clogged and that the cup has fully opened. Swirl a finger around the base of the cup to check for any folds or indentations.<\/li><li>Pinch the base of the cup and rotate it to make sure it is opened completely. If the cup still does not pop open, gently push outward against the inside of your vaginal walls to create space for the cup to unfold. If leaking persists or you cannot obtain a good seal, consider changing to a different size or softness. Most importantly, keep trying small adjustments; everyone’s anatomy is different.<\/li><\/ul>",
+            "row_content": "<ul><li>Keep your Saalt Cup away from children and pets.<\/li><li>Never use your Saalt Cup for more than 12 hours* at a time without washing properly.<\/li><li>Never wash your Saalt Cup with anything that may irritate your vagina.<\/li><li>Avoid harsh cleansers like vinegar or bleach and strongly scented or fragranced cleansers that may cause the silicone to deteriorate.<\/li><li>Avoid soaking your Saalt Cup in anything other than water. Silicone is a porous material and can absorb oils or cleansers if exposed for longer periods of time; these substances may irritate your vagina or cause the silicone to deteriorate.<\/li><\/ul><p>*8 hours for our Australian friends<\/p>",
             "page": ""
           }
         }
@@ -669,11 +669,11 @@
       "block_order": [
         "template--21580602507537__57bfdc1a-03e7-470b-bbb3-a190db33a0be-collapsible_row-1",
         "template--21580602507537__57bfdc1a-03e7-470b-bbb3-a190db33a0be-collapsible_row-2",
-        "template--21580602507537__57bfdc1a-03e7-470b-bbb3-a190db33a0be-collapsible_row-3",
-        "template--21580602507537__57bfdc1a-03e7-470b-bbb3-a190db33a0be-collapsible_row-4",
-        "1bcd61b9-474c-4429-9c27-bec9d4a04435",
         "ecb509e1-5ef0-46f1-947a-b98ba95d021c",
-        "b2d81bbd-7ff4-480c-b023-2249d0e7099c"
+        "template--21580602507537__57bfdc1a-03e7-470b-bbb3-a190db33a0be-collapsible_row-3",
+        "b2d81bbd-7ff4-480c-b023-2249d0e7099c",
+        "1bcd61b9-474c-4429-9c27-bec9d4a04435",
+        "template--21580602507537__57bfdc1a-03e7-470b-bbb3-a190db33a0be-collapsible_row-4"
       ],
       "custom_css": [
         ".accordion .icon-accordion {fill: #5a5f6f;}"
