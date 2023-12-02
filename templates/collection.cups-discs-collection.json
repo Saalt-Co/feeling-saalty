@@ -59,8 +59,8 @@
             "copy": "<p>Everything you need for a fully sustainable flow.<\/p>",
             "link_type": "filter",
             "link_url": "\/collections\/extras",
-            "filter_name": "",
-            "filter_val": "",
+            "filter_name": "Product Type",
+            "filter_val": "Extras",
             "button_text": "Shop Extras"
           }
         }
