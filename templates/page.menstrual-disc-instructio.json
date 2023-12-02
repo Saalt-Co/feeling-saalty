@@ -40,7 +40,7 @@
         ".multicolumn .title {margin-left: 25%;}"
       ],
       "settings": {
-        "title": "SAALT DISC INSTRUCTION",
+        "title": "SAALT DISC INSTRUCTIONS",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -69,6 +69,17 @@
     "c436e99b-cf99-4e73-a7b8-4f1fede66b5d": {
       "type": "multicolumn",
       "blocks": {
+        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg",
+            "title": "",
+            "rating": 0,
+            "text": "<p>Saalt Discs are not supplied in a sterile state. Sanitize your disc by boiling it in water for 4–5 min (no more than 7 min). Use tongs or a whisk to ensure the disc doesn’t rest on the bottom of the pot.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "d8fa7087-4376-4bb2-a902-0116fc5be5c6": {
           "type": "column",
           "settings": {
@@ -90,23 +101,12 @@
             "link_label": "",
             "link": ""
           }
-        },
-        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg",
-            "title": "",
-            "rating": 0,
-            "text": "<p>Saalt Discs are not supplied in a sterile state. Sanitize your disc by boiling it in water for 4–5 min (no more than 7 min). Use tongs or a whisk to ensure the disc doesn’t rest on the bottom of the pot.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
+        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b",
         "d8fa7087-4376-4bb2-a902-0116fc5be5c6",
-        "c04c23d8-418f-4d6b-bd8e-a1253bcfadb3",
-        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b"
+        "c04c23d8-418f-4d6b-bd8e-a1253bcfadb3"
       ],
       "custom_css": [
         ".multicolumn-list h3 {text-align: center;}"
@@ -147,10 +147,18 @@
             "heading": "ALL PARTS OF DISC",
             "heading_size": "h0"
           }
+        },
+        "ee13ad30-213b-4b4a-a98e-150502941075": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Saalt Disc is flexible for easy insertion.<\/p>",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
-        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-heading-1"
+        "template--21565118808337__15fd34a1-f710-4107-b1d5-f4421d38487f-heading-1",
+        "ee13ad30-213b-4b4a-a98e-150502941075"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-05.jpg",
@@ -229,7 +237,7 @@
         "template--21565118808337__770db88e-ca54-4c3a-87bc-52d98d996f29-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>With your disc pinched, you are ready to insert.<\/p><p>Inserting your Saalt Disc is easier when using water as a natural lubricant.<\/p><p>Gently separate your labia (inner vaginal lips) with one hand. Use the other hand to hold the pinched disc rim side up and insert it so the removal notch is the last part of the disc to enter the vagina.<\/p>",
+            "text": "<p>With your disc pinched, you are ready to insert.<\/p><p>Inserting your Saalt Disc is easier when using water as a natural lubricant.<\/p><p>You can insert your Saalt Disc while sitting, squatting, or standing with one leg raised. The most popular way to insert the disc is on the toilet with your legs spread wide apart.<\/p><p>Gently separate your labia (inner vaginal lips) with one hand. Use the other hand to hold the pinched disc rim side up and insert it so the removal notch is the last part of the disc to enter the vagina.<\/p><p>Slide the disc in at a horizontal angle (pointed towards your tailbone), until it is completely inside your vaginal canal.<\/p><p>Push upwards on the front of the rim, resting the front of the disc above the pubic bone (aka the pubic symphysis).<\/p>",
             "text_style": "body"
           }
         },
@@ -272,7 +280,7 @@
             "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-08-removebg-preview.png",
             "caption": "STEP 3",
             "heading": "POSITION & SECURE",
-            "text": "<p>As you tuck the front end of the disc behind your pubic bone, the rim will pop open.<\/p><p>The disc should sit below your cervix in order to catch your flow. To check its position, insert a finger underneath the disc basin to feel for your cervix.<\/p><p>If you can feel your cervix outside of the basin, remove your disc and insert again.<\/p>",
+            "text": "<p>As you tuck the front end of the disc behind your pubic bone, the rim will pop open.<\/p><p>The disc should sit below your cervix in order to catch your flow. To check its position, insert a finger underneath the disc basin to feel for your cervix.<\/p><p>If you can feel your cervix outside of the basin, remove your disc and insert again.<\/p><p>The disc will sit at a slight diagonal angle when positioned correctly. If you can feel your disc in your vaginal canal or if the disc starts to slip, it might be positioned incorrectly. Remove and reinsert until it sits comfortably.<\/p><p>Congratulations, you’ve successfully inserted your Saalt Disc! You’re ready to live your best life. Feel free to do a heel click or somersault and go enjoy up to 12 hours worry free!<\/p>",
             "theme_color_row_background": "theme_default",
             "theme_color_row_text": "theme_default",
             "button_text": "",
@@ -331,7 +339,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-10_aec4ef91-9666-4a0d-b713-7a7bc60dc0ad.jpg",
             "title": "REMOVE",
-            "text_content": "",
+            "text_content": "Wash your hands thoroughly with warm water and mild soap.\nRemoving your disc is much easier if you are relaxed. Get into whatever position feels most comfortable. Similar to insertion, you can sit on the toilet with your legs spread wide.\nInsert your finger behind your pubic bone to feel for the rim of the disc.\nFind the removal notch and hook one finger inside, gently pulling down on the grip lines to untuck the Saalt Disc. Refrain from only gripping and pulling the thin basin of the disc to remove, as this can damage the silicone. It’s best to hook the finger notch or anywhere under the rim to remove.\nGently pull the disc out at a horizontal angle. Keep it upright to avoid spilling.\nIf helpful, keep the disc pinched with your other hand as you pull the disc out to reduce pressure on the vaginal opening.\nHolding your disc firmly, empty it into a toilet or sink.",
             "button_text": "",
             "button_url": "",
             "button_type": "secondary",
@@ -346,7 +354,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-08_7eec2e05-77c7-407a-9dba-93addc97f4e2.jpg",
             "title": "REINSERT",
-            "text_content": "",
+            "text_content": "Rinse your Saalt Disc in cold water (to prevent staining) then wash using warm water and Saalt Wash, or a mild pH-balanced cleanser. Rinse thoroughly.\nour Saalt Disc is ready to reinsert! If you need more insertion coaching, refer to the “Insert” section above. You got this.",
             "button_text": "",
             "button_url": "",
             "button_type": "primary",
@@ -383,7 +391,6 @@
         "f14c4992-51d2-4dc7-be1d-cb2e838b8e03": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-01_333d21d5-f5bb-4bb0-8ca1-47b03c3e3742.jpg",
             "title": "WASH",
             "rating": 0,
             "text": "<p>Rinse your Saalt Disc in cold water after use to prevent staining.<\/p><p>Wash thoroughly after each use with warm water and Saalt Wash, or a mild pH-balanced cleanser. Avoid strong cleansers or anything that may irritate your skin.<\/p><p>Use a soft rag to wipe away any buildup.<\/p>",
@@ -394,7 +401,6 @@
         "2658dcaa-6470-4f80-bcb7-c1ab11746ed7": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-14_3b7b368f-58d1-42fb-b3d0-443f6baaf745.jpg",
             "title": "SANITIZE",
             "rating": 0,
             "text": "<p>You should sanitize your Saalt Disc between cycles by boiling your cup in water for 4–5 min (not more than 7 min). Use tongs or a wire whisk to ensure the disc doesn’t touch the bottom of the pot.<\/p><p>You may also rinse your Saalt Disc thoroughly with water, allow it to dry, and then wipe it with a soft rag and 70% isopropyl alcohol. Make sure all surfaces are sufficiently wet by the alcohol and allow it to air dry.<\/p><p>Meanwhile, toss your storage bag in the laundry to thoroughly clean.<\/p>",
@@ -405,7 +411,6 @@
         "c250f893-a581-47a3-b4c2-0ee08971c6e9": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg",
             "title": "STORE",
             "rating": 0,
             "text": "<p>Dry your Saalt Disc thoroughly and store it in the bag provided (or another breathable container). Never use a plastic bag or airtight container for storage.<\/p><p>Some discoloration may occur over time. This is normal, and may vary from one person to another.<\/p><p>If your Saalt Disc is ripped or torn, or the silicone shows signs of deterioration (which can happen after using non-recommended cleaners) it’s time to replace the disc.<\/p>",
