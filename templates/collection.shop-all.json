@@ -72,8 +72,8 @@
             "copy": "<p>All the extras that make it easy to care for your underwear, cups, and discs. <\/p>",
             "link_type": "filter",
             "link_url": "",
-            "filter_name": "Style",
-            "filter_val": "Brief",
+            "filter_name": "Product Type",
+            "filter_val": "Extras",
             "button_text": "Filter"
           }
         }
@@ -388,7 +388,7 @@
         "8ad13ac4-10e5-4131-bf07-17d6ff34bba2"
       ],
       "settings": {
-        "title": "",
+        "title": "9\/10 People Never Go Back",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
@@ -486,7 +486,6 @@
         "01fe6699-0b68-4f95-98df-7681701008ae",
         "ebc0fde7-67ee-4028-b730-3745cb413dac"
       ],
-      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-2",
