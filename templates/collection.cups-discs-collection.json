@@ -55,12 +55,12 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/Shop_by_Category_-_Accessories_1.jpg",
-            "title": "<p>Extras & Accessories<\/p>",
+            "title": "<p>Extras<\/p>",
             "copy": "<p>Everything you need for a fully sustainable flow.<\/p>",
-            "link_type": "url",
+            "link_type": "filter",
             "link_url": "\/collections\/extras",
-            "filter_name": "",
-            "filter_val": "",
+            "filter_name": "Product Type",
+            "filter_val": "Extras",
             "button_text": "Shop Extras"
           }
         }
@@ -423,10 +423,10 @@
         "accessibility_info": "Slideshow of customer reviews"
       }
     },
-    "8c4a0b05-fe36-4c97-9368-6117bd4422e3": {
-      "type": "saalt-bg-media-with-text",
+    "322a376d-644b-4c45-afab-7de51bc02822": {
+      "type": "saalt-media-with-text",
       "blocks": {
-        "8d9bd788-e50b-4fe4-a151-9c54a28eee08": {
+        "7a35cec9-ed09-4af8-8732-d87970bb6a8e": {
           "type": "section_icon_group",
           "settings": {
             "use_max_icon_group_width": false,
@@ -446,7 +446,7 @@
             "desktop_icon_alignment": "center"
           }
         },
-        "825f8cba-267b-4957-932e-9c58a4a65ea8": {
+        "670aff44-664c-4a98-a9c1-48f83485ec25": {
           "type": "section_icon_with_text",
           "settings": {
             "icon_svg": "<svg width=\"126\" height=\"126\" viewbox=\"0 0 126 126\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g clip-path=\"url(#clip0_493_7014)\">\n<path d=\"M110.097 42.4007L109.907 42.4467C109.637 44.6838 107.874 47.5699 101.278 49.1463C93.7613 50.9449 85.8645 48.5329 80.9821 45.0098C80.273 44.4986 79.5535 43.9727 78.8132 43.4645C78.429 43.1978 78.0462 42.9267 77.6605 42.6556C71.9815 38.6465 65.3056 35.7085 58.0362 36.3011H57.9932C57.9695 36.3011 57.9443 36.3011 57.922 36.31C53.1836 36.7145 49.7492 38.1605 47.0373 40.088C44.584 41.6747 42.4611 43.7203 40.7856 46.1121C37.6821 50.5849 36.559 55.7422 37.6257 60.6447C37.6687 60.8432 37.737 61.0329 37.7874 61.2373C36.5746 61.1828 35.3595 61.2065 34.1498 61.3085C27.1178 61.8922 22.0144 66.368 18.9034 71.1949C16.3876 75.1063 15.326 79.7754 15.9037 84.3883L16.0936 84.3438C16.3681 82.1052 18.129 79.2206 24.7263 77.6427C32.2434 75.8456 40.1403 78.2561 45.0226 81.7792C45.7318 82.2918 46.4513 82.8163 47.1916 83.3245C47.5758 83.5912 47.9585 83.8623 48.3443 84.1334C54.0218 88.1411 60.6932 91.079 67.9626 90.4864H68.0071L68.0783 90.4775C72.8153 90.0715 76.2496 88.627 78.963 86.6995C81.4167 85.112 83.5396 83.0654 85.2147 80.6725C88.3182 76.1997 89.4413 71.0423 88.3746 66.1413C88.3316 65.9413 88.2633 65.7517 88.2129 65.5487C89.4257 65.603 90.6407 65.5798 91.8505 65.4791C98.8825 64.8864 103.986 60.418 107.097 55.5911C109.612 51.6805 110.674 47.0126 110.097 42.4007V42.4007ZM87.753 66.3013C87.8613 66.8021 87.9355 67.3073 87.9963 67.814C88.7381 75.0188 82.8039 78.9746 77.5003 79.4724C70.1894 80.1599 64.7077 75.3063 57.9175 70.3919C57.4117 70.0275 56.8895 69.6511 56.345 69.257C50.1972 64.6835 45.0701 61.7307 38.4669 61.267C38.3957 61.0047 38.3081 60.7484 38.2488 60.4788C38.1405 59.978 38.0663 59.4728 38.0055 58.9661C37.2103 51.4101 43.1979 47.8055 48.5015 47.3077C55.8109 46.6262 61.3 51.4857 68.0842 56.3926C68.5901 56.7586 69.1123 57.1334 69.6568 57.5275C75.8046 62.1011 80.9317 65.0538 87.5349 65.5176C87.6061 65.7813 87.6937 66.0361 87.753 66.3013Z\"><\/path>\n<\/g>\n<defs>\n<clippath id=\"clip0_493_7014\">\n<rect width=\"126\" height=\"126\"><\/rect>\n<\/clippath>\n<\/defs>\n<\/svg>",
@@ -455,59 +455,40 @@
             "theme_color_icon_text_color": "match_text"
           }
         },
-        "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-0": {
+        "template--21571779264785__322a376d-644b-4c45-afab-7de51bc02822-section_title-1": {
           "type": "section_title",
           "settings": {
-            "heading_tag": "1",
+            "heading_tag": "3",
             "title": "Saalt Bliss Guarantee"
           }
         },
-        "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-1": {
+        "template--21571779264785__322a376d-644b-4c45-afab-7de51bc02822-section_content-1": {
           "type": "section_content",
           "settings": {
             "text_content": "<p>If you're not happy with your Saalt product,<strong> <\/strong><a href=\"\/pages\/replacements\" title=\"Replacements\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/a><strong>.<\/strong> Why? We know that learning to use reusables can take time, but we're here to help and cheer you to Saalt bliss. <br\/>Your Saalt(isfaction) guaranteed.<\/p>"
           }
-        },
-        "b2ee0a35-d994-4a99-9c1b-24b9c7973252": {
-          "type": "section_title",
-          "disabled": true,
-          "settings": {
-            "heading_tag": "3",
-            "title": "Reach out to our Saalt Coaches"
-          }
-        },
-        "a97b9c6f-ca1f-4195-a315-328e0406cdd6": {
-          "type": "saalt_contact_links",
-          "disabled": true,
-          "settings": {
-            "theme_color_contacts_icon_color": "match_text"
-          }
         }
       },
       "block_order": [
-        "8d9bd788-e50b-4fe4-a151-9c54a28eee08",
-        "825f8cba-267b-4957-932e-9c58a4a65ea8",
-        "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-0",
-        "template--18370419720465__8c4a0b05-fe36-4c97-9368-6117bd4422e3-168798395144a45eb6-1",
-        "b2ee0a35-d994-4a99-9c1b-24b9c7973252",
-        "a97b9c6f-ca1f-4195-a315-328e0406cdd6"
+        "7a35cec9-ed09-4af8-8732-d87970bb6a8e",
+        "670aff44-664c-4a98-a9c1-48f83485ec25",
+        "template--21571779264785__322a376d-644b-4c45-afab-7de51bc02822-section_title-1",
+        "template--21571779264785__322a376d-644b-4c45-afab-7de51bc02822-section_content-1"
       ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
-        "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/solid_color_background.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/solid_color_background_desktop.jpg",
-        "media_overlay_color": "--palette-color-1",
-        "media_overlay_opacity": 0,
+        "media_type": "none",
+        "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
+        "media_width": 50,
         "title_font_size": "small",
         "content_font_size": "small",
         "mobile_text_position": "below",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "center",
+        "desktop_text_position": "right",
         "desktop_text_alignment": "center",
         "use_max_text_width": true,
         "max_width": "600px",
@@ -625,7 +606,7 @@
     "6f86141b-6e50-4f99-a4bf-ce75e198df4c",
     "835cabec-b298-4b76-9a74-2ae85e6ea4be",
     "2421f247-3fb3-4d3e-83cf-d7f8823ef0a9",
-    "8c4a0b05-fe36-4c97-9368-6117bd4422e3",
+    "322a376d-644b-4c45-afab-7de51bc02822",
     "b4f29bbb-7268-4349-91b5-1ab1f590f3c0",
     "f3d28335-7123-4133-9323-a99fd5d9e99e"
   ]
