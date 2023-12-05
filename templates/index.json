@@ -28,7 +28,7 @@
           "settings": {
             "button_text": "Shop All",
             "button_url": "shopify:\/\/collections\/shop-all",
-            "button_type": "secondary",
+            "button_type": "primary",
             "theme_color_section_button_background": "theme-color-bg-4",
             "theme_color_text_section_button_text": "theme-color-text-1",
             "theme_color_section_button_background_hover": "theme_default",
