@@ -1,29 +1,116 @@
 {
   "sections": {
+    "afbc1ae8-07fe-4461-9c01-064b82ac7529": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Period care \nsimplified"
+          }
+        },
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Premium reusable menstrual cups, discs and leakproof period underwear.<\/p>"
+          }
+        },
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_buttons_group-1": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "flex-end",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_button-1": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Shop All",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-4",
+            "theme_color_text_section_button_text": "theme-color-text-1",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_title-1",
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_content-1",
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_buttons_group-1",
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_button-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Nov-Promo-Homepage-Slider-Promo-1-Mobile_03_ba54a0c1-ded5-41d1-9ea4-716070b41682.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Nov-Promo-Homepage-Slider-Promo-1-US_03_f33cc974-6c31-4063-9141-f4c0745c9a1e.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "overlay",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "center",
+        "desktop_text_alignment": "right",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "heading": "Period care simplified",
+            "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Premium reusable menstrual cups, discs and leakproof period underwear.",
             "text_style": "body"
+          }
+        },
+        "a67ba2a5-a766-4d09-849b-26536029ec43": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "29974826-5494-460a-91a6-4709bbf912a7": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Shop All",
+            "button_url": "shopify:\/\/collections\/shop-all",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-4",
+            "theme_color_text_section_button_text": "theme-color-text-1",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
           }
         }
       },
       "block_order": [
         "heading",
-        "text"
+        "text",
+        "a67ba2a5-a766-4d09-849b-26536029ec43",
+        "29974826-5494-460a-91a6-4709bbf912a7"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image": "shopify:\/\/shop_images\/Saalt-Nov-Promo-Homepage-Slider-Promo-1-US_03_f33cc974-6c31-4063-9141-f4c0745c9a1e.jpg",
+        "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
@@ -32,7 +119,7 @@
         "theme_color_text": "theme_default",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
+        "stack_images_on_mobile": true,
         "show_text_below": false
       }
     },
@@ -297,6 +384,7 @@
     }
   },
   "order": [
+    "afbc1ae8-07fe-4461-9c01-064b82ac7529",
     "image_banner",
     "rich_text",
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
