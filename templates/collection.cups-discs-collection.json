@@ -304,6 +304,63 @@
         "padding_bottom": 0
       }
     },
+    "1ba2232c-e878-4f74-8014-512c7091b4f3": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21571779264785__1ba2232c-e878-4f74-8014-512c7091b4f3-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/disc_placement.jpg",
+            "title": "Saalt Disc",
+            "rating": 0,
+            "text": "<h4>Sits in the fornix directly under the cervix.<\/h4><ul><li>No suction<\/li><li>Rests in vaginal fornix<\/li><li>Custom removal notch<\/li><li>No-mess period sex<\/li><li>Collects 4—6x more than a tampon<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21571779264785__1ba2232c-e878-4f74-8014-512c7091b4f3-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cup_placement.jpg",
+            "title": "Saalt Cup",
+            "rating": 0,
+            "text": "<h4>Sits in the vaginal canal.<\/h4><ul><li>Seal keeps the cup in place<\/li><li>Rests in vaginal canal<\/li><li>Great for beginners<\/li><li>Two firmness options<\/li><li>Collects 3—4x more than a tampon<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21571779264785__1ba2232c-e878-4f74-8014-512c7091b4f3-column-1",
+        "template--21571779264785__1ba2232c-e878-4f74-8014-512c7091b4f3-column-2"
+      ],
+      "settings": {
+        "title": "Saalt Period Disc or Period Cup?",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "--palette-color-5",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "835cabec-b298-4b76-9a74-2ae85e6ea4be": {
       "type": "multicolumn",
       "blocks": {
@@ -604,6 +661,7 @@
     "product-grid",
     "608ca706-ad50-41fb-bcb5-660ee4c39ec0",
     "6f86141b-6e50-4f99-a4bf-ce75e198df4c",
+    "1ba2232c-e878-4f74-8014-512c7091b4f3",
     "835cabec-b298-4b76-9a74-2ae85e6ea4be",
     "2421f247-3fb3-4d3e-83cf-d7f8823ef0a9",
     "322a376d-644b-4c45-afab-7de51bc02822",
