@@ -65,64 +65,6 @@
         "padding_bottom": 0
       }
     },
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Period care simplified",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Premium reusable menstrual cups, discs and leakproof period underwear.",
-            "text_style": "body"
-          }
-        },
-        "a67ba2a5-a766-4d09-849b-26536029ec43": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "center",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "29974826-5494-460a-91a6-4709bbf912a7": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Shop All",
-            "button_url": "shopify:\/\/collections\/shop-all",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme-color-bg-4",
-            "theme_color_text_section_button_text": "theme-color-text-1",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "a67ba2a5-a766-4d09-849b-26536029ec43",
-        "29974826-5494-460a-91a6-4709bbf912a7"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Saalt-Nov-Promo-Homepage-Slider-Promo-1-US_03_f33cc974-6c31-4063-9141-f4c0745c9a1e.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -385,7 +327,6 @@
   },
   "order": [
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
-    "image_banner",
     "rich_text",
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
     "featured_collection",
