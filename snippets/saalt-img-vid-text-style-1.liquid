@@ -90,22 +90,22 @@
                 justify-content: {{ block.settings.mobile_icon_vertical_alignment }};
                 align-items: {{ block.settings.mobile_icon_horizontal_alignment }};
               }
-              #section-{{ section.id }} .icons-wrapper.mobile-grid .icon-wrapper, #section-{{ section.id }} .icons-wrapper.mobile-grid * {
-                {% if block.settings.icon_text_position == "left" or block.settings.icon_text_position == "right" %}
-                  {% assign alignment = block.settings.mobile_icon_horizontal_alignment %}
-                {% else %}
-                  {% assign alignment = block.settings.mobile_icon_vertical_alignment %}
-                {% endif %}
-                {% case alignment %}
-                  {% when "flex-start" %}
-                    {% assign text_alignment = "left" %}
-                  {% when "center" %}
-                    {% assign text_alignment = "center" %}
-                  {% when "flex-end" %}
-                    {% assign text_alignment = "right" %}
-                {% endcase %}
-                text-align: {{ text_alignment }};
-              }
+              #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper * {
+                  {% if block.settings.icon_text_position == "left" or block.settings.icon_text_position == "right" %}
+                    {% assign alignment = block.settings.mobile_icon_vertical_alignment %}
+                    {% else %}
+                    {% assign alignment = block.settings.mobile_icon_horizontal_alignment %}
+                  {% endif %}
+                  {% case alignment %}
+                    {% when "flex-start" %}
+                      {% assign text_alignment = "left" %}
+                    {% when "center" %}
+                      {% assign text_alignment = "center" %}
+                    {% when "flex-end" %}
+                      {% assign text_alignment = "right" %}
+                  {% endcase %}
+                  text-align: {{ text_alignment }};
+                }
               #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
                 max-width: {{ block.settings.mobile_icon_max_width }};
                 min-height: {{ block.settings.mobile_icon_height }};
@@ -147,23 +147,36 @@
                 #section-{{ section.id }} .icons-wrapper .icon-wrapper {
                   min-width: {{ block.settings.desktop_icon_min_width }};
                   max-width: {{ block.settings.desktop_icon_wrapper_max_width }};
+                  justify-content: {{ block.settings.desktop_icon_horizontal_alignment }};
+                  align-items: {{ block.settings.desktop_icon_vertical_alignment }};
                 }
-                #section-{{ section.id }} .icons-wrapper.desktop-grid .icon-wrapper, #section-{{ section.id }} .icons-wrapper.desktop-grid * {
-                {% if block.settings.icon_text_position == "above" or block.settings.icon_text_position == "below" %}
-                  {% assign alignment = block.settings.desktop_icon_horizontal_alignment %}
-                {% else %}
-                  {% assign alignment = block.settings.desktop_icon_vertical_alignment %}
-                {% endif %}
-                {% case alignment %}
-                  {% when "flex-start" %}
-                    {% assign text_alignment = "left" %}
-                  {% when "center" %}
-                    {% assign text_alignment = "center" %}
-                  {% when "flex-end" %}
-                    {% assign text_alignment = "right" %}
-                {% endcase %}
-                text-align: {{ text_alignment }};
-              }
+                #section-{{ section.id }} .icons-wrapper.mobile-column .icon-wrapper[class*='column'], #section-{{ section.id }} .icons-wrapper.mobile-grid .icon-wrapper[class*='column'] {
+                  justify-content: unset;
+                  align-items: unset;
+                }
+                #section-{{ section.id }} .icons-wrapper.desktop-column .icon-wrapper[class*='column'], #section-{{ section.id }} .icons-wrapper.desktop-grid .icon-wrapper[class*='column'] {
+                  justify-content: {{ block.settings.desktop_icon_vertical_alignment }};
+                  align-items: {{ block.settings.desktop_icon_horizontal_alignment }};
+                }
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper * {
+                  text-align: unset;
+                }
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper * {
+                  {% if block.settings.icon_text_position == "left" or block.settings.icon_text_position == "right" %}
+                    {% assign alignment = block.settings.desktop_icon_vertical_alignment %}
+                    {% else %}
+                    {% assign alignment = block.settings.desktop_icon_horizontal_alignment %}
+                  {% endif %}
+                  {% case alignment %}
+                    {% when "flex-start" %}
+                      {% assign text_alignment = "left" %}
+                    {% when "center" %}
+                      {% assign text_alignment = "center" %}
+                    {% when "flex-end" %}
+                      {% assign text_alignment = "right" %}
+                  {% endcase %}
+                  text-align: {{ text_alignment }};
+                }
                 #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
                   max-width: {{ block.settings.desktop_icon_max_width }};
                   min-height: {{ block.settings.desktop_icon_height }};
