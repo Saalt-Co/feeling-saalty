@@ -8,32 +8,7 @@
         "padding_bottom": 28
       }
     },
-    "68097338-14d8-4ae5-834d-09eb7848e33e": {
-      "type": "sl-image-banner",
-      "custom_css": [
-        "#image-banner-template--21565118808337__68097338-14d8-4ae5-834d-09eb7848e33e .image-banner a.image-banner-cta {display: none;}",
-        "#image-banner-template--21565118808337__68097338-14d8-4ae5-834d-09eb7848e33e .image-banner h2 {margin-bottom: 95px;}"
-      ],
-      "settings": {
-        "cover_opacity": 7,
-        "button_background_color": "#ffffff",
-        "button_text_color": "#ffffff",
-        "text_color": "#ffffff",
-        "box_alignment": "left",
-        "text_alignment": "left",
-        "max_width": 3000,
-        "padding_top": 100,
-        "padding_bottom": 100,
-        "padding_left": 10,
-        "padding_right": 10,
-        "headline": "",
-        "content": "",
-        "hero_image": "shopify:\/\/shop_images\/Disc-instructions-hero-01.jpg",
-        "cta": "",
-        "cta_link": "",
-        "button_corner_radius": 5
-      }
-    },
+
     "528e9349-6732-4cf9-938c-19cc585e6a6d": {
       "type": "multicolumn",
       "custom_css": [
