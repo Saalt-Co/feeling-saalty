@@ -3790,6 +3790,11 @@ p a {
   stroke: rgb(var(--palette-color-7));
 }
 
+* .svg-color-fill.placeholder,
+*.svg-color-fill.placeholder {
+  background: transparent;
+}
+
 /* PRIMARY Button color overrides based on background color class */
 .button.button--primary.theme-color-bg-0 {
   background-color: rgb(var(--palette-color-0));
