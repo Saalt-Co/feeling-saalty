@@ -1,38 +1,68 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "afbc1ae8-07fe-4461-9c01-064b82ac7529": {
+      "type": "saalt-bg-media-with-text",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_title-1": {
+          "type": "section_title",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "heading_tag": "1",
+            "title": "Period care \nsimplified"
           }
         },
-        "text": {
-          "type": "text",
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_content-1": {
+          "type": "section_content",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text_content": "<p>Premium reusable menstrual cups, discs and leakproof period underwear.<\/p>"
+          }
+        },
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_buttons_group-1": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "flex-end",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_button-1": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Shop All",
+            "button_url": "shopify:\/\/collections\/shop-all",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-4",
+            "theme_color_text_section_button_text": "theme-color-text-1",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_title-1",
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_content-1",
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_buttons_group-1",
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_button-1"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Nov-Promo-Homepage-Slider-Promo-1-Mobile_03_ba54a0c1-ded5-41d1-9ea4-716070b41682.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Nov-Promo-Homepage-Slider-Promo-1-US_03_f33cc974-6c31-4063-9141-f4c0745c9a1e.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "overlay",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "center",
+        "desktop_text_alignment": "right",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "rich_text": {
@@ -59,7 +89,8 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-1",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
@@ -143,6 +174,7 @@
       ],
       "settings": {
         "section_id": "",
+        "make_full_width": false,
         "mobile_min_width": "40%",
         "mobile_max_width": "280px",
         "mobile_aspect_ratio": "1\/1.5",
@@ -163,10 +195,16 @@
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
+        "enable_desktop_slider": false,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
         "show_view_all": false,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -180,59 +218,6 @@
         "padding_bottom": 36
       }
     },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -240,6 +225,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
+            "rating": 0,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
@@ -249,6 +235,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
+            "rating": 0,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
@@ -258,6 +245,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
+            "rating": 0,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
@@ -276,10 +264,20 @@
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "center",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "Button text",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -315,26 +313,23 @@
         "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-1"
       ],
       "settings": {
-        "layout": "full_bleed",
         "slide_height": "medium",
         "slider_visual": "counter",
         "auto_rotate": false,
         "change_slides_speed": 5,
-        "bg_color": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
         "include_img": true,
         "image_behavior": "none",
-        "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
     }
   },
   "order": [
-    "image_banner",
+    "afbc1ae8-07fe-4461-9c01-064b82ac7529",
     "rich_text",
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
     "featured_collection",
-    "collage",
-    "video",
     "multicolumn",
     "be10f763-17a0-47a9-acef-75ab6afe0f30"
   ]
