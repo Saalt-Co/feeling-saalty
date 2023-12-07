@@ -18,7 +18,7 @@
     {% if section.settings.section_id != blank %}
       id="{{ section.settings.section_id | handleize }}"
     {% endif -%}
-    class="section-inner"
+    class="section-inner scroll-trigger animate--fade-in"
   >
     {%- liquid
       assign block_count = section.blocks.size

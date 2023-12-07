@@ -20,16 +20,16 @@
   assign compare_at_price = target.compare_at_price
   assign price = target.price | default: 1999
   assign available = target.available | default: false
-  assign money_price = price | money
-  if settings.currency_code_enabled
-    assign money_price = price | money_with_currency
-  endif
-
-  if target == product and product.price_varies
-    assign money_price = 'products.product.price.from_price_html' | t: price: money_price
-  endif
 
   assign downcased_prod_type = product.type | downcase
+
+  if show_price_range == null
+    assign show_price_range = true
+  endif
+
+  if show_strikethrough_price == null
+    assign show_strikethrough_price = true
+  endif
 -%}
 
 <div
@@ -37,7 +37,7 @@
     price
     {%- if price_class %} {{ price_class }}{% endif -%}
     {%- if available == false %} price--sold-out {% endif -%}
-    {%- if compare_at_price > price %} price--on-sale {% endif -%}
+    {%- if compare_at_price > price and show_strikethrough_price != false %} price--on-sale {% endif -%}
     {%- if product.price_varies == false and product.compare_at_price_varies %} price--no-compare{% endif -%}
     {%- if show_badges %} price--show-badge{% endif -%}
   "
@@ -51,7 +51,16 @@
     <div class="price__regular">
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       <span class="price-item price-item--regular">
-        {{ money_price }}
+        {% if product.price_varies and template.name != 'product' and show_price_range != false %}
+          {% if settings.price_prefix %}
+            {{ settings.price_prefix }}
+          {% endif %}
+          {% render 'format-price', price: product.price_min, control_white_space: true %}
+          {{ settings.price_separator }}
+          {% render 'format-price', price: product.price_max, control_white_space: true %}
+        {% else %}
+          {% render 'format-price', price: price, control_white_space: true %}
+        {% endif %}
       </span>
     </div>
     <div class="price__sale">
@@ -59,23 +68,24 @@
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
         <span>
           <s class="price-item price-item--regular">
-            {% if settings.currency_code_enabled %}
-              {{ compare_at_price | money_with_currency }}
-            {% else %}
-              {{ compare_at_price | money }}
-            {% endif %}
+            {% render 'format-price', price: compare_at_price, control_white_space: true %}
           </s>
         </span>
       {%- endunless -%}
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
       <span class="price-item price-item--sale price-item--last">
-        {{ money_price }}
+        {% render 'format-price', price: price, control_white_space: true %}
       </span>
     </div>
     <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
       <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
       <span class="price-item price-item--last">
-        <span>{{- product.selected_or_first_available_variant.unit_price | money -}}</span>
+        <span>
+          {%- render 'format-price',
+            price: product.selected_or_first_available_variant.unit_price,
+            control_white_space: true
+          -%}
+        </span>
         <span aria-hidden="true">/</span>
         <span class="visually-hidden">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
         <span>
