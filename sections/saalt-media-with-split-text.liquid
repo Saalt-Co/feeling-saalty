@@ -75,7 +75,7 @@
     {% if section.settings.section_id != blank %}
       id="{{ section.settings.section_id | handleize }}"
     {% endif -%}
-    class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}"
+    class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %} scroll-trigger animate--fade-in"
   >
     <div id="section-{{ section.id }}-text-1" class="inner-grid-wrapper">
       {%- render 'saalt-img-vid-text-split-style', section: section, text_group_num: '1' -%}
@@ -304,7 +304,7 @@
       "type": "text",
       "id": "section_id",
       "label": "Section ID (Optional)",
-      "info": "Typically only used when setting this ID as a link's destination."
+      "info": "t:sections.all.section_id.info"
     },
     {
       "type": "header",
@@ -455,7 +455,56 @@
       "type": "header",
       "content": "Text Settings"
     },
-
+    {
+      "type": "select",
+      "id": "title_font_size",
+      "label": "Title font size",
+      "info": "This sets the font size for *all* section titles",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small (30px)"
+        },
+        {
+          "value": "medium",
+          "label": "Medium (40px)"
+        },
+        {
+          "value": "large",
+          "label": "Large (48px)"
+        },
+        {
+          "value": "x-large",
+          "label": "X-Large (50px)"
+        }
+      ],
+      "default": "small"
+    },
+    {
+      "type": "select",
+      "id": "content_font_size",
+      "label": "Content font size",
+      "info": "This sets the font size for *all* section content",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small (16px)"
+        },
+        {
+          "value": "medium",
+          "label": "Medium (18px)"
+        },
+        {
+          "value": "large",
+          "label": "Large (25px)"
+        },
+        {
+          "value": "x-large",
+          "label": "X-Large (30px)"
+        }
+      ],
+      "default": "small"
+    },
     {
       "type": "header",
       "content": "Mobile Text Settings"
@@ -487,30 +536,6 @@
     {
       "type": "header",
       "content": "Desktop Text Settings"
-    },
-    {
-      "type": "select",
-      "id": "content_font_size",
-      "label": "Content font size",
-      "options": [
-        {
-          "value": "small",
-          "label": "Small (16px)"
-        },
-        {
-          "value": "medium",
-          "label": "Medium (18px)"
-        },
-        {
-          "value": "large",
-          "label": "Large (25px)"
-        },
-        {
-          "value": "x-large",
-          "label": "X-Large (30px)"
-        }
-      ],
-      "default": "small"
     },
     {
       "type": "select",
@@ -637,30 +662,6 @@
           "id": "title",
           "label": "Title",
           "default": "Section Title Goes Here"
-        },
-        {
-          "type": "select",
-          "id": "title_font_size",
-          "label": "Title font size",
-          "options": [
-            {
-              "value": "small",
-              "label": "Small (30px)"
-            },
-            {
-              "value": "medium",
-              "label": "Medium (40px)"
-            },
-            {
-              "value": "large",
-              "label": "Large (48px)"
-            },
-            {
-              "value": "x-large",
-              "label": "X-Large (50px)"
-            }
-          ],
-          "default": "medium"
         }
       ]
     },

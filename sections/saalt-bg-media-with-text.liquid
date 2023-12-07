@@ -67,7 +67,7 @@
     {% if section.settings.section_id != blank %}
       id="{{ section.settings.section_id | handleize }}"
     {% endif -%}
-    class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}"
+    class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %} scroll-trigger animate--fade-in"
   >
     {%- case section.settings.media_type -%}
       {%- when 'video' -%}
@@ -81,6 +81,10 @@
 </section>
 
 {%- style -%}
+    #section-{{ section.id }}  {
+      display: block;
+      position: relative;
+    }
     #section-{{ section.id }} .section-inner {
       display: flex;
       position: relative;
@@ -96,6 +100,17 @@
       display: block;
       width: 100%;
       height: auto;
+    }
+    #section-{{ section.id }} .media-wrapper::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background: rgba(var({{ section.settings.media_overlay_color }}));
+      opacity: {{ section.settings.media_overlay_opacity }}%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
     #section-{{ section.id }} .media-wrapper.desktop {
       display: none;
@@ -260,7 +275,7 @@
       "type": "text",
       "id": "section_id",
       "label": "Section ID (Optional)",
-      "info": "Typically only used when setting this ID as a link's destination."
+      "info": "t:sections.all.section_id.info"
     },
     {
       "type": "header",
@@ -390,6 +405,58 @@
       "type": "video",
       "id": "video",
       "label": "Shopify-hosted *VIDEO*"
+    },
+    {
+      "type": "select",
+      "id": "media_overlay_color",
+      "label": "Media overlay color",
+      "info": "Sets the media overlay color",
+      "options": [
+        {
+          "value": "--palette-color-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "--palette-color-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "--palette-color-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "--palette-color-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "--palette-color-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "--palette-color-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "--palette-color-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "--palette-color-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "--palette-color-1"
+    },
+    {
+      "type": "range",
+      "id": "media_overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Media overlay opacity",
+      "info": "This controls the opacity for the media overlay. While the default is 0, this is intended to help with legibility of any section text.",
+      "default": 0
     },
     {
       "type": "checkbox",
