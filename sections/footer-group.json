@@ -84,8 +84,8 @@
         "52db0905-c8f6-43a5-9fa0-f8d4688dbb34"
       ],
       "settings": {
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
+        "theme_color_background": "theme-color-bg-3",
+        "theme_color_text": "theme-color-text-0",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "input_opacity": 25,
