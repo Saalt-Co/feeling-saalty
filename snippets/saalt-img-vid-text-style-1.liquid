@@ -88,7 +88,7 @@
                 align-items: {{ block.settings.mobile_icon_horizontal_alignment }};
               }
               #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper * {
-                  {% if block.settings.icon_text_position == "left" or block.settings.icon_text_position == "right" %}
+                  {% if block.settings.mobile_icon_text_position == "left" or block.settings.mobile_icon_text_position == "right" %}
                     {% assign alignment = block.settings.mobile_icon_vertical_alignment %}
                     {% else %}
                     {% assign alignment = block.settings.mobile_icon_horizontal_alignment %}
@@ -111,6 +111,7 @@
               #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
                 width: 100%;
                 font-size: {{ block.settings.mobile_icon_text_size }};
+                margin: 0;
               }
               #section-{{ section.id }} .icons-wrapper {
                 gap: {{ block.settings.mobile_icon_group_gap }};
@@ -148,19 +149,21 @@
                   justify-content: {{ block.settings.desktop_icon_horizontal_alignment }};
                   align-items: {{ block.settings.desktop_icon_vertical_alignment }};
                 }
+                #section-{{ section.id }} .icons-wrapper.mobile-row .icon-wrapper[class*='column'],
                 #section-{{ section.id }} .icons-wrapper.mobile-column .icon-wrapper[class*='column'], #section-{{ section.id }} .icons-wrapper.mobile-grid .icon-wrapper[class*='column'] {
                   justify-content: unset;
                   align-items: unset;
                 }
+                #section-{{ section.id }} .icons-wrapper.desktop-row .icon-wrapper[class*='column'],
                 #section-{{ section.id }} .icons-wrapper.desktop-column .icon-wrapper[class*='column'], #section-{{ section.id }} .icons-wrapper.desktop-grid .icon-wrapper[class*='column'] {
-                  justify-content: {{ block.settings.desktop_icon_vertical_alignment }};
-                  align-items: {{ block.settings.desktop_icon_horizontal_alignment }};
+                  justify-content: {{ block.settings.desktop_icon_horizontal_alignment }};
+                  align-items: {{ block.settings.desktop_icon_vertical_alignment }};
                 }
                 #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper * {
                   text-align: unset;
                 }
                 #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper * {
-                  {% if block.settings.icon_text_position == "left" or block.settings.icon_text_position == "right" %}
+                  {% if block.settings.desktop_icon_text_position == "left" or block.settings.desktop_icon_text_position == "right" %}
                     {% assign alignment = block.settings.desktop_icon_vertical_alignment %}
                     {% else %}
                     {% assign alignment = block.settings.desktop_icon_horizontal_alignment %}
