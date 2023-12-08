@@ -82,18 +82,25 @@
                   display: grid;
                   grid-template-columns: repeat({{ block.settings.mobile_icon_grid_columns }}, 1fr);
                 }
-                #section-{{ section.id }} .icons-wrapper-{{ text_group_num }} .icon-wrapper {
+                #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}[class*="mobile-"] .icon-wrapper[class*="mobile-"] {
                   min-width: {{ block.settings.mobile_icon_min_width }};
                   max-width: {{ block.settings.mobile_icon_wrapper_max_width }};
+                }
+                #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}[class*="mobile-"] .icon-wrapper.mobile-row,
+                #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}[class*="mobile-"] .icon-wrapper.mobile-reverse-row {
                   justify-content: {{ block.settings.mobile_icon_horizontal_alignment }};
                   align-items: {{ block.settings.mobile_icon_vertical_alignment }};
                 }
-                #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}.mobile-column .icon-wrapper[class*='column'], #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}.mobile-grid .icon-wrapper[class*='column'] {
+                #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}[class*="mobile-"] .icon-wrapper.mobile-column,
+                #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}[class*="mobile-"] .icon-wrapper.mobile-reverse-column,
+                #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}[class*="mobile-"] .icon-wrapper.mobile-column,
+                #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}[class*="mobile-"] .icon-wrapper.mobile-reverse-column
+                {
                   justify-content: {{ block.settings.mobile_icon_vertical_alignment }};
                   align-items: {{ block.settings.mobile_icon_horizontal_alignment }};
                 }
                 #section-{{ section.id }} .icons-wrapper-{{ text_group_num }} .icon-wrapper, #section-{{ section.id }} .icons-wrapper-{{ text_group_num }} * {
-                    {% if block.settings.icon_text_position == "left" or block.settings.icon_text_position == "right" %}
+                    {% if block.settings.mobile_icon_text_position == "left" or block.settings.mobile_icon_text_position == "right" %}
                       {% assign alignment = block.settings.mobile_icon_vertical_alignment %}
                       {% else %}
                       {% assign alignment = block.settings.mobile_icon_horizontal_alignment %}
@@ -148,17 +155,26 @@
                     display: grid;
                     grid-template-columns: repeat({{ block.settings.desktop_icon_grid_columns }}, 1fr);
                   }
-                  #section-{{ section.id }} .icons-wrapper-{{ text_group_num }} .icon-wrapper {
+                  #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}[class*="mobile-"] .icon-wrapper[class*="mobile-"] {
+                    justify-content: unset;
+                    align-items: unset;
+                  }
+                  #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}[class*="desktop-"] .icon-wrapper[class*="desktop-"] {
                     min-width: {{ block.settings.desktop_icon_min_width }};
                     max-width: {{ block.settings.desktop_icon_wrapper_max_width }};
                     justify-content: {{ block.settings.desktop_icon_horizontal_alignment }};
                     align-items: {{ block.settings.desktop_icon_vertical_alignment }};
                   }
-                  #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}.mobile-column .icon-wrapper[class*='column'], #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}.mobile-grid .icon-wrapper[class*='column'] {
-                    justify-content: unset;
-                    align-items: unset;
+                  #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}[class*="desktop-"] .icon-wrapper.desktop-row,
+                  #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}[class*="desktop-"] .icon-wrapper.desktop-reverse-row {
+                    justify-content: {{ block.settings.desktop_icon_horizontal_alignment }};
+                    align-items: {{ block.settings.desktop_icon_vertical_alignment }};
                   }
-                  #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}.desktop-column .icon-wrapper[class*='column'], #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}.desktop-grid .icon-wrapper[class*='column'] {
+                  #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}[class*="desktop-"] .icon-wrapper.desktop-column,
+                  #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}[class*="desktop-"] .icon-wrapper.desktop-reverse-column,
+                  #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}[class*="desktop-"] .icon-wrapper.desktop-column,
+                  #section-{{ section.id }} .icons-wrapper-{{ text_group_num }}[class*="desktop-"] .icon-wrapper.desktop-reverse-column
+                  {
                     justify-content: {{ block.settings.desktop_icon_vertical_alignment }};
                     align-items: {{ block.settings.desktop_icon_horizontal_alignment }};
                   }
@@ -166,7 +182,7 @@
                     text-align: unset;
                   }
                   #section-{{ section.id }} .icons-wrapper-{{ text_group_num }} .icon-wrapper, #section-{{ section.id }} .icons-wrapper-{{ text_group_num }} * {
-                    {% if block.settings.icon_text_position == "left" or block.settings.icon_text_position == "right" %}
+                    {% if block.settings.desktop_icon_text_position == "left" or block.settings.desktop_icon_text_position == "right" %}
                       {% assign alignment = block.settings.desktop_icon_vertical_alignment %}
                       {% else %}
                       {% assign alignment = block.settings.desktop_icon_horizontal_alignment %}
