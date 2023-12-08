@@ -200,12 +200,12 @@
                 #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
                   font-size: {{ block.settings.desktop_icon_text_size }};
                 }
+                {%- if block.settings.use_max_icon_group_width -%}
                 #section-{{ section.id }} .icons-wrapper {
-                  {%- if block.settings.use_max_icon_group_width -%}
                   max-width: {{ block.settings.icon_group_max_width }};
                   margin: 0 auto 3rem;
-                  {%- endif -%}
                 }
+                {%- endif -%}
                 #section-{{ section.id }} .icons-wrapper {
                   gap: {{ block.settings.desktop_icon_group_gap }};
                   {% if block.settings.desktop_icons_display != "column" %}
