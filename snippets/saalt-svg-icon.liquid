@@ -9,7 +9,8 @@
   - icon_color: {String} Block-level svg color using 'text-color' and 'svg-color-fill' classes (optional)
   - icon_text_color: {String} Block-level svg text color using 'text-color' and 'svg-color-fill'
     classes (optional)
-  - icon_text_position: {String} Block-level attribute that controls the text position of the given SVG (optional)
+  - mobile_icon_text_position: {String} Block-level attribute that controls the text position of the given SVG (optional)
+  - desktop_icon_text_position: {String} Block-level attribute that controls the text position of the given SVG (optional)
 
   Usage:
   {% render "saalt-svg-icon", block: block, theme_color_text: section.settings.theme_color_text, icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text, icon_color: block.settings.theme_color_icon_color, icon_text_color: block.settings.theme_color_icon_text_color %}
@@ -28,21 +29,37 @@
       assign icon_text_class = icon_text_class | append: ' ' | append: icon_text_color
     endif
   endif
-  assign text_postion = block.settings.icon_text_position
-  if text_postion and text_position != 'below'
-    case text_postion
+  assign mobile_text_postion = block.settings.mobile_icon_text_position
+  if mobile_text_postion and mobile_text_position != 'below'
+    case mobile_text_postion
       when 'above'
-        assign text_position_class = ' reverse-column'
+        assign mobile_text_position_class = 'reverse-column'
       when 'left'
-        assign text_position_class = ' reverse-row'
+        assign mobile_text_position_class = 'reverse-row'
       when 'right'
-        assign text_position_class = ' row'
+        assign mobile_text_position_class = 'row'
       else
-        assign text_position_class = ' column'
+        assign mobile_text_position_class = 'column'
+    endcase
+  endif
+  assign desktop_text_postion = block.settings.desktop_icon_text_position
+  if desktop_text_postion and desktop_text_position != 'below'
+    case desktop_text_postion
+      when 'above'
+        assign desktop_text_position_class = 'reverse-column'
+      when 'left'
+        assign desktop_text_position_class = 'reverse-row'
+      when 'right'
+        assign desktop_text_position_class = 'row'
+      else
+        assign desktop_text_position_class = 'column'
     endcase
   endif
 -%}
-<li class="icon-wrapper{{ text_position_class }}" {{ block.shopify_attributes }}>
+<li
+  class="icon-wrapper mobile-{{ mobile_text_position_class }} desktop-{{ desktop_text_position_class }}"
+  {{ block.shopify_attributes }}
+>
   {%- if icon_svg != blank or icon_svg != '' -%}
     <div class="icon-svg-wrapper{{ icon_classes }}" {{ block.shopify_attributes }}>
       {{ icon_svg }}
