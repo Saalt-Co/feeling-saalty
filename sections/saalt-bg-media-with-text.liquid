@@ -184,16 +184,16 @@
       gap: 1rem;
       overflow: hidden;
     }
-    #section-{{ section.id }} .icons-wrapper .icon-wrapper.column {
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-column {
       flex-direction: column;
     }
-    #section-{{ section.id }} .icons-wrapper .icon-wrapper.reverse-column {
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-reverse-column {
       flex-direction: column-reverse;
     }
-    #section-{{ section.id }} .icons-wrapper .icon-wrapper.row {
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-row {
       flex-direction: row;
     }
-    #section-{{ section.id }} .icons-wrapper .icon-wrapper.reverse-row {
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-reverse-row {
       flex-direction: row-reverse;
     }
     #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
@@ -269,6 +269,18 @@
       }
       #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
         height: auto;
+      }
+        #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-column {
+        flex-direction: column;
+      }
+      #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-reverse-column {
+        flex-direction: column-reverse;
+      }
+      #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-row {
+        flex-direction: row;
+      }
+      #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-reverse-row {
+        flex-direction: row-reverse;
       }
   }
 {%- endstyle -%}
@@ -536,23 +548,53 @@
     },
     {
       "type": "select",
-      "id": "mobile_text_position",
-      "label": "Text position on *MOBILE*",
+      "id": "mobile_icon_text_position",
+      "label": "Mobile icon text position",
+      "info": "Where the text should be in relation to the SVG icon on mobile",
       "options": [
         {
-          "value": "overlay",
-          "label": "Overlay the media"
-        },
-        {
           "value": "above",
-          "label": "Above any media"
+          "label": "Above the icon"
         },
         {
           "value": "below",
-          "label": "Below any media"
+          "label": "Below the icon"
+        },
+        {
+          "value": "left",
+          "label": "Left of the icon"
+        },
+        {
+          "value": "right",
+          "label": "Right of the icon"
         }
       ],
-      "default": "overlay"
+      "default": "below"
+    },
+    {
+      "type": "select",
+      "id": "desktop_icon_text_position",
+      "label": "Desktop icon text position",
+      "info": "Where the text should be in relation to the SVG icon on desktop",
+      "options": [
+        {
+          "value": "above",
+          "label": "Above the icon"
+        },
+        {
+          "value": "below",
+          "label": "Below the icon"
+        },
+        {
+          "value": "left",
+          "label": "Left of the icon"
+        },
+        {
+          "value": "right",
+          "label": "Right of the icon"
+        }
+      ],
+      "default": "below"
     },
     {
       "type": "select",
