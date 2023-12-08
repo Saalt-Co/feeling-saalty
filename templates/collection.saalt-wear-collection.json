@@ -126,7 +126,6 @@
         "template--19610655392017__826ab071-d85e-4cc1-981e-0f5623d9ae40-section_title-1",
         "template--19610655392017__826ab071-d85e-4cc1-981e-0f5623d9ae40-section_content-1"
       ],
-      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -155,7 +154,7 @@
         "template--19610655392017__14203610-b21b-4177-bf34-1181886aaa2c-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<h2>Premium Design. Comfortable Fit.<\/h2><p>Welcome to the thinnest, driest, and most comfortable leakproof underwear you'll ever wear.<\/p>"
+            "text_content": "<h2>Premium Design. Comfortable Fit.<\/h2><p>Welcome to the thinnest, driest, and most comfortable leakproof underwear you'll ever wear.<br\/><br\/>Periods. Bladder leaks. Overnight protection. Postpartum care. Leakproof period underwear that does it all, just like you.<\/p>"
           }
         },
         "93e8d39c-1d8a-44fd-b85e-097b75f3b704": {
@@ -931,6 +930,100 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "43429256-3f8c-4e7f-8078-fd40fcbd53b6": {
+      "type": "saalt-style-1-tiles-section",
+      "blocks": {
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-section_tiles_group-1": {
+          "type": "section_tiles_group",
+          "settings": {
+            "theme_color_mobile_text_color": "match_text",
+            "tile_mobile_text_alignment": "center",
+            "theme_color_desktop_text_color": "match_text",
+            "theme_color_desktop_text_hover_focus_color": "match_text",
+            "tile_desktop_text_alignment": "center",
+            "desktop_text_placement": "center",
+            "tile_desktop_text_alignment_hover_focus": "center",
+            "desktop_text_hover_placement": "center"
+          }
+        },
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-1": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "title": "Tile Title Goes Here",
+            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-2": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "title": "Tile Title Goes Here",
+            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-3": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "title": "Tile Title Goes Here",
+            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-4": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "title": "Tile Title Goes Here",
+            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-section_tiles_group-1",
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-1",
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-2",
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-3",
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-4"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_alignment": "center",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -946,6 +1039,7 @@
     "b4f29bbb-7268-4349-91b5-1ab1f590f3c0",
     "2421f247-3fb3-4d3e-83cf-d7f8823ef0a9",
     "1b9dee2b-76db-4cda-bad0-2f1cfeadc02f",
-    "f3d28335-7123-4133-9323-a99fd5d9e99e"
+    "f3d28335-7123-4133-9323-a99fd5d9e99e",
+    "43429256-3f8c-4e7f-8078-fd40fcbd53b6"
   ]
 }
