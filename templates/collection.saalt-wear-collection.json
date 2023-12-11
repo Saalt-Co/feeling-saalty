@@ -126,7 +126,6 @@
         "template--19610655392017__826ab071-d85e-4cc1-981e-0f5623d9ae40-section_title-1",
         "template--19610655392017__826ab071-d85e-4cc1-981e-0f5623d9ae40-section_content-1"
       ],
-      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -155,7 +154,7 @@
         "template--19610655392017__14203610-b21b-4177-bf34-1181886aaa2c-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<h2>Premium Design. Comfortable Fit.<\/h2><p>Welcome to the thinnest, driest, and most comfortable leakproof underwear you'll ever wear.<\/p>"
+            "text_content": "<h2>Premium Design. Comfortable Fit.<\/h2><p>Periods. Bladder leaks. Overnight protection. Postpartum care. <\/p><p>The most comfortable leakproof period underwear that does it all, just like you.<\/p>"
           }
         },
         "93e8d39c-1d8a-44fd-b85e-097b75f3b704": {
@@ -244,10 +243,10 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme-color-bg-6",
+        "theme_color_background": "theme-color-bg-3",
         "theme_color_text": "theme-color-text-0",
-        "media_type": "video",
-        "video": "shopify:\/\/files\/videos\/Learn Page Tech Video.mp4",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Saalt-Leakproof-Period-Underwear-Premium-Design.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -693,6 +692,112 @@
         "padding_bottom": 36
       }
     },
+    "43429256-3f8c-4e7f-8078-fd40fcbd53b6": {
+      "type": "saalt-style-1-tiles-section",
+      "blocks": {
+        "c597b96e-faab-4e3b-8847-4fce180151f1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Meet the collections"
+          }
+        },
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-section_tiles_group-1": {
+          "type": "section_tiles_group",
+          "settings": {
+            "theme_color_mobile_text_color": "match_text",
+            "tile_mobile_text_alignment": "center",
+            "theme_color_desktop_text_color": "--palette-color-0",
+            "theme_color_desktop_text_hover_focus_color": "match_text",
+            "tile_desktop_text_alignment": "center",
+            "desktop_text_placement": "center",
+            "tile_desktop_text_alignment_hover_focus": "left",
+            "desktop_text_hover_placement": "flex-start"
+          }
+        },
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-1": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Seamless-darker.jpg",
+            "title": "SEAMLESS",
+            "text_content": "Sleep and super-stretchy for all of the freedom with none of the panty lines.\n\nMade with ultra-durable LYCRA®️ XTRA LIFE™️ fiber which resists fit loss and provides you with the confidence that your garment will last after repeated wash and wear.",
+            "button_text": "Shop Seamless",
+            "button_url": "\/collections\/seamless",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-2": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Comfort-Modal-darker.jpg",
+            "title": "COMFORT",
+            "text_content": "Made from soft-stretch TENCEL™️ Modal, aka dreamy soft fabric made from sustainably regenerated cellulose fiber that comes from renewable beech wood.",
+            "button_text": "Shop Comfort",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-3": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lace-Mesh-darker.jpg",
+            "title": "LACE & MESH",
+            "text_content": "Strong, sustainable, stunning. \"The Lamborghini of period underwear.\" -Katie Couric Media\n\nBeautifully designed in Paris. Each pair is made with an average of 3 post-consumer recycled water bottles to help clean up landfill and ocean-bound plastic.",
+            "button_text": "Shop Lace & Mesh",
+            "button_url": "\/collections\/lace-mesh",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-4": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cotton-darker.jpg",
+            "title": "COTTON",
+            "text_content": "Just like your favoreit cotton tee, but for your booty. ;)\n\nMade of soft and breathable biodegradable natural cotton that is Standard 100 OEKO-TEX®️ Certified. This is a 3rd party certification that our product is free from a wide list of harmful chemicals.",
+            "button_text": "Shop Cotton",
+            "button_url": "\/collections\/cotton",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "c597b96e-faab-4e3b-8847-4fce180151f1",
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-section_tiles_group-1",
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-1",
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-2",
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-3",
+        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-4"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_alignment": "center",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "b4f29bbb-7268-4349-91b5-1ab1f590f3c0": {
       "type": "collapsible-content",
       "blocks": {
@@ -744,69 +849,16 @@
         "heading": "Saalt Wear FAQs",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "none",
+        "layout": "row",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
-        "theme_color_container_background": "theme_default",
+        "theme_color_container_background": "theme-color-bg-4",
         "theme_color_container_text": "theme_default",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "2421f247-3fb3-4d3e-83cf-d7f8823ef0a9": {
-      "type": "saalt-testimonials",
-      "blocks": {
-        "6331703f-fdcf-4aae-96c7-ab9cddb1af19": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "I am in love with these undies! I wore them on my heavier days for half a day, and they did a great job. No leaks, no stains! The fit was perfect; great for when you are wearing low rise pants.",
-            "author": "<strong>Kelsey R.<\/strong>",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "template--19610655392017__2421f247-3fb3-4d3e-83cf-d7f8823ef0a9-testimonial-2": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "Is it weird that I was actually looking forward to my period to be able to rock these cute undies? Like lots of people said, these are cuter than a lot of my regular underwear and it's so nice to finally ditch the backup pad. Can't wait to get more in different colors to get me through period week!",
-            "author": "<strong>Natalie E.<\/strong>",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "template--19610655392017__2421f247-3fb3-4d3e-83cf-d7f8823ef0a9-testimonial-1": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties. These are cute, they work, and I'm definitely going to buy more!",
-            "author": "<strong>Michelle C.<\/strong>",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "6331703f-fdcf-4aae-96c7-ab9cddb1af19",
-        "template--19610655392017__2421f247-3fb3-4d3e-83cf-d7f8823ef0a9-testimonial-2",
-        "template--19610655392017__2421f247-3fb3-4d3e-83cf-d7f8823ef0a9-testimonial-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "slide_height": "adapt_image",
-        "slider_visual": "dots",
-        "auto_rotate": true,
-        "change_slides_speed": 5,
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "include_img": true,
-        "image": "shopify:\/\/shop_images\/Testimonials_1.jpg",
-        "image_behavior": "none",
-        "accessibility_info": "Slideshow of customer reviews"
       }
     },
     "1b9dee2b-76db-4cda-bad0-2f1cfeadc02f": {
@@ -895,6 +947,59 @@
         "padding_bottom": 0
       }
     },
+    "2421f247-3fb3-4d3e-83cf-d7f8823ef0a9": {
+      "type": "saalt-testimonials",
+      "blocks": {
+        "6331703f-fdcf-4aae-96c7-ab9cddb1af19": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "I am in love with these undies! I wore them on my heavier days for half a day, and they did a great job. No leaks, no stains! The fit was perfect; great for when you are wearing low rise pants.",
+            "author": "<strong>Kelsey R.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--19610655392017__2421f247-3fb3-4d3e-83cf-d7f8823ef0a9-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Is it weird that I was actually looking forward to my period to be able to rock these cute undies? Like lots of people said, these are cuter than a lot of my regular underwear and it's so nice to finally ditch the backup pad. Can't wait to get more in different colors to get me through period week!",
+            "author": "<strong>Natalie E.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--19610655392017__2421f247-3fb3-4d3e-83cf-d7f8823ef0a9-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties. These are cute, they work, and I'm definitely going to buy more!",
+            "author": "<strong>Michelle C.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "6331703f-fdcf-4aae-96c7-ab9cddb1af19",
+        "template--19610655392017__2421f247-3fb3-4d3e-83cf-d7f8823ef0a9-testimonial-2",
+        "template--19610655392017__2421f247-3fb3-4d3e-83cf-d7f8823ef0a9-testimonial-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "include_img": true,
+        "image": "shopify:\/\/shop_images\/Testimonials_1.jpg",
+        "image_behavior": "none",
+        "accessibility_info": "Slideshow of customer reviews"
+      }
+    },
     "f3d28335-7123-4133-9323-a99fd5d9e99e": {
       "type": "newsletter",
       "blocks": {
@@ -943,9 +1048,10 @@
     "608ca706-ad50-41fb-bcb5-660ee4c39ec0",
     "6f86141b-6e50-4f99-a4bf-ce75e198df4c",
     "835cabec-b298-4b76-9a74-2ae85e6ea4be",
+    "43429256-3f8c-4e7f-8078-fd40fcbd53b6",
     "b4f29bbb-7268-4349-91b5-1ab1f590f3c0",
-    "2421f247-3fb3-4d3e-83cf-d7f8823ef0a9",
     "1b9dee2b-76db-4cda-bad0-2f1cfeadc02f",
+    "2421f247-3fb3-4d3e-83cf-d7f8823ef0a9",
     "f3d28335-7123-4133-9323-a99fd5d9e99e"
   ]
 }

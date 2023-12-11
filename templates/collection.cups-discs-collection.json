@@ -150,17 +150,6 @@
     "1ba2232c-e878-4f74-8014-512c7091b4f3": {
       "type": "multicolumn",
       "blocks": {
-        "template--21571779264785__1ba2232c-e878-4f74-8014-512c7091b4f3-column-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/disc_placement.jpg",
-            "title": "Saalt Disc",
-            "rating": 0,
-            "text": "<h4>Sits in the fornix directly under the cervix.<\/h4><ul><li>No suction<\/li><li>Rests in vaginal fornix<\/li><li>Custom removal notch<\/li><li>No-mess period sex<\/li><li>Collects 4—6x more than a tampon<\/li><\/ul>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "template--21571779264785__1ba2232c-e878-4f74-8014-512c7091b4f3-column-2": {
           "type": "column",
           "settings": {
@@ -171,14 +160,25 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "template--21571779264785__1ba2232c-e878-4f74-8014-512c7091b4f3-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/disc_placement.jpg",
+            "title": "Saalt Disc",
+            "rating": 0,
+            "text": "<h4>Sits in the fornix directly under the cervix.<\/h4><ul><li>No suction<\/li><li>Rests in vaginal fornix<\/li><li>Custom removal notch<\/li><li>No-mess period sex<\/li><li>Collects 4—6x more than a tampon<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "template--21571779264785__1ba2232c-e878-4f74-8014-512c7091b4f3-column-1",
-        "template--21571779264785__1ba2232c-e878-4f74-8014-512c7091b4f3-column-2"
+        "template--21571779264785__1ba2232c-e878-4f74-8014-512c7091b4f3-column-2",
+        "template--21571779264785__1ba2232c-e878-4f74-8014-512c7091b4f3-column-1"
       ],
       "settings": {
-        "title": "Saalt Period Disc or Period Cup?",
+        "title": "Saalt Period Cup or Period Disc?",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
@@ -199,7 +199,7 @@
         "theme_color_section_button_background_hover": "theme_default",
         "theme_color_text_section_button_text_hover": "theme_default",
         "columns_mobile": "1",
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -346,7 +346,7 @@
             "icon_group_max_width": "600px",
             "desktop_icons_display": "grid",
             "desktop_icon_group_horizontal_alignment": "center",
-            "desktop_icon_group_vertical_alignment": "center",
+            "desktop_icon_group_vertical_alignment": "flex-start",
             "desktop_icon_grid_columns": 2,
             "desktop_icon_group_gap": "3.5rem",
             "desktop_icon_text_size": "1.5rem",
@@ -413,6 +413,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
+        "image": "shopify:\/\/shop_images\/How_to_use_a_saalt_disc.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -478,7 +479,7 @@
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "background_style": "primary",
-        "theme_color_column_secondary_bg": "--palette-color-5",
+        "theme_color_column_secondary_bg": "--palette-color-0",
         "column_secondary_bg_opacity": 100,
         "review_star_color_override": "--palette-color-4",
         "review_star_opacity_override": 100,
