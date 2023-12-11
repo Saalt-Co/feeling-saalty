@@ -66,27 +66,36 @@
         "4527afb6-04da-4f97-a477-496cd83f6322": {
           "type": "nav_bar_link",
           "settings": {
-            "nav_bar_link_text": "Why it's better",
+            "nav_bar_link_text": "How to use it",
             "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "#why-its-better",
+            "nav_bar_element_selector": "#how-to-use-it",
             "nav_bar_link_dest": "#why it's better"
           }
         },
         "bd2e6f19-eb06-4cd9-a36b-c83a7d840938": {
           "type": "nav_bar_link",
           "settings": {
-            "nav_bar_link_text": "Absorbency guide",
+            "nav_bar_link_text": "Why it's better",
             "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "#absorbency-chart",
+            "nav_bar_element_selector": "#why-its-better",
             "nav_bar_link_dest": "#absorbency guide"
           }
         },
         "203f953b-dc7d-482f-9e5d-c6bb8a366b86": {
           "type": "nav_bar_link",
           "settings": {
-            "nav_bar_link_text": "How to wash",
+            "nav_bar_link_text": "Cup or disc?",
             "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "#how-to-wash",
+            "nav_bar_element_selector": "#cup-or-disc",
+            "nav_bar_link_dest": "#how to wash"
+          }
+        },
+        "97c874e3-3dcf-4a4b-808e-cb386cef62e8": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "How to clean",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "#how-to-clean",
             "nav_bar_link_dest": "#how to wash"
           }
         }
@@ -95,7 +104,8 @@
         "template--15078825525329__c3c67c48-069b-41aa-83c9-2b9ee67d9d60-nav_bar_link-1",
         "4527afb6-04da-4f97-a477-496cd83f6322",
         "bd2e6f19-eb06-4cd9-a36b-c83a7d840938",
-        "203f953b-dc7d-482f-9e5d-c6bb8a366b86"
+        "203f953b-dc7d-482f-9e5d-c6bb8a366b86",
+        "97c874e3-3dcf-4a4b-808e-cb386cef62e8"
       ],
       "settings": {
         "section_id": "",
@@ -169,7 +179,7 @@
         "template--15078825525329__11b4eb9a-18a9-488e-bfd7-23c248641695-section_content-1"
       ],
       "settings": {
-        "section_id": "why it's better",
+        "section_id": "how to use it",
         "theme_color_background": "theme-color-bg-4",
         "theme_color_text": "theme_default",
         "media_type": "image",
@@ -414,6 +424,211 @@
         "padding_bottom": 0
       }
     },
+    "f91185b0-f65e-4125-81ae-3fa39f1e6d62": {
+      "type": "saalt-style-1-tiles-section",
+      "blocks": {
+        "56acc760-8d94-4c0c-aed3-5c6bf3f52f9c": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Saalt reusable period cup of disc?"
+          }
+        },
+        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-section_tiles_group-1": {
+          "type": "section_tiles_group",
+          "settings": {
+            "theme_color_mobile_text_color": "match_text",
+            "tile_mobile_text_alignment": "center",
+            "theme_color_desktop_text_color": "match_text",
+            "theme_color_desktop_text_hover_focus_color": "match_text",
+            "tile_desktop_text_alignment": "center",
+            "desktop_text_placement": "center",
+            "tile_desktop_text_alignment_hover_focus": "center",
+            "desktop_text_hover_placement": "center"
+          }
+        },
+        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-1": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "title": "",
+            "text_content": "",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-2": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "title": "",
+            "text_content": "",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "56acc760-8d94-4c0c-aed3-5c6bf3f52f9c",
+        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-section_tiles_group-1",
+        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-1",
+        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-2"
+      ],
+      "settings": {
+        "section_id": "cup or disc",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_alignment": "center",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "61266f32-54d6-459e-a625-fb59fc4b6f40": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--21642631840017__61266f32-54d6-459e-a625-fb59fc4b6f40-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "How do you clean your Saalt Cup?"
+          }
+        }
+      },
+      "block_order": [
+        "template--21642631840017__61266f32-54d6-459e-a625-fb59fc4b6f40-section_title-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "code",
+        "custom_code": "YouTube embed here",
+        "use_max_media_width": true,
+        "max_media_width": "900px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "above",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "9f70e72a-5b16-482b-84b3-df444f15d0bd": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "c8e1740d-f77e-4a9e-9d0a-1ee3334097a4": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "9\/10 People Never Go Back"
+          }
+        }
+      },
+      "block_order": [
+        "c8e1740d-f77e-4a9e-9d0a-1ee3334097a4"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "YouTube embed here",
+        "use_max_media_width": true,
+        "max_media_width": "900px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "above",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "2a1f9c4e-eb99-4278-885c-23052a0fe53e": {
+      "type": "saalt-testimonials",
+      "blocks": {
+        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "I am in love with these undies! I wore them on my heavier days for half a day, and they did a great job. No leaks, no stains! The fit was perfect; great for when you are wearing low rise pants.",
+            "author": "<strong>Kelsey R.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Is it weird that I was actually looking forward to my period to be able to rock these cute undies? Like lots of people said, these are cuter than a lot of my regular underwear and it’s so nice to finally ditch the backup pad. Can’t wait to get more in different colors to get me through period week!",
+            "author": "<strong>Natalie E.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "16dbc45b-abe6-491e-b9ad-02da4749d08b": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties. These are cute, they work, and I'm definitely going to buy more!",
+            "author": "Michelle C.",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "90ef17fc-815b-44d7-84c3-489096577077": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Customer quote",
+            "author": "Customer's Name",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-1",
+        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-2",
+        "16dbc45b-abe6-491e-b9ad-02da4749d08b",
+        "90ef17fc-815b-44d7-84c3-489096577077"
+      ],
+      "settings": {
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "include_img": true,
+        "image": "shopify:\/\/shop_images\/Testimonials_1.jpg",
+        "image_behavior": "none",
+        "accessibility_info": "Slideshow of customer testimonials"
+      }
+    },
     "6d90874c-c092-46f8-89ee-85bf53a9989d": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -604,58 +819,6 @@
         "padding_bottom": 0
       }
     },
-    "2a1f9c4e-eb99-4278-885c-23052a0fe53e": {
-      "type": "saalt-testimonials",
-      "blocks": {
-        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-1": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "I am in love with these undies! I wore them on my heavier days for half a day, and they did a great job. No leaks, no stains! The fit was perfect; great for when you are wearing low rise pants.",
-            "author": "<strong>Kelsey R.<\/strong>",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-2": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "Is it weird that I was actually looking forward to my period to be able to rock these cute undies? Like lots of people said, these are cuter than a lot of my regular underwear and it’s so nice to finally ditch the backup pad. Can’t wait to get more in different colors to get me through period week!",
-            "author": "<strong>Natalie E.<\/strong>",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "16dbc45b-abe6-491e-b9ad-02da4749d08b": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties. These are cute, they work, and I'm definitely going to buy more!",
-            "author": "Michelle C.",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-1",
-        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-2",
-        "16dbc45b-abe6-491e-b9ad-02da4749d08b"
-      ],
-      "settings": {
-        "slide_height": "adapt_image",
-        "slider_visual": "dots",
-        "auto_rotate": true,
-        "change_slides_speed": 5,
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "include_img": true,
-        "image": "shopify:\/\/shop_images\/Testimonials_1.jpg",
-        "image_behavior": "none",
-        "accessibility_info": "Slideshow of customer testimonials"
-      }
-    },
     "b3364a31-748d-4754-b580-0eef20cb6386": {
       "type": "newsletter",
       "blocks": {
@@ -703,10 +866,13 @@
     "27932570-f6dd-49ef-a41d-a62c5a6e210f",
     "959d5c15-d6c3-425c-a8d3-5e2f73ff8944",
     "c8d699c2-ccef-4799-b100-f96128516185",
+    "f91185b0-f65e-4125-81ae-3fa39f1e6d62",
+    "61266f32-54d6-459e-a625-fb59fc4b6f40",
+    "9f70e72a-5b16-482b-84b3-df444f15d0bd",
+    "2a1f9c4e-eb99-4278-885c-23052a0fe53e",
     "6d90874c-c092-46f8-89ee-85bf53a9989d",
     "7dc8f187-d995-436e-9a49-5e215d0d4aa1",
     "ee2c8556-75bf-49e7-bfbb-644878ffb5af",
-    "2a1f9c4e-eb99-4278-885c-23052a0fe53e",
     "b3364a31-748d-4754-b580-0eef20cb6386"
   ]
 }
