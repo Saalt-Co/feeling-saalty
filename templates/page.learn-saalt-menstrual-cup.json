@@ -569,31 +569,11 @@
     "2a1f9c4e-eb99-4278-885c-23052a0fe53e": {
       "type": "saalt-testimonials",
       "blocks": {
-        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-1": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "I am in love with these undies! I wore them on my heavier days for half a day, and they did a great job. No leaks, no stains! The fit was perfect; great for when you are wearing low rise pants.",
-            "author": "<strong>Kelsey R.<\/strong>",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-2": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "Is it weird that I was actually looking forward to my period to be able to rock these cute undies? Like lots of people said, these are cuter than a lot of my regular underwear and it’s so nice to finally ditch the backup pad. Can’t wait to get more in different colors to get me through period week!",
-            "author": "<strong>Natalie E.<\/strong>",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        },
         "16dbc45b-abe6-491e-b9ad-02da4749d08b": {
           "type": "testimonial",
           "settings": {
-            "quote": "These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties. These are cute, they work, and I'm definitely going to buy more!",
-            "author": "Michelle C.",
+            "quote": "I just started yesterday and my mind is blown. So comfortable, easy to use, and it doesn’t interfere with my active lifestyle whatsoever. I’m so bummed I didn’t give it a chance sooner.<strong> This is truly what period freedom feels like!<\/strong>",
+            "author": "Alley",
             "show_text_box": true,
             "text_alignment": "center",
             "text_alignment_mobile": "center"
@@ -602,8 +582,8 @@
         "90ef17fc-815b-44d7-84c3-489096577077": {
           "type": "testimonial",
           "settings": {
-            "quote": "Customer quote",
-            "author": "Customer's Name",
+            "quote": "This was my first time buying and using a period cup. There was definitely a learning curve, and some stress getting it out the first few times, but once I got the hang of it I am obsessed. Love that you can wear it all day long and so much more sustainable than tampons. So glad I decided to try! Thanks Saalt.",
+            "author": "<strong>Alex H.<\/strong>",
             "show_text_box": true,
             "text_alignment": "center",
             "text_alignment_mobile": "center"
@@ -611,8 +591,6 @@
         }
       },
       "block_order": [
-        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-1",
-        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-2",
         "16dbc45b-abe6-491e-b9ad-02da4749d08b",
         "90ef17fc-815b-44d7-84c3-489096577077"
       ],
