@@ -408,7 +408,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "code",
-        "custom_code": "The Digioh quiz code needs to go here",
+        "custom_code": "The Digioh quiz code here",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 66,
@@ -681,7 +681,7 @@
             "use_max_icon_group_width": false,
             "icon_group_max_width": "600px",
             "desktop_icons_display": "row",
-            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_horizontal_alignment": "flex-start",
             "desktop_icon_group_vertical_alignment": "center",
             "desktop_icon_grid_columns": 2,
             "desktop_icon_group_gap": "3.5rem",
@@ -717,13 +717,34 @@
           "settings": {
             "text_content": "<p>As a certified B Corp, we commit 2% of our revenue to donate period care to regions with the most need, and help fund initiatives in menstrual health, education, and sustainability.<\/p>"
           }
+        },
+        "1c7ae3d2-c727-46c4-b824-d5bf25842f3e": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "flex-start",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "9519e5cd-87f5-4d56-940e-220d20ebb13e": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "LEARN MORE",
+            "button_url": "\/pages\/impact",
+            "button_type": "secondary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
         }
       },
       "block_order": [
         "68fe5f6c-7322-4e01-98a4-e2259acfeb94",
         "1c5adb37-de67-4c63-9b06-5cc2fbbb4c66",
         "template--15078825525329__6d90874c-c092-46f8-89ee-85bf53a9989d-section_title-1",
-        "template--15078825525329__6d90874c-c092-46f8-89ee-85bf53a9989d-section_content-1"
+        "template--15078825525329__6d90874c-c092-46f8-89ee-85bf53a9989d-section_content-1",
+        "1c7ae3d2-c727-46c4-b824-d5bf25842f3e",
+        "9519e5cd-87f5-4d56-940e-220d20ebb13e"
       ],
       "settings": {
         "section_id": "",
@@ -899,7 +920,6 @@
         "theme_color_background": "theme-color-bg-6",
         "theme_color_text": "theme-color-text-0",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Untitled-1.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
