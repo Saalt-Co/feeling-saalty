@@ -875,7 +875,7 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme_default",
+        "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "none",
         "custom_code": "",
@@ -927,6 +927,7 @@
         "theme_color_background": "theme-color-bg-6",
         "theme_color_text": "theme-color-text-0",
         "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Screenshot_2022-11-03_013756_1.png",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
