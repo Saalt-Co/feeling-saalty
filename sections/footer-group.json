@@ -51,27 +51,34 @@
           "type": "link_list",
           "settings": {
             "heading": "Shop",
-            "menu": "footer"
+            "menu": "shop"
           }
         },
         "footer-1": {
           "type": "link_list",
           "settings": {
             "heading": "Resources",
-            "menu": "footer"
+            "menu": "resources"
           }
         },
         "145cfba4-b7eb-42c4-9791-72f73c77ab02": {
           "type": "link_list",
           "settings": {
             "heading": "Company",
-            "menu": "footer"
+            "menu": "company"
           }
         },
         "52db0905-c8f6-43a5-9fa0-f8d4688dbb34": {
           "type": "link_list",
           "settings": {
             "heading": "Support",
+            "menu": "support"
+          }
+        },
+        "d45b85e4-9b80-4201-a374-3617aea76e29": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
             "menu": "footer"
           }
         }
@@ -81,7 +88,8 @@
         "footer-0",
         "footer-1",
         "145cfba4-b7eb-42c4-9791-72f73c77ab02",
-        "52db0905-c8f6-43a5-9fa0-f8d4688dbb34"
+        "52db0905-c8f6-43a5-9fa0-f8d4688dbb34",
+        "d45b85e4-9b80-4201-a374-3617aea76e29"
       ],
       "settings": {
         "theme_color_background": "theme_default",
@@ -94,7 +102,7 @@
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": true,
-        "show_policy": false,
+        "show_policy": true,
         "margin_top": 48,
         "padding_top": 36,
         "padding_bottom": 36
