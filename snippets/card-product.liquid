@@ -61,7 +61,11 @@
       endif
       # If not using lowest-priced variant
     else
-      assign card_data = card_product.selected_or_first_available_variant
+      if card_product.has_only_default_variant
+        assign card_data = card_product
+      else
+        assign card_data = card_product.selected_or_first_available_variant
+      endif
     endif
 
     if card_data.featured_media != card_product.featured_media
