@@ -507,6 +507,17 @@
     },
     "bec6a799-d547-4f72-a599-8edc58d4bcc3": {
       "type": "saalt-unstyled-liquid-section",
+      "blocks": {
+        "a9820dcb-bb69-4453-874f-0f5037ef5b01": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<div id=\"cup-or-disc\"> <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "a9820dcb-bb69-4453-874f-0f5037ef5b01"
+      ],
       "settings": {
         "section_id": "cup or disc"
       }
