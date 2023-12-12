@@ -808,7 +808,7 @@
             "use_max_icon_group_width": false,
             "icon_group_max_width": "600px",
             "desktop_icons_display": "row",
-            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_horizontal_alignment": "flex-start",
             "desktop_icon_group_vertical_alignment": "center",
             "desktop_icon_grid_columns": 2,
             "desktop_icon_group_gap": "3.5rem",
@@ -1056,6 +1056,7 @@
         "template--15078825525329__b3364a31-748d-4754-b580-0eef20cb6386-paragraph-1",
         "template--15078825525329__b3364a31-748d-4754-b580-0eef20cb6386-email_form-1"
       ],
+      "disabled": true,
       "settings": {
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
