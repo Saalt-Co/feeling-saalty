@@ -458,17 +458,17 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "2",
-            "title": "How to use a reusable menstrual cup:"
+            "title": "How to use a reusable menstrual disc:"
           }
         },
         "53f404ed-8aa1-4725-a37f-6b2c5d6ae319": {
           "type": "section_icon_group",
           "settings": {
             "mobile_icons_display": "column",
-            "mobile_icon_group_horizontal_alignment": "center",
-            "mobile_icon_group_vertical_alignment": "flex-start",
-            "mobile_icon_grid_columns": 2,
-            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_group_horizontal_alignment": "flex-end",
+            "mobile_icon_group_vertical_alignment": "center",
+            "mobile_icon_grid_columns": 3,
+            "mobile_icon_group_gap": "1.5rem",
             "mobile_icon_text_size": "1.5rem",
             "mobile_icon_horizontal_alignment": "flex-start",
             "mobile_icon_vertical_alignment": "center",
@@ -476,12 +476,12 @@
             "mobile_icon_wrapper_max_width": "300px",
             "mobile_icon_max_width": "25%",
             "mobile_icon_height": "100px",
-            "use_max_icon_group_width": false,
-            "icon_group_max_width": "600px",
+            "use_max_icon_group_width": true,
+            "icon_group_max_width": "800px",
             "desktop_icons_display": "grid",
             "desktop_icon_group_horizontal_alignment": "center",
             "desktop_icon_group_vertical_alignment": "center",
-            "desktop_icon_grid_columns": 2,
+            "desktop_icon_grid_columns": 3,
             "desktop_icon_group_gap": "3.5rem",
             "desktop_icon_text_size": "1.5rem",
             "desktop_icon_horizontal_alignment": "center",
@@ -495,9 +495,9 @@
         "67bfef82-57dc-4104-8f61-412d18940b47": {
           "type": "section_icon_with_text",
           "settings": {
-            "icon_svg": "",
-            "icon_text": "<p>First, fold your cup and insert it horizontally toward your tailbone.<\/p>",
-            "mobile_icon_text_position": "below",
+            "icon_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"95px\" height=\"96px\" viewbox=\"0 0 95 96\" version=\"1.1\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n    <!-- Generator: sketchtool 51.3 (57544) - http:\/\/www.bohemiancoding.com\/sketch -->\n    <title>6A4708F7-D115-4031-965A-1BDDDA2C9F32<\/title>\n    <desc>Created with sketchtool.<\/desc>\n    <defs><\/defs>\n    <g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"PDP--Disk\" transform=\"translate(-112.998000, -4064.574340)\">\n            <g id=\"6---How-to-use-it\" transform=\"translate(63.000000, 3847.974000)\">\n                <g id=\"How-to-use-it:\" transform=\"translate(0.000000, 132.625490)\">\n                    <g id=\"mid\">\n                        <g transform=\"translate(0.000000, 84.750000)\" id=\"1\">\n                            <g transform=\"translate(0.000000, 0.049561)\">\n                                <g transform=\"translate(50.250000, 0.000000)\">\n                                    <circle id=\"Ellipse\" fill=\"#424657\" cx=\"47.25\" cy=\"47.25\" r=\"47.25\"><\/circle>\n                                    <g id=\"Group-8\" transform=\"translate(21.474610, 20.629883)\">\n                                        <path d=\"M47.9138831,33.82373 C44.6029445,36.6405748 47.4325916,40.0948233 39.9207754,47.6064945 C32.4089602,55.118158 20.2302139,55.1181522 12.7187525,47.606491 C5.20693697,40.0948411 8.70678002,37.6821105 2.5488281,33.82373\" id=\"Ellipse-3\" stroke=\"#7FA5B1\" fill=\"#B9E1EC\"><\/path>\n                                        <path d=\"M0.0155352092,30.7394999 C0.0155352092,23.1544768 11.5519727,22.9367032 25.7828938,22.9367032 C40.0138221,22.9367032 51.55024,22.7915566 51.55024,30.7394999 C51.4776418,34.7342045 40.0138221,37.45351 25.7828938,37.45351 C11.5519742,37.45351 -0.492990565,34.9856782 0.0155352092,30.7394999 Z\" id=\"Ellipse-2-Copy\" stroke=\"#7FA5B1\" fill=\"#B9E1EC\"><\/path>\n                                        <path d=\"M4.7333984,26.4932169 C4.7333984,23.0371815 14.1575304,22.864014 25.7827872,22.864014 C37.4080415,22.864014 47.0256776,22.9404042 46.8321755,26.4932169 C46.8321755,28.4975707 37.4080415,30.1224216 25.7827872,30.1224216 C14.1575304,30.1224216 4.7333984,28.4975707 4.7333984,26.4932169 Z\" id=\"Ellipse-2\" stroke=\"#7FA5B1\" fill=\"#B9E1EC\"><\/path>\n                                        <g id=\"refund\" transform=\"translate(21.942383, 5.395020)\" fill=\"#FFFFFF\" stroke=\"#A9AFB2\">\n                                            <path d=\"M0,6.75543892 C0,5.47626478 1.1843996,3.22445181 3.5531988,0 C5.921998,3.22445181 7.1063976,5.47626478 7.1063976,6.75543892 C7.1063976,8.6741996 5.5155762,10.229664 3.5531988,10.229664 C1.59082118,10.229664 0,8.6741996 0,6.75543892 Z\"><\/path>\n                                        <\/g>\n                                        <g id=\"refund-Copy\" transform=\"translate(33.041016, 0.004639)\" fill=\"#FFFFFF\" stroke=\"#A9AFB2\">\n                                            <path d=\"M0,6.75543892 C0,5.47626478 1.18439992,3.22445181 3.55319975,0 C5.92199958,3.22445181 7.1063995,5.47626478 7.1063995,6.75543892 C7.1063995,8.6741996 5.51557768,10.229664 3.55319975,10.229664 C1.59082161,10.229664 0,8.6741996 0,6.75543892 Z\" id=\"refund\"><\/path>\n                                        <\/g>\n                                        <g id=\"refund-Copy-2\" transform=\"translate(10.836914, 0.000000)\" fill=\"#FFFFFF\" stroke=\"#A9AFB2\">\n                                            <path d=\"M0,6.75543892 C0,5.47626478 1.18439983,3.22445181 3.5531995,0 C5.92199917,3.22445181 7.106399,5.47626478 7.106399,6.75543892 C7.106399,8.6741996 5.51557729,10.229664 3.5531995,10.229664 C1.5908215,10.229664 0,8.6741996 0,6.75543892 Z\" id=\"refund\"><\/path>\n                                        <\/g>\n                                    <\/g>\n                                <\/g>\n                            <\/g>\n                        <\/g>\n                    <\/g>\n                <\/g>\n            <\/g>\n        <\/g>\n    <\/g>\n<\/svg>",
+            "icon_text": "<p>Wash hands and disc<\/p>",
+            "mobile_icon_text_position": "right",
             "desktop_icon_text_position": "below",
             "theme_color_icon_color": "match_text",
             "theme_color_icon_text_color": "match_text"
@@ -506,9 +506,20 @@
         "5d419d23-8ec9-4b2e-b79e-7c2228320e8f": {
           "type": "section_icon_with_text",
           "settings": {
-            "icon_svg": "",
-            "icon_text": "<p>Once filled (or after 12 hours), simply empty, clean, and reinsert the cup.<\/p>",
-            "mobile_icon_text_position": "below",
+            "icon_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"95px\" height=\"96px\" viewbox=\"0 0 95 96\" version=\"1.1\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n    <!-- Generator: sketchtool 51.3 (57544) - http:\/\/www.bohemiancoding.com\/sketch -->\n    <title>7D3A5E7F-893E-4338-9B3A-C3FA96F8D1E0<\/title>\n    <desc>Created with sketchtool.<\/desc>\n    <defs><\/defs>\n    <g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"PDP--Disk\" transform=\"translate(-324.998000, -4064.574340)\">\n            <g id=\"6---How-to-use-it\" transform=\"translate(63.000000, 3847.974000)\">\n                <g id=\"How-to-use-it:\" transform=\"translate(0.000000, 132.625490)\">\n                    <g id=\"mid\">\n                        <g transform=\"translate(0.000000, 84.750000)\" id=\"2\">\n                            <g transform=\"translate(212.000000, 0.000000)\">\n                                <g transform=\"translate(50.250000, 0.000000)\">\n                                    <circle id=\"Ellipse\" fill=\"#424657\" cx=\"47.25\" cy=\"47.25\" r=\"47.25\"><\/circle>\n                                    <g transform=\"translate(22.818360, 23.268555)\">\n                                        <path d=\"M23.9565191,14.895752 L31.1065365,20.2582649 L37.1816319,21.4499571 L41.1816295,30.0896074 L42.1816377,36.6438125 L58.6816412,56.7314482 C56.3483005,59.1481267 54.0149668,61.1481309 51.6816401,62.7314608 C48.714841,64.6813247 46.3815062,66.0146527 44.6816354,66.731445 L31.1065365,42.0062429 L19.4877269,36.6437259 L12.6356212,33.0687115 L4.88975246,31.8770421 C2.56033174,31.6088974 0.971631816,31.0130607 0.12365269,30.0895318 C0.759636706,27.0358838 14.7216214,31.132242 14.7216214,28.8978717 C14.7216214,26.6634915 -0.832582497,24.5533424 0.124452492,21.4499358 C0.551584862,18.4806525 5.81574884,19.573016 15.9169444,24.7270262 L23.9565191,14.895752 Z\" id=\"New-shape-9\" fill=\"#FFFFFF\"><\/path>\n                                        <path d=\"M30.981445,20.2314455 L23.84082,14.8984375\" id=\"New-shape-2\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n                                        <path d=\"M44.68164,66.231449 C36.130323,50.7518819 31.5668411,42.6778122 30.9911944,42.0092398 C30.1277012,41.00637 29.2927113,41.4628809 23.2453194,38.7321511 C17.1979489,36.0014064 15.8264701,34.4319465 14.009863,33.6675134 C12.1932742,32.9030869 -0.141519971,32.5252999 0.00773906916,29.7945777 C0.15699808,27.0638622 13.1258184,30.4394335 14.009678,29.7945838 C14.8935434,29.149724 14.455973,28.6528174 14.009678,28.3054248 C13.5633844,27.9580587 -0.370548907,23.9456058 0.00755952269,21.4533063 C0.385668012,18.9609994 3.08623661,19.0603824 15.7977613,24.4324876 C15.8772779,24.2271343 18.5585317,21.1484828 23.8415226,15.196533\" id=\"New-shape-3\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n                                        <path d=\"M15.6190839,17.2792035 C16.5330564,18.7042015 16.8907357,19.8967429 16.6921217,20.8568279 C16.3942035,22.2969532 15.6389361,23.0314195 14.3087827,22.9422478 C12.9786291,22.8530761 11.1108281,20.76722 11.0316938,18.4734901 C10.9525596,16.1797611 12.8595169,15.9608327 12.8191972,15.792236\" id=\"New-shape-5\" stroke=\"#808080\" fill=\"#FFFFFF\"><\/path>\n                                        <path d=\"M14.3102714,11.621338 C12.6814199,11.7866859 11.7876658,12.4818258 11.6290089,13.7067576 C11.3910238,15.544155 14.2914245,17.1127276 16.097773,17.281762\" id=\"New-shape-4\" stroke=\"#808080\" fill=\"#FFFFFF\"><\/path>\n                                        <path d=\"M16.3936874,19.0694645 C15.7582122,14.0348362 13.9702825,11.3931453 14.0104315,7.45059015 C14.0505806,3.50803463 16.6317563,-0.107063473 20.2667102,0.00242503568 C23.9016535,0.111913552 26.0451591,3.62708415 25.927038,7.45054901 C25.8089157,11.2740125 23.1859627,15.6033535 23.2458906,19.0694193 C23.3058244,22.5354844 25.0130297,24.6204931 25.3313191,26.2194715 C25.6495948,27.81845 26.6218029,32.9817159 21.4582777,33.6671152 C16.2947573,34.3525131 15.1619147,28.2749445 15.7979454,24.729879 C16.0759848,22.9723536 16.2447268,22.8977288 16.393775,22.0486033 C16.5427104,20.6334987 16.4629279,20.6482228 16.3936874,19.0694645 Z\" id=\"New-shape-6\" stroke=\"#7FA5B1\" fill=\"#B9E1EC\"><\/path>\n                                        <path d=\"M58.181641,56.231445 L42.1816405,36.7314468 C42.2571616,35.0183931 42.2014632,33.599825 42.0145452,32.4757425 C41.7341701,30.7896196 39.1244006,23.6473288 37.8437098,22.0486421 C36.5630086,20.4499565 32.3915919,20.5488741 28.608272,19.6653052 C24.8249566,18.7817362 24.7047993,17.8973441 23.8415974,18.1757195 C22.9783948,18.4540949 22.4410667,21.3829556 24.735348,22.9422196 C27.0296315,24.5014875 29.2929549,24.9579623 32.1830999,25.6234754 C34.1098632,26.0671518 35.1428372,26.2648639 35.2820217,26.2166117\" id=\"New-shape\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n                                        <path d=\"M18.0023111,17.2818357 C17.8020923,14.531048 16.6696517,12.4028493 16.691724,9.05897049 C16.7137964,5.71508875 18.1328218,2.64894001 20.1311737,2.74180278 C22.1295158,2.83466556 23.3079272,5.81606071 23.2429895,9.05893525 C23.1780512,12.3018094 21.7360588,15.9737427 21.7690044,18.913487 C21.801953,21.8532336 22.7405047,23.6216365 22.9154877,24.9778156 C23.0904604,26.3339873 23.9988634,31.0005405 21.1601645,31.5818599 C18.3214715,32.1631909 17.6521125,27.4385977 18.0017761,24.4318431 C18.3514406,21.4250905 18.2025294,20.0326215 18.0023111,17.2818357 Z\" id=\"New-shape-6-Copy\" stroke=\"#7FA5B1\" fill=\"#B9E1EC\"><\/path>\n                                        <path d=\"M26.819875,24.134033 C26.7127813,27.0269906 28.4009783,30.2047733 31.884466,33.667381\" id=\"New-shape-7\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n                                        <path d=\"M30.99121,42.008991 C33.0824486,41.8300663 35.9623143,40.042564 39.630807,36.646484\" id=\"New-shape-8\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n                                    <\/g>\n                                <\/g>\n                            <\/g>\n                        <\/g>\n                    <\/g>\n                <\/g>\n            <\/g>\n        <\/g>\n    <\/g>\n<\/svg>",
+            "icon_text": "<p>Pinch into a figure 8<\/p>",
+            "mobile_icon_text_position": "right",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "98cd5870-59a5-4e69-b5a9-4050badef973": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"95px\" height=\"95px\" viewbox=\"0 0 95 95\" version=\"1.1\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n    <!-- Generator: sketchtool 51.3 (57544) - http:\/\/www.bohemiancoding.com\/sketch -->\n    <title>FB283394-4A5C-4363-AB92-833D76B15586<\/title>\n    <desc>Created with sketchtool.<\/desc>\n    <defs><\/defs>\n    <g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"PDP--Disk\" transform=\"translate(-535.998000, -4065.574340)\">\n            <g id=\"6---How-to-use-it\" transform=\"translate(63.000000, 3847.974000)\">\n                <g id=\"How-to-use-it:\" transform=\"translate(0.000000, 132.625490)\">\n                    <g id=\"mid\">\n                        <g transform=\"translate(0.000000, 84.750000)\" id=\"3\">\n                            <g transform=\"translate(424.649400, 0.350586)\">\n                                <g transform=\"translate(48.700195, 0.000000)\">\n                                    <circle id=\"Ellipse\" fill=\"#424657\" cx=\"47.3486328\" cy=\"47.25\" r=\"47.25\"><\/circle>\n                                    <g id=\"Group-8\" transform=\"translate(0.000000, 0.109863)\">\n                                        <path d=\"M41.1601956,0 C41.5179112,11.5094557 41.5179112,19.0884026 41.1601956,22.7368407 C40.6236212,28.2094977 40.3540263,43.0324709 41.1601956,44.8420965 C41.6976406,46.0485159 35.9775754,47.2162221 24,48.345215\" id=\"New-shape\" stroke=\"#808080\"><\/path>\n                                        <path d=\"M20,85.0070793 C36.9570844,84.7639907 47.9855648,84.7639342 53.0854413,85.0069097 C60.7352462,85.3713609 63.4209135,88.3096097 69.500004,88.345214\" id=\"New-shape-2\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n                                        <path d=\"M44.5166,59.7498188 C60.193466,62.1279768 68.7728779,60.0776493 70.2548358,53.5988362 C71.5092496,45.8019101 54.0044625,32.1656824 65.7785027,23.9407253 C75.8182413,17.226733 84.275569,29.7053265 84.8023233,38.4893922 C84.8810085,40.3912704 84.9705982,41.3973038 84.8023095,43.5236485 C84.4340233,46.6010264 85.394411,62.4354689 70.254692,66.4641044 C55.1147505,70.4927353 50.0331545,64.673506 47.8737426,64.2260122\" id=\"New-shape-3\" stroke=\"#808080\"><\/path>\n                                        <path d=\"M64.0992344,32.8927833 C63.5397508,29.535683 64.6589696,26.924548 67.4568908,25.0593784 C70.3691183,23.4557246 73.16649,23.642339 75.8490059,25.6192217 C79.8727712,28.5845454 86.5411617,37.256979 80.8847309,54.7142695 C79.0334748,58.0153979 76.0216604,58.7426855 75.8489956,58.0714138 C75.6763315,57.4001513 78.7580838,54.71425 78.6466154,46.8808997 C77.9198905,37.6487561 76.7166904,31.2142197 71.9323259,31.7737435 C69.2734952,32.6690388 71.4569498,35.7745598 74.1704245,40.166605 C75.7091127,43.5516213 76.3811975,45.8459975 75.8489956,51.3571115 C75.4949218,55.8520592 74.1893653,58.0901548 71.9323259,58.0713984 C72.5112872,54.3785528 71.9520111,50.2753652 70.2544978,45.7618357 C67.9887323,40.2785869 64.9384598,37.9284352 64.0992344,32.8927833 Z\" id=\"New-shape-4\" stroke=\"#808080\" fill=\"#FFFFFF\"><\/path>\n                                        <polygon id=\"New-shape-10\" fill=\"#FFFFFF\" points=\"1.99999991 32.845215 11.5047415 42.9642067 24.9333096 50.7975435 29.9690253 49.1189719 37.2428265 53.0356376 38.361877 55.833261 37.2428369 59.749928 7.58807671 53.0356376 0 49.1189009 0 42.9641136\"><\/polygon>\n                                        <path d=\"M73.611607,61.988037 C71.3392698,65.0093209 68.3551432,66.5013845 64.659227,66.4642276 C60.9633095,66.427071 57.2331505,65.4945311 53.46875,63.6666079\" id=\"New-shape-6\" stroke=\"#7FA5B1\" fill=\"#B9E1EC\"><\/path>\n                                        <path d=\"M64.6575032,61.4276602 C69.2183882,60.8683331 72.2706492,59.9738414 73.609345,60.309305 C74.9480439,60.6447687 74.5101268,63.6097076 64.6572193,63.6657133 C54.8043419,63.7217287 52.96832,64.1136833 52.9096976,62.5473981 C52.793453,61.0931281 59.4819016,61.7074554 64.6575032,61.4276602 Z\" id=\"New-shape-5\" stroke=\"#7FA5B1\" fill=\"#B9E1EC\"><\/path>\n                                        <path d=\"M0,49.345215 L23.2547037,64.785644 C24.4189286,65.420028 25.3514704,65.7930455 26.0523292,65.9046964 C27.1036301,66.0721748 36.1161158,62.6038561 51.7904665,64.785644 C54.4831645,63.7594597 51.4844597,61.5590679 49.5523558,60.8689539 C47.6202562,60.178836 37.9815846,57.3443358 29.9690108,59.1903809\" id=\"New-shape-8\" stroke=\"#808080\" fill=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n                                        <path d=\"M2,33.345215 L10.9455469,41.8451588 C16.9334734,44.0960034 20.6636345,45.774575 22.1360304,46.8808737 C24.3446208,48.540322 27.089785,54.3229779 28.8503167,54.1546861 C30.6108542,53.9863917 33.9537847,52.3832259 35.5646098,54.154689 C36.6384797,55.3356617 34.4003832,57.2007413 28.8503201,59.749928 L15.9812638,55.2737313\" id=\"New-shape-7\" stroke=\"#808080\" fill=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n                                        <path d=\"M37.8026889,58.630864 C38.2704174,56.50498 38.2704182,55.0129242 37.8026914,54.1546968 C37.1010999,52.8673544 31.8643049,48.9515233 30.5288792,49.11898 C29.6385951,49.2306178 27.9600234,49.7901356 25.493164,50.7975333\" id=\"New-shape-9\" stroke=\"#808080\"><\/path>\n                                    <\/g>\n                                <\/g>\n                            <\/g>\n                        <\/g>\n                    <\/g>\n                <\/g>\n            <\/g>\n        <\/g>\n    <\/g>\n<\/svg>",
+            "icon_text": "<p>Insert fully and tuck behind pubic bone<\/p>",
+            "mobile_icon_text_position": "right",
             "desktop_icon_text_position": "below",
             "theme_color_icon_color": "match_text",
             "theme_color_icon_text_color": "match_text"
@@ -525,7 +536,7 @@
           "type": "section_button",
           "settings": {
             "button_text": "LEARN MORE",
-            "button_url": "shopify:\/\/pages\/cup-instruction",
+            "button_url": "shopify:\/\/pages\/menstrual-disc-instructions-1",
             "button_type": "secondary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -539,6 +550,7 @@
         "53f404ed-8aa1-4725-a37f-6b2c5d6ae319",
         "67bfef82-57dc-4104-8f61-412d18940b47",
         "5d419d23-8ec9-4b2e-b79e-7c2228320e8f",
+        "98cd5870-59a5-4e69-b5a9-4050badef973",
         "0d4a7a9c-b120-4397-9639-6bcd2ae1fda2",
         "e6f3234e-f70e-4552-9628-28256c52bf61"
       ],
@@ -546,8 +558,7 @@
         "section_id": "",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
-        "media_type": "image",
-        "image": "shopify:\/\/shop_images\/cup_placement.jpg",
+        "media_type": "none",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -590,7 +601,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/freedom_from_the_tampon_aisle.jpg",
+        "image": "shopify:\/\/shop_images\/How_to_use_a_saalt_disc.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -771,7 +782,7 @@
         "theme_color_background": "theme-color-bg-2",
         "theme_color_text": "theme-color-text-0",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/little_cup_big_impact.png",
+        "image": "shopify:\/\/shop_images\/little_disc_big_impact.png",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
