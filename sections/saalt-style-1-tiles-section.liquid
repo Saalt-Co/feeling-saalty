@@ -200,18 +200,25 @@
                   display: grid;
                   grid-template-columns: repeat({{ block.settings.mobile_icon_grid_columns }}, 1fr);
                 }
-                #section-{{ section.id }} .icons-wrapper .icon-wrapper {
+                #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper[class*="mobile-"] {
                   min-width: {{ block.settings.mobile_icon_min_width }};
                   max-width: {{ block.settings.mobile_icon_wrapper_max_width }};
+                }
+                #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-row,
+                #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-reverse-row {
                   justify-content: {{ block.settings.mobile_icon_horizontal_alignment }};
                   align-items: {{ block.settings.mobile_icon_vertical_alignment }};
                 }
-                #section-{{ section.id }} .icons-wrapper.mobile-column .icon-wrapper[class*='column'], #section-{{ section.id }} .icons-wrapper.mobile-grid .icon-wrapper[class*='column'] {
+                #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-column,
+                #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-reverse-column,
+                #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-column,
+                #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-reverse-column
+                {
                   justify-content: {{ block.settings.mobile_icon_vertical_alignment }};
                   align-items: {{ block.settings.mobile_icon_horizontal_alignment }};
                 }
                 #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper * {
-                    {% if block.settings.icon_text_position == "left" or block.settings.icon_text_position == "right" %}
+                    {% if block.settings.mobile_icon_text_position == "left" or block.settings.mobile_icon_text_position == "right" %}
                       {% assign alignment = block.settings.mobile_icon_vertical_alignment %}
                       {% else %}
                       {% assign alignment = block.settings.mobile_icon_horizontal_alignment %}
@@ -234,6 +241,7 @@
                 #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
                   width: 100%;
                   font-size: {{ block.settings.mobile_icon_text_size }};
+                  margin: 0;
                 }
                 #section-{{ section.id }} .icons-wrapper {
                   gap: {{ block.settings.mobile_icon_group_gap }};
@@ -265,17 +273,26 @@
                     display: grid;
                     grid-template-columns: repeat({{ block.settings.desktop_icon_grid_columns }}, 1fr);
                   }
-                  #section-{{ section.id }} .icons-wrapper .icon-wrapper {
+                  #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper[class*="mobile-"] {
+                    justify-content: unset;
+                    align-items: unset;
+                  }
+                  #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper[class*="desktop-"] {
                     min-width: {{ block.settings.desktop_icon_min_width }};
                     max-width: {{ block.settings.desktop_icon_wrapper_max_width }};
                     justify-content: {{ block.settings.desktop_icon_horizontal_alignment }};
                     align-items: {{ block.settings.desktop_icon_vertical_alignment }};
                   }
-                  #section-{{ section.id }} .icons-wrapper.mobile-column .icon-wrapper[class*='column'], #section-{{ section.id }} .icons-wrapper.mobile-grid .icon-wrapper[class*='column'] {
-                    justify-content: unset;
-                    align-items: unset;
+                  #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-row,
+                  #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-reverse-row {
+                    justify-content: {{ block.settings.desktop_icon_horizontal_alignment }};
+                    align-items: {{ block.settings.desktop_icon_vertical_alignment }};
                   }
-                  #section-{{ section.id }} .icons-wrapper.desktop-column .icon-wrapper[class*='column'], #section-{{ section.id }} .icons-wrapper.desktop-grid .icon-wrapper[class*='column'] {
+                  #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-column,
+                  #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-reverse-column,
+                  #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-column,
+                  #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-reverse-column
+                  {
                     justify-content: {{ block.settings.desktop_icon_vertical_alignment }};
                     align-items: {{ block.settings.desktop_icon_horizontal_alignment }};
                   }
@@ -283,7 +300,7 @@
                     text-align: unset;
                   }
                   #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper * {
-                    {% if block.settings.icon_text_position == "left" or block.settings.icon_text_position == "right" %}
+                    {% if block.settings.desktop_icon_text_position == "left" or block.settings.desktop_icon_text_position == "right" %}
                       {% assign alignment = block.settings.desktop_icon_vertical_alignment %}
                       {% else %}
                       {% assign alignment = block.settings.desktop_icon_horizontal_alignment %}
@@ -306,12 +323,12 @@
                   #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
                     font-size: {{ block.settings.desktop_icon_text_size }};
                   }
+                  {%- if block.settings.use_max_icon_group_width -%}
                   #section-{{ section.id }} .icons-wrapper {
-                    {%- if block.settings.use_max_icon_group_width -%}
                     max-width: {{ block.settings.icon_group_max_width }};
                     margin: 0 auto 3rem;
-                    {%- endif -%}
                   }
+                  {%- endif -%}
                   #section-{{ section.id }} .icons-wrapper {
                     gap: {{ block.settings.desktop_icon_group_gap }};
                     {% if block.settings.desktop_icons_display != "column" %}
@@ -432,16 +449,16 @@
     gap: 1rem;
     overflow: hidden;
   }
-  #section-{{ section.id }} .icons-wrapper .icon-wrapper.column {
+  #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-column {
     flex-direction: column;
   }
-  #section-{{ section.id }} .icons-wrapper .icon-wrapper.reverse-column {
+  #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-reverse-column {
     flex-direction: column-reverse;
   }
-  #section-{{ section.id }} .icons-wrapper .icon-wrapper.row {
+  #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-row {
     flex-direction: row;
   }
-  #section-{{ section.id }} .icons-wrapper .icon-wrapper.reverse-row {
+  #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-reverse-row {
     flex-direction: row-reverse;
   }
   #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
@@ -581,6 +598,18 @@
     #section-{{ section.id }} .tile-link:hover + .tile-text-wrapper > .tile-content, #section-{{ section.id }} .tile-link:focus + .tile-text-wrapper > .tile-content {
       opacity: 1;
       height: auto;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-column {
+      flex-direction: column;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-reverse-column {
+      flex-direction: column-reverse;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-row {
+      flex-direction: row;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-reverse-row {
+      flex-direction: row-reverse;
     }
   }
 
@@ -1736,7 +1765,7 @@
           "type": "number",
           "id": "mobile_icon_grid_columns",
           "label": "Icon grid columns",
-          "info": "If the display of icons on mobile is set to \"columns\", how many columns should be shown? The default is 2",
+          "info": "If the display of icons on mobile is set to \"grid\", how many columns should be shown? The default is 2",
           "default": 2
         },
         {
@@ -1829,7 +1858,7 @@
         },
         {
           "type": "header",
-          "content": "Desktop Icon Wrapper Settings"
+          "content": "Desktop Icon Group Settings"
         },
         {
           "type": "checkbox",
@@ -1873,7 +1902,7 @@
           "options": [
             {
               "value": "flex-start",
-              "label": "Top"
+              "label": "Left"
             },
             {
               "value": "center",
@@ -1881,7 +1910,7 @@
             },
             {
               "value": "flex-end",
-              "label": "Bottom"
+              "label": "Right"
             },
             {
               "value": "space-evenly",
@@ -1935,7 +1964,7 @@
           "type": "number",
           "id": "desktop_icon_grid_columns",
           "label": "Icon grid columns",
-          "info": "If the display of icons on desktop is set to \"columns\", how many columns should be shown? The default is 2",
+          "info": "If the display of icons on desktop is set to \"grid\", how many columns should be shown? The default is 2",
           "default": 2
         },
         {
@@ -2050,9 +2079,34 @@
         },
         {
           "type": "select",
-          "id": "icon_text_position",
-          "label": "Icon text position",
-          "info": "Where the text should be in relation to the SVG icon",
+          "id": "mobile_icon_text_position",
+          "label": "Mobile icon text position",
+          "info": "Where the text should be in relation to the SVG icon on mobile",
+          "options": [
+            {
+              "value": "above",
+              "label": "Above the icon"
+            },
+            {
+              "value": "below",
+              "label": "Below the icon"
+            },
+            {
+              "value": "left",
+              "label": "Left of the icon"
+            },
+            {
+              "value": "right",
+              "label": "Right of the icon"
+            }
+          ],
+          "default": "below"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_text_position",
+          "label": "Desktop icon text position",
+          "info": "Where the text should be in relation to the SVG icon on desktop",
           "options": [
             {
               "value": "above",
