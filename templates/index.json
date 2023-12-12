@@ -58,10 +58,10 @@
         "mobile_icon_text_position": "below",
         "desktop_icon_text_position": "below",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "flex-start",
+        "desktop_text_position": "flex-end",
         "desktop_text_alignment": "right",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "use_max_text_width": true,
+        "max_width": "28%",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -206,7 +206,7 @@
         "content_font_size": "small",
         "mobile_text_alignment": "center",
         "desktop_text_position": "left",
-        "desktop_text_alignment": "left",
+        "desktop_text_alignment": "center",
         "use_max_text_width": false,
         "max_width": "600px",
         "padding_top": 0,
@@ -244,7 +244,7 @@
           "settings": {
             "text_group_num": "1",
             "button_text": "GET TAX BACK",
-            "button_url": "",
+            "button_url": "https:\/\/tampontaxback.com",
             "button_type": "primary",
             "theme_color_section_button_background": "theme-color-bg-4",
             "theme_color_text_section_button_text": "theme-color-text-2",
@@ -504,6 +504,7 @@
         "column2",
         "column3"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -559,6 +560,7 @@
         "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-0",
         "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-1"
       ],
+      "disabled": true,
       "settings": {
         "slide_height": "medium",
         "slider_visual": "counter",
