@@ -283,16 +283,6 @@
             "link": ""
           }
         },
-        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-3": {
-          "type": "column",
-          "settings": {
-            "title": "Kels",
-            "rating": 5,
-            "text": "<p><strong>The Saalt Cup is my new bestie! <\/strong>Well technically not new, we've been best friends for about 5 years. <strong>Imagine how much money I've saved not buying tampons<\/strong>!<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-2": {
           "type": "column",
           "settings": {
@@ -302,12 +292,22 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Kels",
+            "rating": 5,
+            "text": "<p><strong>The Saalt Cup is my new bestie! <\/strong>Well technically not new, we've been best friends for about 5 years. <strong>Imagine how much money I've saved not buying tampons<\/strong>!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-1",
-        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-3",
-        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-2"
+        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-2",
+        "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-3"
       ],
       "settings": {
         "title": "9\/10 People Never Go Back",
@@ -316,10 +316,10 @@
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "left",
-        "theme_color_background": "theme_default",
+        "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "background_style": "primary",
-        "theme_color_column_secondary_bg": "theme_default",
+        "theme_color_column_secondary_bg": "--palette-color-0",
         "column_secondary_bg_opacity": 100,
         "review_star_color_override": "--palette-color-4",
         "review_star_opacity_override": 100,
