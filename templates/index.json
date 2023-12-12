@@ -432,8 +432,8 @@
         "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-0": {
           "type": "testimonial",
           "settings": {
-            "quote": "Customer quote",
-            "author": "Customer's Name",
+            "quote": "Never going back to tampons! This is my first ever cup I’ve bought.  So easy to use and <strong>I can’t even tell that it’s there.<\/strong> I ordered a size regular and it was the perfect fit for me. It makes it easier for me to use a cup because I have a heavy flow and I know that I don’t have to change my tampon every hour. I love this product.<strong> I’m so glad that I switched to a cup.<\/strong>",
+            "author": "Kelsey R.",
             "show_text_box": true,
             "text_alignment": "center",
             "text_alignment_mobile": "center"
@@ -462,6 +462,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "include_img": true,
+        "image": "shopify:\/\/shop_images\/Testimonials_1.jpg",
         "image_behavior": "none",
         "accessibility_info": "Slideshow about our brand"
       }
