@@ -1,8 +1,9 @@
 {
   "current": {
     "reviews_platform": "yotpo",
-    "logo": "shopify:\/\/shop_images\/saalt-logo_7c98b829-ff51-45e7-b082-c0a912220098_1.png",
+    "logo": "shopify:\/\/shop_images\/saalt-logo_b97682b6-a4e2-4deb-b083-58d4811c6d46.png",
     "logo_width": 90,
+    "favicon": "shopify:\/\/shop_images\/Fancy-Monogram-header_03.png",
     "colors_solid_button_labels": "#fff",
     "colors_accent_1": "#3f4759",
     "gradient_accent_1": "",
