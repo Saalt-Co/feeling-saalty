@@ -89,66 +89,66 @@
         "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-0": {
           "type": "window-feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Comfort_Brief.png",
+            "image": "shopify:\/\/shop_images\/SW-SM-HW-MS-Ampersand-278_1.jpg",
             "title": "<p>Leakproof Underwear<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "copy": "<p>Saalt Wear absorbs periods, bladder leaks, and more. Live life leak-free with the thinnest and driest leakproof and period underwear.<\/p>",
             "link_type": "url",
-            "link_url": "https:\/\/saalt-dev-store.myshopify.com\/collections\/saalt-period-underwear",
+            "link_url": "shopify:\/\/collections\/saalt-period-underwear",
             "filter_name": "",
             "filter_val": "",
-            "button_text": "Filter"
+            "button_text": "Shop Underwear"
           }
         },
         "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-1": {
           "type": "window-feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saalt-Disc-Promo-January-February-Menstrual-Disc-Cup-15-Off-Hero-mobile.jpg",
+            "image": "shopify:\/\/shop_images\/SC-HP-SOManifest-1597.jpg",
             "title": "<p>Cups & Discs<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "copy": "<p>Upgrade your period with Saalt reusable menstrual cups and discs. Easy to use and comfortable. Live free of the tampon aisle—forever. Wear up to 12 hours to swim, run, bike, hike, or fly to Bora Bora.<\/p>",
             "link_type": "url",
-            "link_url": "https:\/\/saalt-dev-store.myshopify.com\/collections\/menstrual-cups-discs",
+            "link_url": "shopify:\/\/collections\/menstrual-cups-discs",
             "filter_name": "",
             "filter_val": "",
-            "button_text": "Filter"
+            "button_text": "Shop Cups & Discs"
           }
         },
         "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-2": {
           "type": "window-feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bg_f8ff51d7-0d50-4bf8-8de5-ff612005a702.jpg",
+            "image": "shopify:\/\/shop_images\/Bundle-Preset-1080x1080-Web-0995.jpg",
             "title": "<p>Bundles<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "copy": "<p>Save up to 20% and skip the guesswork with bundles custom-designed by our Saalt Coaches for all your leak needs. <\/p>",
             "link_type": "url",
-            "link_url": "https:\/\/saalt-dev-store.myshopify.com\/collections\/preset-bundles",
+            "link_url": "shopify:\/\/collections\/preset-bundles",
             "filter_name": "",
             "filter_val": "",
-            "button_text": "Filter"
+            "button_text": "Shop Bundles"
           }
         },
         "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-3": {
           "type": "window-feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Teen-Cup-Launch_Ads_Website_mobile.jpg",
+            "image": "shopify:\/\/shop_images\/Saalt-Window-Display-Shop-Teen_03.jpg",
             "title": "<p>Teen<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
-            "link_type": "filter",
-            "link_url": "",
+            "copy": "<p>Peace out, pads.<br\/>Modern teens are upgrading to comfortable and sustainable period care. Choose from reusable period cups made by teens for teens, and leakproof period underwear that ranges from size XXS and up.<\/p>",
+            "link_type": "url",
+            "link_url": "shopify:\/\/collections\/teen-collection",
             "filter_name": "",
             "filter_val": "",
-            "button_text": "Filter"
+            "button_text": "Shop Teen"
           }
         },
         "d8236345-5ecc-484c-af5d-464fd1c4ecf7": {
           "type": "window-feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saalt-Wash-PCR.jpg",
+            "image": "shopify:\/\/shop_images\/Shop_by_Category_-_Accessories_1.jpg",
             "title": "<p>Extras<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "copy": "<p>All the extras that make it easy to care for your underwear, cups, and discs. <\/p>",
             "link_type": "url",
-            "link_url": "https:\/\/saalt-dev-store.myshopify.com\/collections\/extras",
+            "link_url": "shopify:\/\/collections\/extras",
             "filter_name": "",
             "filter_val": "",
-            "button_text": "Filter"
+            "button_text": "Shop Extras"
           }
         }
       },
