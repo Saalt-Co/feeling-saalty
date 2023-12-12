@@ -38,7 +38,7 @@
         "enable_saalt_country_selector": true,
         "saalt_country_selector_new_tab": true,
         "saalt_country_selector_include_current": false,
-        "enable_country_selector": true,
+        "enable_country_selector": false,
         "enable_language_selector": true,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
