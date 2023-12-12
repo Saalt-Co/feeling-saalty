@@ -674,6 +674,137 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "8310e00d-5cfc-4950-b4b9-394df5603b17": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--21644091687185__8310e00d-5cfc-4950-b4b9-394df5603b17-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Section Title Goes Here"
+          }
+        },
+        "template--21644091687185__8310e00d-5cfc-4950-b4b9-394df5603b17-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
+          }
+        },
+        "template--21644091687185__8310e00d-5cfc-4950-b4b9-394df5603b17-section_buttons_group-1": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "flex-start",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "template--21644091687185__8310e00d-5cfc-4950-b4b9-394df5603b17-section_button-1": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "5c814837-a4df-43b4-a934-1231c0007297": {
+          "type": "section_icon_group",
+          "settings": {
+            "mobile_icons_display": "row",
+            "mobile_icon_group_horizontal_alignment": "center",
+            "mobile_icon_group_vertical_alignment": "flex-start",
+            "mobile_icon_grid_columns": 2,
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_text_size": "1.5rem",
+            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_vertical_alignment": "center",
+            "mobile_icon_min_width": "80px",
+            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "100px",
+            "use_max_icon_group_width": false,
+            "icon_group_max_width": "600px",
+            "desktop_icons_display": "row",
+            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_vertical_alignment": "center",
+            "desktop_icon_grid_columns": 2,
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_horizontal_alignment": "center",
+            "desktop_icon_vertical_alignment": "center",
+            "desktop_icon_min_width": "80px",
+            "desktop_icon_wrapper_max_width": "100px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "100px"
+          }
+        },
+        "54043490-6072-4c22-acdc-a2abf9f2ca05": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<!--?xml version=\"1.0\" encoding=\"UTF-8\"?-->\n            <svg width=\"18px\" height=\"33px\" viewbox=\"0 0 18 33\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n              <!-- Generator: sketchtool 51.3 (57544) - http:\/\/www.bohemiancoding.com\/sketch -->\n              <title>3BF4E4CD-8AF9-438A-976E-1A9302138935<\/title>\n              <desc>Created with sketchtool.<\/desc>\n              <defs><\/defs>\n              <g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n                <g id=\"PDP--Cup\" transform=\"translate(-898.400400, -1381.099500)\">\n                  <g id=\"2---about-more\" transform=\"translate(-0.399902, 1049.799400)\">\n                    <g id=\"right\" transform=\"translate(741.800300, 0.000000)\">\n                      <g id=\"mid\" transform=\"translate(90.799805, 95.376400)\">\n                        <g id=\"cell\" transform=\"translate(0.000000, 224.129330)\">\n                          <g id=\"savings\">\n                            <g id=\"Dollar\" transform=\"translate(46.500490, 0.000000)\">\n                              <rect id=\"Background\" x=\"0\" y=\"0\" width=\"57\" height=\"57\"><\/rect>\n                              <path d=\"M34.6893397,27.9460867 C33.1997148,26.5094726 31.3073162,26.1382601 29.7873392,26.0417149 L29.7873392,17.1323315 C30.8425514,17.3046844 31.8192461,17.7863348 32.5878918,18.5132987 C33.4391136,19.3299662 33.4391136,19.935093 33.4391136,21.4014168 C33.4565007,21.7045136 33.5919456,21.9895854 33.8177378,22.1981341 C34.0435278,22.4067558 34.3424941,22.5229634 34.6532158,22.5229634 C34.9639369,22.5229634 35.2629006,22.4067558 35.488693,22.1981341 C35.7144826,21.9895854 35.8499305,21.7045136 35.8673148,21.4014168 C35.8673148,19.7717159 35.8673148,18.3610367 34.316915,16.842771 C33.0916287,15.6719905 31.5016834,14.933912 29.798739,14.745313 L29.798739,13.5165357 C29.798739,13.2005416 29.6702032,12.8974442 29.44142,12.6739331 C29.2127082,12.4504928 28.9024136,12.324951 28.5789399,12.324951 C28.2553925,12.324951 27.9451687,12.4504928 27.7163863,12.6739331 C27.4876036,12.8974442 27.3591383,13.2005416 27.3591383,13.5165357 L27.3591383,14.7861398 C26.0253374,14.9346239 24.6306918,15.3318432 23.5590908,16.3787192 C20.5836915,19.2854348 20.4507392,23.729012 23.266539,26.47976 C24.4407382,27.6231102 26.0937381,28.0760469 27.3591383,28.2653585 L27.3591383,38.2884504 C26.4621018,38.0265356 25.645933,37.5506576 24.9840907,36.9037805 C23.5325142,35.4819843 22.7687152,34.4611139 22.9092915,33.1172695 C22.9400725,32.8049091 22.8431007,32.4932619 22.6394674,32.2505113 C22.4358343,32.0077645 22.1421425,31.8535776 21.8225145,31.8217292 C21.6634847,31.8042751 21.5025318,31.8180236 21.3490588,31.862271 C21.1955858,31.9064463 21.0526585,31.9801893 20.9287543,32.0790876 C20.8048515,32.1779793 20.7024655,32.3001038 20.6275093,32.4382551 C20.5526264,32.5763394 20.5067416,32.7277442 20.4924913,32.8834267 C20.2379152,35.3854436 21.7236918,37.0708603 23.2703143,38.5780135 C24.3850226,39.6745487 25.8082392,40.4226728 27.3591383,40.7274083 L27.3591383,42.4907035 C27.3591383,42.8047753 27.4868182,43.1060206 27.7141765,43.3281059 C27.9414641,43.5501937 28.2498345,43.674951 28.571316,43.674951 C28.8927952,43.674951 29.2011651,43.5501937 29.4284532,43.3281059 C29.6558116,43.1060206 29.7834902,42.8047753 29.7834902,42.4907035 L29.7834902,40.8461841 C31.6369903,40.6726211 33.3705015,39.8731945 34.685492,38.5854227 C37.8395159,35.5079938 37.8395159,31.0235864 34.6893397,27.9460867 Z M24.9838575,24.7871047 C23.1484576,22.9903218 23.2928824,19.9611289 25.2764824,18.0382334 C25.8563152,17.5341394 26.5860554,17.2245583 27.3589049,17.154663 L27.3589049,25.859915 C26.4800353,25.7266065 25.657099,25.3548946 24.9838575,24.7871047 Z M32.9752593,36.9038809 C32.1118523,37.7431337 30.9932277,38.2862713 29.787109,38.451929 L29.787109,28.428833 C31.2310611,28.529012 32.2342615,28.911409 32.9752593,29.635311 C35.1793084,31.7735234 35.1793084,34.7581856 32.9752593,36.9038809 Z\" id=\"Shape\" stroke=\"#FFFFFF\" stroke-width=\"0.6\" fill=\"#3F4759\"><\/path>\n                            <\/g>\n                          <\/g>\n                        <\/g>\n                      <\/g>\n                    <\/g>\n                  <\/g>\n                <\/g>\n              <\/g>\n            <\/svg>",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "d19aa07a-e34e-44b0-bf1e-311d80e3a867": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<!--?xml version=\"1.0\" encoding=\"UTF-8\"?-->\n            <svg width=\"40px\" height=\"40px\" viewbox=\"0 0 40 40\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n              <!-- Generator: sketchtool 51.3 (57544) - http:\/\/www.bohemiancoding.com\/sketch -->\n              <title>6C10A956-9866-4400-B5E5-A69C67C91FDC<\/title>\n              <desc>Created with sketchtool.<\/desc>\n              <defs><\/defs>\n              <g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n                <g id=\"PDP--Cup\" transform=\"translate(-1070.400400, -1377.099500)\">\n                  <g id=\"2---about-more\" transform=\"translate(-0.399902, 1049.799400)\">\n                    <g id=\"right\" transform=\"translate(741.800300, 0.000000)\">\n                      <g id=\"mid\" transform=\"translate(90.799805, 95.376400)\">\n                        <g id=\"cell\" transform=\"translate(0.000000, 224.129330)\">\n                          <g id=\"per\" transform=\"translate(183.400880, 9.000000)\">\n                            <g id=\"percent\" transform=\"translate(56.000000, 0.000000)\">\n                              <g id=\"chas-2\" stroke=\"#3F4759\">\n                                <circle id=\"Ellipse\" cx=\"19\" cy=\"19\" r=\"19\"><\/circle>\n                              <\/g>\n                              <text id=\"2%\" font-family=\"Montserrat-SemiBold, Montserrat\" font-size=\"16\" font-weight=\"500\" fill=\"#3F4759\">\n                                <tspan x=\"6.928\" y=\"24\">2%<\/tspan>\n                              <\/text>\n                            <\/g>\n                          <\/g>\n                        <\/g>\n                      <\/g>\n                    <\/g>\n                  <\/g>\n                <\/g>\n              <\/g>\n            <\/svg>",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "3941a790-2cf2-497f-83fc-f3ddca114333": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        }
+      },
+      "block_order": [
+        "template--21644091687185__8310e00d-5cfc-4950-b4b9-394df5603b17-section_title-1",
+        "template--21644091687185__8310e00d-5cfc-4950-b4b9-394df5603b17-section_content-1",
+        "template--21644091687185__8310e00d-5cfc-4950-b4b9-394df5603b17-section_buttons_group-1",
+        "template--21644091687185__8310e00d-5cfc-4950-b4b9-394df5603b17-section_button-1",
+        "5c814837-a4df-43b4-a934-1231c0007297",
+        "54043490-6072-4c22-acdc-a2abf9f2ca05",
+        "d19aa07a-e34e-44b0-bf1e-311d80e3a867",
+        "3941a790-2cf2-497f-83fc-f3ddca114333"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -685,6 +816,7 @@
     "bef772d0-6e13-4a64-bb1e-f22e9b4887ed",
     "related-products",
     "d2711f17-56ea-4fa1-9caf-6e8d0a892eff",
-    "889a4838-ad90-48cd-a556-a83d2fb823f9"
+    "889a4838-ad90-48cd-a556-a83d2fb823f9",
+    "8310e00d-5cfc-4950-b4b9-394df5603b17"
   ]
 }
