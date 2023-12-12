@@ -1,0 +1,23 @@
+{% comment %}
+  Renders a reviews summary
+
+  Accepts:
+  - product: {Object} The current product
+  - block: {Object} The absorbency block
+
+  Usage:
+  {% render "reviews-summary", product: product, block: block %}
+{% endcomment %}
+{%- case settings.reviews_platform -%}
+  {%- when 'yotpo' -%}
+    <div {{ block.shopify_attributes }}>
+      {% render 'yotpo-reviews', yotpo_widget: 'pdp_star_rating', product: product %}
+    </div>
+  {%- when 'bazaarvoice' -%}
+    <div data-bv-show="rating_summary" data-bv-product-id="{{product.id}}" {{ block.shopify_attributes }}></div>
+    {%- style -%}
+      div[data-bv-show='inpage_submission']:empty {
+        display: block;
+      }
+    {%- endstyle -%}
+{%- endcase -%}

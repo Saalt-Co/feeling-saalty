@@ -16,8 +16,7 @@
 .rating-star {
   --percent: calc(
     (
-        var(--rating) / var(--rating-max) + var(--rating-decimal) *
-          var(--font-size) /
+        var(--rating) / var(--rating-max) + var(--rating-decimal) * var(--font-size) /
           (var(--rating-max) * (var(--letter-spacing) + var(--font-size)))
       ) * 100%
   );
@@ -33,11 +32,12 @@
   content: '★★★★★';
   background: linear-gradient(
     90deg,
-    var(--color-icon) var(--percent),
-    rgba(var(--color-foreground), 0.15) var(--percent)
+    var(--color-review-stars) var(--percent),
+    rgba(var(--color-site-background), 0.15) var(--percent)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: var(--color-review-stars-opacity);
 }
 
 .rating-text {

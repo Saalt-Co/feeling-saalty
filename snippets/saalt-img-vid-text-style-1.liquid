@@ -1,0 +1,252 @@
+{%- assign block_count = section.blocks | size -%}
+{%- assign all_icons = '' -%}
+{%- unless block_count == 0 -%}
+  <div class="text-wrapper">
+    {%- if block_count > 0 -%}
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'section_title' -%}
+            {%- if block.settings.title != blank -%}
+              <h{{ block.settings.heading_tag }} class="section-title" {{ block.shopify_attributes }}>
+                {{- block.settings.title -}}
+              </h{{ block.settings.heading_tag }}>
+            {%- endif -%}
+          {%- when 'section_content' -%}
+            {%- if block.settings.text_content != blank -%}
+              <div class="section-content" {{ block.shopify_attributes }}>{{ block.settings.text_content }}</div>
+            {%- endif -%}
+          {%- when 'section_buttons_group' -%}
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'section_button' -%}
+                  {%- if block.settings.button_text != blank -%}
+                    {%- capture button_code -%}
+                      <a
+                        class="button{% render 'saalt-button-color-classes', obj: block %}"
+                        {% if block.settings.button_url == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.button_url }}"
+                        {% endif %}
+                        {{ block.shopify_attributes }}
+                      >
+                        {{ block.settings.button_text | escape }}
+                      </a>
+                    {%- endcapture -%}
+                    {%- assign buttons_code = buttons_code | append: button_code -%}
+                  {%- endif -%}
+              {%- endcase -%}
+            {%- endfor -%}
+            {% capture buttons_group_css %}
+          #section-{{ section.id }} .section-inner .text-wrapper .button-group {
+            gap: 1.5rem;
+            justify-content: center;
+          }
+          @media screen and (min-width: 750px) {
+            #section-{{ section.id }} .section-inner .text-wrapper .button-group {
+              gap: {{ block.settings.desktop_buttons_group_gap }};
+              justify-content: {{ block.settings.desktop_button_group_alignment }};
+            }
+            #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
+              width: auto;
+            }
+          }
+        {% endcapture %}
+            {% style %}
+              {{ buttons_group_css }}
+            {% endstyle %}
+            <div class="button-group" {{ block.shopify_attributes }}>
+              {{ buttons_code }}
+            </div>
+          {%- when 'section_icon_group' -%}
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'section_icon_with_text' -%}
+                  {%- capture icon_code -%}{% render "saalt-svg-icon", block: block, theme_color_text: section.settings.theme_color_text, icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text, icon_color: block.settings.theme_color_icon_color, icon_text_color: block.settings.theme_color_icon_text_color %}{%- endcapture -%}
+                  {%- assign all_icons = all_icons | append: icon_code -%}
+              {%- endcase -%}
+            {%- endfor -%}
+            {% style %}
+              #section-{{ section.id }} .icons-wrapper.mobile-row {
+                flex-direction: row;
+              }
+              #section-{{ section.id }} .icons-wrapper.mobile-column {
+                flex-direction: column;
+              }
+              #section-{{ section.id }} .icons-wrapper.mobile-grid {
+                display: grid;
+                grid-template-columns: repeat({{ block.settings.mobile_icon_grid_columns }}, 1fr);
+              }
+              #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper[class*="mobile-"] {
+                min-width: {{ block.settings.mobile_icon_min_width }};
+                max-width: {{ block.settings.mobile_icon_wrapper_max_width }};
+              }
+              #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-row,
+              #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-reverse-row {
+                justify-content: {{ block.settings.mobile_icon_horizontal_alignment }};
+                align-items: {{ block.settings.mobile_icon_vertical_alignment }};
+              }
+              #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-column,
+              #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-reverse-column,
+              #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-column,
+              #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-reverse-column
+              {
+                justify-content: {{ block.settings.mobile_icon_vertical_alignment }};
+                align-items: {{ block.settings.mobile_icon_horizontal_alignment }};
+              }
+              #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper * {
+                  {% if block.settings.mobile_icon_text_position == "left" or block.settings.mobile_icon_text_position == "right" %}
+                    {% assign alignment = block.settings.mobile_icon_vertical_alignment %}
+                    {% else %}
+                    {% assign alignment = block.settings.mobile_icon_horizontal_alignment %}
+                  {% endif %}
+                  {% case alignment %}
+                    {% when "flex-start" %}
+                      {% assign text_alignment = "left" %}
+                    {% when "center" %}
+                      {% assign text_alignment = "center" %}
+                    {% when "flex-end" %}
+                      {% assign text_alignment = "right" %}
+                  {% endcase %}
+                  text-align: {{ text_alignment }};
+                }
+              #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+                max-width: {{ block.settings.mobile_icon_max_width }};
+                min-height: {{ block.settings.mobile_icon_height }};
+                max-height: {{ block.settings.mobile_icon_height }};
+              }
+              #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
+                width: 100%;
+                font-size: {{ block.settings.mobile_icon_text_size }};
+                margin: 0;
+              }
+              #section-{{ section.id }} .icons-wrapper {
+                gap: {{ block.settings.mobile_icon_group_gap }};
+                {% if block.settings.mobile_icons_display != "column" %}
+                  justify-content: {{ block.settings.mobile_icon_group_horizontal_alignment }};
+                  align-items: {{ block.settings.mobile_icon_group_vertical_alignment }};
+                {% else %}
+                  justify-content: {{ block.settings.mobile_icon_group_vertical_alignment }};
+                  align-items: {{ block.settings.mobile_icon_group_horizontal_alignment }};
+                {% endif %}
+              }
+              @media screen and (min-width: 750px) {
+                #section-{{ section.id }} .icons-wrapper,
+                #section-{{ section.id }} .icons-wrapper.mobile-row,
+                #section-{{ section.id }} .icons-wrapper.mobile-column,
+                #section-{{ section.id }} .icons-wrapper.mobile-grid {
+                  display: flex;
+                }
+                #section-{{ section.id }} .icons-wrapper.desktop-row {
+                  flex-direction: row;
+                }
+                #section-{{ section.id }} .icons-wrapper.desktop-column {
+                  flex-direction: column;
+                }
+                #section-{{ section.id }} .icons-wrapper.desktop-column .icons-wrapper .icon-wrapper {
+                  flex: unset;
+                }
+                #section-{{ section.id }} .icons-wrapper.desktop-grid {
+                  display: grid;
+                  grid-template-columns: repeat({{ block.settings.desktop_icon_grid_columns }}, 1fr);
+                }
+                #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper[class*="mobile-"] {
+                  justify-content: unset;
+                  align-items: unset;
+                }
+                #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper[class*="desktop-"] {
+                  min-width: {{ block.settings.desktop_icon_min_width }};
+                  max-width: {{ block.settings.desktop_icon_wrapper_max_width }};
+                  justify-content: {{ block.settings.desktop_icon_horizontal_alignment }};
+                  align-items: {{ block.settings.desktop_icon_vertical_alignment }};
+                }
+                #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-row,
+                #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-reverse-row {
+                  justify-content: {{ block.settings.desktop_icon_horizontal_alignment }};
+                  align-items: {{ block.settings.desktop_icon_vertical_alignment }};
+                }
+                #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-column,
+                #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-reverse-column,
+                #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-column,
+                #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-reverse-column
+                {
+                  justify-content: {{ block.settings.desktop_icon_vertical_alignment }};
+                  align-items: {{ block.settings.desktop_icon_horizontal_alignment }};
+                }
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper * {
+                  text-align: unset;
+                }
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper * {
+                  {% if block.settings.desktop_icon_text_position == "left" or block.settings.desktop_icon_text_position == "right" %}
+                    {% assign alignment = block.settings.desktop_icon_vertical_alignment %}
+                    {% else %}
+                    {% assign alignment = block.settings.desktop_icon_horizontal_alignment %}
+                  {% endif %}
+                  {% case alignment %}
+                    {% when "flex-start" %}
+                      {% assign text_alignment = "left" %}
+                    {% when "center" %}
+                      {% assign text_alignment = "center" %}
+                    {% when "flex-end" %}
+                      {% assign text_alignment = "right" %}
+                  {% endcase %}
+                  text-align: {{ text_alignment }};
+                }
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+                  max-width: {{ block.settings.desktop_icon_max_width }};
+                  min-height: {{ block.settings.desktop_icon_height }};
+                  max-height: {{ block.settings.desktop_icon_height }};
+                }
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
+                  font-size: {{ block.settings.desktop_icon_text_size }};
+                }
+                {%- if block.settings.use_max_icon_group_width -%}
+                #section-{{ section.id }} .icons-wrapper {
+                  max-width: {{ block.settings.icon_group_max_width }};
+                  margin: 0 auto 3rem;
+                }
+                {%- endif -%}
+                #section-{{ section.id }} .icons-wrapper {
+                  gap: {{ block.settings.desktop_icon_group_gap }};
+                  {% if block.settings.desktop_icons_display != "column" %}
+                    justify-content: {{ block.settings.desktop_icon_group_horizontal_alignment }};
+                    align-items: {{ block.settings.desktop_icon_group_vertical_alignment }};
+                  {% else %}
+                    justify-content: {{ block.settings.desktop_icon_group_vertical_alignment }};
+                    align-items: {{ block.settings.desktop_icon_group_horizontal_alignment }};
+                  {% endif %}
+                }
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper {
+                  min-width: {{ block.settings.desktop_icon_min_width }};
+                  max-width: {{ block.settings.desktop_icon_wrapper_max_width }};
+                  {% if block.settings.desktop_icons_display == "left" or block.settings.desktop_icons_display == "right" %}
+                  justify-content: {{ block.settings.desktop_icon_vertical_alignment }};
+                  align-items: {{ block.settings.desktop_icon_horizontal_alignment }};
+                  {% else %}
+                  justify-content: {{ block.settings.desktop_icon_horizontal_alignment }};
+                  align-items: {{ block.settings.desktop_icon_vertical_alignment }};
+                {% endif %}
+                }
+              }
+            {% endstyle %}
+            <ul
+              class="icons-wrapper mobile-{{ block.settings.mobile_icons_display }} desktop-{{ block.settings.desktop_icons_display }}"
+              {{ block.shopify_attributes }}
+            >
+              {{ all_icons }}
+            </ul>
+          {%- when 'saalt_contact_links' -%}
+            {% render 'saalt-contact-links',
+              section_id: section.id,
+              section_text_color: section.settings.theme_color_text,
+              block: block
+            %}
+          {%- when 'custom_liquid_code' -%}
+            <div {{ block.shopify_attributes }}>
+              {{ block.settings.liquid_code }}
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    {%- endif -%}
+  </div>
+{%- endunless -%}

@@ -29,7 +29,7 @@ html {
 
 body {
   background-color: rgb(var(--color-base-background-1));
-  color: rgb(var(--color-base-text));
+  color: rgb(var(--color-main-text));
   letter-spacing: 0.07rem;
   line-height: calc(1 + 0.8 / var(--font-body-scale));
   max-width: var(--page-width);
@@ -47,7 +47,7 @@ body {
 }
 
 ::selection {
-  background-color: rgba(var(--color-base-text), 0.2);
+  background-color: rgba(var(--color-main-text), 0.2);
 }
 
 h1,
@@ -181,7 +181,7 @@ h2,
 }
 
 .gift-card__number {
-  color: rgb(var(--color-base-text));
+  color: rgb(var(--color-main-text));
   font-size: 1.8rem;
   line-height: calc(1 + 0.6 / var(--font-body-scale));
   text-align: center;
@@ -213,13 +213,13 @@ h2,
   padding: 0.6rem 1.3rem;
   text-align: center;
   background-color: rgb(var(--color-base-background-1));
-  border-color: rgba(var(--color-base-text), 0.04);
-  color: rgb(var(--color-base-text));
+  border-color: rgba(var(--color-main-text), 0.04);
+  color: rgb(var(--color-main-text));
 }
 
 .badge--inverse {
-  background-color: rgb(var(--color-base-text));
-  border-color: rgb(var(--color-base-text));
+  background-color: rgb(var(--color-main-text));
+  border-color: rgb(var(--color-main-text));
   color: rgb(var(--color-base-background-1));
 }
 
@@ -235,7 +235,7 @@ h2,
   line-height: 0;
   display: block;
   margin-bottom: 3rem;
-  text-align: center;;
+  text-align: center;
 }
 
 .gift-card__buttons {
@@ -262,24 +262,22 @@ h2,
 }
 
 *:focus-visible {
-  outline: 0.2rem solid rgba(var(--color-base-text), 0.5);
+  outline: 0.2rem solid rgba(var(--color-main-text), 0.5);
   outline-offset: 0.3rem;
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-base-background-1)),
-    0 0 0.5rem 0.4rem rgba(var(--color-base-text), 0.3);
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-base-background-1)), 0 0 0.5rem 0.4rem rgba(var(--color-main-text), 0.3);
 }
 
 /* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
-.focused, .no-js *:focus {
+.focused,
+.no-js *:focus {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: 0.3rem;
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
-    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
 
 .button:focus-visible {
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-base-accent-1)),
-    0 0 0 0.3rem rgb(var(--color-base-background-1)),
-    0 0 0.5rem 0.4rem rgba(var(--color-base-text), 0.3);
+  box-shadow: 0 0 0 0.1rem rgb(var(--color-base-accent-1)), 0 0 0 0.3rem rgb(var(--color-base-background-1)),
+    0 0 0.5rem 0.4rem rgba(var(--color-main-text), 0.3);
 }
 
 /* Negate the fallback side-effect for browsers that support :focus-visible */
@@ -289,21 +287,18 @@ h2,
 }
 
 .button:focus {
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-base-accent-1)),
-    0 0 0 0.3rem rgb(var(--color-base-background-1)),
-    0 0 0.5rem 0.4rem rgba(var(--color-base-text), 0.3);
+  box-shadow: 0 0 0 0.1rem rgb(var(--color-base-accent-1)), 0 0 0 0.3rem rgb(var(--color-base-background-1)),
+    0 0 0.5rem 0.4rem rgba(var(--color-main-text), 0.3);
 }
 
 .button--secondary:focus-visible {
   box-shadow: 0 0 0 0.1rem rgb(var(--color-base-outline-button-labels)),
-    0 0 0 0.3rem rgb(var(--color-base-background-1)),
-    0 0 0.5rem 0.4rem rgba(var(--color-base-text), 0.3);
+    0 0 0 0.3rem rgb(var(--color-base-background-1)), 0 0 0.5rem 0.4rem rgba(var(--color-main-text), 0.3);
 }
 
 .button--secondary:focus {
   box-shadow: 0 0 0 0.1rem rgb(var(--color-base-outline-button-labels)),
-    0 0 0 0.3rem rgb(var(--color-base-background-1)),
-    0 0 0.5rem 0.4rem rgba(var(--color-base-text), 0.3);
+    0 0 0 0.3rem rgb(var(--color-base-background-1)), 0 0 0.5rem 0.4rem rgba(var(--color-main-text), 0.3);
 }
 
 .form__message {

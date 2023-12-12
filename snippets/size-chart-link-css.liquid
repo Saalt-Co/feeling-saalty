@@ -1,0 +1,23 @@
+{% style %}
+  button.size-chart-button {
+    display: inline-block;
+    background: none;
+    border: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.3rem;
+    line-height: calc(1 + 0.5 / var(--font-body-scale));
+    letter-spacing: 0.04rem;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: calc(var(--buttons-border-offset) * 10);
+  }
+  button.size-chart-button:hover {
+    text-decoration-thickness: var(--buttons-border-width);
+  }
+  legend.has-size-chart {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+{% endstyle %}

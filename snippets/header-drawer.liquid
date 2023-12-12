@@ -5,6 +5,9 @@
   {% render 'header-drawer' %}
 {% endcomment %}
 
+{{ 'menu-and-filter-absorbency-icons.css' | asset_url | stylesheet_tag }}
+{{ 'menu-and-filter-saalt-wear-style-icons.css' | asset_url | stylesheet_tag }}
+
 <header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
   <details id="Details-menu-drawer-container" class="menu-drawer-container">
     <summary
@@ -16,7 +19,7 @@
         {% render 'icon-close' %}
       </span>
     </summary>
-    <div id="menu-drawer" class="gradient menu-drawer motion-reduce" tabindex="-1">
+    <div id="menu-drawer" class="gradient menu-drawer motion-reduce theme-color-text-ignore-children">
       <div class="menu-drawer__inner-container">
         <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
@@ -72,6 +75,30 @@
                                         {{ childlink.title | escape }}
                                       </button>
                                       <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                                        {%- liquid
+                                          comment
+                                            FOR ABSORBENCY ICONS
+                                          endcomment
+                                          assign absorbencies = ''
+                                          for entry in shop.metaobjects.absorbency.values
+                                            assign absorbencies = absorbencies | append: entry.absorbency_name
+                                            unless forloop.last
+                                              assign absorbencies = absorbencies | append: ', '
+                                            endunless
+                                          endfor
+                                          assign split_absorbencies = absorbencies | split: ', '
+                                          comment
+                                            FOR STYLE ICONS
+                                          endcomment
+                                          assign styles = ''
+                                          for entry in shop.metaobjects.saalt_wear_styles.values
+                                            assign styles = styles | append: entry.style_name
+                                            unless forloop.last
+                                              assign styles = styles | append: ', '
+                                            endunless
+                                          endfor
+                                          assign split_styles = styles | split: ', '
+                                        -%}
                                         {%- for grandchildlink in childlink.links -%}
                                           <li>
                                             <a
@@ -81,7 +108,16 @@
                                                 aria-current="page"
                                               {% endif %}
                                             >
-                                              {{ grandchildlink.title | escape }}
+                                              <div class="link-title">{{ grandchildlink.title | escape }}</div>
+                                              {%- liquid
+                                                assign child_link_downcased = childlink.title | downcase | strip
+                                              -%}
+                                              {% render 'menu-and-filter-icons',
+                                                value: grandchildlink.title,
+                                                split_absorbencies: split_absorbencies,
+                                                downcased_label: child_link_downcased,
+                                                split_styles: split_styles
+                                              %}
                                             </a>
                                           </li>
                                         {%- endfor -%}
@@ -129,9 +165,38 @@
             {%- if section.settings.enable_country_selector or section.settings.enable_language_selector -%}
               <div class="menu-drawer__localization header__localization">
                 {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
-                  <localization-form>
+                  <noscript>
+                    {%- form 'localization', id: 'HeaderCountryMobileFormNoScriptDrawer', class: 'localization-form' -%}
+                      <div class="localization-form__select">
+                        <h2 class="visually-hidden" id="HeaderCountryMobileLabelNoScriptDrawer">
+                          {{ 'localization.country_label' | t }}
+                        </h2>
+                        <select
+                          class="localization-selector link"
+                          name="country_code"
+                          aria-labelledby="HeaderCountryMobileLabelNoScriptDrawer"
+                        >
+                          {%- for country in localization.available_countries -%}
+                            <option
+                              value="{{ country.iso_code }}"
+                              {%- if country.iso_code == localization.country.iso_code %}
+                                selected
+                              {% endif %}
+                            >
+                              {{ country.name }} ({{ country.currency.iso_code }}
+                              {{ country.currency.symbol }})
+                            </option>
+                          {%- endfor -%}
+                        </select>
+                        {% render 'icon-caret' %}
+                      </div>
+                      <button class="button button--tertiary">{{ 'localization.update_country' | t }}</button>
+                    {%- endform -%}
+                  </noscript>
+
+                  <localization-form class="no-js-hidden">
                     {%- form 'localization', id: 'HeaderCountryMobileForm', class: 'localization-form' -%}
-                      <div class="no-js-hidden">
+                      <div>
                         <h2 class="visually-hidden" id="HeaderCountryMobileLabel">
                           {{ 'localization.country_label' | t }}
                         </h2>
@@ -142,9 +207,41 @@
                 {% endif %}
 
                 {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
-                  <localization-form>
+                  <noscript>
+                    {%- form 'localization',
+                      id: 'HeaderLanguageMobileFormNoScriptDrawer',
+                      class: 'localization-form'
+                    -%}
+                      <div class="localization-form__select">
+                        <h2 class="visually-hidden" id="HeaderLanguageMobileLabelNoScriptDrawer">
+                          {{ 'localization.language_label' | t }}
+                        </h2>
+                        <select
+                          class="localization-selector link"
+                          name="locale_code"
+                          aria-labelledby="HeaderLanguageMobileLabelNoScriptDrawer"
+                        >
+                          {%- for language in localization.available_languages -%}
+                            <option
+                              value="{{ language.iso_code }}"
+                              lang="{{ language.iso_code }}"
+                              {%- if language.iso_code == localization.language.iso_code %}
+                                selected
+                              {% endif %}
+                            >
+                              {{ language.endonym_name | capitalize }}
+                            </option>
+                          {%- endfor -%}
+                        </select>
+                        {% render 'icon-caret' %}
+                      </div>
+                      <button class="button button--tertiary">{{ 'localization.update_language' | t }}</button>
+                    {%- endform -%}
+                  </noscript>
+
+                  <localization-form class="no-js-hidden">
                     {%- form 'localization', id: 'HeaderLanguageMobileForm', class: 'localization-form' -%}
-                      <div class="no-js-hidden">
+                      <div>
                         <h2 class="visually-hidden" id="HeaderLanguageMobileLabel">
                           {{ 'localization.language_label' | t }}
                         </h2>
