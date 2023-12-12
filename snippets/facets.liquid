@@ -13,6 +13,7 @@
 {% endcomment %}
 
 {{ 'component-show-more.css' | asset_url | stylesheet_tag }}
+{{ 'menu-and-filter-absorbency-icons.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
   assign sort_by = results.sort_by | default: results.default_sort_by
@@ -23,8 +24,30 @@
     assign terms = results.terms | escape
     assign results_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
   endif
--%}
 
+  comment
+    FOR ABSORBENCY ICONS
+  endcomment
+  assign absorbencies = ''
+  for entry in shop.metaobjects.absorbency.values
+    assign absorbencies = absorbencies | append: entry.absorbency_name
+    unless forloop.last
+      assign absorbencies = absorbencies | append: ', '
+    endunless
+  endfor
+  assign split_absorbencies = absorbencies | split: ', '
+  comment
+    FOR STYLE ICONS
+  endcomment
+  assign style = ''
+  for entry in shop.metaobjects.saalt_wear_styles.values
+    assign style = style | append: entry.style_name
+    unless forloop.last
+      assign style = style | append: ', '
+    endunless
+  endfor
+  assign split_styles = style | split: ', '
+-%}
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}">
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
     <facet-filters-form class="facets small-hide">
@@ -70,13 +93,20 @@
                   </facet-remove>
                 </div>
                 {%- for filter in results.filters -%}
+                  {%- assign downcased_label = filter.label | downcase -%}
                   {%- for value in filter.active_values -%}
                     <facet-remove>
                       <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
                         <span class="active-facets__button-inner button button--tertiary">
                           {{ filter.label }}: {{ value.label | escape }}
-                          {% render 'icon-close-small' %}
                           <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
+                          {% render 'menu-and-filter-icons',
+                            value: value.label,
+                            split_absorbencies: split_absorbencies,
+                            downcased_label: downcased_label,
+                            split_styles: split_styles
+                          %}
+                          {% render 'icon-close-small' %}
                         </span>
                       </a>
                     </facet-remove>
@@ -111,6 +141,7 @@
             <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
             {% comment %} Filters for both horizontal and vertical filter {% endcomment %}
             {%- for filter in results.filters -%}
+              {%- assign downcased_label = filter.label | downcase -%}
               {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
               {% case filter.type %}
                 {% when 'boolean', 'list' %}
@@ -127,7 +158,7 @@
                       aria-label="{{ filter.label }} ({{ 'products.facets.filters_selected.one' | t: count: filter.active_values.size }})"
                     >
                       <div>
-                        <span>
+                        <span class="filter-label">
                           {{- filter.label | escape }}
                           {%- if filter_type == 'vertical' -%}
                             <span class="facets__selected no-js-hidden{% if filter.active_values.size == 0 %} hidden{% endif %}">
@@ -204,8 +235,16 @@
                                     stroke-linecap="round"
                                     stroke-linejoin="round" />
                                 </svg>
-
-                                <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
+                                <span aria-hidden="true">
+                                  {{- value.label | escape }}
+                                  {% render 'menu-and-filter-icons',
+                                    value: value.label,
+                                    split_absorbencies: split_absorbencies,
+                                    downcased_label: downcased_label,
+                                    split_styles: split_styles
+                                  %}
+                                  ({{ value.count }})</span
+                                >
                                 <span class="visually-hidden">
                                   {{- value.label | escape }} (
                                   {%- if value.count == 1 -%}
@@ -279,6 +318,12 @@
                                   {%- endif -%}
                                   )</span
                                 >
+                                {% render 'menu-and-filter-icons',
+                                  value: value.label,
+                                  split_absorbencies: split_absorbencies,
+                                  downcased_label: downcased_label,
+                                  split_styles: split_styles
+                                %}
                               </label>
                             </li>
                           {%- endfor -%}
@@ -412,13 +457,20 @@
           {%- if filter_type == 'horizontal' -%}
             <div class="active-facets active-facets-desktop">
               {%- for filter in results.filters -%}
+                {%- assign downcased_label = filter.label | downcase -%}
                 {%- for value in filter.active_values -%}
                   <facet-remove>
                     <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
                       <span class="active-facets__button-inner button button--tertiary">
                         {{ filter.label }}: {{ value.label | escape }}
-                        {% render 'icon-close-small' %}
                         <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
+                        {% render 'menu-and-filter-icons',
+                          value: value.label,
+                          split_absorbencies: split_absorbencies,
+                          downcased_label: downcased_label,
+                          split_styles: split_styles
+                        %}
+                        {% render 'icon-close-small' %}
                       </span>
                     </a>
                   </facet-remove>
@@ -641,6 +693,7 @@
             <div class="mobile-facets__main has-submenu gradient">
               {%- if enable_filtering -%}
                 {%- for filter in results.filters -%}
+                  {%- assign downcased_label = filter.label | downcase -%}
                   {% case filter.type %}
                     {% when 'boolean', 'list' %}
                       <details
@@ -650,7 +703,7 @@
                       >
                         <summary class="mobile-facets__summary focus-inset">
                           <div>
-                            <span>{{ filter.label | escape }}</span>
+                            <span class="filter-label">{{ filter.label | escape }}</span>
                             <span class="mobile-facets__arrow no-js-hidden">{% render 'icon-arrow' %}</span>
                             <noscript>{% render 'icon-caret' %}</noscript>
                           </div>
@@ -711,8 +764,16 @@
                                   >
                                     <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
                                   </svg>
-
-                                  <span aria-hidden="true">{{ value.label | escape }} ({{ value.count }})</span>
+                                  <span aria-hidden="true">
+                                    {{- value.label | escape }}
+                                    {% render 'menu-and-filter-icons',
+                                      value: value.label,
+                                      split_absorbencies: split_absorbencies,
+                                      downcased_label: downcased_label,
+                                      split_styles: split_styles
+                                    %}
+                                    ({{ value.count }})</span
+                                  >
                                   <span class="visually-hidden">
                                     {{- value.label | escape }} (
                                     {%- if value.count == '1' -%}
@@ -930,13 +991,20 @@
 
   <div class="active-facets active-facets-mobile medium-hide large-up-hide">
     {%- for filter in results.filters -%}
+      {%- assign downcased_label = filter.label | downcase -%}
       {%- for value in filter.active_values -%}
         <facet-remove>
           <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
             <span class="active-facets__button-inner button button--tertiary">
               {{ filter.label }}: {{ value.label | escape }}
-              {% render 'icon-close-small' %}
               <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
+              {% render 'menu-and-filter-icons',
+                value: value.label,
+                split_absorbencies: split_absorbencies,
+                downcased_label: downcased_label,
+                split_styles: split_styles
+              %}
+              {% render 'icon-close-small' %}
             </span>
           </a>
         </facet-remove>
@@ -1057,13 +1125,20 @@
       <form id="FacetFiltersPillsForm" class="facets__form">
         <div class="active-facets active-facets-desktop">
           {%- for filter in results.filters -%}
+            {%- assign downcased_label = filter.label | downcase -%}
             {%- for value in filter.active_values -%}
               <facet-remove>
                 <a href="{{ value.url_to_remove }}" class="active-facets__button active-facets__button--light">
                   <span class="active-facets__button-inner button button--tertiary">
                     {{ filter.label }}: {{ value.label | escape }}
-                    {% render 'icon-close-small' %}
                     <span class="visually-hidden">{{ 'products.facets.clear_filter' | t }}</span>
+                    {% render 'menu-and-filter-icons',
+                      value: value.label,
+                      split_absorbencies: split_absorbencies,
+                      downcased_label: downcased_label,
+                      split_styles: split_styles
+                    %}
+                    {% render 'icon-close-small' %}
                   </span>
                 </a>
               </facet-remove>

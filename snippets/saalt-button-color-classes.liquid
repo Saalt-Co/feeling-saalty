@@ -1,0 +1,37 @@
+{% comment %}
+  Renders classes for section and block button styling.
+  Accepts:
+  - obj: {Object} section or block object.
+
+  Usage:
+  {% render 'saalt-button-color-classes', obj.settings: [section/block] %}
+
+  Note: This was intentionally NOT refactored to have specific variables passed to it in order to avoid overspecificity in its usage and make code more readable
+{% endcomment %}
+{% liquid
+  if obj.settings.theme_color_section_button_background != 'theme_default'
+    assign bg_color = obj.settings.theme_color_section_button_background
+  endif
+  if obj.settings.theme_color_text_section_button_text != 'theme_default'
+    assign text_color = obj.settings.theme_color_text_section_button_text
+  endif
+  if obj.settings.theme_color_section_button_background_hover != 'theme_default'
+    assign bg_hover = obj.settings.theme_color_section_button_background_hover
+  endif
+  if obj.settings.theme_color_text_section_button_text_hover != 'theme_default'
+    assign text_hover = obj.settings.theme_color_text_section_button_text_hover
+  endif
+  if obj.settings.theme_color_section_button_background_hover == 'theme_default' and obj.settings.theme_color_text_section_button_text_hover == 'theme_default'
+    assign default = 'default'
+  endif
+%}
+{% if obj.settings.button_type %}
+  button--{% if obj.settings.button_type == 'secondary' %}secondary{% else %}primary{% endif %}
+{% elsif obj.settings.view_all_style %}
+  button--{% if obj.settings.view_all_style == 'secondary' %}secondary{% else %}primary{% endif %}
+{% endif %}
+{{ bg_color }}
+{{ text_color }}
+{{ bg_hover }}
+{{ text_hover }}
+{{ default }}

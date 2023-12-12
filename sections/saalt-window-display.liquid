@@ -1,0 +1,485 @@
+{%- assign block_count = section.blocks | size -%}
+
+<script src="{{ 'window-display.js' | asset_url }}" defer="defer"></script>
+
+<section
+  id="section-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  class="section{% if section.settings.make_full_width == false %} page-width{% endif %}"
+>
+  <window-display class="window-display" {{ block.shopify_attributes }}>
+    {%- assign block_count = section.blocks | size -%}
+    {%- if block_count > 0 -%}
+      {%- assign window_display_count = 0 -%}
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'window-feature' -%}
+          {%- assign window_display_count = window_display_count | plus: 1 -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'custom_liquid_code' -%}
+            <div {{ block.shopify_attributes }}>
+              {{ block.settings.liquid_code }}
+            </div>
+          {%- when 'section_title' -%}
+            {%- if block.settings.title != blank -%}
+              {%- capture section_title_code -%}
+              <h{{ block.settings.heading_tag }} class="section-title mobile-{{ block.settings.mobile_text_alignment }} desktop-{{ block.settings.desktop_text_alignment }}" {{ block.shopify_attributes }}>
+                {{- block.settings.title -}}
+              </h{{ block.settings.heading_tag }}>
+              {%- endcapture -%}
+            {%- endif -%}
+          {%- when 'window-feature' -%}
+            {%- capture captured_code -%}
+            {% render 'window-feature',
+              section: section,
+              block: block,
+              window_display_count: window_display_count,
+              forloop_index: forloop.index
+            %}
+            {%- endcapture -%}
+            {%- assign window_feature_code = window_feature_code | append: captured_code -%}
+        {%- endcase -%}
+      {%- endfor -%}
+    {%- endif -%}
+    {{ section_title_code }}
+    <div class="window-display-inner-wrapper">
+      {{ window_feature_code }}
+    </div>
+  </window-display>
+</section>
+
+{%- style -%}
+  #section-{{ section.id }} .window-display, #section-{{ section.id }} .window-display .window-display-inner-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto;
+  }
+  #section-{{ section.id }} .window-display {
+    flex-direction: column;
+  }
+  #section-{{ section.id }} .window-display .section-title {
+    display: block;
+    width: 100%;
+  }
+  #section-{{ section.id }} .window-display .section-title > p {
+    margin: 0;
+  }
+  #section-{{ section.id }} .window-display .section-title.mobile-center {
+    text-align: center;
+  }
+  #section-{{ section.id }} .window-display .section-title.mobile-left {
+    text-align: left;
+  }
+  #section-{{ section.id }} .window-display .section-title.mobile-right {
+  text-align: right;
+  }
+  #section-{{ section.id }} .window-display .section-title.mobile-justify {
+    text-align: justify;
+  }
+  #section-{{ section.id }} .window-feature-wrapper, #section-{{ section.id }} .window-feature {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  #section-{{ section.id }} .window-feature-wrapper {
+    min-width: {{ section.settings.mobile_min_width }};
+    max-width: {{ section.settings.mobile_max_width }};
+    opacity: 0;
+  }
+  #section-{{ section.id }} .window-feature-wrapper.window-feature-fade-in {
+    /* Animation from base.css */
+    -webkit-animation: var(--animation-slide-in);
+    animation: var(--animation-slide-in);
+  }
+  #section-{{ section.id }} .window-feature-wrapper button {
+    cursor: pointer;
+  }
+  #section-{{ section.id }} .window-feature {
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #section-{{ section.id }} .window-feature, #section-{{ section.id }} .window-feature:visited {
+    color: inherit;
+  }
+  #section-{{ section.id }} .window-feature .image-wrapper, #section-{{ section.id }} .window-feature .image-wrapper > * {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: {{ section.settings.mobile_aspect_ratio }};
+  }
+
+  #section-{{ section.id }} .window-feature .image-wrapper img {
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  #section-{{ section.id }} .window-feature .text-wrapper {
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .9);
+    width: 100%;
+    height: 100%;
+    padding: .25rem 1rem 25% 1rem;
+    font-size: clamp(1rem, 1.5rem, 1.7rem);
+    top: calc(100% - 3.45rem);
+    transition: .25s;
+  }
+
+  #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title, #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper, #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper .window-feature-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: inherit;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 34px;
+    border-bottom: 1px solid;
+    padding: .25rem;
+  }
+  #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper {
+    border-bottom: none;
+    padding: 0;
+  }
+  #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper .window-feature-button {
+    padding: 0;
+  }
+  #section-{{ section.id }} .window-feature-wrapper:last-of-type .window-feature-button-wrapper .window-feature-button {
+    border-right: 1px solid;
+  }
+  #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper .window-feature-button > span {
+    padding: 0 1rem;
+  }
+  #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > * {
+    display: inline-block;
+  }
+  #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > *:last-child,   #section-{{ section.id }} .window-feature .text-wrapper .window-feature-copy > *:last-child {
+    margin: 0;
+  }
+  #section-{{ section.id }} .window-feature .text-wrapper .window-feature-copy {
+    display: block;
+    position: relative;
+    height: 100%;
+    overflow: auto;
+  }
+  #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper .window-feature-button {
+    background: #fff;
+    border: 1px solid;
+    border-right: none;
+    color: var(--color-main-text);
+    width: 100%;
+    height: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    text-decoration: none;
+  }
+  #section-{{ section.id }} .window-feature .text-wrapper ul, #section-{{ section.id }} .window-feature .text-wrapper ol {
+    padding-left: 1.5rem;
+  }
+  #section-{{ section.id }} .window-feature .text-wrapper.visible {
+    top: 0;
+  }
+  @media (min-width: 750px) {
+    #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > p {
+      margin: 15px 0;
+    }
+    #section-{{ section.id }} .window-feature-wrapper {
+      width: {{ 100 | divided_by: window_display_count }}%;
+      min-width: {{ section.settings.desktop_min_width }};
+      max-width: {{ section.settings.desktop_max_width }};
+    }
+    #section-{{ section.id }} .window-feature .image-wrapper, #section-{{ section.id }} .window-feature .image-wrapper > * {
+      aspect-ratio: {{ section.settings.desktop_aspect_ratio }};
+    }
+    #section-{{ section.id }} .window-display .section-title.desktop-center {
+      text-align: center;
+    }
+    #section-{{ section.id }} .window-display .section-title.desktop-left {
+      text-align: left;
+    }
+    #section-{{ section.id }} .window-display .section-title.desktop-right {
+    text-align: right;
+    }
+    #section-{{ section.id }} .window-display .section-title.desktop-justify {
+      text-align: justify;
+    }
+  }
+  @media (hover: hover) and (pointer: fine) {
+    #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper, #section-{{ section.id }} .window-feature-wrapper .window-feature-button {
+      display: none;
+      visibility: hidden;
+    }
+    #section-{{ section.id }} .window-feature:hover .text-wrapper {
+      top: 0;
+    }
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "Saalt Window Display",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID (Optional)",
+      "info": "t:sections.all.section_id.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "make_full_width",
+      "label": "Make full-width",
+      "info": "Check to make this full-width. Uncheck to set this to page width.",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Mobile Settings"
+    },
+    {
+      "type": "text",
+      "id": "mobile_min_width",
+      "label": "Mobile Minimum Width for Window Features",
+      "info": "This sets the min width for all window features on *Mobile* using standard css values.",
+      "default": "40%"
+    },
+    {
+      "type": "text",
+      "id": "mobile_max_width",
+      "label": "Mobile Maximum Width for Window Features",
+      "info": "This sets the max width for all window features on *Mobile* using standard css values.",
+      "default": "280px"
+    },
+    {
+      "type": "text",
+      "id": "mobile_aspect_ratio",
+      "label": "Mobile Aspect Ratio for Window Features",
+      "info": "This sets the aspect ratio for all window features on *Mobile* using standard css forward slash syntax.",
+      "default": "1/1.5"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Settings"
+    },
+    {
+      "type": "text",
+      "id": "desktop_min_width",
+      "label": "Desktop Minimum Width for Window Features",
+      "info": "This sets the min width for all window features on *Desktop* using standard css values.",
+      "default": "auto"
+    },
+    {
+      "type": "text",
+      "id": "desktop_max_width",
+      "label": "Desktop Maximum Width for Window Features",
+      "info": "This sets the max width for all window features on *Desktop* using standard css values.",
+      "default": "25%"
+    },
+    {
+      "type": "text",
+      "id": "desktop_aspect_ratio",
+      "label": "Desktop Aspect Ratio for Window Features",
+      "info": "This sets the aspect ratio for all window features on *Desktop* using standard css forward slash syntax.",
+      "default": "1/1.5"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "section_title",
+      "name": "Section Title (Optional)",
+      "settings": [
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading Tag",
+          "options": [
+            {
+              "value": "1",
+              "label": "H1"
+            },
+            {
+              "value": "2",
+              "label": "H2"
+            },
+            {
+              "value": "3",
+              "label": "H3"
+            }
+          ],
+          "default": "1"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title",
+          "default": "<p>Section Title Goes Here</p>"
+        },
+        {
+          "type": "select",
+          "id": "mobile_text_alignment",
+          "label": "Title alignment on *MOBILE*",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "justify",
+              "label": "Justify"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "desktop_text_alignment",
+          "label": "Title alignment on *DESKTOP ONLY*",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "justify",
+              "label": "Justify"
+            }
+          ],
+          "default": "center"
+        }
+      ]
+    },
+    {
+      "type": "window-feature",
+      "name": "Window Display",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Window Display Image",
+          "info": "The background image for the window display"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Window Display Title",
+          "info": "This is the title inside the popup on desktop and the content section on mobile",
+          "default": "<p>Window feature</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "copy",
+          "label": "Window Display Copy",
+          "info": "This is the copy inside the popup on desktop and the content section on mobile",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!</p>"
+        },
+        {
+          "type": "radio",
+          "id": "link_type",
+          "label": "Link Type",
+          "info": "This sets the action for click events on this element. \"URL\" will navigate to another url while \"Filter\" is for applying available filters on the page like vendor, absorbency, size, color, etc.",
+          "options": [
+            {
+              "value": "url",
+              "label": "URL"
+            },
+            {
+              "value": "filter",
+              "label": "Filter"
+            }
+          ],
+          "default": "filter"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL",
+          "info": "Paste a URL here in order to link to another page on click. NOTE: *The option for \"Link Type\" MUST be set to \"URL\" in order to use this field.*"
+        },
+        {
+          "type": "text",
+          "id": "filter_name",
+          "label": "Filter Name",
+          "info": "This is the name — or title — of the filter in the filtering menu. Some examples include \"Absorbency\", \"Size\", \"Product Type\", and \"Color\". NOTE: *The option for \"Link Type\" MUST be set to \"Filter\" in order to use this field. This is case-sensitive.*"
+        },
+        {
+          "type": "text",
+          "id": "filter_val",
+          "label": "Filter Value",
+          "info": "This is the criteria/value to be applied. Some examples include \"Light\", \"XL\", \"Disc\", and \"Volcanic Black\". NOTE: *The option for \"Link Type\" MUST be set to \"Filter\" in order to use this field. This is case-sensitive.*"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Mobile Button Text",
+          "info": "This button is only visible on touch-enabled devices.",
+          "default": "Filter"
+        }
+      ]
+    },
+    {
+      "type": "custom_liquid_code",
+      "name": "Liquid Code",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "liquid_code",
+          "label": "Liquid Code",
+          "info": "This allows for a bit more customization within this section. There are limitations to using this however. [Read about that here.](https://shopify.dev/themes/architecture/settings/input-settings#liquid)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Saalt Window Display",
+      "category": "custom saalt section",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "window-feature",
+          "settings": {}
+        },
+        {
+          "type": "window-feature",
+          "settings": {}
+        },
+        {
+          "type": "window-feature",
+          "settings": {}
+        },
+        {
+          "type": "window-feature",
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

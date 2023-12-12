@@ -1,0 +1,180 @@
+.mega-menu__link--level-3 > a.mega-menu__link.link,
+a.menu-drawer__menu-item.link.link--text.list-menu__item.focus-inset,
+.saalt-wear-styles_icons-wrapper,
+.saalt-wear-styles_icons-wrapper .inner-wrapper {
+  display: inline-flex;
+}
+
+.saalt-wear-styles_icons-wrapper {
+  gap: 0.125rem;
+  align-items: center;
+  border-bottom: 1px solid transparent;
+}
+
+.mobile-facets__item .saalt-wear-styles_icons-wrapper .style-icon {
+  height: auto;
+}
+
+label.facet-checkbox .saalt-wear-styles_icons-wrapper,
+label.facet-checkbox .saalt-wear-styles_icons-wrapper .style-icon,
+label.facet-checkbox .saalt-wear-styles_icons-wrapper .style-icon svg {
+  width: auto;
+  height: 1rem;
+}
+
+.saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper {
+  display: inline-flex;
+  flex: 1 1 0;
+  width: auto;
+  height: 1.5rem;
+}
+
+a.menu-drawer__menu-item.link.link--text.list-menu__item.focus-inset
+  .saalt-wear-styles_icons-wrapper
+  .saalt-wear-styles_inner-icon-wrapper {
+  height: 1.5rem;
+}
+
+a .saalt-wear-styles_icons-wrapper {
+  display: inline-flex;
+  gap: 0.125rem;
+  align-items: center;
+  border-bottom: 1px solid transparent;
+  height: 1.55rem;
+  margin-top: 0.1rem;
+  padding-left: 0.125rem;
+}
+
+a .saalt-wear-styles_icons-wrapper .style-icon,
+a .saalt-wear-styles_icons-wrapper .style-icon svg,
+a .saalt-wear-styles_inner-icon-wrapper .style-icon svg,
+.mobile-facets__item .saalt-wear-styles_icons-wrapper .style-icon svg {
+  width: auto;
+  height: 1.125rem;
+  margin-left: 0.25rem;
+}
+
+a.menu-drawer__menu-item .saalt-wear-styles_icons-wrapper .style-icon svg,
+a.menu-drawer__menu-item .saalt-wear-styles_inner-icon-wrapper .style-icon svg {
+  height: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper .style-icon svg {
+  fill: rgba(var(--color-icons), var(--color-icons-opacity));
+  color: transparent;
+  stroke: none;
+}
+
+label.facet-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+label.facet-checkbox .saalt-wear-styles_icons-wrapper {
+  margin-top: 0;
+}
+
+a div.menu-spacer,
+label.facet-checkbox div.menu-spacer,
+.mobile-facets__item div.menu-spacer {
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  color: transparent;
+  font-size: 0;
+  padding: 0 0.15rem;
+}
+
+a:not(.active-facets__button):not(.menu-drawer__menu-item):hover div.menu-spacer,
+a:not(.active-facets__button):not(.menu-drawer__menu-item):hover .saalt-wear-styles_icons-wrapper {
+  border-bottom: 1px solid rgb(var(--color-foreground));
+}
+
+.active-facets__button .saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper .style-icon svg {
+  margin-left: unset;
+}
+
+facet-remove a .saalt-wear-styles_icons-wrapper,
+facet-remove a .saalt-wear-styles_inner-icon-wrapper {
+  width: unset;
+  margin-top: unset;
+  height: unset;
+  margin-left: unset;
+}
+
+label.facet-checkbox .saalt-wear-styles_icons-wrapper,
+facet-remove a .saalt-wear-styles_icons-wrapper .style-icon,
+facet-remove a .saalt-wear-styles_inner-icon-wrapper .style-icon {
+  margin-left: 0.25rem;
+}
+
+.active-facets-mobile facet-remove a .saalt-wear-styles_icons-wrapper,
+.active-facets-mobile facet-remove a .saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper,
+.active-facets-mobile facet-remove a .saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper .style-icon,
+.active-facets-mobile
+  facet-remove
+  a
+  .saalt-wear-styles_icons-wrapper
+  .saalt-wear-styles_inner-icon-wrapper
+  .style-icon
+  svg,
+.active-facets-mobilem facet-remove a .saalt-wear-styles_inner-icon-wrapper .style-icon svg {
+  width: auto;
+  height: 1rem;
+  margin-left: 0;
+}
+
+facet-remove a .saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper,
+facet-remove a .saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper .style-icon,
+facet-remove a .saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper .style-icon svg,
+facet-remove a .saalt-wear-styles_inner-icon-wrapper .saalt-wear-styles_inner-icon-wrapper .style-icon svg {
+  width: auto;
+  height: 1rem;
+}
+
+facet-remove a.active-facets__button .saalt-wear-styles_icons-wrapper + svg.icon-close-small,
+facet-remove a.active-facets__button .saalt-wear-styles_icons-wrapper + svg.icon-close-small {
+  margin-right: unset;
+  margin-left: 0.5rem;
+}
+
+label.mobile-facets__label .saalt-wear-styles_icons-wrapper,
+label.mobile-facets__label .saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper,
+label.mobile-facets__label .saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper .style-icon,
+label.mobile-facets__label .saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper .style-icon svg {
+  display: flex;
+  align-items: center;
+}
+
+label.mobile-facets__label .saalt-wear-styles_icons-wrapper,
+.active-facets-mobile facet-remove a .saalt-wear-styles_icons-wrapper {
+  display: inline-flex;
+  margin-top: 2px;
+  margin-left: 0.25rem;
+}
+
+label.mobile-facets__label .saalt-wear-styles_icons-wrapper {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 990px) {
+  facet-remove a .saalt-wear-styles_inner-icon-wrapper {
+    margin-top: 0.125rem;
+  }
+  facet-remove a .saalt-wear-styles_icons-wrapper {
+    margin-left: 0.25rem;
+  }
+  facet-remove a .saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper,
+  facet-remove a .saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper .style-icon,
+  facet-remove a .saalt-wear-styles_icons-wrapper .saalt-wear-styles_inner-icon-wrapper .style-icon svg,
+  facet-remove a .saalt-wear-styles_inner-icon-wrapper .saalt-wear-styles_inner-icon-wrapper .style-icon svg {
+    margin-bottom: 1px;
+    margin-left: 0;
+    height: 1.125rem;
+  }
+  facet-remove a.active-facets__button .saalt-wear-styles_icons-wrapper + svg.icon-close-small,
+  facet-remove a.active-facets__button .saalt-wear-styles_icons-wrapper + svg.icon-close-small {
+    margin-right: unset;
+    margin-left: 1rem;
+  }
+}

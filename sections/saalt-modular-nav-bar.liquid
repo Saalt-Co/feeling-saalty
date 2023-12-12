@@ -1,0 +1,293 @@
+<script src="{{ 'modular-nav.js' | asset_url }}" defer="defer"></script>
+
+{% liquid
+  assign nav_id = section.settings.section_id | handleize
+%}
+
+<div id="section-{{ section.id }}" data-section-id="{{ section.id }}" class="">
+  <modular-nav-bar
+    {% if section.settings.section_id != blank %}
+      id="{{ section.settings.section_id | handleize }}"
+    {% endif -%}
+    class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% else %} default{% endif %} scroll-trigger animate--fade-in"
+  >
+    <ul>
+      {%- for block in section.blocks -%}
+        {% if block.settings.nav_bar_link_text != blank %}
+          <li class="scroll-trigger animate--fade-in">
+            {%- if block.settings.click_behavior == 'link' -%}
+              <a
+                href="{{ block.settings.nav_bar_link_dest }}"
+                {% if forloop.first %}
+                  class="active"
+                {% endif %}
+                {{ block.shopify_attributes }}
+              >
+                {{- block.settings.nav_bar_link_text -}}
+              </a>
+            {%- else -%}
+              <button
+                {% if forloop.first %}
+                  class="active"
+                {% endif %}
+                data-target-element="{{ block.settings.nav_bar_element_selector }}"
+                {{ block.shopify_attributes }}
+              >
+                <span>{{- block.settings.nav_bar_link_text -}}</span>
+              </button>
+            {%- endif -%}
+          </li>
+        {% endif %}
+      {%- endfor -%}
+    </ul>
+  </modular-nav-bar>
+</div>
+
+{%- style -%}
+  #section-{{ section.id }} modular-nav-bar {
+    display: flex;
+    position: relative;
+    height: 7.5rem;
+    overflow: auto;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #section-{{ section.id }} modular-nav-bar.centered {
+    justify-content: center;
+  }
+  #section-{{ section.id }} modular-nav-bar > ul {
+    display: flex;
+    position: absolute;
+    width: auto;
+    column-gap: {{ section.settings.mobile_nav_link_gap }};
+    margin: 0;
+    padding: 2rem;
+    list-style: none;
+  }
+  #section-{{ section.id }} modular-nav-bar > ul > li, #section-{{ section.id }} modular-nav-bar > ul > li > button {
+    cursor: pointer;
+  }
+  #section-{{ section.id }} modular-nav-bar.default a, #section-{{ section.id }} modular-nav-bar.default button > span {
+    color: rgba(var(--color-link-text), var(--color-link-text-opacity));
+  }
+  #section-{{ section.id }} modular-nav-bar > ul > li > a,
+  #section-{{ section.id }} modular-nav-bar > ul > li > button {
+    display: inline-block;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    min-height: 3rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    font-family: var(--font-body-family);
+    font-style: var(--font-body-style);
+    letter-spacing: 0.06rem;
+    line-height: calc(1 + 0.8 / var(--font-body-scale));
+    white-space: nowrap;
+    padding: 0 2rem;
+    text-decoration: transparent;
+    text-underline-offset: calc(var(--buttons-border-offset) * 10);
+  }
+  #section-{{ section.id }} modular-nav-bar > ul > li > a:hover,
+  #section-{{ section.id }} modular-nav-bar > ul > li > button:hover,
+  #section-{{ section.id }} modular-nav-bar > ul > li > a.active,
+  #section-{{ section.id }} modular-nav-bar > ul > li > button.active {
+    background: none;
+    text-decoration: underline;
+    text-decoration-thickness: var(--buttons-border-width);
+  }
+  #section-{{ section.id }} modular-nav-bar > ul > li > button > span {
+    pointer-events: none;
+  }
+  @media screen and (min-width: 750px) {
+    #section-{{ section.id }} modular-nav-bar > ul {
+      column-gap: {{ section.settings.desktop_nav_link_gap }};
+    }
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "Saalt Modular Nav Bar",
+  "class": "modular-nav-bar",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID (Optional)",
+      "info": "t:sections.all.section_id.info"
+    },
+    {
+      "type": "header",
+      "content": "Nav Bar Styling"
+    },
+    {
+      "type": "select",
+      "id": "theme_color_background",
+      "label": "t:settings_schema.theme_colors.settings.sections.background_color_label",
+      "info": "Sets the background color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-bg-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-bg-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-bg-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-bg-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-bg-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-bg-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-bg-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-bg-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
+    },
+    {
+      "type": "select",
+      "id": "theme_color_text",
+      "label": "t:settings_schema.theme_colors.settings.sections.text_color_label",
+      "info": "Sets the text color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-text-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-text-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-text-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-text-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-text-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-text-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-text-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-text-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
+    },
+    {
+      "type": "text",
+      "id": "mobile_nav_link_gap",
+      "label": "Space between nav links on *MOBILE*",
+      "info": "Any valid css value is accepted",
+      "default": "3rem"
+    },
+    {
+      "type": "text",
+      "id": "desktop_nav_link_gap",
+      "label": "Space between nav links on *DESKTOP*",
+      "info": "Any valid css value is accepted",
+      "default": "7rem"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "nav_bar_link",
+      "name": "Nav Bar Link",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "❗️NOTE❗️: When using an element ID for scrolling, you *MUST* add a '#' at the very beginning. You will also have to press enter/return after typing it in or the field will go blank."
+        },
+        {
+          "type": "text",
+          "id": "nav_bar_link_text",
+          "label": "Link Text",
+          "default": "New Link"
+        },
+        {
+          "type": "select",
+          "id": "click_behavior",
+          "label": "Click behavior",
+          "info": "The type of behavior the link should have on click",
+          "options": [
+            {
+              "value": "scroll_to",
+              "label": "Scroll to element"
+            },
+            {
+              "value": "link",
+              "label": "Link"
+            }
+          ],
+          "default": "scroll_to"
+        },
+        {
+          "type": "text",
+          "id": "nav_bar_element_selector",
+          "label": "Element selector",
+          "info": "This is used to scroll to another element on the page. Enter any valid javascript selector such as an element ID (starting with a \"#\") or a class (starting with a \".\"), though others are possible as well. NOTE: Whatever selector you use MUST be unique on the page."
+        },
+        {
+          "type": "url",
+          "id": "nav_bar_link_dest",
+          "label": "Link destination",
+          "info": "This can be selected from the popup menu *or* a typed in url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Saalt Modular Nav Bar",
+      "category": "custom saalt section",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "New Link"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

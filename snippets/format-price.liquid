@@ -1,0 +1,27 @@
+{% comment %}
+  Converts a price to the theme's currency format
+
+  Accepts:
+  - price: {String} The price to be converted
+  - control_white_space: {Boolean} If true, renders the final price with white space control tags (optional)
+
+  Usage:
+  {% render 'format-price', price: item.original_price, control_white_space: true %}
+{% endcomment %}
+{%- liquid
+  case settings.currency_format
+    when 'no_trailing_zeros'
+      assign money_price = price | money_without_trailing_zeros
+    when 'with_currency'
+      assign money_price = price | money_with_currency
+    when 'without_currency'
+      assign money_price = price | money_without_currency
+    else
+      assign money_price = price | money
+  endcase
+-%}
+{% if control_white_space %}
+  {{- money_price -}}
+{% else %}
+  {{ money_price }}
+{% endif %}

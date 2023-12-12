@@ -1,3 +1,9 @@
+cart-notification {
+  position: relative;
+  background: rgb(var(--color-site-background));
+  z-index: 9999999999;
+}
+
 .cart-notification-wrapper {
   position: relative;
 }
@@ -18,18 +24,22 @@
   transform: translateY(-100%);
   visibility: hidden;
   width: 100%;
-  box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
+  opacity: 0;
+  box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--popup-shadow-opacity));
   z-index: -1;
 }
 
 .cart-notification.focused {
-  box-shadow: 0 0 .2rem 0 rgba(var(--color-foreground), .3),
-  var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
+  box-shadow: 0 0 0.2rem 0 rgba(var(--color-foreground), 0.3),
+    var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
+      rgba(var(--color-shadow), var(--popup-shadow-opacity));
 }
 
 .cart-notification:focus-visible {
-  box-shadow: 0 0 .2rem 0 rgba(var(--color-foreground), .3),
-  var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
+  box-shadow: 0 0 0.2rem 0 rgba(var(--color-foreground), 0.3),
+    var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
+      rgba(var(--color-shadow), var(--popup-shadow-opacity));
 }
 
 @media screen and (min-width: 750px) {
@@ -51,14 +61,16 @@
 }
 
 .cart-notification.animate {
-  transition: transform var(--duration-short) ease,
-    visibility 0s var(--duration-short) ease;
+  transition: transform var(--duration-short) ease, visibility 0s var(--duration-short) ease;
 }
 
 .cart-notification.active {
   transform: translateY(0);
-  transition: transform var(--duration-default) ease, visibility 0s;
+  transition: transform var(--duration-default) ease, visibility var(--duration-short) ease,
+    opacity var(--duration-short) ease 0.125s;
   visibility: visible;
+  opacity: 1;
+  z-index: 999999;
 }
 
 .cart-notification__header {

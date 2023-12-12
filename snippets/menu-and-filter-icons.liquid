@@ -1,0 +1,11 @@
+{%- liquid
+  assign link_title = value | escape | strip
+  assign downcased_link_title = link_title | downcase
+  if split_absorbencies contains link_title and downcased_label == 'absorbency'
+    render 'menu-and-filter-absorbency-icons', link_title: link_title, include_spacer: false
+  elsif split_styles contains link_title
+    render 'menu-and-filter-saalt-wear-style-icons', link_title: link_title, include_spacer: false
+  elsif downcased_link_title == 'back up to' or downcased_link_title == 'backup to' and downcased_label == 'leak type'
+    render 'menu-and-filter-leak-type-backup-icons'
+  endif
+-%}

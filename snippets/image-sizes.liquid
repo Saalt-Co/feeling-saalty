@@ -1,0 +1,27 @@
+{%- liquid
+  assign sizes_array = sizes | split: ','
+  assign supported_sizes = ''
+
+  for size in sizes_array
+    assign size_as_int = size | times: 1
+
+    if image.width < size_as_int
+      break
+    endif
+
+    assign supported_sizes = supported_sizes | append: size
+    unless forloop.last
+      assign supported_sizes = supported_sizes | append: ','
+    endunless
+  endfor
+
+  comment
+    If no sizes match, we set the max width of the image so there's at least something displayed.
+  endcomment
+
+  if supported_sizes == blank
+    assign supported_sizes = image.width
+  endif
+-%}
+
+{{- supported_sizes | split: ',' | compact | join: ',' -}}

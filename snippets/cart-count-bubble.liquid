@@ -1,0 +1,39 @@
+{% comment %}
+  Renders cart icon bubble
+
+  Accepts:
+  - theme_color_background: {String} Background color class (optional)
+  - theme_color_text: {String} Text color class (optional)
+
+  Usage:
+  {% render 'cart-icon-bubble' %}
+{% endcomment %}
+
+{%- liquid
+  if cart == empty
+    render 'icon-cart-empty'
+  else
+    render 'icon-cart'
+  endif
+-%}
+<span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+{%- if cart != empty -%}
+  {%- liquid
+    if theme_color_background != 'theme_default'
+      assign bg_color_num = theme_color_background | slice: -1, 1
+    endif
+    if theme_color_text != 'theme_default'
+      assign text_color_num = theme_color_text | slice: -1, 1
+    endif
+    assign bg_color_class = 'theme-color-bg-' | append: text_color_num
+    assign text_color_class = 'theme-color-text-' | append: bg_color_num
+  -%}
+  <cart-count-bubble
+    class="cart-count-bubble{% if theme_color_text != 'theme_default' and bg_color_class != 'theme-color-bg-' %} {{ bg_color_class }}{% endif %}{% if theme_color_background != 'theme_default' and text_color_class != 'theme-color-text-' %} {{ text_color_class }}{% endif %}"
+  >
+    {%- if cart.item_count < 100 -%}
+      <span class="cart-count-number" aria-hidden="true">{{ cart.item_count }}</span>
+    {%- endif -%}
+    <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+  </cart-count-bubble>
+{%- endif -%}

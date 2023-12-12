@@ -108,44 +108,67 @@
     </div>
   {%- endif -%}
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
+    <div class="banner__box content-container content-container--full-width-mobile {% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }} {% else %} theme-color-bg-0{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}">
+      {%- liquid
+        assign block_count = 0
+      -%}
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading }}</h2>
+            <h2
+              class="banner__heading inline-richtext {{ block.settings.heading_size }}"
+              {{ block.shopify_attributes }}
+            >
+              {{ block.settings.heading }}
+            </h2>
           {%- when 'text' -%}
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>
             </div>
-          {%- when 'buttons' -%}
-            <div
-              class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
-              {{ block.shopify_attributes }}
-            >
-              {%- if block.settings.button_label_1 != blank -%}
-                <a
-                  {% if block.settings.button_link_1 == blank %}
-                    role="link" aria-disabled="true"
-                  {% else %}
-                    href="{{ block.settings.button_link_1 }}"
-                  {% endif %}
-                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
-                >
-                  {{- block.settings.button_label_1 | escape -}}
-                </a>
-              {%- endif -%}
-              {%- if block.settings.button_label_2 != blank -%}
-                <a
-                  {% if block.settings.button_link_2 == blank %}
-                    role="link" aria-disabled="true"
-                  {% else %}
-                    href="{{ block.settings.button_link_2 }}"
-                  {% endif %}
-                  class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
-                >
-                  {{- block.settings.button_label_2 | escape -}}
-                </a>
-              {%- endif -%}
+          {%- when 'section_buttons_group' -%}
+            {%- for block in section.blocks -%}
+              {%- case block.type -%}
+                {%- when 'section_button' -%}
+                  {%- if block.settings.button_text != blank -%}
+                    {%- capture button_code -%}
+                      <a                
+                        {% if block.settings.button_url == blank %}
+                          role="link" aria-disabled="true"
+                        {% else %}
+                          href="{{ block.settings.button_url }}"
+                        {% endif %}
+                        class="button{% render 'saalt-button-color-classes', obj: block %}"
+                        {{ block.shopify_attributes }}
+                      >
+                        {{- block.settings.button_text -}}
+                      </a>
+                      {%- endcapture -%}
+                    {%- assign buttons_code = buttons_code | append: button_code -%}
+                  {%- endif -%}
+              {%- endcase -%}
+            {%- endfor -%}
+            {% capture buttons_group_css %}
+            #Banner-{{ section.id }} .button-group {
+              display: flex;
+              gap: 1.5rem;
+              justify-content: center;
+              flex-wrap: wrap;
+            }
+            @media screen and (min-width: 750px) {
+              #Banner-{{ section.id }} .button-group {
+                gap: {{ block.settings.desktop_buttons_group_gap }};
+                justify-content: {{ block.settings.desktop_button_group_alignment }};
+              }
+              #Banner-{{ section.id }} .button-group .button {
+                width: auto;
+              }
+            }
+          {% endcapture %}
+            {% style %}
+              {{ buttons_group_css }}
+            {% endstyle %}
+            <div class="button-group" {{ block.shopify_attributes }}>
+              {{ buttons_code }}
             </div>
         {%- endcase -%}
       {%- endfor -%}
@@ -279,32 +302,93 @@
     },
     {
       "type": "select",
-      "id": "color_scheme",
+      "id": "theme_color_background",
+      "label": "t:settings_schema.theme_colors.settings.sections.background_color_label",
+      "info": "Sets the background color",
       "options": [
         {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
         },
         {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
+          "value": "theme-color-bg-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
         },
         {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
+          "value": "theme-color-bg-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
         },
         {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
+          "value": "theme-color-bg-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
         },
         {
-          "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
+          "value": "theme-color-bg-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-bg-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-bg-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-bg-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-bg-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
         }
       ],
-      "default": "background-1",
-      "label": "t:sections.all.colors.label",
-      "info": "t:sections.image-banner.settings.color_scheme.info"
+      "default": "theme_default"
+    },
+    {
+      "type": "select",
+      "id": "theme_color_text",
+      "label": "t:settings_schema.theme_colors.settings.sections.text_color_label",
+      "info": "Sets the text color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-text-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-text-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-text-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-text-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-text-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-text-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-text-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-text-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
     },
     {
       "type": "header",
@@ -431,45 +515,255 @@
       ]
     },
     {
-      "type": "buttons",
-      "name": "t:sections.image-banner.blocks.buttons.name",
+      "type": "section_buttons_group",
+      "name": "Section Buttons Group",
       "limit": 1,
       "settings": [
         {
+          "type": "paragraph",
+          "content": "❗️NOTE❗️: This is just a parent element/container to wrap around section button blocks. Please be sure to also add section button blocks or this will appear empty. Drag and drop this to move the buttons within the section."
+        },
+        {
+          "type": "select",
+          "id": "desktop_button_group_alignment",
+          "label": "Button Group Alignment on *DESKTOP*",
+          "info": "❗️Add section buttons in the previous menu ❗️",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        },
+        {
           "type": "text",
-          "id": "button_label_1",
-          "default": "Button label",
-          "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
-          "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+          "id": "desktop_buttons_group_gap",
+          "label": "Space Between Buttons on *DESKTOP*",
+          "info": "Distance between buttons for the entire buttons group. Any valid css value is accepted.",
+          "default": "1rem"
+        }
+      ]
+    },
+    {
+      "type": "section_button",
+      "name": "Section Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Button text"
         },
         {
           "type": "url",
-          "id": "button_link_1",
-          "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+          "id": "button_url",
+          "label": "Button Destination"
         },
         {
-          "type": "checkbox",
-          "id": "button_style_secondary_1",
-          "default": false,
-          "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
+          "type": "select",
+          "id": "button_type",
+          "label": "t:settings_schema.theme_colors.settings.buttons.button_type_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.button_type_info",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary"
+            }
+          ],
+          "default": "primary"
         },
         {
-          "type": "text",
-          "id": "button_label_2",
-          "default": "Button label",
-          "label": "t:sections.image-banner.blocks.buttons.settings.button_label_2.label",
-          "info": "t:sections.image-banner.blocks.buttons.settings.button_label_2.info"
+          "type": "select",
+          "id": "theme_color_section_button_background",
+          "label": "t:settings_schema.theme_colors.settings.buttons.static_bg_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.static_bg_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-bg-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-bg-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-bg-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-bg-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-bg-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-bg-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-bg-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-bg-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
         },
         {
-          "type": "url",
-          "id": "button_link_2",
-          "label": "t:sections.image-banner.blocks.buttons.settings.button_link_2.label"
+          "type": "select",
+          "id": "theme_color_text_section_button_text",
+          "label": "t:settings_schema.theme_colors.settings.buttons.static_text_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.static_text_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
         },
         {
-          "type": "checkbox",
-          "id": "button_style_secondary_2",
-          "default": false,
-          "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
+          "type": "select",
+          "id": "theme_color_section_button_background_hover",
+          "label": "t:settings_schema.theme_colors.settings.buttons.hover_bg_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.hover_bg_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-bg-0-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-bg-1-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-bg-2-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-bg-3-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-bg-4-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-bg-5-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-bg-6-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-bg-7-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_text_section_button_text_hover",
+          "label": "t:settings_schema.theme_colors.settings.buttons.hover_text_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.hover_text_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-text-0-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
         }
       ]
     }
@@ -485,7 +779,10 @@
           "type": "text"
         },
         {
-          "type": "buttons"
+          "type": "section_buttons_group"
+        },
+        {
+          "type": "section_button"
         }
       ]
     }

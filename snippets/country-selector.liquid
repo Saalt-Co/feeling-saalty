@@ -1,0 +1,143 @@
+{% comment %}
+  Renders an svg icon
+
+  Accepts:
+  - section: {String} The header section object.
+
+  Usage:
+  {% render 'country-selector', section: section %}
+{% endcomment %}
+
+{%- style -%}
+  .country-selector {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+
+  .country-selector .current-country-label {
+    display: inline-flex;
+    gap: 0.25rem;
+    min-width: 4.5rem;
+    cursor: pointer;
+  }
+
+  .country-selector .current-country-label > * {
+    width: 100%;
+    flex: 1 1 0;
+  }
+
+  .country-selector .current-country-caret {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 1rem;
+    max-width: 1rem;
+  }
+
+  .country-selector .current-country-caret > svg {
+    width: 100%;
+  }
+
+  .country-selector .country-selector-menu {
+    position: absolute;
+    background: rgb(var(--color-site-background));
+    border: 1px solid;
+    list-style: none;
+    padding: 1rem 3rem;
+    top: 1.25rem;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 10;
+  }
+
+  .country-selector input[type='checkbox'],
+  .country-selector .country-selector-menu {
+    display: none;
+  }
+
+  .country-selector input[type='checkbox']:checked ~ .country-selector-menu {
+    display: inline-block;
+  }
+
+  .country-selector input[type='checkbox']:checked ~ .current-country-label .current-country-caret {
+    transform: rotate(180deg);
+  }
+
+  .country-selector .country-selector-option > a {
+    color: rgb(var(--color-main-text));
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  .country-selector .country-selector-option > a:hover {
+    border-bottom: 1px solid;
+  }
+
+  .header__icons.header__icons--localization.header__localization .header__search details {
+    max-width: 2rem;
+    height: 3rem;
+    max-height: 3rem;
+    margin: 0 0 0 1rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .header__icons.header__icons--localization.header__localization .header__search details {
+      margin: 0 1rem 0 2rem;
+    }
+  }
+
+  .header__icons.header__icons--localization.header__localization .header__search details summary {
+    width: 100%;
+    height: auto;
+  }
+
+  .header__icons.header__icons--localization.header__localization .header__search details summary > span {
+    height: 3rem;
+  }
+{%- endstyle -%}
+
+{%- assign current_country = '' -%}
+{%- for country in shop.metaobjects.country_selector.country_data.json_data.value -%}
+  {%- assign cleaned_country = country.first | downcase | replace: '.', '' -%}
+  {%- if shop.url contains country.last or country.last contains shop.url -%}
+    {%- assign current_country = country.first -%}
+  {%- elsif shop.url contains 'dev' and cleaned_country contains 'us' -%}
+    {%- assign current_country = country.first -%}
+  {%- endif -%}
+  {%- assign cleaned_current_country = current_country | downcase | replace: '.', '' -%}
+  {%- unless cleaned_country == cleaned_current_country
+    and section.settings.saalt_country_selector_include_current == false
+  -%}
+    {%- capture country_code -%}
+      <li class="country-selector-option" value="{{ country.first }}">
+        <a
+          {% if section.settings.saalt_country_selector_new_tab %}
+            target="_blank"
+          {% endif %}
+          href="{{ country.last }}"
+        >
+          {{- country.first -}}
+        </a>
+      </li>
+      {%- endcapture -%}
+    {%- assign country_code_block = country_code_block | append: country_code -%}
+  {%- endunless -%}
+{%- endfor -%}
+
+<div class="country-selector">
+  <input type="checkbox" name="country-selector-toggle" id="country-selector-toggle" class="current-country">
+  <label class="current-country-label" for="country-selector-toggle">
+    <div class="current-country">
+      {{ current_country }}
+    </div>
+    <div class="current-country-caret">
+      {% render 'icon-caret' %}
+    </div>
+  </label>
+  <ul class="country-selector-menu">
+    {{ country_code_block }}
+  </ul>
+</div>

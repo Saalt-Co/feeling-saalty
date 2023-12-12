@@ -240,7 +240,7 @@
   }
 
   .customer td::before {
-    color: rgba(var(--color-foreground), 0.75);
+    color: rgba(var(--color-main-text), var(--color-main-text-opacity));
     content: attr(data-label);
     font-size: 1.4rem;
     padding-right: 2rem;
@@ -332,6 +332,8 @@
 .login a {
   display: block;
   margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -550,6 +552,8 @@
 }
 
 .order .fulfillment {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   border: 0.01rem solid rgba(var(--color-foreground), 0.2);
   padding: 1rem;

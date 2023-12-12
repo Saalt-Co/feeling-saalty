@@ -1,0 +1,52 @@
+{%- assign img_width = 25 -%}
+{%- capture img_sizes_attr -%}(min-width: 750px) {{ img_width | append: "vw" }}, 100vw{%- endcapture -%}
+{%- assign img_width_attr = img_width | times: 50 -%}
+<div class="tile" {{ block.shopify_attributes }}>
+  <div class="content-wrapper">
+    <a class="tile-link" href="{{ block.settings.button_url }}">
+      <div class="image-wrapper" {{ block.shopify_attributes }}>
+        {%- if block.settings.image != blank -%}
+          {{
+            block.settings.image
+            | image_url: width: img_width_attr
+            | image_tag:
+              class: 'image-element',
+              loading: 'lazy',
+              width: 1,
+              height: 1,
+              sizes: img_sizes_attr,
+              alt: block.settings.image.alt
+          }}
+        {%- else -%}
+          {{ 'collection-1' | placeholder_svg_tag }}
+        {%- endif -%}
+      </div>
+    </a>
+    <div class="tile-text-wrapper">
+      {%- if block.settings.title != blank -%}
+        <h3 class="tile-title" {{ block.shopify_attributes }}>{{ block.settings.title }}</h3>
+      {%- endif -%}
+      {%- if block.settings.text_content != blank -%}
+        <p class="tile-content" {{ block.shopify_attributes }}>{{ block.settings.text_content }}</p>
+      {%- endif -%}
+    </div>
+  </div>
+  {%- if block.settings.button_text != blank
+    and block.settings.button_text != ''
+    and block.settings.button_text != null
+  -%}
+    <div class="button-wrapper" {{ block.shopify_attributes }}>
+      <a
+        class="button{% render 'saalt-button-color-classes', obj: block %}"
+        {% if block.settings.button_url == blank %}
+          role="link" aria-disabled="true"
+        {% else %}
+          href="{{ block.settings.button_url }}"
+        {% endif %}
+        {{ block.shopify_attributes }}
+      >
+        {{ block.settings.button_text | escape }}
+      </a>
+    </div>
+  {%- endif -%}
+</div>

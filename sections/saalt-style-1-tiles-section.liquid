@@ -1,0 +1,2317 @@
+{%- liquid
+  if section.settings.mobile_text_position == 'below'
+    assign mobile_flex_direction = 'column-reverse'
+  else
+    assign mobile_flex_direction = 'column'
+  endif
+-%}
+{%- case section.settings.title_font_size -%}
+  {%- when 'x-large' -%}
+    {%- capture title_css -%}
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 55px;
+    {%- endcapture -%}
+  {%- when 'large' -%}
+    {%- capture title_css -%}
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 55px;
+    {%- endcapture -%}
+  {%- when 'medium' -%}
+    {%- capture title_css -%}
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 44px;
+    {%- endcapture -%}
+  {%- else -%}
+    {%- capture title_css -%}
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 34px;
+  {%- endcapture -%}
+{%- endcase -%}
+{%- case section.settings.content_font_size -%}
+  {%- when 'x-large' -%}
+    {%- capture content_css -%}
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 45px;
+      letter-spacing: 0em;
+    {%- endcapture -%}
+  {%- when 'large' -%}
+    {%- capture content_css -%}
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 41.25px;
+    {%- endcapture -%}
+  {%- when 'medium' -%}
+    {%- capture content_css -%}
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+    {%- endcapture -%}
+  {%- else -%}
+    {%- capture content_css -%}
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  {%- endcapture -%}
+{%- endcase -%}
+
+{%- assign block_count = section.blocks | size -%}
+{%- assign all_icons = '' -%}
+{%- assign tiles_code = '' -%}
+<section
+  id="section-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  class="section-image-with-text"
+  {{ block.shopify_attributes }}
+>
+  <div
+    {% if section.settings.section_id != blank %}
+      id="{{ section.settings.section_id | handleize }}"
+    {% endif -%}
+    class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %} scroll-trigger animate--fade-in"
+  >
+    <div class="text-wrapper">
+      {%- if block_count > 0 -%}
+        {%- for block in section.blocks -%}
+          {% case block.type %}
+            {%- when 'section_title' -%}
+              {%- if block.settings.title != blank -%}
+                <h{{ block.settings.heading_tag }} class="section-title" {{ block.shopify_attributes }}>
+                  {{- block.settings.title -}}
+                </h{{ block.settings.heading_tag }}>
+              {%- endif -%}
+            {%- when 'section_content' -%}
+              {%- if block.settings.text_content != blank -%}
+                <div class="section-content" {{ block.shopify_attributes }}>{{ block.settings.text_content }}</div>
+              {%- endif -%}
+            {%- when 'section_buttons_group' -%}
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {%- when 'section_button' -%}
+                    {%- if block.settings.button_text != blank -%}
+                      {%- capture button_code -%}                      
+                        <a
+                          class="button{% render 'saalt-button-color-classes', obj: block %}"
+                          {% if block.settings.button_url == blank %}
+                            role="link" aria-disabled="true"
+                          {% else %}
+                            href="{{ block.settings.button_url }}"
+                          {% endif %}
+                          {{ block.shopify_attributes }}
+                        >
+                          {{ block.settings.button_text | escape }}
+                        </a>
+                      {%- endcapture -%}
+                      {%- assign buttons_code = buttons_code | append: button_code -%}
+                    {%- endif -%}
+                {%- endcase -%}
+              {%- endfor -%}
+              {% capture buttons_group_css %}
+              @media screen and (min-width: 750px) {
+                #section-{{ section.id }} .section-inner .text-wrapper .button-group {
+                  gap: {{ block.settings.desktop_buttons_group_gap }};
+                  justify-content: {{ block.settings.desktop_button_group_alignment }};
+                }
+                #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
+                  width: auto;
+                }
+              }
+            {% endcapture %}
+              <div class="button-group" {{ block.shopify_attributes }}>
+                {{ buttons_code }}
+              </div>
+            {%- when 'section_tiles_group' -%}
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {% when 'saalt_style_1_tile' %}
+                    {%- capture tile -%}{% render "saalt-style-1-tile", block: block %}{%- endcapture -%}
+                    {%- assign tiles_code = tiles_code | append: tile -%}
+                {%- endcase -%}
+              {%- endfor -%}
+              <div class="tiles-wrapper" {{ block.shopify_attributes }}>
+                {{ tiles_code }}
+              </div>
+              {%- capture tiles_wrapper_css -%}
+              #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper .tile-title, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper .tile-content {
+                {% if block.settings.theme_color_mobile_text_color != "match_text" %}color: rgb(var({{ block.settings.theme_color_mobile_text_color }}));{% endif %}
+                width: 100%;
+                text-align: {{ block.settings.tile_mobile_text_alignment }};
+              }
+              @media screen and (min-width: 750px) {
+                #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper {
+                  display: flex;
+                  position: absolute;
+                  flex-direction: column;
+                  justify-content: {{ block.settings.desktop_text_placement }};
+                  align-items: center;
+                  width: 100%;
+                  height: 100%;
+                  margin: 0 auto 3rem;
+                  padding: 1rem;
+                  top: 50%;
+                  pointer-events: none;
+                  transform: translateY(-50%);
+                  transition: opacity ease-in-out .1s;
+                }{% if block.settings.theme_color_desktop_text_color != "match_text" %}
+                #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper .tile-title, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper .tile-content {
+                  color: rgb(var({{ block.settings.theme_color_desktop_text_color }}));
+                }{% endif %}
+                #section-{{ section.id }} .section-inner .tiles-wrapper .tile .tile-link:hover + .tile-text-wrapper, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .tile-link:focus + .tile-text-wrapper {
+                  top: 0;
+                  transform: translateY(0);
+                  justify-content: {{ block.settings.desktop_text_hover_placement }};
+                }
+                #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper .tile-title, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper .tile-content {
+                  text-align: {{ block.settings.tile_desktop_text_alignment }};
+                }
+                #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-link:hover + .tile-text-wrapper > .tile-title, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-link:focus + .tile-text-wrapper > .tile-title, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-link:hover + .tile-text-wrapper > .tile-content, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-link:focus + .tile-text-wrapper > .tile-content {
+                  {% if block.settings.theme_color_desktop_text_hover_focus_color != "match_text" %}color: rgb(var({{ block.settings.theme_color_desktop_text_hover_focus_color }}));{% endif %}
+                  align-content: {{ block.settings.desktop_text_hover_placement }};
+                  text-align: {{ block.settings.tile_desktop_text_alignment_hover_focus }};
+                }
+              }
+              @media screen and (min-width: 900px) {
+                #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper {
+                  padding: 3rem;
+                }
+              }
+            {%- endcapture -%}
+            {%- when 'section_icon_group' -%}
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {%- when 'section_icon_with_text' -%}
+                    {%- capture icon_code -%}{% render "saalt-svg-icon", block: block, theme_color_text: section.settings.theme_color_text, icon_svg: block.settings.icon_svg, icon_text: block.settings.icon_text, icon_color: block.settings.theme_color_icon_color, icon_text_color: block.settings.theme_color_icon_text_color %}{%- endcapture -%}
+                    {%- assign all_icons = all_icons | append: icon_code -%}
+                {%- endcase -%}
+              {%- endfor -%}
+              {% style %}
+                #section-{{ section.id }} .icons-wrapper.mobile-row {
+                  flex-direction: row;
+                }
+                #section-{{ section.id }} .icons-wrapper.mobile-column {
+                  flex-direction: column;
+                }
+                #section-{{ section.id }} .icons-wrapper.mobile-grid {
+                  display: grid;
+                  grid-template-columns: repeat({{ block.settings.mobile_icon_grid_columns }}, 1fr);
+                }
+                #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper[class*="mobile-"] {
+                  min-width: {{ block.settings.mobile_icon_min_width }};
+                  max-width: {{ block.settings.mobile_icon_wrapper_max_width }};
+                }
+                #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-row,
+                #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-reverse-row {
+                  justify-content: {{ block.settings.mobile_icon_horizontal_alignment }};
+                  align-items: {{ block.settings.mobile_icon_vertical_alignment }};
+                }
+                #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-column,
+                #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-reverse-column,
+                #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-column,
+                #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper.mobile-reverse-column
+                {
+                  justify-content: {{ block.settings.mobile_icon_vertical_alignment }};
+                  align-items: {{ block.settings.mobile_icon_horizontal_alignment }};
+                }
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper * {
+                    {% if block.settings.mobile_icon_text_position == "left" or block.settings.mobile_icon_text_position == "right" %}
+                      {% assign alignment = block.settings.mobile_icon_vertical_alignment %}
+                      {% else %}
+                      {% assign alignment = block.settings.mobile_icon_horizontal_alignment %}
+                    {% endif %}
+                    {% case alignment %}
+                      {% when "flex-start" %}
+                        {% assign text_alignment = "left" %}
+                      {% when "center" %}
+                        {% assign text_alignment = "center" %}
+                      {% when "flex-end" %}
+                        {% assign text_alignment = "right" %}
+                    {% endcase %}
+                    text-align: {{ text_alignment }};
+                  }
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+                  max-width: {{ block.settings.mobile_icon_max_width }};
+                  min-height: {{ block.settings.mobile_icon_height }};
+                  max-height: {{ block.settings.mobile_icon_height }};
+                }
+                #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
+                  width: 100%;
+                  font-size: {{ block.settings.mobile_icon_text_size }};
+                  margin: 0;
+                }
+                #section-{{ section.id }} .icons-wrapper {
+                  gap: {{ block.settings.mobile_icon_group_gap }};
+                  {% if block.settings.mobile_icons_display != "column" %}
+                    justify-content: {{ block.settings.mobile_icon_group_horizontal_alignment }};
+                    align-items: {{ block.settings.mobile_icon_group_vertical_alignment }};
+                  {% else %}
+                    justify-content: {{ block.settings.mobile_icon_group_vertical_alignment }};
+                    align-items: {{ block.settings.mobile_icon_group_horizontal_alignment }};
+                  {% endif %}
+                }
+                @media screen and (min-width: 750px) {
+                  #section-{{ section.id }} .icons-wrapper,
+                  #section-{{ section.id }} .icons-wrapper.mobile-row,
+                  #section-{{ section.id }} .icons-wrapper.mobile-column,
+                  #section-{{ section.id }} .icons-wrapper.mobile-grid {
+                    display: flex;
+                  }
+                  #section-{{ section.id }} .icons-wrapper.desktop-row {
+                    flex-direction: row;
+                  }
+                  #section-{{ section.id }} .icons-wrapper.desktop-column {
+                    flex-direction: column;
+                  }
+                  #section-{{ section.id }} .icons-wrapper.desktop-column .icons-wrapper .icon-wrapper {
+                    flex: unset;
+                  }
+                  #section-{{ section.id }} .icons-wrapper.desktop-grid {
+                    display: grid;
+                    grid-template-columns: repeat({{ block.settings.desktop_icon_grid_columns }}, 1fr);
+                  }
+                  #section-{{ section.id }} .icons-wrapper[class*="mobile-"] .icon-wrapper[class*="mobile-"] {
+                    justify-content: unset;
+                    align-items: unset;
+                  }
+                  #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper[class*="desktop-"] {
+                    min-width: {{ block.settings.desktop_icon_min_width }};
+                    max-width: {{ block.settings.desktop_icon_wrapper_max_width }};
+                    justify-content: {{ block.settings.desktop_icon_horizontal_alignment }};
+                    align-items: {{ block.settings.desktop_icon_vertical_alignment }};
+                  }
+                  #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-row,
+                  #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-reverse-row {
+                    justify-content: {{ block.settings.desktop_icon_horizontal_alignment }};
+                    align-items: {{ block.settings.desktop_icon_vertical_alignment }};
+                  }
+                  #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-column,
+                  #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-reverse-column,
+                  #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-column,
+                  #section-{{ section.id }} .icons-wrapper[class*="desktop-"] .icon-wrapper.desktop-reverse-column
+                  {
+                    justify-content: {{ block.settings.desktop_icon_vertical_alignment }};
+                    align-items: {{ block.settings.desktop_icon_horizontal_alignment }};
+                  }
+                  #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper * {
+                    text-align: unset;
+                  }
+                  #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper * {
+                    {% if block.settings.desktop_icon_text_position == "left" or block.settings.desktop_icon_text_position == "right" %}
+                      {% assign alignment = block.settings.desktop_icon_vertical_alignment %}
+                      {% else %}
+                      {% assign alignment = block.settings.desktop_icon_horizontal_alignment %}
+                    {% endif %}
+                    {% case alignment %}
+                      {% when "flex-start" %}
+                        {% assign text_alignment = "left" %}
+                      {% when "center" %}
+                        {% assign text_alignment = "center" %}
+                      {% when "flex-end" %}
+                        {% assign text_alignment = "right" %}
+                    {% endcase %}
+                    text-align: {{ text_alignment }};
+                  }
+                  #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+                    max-width: {{ block.settings.desktop_icon_max_width }};
+                    min-height: {{ block.settings.desktop_icon_height }};
+                    max-height: {{ block.settings.desktop_icon_height }};
+                  }
+                  #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text > * {
+                    font-size: {{ block.settings.desktop_icon_text_size }};
+                  }
+                  {%- if block.settings.use_max_icon_group_width -%}
+                  #section-{{ section.id }} .icons-wrapper {
+                    max-width: {{ block.settings.icon_group_max_width }};
+                    margin: 0 auto 3rem;
+                  }
+                  {%- endif -%}
+                  #section-{{ section.id }} .icons-wrapper {
+                    gap: {{ block.settings.desktop_icon_group_gap }};
+                    {% if block.settings.desktop_icons_display != "column" %}
+                      justify-content: {{ block.settings.desktop_icon_group_horizontal_alignment }};
+                      align-items: {{ block.settings.desktop_icon_group_vertical_alignment }};
+                    {% else %}
+                      justify-content: {{ block.settings.desktop_icon_group_vertical_alignment }};
+                      align-items: {{ block.settings.desktop_icon_group_horizontal_alignment }};
+                    {% endif %}
+                  }
+                  #section-{{ section.id }} .icons-wrapper .icon-wrapper {
+                    min-width: {{ block.settings.desktop_icon_min_width }};
+                    max-width: {{ block.settings.desktop_icon_wrapper_max_width }};
+                    {% if block.settings.desktop_icons_display == "left" or block.settings.desktop_icons_display == "right" %}
+                    justify-content: {{ block.settings.desktop_icon_vertical_alignment }};
+                    align-items: {{ block.settings.desktop_icon_horizontal_alignment }};
+                    {% else %}
+                    justify-content: {{ block.settings.desktop_icon_horizontal_alignment }};
+                    align-items: {{ block.settings.desktop_icon_vertical_alignment }};
+                  {% endif %}
+                  }
+                }
+              {% endstyle %}
+              <ul
+                class="icons-wrapper mobile-{{ block.settings.mobile_icons_display }} desktop-{{ block.settings.desktop_icons_display }}"
+                {{ block.shopify_attributes }}
+              >
+                {{ all_icons }}
+              </ul>
+            {%- when 'saalt_contact_links' -%}
+              {% render 'saalt-contact-links',
+                section_id: section.id,
+                section_text_color: section.settings.theme_color_text,
+                block: block
+              %}
+            {%- when 'custom_liquid_code' -%}
+              <div {{ block.shopify_attributes }}>
+                {{ block.settings.liquid_code }}
+              </div>
+          {% endcase %}
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{%- style -%}
+  #section-{{ section.id }} .section-inner {
+    display: flex;
+    background: {{ section.settings.background_color }};
+    flex-direction: {{ mobile_flex_direction }};
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  #section-{{ section.id }} .text-wrapper {
+    width: 100%;
+    text-align: {{ section.settings.mobile_text_alignment }};
+    padding: 4rem 2rem;
+    margin: 0 auto;
+  }
+  #section-{{ section.id }} .text-wrapper > * {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  #section-{{ section.id }} .text-wrapper .section-title, #section-{{ section.id }} .text-wrapper .section-content, #section-{{ section.id }} .text-wrapper .section-content > p {
+    color: {{ section.settings.section_text_color }};
+    width: 100%;
+  }
+  #section-{{ section.id }} .text-wrapper .section-title {
+    {{ title_css }}
+  }
+  #section-{{ section.id }} .text-wrapper .section-content {
+    {{ content_css }}
+  }
+  #section-{{ section.id }} .text-wrapper .contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 4rem;
+  }
+  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 1rem;
+  }
+  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact, #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact-content {
+    font-size: clamp(1.75rem, 1.5vw, 2.25rem);
+    line-height: 1.25;
+    text-align: left;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image svg {
+    fill: {{ section.settings.text_color }};
+  }
+  #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-content {
+    color: {{ section.settings.text_color }};
+  }
+  #section-{{ section.id }} .icons-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+    display: flex;
+    width: 100%;
+  }
+  #section-{{ section.id }} .icons-wrapper {
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+  #section-{{ section.id }} .icons-wrapper .icon-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+  }
+  #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-column {
+    flex-direction: column;
+  }
+  #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-reverse-column {
+    flex-direction: column-reverse;
+  }
+  #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-row {
+    flex-direction: row;
+  }
+  #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-reverse-row {
+    flex-direction: row-reverse;
+  }
+  #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
+    width: 100%;
+    height: auto;
+  }
+  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  #section-{{ section.id }} .section-inner .text-wrapper .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
+    text-align: {{ section.settings.mobile_text_alignment }};
+  }
+  #section-{{ section.id }} .section-inner .text-wrapper > *:last-child {
+    margin-bottom: 0;
+  }
+  #section-{{ section.id }} .section-inner .tiles-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  #section-{{ section.id }} .section-inner .tiles-wrapper .tile, #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  #section-{{ section.id }} .section-inner .tiles-wrapper .tile {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  #section-{{ section.id }} .content-wrapper .tile-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    transition: opacity ease-in-out .1s;
+    overflow: hidden;
+  }
+  #section-{{ section.id }} .content-wrapper .tile-link .image-wrapper, #section-{{ section.id }} .content-wrapper .tile-link .image-wrapper > * {
+    display: block;
+    width: auto;
+    max-width: unset;
+    height: 100%;
+  }
+  #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper .tile-text-wrapper {
+    padding: 1rem 3rem;
+  }
+  #section-{{ section.id }} .section-inner .tiles-wrapper .tile .button-wrapper {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  #section-{{ section.id }} .section-inner .text-wrapper *:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 420px) {
+    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  @media screen and (min-width: 750px) {
+    #section-{{ section.id }} .section-inner {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+    #section-{{ section.id }} .text-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      padding: 4rem;
+      text-align: {{ section.settings.desktop_text_alignment }};
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper {
+      width: 100%;
+      gap: 4rem;
+      {%- if section.settings.desktop_text_alignment == "left" -%}
+      justify-content: flex-start;
+      {%- elsif section.settings.desktop_text_alignment == "right" -%}
+      justify-content: flex-end;
+      {%- endif -%};
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
+      height: auto;
+    }
+    {%- if section.settings.use_max_text_width -%}
+    #section-{{ section.id }} .text-wrapper > *:not(.icons-wrapper) {
+      max-width: {{ section.settings.max_width }};
+    }
+    {%- endif -%}
+    #section-{{ section.id }} .section-inner .tiles-wrapper .tile {
+      max-width: 45%;
+      gap: calc(100vw / 25);
+    }
+    #section-{{ section.id }} .section-inner .tiles-wrapper .tile .content-wrapper {
+      position: relative;
+      gap: unset;
+    }
+    #section-{{ section.id }} .tile-text-wrapper > .tile-title {
+      margin-bottom: 0;
+    }
+    #section-{{ section.id }} .tile-text-wrapper > .tile-content {
+      height: 0;
+    }
+    #section-{{ section.id }} .tile-link:hover, #section-{{ section.id }} .tile-link:focus {
+      opacity: .075;
+    }
+    #section-{{ section.id }} .tile-content {
+      opacity: 0;
+    }
+    #section-{{ section.id }} .tile-link:hover + .tile-text-wrapper > .tile-title, #section-{{ section.id }} .tile-link:focus + .tile-text-wrapper > .tile-title {
+      font-size: 1.75rem;
+      line-height: 1.5;
+      margin-bottom: 1.75rem;
+    }
+    #section-{{ section.id }} .tile-link:hover + .tile-text-wrapper > .tile-content, #section-{{ section.id }} .tile-link:focus + .tile-text-wrapper > .tile-content {
+      opacity: 1;
+      height: auto;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-column {
+      flex-direction: column;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-reverse-column {
+      flex-direction: column-reverse;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-row {
+      flex-direction: row;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-reverse-row {
+      flex-direction: row-reverse;
+    }
+  }
+
+  {{ buttons_group_css }}
+  {{ tiles_wrapper_css }}
+  {% render 'saalt-custom-section-button-css', section: section %}
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "Saalt Style 1 Tiles",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID (Optional)",
+      "info": "t:sections.all.section_id.info"
+    },
+    {
+      "type": "header",
+      "content": "Text Settings"
+    },
+    {
+      "type": "select",
+      "id": "theme_color_background",
+      "label": "t:settings_schema.theme_colors.settings.sections.background_color_label",
+      "info": "Sets the background color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-bg-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-bg-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-bg-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-bg-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-bg-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-bg-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-bg-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-bg-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
+    },
+    {
+      "type": "select",
+      "id": "theme_color_text",
+      "label": "t:settings_schema.theme_colors.settings.sections.text_color_label",
+      "info": "Sets the text color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-text-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-text-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-text-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-text-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-text-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-text-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-text-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-text-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
+    },
+    {
+      "type": "select",
+      "id": "title_font_size",
+      "label": "Title font size",
+      "info": "This sets the font size for *all* section titles",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small (30px)"
+        },
+        {
+          "value": "medium",
+          "label": "Medium (40px)"
+        },
+        {
+          "value": "large",
+          "label": "Large (48px)"
+        },
+        {
+          "value": "x-large",
+          "label": "X-Large (50px)"
+        }
+      ],
+      "default": "small"
+    },
+    {
+      "type": "select",
+      "id": "content_font_size",
+      "label": "Content font size",
+      "info": "This sets the font size for *all* section content",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small (16px)"
+        },
+        {
+          "value": "medium",
+          "label": "Medium (18px)"
+        },
+        {
+          "value": "large",
+          "label": "Large (25px)"
+        },
+        {
+          "value": "x-large",
+          "label": "X-Large (30px)"
+        }
+      ],
+      "default": "small"
+    },
+
+    {
+      "type": "header",
+      "content": "Mobile Text Settings"
+    },
+    {
+      "type": "select",
+      "id": "mobile_text_alignment",
+      "label": "Text alignment on *MOBILE*",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "justify",
+          "label": "Justify"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Text Settings"
+    },
+    {
+      "type": "select",
+      "id": "desktop_text_alignment",
+      "label": "Text alignment on *DESKTOP ONLY*",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "justify",
+          "label": "Justify"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_max_text_width",
+      "label": "Use desktop max width for text content?",
+      "info": "This sets the max width of the text content *ON DESKTOP*"
+    },
+    {
+      "type": "text",
+      "id": "max_width",
+      "label": "Max Width Value",
+      "info": "Any valid css value is accepted",
+      "default": "600px"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "section_tiles_group",
+      "name": "Tile Group",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "❗️NOTE❗️: This is just a parent element/container to wrap around tile blocks. Please be sure to also add tile blocks or this will appear empty. Drag and drop this to move the tiles within the section."
+        },
+        {
+          "type": "header",
+          "content": "Tile Text Settings"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_mobile_text_color",
+          "label": "Mobile Tile Text Color",
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "--palette-color-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "--palette-color-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "--palette-color-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "--palette-color-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "--palette-color-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "--palette-color-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "--palette-color-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "--palette-color-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
+        },
+        {
+          "type": "select",
+          "id": "tile_mobile_text_alignment",
+          "label": "Tile Text Alignment On *MOBILE*",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "justify",
+              "label": "Justify"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_desktop_text_color",
+          "label": "Desktop Tile Text Color",
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "--palette-color-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "--palette-color-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "--palette-color-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "--palette-color-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "--palette-color-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "--palette-color-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "--palette-color-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "--palette-color-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_desktop_text_hover_focus_color",
+          "label": "Desktop Hover & Focus Color",
+          "info": "The color of the tile's text during hover or focus",
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "--palette-color-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "--palette-color-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "--palette-color-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "--palette-color-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "--palette-color-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "--palette-color-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "--palette-color-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "--palette-color-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
+        },
+        {
+          "type": "select",
+          "id": "tile_desktop_text_alignment",
+          "label": "Tile Text Alignment On *DESKTOP*",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "justify",
+              "label": "Justify"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "desktop_text_placement",
+          "label": "Desktop Text Position",
+          "info": "The vertical location of the text within the tile.",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Bottom"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "tile_desktop_text_alignment_hover_focus",
+          "label": "Desktop Hover & Focus Text Alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "justify",
+              "label": "Justify"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "desktop_text_hover_placement",
+          "label": "Desktop Hover & Focus Text Position",
+          "info": "The vertical location of the text within the tile during a hover or focus event.",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Bottom"
+            }
+          ],
+          "default": "center"
+        }
+      ]
+    },
+    {
+      "type": "saalt_style_1_tile",
+      "name": "Style 1 Tile",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "❗️NOTE❗️ Be sure to add an 'Tiles Group' block or this will not show up!"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Tile Image",
+          "info": "600x600px width or larger recommended. All tile images should be a 1:1 aspect ratio (square). ❗️NOTE❗️ Be sure to add a 'Tiles Group' or this will not show up!"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Tile Title",
+          "default": "Tile Title Goes Here"
+        },
+        {
+          "type": "textarea",
+          "id": "text_content",
+          "label": "Tile Text Content",
+          "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum."
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Tile Button Text"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Tile URL"
+        },
+        {
+          "type": "select",
+          "id": "button_type",
+          "label": "t:settings_schema.theme_colors.settings.buttons.button_type_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.button_type_info",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary"
+            }
+          ],
+          "default": "primary"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_section_button_background",
+          "label": "t:settings_schema.theme_colors.settings.buttons.static_bg_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.static_bg_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-bg-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-bg-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-bg-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-bg-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-bg-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-bg-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-bg-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-bg-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_text_section_button_text",
+          "label": "t:settings_schema.theme_colors.settings.buttons.static_text_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.static_text_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_section_button_background_hover",
+          "label": "t:settings_schema.theme_colors.settings.buttons.hover_bg_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.hover_bg_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-bg-0-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-bg-1-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-bg-2-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-bg-3-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-bg-4-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-bg-5-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-bg-6-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-bg-7-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_text_section_button_text_hover",
+          "label": "t:settings_schema.theme_colors.settings.buttons.hover_text_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.hover_text_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-text-0-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        }
+      ]
+    },
+    {
+      "type": "section_title",
+      "name": "Section Title",
+      "settings": [
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading Tag",
+          "options": [
+            {
+              "value": "1",
+              "label": "H1"
+            },
+            {
+              "value": "2",
+              "label": "H2"
+            },
+            {
+              "value": "3",
+              "label": "H3"
+            }
+          ],
+          "default": "1"
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "Section Title Goes Here"
+        }
+      ]
+    },
+    {
+      "type": "section_content",
+      "name": "Section Content",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text_content",
+          "label": "Text content",
+          "default": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.</p>"
+        }
+      ]
+    },
+    {
+      "type": "section_buttons_group",
+      "name": "Section Buttons Group",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "❗️NOTE❗️: This is just a parent element/container to wrap around section button blocks. Please be sure to also add section button blocks or this will appear empty. Drag and drop this to move the buttons within the section."
+        },
+        {
+          "type": "select",
+          "id": "desktop_button_group_alignment",
+          "label": "Button Group Alignment on *DESKTOP*",
+          "info": "❗️Add section buttons in the previous menu ❗️",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "text",
+          "id": "desktop_buttons_group_gap",
+          "label": "Space Between Buttons on *DESKTOP*",
+          "info": "Distance between buttons for the entire buttons group. Any valid css value is accepted.",
+          "default": "1rem"
+        }
+      ]
+    },
+    {
+      "type": "section_button",
+      "name": "Section Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Button text"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button Destination"
+        },
+        {
+          "type": "select",
+          "id": "button_type",
+          "label": "t:settings_schema.theme_colors.settings.buttons.button_type_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.button_type_info",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary"
+            }
+          ],
+          "default": "primary"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_section_button_background",
+          "label": "t:settings_schema.theme_colors.settings.buttons.static_bg_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.static_bg_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-bg-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-bg-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-bg-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-bg-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-bg-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-bg-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-bg-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-bg-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_text_section_button_text",
+          "label": "t:settings_schema.theme_colors.settings.buttons.static_text_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.static_text_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_section_button_background_hover",
+          "label": "t:settings_schema.theme_colors.settings.buttons.hover_bg_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.hover_bg_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-bg-0-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-bg-1-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-bg-2-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-bg-3-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-bg-4-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-bg-5-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-bg-6-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-bg-7-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_text_section_button_text_hover",
+          "label": "t:settings_schema.theme_colors.settings.buttons.hover_text_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.hover_text_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-text-0-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        }
+      ]
+    },
+    {
+      "type": "section_icon_group",
+      "name": "SVG Icon Group",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "❗️NOTE❗️: This is just a parent element/container to wrap around SVG icon blocks. Please be sure to also add SVG icon blocks or this will appear empty. Drag and drop this to move the icons within the section."
+        },
+        {
+          "type": "header",
+          "content": "Mobile Icon Group Settings"
+        },
+        {
+          "type": "select",
+          "id": "mobile_icons_display",
+          "label": "Display of icons on mobile",
+          "info": "This controls the presentation of icons within the icons group on mobile",
+          "options": [
+            {
+              "value": "row",
+              "label": "Wrapping Row"
+            },
+            {
+              "value": "column",
+              "label": "Column"
+            },
+            {
+              "value": "grid",
+              "label": "Grid"
+            }
+          ],
+          "default": "row"
+        },
+        {
+          "type": "select",
+          "id": "mobile_icon_group_horizontal_alignment",
+          "label": "Icon group horizontal alignment on mobile",
+          "info": "Sets the horizontal alignment of all icon wrappers in the group",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            },
+            {
+              "value": "space-evenly",
+              "label": "Space evenly"
+            },
+            {
+              "value": "space-between",
+              "label": "Use space between"
+            },
+            {
+              "value": "space-around",
+              "label": "Use space around"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "mobile_icon_group_vertical_alignment",
+          "label": "Icon group vertical alignment on mobile",
+          "info": "Sets the vertical alignment of icon wrappers in the group",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Bottom"
+            },
+            {
+              "value": "space-evenly",
+              "label": "Space evenly"
+            },
+            {
+              "value": "space-between",
+              "label": "Use space between"
+            },
+            {
+              "value": "space-around",
+              "label": "Use space around"
+            }
+          ],
+          "default": "flex-start"
+        },
+        {
+          "type": "number",
+          "id": "mobile_icon_grid_columns",
+          "label": "Icon grid columns",
+          "info": "If the display of icons on mobile is set to \"grid\", how many columns should be shown? The default is 2",
+          "default": 2
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_group_gap",
+          "label": "Space between icons on mobile",
+          "info": "Distance between icons for the entire icon group. Any valid css value is accepted.",
+          "default": "3.5rem"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_text_size",
+          "label": "Mobile font size",
+          "info": "Any valid css value for 'font-size' is accepted. Default is 1.5rem",
+          "default": "1.5rem"
+        },
+        {
+          "type": "header",
+          "content": "Mobile Icon Wrapper Settings"
+        },
+        {
+          "type": "select",
+          "id": "mobile_icon_horizontal_alignment",
+          "label": "Icon wrapper horizontal alignment on mobile",
+          "info": "Sets the horizontal alignment of icon and text within an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "mobile_icon_vertical_alignment",
+          "label": "Icon wrapper vertical alignment on mobile",
+          "info": "Sets the vertical alignment of icon and text for an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Bottom"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_min_width",
+          "label": "Icon wrapper min-width on mobile",
+          "info": "Minimum width for icon wrapper elements. This is the contianer for the SVG and the text Any valid css value is accepted.",
+          "default": "80px"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_wrapper_max_width",
+          "label": "Icon wrapper max-width on mobile",
+          "info": "Maximum width for icon wrapper elements. This is the contianer for the SVG and the text Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_max_width",
+          "label": "SVG max-width on mobile",
+          "info": "This is the maximum width an SVG will take up within the icon wrapper. Any valid css value is accepted.",
+          "default": "100%"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_height",
+          "label": "Icon height on mobile",
+          "info": "Minimum height for SVGs inside of the icon wrappers. This helps ensure they're all the same size vertically. Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "header",
+          "content": "Desktop Icon Group Settings"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_max_icon_group_width",
+          "label": "Use desktop max width for icons group?",
+          "info": "This sets the max width of the icons group *ON DESKTOP*"
+        },
+        {
+          "type": "text",
+          "id": "icon_group_max_width",
+          "label": "Icon group max-width",
+          "info": "Max width for the entire icon group. Any valid css value is accepted.",
+          "default": "600px"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icons_display",
+          "label": "Display of icons on desktop",
+          "info": "This controls the presentation of icons within the icons group on desktop",
+          "options": [
+            {
+              "value": "row",
+              "label": "Wrapping Row"
+            },
+            {
+              "value": "column",
+              "label": "Column"
+            },
+            {
+              "value": "grid",
+              "label": "Grid"
+            }
+          ],
+          "default": "row"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_group_horizontal_alignment",
+          "label": "Icon group horizontal alignment on desktop",
+          "info": "Sets the horizontal alignment of icon and text for an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            },
+            {
+              "value": "space-evenly",
+              "label": "Space evenly"
+            },
+            {
+              "value": "space-between",
+              "label": "Use space between"
+            },
+            {
+              "value": "space-around",
+              "label": "Use space around"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_group_vertical_alignment",
+          "label": "Icon group vertical alignment on desktop",
+          "info": "Sets the vertical alignment of icon and text for an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Bottom"
+            },
+            {
+              "value": "space-evenly",
+              "label": "Space evenly"
+            },
+            {
+              "value": "space-between",
+              "label": "Use space between"
+            },
+            {
+              "value": "space-around",
+              "label": "Use space around"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "number",
+          "id": "desktop_icon_grid_columns",
+          "label": "Icon grid columns",
+          "info": "If the display of icons on desktop is set to \"grid\", how many columns should be shown? The default is 2",
+          "default": 2
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_group_gap",
+          "label": "Space between icons on desktop",
+          "info": "Distance between icons for the entire icon group. Any valid css value is accepted.",
+          "default": "3.5rem"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_text_size",
+          "label": "Text font size on desktop",
+          "info": "Any valid css value for 'font-size' is accepted. Default is 1.5rem",
+          "default": "1.5rem"
+        },
+        {
+          "type": "header",
+          "content": "Desktop Icon Wrapper Settings"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_horizontal_alignment",
+          "label": "Icon wrapper horizontal alignment on desktop",
+          "info": "Sets the horizontal alignment of icon and text within an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_vertical_alignment",
+          "label": "Icon wrapper vertical alignment on desktop",
+          "info": "Sets the vertical alignment of icon and text for an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Bottom"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_min_width",
+          "label": "Icon wrapper min-width on desktop",
+          "info": "Minimum width for icon wrapper elements. This is the contianer for the SVG and the text Any valid css value is accepted.",
+          "default": "80px"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_wrapper_max_width",
+          "label": "Icon wrapper max-width on desktop",
+          "info": "Maximum width for icon wrapper elements. This is the contianer for the SVG and the text Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_max_width",
+          "label": "SVG max-width on desktop",
+          "info": "This is the maximum width an SVG will take up within the icon wrapper. Any valid css value is accepted.",
+          "default": "100%"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_height",
+          "label": "Icon height on desktop",
+          "info": "Minimum height for SVGs inside of the icon wrappers. This helps ensure they're all the same size vertically. Any valid css value is accepted.",
+          "default": "100px"
+        }
+      ]
+    },
+    {
+      "type": "section_icon_with_text",
+      "name": "SVG Icon",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "❗️NOTE❗️ Be sure to add an 'SVG Icon Group' block or this will not show up!"
+        },
+        {
+          "type": "html",
+          "id": "icon_svg",
+          "label": "Icon SVG code",
+          "info": "Paste icon svg code here. Be sure to remove any 'fill' and 'stroke' attributes to ensure proper styling."
+        },
+        {
+          "type": "richtext",
+          "id": "icon_text",
+          "label": "Text",
+          "info": "Text is optional"
+        },
+        {
+          "type": "select",
+          "id": "mobile_icon_text_position",
+          "label": "Mobile icon text position",
+          "info": "Where the text should be in relation to the SVG icon on mobile",
+          "options": [
+            {
+              "value": "above",
+              "label": "Above the icon"
+            },
+            {
+              "value": "below",
+              "label": "Below the icon"
+            },
+            {
+              "value": "left",
+              "label": "Left of the icon"
+            },
+            {
+              "value": "right",
+              "label": "Right of the icon"
+            }
+          ],
+          "default": "below"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_text_position",
+          "label": "Desktop icon text position",
+          "info": "Where the text should be in relation to the SVG icon on desktop",
+          "options": [
+            {
+              "value": "above",
+              "label": "Above the icon"
+            },
+            {
+              "value": "below",
+              "label": "Below the icon"
+            },
+            {
+              "value": "left",
+              "label": "Left of the icon"
+            },
+            {
+              "value": "right",
+              "label": "Right of the icon"
+            }
+          ],
+          "default": "below"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_icon_color",
+          "label": "t:settings_schema.theme_colors.settings.icons.icons_color_label",
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "ignore_text_color",
+              "label": "t:settings_schema.color_palette.settings.ignore_text_color.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_icon_text_color",
+          "label": "t:settings_schema.theme_colors.settings.icons.icons_text_color_label",
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
+        }
+      ]
+    },
+    {
+      "type": "saalt_contact_links",
+      "name": "Saalt Contact Links",
+      "settings": [
+        {
+          "type": "select",
+          "id": "theme_color_contacts_icon_color",
+          "label": "t:settings_schema.theme_colors.settings.icons.icons_color_label",
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
+        }
+      ]
+    },
+    {
+      "type": "custom_liquid_code",
+      "name": "Liquid Code",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "liquid_code",
+          "label": "Liquid Code",
+          "info": "This allows for a bit more customization within this section. There are limitations to using this however. [Read about that here.](https://shopify.dev/themes/architecture/settings/input-settings#liquid)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Saalt Style 1 Tiles",
+      "category": "custom saalt section",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "section_tiles_group",
+          "settings": {}
+        },
+        {
+          "type": "saalt_style_1_tile",
+          "settings": {}
+        },
+        {
+          "type": "saalt_style_1_tile",
+          "settings": {}
+        },
+        {
+          "type": "saalt_style_1_tile",
+          "settings": {}
+        },
+        {
+          "type": "saalt_style_1_tile",
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
