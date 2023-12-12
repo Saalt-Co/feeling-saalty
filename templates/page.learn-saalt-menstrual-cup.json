@@ -408,6 +408,7 @@
         "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_content-1",
         "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_button-1"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
