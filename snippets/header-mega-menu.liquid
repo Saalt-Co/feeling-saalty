@@ -5,6 +5,9 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 
+{{ 'menu-and-filter-absorbency-icons.css' | asset_url | stylesheet_tag }}
+{{ 'menu-and-filter-saalt-wear-style-icons.css' | asset_url | stylesheet_tag }}
+
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
@@ -24,7 +27,7 @@
               </summary>
               <div
                 id="MegaMenu-Content-{{ forloop.index }}"
-                class="mega-menu__content gradient motion-reduce global-settings-popup"
+                class="mega-menu__content gradient motion-reduce global-settings-popup theme-color-text-ignore-children"
                 tabindex="-1"
               >
                 <ul
@@ -44,8 +47,32 @@
                       </a>
                       {%- if childlink.links != blank -%}
                         <ul class="list-unstyled" role="list">
+                          {%- liquid
+                            comment
+                              FOR ABSORBENCY ICONS
+                            endcomment
+                            assign absorbencies = ''
+                            for entry in shop.metaobjects.absorbency.values
+                              assign absorbencies = absorbencies | append: entry.absorbency_name
+                              unless forloop.last
+                                assign absorbencies = absorbencies | append: ', '
+                              endunless
+                            endfor
+                            assign split_absorbencies = absorbencies | split: ', '
+                            comment
+                              FOR STYLE ICONS
+                            endcomment
+                            assign styles = ''
+                            for entry in shop.metaobjects.saalt_wear_styles.values
+                              assign styles = styles | append: entry.style_name
+                              unless forloop.last
+                                assign styles = styles | append: ', '
+                              endunless
+                            endfor
+                            assign split_styles = styles | split: ', '
+                          -%}
                           {%- for grandchildlink in childlink.links -%}
-                            <li>
+                            <li class="mega-menu__link mega-menu__link--level-3 link">
                               <a
                                 href="{{ grandchildlink.url }}"
                                 class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"
@@ -53,7 +80,16 @@
                                   aria-current="page"
                                 {% endif %}
                               >
-                                {{ grandchildlink.title | escape }}
+                                <div class="link-title">{{ grandchildlink.title | escape }}</div>
+                                {%- liquid
+                                  assign child_link_downcased = childlink.title | downcase | strip
+                                -%}
+                                {% render 'menu-and-filter-icons',
+                                  value: grandchildlink.title,
+                                  split_absorbencies: split_absorbencies,
+                                  downcased_label: child_link_downcased,
+                                  split_styles: split_styles
+                                %}
                               </a>
                             </li>
                           {%- endfor -%}

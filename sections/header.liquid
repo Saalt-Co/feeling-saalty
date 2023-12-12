@@ -119,6 +119,7 @@
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart-count-bubble.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
 {%- if settings.cart_type == "drawer" -%}
   <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
@@ -151,15 +152,27 @@
   endfor
 -%}
 
-<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}">
+<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper {% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+  {%- liquid
+    assign social_links = false
+    assign localization_forms = false
+
+    if settings.social_twitter_link != blank or settings.social_facebook_link != blank or settings.social_pinterest_link != blank or settings.social_instagram_link != blank or settings.social_youtube_link != blank or settings.social_vimeo_link != blank or settings.social_tiktok_link != blank or settings.social_tumblr_link != blank or settings.social_snapchat_link != blank
+      assign social_links = true
+    endif
+
+    if localization.available_countries.size > 1 and section.settings.enable_country_selector or section.settings.enable_language_selector and localization.available_languages.size > 1
+      assign localization_forms = true
+    endif
+  -%}
+  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
     {%- liquid
       if section.settings.menu != blank
         render 'header-drawer'
       endif
 
       if section.settings.logo_position == 'top-center' or section.settings.menu == blank
-        render 'header-search', input_id: 'Search-In-Modal-1'
+        render 'header-search', section_id: section.id, theme_color_background: section.settings.theme_color_background, theme_color_text: section.settings.theme_color_text, search_input_opacity: section.settings.search_input_opacity, input_id: 'Search-In-Modal-1'
       endif
     -%}
 
@@ -236,9 +249,26 @@
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header__localization{% endif %}">
       <div class="desktop-localization-wrapper">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
-          <localization-form class="small-hide medium-hide">
+          <noscript class="small-hide medium-hide">
+            {%- form 'localization', id: 'HeaderCountryMobileFormNoScript', class: 'localization-form' -%}
+              <div class="localization-form__select">
+                <h2 class="visually-hidden" id="HeaderCountryMobileLabelNoScript">{{ 'localization.country_label' | t }}</h2>
+                <select class="localization-selector link" name="country_code" aria-labelledby="HeaderCountryMobileLabelNoScript">
+                  {%- for country in localization.available_countries -%}
+                    <option value="{{ country.iso_code }}" {%- if country.iso_code == localization.country.iso_code %} selected{% endif %}>
+                      {{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+                    </option>
+                  {%- endfor -%}
+                </select>
+                {% render 'icon-caret' %}
+              </div>
+              <button class="button button--tertiary">{{ 'localization.update_country' | t }}</button>
+            {%- endform -%}
+          </noscript>
+
+          <localization-form class="small-hide medium-hide no-js-hidden">
             {%- form 'localization', id: 'HeaderCountryForm', class: 'localization-form' -%}
-              <div class="no-js-hidden">
+              <div>
                 <h2 class="visually-hidden" id="HeaderCountryLabel">{{ 'localization.country_label' | t }}</h2>
                 {%- render 'country-localization', localPosition: 'HeaderCountry' -%}
               </div>
@@ -247,9 +277,26 @@
         {% endif %}
 
         {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
-          <localization-form class="small-hide medium-hide">
+          <noscript class="small-hide medium-hide">
+            {%- form 'localization', id: 'HeaderLanguageMobileFormNoScript', class: 'localization-form' -%}
+              <div class="localization-form__select">
+                <h2 class="visually-hidden" id="HeaderLanguageMobileLabelNoScript">{{ 'localization.language_label' | t }}</h2>
+                <select class="localization-selector link" name="locale_code" aria-labelledby="HeaderLanguageMobileLabelNoScript">
+                  {%- for language in localization.available_languages -%}
+                    <option value="{{ language.iso_code }}" lang="{{ language.iso_code }}" {%- if language.iso_code == localization.language.iso_code %} selected{% endif %}>
+                      {{ language.endonym_name | capitalize }}
+                    </option>
+                  {%- endfor -%}
+                </select>
+                {% render 'icon-caret' %}
+              </div>
+              <button class="button button--tertiary">{{ 'localization.update_language' | t }}</button>
+            {%- endform -%}
+          </noscript>
+
+          <localization-form class="small-hide medium-hide no-js-hidden">
             {%- form 'localization', id: 'HeaderLanguageForm', class: 'localization-form' -%}
-              <div class="no-js-hidden">
+              <div>
                 <h2 class="visually-hidden" id="HeaderLanguageLabel">{{ 'localization.language_label' | t }}</h2>
                 {%- render 'language-localization', localPosition: 'HeaderLanguage' -%}
               </div>
@@ -257,7 +304,12 @@
           </localization-form>
         {%- endif -%}
       </div>
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
+
+      {%- if section.settings.enable_saalt_country_selector -%}        
+        {% render 'country-selector', section: section %}
+      {%- endif -%}
+
+      {% render 'header-search', section_id: section.id, theme_color_background: section.settings.theme_color_background, theme_color_text: section.settings.theme_color_text, search_input_opacity: section.settings.search_input_opacity, input_id: 'Search-In-Modal' %}
 
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
@@ -281,30 +333,33 @@
         {%- endcase -%}
       {%- endfor -%}
 
-      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+      {%- if cart != empty -%}
         {%- liquid
-          if cart == empty
-            render 'icon-cart-empty'
-          else
-            render 'icon-cart'
+          if section.settings.theme_color_background != 'theme_default'
+            assign bg_color_num = section.settings.theme_color_background | slice: -1, 1
           endif
+          if section.settings.theme_color_text != 'theme_default'
+            assign text_color_num = section.settings.theme_color_text | slice: -1, 1
+          endif
+          assign bg_color_class = 'theme-color-bg-' | append: text_color_num
+          assign text_color_class = 'theme-color-text-' | append: bg_color_num
         -%}
-        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
-        {%- if cart != empty -%}
-          <div class="cart-count-bubble">
-            {%- if cart.item_count < 100 -%}
-              <span aria-hidden="true">{{ cart.item_count }}</span>
-            {%- endif -%}
-            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
-          </div>
-        {%- endif -%}
+        <script type="application/json" id="CartCountBubbleClasses">
+          {%- capture bubbleClassesJsonVals -%}
+          {"bg": {% if bg_color_class != 'theme-color-bg-' %}"{{ bg_color_class }}"{% else %}""{% endif %}, "text": {% if text_color_class != 'theme-color-text-' %}"{{ text_color_class }}"{% else %}""{% endif %}}
+          {%- endcapture -%}
+          {{- bubbleClassesJsonVals -}}
+        </script>
+      {%- endif -%}
+      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+        {% render 'cart-count-bubble', section: section %}
       </a>
     </div>
   </header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
 {%- if settings.cart_type == "notification" -%}
-  {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
+  {%- render 'cart-notification', desktop_menu_type: section.settings.menu_type_desktop -%}
 {%- endif -%}
 
 {% javascript %}
@@ -549,31 +604,126 @@
     },
     {
       "type": "select",
-      "id": "color_scheme",
+      "id": "theme_color_background",
+      "label": "t:settings_schema.theme_colors.settings.sections.background_color_label",
+      "info": "Sets the background color",
       "options": [
         {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
         },
         {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
+          "value": "theme-color-bg-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
         },
         {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
+          "value": "theme-color-bg-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
         },
         {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
+          "value": "theme-color-bg-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
         },
         {
-          "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
+          "value": "theme-color-bg-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-bg-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-bg-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-bg-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-bg-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
         }
       ],
-      "default": "background-1",
-      "label": "t:sections.all.colors.label"
+      "default": "theme_default"
+    },
+    {
+      "type": "select",
+      "id": "theme_color_text",
+      "label": "t:settings_schema.theme_colors.settings.sections.text_color_label",
+      "info": "Sets the text color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-text-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-text-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-text-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-text-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-text-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-text-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-text-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-text-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
+    },
+    {
+      "type": "range",
+      "id": "search_input_opacity",
+      "label": "Background opacity for the search input field",
+      "min": 0,
+      "max": 100,
+      "default": 25
+    },
+    {
+      "type": "header",
+      "content": "Saalt Country Selector",
+      "info": "This is a custom dropdown to allow customers the ability to travel between our country-specific stores. ❗️NOTE❗️: This list is populated based on the json data within the \"Country Selector\" metaobject."
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_saalt_country_selector",
+      "default": true,
+      "label": "Show custom Saalt country selector"
+    },
+    {
+      "type": "checkbox",
+      "id": "saalt_country_selector_new_tab",
+      "default": true,
+      "label": "Open in new tab",
+      "info": "Open country selector links in a new tab. Default is checked."
+    },
+    {
+      "type": "checkbox",
+      "id": "saalt_country_selector_include_current",
+      "default": false,
+      "label": "Include current country",
+      "info": "Includes the current store in the country selector. Default is UNchecked."
     },
     {
       "type": "header",

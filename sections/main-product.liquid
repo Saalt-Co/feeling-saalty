@@ -88,6 +88,12 @@
                   </h2>
                 </a>
               </div>
+            {%- when 'reviews_summary' -%}
+              {% render 'reviews-summary', product: product, block: block %}
+            {%- when 'absorbency' -%}
+              {% render 'product-absorbency', product: product, block: block %}
+            {%- when 'product_features' -%}
+              {% render 'product-features', product: product, section: section, block: block %}
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
@@ -97,9 +103,9 @@
                   price_class: 'price--large'
                 -%}
               </div>
-              {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+              {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
                 <div class="product__tax caption rte">
-                  {%- if shop.taxes_included -%}
+                  {%- if cart.taxes_included -%}
                     {{ 'products.product.include_taxes' | t }}
                   {%- endif -%}
                   {%- if shop.shipping_policy.body != blank -%}
@@ -179,23 +185,39 @@
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {%- when 'collapsible_tab' -%}
-              <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
-                <details id="Details-{{ block.id }}-{{ section.id }}">
-                  <summary>
-                    <div class="summary__title">
-                      {% render 'icon-accordion', icon: block.settings.icon %}
-                      <h2 class="h4 accordion__title inline-richtext">
-                        {{ block.settings.heading | default: block.settings.page.title }}
-                      </h2>
+              {%- if block.settings.content != blank or block.settings.page.content != blank -%}
+                <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
+                  <details id="Details-{{ block.id }}-{{ section.id }}">
+                    <summary>
+                      <div class="summary__title">
+                        {% render 'icon-accordion', icon: block.settings.icon %}
+                        <h2 class="h4 accordion__title inline-richtext">
+                          {{ block.settings.heading | default: block.settings.page.title }}
+                        </h2>
+                      </div>
+                      {% render 'icon-caret' %}
+                    </summary>
+                    <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                      {{ block.settings.content }}
+                      {{ block.settings.page.content }}
+                      {%- liquid
+                        if product.metafields.saalt.saalt_wear_collection != blank
+                          assign downcased_block_heading = block.settings.heading | downcase
+                          assign downcased_product_collection = product.metafields.saalt.saalt_wear_collection.value[0] | downcase
+                          if downcased_block_heading == "how it fits"
+                            for entry in shop.metaobjects.fit_range.values
+                            assign downcased_collection_name = entry.collection_name | downcase
+                              if downcased_collection_name == downcased_product_collection
+                                render 'saalt-main-fit-range', fit_range: entry
+                              endif
+                            endfor
+                          endif
+                        endif
+                      -%}
                     </div>
-                    {% render 'icon-caret' %}
-                  </summary>
-                  <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-                    {{ block.settings.content }}
-                    {{ block.settings.page.content }}
-                  </div>
-                </details>
-              </div>
+                  </details>
+                </div>
+              {%- endif -%}
             {%- when 'quantity_selector' -%}
               <div
                 id="Quantity-Form-{{ section.id }}"
@@ -329,7 +351,7 @@
                 >
                   <span
                     aria-hidden="true"
-                    class="rating-star color-icon-{{ settings.accent_icons }}"
+                    class="rating-star"
                     style="--rating: {{ product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ product.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"
                   ></span>
                 </div>
@@ -488,6 +510,10 @@
     <script src="{{ 'product-model.js' | asset_url }}" defer></script>
   {%- endif -%}
 
+  {%- if product.metafields.saalt.product_size_chart != blank -%}
+    {% render 'size-chart-modal' %}
+  {%- endif -%}
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       function isIE() {
@@ -514,6 +540,37 @@
       });
     });
   </script>
+
+  {% comment %} START -- Klaviyo Viewed Product Event {% endcomment %}
+  <script type="text/javascript">
+    var _learnq = _learnq || [];
+
+    var item = {
+      Name: {{ product.title|json }},
+      ProductID: {{ product.id|json }},
+      Categories: {{ product.collections|map:'title'|json }},
+      ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+      URL: "{{ shop.secure_url }}{{ product.url }}",
+      Brand: {{ product.vendor|json }},
+      Price: {{ product.price|money|json }},
+      CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+    };
+
+    _learnq.push(['track', 'Viewed Product', item]);
+    _learnq.push(['trackViewedItem', {
+      Title: item.Name,
+      ItemId: item.ProductID,
+      Categories: item.Categories,
+      ImageUrl: item.ImageURL,
+      Url: item.URL,
+      Metadata: {
+        Brand: item.Brand,
+        Price: item.Price,
+        CompareAtPrice: item.CompareAtPrice
+      }
+    }]);
+  </script>
+  {% comment %} END --  Klaviyo Viewed Product Event {% endcomment %}
 
   {%- liquid
     if product.selected_or_first_available_variant.featured_media
@@ -616,6 +673,28 @@
       "limit": 1
     },
     {
+      "type": "reviews_summary",
+      "name": "t:sections.main-product.blocks.reviews_summary.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.reviews_summary.info"
+        }
+      ]
+    },
+    {
+      "type": "absorbency",
+      "name": "t:sections.main-product.blocks.absorbency.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.absorbency.info"
+        }
+      ]
+    },
+    {
       "type": "price",
       "name": "t:sections.main-product.blocks.price.name",
       "limit": 1
@@ -711,6 +790,10 @@
             {
               "value": "button",
               "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.options__2.label"
+            },
+            {
+              "value": "color swatches",
+              "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.options__3.label"
             }
           ],
           "default": "button",
@@ -781,6 +864,10 @@
       "type": "collapsible_tab",
       "name": "t:sections.main-product.blocks.collapsible_tab.name",
       "settings": [
+        {
+          "type": "paragraph",
+          "content": "*NOTE* This will NOT appear on the PDP until \"Row content\" or \"Row content from page\" has a value. This is to prevent empty collapsible rows from accidentally appearing on the PDP."
+        },
         {
           "type": "text",
           "id": "heading",
@@ -1009,6 +1096,94 @@
         {
           "type": "paragraph",
           "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
+        }
+      ]
+    },
+    {
+      "type": "product_features",
+      "name": "t:sections.main-product.blocks.product_features.name",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.product_features.content"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.main-product.blocks.product_features.mobile_header"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_max_width",
+          "label": "t:sections.main-product.blocks.product_features.settings.mobile_icon_max_width.label",
+          "info": "t:sections.main-product.blocks.product_features.settings.mobile_icon_max_width.info",
+          "default": "3rem"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.main-product.blocks.product_features.desktop_header"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_width",
+          "label": "t:sections.main-product.blocks.product_features.settings.desktop_icon_max_width.label",
+          "info": "t:sections.main-product.blocks.product_features.settings.desktop_icon_max_width.info",
+          "default": "3rem"
+        },
+        {
+          "type": "select",
+          "id": "product_features_orientation",
+          "label": "t:sections.main-product.blocks.product_features.settings.product_features_orientation.label",
+          "info": "t:sections.main-product.blocks.product_features.settings.product_features_orientation.info",
+          "options": [
+            {
+              "value": "vertical",
+              "label": "t:sections.main-product.blocks.product_features.settings.product_features_orientation.options__1.label"
+            },
+            {
+              "value": "horizontal",
+              "label": "t:sections.main-product.blocks.product_features.settings.product_features_orientation.options__2.label"
+            }
+          ],
+          "default": "vertical"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.main-product.blocks.product_features.settings.horizontal_orientation_header"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_max_width",
+          "label": "t:sections.main-product.blocks.product_features.settings.desktop_icon_max_width.label",
+          "info": "t:sections.main-product.blocks.product_features.settings.desktop_icon_max_width.info",
+          "default": "50%"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_height",
+          "label": "t:sections.main-product.blocks.product_features.settings.desktop_icon_height.label",
+          "info": "t:sections.main-product.blocks.product_features.settings.desktop_icon_height.info",
+          "default": "75px"
+        },
+        {
+          "type": "select",
+          "id": "desktop_text_alignment",
+          "label": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.label",
+          "info": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.info",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.options__1.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.options__2.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.options__3.label"
+            }
+          ],
+          "default": "center"
         }
       ]
     },

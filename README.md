@@ -45,8 +45,17 @@ git remote add upstream https://github.com/Shopify/dawn.git
 git fetch upstream
 git pull upstream main
 ```
+5. After this is set, the preferred method here at Saalt is to globally set how to reconcile divergent branches:
+```sh
+git config --global pull.ff only
+```
+6. With that set, we can now pull changes from the upstream like so:
+```sh
+git pull upstream main --no-ff
+```
+**Note:** _Always_ check what is getting pulled in from the upstream before completing a merge. We owe it to ourselves to not just blindly merge in anything.
 
-## Developer tools
+## Developer tools 
 
 There are a number of really useful tools that the Shopify Themes team uses during development. Dawn is already set up to work with these tools.
 

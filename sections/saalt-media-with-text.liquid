@@ -1,0 +1,1609 @@
+{%- liquid
+  if section.settings.mobile_text_position == 'above'
+    assign mobile_flex_direction = 'column-reverse'
+  else
+    assign mobile_flex_direction = 'column'
+  endif
+  assign desktop_position = section.settings.desktop_text_position
+  case desktop_position
+    when 'right'
+      assign desktop_flex_direction = 'row'
+    when 'left'
+      assign desktop_flex_direction = 'row-reverse'
+    when 'below'
+      assign desktop_flex_direction = 'column'
+    when 'above'
+      assign desktop_flex_direction = 'column-reverse'
+  endcase
+-%}
+{%- case section.settings.title_font_size -%}
+  {%- when 'x-large' -%}
+    {%- capture title_css -%}
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 55px;
+    {%- endcapture -%}
+  {%- when 'large' -%}
+    {%- capture title_css -%}
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 55px;
+    {%- endcapture -%}
+  {%- when 'medium' -%}
+    {%- capture title_css -%}
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 44px;
+    {%- endcapture -%}
+  {%- else -%}
+    {%- capture title_css -%}
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 34px;
+  {%- endcapture -%}
+{%- endcase -%}
+{%- case section.settings.content_font_size -%}
+  {%- when 'x-large' -%}
+    {%- capture content_css -%}
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 45px;
+      letter-spacing: 0em;
+    {%- endcapture -%}
+  {%- when 'large' -%}
+    {%- capture content_css -%}
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 41.25px;
+    {%- endcapture -%}
+  {%- when 'medium' -%}
+    {%- capture content_css -%}
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+    {%- endcapture -%}
+  {%- else -%}
+    {%- capture content_css -%}
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  {%- endcapture -%}
+{%- endcase -%}
+<section
+  id="section-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+  class="section-image-with-text"
+  {{ block.shopify_attributes }}
+>
+  <div
+    {% if section.settings.section_id != blank %}
+      id="{{ section.settings.section_id | handleize }}"
+    {% endif -%}
+    class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %} scroll-trigger animate--fade-in"
+  >
+    {%- case section.settings.media_type -%}
+      {%- when 'code' -%}
+        <div class="media-wrapper" {{ block.shopify_attributes }}>
+          <div class="code-wrapper" {{ block.shopify_attributes }}>
+            {{ section.settings.custom_code }}
+          </div>
+        </div>
+      {%- when 'video' -%}
+        {%- render 'saalt-video-for-media-section', video_obj: section.settings.video -%}
+      {%- when 'image' -%}
+        {%- render 'saalt-image-for-media-section', section: section -%}
+    {%- endcase -%}
+    {%- render 'saalt-img-vid-text-style-1', section: section -%}
+  </div>
+</section>
+
+{%- style -%}
+    #section-{{ section.id }} .section-inner {
+      display: flex;
+      position: relative;
+      flex-direction: {{ mobile_flex_direction }};
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+    #section-{{ section.id }} .media-wrapper, #section-{{ section.id }} .media-wrapper img, #section-{{ section.id }} .media-wrapper video {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    #section-{{ section.id }} .media-wrapper video {
+      cursor: pointer;
+    }
+    #section-{{ section.id }} .media-wrapper .code-wrapper {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+    }
+    #section-{{ section.id }} .media-wrapper .code-wrapper iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+    #section-{{ section.id }} .text-wrapper {
+      width: 100%;
+      text-align: {{ section.settings.mobile_text_alignment }};
+      padding: 4rem 2rem;
+    }
+    #section-{{ section.id }} .text-wrapper > * {
+      margin-top: 0;
+      margin-bottom: 3rem;
+    }
+    #section-{{ section.id }} .text-wrapper .section-title, #section-{{ section.id }} .text-wrapper .section-content, #section-{{ section.id }} .text-wrapper .section-content > p {
+      width: 100%;
+    }
+    #section-{{ section.id }} .text-wrapper .section-title {
+      {{ title_css }}
+    }
+    #section-{{ section.id }} .text-wrapper .section-content > p {
+      {{ content_css }}
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 4rem;
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
+      flex-direction: column;
+      font-size: 2rem;
+      gap: 1rem;
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact, #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact-content {
+      font-size: clamp(1.75rem, 1.5vw, 2.25rem);
+      line-height: 1.25;
+      text-align: left;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image svg {
+      width: auto;
+      max-width: 3rem;
+      max-height: 3rem;
+    }
+    #section-{{ section.id }} .icons-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper, #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+      display: flex;
+      width: 100%;
+    }
+    #section-{{ section.id }} .icons-wrapper {
+      flex-wrap: wrap;
+      padding-left: 0;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper {
+      flex-direction: column;
+      gap: 1rem;
+      overflow: hidden;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-column {
+      flex-direction: column;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-reverse-column {
+      flex-direction: column-reverse;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-row {
+      flex-direction: row;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-reverse-row {
+      flex-direction: row-reverse;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
+      width: 100%;
+      height: auto;
+    }
+    #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    #section-{{ section.id }} .section-inner .text-wrapper .button-group {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
+      width: auto;
+    }
+    #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
+      text-align: {{ section.settings.mobile_text_alignment }};
+    }
+    #section-{{ section.id }} .section-inner .text-wrapper > *:last-child {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 420px) {
+      #section-{{ section.id }} .text-wrapper .contact-wrapper .contact {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    @media screen and (min-width: 750px) {
+      #section-{{ section.id }} .section-inner {
+        flex-direction: {{ desktop_flex_direction }};
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    {%- if section.settings.media_type != "none" -%}
+      {%- if desktop_position == "left" or desktop_position == "right" -%}
+      #section-{{ section.id }} .media-wrapper {
+        max-width: {{ section.settings.media_width }}%;
+      }
+      {%- endif -%}
+      {%- if section.settings.use_max_media_width -%}
+      #section-{{ section.id }} .media-wrapper {
+        max-width: {{ section.settings.max_media_width }};
+        margin: 0 auto;
+      }
+      {%- endif -%}
+    {%- endif -%}
+      #section-{{ section.id }} .text-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      {%- if section.settings.media_type == "none" or desktop_position == "above" or desktop_position == "below" -%}
+        width: 100%;
+      {%- else -%}
+        width: {{ section.settings.media_width | minus: 100 | times: -1 | append: "%" }};
+      {%- endif -%}
+        padding: 4rem;
+        text-align: {{ section.settings.desktop_text_alignment }};
+      }
+      #section-{{ section.id }} .text-wrapper .contact-wrapper {
+        width: 100%;
+        gap: 4rem;
+        {%- if section.settings.desktop_text_alignment == "left" -%}
+        justify-content: flex-start;
+        {%- elsif section.settings.desktop_text_alignment == "right" -%}
+        justify-content: flex-end;
+        {%- endif -%};
+      }
+      #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
+        height: auto;
+      }
+      #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
+        text-align: {{ section.settings.desktop_text_alignment }};
+      }
+      #section-{{ section.id }} .section-inner .text-wrapper .button-group .button {
+        width: auto;
+      }
+    {%- if section.settings.use_max_text_width -%}
+      #section-{{ section.id }} .text-wrapper > *:not(.icons-wrapper) {
+        max-width: {{ section.settings.max_width }};
+      }
+    {%- endif -%}
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-column {
+      flex-direction: column;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-reverse-column {
+      flex-direction: column-reverse;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-row {
+      flex-direction: row;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-reverse-row {
+      flex-direction: row-reverse;
+    }
+  }
+{%- endstyle -%}
+{% schema %}
+{
+  "name": "Saalt Media With Text",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID (Optional)",
+      "info": "t:sections.all.section_id.info"
+    },
+    {
+      "type": "header",
+      "content": "Section styling"
+    },
+    {
+      "type": "select",
+      "id": "theme_color_background",
+      "label": "t:settings_schema.theme_colors.settings.sections.background_color_label",
+      "info": "Sets the background color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-bg-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-bg-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-bg-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-bg-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-bg-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-bg-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-bg-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-bg-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
+    },
+    {
+      "type": "select",
+      "id": "theme_color_text",
+      "label": "t:settings_schema.theme_colors.settings.sections.text_color_label",
+      "info": "Sets the text color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-text-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-text-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-text-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-text-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-text-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-text-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-text-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-text-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
+    },
+    {
+      "type": "header",
+      "content": "Media Settings"
+    },
+    {
+      "type": "select",
+      "id": "media_type",
+      "label": "Media type",
+      "options": [
+        {
+          "value": "image",
+          "label": "Image"
+        },
+        {
+          "value": "video",
+          "label": "Video"
+        },
+        {
+          "value": "code",
+          "label": "Custom Code"
+        },
+        {
+          "value": "none",
+          "label": "None"
+        }
+      ],
+      "default": "image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Shopify-hosted *IMAGE*"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Shopify-hosted *VIDEO*"
+    },
+    {
+      "type": "liquid",
+      "id": "custom_code",
+      "label": "Custom Code (HTML or Liquid)",
+      "info": "This custom code area accepts HTML or Liquid. Css inside of html style tags are also accepted but probably better added as \"Liquid Code\" blocks if that's all you want to add."
+    },
+    {
+      "type": "checkbox",
+      "id": "use_max_media_width",
+      "label": "Use desktop max width for media?",
+      "info": "This sets the max width of the media *ON DESKTOP*"
+    },
+    {
+      "type": "text",
+      "id": "max_media_width",
+      "label": "Max Width Value",
+      "info": "Any valid css value is accepted",
+      "default": "700px"
+    },
+    {
+      "type": "range",
+      "id": "media_width",
+      "label": "Image/Video width in % for *DESKTOP*",
+      "default": 50,
+      "min": 1,
+      "max": 100
+    },
+    {
+      "type": "header",
+      "content": "Text Settings"
+    },
+    {
+      "type": "select",
+      "id": "title_font_size",
+      "label": "Title font size",
+      "info": "This sets the font size for *all* section titles",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small (30px)"
+        },
+        {
+          "value": "medium",
+          "label": "Medium (40px)"
+        },
+        {
+          "value": "large",
+          "label": "Large (48px)"
+        },
+        {
+          "value": "x-large",
+          "label": "X-Large (50px)"
+        }
+      ],
+      "default": "small"
+    },
+    {
+      "type": "select",
+      "id": "content_font_size",
+      "label": "Content font size",
+      "info": "This sets the font size for *all* section content",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small (16px)"
+        },
+        {
+          "value": "medium",
+          "label": "Medium (18px)"
+        },
+        {
+          "value": "large",
+          "label": "Large (25px)"
+        },
+        {
+          "value": "x-large",
+          "label": "X-Large (30px)"
+        }
+      ],
+      "default": "small"
+    },
+    {
+      "type": "header",
+      "content": "Mobile Text Settings"
+    },
+    {
+      "type": "select",
+      "id": "mobile_text_position",
+      "label": "Text position on *MOBILE*",
+      "options": [
+        {
+          "value": "above",
+          "label": "Above any media"
+        },
+        {
+          "value": "below",
+          "label": "Below any media"
+        }
+      ],
+      "default": "below"
+    },
+    {
+      "type": "select",
+      "id": "mobile_text_alignment",
+      "label": "Text alignment on *MOBILE*",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "justify",
+          "label": "Justify"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Text Settings"
+    },
+    {
+      "type": "select",
+      "id": "desktop_text_position",
+      "label": "Text position on *DESKTOP*",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left of the media"
+        },
+        {
+          "value": "right",
+          "label": "Right of the media"
+        },
+        {
+          "value": "above",
+          "label": "Above the media"
+        },
+        {
+          "value": "below",
+          "label": "Below the media"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "select",
+      "id": "desktop_text_alignment",
+      "label": "Text alignment on *DESKTOP ONLY*",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "justify",
+          "label": "Justify"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_max_text_width",
+      "label": "Use desktop max width for text content?",
+      "info": "This sets the max width of the text content *ON DESKTOP*"
+    },
+    {
+      "type": "text",
+      "id": "max_width",
+      "label": "Max Width Value",
+      "info": "Any valid css value is accepted",
+      "default": "600px"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "section_title",
+      "name": "Section Title",
+      "settings": [
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading Tag",
+          "options": [
+            {
+              "value": "1",
+              "label": "H1"
+            },
+            {
+              "value": "2",
+              "label": "H2"
+            },
+            {
+              "value": "3",
+              "label": "H3"
+            }
+          ],
+          "default": "1"
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Title",
+          "default": "Section Title Goes Here"
+        }
+      ]
+    },
+    {
+      "type": "section_content",
+      "name": "Section Content",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text_content",
+          "label": "Text content",
+          "default": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.</p>"
+        }
+      ]
+    },
+    {
+      "type": "section_buttons_group",
+      "name": "Section Buttons Group",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "❗️NOTE❗️: This is just a parent element/container to wrap around section button blocks. Please be sure to also add section button blocks or this will appear empty. Drag and drop this to move the buttons within the section."
+        },
+        {
+          "type": "select",
+          "id": "desktop_button_group_alignment",
+          "label": "Button Group Alignment on *DESKTOP*",
+          "info": "❗️Add section buttons in the previous menu ❗️",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            }
+          ],
+          "default": "flex-start"
+        },
+        {
+          "type": "text",
+          "id": "desktop_buttons_group_gap",
+          "label": "Space Between Buttons on *DESKTOP*",
+          "info": "Distance between buttons for the entire buttons group. Any valid css value is accepted.",
+          "default": "1rem"
+        }
+      ]
+    },
+    {
+      "type": "section_button",
+      "name": "Section Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Button text"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button Destination"
+        },
+        {
+          "type": "select",
+          "id": "button_type",
+          "label": "t:settings_schema.theme_colors.settings.buttons.button_type_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.button_type_info",
+          "options": [
+            {
+              "value": "primary",
+              "label": "Primary"
+            },
+            {
+              "value": "secondary",
+              "label": "Secondary"
+            }
+          ],
+          "default": "primary"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_section_button_background",
+          "label": "t:settings_schema.theme_colors.settings.buttons.static_bg_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.static_bg_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-bg-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-bg-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-bg-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-bg-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-bg-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-bg-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-bg-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-bg-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_text_section_button_text",
+          "label": "t:settings_schema.theme_colors.settings.buttons.static_text_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.static_text_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_section_button_background_hover",
+          "label": "t:settings_schema.theme_colors.settings.buttons.hover_bg_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.hover_bg_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-bg-0-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-bg-1-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-bg-2-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-bg-3-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-bg-4-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-bg-5-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-bg-6-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-bg-7-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_text_section_button_text_hover",
+          "label": "t:settings_schema.theme_colors.settings.buttons.hover_text_label",
+          "info": "t:settings_schema.theme_colors.settings.buttons.hover_text_info",
+          "options": [
+            {
+              "value": "theme_default",
+              "label": "t:settings_schema.color_palette.settings.theme_default.label"
+            },
+            {
+              "value": "theme-color-text-0-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7-hover",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "theme_default"
+        }
+      ]
+    },
+    {
+      "type": "section_icon_group",
+      "name": "SVG Icon Group",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "❗️NOTE❗️: This is just a parent element/container to wrap around SVG icon blocks. Please be sure to also add SVG icon blocks or this will appear empty. Drag and drop this to move the icons within the section."
+        },
+        {
+          "type": "header",
+          "content": "Mobile Icon Group Settings"
+        },
+        {
+          "type": "select",
+          "id": "mobile_icons_display",
+          "label": "Display of icons on mobile",
+          "info": "This controls the presentation of icons within the icons group on mobile",
+          "options": [
+            {
+              "value": "row",
+              "label": "Wrapping Row"
+            },
+            {
+              "value": "column",
+              "label": "Column"
+            },
+            {
+              "value": "grid",
+              "label": "Grid"
+            }
+          ],
+          "default": "row"
+        },
+        {
+          "type": "select",
+          "id": "mobile_icon_group_horizontal_alignment",
+          "label": "Icon group horizontal alignment on mobile",
+          "info": "Sets the horizontal alignment of all icon wrappers in the group",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            },
+            {
+              "value": "space-evenly",
+              "label": "Space evenly"
+            },
+            {
+              "value": "space-between",
+              "label": "Use space between"
+            },
+            {
+              "value": "space-around",
+              "label": "Use space around"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "mobile_icon_group_vertical_alignment",
+          "label": "Icon group vertical alignment on mobile",
+          "info": "Sets the vertical alignment of icon wrappers in the group",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Bottom"
+            },
+            {
+              "value": "space-evenly",
+              "label": "Space evenly"
+            },
+            {
+              "value": "space-between",
+              "label": "Use space between"
+            },
+            {
+              "value": "space-around",
+              "label": "Use space around"
+            }
+          ],
+          "default": "flex-start"
+        },
+        {
+          "type": "number",
+          "id": "mobile_icon_grid_columns",
+          "label": "Icon grid columns",
+          "info": "If the display of icons on mobile is set to \"grid\", how many columns should be shown? The default is 2",
+          "default": 2
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_group_gap",
+          "label": "Space between icons on mobile",
+          "info": "Distance between icons for the entire icon group. Any valid css value is accepted.",
+          "default": "3.5rem"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_text_size",
+          "label": "Mobile font size",
+          "info": "Any valid css value for 'font-size' is accepted. Default is 1.5rem",
+          "default": "1.5rem"
+        },
+        {
+          "type": "header",
+          "content": "Mobile Icon Wrapper Settings"
+        },
+        {
+          "type": "select",
+          "id": "mobile_icon_horizontal_alignment",
+          "label": "Icon wrapper horizontal alignment on mobile",
+          "info": "Sets the horizontal alignment of icon and text within an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "mobile_icon_vertical_alignment",
+          "label": "Icon wrapper vertical alignment on mobile",
+          "info": "Sets the vertical alignment of icon and text for an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Bottom"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_min_width",
+          "label": "Icon wrapper min-width on mobile",
+          "info": "Minimum width for icon wrapper elements. This is the contianer for the SVG and the text Any valid css value is accepted.",
+          "default": "80px"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_wrapper_max_width",
+          "label": "Icon wrapper max-width on mobile",
+          "info": "Maximum width for icon wrapper elements. This is the contianer for the SVG and the text Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_max_width",
+          "label": "SVG max-width on mobile",
+          "info": "This is the maximum width an SVG will take up within the icon wrapper. Any valid css value is accepted.",
+          "default": "100%"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_height",
+          "label": "Icon height on mobile",
+          "info": "Minimum height for SVGs inside of the icon wrappers. This helps ensure they're all the same size vertically. Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "header",
+          "content": "Desktop Icon Group Settings"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_max_icon_group_width",
+          "label": "Use desktop max width for icons group?",
+          "info": "This sets the max width of the icons group *ON DESKTOP*"
+        },
+        {
+          "type": "text",
+          "id": "icon_group_max_width",
+          "label": "Icon group max-width",
+          "info": "Max width for the entire icon group. Any valid css value is accepted.",
+          "default": "600px"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icons_display",
+          "label": "Display of icons on desktop",
+          "info": "This controls the presentation of icons within the icons group on desktop",
+          "options": [
+            {
+              "value": "row",
+              "label": "Wrapping Row"
+            },
+            {
+              "value": "column",
+              "label": "Column"
+            },
+            {
+              "value": "grid",
+              "label": "Grid"
+            }
+          ],
+          "default": "row"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_group_horizontal_alignment",
+          "label": "Icon group horizontal alignment on desktop",
+          "info": "Sets the horizontal alignment of icon and text for an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            },
+            {
+              "value": "space-evenly",
+              "label": "Space evenly"
+            },
+            {
+              "value": "space-between",
+              "label": "Use space between"
+            },
+            {
+              "value": "space-around",
+              "label": "Use space around"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_group_vertical_alignment",
+          "label": "Icon group vertical alignment on desktop",
+          "info": "Sets the vertical alignment of icon and text for an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Bottom"
+            },
+            {
+              "value": "space-evenly",
+              "label": "Space evenly"
+            },
+            {
+              "value": "space-between",
+              "label": "Use space between"
+            },
+            {
+              "value": "space-around",
+              "label": "Use space around"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "number",
+          "id": "desktop_icon_grid_columns",
+          "label": "Icon grid columns",
+          "info": "If the display of icons on desktop is set to \"grid\", how many columns should be shown? The default is 2",
+          "default": 2
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_group_gap",
+          "label": "Space between icons on desktop",
+          "info": "Distance between icons for the entire icon group. Any valid css value is accepted.",
+          "default": "3.5rem"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_text_size",
+          "label": "Text font size on desktop",
+          "info": "Any valid css value for 'font-size' is accepted. Default is 1.5rem",
+          "default": "1.5rem"
+        },
+        {
+          "type": "header",
+          "content": "Desktop Icon Wrapper Settings"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_horizontal_alignment",
+          "label": "Icon wrapper horizontal alignment on desktop",
+          "info": "Sets the horizontal alignment of icon and text within an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_vertical_alignment",
+          "label": "Icon wrapper vertical alignment on desktop",
+          "info": "Sets the vertical alignment of icon and text for an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Bottom"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_min_width",
+          "label": "Icon wrapper min-width on desktop",
+          "info": "Minimum width for icon wrapper elements. This is the contianer for the SVG and the text Any valid css value is accepted.",
+          "default": "80px"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_wrapper_max_width",
+          "label": "Icon wrapper max-width on desktop",
+          "info": "Maximum width for icon wrapper elements. This is the contianer for the SVG and the text Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_max_width",
+          "label": "SVG max-width on desktop",
+          "info": "This is the maximum width an SVG will take up within the icon wrapper. Any valid css value is accepted.",
+          "default": "100%"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_height",
+          "label": "Icon height on desktop",
+          "info": "Minimum height for SVGs inside of the icon wrappers. This helps ensure they're all the same size vertically. Any valid css value is accepted.",
+          "default": "100px"
+        }
+      ]
+    },
+    {
+      "type": "section_icon_with_text",
+      "name": "SVG Icon",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "❗️NOTE❗️ Be sure to add an 'SVG Icon Group' block or this will not show up!"
+        },
+        {
+          "type": "html",
+          "id": "icon_svg",
+          "label": "Icon SVG code",
+          "info": "Paste icon svg code here. Be sure to remove any 'fill' and 'stroke' attributes to ensure proper styling."
+        },
+        {
+          "type": "richtext",
+          "id": "icon_text",
+          "label": "Text",
+          "info": "Text is optional"
+        },
+        {
+          "type": "select",
+          "id": "mobile_icon_text_position",
+          "label": "Mobile icon text position",
+          "info": "Where the text should be in relation to the SVG icon on mobile",
+          "options": [
+            {
+              "value": "above",
+              "label": "Above the icon"
+            },
+            {
+              "value": "below",
+              "label": "Below the icon"
+            },
+            {
+              "value": "left",
+              "label": "Left of the icon"
+            },
+            {
+              "value": "right",
+              "label": "Right of the icon"
+            }
+          ],
+          "default": "below"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_text_position",
+          "label": "Desktop icon text position",
+          "info": "Where the text should be in relation to the SVG icon on desktop",
+          "options": [
+            {
+              "value": "above",
+              "label": "Above the icon"
+            },
+            {
+              "value": "below",
+              "label": "Below the icon"
+            },
+            {
+              "value": "left",
+              "label": "Left of the icon"
+            },
+            {
+              "value": "right",
+              "label": "Right of the icon"
+            }
+          ],
+          "default": "below"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_icon_color",
+          "label": "t:settings_schema.theme_colors.settings.icons.icons_color_label",
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "ignore_text_color",
+              "label": "t:settings_schema.color_palette.settings.ignore_text_color.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
+        },
+        {
+          "type": "select",
+          "id": "theme_color_icon_text_color",
+          "label": "t:settings_schema.theme_colors.settings.icons.icons_text_color_label",
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
+        }
+      ]
+    },
+    {
+      "type": "saalt_contact_links",
+      "name": "Saalt Contact Links",
+      "settings": [
+        {
+          "type": "select",
+          "id": "theme_color_contacts_icon_color",
+          "label": "t:settings_schema.theme_colors.settings.icons.icons_color_label",
+          "options": [
+            {
+              "value": "match_text",
+              "label": "t:settings_schema.color_palette.settings.match_text.label"
+            },
+            {
+              "value": "theme-color-text-0",
+              "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+            },
+            {
+              "value": "theme-color-text-1",
+              "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+            },
+            {
+              "value": "theme-color-text-2",
+              "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+            },
+            {
+              "value": "theme-color-text-3",
+              "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+            },
+            {
+              "value": "theme-color-text-4",
+              "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+            },
+            {
+              "value": "theme-color-text-5",
+              "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+            },
+            {
+              "value": "theme-color-text-6",
+              "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+            },
+            {
+              "value": "theme-color-text-7",
+              "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+            }
+          ],
+          "default": "match_text"
+        }
+      ]
+    },
+    {
+      "type": "custom_liquid_code",
+      "name": "Liquid Code",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "liquid_code",
+          "label": "Liquid Code",
+          "info": "This allows for a bit more customization within this section. There are limitations to using this however. [Read about that here.](https://shopify.dev/themes/architecture/settings/input-settings#liquid)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Saalt Media With Text",
+      "category": "custom saalt section",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "section_title",
+          "settings": {}
+        },
+        {
+          "type": "section_content",
+          "settings": {}
+        },
+        {
+          "type": "section_buttons_group",
+          "settings": {}
+        },
+        {
+          "type": "section_button",
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

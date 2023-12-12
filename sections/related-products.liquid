@@ -2,6 +2,9 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'section-related-products.css' | asset_url | stylesheet_tag }}
 
+{{ 'component-product-card-swatches.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'product-card-swatches.js' | asset_url }}" defer="defer"></script>
+
 {% if section.settings.image_shape == 'blob' %}
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
@@ -19,8 +22,7 @@
     }
   }
 {%- endstyle -%}
-
-<div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden">
+<div class="{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }} svg-color-fill{% endif %} no-js-hidden{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
   <product-recommendations
     class="related-products page-width section-{{ section.id }}-padding isolate"
     data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}"
@@ -41,7 +43,8 @@
               image_shape: section.settings.image_shape,
               show_secondary_image: section.settings.show_secondary_image,
               show_vendor: section.settings.show_vendor,
-              show_rating: section.settings.show_rating
+              show_rating: section.settings.show_rating,
+              show_swatches: section.settings.show_swatches
             %}
           </li>
         {% endfor %}
@@ -109,32 +112,93 @@
     },
     {
       "type": "select",
-      "id": "color_scheme",
+      "id": "theme_color_background",
+      "label": "t:settings_schema.theme_colors.settings.sections.background_color_label",
+      "info": "Sets the background color",
       "options": [
         {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
         },
         {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
+          "value": "theme-color-bg-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
         },
         {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
+          "value": "theme-color-bg-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
         },
         {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
+          "value": "theme-color-bg-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
         },
         {
-          "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
+          "value": "theme-color-bg-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-bg-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-bg-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-bg-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-bg-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
         }
       ],
-      "default": "background-1",
-      "label": "t:sections.all.colors.label",
-      "info": "t:sections.all.colors.has_cards_info"
+      "default": "theme_default"
+    },
+    {
+      "type": "select",
+      "id": "theme_color_text",
+      "label": "t:settings_schema.theme_colors.settings.sections.text_color_label",
+      "info": "Sets the text color",
+      "options": [
+        {
+          "value": "theme_default",
+          "label": "t:settings_schema.color_palette.settings.theme_default.label"
+        },
+        {
+          "value": "theme-color-text-0",
+          "label": "t:settings_schema.color_palette.settings.palette_color_0.label"
+        },
+        {
+          "value": "theme-color-text-1",
+          "label": "t:settings_schema.color_palette.settings.palette_color_1.label"
+        },
+        {
+          "value": "theme-color-text-2",
+          "label": "t:settings_schema.color_palette.settings.palette_color_2.label"
+        },
+        {
+          "value": "theme-color-text-3",
+          "label": "t:settings_schema.color_palette.settings.palette_color_3.label"
+        },
+        {
+          "value": "theme-color-text-4",
+          "label": "t:settings_schema.color_palette.settings.palette_color_4.label"
+        },
+        {
+          "value": "theme-color-text-5",
+          "label": "t:settings_schema.color_palette.settings.palette_color_5.label"
+        },
+        {
+          "value": "theme-color-text-6",
+          "label": "t:settings_schema.color_palette.settings.palette_color_6.label"
+        },
+        {
+          "value": "theme-color-text-7",
+          "label": "t:settings_schema.color_palette.settings.palette_color_7.label"
+        }
+      ],
+      "default": "theme_default"
     },
     {
       "type": "header",
@@ -219,6 +283,12 @@
       "default": false,
       "label": "t:sections.related-products.settings.show_rating.label",
       "info": "t:sections.related-products.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_swatches",
+      "default": false,
+      "label": "t:sections.related-products.settings.show_swatches.label"
     },
     {
       "type": "header",

@@ -1,0 +1,284 @@
+<link rel="preconnect dns-prefetch" href="https://triplewhale-pixel.web.app/" crossorigin>
+<link rel="preconnect dns-prefetch" href="https://api.config-security.com/" crossorigin>
+
+<script>
+  /* >> TriplePixel :: start*/
+  ~(function (W, H, A, L, E, _, B, N) {
+    function O(U, T, H, R) {
+      void 0 === R && (R = !1),
+        (H = new XMLHttpRequest()),
+        H.open('GET', U, !0),
+        H.send(null),
+        (H.onreadystatechange = function () {
+          4 === H.readyState && 200 === H.status
+            ? ((R = H.responseText), U.includes('.txt') ? eval(R) : (N[B] = R))
+            : (299 < H.status || H.status < 200) && T && !R && ((R = !0), O(U, T - 1));
+        });
+    }
+    if (((N = window), !N[H + 'sn'])) {
+      N[H + 'sn'] = 1;
+      try {
+        A.setItem(H, 1 + (0 | A.getItem(H) || 0)),
+          (E = JSON.parse(A.getItem(H + 'U') || '[]')).push(location.href),
+          A.setItem(H + 'U', JSON.stringify(E));
+      } catch (e) {}
+      A.getItem('"!nC`') ||
+        ((A = N),
+        A[H] ||
+          ((L = function () {
+            return Date.now().toString(36) + '_' + Math.random().toString(36);
+          }),
+          (E = A[H] =
+            function (t, e) {
+              return (W = L()), (E._q = E._q || []).push([W, t, e]), W;
+            }),
+          (E.ch = W),
+          (B = 'configSecurityConfModel'),
+          (N[B] = 1),
+          O('//conf.config-security.com/model', 0),
+          O('//triplewhale-pixel.web.app/triplefw.txt?', 5)));
+    }
+  })('', 'TriplePixel', localStorage);
+  /* << TriplePixel :: end*/
+</script>
+<script>
+  /* >> TriplePixel :: start*/
+  ~(function (W, H, A, L, E) {
+    try {
+      A.setItem(H, 1 + (0 | A.getItem(H) || 0)),
+        W.includes('⇈') && A.setItem(H + 'Stg', 1 + (0 | A.getItem(H + 'Stg') || 0));
+    } catch (e) {}
+    function O(T, R) {
+      void 0 === R && (R = !1),
+        (H = new XMLHttpRequest()),
+        H.open('GET', '//triplewhale-pixel.web.app/triplepx.txt?' + ~(Date.now() / 9e7), !0),
+        H.send(null),
+        (H.onreadystatechange = function () {
+          4 === H.readyState && 200 === H.status
+            ? setTimeout(function () {
+                return eval(H.responseText);
+              }, 50)
+            : (299 < H.status || H.status < 200) && T && !R && ((R = !0), O(T - 1));
+        });
+    }
+    (A = window),
+      A[H] ||
+        ((L = function () {
+          return 'tp..' + Date.now().toString(36) + Math.random().toString(36);
+        }),
+        (E = A[H] =
+          function (t, e, n) {
+            return (W = L()), (E._q = E._q || []).push([W, e, n]), W;
+          }),
+        (E.ch = W),
+        O(5));
+  })('', 'TriplePixel', localStorage);
+  /* << TriplePixel :: end*/
+</script>
+
+<!-- Begin BlackCrow Script Tag: DO NOT MODIFY! -->
+<script
+  type="text/javascript"
+  async
+  src="https://shopify-init.blackcrow.ai/js/core/saalt-company.js?shopify_app_version=1.0.113&shop=saalt-company.myshopify.com"
+></script>
+<!-- End BlackCrow Script Tag -->
+
+<!-- Google AdWords Dynamic Remarketing -->
+{% render 'adwords-dynamic-remarketing' %}
+
+<meta name="google-site-verification" content="XWct1su-6VZ3_uEWuCx7IH0hYV4rm0p4RpZuETj0aeY">
+<meta name="facebook-domain-verification" content="wcn3j84nqdhh48lzvgr7h6s1pr797j">
+
+<script>
+  // This allows to expose several variables to the global scope, to be used in scripts
+  window.theme = {
+    pageType: {{ request.page_type | json }},
+    moneyFormat: {{ shop.money_format | json }},
+    moneyWithCurrencyFormat: {{ shop.money_with_currency_format | json }},
+    productImageSize: {{ settings.product_image_size | json }},
+    searchMode: {{ settings.search_mode | json }},
+    showPageTransition: {{ settings.show_page_transition | json }},
+    showElementStaggering: {{ settings.show_element_staggering | json }},
+    showImageZooming: {{ settings.show_image_zooming | json }}
+  };
+
+  window.routes = {
+    rootUrl: {{ routes.root_url | json }},
+    cartUrl: {{ routes.cart_url | json }},
+    cartAddUrl: {{ routes.cart_add_url | json }},
+    cartChangeUrl: {{ routes.cart_change_url | json }},
+    searchUrl: {{ routes.search_url | json }},
+    productRecommendationsUrl: {{ routes.product_recommendations_url | json }}
+  };
+
+  window.languages = {
+    cartAddNote: {{ 't:settings_schema.cart.general.add_note' }},
+    cartEditNote: {{ 't:settings_schema.cart.general.edit_note' }},
+    productImageLoadingError: {{ 't:settings_schema.product.slideshow.image_loading_error' }},
+    productFormAddToCart: {% if product.template_suffix == 'pre-order'%}{{ 't:settings_schema.product.form.pre_order' }}{% elsif product.template_suffix == 'new-pre-order'%} {{ 't:settings_schema.product.form.add_to_cart' }}  {% else %}{{ 't:settings_schema.product.form.add_to_cart' }}{% endif %},
+    productFormUnavailable: {{ 't:settings_schema.product.form.unavailable' }},
+    productFormSoldOut: {{ 't:settings_schema.product.form.sold_out' }},
+    shippingEstimatorOneResult: {{ 't:settings_schema.cart.shipping_estimator.one_result_title' }},
+    shippingEstimatorMoreResults: {{ 't:settings_schema.cart.shipping_estimator.more_results_title' }},
+    shippingEstimatorNoResults: {{ 't:settings_schema.cart.shipping_estimator.no_results_title' }}
+  };
+  {% comment %} or product.template_suffix == 'new-pre-order'  {% endcomment %}
+  window.lazySizesConfig = {
+    loadHidden: false,
+    hFac: 0.5,
+    expFactor: 2,
+    ricTimeout: 150,
+    lazyClass: 'Image--lazyLoad',
+    loadingClass: 'Image--lazyLoading',
+    loadedClass: 'Image--lazyLoaded'
+  };
+
+  document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  document.documentElement.style.setProperty('--window-height', window.innerHeight + 'px');
+
+  // We do a quick detection of some features (we could use Modernizr but for so little...)
+  (function() {
+    document.documentElement.className += ((window.CSS && window.CSS.supports('(position: sticky) or (position: -webkit-sticky)')) ? ' supports-sticky' : ' no-supports-sticky');
+    document.documentElement.className += (window.matchMedia('(-moz-touch-enabled: 1), (hover: none)')).matches ? ' no-supports-hover' : ' supports-hover';
+  }());
+</script>
+
+<script>
+  (function () {
+    window.onpageshow = function () {
+      if (window.theme.showPageTransition) {
+        var pageTransition = document.querySelector('.PageTransition');
+
+        if (pageTransition) {
+          pageTransition.style.visibility = 'visible';
+          pageTransition.style.opacity = '0';
+        }
+      }
+
+      // When the page is loaded from the cache, we have to reload the cart content
+      document.documentElement.dispatchEvent(
+        new CustomEvent('cart:refresh', {
+          bubbles: true,
+        })
+      );
+    };
+  })();
+</script>
+
+<!-- Yotpo Reviews -->
+{%- if settings.reviews_platform == 'yotpo' -%}
+  {% render 'yotpo-reviews', yotpo_widget: 'yotpo-js' %}
+{%- endif -%}
+<!-- End Yotpo Reviews -->
+
+<!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-585TK2T');
+</script>
+<!-- End Google Tag Manager -->
+
+<script>
+  window.fbAsyncInit = function () {
+    FB.init({
+      appId: '497377840953718',
+      autoLogAppEvents: true,
+      xfbml: true,
+      version: 'v8.0',
+    });
+  };
+</script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+<script src="https://www.dwin1.com/19038.js" type="text/javascript" defer="defer"></script>
+<meta name="p:domain_verify" content="51d0da6b2699d780a7c409871ce0109d">
+
+<script type="text/javascript">
+  window.zESettings = {
+    webWidget: {
+      launcher: {
+        label: {
+          'en-US': 'Questions?',
+        },
+      },
+    },
+  };
+</script>
+
+<!-- Global site tag (gtag.js) - Google AdWords: 594707881 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-594707881"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'AW-815876013');
+</script>
+
+<script>
+  !(function (w, d, t) {
+    w.TiktokAnalyticsObject = t;
+    var ttq = (w[t] = w[t] || []);
+    (ttq.methods = [
+      'page',
+      'track',
+      'identify',
+      'instances',
+      'debug',
+      'on',
+      'off',
+      'once',
+      'ready',
+      'alias',
+      'group',
+      'enableCookie',
+      'disableCookie',
+    ]),
+      (ttq.setAndDefer = function (t, e) {
+        t[e] = function () {
+          t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+        };
+      });
+    for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+    (ttq.instance = function (t) {
+      for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);
+      return e;
+    }),
+      (ttq.load = function (e, n) {
+        var i = 'https://analytics.tiktok.com/i18n/pixel/events.js';
+        (ttq._i = ttq._i || {}),
+          (ttq._i[e] = []),
+          (ttq._i[e]._u = i),
+          (ttq._t = ttq._t || {}),
+          (ttq._t[e] = +new Date()),
+          (ttq._o = ttq._o || {}),
+          (ttq._o[e] = n || {});
+        var o = document.createElement('script');
+        (o.type = 'text/javascript'), (o.async = !0), (o.src = i + '?sdkid=' + e + '&lib=' + t);
+        var a = document.getElementsByTagName('script')[0];
+        a.parentNode.insertBefore(o, a);
+      });
+
+    ttq.load('C9C4UKBC77U5QKC6IMGG');
+    ttq.page();
+  })(window, document, 'ttq');
+</script>
+
+<!-- START Digioh Lightbox Javascript -->
+<script
+  async
+  type="text/javascript"
+  src="https://www.lightboxcdn.com/vendor/{{ settings.digioh_script_id }}/lightbox_inline.js"
+></script>
+<!-- END Digioh Lightbox Javascript -->

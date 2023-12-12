@@ -1,0 +1,24 @@
+{%- style -%}
+  .backup-to-icons {
+    display: inline-flex;
+    align-items: center;
+  }
+  .backup-to-icons > * {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 16px;
+    min-height: 14px;
+    max-height: 1.25rem;
+  }
+  .backup-to-icons svg {
+    fill: none;
+    color: transparent;
+    stroke: rgba(var(--color-icons), var(--color-icons-opacity));
+  }
+{%- endstyle -%}
+<span class="visually-hidden"> Saalt Cups, Saalt Discs, and tampons</span>
+<div class="backup-to-icons">
+  {% render 'backup-icon-cup' %}
+  {% render 'backup-icon-disc' %}
+  {% render 'backup-icon-tampon' %}
+</div>

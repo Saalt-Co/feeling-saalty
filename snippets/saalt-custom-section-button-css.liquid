@@ -1,0 +1,16 @@
+{%- comment -%} The <style> tags are only present to have correct formatting and highlighting while working on the file. They MUST be commented out before saving the final version. {%- endcomment -%}
+{%- comment -%} <style> {%- endcomment -%}
+#section-{{ section.id }} .section-inner .card .button-wrapper { display: block; position: absolute; left: 0; bottom: 0;
+width: 100%; text-align: center; margin-bottom: 5rem; }
+
+#section-{{ section.id }} .section-inner .text-wrapper .button-group { display: flex; align-items: center;
+flex-direction: column; flex-wrap: wrap; width: 100%; }
+
+#section-{{ section.id }} .section-inner .text-wrapper .button-group { display: flex; align-items: center;
+flex-direction: column; flex-wrap: wrap; width: 100%; }
+
+@media screen and (min-width: 750px) { #section-{{ section.id }} .section-inner .text-wrapper .button-wrapper {
+text-align: {{ section.settings.desktop_text_alignment }}; } #section-{{ section.id }} .section-inner .text-wrapper
+.button-group { flex-direction: row; } #section-{{ section.id }} .section-inner .text-wrapper .button-group .button,
+#section-{{ section.id }} .section-inner .text-wrapper .button-group .button.alt { width: auto; } }
+{% comment %} </style> {% endcomment %}

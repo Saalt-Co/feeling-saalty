@@ -1,0 +1,124 @@
+{{ 'component-saalt-modal.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'saalt-modal.js' | asset_url }}" defer="defer"></script>
+{{ 'component-size-chart.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'size-chart.js' | asset_url }}" defer="defer"></script>
+{{ 'component-fit-range.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'fit-range.js' | asset_url }}" defer="defer"></script>
+
+<size-chart>
+  {%- liquid
+    assign titles = ''
+    assign content = ''
+    assign page_titles = ''
+    assign sorted_size_charts = shop.metaobjects.size_chart.values | sort: 'sort_order'
+    for size_chart in sorted_size_charts
+      assign titles = titles | append: size_chart.title
+      unless forloop.last
+        assign titles = titles | append: 'ʕ•ᴥ•ʔ'
+      endunless
+      assign page_titles = page_titles | append: pages[size_chart.page].title
+      unless forloop.last
+        assign page_titles = page_titles | append: 'ʕ•ᴥ•ʔ'
+      endunless
+      capture page_content
+        echo pages[size_chart.page].content
+      endcapture
+      assign content = content | append: page_content
+      unless forloop.last
+        assign content = content | append: 'ʕ•ᴥ•ʔ'
+      endunless
+    endfor
+    assign split_titles = titles | split: 'ʕ•ᴥ•ʔ'
+    assign split_page_titles = page_titles | split: 'ʕ•ᴥ•ʔ'
+    assign split_content = content | split: 'ʕ•ᴥ•ʔ'
+
+    assign fit_ranges = ''
+    for fit_range in shop.metaobjects.fit_range.values
+      capture fit_range_markup
+        render 'saalt-main-fit-range', fit_range: fit_range
+      endcapture
+      assign fit_ranges = fit_ranges | append: fit_range_markup
+    endfor
+  -%}
+
+  <div class="size-chart-tabs">
+    <div class="size-chart-tab-titles">
+      <ul class="size-chart-tab-titles-ul">
+        {%- for title in split_titles -%}
+          {% liquid
+            if product.metafields.saalt.product_size_chart.value.title == title
+              assign size_chart_match = true
+            else
+              assign size_chart_match = false
+            endif
+          %}
+          <li class="size-chart-tab-titles-li">
+            <button
+              class="size-chart-tab-title-button{% if size_chart_match or product.metafields.saalt.product_size_chart.value == blank and forloop.first %} active{% endif %}"
+              name="tab-{{ forloop.index }}"
+            >
+              {{ title }}
+            </button>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+    <div class="size-chart-content-containers">
+      {%- for content in split_content -%}
+        {% liquid
+          if product.metafields.saalt.product_size_chart.value.page.value.content == content
+            assign size_chart_match = true
+          else
+            assign size_chart_match = false
+          endif
+        %}
+        <div
+          class="size-chart-content-container {{ split_titles[forloop.index0] | handleize }}{% if size_chart_match or product.metafields.saalt.product_size_chart.value == blank and forloop.first %} visible{% endif %}"
+          name="content-container-{{ forloop.index }}"
+        >
+          <div class="saalt-monogram-svg">
+            {%- render 'svg-saalt-monogram' -%}
+          </div>
+          <h2 class="size-chart-title">{{ split_page_titles[forloop.index0] }}</h2>
+          {{ content | replace: '[[[ fit-content ]]]', fit_ranges }}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</size-chart>
+
+{%- style -%}
+  #section-{{ section.id }} size-chart .section-title {
+    display: block;
+    width: 100%;
+  }
+  #section-{{ section.id }} size-chart .section-title > p {
+    margin: 0;
+  }
+  #section-{{ section.id }} size-chart .section-title.mobile-center {
+    text-align: center;
+  }
+  #section-{{ section.id }} size-chart .section-title.mobile-left {
+    text-align: left;
+  }
+  #section-{{ section.id }} size-chart .section-title.mobile-right {
+    text-align: right;
+  }
+  #section-{{ section.id }} size-chart .section-title.mobile-justify {
+    text-align: justify;
+  }
+  @media (min-width: 750px) {
+    #section-{{ section.id }} size-chart .section-title.desktop-center {
+      text-align: center;
+    }
+    #section-{{ section.id }} size-chart .section-title.desktop-left {
+      text-align: left;
+    }
+    #section-{{ section.id }} size-chart .section-title.desktop-right {
+    text-align: right;
+    }
+    #section-{{ section.id }} size-chart .section-title.desktop-justify {
+      text-align: justify;
+    }
+  }
+{%- endstyle -%}

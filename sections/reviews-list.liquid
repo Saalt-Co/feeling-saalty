@@ -1,0 +1,32 @@
+<section class="section page-width">
+  {%- case settings.reviews_platform -%}
+    {%- when 'yotpo' -%}
+      {% render 'yotpo-reviews', yotpo_widget: 'reviews', product: product %}
+    {%- when 'bazaarvoice' -%}
+      {%- style -%}
+        div[data-bv-show='reviews']:empty {
+          display: block;
+        }
+      {%- endstyle -%}
+      <div data-bv-show="reviews" data-bv-product-id="{{ product.id }}"></div>
+  {%- endcase -%}
+</section>
+
+{% schema %}
+{
+  "name": "t:sections.reviews_list.name",
+  "class": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:sections.reviews_list.settings.paragraph.content"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.reviews_list.name",
+      "category": "custom saalt section"
+    }
+  ]
+}
+{% endschema %}

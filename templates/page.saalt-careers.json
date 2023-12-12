@@ -1,0 +1,411 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "8c128cdb-e682-4c62-a67f-6b2f59ec9487": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Let's sync up."
+          }
+        },
+        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Together we are dedicated to empowering and equipping people to live their best lives and change the world every single day.<\/p>"
+          }
+        },
+        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_buttons_group-1": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_button-1": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "CURRENT OPPORTUNITIES",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_title-1",
+        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_content-1",
+        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_buttons_group-1",
+        "template--21570056913169__8c128cdb-e682-4c62-a67f-6b2f59ec9487-section_button-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Careers-Header-Mobile-2_91b2cd71-3096-4381-9b60-d7830ad11dc1.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Careers-Home-Header_copy_0cff5d1a-cba1-4682-90e7-bcf2610c6588.jpg",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "overlay",
+        "mobile_text_alignment": "left",
+        "desktop_text_position": "flex-end",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "636e4f0f-cff7-490f-8b02-b8c7260cb10b": {
+      "type": "slideshow",
+      "blocks": {
+        "template--21570056913169__636e4f0f-cff7-490f-8b02-b8c7260cb10b-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Careers-Home-Header2_copy.jpg",
+            "heading": "<strong>Let's sync up.<\/strong>",
+            "heading_size": "h0",
+            "subheading": "Together we are dedicated to empowering and equipping people to live their best lives and change the world every single day.",
+            "button_text": "CURRENT OPPORTUNITIES",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-2",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme-color-bg-2-hover",
+            "theme_color_text_section_button_text_hover": "theme_default",
+            "box_align": "middle-right",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "theme_color_background": "theme_default",
+            "theme_color_text": "theme_default",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "2907521c-63cd-43d3-bd61-3e7bad23c9ec": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Careers-Home-Header_copy.jpg",
+            "heading": "<strong>Let's sync up.<\/strong>",
+            "heading_size": "h0",
+            "subheading": "Together we are dedicated to empowering and equipping people to live their best lives and change the world every single day.",
+            "button_text": "CURRENT OPPORTUNITIES",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-2",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme-color-bg-2-hover",
+            "theme_color_text_section_button_text_hover": "theme_default",
+            "box_align": "middle-right",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "theme_color_background": "theme_default",
+            "theme_color_text": "theme_default",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "d13afc70-c8b6-46dc-9d90-227d6552a3e6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Careers-Home-Header-3_copy.jpg",
+            "heading": "<strong>Let's sync up.<\/strong>",
+            "heading_size": "h0",
+            "subheading": "Together we are dedicated to empowering and equipping people to live their best lives and change the world every single day.",
+            "button_text": "CURRENT OPPORTUNITIES",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-2",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme-color-bg-2-hover",
+            "theme_color_text_section_button_text_hover": "theme_default",
+            "box_align": "middle-right",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "theme_color_background": "theme_default",
+            "theme_color_text": "theme_default",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--21570056913169__636e4f0f-cff7-490f-8b02-b8c7260cb10b-slide-1",
+        "2907521c-63cd-43d3-bd61-3e7bad23c9ec",
+        "d13afc70-c8b6-46dc-9d90-227d6552a3e6"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "d6b12009-894f-4938-8275-85c5ce276677": {
+      "type": "saalt-bg-media-with-text",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Careers-Perks-Mobile-3_f7877d1f-3d8f-4d1d-8793-5e88ea0fd294.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Perks-3_a249e8c0-5ea2-447b-8260-991ba16a66f9.png",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "overlay",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "center",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "81684a1c-6be7-46d3-a49c-9d1fa86d1d41": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21570056913169__81684a1c-6be7-46d3-a49c-9d1fa86d1d41-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Saalt",
+            "heading_size": "h1"
+          }
+        },
+        "template--21570056913169__81684a1c-6be7-46d3-a49c-9d1fa86d1d41-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Like menstruation, we chose Saalt because it is emblematic of a basic, essential element for our bodies. Thus, we believe the best approach to period care should be just as simple and elemental.<\/p><p>Join our cause in inspiring people with high-minded alternative to disposables, enabling people with periods to care for themselves using well thought out, natural solutions that are convenient, sustainable, and impactful.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--21570056913169__81684a1c-6be7-46d3-a49c-9d1fa86d1d41-heading-1",
+        "template--21570056913169__81684a1c-6be7-46d3-a49c-9d1fa86d1d41-text-1"
+      ],
+      "custom_css": [
+        ".media > *:not(.zoom):not(.deferred-media__poster-button),.media model-viewer {border-radius: 10px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Office_6_7055e155-acdc-4ccf-99f1-2bff20ee5b50.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 100,
+        "padding_bottom": 88
+      }
+    },
+    "34e427f0-317c-4b16-baae-3a81139d92b7": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--21570056913169__34e427f0-317c-4b16-baae-3a81139d92b7-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "We can't wait to get to know you."
+          }
+        },
+        "template--21570056913169__34e427f0-317c-4b16-baae-3a81139d92b7-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Browse our open positions if you're interested in combining passion with impact. We have just the place.<\/p>"
+          }
+        },
+        "template--21570056913169__34e427f0-317c-4b16-baae-3a81139d92b7-section_buttons_group-1": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "template--21570056913169__34e427f0-317c-4b16-baae-3a81139d92b7-section_button-1": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "CURRENT OPENINGS",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--21570056913169__34e427f0-317c-4b16-baae-3a81139d92b7-section_title-1",
+        "template--21570056913169__34e427f0-317c-4b16-baae-3a81139d92b7-section_content-1",
+        "template--21570056913169__34e427f0-317c-4b16-baae-3a81139d92b7-section_buttons_group-1",
+        "template--21570056913169__34e427f0-317c-4b16-baae-3a81139d92b7-section_button-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-4",
+        "theme_color_text": "theme-color-text-2",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "1ff76f1e-0e96-4c24-aa68-87350b83c0cd": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21570056913169__1ff76f1e-0e96-4c24-aa68-87350b83c0cd-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Our Team<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "template--21570056913169__1ff76f1e-0e96-4c24-aa68-87350b83c0cd-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Saalt, we immerse our team in an exceptional work environment with opportunities to learn and grow. You will be surrounded by colleagues who are committed to ensuring your success by celebrating both big and small things, because we believe our impact is limitless when we work together.<\/p><p>If you are looking to make a worldwide impact, Saalt is the place for you. Saalt HQ is located in beautiful Boise, Idaho.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--21570056913169__1ff76f1e-0e96-4c24-aa68-87350b83c0cd-heading-1",
+        "template--21570056913169__1ff76f1e-0e96-4c24-aa68-87350b83c0cd-text-1"
+      ],
+      "custom_css": [
+        ".media > *:not(.zoom):not(.deferred-media__poster-button),.media model-viewer {border-radius: 10px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Office_f164360f-9aaf-4d2b-a381-811654bfddb8.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "fdb36f97-c9ef-4b6e-9cd1-76f520a6947e": {
+      "type": "saalt-media-with-text",
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Saalt-Careers-Adjectives-centere_7917b9fa-c69a-47bf-bc79-6609a380a5bf.gif",
+        "custom_code": "",
+        "use_max_media_width": true,
+        "max_media_width": "1900px",
+        "media_width": 100,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "900px",
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "f2735a30-7dee-4956-b5d3-9fa9ba13563a": {
+      "type": "collage",
+      "blocks": {
+        "template--21570056913169__f2735a30-7dee-4956-b5d3-9fa9ba13563a-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Office_6_7055e155-acdc-4ccf-99f1-2bff20ee5b50.png"
+          }
+        },
+        "6218ea50-b6e8-4ec3-a743-bf879e084f92": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Office_5_8363ef4f-9a89-4a03-be56-1865faa17f02.png"
+          }
+        },
+        "7a2ecb79-f97a-4487-99eb-f3b44d7cb355": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Office_4_5c281c17-2d8d-4783-952c-54edf35773ec.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--21570056913169__f2735a30-7dee-4956-b5d3-9fa9ba13563a-image-1",
+        "6218ea50-b6e8-4ec3-a743-bf879e084f92",
+        "7a2ecb79-f97a-4487-99eb-f3b44d7cb355"
+      ],
+      "custom_css": [
+        ".collage-wrapper-title {text-align: center;}"
+      ],
+      "settings": {
+        "heading": "Day in the Life at Saalt",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "padding_top": 100,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8c128cdb-e682-4c62-a67f-6b2f59ec9487",
+    "636e4f0f-cff7-490f-8b02-b8c7260cb10b",
+    "d6b12009-894f-4938-8275-85c5ce276677",
+    "81684a1c-6be7-46d3-a49c-9d1fa86d1d41",
+    "34e427f0-317c-4b16-baae-3a81139d92b7",
+    "1ff76f1e-0e96-4c24-aa68-87350b83c0cd",
+    "fdb36f97-c9ef-4b6e-9cd1-76f520a6947e",
+    "f2735a30-7dee-4956-b5d3-9fa9ba13563a"
+  ]
+}
