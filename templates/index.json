@@ -83,6 +83,93 @@
         "section_id": ""
       }
     },
+    "35251dc7-4eb4-46b5-9a5b-4759bf4effd7": {
+      "type": "saalt-window-display",
+      "blocks": {
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-0": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Comfort_Brief.png",
+            "title": "<p>Leakproof Underwear<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "url",
+            "link_url": "https:\/\/saalt-dev-store.myshopify.com\/collections\/saalt-period-underwear",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        },
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-1": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Disc-Promo-January-February-Menstrual-Disc-Cup-15-Off-Hero-mobile.jpg",
+            "title": "<p>Cups & Discs<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "url",
+            "link_url": "https:\/\/saalt-dev-store.myshopify.com\/collections\/menstrual-cups-discs",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        },
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-2": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bg_f8ff51d7-0d50-4bf8-8de5-ff612005a702.jpg",
+            "title": "<p>Bundles<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "url",
+            "link_url": "https:\/\/saalt-dev-store.myshopify.com\/collections\/preset-bundles",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        },
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-3": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Teen-Cup-Launch_Ads_Website_mobile.jpg",
+            "title": "<p>Teen<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "filter",
+            "link_url": "",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        },
+        "d8236345-5ecc-484c-af5d-464fd1c4ecf7": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Wash-PCR.jpg",
+            "title": "<p>Extras<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "url",
+            "link_url": "https:\/\/saalt-dev-store.myshopify.com\/collections\/extras",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-0",
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-1",
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-2",
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-3",
+        "d8236345-5ecc-484c-af5d-464fd1c4ecf7"
+      ],
+      "settings": {
+        "section_id": "",
+        "make_full_width": false,
+        "mobile_min_width": "40%",
+        "mobile_max_width": "280px",
+        "mobile_aspect_ratio": "1\/1.5",
+        "desktop_min_width": "auto",
+        "desktop_max_width": "25%",
+        "desktop_aspect_ratio": "1\/1.5"
+      }
+    },
     "e19ae371-ca3d-4f8c-9229-f22d18836f31": {
       "type": "saalt-media-with-split-text",
       "blocks": {
@@ -313,93 +400,6 @@
         "padding_bottom": 0
       }
     },
-    "35251dc7-4eb4-46b5-9a5b-4759bf4effd7": {
-      "type": "saalt-window-display",
-      "blocks": {
-        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-0": {
-          "type": "window-feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Comfort_Brief.png",
-            "title": "<p>Leakproof Underwear<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
-            "link_type": "url",
-            "link_url": "https:\/\/saalt-dev-store.myshopify.com\/collections\/saalt-period-underwear",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Filter"
-          }
-        },
-        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-1": {
-          "type": "window-feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Saalt-Disc-Promo-January-February-Menstrual-Disc-Cup-15-Off-Hero-mobile.jpg",
-            "title": "<p>Cups & Discs<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
-            "link_type": "url",
-            "link_url": "https:\/\/saalt-dev-store.myshopify.com\/collections\/menstrual-cups-discs",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Filter"
-          }
-        },
-        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-2": {
-          "type": "window-feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/bg_f8ff51d7-0d50-4bf8-8de5-ff612005a702.jpg",
-            "title": "<p>Bundles<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
-            "link_type": "url",
-            "link_url": "https:\/\/saalt-dev-store.myshopify.com\/collections\/preset-bundles",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Filter"
-          }
-        },
-        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-3": {
-          "type": "window-feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Teen-Cup-Launch_Ads_Website_mobile.jpg",
-            "title": "<p>Teen<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
-            "link_type": "filter",
-            "link_url": "",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Filter"
-          }
-        },
-        "d8236345-5ecc-484c-af5d-464fd1c4ecf7": {
-          "type": "window-feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Saalt-Wash-PCR.jpg",
-            "title": "<p>Extras<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
-            "link_type": "url",
-            "link_url": "https:\/\/saalt-dev-store.myshopify.com\/collections\/extras",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Filter"
-          }
-        }
-      },
-      "block_order": [
-        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-0",
-        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-1",
-        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-2",
-        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-3",
-        "d8236345-5ecc-484c-af5d-464fd1c4ecf7"
-      ],
-      "settings": {
-        "section_id": "",
-        "make_full_width": false,
-        "mobile_min_width": "40%",
-        "mobile_max_width": "280px",
-        "mobile_aspect_ratio": "1\/1.5",
-        "desktop_min_width": "auto",
-        "desktop_max_width": "25%",
-        "desktop_aspect_ratio": "1\/1.5"
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -547,9 +547,9 @@
   "order": [
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
     "2b94c719-9c4c-4651-96ed-88c41a9f7159",
+    "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
     "e19ae371-ca3d-4f8c-9229-f22d18836f31",
     "711b5233-473f-4666-9c41-450fb4683107",
-    "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
     "featured_collection",
     "multicolumn",
     "be10f763-17a0-47a9-acef-75ab6afe0f30"
