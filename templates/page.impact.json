@@ -528,7 +528,7 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme-color-bg-5",
+        "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/menstrual_health_impact_page_12-12-23.png",
@@ -571,7 +571,7 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme-color-bg-5",
+        "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/education_impact_page_12-12-23.png",
@@ -614,7 +614,7 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme-color-bg-5",
+        "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/sustainability_impact_page_12-12-23.png",
@@ -648,7 +648,7 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme_default",
+        "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "code",
         "custom_code": "<iframe width=\"1271\" height=\"715\" src=\" https:\/\/www.youtube.com\/embed\/DamQH6JnwEY?si=N5PyKf8a4FWm26HU?rel=0\" title=\"The Saalt Story - The Inspiration Behind Our Reusable Period Care Products\" frameborder=\"0\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"><\/iframe>",
