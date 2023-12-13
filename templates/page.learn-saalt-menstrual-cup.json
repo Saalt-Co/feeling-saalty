@@ -42,8 +42,7 @@
         "max_media_width": "60%",
         "title_font_size": "small",
         "content_font_size": "small",
-        "mobile_icon_text_position": "below",
-        "desktop_icon_text_position": "below",
+        "mobile_text_position": "below",
         "mobile_text_alignment": "center",
         "desktop_text_position": "flex-start",
         "desktop_text_alignment": "left",
@@ -301,7 +300,7 @@
         "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>If you're not happy with your Saalt product, <span style=\"text-decoration:underline\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/span>. Your Saalt(isfaction) guaranteed.<\/p>"
+            "text_content": "<p>If you're not happy with your Saalt product, <a href=\"\/pages\/replacements\" title=\"\/pages\/replacements\"><span style=\"text-decoration:underline\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/span><\/a>. Your Saalt(isfaction) guaranteed.<\/p>"
           }
         }
       },
@@ -338,7 +337,7 @@
         "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_title-1": {
           "type": "section_title",
           "settings": {
-            "heading_tag": "2",
+            "heading_tag": "3",
             "title": "Which size should I get?<br>Let’s break it down."
           }
         },
@@ -354,10 +353,11 @@
         "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_content-1"
       ],
       "settings": {
-        "section_id": "absorbency guide",
+        "section_id": "",
         "theme_color_background": "theme-color-bg-6",
         "theme_color_text": "theme-color-text-0",
-        "media_type": "none",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Saalt-Cup-Size-Guide-Learn_Cups_12-13-2023.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -366,7 +366,7 @@
         "content_font_size": "small",
         "mobile_text_position": "above",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
+        "desktop_text_position": "left",
         "desktop_text_alignment": "center",
         "use_max_text_width": true,
         "max_width": "600px",
