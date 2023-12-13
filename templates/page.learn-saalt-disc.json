@@ -93,6 +93,7 @@
         },
         "97c874e3-3dcf-4a4b-808e-cb386cef62e8": {
           "type": "nav_bar_link",
+          "disabled": true,
           "settings": {
             "nav_bar_link_text": "How to clean",
             "click_behavior": "scroll_to",
@@ -184,7 +185,7 @@
         "section_id": "how to use it",
         "theme_color_background": "theme-color-bg-4",
         "theme_color_text": "theme_default",
-        "media_type": "none",
+        "media_type": "video",
         "video": "shopify:\/\/files\/videos\/Vertical - How to Insert a Disc - Learn discs 12-13-23.mp4",
         "custom_code": "",
         "use_max_media_width": false,
@@ -215,7 +216,7 @@
         "f7a5cbdf-a0cc-49a8-9c40-00242a8fee72": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>We designed the Saalt Cup to be the easiest to use and most comfortable cup on the market. Our bulb shape forms a double seal to prevent leaks, and it’s made in the USA of  100% medical-grade silicone that’s velvety soft, odor free, and lasts 10 years.    Grab a match. It’s time to burn your last tampon.<\/p>"
+            "text_content": "<p>We designed the Saalt Disc to be the easiest to use and most comfortable disc on the market.  With a smooth flexible rim, custom removal notch, and high-capacity, ultra comfortable basin, the Saalt Disc feels like nothing, but fills like whoa. <\/p><p>Grab a match. It’s time to burn your last tampon.<\/p>"
           }
         }
       },
@@ -235,7 +236,7 @@
         "media_width": 50,
         "title_font_size": "small",
         "content_font_size": "small",
-        "mobile_text_position": "above",
+        "mobile_text_position": "below",
         "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "left",
@@ -343,8 +344,9 @@
         },
         "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_content-1": {
           "type": "section_content",
+          "disabled": true,
           "settings": {
-            "text_content": "<p>The Saalt Disc comes in 2 different sizes to fit your body and flow. \u2028Most people can use either size, but one may be most comfortable.<\/p>"
+            "text_content": "<h2>Which size should I get?<br\/>Let’s break it down.<\/h2>"
           }
         }
       },
@@ -363,7 +365,7 @@
         "max_media_width": "700px",
         "media_width": 50,
         "title_font_size": "small",
-        "content_font_size": "small",
+        "content_font_size": "x-large",
         "mobile_text_position": "above",
         "mobile_text_alignment": "center",
         "desktop_text_position": "right",
@@ -581,24 +583,12 @@
     },
     "61266f32-54d6-459e-a625-fb59fc4b6f40": {
       "type": "saalt-media-with-text",
-      "blocks": {
-        "template--21642631840017__61266f32-54d6-459e-a625-fb59fc4b6f40-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "2",
-            "title": "How do you clean your Saalt Cup?"
-          }
-        }
-      },
-      "block_order": [
-        "template--21642631840017__61266f32-54d6-459e-a625-fb59fc4b6f40-section_title-1"
-      ],
       "settings": {
         "section_id": "how to clean",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "code",
-        "custom_code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/RsV27S_8t_U?si=TrwbnewiOBaqwFcj\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "custom_code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/xEli4yiKgVM?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
         "use_max_media_width": true,
         "max_media_width": "900px",
         "media_width": 50,
