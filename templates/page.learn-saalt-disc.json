@@ -85,7 +85,7 @@
         "203f953b-dc7d-482f-9e5d-c6bb8a366b86": {
           "type": "nav_bar_link",
           "settings": {
-            "nav_bar_link_text": "Cup or disc?",
+            "nav_bar_link_text": "Disc or cup?",
             "click_behavior": "scroll_to",
             "nav_bar_element_selector": "#cup-or-disc",
             "nav_bar_link_dest": "#how to wash"
@@ -173,7 +173,7 @@
         "template--15078825525329__11b4eb9a-18a9-488e-bfd7-23c248641695-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p><strong>1: Fold<\/strong><\/p><p>With clean hands, pinch your disc into a figure 8.<\/p><p><strong>2: Insert<\/strong><\/p><p>Insert the disc fully and tuck behind your pubic bone.<\/p><p><strong>3: Remove<\/strong><\/p><p>After up to 12 hours of wearing your disc, simply remove it by hooking your finger in the custom finger hold and gently pulling out your disc. Then wash your disc, insert, and get back to living your best life.<\/p><p><a href=\"\/pages\/disc-instructions\" title=\"\/pages\/disc-instructions\"><strong>See our full menstrual disc instructions here.<\/strong><\/a><\/p>"
+            "text_content": "<p><strong>1: Fold<br\/><\/strong>With clean hands, pinch your disc into a figure 8.<\/p><p><strong>2: Insert<br\/><\/strong>Insert the disc fully and tuck behind your pubic bone.<\/p><p><strong>3: Remove<br\/><\/strong>After up to 12 hours of wearing your disc, simply remove it by hooking your finger in the custom finger hold and gently pulling out your disc. Then wash your disc, insert, and get back to living your best life.<br\/><\/p><p><a href=\"\/pages\/disc-instructions\" title=\"\/pages\/disc-instructions\"><strong>See our full menstrual disc instructions here.<\/strong><\/a><\/p>"
           }
         }
       },
@@ -210,7 +210,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "2",
-            "title": "Not all menstrual cups are created equal."
+            "title": "Not all menstrual discs are created equal."
           }
         },
         "f7a5cbdf-a0cc-49a8-9c40-00242a8fee72": {
@@ -527,17 +527,6 @@
     "4979ad3b-9b05-4c86-8a59-644c6f717625": {
       "type": "multicolumn",
       "blocks": {
-        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/cup_placement.jpg",
-            "title": "Saalt Cup",
-            "rating": 0,
-            "text": "<h4>Sits in the vaginal canal.<\/h4><ul><li>Seal keeps the cup in place<\/li><li>Rests in vaginal canal<\/li><li>Great for beginners<\/li><li>Two firmness options<\/li><li>Collects 3—4x more than a tampon<\/li><\/ul>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-2": {
           "type": "column",
           "settings": {
@@ -548,14 +537,25 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cup_placement.jpg",
+            "title": "Saalt Cup",
+            "rating": 0,
+            "text": "<h4>Sits in the vaginal canal.<\/h4><ul><li>Seal keeps the cup in place<\/li><li>Rests in vaginal canal<\/li><li>Great for beginners<\/li><li>Two firmness options<\/li><li>Collects 3—4x more than a tampon<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-1",
-        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-2"
+        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-2",
+        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-1"
       ],
       "settings": {
-        "title": "Saalt Period Cup or Period Disc?",
+        "title": "Saalt Period Disc or Period Cup?",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
