@@ -408,6 +408,72 @@
         "padding_bottom": 0
       }
     },
+    "e1791c3d-d73e-498f-9322-90696d73319e": {
+      "type": "saalt-media-with-split-text",
+      "blocks": {
+        "template--18370419818769__e1791c3d-d73e-498f-9322-90696d73319e-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "text_group_num": "1",
+            "heading_tag": "2",
+            "title": "Meet Saalt Wear. The thinnest, driest, and most comfortable leakproof period underwear."
+          }
+        },
+        "template--18370419818769__e1791c3d-d73e-498f-9322-90696d73319e-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_group_num": "1",
+            "text_content": "<p>Holds up to 6+ pads worth of periods, bladder leaks, sweat, and wetness while keeping you (magically) dry.<\/p>"
+          }
+        },
+        "template--18370419818769__e1791c3d-d73e-498f-9322-90696d73319e-section_buttons_group-1": {
+          "type": "section_buttons_group",
+          "settings": {
+            "text_group_num": "1",
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "template--18370419818769__e1791c3d-d73e-498f-9322-90696d73319e-section_button-1": {
+          "type": "section_button",
+          "settings": {
+            "text_group_num": "1",
+            "button_text": "SHOP SAALT WEAR",
+            "button_url": "shopify:\/\/collections\/period-underwear",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419818769__e1791c3d-d73e-498f-9322-90696d73319e-section_title-1",
+        "template--18370419818769__e1791c3d-d73e-498f-9322-90696d73319e-section_content-1",
+        "template--18370419818769__e1791c3d-d73e-498f-9322-90696d73319e-section_buttons_group-1",
+        "template--18370419818769__e1791c3d-d73e-498f-9322-90696d73319e-section_button-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "media_type": "video",
+        "video": "shopify:\/\/files\/videos\/Learn Page Tech Video.mp4",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -558,6 +624,7 @@
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
     "e19ae371-ca3d-4f8c-9229-f22d18836f31",
     "711b5233-473f-4666-9c41-450fb4683107",
+    "e1791c3d-d73e-498f-9322-90696d73319e",
     "featured_collection",
     "multicolumn",
     "be10f763-17a0-47a9-acef-75ab6afe0f30"
