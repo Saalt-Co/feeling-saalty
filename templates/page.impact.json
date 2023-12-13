@@ -82,7 +82,7 @@
             "desktop_icon_group_vertical_alignment": "center",
             "desktop_icon_grid_columns": 3,
             "desktop_icon_group_gap": "3.5rem",
-            "desktop_icon_text_size": "2rem",
+            "desktop_icon_text_size": "1.75rem",
             "desktop_icon_horizontal_alignment": "center",
             "desktop_icon_vertical_alignment": "center",
             "desktop_icon_min_width": "100px",
