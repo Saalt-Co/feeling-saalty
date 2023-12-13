@@ -550,7 +550,7 @@
         "image": "shopify:\/\/shop_images\/menstrual_health_impact_page_12-12-23.png",
         "use_max_media_width": false,
         "max_media_width": "700px",
-        "media_width": 50,
+        "media_width": 33,
         "title_font_size": "small",
         "content_font_size": "small",
         "mobile_text_alignment": "center",
@@ -577,7 +577,7 @@
           "type": "section_content",
           "settings": {
             "text_group_num": "2",
-            "text_content": "<h4>Clean, Ethical, & Sustainable<\/h4><p>Clean period, clean planet. We keep toxins out of our ecosystems and out of our bodies by meticulously monitoring our supply chain and sourcing high-quality, medical-grade materials, manufactured using clean and ethical standards.<\/p>"
+            "text_content": "<p>Access to period care keeps girls in school, breaking the cycle of poverty for generations. We’re fueled by the power educated women have to lift their families and invest back into their local economy, bringing change to entire communities.<\/p>"
           }
         }
       },
@@ -613,14 +613,14 @@
           "settings": {
             "text_group_num": "2",
             "heading_tag": "2",
-            "title": "How We Give Back"
+            "title": "Sustainability"
           }
         },
         "template--15053077250129__0add3966-7c7f-4a60-bd20-c12dd57c3a86-section_content-2": {
           "type": "section_content",
           "settings": {
             "text_group_num": "2",
-            "text_content": "<h4>2% Give-Back<\/h4><p>As a certified B Corp, we give 2% to donate period care to regions with the most need, and help fund initiatives in menstrual health, girls’ education, and sustainability. Since our launch in 2018, we've donated over 60,000 Saalt products to women and girls in need in 50 countries.<\/p>"
+            "text_content": "<p>Every consumer who chooses reusables saves thousands of single-use period products from our landfills and oceans. We provide consumers with sustainable solutions to decrease waste through product design that is healthy for both body and planet, and by funding direct cleanup efforts.<\/p>"
           }
         }
       },
@@ -633,7 +633,7 @@
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/How_We_Give_Back-1.jpg",
+        "image": "shopify:\/\/shop_images\/sustainability_impact_page_12-12-23.png",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
