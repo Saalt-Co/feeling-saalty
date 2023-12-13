@@ -15,13 +15,13 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "Meet the Saalt<br> Period Cup."
+            "title": "Meet the Saalt<br> Period Disc, at your cervix."
           }
         },
         "template--15078825525329__fd4445e0-3160-476f-9e6f-f9f22e50a1dc-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Goddess of the vulva, chalice of the cha-cha— it’s a reusable soft silicone cup worn internally like a tampon that collects, rather than absorbs, your period.<\/p>"
+            "text_content": "<p>The Saalt Disc is a soft, reusable silicone disc that collects your flow without relying on suction to stay in place. High capacity, sustainable, simple to use, and you can wear it during sex.<\/p>"
           }
         }
       },
@@ -34,18 +34,17 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/image_1.png",
-        "desktop_image": "shopify:\/\/shop_images\/image_1.png",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Disc-Promo-January-February-Menstrual-Disc-Cup-15-Off-Hero-mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Disc-Promo-January-February-Menstrual-Disc-Cup-15-Off-Hero-desktop.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
         "max_media_width": "60%",
         "title_font_size": "small",
         "content_font_size": "small",
-        "mobile_icon_text_position": "below",
-        "desktop_icon_text_position": "below",
+        "mobile_text_position": "below",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "flex-start",
+        "desktop_text_position": "flex-end",
         "desktop_text_alignment": "left",
         "use_max_text_width": true,
         "max_width": "40%",
