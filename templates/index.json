@@ -26,11 +26,23 @@
         "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_button-1": {
           "type": "section_button",
           "settings": {
-            "button_text": "Shop All",
-            "button_url": "shopify:\/\/collections\/shop-all",
+            "button_text": "SHOP SAALT WEAR",
+            "button_url": "\/collections\/saalt-period-underwear",
             "button_type": "primary",
             "theme_color_section_button_background": "theme-color-bg-4",
             "theme_color_text_section_button_text": "theme-color-text-1",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "23149735-c736-46cc-8e03-56e849236f9d": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "SHOP CUPS & dISCS",
+            "button_url": "\/collections\/menstrual-cups-discs",
+            "button_type": "secondary",
+            "theme_color_section_button_background": "theme-color-bg-4",
+            "theme_color_text_section_button_text": "theme_default",
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default"
           }
@@ -40,7 +52,8 @@
         "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_title-1",
         "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_content-1",
         "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_buttons_group-1",
-        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_button-1"
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_button-1",
+        "23149735-c736-46cc-8e03-56e849236f9d"
       ],
       "settings": {
         "section_id": "",
