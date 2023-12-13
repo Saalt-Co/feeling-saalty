@@ -474,6 +474,135 @@
         "padding_bottom": 0
       }
     },
+    "be10f763-17a0-47a9-acef-75ab6afe0f30": {
+      "type": "saalt-testimonials",
+      "blocks": {
+        "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Game changing!!This is the first cup I've ever used and I LOVE it! <strong>Literally cannot feel it<\/strong> at all when inserted. And the underwear is so comfortable, much more so than disposable pads. I was skeptical but they are <strong>some sort of sorcery because they stay dry<\/strong>! I'm telling anyone who will listen to give these products a try.",
+            "author": "<strong>Kelsey R.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-0": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Love the style and softness. Probably <strong>least bulky<\/strong> period panties for the amount of fluids it can hold. Tried {other brands}. Saalt is the <strong>most luxurious and best fitting<\/strong> out of all of them. Some have weird bulk at the crotch or too stiff or wide down there.",
+            "author": "<strong>Kimberly P.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "c3d675e8-b57f-4bde-8a72-5bf54fc6c36a": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<strong>Never going back to tampons!<\/strong>This is my first ever cup I’ve bought.  So easy to use and <strong>I can’t even tell that it’s there.<\/strong> I ordered a size regular and it was the perfect fit for me. It makes it easier for me to use a cup because I have a heavy flow and I know that I don’t have to change my tampon every hour. I love this product.<strong> I’m so glad that I switched to a cup.<\/strong>",
+            "author": "<strong>Courtney M.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "66116b17-fa7c-499f-aa5b-c2123f2a4019": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<strong>So soft and comfy.<\/strong> I like this fabric WAY MORE than my Thinx. Thinner and fit is just overall better. <strong>Definitely happy I switched over to Saalt.<\/strong>",
+            "author": "<strong>Lily C.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-1",
+        "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-0",
+        "c3d675e8-b57f-4bde-8a72-5bf54fc6c36a",
+        "66116b17-fa7c-499f-aa5b-c2123f2a4019"
+      ],
+      "settings": {
+        "slide_height": "small",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme-color-text-2",
+        "include_img": true,
+        "image": "shopify:\/\/shop_images\/Testimonials_Background_Home_Page.jpg",
+        "image_behavior": "none",
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "8e2fb083-d1d9-431e-9e29-68dd05ca68eb": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "This is the Saalt Reusable <br> Period Cup. Its like modern <br> period magic."
+          }
+        },
+        "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>It's comfortable, holds 3x more than a tampon, and lasts as long as your passport.<\/p>"
+          }
+        },
+        "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_buttons_group-1": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_button-1": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "SHOP SAALT CUPS",
+            "button_url": "shopify:\/\/collections\/saalt-cups",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-4",
+            "theme_color_text_section_button_text": "theme-color-text-1",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_title-1",
+        "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_content-1",
+        "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_buttons_group-1",
+        "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_button-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt_Cup-Hero_Mobile_Home_Page.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt_Cup_-_Sec_B_Home_Page.jpg",
+        "media_overlay_color": "--palette-color-0",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_icon_text_position": "below",
+        "desktop_icon_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "flex-end",
+        "desktop_text_alignment": "justify",
+        "use_max_text_width": true,
+        "max_width": "500px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -575,47 +704,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "be10f763-17a0-47a9-acef-75ab6afe0f30": {
-      "type": "saalt-testimonials",
-      "blocks": {
-        "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-0": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "Customer quote",
-            "author": "Customer's Name",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-1": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "Customer quote",
-            "author": "Customer's Name",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-0",
-        "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "slide_height": "medium",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "include_img": true,
-        "image_behavior": "none",
-        "accessibility_info": "Slideshow about our brand"
-      }
     }
   },
   "order": [
@@ -625,8 +713,9 @@
     "e19ae371-ca3d-4f8c-9229-f22d18836f31",
     "711b5233-473f-4666-9c41-450fb4683107",
     "e1791c3d-d73e-498f-9322-90696d73319e",
+    "be10f763-17a0-47a9-acef-75ab6afe0f30",
+    "8e2fb083-d1d9-431e-9e29-68dd05ca68eb",
     "featured_collection",
-    "multicolumn",
-    "be10f763-17a0-47a9-acef-75ab6afe0f30"
+    "multicolumn"
   ]
 }
