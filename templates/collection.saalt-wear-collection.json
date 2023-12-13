@@ -404,10 +404,10 @@
         "a2a5abc9-3c1a-4339-a852-c8f31ebb0d08": {
           "type": "section_icon_group",
           "settings": {
-            "mobile_icons_display": "row",
+            "mobile_icons_display": "grid",
             "mobile_icon_group_horizontal_alignment": "center",
             "mobile_icon_group_vertical_alignment": "flex-start",
-            "mobile_icon_grid_columns": 2,
+            "mobile_icon_grid_columns": 3,
             "mobile_icon_group_gap": "3.5rem",
             "mobile_icon_text_size": "1.5rem",
             "mobile_icon_horizontal_alignment": "center",
@@ -720,7 +720,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Seamless-darker.jpg",
             "title": "SEAMLESS",
-            "text_content": "Sleep and super-stretchy for all of the freedom with none of the panty lines.\n\nMade with ultra-durable LYCRA®️ XTRA LIFE™️ fiber which resists fit loss and provides you with the confidence that your garment will last after repeated wash and wear.",
+            "text_content": "Sleek and super-stretchy for all of the freedom with none of the panty lines.\n\nMade with ultra-durable LYCRA®️ XTRA LIFE™️ fiber which resists fit loss and provides you with the confidence that your garment will last after repeated wash and wear.",
             "button_text": "Shop Seamless",
             "button_url": "\/collections\/seamless",
             "button_type": "primary",
@@ -735,7 +735,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Comfort-Modal-darker.jpg",
             "title": "COMFORT",
-            "text_content": "Made from soft-stretch TENCEL™️ Modal, aka dreamy soft fabric made from sustainably regenerated cellulose fiber that comes from renewable beech wood.",
+            "text_content": "The softest fabric to ever be used in period underwear.\n\nMade from soft-stretch TENCEL™️ Modal, aka dreamy soft fabric made from sustainably regenerated cellulose fiber that comes from renewable beech wood.",
             "button_text": "Shop Comfort",
             "button_url": "shopify:\/\/collections\/comfort",
             "button_type": "primary",
@@ -750,7 +750,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Lace-Mesh-darker.jpg",
             "title": "LACE & MESH",
-            "text_content": "Strong, sustainable, stunning. \"The Lamborghini of period underwear.\" -Katie Couric Media\n\nBeautifully designed in Paris. Each pair is made with an average of 3 post-consumer recycled water bottles to help clean up landfill and ocean-bound plastic.",
+            "text_content": "Strong, sustainable, stunning. \"The Lamborghini of period underwear.\" -Katie Couric Media\n\nBeautifully designed in Paris. Each pair is made with an average of 3 post-consumer recycled water bottles to help clean up landfill- and ocean-bound plastic.",
             "button_text": "Shop Lace & Mesh",
             "button_url": "\/collections\/lace-mesh",
             "button_type": "primary",
@@ -765,7 +765,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Cotton-darker.jpg",
             "title": "COTTON",
-            "text_content": "Just like your favoreit cotton tee, but for your booty. ;)\n\nMade of soft and breathable biodegradable natural cotton that is Standard 100 OEKO-TEX®️ Certified. This is a 3rd party certification that our product is free from a wide list of harmful chemicals.",
+            "text_content": "Just like your favorite cotton tee, but for your booty. ;)\n\nMade of soft and breathable biodegradable natural cotton that is Standard 100 OEKO-TEX®️ Certified. This is a 3rd party certification that our product is free from a wide list of harmful chemicals.",
             "button_text": "Shop Cotton",
             "button_url": "\/collections\/cotton",
             "button_type": "primary",
