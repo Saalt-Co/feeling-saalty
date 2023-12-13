@@ -95,12 +95,32 @@
             "nav_bar_element_selector": "#hidden-element",
             "nav_bar_link_dest": ""
           }
+        },
+        "11df72dd-9585-47d9-9427-a1a0cf43f665": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "New Link",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "",
+            "nav_bar_link_dest": ""
+          }
+        },
+        "e5fd10e2-3e52-4a1a-ba9e-1cec2a491544": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "New Link",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "",
+            "nav_bar_link_dest": ""
+          }
         }
       },
       "block_order": [
         "template--21546030465297__565652d6-3977-4b13-97c8-6d36a584e191-nav_bar_link-1",
         "4f7cd548-2359-4444-9f18-c3165699d148",
-        "5b27d0a1-1af0-4902-bcbc-7f2efa34a944"
+        "5b27d0a1-1af0-4902-bcbc-7f2efa34a944",
+        "11df72dd-9585-47d9-9427-a1a0cf43f665",
+        "e5fd10e2-3e52-4a1a-ba9e-1cec2a491544"
       ],
       "settings": {
         "section_id": "",
