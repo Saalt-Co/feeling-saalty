@@ -548,53 +548,23 @@
     },
     {
       "type": "select",
-      "id": "mobile_icon_text_position",
-      "label": "Mobile icon text position",
-      "info": "Where the text should be in relation to the SVG icon on mobile",
+      "id": "mobile_text_position",
+      "label": "Text position on mobile",
       "options": [
         {
+          "value": "overlay",
+          "label": "Overlay the media"
+        },
+        {
           "value": "above",
-          "label": "Above the icon"
+          "label": "Above any media"
         },
         {
           "value": "below",
-          "label": "Below the icon"
-        },
-        {
-          "value": "left",
-          "label": "Left of the icon"
-        },
-        {
-          "value": "right",
-          "label": "Right of the icon"
+          "label": "Below any media"
         }
       ],
-      "default": "below"
-    },
-    {
-      "type": "select",
-      "id": "desktop_icon_text_position",
-      "label": "Desktop icon text position",
-      "info": "Where the text should be in relation to the SVG icon on desktop",
-      "options": [
-        {
-          "value": "above",
-          "label": "Above the icon"
-        },
-        {
-          "value": "below",
-          "label": "Below the icon"
-        },
-        {
-          "value": "left",
-          "label": "Left of the icon"
-        },
-        {
-          "value": "right",
-          "label": "Right of the icon"
-        }
-      ],
-      "default": "below"
+      "default": "overlay"
     },
     {
       "type": "select",
@@ -627,7 +597,7 @@
     {
       "type": "select",
       "id": "desktop_text_position",
-      "label": "Text position on *DESKTOP*",
+      "label": "Text position on desktop",
       "options": [
         {
           "value": "flex-start",
@@ -1423,9 +1393,34 @@
         },
         {
           "type": "select",
-          "id": "icon_text_position",
-          "label": "Icon text position",
-          "info": "Where the text should be in relation to the SVG icon",
+          "id": "mobile_icon_text_position",
+          "label": "Mobile icon text position",
+          "info": "Where the text should be in relation to the SVG icon on mobile",
+          "options": [
+            {
+              "value": "above",
+              "label": "Above the icon"
+            },
+            {
+              "value": "below",
+              "label": "Below the icon"
+            },
+            {
+              "value": "left",
+              "label": "Left of the icon"
+            },
+            {
+              "value": "right",
+              "label": "Right of the icon"
+            }
+          ],
+          "default": "below"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_text_position",
+          "label": "Desktop icon text position",
+          "info": "Where the text should be in relation to the SVG icon on desktop",
           "options": [
             {
               "value": "above",
