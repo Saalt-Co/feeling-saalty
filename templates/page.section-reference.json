@@ -66,6 +66,50 @@
         "padding_bottom": 0
       }
     },
+    "565652d6-3977-4b13-97c8-6d36a584e191": {
+      "type": "saalt-modular-nav-bar",
+      "blocks": {
+        "template--21546030465297__565652d6-3977-4b13-97c8-6d36a584e191-nav_bar_link-1": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "Our Story",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "#our-story",
+            "nav_bar_link_dest": ""
+          }
+        },
+        "4f7cd548-2359-4444-9f18-c3165699d148": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "Home",
+            "click_behavior": "link",
+            "nav_bar_element_selector": "",
+            "nav_bar_link_dest": "\/"
+          }
+        },
+        "5b27d0a1-1af0-4902-bcbc-7f2efa34a944": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "Hidden Element",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "#hidden-element",
+            "nav_bar_link_dest": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21546030465297__565652d6-3977-4b13-97c8-6d36a584e191-nav_bar_link-1",
+        "4f7cd548-2359-4444-9f18-c3165699d148",
+        "5b27d0a1-1af0-4902-bcbc-7f2efa34a944"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-4",
+        "theme_color_text": "theme-color-text-2",
+        "mobile_nav_link_gap": "3rem",
+        "desktop_nav_link_gap": "7rem"
+      }
+    },
     "707d104a-00ea-4bf5-b0b8-b4a634b27b08": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -339,7 +383,7 @@
         "template--21546030465297__2243f424-7d1b-47ed-81dd-8aa7ae84f6ae-section_title-1"
       ],
       "settings": {
-        "section_id": "",
+        "section_id": "our story",
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "code",
@@ -503,6 +547,23 @@
         "max_width": "600px",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "f5560e15-ada0-46b4-b638-07c2e5d8834c": {
+      "type": "saalt-unstyled-liquid-section",
+      "blocks": {
+        "template--21546030465297__f5560e15-ada0-46b4-b638-07c2e5d8834c-custom_liquid_code-1": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<div id=\"hidden-element\"> <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21546030465297__f5560e15-ada0-46b4-b638-07c2e5d8834c-custom_liquid_code-1"
+      ],
+      "settings": {
+        "section_id": ""
       }
     },
     "39e65c1d-23ce-4912-aae4-a5b47d2a7f43": {
@@ -802,11 +863,13 @@
   "order": [
     "main",
     "42813f3c-f6b1-420c-aff6-c74d679687ec",
+    "565652d6-3977-4b13-97c8-6d36a584e191",
     "707d104a-00ea-4bf5-b0b8-b4a634b27b08",
     "987fa4b1-6c8d-4641-8e59-b88a4eb6c3f4",
     "6e6939a0-95f3-41ee-ad01-bb83c2b0cb9b",
     "2243f424-7d1b-47ed-81dd-8aa7ae84f6ae",
     "a1fce857-de0e-41c5-b206-da6927d1cf15",
+    "f5560e15-ada0-46b4-b638-07c2e5d8834c",
     "39e65c1d-23ce-4912-aae4-a5b47d2a7f43",
     "3bfed0ad-2076-4915-9bfe-ae4df1a5d8d9",
     "76186e78-875a-451a-9db0-55a06d3df933"
