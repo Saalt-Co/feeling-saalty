@@ -411,13 +411,6 @@
     "c2901525-3b0d-4212-83f5-38810d396e66": {
       "type": "saalt-media-with-text",
       "blocks": {
-        "template--15053077250129__c2901525-3b0d-4212-83f5-38810d396e66-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "2",
-            "title": "Get to Know Us"
-          }
-        },
         "c6150beb-6137-497a-94e5-6d6a8f480a78": {
           "type": "section_icon_group",
           "settings": {
@@ -484,7 +477,6 @@
         }
       },
       "block_order": [
-        "template--15053077250129__c2901525-3b0d-4212-83f5-38810d396e66-section_title-1",
         "c6150beb-6137-497a-94e5-6d6a8f480a78",
         "c8b6863d-043a-42e0-8c38-2ce361f1fb15",
         "2b6fb01a-3a07-4b51-83ca-a1b0065828e1",
@@ -751,7 +743,7 @@
             "use_max_icon_group_width": false,
             "icon_group_max_width": "600px",
             "desktop_icons_display": "row",
-            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_horizontal_alignment": "flex-start",
             "desktop_icon_group_vertical_alignment": "center",
             "desktop_icon_grid_columns": 2,
             "desktop_icon_group_gap": "2.5rem",
