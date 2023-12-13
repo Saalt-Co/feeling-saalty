@@ -18,12 +18,6 @@
             "title": "Saalt Gives 2%"
           }
         },
-        "8419d668-d89d-494d-b25e-e4ecf571d061": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p><\/p><p><\/p><p><\/p><p><\/p><p>&nbsp<\/p>"
-          }
-        },
         "template--15053077250129__e64c7234-9808-405e-9c58-b7e318300e8e-section_content-1": {
           "type": "section_content",
           "settings": {
@@ -33,7 +27,6 @@
       },
       "block_order": [
         "template--15053077250129__e64c7234-9808-405e-9c58-b7e318300e8e-section_title-1",
-        "8419d668-d89d-494d-b25e-e4ecf571d061",
         "template--15053077250129__e64c7234-9808-405e-9c58-b7e318300e8e-section_content-1"
       ],
       "settings": {
@@ -48,8 +41,7 @@
         "max_media_width": "100%",
         "title_font_size": "medium",
         "content_font_size": "medium",
-        "mobile_icon_text_position": "below",
-        "desktop_icon_text_position": "below",
+        "mobile_text_position": "overlay",
         "mobile_text_alignment": "center",
         "desktop_text_position": "center",
         "desktop_text_alignment": "center",
