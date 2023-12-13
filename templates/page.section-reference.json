@@ -56,8 +56,7 @@
         "max_media_width": "700px",
         "title_font_size": "small",
         "content_font_size": "small",
-        "mobile_icon_text_position": "below",
-        "desktop_icon_text_position": "below",
+        "mobile_text_position": "overlay",
         "mobile_text_alignment": "center",
         "desktop_text_position": "flex-end",
         "desktop_text_alignment": "left",
@@ -65,6 +64,30 @@
         "max_width": "35%",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "78f20192-81ed-4623-9ee7-13825dc31345": {
+      "type": "saalt-modular-nav-bar",
+      "blocks": {
+        "template--21546030465297__78f20192-81ed-4623-9ee7-13825dc31345-nav_bar_link-1": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "Our Story",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "#our-story",
+            "nav_bar_link_dest": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21546030465297__78f20192-81ed-4623-9ee7-13825dc31345-nav_bar_link-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-4",
+        "theme_color_text": "theme-color-text-2",
+        "mobile_nav_link_gap": "3rem",
+        "desktop_nav_link_gap": "7rem"
       }
     },
     "707d104a-00ea-4bf5-b0b8-b4a634b27b08": {
@@ -340,7 +363,7 @@
         "template--21546030465297__2243f424-7d1b-47ed-81dd-8aa7ae84f6ae-section_title-1"
       ],
       "settings": {
-        "section_id": "",
+        "section_id": "our story",
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "code",
@@ -803,6 +826,7 @@
   "order": [
     "main",
     "42813f3c-f6b1-420c-aff6-c74d679687ec",
+    "78f20192-81ed-4623-9ee7-13825dc31345",
     "707d104a-00ea-4bf5-b0b8-b4a634b27b08",
     "987fa4b1-6c8d-4641-8e59-b88a4eb6c3f4",
     "6e6939a0-95f3-41ee-ad01-bb83c2b0cb9b",
