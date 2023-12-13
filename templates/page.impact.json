@@ -63,12 +63,12 @@
         "b2b71c50-fa24-4251-a8ec-c8825e387935": {
           "type": "section_icon_group",
           "settings": {
-            "mobile_icons_display": "column",
+            "mobile_icons_display": "grid",
             "mobile_icon_group_horizontal_alignment": "center",
             "mobile_icon_group_vertical_alignment": "flex-start",
             "mobile_icon_grid_columns": 2,
             "mobile_icon_group_gap": "2.5rem",
-            "mobile_icon_text_size": "2rem",
+            "mobile_icon_text_size": "1.5rem",
             "mobile_icon_horizontal_alignment": "center",
             "mobile_icon_vertical_alignment": "center",
             "mobile_icon_min_width": "80px",
@@ -728,10 +728,10 @@
         "971fb649-cfde-466b-aa07-4d2a518313c5": {
           "type": "section_icon_group",
           "settings": {
-            "mobile_icons_display": "row",
+            "mobile_icons_display": "grid",
             "mobile_icon_group_horizontal_alignment": "center",
             "mobile_icon_group_vertical_alignment": "flex-start",
-            "mobile_icon_grid_columns": 2,
+            "mobile_icon_grid_columns": 3,
             "mobile_icon_group_gap": "1.5rem",
             "mobile_icon_text_size": "1.5rem",
             "mobile_icon_horizontal_alignment": "center",
