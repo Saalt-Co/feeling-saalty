@@ -614,6 +614,61 @@
         "padding_bottom": 0
       }
     },
+    "10429312-ce7e-429d-b655-263692683976": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Alley",
+            "rating": 0,
+            "text": "<p>I just started yesterday and my mind is blown. So comfortable, easy to use, and it doesn’t interfere with my active lifestyle whatsoever. I’m so bummed I didn’t give it a chance sooner.<strong> This is truly what period freedom feels like!<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Alex H.",
+            "rating": 0,
+            "text": "<p>This was my first time buying and using a period cup. There was definitely a learning curve, and some stress getting it out the first few times, but once I got the hang of it <strong>I am obsessed. Love that you can wear it all day long and so much more sustainable than tampons. <\/strong>So glad I decided to try! Thanks Saalt.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-1",
+        "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-2"
+      ],
+      "settings": {
+        "title": "9\/10 People Never Go Back",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "--palette-color-0",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "9f70e72a-5b16-482b-84b3-df444f15d0bd": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -628,6 +683,7 @@
       "block_order": [
         "c8e1740d-f77e-4a9e-9d0a-1ee3334097a4"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-5",
@@ -677,6 +733,7 @@
         "16dbc45b-abe6-491e-b9ad-02da4749d08b",
         "90ef17fc-815b-44d7-84c3-489096577077"
       ],
+      "disabled": true,
       "settings": {
         "slide_height": "adapt_image",
         "slider_visual": "dots",
@@ -1035,6 +1092,7 @@
     "bec6a799-d547-4f72-a599-8edc58d4bcc3",
     "4979ad3b-9b05-4c86-8a59-644c6f717625",
     "61266f32-54d6-459e-a625-fb59fc4b6f40",
+    "10429312-ce7e-429d-b655-263692683976",
     "9f70e72a-5b16-482b-84b3-df444f15d0bd",
     "2a1f9c4e-eb99-4278-885c-23052a0fe53e",
     "7dc8f187-d995-436e-9a49-5e215d0d4aa1",

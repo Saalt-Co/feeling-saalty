@@ -77,10 +77,50 @@
             "nav_bar_element_selector": "#our-story",
             "nav_bar_link_dest": ""
           }
+        },
+        "438c49bf-dddd-4565-ae6a-3e3e67b29df6": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "Take me away",
+            "click_behavior": "link",
+            "nav_bar_element_selector": "",
+            "nav_bar_link_dest": "\/"
+          }
+        },
+        "ccd86617-1db0-4918-ad6e-2d8e464e4b1e": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "New Link",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "",
+            "nav_bar_link_dest": ""
+          }
+        },
+        "8a6903cd-f628-48b6-8719-fa4608fbb653": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "New Link",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "",
+            "nav_bar_link_dest": ""
+          }
+        },
+        "f0941048-84be-4084-80e8-f7923e5ae42d": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "New Link",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "",
+            "nav_bar_link_dest": ""
+          }
         }
       },
       "block_order": [
-        "template--21546030465297__78f20192-81ed-4623-9ee7-13825dc31345-nav_bar_link-1"
+        "template--21546030465297__78f20192-81ed-4623-9ee7-13825dc31345-nav_bar_link-1",
+        "438c49bf-dddd-4565-ae6a-3e3e67b29df6",
+        "ccd86617-1db0-4918-ad6e-2d8e464e4b1e",
+        "8a6903cd-f628-48b6-8719-fa4608fbb653",
+        "f0941048-84be-4084-80e8-f7923e5ae42d"
       ],
       "settings": {
         "section_id": "",
