@@ -499,7 +499,7 @@
         "c3d675e8-b57f-4bde-8a72-5bf54fc6c36a": {
           "type": "testimonial",
           "settings": {
-            "quote": "<strong>Never going back to tampons!<\/strong>This is my first ever cup I’ve bought.  So easy to use and <strong>I can’t even tell that it’s there.<\/strong> I ordered a size regular and it was the perfect fit for me. It makes it easier for me to use a cup because I have a heavy flow and I know that I don’t have to change my tampon every hour. I love this product.<strong> I’m so glad that I switched to a cup.<\/strong>",
+            "quote": "<strong>Never going back to tampons! <\/strong>This is my first ever cup I’ve bought. So easy to use and <strong>I can’t even tell that it’s there.<\/strong> I ordered a size regular and it was the perfect fit for me. It makes it easier for me to use a cup because I have a heavy flow and I know that I don’t have to change my tampon every hour. I love this product.<strong> I’m so glad that I switched to a cup.<\/strong>",
             "author": "<strong>Courtney M.<\/strong>",
             "show_text_box": true,
             "text_alignment": "center",
@@ -642,9 +642,9 @@
         "column1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Kelsey R.",
+            "rating": 5,
+            "text": "<p>Game changing!! This is the first cup I've ever used and I LOVE it! <strong>Literally cannot feel it<\/strong> at all when inserted. And the underwear is so comfortable, much more so than disposable pads. I was skeptical but they are <strong>some sort of sorcery because they stay dry<\/strong>! I'm telling anyone who will listen to give these products a try.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -652,9 +652,9 @@
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Kimberly P.",
+            "rating": 5,
+            "text": "<p>Love the style and softness. Probably <strong>least bulky<\/strong> period panties for the amount of fluids it can hold. Tried &lcub;other brands&rcub;. Saalt is the <strong>most luxurious and best fitting<\/strong> out of all of them. Some have weird bulk at the crotch or too stiff or wide down there.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -662,7 +662,17 @@
         "column3": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "title": "Courtney M.",
+            "rating": 5,
+            "text": "<p><strong>Never going back to tampons! <\/strong>This is my first ever cup I’ve bought. So easy to use and <strong>I can’t even tell that it’s there.<\/strong> I ordered a size regular and it was the perfect fit for me. It makes it easier for me to use a cup because I have a heavy flow and I know that I don’t have to change my tampon every hour. I love this product.<strong> I’m so glad that I switched to a cup.<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "b928608f-5149-4293-bab7-c644352b3dd1": {
+          "type": "column",
+          "settings": {
+            "title": "Lily C.",
             "rating": 0,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -673,7 +683,8 @@
       "block_order": [
         "column1",
         "column2",
-        "column3"
+        "column3",
+        "b928608f-5149-4293-bab7-c644352b3dd1"
       ],
       "disabled": true,
       "settings": {
