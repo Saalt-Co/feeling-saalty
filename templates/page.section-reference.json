@@ -423,6 +423,79 @@
         "padding_bottom": 36
       }
     },
+    "11768af0-3969-440e-ab38-6bb7083f5a63": {
+      "type": "saalt-window-display",
+      "blocks": {
+        "template--21546030465297__11768af0-3969-440e-ab38-6bb7083f5a63-window-feature-1": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Leakproof-Period-Underwear-Premium-Design.jpg",
+            "title": "<p>Window feature<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "filter",
+            "link_url": "",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        },
+        "template--21546030465297__11768af0-3969-440e-ab38-6bb7083f5a63-window-feature-2": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/86_and_46_Impact_Page.png",
+            "title": "<p>Window feature<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "filter",
+            "link_url": "",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        },
+        "template--21546030465297__11768af0-3969-440e-ab38-6bb7083f5a63-window-feature-3": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cup_Collection_Page_How_to_use_a_Saalt_Cup.jpg",
+            "title": "<p>Window feature<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "filter",
+            "link_url": "",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        },
+        "template--21546030465297__11768af0-3969-440e-ab38-6bb7083f5a63-window-feature-4": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Window-Display-Shop-Teen_03.jpg",
+            "title": "<p>Window feature<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "filter",
+            "link_url": "",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        }
+      },
+      "block_order": [
+        "template--21546030465297__11768af0-3969-440e-ab38-6bb7083f5a63-window-feature-1",
+        "template--21546030465297__11768af0-3969-440e-ab38-6bb7083f5a63-window-feature-2",
+        "template--21546030465297__11768af0-3969-440e-ab38-6bb7083f5a63-window-feature-3",
+        "template--21546030465297__11768af0-3969-440e-ab38-6bb7083f5a63-window-feature-4"
+      ],
+      "settings": {
+        "section_id": "",
+        "make_full_width": false,
+        "mobile_min_width": "40%",
+        "mobile_max_width": "280px",
+        "mobile_aspect_ratio": "1\/1.5",
+        "desktop_min_width": "auto",
+        "desktop_max_width": "25%",
+        "desktop_aspect_ratio": "1\/1.5"
+      }
+    },
     "a1fce857-de0e-41c5-b206-da6927d1cf15": {
       "type": "saalt-media-with-split-text",
       "blocks": {
@@ -929,6 +1002,7 @@
     "987fa4b1-6c8d-4641-8e59-b88a4eb6c3f4",
     "6e6939a0-95f3-41ee-ad01-bb83c2b0cb9b",
     "2243f424-7d1b-47ed-81dd-8aa7ae84f6ae",
+    "11768af0-3969-440e-ab38-6bb7083f5a63",
     "a1fce857-de0e-41c5-b206-da6927d1cf15",
     "f5560e15-ada0-46b4-b638-07c2e5d8834c",
     "7bd00ceb-ffbb-481f-9c8e-589563960e89",
