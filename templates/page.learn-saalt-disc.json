@@ -34,8 +34,8 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-Disc-Promo-January-February-Menstrual-Disc-Cup-15-Off-Hero-mobile.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Disc-Promo-January-February-Menstrual-Disc-Cup-15-Off-Hero-desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Learn-Saalt-Disc-Header-Mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Learn-Saalt-Disc-Header-Desktop.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
@@ -129,7 +129,7 @@
         "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>The Saalt Cup sits in the vaginal canal, below the cervix. When positioned properly, you won't even notice it's there. Once inserted, it molds to your internal shape so you can comfortably wear it all day or night, leak free.<\/p>"
+            "text_content": "<p>The Saalt Disc is inserted like a tampon, but collects rather than absorbs your flow. The disc rests around the cervix for leak-free comfort, all day or night. Flexible, flat fit allows for mess-free intimacy.<\/p>"
           }
         }
       },
@@ -142,7 +142,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/How-to-insert-remove-a-menstrual-cup_f0a85603-f41d-49b5-bf2f-7cb85f29d12f.gif",
+        "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-04.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -172,7 +172,7 @@
         "template--15078825525329__11b4eb9a-18a9-488e-bfd7-23c248641695-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p><strong>1: Fold<\/strong><\/p><p>With clean hands, fold and hold your menstrual cup.<\/p><p><strong>2: Insert<\/strong><\/p><p>Insert your menstrual cup toward your tailbone. Let it open and rotate it slightly, creating a light seal.<\/p><p><strong>3: Remove<\/strong><\/p><p>After up to 12 hours of wearing your cup, simply remove it by pinching the base of the cup to break the seal. Then wash your cup, insert, and get back to living your best life.<\/p><p><a href=\"\/pages\/instructions\" title=\"\/pages\/instructions\"><strong>See our full menstrual cup instructions here.<\/strong><\/a><\/p>"
+            "text_content": "<p><strong>1: Fold<\/strong><\/p><p>With clean hands, pinch your disc into a figure 8.<\/p><p><strong>2: Insert<\/strong><\/p><p>Insert the disc fully and tuck behind your pubic bone.<\/p><p><strong>3: Remove<\/strong><\/p><p>After up to 12 hours of wearing your disc, simply remove it by hooking your finger in the custom finger hold and gently pulling out your disc. Then wash your disc, insert, and get back to living your best life.<\/p><p><a href=\"\/pages\/disc-instructions\" title=\"\/pages\/disc-instructions\"><strong>See our full menstrual disc instructions here.<\/strong><\/a><\/p>"
           }
         }
       },
