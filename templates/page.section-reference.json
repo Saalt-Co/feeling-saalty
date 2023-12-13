@@ -66,70 +66,6 @@
         "padding_bottom": 0
       }
     },
-    "78f20192-81ed-4623-9ee7-13825dc31345": {
-      "type": "saalt-modular-nav-bar",
-      "blocks": {
-        "template--21546030465297__78f20192-81ed-4623-9ee7-13825dc31345-nav_bar_link-1": {
-          "type": "nav_bar_link",
-          "settings": {
-            "nav_bar_link_text": "Our Story",
-            "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "#our-story",
-            "nav_bar_link_dest": ""
-          }
-        },
-        "438c49bf-dddd-4565-ae6a-3e3e67b29df6": {
-          "type": "nav_bar_link",
-          "settings": {
-            "nav_bar_link_text": "Take me away",
-            "click_behavior": "link",
-            "nav_bar_element_selector": "",
-            "nav_bar_link_dest": "\/"
-          }
-        },
-        "ccd86617-1db0-4918-ad6e-2d8e464e4b1e": {
-          "type": "nav_bar_link",
-          "settings": {
-            "nav_bar_link_text": "New Link",
-            "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "",
-            "nav_bar_link_dest": ""
-          }
-        },
-        "8a6903cd-f628-48b6-8719-fa4608fbb653": {
-          "type": "nav_bar_link",
-          "settings": {
-            "nav_bar_link_text": "New Link",
-            "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "",
-            "nav_bar_link_dest": ""
-          }
-        },
-        "f0941048-84be-4084-80e8-f7923e5ae42d": {
-          "type": "nav_bar_link",
-          "settings": {
-            "nav_bar_link_text": "New Link",
-            "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "",
-            "nav_bar_link_dest": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21546030465297__78f20192-81ed-4623-9ee7-13825dc31345-nav_bar_link-1",
-        "438c49bf-dddd-4565-ae6a-3e3e67b29df6",
-        "ccd86617-1db0-4918-ad6e-2d8e464e4b1e",
-        "8a6903cd-f628-48b6-8719-fa4608fbb653",
-        "f0941048-84be-4084-80e8-f7923e5ae42d"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme-color-bg-4",
-        "theme_color_text": "theme-color-text-2",
-        "mobile_nav_link_gap": "3rem",
-        "desktop_nav_link_gap": "7rem"
-      }
-    },
     "707d104a-00ea-4bf5-b0b8-b4a634b27b08": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -866,7 +802,6 @@
   "order": [
     "main",
     "42813f3c-f6b1-420c-aff6-c74d679687ec",
-    "78f20192-81ed-4623-9ee7-13825dc31345",
     "707d104a-00ea-4bf5-b0b8-b4a634b27b08",
     "987fa4b1-6c8d-4641-8e59-b88a4eb6c3f4",
     "6e6939a0-95f3-41ee-ad01-bb83c2b0cb9b",
