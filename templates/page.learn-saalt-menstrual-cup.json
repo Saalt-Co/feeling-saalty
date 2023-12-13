@@ -34,8 +34,8 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Hero_Cup_Learn_Page_12-12-23.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/learn_sec1_main_banner_Cup_Learn_Page_12-12-23.png",
+        "mobile_image": "shopify:\/\/shop_images\/image_1.png",
+        "desktop_image": "shopify:\/\/shop_images\/image_1.png",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
@@ -44,7 +44,7 @@
         "content_font_size": "small",
         "mobile_text_position": "below",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "flex-end",
+        "desktop_text_position": "flex-start",
         "desktop_text_alignment": "left",
         "use_max_text_width": true,
         "max_width": "40%",
@@ -598,7 +598,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "code",
-        "custom_code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/RsV27S_8t_U?si=TrwbnewiOBaqwFcj\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "custom_code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/RsV27S_8t_U?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
         "use_max_media_width": true,
         "max_media_width": "900px",
         "media_width": 50,
@@ -871,10 +871,10 @@
             "mobile_icon_height": "100px",
             "use_max_icon_group_width": true,
             "icon_group_max_width": "1100px",
-            "desktop_icons_display": "row",
+            "desktop_icons_display": "grid",
             "desktop_icon_group_horizontal_alignment": "center",
             "desktop_icon_group_vertical_alignment": "center",
-            "desktop_icon_grid_columns": 2,
+            "desktop_icon_grid_columns": 5,
             "desktop_icon_group_gap": "3.5rem",
             "desktop_icon_text_size": "clamp(.75rem, 1.5vw, 1.25rem)",
             "desktop_icon_horizontal_alignment": "center",
@@ -977,7 +977,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "2",
-            "title": "Questions?<br> You don't have to<br>whisper period."
+            "title": "Questions?<br> You don't have to whisper period."
           }
         },
         "template--15078825525329__ee2c8556-75bf-49e7-bfbb-644878ffb5af-section_content-1": {
