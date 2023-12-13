@@ -197,135 +197,6 @@
         "padding_bottom": 0
       }
     },
-    "d7d7a243-f632-45c8-b506-96a010b8e74e": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "731bda26-c495-4563-9ea2-e40001ce191f": {
-          "type": "custom_liquid_code",
-          "settings": {
-            "liquid_code": "<h3 style=\"margin-bottom: 0; font-size: 1.5rem;\">Watch The Saalt Story<\/h3>"
-          }
-        },
-        "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "2",
-            "title": "The Inspiration Behind Our Products"
-          }
-        }
-      },
-      "block_order": [
-        "731bda26-c495-4563-9ea2-e40001ce191f",
-        "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_title-1"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme-color-bg-5",
-        "theme_color_text": "theme_default",
-        "media_type": "code",
-        "custom_code": "<iframe width=\"1271\" height=\"715\" src=\"https:\/\/www.youtube.com\/embed\/O7wZ1V7JQFQ?rel=0\" title=\"The Saalt Story - The Inspiration Behind Our Reusable Period Care Products\" frameborder=\"0\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"><\/iframe>",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "above",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "above",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "ada1c325-4f89-4bb5-a917-d6aa63fb225a": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--15053077250129__ada1c325-4f89-4bb5-a917-d6aa63fb225a-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "2",
-            "title": "This is the Saalt story."
-          }
-        },
-        "template--15053077250129__ada1c325-4f89-4bb5-a917-d6aa63fb225a-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p><strong>It begins with Cherie, our CEO and co-founder.\u2028She has a period and 5 daughters.\u2028You could say, she gets period care.\u2028\u2028<\/strong><\/p><p>“It all started with a phone call I had with my aunt in Venezuela, where pads and tampons hadn’t been available in stores for years. I immediately thought of my daughters and what I would do in the same situation. Our dependence on disposables kept me up at night.<\/p><p><em><strong>Why have we been using the same single-use disposable products for the past 100 years? <\/strong><\/em><\/p><p>I also learned that lack of access to period products extended beyond just Venezuela—over 62% of the world lives in period poverty, which makes girls miss school and women miss out on economic progress every day. So why is the default option something that most people can’t access or afford?<\/p><p>There had to be a better way.<\/p><p>Three months later, I started sourcing long-lasting reusable products for hundreds of friends. But when I went to source menstrual cups and period underwear, I couldn’t find products that met my expectations. So I started custom designing products I actually wanted to use myself and could share with friends.<\/p><p>In February of 2018, we launched Saalt with the vision of making life-changing  period and body care products accessible to everyone.”<\/p>"
-          }
-        },
-        "c49968e4-892d-4808-9620-b0b2b980d291": {
-          "type": "section_icon_group",
-          "settings": {
-            "mobile_icons_display": "row",
-            "mobile_icon_group_horizontal_alignment": "center",
-            "mobile_icon_group_vertical_alignment": "flex-start",
-            "mobile_icon_grid_columns": 2,
-            "mobile_icon_group_gap": "3.5rem",
-            "mobile_icon_text_size": "1.5rem",
-            "mobile_icon_horizontal_alignment": "center",
-            "mobile_icon_vertical_alignment": "center",
-            "mobile_icon_min_width": "80px",
-            "mobile_icon_wrapper_max_width": "200px",
-            "mobile_icon_max_width": "100%",
-            "mobile_icon_height": "100px",
-            "use_max_icon_group_width": false,
-            "icon_group_max_width": "600px",
-            "desktop_icons_display": "row",
-            "desktop_icon_group_horizontal_alignment": "center",
-            "desktop_icon_group_vertical_alignment": "center",
-            "desktop_icon_grid_columns": 2,
-            "desktop_icon_group_gap": "3.5rem",
-            "desktop_icon_text_size": "1.5rem",
-            "desktop_icon_horizontal_alignment": "center",
-            "desktop_icon_vertical_alignment": "center",
-            "desktop_icon_min_width": "80px",
-            "desktop_icon_wrapper_max_width": "200px",
-            "desktop_icon_max_width": "100%",
-            "desktop_icon_height": "100px"
-          }
-        },
-        "db165d2b-8087-44f5-afc5-d235851781c2": {
-          "type": "section_icon_with_text",
-          "settings": {
-            "icon_svg": "<svg width=\"300\" height=\"128\" viewbox=\"0 0 300 128\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n<g clip-path=\"url(#clip0_494_8288)\">\n<rect width=\"300\" height=\"128\" fill=\"url(#pattern0)\"><\/rect>\n<\/g>\n<defs>\n<pattern id=\"pattern0\" patterncontentunits=\"objectBoundingBox\" width=\"1\" height=\"1\">\n<use xlink:href=\"#image0_494_8288\" transform=\"scale(0.00333333 0.0078125)\"><\/use>\n<\/pattern>\n<clippath id=\"clip0_494_8288\">\n<rect width=\"300\" height=\"128\" fill=\"white\"><\/rect>\n<\/clippath>\n<image id=\"image0_494_8288\" width=\"300\" height=\"128\" xlink:href=\"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACACAYAAACx1FRUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAJS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDMgNzkuMTY0NTI3LCAyMDIwLzEwLzE1LTE3OjQ4OjMyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06RG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjA4OWUyMTg5LTJmNzQtYzE0Ni1hOTRmLWYwYzI4MGJiYjQ3MyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxNDhkMDY5ZC1hMWU1LTRhNTYtODVmNS04N2E1ZTk1NjQyOGQiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0iRDcyMDg3NkZFOUIxOTM1MjZCRDQ1N0EyMTUxQThCQTMiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiBwaG90b3Nob3A6SUNDUHJvZmlsZT0iIiB0aWZmOkltYWdlV2lkdGg9IjMwMCIgdGlmZjpJbWFnZUxlbmd0aD0iMTI4IiB0aWZmOlBob3RvbWV0cmljSW50ZXJwcmV0YXRpb249IjIiIHRpZmY6U2FtcGxlc1BlclBpeGVsPSIzIiB0aWZmOlhSZXNvbHV0aW9uPSIxLzEiIHRpZmY6WVJlc29sdXRpb249IjEvMSIgdGlmZjpSZXNvbHV0aW9uVW5pdD0iMSIgZXhpZjpFeGlmVmVyc2lvbj0iMDIzMSIgZXhpZjpDb2xvclNwYWNlPSI2NTUzNSIgZXhpZjpQaXhlbFhEaW1lbnNpb249IjMwMCIgZXhpZjpQaXhlbFlEaW1lbnNpb249IjEyOCIgeG1wOkNyZWF0ZURhdGU9IjIwMjEtMDItMjZUMTU6NDE6NTUtMDc6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIxLTAyLTI2VDE1OjQ5OjA3LTA3OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIxLTAyLTI2VDE1OjQ5OjA3LTA3OjAwIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6ZGYzYjBhYzEtMmYyNi00ZGVjLWJjZDAtMWUwNGEyNWU5YmMzIiBzdEV2dDp3aGVuPSIyMDIxLTAyLTI2VDE1OjQ5OjA3LTA3OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjIuMSAoTWFjaW50b3NoKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGltYWdlL2pwZWcgdG8gaW1hZ2UvcG5nIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJkZXJpdmVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJjb252ZXJ0ZWQgZnJvbSBpbWFnZS9qcGVnIHRvIGltYWdlL3BuZyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MTQ4ZDA2OWQtYTFlNS00YTU2LTg1ZjUtODdhNWU5NTY0MjhkIiBzdEV2dDp3aGVuPSIyMDIxLTAyLTI2VDE1OjQ5OjA3LTA3OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjIuMSAoTWFjaW50b3NoKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ZGYzYjBhYzEtMmYyNi00ZGVjLWJjZDAtMWUwNGEyNWU5YmMzIiBzdFJlZjpkb2N1bWVudElEPSJENzIwODc2RkU5QjE5MzUyNkJENDU3QTIxNTFBOEJBMyIgc3RSZWY6b3JpZ2luYWxEb2N1bWVudElEPSJENzIwODc2RkU5QjE5MzUyNkJENDU3QTIxNTFBOEJBMyIvPiA8dGlmZjpCaXRzUGVyU2FtcGxlPiA8cmRmOlNlcT4gPHJkZjpsaT44PC9yZGY6bGk+IDxyZGY6bGk+ODwvcmRmOmxpPiA8cmRmOmxpPjg8L3JkZjpsaT4gPC9yZGY6U2VxPiA8L3RpZmY6Qml0c1BlclNhbXBsZT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw\/eHBhY2tldCBlbmQ9InIiPz6i9vaFAAAK7UlEQVR4nO3dvW7cuBrG8SfrNeDCTRpX7tJt6VO6Te9++1xAriD9AXL6XID7qV2nTJvOW7lZ4wBuXBgw9kSn0HJHo+iDX6L4av4\/wMBuRhpxJIqiyJekBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGArfpfUrJ0IJDlbOwHYlntJPyR9VZ2Fw+e1E4BoO0mPaycC29GoLbD6\/7a2i7UTgCwatbVkIMk7jRdMaxdY31c+PvJZOy9hAxq1r4BTn6+lX1iR4e1qxPVDoidJrzPbrJXJrgf+rf+6CjtC89H5IqmAWW\/ll4nWKLCG2jmmaoGo263C8xG1MfzDt3p+7bldTtcarl2Rge1qFN4WyfWGpDYjfA3YtqRLtV3fa6cD+Vwo\/Pp9WSIhsOevwO1fFknFuLHXvtuiqUBOjaQPEfvgyH2Rf81KgdvmMPZUpe3KrlPFFT4UWEfuVeG1q5KZ5kLjwaFkXruGApHnnIlrftQ+qP6n3FhoxVDjO+yoPd+hQjEZ4KPaBvASpsaWkXntuhQFFgLFXvxSmWbqOKeSfiuUDuRXe95DZe4S9i2RaeZe98i4tsVcv1Mxm8Oqfl3puI2kNyvs6+tE0p8Tn98VSAOWE5uHXiP3Qya\/rHDMb5L+tcJxQ\/xb0h8Tn\/+3VEIArCd1KE2jtlq+pJvEz1G3H4rLQ42kh8xpQeV2ifsvPbnaO7UzRExJaXvD+mhsh5e5gmBOiYny5jLlpwJpwHKeRIEFD6kXu0RmedB8De5bgXRgOY3aDpWY\/Vic4khcKP01am4SvxwYgb991K4wy0LtyucYxN\/YFjNusLsvjkDqhb7X8stm+fT+kGHto3aFSedqpzlOUSKz+BSIu6UTgUW9Kn4aoLk82Ijat3kflad2tbQrj214wtoXew3f6jBmyy3eWyIeEAU1ShsYXGJV5zPNr3xi6cnpbiSGjhw6V9rroPsLnZUURrwq\/elTKowhxzaom29ectPNfFVb6LNO4ZGw0CvoE4Raer54LGMsP92rfbiOrZhTar41rCg1sPJjllTkwWyi9n3WYWH0Wfua0\/uZfaldHYGU4Te+C6emqnVxVuTXqF0rIPT1LmZhVRiTeoFTxxr6ONV8GIPPNqhfShtUjYXVndpOINrWMnhRO9NB7Z49tqGwsulM7Q19rv3CJjGhMe9VV4Gw0+EY148q375a0\/nIInWOqxK+az4AlAVRbRqqdcSGpDSKD3h+VvhydVOu1P6Ondo21U8qH2qzuRpdyo+5lV+tJ4edxzabujBHzGdeszGxeeBOeRfV\/aLDOLDU2MYYmyusJL9o8TGlTsZcj5BUruDE8lLarmJWFO8HOp\/I\/764Ulv7dz3kn7QvKHLMv9aoLfxCmzo2WVhZ+UE+48F8CjXUz93wMWLXKXQxWy5s4q+\/\/7sbRjH214\/3Sp2Kuf\/9Kd+xKaeyMb+5z4mndrUdsTeai25PPV537rbQWL7YcIpv8o8vm\/MSmYbqWflRc1VhK79DWn5O+y1IqVWEDinLmXdiajVun5hZVIeExkKm1sSKjX+1shDDXKiFpcJqyWq6a+ewrmTsle+xfHr1QtPtth8avL9T\/PoHjfx6yrurX4X0qPZfV4sNKLdyo0\/Fq1wrbxf0kn5T3idp31baLEqG1\/hun3NkhbtOQzXBe7WFVWzHgRsR4JsOZ2rGEzfNlPtL6aBLkrP7dkkXE59ZukEbjZ\/zHDdpbJBlbVJqV1N5JWV7nw4f3\/i\/oe\/qN7DfKKxtudH+TcTngdh\/cLpjv+gwLdU8BKtIhIepk5+jcbWUqckQc7wCnSruiVyblEkjl6pd+Wzr+12uYb2731CP4qv8XwmnHoRj21u5\/\/9hZY6osd6SHwqPZF7rQp2oTe9Ym2Fsmp60D6Q1lwFHpLSJhJyDlLUN+x4Cv+tR+1e3sZWkfL+vf2yfgtVcXrEydGVsmpozLde4OiVlPvGxY3+f+GzKG+1rVN3GU+tif8erwl6Hc\/ZqNcobUuObV4e2m9rPZGEl2VlIdCyUIfZVcG4q5bn9Y8IR5p6+sY3wn7Vv\/DSZCQfcqM7XQWn6nvmmvB0\/vr2WQwX0UDp3KhR2sIRL2Viq\/V7DY65iC6uUJ2Dsk8nVfMae\/LHtNa7gLDX3WCmN4m\/8pQusqe1TCtqh4\/i81u0G\/v1Mh4XS757fVzUriR\/rSQmNTbka+S5frtCJeTrNZZbYdLk0bWn65xOVC2d4q7Bz5xNiENJLOGbuAfZh5nPpcB57K\/f6JAs\/4lo\/N7Y3iguKbJS2rmLshW80Ha8Se4O6TB3SfW9BSoEVeo1e5N\/pFNKgPhQOcC\/\/yPtG451MoT2Bm2BlSMhY7Srme1IK6NjxWL7V+tgC2EqgbIid0gqskGlonjTeO9f\/3lIP+KkCezO1pVAWfvSDfr6RSzXEDu0f2iDuRvZPuffYZigtIVHM1qTclDvlHT94l5ieGEOvlJ\/k9zq6WRaqlEPdtDG9aDka2kN7U13j69RAbTehm++16N84Wy2wcsZF+XDn1U0L81b75cLWOMf9Y+ZYdd20S9no1tx1\/js286SuluIybohG7VN+p\/F2iGftf9PUwPOTznb9IMqjzsSZuc4L9xc72DjVkw5f891D7ahZOAH9cIvYtppHxUXyn2n\/Oup7vk572+40PLtEt\/Cdasid6+EZKsS6tjCW8NgMvVUcPQuvg92G0JT2jJRpOUKO7wqWd71\/6\/cO9gugofgp367oucKMzG6Pu2YuJGGp2TzMuFX9DXfdbvrYm87VPG4i9g15yp1rvHB47Pz71OKf3e\/otqX46O9LQWWXy\/dH32bVZelExE5A130qha60EhJGEVILsjIECutxbZm8yndYKLAulDYDqvuN9\/KLsZH2jZtDYwzHCjEL5xI2uEb\/rQUBJ6v9JrtUWhpjuv3nCh\/3+YXiXtuAOWv2TFbrRuFBdaWlFlYvvf\/32Wduu+7A0doLfNhDvhpR+wDZRvHLjA1ddJ\/2JdYuxNoalV+u3oSaS\/Gd4tPnakBdU5PhucItZSA0kEOj8LUOj0atBdap5pfvmjL0ux40HGxK9Rs1IS9OGJoEb23ugl0qbgaJucZyx822QK0KtaCwmnG2dgJ6uhfsi8LjT3xjoKhVoTav2ubUQNmstuDhiKEG8pB3eYIxYVV\/zCkG1NQLERJNPrZ\/ja+3gA9q\/B5qOEFzC4j6aDS+5BdQOworT2ufJJ9o8tTvAGrmZi+FhzVPlO8g4bnPGRQKywgQDbBGgeUGFPsMB\/IZywdYRR4OVPpkhV6gqbatlJkbgLX5LEaCnpInLGa4wdDsio1srEwNTGkUN033UStRYLk5fWL01\/2jzQpbwKtgpKVPWo4L041Kry0qHwjl5uvfrZwOk5YqsNxk+TxFgEON\/Ge8xYDcY5diVi0GjsEHcW8ky3UC34taFTDGTaXdX24egRqFryIz9B0UVMA47pGMYk+kuwjPGdMCbI1bfxKZDE0nPOVKVG0BX42Y5yq7uSrrG7XL2RNlDvjjVXBBt\/p5Rs7uH69+gD83KR+1qwJ2YvZOIAW1KwAmnKktrFJWfgKAIqhdATDB1a4AoHo5grEBYHHPonYFwICpFaAAoCo0tAMwgcIKgBkUVhn9snYCgA17kPSftRMBAD6oXQEwoVE79TEAVI\/aFQATXsXScwAMOBe1KwBGNGpXwgGAqj2I2hUAIyisFkbgKJDHo6T\/rZ0IAPBB7aoAalgAAAAAAAAAAAAAAKBS\/we\/TLSYNMyNZQAAAABJRU5ErkJggg==\"><\/image>\n<\/defs>\n<\/svg>",
-            "icon_text": "",
-            "mobile_icon_text_position": "below",
-            "desktop_icon_text_position": "below",
-            "theme_color_icon_color": "match_text",
-            "theme_color_icon_text_color": "match_text"
-          }
-        }
-      },
-      "block_order": [
-        "template--15053077250129__ada1c325-4f89-4bb5-a917-d6aa63fb225a-section_title-1",
-        "template--15053077250129__ada1c325-4f89-4bb5-a917-d6aa63fb225a-section_content-1",
-        "c49968e4-892d-4808-9620-b0b2b980d291",
-        "db165d2b-8087-44f5-afc5-d235851781c2"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "image": "shopify:\/\/shop_images\/RedAspenxSaalt2044.jpg",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "303350fa-3085-44b8-bb82-8d7345eba2e2": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -1139,14 +1010,91 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "323f67ac-902c-4b86-99dd-1157cfa69694": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "751dfb61-da4a-448d-9830-0f0b0f9736f4": {
+          "type": "section_icon_group",
+          "settings": {
+            "mobile_icons_display": "row",
+            "mobile_icon_group_horizontal_alignment": "center",
+            "mobile_icon_group_vertical_alignment": "flex-start",
+            "mobile_icon_grid_columns": 2,
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_text_size": "1.5rem",
+            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_vertical_alignment": "center",
+            "mobile_icon_min_width": "80px",
+            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "100px",
+            "use_max_icon_group_width": false,
+            "icon_group_max_width": "600px",
+            "desktop_icons_display": "row",
+            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_vertical_alignment": "center",
+            "desktop_icon_grid_columns": 2,
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_horizontal_alignment": "center",
+            "desktop_icon_vertical_alignment": "center",
+            "desktop_icon_min_width": "80px",
+            "desktop_icon_wrapper_max_width": "100px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "100px"
+          }
+        },
+        "498cb073-28f4-4edd-8a97-cabf4e601653": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"23\" height=\"14\" viewbox=\"0 0 23 14\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g clip-path=\"url(#clip0_1039_6938)\">\n<path d=\"M22.963 1.59095L22.9167 1.60288C22.8509 2.17886 22.422 2.9227 20.815 3.33082C18.9858 3.79407 17.0632 3.17243 15.8746 2.26485C15.7022 2.13319 15.5271 1.99907 15.3465 1.8666C15.2531 1.79789 15.1597 1.72795 15.0659 1.65801C13.6839 0.625363 12.0602 -0.131638 10.2905 0.0214075H10.28C10.2742 0.0214075 10.2683 0.0214074 10.2629 0.0238759C9.11128 0.127552 8.2753 0.501938 7.61523 0.995635C7.01797 1.40439 6.50122 1.93151 6.0935 2.5479C5.33808 3.69986 5.06448 5.02996 5.32407 6.29177C5.33497 6.34319 5.35131 6.39174 5.36299 6.44234C5.06791 6.42883 4.77231 6.43501 4.47797 6.46086C2.76553 6.61143 1.52401 7.76463 0.767035 9.00833C0.154489 10.0163 -0.104034 11.2195 0.0365245 12.4083L0.0828383 12.3963C0.148612 11.8203 0.5775 11.0765 2.18447 10.6684C4.01366 10.2055 5.93627 10.8268 7.12485 11.7344C7.29727 11.866 7.4724 12.0001 7.65299 12.1326L7.93359 12.3412C9.31561 13.3738 10.9393 14.1308 12.709 13.9778H12.7195L12.737 13.9753C13.8902 13.8708 14.7261 13.4985 15.3862 13.0019C15.9833 12.5933 16.5 12.0663 16.9075 11.4501C17.663 10.2981 17.9366 8.9676 17.677 7.7062C17.6665 7.65478 17.6497 7.60623 17.6381 7.55563C17.9331 7.56915 18.2287 7.56296 18.5231 7.53711C20.2355 7.38654 21.477 6.23334 22.2344 4.98964C22.8458 3.9817 23.1037 2.77906 22.963 1.59095ZM17.5244 7.74982C17.5509 7.879 17.5688 8.00942 17.5836 8.13943C17.7626 9.99614 16.3183 11.0156 15.0285 11.1427C13.2492 11.3197 11.915 10.0694 10.2629 8.80345L9.88032 8.51093C8.38389 7.33223 7.13575 6.57194 5.52878 6.45386C5.51127 6.38598 5.48986 6.32015 5.47546 6.25103C5.449 6.12185 5.4311 5.99143 5.41631 5.86102C5.22171 3.91338 6.68157 2.98523 7.97134 2.85769C9.75072 2.68079 11.0849 3.93107 12.737 5.19699L13.1196 5.48951C14.616 6.66821 15.8641 7.4285 17.4715 7.54658C17.4886 7.61487 17.51 7.6807 17.5244 7.74982Z\" fill=\"black\"><\/path>\n<\/g>\n<defs>\n<clippath id=\"clip0_1039_6938\">\n<rect width=\"23\" height=\"14\" fill=\"white\"><\/rect>\n<\/clippath>\n<\/defs>\n<\/svg>",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "theme-color-text-0",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "template--21650857034001__323f67ac-902c-4b86-99dd-1157cfa69694-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<h2>You started your period today, but you don't have period care. Would you go to work or school?<\/h2><p>500 million women and girls around the world have to make this decision every month.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "751dfb61-da4a-448d-9830-0f0b0f9736f4",
+        "498cb073-28f4-4edd-8a97-cabf4e601653",
+        "template--21650857034001__323f67ac-902c-4b86-99dd-1157cfa69694-section_content-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-4",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Impact-OWI-2019-0002-edited_1_Impact_Page.jpg",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "e64c7234-9808-405e-9c58-b7e318300e8e",
     "7f641a80-2973-4cbe-8deb-d5232f6ed04b",
-    "d7d7a243-f632-45c8-b506-96a010b8e74e",
-    "ada1c325-4f89-4bb5-a917-d6aa63fb225a",
     "303350fa-3085-44b8-bb82-8d7345eba2e2",
     "c2901525-3b0d-4212-83f5-38810d396e66",
     "f1b16d01-d3ea-4457-bea4-1ce2d36e34aa",
@@ -1157,6 +1105,7 @@
     "e8f8ad80-7890-480a-8074-f9883439de49",
     "295e4f08-0542-49f0-adea-71b77b8d1067",
     "1eb65275-73ad-4234-9945-f8db040b3522",
-    "adef0161-cadd-425a-908d-5de3ece928a1"
+    "adef0161-cadd-425a-908d-5de3ece928a1",
+    "323f67ac-902c-4b86-99dd-1157cfa69694"
   ]
 }
