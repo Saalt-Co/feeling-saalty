@@ -190,7 +190,7 @@
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
-        "media_width": 40,
+        "media_width": 30,
         "title_font_size": "small",
         "content_font_size": "small",
         "mobile_text_position": "above",
