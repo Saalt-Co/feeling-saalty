@@ -586,6 +586,47 @@
         "section_id": ""
       }
     },
+    "7bd00ceb-ffbb-481f-9c8e-589563960e89": {
+      "type": "saalt-testimonials",
+      "blocks": {
+        "template--21546030465297__7bd00ceb-ffbb-481f-9c8e-589563960e89-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Game changing!!This is the first cup I've ever used and I LOVE it! <strong>Literally cannot feel it<\/strong> at all when inserted. And the underwear is so comfortable, much more so than disposable pads. I was skeptical but they are <strong>some sort of sorcery because they stay dry<\/strong>! I'm telling anyone who will listen to give these products a try.",
+            "author": "<strong>Kelsey R.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--21546030465297__7bd00ceb-ffbb-481f-9c8e-589563960e89-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Love the style and softness. Probably <strong>least bulky<\/strong> period panties for the amount of fluids it can hold. Tried {other brands}. Saalt is the <strong>most luxurious and best fitting<\/strong> out of all of them. Some have weird bulk at the crotch or too stiff or wide down there.",
+            "author": "<strong>Kimberly P.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--21546030465297__7bd00ceb-ffbb-481f-9c8e-589563960e89-testimonial-2",
+        "template--21546030465297__7bd00ceb-ffbb-481f-9c8e-589563960e89-testimonial-1"
+      ],
+      "settings": {
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "theme_color_background": "theme-color-bg-4",
+        "theme_color_text": "theme-color-text-2",
+        "include_img": true,
+        "image": "shopify:\/\/shop_images\/Testimonials_1.jpg",
+        "image_behavior": "none",
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "39e65c1d-23ce-4912-aae4-a5b47d2a7f43": {
       "type": "saalt-style-1-tiles-section",
       "blocks": {
@@ -890,6 +931,7 @@
     "2243f424-7d1b-47ed-81dd-8aa7ae84f6ae",
     "a1fce857-de0e-41c5-b206-da6927d1cf15",
     "f5560e15-ada0-46b4-b638-07c2e5d8834c",
+    "7bd00ceb-ffbb-481f-9c8e-589563960e89",
     "39e65c1d-23ce-4912-aae4-a5b47d2a7f43",
     "3bfed0ad-2076-4915-9bfe-ae4df1a5d8d9",
     "76186e78-875a-451a-9db0-55a06d3df933"
