@@ -42,8 +42,7 @@
         "max_media_width": "60%",
         "title_font_size": "small",
         "content_font_size": "small",
-        "mobile_icon_text_position": "below",
-        "desktop_icon_text_position": "below",
+        "mobile_text_position": "below",
         "mobile_text_alignment": "center",
         "desktop_text_position": "flex-start",
         "desktop_text_alignment": "left",
@@ -301,7 +300,7 @@
         "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>If you're not happy with your Saalt product, <span style=\"text-decoration:underline\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/span>. Your Saalt(isfaction) guaranteed.<\/p>"
+            "text_content": "<p>If you're not happy with your Saalt product, <a href=\"\/pages\/replacements\" title=\"\/pages\/replacements\"><span style=\"text-decoration:underline\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/span><\/a>. Your Saalt(isfaction) guaranteed.<\/p>"
           }
         }
       },
@@ -338,7 +337,7 @@
         "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_title-1": {
           "type": "section_title",
           "settings": {
-            "heading_tag": "2",
+            "heading_tag": "3",
             "title": "Which size should I get?<br>Let’s break it down."
           }
         },
@@ -354,19 +353,20 @@
         "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_content-1"
       ],
       "settings": {
-        "section_id": "absorbency guide",
+        "section_id": "",
         "theme_color_background": "theme-color-bg-6",
         "theme_color_text": "theme-color-text-0",
-        "media_type": "none",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Saalt-Cup-Size-Guide-Learn_Cups_12-13-2023.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
-        "media_width": 50,
+        "media_width": 40,
         "title_font_size": "small",
         "content_font_size": "small",
         "mobile_text_position": "above",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
+        "desktop_text_position": "left",
         "desktop_text_alignment": "center",
         "use_max_text_width": true,
         "max_width": "600px",
@@ -598,7 +598,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "code",
-        "custom_code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/RsV27S_8t_U?si=TrwbnewiOBaqwFcj\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "custom_code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/RsV27S_8t_U?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
         "use_max_media_width": true,
         "max_media_width": "900px",
         "media_width": 50,
@@ -612,6 +612,61 @@
         "max_width": "600px",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "10429312-ce7e-429d-b655-263692683976": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Alley",
+            "rating": 0,
+            "text": "<p>I just started yesterday and my mind is blown. So comfortable, easy to use, and it doesn’t interfere with my active lifestyle whatsoever. I’m so bummed I didn’t give it a chance sooner.<strong> This is truly what period freedom feels like!<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Alex H.",
+            "rating": 0,
+            "text": "<p>This was my first time buying and using a period cup. There was definitely a learning curve, and some stress getting it out the first few times, but once I got the hang of it <strong>I am obsessed. Love that you can wear it all day long and so much more sustainable than tampons. <\/strong>So glad I decided to try! Thanks Saalt.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-1",
+        "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-2"
+      ],
+      "settings": {
+        "title": "9\/10 People Never Go Back",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "--palette-color-0",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "9f70e72a-5b16-482b-84b3-df444f15d0bd": {
@@ -628,6 +683,7 @@
       "block_order": [
         "c8e1740d-f77e-4a9e-9d0a-1ee3334097a4"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-5",
@@ -677,6 +733,7 @@
         "16dbc45b-abe6-491e-b9ad-02da4749d08b",
         "90ef17fc-815b-44d7-84c3-489096577077"
       ],
+      "disabled": true,
       "settings": {
         "slide_height": "adapt_image",
         "slider_visual": "dots",
@@ -871,10 +928,10 @@
             "mobile_icon_height": "100px",
             "use_max_icon_group_width": true,
             "icon_group_max_width": "1100px",
-            "desktop_icons_display": "row",
+            "desktop_icons_display": "grid",
             "desktop_icon_group_horizontal_alignment": "center",
             "desktop_icon_group_vertical_alignment": "center",
-            "desktop_icon_grid_columns": 2,
+            "desktop_icon_grid_columns": 5,
             "desktop_icon_group_gap": "3.5rem",
             "desktop_icon_text_size": "clamp(.75rem, 1.5vw, 1.25rem)",
             "desktop_icon_horizontal_alignment": "center",
@@ -977,7 +1034,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "2",
-            "title": "Questions?<br> You don't have to<br>whisper period."
+            "title": "Questions?<br> You don't have to whisper period."
           }
         },
         "template--15078825525329__ee2c8556-75bf-49e7-bfbb-644878ffb5af-section_content-1": {
@@ -1035,6 +1092,7 @@
     "bec6a799-d547-4f72-a599-8edc58d4bcc3",
     "4979ad3b-9b05-4c86-8a59-644c6f717625",
     "61266f32-54d6-459e-a625-fb59fc4b6f40",
+    "10429312-ce7e-429d-b655-263692683976",
     "9f70e72a-5b16-482b-84b3-df444f15d0bd",
     "2a1f9c4e-eb99-4278-885c-23052a0fe53e",
     "7dc8f187-d995-436e-9a49-5e215d0d4aa1",

@@ -431,7 +431,7 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme-color-bg-4",
+        "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "video",
         "video": "shopify:\/\/files\/videos\/Cup-Opening-2048x2048.mp4",
@@ -474,8 +474,8 @@
             "mobile_icon_vertical_alignment": "center",
             "mobile_icon_min_width": "80px",
             "mobile_icon_wrapper_max_width": "300px",
-            "mobile_icon_max_width": "25%",
-            "mobile_icon_height": "100px",
+            "mobile_icon_max_width": "0%",
+            "mobile_icon_height": "0px",
             "use_max_icon_group_width": false,
             "icon_group_max_width": "600px",
             "desktop_icons_display": "grid",
@@ -488,8 +488,8 @@
             "desktop_icon_vertical_alignment": "center",
             "desktop_icon_min_width": "80px",
             "desktop_icon_wrapper_max_width": "250px",
-            "desktop_icon_max_width": "100%",
-            "desktop_icon_height": "100px"
+            "desktop_icon_max_width": "0%",
+            "desktop_icon_height": "0px"
           }
         },
         "67bfef82-57dc-4104-8f61-412d18940b47": {

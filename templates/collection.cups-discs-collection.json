@@ -279,7 +279,7 @@
           "type": "section_button",
           "settings": {
             "button_text": "LEARN MORE",
-            "button_url": "",
+            "button_url": "\/pages\/learn-saalt-menstrual-cups",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -392,7 +392,7 @@
           "type": "section_button",
           "settings": {
             "button_text": "LEARN MORE",
-            "button_url": "",
+            "button_url": "\/pages\/learn-about-saalt-discs",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
