@@ -26,11 +26,23 @@
         "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_button-1": {
           "type": "section_button",
           "settings": {
-            "button_text": "Shop All",
-            "button_url": "shopify:\/\/collections\/shop-all",
+            "button_text": "SHOP SAALT WEAR",
+            "button_url": "\/collections\/saalt-period-underwear",
             "button_type": "primary",
             "theme_color_section_button_background": "theme-color-bg-4",
             "theme_color_text_section_button_text": "theme-color-text-1",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "23149735-c736-46cc-8e03-56e849236f9d": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "SHOP CUPS & dISCS",
+            "button_url": "\/collections\/menstrual-cups-discs",
+            "button_type": "secondary",
+            "theme_color_section_button_background": "theme-color-bg-4",
+            "theme_color_text_section_button_text": "theme_default",
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default"
           }
@@ -40,23 +52,23 @@
         "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_title-1",
         "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_content-1",
         "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_buttons_group-1",
-        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_button-1"
+        "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_button-1",
+        "23149735-c736-46cc-8e03-56e849236f9d"
       ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-Nov-Promo-Homepage-Slider-Promo-1-Mobile_03_ba54a0c1-ded5-41d1-9ea4-716070b41682.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Nov-Promo-Homepage-Slider-Promo-1-US_03_f33cc974-6c31-4063-9141-f4c0745c9a1e.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Nov-Promo-Homepage-Slider-Promo-1-Mobile_03.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Nov-Promo-Homepage-Slider-Promo-1-US_03.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
         "max_media_width": "700px",
         "title_font_size": "small",
         "content_font_size": "small",
-        "mobile_icon_text_position": "below",
-        "desktop_icon_text_position": "below",
+        "mobile_text_position": "below",
         "mobile_text_alignment": "center",
         "desktop_text_position": "flex-end",
         "desktop_text_alignment": "right",
@@ -72,7 +84,7 @@
         "template--18370419818769__2b94c719-9c4c-4651-96ed-88c41a9f7159-custom_liquid_code-1": {
           "type": "custom_liquid_code",
           "settings": {
-            "liquid_code": "<style>\n  .section-{{ section.id }} {\n    display: block;\n    width: 100%;\n    height: auto;\n    text-align: center;\n  }\n  .section-{{ section.id }} * {\n    color: inherit;\n    text-align: center;\n  }\n  .section-{{ section.id }} .section-inner {\n    display: flex;\n    flex-direction: column;\n    padding: 3rem 1.5rem 4.5rem;\n    width: 100%;\n    height: 100%;\n    max-width: 800px;\n    margin: 0 auto;\n  }\n  .section-{{ section.id }} .saalt-monogram, .section-{{ section.id }} .saalt-monogram .image-element {\n    display: block;\n    width: 100%;\n    height: auto;\n    text-align: center;\n  }\n  .section-{{ section.id }} .saalt-monogram .image-element {\n    max-width: 64px;\n    margin: 0 auto 1rem;\n  }\n  .section-{{ section.id }} .section-title, .section-{{ section.id }} .section-sub-title {\n    margin-bottom: 1rem;\n  }\n  .section-{{ section.id }} .section-sub-title {\n    line-height: 1.5;\n    font-size: 1.5rem!important;\n  }\n  .section-{{ section.id }} .icon-list {\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-start;\n    flex-wrap: nowrap;\n    width: 100%;\n    max-width: 600px;\n    margin: 1rem auto 0;\n  }\n  .section-{{ section.id }} .icon-list .icon {\n    flex: 1 1 0;\n    width: 25%;\n    max-width: 75px;\n    text-align: center;\n  }\n  .section-{{ section.id }} .icon-list .icon .icon-inner h4.icon-title {\n    font-size: 1rem!important;\n    margin-bottom: .5rem;\n  }\n  .section-{{ section.id }} .icon-list .icon .icon-inner h4.icon-title, .section-{{ section.id }} .icon-list .icon .icon-inner .icon-descr {\n    line-height: 1.25;\n  }\n  .section-{{ section.id }} .icon-list .icon .icon-image {\n    display: block;\n    width: 100%;\n    text-align: center;\n  }\n  .section-{{ section.id }} .icon-list .icon .icon-image img {\n    display: block;\n    width: 100%;\n    height: auto;\n    max-width: 70px;\n    margin: 0 auto;\n  }\n  @media screen and (min-width: 750px) {\n    .section-{{ section.id }} .icon-list .icon {\n      max-width: 120px;\n    }\n  }\n<\/style>\n<div class=\"section-{{ section.id }}\">\n  <div class=\"section-inner\">\n    <div class=\"saalt-monogram\">\n      <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=2500\" srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=1 1w, \/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=352 352w, \/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=832 832w, \/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=1200 1200w, \/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=1920 1920w\" width=\"1\" height=\"1\" loading=\"lazy\" class=\"image-element\" sizes=\"(min-width: 750px) 25vw, 50vw\">\n    <\/div>\n    <div class=\"text-wrapper\">\n      <h2 class=\"section-title\">No waste. No leaks. No worries.<\/h2>\n      <h3 class=\"section-sub-title\">We are on a mission to end panicked sprints to the bathroom, sweaters tied around waists, and sleeping on towels.<\/h3>\n      <div class=\"section-content\">\n        <p>Saalt will set you free. So check your backside in the mirror one last time and go live your life.<\/p>\n      <\/div>\n    <\/div>\n    <div class=\"icon-list\">\n      <div class=\"icon\">\n        <div class=\"icon-inner\">\n          <div class=\"icon-image\">\n            <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Reuse-svg_120x.png?v=1629243523\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Reuse-svg_x120.png?v=1629243523\" alt=\"Waste Less. Reusable Period Care.\">\n          <\/div>\n          <h4 class=\"icon-title\">Waste Less<\/h4>\n          <div class=\"icon-descr\">Zero waste, zero worries.<\/div>\n        <\/div>\n      <\/div>\n      <div class=\"icon\">\n        <div class=\"icon-inner\">\n          <div class=\"icon-image\">\n            <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Heart-svg_120x.png?v=1629243523\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Heart-svg_x120.png?v=1629243523\" alt=\"\">\n          <\/div>\n          <h4 class=\"icon-title\">Just Comfort<\/h4>\n          <div class=\"icon-descr\">No pads. No strings.<\/div>\n        <\/div>\n      <\/div>\n      <div class=\"icon\">\n        <div class=\"icon-inner\">\n          <div class=\"icon-image\">\n            <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Dollar-svg_120x.png?v=1629243523\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Dollar-svg_x120.png?v=1629243523\" alt=\"\">\n          <\/div>\n          <h4 class=\"icon-title\">Cha-Ching<\/h4>\n          <div class=\"icon-descr\">Save your wallet and the planet.<\/div>\n        <\/div>\n      <\/div>\n      <div class=\"icon\">\n        <div class=\"icon-inner\">\n          <div class=\"icon-image\">\n            <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Period-Bliss-Guarantee-icon-homepage_d2957e1e-ffd1-4781-a102-54996b086d5a_120x.png?v=1685135049\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Period-Bliss-Guarantee-icon-homepage_d2957e1e-ffd1-4781-a102-54996b086d5a_x120.png?v=1685135049\" alt=\"\">\n          <\/div>\n          <h4 class=\"icon-title\">Saalt Bliss Guarantee<\/h4>\n          <div class=\"icon-descr\">Love it or your money back.<\/div>\n        <\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>"
+            "liquid_code": "<style>\n  .section-{{ section.id }} {\n    display: block;\n    width: 100%;\n    height: auto;\n    text-align: center;\n  }\n  .section-{{ section.id }} * {\n    color: inherit;\n    text-align: center;\n  }\n  .section-{{ section.id }} .section-inner {\n    display: flex;\n    flex-direction: column;\n    padding: 3rem 1.5rem 4.5rem;\n    width: 100%;\n    height: 100%;\n    max-width: 800px;\n    margin: 0 auto;\n  }\n  .section-{{ section.id }} .saalt-monogram, .section-{{ section.id }} .saalt-monogram .image-element {\n    display: block;\n    width: 100%;\n    height: auto;\n    text-align: center;\n  }\n  .section-{{ section.id }} .saalt-monogram .image-element {\n    max-width: 64px;\n    margin: 0 auto 1rem;\n  }\n.section-{{ section.id }} .text-wrapper {\n  max-width: 600px; \n  margin: 0 auto;\n}\n\n  .section-{{ section.id }} .section-title, .section-{{ section.id }} .section-sub-title {\n    margin-bottom: 1rem;\n  }\n  .section-{{ section.id }} .section-sub-title {\n    line-height: 1.5;\n    font-size: 1.5rem!important;\n  }\n  .section-{{ section.id }} .icon-list {\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-start;\n    flex-wrap: nowrap;\n    width: 100%;\n    max-width: 600px;\n    margin: 1rem auto 0;\n  }\n  .section-{{ section.id }} .icon-list .icon {\n    flex: 1 1 0;\n    width: 25%;\n    max-width: 75px;\n    text-align: center;\n  }\n  .section-{{ section.id }} .icon-list .icon .icon-inner h4.icon-title {\n    font-size: 1rem!important;\n    margin-bottom: .5rem;\n  }\n  .section-{{ section.id }} .icon-list .icon .icon-inner h4.icon-title, .section-{{ section.id }} .icon-list .icon .icon-inner .icon-descr {\n    line-height: 1.25;\n  }\n  .section-{{ section.id }} .icon-list .icon .icon-image {\n    display: block;\n    width: 100%;\n    text-align: center;\n  }\n  .section-{{ section.id }} .icon-list .icon .icon-image img {\n    display: block;\n    width: 100%;\n    height: auto;\n    max-width: 70px;\n    margin: 0 auto;\n  }\n  @media screen and (min-width: 750px) {\n    .section-{{ section.id }} .icon-list .icon {\n      max-width: 120px;\n    }\n  }\n<\/style>\n<div class=\"section-{{ section.id }}\">\n  <div class=\"section-inner\">\n    <div class=\"saalt-monogram\">\n      <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=2500\" srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=1 1w, \/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=352 352w, \/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=832 832w, \/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=1200 1200w, \/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=1920 1920w\" width=\"1\" height=\"1\" loading=\"lazy\" class=\"image-element\" sizes=\"(min-width: 750px) 25vw, 50vw\">\n    <\/div>\n    <div class=\"text-wrapper\">\n      <h2 class=\"section-title\">No waste. No leaks. No worries.<\/h2>\n      <div class=\"section-content\">\n      <p>We are on a mission to end panicked sprints to the bathroom, sweaters tied around waists, and sleeping on towels.<\/p>\n        <h3 class=\"section-sub-title\"> Saalt will set you free. So check your backside in the mirror one last time and go live your life. <\/h3>\n      <\/div>\n    <\/div>\n    <div class=\"icon-list\">\n      <div class=\"icon\">\n        <div class=\"icon-inner\">\n          <div class=\"icon-image\">\n            <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Reuse-svg_120x.png?v=1629243523\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Reuse-svg_x120.png?v=1629243523\" alt=\"Waste Less. Reusable Period Care.\">\n          <\/div>\n          <h4 class=\"icon-title\">Waste Less<\/h4>\n          <div class=\"icon-descr\">Zero waste, zero worries.<\/div>\n        <\/div>\n      <\/div>\n      <div class=\"icon\">\n        <div class=\"icon-inner\">\n          <div class=\"icon-image\">\n            <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Heart-svg_120x.png?v=1629243523\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Heart-svg_x120.png?v=1629243523\" alt=\"\">\n          <\/div>\n          <h4 class=\"icon-title\">Just Comfort<\/h4>\n          <div class=\"icon-descr\">No pads. No strings.<\/div>\n        <\/div>\n      <\/div>\n      <div class=\"icon\">\n        <div class=\"icon-inner\">\n          <div class=\"icon-image\">\n            <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Dollar-svg_120x.png?v=1629243523\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Dollar-svg_x120.png?v=1629243523\" alt=\"\">\n          <\/div>\n          <h4 class=\"icon-title\">Cha-Ching<\/h4>\n          <div class=\"icon-descr\">Save your wallet and the planet.<\/div>\n        <\/div>\n      <\/div>\n      <div class=\"icon\">\n        <div class=\"icon-inner\">\n          <div class=\"icon-image\">\n            <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Period-Bliss-Guarantee-icon-homepage_d2957e1e-ffd1-4781-a102-54996b086d5a_120x.png?v=1685135049\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Period-Bliss-Guarantee-icon-homepage_d2957e1e-ffd1-4781-a102-54996b086d5a_x120.png?v=1685135049\" alt=\"\">\n          <\/div>\n          <h4 class=\"icon-title\">Saalt Bliss Guarantee<\/h4>\n          <div class=\"icon-descr\">Love it or your money back.<\/div>\n        <\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>"
           }
         }
       },
@@ -83,25 +95,119 @@
         "section_id": ""
       }
     },
+    "35251dc7-4eb4-46b5-9a5b-4759bf4effd7": {
+      "type": "saalt-window-display",
+      "blocks": {
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-0": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SW-SM-HW-MS-Ampersand-278_1.jpg",
+            "title": "<p>Leakproof Underwear<\/p>",
+            "copy": "<p>Saalt Wear absorbs periods, bladder leaks, and more. Live life leak-free with the thinnest and driest leakproof and period underwear.<\/p>",
+            "link_type": "url",
+            "link_url": "shopify:\/\/collections\/saalt-period-underwear",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Shop Underwear"
+          }
+        },
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-1": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SC-HP-SOManifest-1597.jpg",
+            "title": "<p>Cups & Discs<\/p>",
+            "copy": "<p>Upgrade your period with Saalt reusable menstrual cups and discs. Easy to use and comfortable. Live free of the tampon aisle—forever. Wear up to 12 hours to swim, run, bike, hike, or fly to Bora Bora.<\/p>",
+            "link_type": "url",
+            "link_url": "shopify:\/\/collections\/menstrual-cups-discs",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Shop Cups & Discs"
+          }
+        },
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-2": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bundle-Preset-1080x1080-Web-0995.jpg",
+            "title": "<p>Bundles<\/p>",
+            "copy": "<p>Save up to 20% and skip the guesswork with bundles custom-designed by our Saalt Coaches for all your leak needs. <\/p>",
+            "link_type": "url",
+            "link_url": "shopify:\/\/collections\/preset-bundles",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Shop Bundles"
+          }
+        },
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-3": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Window-Display-Shop-Teen_03.jpg",
+            "title": "<p>Teen<\/p>",
+            "copy": "<p>Peace out, pads.<br\/>Modern teens are upgrading to comfortable and sustainable period care. Choose from reusable period cups made by teens for teens, and leakproof period underwear that ranges from size XXS and up.<\/p>",
+            "link_type": "url",
+            "link_url": "shopify:\/\/collections\/teen-collection",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Shop Teen"
+          }
+        },
+        "d8236345-5ecc-484c-af5d-464fd1c4ecf7": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shop_by_Category_-_Accessories_1.jpg",
+            "title": "<p>Extras<\/p>",
+            "copy": "<p>All the extras that make it easy to care for your underwear, cups, and discs. <\/p>",
+            "link_type": "url",
+            "link_url": "shopify:\/\/collections\/extras",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Shop Extras"
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-0",
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-1",
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-2",
+        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-3",
+        "d8236345-5ecc-484c-af5d-464fd1c4ecf7"
+      ],
+      "settings": {
+        "section_id": "",
+        "make_full_width": false,
+        "mobile_min_width": "40%",
+        "mobile_max_width": "280px",
+        "mobile_aspect_ratio": "1\/1.5",
+        "desktop_min_width": "auto",
+        "desktop_max_width": "25%",
+        "desktop_aspect_ratio": "1\/1.5"
+      }
+    },
     "e19ae371-ca3d-4f8c-9229-f22d18836f31": {
       "type": "saalt-media-with-split-text",
       "blocks": {
         "template--18370419818769__e19ae371-ca3d-4f8c-9229-f22d18836f31-section_title-1": {
           "type": "section_title",
           "settings": {
-            "text_group_num": "1",
-            "heading_tag": "1",
+            "text_group_num": "2",
+            "heading_tag": "2",
             "title": "This is the Saalt Story"
+          }
+        },
+        "28bc5a82-4910-423c-81d7-6357f1ebc428": {
+          "type": "section_content",
+          "settings": {
+            "text_group_num": "2",
+            "text_content": "<p>“I started Saalt to help my aunt in Venezuela. Now tens of thousands of people have a better period every month in 50 countries across the world.”<\/p>"
           }
         },
         "template--18370419818769__e19ae371-ca3d-4f8c-9229-f22d18836f31-section_icon_group-1": {
           "type": "section_icon_group",
           "settings": {
             "text_group_num": "2",
-            "mobile_icons_display": "row",
+            "mobile_icons_display": "grid",
             "mobile_icon_group_horizontal_alignment": "center",
             "mobile_icon_group_vertical_alignment": "flex-start",
-            "mobile_icon_grid_columns": 2,
+            "mobile_icon_grid_columns": 3,
             "mobile_icon_group_gap": "3.5rem",
             "mobile_icon_text_size": "1.5rem",
             "mobile_icon_horizontal_alignment": "center",
@@ -165,7 +271,7 @@
         "template--18370419818769__e19ae371-ca3d-4f8c-9229-f22d18836f31-section_buttons_group-1": {
           "type": "section_buttons_group",
           "settings": {
-            "text_group_num": "1",
+            "text_group_num": "2",
             "desktop_button_group_alignment": "center",
             "desktop_buttons_group_gap": "1rem"
           }
@@ -173,7 +279,7 @@
         "template--18370419818769__e19ae371-ca3d-4f8c-9229-f22d18836f31-section_button-1": {
           "type": "section_button",
           "settings": {
-            "text_group_num": "1",
+            "text_group_num": "2",
             "button_text": "GET TO KNOW US",
             "button_url": "shopify:\/\/pages\/about",
             "button_type": "primary",
@@ -186,6 +292,7 @@
       },
       "block_order": [
         "template--18370419818769__e19ae371-ca3d-4f8c-9229-f22d18836f31-section_title-1",
+        "28bc5a82-4910-423c-81d7-6357f1ebc428",
         "template--18370419818769__e19ae371-ca3d-4f8c-9229-f22d18836f31-section_icon_group-1",
         "template--18370419818769__e19ae371-ca3d-4f8c-9229-f22d18836f31-section_icon_with_text-1",
         "template--18370419818769__e19ae371-ca3d-4f8c-9229-f22d18836f31-section_icon_with_text-2",
@@ -292,6 +399,7 @@
         "template--18370419818769__711b5233-473f-4666-9c41-450fb4683107-section_button-1",
         "template--18370419818769__711b5233-473f-4666-9c41-450fb4683107-section_icon_group-1"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -312,56 +420,25 @@
         "padding_bottom": 0
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "No waste. No leaks. No worries.",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<h2><strong>We are on a mission to end panicked sprints to the bathroom, sweaters tied around waists, and sleeping on towels.<\/strong><\/h2>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "4678b624-fb18-4c77-a48d-cf8c75d41a3c": {
+    "e1791c3d-d73e-498f-9322-90696d73319e": {
       "type": "saalt-media-with-split-text",
       "blocks": {
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_title-1": {
+        "template--18370419818769__e1791c3d-d73e-498f-9322-90696d73319e-section_title-1": {
           "type": "section_title",
           "settings": {
             "text_group_num": "1",
-            "heading_tag": "1",
-            "title": "Section Title Goes Here"
+            "heading_tag": "2",
+            "title": "Meet Saalt Wear. The thinnest, driest, and most comfortable leakproof period underwear."
           }
         },
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_content-1": {
+        "template--18370419818769__e1791c3d-d73e-498f-9322-90696d73319e-section_content-1": {
           "type": "section_content",
           "settings": {
             "text_group_num": "1",
-            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
+            "text_content": "<p>Holds up to 6+ pads worth of periods, bladder leaks, sweat, and wetness while keeping you (magically) dry.<\/p>"
           }
         },
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_buttons_group-1": {
+        "template--18370419818769__e1791c3d-d73e-498f-9322-90696d73319e-section_buttons_group-1": {
           "type": "section_buttons_group",
           "settings": {
             "text_group_num": "1",
@@ -369,115 +446,39 @@
             "desktop_buttons_group_gap": "1rem"
           }
         },
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_button-1": {
+        "template--18370419818769__e1791c3d-d73e-498f-9322-90696d73319e-section_button-1": {
           "type": "section_button",
           "settings": {
             "text_group_num": "1",
-            "button_text": "Button text",
-            "button_url": "",
+            "button_text": "SHOP SAALT WEAR",
+            "button_url": "shopify:\/\/collections\/period-underwear",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default"
           }
-        },
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_icon_group-1": {
-          "type": "section_icon_group",
-          "settings": {
-            "text_group_num": "2",
-            "mobile_icons_display": "row",
-            "mobile_icon_group_horizontal_alignment": "center",
-            "mobile_icon_group_vertical_alignment": "flex-start",
-            "mobile_icon_grid_columns": 2,
-            "mobile_icon_group_gap": "3.5rem",
-            "mobile_icon_text_size": "1.5rem",
-            "mobile_icon_horizontal_alignment": "center",
-            "mobile_icon_vertical_alignment": "center",
-            "mobile_icon_min_width": "80px",
-            "mobile_icon_wrapper_max_width": "100px",
-            "mobile_icon_max_width": "100%",
-            "mobile_icon_height": "100px",
-            "use_max_icon_group_width": false,
-            "icon_group_max_width": "600px",
-            "desktop_icons_display": "row",
-            "desktop_icon_group_horizontal_alignment": "center",
-            "desktop_icon_group_vertical_alignment": "center",
-            "desktop_icon_grid_columns": 2,
-            "desktop_icon_group_gap": "3.5rem",
-            "desktop_icon_text_size": "1.5rem",
-            "desktop_icon_horizontal_alignment": "center",
-            "desktop_icon_vertical_alignment": "center",
-            "desktop_icon_min_width": "80px",
-            "desktop_icon_wrapper_max_width": "100px",
-            "desktop_icon_max_width": "100%",
-            "desktop_icon_height": "100px"
-          }
-        },
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_icon_with_text-1": {
-          "type": "section_icon_with_text",
-          "settings": {
-            "text_group_num": "2",
-            "icon_svg": "",
-            "icon_text": "",
-            "icon_text_position": "below",
-            "theme_color_icon_color": "match_text",
-            "theme_color_icon_text_color": "match_text"
-          }
-        },
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_icon_with_text-2": {
-          "type": "section_icon_with_text",
-          "settings": {
-            "text_group_num": "2",
-            "icon_svg": "",
-            "icon_text": "",
-            "icon_text_position": "below",
-            "theme_color_icon_color": "match_text",
-            "theme_color_icon_text_color": "match_text"
-          }
-        },
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_icon_with_text-3": {
-          "type": "section_icon_with_text",
-          "settings": {
-            "text_group_num": "2",
-            "icon_svg": "",
-            "icon_text": "",
-            "icon_text_position": "below",
-            "theme_color_icon_color": "match_text",
-            "theme_color_icon_text_color": "match_text"
-          }
-        },
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_content-2": {
-          "type": "section_content",
-          "settings": {
-            "text_group_num": "2",
-            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
-          }
         }
       },
       "block_order": [
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_title-1",
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_content-1",
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_buttons_group-1",
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_button-1",
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_icon_group-1",
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_icon_with_text-1",
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_icon_with_text-2",
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_icon_with_text-3",
-        "template--21529267470609__4678b624-fb18-4c77-a48d-cf8c75d41a3c-section_content-2"
+        "template--18370419818769__e1791c3d-d73e-498f-9322-90696d73319e-section_title-1",
+        "template--18370419818769__e1791c3d-d73e-498f-9322-90696d73319e-section_content-1",
+        "template--18370419818769__e1791c3d-d73e-498f-9322-90696d73319e-section_buttons_group-1",
+        "template--18370419818769__e1791c3d-d73e-498f-9322-90696d73319e-section_button-1"
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme_default",
+        "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
-        "media_type": "image",
+        "media_type": "video",
+        "video": "shopify:\/\/files\/videos\/Learn Page Tech Video.mp4",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
         "title_font_size": "small",
         "content_font_size": "small",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "left",
+        "desktop_text_position": "right",
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
         "max_width": "600px",
@@ -485,91 +486,210 @@
         "padding_bottom": 0
       }
     },
-    "35251dc7-4eb4-46b5-9a5b-4759bf4effd7": {
-      "type": "saalt-window-display",
+    "be10f763-17a0-47a9-acef-75ab6afe0f30": {
+      "type": "saalt-testimonials",
       "blocks": {
-        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-0": {
-          "type": "window-feature",
+        "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-1": {
+          "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Comfort_Brief.png",
-            "title": "<p>Leakproof Underwear<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
-            "link_type": "url",
-            "link_url": "https:\/\/saalt-dev-store.myshopify.com\/collections\/saalt-period-underwear",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Filter"
+            "quote": "Game changing!!This is the first cup I've ever used and I LOVE it! <strong>Literally cannot feel it<\/strong> at all when inserted. And the underwear is so comfortable, much more so than disposable pads. I was skeptical but they are <strong>some sort of sorcery because they stay dry<\/strong>! I'm telling anyone who will listen to give these products a try.",
+            "author": "<strong>Kelsey R.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
           }
         },
-        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-1": {
-          "type": "window-feature",
+        "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-0": {
+          "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saalt-Disc-Promo-January-February-Menstrual-Disc-Cup-15-Off-Hero-mobile.jpg",
-            "title": "<p>Cups & Discs<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
-            "link_type": "url",
-            "link_url": "https:\/\/saalt-dev-store.myshopify.com\/collections\/menstrual-cups-discs",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Filter"
+            "quote": "Love the style and softness. Probably <strong>least bulky<\/strong> period panties for the amount of fluids it can hold. Tried {other brands}. Saalt is the <strong>most luxurious and best fitting<\/strong> out of all of them. Some have weird bulk at the crotch or too stiff or wide down there.",
+            "author": "<strong>Kimberly P.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
           }
         },
-        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-2": {
-          "type": "window-feature",
+        "c3d675e8-b57f-4bde-8a72-5bf54fc6c36a": {
+          "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bg_f8ff51d7-0d50-4bf8-8de5-ff612005a702.jpg",
-            "title": "<p>Bundles<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
-            "link_type": "url",
-            "link_url": "https:\/\/saalt-dev-store.myshopify.com\/collections\/preset-bundles",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Filter"
+            "quote": "<strong>Never going back to tampons! <\/strong>This is my first ever cup I’ve bought. So easy to use and <strong>I can’t even tell that it’s there.<\/strong> I ordered a size regular and it was the perfect fit for me. It makes it easier for me to use a cup because I have a heavy flow and I know that I don’t have to change my tampon every hour. I love this product.<strong> I’m so glad that I switched to a cup.<\/strong>",
+            "author": "<strong>Courtney M.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
           }
         },
-        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-3": {
-          "type": "window-feature",
+        "66116b17-fa7c-499f-aa5b-c2123f2a4019": {
+          "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Teen-Cup-Launch_Ads_Website_mobile.jpg",
-            "title": "<p>Teen<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
-            "link_type": "filter",
-            "link_url": "",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Filter"
-          }
-        },
-        "d8236345-5ecc-484c-af5d-464fd1c4ecf7": {
-          "type": "window-feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Saalt-Wash-PCR.jpg",
-            "title": "<p>Extras<\/p>",
-            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
-            "link_type": "url",
-            "link_url": "https:\/\/saalt-dev-store.myshopify.com\/collections\/extras",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Filter"
+            "quote": "<strong>So soft and comfy.<\/strong> I like this fabric WAY MORE than my Thinx. Thinner and fit is just overall better. <strong>Definitely happy I switched over to Saalt.<\/strong>",
+            "author": "<strong>Lily C.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-0",
-        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-1",
-        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-2",
-        "template--18370419818769__35251dc7-4eb4-46b5-9a5b-4759bf4effd7-1686933360596a4e9e-3",
-        "d8236345-5ecc-484c-af5d-464fd1c4ecf7"
+        "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-1",
+        "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-0",
+        "c3d675e8-b57f-4bde-8a72-5bf54fc6c36a",
+        "66116b17-fa7c-499f-aa5b-c2123f2a4019"
+      ],
+      "settings": {
+        "slide_height": "small",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme-color-text-2",
+        "include_img": true,
+        "image": "shopify:\/\/shop_images\/Testimonials_Background_Home_Page.jpg",
+        "image_behavior": "none",
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "title": "Kelsey R.",
+            "rating": 5,
+            "text": "<p>Game changing!! This is the first cup I've ever used and I LOVE it! <strong>Literally cannot feel it<\/strong> at all when inserted. And the underwear is so comfortable, much more so than disposable pads. I was skeptical but they are <strong>some sort of sorcery because they stay dry<\/strong>! I'm telling anyone who will listen to give these products a try.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "title": "Kimberly P.",
+            "rating": 5,
+            "text": "<p>Love the style and softness. Probably <strong>least bulky<\/strong> period panties for the amount of fluids it can hold. Tried &lcub;other brands&rcub;. Saalt is the <strong>most luxurious and best fitting<\/strong> out of all of them. Some have weird bulk at the crotch or too stiff or wide down there.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "title": "Courtney M.",
+            "rating": 5,
+            "text": "<p><strong>Never going back to tampons! <\/strong>This is my first ever cup I’ve bought. So easy to use and <strong>I can’t even tell that it’s there.<\/strong> I ordered a size regular and it was the perfect fit for me. It makes it easier for me to use a cup because I have a heavy flow and I know that I don’t have to change my tampon every hour. I love this product.<strong> I’m so glad that I switched to a cup.<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "b928608f-5149-4293-bab7-c644352b3dd1": {
+          "type": "column",
+          "settings": {
+            "title": "Lily C.",
+            "rating": 5,
+            "text": "<p><strong>So soft and comfy.<\/strong> I like this fabric WAY MORE than my Thinx. Thinner and fit is just overall better. <strong>Definitely happy I switched over to Saalt.<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3",
+        "b928608f-5149-4293-bab7-c644352b3dd1"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "--palette-color-0",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "--palette-color-4",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "8e2fb083-d1d9-431e-9e29-68dd05ca68eb": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "This is the Saalt Reusable <br> Period Cup. Its like modern <br> period magic."
+          }
+        },
+        "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>It's comfortable, holds 3x more than a tampon, and lasts as long as your passport.<\/p>"
+          }
+        },
+        "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_buttons_group-1": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_button-1": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "SHOP SAALT CUPS",
+            "button_url": "shopify:\/\/collections\/saalt-cups",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-4",
+            "theme_color_text_section_button_text": "theme-color-text-1",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_title-1",
+        "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_content-1",
+        "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_buttons_group-1",
+        "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_button-1"
       ],
       "settings": {
         "section_id": "",
-        "make_full_width": false,
-        "mobile_min_width": "40%",
-        "mobile_max_width": "280px",
-        "mobile_aspect_ratio": "1\/1.5",
-        "desktop_min_width": "auto",
-        "desktop_max_width": "25%",
-        "desktop_aspect_ratio": "1\/1.5"
+        "theme_color_background": "theme-color-bg-3",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt_Cup-Hero_Mobile_Home_Page.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt_Cup_-_Sec_B_Home_Page.jpg",
+        "media_overlay_color": "--palette-color-0",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "flex-end",
+        "desktop_text_alignment": "justify",
+        "use_max_text_width": true,
+        "max_width": "500px",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "featured_collection": {
@@ -606,127 +726,18 @@
         "padding_top": 28,
         "padding_bottom": 36
       }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "background_style": "none",
-        "theme_color_column_secondary_bg": "theme_default",
-        "column_secondary_bg_opacity": 100,
-        "review_star_color_override": "theme_default",
-        "review_star_opacity_override": 100,
-        "button_text": "Button text",
-        "button_url": "",
-        "button_type": "primary",
-        "theme_color_section_button_background": "theme_default",
-        "theme_color_text_section_button_text": "theme_default",
-        "theme_color_section_button_background_hover": "theme_default",
-        "theme_color_text_section_button_text_hover": "theme_default",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "be10f763-17a0-47a9-acef-75ab6afe0f30": {
-      "type": "saalt-testimonials",
-      "blocks": {
-        "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-0": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "Never going back to tampons! This is my first ever cup I’ve bought.  So easy to use and <strong>I can’t even tell that it’s there.<\/strong> I ordered a size regular and it was the perfect fit for me. It makes it easier for me to use a cup because I have a heavy flow and I know that I don’t have to change my tampon every hour. I love this product.<strong> I’m so glad that I switched to a cup.<\/strong>",
-            "author": "Kelsey R.",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-1": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "Customer quote",
-            "author": "Customer's Name",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-0",
-        "template--18370419818769__be10f763-17a0-47a9-acef-75ab6afe0f30-16844332162952b339-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "slide_height": "medium",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "include_img": true,
-        "image": "shopify:\/\/shop_images\/Testimonials_1.jpg",
-        "image_behavior": "none",
-        "accessibility_info": "Slideshow about our brand"
-      }
     }
   },
   "order": [
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
     "2b94c719-9c4c-4651-96ed-88c41a9f7159",
+    "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
     "e19ae371-ca3d-4f8c-9229-f22d18836f31",
     "711b5233-473f-4666-9c41-450fb4683107",
-    "rich_text",
-    "4678b624-fb18-4c77-a48d-cf8c75d41a3c",
-    "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
-    "featured_collection",
+    "e1791c3d-d73e-498f-9322-90696d73319e",
+    "be10f763-17a0-47a9-acef-75ab6afe0f30",
     "multicolumn",
-    "be10f763-17a0-47a9-acef-75ab6afe0f30"
+    "8e2fb083-d1d9-431e-9e29-68dd05ca68eb",
+    "featured_collection"
   ]
 }

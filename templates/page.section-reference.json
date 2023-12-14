@@ -56,8 +56,7 @@
         "max_media_width": "700px",
         "title_font_size": "small",
         "content_font_size": "small",
-        "mobile_icon_text_position": "below",
-        "desktop_icon_text_position": "below",
+        "mobile_text_position": "overlay",
         "mobile_text_alignment": "center",
         "desktop_text_position": "flex-end",
         "desktop_text_alignment": "left",
@@ -65,6 +64,70 @@
         "max_width": "35%",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "565652d6-3977-4b13-97c8-6d36a584e191": {
+      "type": "saalt-modular-nav-bar",
+      "blocks": {
+        "template--21546030465297__565652d6-3977-4b13-97c8-6d36a584e191-nav_bar_link-1": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "Our Story",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "#our-story",
+            "nav_bar_link_dest": ""
+          }
+        },
+        "4f7cd548-2359-4444-9f18-c3165699d148": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "Home",
+            "click_behavior": "link",
+            "nav_bar_element_selector": "",
+            "nav_bar_link_dest": "\/"
+          }
+        },
+        "5b27d0a1-1af0-4902-bcbc-7f2efa34a944": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "Hidden Element",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "#hidden-element",
+            "nav_bar_link_dest": ""
+          }
+        },
+        "11df72dd-9585-47d9-9427-a1a0cf43f665": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "New Link",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "",
+            "nav_bar_link_dest": ""
+          }
+        },
+        "e5fd10e2-3e52-4a1a-ba9e-1cec2a491544": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "New Link",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "",
+            "nav_bar_link_dest": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21546030465297__565652d6-3977-4b13-97c8-6d36a584e191-nav_bar_link-1",
+        "4f7cd548-2359-4444-9f18-c3165699d148",
+        "5b27d0a1-1af0-4902-bcbc-7f2efa34a944",
+        "11df72dd-9585-47d9-9427-a1a0cf43f665",
+        "e5fd10e2-3e52-4a1a-ba9e-1cec2a491544"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-4",
+        "theme_color_text": "theme-color-text-2",
+        "mobile_nav_link_gap": "3rem",
+        "desktop_nav_link_gap": "7rem"
       }
     },
     "707d104a-00ea-4bf5-b0b8-b4a634b27b08": {
@@ -340,7 +403,7 @@
         "template--21546030465297__2243f424-7d1b-47ed-81dd-8aa7ae84f6ae-section_title-1"
       ],
       "settings": {
-        "section_id": "",
+        "section_id": "our story",
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "code",
@@ -358,6 +421,79 @@
         "max_width": "800px",
         "padding_top": 0,
         "padding_bottom": 36
+      }
+    },
+    "11768af0-3969-440e-ab38-6bb7083f5a63": {
+      "type": "saalt-window-display",
+      "blocks": {
+        "template--21546030465297__11768af0-3969-440e-ab38-6bb7083f5a63-window-feature-1": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Leakproof-Period-Underwear-Premium-Design.jpg",
+            "title": "<p>Window feature<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "filter",
+            "link_url": "",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        },
+        "template--21546030465297__11768af0-3969-440e-ab38-6bb7083f5a63-window-feature-2": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/86_and_46_Impact_Page.png",
+            "title": "<p>Window feature<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "filter",
+            "link_url": "",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        },
+        "template--21546030465297__11768af0-3969-440e-ab38-6bb7083f5a63-window-feature-3": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cup_Collection_Page_How_to_use_a_Saalt_Cup.jpg",
+            "title": "<p>Window feature<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "filter",
+            "link_url": "",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        },
+        "template--21546030465297__11768af0-3969-440e-ab38-6bb7083f5a63-window-feature-4": {
+          "type": "window-feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Window-Display-Shop-Teen_03.jpg",
+            "title": "<p>Window feature<\/p>",
+            "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!<\/p>",
+            "link_type": "filter",
+            "link_url": "",
+            "filter_name": "",
+            "filter_val": "",
+            "button_text": "Filter"
+          }
+        }
+      },
+      "block_order": [
+        "template--21546030465297__11768af0-3969-440e-ab38-6bb7083f5a63-window-feature-1",
+        "template--21546030465297__11768af0-3969-440e-ab38-6bb7083f5a63-window-feature-2",
+        "template--21546030465297__11768af0-3969-440e-ab38-6bb7083f5a63-window-feature-3",
+        "template--21546030465297__11768af0-3969-440e-ab38-6bb7083f5a63-window-feature-4"
+      ],
+      "settings": {
+        "section_id": "",
+        "make_full_width": false,
+        "mobile_min_width": "40%",
+        "mobile_max_width": "280px",
+        "mobile_aspect_ratio": "1\/1.5",
+        "desktop_min_width": "auto",
+        "desktop_max_width": "25%",
+        "desktop_aspect_ratio": "1\/1.5"
       }
     },
     "a1fce857-de0e-41c5-b206-da6927d1cf15": {
@@ -504,6 +640,64 @@
         "max_width": "600px",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "f5560e15-ada0-46b4-b638-07c2e5d8834c": {
+      "type": "saalt-unstyled-liquid-section",
+      "blocks": {
+        "template--21546030465297__f5560e15-ada0-46b4-b638-07c2e5d8834c-custom_liquid_code-1": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<div id=\"hidden-element\"> <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21546030465297__f5560e15-ada0-46b4-b638-07c2e5d8834c-custom_liquid_code-1"
+      ],
+      "settings": {
+        "section_id": ""
+      }
+    },
+    "7bd00ceb-ffbb-481f-9c8e-589563960e89": {
+      "type": "saalt-testimonials",
+      "blocks": {
+        "template--21546030465297__7bd00ceb-ffbb-481f-9c8e-589563960e89-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Game changing!!This is the first cup I've ever used and I LOVE it! <strong>Literally cannot feel it<\/strong> at all when inserted. And the underwear is so comfortable, much more so than disposable pads. I was skeptical but they are <strong>some sort of sorcery because they stay dry<\/strong>! I'm telling anyone who will listen to give these products a try.",
+            "author": "<strong>Kelsey R.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--21546030465297__7bd00ceb-ffbb-481f-9c8e-589563960e89-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Love the style and softness. Probably <strong>least bulky<\/strong> period panties for the amount of fluids it can hold. Tried {other brands}. Saalt is the <strong>most luxurious and best fitting<\/strong> out of all of them. Some have weird bulk at the crotch or too stiff or wide down there.",
+            "author": "<strong>Kimberly P.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--21546030465297__7bd00ceb-ffbb-481f-9c8e-589563960e89-testimonial-2",
+        "template--21546030465297__7bd00ceb-ffbb-481f-9c8e-589563960e89-testimonial-1"
+      ],
+      "settings": {
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "theme_color_background": "theme-color-bg-4",
+        "theme_color_text": "theme-color-text-2",
+        "include_img": true,
+        "image": "shopify:\/\/shop_images\/Testimonials_1.jpg",
+        "image_behavior": "none",
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "39e65c1d-23ce-4912-aae4-a5b47d2a7f43": {
@@ -798,18 +992,264 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "52812ce0-6b7f-4540-ad7b-a1d7dcdb795b": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "528d28b8-6436-417a-84ac-b9e781f463cd": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "All Shapes, All Sizes"
+          }
+        },
+        "eeaf4e87-d39d-40da-917e-888911f029f3": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Whatever your need, whatever your preference we've got you covered in one of our 7 ultra-comfortable styles<\/p>"
+          }
+        },
+        "311b2417-e1d2-478a-ae42-84810d0c4190": {
+          "type": "section_icon_group",
+          "settings": {
+            "mobile_icons_display": "row",
+            "mobile_icon_group_horizontal_alignment": "center",
+            "mobile_icon_group_vertical_alignment": "flex-start",
+            "mobile_icon_grid_columns": 2,
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_text_size": "1.5rem",
+            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_vertical_alignment": "center",
+            "mobile_icon_min_width": "80px",
+            "mobile_icon_wrapper_max_width": "40%",
+            "mobile_icon_max_width": "80px",
+            "mobile_icon_height": "80px",
+            "use_max_icon_group_width": true,
+            "icon_group_max_width": "880px",
+            "desktop_icons_display": "row",
+            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_vertical_alignment": "flex-start",
+            "desktop_icon_grid_columns": 3,
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_horizontal_alignment": "flex-start",
+            "desktop_icon_vertical_alignment": "center",
+            "desktop_icon_min_width": "80px",
+            "desktop_icon_wrapper_max_width": "180px",
+            "desktop_icon_max_width": "70px",
+            "desktop_icon_height": "70px"
+          }
+        },
+        "42ee71c8-f5e0-49bc-8841-94e53890ca9c": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"37\" height=\"22\" viewbox=\"0 0 37 22\" fill=\"none\">\n  <path d=\"M35.6976 0C35.6976 0 30.652 1.39441 18.3563 1.57567H18.338C6.04239 1.39441 0.996755 0 0.996755 0C0.996755 0 0.700119 3.30262 0 5.1095C0 5.1095 10.8476 11.6534 16.6595 21.5455C16.6595 21.5455 17.3638 21.6254 18.3479 21.6654C19.332 21.624 20.0363 21.5455 20.0363 21.5455C25.8482 11.6534 36.6944 5.1095 36.6944 5.1095C35.9957 3.30262 35.699 0 35.699 0H35.6976Z\" fill=\"black\"><\/path>\n<\/svg>",
+            "icon_text": "<p>Bikini<\/p>",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "right",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "41d2cd31-4661-415c-9b04-44670932b4d2": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"33\" height=\"24\" viewbox=\"0 0 33 24\" fill=\"none\">\n  <path d=\"M27.3918 0C27.3918 0 22.4249 1.98956 16.2841 1.98956C10.1433 1.98956 5.2551 0 5.2551 0C2.12987 4.91539 0 15.5583 0 15.5583C0 15.5583 0.0520103 17.084 4.94019 18.0916C9.82977 19.0992 11.604 21.36 11.3889 22.5531C11.3889 22.5531 13.246 23.0355 16.2518 23.0355C19.2575 23.0355 21.2566 22.5531 21.2566 22.5531C21.0415 21.3585 22.8157 19.0978 27.7053 18.0916C32.5949 17.084 32.6455 15.5583 32.6455 15.5583C32.6455 15.5583 30.5156 4.91539 27.3918 0Z\" fill=\"black\"><\/path>\n<\/svg>",
+            "icon_text": "<p>Boy Short<\/p>",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "right",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "72a7b848-7ee1-4cb2-9c95-575fbea4a5c0": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"40\" height=\"23\" viewbox=\"0 0 40 23\" fill=\"none\">\n  <path d=\"M39.1603 7.70706C39.1603 7.70706 35.3771 8.78319 31.0639 12.0487C27.6912 14.6006 23.7281 18.427 22.751 21.3043C22.751 21.3043 21.4183 22.0108 19.5822 22.0151H19.5794C17.7448 22.0108 16.4106 21.3043 16.4106 21.3043C15.4321 18.427 11.4704 14.602 8.09776 12.0487C3.78318 8.78319 0 7.70706 0 7.70706C0.722612 3.24553 1.15281 0 1.15281 0C1.15281 0 7.31892 1.74693 19.5401 1.74693C31.7612 1.74693 38.0075 0 38.0075 0C38.0075 0 38.4376 3.24553 39.1603 7.70706Z\" fill=\"black\"><\/path>\n<\/svg>",
+            "icon_text": "<p>Brief<\/p>",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "right",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "5db82076-97d3-47bf-a8eb-c979cf2d59b8": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"38\" height=\"32\" viewbox=\"0 0 38 32\" fill=\"none\">\n  <path d=\"M37.8711 14.7419C37.8711 14.7419 30.7138 19.5545 25.328 31.3991C25.328 31.3991 23.0913 32 19.0733 32H18.8006C14.7826 32 12.5445 31.3991 12.5445 31.3991C7.15864 19.5545 0 14.7419 0 14.7419L4.7265 0C8.57716 0.49525 18.8006 0.505241 18.8006 0.505241H19.0283C19.0283 0.505241 29.2967 0.49525 33.146 0L37.8725 14.7419H37.8711Z\" fill=\"black\"><\/path>\n<\/svg>",
+            "icon_text": "<p>High Waist<\/p>",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "right",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "574a9354-97a1-453f-ba2d-1c94b764ae8f": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"36\" height=\"20\" viewbox=\"0 0 36 20\" fill=\"none\">\n  <g clip-path=\"url(#clip0_1099_10606)\">\n    <path d=\"M36 6.96795C33.4928 7.23472 31.0434 7.90762 28.7515 8.95879C24.9831 10.6988 20.9186 13.9279 19.7458 19.8726C19.5881 19.8965 19.4343 19.9204 19.2805 19.9363C18.2884 20.0358 17.2848 20.0199 16.2965 19.8805C15.1083 13.9319 11.0246 10.7227 7.2523 8.99462C4.95663 7.95142 2.50716 7.28648 0 7.02767C0.392224 4.7183 0.622944 2.38503 0.688314 0.0398168C0.688314 0.0398168 5.60265 1.09894 17.9923 1.2821C29.4283 1.07505 34.4926 0.143341 35.204 0C35.204 0 35.4309 3.08979 36.0038 6.96795H36Z\" fill=\"black\"><\/path>\n  <\/g>\n  <defs>\n    <clippath id=\"clip0_1099_10606\">\n      <rect width=\"36\" height=\"20\" fill=\"white\"><\/rect>\n    <\/clippath>\n  <\/defs>\n<\/svg>",
+            "icon_text": "<p>Hipster<\/p>",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "right",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "3de56655-99d4-496c-95b9-eafe9be9a3b1": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path d=\"M17.7912 2.50622C20.0138 2.43343 24.3102 1.95531 28.4912 0C28.4912 0 33.2655 9.78511 33.2655 19.0807V26.037C33.2655 26.037 31.6656 27.4471 25.91 27.3115C21.4858 27.2073 19.81 25.9128 19.81 25.9128C19.2533 25.4347 18.9524 24.8367 18.6417 24.1659C18.4069 23.6578 18.0864 23.2396 17.8024 23.2111H15.3225C15.0385 23.2396 14.718 23.6578 14.4832 24.1659C14.1739 24.8367 14.0136 25.4347 13.4555 25.9128C13.4555 25.9128 11.7797 27.2073 7.35546 27.3115C1.59986 27.4471 0 26.037 0 26.037V19.0807C0 9.86076 4.7743 0 4.7743 0C8.95533 1.95531 13.2516 2.43343 15.4743 2.50622H17.7898H17.7912Z\" fill=\"black\"><\/path>\n<\/svg>",
+            "icon_text": "<p>Sleep Short<\/p>",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "right",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "91e71f6a-4cef-4fdb-ac54-0961186c9a2a": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"36\" height=\"22\" viewbox=\"0 0 36 22\" fill=\"none\">\n  <path d=\"M35.3393 0C35.0806 0.0713617 34.8177 0.125597 34.5562 0.181259C33.6185 0.37679 32.6738 0.528076 31.7262 0.662236C30.0364 0.899157 28.3381 1.07185 26.637 1.20601C24.1247 1.4044 21.6054 1.51572 19.0875 1.57281C18.6503 1.5828 18.2117 1.58851 17.773 1.58851C17.3344 1.58851 16.8972 1.5828 16.4586 1.57281C13.9393 1.51572 11.4214 1.4044 8.9091 1.20601C7.20801 1.07185 5.50972 0.900584 3.81987 0.662236C2.87232 0.529503 1.92618 0.378217 0.989875 0.181259C0.728385 0.127024 0.464091 0.0713617 0.206818 0C0.206818 0 -0.341468 2.2379 0.347404 5.63186C0.347404 5.63186 14.4074 3.3854 16.0663 21.8138C16.0663 21.8138 16.5331 21.9352 17.7759 21.9352C19.0186 21.9352 19.4854 21.8138 19.4854 21.8138C21.1429 3.3854 35.2043 5.63186 35.2043 5.63186C35.8932 2.2379 35.3449 0 35.3449 0H35.3393Z\" fill=\"black\"><\/path>\n<\/svg>",
+            "icon_text": "<p>Thong<\/p>",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "right",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        }
+      },
+      "block_order": [
+        "528d28b8-6436-417a-84ac-b9e781f463cd",
+        "eeaf4e87-d39d-40da-917e-888911f029f3",
+        "311b2417-e1d2-478a-ae42-84810d0c4190",
+        "42ee71c8-f5e0-49bc-8841-94e53890ca9c",
+        "41d2cd31-4661-415c-9b04-44670932b4d2",
+        "72a7b848-7ee1-4cb2-9c95-575fbea4a5c0",
+        "5db82076-97d3-47bf-a8eb-c979cf2d59b8",
+        "574a9354-97a1-453f-ba2d-1c94b764ae8f",
+        "3de56655-99d4-496c-95b9-eafe9be9a3b1",
+        "91e71f6a-4cef-4fdb-ac54-0961186c9a2a"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "880px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ac2f8c21-49cc-4efb-966b-cafd467c20ee": {
+      "type": "saalt-absorbency",
+      "blocks": {
+        "template--21546030465297__ac2f8c21-49cc-4efb-966b-cafd467c20ee-absorbency_card-1": {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Light",
+            "theme_color_card_background": "--palette-color-3",
+            "theme_color_card_background_opacity": 25,
+            "theme_color_card_text": "theme_default",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21546030465297__ac2f8c21-49cc-4efb-966b-cafd467c20ee-absorbency_card-2": {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Regular",
+            "theme_color_card_background": "--palette-color-3",
+            "theme_color_card_background_opacity": 25,
+            "theme_color_card_text": "theme_default",
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "secondary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21546030465297__ac2f8c21-49cc-4efb-966b-cafd467c20ee-absorbency_card-3": {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Heavy",
+            "theme_color_card_background": "--palette-color-3",
+            "theme_color_card_background_opacity": 25,
+            "theme_color_card_text": "theme_default",
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21546030465297__ac2f8c21-49cc-4efb-966b-cafd467c20ee-absorbency_card-4": {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Super",
+            "theme_color_card_background": "--palette-color-3",
+            "theme_color_card_background_opacity": 25,
+            "theme_color_card_text": "theme_default",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--21546030465297__ac2f8c21-49cc-4efb-966b-cafd467c20ee-absorbency_card-1",
+        "template--21546030465297__ac2f8c21-49cc-4efb-966b-cafd467c20ee-absorbency_card-2",
+        "template--21546030465297__ac2f8c21-49cc-4efb-966b-cafd467c20ee-absorbency_card-3",
+        "template--21546030465297__ac2f8c21-49cc-4efb-966b-cafd467c20ee-absorbency_card-4"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "max_num_of_drops": 5,
+        "best_for_list_style": "vertical",
+        "use_graduated_bgs": true
+      }
     }
   },
   "order": [
     "main",
     "42813f3c-f6b1-420c-aff6-c74d679687ec",
+    "565652d6-3977-4b13-97c8-6d36a584e191",
     "707d104a-00ea-4bf5-b0b8-b4a634b27b08",
     "987fa4b1-6c8d-4641-8e59-b88a4eb6c3f4",
     "6e6939a0-95f3-41ee-ad01-bb83c2b0cb9b",
     "2243f424-7d1b-47ed-81dd-8aa7ae84f6ae",
+    "11768af0-3969-440e-ab38-6bb7083f5a63",
     "a1fce857-de0e-41c5-b206-da6927d1cf15",
+    "f5560e15-ada0-46b4-b638-07c2e5d8834c",
+    "7bd00ceb-ffbb-481f-9c8e-589563960e89",
     "39e65c1d-23ce-4912-aae4-a5b47d2a7f43",
     "3bfed0ad-2076-4915-9bfe-ae4df1a5d8d9",
-    "76186e78-875a-451a-9db0-55a06d3df933"
+    "76186e78-875a-451a-9db0-55a06d3df933",
+    "52812ce0-6b7f-4540-ad7b-a1d7dcdb795b",
+    "ac2f8c21-49cc-4efb-966b-cafd467c20ee"
   ]
 }
