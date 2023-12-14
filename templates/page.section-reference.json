@@ -1150,6 +1150,88 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "1e95ea14-a26d-4792-b10f-77842d5d2cfc": {
+      "type": "saalt-absorbency",
+      "blocks": {
+        "template--21546030465297__1e95ea14-a26d-4792-b10f-77842d5d2cfc-absorbency_card-1": {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Light",
+            "theme_color_card_background": "--palette-color-3",
+            "theme_color_card_background_opacity": 25,
+            "theme_color_card_text": "theme_default",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21546030465297__1e95ea14-a26d-4792-b10f-77842d5d2cfc-absorbency_card-2": {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Regular",
+            "theme_color_card_background": "--palette-color-3",
+            "theme_color_card_background_opacity": 25,
+            "theme_color_card_text": "theme_default",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21546030465297__1e95ea14-a26d-4792-b10f-77842d5d2cfc-absorbency_card-3": {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Heavy",
+            "theme_color_card_background": "--palette-color-3",
+            "theme_color_card_background_opacity": 25,
+            "theme_color_card_text": "theme_default",
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "secondary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21546030465297__1e95ea14-a26d-4792-b10f-77842d5d2cfc-absorbency_card-4": {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Super",
+            "theme_color_card_background": "--palette-color-3",
+            "theme_color_card_background_opacity": 25,
+            "theme_color_card_text": "theme_default",
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--21546030465297__1e95ea14-a26d-4792-b10f-77842d5d2cfc-absorbency_card-1",
+        "template--21546030465297__1e95ea14-a26d-4792-b10f-77842d5d2cfc-absorbency_card-2",
+        "template--21546030465297__1e95ea14-a26d-4792-b10f-77842d5d2cfc-absorbency_card-3",
+        "template--21546030465297__1e95ea14-a26d-4792-b10f-77842d5d2cfc-absorbency_card-4"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "max_num_of_drops": 5,
+        "best_for_list_style": "vertical",
+        "use_graduated_bgs": true
+      }
     }
   },
   "order": [
@@ -1167,6 +1249,7 @@
     "39e65c1d-23ce-4912-aae4-a5b47d2a7f43",
     "3bfed0ad-2076-4915-9bfe-ae4df1a5d8d9",
     "76186e78-875a-451a-9db0-55a06d3df933",
-    "52812ce0-6b7f-4540-ad7b-a1d7dcdb795b"
+    "52812ce0-6b7f-4540-ad7b-a1d7dcdb795b",
+    "1e95ea14-a26d-4792-b10f-77842d5d2cfc"
   ]
 }
