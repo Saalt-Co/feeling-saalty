@@ -173,7 +173,7 @@
             "mobile_icon_max_width": "40%",
             "mobile_icon_height": "75px",
             "use_max_icon_group_width": true,
-            "icon_group_max_width": "700px",
+            "icon_group_max_width": "600px",
             "desktop_icons_display": "grid",
             "desktop_icon_group_horizontal_alignment": "center",
             "desktop_icon_group_vertical_alignment": "center",
@@ -184,8 +184,8 @@
             "desktop_icon_vertical_alignment": "center",
             "desktop_icon_min_width": "80px",
             "desktop_icon_wrapper_max_width": "300px",
-            "desktop_icon_max_width": "25%",
-            "desktop_icon_height": "100px"
+            "desktop_icon_max_width": "20%",
+            "desktop_icon_height": "80px"
           }
         },
         "33e1ca85-0f47-43b1-bd4f-31c6595d2aa0": {
