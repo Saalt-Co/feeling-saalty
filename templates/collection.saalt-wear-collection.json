@@ -246,7 +246,7 @@
         "theme_color_background": "theme-color-bg-3",
         "theme_color_text": "theme-color-text-0",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Saalt-Leakproof-Period-Underwear-Premium-Design.jpg",
+        "image": "shopify:\/\/shop_images\/Saalt-Wear-Premium-Design-Comfortable-Fit-1-Image-Collection_03.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -257,8 +257,8 @@
         "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "use_max_text_width": true,
+        "max_width": "450px",
         "padding_top": 0,
         "padding_bottom": 0
       }
