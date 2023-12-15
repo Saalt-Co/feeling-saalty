@@ -458,76 +458,51 @@
         "padding_bottom": 36
       }
     },
-    "b1c192fc-b9bb-4572-8dc5-cddb9acc920b": {
-      "type": "saalt-style-1-tiles-section",
+    "2c73b1d8-73fb-40fe-9bf6-787a82d2fcab": {
+      "type": "saalt-media-with-text",
       "blocks": {
-        "a1640b89-5010-455a-961b-223b3ec24587": {
+        "template--21621112897809__2c73b1d8-73fb-40fe-9bf6-787a82d2fcab-section_title-1": {
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "REMOVING & REINSERTING"
+            "title": "Removing & Reinserting"
           }
         },
-        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-section_tiles_group-1": {
-          "type": "section_tiles_group",
+        "template--21621112897809__2c73b1d8-73fb-40fe-9bf6-787a82d2fcab-section_content-1": {
+          "type": "section_content",
           "settings": {
-            "theme_color_mobile_text_color": "match_text",
-            "tile_mobile_text_alignment": "center",
-            "theme_color_desktop_text_color": "match_text",
-            "theme_color_desktop_text_hover_focus_color": "match_text",
-            "tile_desktop_text_alignment": "center",
-            "desktop_text_placement": "flex-end",
-            "tile_desktop_text_alignment_hover_focus": "center",
-            "desktop_text_hover_placement": "center"
+            "text_content": "<h5>REMOVE<\/h5><ul><li>Wash your hands thoroughly with warm water and mild soap.<\/li><li>You can stand, sit, or squat, but removing your cup is much easier if you are relaxed.<\/li><li>The stem is not a pull tab, do not pull hard on the stem to remove.<\/li><li>Use the stem as a guide to locate the grip rings and break the seal by pinching the base of the cup with your thumb and index finger. Do not pull on the stem.<\/li><li>Wiggle the cup side to side as you gently pull it out. Keep it upright to avoid spilling.<\/li><li>Holding your cup firmly, empty it into a toilet or sink.<\/li><\/ul>"
           }
         },
-        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-saalt_style_1_tile-1": {
-          "type": "saalt_style_1_tile",
+        "bb741995-da76-455d-a30d-4eaa72d37573": {
+          "type": "section_content",
           "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-09.jpg",
-            "title": "REMOVE",
-            "text_content": "Wash your hands thoroughly with warm water and mild soap.\nYou can stand, sit, or squat, but removing your cup is much easier if you are relaxed.\nThe stem is not a pull tab, do not pull hard on the stem to remove.\nUse the stem as a guide to locate the grip rings and break the seal by pinching the base of the cup with your thumb and index finger. Do not pull on the stem.\nWiggle the cup side to side as you gently pull it out. Keep it upright to avoid spilling.\nHelpful hint: To keep the cup upright, pull until the grip rings are past the vaginal opening. Then tilt the cup forward to remove the front of the rim first, followed by the rest of the cup.\nHolding your cup firmly, empty it into a toilet or sink.",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
-        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-saalt_style_1_tile-2": {
-          "type": "saalt_style_1_tile",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-08_9ddca6b4-ce40-4fd6-a2fb-e3375092bab7.jpg",
-            "title": "REINSERT",
-            "text_content": "Wash your Saalt Cup by rinsing in cold water first to prevent staining, then wash using warm water with mild soap. Rinse thoroughly.\nYour Saalt Cup is ready to reinsert! If you need more insertion coaching, refer to section “How to Saalt”. You got this.",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
+            "text_content": "<h5>REINSERT<\/h5><ul><li>Wash your Saalt Cup by rinsing in cold water first to prevent staining, then wash using warm water with mild soap. Rinse thoroughly.<\/li><li>Your Saalt Cup is ready to reinsert! If you need more insertion coaching, refer to section “How to Saalt”. You got this.<\/li><\/ul>"
           }
         }
       },
       "block_order": [
-        "a1640b89-5010-455a-961b-223b3ec24587",
-        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-section_tiles_group-1",
-        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-saalt_style_1_tile-1",
-        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-saalt_style_1_tile-2"
+        "template--21621112897809__2c73b1d8-73fb-40fe-9bf6-787a82d2fcab-section_title-1",
+        "template--21621112897809__2c73b1d8-73fb-40fe-9bf6-787a82d2fcab-section_content-1",
+        "bb741995-da76-455d-a30d-4eaa72d37573"
       ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
         "title_font_size": "small",
         "content_font_size": "small",
-        "mobile_text_alignment": "center",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "left",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "900px",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -585,7 +560,7 @@
         "theme_color_background": "theme-color-bg-3",
         "theme_color_text": "theme_default",
         "background_style": "primary",
-        "theme_color_column_secondary_bg": "theme_default",
+        "theme_color_column_secondary_bg": "--palette-color-0",
         "column_secondary_bg_opacity": 100,
         "review_star_color_override": "theme_default",
         "review_star_opacity_override": 100,
@@ -619,7 +594,7 @@
           "settings": {
             "heading": "REMOVAL BLISS",
             "icon": "check_mark",
-            "row_content": "<ul><li>Your first time using the cup, consider removing your cup in the shower or while sitting on a toilet.<\/li><li>Always pinch the grip rings at the base of the cup to break the seal (don’t pull on the stem alone).<\/li><li>Wiggle your cup back and forth while holding the grip rings and keep your cup upright as you pull it past your labia to avoid spilling.<\/li><li>If you can’t reach your cup when inserted, don’t sweat it! The cup won’t get lost inside the vagina. Your cup may move higher, especially after sleeping, but don’t stress.<\/li><li>Wait 30 minutes and try again. Use your pelvic muscles to gently bear down on the cup (like a normal bowel movement), pushing it lower. Squatting in the shower can also help, or sitting on the toilet with your feet on a stool.<\/li><li>If you are struggling to remove your cup, please email us at sayhey@<a href=\"https:\/\/saalt.com\/\">saalt.com<\/a>.<\/li><\/ul>",
+            "row_content": "<ul><li>Your first time using the cup, consider removing your cup in the shower or while sitting on a toilet.<\/li><li>Always pinch the grip rings at the base of the cup to break the seal (don’t pull on the stem alone).<\/li><li>Wiggle your cup back and forth while holding the grip rings and keep your cup upright as you pull it past your labia to avoid spilling.<\/li><li>If you can’t reach your cup when inserted, don’t sweat it! The cup won’t get lost inside the vagina. Your cup may move higher, especially after sleeping, but don’t stress.<\/li><li>Wait 30 minutes and try again. Use your pelvic muscles to gently bear down on the cup (like a normal bowel movement), pushing it lower. Squatting in the shower can also help, or sitting on the toilet with your feet on a stool.<\/li><li>If you are struggling to remove your cup, please email us at sayhey@saalt.com.<\/li><\/ul>",
             "page": ""
           }
         },
@@ -704,7 +679,7 @@
         "template--21580602507537__1ec3b9cd-3031-4017-a5f9-b0f67f0f8df7-section_title-1": {
           "type": "section_title",
           "settings": {
-            "heading_tag": "1",
+            "heading_tag": "3",
             "title": "We'd love to help you."
           }
         },
@@ -734,59 +709,18 @@
         "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "use_max_text_width": true,
+        "max_width": "700px",
         "padding_top": 0,
         "padding_bottom": 0
       }
     },
-    "2c73b1d8-73fb-40fe-9bf6-787a82d2fcab": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--21621112897809__2c73b1d8-73fb-40fe-9bf6-787a82d2fcab-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "3",
-            "title": "Removing & Reinserting"
-          }
-        },
-        "template--21621112897809__2c73b1d8-73fb-40fe-9bf6-787a82d2fcab-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<h5>REMOVE<\/h5><ul><li>Wash your hands thoroughly with warm water and mild soap.<\/li><li>You can stand, sit, or squat, but removing your cup is much easier if you are relaxed.<\/li><li>The stem is not a pull tab, do not pull hard on the stem to remove.<\/li><li>Use the stem as a guide to locate the grip rings and break the seal by pinching the base of the cup with your thumb and index finger. Do not pull on the stem.<\/li><li>Wiggle the cup side to side as you gently pull it out. Keep it upright to avoid spilling.<\/li><li>Holding your cup firmly, empty it into a toilet or sink.<\/li><\/ul>"
-          }
-        },
-        "bb741995-da76-455d-a30d-4eaa72d37573": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--21621112897809__2c73b1d8-73fb-40fe-9bf6-787a82d2fcab-section_title-1",
-        "template--21621112897809__2c73b1d8-73fb-40fe-9bf6-787a82d2fcab-section_content-1",
-        "bb741995-da76-455d-a30d-4eaa72d37573"
-      ],
+    "d3a88ba8-d776-45f0-be28-ba9c55a1c7bf": {
+      "type": "custom-liquid",
       "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "none",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "custom_liquid": "<h2 align=\"center\">How-to Videos<\/h2>\n<p style=\"text-align: center;\">It's like we're holding your hand. But metaphorically... because you'll need your hand.<br><span style=\"font-size: 14px;\">Full how-to playlist <span style=\"text-decoration: underline; color: #b65a4a;\"><a href=\"https:\/\/www.youtube.com\/playlist?list=PL7YFdopVv8tOl9f7qi-ilE-kjXBxYv9TY\" style=\"color: #b65a4a; text-decoration: underline;\" target=\"_blank\">CLICK HERE<\/a><\/span><\/span><\/p>",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
@@ -801,10 +735,10 @@
     "5ce2b26e-8e8f-433a-b0c7-572a905d34ca",
     "7d2ee6ed-7387-44d2-b27f-0bed60ced2d3",
     "45fb2450-63be-479e-a92e-1e810a74551a",
-    "b1c192fc-b9bb-4572-8dc5-cddb9acc920b",
+    "2c73b1d8-73fb-40fe-9bf6-787a82d2fcab",
     "642fc74f-0994-49f6-b77d-5de71f78a897",
     "57bfdc1a-03e7-470b-bbb3-a190db33a0be",
     "1ec3b9cd-3031-4017-a5f9-b0f67f0f8df7",
-    "2c73b1d8-73fb-40fe-9bf6-787a82d2fcab"
+    "d3a88ba8-d776-45f0-be28-ba9c55a1c7bf"
   ]
 }
