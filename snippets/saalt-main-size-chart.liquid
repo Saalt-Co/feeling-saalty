@@ -46,15 +46,19 @@
       <ul class="size-chart-tab-titles-ul">
         {%- for title in split_titles -%}
           {% liquid
-            if product.metafields.saalt.product_size_chart.value.title == title
-              assign size_chart_match = true
+            if section.settings.size_chart_active_tab == title
+              assign make_active = true
+            elsif section.settings.size_chart_active_tab == blank and product.metafields.saalt.product_size_chart.value.title == title
+              assign make_active = true
+            elsif section.settings.size_chart_active_tab == blank and product.metafields.saalt.product_size_chart.value == blank and forloop.first
+              assign make_active = true
             else
-              assign size_chart_match = false
+              assign make_active = false
             endif
           %}
           <li class="size-chart-tab-titles-li">
             <button
-              class="size-chart-tab-title-button{% if size_chart_match or product.metafields.saalt.product_size_chart.value == blank and forloop.first %} active{% endif %}"
+              class="size-chart-tab-title-button{% if make_active %} active{% endif %}"
               name="tab-{{ forloop.index }}"
             >
               {{ title }}
@@ -66,14 +70,19 @@
     <div class="size-chart-content-containers">
       {%- for content in split_content -%}
         {% liquid
-          if product.metafields.saalt.product_size_chart.value.page.value.content == content
+          if section.settings.size_chart_active_tab == split_titles[forloop.index0]
+            assign size_chart_match = true
+          elsif section.settings.size_chart_active_tab == blank and product.metafields.saalt.product_size_chart.value.page.value.content == content
+            assign size_chart_match = true
+          elsif section.settings.size_chart_active_tab == blank and product.metafields.saalt.product_size_chart.value == blank and forloop.first
             assign size_chart_match = true
           else
             assign size_chart_match = false
           endif
         %}
+        {{ product.metafields.saalt.product_size_chart.value[section.settings.size_chart_active_tab] }}
         <div
-          class="size-chart-content-container {{ split_titles[forloop.index0] | handleize }}{% if size_chart_match or product.metafields.saalt.product_size_chart.value == blank and forloop.first %} visible{% endif %}"
+          class="size-chart-content-container {{ split_titles[forloop.index0] | handleize }}{% if size_chart_match %} visible{% endif %}"
           name="content-container-{{ forloop.index }}"
         >
           <div class="saalt-monogram-svg">

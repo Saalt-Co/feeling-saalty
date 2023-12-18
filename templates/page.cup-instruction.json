@@ -23,8 +23,7 @@
         "max_media_width": "700px",
         "title_font_size": "small",
         "content_font_size": "small",
-        "mobile_icon_text_position": "below",
-        "desktop_icon_text_position": "below",
+        "mobile_text_position": "overlay",
         "mobile_text_alignment": "center",
         "desktop_text_position": "center",
         "desktop_text_alignment": "center",
@@ -40,8 +39,8 @@
         "template--21580602507537__efad1e86-a666-4d86-92f0-4041337d74f9-section_title-1": {
           "type": "section_title",
           "settings": {
-            "heading_tag": "2",
-            "title": "SAALT CUP INSTRUCTION"
+            "heading_tag": "1",
+            "title": "Saalt Cup Instructions"
           }
         }
       },
@@ -60,16 +59,32 @@
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
-        "title_font_size": "small",
+        "title_font_size": "large",
         "content_font_size": "small",
         "mobile_text_position": "below",
         "mobile_text_alignment": "center",
         "desktop_text_position": "right",
-        "desktop_text_alignment": "left",
+        "desktop_text_alignment": "center",
         "use_max_text_width": false,
         "max_width": "600px",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "d3a88ba8-d776-45f0-be28-ba9c55a1c7bf": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h2 align=\"center\">How-to Videos<\/h2>\n<p style=\"text-align: center;\">It's like we're holding your hand. But metaphorically... because you'll need your hand.<br><span style=\"font-size: 14px;\">Full how-to playlist <span style=\"text-decoration: underline; color: #b65a4a;\"><a href=\"https:\/\/www.youtube.com\/playlist?list=PL7YFdopVv8tOl9f7qi-ilE-kjXBxYv9TY\" style=\"color: #b65a4a; text-decoration: underline;\" target=\"_blank\">CLICK HERE<\/a><\/span><\/span><\/p>\n\n\n<center>\n<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/k_79eISI090?si=H5gnuabCLg-3d0DU?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe><\/center>",
+        "padding_top": 20,
+        "padding_bottom": 52
+      }
+    },
+    "61a6a262-8f4f-498a-9f44-3642c01c9430": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h2 align=\"center\">Downloadable Instructions<\/h2>\n<div style=\"max-width: 800px; padding: 20px 20px 0 20px; margin: 0 auto; border: 1px solid #d4d4d4;\" class=\"icon-list-box\">\n<ul style=\"grid-template-columns: 1fr 1fr; margin: 0; display: grid; grid-gap: 15px; list-style-type: disc; list-style-position: outside; line-height: 1.5;\" class=\"inner-icon-list\">\n<li style=\"margin: 0; background-position: 2px 8px; list-style: none; padding: 0 0 0 18px;\"><a style=\"cursor: pointer;\" class=\"flex-link\" download=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0294\/4080\/2921\/files\/files_instructions_saalt_instructions_in_english.pdf?v=1596228409\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/files_instructions_saalt_instructions_in_english.pdf\"><span class=\"icon\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"20\" viewBox=\"0 0 20 20\" height=\"20\"><g fill=\"none\"><path fill=\"#f0f0f0\" d=\"m0 0h20v20h-20z\"><\/path><g fill=\"#d80027\"><path d=\"m0 2.5h20v2.5h-20z\"><\/path><path d=\"m0 7.5h20v2.5h-20z\"><\/path><path d=\"m0 12.5h20v2.5h-20z\"><\/path><path d=\"m0 17.5h20v2.5h-20z\"><\/path><\/g><path fill=\"#2e52b2\" d=\"m0 0h10v10.769141h-10z\"><\/path><g transform=\"translate(1.054688 2.070312)\" fill=\"#f0f0f0\"><path d=\"m.95773438 2.43429687-.21851563.67230469h-.70695312l.57199218.41539063-.21851562.67234375.57199219-.41539063.57175781.41539063-.21855469-.67234375.57199219-.41539063h-.70691406z\"><\/path><path d=\"m1.17601563 5.53300781-.21828125-.67230469-.21851563.67230469h-.70695312l.57199218.41539063-.21851562.67230469.57199219-.41535157.57175781.41535157-.21855469-.67230469.57199219-.41539063z\"><\/path><path d=\"m.95773438.00789063-.21851563.67234375h-.70695312l.57199218.41535156-.21851562.67234375.57199219-.41539063.57175781.41539063-.21855469-.67234375.57199219-.41535156h-.70691406z\"><\/path><path d=\"m3.94542969 2.43429687-.21851563.67230469h-.70695312l.57199218.41539063-.21851562.67234375.57199219-.41539063.57175781.41539063-.21855469-.67234375.57203125-.41539063h-.70695312z\"><\/path><path d=\"m4.16371094 5.53300781-.21828125-.67230469-.21851563.67230469h-.70695312l.57199218.41539063-.21851562.67230469.57199219-.41535157.57175781.41535157-.21855469-.67230469.57203125-.41539063z\"><\/path><path d=\"m7.15140625 5.53300781-.21824219-.67230469-.21855468.67230469h-.70691407l.57199219.41539063-.21855469.67230469.57203125-.41535157.57171875.41535157-.21851562-.67230469.57199219-.41539063z\"><\/path><path d=\"m6.93316406 2.43429687-.21855468.67230469h-.70691407l.57199219.41539063-.21855469.67234375.57203125-.41539063.57171875.41539063-.21851562-.67234375.57199219-.41539063h-.70695313z\"><\/path><path d=\"m3.94542969.00789063-.21851563.67234375h-.70695312l.57199218.41535156-.21851562.67234375.57199219-.41539063.57175781.41539063-.21855469-.67234375.57203125-.41535156h-.70695312z\"><\/path><path d=\"m6.93316406.00789063-.21855468.67234375h-.70691407l.57199219.41535156-.21855469.67234375.57203125-.41539063.57171875.41539063-.21851562-.67234375.57199219-.41535156h-.70695313z\"><\/path><\/g><\/g><\/svg><\/span>&nbspInstructions in English<\/a><\/li>\n<li style=\"margin: 0; background-position: 2px 8px; list-style: none; padding: 0 0 0 18px;\"><a style=\"cursor: pointer;\" class=\"flex-link\" download=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0294\/4080\/2921\/files\/files_instructions_saalt_instructions_en_francais.pdf?v=1596228409\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/files_instructions_saalt_instructions_en_francais.pdf\"><span class=\"icon\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"20\" viewBox=\"0 0 20 20\" height=\"20\"><g fill=\"none\"><path fill=\"#fff\" d=\"m0 0h20v20h-20z\"><\/path><path fill=\"#00267f\" d=\"m0 0h7v20h-7z\"><\/path><path fill=\"#f31830\" d=\"m13 0h7v20h-7z\"><\/path><\/g><\/svg><\/span>&nbspInstructions en Français<\/a><\/li>\n<li style=\"margin: 0; background-position: 2px 8px; list-style: none; padding: 0 0 0 18px;\"><a style=\"cursor: pointer;\" class=\"flex-link\" download=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0294\/4080\/2921\/files\/files_instructions_saalt_anleitung_in_deutscher_sprache.pdf?v=1596228409\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/files_instructions_saalt_anleitung_in_deutscher_sprache.pdf\"><span class=\"icon\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"20\" viewBox=\"0 0 20 20\" height=\"20\"><g fill=\"none\"><path fill=\"#ffce00\" d=\"m0 13.3320312h20v6.6679688h-20z\"><\/path><path fill=\"#000\" d=\"m0 0h20v6.66796875h-20z\"><\/path><path fill=\"#d00\" d=\"m0 6.66796875h20v6.66406245h-20z\"><\/path><\/g><\/svg><\/span>&nbspAnleitung in Deutscher Sprache<\/a><\/li>\n<li style=\"margin: 0; background-position: 2px 8px; list-style: none; padding: 0 0 0 18px;\"><a style=\"cursor: pointer;\" class=\"flex-link\" download=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0294\/4080\/2921\/files\/files_instructions_saalt_istruzioni_in_italiano.pdf?v=1596228409\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/files_instructions_saalt_istruzioni_in_italiano.pdf\"><span class=\"icon\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"20\" width=\"20\"><g fill=\"none\"><path d=\"M0 0L20 0 20 20 0 20z\" fill=\"#FFF\"><\/path><path d=\"M0 0L6.66796875 0 6.66796875 20 0 20z\" fill=\"#009246\"><\/path><path d=\"M13.3320312 0L20 0 20 20 13.3320312 20z\" fill=\"#CE2B37\"><\/path><\/g><\/svg><\/span>&nbspIstruzioni in Italiano<\/a><\/li>\n<li style=\"margin: 0; background-position: 2px 8px; list-style: none; padding: 0 0 0 18px;\"><a style=\"cursor: pointer;\" class=\"flex-link\" download=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0294\/4080\/2921\/files\/files_instructions_saalt_instrucciones_en_espanol.pdf?v=1596228409\" href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/files_instructions_saalt_instrucciones_en_espanol.pdf\"><span class=\"icon\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" height=\"20\" width=\"20\"><g fill=\"none\"><path d=\"M0 0L20 0 20 20 0 20z\" fill=\"#C60B1E\"><\/path><path d=\"M0 5L20 5 20 15 0 15z\" fill=\"#FFC400\"><\/path><\/g><\/svg><\/span>&nbspInstrucciones en Español<\/a><\/li>\n<\/ul>\n<\/div>",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "a74a1e17-040a-4a83-a782-5856e874b3dd": {
@@ -119,7 +134,7 @@
         ".background-none .multicolumn-card-spacing {width: 50%; margin-left: 30%;}"
       ],
       "settings": {
-        "title": "BEFORE FIRST USE",
+        "title": "Before First Use",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -152,7 +167,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "INSTRUCTIONS"
+            "title": "Instructions"
           }
         },
         "template--21580602507537__b7db5103-2c7b-4c05-a774-90295600e617-section_content-1": {
@@ -181,7 +196,7 @@
         "title_font_size": "small",
         "content_font_size": "small",
         "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
+        "mobile_text_alignment": "left",
         "desktop_text_position": "right",
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
@@ -197,9 +212,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Flatten.png",
-            "title": "Flatten",
+            "title": "",
             "rating": 0,
-            "text": "",
+            "text": "<p>Flatten<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -208,9 +223,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/C_fold.png",
-            "title": "Bring ends together",
+            "title": "",
             "rating": 0,
-            "text": "",
+            "text": "<p>Bring ends together<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -221,19 +236,14 @@
         "4d3092b2-a11a-4900-9d4f-0b4dd2c7012f"
       ],
       "custom_css": [
-        ".multicolumn .title {font-size: 40px; margin-bottom: 50px;}",
-        ".multicolumn-list h3,.multicolumn-list p {text-align: center;}",
-        ".grid__item {margin-left: 130px;}",
-        "@media (max-width: 1200px) {.grid__item {margin-left: 100px; }}",
-        "@media (max-width: 990px) {.grid__item {margin-left: 50px; }}",
-        "@media (max-width: 750px) {.grid__item {margin-left: 10px; }}"
+
       ],
       "settings": {
-        "title": "C-FOLD",
-        "heading_size": "h2",
+        "title": "C-Fold",
+        "heading_size": "h1",
         "image_width": "half",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "column_alignment": "left",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
@@ -261,10 +271,10 @@
         "631911a4-020d-493c-bb41-663d76d87f8e": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Press_down_on_rim.png",
-            "title": "Press down on rim to collapse cup",
+            "image": "shopify:\/\/shop_images\/Press_down_on_rim_instructions_page.png",
+            "title": "",
             "rating": 0,
-            "text": "",
+            "text": "<p>Press down on rim to collapse cup<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -272,10 +282,10 @@
         "8175a6fc-897b-462d-8b25-2ff8c25f9419": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Pinch_to_hold_in_place.png",
-            "title": "Pinch to hold in place",
+            "image": "shopify:\/\/shop_images\/Pinch_to_hold_in_place_instructions_page.png",
+            "title": "",
             "rating": 0,
-            "text": "",
+            "text": "<p>Pinch to hold in place<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -286,15 +296,14 @@
         "8175a6fc-897b-462d-8b25-2ff8c25f9419"
       ],
       "custom_css": [
-        ".multicolumn .title {font-size: 40px; margin-bottom: 50px;}",
-        ".multicolumn-list h3,.multicolumn-list p {text-align: center;}"
+
       ],
       "settings": {
         "title": "Punch-down fold",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "image_width": "half",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "column_alignment": "left",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
@@ -323,9 +332,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Squeeze_and_flatten.png",
-            "title": "Squeeze and flatten cup",
+            "title": "",
             "rating": 0,
-            "text": "",
+            "text": "<p>Squeeze and flatten cup<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -334,9 +343,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Fold_top_right_corner.png",
-            "title": "Fold top right corner down, so rim forms the number 7.",
+            "title": "",
             "rating": 0,
-            "text": "",
+            "text": "<p>Fold top right corner down, so rim forms the number 7.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -347,19 +356,14 @@
         "0d90aacc-a0e8-4fe7-a60b-28bcd6b2606c"
       ],
       "custom_css": [
-        ".multicolumn .title {font-size: 40px; margin-bottom: 50px;}",
-        ".multicolumn-list h3,.multicolumn-list p {text-align: center;}",
-        ".grid__item {margin-left: 130px;}",
-        "@media (max-width: 1200px) {.grid__item {margin-left: 100px; }}",
-        "@media (max-width: 990px) {.grid__item {margin-left: 50px; }}",
-        "@media (max-width: 750px) {.grid__item {margin-left: -10px; }}"
+
       ],
       "settings": {
-        "title": "7-FOLD",
-        "heading_size": "h2",
-        "image_width": "full",
+        "title": "7-Fold",
+        "heading_size": "h1",
+        "image_width": "half",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "column_alignment": "left",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
@@ -407,7 +411,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Insert_2.png",
             "caption": "STEP 2",
-            "heading": "POSITION",
+            "heading": "Position",
             "text": "<ul><li>Position your cup lower than a tampon, but feel free to move it up a little if that's more comfortable.<\/li><li>As you release the cup, it will pop open. It’s okay for your Saalt Cup to pop open once inside the vaginal opening but before it’s completely inserted.<\/li><li>To make sure it has fully opened, creating a seal against the vaginal wall, rotate your cup by pinching the base (not just the stem) and turning it. When the cup is fully open, it will prevent leaking.<\/li><li>Your cup is in the right place when the rim is below or around your cervix.<\/li><\/ul>",
             "theme_color_row_background": "theme_default",
             "theme_color_row_text": "theme_default",
@@ -425,7 +429,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Insert_3.png",
             "caption": "STEP 3",
-            "heading": "SECURE",
+            "heading": "Secure",
             "text": "<ul><li>Double check to make sure the cup has opened by running a finger around the body of the cup. If you feel any folds, rotate the cup again until it opens completely, creating a seal.<\/li><li>No folds? You’ve successfully inserted your Saalt Cup! Feel free to do a heel click or summersault and go enjoy 12 hours* worry free!<\/li><li>You can check the seal by tugging lightly on the stem. If you feel resistance as you softly pull down, you have a good seal!<\/li><\/ul><p>*8 hours for our Australian friends<\/p>",
             "theme_color_row_background": "theme_default",
             "theme_color_row_text": "theme_default",
@@ -445,93 +449,68 @@
         "template--21580602507537__45fb2450-63be-479e-a92e-1e810a74551a-row-3"
       ],
       "custom_css": [
-        ".image-with-text .grid__item {height: 50%; margin-top: 10%;}"
+        ".image-with-text .grid__item {height: 50%;}"
       ],
       "settings": {
-        "image_height": "medium",
+        "image_height": "adapt",
         "desktop_image_width": "medium",
         "heading_size": "h1",
         "text_style": "body",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "image_layout": "alternate-left",
-        "theme_color_background": "theme_default",
+        "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "b1c192fc-b9bb-4572-8dc5-cddb9acc920b": {
-      "type": "saalt-style-1-tiles-section",
+    "2c73b1d8-73fb-40fe-9bf6-787a82d2fcab": {
+      "type": "saalt-media-with-text",
       "blocks": {
-        "a1640b89-5010-455a-961b-223b3ec24587": {
+        "template--21621112897809__2c73b1d8-73fb-40fe-9bf6-787a82d2fcab-section_title-1": {
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "REMOVING & REINSERTING"
+            "title": "Removing & Reinserting"
           }
         },
-        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-section_tiles_group-1": {
-          "type": "section_tiles_group",
+        "template--21621112897809__2c73b1d8-73fb-40fe-9bf6-787a82d2fcab-section_content-1": {
+          "type": "section_content",
           "settings": {
-            "theme_color_mobile_text_color": "match_text",
-            "tile_mobile_text_alignment": "center",
-            "theme_color_desktop_text_color": "match_text",
-            "theme_color_desktop_text_hover_focus_color": "match_text",
-            "tile_desktop_text_alignment": "center",
-            "desktop_text_placement": "flex-end",
-            "tile_desktop_text_alignment_hover_focus": "center",
-            "desktop_text_hover_placement": "center"
+            "text_content": "<h5>REMOVE<\/h5><ul><li>Wash your hands thoroughly with warm water and mild soap.<\/li><li>You can stand, sit, or squat, but removing your cup is much easier if you are relaxed.<\/li><li>The stem is not a pull tab, do not pull hard on the stem to remove.<\/li><li>Use the stem as a guide to locate the grip rings and break the seal by pinching the base of the cup with your thumb and index finger. Do not pull on the stem.<\/li><li>Wiggle the cup side to side as you gently pull it out. Keep it upright to avoid spilling.<\/li><li>Holding your cup firmly, empty it into a toilet or sink.<\/li><\/ul>"
           }
         },
-        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-saalt_style_1_tile-1": {
-          "type": "saalt_style_1_tile",
+        "bb741995-da76-455d-a30d-4eaa72d37573": {
+          "type": "section_content",
           "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-09.jpg",
-            "title": "REMOVE",
-            "text_content": "Wash your hands thoroughly with warm water and mild soap.\nYou can stand, sit, or squat, but removing your cup is much easier if you are relaxed.\nThe stem is not a pull tab, do not pull hard on the stem to remove.\nUse the stem as a guide to locate the grip rings and break the seal by pinching the base of the cup with your thumb and index finger. Do not pull on the stem.\nWiggle the cup side to side as you gently pull it out. Keep it upright to avoid spilling.\nHelpful hint: To keep the cup upright, pull until the grip rings are past the vaginal opening. Then tilt the cup forward to remove the front of the rim first, followed by the rest of the cup.\nHolding your cup firmly, empty it into a toilet or sink.",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
-        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-saalt_style_1_tile-2": {
-          "type": "saalt_style_1_tile",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-08_9ddca6b4-ce40-4fd6-a2fb-e3375092bab7.jpg",
-            "title": "REINSERT",
-            "text_content": "Wash your Saalt Cup by rinsing in cold water first to prevent staining, then wash using warm water with mild soap. Rinse thoroughly.\nYour Saalt Cup is ready to reinsert! If you need more insertion coaching, refer to section “How to Saalt”. You got this.",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
+            "text_content": "<h5>REINSERT<\/h5><ul><li>Wash your Saalt Cup by rinsing in cold water first to prevent staining, then wash using warm water with mild soap. Rinse thoroughly.<\/li><li>Your Saalt Cup is ready to reinsert! If you need more insertion coaching, refer to section “How to Saalt”. You got this.<\/li><\/ul>"
           }
         }
       },
       "block_order": [
-        "a1640b89-5010-455a-961b-223b3ec24587",
-        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-section_tiles_group-1",
-        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-saalt_style_1_tile-1",
-        "template--21580602507537__b1c192fc-b9bb-4572-8dc5-cddb9acc920b-saalt_style_1_tile-2"
+        "template--21621112897809__2c73b1d8-73fb-40fe-9bf6-787a82d2fcab-section_title-1",
+        "template--21621112897809__2c73b1d8-73fb-40fe-9bf6-787a82d2fcab-section_content-1",
+        "bb741995-da76-455d-a30d-4eaa72d37573"
       ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
         "title_font_size": "small",
         "content_font_size": "small",
-        "mobile_text_alignment": "center",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "left",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "900px",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -577,20 +556,19 @@
       ],
       "custom_css": [
         ".multicolumn .title {margin-left: 30%;}",
-        ".multicolumn-list h3 {text-align: center;}",
-        ".grid:last-child {margin-top: 12%;}"
+        ".multicolumn-list h3 {text-align: center;}"
       ],
       "settings": {
-        "title": "CLEANING & STORING",
+        "title": "Cleaning & Storing",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
         "columns_desktop": 3,
         "column_alignment": "left",
-        "theme_color_background": "theme_default",
+        "theme_color_background": "theme-color-bg-3",
         "theme_color_text": "theme_default",
-        "background_style": "none",
-        "theme_color_column_secondary_bg": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "--palette-color-0",
         "column_secondary_bg_opacity": 100,
         "review_star_color_override": "theme_default",
         "review_star_opacity_override": 100,
@@ -614,7 +592,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "HEALTHY USE",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<ul><li>Empty at least twice a day (every 12 hours*); we recommend before bed and after waking up.<\/li><li>Don’t share the Saalt Cup.<\/li><li>Replace the Saalt Cup if torn or damaged.<\/li><li>Always wash your hands and the Saalt Cup thoroughly before and after handling.<\/li><li>Clean completely and boil your cup after every menstrual cycle.<\/li><li>The Saalt Cup is not recommended for use during postnatal bleeding.<\/li><li>You can use the Saalt Cup with an IUD or contraceptive ring, but check with your doctor first.<\/li><li>Be sure to break the seal before removing to avoid dislodging your IUD<\/li><li>* 8 hours for our Australian friends<\/li><\/ul>",
             "page": ""
           }
@@ -623,8 +601,8 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "REMOVAL BLISS",
-            "icon": "check_mark",
-            "row_content": "<ul><li>Your first time using the cup, consider removing your cup in the shower or while sitting on a toilet.<\/li><li>Always pinch the grip rings at the base of the cup to break the seal (don’t pull on the stem alone).<\/li><li>Wiggle your cup back and forth while holding the grip rings and keep your cup upright as you pull it past your labia to avoid spilling.<\/li><li>If you can’t reach your cup when inserted, don’t sweat it! The cup won’t get lost inside the vagina. Your cup may move higher, especially after sleeping, but don’t stress.<\/li><li>Wait 30 minutes and try again. Use your pelvic muscles to gently bear down on the cup (like a normal bowel movement), pushing it lower. Squatting in the shower can also help, or sitting on the toilet with your feet on a stool.<\/li><li>If you are struggling to remove your cup, please email us at sayhey@<a href=\"https:\/\/saalt.com\/\">saalt.com<\/a>.<\/li><\/ul>",
+            "icon": "none",
+            "row_content": "<ul><li>Your first time using the cup, consider removing your cup in the shower or while sitting on a toilet.<\/li><li>Always pinch the grip rings at the base of the cup to break the seal (don’t pull on the stem alone).<\/li><li>Wiggle your cup back and forth while holding the grip rings and keep your cup upright as you pull it past your labia to avoid spilling.<\/li><li>If you can’t reach your cup when inserted, don’t sweat it! The cup won’t get lost inside the vagina. Your cup may move higher, especially after sleeping, but don’t stress.<\/li><li>Wait 30 minutes and try again. Use your pelvic muscles to gently bear down on the cup (like a normal bowel movement), pushing it lower. Squatting in the shower can also help, or sitting on the toilet with your feet on a stool.<\/li><li>If you are struggling to remove your cup, please email us at sayhey@saalt.com.<\/li><\/ul>",
             "page": ""
           }
         },
@@ -632,7 +610,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "TO TRIM OR NOT TO TRIM",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<ul><li>The Saalt Cup’s stem is designed to be soft and comfortable so you can keep it to help locate the cup. Depending on how you wear your Saalt Cup, you may decide to trim off part or all of the stem. If you do, trim on one of the indentations.<\/li><li>Never trim the stem while your Saalt Cup is inserted. Make sure you know the desired length before trimming. Take care not to cut or scratch any part of the cup when trimming to avoid unwanted tearing of the cup.<\/li><\/ul>",
             "page": ""
           }
@@ -641,7 +619,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "PREVENT SPOTTING",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<ul><li>Wipe or rinse your labia after insertion to prevent spotting. Spotting can also be caused by blood left in the vagina after inserting.<\/li><li>After inserting your Saalt Cup, swirl your finger around the cup to remove any excess blood, then wash your hands.<\/li><li>You can supplement your Saalt Cup with a pair of Saalt Wear while you are learning to use it or on your heaviest days.<\/li><\/ul>",
             "page": ""
           }
@@ -650,7 +628,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "SAY NO TO LEAKS AND DISCOMFORT",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<ul><li>When your cup is inserted correctly, you shouldn’t experience any discomfort or leaking.<\/li><li>First, check the position. Your Saalt Cup sits lower in the vagina than a tampon. If it is too high or too close to the cervix, it can leak or cause discomfort and cramping.<\/li><li>Use your vaginal muscles to bear the cup down to a lower position.<\/li><li>Your vagina has a natural slant, so make sure the cup is inserted at the right angle to match it.<\/li><li>Leaking can also be caused by a poor seal. Make sure the four air holes are not clogged and that the cup has fully opened. Swirl a finger around the base of the cup to check for any folds or indentations.<\/li><li>Pinch the base of the cup and rotate it to make sure it is opened completely. If the cup still does not pop open, gently push outward against the inside of your vaginal walls to create space for the cup to unfold. If leaking persists or you cannot obtain a good seal, consider changing to a different size or softness. Most importantly, keep trying small adjustments; everyone’s anatomy is different.<\/li><\/ul>",
             "page": ""
           }
@@ -659,7 +637,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "PRECAUTIONS",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<ul><li>Saalt Cups will not prevent pregnancy.<\/li><li>Saalt Cups must be removed before intercourse.<\/li><li>Saalt Cups do not protect against Sexually Transmitted Infections (STIs).<\/li><li>If you feel symptoms of general pain, burning, irritation, inflammation in the genital area, or discomfort during urination, remove your Saalt Cup and contact a doctor.<\/li><li><strong>IMPORTANT<\/strong>: Menstrual cups have been associated with Toxic Shock Syndrome (TSS). TSS is a rare but serious disease that may cause death. Symptoms of Toxic Shock Syndrome (TSS) include fever, abdominal cramps, black vaginal discharge or pus, and muscle pain. Read and keep this information. If you experience these symptoms, contact your doctor right away. Learn more about TSS <a href=\"https:\/\/saalt.com\/blogs\/news\/how-to-prevent-tss\">here.<\/a><\/li><\/ul>",
             "page": ""
           }
@@ -668,7 +646,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "CRITICAL CARE",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<ul><li>Keep your Saalt Cup away from children and pets.<\/li><li>Never use your Saalt Cup for more than 12 hours* at a time without washing properly.<\/li><li>Never wash your Saalt Cup with anything that may irritate your vagina.<\/li><li>Avoid harsh cleansers like vinegar or bleach and strongly scented or fragranced cleansers that may cause the silicone to deteriorate.<\/li><li>Avoid soaking your Saalt Cup in anything other than water. Silicone is a porous material and can absorb oils or cleansers if exposed for longer periods of time; these substances may irritate your vagina or cause the silicone to deteriorate.<\/li><\/ul><p>*8 hours for our Australian friends<\/p>",
             "page": ""
           }
@@ -709,7 +687,7 @@
         "template--21580602507537__1ec3b9cd-3031-4017-a5f9-b0f67f0f8df7-section_title-1": {
           "type": "section_title",
           "settings": {
-            "heading_tag": "1",
+            "heading_tag": "3",
             "title": "We'd love to help you."
           }
         },
@@ -739,73 +717,10 @@
         "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "use_max_text_width": true,
+        "max_width": "700px",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "108995a8-83db-4195-921c-5d4e6c7074cc": {
-      "type": "slideshow",
-      "blocks": {
-        "template--21580602507537__108995a8-83db-4195-921c-5d4e6c7074cc-slide-1": {
-          "type": "slide",
-          "settings": {
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_text": "Button text",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default",
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "theme_color_background": "theme_default",
-            "theme_color_text": "theme_default",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "template--21580602507537__108995a8-83db-4195-921c-5d4e6c7074cc-slide-2": {
-          "type": "slide",
-          "settings": {
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_text": "Button text",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default",
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "theme_color_background": "theme_default",
-            "theme_color_text": "theme_default",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "template--21580602507537__108995a8-83db-4195-921c-5d4e6c7074cc-slide-1",
-        "template--21580602507537__108995a8-83db-4195-921c-5d4e6c7074cc-slide-2"
-      ],
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "medium",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
       }
     }
   },
@@ -813,16 +728,17 @@
     "main",
     "df91142e-8ca7-4858-a3d3-ae2cb44cf780",
     "efad1e86-a666-4d86-92f0-4041337d74f9",
+    "d3a88ba8-d776-45f0-be28-ba9c55a1c7bf",
+    "61a6a262-8f4f-498a-9f44-3642c01c9430",
     "a74a1e17-040a-4a83-a782-5856e874b3dd",
     "b7db5103-2c7b-4c05-a774-90295600e617",
     "f873015c-a2ab-4eaf-9ecf-81e0504c73cc",
     "5ce2b26e-8e8f-433a-b0c7-572a905d34ca",
     "7d2ee6ed-7387-44d2-b27f-0bed60ced2d3",
     "45fb2450-63be-479e-a92e-1e810a74551a",
-    "b1c192fc-b9bb-4572-8dc5-cddb9acc920b",
+    "2c73b1d8-73fb-40fe-9bf6-787a82d2fcab",
     "642fc74f-0994-49f6-b77d-5de71f78a897",
     "57bfdc1a-03e7-470b-bbb3-a190db33a0be",
-    "1ec3b9cd-3031-4017-a5f9-b0f67f0f8df7",
-    "108995a8-83db-4195-921c-5d4e6c7074cc"
+    "1ec3b9cd-3031-4017-a5f9-b0f67f0f8df7"
   ]
 }
