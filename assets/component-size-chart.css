@@ -1,7 +1,3 @@
-.size-chart-section {
-  margin: 4rem auto;
-}
-
 size-chart {
   color: var(--color-main-text);
   background: rgba(var(--color-site-background), 1);
