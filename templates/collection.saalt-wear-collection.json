@@ -173,7 +173,7 @@
             "mobile_icon_max_width": "40%",
             "mobile_icon_height": "75px",
             "use_max_icon_group_width": true,
-            "icon_group_max_width": "700px",
+            "icon_group_max_width": "600px",
             "desktop_icons_display": "grid",
             "desktop_icon_group_horizontal_alignment": "center",
             "desktop_icon_group_vertical_alignment": "center",
@@ -184,8 +184,8 @@
             "desktop_icon_vertical_alignment": "center",
             "desktop_icon_min_width": "80px",
             "desktop_icon_wrapper_max_width": "300px",
-            "desktop_icon_max_width": "25%",
-            "desktop_icon_height": "100px"
+            "desktop_icon_max_width": "20%",
+            "desktop_icon_height": "80px"
           }
         },
         "33e1ca85-0f47-43b1-bd4f-31c6595d2aa0": {
@@ -246,7 +246,7 @@
         "theme_color_background": "theme-color-bg-3",
         "theme_color_text": "theme-color-text-0",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Saalt-Leakproof-Period-Underwear-Premium-Design.jpg",
+        "image": "shopify:\/\/shop_images\/Saalt-Wear-Premium-Design-Comfortable-Fit-1-Image-Collection_03.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -257,8 +257,8 @@
         "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "use_max_text_width": true,
+        "max_width": "450px",
         "padding_top": 0,
         "padding_bottom": 0
       }
