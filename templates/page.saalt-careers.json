@@ -57,6 +57,8 @@
         "media_type": "image",
         "mobile_image": "shopify:\/\/shop_images\/Saalt-Careers-Header-Mobile-2_91b2cd71-3096-4381-9b60-d7830ad11dc1.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Saalt-Careers-Home-Header_copy_0cff5d1a-cba1-4682-90e7-bcf2610c6588.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
         "use_max_media_width": false,
         "max_media_width": "700px",
         "title_font_size": "small",
@@ -163,14 +165,15 @@
     },
     "d6b12009-894f-4938-8275-85c5ce276677": {
       "type": "saalt-bg-media-with-text",
-      "disabled": true,
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme_default",
+        "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "image",
         "mobile_image": "shopify:\/\/shop_images\/Saalt-Careers-Perks-Mobile-3_f7877d1f-3d8f-4d1d-8793-5e88ea0fd294.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Saalt-Perks-3_a249e8c0-5ea2-447b-8260-991ba16a66f9.png",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
         "use_max_media_width": false,
         "max_media_width": "700px",
         "title_font_size": "small",
@@ -181,7 +184,7 @@
         "desktop_text_alignment": "center",
         "use_max_text_width": true,
         "max_width": "600px",
-        "padding_top": 0,
+        "padding_top": 60,
         "padding_bottom": 0
       }
     },
