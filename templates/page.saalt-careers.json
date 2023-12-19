@@ -55,8 +55,8 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-Careers-Header-Mobile-2_91b2cd71-3096-4381-9b60-d7830ad11dc1.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Careers-Home-Header_copy_0cff5d1a-cba1-4682-90e7-bcf2610c6588.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Careers-Header-Mobile_e3261344-bac5-4315-ade1-7014e13b2fc3.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Careers-Home-Header2_copy.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
@@ -200,8 +200,8 @@
         "theme_color_text": "theme_default",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 80,
-        "padding_bottom": 80
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "1ff76f1e-0e96-4c24-aa68-87350b83c0cd": {
@@ -241,8 +241,8 @@
         "theme_color_text": "theme_default",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "be73d182-3df8-4d49-a0ac-228aab470954": {
@@ -262,16 +262,16 @@
             "mobile_icon_group_horizontal_alignment": "center",
             "mobile_icon_group_vertical_alignment": "flex-start",
             "mobile_icon_grid_columns": 2,
-            "mobile_icon_group_gap": "2.5rem",
+            "mobile_icon_group_gap": "2rem",
             "mobile_icon_text_size": "1.5rem",
             "mobile_icon_horizontal_alignment": "center",
             "mobile_icon_vertical_alignment": "center",
             "mobile_icon_min_width": "80px",
-            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_wrapper_max_width": "200px",
             "mobile_icon_max_width": "100%",
             "mobile_icon_height": "100px",
             "use_max_icon_group_width": true,
-            "icon_group_max_width": "700px",
+            "icon_group_max_width": "800px",
             "desktop_icons_display": "grid",
             "desktop_icon_group_horizontal_alignment": "center",
             "desktop_icon_group_vertical_alignment": "center",
@@ -386,6 +386,7 @@
     },
     "d6b12009-894f-4938-8275-85c5ce276677": {
       "type": "saalt-bg-media-with-text",
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-5",
@@ -406,6 +407,31 @@
         "use_max_text_width": true,
         "max_width": "600px",
         "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "d715c638-ea71-4d9f-adf7-d2e5a0cf12c0": {
+      "type": "saalt-bg-media-with-text",
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Careers-Adjectives.gif",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Careers-Adjectives-centere_7917b9fa-c69a-47bf-bc79-6609a380a5bf.gif",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "overlay",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "center",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "600px",
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -436,7 +462,7 @@
           "type": "section_button",
           "settings": {
             "button_text": "CURRENT OPENINGS",
-            "button_url": "",
+            "button_url": "https:\/\/saalt.bamboohr.com\/careers",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -454,7 +480,7 @@
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-4",
-        "theme_color_text": "theme-color-text-2",
+        "theme_color_text": "theme-color-text-1",
         "media_type": "none",
         "custom_code": "",
         "use_max_media_width": false,
@@ -466,33 +492,9 @@
         "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "center",
-        "use_max_text_width": false,
+        "use_max_text_width": true,
         "max_width": "600px",
         "padding_top": 12,
-        "padding_bottom": 0
-      }
-    },
-    "fdb36f97-c9ef-4b6e-9cd1-76f520a6947e": {
-      "type": "saalt-media-with-text",
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Saalt-Careers-Adjectives-centere_7917b9fa-c69a-47bf-bc79-6609a380a5bf.gif",
-        "custom_code": "",
-        "use_max_media_width": true,
-        "max_media_width": "1900px",
-        "media_width": 100,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "900px",
-        "padding_top": 40,
         "padding_bottom": 0
       }
     },
@@ -537,6 +539,55 @@
         "padding_top": 100,
         "padding_bottom": 36
       }
+    },
+    "5867ebcd-0f8a-4211-8495-4d6f3afc7cee": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--21621812166929__5867ebcd-0f8a-4211-8495-4d6f3afc7cee-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "3",
+            "title": "Day in the Life at Saalt"
+          }
+        },
+        "template--21621812166929__5867ebcd-0f8a-4211-8495-4d6f3afc7cee-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>We believe in making our work space very comfortable and inviting for everyone.<\/p>"
+          }
+        },
+        "1eb145ae-6039-497a-b14b-bb78a46582b2": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<div class=\"image-row\" style=\"display: flex; overflow-x: auto;\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Office.png?v=1636130104\" alt=\"Image 1\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Office_2.png?v=1636130119\" alt=\"Image 2\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Office_3.png?v=1636130132\" alt=\"Image 3\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Office_4.png?v=1636130143\" alt=\"Image 4\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Office_5.png?v=1637273565\" alt=\"Image 5\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Office_6.png?v=1637273586\" alt=\"Image 6\">\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21621812166929__5867ebcd-0f8a-4211-8495-4d6f3afc7cee-section_title-1",
+        "template--21621812166929__5867ebcd-0f8a-4211-8495-4d6f3afc7cee-section_content-1",
+        "1eb145ae-6039-497a-b14b-bb78a46582b2"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "above",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -547,8 +598,9 @@
     "1ff76f1e-0e96-4c24-aa68-87350b83c0cd",
     "be73d182-3df8-4d49-a0ac-228aab470954",
     "d6b12009-894f-4938-8275-85c5ce276677",
+    "d715c638-ea71-4d9f-adf7-d2e5a0cf12c0",
     "34e427f0-317c-4b16-baae-3a81139d92b7",
-    "fdb36f97-c9ef-4b6e-9cd1-76f520a6947e",
-    "f2735a30-7dee-4956-b5d3-9fa9ba13563a"
+    "f2735a30-7dee-4956-b5d3-9fa9ba13563a",
+    "5867ebcd-0f8a-4211-8495-4d6f3afc7cee"
   ]
 }
