@@ -498,95 +498,112 @@
         "padding_bottom": 0
       }
     },
-    "f2735a30-7dee-4956-b5d3-9fa9ba13563a": {
-      "type": "collage",
+    "35f7c73f-8db4-4d4c-a6dc-493ef30c1dfe": {
+      "type": "multicolumn",
       "blocks": {
-        "template--21570056913169__f2735a30-7dee-4956-b5d3-9fa9ba13563a-image-1": {
-          "type": "image",
+        "template--21621812166929__35f7c73f-8db4-4d4c-a6dc-493ef30c1dfe-column-1": {
+          "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Office_6_7055e155-acdc-4ccf-99f1-2bff20ee5b50.png"
+            "image": "shopify:\/\/shop_images\/Office.png",
+            "title": "",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         },
-        "6218ea50-b6e8-4ec3-a743-bf879e084f92": {
-          "type": "image",
+        "0cb8e2f3-64c9-4e42-995c-b66babcf3e66": {
+          "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Office_5_8363ef4f-9a89-4a03-be56-1865faa17f02.png"
+            "image": "shopify:\/\/shop_images\/Office_2.png",
+            "title": "",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         },
-        "7a2ecb79-f97a-4487-99eb-f3b44d7cb355": {
-          "type": "image",
+        "eabb049e-e7e8-4680-90da-58e5c9210c66": {
+          "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Office_4_5c281c17-2d8d-4783-952c-54edf35773ec.png"
+            "image": "shopify:\/\/shop_images\/Office_5.png",
+            "title": "",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "f8ba3f1b-057a-4d83-9e87-e2efca4c125b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Office_3.png",
+            "title": "",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "ce6b3aa6-3f7d-4ce1-9fe6-cad514e20a12": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Office_4.png",
+            "title": "",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "4a277a96-6433-4068-8741-34a2dbb77f95": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Office_6.png",
+            "title": "",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "template--21570056913169__f2735a30-7dee-4956-b5d3-9fa9ba13563a-image-1",
-        "6218ea50-b6e8-4ec3-a743-bf879e084f92",
-        "7a2ecb79-f97a-4487-99eb-f3b44d7cb355"
+        "template--21621812166929__35f7c73f-8db4-4d4c-a6dc-493ef30c1dfe-column-1",
+        "0cb8e2f3-64c9-4e42-995c-b66babcf3e66",
+        "eabb049e-e7e8-4680-90da-58e5c9210c66",
+        "f8ba3f1b-057a-4d83-9e87-e2efca4c125b",
+        "ce6b3aa6-3f7d-4ce1-9fe6-cad514e20a12",
+        "4a277a96-6433-4068-8741-34a2dbb77f95"
       ],
       "custom_css": [
-        ".collage-wrapper-title {text-align: center;}"
+
       ],
       "settings": {
-        "heading": "Day in the Life at Saalt",
+        "title": "Day in the Life at Saalt",
         "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "column",
-        "card_styles": "product-card-wrapper",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "column_alignment": "left",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
-        "padding_top": 100,
-        "padding_bottom": 36
-      }
-    },
-    "5867ebcd-0f8a-4211-8495-4d6f3afc7cee": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--21621812166929__5867ebcd-0f8a-4211-8495-4d6f3afc7cee-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "3",
-            "title": "Day in the Life at Saalt"
-          }
-        },
-        "template--21621812166929__5867ebcd-0f8a-4211-8495-4d6f3afc7cee-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>We believe in making our work space very comfortable and inviting for everyone.<\/p>"
-          }
-        },
-        "1eb145ae-6039-497a-b14b-bb78a46582b2": {
-          "type": "custom_liquid_code",
-          "settings": {
-            "liquid_code": "<div class=\"image-row\" style=\"display: flex; overflow-x: auto;\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Office.png?v=1636130104\" alt=\"Image 1\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Office_2.png?v=1636130119\" alt=\"Image 2\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Office_3.png?v=1636130132\" alt=\"Image 3\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Office_4.png?v=1636130143\" alt=\"Image 4\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Office_5.png?v=1637273565\" alt=\"Image 5\">\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Office_6.png?v=1637273586\" alt=\"Image 6\">\n<\/div>"
-          }
-        }
-      },
-      "block_order": [
-        "template--21621812166929__5867ebcd-0f8a-4211-8495-4d6f3afc7cee-section_title-1",
-        "template--21621812166929__5867ebcd-0f8a-4211-8495-4d6f3afc7cee-section_content-1",
-        "1eb145ae-6039-497a-b14b-bb78a46582b2"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "none",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "above",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     }
   },
@@ -600,7 +617,6 @@
     "d6b12009-894f-4938-8275-85c5ce276677",
     "d715c638-ea71-4d9f-adf7-d2e5a0cf12c0",
     "34e427f0-317c-4b16-baae-3a81139d92b7",
-    "f2735a30-7dee-4956-b5d3-9fa9ba13563a",
-    "5867ebcd-0f8a-4211-8495-4d6f3afc7cee"
+    "35f7c73f-8db4-4d4c-a6dc-493ef30c1dfe"
   ]
 }
