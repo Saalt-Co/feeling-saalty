@@ -306,7 +306,7 @@
         "template--21546030465297__6e6939a0-95f3-41ee-ad01-bb83c2b0cb9b-section_button-1": {
           "type": "section_button",
           "settings": {
-            "button_text": "Button text",
+            "button_text": "CTA Here",
             "button_url": "",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
