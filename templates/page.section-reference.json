@@ -540,9 +540,9 @@
             "desktop_icon_text_size": "1.5rem",
             "desktop_icon_horizontal_alignment": "center",
             "desktop_icon_vertical_alignment": "center",
-            "desktop_icon_min_width": "60px",
+            "desktop_icon_min_width": "100px",
             "desktop_icon_wrapper_max_width": "60px",
-            "desktop_icon_max_width": "100%",
+            "desktop_icon_max_width": "70%",
             "desktop_icon_height": "50px"
           }
         },
@@ -1232,6 +1232,15 @@
         "best_for_list_style": "vertical",
         "use_graduated_bgs": true
       }
+    },
+    "44831292-933d-4d82-8acd-5abfc87518a8": {
+      "type": "saalt-size-chart",
+      "settings": {
+        "section_id": "",
+        "size_chart_active_tab": "Saalt Cup",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -1250,6 +1259,7 @@
     "3bfed0ad-2076-4915-9bfe-ae4df1a5d8d9",
     "76186e78-875a-451a-9db0-55a06d3df933",
     "52812ce0-6b7f-4540-ad7b-a1d7dcdb795b",
-    "ac2f8c21-49cc-4efb-966b-cafd467c20ee"
+    "ac2f8c21-49cc-4efb-966b-cafd467c20ee",
+    "44831292-933d-4d82-8acd-5abfc87518a8"
   ]
 }
