@@ -67,7 +67,7 @@
     {% if section.settings.section_id != blank %}
       id="{{ section.settings.section_id | handleize }}"
     {% endif -%}
-    class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}"
+    class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %} scroll-trigger animate--fade-in"
   >
     {%- case section.settings.media_type -%}
       {%- when 'video' -%}
@@ -176,17 +176,25 @@
       width: 100%;
     }
     #section-{{ section.id }} .icons-wrapper {
-      align-items: flex-start;
       flex-wrap: wrap;
       padding-left: 0;
     }
     #section-{{ section.id }} .icons-wrapper .icon-wrapper {
       flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
       gap: 1rem;
-      flex: 1 1 0;
       overflow: hidden;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-column {
+      flex-direction: column;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-reverse-column {
+      flex-direction: column-reverse;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-row {
+      flex-direction: row;
+    }
+    #section-{{ section.id }} .icons-wrapper .icon-wrapper.mobile-reverse-row {
+      flex-direction: row-reverse;
     }
     #section-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
       width: 100%;
@@ -202,9 +210,6 @@
       margin-bottom: 0;
     }
     @media screen and (max-width: 749px) {
-      #section-{{ section.id }} .icons-wrapper {
-        justify-content: center;
-      }
       #section-{{ section.id }} .section-inner .shopify-placeholder > svg {
         position: unset;
         height: unset;
@@ -264,6 +269,18 @@
       }
       #section-{{ section.id }} .text-wrapper .contact-wrapper .contact .contact-image {
         height: auto;
+      }
+        #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-column {
+        flex-direction: column;
+      }
+      #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-reverse-column {
+        flex-direction: column-reverse;
+      }
+      #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-row {
+        flex-direction: row;
+      }
+      #section-{{ section.id }} .icons-wrapper .icon-wrapper.desktop-reverse-row {
+        flex-direction: row-reverse;
       }
   }
 {%- endstyle -%}
@@ -532,7 +549,7 @@
     {
       "type": "select",
       "id": "mobile_text_position",
-      "label": "Text position on *MOBILE*",
+      "label": "Text position on mobile",
       "options": [
         {
           "value": "overlay",
@@ -580,7 +597,7 @@
     {
       "type": "select",
       "id": "desktop_text_position",
-      "label": "Text position on *DESKTOP*",
+      "label": "Text position on desktop",
       "options": [
         {
           "value": "flex-start",
@@ -961,121 +978,133 @@
     {
       "type": "section_icon_group",
       "name": "SVG Icon Group",
+      "limit": 1,
       "settings": [
         {
           "type": "paragraph",
           "content": "❗️NOTE❗️: This is just a parent element/container to wrap around SVG icon blocks. Please be sure to also add SVG icon blocks or this will appear empty. Drag and drop this to move the icons within the section."
         },
         {
-          "type": "checkbox",
-          "id": "use_max_icon_group_width",
-          "label": "Use desktop max width for icons group?",
-          "info": "This sets the max width of the icons group *ON DESKTOP*"
-        },
-        {
-          "type": "text",
-          "id": "icon_group_max_width",
-          "label": "Icon *GROUP MAX* Width",
-          "info": "Max width for the entire icon group. Any valid css value is accepted.",
-          "default": "600px"
-        },
-        {
           "type": "header",
-          "content": "Mobile Settings"
+          "content": "Mobile Icon Group Settings"
         },
         {
-          "type": "text",
-          "id": "mobile_icon_text_size",
-          "label": "Text Font Size On *MOBILE*",
-          "info": "Any valid css value for 'font-size' is accepted. Default is 1.5rem",
-          "default": "1.5rem"
+          "type": "select",
+          "id": "mobile_icons_display",
+          "label": "Display of icons on mobile",
+          "info": "This controls the presentation of icons within the icons group on mobile",
+          "options": [
+            {
+              "value": "row",
+              "label": "Wrapping Row"
+            },
+            {
+              "value": "column",
+              "label": "Column"
+            },
+            {
+              "value": "grid",
+              "label": "Grid"
+            }
+          ],
+          "default": "row"
+        },
+        {
+          "type": "select",
+          "id": "mobile_icon_group_horizontal_alignment",
+          "label": "Icon group horizontal alignment on mobile",
+          "info": "Sets the horizontal alignment of all icon wrappers in the group",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            },
+            {
+              "value": "space-evenly",
+              "label": "Space evenly"
+            },
+            {
+              "value": "space-between",
+              "label": "Use space between"
+            },
+            {
+              "value": "space-around",
+              "label": "Use space around"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "mobile_icon_group_vertical_alignment",
+          "label": "Icon group vertical alignment on mobile",
+          "info": "Sets the vertical alignment of icon wrappers in the group",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Bottom"
+            },
+            {
+              "value": "space-evenly",
+              "label": "Space evenly"
+            },
+            {
+              "value": "space-between",
+              "label": "Use space between"
+            },
+            {
+              "value": "space-around",
+              "label": "Use space around"
+            }
+          ],
+          "default": "flex-start"
+        },
+        {
+          "type": "number",
+          "id": "mobile_icon_grid_columns",
+          "label": "Icon grid columns",
+          "info": "If the display of icons on mobile is set to \"grid\", how many columns should be shown? The default is 2",
+          "default": 2
         },
         {
           "type": "text",
           "id": "mobile_icon_group_gap",
-          "label": "Space Between Icons On *MOBILE*",
+          "label": "Space between icons on mobile",
           "info": "Distance between icons for the entire icon group. Any valid css value is accepted.",
           "default": "3.5rem"
         },
         {
           "type": "text",
-          "id": "mobile_icon_min_width",
-          "label": "Icon *WRAPPER MIN* Width On *MOBILE*",
-          "info": "Minimum width for icon wrapper elements. Any valid css value is accepted.",
-          "default": "80px"
-        },
-        {
-          "type": "text",
-          "id": "mobile_icon_wrapper_max_width",
-          "label": "Icon *WRAPPER MAX* Width On *MOBILE*",
-          "info": "Max width for icon wrapper elements. Any valid css value is accepted.",
-          "default": "100px"
-        },
-        {
-          "type": "text",
-          "id": "mobile_icon_max_width",
-          "label": "Icon *MAX* Width On *MOBILE*",
-          "info": "Max width for icons inside of the icon wrappers. Any valid css value is accepted.",
-          "default": "100%"
-        },
-        {
-          "type": "text",
-          "id": "mobile_icon_height",
-          "label": "Icon Height On *MOBILE*",
-          "info": "Minimum height for icons inside of the icon wrappers. This helps ensure they're all the same size vertically. Any valid css value is accepted.",
-          "default": "100px"
-        },
-        {
-          "type": "header",
-          "content": "Desktop Settings"
-        },
-        {
-          "type": "text",
-          "id": "desktop_icon_text_size",
-          "label": "Text Font Size on *DESKTOP*",
+          "id": "mobile_icon_text_size",
+          "label": "Mobile font size",
           "info": "Any valid css value for 'font-size' is accepted. Default is 1.5rem",
           "default": "1.5rem"
         },
         {
-          "type": "text",
-          "id": "desktop_icon_group_gap",
-          "label": "Space Between Icons on *DESKTOP*",
-          "info": "Distance between icons for the entire icon group. Any valid css value is accepted.",
-          "default": "3.5rem"
-        },
-        {
-          "type": "text",
-          "id": "desktop_icon_min_width",
-          "label": "Icon *WRAPPER MIN* Width on *DESKTOP*",
-          "info": "Minimum width for icon wrapper elements. Any valid css value is accepted.",
-          "default": "80px"
-        },
-        {
-          "type": "text",
-          "id": "desktop_icon_wrapper_max_width",
-          "label": "Icon *WRAPPER MAX* Width on *DESKTOP*",
-          "info": "Max width for icon wrapper elements. Any valid css value is accepted.",
-          "default": "100px"
-        },
-        {
-          "type": "text",
-          "id": "desktop_icon_max_width",
-          "label": "Icon *MAX* Width on *DESKTOP*",
-          "info": "Max width for icons inside of the icon wrappers. Any valid css value is accepted.",
-          "default": "100%"
-        },
-        {
-          "type": "text",
-          "id": "desktop_icon_height",
-          "label": "Icon Height on *DESKTOP*",
-          "info": "Minimum height for icons inside of the icon wrappers. This helps ensure they're all the same size vertically. Any valid css value is accepted.",
-          "default": "100px"
+          "type": "header",
+          "content": "Mobile Icon Wrapper Settings"
         },
         {
           "type": "select",
-          "id": "desktop_icon_alignment",
-          "label": "*ICON* Alignment on *DESKTOP*",
-          "info": "❗️Add SVG icons in the previous menu ❗️",
+          "id": "mobile_icon_horizontal_alignment",
+          "label": "Icon wrapper horizontal alignment on mobile",
+          "info": "Sets the horizontal alignment of icon and text within an icon block",
           "options": [
             {
               "value": "flex-start",
@@ -1091,6 +1120,254 @@
             }
           ],
           "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "mobile_icon_vertical_alignment",
+          "label": "Icon wrapper vertical alignment on mobile",
+          "info": "Sets the vertical alignment of icon and text for an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Bottom"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_min_width",
+          "label": "Icon wrapper min-width on mobile",
+          "info": "Minimum width for icon wrapper elements. This is the contianer for the SVG and the text Any valid css value is accepted.",
+          "default": "80px"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_wrapper_max_width",
+          "label": "Icon wrapper max-width on mobile",
+          "info": "Maximum width for icon wrapper elements. This is the contianer for the SVG and the text Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_max_width",
+          "label": "SVG max-width on mobile",
+          "info": "This is the maximum width an SVG will take up within the icon wrapper. Any valid css value is accepted.",
+          "default": "100%"
+        },
+        {
+          "type": "text",
+          "id": "mobile_icon_height",
+          "label": "Icon height on mobile",
+          "info": "Minimum height for SVGs inside of the icon wrappers. This helps ensure they're all the same size vertically. Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "header",
+          "content": "Desktop Icon Group Settings"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_max_icon_group_width",
+          "label": "Use desktop max width for icons group?",
+          "info": "This sets the max width of the icons group *ON DESKTOP*"
+        },
+        {
+          "type": "text",
+          "id": "icon_group_max_width",
+          "label": "Icon group max-width",
+          "info": "Max width for the entire icon group. Any valid css value is accepted.",
+          "default": "600px"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icons_display",
+          "label": "Display of icons on desktop",
+          "info": "This controls the presentation of icons within the icons group on desktop",
+          "options": [
+            {
+              "value": "row",
+              "label": "Wrapping Row"
+            },
+            {
+              "value": "column",
+              "label": "Column"
+            },
+            {
+              "value": "grid",
+              "label": "Grid"
+            }
+          ],
+          "default": "row"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_group_horizontal_alignment",
+          "label": "Icon group horizontal alignment on desktop",
+          "info": "Sets the horizontal alignment of icon and text for an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            },
+            {
+              "value": "space-evenly",
+              "label": "Space evenly"
+            },
+            {
+              "value": "space-between",
+              "label": "Use space between"
+            },
+            {
+              "value": "space-around",
+              "label": "Use space around"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_group_vertical_alignment",
+          "label": "Icon group vertical alignment on desktop",
+          "info": "Sets the vertical alignment of icon and text for an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Bottom"
+            },
+            {
+              "value": "space-evenly",
+              "label": "Space evenly"
+            },
+            {
+              "value": "space-between",
+              "label": "Use space between"
+            },
+            {
+              "value": "space-around",
+              "label": "Use space around"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "number",
+          "id": "desktop_icon_grid_columns",
+          "label": "Icon grid columns",
+          "info": "If the display of icons on desktop is set to \"grid\", how many columns should be shown? The default is 2",
+          "default": 2
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_group_gap",
+          "label": "Space between icons on desktop",
+          "info": "Distance between icons for the entire icon group. Any valid css value is accepted.",
+          "default": "3.5rem"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_text_size",
+          "label": "Text font size on desktop",
+          "info": "Any valid css value for 'font-size' is accepted. Default is 1.5rem",
+          "default": "1.5rem"
+        },
+        {
+          "type": "header",
+          "content": "Desktop Icon Wrapper Settings"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_horizontal_alignment",
+          "label": "Icon wrapper horizontal alignment on desktop",
+          "info": "Sets the horizontal alignment of icon and text within an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_vertical_alignment",
+          "label": "Icon wrapper vertical alignment on desktop",
+          "info": "Sets the vertical alignment of icon and text for an icon block",
+          "options": [
+            {
+              "value": "flex-start",
+              "label": "Top"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "flex-end",
+              "label": "Bottom"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_min_width",
+          "label": "Icon wrapper min-width on desktop",
+          "info": "Minimum width for icon wrapper elements. This is the contianer for the SVG and the text Any valid css value is accepted.",
+          "default": "80px"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_wrapper_max_width",
+          "label": "Icon wrapper max-width on desktop",
+          "info": "Maximum width for icon wrapper elements. This is the contianer for the SVG and the text Any valid css value is accepted.",
+          "default": "100px"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_max_width",
+          "label": "SVG max-width on desktop",
+          "info": "This is the maximum width an SVG will take up within the icon wrapper. Any valid css value is accepted.",
+          "default": "100%"
+        },
+        {
+          "type": "text",
+          "id": "desktop_icon_height",
+          "label": "Icon height on desktop",
+          "info": "Minimum height for SVGs inside of the icon wrappers. This helps ensure they're all the same size vertically. Any valid css value is accepted.",
+          "default": "100px"
         }
       ]
     },
@@ -1113,6 +1390,56 @@
           "id": "icon_text",
           "label": "Text",
           "info": "Text is optional"
+        },
+        {
+          "type": "select",
+          "id": "mobile_icon_text_position",
+          "label": "Mobile icon text position",
+          "info": "Where the text should be in relation to the SVG icon on mobile",
+          "options": [
+            {
+              "value": "above",
+              "label": "Above the icon"
+            },
+            {
+              "value": "below",
+              "label": "Below the icon"
+            },
+            {
+              "value": "left",
+              "label": "Left of the icon"
+            },
+            {
+              "value": "right",
+              "label": "Right of the icon"
+            }
+          ],
+          "default": "below"
+        },
+        {
+          "type": "select",
+          "id": "desktop_icon_text_position",
+          "label": "Desktop icon text position",
+          "info": "Where the text should be in relation to the SVG icon on desktop",
+          "options": [
+            {
+              "value": "above",
+              "label": "Above the icon"
+            },
+            {
+              "value": "below",
+              "label": "Below the icon"
+            },
+            {
+              "value": "left",
+              "label": "Left of the icon"
+            },
+            {
+              "value": "right",
+              "label": "Right of the icon"
+            }
+          ],
+          "default": "below"
         },
         {
           "type": "select",

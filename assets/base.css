@@ -1547,6 +1547,12 @@ button.shopify-payment-button__button--unbranded {
   background-color: rgba(var(--color-button-text), 0.3);
 }
 
+.button::-moz-selection,
+.shopify-challenge__button::-moz-selection,
+.customer button::-moz-selection {
+  background-color: rgba(var(--color-button-text), 0.3);
+}
+
 .button::selection,
 .shopify-challenge__button::selection,
 .customer button::selection {
@@ -2014,226 +2020,6 @@ details[open] > .share-button__fallback {
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
   display: none;
-}
-
-.field__input::-webkit-input-placeholder,
-.customer .field input::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-moz-placeholder,
-.customer .field input::-moz-placeholder {
-  opacity: 0;
-}
-
-.field__input:-ms-input-placeholder,
-.customer .field input:-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-ms-input-placeholder,
-.customer .field input::-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-webkit-input-placeholder,
-.customer .field input::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-moz-placeholder,
-.customer .field input::-moz-placeholder {
-  opacity: 0;
-}
-
-.field__input:-ms-input-placeholder,
-.customer .field input:-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-ms-input-placeholder,
-.customer .field input::-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-webkit-input-placeholder,
-.customer .field input::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-moz-placeholder,
-.customer .field input::-moz-placeholder {
-  opacity: 0;
-}
-
-.field__input:-ms-input-placeholder,
-.customer .field input:-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-ms-input-placeholder,
-.customer .field input::-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-webkit-input-placeholder,
-.customer .field input::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-moz-placeholder,
-.customer .field input::-moz-placeholder {
-  opacity: 0;
-}
-
-.field__input:-ms-input-placeholder,
-.customer .field input:-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-ms-input-placeholder,
-.customer .field input::-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-webkit-input-placeholder,
-.customer .field input::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-moz-placeholder,
-.customer .field input::-moz-placeholder {
-  opacity: 0;
-}
-
-.field__input:-ms-input-placeholder,
-.customer .field input:-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-ms-input-placeholder,
-.customer .field input::-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-webkit-input-placeholder,
-.customer .field input::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-moz-placeholder,
-.customer .field input::-moz-placeholder {
-  opacity: 0;
-}
-
-.field__input:-ms-input-placeholder,
-.customer .field input:-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-ms-input-placeholder,
-.customer .field input::-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-webkit-input-placeholder,
-.customer .field input::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-moz-placeholder,
-.customer .field input::-moz-placeholder {
-  opacity: 0;
-}
-
-.field__input:-ms-input-placeholder,
-.customer .field input:-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-ms-input-placeholder,
-.customer .field input::-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-webkit-input-placeholder,
-.customer .field input::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-moz-placeholder,
-.customer .field input::-moz-placeholder {
-  opacity: 0;
-}
-
-.field__input:-ms-input-placeholder,
-.customer .field input:-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-ms-input-placeholder,
-.customer .field input::-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-webkit-input-placeholder,
-.customer .field input::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-moz-placeholder,
-.customer .field input::-moz-placeholder {
-  opacity: 0;
-}
-
-.field__input:-ms-input-placeholder,
-.customer .field input:-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-ms-input-placeholder,
-.customer .field input::-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-webkit-input-placeholder,
-.customer .field input::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-moz-placeholder,
-.customer .field input::-moz-placeholder {
-  opacity: 0;
-}
-
-.field__input:-ms-input-placeholder,
-.customer .field input:-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-ms-input-placeholder,
-.customer .field input::-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-webkit-input-placeholder,
-.customer .field input::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-moz-placeholder,
-.customer .field input::-moz-placeholder {
-  opacity: 0;
-}
-
-.field__input:-ms-input-placeholder,
-.customer .field input:-ms-input-placeholder {
-  opacity: 0;
-}
-
-.field__input::-ms-input-placeholder,
-.customer .field input::-ms-input-placeholder {
-  opacity: 0;
 }
 
 .field__input::-webkit-input-placeholder,
@@ -3876,9 +3662,11 @@ p a {
 }
 
 /* SVG colors based on parent text color */
+.theme-color-text-0.svg-color-fill.placeholder svg *,
 .theme-color-text-0.svg-color-fill svg *:only-child,
 .theme-color-text-0.svg-color-fill svg *[fill]:not([fill='none']),
 .theme-color-text-0.svg-color-fill svg g[clip-path],
+[class*='theme-color-text-'] .theme-color-text-0.svg-color-fill.placeholder svg *,
 [class*='theme-color-text-'] .theme-color-text-0.svg-color-fill svg *:only-child,
 [class*='theme-color-text-'] .theme-color-text-0.svg-color-fill svg *[fill]:not([fill='none']),
 [class*='theme-color-text-'] .theme-color-text-0.svg-color-fill svg g[clip-path] {
@@ -3890,9 +3678,11 @@ p a {
   stroke: rgb(var(--palette-color-0));
 }
 
+.theme-color-text-1.svg-color-fill.placeholder svg *,
 .theme-color-text-1.svg-color-fill svg *:only-child,
 .theme-color-text-1.svg-color-fill svg *[fill]:not([fill='none']),
 .theme-color-text-1.svg-color-fill svg g[clip-path],
+[class*='theme-color-text-'] .theme-color-text-1.svg-color-fill.placeholder svg *,
 [class*='theme-color-text-'] .theme-color-text-1.svg-color-fill svg *:only-child,
 [class*='theme-color-text-'] .theme-color-text-1.svg-color-fill svg *[fill]:not([fill='none']),
 [class*='theme-color-text-'] .theme-color-text-1.svg-color-fill svg g[clip-path] {
@@ -3904,9 +3694,11 @@ p a {
   stroke: rgb(var(--palette-color-1));
 }
 
+.theme-color-text-2.svg-color-fill.placeholder svg *,
 .theme-color-text-2.svg-color-fill svg *:only-child,
 .theme-color-text-2.svg-color-fill svg *[fill]:not([fill='none']),
 .theme-color-text-2.svg-color-fill svg g[clip-path],
+[class*='theme-color-text-'] .theme-color-text-2.svg-color-fill.placeholder svg *,
 [class*='theme-color-text-'] .theme-color-text-2.svg-color-fill svg *:only-child,
 [class*='theme-color-text-'] .theme-color-text-2.svg-color-fill svg *[fill]:not([fill='none']),
 [class*='theme-color-text-'] .theme-color-text-2.svg-color-fill svg g[clip-path] {
@@ -3918,9 +3710,11 @@ p a {
   stroke: rgb(var(--palette-color-2));
 }
 
+.theme-color-text-3.svg-color-fill.placeholder svg *,
 .theme-color-text-3.svg-color-fill svg *:only-child,
 .theme-color-text-3.svg-color-fill svg *[fill]:not([fill='none']),
 .theme-color-text-3.svg-color-fill svg g[clip-path],
+[class*='theme-color-text-'] .theme-color-text-3.svg-color-fill.placeholder svg *,
 [class*='theme-color-text-'] .theme-color-text-3.svg-color-fill svg *:only-child,
 [class*='theme-color-text-'] .theme-color-text-3.svg-color-fill svg *[fill]:not([fill='none']),
 [class*='theme-color-text-'] .theme-color-text-3.svg-color-fill svg g[clip-path] {
@@ -3932,9 +3726,11 @@ p a {
   stroke: rgb(var(--palette-color-3));
 }
 
+.theme-color-text-4.svg-color-fill.placeholder svg *,
 .theme-color-text-4.svg-color-fill svg *:only-child,
 .theme-color-text-4.svg-color-fill svg *[fill]:not([fill='none']),
 .theme-color-text-4.svg-color-fill svg g[clip-path],
+[class*='theme-color-text-'] .theme-color-text-4.svg-color-fill.placeholder svg *,
 [class*='theme-color-text-'] .theme-color-text-4.svg-color-fill svg *:only-child,
 [class*='theme-color-text-'] .theme-color-text-4.svg-color-fill svg *[fill]:not([fill='none']),
 [class*='theme-color-text-'] .theme-color-text-4.svg-color-fill svg g[clip-path] {
@@ -3946,9 +3742,11 @@ p a {
   stroke: rgb(var(--palette-color-4));
 }
 
+.theme-color-text-5.svg-color-fill.placeholder svg *,
 .theme-color-text-5.svg-color-fill svg *:only-child,
 .theme-color-text-5.svg-color-fill svg *[fill]:not([fill='none']),
 .theme-color-text-5.svg-color-fill svg g[clip-path],
+[class*='theme-color-text-'] .theme-color-text-5.svg-color-fill.placeholder svg *,
 [class*='theme-color-text-'] .theme-color-text-5.svg-color-fill svg *:only-child,
 [class*='theme-color-text-'] .theme-color-text-5.svg-color-fill svg *[fill]:not([fill='none']),
 [class*='theme-color-text-'] .theme-color-text-5.svg-color-fill svg g[clip-path] {
@@ -3960,9 +3758,11 @@ p a {
   stroke: rgb(var(--palette-color-5));
 }
 
+.theme-color-text-6.svg-color-fill.placeholder svg *,
 .theme-color-text-6.svg-color-fill svg *:only-child,
 .theme-color-text-6.svg-color-fill svg *[fill]:not([fill='none']),
 .theme-color-text-6.svg-color-fill svg g[clip-path],
+[class*='theme-color-text-'] .theme-color-text-6.svg-color-fill.placeholder svg *,
 [class*='theme-color-text-'] .theme-color-text-6.svg-color-fill svg *:only-child,
 [class*='theme-color-text-'] .theme-color-text-6.svg-color-fill svg *[fill]:not([fill='none']),
 [class*='theme-color-text-'] .theme-color-text-6.svg-color-fill svg g[clip-path] {
@@ -3974,9 +3774,11 @@ p a {
   stroke: rgb(var(--palette-color-6));
 }
 
+.theme-color-text-7.svg-color-fill.placeholder svg *,
 .theme-color-text-7.svg-color-fill svg *:only-child,
 .theme-color-text-7.svg-color-fill svg *[fill]:not([fill='none']),
 .theme-color-text-7.svg-color-fill svg g[clip-path],
+[class*='theme-color-text-'] .theme-color-text-7.svg-color-fill.placeholder svg *,
 [class*='theme-color-text-'] .theme-color-text-7.svg-color-fill svg *:only-child,
 [class*='theme-color-text-'] .theme-color-text-7.svg-color-fill svg *[fill]:not([fill='none']),
 [class*='theme-color-text-'] .theme-color-text-7.svg-color-fill svg g[clip-path] {
@@ -3986,6 +3788,11 @@ p a {
 .theme-color-text-7.svg-color-fill svg *[stroke]:not([stroke='none']),
 [class*='theme-color-text-'] .theme-color-text-7.svg-color-fill svg *[stroke]:not([stroke='none']) {
   stroke: rgb(var(--palette-color-7));
+}
+
+* .svg-color-fill.placeholder,
+*.svg-color-fill.placeholder {
+  background: transparent;
 }
 
 /* PRIMARY Button color overrides based on background color class */

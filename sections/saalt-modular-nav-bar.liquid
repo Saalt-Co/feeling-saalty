@@ -9,7 +9,7 @@
     {% if section.settings.section_id != blank %}
       id="{{ section.settings.section_id | handleize }}"
     {% endif -%}
-    class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% else %} default{% endif %}"
+    class="section-inner{% if section.settings.theme_color_background != 'theme_default' %} {{ section.settings.theme_color_background }}{% endif %}{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% else %} default{% endif %} scroll-trigger animate--fade-in"
   >
     <ul>
       {%- for block in section.blocks -%}

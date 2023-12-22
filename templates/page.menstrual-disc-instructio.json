@@ -1,0 +1,581 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "c0099dc9-2e96-43cd-a5b3-b9252a0d38e9": {
+      "type": "saalt-bg-media-with-text",
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Disc-instructions-hero-01.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Disc-instructions-hero-01.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "overlay",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "center",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "71805da7-3afc-4541-92a9-5b7e313bb4e0": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--21621812134161__71805da7-3afc-4541-92a9-5b7e313bb4e0-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Saalt Disc Instructions"
+          }
+        }
+      },
+      "block_order": [
+        "template--21621812134161__71805da7-3afc-4541-92a9-5b7e313bb4e0-section_title-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "large",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "c436e99b-cf99-4e73-a7b8-4f1fede66b5d": {
+      "type": "multicolumn",
+      "blocks": {
+        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg",
+            "title": "",
+            "rating": 0,
+            "text": "<p>You did it. You chose the best period care on planet Earth. Bravo! And you’re not alone. Every day people trust the Saalt Disc to simplify their period care and keep toxins out of their body.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "d8fa7087-4376-4bb2-a902-0116fc5be5c6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-01_333d21d5-f5bb-4bb0-8ca1-47b03c3e3742.jpg",
+            "title": "",
+            "rating": 0,
+            "text": "<p>Saalt Discs are not supplied in a sterile state. Sanitize your disc by boiling it in water for 4–5 min (no more than 7 min). Use tongs or a whisk to ensure the disc doesn’t rest on the bottom of the pot.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c04c23d8-418f-4d6b-bd8e-a1253bcfadb3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-14_3b7b368f-58d1-42fb-b3d0-443f6baaf745.jpg",
+            "title": "",
+            "rating": 0,
+            "text": "<p>Wash your hands and your Saalt Disc with water and a pH-balanced cleanser. Rinse thoroughly.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a82180c6-ec90-4917-8b3b-cefb34aa5c0b",
+        "d8fa7087-4376-4bb2-a902-0116fc5be5c6",
+        "c04c23d8-418f-4d6b-bd8e-a1253bcfadb3"
+      ],
+      "custom_css": [
+        ".multicolumn-list h3 {text-align: center;}"
+      ],
+      "settings": {
+        "title": "Let's Get Started",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "background_style": "none",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 36
+      }
+    },
+    "2368d91b-7b9a-43bf-bb96-3011dd3ccc23": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--21621812134161__2368d91b-7b9a-43bf-bb96-3011dd3ccc23-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "The Saalt Disc is flexible for easy insertion."
+          }
+        }
+      },
+      "block_order": [
+        "template--21621812134161__2368d91b-7b9a-43bf-bb96-3011dd3ccc23-section_title-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Saalt-Disc-Instructions-parts_labeled_12-15-23.jpg",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1b1a8a2d-3c30-4b6e-9b18-bc773eed6266": {
+      "type": "multirow",
+      "blocks": {
+        "78bd6f06-82e0-4810-b05f-0e014170581f": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-03-removebg-preview.png",
+            "caption": "STEP 1",
+            "heading": "Pinch",
+            "text": "<p>With clean hands, pinch the disc by pressing the rim together in the center to form an “8” shape with the removal notch at one end.<\/p>",
+            "theme_color_row_background": "theme_default",
+            "theme_color_row_text": "theme_default",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "78bd6f06-82e0-4810-b05f-0e014170581f"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "770db88e-ca54-4c3a-87bc-52d98d996f29": {
+      "type": "image-with-text",
+      "blocks": {
+        "d71193ee-28b7-4235-a557-2750fb8f803d": {
+          "type": "caption",
+          "settings": {
+            "caption": "STEP 2",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--21565118808337__770db88e-ca54-4c3a-87bc-52d98d996f29-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Insert",
+            "heading_size": "h1"
+          }
+        },
+        "template--21565118808337__770db88e-ca54-4c3a-87bc-52d98d996f29-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>With your disc pinched, you are ready to insert.<\/li><li>Inserting your Saalt Disc is easier when using water as a natural lubricant.<\/li><li>You can insert your Saalt Disc while sitting, squatting, or standing with one leg raised. The most popular way to insert the disc is on the toilet with your legs spread wide apart.<\/li><li>Gently separate your labia (inner vaginal lips) with one hand. Use the other hand to hold the pinched disc rim side up and insert it so the removal notch is the last part of the disc to enter the vagina.<\/li><li>Slide the disc in at a horizontal angle (pointed towards your tailbone), until it is completely inside your vaginal canal.<\/li><li>Push upwards on the front of the rim, resting the front of the disc above the pubic bone (aka the pubic symphysis).<\/li><\/ul>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "d71193ee-28b7-4235-a557-2750fb8f803d",
+        "template--21565118808337__770db88e-ca54-4c3a-87bc-52d98d996f29-heading-1",
+        "template--21565118808337__770db88e-ca54-4c3a-87bc-52d98d996f29-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Saalt-Disc-Instructions-insert-12-15-23.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "45857d07-d3ba-4a98-a5d3-e76bb7881c89": {
+      "type": "multirow",
+      "blocks": {
+        "template--21565118808337__45857d07-d3ba-4a98-a5d3-e76bb7881c89-row-2": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Disc-Instructions-position-and-secure-12-15-23.jpg",
+            "caption": "STEP 3",
+            "heading": "Position & Secure",
+            "text": "<ul><li>As you tuck the front end of the disc behind your pubic bone, the rim will pop open.<\/li><li>The disc should sit below your cervix in order to catch your flow. To check its position, insert a finger underneath the disc basin to feel for your cervix.<\/li><li>If you can feel your cervix outside of the basin, remove your disc and insert again.<\/li><li>The disc will sit at a slight diagonal angle when positioned correctly. If you can feel your disc in your vaginal canal or if the disc starts to slip, it might be positioned incorrectly. Remove and reinsert until it sits comfortably.<\/li><li>Congratulations, you’ve successfully inserted your Saalt Disc! You’re ready to live your best life. Feel free to do a heel click or somersault and go enjoy up to 12 hours worry free!<\/li><\/ul>",
+            "theme_color_row_background": "theme_default",
+            "theme_color_row_text": "theme_default",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--21565118808337__45857d07-d3ba-4a98-a5d3-e76bb7881c89-row-2"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "mobile_content_alignment": "left",
+        "padding_top": 4,
+        "padding_bottom": 56
+      }
+    },
+    "0d317402-969c-48d4-85e4-d6ebfe153666": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--21621812134161__0d317402-969c-48d4-85e4-d6ebfe153666-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "3",
+            "title": "Removing & Reinserting"
+          }
+        },
+        "template--21621812134161__0d317402-969c-48d4-85e4-d6ebfe153666-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<h5>REMOVE<\/h5><ul><li>Wash your hands thoroughly with warm water and mild soap.<\/li><li>Removing your disc is much easier if you are relaxed. Get into whatever position feels most comfortable. Similar to insertion, you can sit on the toilet with your legs spread wide.<\/li><li>Insert your finger behind your pubic bone to feel for the rim of the disc.<\/li><li>Find the removal notch and hook one finger inside, gently pulling down on the grip lines to untuck the Saalt Disc. Refrain from only gripping and pulling the thin basin of the disc to remove, as this can damage the silicone. It’s best to hook the finger notch or anywhere under the rim to remove.<\/li><li>Gently pull the disc out at a horizontal angle. Keep it upright to avoid spilling.<\/li><li>If helpful, keep the disc pinched with your other hand as you pull the disc out to reduce pressure on the vaginal opening.<\/li><li>Holding your disc firmly, empty it into a toilet or sink.<\/li><\/ul>"
+          }
+        },
+        "a467352e-a941-4604-ac7c-bcae3c3cd738": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<h5>REINSERT<\/h5><ul><li>Rinse your Saalt Disc in cold water (to prevent staining) then wash using warm water and Saalt Wash, or a mild pH-balanced cleanser. Rinse thoroughly.<\/li><li>Your Saalt Disc is ready to reinsert! If you need more insertion coaching, refer to the “Insert” section above. You got this.<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21621812134161__0d317402-969c-48d4-85e4-d6ebfe153666-section_title-1",
+        "template--21621812134161__0d317402-969c-48d4-85e4-d6ebfe153666-section_content-1",
+        "a467352e-a941-4604-ac7c-bcae3c3cd738"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "left",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "06d37be4-d8e3-4103-b918-88fd1c508243": {
+      "type": "multicolumn",
+      "blocks": {
+        "f14c4992-51d2-4dc7-be1d-cb2e838b8e03": {
+          "type": "column",
+          "settings": {
+            "title": "WASH",
+            "rating": 0,
+            "text": "<ul><li>Rinse your Saalt Disc in cold water after use to prevent staining.<\/li><li>Wash thoroughly after each use with warm water and Saalt Wash, or a mild pH-balanced cleanser. Avoid strong cleansers or anything that may irritate your skin.<\/li><li>Use a soft rag to wipe away any buildup.<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "2658dcaa-6470-4f80-bcb7-c1ab11746ed7": {
+          "type": "column",
+          "settings": {
+            "title": "SANITIZE",
+            "rating": 0,
+            "text": "<ul><li>You should sanitize your Saalt Disc between cycles by boiling your cup in water for 4–5 min (not more than 7 min). Use tongs or a wire whisk to ensure the disc doesn’t touch the bottom of the pot.<\/li><li>You may also rinse your Saalt Disc thoroughly with water, allow it to dry, and then wipe it with a soft rag and 70% isopropyl alcohol. Make sure all surfaces are sufficiently wet by the alcohol and allow it to air dry.<\/li><li>Meanwhile, toss your storage bag in the laundry to thoroughly clean.<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c250f893-a581-47a3-b4c2-0ee08971c6e9": {
+          "type": "column",
+          "settings": {
+            "title": "STORE",
+            "rating": 0,
+            "text": "<ul><li>Dry your Saalt Disc thoroughly and store it in the bag provided (or another breathable container). Never use a plastic bag or airtight container for storage.<\/li><li>Some discoloration may occur over time. This is normal, and may vary from one person to another.<\/li><li>If your Saalt Disc is ripped or torn, or the silicone shows signs of deterioration (which can happen after using non-recommended cleaners) it’s time to replace the disc.<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "f14c4992-51d2-4dc7-be1d-cb2e838b8e03",
+        "2658dcaa-6470-4f80-bcb7-c1ab11746ed7",
+        "c250f893-a581-47a3-b4c2-0ee08971c6e9"
+      ],
+      "custom_css": [
+        ".multicolumn .title {margin-left: 30%;}",
+        ".multicolumn-list h3 {text-align: center;}"
+      ],
+      "settings": {
+        "title": "Cleaning & Storing",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "theme_color_background": "theme-color-bg-3",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "--palette-color-0",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 36
+      }
+    },
+    "d557b0ed-c42d-4e3e-b7c3-49f914c262d9": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--21565118808337__d557b0ed-c42d-4e3e-b7c3-49f914c262d9-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "HEALTHY USE",
+            "icon": "none",
+            "row_content": "<ul><li>Empty at least twice a day (every 12 hours*); we recommend before bed and after waking up.<\/li><li>Always wash your hands and the Saalt Disc thoroughly before and after handling.<\/li><li>Don’t share the Saalt Disc.<\/li><li>Replace the Saalt Disc if torn or damaged.<\/li><li>Sanitize your disc between every period.<\/li><li>Saalt Disc is not recommended for use during postpartum bleeding.<\/li><li>You can use the Saalt Disc with an IUD or contraceptive ring, but check with your doctor first.<\/li><li>If you drop your disc in the toilet, no need to replace it. Before using your disc again, sanitize it by boiling it in water for 4–5 min (no more than 7 min) or wiping it thoroughly with a soft cloth and 70% isopropyl alcohol, allowing the alcohol to evaporate.<\/li><\/ul><p><em>* 8 hours for our Australian friends<\/em><\/p>",
+            "page": ""
+          }
+        },
+        "template--21565118808337__d557b0ed-c42d-4e3e-b7c3-49f914c262d9-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "REMOVE BLISS",
+            "icon": "none",
+            "row_content": "<ul><li>Your first time using the disc, consider removing your disc in the shower or while sitting on a toilet.<\/li><li>Insert your finger behind your pubic bone to feel for the rim of the disc. Hook your finger behind the removal notch, gently pulling down on the grip lines to untuck the Saalt Disc.<\/li><li>Gently pull the disc out at a horizontal angle. Keep it upright to avoid spilling.<\/li><li>If you can’t reach your disc when inserted, don’t sweat it! The disc won’t get lost inside the vagina. Your disc can move higher if you have a high cervix.<\/li><li>Walk around, wait 30 minutes, and try again, or switch to a different position. If you are sitting on the toilet, try squatting low in the shower or vice versa.<\/li><li>You can use your pelvic muscles to move your disc lower; this will feel similar to having an easy bowel movement. Do not strain and keep breathing deeply while doing this.<\/li><li>Once in reach, hook your finger in the removal notch and gently remove your disc. Though the removal notch is helpful for easier removal, you can hook your finger on any part of the rim to remove your disc. Refrain from only gripping and pulling the thin basin of the disc to remove, as this can damage the silicone.<\/li><li>If you are struggling to remove your disc, please email us with the subject line #RemovalMagic at sayhey@<a href=\"https:\/\/saalt.com\/\">saalt.com<\/a>.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "62a7ea47-3809-4f18-a9ae-7fc7741e936c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "INTIMACY WITH YOUR SAALT DISC**",
+            "icon": "none",
+            "row_content": "<ul><li>Saalt Disc will not prevent pregnancy or protect against sexually transmitted infections (STIs).<\/li><li>It is safe to use with most contraceptives, but check with your doctor first.<\/li><li>Wash your Saalt Disc after intercourse.<\/li><li>If your disc moves higher during arousal, allow it to return to a lower position before removing it.<\/li><li>If you experience discomfort during intercourse, we recommend adjusting your Saalt Disc or trying a different position that is more comfortable for you and your partner.<\/li><\/ul><p><em>**Saalt Disc will not prevent pregnancy or protect against sexually transmitted infections (STIs).<\/em><\/p>",
+            "page": ""
+          }
+        },
+        "template--21565118808337__d557b0ed-c42d-4e3e-b7c3-49f914c262d9-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "PREVENT SPOTTING",
+            "icon": "none",
+            "row_content": "<ul><li>Wipe or rinse your labia after insertion to prevent spotting. Spotting can also be caused by blood left in the vagina after inserting.<\/li><li>After inserting your Saalt Disc, wipe your finger underneath the basin to remove any excess blood, then wash your hands.<\/li><li>You can supplement your Saalt Disc with a pad, liner, or Saalt Wear period underwear while you are learning to use it or on your heaviest days.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "5bc4422d-9b71-4e56-b64a-a83ee1d26f1e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "SAY NO TO LEAKS AND DISCOMFORT",
+            "icon": "none",
+            "row_content": "<ul><li>When your disc is inserted correctly, you shouldn’t experience any discomfort or leaking.<\/li><li>First check the position by inserting a finger underneath the basin to ensure that your disc is covering your cervix. If you can feel your cervix outside of the basin, remove your disc and reinsert.<\/li><li>Insert the disc down and back toward your tailbone to match the angle of your vaginal canal.<\/li><li>Run your finger around the rim of your disc to ensure it has opened. If you feel a dent in the rim, gently push it to help it open.<\/li><li>Keep trying small adjustments and practicing with insertion; everyone’s anatomy is different. If leaking or discomfort persists, consider using a different size disc.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "c081b1a6-d4d0-4a8a-bd5e-f42962cc7484": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "PRECAUTIONS",
+            "icon": "none",
+            "row_content": "<ul><li>The Saalt Disc will not prevent pregnancy or protect against sexually transmitted infections (STIs).<\/li><li>If you feel symptoms of general pain, burning, irritation, inflammation in the genital area, or discomfort during urination, remove your Saalt Disc and contact a doctor.<\/li><li><strong>IMPORTANT<\/strong>: Menstrual discs have been associated with Toxic Shock Syndrome (TSS). TSS is a rare but serious disease that may cause death. Symptoms of Toxic Shock Syndrome (TSS) include fever, abdominal cramps, black vaginal discharge or pus, and muscle pain. Read and keep this information. If you experience these symptoms, contact your doctor right away. Learn more about TSS <a href=\"https:\/\/saalt.com\/blogs\/news\/how-to-prevent-tss\">here.<\/a><\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "template--21565118808337__d557b0ed-c42d-4e3e-b7c3-49f914c262d9-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "CRITICAL CARE",
+            "icon": "none",
+            "row_content": "<ul><li>Keep your Saalt Disc away from children and pets.<\/li><li>Never use your Saalt Disc for more than 12 hours* at a time without washing properly.<\/li><li>Never wash your Saalt Disc with anything that may irritate your vagina.<\/li><li>Avoid harsh cleansers like vinegar or bleach and strongly scented or fragranced cleansers that may disrupt your natural pH or cause the silicone to deteriorate.<\/li><li>Avoid soaking your Saalt Disc in anything other than water. Silicone is a porous material and can absorb oils or cleansers if exposed for longer periods of time. These substances may irritate your vagina or cause the silicone to deteriorate.<\/li><\/ul><p><em>*8 hours for our Australian friends<\/em><\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21565118808337__d557b0ed-c42d-4e3e-b7c3-49f914c262d9-collapsible_row-1",
+        "template--21565118808337__d557b0ed-c42d-4e3e-b7c3-49f914c262d9-collapsible_row-2",
+        "62a7ea47-3809-4f18-a9ae-7fc7741e936c",
+        "template--21565118808337__d557b0ed-c42d-4e3e-b7c3-49f914c262d9-collapsible_row-3",
+        "5bc4422d-9b71-4e56-b64a-a83ee1d26f1e",
+        "c081b1a6-d4d0-4a8a-bd5e-f42962cc7484",
+        "template--21565118808337__d557b0ed-c42d-4e3e-b7c3-49f914c262d9-collapsible_row-4"
+      ],
+      "custom_css": [
+        ".accordion .icon-accordion {fill: #5a5f6f;}"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "RESOURCES",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "theme_color_container_background": "theme_default",
+        "theme_color_container_text": "theme_default",
+        "open_first_collapsible_row": false,
+        "image_ratio": "large",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ad4587b5-87ed-4424-9460-342d59ace46b": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--21565118808337__ad4587b5-87ed-4424-9460-342d59ace46b-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "We'd love to help you."
+          }
+        },
+        "template--21565118808337__ad4587b5-87ed-4424-9460-342d59ace46b-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>More questions? Reach out to us at <a href=\"mailto:sayhey@saalt.com\">sayhey@saalt.com<\/a>, or visit our <a href=\"https:\/\/www.facebook.com\/groups\/saaltcupacademy\/?ref=bookmarks\" target=\"_blank\">Saalt Cup Academy <\/a>on Facebook to get tips from Saalt users in real time.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21565118808337__ad4587b5-87ed-4424-9460-342d59ace46b-section_title-1",
+        "template--21565118808337__ad4587b5-87ed-4424-9460-342d59ace46b-section_content-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme-color-text-2",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "700px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "c0099dc9-2e96-43cd-a5b3-b9252a0d38e9",
+    "71805da7-3afc-4541-92a9-5b7e313bb4e0",
+    "c436e99b-cf99-4e73-a7b8-4f1fede66b5d",
+    "2368d91b-7b9a-43bf-bb96-3011dd3ccc23",
+    "1b1a8a2d-3c30-4b6e-9b18-bc773eed6266",
+    "770db88e-ca54-4c3a-87bc-52d98d996f29",
+    "45857d07-d3ba-4a98-a5d3-e76bb7881c89",
+    "0d317402-969c-48d4-85e4-d6ebfe153666",
+    "06d37be4-d8e3-4103-b918-88fd1c508243",
+    "d557b0ed-c42d-4e3e-b7c3-49f914c262d9",
+    "ad4587b5-87ed-4424-9460-342d59ace46b"
+  ]
+}
