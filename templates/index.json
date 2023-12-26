@@ -109,6 +109,7 @@
       "block_order": [
         "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-heading-1"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
