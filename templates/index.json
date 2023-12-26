@@ -612,6 +612,7 @@
         "c3d675e8-b57f-4bde-8a72-5bf54fc6c36a",
         "66116b17-fa7c-499f-aa5b-c2123f2a4019"
       ],
+      "disabled": true,
       "settings": {
         "slide_height": "small",
         "slider_visual": "dots",
@@ -675,13 +676,12 @@
         "column3",
         "b928608f-5149-4293-bab7-c644352b3dd1"
       ],
-      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "adapt",
-        "columns_desktop": 2,
+        "columns_desktop": 4,
         "column_alignment": "left",
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
