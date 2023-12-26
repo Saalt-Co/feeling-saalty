@@ -87,40 +87,10 @@
             "heading": "Shop by category",
             "heading_size": "h2"
           }
-        },
-        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-text-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-section_buttons_group-1": {
-          "type": "section_buttons_group",
-          "disabled": true,
-          "settings": {
-            "desktop_button_group_alignment": "center",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-section_button-1": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Button text",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
         }
       },
       "block_order": [
-        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-heading-1",
-        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-text-1",
-        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-section_buttons_group-1",
-        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-section_button-1"
+        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-heading-1"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -128,8 +98,8 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7": {
