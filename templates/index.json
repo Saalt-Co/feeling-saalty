@@ -78,6 +78,60 @@
         "padding_bottom": 0
       }
     },
+    "dec81ce8-0726-4327-93a6-eb82628398dc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop By Category",
+            "heading_size": "h1"
+          }
+        },
+        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-section_buttons_group-1": {
+          "type": "section_buttons_group",
+          "disabled": true,
+          "settings": {
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-section_button-1": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-heading-1",
+        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-text-1",
+        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-section_buttons_group-1",
+        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-section_button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7": {
       "type": "saalt-window-display",
       "blocks": {
@@ -730,6 +784,7 @@
   },
   "order": [
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
+    "dec81ce8-0726-4327-93a6-eb82628398dc",
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
     "2b94c719-9c4c-4651-96ed-88c41a9f7159",
     "e19ae371-ca3d-4f8c-9229-f22d18836f31",
