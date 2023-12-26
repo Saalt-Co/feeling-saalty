@@ -189,23 +189,6 @@
         "desktop_aspect_ratio": "1\/1.5"
       }
     },
-    "c70ba2b2-6085-4467-9f62-431ca94c36bc": {
-      "type": "saalt-unstyled-liquid-section",
-      "blocks": {
-        "template--18370419818769__c70ba2b2-6085-4467-9f62-431ca94c36bc-custom_liquid_code-1": {
-          "type": "custom_liquid_code",
-          "settings": {
-            "liquid_code": "<div style=\"background-color: #F7C6B5; padding: .25px;\">\n<p style=\"text-align: center; font-weight: 500;\">Free shipping on orders $39+<\/p>\n<\/div>"
-          }
-        }
-      },
-      "block_order": [
-        "template--18370419818769__c70ba2b2-6085-4467-9f62-431ca94c36bc-custom_liquid_code-1"
-      ],
-      "settings": {
-        "section_id": ""
-      }
-    },
     "2b94c719-9c4c-4651-96ed-88c41a9f7159": {
       "type": "saalt-unstyled-liquid-section",
       "blocks": {
@@ -218,6 +201,23 @@
       },
       "block_order": [
         "template--18370419818769__2b94c719-9c4c-4651-96ed-88c41a9f7159-custom_liquid_code-1"
+      ],
+      "settings": {
+        "section_id": ""
+      }
+    },
+    "c70ba2b2-6085-4467-9f62-431ca94c36bc": {
+      "type": "saalt-unstyled-liquid-section",
+      "blocks": {
+        "template--18370419818769__c70ba2b2-6085-4467-9f62-431ca94c36bc-custom_liquid_code-1": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<div style=\"background-color: #F7C6B5; padding: .25px;\">\n<p style=\"text-align: center; font-weight: 500;\">Free shipping on orders $39+<\/p>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419818769__c70ba2b2-6085-4467-9f62-431ca94c36bc-custom_liquid_code-1"
       ],
       "settings": {
         "section_id": ""
@@ -808,8 +808,8 @@
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
     "dec81ce8-0726-4327-93a6-eb82628398dc",
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
-    "c70ba2b2-6085-4467-9f62-431ca94c36bc",
     "2b94c719-9c4c-4651-96ed-88c41a9f7159",
+    "c70ba2b2-6085-4467-9f62-431ca94c36bc",
     "e19ae371-ca3d-4f8c-9229-f22d18836f31",
     "711b5233-473f-4666-9c41-450fb4683107",
     "e1791c3d-d73e-498f-9322-90696d73319e",
