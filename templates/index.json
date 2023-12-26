@@ -78,6 +78,23 @@
         "padding_bottom": 0
       }
     },
+    "c70ba2b2-6085-4467-9f62-431ca94c36bc": {
+      "type": "saalt-unstyled-liquid-section",
+      "blocks": {
+        "template--18370419818769__c70ba2b2-6085-4467-9f62-431ca94c36bc-custom_liquid_code-1": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<div style=\"background-color: #F7C6B5; \">\n<p style=\"text-align: center; font-weight: 500;\">Free shipping on orders $39+<\/p>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419818769__c70ba2b2-6085-4467-9f62-431ca94c36bc-custom_liquid_code-1"
+      ],
+      "settings": {
+        "section_id": ""
+      }
+    },
     "dec81ce8-0726-4327-93a6-eb82628398dc": {
       "type": "rich-text",
       "blocks": {
@@ -789,6 +806,7 @@
   },
   "order": [
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
+    "c70ba2b2-6085-4467-9f62-431ca94c36bc",
     "dec81ce8-0726-4327-93a6-eb82628398dc",
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
     "2b94c719-9c4c-4651-96ed-88c41a9f7159",
