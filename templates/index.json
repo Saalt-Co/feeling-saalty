@@ -632,9 +632,10 @@
         "column1": {
           "type": "column",
           "settings": {
-            "title": "Kelsey R.",
+            "image": "shopify:\/\/shop_images\/kelsvaughne_951967c6-a8a7-4723-a8f0-cf079464da32.png",
+            "title": "Kels",
             "rating": 5,
-            "text": "<p>Game changing!! This is the first cup I've ever used and I LOVE it! <strong>Literally cannot feel it<\/strong> at all when inserted. And the underwear is so comfortable, much more so than disposable pads. I was skeptical but they are <strong>some sort of sorcery because they stay dry<\/strong>! I'm telling anyone who will listen to give these products a try.<\/p>",
+            "text": "<p><strong>The Saalt Cup is my new bestie!<\/strong> Well technically not new, we've been best friends for about 5 years. <strong>Imagine how much money I've saved not buying tampons!<\/strong><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -642,9 +643,10 @@
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Kimberly P.",
+            "image": "shopify:\/\/shop_images\/euna.ugc_f0c30cb6-a746-4044-9270-f6b069df2ec2.png",
+            "title": "Euna",
             "rating": 5,
-            "text": "<p>Love the style and softness. Probably <strong>least bulky<\/strong> period panties for the amount of fluids it can hold. Tried &lcub;other brands&rcub;. Saalt is the <strong>most luxurious and best fitting<\/strong> out of all of them. Some have weird bulk at the crotch or too stiff or wide down there.<\/p>",
+            "text": "<p>I wanted to avoid panty lines and the bulk of pads while still wearing leggings at the gym. My solution was Saalt's seamless underwear. I was skeptical at first, but honestly they're <strong>very thin and comfortable making it the perfect thing to wear under leggings.<\/strong><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -652,9 +654,10 @@
         "column3": {
           "type": "column",
           "settings": {
-            "title": "Courtney M.",
+            "image": "shopify:\/\/shop_images\/peyttonb_f39431a6-a7b4-4f34-83ad-9a4d93aca31c.png",
+            "title": "Peytton",
             "rating": 5,
-            "text": "<p><strong>Never going back to tampons! <\/strong>This is my first ever cup I’ve bought. So easy to use and <strong>I can’t even tell that it’s there.<\/strong> I ordered a size regular and it was the perfect fit for me. It makes it easier for me to use a cup because I have a heavy flow and I know that I don’t have to change my tampon every hour. I love this product.<strong> I’m so glad that I switched to a cup.<\/strong><\/p>",
+            "text": "<p>I stopped using tampons about a year ago and it's the best decision that I've ever made! <strong>The Saalt Period Cup has saved me so much money<\/strong> because I'm not buying tampons every single month. I was so worried when I switched to a period cup that I would be uncomfortable. This is flexible, it molds to your body, it's soft, and when you insert it <strong>you can't even feel it.<\/strong><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -662,9 +665,10 @@
         "b928608f-5149-4293-bab7-c644352b3dd1": {
           "type": "column",
           "settings": {
-            "title": "Lily C.",
+            "image": "shopify:\/\/shop_images\/Dava.jpg",
+            "title": "Dava",
             "rating": 5,
-            "text": "<p><strong>So soft and comfy.<\/strong> I like this fabric WAY MORE than my Thinx. Thinner and fit is just overall better. <strong>Definitely happy I switched over to Saalt.<\/strong><\/p>",
+            "text": "<p><strong>Truly the best invention ever!! <\/strong>There is a learning curve to it of course…but I promise this will change your life for the better!! Once you get it down you will love it!<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -679,8 +683,8 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
+        "image_width": "full",
+        "image_ratio": "square",
         "columns_desktop": 4,
         "column_alignment": "left",
         "theme_color_background": "theme-color-bg-5",
