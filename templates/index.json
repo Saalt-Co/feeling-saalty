@@ -84,8 +84,8 @@
         "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Shop By Category",
-            "heading_size": "h1"
+            "heading": "Shop by category",
+            "heading_size": "h2"
           }
         },
         "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-text-1": {
@@ -210,7 +210,7 @@
       ],
       "settings": {
         "section_id": "",
-        "make_full_width": false,
+        "make_full_width": true,
         "mobile_min_width": "40%",
         "mobile_max_width": "280px",
         "mobile_aspect_ratio": "1\/1.5",
