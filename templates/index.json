@@ -19,7 +19,7 @@
         "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_buttons_group-1": {
           "type": "section_buttons_group",
           "settings": {
-            "desktop_button_group_alignment": "flex-end",
+            "desktop_button_group_alignment": "flex-start",
             "desktop_buttons_group_gap": "1rem"
           }
         },
@@ -71,28 +71,35 @@
         "mobile_text_position": "below",
         "mobile_text_alignment": "center",
         "desktop_text_position": "flex-end",
-        "desktop_text_alignment": "right",
+        "desktop_text_alignment": "left",
         "use_max_text_width": true,
         "max_width": "28%",
         "padding_top": 0,
         "padding_bottom": 0
       }
     },
-    "2b94c719-9c4c-4651-96ed-88c41a9f7159": {
-      "type": "saalt-unstyled-liquid-section",
+    "dec81ce8-0726-4327-93a6-eb82628398dc": {
+      "type": "rich-text",
       "blocks": {
-        "template--18370419818769__2b94c719-9c4c-4651-96ed-88c41a9f7159-custom_liquid_code-1": {
-          "type": "custom_liquid_code",
+        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-heading-1": {
+          "type": "heading",
           "settings": {
-            "liquid_code": "<style>\n  .section-{{ section.id }} {\n    display: block;\n    width: 100%;\n    height: auto;\n    text-align: center;\n  }\n  .section-{{ section.id }} * {\n    color: inherit;\n    text-align: center;\n  }\n  .section-{{ section.id }} .section-inner {\n    display: flex;\n    flex-direction: column;\n    padding: 3rem 1.5rem 4.5rem;\n    width: 100%;\n    height: 100%;\n    max-width: 800px;\n    margin: 0 auto;\n  }\n  .section-{{ section.id }} .saalt-monogram, .section-{{ section.id }} .saalt-monogram .image-element {\n    display: block;\n    width: 100%;\n    height: auto;\n    text-align: center;\n  }\n  .section-{{ section.id }} .saalt-monogram .image-element {\n    max-width: 64px;\n    margin: 0 auto 1rem;\n  }\n.section-{{ section.id }} .text-wrapper {\n  max-width: 600px; \n  margin: 0 auto;\n}\n\n  .section-{{ section.id }} .section-title, .section-{{ section.id }} .section-sub-title {\n    margin-bottom: 1rem;\n  }\n  .section-{{ section.id }} .section-sub-title {\n    line-height: 1.5;\n    font-size: 1.5rem!important;\n  }\n  .section-{{ section.id }} .icon-list {\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-start;\n    flex-wrap: nowrap;\n    width: 100%;\n    max-width: 600px;\n    margin: 1rem auto 0;\n  }\n  .section-{{ section.id }} .icon-list .icon {\n    flex: 1 1 0;\n    width: 25%;\n    max-width: 75px;\n    text-align: center;\n  }\n  .section-{{ section.id }} .icon-list .icon .icon-inner h4.icon-title {\n    font-size: 1rem!important;\n    margin-bottom: .5rem;\n  }\n  .section-{{ section.id }} .icon-list .icon .icon-inner h4.icon-title, .section-{{ section.id }} .icon-list .icon .icon-inner .icon-descr {\n    line-height: 1.25;\n  }\n  .section-{{ section.id }} .icon-list .icon .icon-image {\n    display: block;\n    width: 100%;\n    text-align: center;\n  }\n  .section-{{ section.id }} .icon-list .icon .icon-image img {\n    display: block;\n    width: 100%;\n    height: auto;\n    max-width: 70px;\n    margin: 0 auto;\n  }\n  @media screen and (min-width: 750px) {\n    .section-{{ section.id }} .icon-list .icon {\n      max-width: 120px;\n    }\n  }\n<\/style>\n<div class=\"section-{{ section.id }}\">\n  <div class=\"section-inner\">\n    <div class=\"saalt-monogram\">\n      <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=2500\" srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=1 1w, \/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=352 352w, \/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=832 832w, \/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=1200 1200w, \/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=1920 1920w\" width=\"1\" height=\"1\" loading=\"lazy\" class=\"image-element\" sizes=\"(min-width: 750px) 25vw, 50vw\">\n    <\/div>\n    <div class=\"text-wrapper\">\n      <h2 class=\"section-title\">No waste. No leaks. No worries.<\/h2>\n      <div class=\"section-content\">\n      <p>We are on a mission to end panicked sprints to the bathroom, sweaters tied around waists, and sleeping on towels.<\/p>\n        <h3 class=\"section-sub-title\"> Saalt will set you free. So check your backside in the mirror one last time and go live your life. <\/h3>\n      <\/div>\n    <\/div>\n    <div class=\"icon-list\">\n      <div class=\"icon\">\n        <div class=\"icon-inner\">\n          <div class=\"icon-image\">\n            <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Reuse-svg_120x.png?v=1629243523\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Reuse-svg_x120.png?v=1629243523\" alt=\"Waste Less. Reusable Period Care.\">\n          <\/div>\n          <h4 class=\"icon-title\">Waste Less<\/h4>\n          <div class=\"icon-descr\">Zero waste, zero worries.<\/div>\n        <\/div>\n      <\/div>\n      <div class=\"icon\">\n        <div class=\"icon-inner\">\n          <div class=\"icon-image\">\n            <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Heart-svg_120x.png?v=1629243523\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Heart-svg_x120.png?v=1629243523\" alt=\"\">\n          <\/div>\n          <h4 class=\"icon-title\">Just Comfort<\/h4>\n          <div class=\"icon-descr\">No pads. No strings.<\/div>\n        <\/div>\n      <\/div>\n      <div class=\"icon\">\n        <div class=\"icon-inner\">\n          <div class=\"icon-image\">\n            <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Dollar-svg_120x.png?v=1629243523\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Dollar-svg_x120.png?v=1629243523\" alt=\"\">\n          <\/div>\n          <h4 class=\"icon-title\">Cha-Ching<\/h4>\n          <div class=\"icon-descr\">Save your wallet and the planet.<\/div>\n        <\/div>\n      <\/div>\n      <div class=\"icon\">\n        <div class=\"icon-inner\">\n          <div class=\"icon-image\">\n            <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Period-Bliss-Guarantee-icon-homepage_d2957e1e-ffd1-4781-a102-54996b086d5a_120x.png?v=1685135049\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Period-Bliss-Guarantee-icon-homepage_d2957e1e-ffd1-4781-a102-54996b086d5a_x120.png?v=1685135049\" alt=\"\">\n          <\/div>\n          <h4 class=\"icon-title\">Saalt Bliss Guarantee<\/h4>\n          <div class=\"icon-descr\">Love it or your money back.<\/div>\n        <\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>"
+            "heading": "Shop by category",
+            "heading_size": "h2"
           }
         }
       },
       "block_order": [
-        "template--18370419818769__2b94c719-9c4c-4651-96ed-88c41a9f7159-custom_liquid_code-1"
+        "template--18370419818769__dec81ce8-0726-4327-93a6-eb82628398dc-heading-1"
       ],
       "settings": {
-        "section_id": ""
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7": {
@@ -173,13 +180,30 @@
       ],
       "settings": {
         "section_id": "",
-        "make_full_width": false,
+        "make_full_width": true,
         "mobile_min_width": "40%",
         "mobile_max_width": "280px",
         "mobile_aspect_ratio": "1\/1.5",
         "desktop_min_width": "auto",
         "desktop_max_width": "25%",
         "desktop_aspect_ratio": "1\/1.5"
+      }
+    },
+    "2b94c719-9c4c-4651-96ed-88c41a9f7159": {
+      "type": "saalt-unstyled-liquid-section",
+      "blocks": {
+        "template--18370419818769__2b94c719-9c4c-4651-96ed-88c41a9f7159-custom_liquid_code-1": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<style>\n  .section-{{ section.id }} {\n    display: block;\n    width: 100%;\n    height: auto;\n    text-align: center;\n  }\n  .section-{{ section.id }} * {\n    color: inherit;\n    text-align: center;\n  }\n  .section-{{ section.id }} .section-inner {\n    display: flex;\n    flex-direction: column;\n    padding: 3rem 1.5rem 4.5rem;\n    width: 100%;\n    height: 100%;\n    max-width: 800px;\n    margin: 0 auto;\n  }\n  .section-{{ section.id }} .saalt-monogram, .section-{{ section.id }} .saalt-monogram .image-element {\n    display: block;\n    width: 100%;\n    height: auto;\n    text-align: center;\n  }\n  .section-{{ section.id }} .saalt-monogram .image-element {\n    max-width: 64px;\n    margin: 0 auto 1rem;\n  }\n.section-{{ section.id }} .text-wrapper {\n  max-width: 600px; \n  margin: 0 auto;\n}\n\n  .section-{{ section.id }} .section-title, .section-{{ section.id }} .section-sub-title {\n    margin-bottom: 1rem;\n  }\n  .section-{{ section.id }} .section-sub-title {\n    line-height: 1.5;\n    font-size: 1.5rem!important;\n  }\n  .section-{{ section.id }} .icon-list {\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-start;\n    flex-wrap: nowrap;\n    width: 100%;\n    max-width: 600px;\n    margin: 1rem auto 0;\n  }\n  .section-{{ section.id }} .icon-list .icon {\n    flex: 1 1 0;\n    width: 25%;\n    max-width: 75px;\n    text-align: center;\n  }\n  .section-{{ section.id }} .icon-list .icon .icon-inner h4.icon-title {\n    font-size: 1rem!important;\n    margin-bottom: .5rem;\n  }\n  .section-{{ section.id }} .icon-list .icon .icon-inner h4.icon-title, .section-{{ section.id }} .icon-list .icon .icon-inner .icon-descr {\n    line-height: 1.25;\n  }\n  .section-{{ section.id }} .icon-list .icon .icon-image {\n    display: block;\n    width: 100%;\n    text-align: center;\n  }\n  .section-{{ section.id }} .icon-list .icon .icon-image img {\n    display: block;\n    width: 100%;\n    height: auto;\n    max-width: 70px;\n    margin: 0 auto;\n  }\n  @media screen and (min-width: 750px) {\n    .section-{{ section.id }} .icon-list .icon {\n      max-width: 120px;\n    }\n  }\n<\/style>\n<div class=\"section-{{ section.id }}\">\n  <div class=\"section-inner\">\n    <div class=\"saalt-monogram\">\n      <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=2500\" srcset=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=1 1w, \/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=352 352w, \/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=832 832w, \/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=1200 1200w, \/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Monogram-svg.png?v=1629244171&amp;width=1920 1920w\" width=\"1\" height=\"1\" loading=\"lazy\" class=\"image-element\" sizes=\"(min-width: 750px) 25vw, 50vw\">\n    <\/div>\n    <div class=\"text-wrapper\">\n      <h2 class=\"section-title\">No waste. No leaks. No worries.<\/h2>\n      <div class=\"section-content\">\n      <p>We are on a mission to end panicked sprints to the bathroom, sweaters tied around waists, and sleeping on towels.<\/p>\n        <h3 class=\"section-sub-title\"> Saalt will set you free. So check your backside in the mirror one last time and go live your life. <\/h3>\n      <\/div>\n    <\/div>\n    <div class=\"icon-list\">\n      <div class=\"icon\">\n        <div class=\"icon-inner\">\n          <div class=\"icon-image\">\n            <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Reuse-svg_120x.png?v=1629243523\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Reuse-svg_x120.png?v=1629243523\" alt=\"Waste Less. Reusable Period Care.\">\n          <\/div>\n          <h4 class=\"icon-title\">Waste Less<\/h4>\n          <div class=\"icon-descr\">Zero waste, zero worries.<\/div>\n        <\/div>\n      <\/div>\n      <div class=\"icon\">\n        <div class=\"icon-inner\">\n          <div class=\"icon-image\">\n            <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Heart-svg_120x.png?v=1629243523\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Heart-svg_x120.png?v=1629243523\" alt=\"\">\n          <\/div>\n          <h4 class=\"icon-title\">Just Comfort<\/h4>\n          <div class=\"icon-descr\">No pads. No strings.<\/div>\n        <\/div>\n      <\/div>\n      <div class=\"icon\">\n        <div class=\"icon-inner\">\n          <div class=\"icon-image\">\n            <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Dollar-svg_120x.png?v=1629243523\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Dollar-svg_x120.png?v=1629243523\" alt=\"\">\n          <\/div>\n          <h4 class=\"icon-title\">Cha-Ching<\/h4>\n          <div class=\"icon-descr\">Save your wallet and the planet.<\/div>\n        <\/div>\n      <\/div>\n      <div class=\"icon\">\n        <div class=\"icon-inner\">\n          <div class=\"icon-image\">\n            <img class=\"\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Period-Bliss-Guarantee-icon-homepage_d2957e1e-ffd1-4781-a102-54996b086d5a_120x.png?v=1685135049\" data-src=\"\/\/cdn.shopify.com\/s\/files\/1\/2705\/9430\/files\/Period-Bliss-Guarantee-icon-homepage_d2957e1e-ffd1-4781-a102-54996b086d5a_x120.png?v=1685135049\" alt=\"\">\n          <\/div>\n          <h4 class=\"icon-title\">Saalt Bliss Guarantee<\/h4>\n          <div class=\"icon-descr\">Love it or your money back.<\/div>\n        <\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18370419818769__2b94c719-9c4c-4651-96ed-88c41a9f7159-custom_liquid_code-1"
+      ],
+      "settings": {
+        "section_id": ""
       }
     },
     "e19ae371-ca3d-4f8c-9229-f22d18836f31": {
@@ -730,8 +754,9 @@
   },
   "order": [
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
-    "2b94c719-9c4c-4651-96ed-88c41a9f7159",
+    "dec81ce8-0726-4327-93a6-eb82628398dc",
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
+    "2b94c719-9c4c-4651-96ed-88c41a9f7159",
     "e19ae371-ca3d-4f8c-9229-f22d18836f31",
     "711b5233-473f-4666-9c41-450fb4683107",
     "e1791c3d-d73e-498f-9322-90696d73319e",
