@@ -19,7 +19,7 @@
         "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_buttons_group-1": {
           "type": "section_buttons_group",
           "settings": {
-            "desktop_button_group_alignment": "flex-end",
+            "desktop_button_group_alignment": "flex-start",
             "desktop_buttons_group_gap": "1rem"
           }
         },
@@ -71,7 +71,7 @@
         "mobile_text_position": "below",
         "mobile_text_alignment": "center",
         "desktop_text_position": "flex-end",
-        "desktop_text_alignment": "right",
+        "desktop_text_alignment": "left",
         "use_max_text_width": true,
         "max_width": "28%",
         "padding_top": 0,
