@@ -86,6 +86,19 @@
         "b556c8a4-bad2-43ac-8e69-1b5b4650d635": {
           "type": "window-feature",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Extras_Alt_Teen_Collection_window_display.png",
+            "title": "<p><strong>Extras<\/strong><\/p>",
+            "copy": "<p>Everything you need for a fully sustainable flow.<\/p>",
+            "link_type": "filter",
+            "link_url": "\/collections\/extras",
+            "filter_name": "Product Type",
+            "filter_val": "Extras",
+            "button_text": "Shop Extras"
+          }
+        },
+        "9f4b8562-a44f-4848-a5c7-f623c8f5e9c2": {
+          "type": "window-feature",
+          "settings": {
             "image": "shopify:\/\/shop_images\/Extras_Teen_Collection_window_display.png",
             "title": "<p><strong>Extras<\/strong><\/p>",
             "copy": "<p>Everything you need for a fully sustainable flow.<\/p>",
@@ -101,7 +114,8 @@
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-0",
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-1",
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-2",
-        "b556c8a4-bad2-43ac-8e69-1b5b4650d635"
+        "b556c8a4-bad2-43ac-8e69-1b5b4650d635",
+        "9f4b8562-a44f-4848-a5c7-f623c8f5e9c2"
       ],
       "settings": {
         "section_id": "",
