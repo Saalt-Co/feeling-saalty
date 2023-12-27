@@ -4237,3 +4237,7 @@ p a {
 .theme-color-text-ignore-children *:not(.button) {
   color: rgba(var(--color-main-text), var(--color-main-text-opacity));
 }
+.header__menu-item span,
+.header__active-menu-item {
+	font-weight: bold;
+}
