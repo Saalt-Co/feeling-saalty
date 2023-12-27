@@ -210,6 +210,7 @@
         "template--21571779264785__1ba2232c-e878-4f74-8014-512c7091b4f3-column-2",
         "template--21571779264785__1ba2232c-e878-4f74-8014-512c7091b4f3-column-1"
       ],
+      "disabled": true,
       "settings": {
         "title": "Saalt Period Cup or Period Disc?",
         "heading_size": "h1",
@@ -244,7 +245,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "How to use a Saalt Cup:"
+            "title": "How to use a Saalt Teen Cup:"
           }
         },
         "e042b39f-ec1b-4311-b5fb-4b251edd1ee1": {
@@ -333,7 +334,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Saalt-How-to-use-a-Cup-Image-Collection_03.jpg",
+        "image": "shopify:\/\/shop_images\/How_to_use_a_saalt_teen_cup_collection_page.png",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -441,6 +442,7 @@
         "c3ace482-d369-4409-9e6f-718ba14eb68b",
         "e7ce1948-5487-4375-84d7-6186d7ea73f2"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -476,6 +478,16 @@
             "link": ""
           }
         },
+        "8ad13ac4-10e5-4131-bf07-17d6ff34bba2": {
+          "type": "column",
+          "settings": {
+            "title": "Rebekah W.",
+            "rating": 5,
+            "text": "<p>I am a 15 y\/o and I cannot wear tampons. I am very active (dance, running, swimming, biking, etc) and I’ve always had to deal with pads. As I have gotten older, my flow has gotten heavier and wearing pads while dancing in tight clothes just doesn’t work. <strong>This cup is a life saver!<\/strong> I was a little nervous to try it, but I did and it is amazing!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2": {
           "type": "column",
           "settings": {
@@ -485,22 +497,12 @@
             "link_label": "",
             "link": ""
           }
-        },
-        "8ad13ac4-10e5-4131-bf07-17d6ff34bba2": {
-          "type": "column",
-          "settings": {
-            "title": "Coleen S.",
-            "rating": 5,
-            "text": "<p>I have been using the Saalt Cup for about 2 years now and really liked it so I was excited when they announced the Saalt Disc. I have used it for two cycles and I'm sold! It's comfortable, easy to use and I haven't had one leak despite my heavy flow.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-0",
-        "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2",
-        "8ad13ac4-10e5-4131-bf07-17d6ff34bba2"
+        "8ad13ac4-10e5-4131-bf07-17d6ff34bba2",
+        "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2"
       ],
       "settings": {
         "title": "9\/10 People Never Go Back",
