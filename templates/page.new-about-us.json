@@ -99,8 +99,9 @@
       "blocks": {
         "731bda26-c495-4563-9ea2-e40001ce191f": {
           "type": "custom_liquid_code",
+          "disabled": true,
           "settings": {
-            "liquid_code": "<h3 style=\"margin-bottom: 0; font-size: 1.5rem;\">Watch The Saalt Story<\/h3>"
+            "liquid_code": ""
           }
         },
         "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_title-1": {
@@ -395,7 +396,7 @@
             "use_max_icon_group_width": false,
             "icon_group_max_width": "600px",
             "desktop_icons_display": "row",
-            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_horizontal_alignment": "flex-start",
             "desktop_icon_group_vertical_alignment": "center",
             "desktop_icon_grid_columns": 2,
             "desktop_icon_group_gap": "3.5rem",
