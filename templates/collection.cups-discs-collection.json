@@ -2,11 +2,43 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default"
+      }
+    },
+    "c2ba6bf2-8d02-40b3-a18a-92d46f619c3a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21571779264785__c2ba6bf2-8d02-40b3-a18a-92d46f619c3a-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Saalt Menstrual Cups and Discs",
+            "heading_size": "h2"
+          }
+        },
+        "template--21571779264785__c2ba6bf2-8d02-40b3-a18a-92d46f619c3a-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Upgrade your period with Saalt reusable menstrual cups and discs.<\/strong><\/p><p>Easy to use and comfortable. Live free of the tampon aisle—forever. Wear up to 12 hours to swim, run, bike, hike, or fly to Bora Bora.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21571779264785__c2ba6bf2-8d02-40b3-a18a-92d46f619c3a-heading-1",
+        "template--21571779264785__c2ba6bf2-8d02-40b3-a18a-92d46f619c3a-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme-color-text-2",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 16
       }
     },
     "4b7bcf70-9b6b-48c4-a538-0e13cf35a435": {
@@ -16,7 +48,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/SC-HP-SOManifest-1597.jpg",
-            "title": "<p>Saalt Cups<\/p>",
+            "title": "<p><strong>Saalt Cups<\/strong><\/p>",
             "copy": "<p>No pads. No strings. Just comfort. Wear all day or night, stress free.<\/p>",
             "link_type": "filter",
             "link_url": "",
@@ -29,7 +61,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/SD-CB-Alani-Jessie-9242.jpg",
-            "title": "<p>Saalt Discs<\/p>",
+            "title": "<p><strong>Saalt Discs<\/strong><\/p>",
             "copy": "<p>Flexible, flat fit allows for no-mess period sex. Custom finger notch for easy removal. 4 to 6 tampon capacity.<\/p>",
             "link_type": "filter",
             "link_url": "",
@@ -42,7 +74,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/Bundle-Preset-1080x1080-Web-0995.jpg",
-            "title": "<p>Bundles<\/p>",
+            "title": "<p><strong>Bundles<\/strong><\/p>",
             "copy": "<p>Save up to 20% and skip the guesswork with bundles custom-designed by our Saalt Coaches for all your leak needs. <\/p>",
             "link_type": "filter",
             "link_url": "",
@@ -55,7 +87,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/Shop_by_Category_-_Accessories_1.jpg",
-            "title": "<p>Extras<\/p>",
+            "title": "<p><strong>Extras<\/strong><\/p>",
             "copy": "<p>Everything you need for a fully sustainable flow.<\/p>",
             "link_type": "filter",
             "link_url": "\/collections\/extras",
@@ -740,6 +772,7 @@
   },
   "order": [
     "banner",
+    "c2ba6bf2-8d02-40b3-a18a-92d46f619c3a",
     "4b7bcf70-9b6b-48c4-a538-0e13cf35a435",
     "product-grid",
     "ef361528-f55b-4ddc-8446-c41880f7f0b0",

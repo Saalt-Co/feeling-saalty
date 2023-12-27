@@ -59,7 +59,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "2",
-            "title": "Simple. Sustainable. Saalt"
+            "title": "Simple. Sustainable. Saalt."
           }
         },
         "template--15053077250129__7f641a80-2973-4cbe-8deb-d5232f6ed04b-section_content-1": {
@@ -99,8 +99,9 @@
       "blocks": {
         "731bda26-c495-4563-9ea2-e40001ce191f": {
           "type": "custom_liquid_code",
+          "disabled": true,
           "settings": {
-            "liquid_code": "<h3 style=\"margin-bottom: 0; font-size: 1.5rem;\">Watch The Saalt Story<\/h3>"
+            "liquid_code": ""
           }
         },
         "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_title-1": {
@@ -149,7 +150,7 @@
         "template--15053077250129__ada1c325-4f89-4bb5-a917-d6aa63fb225a-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p><strong>It begins with Cherie, our CEO and co-founder.\u2028She has a period and 5 daughters.\u2028You could say, she gets period care.\u2028\u2028<\/strong><\/p><p>“It all started with a phone call I had with my aunt in Venezuela, where pads and tampons hadn’t been available in stores for years. I immediately thought of my daughters and what I would do in the same situation. Our dependence on disposables kept me up at night.<\/p><p><em><strong>Why have we been using the same single-use disposable products for the past 100 years? <\/strong><\/em><\/p><p>I also learned that lack of access to period products extended beyond just Venezuela—over 62% of the world lives in period poverty, which makes girls miss school and women miss out on economic progress every day. So why is the default option something that most people can’t access or afford?<\/p><p>There had to be a better way.<\/p><p>Three months later, I started sourcing long-lasting reusable products for hundreds of friends. But when I went to source menstrual cups and period underwear, I couldn’t find products that met my expectations. So I started custom designing products I actually wanted to use myself and could share with friends.<\/p><p>In February of 2018, we launched Saalt with the vision of making life-changing  period and body care products accessible to everyone.”<\/p>"
+            "text_content": "<p><strong>It begins with Cherie, our CEO and co-founder. She has a period and 5 daughters. You could say, she gets period care.\u2028\u2028<\/strong><\/p><p>“It all started with a phone call I had with my aunt in Venezuela, where pads and tampons hadn’t been available in stores for years. I immediately thought of my daughters and what I would do in the same situation. Our dependence on disposables kept me up at night.<\/p><p><em><strong>Why have we been using the same single-use disposable products for the past 100 years? <\/strong><\/em><\/p><p>I also learned that lack of access to period products extended beyond just Venezuela—over 62% of the world lives in period poverty, which makes girls miss school and women miss out on economic progress every day. So why is the default option something that most people can’t access or afford?<\/p><p>There had to be a better way.<\/p><p>Three months later, I started sourcing long-lasting reusable products for hundreds of friends. But when I went to source menstrual cups and period underwear, I couldn’t find products that met my expectations. So I started custom designing products I actually wanted to use myself and could share with friends.<\/p><p>In February of 2018, we launched Saalt with the vision of making life-changing  period and body care products accessible to everyone.”<\/p>"
           }
         },
         "c49968e4-892d-4808-9620-b0b2b980d291": {
@@ -395,7 +396,7 @@
             "use_max_icon_group_width": false,
             "icon_group_max_width": "600px",
             "desktop_icons_display": "row",
-            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_horizontal_alignment": "flex-start",
             "desktop_icon_group_vertical_alignment": "center",
             "desktop_icon_grid_columns": 2,
             "desktop_icon_group_gap": "3.5rem",
