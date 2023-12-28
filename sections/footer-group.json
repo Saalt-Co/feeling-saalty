@@ -92,9 +92,6 @@
         "52db0905-c8f6-43a5-9fa0-f8d4688dbb34",
         "d45b85e4-9b80-4201-a374-3617aea76e29"
       ],
-      "custom_css": [
-        "a{color: var(--palette-color-0);}"
-      ],
       "settings": {
         "theme_color_background": "theme-color-bg-2",
         "theme_color_text": "theme-color-text-0",
@@ -107,9 +104,9 @@
         "enable_language_selector": false,
         "payment_enable": true,
         "show_policy": true,
-        "margin_top": 40,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
