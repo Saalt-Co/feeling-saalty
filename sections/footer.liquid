@@ -11,13 +11,17 @@
 {%- liquid
   if section.settings.theme_color_text != 'theme_default'
     assign color_class = section.settings.theme_color_text | slice: -1, 1
-    assign border_var = '--palette-color-' | append: color_class
+    assign text_palette_color = '--palette-color-' | append: color_class
   endif
 -%}
 
 {%- style -%}
   .footer {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
+  }
+
+  .footer a, .footer a:hover {
+    color: rgb(var({{ text_palette_color }}));
   }
 
   .section-{{ section.id }}-padding {
@@ -31,14 +35,14 @@
 
   {% if section.settings.theme_color_text != 'theme_default' %}
   #section-{{ section.id }} .field::after {
-    box-shadow: 0 0 0 var(--inputs-border-width) rgba(var({{ border_var }}), var(--inputs-border-opacity));
+    box-shadow: 0 0 0 var(--inputs-border-width) rgba(var({{ text_palette_color }}), var(--inputs-border-opacity));
   }
   #section-{{ section.id }} .field:hover.field:after {
     box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width))
-    rgba(var({{ border_var }}), var(--inputs-border-opacity));
+    rgba(var({{ text_palette_color }}), var(--inputs-border-opacity));
   }
   #section-{{ section.id }} .field__input:focus-visible, #section-{{ section.id }} .field__input:focus {
-    box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var({{ border_var }}));
+    box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var({{ text_palette_color }}));
   }
   {% endif %}
 
@@ -116,7 +120,7 @@
                     </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                      <ul class="footer-block__details-content list-unstyled">
+                      <ul class="footer-block__details-content list-unstyled{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}">
                         {%- for link in block.settings.menu.links -%}
                           <li>
                             <a
@@ -369,7 +373,10 @@
         {%- if section.settings.payment_enable -%}
           <div class="footer__payment">
             <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
-            <ul class="list list-payment" role="list">
+            <ul
+              class="list list-payment{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}"
+              role="list"
+            >
               {%- for type in shop.enabled_payment_types -%}
                 <li class="list-payment__item">
                   {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
@@ -387,7 +394,7 @@
         </small>
         <small class="copyright__content">{{ powered_by_link }}</small>
         {%- if section.settings.show_policy -%}
-          <ul class="policies list-unstyled">
+          <ul class="policies list-unstyled{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}">
             {%- for policy in shop.policies -%}
               {%- if policy != blank -%}
                 <li>
