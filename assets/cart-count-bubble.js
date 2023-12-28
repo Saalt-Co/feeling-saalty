@@ -15,12 +15,8 @@ class CartCountBubble extends HTMLElement {
   updateBubble() {
     waitForElementToExist('.cart-count-bubble').then((element) => {
       const classVals = this.getBubbleClasses();
-      if (!element.classList.contains('bg') && classVals.bg !== '') {
-        element.classList.add(classVals.bg);
-      }
-      if (!element.classList.contains('text') && classVals.text !== '') {
-        element.classList.add(classVals.text);
-      }
+      element.style.background = `rgb(var(--palette-color-${classVals['bg-color']}))`;
+      element.querySelector('.cart-count-number').style.color = `rgb(var(--palette-color-${classVals['text-color']}))`;
     });
   }
 }
