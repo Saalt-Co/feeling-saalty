@@ -337,16 +337,23 @@
         {%- liquid
           if section.settings.theme_color_background != 'theme_default'
             assign bg_color_num = section.settings.theme_color_background | slice: -1, 1
+          elsif section.settings.theme_color_background == 'theme_default'
+            assign bg_color_num = 0
           endif
           if section.settings.theme_color_text != 'theme_default'
             assign text_color_num = section.settings.theme_color_text | slice: -1, 1
+          elsif section.settings.theme_color_text == 'theme_default'
+            assign text_color_num = 1
           endif
           assign bg_color_class = 'theme-color-bg-' | append: text_color_num
           assign text_color_class = 'theme-color-text-' | append: bg_color_num
         -%}
         <script type="application/json" id="CartCountBubbleClasses">
           {%- capture bubbleClassesJsonVals -%}
-          {"bg": {% if bg_color_class != 'theme-color-bg-' %}"{{ bg_color_class }}"{% else %}""{% endif %}, "text": {% if text_color_class != 'theme-color-text-' %}"{{ text_color_class }}"{% else %}""{% endif %}}
+          {
+            "bg-color": "{{ bg_color_class | slice: -1, 1 }}",
+            "text-color": "{{ text_color_class | slice: -1, 1 }}"
+          }
           {%- endcapture -%}
           {{- bubbleClassesJsonVals -}}
         </script>
