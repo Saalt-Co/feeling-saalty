@@ -10,7 +10,7 @@
   {% render "product-features", product: product, section: section, block: block %}
 {% endcomment %}
 {% style %}
-  #MainProduct-{{ section.id }} .icons-wrapper {
+  .product__info-wrapper .icons-wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -18,7 +18,7 @@
     gap: 1.5rem;
     padding-left: 0;
   }
-  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper {
+  .product__info-wrapper .icons-wrapper .icon-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26,47 +26,47 @@
     width: 100%;
     flex: 1 1 0;
   }
-  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+  .product__info-wrapper .icons-wrapper .icon-wrapper .icon-svg-wrapper {
     display: flex;
     width: 100%;
     max-width: {{ block.settings.mobile_icon_max_width }};
   }
-  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-text {
+  .product__info-wrapper .icons-wrapper .icon-wrapper .icon-text {
     text-align: left;
     line-height: 1.25;
   }
-  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
+  .product__info-wrapper .icons-wrapper .icon-wrapper .icon-svg-wrapper svg {
     width: 100%;
     height: auto;
   }
-  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg *[fill]:not([fill="none"]) {
+  .product__info-wrapper .icons-wrapper .icon-wrapper .icon-svg-wrapper svg *[fill]:not([fill="none"]) {
     fill: rgba(var(--color-icons), var(--color-icons-opacity));
   }
-  #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper svg *[stroke]:not([stroke="none"]) {
+  .product__info-wrapper .icons-wrapper .icon-wrapper .icon-svg-wrapper svg *[stroke]:not([stroke="none"]) {
     stroke: rgba(var(--color-icons), var(--color-icons-opacity));
   }
   @media screen and (min-width: 750px) {
-    #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper {
+    .product__info-wrapper .icons-wrapper .icon-wrapper {
       width: 100%;
     }
-    #MainProduct-{{ section.id }} .icons-wrapper .icon-wrapper .icon-svg-wrapper {
+    .product__info-wrapper .icons-wrapper .icon-wrapper .icon-svg-wrapper {
       max-width: {{ block.settings.desktop_icon_width }};
     }
-    #MainProduct-{{ section.id }} .icons-wrapper.horizontal {
+    .product__info-wrapper .icons-wrapper.horizontal {
       flex-direction: row;
       justify-content: space-between;
     }
-    #MainProduct-{{ section.id }} .icons-wrapper.horizontal .icon-wrapper .icon-svg-wrapper {
+    .product__info-wrapper .icons-wrapper.horizontal .icon-wrapper .icon-svg-wrapper {
       max-width: {{ block.settings.desktop_icon_max_width }};
       min-height: {{ block.settings.desktop_icon_height }};
       max-height: {{ block.settings.desktop_icon_height }};
     }
-    #MainProduct-{{ section.id }} .icons-wrapper.horizontal .icon-wrapper {
+    .product__info-wrapper .icons-wrapper.horizontal .icon-wrapper {
       flex-direction: column;
       gap: unset;
       width: auto;
     }
-    #MainProduct-{{ section.id }} .icons-wrapper.horizontal .icon-wrapper, #MainProduct-{{ section.id }} .icons-wrapper.horizontal .icon-wrapper .icon-text {
+    .product__info-wrapper .icons-wrapper.horizontal .icon-wrapper, .product__info-wrapper .icons-wrapper.horizontal .icon-wrapper .icon-text {
       text-align: {{ block.settings.desktop_text_alignment }};
     }
   }
