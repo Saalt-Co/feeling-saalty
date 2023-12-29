@@ -209,9 +209,9 @@
     {%- liquid
       if section.settings.menu != blank
         if section.settings.menu_type_desktop == 'dropdown'
-          render 'header-dropdown-menu'
+          render 'header-dropdown-menu', section: section
         elsif section.settings.menu_type_desktop != 'drawer'
-          render 'header-mega-menu'
+          render 'header-mega-menu', section: section
         endif
       endif
     %}
@@ -517,6 +517,72 @@
   </script>
 {%- endif -%}
 
+{%- if section.settings.use_hover -%}
+  {%- style -%}
+  @media screen and (min-width: 750px) {
+    header.header {
+      padding-bottom: 0;
+    }
+    .header__menu-item  {
+      padding: 1.2rem 1.2rem calc(1.2rem + {{ section.settings.padding_bottom }}px) 1.2rem;
+    }
+    .header__menu-item a.header__menu-item  {
+      padding: 0;
+    }
+    .header__menu-item.link:hover {
+      text-decoration: none;
+      border-bottom: none;
+    }
+    .header__menu-item:hover a.header__menu-item > span {
+      text-decoration: underline;
+      text-underline-offset: 0.3rem;
+    }
+    summary .icon-caret {
+      top: calc(50% - 0.2rem - {{ section.settings.padding_bottom | divided_by: 2}}px);
+    }
+  }
+  @media screen and (min-width: 990px) {
+    header.header {
+      padding-bottom: 0;
+    }
+  }
+  {%- endstyle -%}
+  <script>
+    let items = document.querySelector(".header__inline-menu").querySelectorAll("details");
+    let dropdownItems = document.querySelector(".header__submenu");
+    items.forEach(item => {
+      item.addEventListener("mouseenter", () => {
+        item.setAttribute("open", true);
+        let ulElement = item.querySelector("ul");
+        if (ulElement !== null) {
+          ulElement.addEventListener("mouseleave", () => {
+            item.removeAttribute("open");
+          });
+        }
+      });
+      item.addEventListener("focus", () => {
+        item.setAttribute("open", true);
+      });
+      item.addEventListener("blur", () => {
+        item.removeAttribute("open");
+      });
+      item.addEventListener("mouseenter", () => {
+          item.setAttribute("open", "");
+        });
+        item.addEventListener("mouseleave", () => {
+          item.removeAttribute("open");
+        });
+    });
+    if (dropdownItems !== null) {
+      dropdownItems.addEventListener("mouseleave", () => {
+        items.forEach(item => {
+          item.removeAttribute("open");
+        });
+      });
+    }
+  </script>
+{%- endif -%}
+
 {% schema %}
 {
   "name": "t:sections.header.name",
@@ -574,6 +640,13 @@
       "default": "dropdown",
       "label": "t:sections.header.settings.menu_type_desktop.label",
       "info": "t:sections.header.settings.menu_type_desktop.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_hover",
+      "label": "User hover effect",
+      "info": "Opens dropdown and mega menu submenus on hover rather than click. NOTE: You have to either leave this page and come page or save this change in order to see it take effect!",
+      "default": true
     },
     {
       "type": "select",
