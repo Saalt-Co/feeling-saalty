@@ -173,10 +173,13 @@ class FacetFiltersForm extends HTMLElement {
   }
 
   onSubmitForm(searchParams, event) {
+    let splitParams = null;
     if (window.WindowDisplay && window.WindowDisplay.clicked && window.location.href.indexOf('filter') > -1) {
-      const splitParams = window.history.state.searchParams
-        ? window.history.state.searchParams.split('&')
-        : searchParams.split('&');
+      if (window.history.state !== null && window.history.state.searchParams) {
+        splitParams = window.history.state.searchParams.split('&');
+      } else {
+        splitParams = searchParams.split('&');
+      }
       let baseFilters = splitParams.filter(
         (filter) => filter.indexOf('filter.v.price') > -1 || filter.indexOf('sort_by') > -1
       );

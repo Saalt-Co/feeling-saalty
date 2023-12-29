@@ -16,8 +16,8 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/SW-TH-QB-Meuller-7092-Web.jpg",
-            "title": "<p>Light Absorbency<\/p>",
-            "copy": "<p>Holds as much as 1 liner or 1&nbsp-&nbsp2 light tampons. <\/p><p>Best for sweat and discharge, light flow days and spotting, a worry-free backup to a cup, disc or tampon, or as a pantyliner replacement.<\/p>",
+            "title": "<p><strong>Light Absorbency<\/strong><\/p>",
+            "copy": "<p>Holds as much as 1 liner or 1 - 2 light tampons. <\/p><p>Best for sweat and discharge, light flow days and spotting, a worry-free backup to a cup, disc or tampon, or as a pantyliner replacement.<\/p>",
             "link_type": "filter",
             "link_url": "",
             "filter_name": "Absorbency",
@@ -29,7 +29,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/SW-SM-HW-MS-Ampersand-278.jpg",
-            "title": "<p>Regular Absorbency<\/p>",
+            "title": "<p><strong>Regular Absorbency<\/strong><\/p>",
             "copy": "<p>Holds as much as 2 pads or 2 - 3 tampons. <\/p><p>Best for sweat and discharge, regular period flow, light bladder leaks, or as a worry-free backup to a cup, disc or tampon.<\/p>",
             "link_type": "filter",
             "link_url": "",
@@ -42,7 +42,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/Saalt-Window-Display-Shop-Heavy_03.jpg",
-            "title": "<p>Heavy Absorbency<\/p>",
+            "title": "<p><strong>Heavy Absorbency<\/strong><\/p>",
             "copy": "<p>Holds as much as 3 pads or 3 - 4 tampons. <\/p><p>Best for heavy flow days and overnight, postpartum wear, and bladder leaks.<\/p>",
             "link_type": "filter",
             "link_url": "",
@@ -55,7 +55,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/Saalt-Window-Display-Shop-Super_02.jpg",
-            "title": "<p>Super Absorbency<\/p>",
+            "title": "<p><strong>Super Absorbency<\/strong><\/p>",
             "copy": "<p>Holds as much as 6+ pads or 8+ tampons. <\/p><p>Best for your heaviest flow days and overnight, postpartum wear, and bladder leaks.<\/p>",
             "link_type": "filter",
             "link_url": "",
