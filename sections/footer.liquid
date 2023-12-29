@@ -11,13 +11,17 @@
 {%- liquid
   if section.settings.theme_color_text != 'theme_default'
     assign color_class = section.settings.theme_color_text | slice: -1, 1
-    assign border_var = '--palette-color-' | append: color_class
+    assign text_palette_color = '--palette-color-' | append: color_class
   endif
 -%}
 
 {%- style -%}
   .footer {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
+  }
+
+  .footer a, .footer a:hover {
+    color: rgb(var({{ text_palette_color }}));
   }
 
   .section-{{ section.id }}-padding {
@@ -29,27 +33,69 @@
     background-color: rgba(var(--color-site-background), {{ section.settings.input_opacity }}%);
   }
 
+  #section-{{ section.id }} .footer__blocks-wrapper {
+    column-gap: {{ section.settings.mobile_h_gap }}rem;
+    row-gap: {{ section.settings.mobile_v_gap }}rem;
+  }
+
+  {% if section.settings.footer_display == "flex" %}
+  #section-{{ section.id }} .footer__content-top.page-width {
+    max-width: 1400px;
+  }
+  {% endif %}
+
+  #section-{{ section.id }} .footer__blocks-wrapper.flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   {% if section.settings.theme_color_text != 'theme_default' %}
   #section-{{ section.id }} .field::after {
-    box-shadow: 0 0 0 var(--inputs-border-width) rgba(var({{ border_var }}), var(--inputs-border-opacity));
+    box-shadow: 0 0 0 var(--inputs-border-width) rgba(var({{ text_palette_color }}), var(--inputs-border-opacity));
   }
   #section-{{ section.id }} .field:hover.field:after {
     box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width))
-    rgba(var({{ border_var }}), var(--inputs-border-opacity));
+    rgba(var({{ text_palette_color }}), var(--inputs-border-opacity));
   }
   #section-{{ section.id }} .field__input:focus-visible, #section-{{ section.id }} .field__input:focus {
-    box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var({{ border_var }}));
+    box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var({{ text_palette_color }}));
   }
   {% endif %}
+
+  #section-{{ section.id }} .footer__blocks-wrapper.flex .footer-block {
+    flex: 1 1 0;
+    min-width: 100%;
+  }
+
+  @media screen and (min-width: 680px) {
+    #section-{{ section.id }} .footer__blocks-wrapper.flex .footer-block {
+      min-width: calc(100% / {{ section.blocks.size | minus: 1 }});
+    }
+  }
 
   @media screen and (min-width: 750px) {
     .footer {
       margin-top: {{ section.settings.margin_top }}px;
     }
 
+    #section-{{ section.id }} .footer__blocks-wrapper {
+      column-gap: {{ section.settings.desktop_h_gap }}rem;
+      row-gap: {{ section.settings.desktop_v_gap }}rem;
+    }
+
+    #section-{{ section.id }} .footer__blocks-wrapper.flex .footer-block {
+      min-width: calc(100% / {{ section.blocks.size }});
+    }
+
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    #section-{{ section.id }} .footer__blocks-wrapper.flex .footer-block {
+      min-width: calc(100% / {{ section.blocks.size | plus: 1 }});
     }
   }
 {%- endstyle -%}
@@ -90,14 +136,14 @@
             endif
           -%}
           <div
-            class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="footer__blocks-wrapper{% if section.settings.footer_display == "flex" %} flex{% else %} grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
             {% endif %}
           >
             {%- for block in section.blocks -%}
               <div
-                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="footer-block{% if section.settings.footer_display == "grid" %} grid__item{% endif %}{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -116,7 +162,7 @@
                     </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                      <ul class="footer-block__details-content list-unstyled">
+                      <ul class="footer-block__details-content list-unstyled{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}">
                         {%- for link in block.settings.menu.links -%}
                           <li>
                             <a
@@ -369,7 +415,10 @@
         {%- if section.settings.payment_enable -%}
           <div class="footer__payment">
             <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
-            <ul class="list list-payment" role="list">
+            <ul
+              class="list list-payment{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}"
+              role="list"
+            >
               {%- for type in shop.enabled_payment_types -%}
                 <li class="list-payment__item">
                   {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
@@ -387,7 +436,7 @@
         </small>
         <small class="copyright__content">{{ powered_by_link }}</small>
         {%- if section.settings.show_policy -%}
-          <ul class="policies list-unstyled">
+          <ul class="policies list-unstyled{% if section.settings.theme_color_text != 'theme_default' %} {{ section.settings.theme_color_text }}{% endif %}">
             {%- for policy in shop.policies -%}
               {%- if policy != blank -%}
                 <li>
@@ -516,6 +565,71 @@
     }
   ],
   "settings": [
+    {
+      "type": "select",
+      "id": "footer_display",
+      "label": "Footer Display",
+      "info": "Sets the display of the footer elements on mobile AND desktop",
+      "options": [
+        {
+          "value": "flex",
+          "label": "Wrapping row"
+        },
+        {
+          "value": "grid",
+          "label": "Grid"
+        }
+      ],
+      "default": "flex"
+    },
+    {
+      "type": "header",
+      "content": "Mobile Display"
+    },
+    {
+      "type": "range",
+      "id": "mobile_h_gap",
+      "label": "Mobile horizontal spacing",
+      "info": "The amount of horizontal space between footer elements on mobile (in rem units).",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "mobile_v_gap",
+      "label": "Mobile vertical spacing",
+      "info": "The amount of vertical space between footer elements on mobile (in rem units).",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Desktop Display"
+    },
+    {
+      "type": "range",
+      "id": "desktop_h_gap",
+      "label": "Desktop horizontal spacing",
+      "info": "The amount of horizontal space between footer elements on desktop (in rem units).",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "desktop_v_gap",
+      "label": "Desktop vertical spacing",
+      "info": "The amount of vertical space between footer elements on desktop (in rem units).",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "default": 1
+    },
     {
       "type": "select",
       "id": "theme_color_background",
