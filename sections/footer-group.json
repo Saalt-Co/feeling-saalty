@@ -32,7 +32,7 @@
       "settings": {
         "theme_color_background": "theme-color-bg-6",
         "theme_color_text": "theme_default",
-        "input_opacity": 25,
+        "input_opacity": 100,
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
