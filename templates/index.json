@@ -219,6 +219,7 @@
       "block_order": [
         "template--18370419818769__c70ba2b2-6085-4467-9f62-431ca94c36bc-custom_liquid_code-1"
       ],
+      "disabled": true,
       "settings": {
         "section_id": ""
       }
@@ -308,7 +309,6 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Tampon-Tax-Back-Initiative-Highlight-Saalt-mobile_02_c1e2d291-d78e-4ddd-8e42-12aa0f31650f.jpg",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
@@ -641,7 +641,6 @@
         "column3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/peyttonb_f39431a6-a7b4-4f34-83ad-9a4d93aca31c.png",
             "title": "Peytton",
             "rating": 5,
             "text": "<p><strong>The Saalt Period Cup has saved me so much money<\/strong> because I'm not buying tampons every single month. I was so worried when I switched to a period cup that I would be uncomfortable. This is flexible, it molds to your body, it's soft, and when you insert it <strong>you can't even feel it.<\/strong><\/p>",
@@ -652,7 +651,6 @@
         "column1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/kelsvaughne_951967c6-a8a7-4723-a8f0-cf079464da32.png",
             "title": "Kels",
             "rating": 5,
             "text": "<p><strong>The Saalt Cup is my new bestie!<\/strong> Well technically not new, we've been best friends for about 5 years. <strong>Imagine how much money I've saved not buying tampons!<\/strong><\/p>",
@@ -663,7 +661,6 @@
         "column2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/euna.ugc_f0c30cb6-a746-4044-9270-f6b069df2ec2.png",
             "title": "Euna",
             "rating": 5,
             "text": "<p>I wanted to avoid panty lines and the bulk of pads while still wearing leggings at the gym. My solution was Saalt's seamless underwear. I was skeptical at first, but honestly they're <strong>very thin and comfortable making it the perfect thing to wear under leggings.<\/strong><\/p>",
@@ -674,7 +671,6 @@
         "b928608f-5149-4293-bab7-c644352b3dd1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Dava.jpg",
             "title": "Dava",
             "rating": 5,
             "text": "<p><strong>Truly the best invention ever!! <\/strong>There is a learning curve to it of course…but I promise this will change your life for the better!! Once you get it down you will love it!<\/p>",
