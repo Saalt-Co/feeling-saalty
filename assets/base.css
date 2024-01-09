@@ -4241,3 +4241,6 @@ p a {
 .header__active-menu-item {
 	font-weight: bold;
 }
+.main-page-title {
+    display: none !important;
+}
