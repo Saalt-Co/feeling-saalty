@@ -358,8 +358,8 @@
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme-color-text-3-hover"
+            "theme_color_section_button_background_hover": "theme-color-bg-3-hover",
+            "theme_color_text_section_button_text_hover": "theme_default"
           }
         }
       },
