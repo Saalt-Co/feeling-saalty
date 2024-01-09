@@ -455,14 +455,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "\"Saalt period panties are like the Lamborghini of period underwear.\""
-          }
-        },
-        "template--18370419818769__b3c19a52-1b41-4cc4-9b69-c12a7b1f1126-section_content-1": {
-          "type": "section_content",
-          "disabled": true,
-          "settings": {
-            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
+            "title": "\"Saalt period panties are like the Lamborghini of period underwear.\"<br> <br>\n\n— Katie Couric Media"
           }
         },
         "4cb07004-351f-4f54-863c-d93e12bf2dbc": {
@@ -543,7 +536,6 @@
       },
       "block_order": [
         "template--18370419818769__b3c19a52-1b41-4cc4-9b69-c12a7b1f1126-section_title-1",
-        "template--18370419818769__b3c19a52-1b41-4cc4-9b69-c12a7b1f1126-section_content-1",
         "4cb07004-351f-4f54-863c-d93e12bf2dbc",
         "86d0d579-e7b3-44de-9bad-f2b5980a11ec",
         "8862537b-68a9-4d55-85df-5ad39b13bc55",
