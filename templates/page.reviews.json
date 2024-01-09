@@ -8,6 +8,27 @@
         "padding_bottom": 28
       }
     },
+    "2d1057ab-9584-4bab-afaf-fbc000773b54": {
+      "type": "saalt-unstyled-liquid-section",
+      "blocks": {
+        "template--21809886822673__2d1057ab-9584-4bab-afaf-fbc000773b54-custom_liquid_code-1": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<div class=\"youtube-video-row\">\n\n  <iframe width=\"240\" height=\"135\" src=\"https:\/\/youtu.be\/9PyNZJhpovk?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"240\" height=\"135\" src=\"https:\/\/youtu.be\/9PyNZJhpovk?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"240\" height=\"135\" src=\"https:\/\/youtu.be\/FI3iWzE6yzE?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"240\" height=\"135\" src=\"https:\/\/youtu.be\/ZGstO5SG9jc?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21809886822673__2d1057ab-9584-4bab-afaf-fbc000773b54-custom_liquid_code-1"
+      ],
+      "custom_css": [
+        ".youtube-video-row {display: flex; justify-content: space-between; margin-bottom: 20px;}",
+        ".youtube-video {flex: 0 0 23%; \/* Adjust the width of each video *\/}"
+      ],
+      "settings": {
+        "section_id": ""
+      }
+    },
     "d0c981d6-3ea2-41c6-98fc-58332fe4eb04": {
       "type": "saalt-unstyled-liquid-section",
       "blocks": {
@@ -24,10 +45,60 @@
       "settings": {
         "section_id": ""
       }
+    },
+    "9c205f56-176f-43fe-bb5b-b194bccd6e80": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "template--21809886822673__9c205f56-176f-43fe-bb5b-b194bccd6e80-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "We Don't Hush Period Talk."
+          }
+        },
+        "template--21809886822673__9c205f56-176f-43fe-bb5b-b194bccd6e80-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Even in a library.<\/p><p>Since periods perpetuate the human race, we think they deserve some kudos, not censorship. Help us break period stigmas by simply talking about periods @saaltco or leave a review to help encourage others to try a more sustainable period. Thanks for helping us <a href=\"https:\/\/www.instagram.com\/explore\/tags\/passthesaalt\/\" title=\"https:\/\/www.instagram.com\/explore\/tags\/passthesaalt\/\">#passthesaalt<\/a>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21809886822673__9c205f56-176f-43fe-bb5b-b194bccd6e80-section_title-1",
+        "template--21809886822673__9c205f56-176f-43fe-bb5b-b194bccd6e80-section_content-1"
+      ],
+      "custom_css": [
+        ".section-title {margin-right: 650px;}",
+        ".section-content {margin-right: 650px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/we_don_t_hush_period_talk_mobile_1-9-24.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/we_don_t_hush_period_talk_cropped_1-9-24.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "center",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "450px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
-    "d0c981d6-3ea2-41c6-98fc-58332fe4eb04"
+    "2d1057ab-9584-4bab-afaf-fbc000773b54",
+    "d0c981d6-3ea2-41c6-98fc-58332fe4eb04",
+    "9c205f56-176f-43fe-bb5b-b194bccd6e80"
   ]
 }
