@@ -2,13 +2,32 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "d0c981d6-3ea2-41c6-98fc-58332fe4eb04": {
+      "type": "saalt-unstyled-liquid-section",
+      "blocks": {
+        "template--21809886822673__d0c981d6-3ea2-41c6-98fc-58332fe4eb04-custom_liquid_code-1": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<script type=\"text\/javascript\"> (function e(){var e=document.createElement(\"script\");e.type=\"text\/javascript\",e.async=!0, e.src=\"\/\/staticw2.yotpo.com\/2BPjkSRu2swwJBLujLtxxrBFxxqEta1k91QDxm4V\/widget.js\";var t=document.getElementsByTagName(\"script\")[0]; t.parentNode.insertBefore(e,t)})(); <\/script>\n<div id='yotpo-testimonials-custom-tab'><\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21809886822673__d0c981d6-3ea2-41c6-98fc-58332fe4eb04-custom_liquid_code-1"
+      ],
+      "settings": {
+        "section_id": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "d0c981d6-3ea2-41c6-98fc-58332fe4eb04"
   ]
 }
