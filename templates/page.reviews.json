@@ -8,13 +8,37 @@
         "padding_bottom": 28
       }
     },
+    "ab6863f8-ec26-45cb-b3a5-6b78141dcfab": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21809886822673__ab6863f8-ec26-45cb-b3a5-6b78141dcfab-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Video Reviews",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--21809886822673__ab6863f8-ec26-45cb-b3a5-6b78141dcfab-heading-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "2d1057ab-9584-4bab-afaf-fbc000773b54": {
       "type": "saalt-unstyled-liquid-section",
       "blocks": {
         "template--21809886822673__2d1057ab-9584-4bab-afaf-fbc000773b54-custom_liquid_code-1": {
           "type": "custom_liquid_code",
           "settings": {
-            "liquid_code": "<div class=\"youtube-video-row\">\n\n  <iframe width=\"240\" height=\"135\" src=\"https:\/\/www.youtube.com\/embed\/8KvAPFE5TM4?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"240\" height=\"135\" src=\"https:\/\/www.youtube.com\/embed\/9PyNZJhpovk?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"240\" height=\"135\" src=\"https:\/\/www.youtube.com\/embed\/FI3iWzE6yzE?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"240\" height=\"135\" src=\"https:\/\/www.youtube.com\/embed\/ZGstO5SG9jc?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n<\/div>"
+            "liquid_code": "<div class=\"youtube-video-row\">\n\n  <iframe width=\"351\" height=\"198\" src=\"https:\/\/www.youtube.com\/embed\/8KvAPFE5TM4?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"351\" height=\"198\" src=\"https:\/\/www.youtube.com\/embed\/9PyNZJhpovk?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"351\" height=\"198\" src=\"https:\/\/www.youtube.com\/embed\/FI3iWzE6yzE?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"351\" height=\"198\" src=\"https:\/\/www.youtube.com\/embed\/ZGstO5SG9jc?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n<\/div>"
           }
         }
       },
@@ -22,7 +46,7 @@
         "template--21809886822673__2d1057ab-9584-4bab-afaf-fbc000773b54-custom_liquid_code-1"
       ],
       "custom_css": [
-        ".youtube-video-row {display: flex; justify-content: space-between; margin-bottom: 20px;}",
+        ".youtube-video-row {display: flex; justify-content: space-evenly; margin-bottom: 20px;}",
         ".youtube-video {flex: 0 0 23%; \/* Adjust the width of each video *\/}"
       ],
       "settings": {
@@ -97,6 +121,7 @@
   },
   "order": [
     "main",
+    "ab6863f8-ec26-45cb-b3a5-6b78141dcfab",
     "2d1057ab-9584-4bab-afaf-fbc000773b54",
     "d0c981d6-3ea2-41c6-98fc-58332fe4eb04",
     "9c205f56-176f-43fe-bb5b-b194bccd6e80"
