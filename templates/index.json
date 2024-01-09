@@ -455,14 +455,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "\"Saalt period panties are like the Lamborghini of period underwear.\""
-          }
-        },
-        "template--18370419818769__b3c19a52-1b41-4cc4-9b69-c12a7b1f1126-section_content-1": {
-          "type": "section_content",
-          "disabled": true,
-          "settings": {
-            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
+            "title": "\"Saalt period panties are like the Lamborghini of period underwear.\"<br> <br>\n\n— Katie Couric Media"
           }
         },
         "4cb07004-351f-4f54-863c-d93e12bf2dbc": {
@@ -543,7 +536,6 @@
       },
       "block_order": [
         "template--18370419818769__b3c19a52-1b41-4cc4-9b69-c12a7b1f1126-section_title-1",
-        "template--18370419818769__b3c19a52-1b41-4cc4-9b69-c12a7b1f1126-section_content-1",
         "4cb07004-351f-4f54-863c-d93e12bf2dbc",
         "86d0d579-e7b3-44de-9bad-f2b5980a11ec",
         "8862537b-68a9-4d55-85df-5ad39b13bc55",
@@ -641,7 +633,7 @@
         "column3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/peyttonb_f39431a6-a7b4-4f34-83ad-9a4d93aca31c.png",
+            "image": "shopify:\/\/shop_images\/peyttonb_square_1-8-24.png",
             "title": "Peytton",
             "rating": 5,
             "text": "<p><strong>The Saalt Period Cup has saved me so much money<\/strong> because I'm not buying tampons every single month. I was so worried when I switched to a period cup that I would be uncomfortable. This is flexible, it molds to your body, it's soft, and when you insert it <strong>you can't even feel it.<\/strong><\/p>",
@@ -652,7 +644,7 @@
         "column1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/kelsvaughne_951967c6-a8a7-4723-a8f0-cf079464da32.png",
+            "image": "shopify:\/\/shop_images\/kelsvaughne_square_1-8-24.png",
             "title": "Kels",
             "rating": 5,
             "text": "<p><strong>The Saalt Cup is my new bestie!<\/strong> Well technically not new, we've been best friends for about 5 years. <strong>Imagine how much money I've saved not buying tampons!<\/strong><\/p>",
@@ -663,7 +655,7 @@
         "column2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/euna.ugc_f0c30cb6-a746-4044-9270-f6b069df2ec2.png",
+            "image": "shopify:\/\/shop_images\/euna.ugc_square_1-8-24.png",
             "title": "Euna",
             "rating": 5,
             "text": "<p>I wanted to avoid panty lines and the bulk of pads while still wearing leggings at the gym. My solution was Saalt's seamless underwear. I was skeptical at first, but honestly they're <strong>very thin and comfortable making it the perfect thing to wear under leggings.<\/strong><\/p>",
@@ -674,7 +666,7 @@
         "b928608f-5149-4293-bab7-c644352b3dd1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Dava.jpg",
+            "image": "shopify:\/\/shop_images\/Dava_square_1-8-24.jpg",
             "title": "Dava",
             "rating": 5,
             "text": "<p><strong>Truly the best invention ever!! <\/strong>There is a learning curve to it of course…but I promise this will change your life for the better!! Once you get it down you will love it!<\/p>",
