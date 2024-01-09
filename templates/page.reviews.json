@@ -14,7 +14,7 @@
         "template--21809886822673__2d1057ab-9584-4bab-afaf-fbc000773b54-custom_liquid_code-1": {
           "type": "custom_liquid_code",
           "settings": {
-            "liquid_code": "<div class=\"youtube-video-row\">\n\n  <iframe width=\"240\" height=\"135\" src=\"https:\/\/youtu.be\/9PyNZJhpovk?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"240\" height=\"135\" src=\"https:\/\/youtu.be\/9PyNZJhpovk?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"240\" height=\"135\" src=\"https:\/\/youtu.be\/FI3iWzE6yzE?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"240\" height=\"135\" src=\"https:\/\/youtu.be\/ZGstO5SG9jc?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n<\/div>"
+            "liquid_code": "<div class=\"youtube-video-row\">\n\n  <iframe width=\"240\" height=\"135\" src=\"https:\/\/www.youtube.com\/embed\/8KvAPFE5TM4?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"240\" height=\"135\" src=\"https:\/\/www.youtube.com\/embed\/9PyNZJhpovk?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"240\" height=\"135\" src=\"https:\/\/www.youtube.com\/embed\/FI3iWzE6yzE?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"240\" height=\"135\" src=\"https:\/\/www.youtube.com\/embed\/ZGstO5SG9jc?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n<\/div>"
           }
         }
       },
