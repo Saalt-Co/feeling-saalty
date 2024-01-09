@@ -8,49 +8,74 @@
         "padding_bottom": 28
       }
     },
-    "ab6863f8-ec26-45cb-b3a5-6b78141dcfab": {
+    "68fdeb68-033d-4796-94cb-415c6dd4d17b": {
       "type": "rich-text",
       "blocks": {
-        "template--21809886822673__ab6863f8-ec26-45cb-b3a5-6b78141dcfab-heading-1": {
+        "template--21809886822673__68fdeb68-033d-4796-94cb-415c6dd4d17b-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Video Reviews",
+            "heading": "Peer-iod Reviews",
             "heading_size": "h1"
           }
         }
       },
       "block_order": [
-        "template--21809886822673__ab6863f8-ec26-45cb-b3a5-6b78141dcfab-heading-1"
+        "template--21809886822673__68fdeb68-033d-4796-94cb-415c6dd4d17b-heading-1"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "theme_color_background": "theme_default",
+        "theme_color_background": "theme-color-bg-7",
         "theme_color_text": "theme_default",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
       }
     },
-    "2d1057ab-9584-4bab-afaf-fbc000773b54": {
-      "type": "saalt-unstyled-liquid-section",
+    "3f1ff06f-ee0a-4ec2-a287-39f0c504445a": {
+      "type": "saalt-media-with-text",
       "blocks": {
-        "template--21809886822673__2d1057ab-9584-4bab-afaf-fbc000773b54-custom_liquid_code-1": {
+        "template--21809886822673__3f1ff06f-ee0a-4ec2-a287-39f0c504445a-section_title-1": {
+          "type": "section_title",
+          "disabled": true,
+          "settings": {
+            "heading_tag": "1",
+            "title": "Video Reviews"
+          }
+        },
+        "0d942bd7-d3c8-40e7-90a7-7ce336429f64": {
           "type": "custom_liquid_code",
           "settings": {
-            "liquid_code": "<div class=\"youtube-video-row\">\n\n  <iframe width=\"351\" height=\"198\" src=\"https:\/\/www.youtube.com\/embed\/8KvAPFE5TM4?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"351\" height=\"198\" src=\"https:\/\/www.youtube.com\/embed\/9PyNZJhpovk?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"351\" height=\"198\" src=\"https:\/\/www.youtube.com\/embed\/FI3iWzE6yzE?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <iframe width=\"351\" height=\"198\" src=\"https:\/\/www.youtube.com\/embed\/ZGstO5SG9jc?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n<\/div>"
+            "liquid_code": "<div class=\"youtube-video-row\"style=\"display: flex; overflow-x: auto;\">\n\n  <iframe width=\"351\" height=\"198\" src=\"https:\/\/www.youtube.com\/embed\/8KvAPFE5TM4?rel=0\" frameborder=\"0\" allowfullscreen style=\"margin-right: 10px;\"><\/iframe>\n  <iframe width=\"351\" height=\"198\" src=\"https:\/\/www.youtube.com\/embed\/9PyNZJhpovk?rel=0\" frameborder=\"0\" allowfullscreen style=\"margin-right: 10px;\"><\/iframe>\n  <iframe width=\"351\" height=\"198\" src=\"https:\/\/www.youtube.com\/embed\/FI3iWzE6yzE?rel=0\" frameborder=\"0\" allowfullscreen style=\"margin-right: 10px;\"><\/iframe>\n  <iframe width=\"351\" height=\"198\" src=\"https:\/\/www.youtube.com\/embed\/ZGstO5SG9jc?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n<\/div>"
           }
         }
       },
       "block_order": [
-        "template--21809886822673__2d1057ab-9584-4bab-afaf-fbc000773b54-custom_liquid_code-1"
+        "template--21809886822673__3f1ff06f-ee0a-4ec2-a287-39f0c504445a-section_title-1",
+        "0d942bd7-d3c8-40e7-90a7-7ce336429f64"
       ],
       "custom_css": [
-        ".youtube-video-row {display: flex; justify-content: space-evenly; margin-bottom: 20px;}",
-        ".youtube-video {flex: 0 0 23%; \/* Adjust the width of each video *\/}"
+
       ],
       "settings": {
-        "section_id": ""
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "d0c981d6-3ea2-41c6-98fc-58332fe4eb04": {
@@ -121,8 +146,8 @@
   },
   "order": [
     "main",
-    "ab6863f8-ec26-45cb-b3a5-6b78141dcfab",
-    "2d1057ab-9584-4bab-afaf-fbc000773b54",
+    "68fdeb68-033d-4796-94cb-415c6dd4d17b",
+    "3f1ff06f-ee0a-4ec2-a287-39f0c504445a",
     "d0c981d6-3ea2-41c6-98fc-58332fe4eb04",
     "9c205f56-176f-43fe-bb5b-b194bccd6e80"
   ]
