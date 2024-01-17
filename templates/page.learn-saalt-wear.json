@@ -914,7 +914,7 @@
         "heading": "FAQs",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "row",
+        "layout": "none",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "theme_color_container_background": "theme-color-bg-4",

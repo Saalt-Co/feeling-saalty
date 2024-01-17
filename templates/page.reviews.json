@@ -1,0 +1,154 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "68fdeb68-033d-4796-94cb-415c6dd4d17b": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21809886822673__68fdeb68-033d-4796-94cb-415c6dd4d17b-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Peer-iod Reviews",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--21809886822673__68fdeb68-033d-4796-94cb-415c6dd4d17b-heading-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "theme_color_background": "theme-color-bg-7",
+        "theme_color_text": "theme_default",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "3f1ff06f-ee0a-4ec2-a287-39f0c504445a": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--21809886822673__3f1ff06f-ee0a-4ec2-a287-39f0c504445a-section_title-1": {
+          "type": "section_title",
+          "disabled": true,
+          "settings": {
+            "heading_tag": "1",
+            "title": "Video Reviews"
+          }
+        },
+        "0d942bd7-d3c8-40e7-90a7-7ce336429f64": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<div class=\"youtube-video-row\"style=\"display: flex; overflow-x: auto;\">\n\n  <iframe width=\"351\" height=\"198\" src=\"https:\/\/www.youtube.com\/embed\/8KvAPFE5TM4?rel=0\" frameborder=\"0\" allowfullscreen style=\"margin-right: 10px;\"><\/iframe>\n  <iframe width=\"351\" height=\"198\" src=\"https:\/\/www.youtube.com\/embed\/9PyNZJhpovk?rel=0\" frameborder=\"0\" allowfullscreen style=\"margin-right: 10px;\"><\/iframe>\n  <iframe width=\"351\" height=\"198\" src=\"https:\/\/www.youtube.com\/embed\/FI3iWzE6yzE?rel=0\" frameborder=\"0\" allowfullscreen style=\"margin-right: 10px;\"><\/iframe>\n  <iframe width=\"351\" height=\"198\" src=\"https:\/\/www.youtube.com\/embed\/ZGstO5SG9jc?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21809886822673__3f1ff06f-ee0a-4ec2-a287-39f0c504445a-section_title-1",
+        "0d942bd7-d3c8-40e7-90a7-7ce336429f64"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "d0c981d6-3ea2-41c6-98fc-58332fe4eb04": {
+      "type": "saalt-unstyled-liquid-section",
+      "blocks": {
+        "template--21809886822673__d0c981d6-3ea2-41c6-98fc-58332fe4eb04-custom_liquid_code-1": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<script type=\"text\/javascript\"> (function e(){var e=document.createElement(\"script\");e.type=\"text\/javascript\",e.async=!0, e.src=\"\/\/staticw2.yotpo.com\/2BPjkSRu2swwJBLujLtxxrBFxxqEta1k91QDxm4V\/widget.js\";var t=document.getElementsByTagName(\"script\")[0]; t.parentNode.insertBefore(e,t)})(); <\/script>\n<div id='yotpo-testimonials-custom-tab'><\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21809886822673__d0c981d6-3ea2-41c6-98fc-58332fe4eb04-custom_liquid_code-1"
+      ],
+      "settings": {
+        "section_id": ""
+      }
+    },
+    "9c205f56-176f-43fe-bb5b-b194bccd6e80": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "template--21809886822673__9c205f56-176f-43fe-bb5b-b194bccd6e80-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "We Don't Hush Period Talk."
+          }
+        },
+        "template--21809886822673__9c205f56-176f-43fe-bb5b-b194bccd6e80-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Even in a library.<\/p><p>Since periods perpetuate the human race, we think they deserve some kudos, not censorship. Help us break period stigmas by simply talking about periods @saaltco or leave a review to help encourage others to try a more sustainable period. Thanks for helping us <a href=\"https:\/\/www.instagram.com\/explore\/tags\/passthesaalt\/\" title=\"https:\/\/www.instagram.com\/explore\/tags\/passthesaalt\/\">#passthesaalt<\/a>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21809886822673__9c205f56-176f-43fe-bb5b-b194bccd6e80-section_title-1",
+        "template--21809886822673__9c205f56-176f-43fe-bb5b-b194bccd6e80-section_content-1"
+      ],
+      "custom_css": [
+        ".section-title {margin-right: 650px;}",
+        ".section-content {margin-right: 650px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/we_don_t_hush_period_talk_mobile_1-9-24.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/we_don_t_hush_period_talk_cropped_1-9-24.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "center",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "450px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "68fdeb68-033d-4796-94cb-415c6dd4d17b",
+    "3f1ff06f-ee0a-4ec2-a287-39f0c504445a",
+    "d0c981d6-3ea2-41c6-98fc-58332fe4eb04",
+    "9c205f56-176f-43fe-bb5b-b194bccd6e80"
+  ]
+}

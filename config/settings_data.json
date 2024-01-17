@@ -19,6 +19,7 @@
     "palette_color_6": "#9dbab5",
     "palette_color_7": "#bfdbd9",
     "theme_color_icons": "--palette-color-1",
+    "theme_color_button_hover": "--palette-color-3",
     "type_header_font": "montserrat_n6",
     "heading_scale": 100,
     "type_body_font": "montserrat_n4",
