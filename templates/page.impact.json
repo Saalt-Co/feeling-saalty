@@ -976,7 +976,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "2022 Impact Report"
+            "title": "2023 Impact Report"
           }
         }
       },
@@ -988,7 +988,7 @@
         "theme_color_background": "theme-color-bg-3",
         "theme_color_text": "theme-color-text-0",
         "media_type": "code",
-        "custom_code": "<div style=\"position:relative;padding-top:max(60%,326px);height:0;width:100%\"><iframe sandbox=\"allow-top-navigation allow-top-navigation-by-user-activation allow-downloads allow-scripts allow-same-origin allow-popups allow-modals allow-popups-to-escape-sandbox\" allowfullscreen=\"true\" style=\"position:absolute;border:none;width:100%;height:100%;left:0;right:0;top:0;bottom:0;\" src=\"https:\/\/e.issuu.com\/embed.html?d=saalt_2022_impact_report_-_digital&amp;hideIssuuLogo=true&amp;hideShareButton=true&amp;pageLayout=singlePage&amp;showOtherPublicationsAsSuggestions=true&amp;u=saalt-impact\"><\/iframe><\/div>",
+        "custom_code": "<div style=\"position:relative;padding-top:max(60%,326px);height:0;width:100%\"><iframe allow=\"clipboard-write\" sandbox=\"allow-top-navigation allow-top-navigation-by-user-activation allow-downloads allow-scripts allow-same-origin allow-popups allow-modals allow-popups-to-escape-sandbox allow-forms\" allowfullscreen=\"true\" style=\"position:absolute;border:none;width:100%;height:100%;left:0;right:0;top:0;bottom:0;\" src=\"https:\/\/e.issuu.com\/embed.html?d=saalt_2023_impact_report-web-interactive&amp;pageLayout=singlePage&amp;u=saalt-impact\"><\/iframe><\/div>",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
