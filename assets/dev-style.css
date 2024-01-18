@@ -28,3 +28,9 @@
 .saalt-wear-styles_icons-wrapper{
   border-bottom:unset!important;
 }
+.mega-menu[open] .mega-menu__content{
+  width:fit-content;
+}
+.header--top-center .mega-menu__list>li{
+  width:unset;
+}
