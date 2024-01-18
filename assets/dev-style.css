@@ -18,3 +18,22 @@
   text-align:left;
 }
 }
+/* @media (max-width:767px){
+  .window-display-inner-wrapper .window-feature-wrapper:first-child .text-wrapper .window-feature-title{
+  white-space:unset!important;
+  height:unset!important
+  line-height:2;
+}
+  .window-display-inner-wrapper .window-feature-wrapper .text-wrapper .window-feature-title{
+  font-size:12.56px!important;
+}
+.window-display-inner-wrapper .text-wrapper .window-feature-title p{
+  
+}
+.window-display-inner-wrapper .text-wrapper .window-feature-title p strong{
+  
+}
+.window-display-inner-wrapper .text-wrapper .window-feature-copy p {
+  text-align:left;
+}
+} */
