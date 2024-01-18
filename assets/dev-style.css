@@ -1,6 +1,8 @@
 
-.window-display-inner-wrapper .text-wrapper .window-feature-title{
+body .window-display-inner-wrapper .text-wrapper .window-feature-title{
   font-size:15px!important;
+  white-space:unset;
+  height:unset
 }
 .window-display-inner-wrapper .text-wrapper .window-feature-title p{
   
