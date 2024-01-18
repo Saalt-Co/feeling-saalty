@@ -14,6 +14,9 @@
     /* .window-display-inner-wrapper .window-feature-wrapper .text-wrapper .window-feature-title{
   white-space:unset!important;
 } */
+  .window-display-inner-wrapper .window-feature-wrapper .window-feature{
+    justify-content:flex-start!important;
+  }
   .window-display-inner-wrapper .window-feature-wrapper .text-wrapper .window-feature-title{
   font-size:10.047px!important;
 }
