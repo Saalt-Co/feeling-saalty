@@ -9,7 +9,7 @@
   text-align:left;
 }
 }
-@media (max-width:767px){
+/* @media (max-width:767px){
   .window-display-inner-wrapper .window-feature-wrapper:first-child .text-wrapper .window-feature-title{
   white-space:unset!important;
   height:unset!important
@@ -27,4 +27,4 @@
 .window-display-inner-wrapper .text-wrapper .window-feature-copy p {
   text-align:left;
 }
-}
+} */
