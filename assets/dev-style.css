@@ -10,6 +10,9 @@
   text-align:left;
   font-size:12px!important;
 }
+  .window-display-inner-wrapper .window-feature-wrapper .window-feature{
+    justify-content:flex-start!important;
+  }
 }
 @media (max-width:767px){
   .window-display-inner-wrapper .window-feature-wrapper .window-feature{
