@@ -45,7 +45,7 @@
               </summary>
               <div
                 id="MegaMenu-Content-{{ forloop.index }}"
-                class="mega-menu__content gradient motion-reduce global-settings-popup theme-color-text-ignore-children"
+                class="mega-menu__content gradient motion-reduce global-settings-popup theme-color-text-ignore-children {% if link.levels == 1 %}non-megamenu{% endif %}"
                 tabindex="-1"
               >
                 <ul
