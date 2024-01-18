@@ -1,6 +1,6 @@
-/* @media (max-width:992px){
+@media (max-width:992px){
   .window-display-inner-wrapper .window-feature-wrapper:first-child .text-wrapper .window-feature-title{
-  font-size:15px!important;
+  /* font-size:15px!important; */
   white-space:unset!important;
   height:unset!important
 }
@@ -13,4 +13,4 @@
 .window-display-inner-wrapper .text-wrapper .window-feature-copy p {
   text-align:left;
 }
-} */
+}
