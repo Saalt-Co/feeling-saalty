@@ -1,11 +1,10 @@
 @media (max-width:992px){
   .window-display-inner-wrapper .window-feature-wrapper:first-child .text-wrapper .window-feature-title{
   white-space:unset!important;
-  height:unset!important
 }
   .window-display-inner-wrapper .window-feature-wrapper .text-wrapper .window-feature-title{
   font-size:11.56px!important;
-    line-height:2.5;
+    /* line-height:2.5; */
 }
 .window-display-inner-wrapper .text-wrapper .window-feature-title p{
   
