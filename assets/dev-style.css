@@ -1,4 +1,4 @@
-@media (min-width:768) and (max-width:992px){
+@media (min-width:767 and (max-width:992px){
   .window-display-inner-wrapper .window-feature-wrapper .text-wrapper .window-feature-title{
   white-space:unset!important;
 }
