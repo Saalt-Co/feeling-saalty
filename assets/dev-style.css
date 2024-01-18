@@ -30,7 +30,7 @@
 }
 
 .non-megamenu-top{
-  position:relative;
+  position:relative!important;
 }
 .header__inline-menu .non-megamenu{
   width:fit-content;
