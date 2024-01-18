@@ -1,6 +1,4 @@
-.window-display-inner-wrapper{
- background:red; 
-}
+
 .window-display-inner-wrapper .text-wrapper .window-feature-title{
   
 }
@@ -9,4 +7,7 @@
 }
 .window-display-inner-wrapper .text-wrapper .window-feature-title p strong{
   
+}
+.window-display-inner-wrapper .text-wrapper .window-feature-copy p {
+  text-align:left;
 }
