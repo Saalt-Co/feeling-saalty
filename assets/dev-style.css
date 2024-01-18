@@ -36,6 +36,6 @@
   width:fit-content;
 }
 .header__inline-menu .non-megamenu .mega-menu__list li{
-  min-width:210px;
+  width:210px;
 }
 
