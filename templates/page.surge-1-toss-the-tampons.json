@@ -231,6 +231,7 @@
       "blocks": {
         "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_title-1": {
           "type": "section_title",
+          "disabled": true,
           "settings": {
             "heading_tag": "2",
             "title": "The reviews are in!"
@@ -239,7 +240,7 @@
         "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>From skeptical to never-going-back<\/p>"
+            "text_content": "<h2>The reviews are in!<\/h2><p>From skeptical to never-going-back<\/p>"
           }
         }
       },
@@ -247,9 +248,12 @@
         "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_title-1",
         "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_content-1"
       ],
+      "custom_css": [
+        "h2 {font-size: 34px;}"
+      ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme-color-bg-0",
+        "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "none",
         "custom_code": "",
@@ -307,6 +311,7 @@
         "testimonial_TyjEhV",
         "testimonial_iKPgGy"
       ],
+      "disabled": true,
       "settings": {
         "slide_height": "adapt_image",
         "slider_visual": "dots",
@@ -371,7 +376,7 @@
         "background_style": "primary",
         "theme_color_column_secondary_bg": "--palette-color-0",
         "column_secondary_bg_opacity": 100,
-        "review_star_color_override": "theme_default",
+        "review_star_color_override": "--palette-color-4",
         "review_star_opacity_override": 100,
         "button_text": "",
         "button_url": "",
