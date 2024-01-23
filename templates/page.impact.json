@@ -873,8 +873,8 @@
         "desktop_text_alignment": "center",
         "use_max_text_width": false,
         "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     },
     "ced9cd50-1257-40f0-aa33-59bd4b2819a3": {
@@ -922,7 +922,7 @@
         "use_max_text_width": false,
         "max_width": "600px",
         "padding_top": 32,
-        "padding_bottom": 0
+        "padding_bottom": 32
       }
     },
     "f47844f4-bf99-493b-b0ec-edf3a62931e8": {
@@ -999,7 +999,7 @@
         "desktop_text_alignment": "center",
         "use_max_text_width": false,
         "max_width": "600px",
-        "padding_top": 0,
+        "padding_top": 32,
         "padding_bottom": 0
       }
     },
@@ -1039,7 +1039,7 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme_default",
+        "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "none",
         "custom_code": "",
@@ -1055,7 +1055,7 @@
         "use_max_text_width": false,
         "max_width": "600px",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 32
       }
     }
   },
