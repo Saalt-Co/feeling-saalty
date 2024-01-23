@@ -412,6 +412,7 @@
         "saalt_style_1_tile_y3XpiF": {
           "type": "saalt_style_1_tile",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Skeptical-Bundle-V2-Update-1_03.jpg",
             "title": "Tile Title Goes Here",
             "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
             "button_text": "",
@@ -426,6 +427,7 @@
         "saalt_style_1_tile_Ame9Ha": {
           "type": "saalt_style_1_tile",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Skeptical-Bundle_03.jpg",
             "title": "Tile Title Goes Here",
             "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
             "button_text": "",
@@ -440,6 +442,7 @@
         "saalt_style_1_tile_MB9gWQ": {
           "type": "saalt_style_1_tile",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Committed-Pack-1_11.jpg",
             "title": "Tile Title Goes Here",
             "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
             "button_text": "",
