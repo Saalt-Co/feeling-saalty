@@ -7,7 +7,7 @@
   data-section-id="{{ section.id }}"
   class="section{% if section.settings.make_full_width == false %} page-width{% endif %}"
 >
-  <window-display class="window-display {% if section.settings.display_box_global %} {% else %}global-no-hover{% endif %}" {{ block.shopify_attributes }}>
+  <window-display class="window-display {{ section.settings.display_box_global }} {% if section.settings.display_box_global %} {% else %}global-no-hover{% endif %}" {{ block.shopify_attributes }}>
     {%- assign block_count = section.blocks | size -%}
     {%- if block_count > 0 -%}
       {%- assign window_display_count = 0 -%}
