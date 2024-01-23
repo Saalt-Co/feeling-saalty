@@ -36,7 +36,8 @@
         {{ placeholder_name | placeholder_svg_tag }}
       {%- endif -%}
     </div>
-    {% if block.settings['display-box'] %}
+    {% assign Checkbox = block.settings['display-box'] %}
+    {% if Checkbox %}
       <div class="text-wrapper">
         {%- if block.settings.title != blank -%}
           <div class="window-feature-title">
