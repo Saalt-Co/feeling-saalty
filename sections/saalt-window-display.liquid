@@ -36,7 +36,8 @@
               section: section,
               block: block,
               window_display_count: window_display_count,
-              forloop_index: forloop.index
+              forloop_index: forloop.index,
+              checkboxEnable: block.settings.display-box
             %}
             {%- endcapture -%}
             {%- assign window_feature_code = window_feature_code | append: captured_code -%}
