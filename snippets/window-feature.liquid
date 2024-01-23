@@ -36,18 +36,20 @@
         {{ placeholder_name | placeholder_svg_tag }}
       {%- endif -%}
     </div>
-    <div class="text-wrapper">
-      {%- if block.settings.title != blank -%}
-        <div class="window-feature-title">
-          {{ block.settings.title }}
-        </div>
-      {%- endif -%}
-      <div class="window-feature-copy">
-        {%- if block.settings.copy != blank -%}
-          {{ block.settings.copy }}
+    {% if block.settings['display-on-off'] %}
+      <div class="text-wrapper">
+        {%- if block.settings.title != blank -%}
+          <div class="window-feature-title">
+            {{ block.settings.title }}
+          </div>
         {%- endif -%}
+        <div class="window-feature-copy">
+          {%- if block.settings.copy != blank -%}
+            {{ block.settings.copy }}
+          {%- endif -%}
+        </div>
       </div>
-    </div>
+    {% endif %}
   </a>
   <div class="window-feature-button-wrapper">
     {% if block.settings.link_type == 'url' %}
