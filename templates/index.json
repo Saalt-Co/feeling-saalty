@@ -109,7 +109,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/SW-SM-HW-MS-Ampersand-278_1.jpg",
-            "display-box": false,
+            "display-box": true,
             "title": "<p><strong>Leakproof Underwear<\/strong><\/p>",
             "copy": "<p>Introducing the thinnest, driest, and most comfortable absorbent underwear you'll ever wear.<\/p>",
             "link_type": "url",
@@ -184,7 +184,7 @@
         "d8236345-5ecc-484c-af5d-464fd1c4ecf7"
       ],
       "settings": {
-        "global_checkbox": false,
+        "global_checkbox": true,
         "section_id": "",
         "make_full_width": false,
         "mobile_min_width": "40%",
