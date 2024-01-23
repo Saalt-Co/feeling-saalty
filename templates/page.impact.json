@@ -632,28 +632,29 @@
         "padding_bottom": 0
       }
     },
-    "0b93509b-c1cf-40a1-ba49-5c5ff3ba71d0": {
+    "2648b12f-cd30-4d03-9236-07bc69f07bc1": {
       "type": "saalt-media-with-text",
       "blocks": {
-        "template--21650857034001__0b93509b-c1cf-40a1-ba49-5c5ff3ba71d0-section_title-1": {
+        "6ed87f99-2d29-4fdf-88f0-501a9ce7eb59": {
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "See Saalt In Action"
+            "title": "We Walk the Walk"
           }
         }
       },
       "block_order": [
-        "template--21650857034001__0b93509b-c1cf-40a1-ba49-5c5ff3ba71d0-section_title-1"
+        "6ed87f99-2d29-4fdf-88f0-501a9ce7eb59"
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme-color-bg-5",
+        "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
-        "media_type": "code",
-        "custom_code": "<iframe width=\"1271\" height=\"715\" src=\" https:\/\/www.youtube.com\/embed\/DamQH6JnwEY?si=N5PyKf8a4FWm26HU?rel=0\" title=\"The Saalt Story - The Inspiration Behind Our Reusable Period Care Products\" frameborder=\"0\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"><\/iframe>",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/BeaconLogo-Secondary-Winner-2021-900px_1_Impact_Page.png",
+        "custom_code": "",
+        "use_max_media_width": true,
+        "max_media_width": "300px",
         "media_width": 50,
         "title_font_size": "small",
         "content_font_size": "small",
@@ -667,39 +668,26 @@
         "padding_bottom": 0
       }
     },
-    "f48fa762-1d15-4196-9f2a-7c0b25b5b72c": {
+    "bea773c0-668d-4c1d-b4a3-7f7017fdaca5": {
       "type": "saalt-media-with-text",
       "blocks": {
-        "e410c62d-0e50-429d-926a-7da0788d9f65": {
-          "type": "custom_liquid_code",
+        "template--21650857034001__bea773c0-668d-4c1d-b4a3-7f7017fdaca5-section_title-1": {
+          "type": "section_title",
           "settings": {
-            "liquid_code": "<div class=\"image-row\" style=\"display: flex; overflow-x: auto;\">\n  <a href=\"https:\/\/www.youtube.com\/watch?v=KT0kEsCFlj8&list=PL7YFdopVv8tPeSSy55Gz9Tym3yaFdfRkK&index=4&ab_channel=Saalt%E2%80%93SustainablePeriodCare\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3680\/3089\/files\/Video_Thumnail_Impact_Page.png?v=1702428499\" alt=\"Image 1\" style=\"margin-right: 10px;\">\n  <\/a>\n  <a href=\"https:\/\/www.youtube.com\/watch?v=DamQH6JnwEY&list=PL7YFdopVv8tPeSSy55Gz9Tym3yaFdfRkK&index=7&ab_channel=Saalt%E2%80%93SustainablePeriodCare\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3680\/3089\/files\/Nepal-Video-thumbnail_Impact_Page.jpg?v=1702428499\" alt=\"Image 2\" style=\"margin-right: 10px;\">\n  <\/a>\n  <a href=\"https:\/\/www.youtube.com\/watch?v=caqhIi4hG5c&list=PL7YFdopVv8tPeSSy55Gz9Tym3yaFdfRkK&index=2&ab_channel=Saalt%E2%80%93SustainablePeriodCare\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3680\/3089\/files\/Cup_on_the_beach_video_thumbnail_Impact_Page.jpg?v=1702428498\" alt=\"Image 3\" style=\"margin-right: 10px;\">\n  <\/a>\n  <a href=\"https:\/\/youtu.be\/KaN12zhPhUI?si=bpoErZq5I_6kYsAX\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3680\/3089\/files\/Video-Women-Equality-Day-Saalt_Impact_Page.png?v=1702428499\" alt=\"Image 4\" style=\"margin-right: 10px;\">\n  <\/a>\n<\/div>"
+            "heading_tag": "3",
+            "title": "Philanthropy Champion"
           }
         },
-        "template--21650857034001__f48fa762-1d15-4196-9f2a-7c0b25b5b72c-section_buttons_group-1": {
-          "type": "section_buttons_group",
+        "template--21650857034001__bea773c0-668d-4c1d-b4a3-7f7017fdaca5-section_content-1": {
+          "type": "section_content",
           "settings": {
-            "desktop_button_group_alignment": "center",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "template--21650857034001__f48fa762-1d15-4196-9f2a-7c0b25b5b72c-section_button-1": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "WATCH MORE",
-            "button_url": "https:\/\/www.youtube.com\/watch?v=jirErwOgA1c&list=PL7YFdopVv8tPeSSy55Gz9Tym3yaFdfRkK&index=1",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme-color-bg-4",
-            "theme_color_text_section_button_text": "theme-color-text-1",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
+            "text_content": "<p>Saalt was awarded Beauty Independent’s prestigious Philanthropy Champion award measuring social impact significance.<\/p>"
           }
         }
       },
       "block_order": [
-        "e410c62d-0e50-429d-926a-7da0788d9f65",
-        "template--21650857034001__f48fa762-1d15-4196-9f2a-7c0b25b5b72c-section_buttons_group-1",
-        "template--21650857034001__f48fa762-1d15-4196-9f2a-7c0b25b5b72c-section_button-1"
+        "template--21650857034001__bea773c0-668d-4c1d-b4a3-7f7017fdaca5-section_title-1",
+        "template--21650857034001__bea773c0-668d-4c1d-b4a3-7f7017fdaca5-section_content-1"
       ],
       "settings": {
         "section_id": "",
@@ -714,9 +702,9 @@
         "content_font_size": "small",
         "mobile_text_position": "below",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "below",
+        "desktop_text_position": "above",
         "desktop_text_alignment": "center",
-        "use_max_text_width": false,
+        "use_max_text_width": true,
         "max_width": "600px",
         "padding_top": 0,
         "padding_bottom": 0
@@ -854,121 +842,6 @@
         "padding_bottom": 0
       }
     },
-    "2648b12f-cd30-4d03-9236-07bc69f07bc1": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "6ed87f99-2d29-4fdf-88f0-501a9ce7eb59": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "3",
-            "title": "We Walk the Walk"
-          }
-        }
-      },
-      "block_order": [
-        "6ed87f99-2d29-4fdf-88f0-501a9ce7eb59"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "image": "shopify:\/\/shop_images\/BeaconLogo-Secondary-Winner-2021-900px_1_Impact_Page.png",
-        "custom_code": "",
-        "use_max_media_width": true,
-        "max_media_width": "300px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "above",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "above",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "adef0161-cadd-425a-908d-5de3ece928a1": {
-      "type": "newsletter",
-      "blocks": {
-        "template--15053077250129__adef0161-cadd-425a-908d-5de3ece928a1-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Do you have a period? Great, we're here to make it better (starting with 15% off your first order). 😉",
-            "heading_size": "h1"
-          }
-        },
-        "template--15053077250129__adef0161-cadd-425a-908d-5de3ece928a1-paragraph-1": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Subscribe to receive all you need to know about the period flow, pointers, and perks that come as often as your period does.<\/p>"
-          }
-        },
-        "template--15053077250129__adef0161-cadd-425a-908d-5de3ece928a1-email_form-1": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--15053077250129__adef0161-cadd-425a-908d-5de3ece928a1-heading-1",
-        "template--15053077250129__adef0161-cadd-425a-908d-5de3ece928a1-paragraph-1",
-        "template--15053077250129__adef0161-cadd-425a-908d-5de3ece928a1-email_form-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "theme_color_background": "theme-color-bg-4",
-        "theme_color_text": "theme_default",
-        "input_opacity": 25,
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "bea773c0-668d-4c1d-b4a3-7f7017fdaca5": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--21650857034001__bea773c0-668d-4c1d-b4a3-7f7017fdaca5-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "3",
-            "title": "Philanthropy Champion"
-          }
-        },
-        "template--21650857034001__bea773c0-668d-4c1d-b4a3-7f7017fdaca5-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>Saalt was awarded Beauty Independent’s prestigious Philanthropy Champion award measuring social impact significance.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--21650857034001__bea773c0-668d-4c1d-b4a3-7f7017fdaca5-section_title-1",
-        "template--21650857034001__bea773c0-668d-4c1d-b4a3-7f7017fdaca5-section_content-1"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "none",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "above",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": true,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "907deb5a-5924-48dc-96c3-734882cf260f": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -1094,6 +967,96 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "0b93509b-c1cf-40a1-ba49-5c5ff3ba71d0": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--21650857034001__0b93509b-c1cf-40a1-ba49-5c5ff3ba71d0-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "3",
+            "title": "See Saalt In Action"
+          }
+        }
+      },
+      "block_order": [
+        "template--21650857034001__0b93509b-c1cf-40a1-ba49-5c5ff3ba71d0-section_title-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "media_type": "code",
+        "custom_code": "<iframe width=\"1271\" height=\"715\" src=\" https:\/\/www.youtube.com\/embed\/DamQH6JnwEY?si=N5PyKf8a4FWm26HU?rel=0\" title=\"The Saalt Story - The Inspiration Behind Our Reusable Period Care Products\" frameborder=\"0\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\"><\/iframe>",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "above",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "f48fa762-1d15-4196-9f2a-7c0b25b5b72c": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "e410c62d-0e50-429d-926a-7da0788d9f65": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<div class=\"image-row\" style=\"display: flex; overflow-x: auto;\">\n  <a href=\"https:\/\/www.youtube.com\/watch?v=KT0kEsCFlj8&list=PL7YFdopVv8tPeSSy55Gz9Tym3yaFdfRkK&index=4&ab_channel=Saalt%E2%80%93SustainablePeriodCare\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3680\/3089\/files\/Video_Thumnail_Impact_Page.png?v=1702428499\" alt=\"Image 1\" style=\"margin-right: 10px;\">\n  <\/a>\n  <a href=\"https:\/\/www.youtube.com\/watch?v=DamQH6JnwEY&list=PL7YFdopVv8tPeSSy55Gz9Tym3yaFdfRkK&index=7&ab_channel=Saalt%E2%80%93SustainablePeriodCare\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3680\/3089\/files\/Nepal-Video-thumbnail_Impact_Page.jpg?v=1702428499\" alt=\"Image 2\" style=\"margin-right: 10px;\">\n  <\/a>\n  <a href=\"https:\/\/www.youtube.com\/watch?v=caqhIi4hG5c&list=PL7YFdopVv8tPeSSy55Gz9Tym3yaFdfRkK&index=2&ab_channel=Saalt%E2%80%93SustainablePeriodCare\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3680\/3089\/files\/Cup_on_the_beach_video_thumbnail_Impact_Page.jpg?v=1702428498\" alt=\"Image 3\" style=\"margin-right: 10px;\">\n  <\/a>\n  <a href=\"https:\/\/youtu.be\/KaN12zhPhUI?si=bpoErZq5I_6kYsAX\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/3680\/3089\/files\/Video-Women-Equality-Day-Saalt_Impact_Page.png?v=1702428499\" alt=\"Image 4\" style=\"margin-right: 10px;\">\n  <\/a>\n<\/div>"
+          }
+        },
+        "template--21650857034001__f48fa762-1d15-4196-9f2a-7c0b25b5b72c-section_buttons_group-1": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "template--21650857034001__f48fa762-1d15-4196-9f2a-7c0b25b5b72c-section_button-1": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "WATCH MORE",
+            "button_url": "https:\/\/www.youtube.com\/watch?v=jirErwOgA1c&list=PL7YFdopVv8tPeSSy55Gz9Tym3yaFdfRkK&index=1",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-4",
+            "theme_color_text_section_button_text": "theme-color-text-1",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "e410c62d-0e50-429d-926a-7da0788d9f65",
+        "template--21650857034001__f48fa762-1d15-4196-9f2a-7c0b25b5b72c-section_buttons_group-1",
+        "template--21650857034001__f48fa762-1d15-4196-9f2a-7c0b25b5b72c-section_button-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "below",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -1107,14 +1070,13 @@
     "f1b16d01-d3ea-4457-bea4-1ce2d36e34aa",
     "91242708-420b-4a93-8b84-092c3575b865",
     "0add3966-7c7f-4a60-bd20-c12dd57c3a86",
-    "0b93509b-c1cf-40a1-ba49-5c5ff3ba71d0",
-    "f48fa762-1d15-4196-9f2a-7c0b25b5b72c",
-    "6dd777f2-c03d-4d36-b818-600b65ee03aa",
     "2648b12f-cd30-4d03-9236-07bc69f07bc1",
-    "adef0161-cadd-425a-908d-5de3ece928a1",
     "bea773c0-668d-4c1d-b4a3-7f7017fdaca5",
+    "6dd777f2-c03d-4d36-b818-600b65ee03aa",
     "907deb5a-5924-48dc-96c3-734882cf260f",
     "ced9cd50-1257-40f0-aa33-59bd4b2819a3",
-    "f47844f4-bf99-493b-b0ec-edf3a62931e8"
+    "f47844f4-bf99-493b-b0ec-edf3a62931e8",
+    "0b93509b-c1cf-40a1-ba49-5c5ff3ba71d0",
+    "f48fa762-1d15-4196-9f2a-7c0b25b5b72c"
   ]
 }
