@@ -149,7 +149,7 @@
           "type": "section_content",
           "settings": {
             "text_group_num": "2",
-            "text_content": "<h3><em>Ditch the Disposables<\/em><\/h3><p>Switch to a fully reusable, ultra-comfortable period with Saalt for <strong>2 cycles<\/strong>.  When you invite your friends to take the challenge together, you get our best deal ever.<\/p>"
+            "text_content": "<h3><em>Ditch the Disposables<\/em><\/h3><p>Switch to a fully reusable, ultra-comfortable period with Saalt for <strong>2 cycles<\/strong>. When you <strong>invite 2+ friends<\/strong> to take the challenge together, you all get our best deal ever.<\/p>"
           }
         }
       },
@@ -386,7 +386,7 @@
         "theme_color_section_button_background_hover": "theme_default",
         "theme_color_text_section_button_text_hover": "theme_default",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -398,7 +398,13 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "Choose your pack, and challenge a friend (or two) to join you and save more!"
+            "title": "Step 1: Buy a Challenge Pack with your friends to get our best deal ever."
+          }
+        },
+        "section_content_LcXK3N": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p><em>Yes! You can mix and match any packs and choose different Saalt Wear sizes.<\/em><\/p>"
           }
         },
         "section_tiles_group_jEFGyA": {
@@ -462,10 +468,14 @@
       },
       "block_order": [
         "section_title_D78VmB",
+        "section_content_LcXK3N",
         "section_tiles_group_jEFGyA",
         "saalt_style_1_tile_y3XpiF",
         "saalt_style_1_tile_Ame9Ha",
         "saalt_style_1_tile_MB9gWQ"
+      ],
+      "custom_css": [
+        ".text-wrapper {background-color: #eef0f4;}"
       ],
       "settings": {
         "section_id": "",
@@ -475,10 +485,21 @@
         "content_font_size": "medium",
         "mobile_text_alignment": "center",
         "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "use_max_text_width": true,
+        "max_width": "900px",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "custom_liquid_wHYwY3": {
+      "type": "custom-liquid",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "custom_liquid": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
@@ -491,6 +512,7 @@
     "e8f8ad80-7890-480a-8074-f9883439de49",
     "saalt_testimonials_wDcdfJ",
     "multicolumn_jQmETU",
-    "saalt_style_1_tiles_section_nXBNLt"
+    "saalt_style_1_tiles_section_nXBNLt",
+    "custom_liquid_wHYwY3"
   ]
 }
