@@ -494,26 +494,19 @@
     "saalt_media_with_text_LHp9mg": {
       "type": "saalt-media-with-text",
       "blocks": {
-        "section_title_hGVXEY": {
-          "type": "section_title",
+        "section_content_dTjr3t": {
+          "type": "section_content",
           "settings": {
-            "heading_tag": "3",
-            "title": "Step 2: Post that you are taking the #DitchTheDisposables challenge and tag your friends and <a href=\"https:\/\/www.instagram.com\/saaltco\/\" target=\"_blank\">@saaltco<\/a>."
-          }
-        },
-        "custom_liquid_code_rVGJXH": {
-          "type": "custom_liquid_code",
-          "settings": {
-            "liquid_code": "<div class=\"horizontal-line\"><\/div>"
+            "text_content": "<h3>Step 2: Post that you're taking the #DitchTheDisposables challenge and tag your friends and <a href=\"https:\/\/www.instagram.com\/saaltco\/\" target=\"_blank\">@saaltco<\/a>.<\/h3>"
           }
         }
       },
       "block_order": [
-        "section_title_hGVXEY",
-        "custom_liquid_code_rVGJXH"
+        "section_content_dTjr3t"
       ],
       "custom_css": [
-        ".text-wrapper {background-color: #eef0f4;}"
+        ".text-wrapper {background-color: #eef0f4;}",
+        "h3 {font-size: 24px;}"
       ],
       "settings": {
         "section_id": "",
@@ -539,23 +532,19 @@
     "saalt_media_with_text_UEtLNU": {
       "type": "saalt-media-with-text",
       "blocks": {
-        "section_title_zVUJPC": {
-          "type": "section_title",
+        "section_content_dKxW7G": {
+          "type": "section_content",
           "settings": {
-            "heading_tag": "3",
-            "title": "Step 3: Use your fully reusable Saalt products for <b>2 cycles with your besties<\/b>, and have your most comfortable period ever."
-          }
-        },
-        "custom_liquid_code_aetHCG": {
-          "type": "custom_liquid_code",
-          "settings": {
-            "liquid_code": "<div class=\"horizontal-line\"><\/div>"
+            "text_content": "<h3>Step 3: Use your fully reusable Saalt products for <strong>2 cycles with your besties<\/strong>, and have your most comfortable period ever.<\/h3>"
           }
         }
       },
       "block_order": [
-        "section_title_zVUJPC",
-        "custom_liquid_code_aetHCG"
+        "section_content_dKxW7G"
+      ],
+      "custom_css": [
+        ".text-wrapper {background-color: #eef0f4;}",
+        "h3 {font-size: 24px;}"
       ],
       "settings": {
         "section_id": "",
