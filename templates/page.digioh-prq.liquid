@@ -1,0 +1,412 @@
+{{ 'digioh-customization.css' | asset_url | stylesheet_tag }}
+{% assign queryString = '' %}
+{% assign show_hero = false; %}
+{% assign rowlenN = ''; %}
+{% assign rowlen1 = ''; %}
+{% assign rowlen2 = ''; %}
+{% assign rowlen3 = ''; %}
+{% assign rowlen4 = ''; %}
+{% assign rowlen5 = ''; %}
+{% assign hide_oos = false; %}
+{% assign top_rec = blank %}
+{% assign products = '' %}
+{% assign p_size = blank %}
+{% assign cup_type = 'Cup' %}
+
+ {%- comment -%} Capture the content for header containing the tracking data {%- endcomment -%}
+  {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+  
+  {% comment %} Use string splitting to pull the value from content_for_header and apply some string clean up {% endcomment %}
+  {%- assign pageUrl = contentForQuerystring
+    | split: '"pageurl":"'
+    | last
+    | split: '"'
+    | first
+    | split: '.myshopify.com'
+    | last
+    | replace: '\/', '/'
+    | replace: '%20', ' '
+    | replace: '\u0026', '&'
+  -%}
+  {% assign debug = false %}
+  {%- for i in (1..1) -%}
+    {%- comment -%} If the string doesn't contain a ? then we have no querystring. Go no further {%- endcomment -%}
+    {%- unless pageUrl contains '?' -%}{% break %}{%- endunless -%}
+  
+    {%- comment -%} Split the url at the ? to get all values after it {%- endcomment -%}
+    {%- assign pageQuerystring = pageUrl | split: '?' | last -%}
+    {%- assign parts = pageQuerystring | split: '&' -%}
+    {% assign queryString = parts %}
+    {%- for part in parts -%}
+      {%- assign keyAndValue = part | split: '=' -%}
+      {%- if keyAndValue.size > 1 -%}
+        {%- if keyAndValue[0] == 'show_hero' -%}
+          {%- assign show_hero = keyAndValue[1]  -%}
+        {%- endif -%}
+        {%- if keyAndValue[0] == 'hide_oos' -%}
+          {%- assign hide_oos = keyAndValue[1]  -%}
+        {%- endif -%}
+        {%- if keyAndValue[0] == 'rowlenN' -%}
+          {%- assign rowlenN = keyAndValue[1] | plus: 0  -%}
+        {%- endif -%}
+        {%- if keyAndValue[0] == 'rowlen1' -%}
+          {%- assign rowlen1 = keyAndValue[1] | plus: 0  -%}
+        {%- endif -%}
+        {%- if keyAndValue[0] == 'rowlen2' -%}
+          {%- assign rowlen2 = keyAndValue[1] | plus: 0 -%}
+        {%- endif -%}
+        {%- if keyAndValue[0] == 'rowlen3' -%}
+          {%- assign rowlen3 = keyAndValue[1] | plus: 0 -%}
+        {%- endif -%}
+        {%- if keyAndValue[0] == 'rowlen4' -%}
+          {%- assign rowlen4 = keyAndValue[1] | plus: 0 -%}
+        {%- endif -%}
+        {%- if keyAndValue[0] == 'rowlen5' -%}
+          {%- assign rowlen5 = keyAndValue[1] | plus: 0 -%}
+        {%- endif -%}
+        {%- if keyAndValue[0] == 'top_rec' -%}
+          {%- assign handle = keyAndValue[1] -%}
+          {% assign top_rec = all_products[handle] %}
+        {%- endif -%}
+        {%- if keyAndValue[0] == 'products' -%}
+          {%- assign handle = keyAndValue[1] -%}
+          {% assign products = all_products[handle] %}
+        {%- endif -%}
+        {%- if keyAndValue[0] == 'size' -%}
+          {%- assign p_size = keyAndValue[1] -%}
+        {%- endif -%}
+        {%- if keyAndValue[0] == 'cup_type' -%}
+          {%- assign cup_type = keyAndValue[1] -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+  
+<div class="quiz-content">
+  <div class="collection-hero">
+    <div class="collection-hero__inner page-width">
+      <div class="collection-hero__text-wrapper">
+        <h4 class="collection-hero__title">Based on your answers to our quiz, we recommend the following products:</h4>
+        <div class="collection-hero__description rte">Get 10% off today with code MAKETHESWITCH at checkout.</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="cup-heading">
+    <h2>{{ cup_type }}</h2>
+  </div>
+  <div class="quiz-result-cup">
+    
+    {% assign product = top_rec %}
+    {% assign top_rec_variant = top_rec %}
+    {% if top_rec != blank %}
+      <div class="quiz-result-cup-title">
+        <a href="{{ top_rec.url }}"><h1>{{ top_rec.title }} {% if p_size != blank %}- {{ p_size }}{% endif %} </h1></a>
+    </div>
+      
+        {% if p_size !='' %}
+        {% for variant in top_rec.variants %}
+          {% if variant.title contains p_size  %}
+            {% assign top_rec_variant = variant %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    <div class="quiz-result-cup-content">
+        <div class="quiz-result-cup-image">
+            <a href="{{ top_rec_variant.url }}" class="ProductItem__ImageWrapper {% if has_alternate_image %}ProductItem__ImageWrapper--withAlternateImage{% endif %}" >
+            {%- if use_horizontal -%}
+                          {%- assign max_width = 125 -%}
+                        {%- else -%}
+                          {%- assign max_width = top_rec_variant.featured_media.preview_image.width -%}
+                        {%- endif -%}
+                  
+                        {%- assign media_aspect_ratio = top_rec_variant.featured_media.aspect_ratio
+                          | default: top_rec_variant.featured_media.preview_image.aspect_ratio
+                        -%}
+                  
+                          {%- comment -%}
+                            IMPLEMENTATION NOTE: The alternate image (not visible by default) should be the first in the DOM, as the spinner
+                            (Image__Loader element) is
+                            displayed based on the immediately previously shown image.
+                          {%- endcomment -%}
+                  
+                          {%- liquid
+                            # First set the main image
+                            if lowest_priced_variant
+                              assign main_img = selected_variant.featured_media
+                            elsif selected_variant.featured_media
+                              assign main_img = selected_variant.featured_media
+                            else
+                              assign main_img = top_rec_variant.featured_media
+                            endif
+                            # Next set the alt image, but only if necessary
+                            if has_alternate_image
+                              if lowest_priced_variant
+                                assign alt_img = top_rec_variant.media[0]
+                              else
+                                assign alt_img = top_rec_variant.media[1]
+                              endif
+                            endif
+                            # Lastly, check to see if the main and alt are the same.
+                            # If they are, reassign the alt image
+                            if main_img == alt_img and main_img != top_rec_variant.featured_media
+                              assign alt_img = top_rec_variant.featured_media
+                            elsif main_img == alt_img and main_img == top_rec_variant.featured_media and top_rec_variant.media[1] != nil
+                              assign alt_img = top_rec_variant.media[1]
+                            endif
+                          -%}
+                            <img
+                              class="ProductItem__Image"
+                              src="{{ main_img| img_url: '300x' }}"
+                              alt="{{ main_img.alt | escape }}"
+                            >
+                      </a>
+        </div>
+        <div class="quiz-result-cup-details">
+            {% if product.metafields.global.custm_below_description != blank %}
+              <p>{{ product.metafields.global.custm_below_description }}</p>
+            {% else %}
+                 <p>Designed to be the easiest to use and most comfortable cup on the market with slightly firmer silicone making it a great option for first-time cup users.</p>
+            {% endif %}
+            {% assign any_color = false %}
+              {%- for option in top_rec.options_with_values -%}
+                
+                {%- if option.name == "Color" -%}
+                  <h3>Pick your color:</h3>
+            <div class="quiz-result-cup-variants">
+                  {%- for value in option.values -%}
+                    {% assign any_color = true %}
+                    {%- assign downcase_value = value | downcase -%}
+                    {%- assign color_swatch_name = value | handle | append: '.png' -%}
+                    {%- assign color_swatch_image = images[color_swatch_name] -%}
+                    <div id="s-f62910c3-c571-4d11-8b06-5c52aba6eaf4" class="shg-c  ">
+                      <div class="quiz-result-cup-variant">
+                        <div class="quiz-result-cup-variant-swatch quiz-result-cup-variant-swatch-himalayan-pink"><label for="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="ColorSwatch ColorSwatch--large {% if downcase_value == 'white' %}ColorSwatch--white{% endif %}" data-tooltip="{{ value | escape }}" style="background-color: {{ value | replace: ' ', '' | downcase }}; {% if color_swatch_image != blank %}background-image: url({{ color_swatch_image | img_url: '64x64' }}){% endif %}"></label></div>
+                        <h4 class="quiz-result-cup-variant-title">{{ value }}</h4>
+                        <p class="quiz-result-cup-variant-price">{{ cart.currency.symbol  }}{{ top_rec.price | money_without_currency | replace:',','.'}}</p>
+                        {% assign variants_id ='' %}
+                        {% for variant in top_rec.variants %}
+                          {% assign variant_size = value | append: ' / ' %}
+                          {% assign variant_size_color = variant_size | append: p_size %}
+                          {% if variant.title == variant_size_color or variant.title == value %}
+                            {% assign variants_id = variant.id %}
+                          {% endif %}
+                        {% endfor %}
+                    <a href="#" class="quiz-result-button quiz-result-cup-variant-add" data-variant-id="{{ variants_id }}" data-action="open-drawer" data-drawer-id="sidebar-cart">Add to cart</a>
+                      </div>
+                    </div>
+                  {%- endfor -%}
+                </div>
+                {% endif %}
+              {%- endfor -%}
+      {% if any_color == false %}
+        {% assign variants_id = 0 %}
+        {% if p_size !='' %}
+        {% for variant in top_rec.variants %}
+          {% if variant.title contains p_size  %}
+            {% assign variants_id = variant.id %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+                  <p class="quiz-result-cup-variant-price">{{ cart.currency.symbol  }}{{ top_rec.price | money_without_currency | replace:',','.'}}</p>
+                <div class="quiz-result-cup-variants">
+                  <form method="post" action="/cart/add" id="product_form_{{ top_rec.id }}" accept-charset="UTF-8" class="ProductForm" enctype="multipart/form-data">
+                   <input type="hidden" name="form_type" value="product">
+                   <input type="hidden" name="utf8" value="✓">
+                    <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
+                    <input type="hidden" name="id" value="{{ variants_id | default:  top_rec.selected_or_first_available_variant.id}}" />
+                  <a href="#" class="quiz-result-button quiz-result-cup-variant-add" data-variant-id="{{ variants_id | default:  top_rec.selected_or_first_available_variant.id }}" data-action="open-drawer" data-drawer-id="sidebar-cart">Add to cart</a>
+                  </form>
+                </div>
+        {% endif %}
+        </div>
+    </div>
+    {% endif %}
+    <div class="salt-wear">
+      <h2>SAALT WEAR</h2>
+      <span class="salt-wear-description">Oo-la-la! Saalt Wear, our leakproof period underwear designed in Paris replaces your pads and liners for a fully sustainable period.</span>
+      <div class="shg-box shg-c  quiz-result-wear-wrapper  " id="s-9008818e-4a68-4b7e-8de0-2be80c1a23a5">
+      <div class="shg-box-overlay"></div>
+<div class="shg-box-content">
+  {% assign parts = queryString  %}
+  {%- for part in parts -%}
+    {%- assign keyAndValue = part | split: '=' -%}
+  
+    {%- if keyAndValue.size > 1 -%}
+      {% if keyAndValue[0] == 'products' %}
+        {% assign handler_list = keyAndValue[1] | url_decode | split: ',' %}
+          {% for handle in handler_list %}
+            {% assign product = all_products[handle] %}
+            <div id="s-ab2d94c2-83b2-4723-8977-545333a405af" class="shg-c  ">
+              
+            <div class="quiz-result-wear">
+                <h3 class="quiz-result-wear-product-title">{{ product.title }}</h3>
+                <div class="quiz-result-wear-product-details">
+                    <div class="quiz-result-wear-product-image">
+                      <a
+                        href="{{ product.url }}"
+                        class="ProductItem__ImageWrapper {% if has_alternate_image %}ProductItem__ImageWrapper--withAlternateImage{% endif %}"
+                      >
+                        {%- if use_horizontal -%}
+                          {%- assign max_width = 125 -%}
+                        {%- else -%}
+                          {%- assign max_width = product.featured_media.preview_image.width -%}
+                        {%- endif -%}
+                  
+                        {%- assign media_aspect_ratio = product.featured_media.aspect_ratio
+                          | default: product.featured_media.preview_image.aspect_ratio
+                        -%}
+                  
+                          {%- comment -%}
+                            IMPLEMENTATION NOTE: The alternate image (not visible by default) should be the first in the DOM, as the spinner
+                            (Image__Loader element) is
+                            displayed based on the immediately previously shown image.
+                          {%- endcomment -%}
+                  
+                          {%- liquid
+                            # First set the main image
+                            if lowest_priced_variant
+                              assign main_img = selected_variant.featured_media
+                            elsif selected_variant.featured_media
+                              assign main_img = selected_variant.featured_media
+                            else
+                              assign main_img = product.featured_media
+                            endif
+                            # Next set the alt image, but only if necessary
+                            if has_alternate_image
+                              if lowest_priced_variant
+                                assign alt_img = product.media[0]
+                              else
+                                assign alt_img = product.media[1]
+                              endif
+                            endif
+                            # Lastly, check to see if the main and alt are the same.
+                            # If they are, reassign the alt image
+                            if main_img == alt_img and main_img != product.featured_media
+                              assign alt_img = product.featured_media
+                            elsif main_img == alt_img and main_img == product.featured_media and product.media[1] != nil
+                              assign alt_img = product.media[1]
+                            endif
+                          -%}
+                            <img
+                              class="ProductItem__Image"
+                              src="{{ main_img| img_url: '170x' }}"
+                              alt="{{ main_img.alt | escape }}"
+                            >
+                      </a>
+                    </div>
+                    <div class="quiz-result-wear-product-description">
+                      {% if product.metafields.global.custm_below_description != blank %}
+                        {{ product.metafields.global.custm_below_description }}
+                      {% else %}
+                            Best for regular to heavy period flow, light bladder leaks, or as a worry-free backup to a cup, disc, or tampon. Regular to high absorbency (up to 3 tampons). If between sizes, size up.
+                      {% endif %}
+                        
+                    </div>
+                </div>
+                <div id="quiz-result-leakproof-mesh-hipster-add-to-cart" class="quiz-result-add-to-cart">
+                    
+                  
+                 <form method="post" action="/cart/add" id="product_form_{{ product.id }}" accept-charset="UTF-8" class="ProductForm" enctype="multipart/form-data">
+                   <input type="hidden" name="form_type" value="product">
+                   <input type="hidden" name="utf8" value="✓">
+                    <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
+                  {% if product.variants.size > 1 %}
+                    <div class="quiz-result-add-to-cart-options">
+                        {% for option in product.options %}
+                          <div class="quiz-result-add-to-cart-option-selector">
+                              
+                              <div class="quiz-result-variant-option-label">
+                                  <label for="quiz-result-variant-option-{{forloop.index0}}">{{ option }}</label>
+                                  {% if option == 'Color' %}
+                                    <button type="button" class="quiz-result-modal-link" data-action="open-modal" aria-controls="modal-mesh-hipster-saalt-wear-colors">
+                                    See the Color
+                                    </button>
+                                  {% elsif option == 'Size' %}
+                                    <button type="button" class="quiz-result-modal-link" data-action="open-modal" aria-controls="modal-size-chart-wear">
+                                    Size Chart
+                                    </button>
+                                  {% endif %}
+                              </div>
+                              <select name="quiz-result-variant-option-{{forloop.index0}}" class="quiz-result-variant-option-{{forloop.index0}} quiz-result-variant-selector" data-parent-selector="leakproof-mesh-hipster-variant-selector">
+                                {% capture option_index %}option{{ forloop.index }}{% endcapture %} 
+                				{% assign option_values = product.variants | map: option_index | uniq %}
+                                {% for choice in option_values %}
+                             		<option  value="{{ choice }}" > {{ choice }} </option>
+                            	{% endfor %}      
+                              </select>
+                          </div>
+                        {% endfor %}
+                    </div>
+                  {% endif %}
+                  <select id="product-select-{{ product.id }}" class="quiz-result-option-master-selector" name="id" name="variant-id">
+                        {% for option in product.variants %}
+                           <option value="{{option.id}}" {%- if option.available == false %}disabled{% endif %}>{{option.title}}</option>
+                        {% endfor %}
+                      </select>
+                   <div class="quiz-result-price">{{ cart.currency.symbol  }}{{ product.price | money_without_currency | replace:',','.'}}</div>
+                   <a href="#" class="cup-quiz-product-add quiz-result-button">Add to cart</a>
+      		</form>
+                </div>
+            </div>
+            <span style="display:none;">mesh-hipster-saalt-wear-colors</span>
+            </div>
+  
+          {% endfor %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+      </div>
+    </div>
+    </div>
+</div>
+  
+</div>
+<script>
+$(document).ready(function() {
+  // Attach an event listener to the select element
+  $(".quiz-result-variant-selector").change(function() {
+    var parentElement = $(this).parents('.quiz-result-add-to-cart-options');
+    var parentElementForm =$(this).parents('form');
+    var select_button_text = parentElement.find('select option:selected').toArray().map(item => item.value);
+    console.log(select_button_text);
+    // Get the selected value and update the paragraph
+    var selection_option = select_button_text.join(' / ');
+    var optionToSelect = parentElement.next('.quiz-result-option-master-selector').find('option').each(function() {
+      if ($(this).text() === selection_option) {
+        $(this).prop('selected', true);
+        if ($(this).is(":disabled")) {
+          parentElementForm.find('.quiz-result-button').text('Out of Stock');
+          parentElementForm.find('.quiz-result-button').attr('disabled','disabled');
+        }else{
+          parentElementForm.find('.quiz-result-button').text('Add to Cart');
+          parentElementForm.find('.quiz-result-button').removeAttr('disabled');
+        }
+        return false; // Exit the loop once a match is found
+      }
+    });
+  });
+  $(".quiz-result-button").click(function(event) {
+    // Prevent the default form submission to prevent a page reload
+    event.preventDefault();
+    
+    // Find the parent form element and serialize its data
+    var formData = $(this).closest('form').serialize();
+    
+    // Send the form data to the server using AJAX
+    $.ajax({
+      type: "POST", // or "GET" depending on your server-side setup
+      url: "/cart/add.js",
+      data: formData,
+      success: function(response) {
+        // Handle the response from the server
+      },
+      error: function(error) {
+        // Handle any errors that occur during the AJAX request
+        var error_response = JSON.parse(error.responseText);
+        console.error("Error:", error_response.description);
+      }
+    });
+  });
+});
+</script>
