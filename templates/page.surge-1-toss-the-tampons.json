@@ -149,7 +149,7 @@
           "type": "section_content",
           "settings": {
             "text_group_num": "2",
-            "text_content": "<h3><em>Ditch the Disposables<\/em><\/h3><p>Switch to a fully reusable, ultra-comfortable period with Saalt for <strong>2 cycles<\/strong>.  When you invite your friends to take the challenge together, you get our best deal ever.<\/p>"
+            "text_content": "<h3><em>Ditch the Disposables<\/em><\/h3><p>Switch to a fully reusable, ultra-comfortable period with Saalt for <strong>2 cycles<\/strong>. When you <strong>invite 2+ friends<\/strong> to take the challenge together, you all get our best deal ever.<\/p>"
           }
         }
       },
@@ -231,6 +231,7 @@
       "blocks": {
         "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_title-1": {
           "type": "section_title",
+          "disabled": true,
           "settings": {
             "heading_tag": "2",
             "title": "The reviews are in!"
@@ -239,7 +240,7 @@
         "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>From skeptical to never-going-back<\/p>"
+            "text_content": "<h2>The reviews are in!<\/h2><p>From skeptical to never-going-back<\/p>"
           }
         }
       },
@@ -247,9 +248,12 @@
         "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_title-1",
         "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_content-1"
       ],
+      "custom_css": [
+        "h2 {font-size: 34px;}"
+      ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme-color-bg-0",
+        "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "none",
         "custom_code": "",
@@ -307,6 +311,7 @@
         "testimonial_TyjEhV",
         "testimonial_iKPgGy"
       ],
+      "disabled": true,
       "settings": {
         "slide_height": "adapt_image",
         "slider_visual": "dots",
@@ -371,7 +376,7 @@
         "background_style": "primary",
         "theme_color_column_secondary_bg": "--palette-color-0",
         "column_secondary_bg_opacity": 100,
-        "review_star_color_override": "theme_default",
+        "review_star_color_override": "--palette-color-4",
         "review_star_opacity_override": 100,
         "button_text": "",
         "button_url": "",
@@ -381,7 +386,7 @@
         "theme_color_section_button_background_hover": "theme_default",
         "theme_color_text_section_button_text_hover": "theme_default",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -393,7 +398,13 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "Choose your pack, and challenge a friend (or two) to join you and save more!"
+            "title": "Step 1: Buy a Challenge Pack with your friends to get our best deal ever."
+          }
+        },
+        "section_content_LcXK3N": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p><em>Yes! You can mix and match any packs and choose different Saalt Wear sizes.<\/em><\/p>"
           }
         },
         "section_tiles_group_jEFGyA": {
@@ -412,10 +423,11 @@
         "saalt_style_1_tile_y3XpiF": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "title": "Tile Title Goes Here",
-            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
-            "button_text": "",
-            "button_url": "",
+            "image": "shopify:\/\/shop_images\/Saalt-Skeptical-Bundle-V2-Update_03.jpg",
+            "title": "Challenge Trial Pack",
+            "text_content": "<b>Buy 3 packs for $65 each\u2028<\/b><br>(Save 24%)<br>\n<br>\n<b>Buy 2 packs for $70 each<\/b><br>(Save 18%)<br>\n<br>\n<b>Buy 1 pack for $77 each<\/b><br>(Save 10%)<br>",
+            "button_text": "Buy Challenge Trial Pack",
+            "button_url": "\/products\/challenge-trial-pack-v2",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -426,10 +438,11 @@
         "saalt_style_1_tile_Ame9Ha": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "title": "Tile Title Goes Here",
-            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
-            "button_text": "",
-            "button_url": "",
+            "image": "shopify:\/\/shop_images\/Saalt-Skeptical-Bundle_03.jpg",
+            "title": "Challenge Accepted Pack",
+            "text_content": "<b>Buy 3 packs for $86 each\u2028<\/b><br>(Save 30%)<br>\n<br>\n<b>Buy 2 packs for $97 each<\/b><br>(Save 21%)<br>\n<br>\n<b>Buy 1 pack for $111 each<\/b><br>\n(Save 10%)<br>",
+            "button_text": "Buy Challenge Accepted Pack",
+            "button_url": "\/products\/challenge-test",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -440,10 +453,11 @@
         "saalt_style_1_tile_MB9gWQ": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "title": "Tile Title Goes Here",
-            "text_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.",
-            "button_text": "",
-            "button_url": "",
+            "image": "shopify:\/\/shop_images\/Saalt-Committed-Pack-1_11.jpg",
+            "title": "I'm Committed Pack",
+            "text_content": "<b>Buy 3 packs for $99 each\u2028<\/b><br>(Save 45%)<br>\n<br>\n<b>Buy 2 packs for $135 each<\/b>\n<br>(Save 25%)<br>\n<br>\n<b>Buy 1 pack for $153 each<\/b><br>(Save 15%)",
+            "button_text": "Buy I'm Committed Pack",
+            "button_url": "\/products\/im-committed-pack",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -454,23 +468,103 @@
       },
       "block_order": [
         "section_title_D78VmB",
+        "section_content_LcXK3N",
         "section_tiles_group_jEFGyA",
         "saalt_style_1_tile_y3XpiF",
         "saalt_style_1_tile_Ame9Ha",
         "saalt_style_1_tile_MB9gWQ"
       ],
+      "custom_css": [
+        ".text-wrapper {background-color: #eef0f4;}"
+      ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme-color-bg-3",
+        "theme_color_background": "theme-color-bg-4",
         "theme_color_text": "theme_default",
         "title_font_size": "small",
-        "content_font_size": "small",
+        "content_font_size": "medium",
         "mobile_text_alignment": "center",
         "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "use_max_text_width": true,
+        "max_width": "900px",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "saalt_media_with_text_LHp9mg": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "section_content_dTjr3t": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<h3>Step 2: Post that you're taking the #DitchTheDisposables challenge and tag your friends and <a href=\"https:\/\/www.instagram.com\/saaltco\/\" target=\"_blank\">@saaltco<\/a>.<\/h3>"
+          }
+        }
+      },
+      "block_order": [
+        "section_content_dTjr3t"
+      ],
+      "custom_css": [
+        ".text-wrapper {background-color: #eef0f4;}",
+        "h3 {font-size: 24px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "700px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "saalt_media_with_text_UEtLNU": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "section_content_dKxW7G": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<h3>Step 3: Use your fully reusable Saalt products for <strong>2 cycles with your besties<\/strong>, and have your most comfortable period ever.<\/h3>"
+          }
+        }
+      },
+      "block_order": [
+        "section_content_dKxW7G"
+      ],
+      "custom_css": [
+        ".section-image-with-text {background-color: #eef0f4;}",
+        "h3 {font-size: 24px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": true,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "below",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "750px",
+        "padding_top": 0,
+        "padding_bottom": 32
       }
     }
   },
@@ -483,6 +577,8 @@
     "e8f8ad80-7890-480a-8074-f9883439de49",
     "saalt_testimonials_wDcdfJ",
     "multicolumn_jQmETU",
-    "saalt_style_1_tiles_section_nXBNLt"
+    "saalt_style_1_tiles_section_nXBNLt",
+    "saalt_media_with_text_LHp9mg",
+    "saalt_media_with_text_UEtLNU"
   ]
 }
