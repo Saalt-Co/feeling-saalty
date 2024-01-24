@@ -491,15 +491,91 @@
         "padding_bottom": 0
       }
     },
-    "custom_liquid_wHYwY3": {
-      "type": "custom-liquid",
+    "saalt_media_with_text_LHp9mg": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "section_title_hGVXEY": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "3",
+            "title": "Step 2: Post that you are taking the #DitchTheDisposables challenge and tag your friends and <a href=\"https:\/\/www.instagram.com\/saaltco\/\" target=\"_blank\">@saaltco<\/a>."
+          }
+        },
+        "custom_liquid_code_rVGJXH": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<div class=\"horizontal-line\"><\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_hGVXEY",
+        "custom_liquid_code_rVGJXH"
+      ],
       "custom_css": [
-
+        ".text-wrapper {background-color: #eef0f4;}"
       ],
       "settings": {
-        "custom_liquid": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "700px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "saalt_media_with_text_UEtLNU": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "section_title_zVUJPC": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "3",
+            "title": "Step 3: Use your fully reusable Saalt products for <b>2 cycles with your besties<\/b>, and have your most comfortable period ever."
+          }
+        },
+        "custom_liquid_code_aetHCG": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<div class=\"horizontal-line\"><\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_zVUJPC",
+        "custom_liquid_code_aetHCG"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "750px",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
@@ -513,6 +589,7 @@
     "saalt_testimonials_wDcdfJ",
     "multicolumn_jQmETU",
     "saalt_style_1_tiles_section_nXBNLt",
-    "custom_liquid_wHYwY3"
+    "saalt_media_with_text_LHp9mg",
+    "saalt_media_with_text_UEtLNU"
   ]
 }
