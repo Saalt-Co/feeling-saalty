@@ -98,7 +98,7 @@
         "show_secondary_image": true,
         "show_price_range": true,
         "show_strikethrough_price": true,
-        "use_lowest_priced_variant": true,
+        "use_lowest_priced_variant": false,
         "show_vendor": false,
         "show_rating": true,
         "show_swatches": true,
