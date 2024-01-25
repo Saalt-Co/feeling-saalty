@@ -298,7 +298,6 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
-     {{ 'dev-style.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -334,7 +333,7 @@
         {% render 'third-party-head-scripts_us' %}
     {%- endcase -%}
     <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/1ob5zLVl0tGNVDAihObqpQ" async></script>
-</head>
+  </head>
 
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -402,5 +401,6 @@
       {%- else -%}
         {% render 'third-party-body-scripts_us' %}
     {%- endcase -%}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   </body>
 </html>
