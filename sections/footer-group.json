@@ -30,8 +30,7 @@
         "email_form_jWgVBW"
       ],
       "custom_css": [
-        ".newsletter__wrapper {background: #f7d6c5;}",
-        "#lightbox-56afdd9a-c91a-4dc2-80a3-0efe6c66273a-1706200047534 {display: flex; justify-content: center; align-items: center;}"
+        ".newsletter__wrapper {background: #f7d6c5;}"
       ],
       "settings": {
         "theme_color_background": "theme-color-bg-4",
