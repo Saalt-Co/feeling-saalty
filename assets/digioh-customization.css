@@ -1,69 +1,207 @@
 .quiz-content {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    min-height: 50px;
-    max-width: 1050px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  min-height: 50px;
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 h4.collection-hero__title {
-    max-width: 600px;
-    font-size: 26px !important;
-    font-weight: 300 !important;
-    color: #575f6f;
-    line-height: 1.27;
-    text-align: center;
-    margin: 0 auto;
+  max-width: 600px;
+  font-size: 26px !important;
+  font-weight: 300 !important;
+  color: #575f6f;
+  line-height: 1.27;
+  text-align: center;
+  margin: 0 auto;
 }
 .collection-hero__description.rte {
-    font-size: 15px!important;
-    font-weight: 600!important;
-    text-align: center;
-    padding-top: 10px;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  text-align: center;
+  padding-top: 10px;
 }
-.cup-heading h2, .salt-wear h2 {
-    font-size: 14px!important;
-    font-weight: 300!important;
-    color: #575f6f!important;
-    text-align: left!important;
-    line-height: 1.5!important;
-    text-transform: uppercase;
-    border-bottom: solid 1px #F7D6C5;
-    margin-bottom: 30px;
-    margin-top: 60px;
-    letter-spacing: normal;
+.cup-heading h2,
+.salt-wear h2 {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  color: #575f6f !important;
+  text-align: left !important;
+  line-height: 1.5 !important;
+  text-transform: uppercase;
+  border-bottom: solid 1px #f7d6c5;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  letter-spacing: normal;
 }
-.salt-wear-description{
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 20px!important;
-    color: #223c52!important;
-    line-height: 26px;
-    text-align: center !important;
-    display: block;
-    margin-bottom: 25px;
-    padding-left: 10%;
-    padding-right: 10%;
+.salt-wear-description {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 20px !important;
+  color: #223c52 !important;
+  line-height: 26px;
+  text-align: center !important;
+  display: block;
+  margin-bottom: 25px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-.ColorSwatch--large{
+.ColorSwatch--large {
   height: 50px;
   width: 50px;
 }
 .quiz-result-button {
-    background: #F7D6C5;
-    font-family: var(--heading-font-family);
-    font-size: 12px;
-    color: #000;
-    text-transform: uppercase;
-    padding: 8px 20px;
-    border-radius: 120px;
-    border: solid 1px #F7D6C5;
-    transition: background-color .3s,border-color .3s;
-    display: inline-block;
+  background: #f7d6c5;
+  font-family: var(--heading-font-family);
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 120px;
+  border: solid 1px #f7d6c5;
+  transition: background-color 0.3s, border-color 0.3s;
+  display: inline-block;
+}
+
+.quiz-result-intro-heading .shogun-heading-component h4 {
+  max-width: 600px;
+  font-size: 20px !important;
+  font-weight: 300 !important;
+  color: #575f6f !important;
+  line-height: 1.27;
+  text-align: center !important;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 50em) {
+  .quiz-result-intro-heading .shogun-heading-component h4 {
+    font-size: 26px !important;
+  }
+}
+
+.quiz-result-cup-title h1 {
+  font-size: 20px !important;
+  color: #575f6f;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+.quiz-result-cup-title {
+  margin-bottom: 20px;
+}
+
+.quiz-result-cup-image {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.quiz-result-cup-details h3 {
+  font-size: 18px !important;
+  color: #575f6f !important;
+  line-height: 1.5;
+  margin-bottom: 26px;
+}
+
+.quiz-result-cup-variants {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+  grid-gap: 45px;
+}
+@media (max-width: 749px) {
+  .bs-quiz-result-disc-variants {
+    grid-template-columns: auto;
+  }
+}
+.quiz-result-cup-variant {
+  text-align: center;
+}
+
+.quiz-result-cup-variant-title {
+  font-size: 14px !important;
+  color: #575f6f !important;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.quiz-result-cup-variant-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #575f6f;
+  line-height: 1.17;
+  margin-bottom: 10px;
+}
+
+.quiz-result-cup-variant-swatch span {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.quiz-result-cup-variant-swatch-himalayan-pink span {
+  background-color: #f37e93;
+}
+
+.quiz-result-cup-variant-swatch-ocean-blue span {
+  background-color: #a4c3e6;
+}
+
+.quiz-result-cup-variant-swatch-seafoam-green span {
+  background-color: #6eb992;
+}
+
+.quiz-result-cup-variant-swatch-mist-grey span {
+  background-color: #8e8e8e;
+}
+
+.quiz-result-cup-variant-swatch-desert-blush span {
+  background-color: #f2b1a0;
+}
+
+.quiz-result-cup-variant-swatch-wild-rose span {
+  background-color: #d81582;
+}
+
+.quiz-result-cup-variant-swatch-aqua-green span {
+  background-color: #68c1c1;
+}
+
+@media only screen and (min-width: 35em) {
+  .quiz-result-cup-image {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  .quiz-result-cup-title h1 {
+    font-size: 26px !important;
+    line-height: 1;
+  }
+  .quiz-result-cup-content {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .quiz-result-cup-image {
+    width: 100%;
+    flex-shrink: 1;
+  }
+  .quiz-result-cup-details {
+    flex-shrink: 5;
+    padding-left: 30px;
+  }
+}
+
+@media only screen and (min-width: 65em) {
+  .quiz-result-cup-image {
+    flex-shrink: 0;
+  }
+  .quiz-result-cup-details {
+    flex-shrink: 1;
+  }
 }
