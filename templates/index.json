@@ -61,7 +61,7 @@
           "settings": {
             "text_group_num": "1",
             "button_text": "SHOP CUPS & DISCS",
-            "button_url": "",
+            "button_url": "shopify:\/\/collections\/menstrual-cups-discs",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -161,7 +161,6 @@
         "section_icon_with_text_PCcgkj",
         "section_content_JEqaqd"
       ],
-      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-5",
