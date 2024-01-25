@@ -93,7 +93,8 @@
                       <p class="caption-with-letter-spacing">{{ item.product.vendor }}</p>
                     {%- endif -%}
 
-                    <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
+                    <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}
+<span class='booster-cart-item-success-notes' data-key='{{item.key}}'></span><span class='booster-cart-item-upsell-notes' data-key='{{item.key}}'></span></a>
 
                     {%- if item.original_price != item.final_price -%}
                       <div class="cart-item__discounted-prices">
@@ -112,7 +113,7 @@
                       </div>
                     {%- else -%}
                       <div class="product-option">
-                        {{ item.original_price | money }}
+                        <div class="qb-price-item" data-id="{{ item.key }}">{{ item.original_price | money }}</div>
                       </div>
                     {%- endif -%}
 
@@ -184,7 +185,7 @@
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end">
-                              {{ item.original_line_price | money }}
+                              <div class="qb-total-line-item" data-id="{{ item.key }}">{{ item.original_line_price | money }}</div>
                             </s>
                           </dd>
                           <dt class="visually-hidden">
@@ -196,7 +197,7 @@
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          {{ item.original_line_price | money }}
+                          <div class="qb-total-line-item" data-id="{{ item.key }}">{{ item.original_line_price | money }}</div>
                         </span>
                       {%- endif -%}
 
@@ -307,7 +308,7 @@
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end">
-                              {{ item.original_line_price | money }}
+                              <div class="qb-total-line-item" data-id="{{ item.key }}">{{ item.original_line_price | money }}</div>
                             </s>
                           </dd>
                           <dt class="visually-hidden">
@@ -319,7 +320,7 @@
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          {{ item.original_line_price | money }}
+                          <div class="qb-total-line-item" data-id="{{ item.key }}"><span class='booster-cart-item-line-price' data-key='{{item.key}}'>{{ item.original_line_price | money }}</span></div>
                         </span>
                       {%- endif -%}
 
