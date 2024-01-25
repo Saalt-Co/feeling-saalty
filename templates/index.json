@@ -48,7 +48,7 @@
           "settings": {
             "text_group_num": "1",
             "button_text": "SHOP SAALT WEAR",
-            "button_url": "",
+            "button_url": "shopify:\/\/collections\/saalt-period-underwear",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
