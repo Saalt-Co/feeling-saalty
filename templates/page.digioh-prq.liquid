@@ -363,7 +363,7 @@
   
 </div>
 <script defer>
-window.addEventListener("DOMContentLoaded", function(){
+  setTimeout(function(){
     $(document).ready(function() {
   // Attach an event listener to the select element
   $(".quiz-result-variant-selector").change(function() {
@@ -410,6 +410,7 @@ window.addEventListener("DOMContentLoaded", function(){
     });
   });
 });
-});
+  }, 5000);
+
 
 </script>
