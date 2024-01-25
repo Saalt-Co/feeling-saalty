@@ -2,6 +2,7 @@
   "sections": {
     "video_EigDgm": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -9,11 +10,176 @@
         "video": "shopify:\/\/files\/videos\/Video Homepage 2023.mp4",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
-        "full_width": false,
+        "full_width": true,
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "saalt_media_with_split_text_g9QA77": {
+      "type": "saalt-media-with-split-text",
+      "blocks": {
+        "section_title_9XfVYM": {
+          "type": "section_title",
+          "settings": {
+            "text_group_num": "1",
+            "heading_tag": "1",
+            "title": "Period Care Simplified"
+          }
+        },
+        "section_content_YaCmrh": {
+          "type": "section_content",
+          "settings": {
+            "text_group_num": "1",
+            "text_content": "<p>Premium reusable menstrual cups, discs and leakproof period underwear.<\/p>"
+          }
+        },
+        "section_buttons_group_gNfAjf": {
+          "type": "section_buttons_group",
+          "settings": {
+            "text_group_num": "1",
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_dRB8y9": {
+          "type": "section_button",
+          "settings": {
+            "text_group_num": "1",
+            "button_text": "SHOP SAALT WEAR",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "section_button_6bJtp3": {
+          "type": "section_button",
+          "settings": {
+            "text_group_num": "1",
+            "button_text": "SHOP CUPS & DISCS",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "section_icon_group_wLdtXt": {
+          "type": "section_icon_group",
+          "settings": {
+            "text_group_num": "2",
+            "mobile_icons_display": "row",
+            "mobile_icon_group_horizontal_alignment": "center",
+            "mobile_icon_group_vertical_alignment": "flex-start",
+            "mobile_icon_grid_columns": 2,
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_text_size": "1.5rem",
+            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_vertical_alignment": "center",
+            "mobile_icon_min_width": "80px",
+            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "100px",
+            "use_max_icon_group_width": false,
+            "icon_group_max_width": "600px",
+            "desktop_icons_display": "row",
+            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_vertical_alignment": "center",
+            "desktop_icon_grid_columns": 2,
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_horizontal_alignment": "center",
+            "desktop_icon_vertical_alignment": "center",
+            "desktop_icon_min_width": "80px",
+            "desktop_icon_wrapper_max_width": "100px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "100px"
+          }
+        },
+        "section_icon_with_text_G6qNVG": {
+          "type": "section_icon_with_text",
+          "disabled": true,
+          "settings": {
+            "text_group_num": "2",
+            "icon_svg": "",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "section_icon_with_text_6UUhVU": {
+          "type": "section_icon_with_text",
+          "disabled": true,
+          "settings": {
+            "text_group_num": "2",
+            "icon_svg": "",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "section_icon_with_text_PCcgkj": {
+          "type": "section_icon_with_text",
+          "disabled": true,
+          "settings": {
+            "text_group_num": "2",
+            "icon_svg": "",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "section_content_JEqaqd": {
+          "type": "section_content",
+          "disabled": true,
+          "settings": {
+            "text_group_num": "2",
+            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_9XfVYM",
+        "section_content_YaCmrh",
+        "section_buttons_group_gNfAjf",
+        "section_button_dRB8y9",
+        "section_button_6bJtp3",
+        "section_icon_group_wLdtXt",
+        "section_icon_with_text_G6qNVG",
+        "section_icon_with_text_6UUhVU",
+        "section_icon_with_text_PCcgkj",
+        "section_content_JEqaqd"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "media_type": "video",
+        "video": "shopify:\/\/files\/videos\/Video Homepage 2023.mp4",
+        "use_max_media_width": false,
+        "max_media_width": "600px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "saalt_bg_media_with_text_Qbh4qn": {
@@ -1210,6 +1376,7 @@
   },
   "order": [
     "video_EigDgm",
+    "saalt_media_with_split_text_g9QA77",
     "saalt_bg_media_with_text_Qbh4qn",
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
     "dec81ce8-0726-4327-93a6-eb82628398dc",
