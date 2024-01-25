@@ -337,6 +337,7 @@
     <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/1ob5zLVl0tGNVDAihObqpQ" async></script>
 
   {% include 'friendbuy' %}
+{% include 'ba-common' %}
 </head>
 
   <body class="gradient">
@@ -406,5 +407,6 @@
         {% render 'third-party-body-scripts_us' %}
     {%- endcase -%}
   {% render 'quantity-breaks-now', customer: customer, template: template, product: product, cart: cart %}
-        </body>
+        {% include 'ba-discounts' %}
+</body>
 </html>
