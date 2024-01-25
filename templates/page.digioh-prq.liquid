@@ -351,7 +351,7 @@
                         {% endfor %}
                       </select>
                    <div class="quiz-result-price">{{ cart.currency.symbol  }}{{ product.price | money_without_currency | replace:',','.'}}</div>
-                   <a href="#" class="cup-quiz-product-add quiz-result-button">Add to cart</a>
+                    <input type="submit" name="add" class="quiz-result-button quiz-result-cup-variant-add" value="Add to cart" />
       		</form>
                 </div>
             </div>
