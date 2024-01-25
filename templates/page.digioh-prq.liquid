@@ -324,14 +324,8 @@
                               
                               <div class="quiz-result-variant-option-label">
                                   <label for="quiz-result-variant-option-{{forloop.index0}}">{{ option }}</label>
-                                  {% if option == 'Color' %}
-                                    <button type="button" class="quiz-result-modal-link" data-action="open-modal" aria-controls="modal-mesh-hipster-saalt-wear-colors">
-                                    See the Color
-                                    </button>
-                                  {% elsif option == 'Size' %}
-                                    <button type="button" class="quiz-result-modal-link" data-action="open-modal" aria-controls="modal-size-chart-wear">
-                                    Size Chart
-                                    </button>
+                                  {% if option == 'Size' %}
+                                    <button class="size-chart-button" type="button">Size chart</button>
                                   {% endif %}
                               </div>
                               <select name="quiz-result-variant-option-{{forloop.index0}}" class="quiz-result-variant-option-{{forloop.index0}} quiz-result-variant-selector" data-parent-selector="leakproof-mesh-hipster-variant-selector">
