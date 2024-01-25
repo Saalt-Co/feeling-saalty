@@ -55,8 +55,8 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-Careers-Header-Mobile_e3261344-bac5-4315-ade1-7014e13b2fc3.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Careers-Home-Header2_copy.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Careers-Header-Mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Careers-Home-Header2.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
@@ -79,7 +79,6 @@
         "template--21570056913169__636e4f0f-cff7-490f-8b02-b8c7260cb10b-slide-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saalt-Careers-Home-Header2_copy.jpg",
             "heading": "<strong>Let's sync up.<\/strong>",
             "heading_size": "h0",
             "subheading": "Together we are dedicated to empowering and equipping people to live their best lives and change the world every single day.",
@@ -102,7 +101,6 @@
         "2907521c-63cd-43d3-bd61-3e7bad23c9ec": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saalt-Careers-Home-Header_copy.jpg",
             "heading": "<strong>Let's sync up.<\/strong>",
             "heading_size": "h0",
             "subheading": "Together we are dedicated to empowering and equipping people to live their best lives and change the world every single day.",
@@ -125,7 +123,6 @@
         "d13afc70-c8b6-46dc-9d90-227d6552a3e6": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saalt-Careers-Home-Header-3_copy.jpg",
             "heading": "<strong>Let's sync up.<\/strong>",
             "heading_size": "h0",
             "subheading": "Together we are dedicated to empowering and equipping people to live their best lives and change the world every single day.",
@@ -189,7 +186,7 @@
         ".media > *:not(.zoom):not(.deferred-media__poster-button),.media model-viewer {border-radius: 10px;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Office_6_7055e155-acdc-4ccf-99f1-2bff20ee5b50.png",
+        "image": "shopify:\/\/shop_images\/Office_6.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -392,8 +389,6 @@
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-Careers-Perks-Mobile-3_f7877d1f-3d8f-4d1d-8793-5e88ea0fd294.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Perks-3_a249e8c0-5ea2-447b-8260-991ba16a66f9.png",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
@@ -418,7 +413,7 @@
         "theme_color_text": "theme_default",
         "media_type": "image",
         "mobile_image": "shopify:\/\/shop_images\/Saalt-Careers-Adjectives.gif",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Careers-Adjectives-centere_7917b9fa-c69a-47bf-bc79-6609a380a5bf.gif",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Careers-Adjectives-2.gif",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
