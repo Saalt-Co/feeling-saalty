@@ -99,7 +99,7 @@
         "show_strikethrough_price": true,
         "use_lowest_priced_variant": false,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "show_swatches": true,
         "enable_quick_add": false,
         "enable_filtering": true,
