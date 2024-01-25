@@ -458,7 +458,6 @@
         "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-1": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TC-WR-Pink-Alex-4832_1.png",
             "title": "",
             "text_content": "",
             "button_text": "",
@@ -473,7 +472,6 @@
         "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-2": {
           "type": "saalt_style_1_tile",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-07-11_at_11.35_1.png",
             "title": "",
             "text_content": "",
             "button_text": "",
@@ -1050,7 +1048,7 @@
         "theme_color_background": "theme-color-bg-3",
         "theme_color_text": "theme-color-text-0",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Screenshot_2022-11-03_013756_1.png",
+        "image": "shopify:\/\/shop_images\/Questions_you_dont_have_to_whisper.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
