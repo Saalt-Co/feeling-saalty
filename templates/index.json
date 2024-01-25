@@ -39,7 +39,7 @@
           "type": "section_buttons_group",
           "settings": {
             "text_group_num": "1",
-            "desktop_button_group_alignment": "center",
+            "desktop_button_group_alignment": "flex-start",
             "desktop_buttons_group_gap": "1rem"
           }
         },
@@ -161,7 +161,6 @@
         "section_icon_with_text_PCcgkj",
         "section_content_JEqaqd"
       ],
-      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-5",
