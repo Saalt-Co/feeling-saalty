@@ -176,7 +176,9 @@ a.quiz-result-product:focus {
     text-decoration: underline;
     text-underline-offset: calc(var(--buttons-border-offset) * 10);
 }
-
+.quiz-result-cup-title a {
+    text-decoration: none;
+}
 .quiz-result-option-master-selector {
   display: none;
 }
