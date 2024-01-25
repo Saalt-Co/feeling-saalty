@@ -36,7 +36,7 @@
         "theme_color_background": "theme-color-bg-4",
         "theme_color_text": "theme_default",
         "input_opacity": 100,
-        "full_width": false,
+        "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
       }
