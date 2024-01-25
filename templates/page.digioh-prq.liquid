@@ -395,7 +395,7 @@ $(document).ready(function() {
     
     // Send the form data to the server using AJAX
     $.ajax({
-      type: "GET", // or "GET" depending on your server-side setup
+      type: "POST", // or "GET" depending on your server-side setup
       url: "/cart/add.js",
       data: formData,
       success: function(response) {
