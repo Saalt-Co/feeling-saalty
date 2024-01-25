@@ -79,8 +79,8 @@
             "display-box": false,
             "title": "<p><strong>Bundles<\/strong><\/p>",
             "copy": "<p>Save up to 20% and skip the guesswork with bundles custom-designed by our Saalt Coaches for all your leak needs. <\/p>",
-            "link_type": "filter",
-            "link_url": "",
+            "link_type": "url",
+            "link_url": "shopify:\/\/collections\/preset-bundles",
             "filter_name": "Product Type",
             "filter_val": "Bundle",
             "button_text": "Shop Bundles"
