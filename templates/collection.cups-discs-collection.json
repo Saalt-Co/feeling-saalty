@@ -82,7 +82,7 @@
             "link_type": "filter",
             "link_url": "shopify:\/\/collections\/preset-bundles",
             "filter_name": "Product Type",
-            "filter_val": "Bundle",
+            "filter_val": "Bundles",
             "button_text": "Shop Bundles"
           }
         },
