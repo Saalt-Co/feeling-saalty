@@ -74,7 +74,7 @@
         "a82180c6-ec90-4917-8b3b-cefb34aa5c0b": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-02_44be1d1d-0612-4cda-a9ec-2fc5d88cd428.jpg",
+            "image": "shopify:\/\/shop_images\/Saalt-Disc-Instructions-Graphics-You-did-it.jpg",
             "title": "",
             "rating": 0,
             "text": "<p>You did it. You chose the best period care on planet Earth. Bravo! And you’re not alone. Every day people trust the Saalt Disc to simplify their period care and keep toxins out of their body.<\/p>",
@@ -85,7 +85,7 @@
         "d8fa7087-4376-4bb2-a902-0116fc5be5c6": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-01_333d21d5-f5bb-4bb0-8ca1-47b03c3e3742.jpg",
+            "image": "shopify:\/\/shop_images\/Saalt-Disc-Instructions-Graphics-sanitize-your-disc.jpg",
             "title": "",
             "rating": 0,
             "text": "<p>Saalt Discs are not supplied in a sterile state. Sanitize your disc by boiling it in water for 4–5 min (no more than 7 min). Use tongs or a whisk to ensure the disc doesn’t rest on the bottom of the pot.<\/p>",
@@ -96,7 +96,7 @@
         "c04c23d8-418f-4d6b-bd8e-a1253bcfadb3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-14_3b7b368f-58d1-42fb-b3d0-443f6baaf745.jpg",
+            "image": "shopify:\/\/shop_images\/Saalt-Disc-Instructions-Graphics-wash-your-hands.jpg",
             "title": "",
             "rating": 0,
             "text": "<p>Wash your hands and your Saalt Disc with water and a pH-balanced cleanser. Rinse thoroughly.<\/p>",
@@ -117,7 +117,7 @@
         "title": "Let's Get Started",
         "heading_size": "h1",
         "image_width": "full",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "columns_desktop": 3,
         "column_alignment": "left",
         "theme_color_background": "theme_default",
@@ -182,7 +182,7 @@
         "78bd6f06-82e0-4810-b05f-0e014170581f": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/00956-Saalt-Disc-Instructions-Graphics-Saved-03-removebg-preview.png",
+            "image": "shopify:\/\/shop_images\/Saalt-Disc-Instructions-Graphics-pinch.png",
             "caption": "STEP 1",
             "heading": "Pinch",
             "text": "<p>With clean hands, pinch the disc by pressing the rim together in the center to form an “8” shape with the removal notch at one end.<\/p>",
@@ -349,8 +349,8 @@
         "mobile_text_alignment": "left",
         "desktop_text_position": "right",
         "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "use_max_text_width": true,
+        "max_width": "900px",
         "padding_top": 0,
         "padding_bottom": 0
       }
