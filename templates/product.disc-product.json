@@ -546,7 +546,7 @@
           "type": "section_button",
           "settings": {
             "button_text": "LEARN MORE",
-            "button_url": "shopify:\/\/pages\/menstrual-disc-instructions-1",
+            "button_url": "shopify:\/\/pages\/menstrual-disc-instructions",
             "button_type": "secondary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
