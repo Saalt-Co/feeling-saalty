@@ -171,7 +171,7 @@
             "use_max_icon_group_width": false,
             "icon_group_max_width": "600px",
             "desktop_icons_display": "row",
-            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_horizontal_alignment": "flex-start",
             "desktop_icon_group_vertical_alignment": "center",
             "desktop_icon_grid_columns": 2,
             "desktop_icon_group_gap": "3.5rem",
