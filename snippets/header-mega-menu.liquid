@@ -14,7 +14,10 @@
       <li>
         {%- if link.links != blank -%}
           <header-menu>
-            <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
+            <details
+              id="Details-HeaderMenu-{{ forloop.index }}"
+              class="mega-menu {% if link.levels == 1 %}non-megamenu-top{% endif %}"
+            >
               <summary class="header__menu-item list-menu__item link focus-inset">
                 {% if section.settings.use_hover %}
                   <a
@@ -45,7 +48,7 @@
               </summary>
               <div
                 id="MegaMenu-Content-{{ forloop.index }}"
-                class="mega-menu__content gradient motion-reduce global-settings-popup theme-color-text-ignore-children"
+                class="mega-menu__content gradient motion-reduce global-settings-popup theme-color-text-ignore-children {% if link.levels == 1 %}non-megamenu{% endif %}"
                 tabindex="-1"
               >
                 <ul

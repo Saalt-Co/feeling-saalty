@@ -7,7 +7,7 @@
   data-filter-val="{{ block.settings.filter_val }}"
 >
   <a
-    class="window-feature"
+    class="window-feature {% if checkboxEnable %} {% else %}no-hover{% endif %}" 
     tabindex="0"
     {% if block.settings.link_type == 'url' %}
       href="{{ block.settings.link_url }}"
@@ -36,18 +36,18 @@
         {{ placeholder_name | placeholder_svg_tag }}
       {%- endif -%}
     </div>
-    <div class="text-wrapper">
-      {%- if block.settings.title != blank -%}
-        <div class="window-feature-title">
-          {{ block.settings.title }}
-        </div>
-      {%- endif -%}
-      <div class="window-feature-copy">
-        {%- if block.settings.copy != blank -%}
-          {{ block.settings.copy }}
+      <div class="text-wrapper">
+        {%- if block.settings.title != blank -%}
+          <div class="window-feature-title">
+            {{ block.settings.title }}
+          </div>
         {%- endif -%}
+        <div class="window-feature-copy">
+          {%- if block.settings.copy != blank -%}
+            {{ block.settings.copy }}
+          {%- endif -%}
+        </div>
       </div>
-    </div>
   </a>
   <div class="window-feature-button-wrapper">
     {% if block.settings.link_type == 'url' %}

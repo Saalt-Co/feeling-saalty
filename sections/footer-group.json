@@ -32,7 +32,7 @@
       "settings": {
         "theme_color_background": "theme-color-bg-6",
         "theme_color_text": "theme_default",
-        "input_opacity": 25,
+        "input_opacity": 100,
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -93,6 +93,11 @@
         "d45b85e4-9b80-4201-a374-3617aea76e29"
       ],
       "settings": {
+        "footer_display": "flex",
+        "mobile_h_gap": 2,
+        "mobile_v_gap": 1,
+        "desktop_h_gap": 3,
+        "desktop_v_gap": 1,
         "theme_color_background": "theme-color-bg-2",
         "theme_color_text": "theme-color-text-0",
         "newsletter_enable": false,

@@ -5,7 +5,7 @@
 <section
   id="section-{{ section.id }}"
   data-section-id="{{ section.id }}"
-  class="section{% if section.settings.make_full_width == false %} page-width{% endif %}"
+  class="section{% if section.settings.make_full_width == false %} page-width{% endif %} {% if section.settings.global_checkbox %}{% else %} global_no_hover{% endif %}"
 >
   <window-display class="window-display" {{ block.shopify_attributes }}>
     {%- assign block_count = section.blocks | size -%}
@@ -36,7 +36,8 @@
               section: section,
               block: block,
               window_display_count: window_display_count,
-              forloop_index: forloop.index
+              forloop_index: forloop.index,
+              checkboxEnable: block.settings.display-box
             %}
             {%- endcapture -%}
             {%- assign window_feature_code = window_feature_code | append: captured_code -%}
@@ -51,6 +52,9 @@
 </section>
 
 {%- style -%}
+  .window-feature.no-hover:hover .text-wrapper, .global_no_hover .window-feature:hover .text-wrapper {
+    top: calc(100% - 3.45rem) !important;
+}
   #section-{{ section.id }} .window-display, #section-{{ section.id }} .window-display .window-display-inner-wrapper {
     display: flex;
     justify-content: flex-start;
@@ -230,6 +234,13 @@
   "name": "Saalt Window Display",
   "class": "section",
   "settings": [
+     {
+      "type": "checkbox",
+      "id": "global_checkbox",
+      "label": "Check this box for display hover",
+      "info": "If this option is unchecked, the window hover display will be disabled.",
+      "default": true
+    },
     {
       "type": "text",
       "id": "section_id",
@@ -384,6 +395,13 @@
           "id": "image",
           "label": "Window Display Image",
           "info": "The background image for the window display"
+        },
+        {
+          "type": "checkbox",
+          "id": "display-box",
+          "label": "Check this box for display hover",
+          "info": "If this option is unchecked, the window hover display will be disabled on this card.",
+          "default": true
         },
         {
           "type": "richtext",

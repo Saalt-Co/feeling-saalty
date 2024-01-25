@@ -78,7 +78,7 @@
     "145a2af9-149a-4dad-acd0-ab8f163dc90b": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style=\"text-align: center;\" id=\"lightbox-inline-form-11d7460a-cf70-4b25-afb9-ace28d763f0b\">\n<div style=\"position: relative; text-align: center; border-style: none; border-width: 0px; background-color: #fff; height: 750px; width: 100%;\" class=\"box_loading_placeholder\">\n<div style=\"position: absolute; z-index: 9000; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.25);\" class=\"box_loading_placeholder_overlay\"><\/div>\n<div style=\"width: 100%; font-family: Montserrat, sans-serif; font-size: 18px; line-height: 28px; color: #222525; position: relative; top: 50%; transform: translateY(-50%); z-index: 9999;\">\n<img style=\"margin: 0 auto; max-height: 100%; max-width: 100%;\" src=\"https:\/\/s3.lightboxcdn.com\/vendors\/357ae127-e66b-4e0b-a8d7-51c895139da9\/uploads\/d2660610-879c-486f-bf1f-31e28f4b0a07\/Eclipse1s200px6.gif\" class=\"box_loading_placeholder_image\">\n<p> <\/p>\n<\/div>\n<\/div>\n<\/div>",
+        "custom_liquid": "<div id=\"lightbox-inline-form-a4fb29bb-56a7-4701-bda8-cc277c0110df\" style=\"text-align: center;\"><div class=\"box_loading_placeholder\" style=\"position: relative; text-align: center;border-style: none;border-width: 0px;background-color: #fff;height: 750px;width: 100%;\">\n<div class=\"box_loading_placeholder_overlay\" style=\"position: absolute;z-index: 9000;top: 0;left: 0;width: 100%;height: 100%; background: rgba(255, 255, 255, 0.25);\"><\/div>\n<div style=\"width: 100%; font-family: Montserrat, sans-serif; font-size: 18px; line-height: 28px; color: #222525; position: relative; top: 50%; transform: translateY(-50%); z-index: 9999;\">\n<img class=\"box_loading_placeholder_image\" src=\"https:\/\/s3.lightboxcdn.com\/vendors\/357ae127-e66b-4e0b-a8d7-51c895139da9\/uploads\/dfd54a0c-fdce-4dd2-8dc1-e8a4e47aa231\/Eclipse1s200px7.gif\" style=\"margin: 0 auto; max-height: 100%; max-width: 100%;\"><p><a href=\"https:\/\/www.digioh.com\/\" target=\"_blank\" style=\"color: inherit; text-decoration: none;\">Product Quiz<\/a><\/p>\n<\/div>\n<\/div><\/div>",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -358,7 +358,7 @@
         "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "center",
-        "use_max_text_width": false,
+        "use_max_text_width": true,
         "max_width": "600px",
         "padding_top": 0,
         "padding_bottom": 0

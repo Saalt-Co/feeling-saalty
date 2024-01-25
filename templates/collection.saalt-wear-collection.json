@@ -16,6 +16,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/SW-TH-QB-Meuller-7092-Web.jpg",
+            "display-box": false,
             "title": "<p><strong>Light Absorbency<\/strong><\/p>",
             "copy": "<p>Holds as much as 1 liner or 1 - 2 light tampons. <\/p><p>Best for sweat and discharge, light flow days and spotting, a worry-free backup to a cup, disc or tampon, or as a pantyliner replacement.<\/p>",
             "link_type": "filter",
@@ -29,6 +30,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/SW-SM-HW-MS-Ampersand-278.jpg",
+            "display-box": false,
             "title": "<p><strong>Regular Absorbency<\/strong><\/p>",
             "copy": "<p>Holds as much as 2 pads or 2 - 3 tampons. <\/p><p>Best for sweat and discharge, regular period flow, light bladder leaks, or as a worry-free backup to a cup, disc or tampon.<\/p>",
             "link_type": "filter",
@@ -42,6 +44,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/Saalt-Window-Display-Shop-Heavy_03.jpg",
+            "display-box": false,
             "title": "<p><strong>Heavy Absorbency<\/strong><\/p>",
             "copy": "<p>Holds as much as 3 pads or 3 - 4 tampons. <\/p><p>Best for heavy flow days and overnight, postpartum wear, and bladder leaks.<\/p>",
             "link_type": "filter",
@@ -55,6 +58,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/Saalt-Window-Display-Shop-Super_02.jpg",
+            "display-box": false,
             "title": "<p><strong>Super Absorbency<\/strong><\/p>",
             "copy": "<p>Holds as much as 6+ pads or 8+ tampons. <\/p><p>Best for your heaviest flow days and overnight, postpartum wear, and bladder leaks.<\/p>",
             "link_type": "filter",
@@ -72,6 +76,7 @@
         "b556c8a4-bad2-43ac-8e69-1b5b4650d635"
       ],
       "settings": {
+        "global_checkbox": true,
         "section_id": "",
         "make_full_width": false,
         "mobile_min_width": "40%",
@@ -485,7 +490,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/saalt-wear-mesh-bag-with-hands.png",
+        "image": "shopify:\/\/shop_images\/Take_good_care_Saalt_Wear_collection_page_1-8-24.png",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -849,7 +854,7 @@
         "heading": "Saalt Wear FAQs",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "row",
+        "layout": "none",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "theme_color_container_background": "theme-color-bg-4",

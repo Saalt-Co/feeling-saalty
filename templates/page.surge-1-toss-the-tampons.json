@@ -1,0 +1,584 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "7f641a80-2973-4cbe-8deb-d5232f6ed04b": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--15053077250129__7f641a80-2973-4cbe-8deb-d5232f6ed04b-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "POV: You’ve been thinking about trying reusable period care, but are still unsure."
+          }
+        },
+        "template--15053077250129__7f641a80-2973-4cbe-8deb-d5232f6ed04b-section_content-1": {
+          "type": "section_content",
+          "disabled": true,
+          "settings": {
+            "text_content": "<h3>POV: You’ve been thinking about trying reusable period care, but are still unsure.<\/h3>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15053077250129__7f641a80-2973-4cbe-8deb-d5232f6ed04b-section_title-1",
+        "template--15053077250129__7f641a80-2973-4cbe-8deb-d5232f6ed04b-section_content-1"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Toss_the_Tampons_hero_1-11-24.png",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "left",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "500px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "d7d7a243-f632-45c8-b506-96a010b8e74e": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Here’s your chance for you and your bestie to break up with the pads & tampons… forever."
+          }
+        },
+        "section_icon_group_eECywe": {
+          "type": "section_icon_group",
+          "settings": {
+            "mobile_icons_display": "row",
+            "mobile_icon_group_horizontal_alignment": "center",
+            "mobile_icon_group_vertical_alignment": "flex-start",
+            "mobile_icon_grid_columns": 2,
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_text_size": "1.5rem",
+            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_vertical_alignment": "center",
+            "mobile_icon_min_width": "80px",
+            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "100px",
+            "use_max_icon_group_width": false,
+            "icon_group_max_width": "600px",
+            "desktop_icons_display": "row",
+            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_vertical_alignment": "center",
+            "desktop_icon_grid_columns": 2,
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_horizontal_alignment": "center",
+            "desktop_icon_vertical_alignment": "center",
+            "desktop_icon_min_width": "80px",
+            "desktop_icon_wrapper_max_width": "100px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "100px"
+          }
+        },
+        "section_icon_with_text_wCMjK9": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"24\" height=\"122\" viewbox=\"0 0 24 122\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M13.5 2C13.5 1.17157 12.8284 0.5 12 0.5C11.1716 0.5 10.5 1.17157 10.5 2L13.5 2ZM10.9393 121.061C11.5251 121.646 12.4749 121.646 13.0607 121.061L22.6066 111.515C23.1924 110.929 23.1924 109.979 22.6066 109.393C22.0208 108.808 21.0711 108.808 20.4853 109.393L12 117.879L3.51472 109.393C2.92894 108.808 1.97919 108.808 1.3934 109.393C0.807616 109.979 0.807616 110.929 1.3934 111.515L10.9393 121.061ZM10.5 2L10.5 120L13.5 120L13.5 2L10.5 2Z\" fill=\"#373737\"><\/path>\n<\/svg>",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        }
+      },
+      "block_order": [
+        "template--15053077250129__d7d7a243-f632-45c8-b506-96a010b8e74e-section_title-1",
+        "section_icon_group_eECywe",
+        "section_icon_with_text_wCMjK9"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-0",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "above",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "700px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "f1b16d01-d3ea-4457-bea4-1ce2d36e34aa": {
+      "type": "saalt-media-with-split-text",
+      "blocks": {
+        "template--15053077250129__f1b16d01-d3ea-4457-bea4-1ce2d36e34aa-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "text_group_num": "2",
+            "heading_tag": "2",
+            "title": "The Challenge"
+          }
+        },
+        "template--15053077250129__f1b16d01-d3ea-4457-bea4-1ce2d36e34aa-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_group_num": "2",
+            "text_content": "<h3><em>Ditch the Disposables<\/em><\/h3><p>Switch to a fully reusable, ultra-comfortable period with Saalt for <strong>2 cycles<\/strong>. When you <strong>invite 2+ friends<\/strong> to take the challenge together, you all get our best deal ever.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15053077250129__f1b16d01-d3ea-4457-bea4-1ce2d36e34aa-section_title-1",
+        "template--15053077250129__f1b16d01-d3ea-4457-bea4-1ce2d36e34aa-section_content-1"
+      ],
+      "custom_css": [
+        "h3 {font-weight: 100; font-size: 30px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/The_Challenge_1-11-24.png",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "500px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "saalt_media_with_split_text_MrGGqR": {
+      "type": "saalt-media-with-split-text",
+      "blocks": {
+        "section_title_CkF3xQ": {
+          "type": "section_title",
+          "settings": {
+            "text_group_num": "2",
+            "heading_tag": "2",
+            "title": "The Guarantee"
+          }
+        },
+        "section_content_6cK3hk": {
+          "type": "section_content",
+          "settings": {
+            "text_group_num": "2",
+            "text_content": "<h3><em>Your most comfortable period ever<\/em><\/h3><p>We guarantee you’ll have your most comfortable period ever, or you and your friends get your money back. <br\/>No risks. No worries. It's period bliss or bust. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_CkF3xQ",
+        "section_content_6cK3hk"
+      ],
+      "custom_css": [
+        "h3 {font-weight: 100; font-size: 30px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/The_Guarantee_1-11-24.png",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "left",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "500px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "e8f8ad80-7890-480a-8074-f9883439de49": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_title-1": {
+          "type": "section_title",
+          "disabled": true,
+          "settings": {
+            "heading_tag": "2",
+            "title": "The reviews are in!"
+          }
+        },
+        "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<h2>The reviews are in!<\/h2><p>From skeptical to never-going-back<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_title-1",
+        "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_content-1"
+      ],
+      "custom_css": [
+        "h2 {font-size: 34px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "large",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "800px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "saalt_testimonials_wDcdfJ": {
+      "type": "saalt-testimonials",
+      "blocks": {
+        "testimonial_CCxwRp": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "“So, my friend gifted me this cup. I was so skeptical and thought she must be crazy, I was NOT about to insert that thing up my vagina. Then, my period came and I only had 2 pads left and did not feel like going to the supermarket to get more. I gave it a try and…now I am a pro at it and I will be gifting one of these to my other friend who is also skeptical,  just like I was before trying this. Thank you so much Saalt… I have no interest in going back to pads ever again.”",
+            "author": " —Carrie D.",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "testimonial_TyjEhV": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "“I've never tried period underwear before. I bought myself a few pairs and I'm not kidding when I say they are so comfortable and fit perfect, I would wear them every single day!!! I feel so good about replacing all the panty liners I use when I am on my period. Thank you Saalt!\"",
+            "author": "—Jessica J.",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "testimonial_iKPgGy": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "“I was initially nervous about switching from tampons, but this has been the easiest change for me. I love not carrying a dozen tampons with me on trips and worrying about leaking. Definitely recommend!”",
+            "author": "—Lila",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_CCxwRp",
+        "testimonial_TyjEhV",
+        "testimonial_iKPgGy"
+      ],
+      "disabled": true,
+      "settings": {
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 7,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "include_img": true,
+        "image": "shopify:\/\/shop_images\/Testimonials.jpg",
+        "image_behavior": "none",
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "multicolumn_jQmETU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_neKh7Q": {
+          "type": "column",
+          "settings": {
+            "title": "Jessica J.",
+            "rating": 5,
+            "text": "<p>“I've never tried period underwear before. I bought myself a few pairs and I'm not kidding when I say they are so comfortable and fit perfect, I would wear them every single day!!! I feel so good about replacing all the panty liners I use when I am on my period. Thank you Saalt!\"<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_WyweAV": {
+          "type": "column",
+          "settings": {
+            "title": "Carrie D.",
+            "rating": 5,
+            "text": "<p>“So, my friend gifted me this cup. I was so skeptical and thought she must be crazy, I was NOT about to insert that thing up my vagina. Then, my period came and I only had 2 pads left and did not feel like going to the supermarket to get more. I gave it a try and…now I am a pro at it and I will be gifting one of these to my other friend who is also skeptical,  just like I was before trying this. Thank you so much Saalt… I have no interest in going back to pads ever again.”<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8WTiFy": {
+          "type": "column",
+          "settings": {
+            "title": "Lila",
+            "rating": 5,
+            "text": "<p>“I was initially nervous about switching from tampons, but this has been the easiest change for me. I love not carrying a dozen tampons with me on trips and worrying about leaking. Definitely recommend!”<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_neKh7Q",
+        "column_WyweAV",
+        "column_8WTiFy"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "--palette-color-0",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "--palette-color-4",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "saalt_style_1_tiles_section_nXBNLt": {
+      "type": "saalt-style-1-tiles-section",
+      "blocks": {
+        "section_title_D78VmB": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "3",
+            "title": "Step 1: Buy a Challenge Pack with your friends to get our best deal ever."
+          }
+        },
+        "section_content_LcXK3N": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p><em>Yes! You can mix and match any packs and choose different Saalt Wear sizes.<\/em><\/p>"
+          }
+        },
+        "section_tiles_group_jEFGyA": {
+          "type": "section_tiles_group",
+          "settings": {
+            "theme_color_mobile_text_color": "match_text",
+            "tile_mobile_text_alignment": "center",
+            "theme_color_desktop_text_color": "match_text",
+            "theme_color_desktop_text_hover_focus_color": "match_text",
+            "tile_desktop_text_alignment": "center",
+            "desktop_text_placement": "flex-end",
+            "tile_desktop_text_alignment_hover_focus": "center",
+            "desktop_text_hover_placement": "center"
+          }
+        },
+        "saalt_style_1_tile_y3XpiF": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Skeptical-Bundle-V2-Update_03.jpg",
+            "title": "Challenge Trial Pack",
+            "text_content": "<b>Buy 3 packs for $65 each\u2028<\/b><br>(Save 24%)<br>\n<br>\n<b>Buy 2 packs for $70 each<\/b><br>(Save 18%)<br>\n<br>\n<b>Buy 1 pack for $77 each<\/b><br>(Save 10%)<br>",
+            "button_text": "Buy Challenge Trial Pack",
+            "button_url": "\/products\/challenge-trial-pack-v2",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "saalt_style_1_tile_Ame9Ha": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Skeptical-Bundle_03.jpg",
+            "title": "Challenge Accepted Pack",
+            "text_content": "<b>Buy 3 packs for $86 each\u2028<\/b><br>(Save 30%)<br>\n<br>\n<b>Buy 2 packs for $97 each<\/b><br>(Save 21%)<br>\n<br>\n<b>Buy 1 pack for $111 each<\/b><br>\n(Save 10%)<br>",
+            "button_text": "Buy Challenge Accepted Pack",
+            "button_url": "\/products\/challenge-test",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "saalt_style_1_tile_MB9gWQ": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Committed-Pack-1_11.jpg",
+            "title": "I'm Committed Pack",
+            "text_content": "<b>Buy 3 packs for $99 each\u2028<\/b><br>(Save 45%)<br>\n<br>\n<b>Buy 2 packs for $135 each<\/b>\n<br>(Save 25%)<br>\n<br>\n<b>Buy 1 pack for $153 each<\/b><br>(Save 15%)",
+            "button_text": "Buy I'm Committed Pack",
+            "button_url": "\/products\/im-committed-pack",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_D78VmB",
+        "section_content_LcXK3N",
+        "section_tiles_group_jEFGyA",
+        "saalt_style_1_tile_y3XpiF",
+        "saalt_style_1_tile_Ame9Ha",
+        "saalt_style_1_tile_MB9gWQ"
+      ],
+      "custom_css": [
+        ".text-wrapper {background-color: #eef0f4;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-4",
+        "theme_color_text": "theme_default",
+        "title_font_size": "small",
+        "content_font_size": "medium",
+        "mobile_text_alignment": "center",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "900px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "saalt_media_with_text_LHp9mg": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "section_content_dTjr3t": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<h3>Step 2: Post that you're taking the #DitchTheDisposables challenge and tag your friends and <a href=\"https:\/\/www.instagram.com\/saaltco\/\" target=\"_blank\">@saaltco<\/a>.<\/h3>"
+          }
+        }
+      },
+      "block_order": [
+        "section_content_dTjr3t"
+      ],
+      "custom_css": [
+        ".text-wrapper {background-color: #eef0f4;}",
+        "h3 {font-size: 24px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "700px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "saalt_media_with_text_UEtLNU": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "section_content_dKxW7G": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<h3>Step 3: Use your fully reusable Saalt products for <strong>2 cycles with your besties<\/strong>, and have your most comfortable period ever.<\/h3>"
+          }
+        }
+      },
+      "block_order": [
+        "section_content_dKxW7G"
+      ],
+      "custom_css": [
+        ".section-image-with-text {background-color: #eef0f4;}",
+        "h3 {font-size: 24px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": true,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "below",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "750px",
+        "padding_top": 0,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "7f641a80-2973-4cbe-8deb-d5232f6ed04b",
+    "d7d7a243-f632-45c8-b506-96a010b8e74e",
+    "f1b16d01-d3ea-4457-bea4-1ce2d36e34aa",
+    "saalt_media_with_split_text_MrGGqR",
+    "e8f8ad80-7890-480a-8074-f9883439de49",
+    "saalt_testimonials_wDcdfJ",
+    "multicolumn_jQmETU",
+    "saalt_style_1_tiles_section_nXBNLt",
+    "saalt_media_with_text_LHp9mg",
+    "saalt_media_with_text_UEtLNU"
+  ]
+}
