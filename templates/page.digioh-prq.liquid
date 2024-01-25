@@ -192,7 +192,13 @@
                             {% assign variants_id = variant.id %}
                           {% endif %}
                         {% endfor %}
-                    <a href="#" class="quiz-result-button quiz-result-cup-variant-add" data-variant-id="{{ variants_id }}" data-action="open-drawer" data-drawer-id="sidebar-cart">Add to cart</a>
+                    <form method="post" action="/cart/add" id="product_form_{{ top_rec.id }}" accept-charset="UTF-8" class="ProductForm" enctype="multipart/form-data">
+                   <input type="hidden" name="form_type" value="product">
+                   <input type="hidden" name="utf8" value="✓">
+                    <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
+                    <input type="hidden" name="id" value="{{ variants_id | default:  top_rec.selected_or_first_available_variant.id}}" />
+                    <input type="submit" name="add" class="quiz-result-button quiz-result-cup-variant-add" value="Add to cart" />
+                  </form>
                       </div>
                     </div>
                   {%- endfor -%}
