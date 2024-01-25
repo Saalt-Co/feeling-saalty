@@ -48,6 +48,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/Teen_Cup_Teen_Collection_window_display.png",
+            "display-box": false,
             "title": "<p><strong>Saalt Teen Cup<\/strong><\/p>",
             "copy": "",
             "link_type": "filter",
@@ -61,6 +62,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/Underwear_Teen_Collection_window_display_alt.jpg",
+            "display-box": false,
             "title": "<p><strong>Period Underwear<\/strong><\/p>",
             "copy": "",
             "link_type": "filter",
@@ -74,6 +76,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/Bundles_Teen_Collection_window_display.jpg",
+            "display-box": false,
             "title": "<p><strong>Bundles<\/strong><\/p>",
             "copy": "<p>Save up to 20% and skip the guesswork with bundles custom-designed by our Saalt Coaches for all your leak needs. <\/p>",
             "link_type": "filter",
@@ -87,6 +90,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify:\/\/shop_images\/Extras_Alt_Teen_Collection_window_display.jpg",
+            "display-box": false,
             "title": "<p><strong>Extras<\/strong><\/p>",
             "copy": "<p>Everything you need for a fully sustainable flow.<\/p>",
             "link_type": "filter",
@@ -104,6 +108,7 @@
         "b556c8a4-bad2-43ac-8e69-1b5b4650d635"
       ],
       "settings": {
+        "global_checkbox": true,
         "section_id": "",
         "make_full_width": false,
         "mobile_min_width": "40%",
