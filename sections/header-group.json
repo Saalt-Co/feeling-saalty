@@ -8,15 +8,14 @@
         "announcement_4DMPbF": {
           "type": "announcement",
           "settings": {
-            "text": "Stay tuned for the glow-up! Our site is being updated.",
-            "link": ""
+            "text": "Free shipping on all orders $39+ | Shop Now",
+            "link": "shopify:\/\/collections\/shop-all"
           }
         }
       },
       "block_order": [
         "announcement_4DMPbF"
       ],
-      "disabled": true,
       "settings": {
         "theme_color_background": "theme-color-bg-2",
         "theme_color_text": "theme-color-text-0",
