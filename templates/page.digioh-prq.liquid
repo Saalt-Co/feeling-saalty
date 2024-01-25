@@ -363,7 +363,8 @@
   
 </div>
 <script>
-$(document).ready(function() {
+window.addEventListener("DOMContentLoaded", function(){
+    $(document).ready(function() {
   // Attach an event listener to the select element
   $(".quiz-result-variant-selector").change(function() {
     var parentElement = $(this).parents('.quiz-result-add-to-cart-options');
@@ -409,4 +410,6 @@ $(document).ready(function() {
     });
   });
 });
+});
+
 </script>
