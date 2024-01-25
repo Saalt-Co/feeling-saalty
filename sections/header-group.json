@@ -7,14 +7,23 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Free shipping on all orders $39+ | Shop Now",
             "link": "shopify:\/\/collections\/shop-all"
           }
+        },
+        "announcement_4DMPbF": {
+          "type": "announcement",
+          "settings": {
+            "text": "Stay tuned for the glow-up! Our site is being updated.",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_4DMPbF"
       ],
       "settings": {
         "theme_color_background": "theme-color-bg-2",
@@ -30,6 +39,7 @@
         "logo_position": "top-center",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
+        "use_hover": true,
         "sticky_header_type": "none",
         "show_line_separator": true,
         "theme_color_background": "theme_default",
