@@ -470,7 +470,7 @@
         "template--18370419818769__c70ba2b2-6085-4467-9f62-431ca94c36bc-custom_liquid_code-1": {
           "type": "custom_liquid_code",
           "settings": {
-            "liquid_code": "<div style=\"background-color: #9DBAB5; padding: .25px;\">\n<p style=\"text-align: center; font-weight: 500;\">Free shipping on orders $39+<\/p>\n<\/div>"
+            "liquid_code": "<div style=\"background-color: #9DBAB5; padding: .25px;\">\n<p style=\"text-align: center; font-weight: 500;\">Free domestic shipping on orders $39+<\/p>\n<\/div>"
           }
         }
       },
