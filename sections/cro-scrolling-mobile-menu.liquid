@@ -1,6 +1,397 @@
+<!-- CRO Scrolling Mobile Menu {{ section.blocks.size }} -->
+{%- assign id = section.id | replace: ' ', '_' | replace: '-', '_' -%}
+
+{%- if section.blocks.size > 0 -%}
+    <div data-mobileMenu-inner="{{ id }}" class="data-mobileMenu-inner-active">
+        <ul data-mobileMenu-list="{{ id }}">
+            {%- for block in section.blocks -%}
+                <li data-mobileMenu-list-item="{{ id }}" data-mobilemenu-li-index="{{ forloop.index0 }}">
+                    <a href="{{ block.settings.url }}" data-mobileMenu-link="{{ id }}">
+                        {%- if block.settings.image != nil -%}
+                            <picture data-mobileMenu-image-bx="{{ id }}">
+                                <img src="{{ block.settings.image | image_url  }}" alt="{{ block.settings.label }}" width="{{ section.settings.image-width }}" height="{{ section.settings.image-height }}" data-mobileMenu-image-bx-img="{{ id }}">
+                            </picture>
+                        {%- endif -%}
+                        <span data-mobileMenu-text="{{ id }}">{{ block.settings.label }}</span>
+                    </a>
+                </li>
+            {%- endfor -%}
+        </ul>
+    </div>
+    <style>
+        :root{
+            --{{ id }}-mobileMenuHeight: {{ section.settings.height }}px;
+            --{{ id }}-mobileMenuNotActiveBottom: -{{ section.settings.height }}px;
+            --{{ id }}-mobileMenuBGColor: {{ section.settings.bg-color }};
+            --{{ id }}-mobileMenuFontColor: {{ section.settings.font-color }};
+            --{{ id }}-mobileMenuFontSize: {{ section.settings.font-size }}px !important;
+        }
+        [data-mobileMenu-inner="{{ id }}"] {
+            display: none;
+        }
+        [data-mobileMenu-inner="{{ id }}"].data-mobileMenu-inner-active {
+            display: none;
+        }
+        @media all and (max-width: 980px) {
+            body{
+                padding-bottom: var(--{{ id }}-mobileMenuHeight) !important;
+            }
+            [data-mobileMenu-inner="{{ id }}"] {
+                width: 100%;
+                height: var(--{{ id }}-mobileMenuHeight);
+                margin: 0;
+                padding: 0;
+                border-top: solid {{ section.settings.top-border-width }}px {{ section.settings.top-border-color }};
+                display: flex;
+                flex-direction: row;
+                align-items: stretch;
+                background-color: var(--{{ id }}-mobileMenuBGColor);
+                color: var(--{{ id }}-mobileMenuFontColor);
+                position: fixed;
+                left: 0;
+                bottom: var(--{{ id }}-mobileMenuNotActiveBottom);
+                opacity: 0;
+                overflow: hidden;
+                z-index: -1;
+                transition-delay: 1ms;
+                transition-duration: 200ms;
+                transition-property: all;
+                transition-timing-function: ease-in-out;
+            }
+            [data-mobileMenu-inner="{{ id }}"].data-mobileMenu-inner-active {
+                display: flex;
+                bottom: 0;
+                opacity: 1;
+                z-index: 9;
+            }
+            [data-mobileMenu-list="{{ id }}"]{
+                height: 100%;
+                margin: 0 auto;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                flex: 0 0 100%;
+                flex-direction: row;
+                justify-content: center;
+                align-items: stretch;
+            }
+            [data-mobileMenu-list-item="{{ id }}"]{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex: 0 0 {% if section.blocks.size == 1 -%} 100%{% else -%} calc(100% / {{ section.blocks.size }}){%- endif -%};
+                justify-content: center;
+                font-size: var(--{{ id }}-mobileMenuFontSize);
+                font-weight: 400;
+                line-height: 1.2em;
+                color: var(--{{ id }}-mobileMenuFontColor);
+                cursor: pointer;
+                position: relative;
+            }
+            [data-mobileMenu-list-item="{{ id }}"]:after{
+                height: {{ section.settings.divider-border-height }}px;
+                content: '';
+                border-right: solid {{ section.settings.divider-border-width }}px {{ section.settings.divider-border-color }};
+                display: flex;
+                position: absolute;
+                top: 50%;
+                right: calc(-{{ section.settings.divider-border-width }}px / 2);
+                transform: translateY(-50%);
+            }
+            [data-mobileMenu-list-item="{{ id }}"]:last-child:after{
+                display: none;
+            }
+            [data-mobileMenu-link="{{ id }}"],
+            [data-mobileMenu-link="{{ id }}"]:visited,
+            [data-mobileMenu-link="{{ id }}"]:focus,
+            [data-mobileMenu-link="{{ id }}"]:hover{
+                height: 100%;
+                margin: 0;
+                padding: 3px;
+                display: flex;
+                flex: 0 0 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: var(--{{ id }}-mobileMenuFontSize);
+                font-weight: 400;
+                line-height: 1.2em;
+                color: var(--{{ id }}-mobileMenuFontColor) !important;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            [data-mobileMenu-image-bx="{{ id }}"]{
+                width: 100%;
+                max-width: {{ section.settings.image-width }}px;
+                height: 100%;
+                max-height: {{ section.settings.image-height }}px;
+                margin: 2px 0 3px;
+                border: solid  {{ section.settings.image-border-width }}px {{ section.settings.image-border-color }};
+                {%- if section.settings.image-bubble -%}
+                border-radius: 100%;
+                {%- endif -%}
+                overflow: hidden;
+                display: flex;
+                flex: 0 0 auto;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                position: relative;
+            }
+            [data-mobileMenu-image-bx-img="{{ id }}"]{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            [data-mobileMenu-text="{{ id }}"]{
+                display: flex;
+                flex: 1 1 100%;
+                justify-content: center;
+                align-items: center;
+                color: var(--{{ id }}-mobileMenuFontColor) !important;
+                text-transform: capitalize;
+                font-weight: 700;
+                text-align: center;
+            }
+            [data-mobileMenu-image-bx="{{ id }}"] + [data-mobileMenu-text="{{ id }}"]{
+                align-items: flex-start;
+            }
+            {%- for block in section.blocks -%}
+                [data-mobileMenu-list="{{ id }}"] [data-mobilemenu-li-index="{{ forloop.index0 }}"] [data-mobileMenu-image-bx-img="{{ id }}"]{
+                    transform: scale({{ block.settings.image-scale }});
+                    left: {{ block.settings.image-left }}{{ block.settings.image-left-units }};
+                    top: {{ block.settings.image-top }}{{ block.settings.image-top-units }};
+                }
+            {%- endfor -%}
+            #chat-button{
+                bottom: calc((var(--{{ id }}-mobileMenuHeight) + 16px)) !important;
+            }
+        }
+    </style>
+{%- endif -%}
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Scrolling Mobile Menu",
+    "settings": [
+        {
+            "type": "number",
+            "id": "height",
+            "label": "Height:",
+            "default": 85,
+            "info": "in pixels"
+        },
+        {
+            "type": "color",
+            "id": "bg-color",
+            "label": "Background color",
+            "default": "#fff"
+        },
+        {
+            "type": "color",
+            "id": "top-border-color",
+            "label": "Top border color",
+            "default": "#e3e3e3"
+        },
+        {
+            "type": "range",
+            "id": "top-border-width",
+            "label": "Top border width",
+            "min": 0,
+            "max": 5,
+            "step": 1,
+            "unit": "px",
+            "default": 1,
+            "info":"Set to 0 to remove the top border"
+        },
+        {
+            "type": "header",
+            "content": "Font Style Options:"
+        },
+        {
+            "type": "color",
+            "id": "font-color",
+            "label": "Color",
+            "default": "#000"
+        },
+        {
+            "type": "range",
+            "id": "font-size",
+            "label": "Size:",
+            "min": 9,
+            "max": 18,
+            "step": 1,
+            "unit": "px",
+            "default": 11
+        },
+        {
+            "type": "header",
+            "content": "Image Options:"
+        },
+        {
+            "type": "range",
+            "id": "image-width",
+            "label": "Width",
+            "min": 25,
+            "max": 45,
+            "step": 1,
+            "default": 45
+        },
+        {
+            "type": "range",
+            "id": "image-height",
+            "label": "Height",
+            "min": 25,
+            "max": 45,
+            "step": 1,
+            "default": 45
+        },
+        {
+            "type": "color",
+            "id": "image-border-color",
+            "label": "Border color",
+            "default": "#e3e3e3"
+        },
+        {
+            "type": "range",
+            "id": "image-border-width",
+            "label": "Border width:",
+            "min": 0,
+            "max": 5,
+            "step": 1,
+            "unit": "px",
+            "default": 1,
+            "info":"Set to 0 to remove the border around the image"
+        },
+        {
+            "type":"checkbox",
+            "id":"image-bubble",
+            "label":"Image bubble (image in a border circle)",
+            "default":false
+        },
+        {
+            "type": "header",
+            "content": "Menu Items Divider Options:"
+        },
+        {
+            "type": "color",
+            "id": "divider-border-color",
+            "label": "Divider color",
+            "default": "#e3e3e3"
+        },
+        {
+            "type": "range",
+            "id": "divider-border-width",
+            "label": "Divider width",
+            "min": 0,
+            "max": 5,
+            "step": 1,
+            "unit": "px",
+            "default": 0,
+            "info":"Set to 0 to remove the dividers"
+        },
+        {
+            "type": "number",
+            "id": "divider-border-height",
+            "label": "Divider height:",
+            "default": 85,
+            "info": "in pixels"
+        }
+    ],
+    "max_blocks": 5,
+    "blocks":[
+        {
+            "type": "menu-item",
+            "name": "Menu Item",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "label",
+                    "label": "Menu Label:"
+                },
+                {
+                    "type": "url",
+                    "id": "url",
+                    "label": "Link URL:"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image",
+                    "info": "Do not select an image to have no image display in the menu item."
+                },
+                {
+                    "type": "header",
+                    "content": "Image Options:"
+                },
+                {
+                    "type": "range",
+                    "id": "image-scale",
+                    "label": "Scale",
+                    "min": 0,
+                    "max": 2,
+                    "step": 0.1,
+                    "default": 1
+                },
+                {
+                    "type": "number",
+                    "id": "image-left",
+                    "label": "Left edge position",
+                    "default": 0
+                },
+                {
+                    "type":"select",
+                    "id":"image-left-units",
+                    "label":"Left edge position units",
+                    "default": "px",
+                    "options": [
+                        {
+                            "label":"PX",
+                            "value":"px"
+                        },
+                        {
+                            "label":"%",
+                            "value":"%"
+                        }
+                    ]
+                },
+                {
+                    "type": "number",
+                    "id": "image-top",
+                    "label": "Top edge position",
+                    "default": 0
+                },
+                {
+                    "type":"select",
+                    "id":"image-top-units",
+                    "label":"Left edge position units",
+                    "default": "px",
+                    "options": [
+                        {
+                            "label":"PX",
+                            "value":"px"
+                        },
+                        {
+                            "label":"%",
+                            "value":"%"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "category": "Footer",
+        "name": "CRO Scrolling Mobile Menu"
+      }
+    ],
+    "enabled_on": {
+      "groups": ["footer"]
+    }
   }
 {% endschema %}
