@@ -116,10 +116,90 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "cro_scrolling_mobile_menu_dGW39N": {
+      "type": "cro-scrolling-mobile-menu",
+      "blocks": {
+        "menu_item_dM7tYa": {
+          "type": "menu-item",
+          "settings": {
+            "label": "Shop All",
+            "url": "shopify:\/\/collections\/shop-all",
+            "image": "shopify:\/\/shop_images\/SW-SC-SD-Bundle-Heavy-Flow-Price-Slash.jpg",
+            "image-scale": 1.2,
+            "image-left": 2,
+            "image-left-units": "px",
+            "image-top": 0,
+            "image-top-units": "px"
+          }
+        },
+        "menu_item_kF4tmB": {
+          "type": "menu-item",
+          "settings": {
+            "label": "Period Underwear",
+            "url": "shopify:\/\/collections\/saalt-period-underwear",
+            "image": "shopify:\/\/shop_images\/SW-SM-Square-Bikini.jpg",
+            "image-scale": 1,
+            "image-left": 0,
+            "image-left-units": "px",
+            "image-top": 0,
+            "image-top-units": "px"
+          }
+        },
+        "menu_item_gqKab6": {
+          "type": "menu-item",
+          "settings": {
+            "label": "Cups & Discs",
+            "url": "shopify:\/\/collections\/menstrual-cups-discs",
+            "image": "shopify:\/\/shop_images\/Saalt-Menstrual-cup-purple-regular_75a2306f-db48-4fa5-bccb-c4838ed1acbf.jpg",
+            "image-scale": 1,
+            "image-left": 0,
+            "image-left-units": "px",
+            "image-top": 0,
+            "image-top-units": "px"
+          }
+        },
+        "menu_item_czKHdQ": {
+          "type": "menu-item",
+          "settings": {
+            "label": "Bundles",
+            "url": "shopify:\/\/collections\/preset-bundles",
+            "image": "shopify:\/\/shop_images\/SW-CT-BR-2-Pack-PDP-2_02.jpg",
+            "image-scale": 1.4,
+            "image-left": 0,
+            "image-left-units": "px",
+            "image-top": 0,
+            "image-top-units": "px"
+          }
+        }
+      },
+      "block_order": [
+        "menu_item_dM7tYa",
+        "menu_item_kF4tmB",
+        "menu_item_gqKab6",
+        "menu_item_czKHdQ"
+      ],
+      "settings": {
+        "height": 85,
+        "bg-color": "#fff",
+        "top-border-color": "#e3e3e3",
+        "top-border-width": 1,
+        "font-color": "#000",
+        "font-size": 11,
+        "image-width": 45,
+        "image-height": 45,
+        "image-border-color": "#e3e3e3",
+        "image-border-width": 1,
+        "image-bubble": true,
+        "divider-border-color": "#e3e3e3",
+        "divider-border-width": 0,
+        "divider-border-height": 85
+      }
     }
   },
   "order": [
     "b87941dd-a9cd-484d-861b-44ca88dec413",
-    "footer"
+    "footer",
+    "cro_scrolling_mobile_menu_dGW39N"
   ]
 }
