@@ -1,22 +1,5 @@
 {
   "sections": {
-    "video_EigDgm": {
-      "type": "video",
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": true,
-        "video": "shopify:\/\/files\/videos\/Video Homepage 2023.mp4",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": true,
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "saalt_media_with_split_text_g9QA77": {
       "type": "saalt-media-with-split-text",
       "blocks": {
@@ -1375,7 +1358,6 @@
     }
   },
   "order": [
-    "video_EigDgm",
     "saalt_media_with_split_text_g9QA77",
     "saalt_bg_media_with_text_Qbh4qn",
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
