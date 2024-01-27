@@ -1,52 +1,35 @@
 {
   "sections": {
-    "saalt_media_with_split_text_g9QA77": {
-      "type": "saalt-media-with-split-text",
+    "saalt_bg_media_with_text_QYndnT": {
+      "type": "saalt-bg-media-with-text",
       "blocks": {
-        "section_title_9XfVYM": {
+        "section_title_M34dVE": {
           "type": "section_title",
           "settings": {
-            "text_group_num": "2",
             "heading_tag": "1",
-            "title": "Period Care Simplified"
+            "title": "Meet the Cotton <br>Sleep Short:<br><span style=\"font-weight: lighter;\"><i><\/i><\/span>"
           }
         },
-        "section_content_YaCmrh": {
+        "section_content_GN3kPG": {
           "type": "section_content",
           "settings": {
-            "text_group_num": "2",
-            "text_content": "<p>Premium reusable menstrual cups, discs and leakproof period underwear.<\/p>"
+            "text_content": "<p>Period underwear that's got your back (and your front) covered all night long.<\/p>"
           }
         },
-        "section_buttons_group_gNfAjf": {
+        "section_buttons_group_9Tyh8C": {
           "type": "section_buttons_group",
           "settings": {
-            "text_group_num": "2",
             "desktop_button_group_alignment": "flex-start",
             "desktop_buttons_group_gap": "1rem"
           }
         },
-        "section_button_dRB8y9": {
+        "section_button_adt4QA": {
           "type": "section_button",
           "settings": {
-            "text_group_num": "1",
-            "button_text": "SHOP SAALT WEAR",
-            "button_url": "shopify:\/\/collections\/saalt-period-underwear",
+            "button_text": "SHOP NOW",
+            "button_url": "\/collections\/seamless",
             "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
-        "section_button_6bJtp3": {
-          "type": "section_button",
-          "settings": {
-            "text_group_num": "1",
-            "button_text": "SHOP CUPS & DISCS",
-            "button_url": "shopify:\/\/collections\/menstrual-cups-discs",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
+            "theme_color_section_button_background": "theme-color-bg-1",
             "theme_color_text_section_button_text": "theme_default",
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default"
@@ -54,29 +37,31 @@
         }
       },
       "block_order": [
-        "section_title_9XfVYM",
-        "section_content_YaCmrh",
-        "section_buttons_group_gNfAjf",
-        "section_button_dRB8y9",
-        "section_button_6bJtp3"
+        "section_title_M34dVE",
+        "section_content_GN3kPG",
+        "section_buttons_group_9Tyh8C",
+        "section_button_adt4QA"
       ],
       "disabled": true,
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme-color-bg-5",
+        "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
-        "media_type": "video",
-        "video": "shopify:\/\/files\/videos\/Video Homepage 2023.mp4",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Cotton-Sleep-Short-Hero-Update-mobile_08.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Cotton-Sleep-Short-Hero-Update-desktop_07.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
         "use_max_media_width": false,
-        "max_media_width": "600px",
-        "media_width": 50,
+        "max_media_width": "700px",
         "title_font_size": "small",
         "content_font_size": "small",
+        "mobile_text_position": "below",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
+        "desktop_text_position": "flex-start",
         "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "use_max_text_width": true,
+        "max_width": "300px",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -146,72 +131,6 @@
         "desktop_text_alignment": "left",
         "use_max_text_width": true,
         "max_width": "400px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "saalt_bg_media_with_text_QYndnT": {
-      "type": "saalt-bg-media-with-text",
-      "blocks": {
-        "section_title_M34dVE": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "Meet the Cotton <br>Sleep Short:<br><span style=\"font-weight: lighter;\"><i><\/i><\/span>"
-          }
-        },
-        "section_content_GN3kPG": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>Period underwear that's got your back (and your front) covered all night long.<\/p>"
-          }
-        },
-        "section_buttons_group_9Tyh8C": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "flex-start",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "section_button_adt4QA": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "SHOP NOW",
-            "button_url": "\/collections\/seamless",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme-color-bg-1",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "section_title_M34dVE",
-        "section_content_GN3kPG",
-        "section_buttons_group_9Tyh8C",
-        "section_button_adt4QA"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-Cotton-Sleep-Short-Hero-Update-mobile_08.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Cotton-Sleep-Short-Hero-Update-desktop_07.jpg",
-        "media_overlay_color": "--palette-color-1",
-        "media_overlay_opacity": 0,
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "flex-start",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": true,
-        "max_width": "300px",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -291,6 +210,87 @@
         "desktop_text_alignment": "left",
         "use_max_text_width": true,
         "max_width": "28%",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "saalt_media_with_split_text_g9QA77": {
+      "type": "saalt-media-with-split-text",
+      "blocks": {
+        "section_title_9XfVYM": {
+          "type": "section_title",
+          "settings": {
+            "text_group_num": "2",
+            "heading_tag": "1",
+            "title": "Period Care Simplified"
+          }
+        },
+        "section_content_YaCmrh": {
+          "type": "section_content",
+          "settings": {
+            "text_group_num": "2",
+            "text_content": "<p>Premium reusable menstrual cups, discs and leakproof period underwear.<\/p>"
+          }
+        },
+        "section_buttons_group_gNfAjf": {
+          "type": "section_buttons_group",
+          "settings": {
+            "text_group_num": "2",
+            "desktop_button_group_alignment": "flex-start",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_dRB8y9": {
+          "type": "section_button",
+          "settings": {
+            "text_group_num": "1",
+            "button_text": "SHOP SAALT WEAR",
+            "button_url": "shopify:\/\/collections\/saalt-period-underwear",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "section_button_6bJtp3": {
+          "type": "section_button",
+          "settings": {
+            "text_group_num": "1",
+            "button_text": "SHOP CUPS & DISCS",
+            "button_url": "shopify:\/\/collections\/menstrual-cups-discs",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_9XfVYM",
+        "section_content_YaCmrh",
+        "section_buttons_group_gNfAjf",
+        "section_button_dRB8y9",
+        "section_button_6bJtp3"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "media_type": "video",
+        "video": "shopify:\/\/files\/videos\/Video Homepage 2023.mp4",
+        "use_max_media_width": false,
+        "max_media_width": "600px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -1340,10 +1340,10 @@
     }
   },
   "order": [
-    "saalt_media_with_split_text_g9QA77",
-    "saalt_bg_media_with_text_Qbh4qn",
     "saalt_bg_media_with_text_QYndnT",
+    "saalt_bg_media_with_text_Qbh4qn",
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
+    "saalt_media_with_split_text_g9QA77",
     "dec81ce8-0726-4327-93a6-eb82628398dc",
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
     "2b94c719-9c4c-4651-96ed-88c41a9f7159",
