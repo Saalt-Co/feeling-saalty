@@ -150,6 +150,72 @@
         "padding_bottom": 0
       }
     },
+    "saalt_bg_media_with_text_QYndnT": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "section_title_M34dVE": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Meet the Cotton <br>Sleep Short:<br><span style=\"font-weight: lighter;\"><i><\/i><\/span>"
+          }
+        },
+        "section_content_GN3kPG": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Period underwear that's got your back (and your front) covered all night long.<\/p>"
+          }
+        },
+        "section_buttons_group_9Tyh8C": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "flex-start",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_adt4QA": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "SHOP NOW",
+            "button_url": "\/collections\/seamless",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-1",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_M34dVE",
+        "section_content_GN3kPG",
+        "section_buttons_group_9Tyh8C",
+        "section_button_adt4QA"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Cotton-Sleep-Short-Hero-Update-mobile_08.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Cotton-Sleep-Short-Hero-Update-desktop_07.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "flex-start",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "300px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "afbc1ae8-07fe-4461-9c01-064b82ac7529": {
       "type": "saalt-bg-media-with-text",
       "blocks": {
@@ -1276,6 +1342,7 @@
   "order": [
     "saalt_media_with_split_text_g9QA77",
     "saalt_bg_media_with_text_Qbh4qn",
+    "saalt_bg_media_with_text_QYndnT",
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
     "dec81ce8-0726-4327-93a6-eb82628398dc",
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
