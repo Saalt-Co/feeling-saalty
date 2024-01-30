@@ -42,7 +42,6 @@
         "section_buttons_group_9Tyh8C",
         "section_button_adt4QA"
       ],
-      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -178,6 +177,7 @@
         "section_buttons_group_RxXwbF",
         "section_button_j4d3Bi"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
