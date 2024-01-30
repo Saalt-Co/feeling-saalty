@@ -27,7 +27,7 @@
           "type": "section_button",
           "settings": {
             "button_text": "SHOP NOW",
-            "button_url": "\/collections\/seamless",
+            "button_url": "shopify:\/\/products\/leakproof-cotton-sleep-short-super",
             "button_type": "primary",
             "theme_color_section_button_background": "theme-color-bg-1",
             "theme_color_text_section_button_text": "theme_default",
