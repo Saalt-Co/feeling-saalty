@@ -73,7 +73,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Shop_by_Category_-_Accessories_1.jpg",
             "display-box": false,
-            "title": "<p><strong>Extras<\/strong><\/p>",
+            "title": "<p><strong>Cleaning & Extras<\/strong><\/p>",
             "copy": "<p>Everything you need for your most comfortable, sustainable life.<\/p>",
             "link_type": "url",
             "link_url": "\/collections\/shop-all?sort_by=manual&filter.p.m.saalt.collection_filter_product_type=Cleaning+%26+Extras",
