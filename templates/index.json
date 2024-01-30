@@ -254,7 +254,7 @@
         "d8236345-5ecc-484c-af5d-464fd1c4ecf7"
       ],
       "settings": {
-        "global_checkbox": true,
+        "global_checkbox": false,
         "section_id": "",
         "make_full_width": false,
         "mobile_min_width": "40%",
@@ -384,7 +384,6 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Tampon-Tax-Back-Initiative-Highlight-Saalt-mobile_02_c1e2d291-d78e-4ddd-8e42-12aa0f31650f.jpg",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
@@ -698,7 +697,6 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme-color-text-2",
         "include_img": true,
-        "image": "shopify:\/\/shop_images\/Testimonials_Background_Home_Page.jpg",
         "image_behavior": "none",
         "accessibility_info": "Slideshow about our brand"
       }
