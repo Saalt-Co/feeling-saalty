@@ -91,7 +91,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Shop_by_Category_-_Accessories_1.jpg",
             "display-box": false,
-            "title": "<p><strong>Extras<\/strong><\/p>",
+            "title": "<p><strong>Cleaning & Extras<\/strong><\/p>",
             "copy": "<p>Everything you need for a fully sustainable flow.<\/p>",
             "link_type": "filter",
             "link_url": "\/collections\/extras",
