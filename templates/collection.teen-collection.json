@@ -91,12 +91,12 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Extras_Alt_Teen_Collection_window_display.jpg",
             "display-box": false,
-            "title": "<p><strong>Extras<\/strong><\/p>",
+            "title": "<p><strong>Cleaning & Extras<\/strong><\/p>",
             "copy": "<p>Everything you need for a fully sustainable flow.<\/p>",
-            "link_type": "filter",
-            "link_url": "\/collections\/extras",
-            "filter_name": "Product Type",
-            "filter_val": "Extras",
+            "link_type": "url",
+            "link_url": "\/collections\/teen?sort_by=manual&filter.p.m.saalt.collection_filter_product_type=Cleaning+%26+Extras",
+            "filter_name": "",
+            "filter_val": "",
             "button_text": "Shop Extras"
           }
         }
