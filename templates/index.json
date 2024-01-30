@@ -42,6 +42,10 @@
         "section_buttons_group_9Tyh8C",
         "section_button_adt4QA"
       ],
+      "custom_css": [
+        "@media only screen and (min-width: 768px) {.text-wrapper {margin-left: 40px; }}",
+        "@media only screen and (max-width: 767px) {.text-wrapper h1:first-of-type {padding-left: 40px; padding-right: 40px; }}"
+      ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
