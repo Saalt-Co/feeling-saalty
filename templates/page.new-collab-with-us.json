@@ -572,7 +572,7 @@
             "title": "Influencers & Creators",
             "text_content": "For influencers and content creators looking to partner with Saalt and earn commissions for sharing with their followers.",
             "button_text": "Apply Now!",
-            "button_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.p.m.saalt.saalt_wear_collection=Seamless",
+            "button_url": "shopify:\/\/pages\/become-an-affiliate",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
