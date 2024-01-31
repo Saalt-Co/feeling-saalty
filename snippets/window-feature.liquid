@@ -52,13 +52,13 @@
   <div class="window-feature-button-wrapper">
     {% if block.settings.link_type == 'url' %}
       <a
-        class="window-feature-button"
+        class="window-feature-button {% if checkboxEnable %} {% else %}ClickWorkingHere{% endif %}"
         href="{{ block.settings.link_url }}"
       >
         <span>{{- block.settings.button_text -}}</span>
       </a>
     {% else %}
-      <button class="window-feature-button">
+      <button class="window-feature-button {% if checkboxEnable %} {% else %}ClickWorkingHere{% endif %}">
         <span>{{- block.settings.button_text -}}</span>
       </button>
     {% endif %}
