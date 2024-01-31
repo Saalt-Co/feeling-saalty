@@ -15,13 +15,13 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "First things first.<br>\nTHIS is Saalt Period Underwear."
+            "title": "Saalt Affiliate Program<br>"
           }
         },
         "template--15078825525329__fd4445e0-3160-476f-9e6f-f9f22e50a1dc-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Reusable, absorbent, leakproof underwear that keeps you dry and confident. It absorbs periods, bladder leaks, and more, and completely replaces disposable pads or liners.<\/p>"
+            "text_content": "<p>Thank you for your interest in becoming a Saalt Affiliate! We are excited to welcome passionate individuals who are committed to promoting menstrual health, sustainability, and empowerment among friends, family, and on social media.<\/p>"
           }
         }
       },
@@ -58,7 +58,7 @@
         "template--15078825525329__c3c67c48-069b-41aa-83c9-2b9ee67d9d60-nav_bar_link-1": {
           "type": "nav_bar_link",
           "settings": {
-            "nav_bar_link_text": "How it works",
+            "nav_bar_link_text": "Creators & Influencers",
             "click_behavior": "scroll_to",
             "nav_bar_element_selector": "#how-it-works",
             "nav_bar_link_dest": "#how it works"
@@ -67,16 +67,25 @@
         "4527afb6-04da-4f97-a477-496cd83f6322": {
           "type": "nav_bar_link",
           "settings": {
-            "nav_bar_link_text": "Why it's better",
+            "nav_bar_link_text": "Journalists & Bloggers",
             "click_behavior": "scroll_to",
             "nav_bar_element_selector": "#why-its-better",
             "nav_bar_link_dest": "#why it's better"
           }
         },
+        "nav_bar_link_EPE3ay": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "Healthcare Professional",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "",
+            "nav_bar_link_dest": ""
+          }
+        },
         "bd2e6f19-eb06-4cd9-a36b-c83a7d840938": {
           "type": "nav_bar_link",
           "settings": {
-            "nav_bar_link_text": "Absorbency guide",
+            "nav_bar_link_text": "Student or Athlete",
             "click_behavior": "scroll_to",
             "nav_bar_element_selector": "#absorbency-chart",
             "nav_bar_link_dest": "#absorbency guide"
@@ -95,9 +104,11 @@
       "block_order": [
         "template--15078825525329__c3c67c48-069b-41aa-83c9-2b9ee67d9d60-nav_bar_link-1",
         "4527afb6-04da-4f97-a477-496cd83f6322",
+        "nav_bar_link_EPE3ay",
         "bd2e6f19-eb06-4cd9-a36b-c83a7d840938",
         "203f953b-dc7d-482f-9e5d-c6bb8a366b86"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-4",
@@ -127,6 +138,7 @@
         "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_title-1",
         "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_content-1"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "how it works",
         "theme_color_background": "theme_default",
@@ -170,6 +182,7 @@
         "template--15078825525329__11b4eb9a-18a9-488e-bfd7-23c248641695-section_title-1",
         "template--15078825525329__11b4eb9a-18a9-488e-bfd7-23c248641695-section_content-1"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "why it's better",
         "theme_color_background": "theme-color-bg-4",
@@ -241,13 +254,13 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "Saalt Bliss Guarantee"
+            "title": "Partner with us"
           }
         },
         "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>If you're not happy with your Saalt product, <a href=\"\/pages\/replacements\" title=\"\/pages\/replacements\"><span style=\"text-decoration:underline\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/span><\/a>. Why? We know that learning to use reusables can take time, but we’re here to help and cheer you to Saalt bliss. Your Saalt(isfaction) guaranteed.<\/p>"
+            "text_content": ""
           }
         }
       },
@@ -257,6 +270,7 @@
         "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_title-1",
         "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_content-1"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -299,6 +313,7 @@
         "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_title-1",
         "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_content-1"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "absorbency guide",
         "theme_color_background": "theme-color-bg-2",
@@ -394,6 +409,7 @@
         "template--15078825525329__18d097a2-ade7-4b43-b9b1-92ab9a1e2e95-absorbency_card-3",
         "template--15078825525329__18d097a2-ade7-4b43-b9b1-92ab9a1e2e95-absorbency_card-4"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "absorbency chart",
         "theme_color_background": "theme_default",
@@ -505,6 +521,7 @@
         "template--15078825525329__2962b7c9-d4c6-4356-a45d-61b549a0df16-section_icon_with_text-3",
         "template--15078825525329__2962b7c9-d4c6-4356-a45d-61b549a0df16-section_content-2"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "how to wash",
         "theme_color_background": "theme_default",
@@ -532,7 +549,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "2",
-            "title": "Meet the collections"
+            "title": "Click on the link that best describes you"
           }
         },
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-section_tiles_group-1": {
@@ -552,9 +569,9 @@
           "type": "saalt_style_1_tile",
           "settings": {
             "image": "shopify:\/\/shop_images\/Seamless-darker.jpg",
-            "title": "SEAMLESS",
-            "text_content": "Made with ultra-durable LYCRA®️ XTRA LIFE™️ fiber which resists fit loss and provides you with the confidence that your garment will last after repeated wash and wear.",
-            "button_text": "Shop Seamless",
+            "title": "Influencers & Creators",
+            "text_content": "For influencers and content creators looking to partner with Saalt and earn commissions for sharing with their followers.",
+            "button_text": "Apply Now!",
             "button_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.p.m.saalt.saalt_wear_collection=Seamless",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
@@ -567,9 +584,9 @@
           "type": "saalt_style_1_tile",
           "settings": {
             "image": "shopify:\/\/shop_images\/Comfort-Modal-darker.jpg",
-            "title": "COMFORT",
-            "text_content": "Made from soft-stretch TENCEL™️ Modal, aka dreamy soft fabric made from sustainably regenerated cellulose fiber that comes from renewable beech wood.",
-            "button_text": "Shop Comfort",
+            "title": "Publications",
+            "text_content": "For journalists, bloggers, and other websites or publications that want to partner with Saalt.",
+            "button_text": "Apply Now!",
             "button_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.p.m.saalt.saalt_wear_collection=Comfort",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
@@ -582,9 +599,9 @@
           "type": "saalt_style_1_tile",
           "settings": {
             "image": "shopify:\/\/shop_images\/Lace-Mesh-darker.jpg",
-            "title": "LACE & MESH",
-            "text_content": "Each pair is made with an average of 3 post-consumer recycled water bottles to help clean up landfill and ocean-bound plastic.",
-            "button_text": "Shop Lace & Mesh",
+            "title": "Healthcare Professionals",
+            "text_content": "For medical professionals interested in sharing Saalt with your patients. Pelvic Floor Therapist, OBGYN, Midwife, Doula or other.",
+            "button_text": "Apply Now!",
             "button_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.p.m.saalt.saalt_wear_collection=Lace+%26+Mesh",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
@@ -597,10 +614,25 @@
           "type": "saalt_style_1_tile",
           "settings": {
             "image": "shopify:\/\/shop_images\/Cotton-darker.jpg",
-            "title": "COTTON",
-            "text_content": "Made of soft and breathable biodegradable natural cotton that is Standard 100 OEKO-TEX®️ Certified.\nThis is a 3rd party certification that our product is free from a wide list of harmful chemicals.",
-            "button_text": "Shop Cotton",
-            "button_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.p.m.saalt.saalt_wear_collection=Cotton",
+            "title": "College Ambassadors",
+            "text_content": "For students, athletes, coaches etc. Looking to promote menstrual health, sustainability and empowerment on college campuses.",
+            "button_text": "Learn More",
+            "button_url": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSfjubbicyt_IJinZ7FdD0-qavLwdXZH0IDLhjRVczUb5tUMTw\/viewform",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "saalt_style_1_tile_iKRxY6": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cotton-darker.jpg",
+            "title": "Saalt Superfans",
+            "text_content": "For Saalt superfans, passionate about sharing Saalt and joining us on our mission to make reusable period care accessible to all.",
+            "button_text": "Learn More",
+            "button_url": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSc9iAj47y_U4XLfZQt8gqFwxbcGUlV1RD-jj-fcxioMMLRaZw\/viewform",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -615,7 +647,8 @@
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-1",
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-2",
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-3",
-        "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-4"
+        "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-4",
+        "saalt_style_1_tile_iKRxY6"
       ],
       "settings": {
         "section_id": "",
@@ -645,6 +678,7 @@
       "block_order": [
         "template--15078825525329__24bfdb1d-9a25-447e-86cc-489d73bf61a4-section_title-1"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -909,6 +943,7 @@
         "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-2",
         "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-3"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "FAQs",
@@ -969,7 +1004,7 @@
         "content_font_size": "small",
         "mobile_text_position": "below",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
+        "desktop_text_position": "left",
         "desktop_text_alignment": "left",
         "use_max_text_width": true,
         "max_width": "450px",
@@ -1016,6 +1051,7 @@
         "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-2",
         "16dbc45b-abe6-491e-b9ad-02da4749d08b"
       ],
+      "disabled": true,
       "settings": {
         "slide_height": "adapt_image",
         "slider_visual": "dots",
