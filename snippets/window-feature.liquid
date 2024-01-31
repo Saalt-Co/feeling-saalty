@@ -6,7 +6,7 @@
   data-filter-name="{{ block.settings.filter_name }}"
   data-filter-val="{{ block.settings.filter_val }}"
 >
-  <a
+  <div
     class="window-feature {% if checkboxEnable %} {% else %}no-hover{% endif %}"
     tabindex="0"
     {% if block.settings.link_type == 'url' %}
@@ -48,7 +48,7 @@
         {%- endif -%}
       </div>
     </div>
-  </a>
+  </div>
   <div class="window-feature-button-wrapper">
     {% if block.settings.link_type == 'url' %}
       <a
