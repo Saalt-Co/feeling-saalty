@@ -19,7 +19,7 @@
             "display-box": false,
             "title": "<p><strong>Light Absorbency<\/strong><\/p>",
             "copy": "<p>Holds as much as 1 liner or 1 - 2 light tampons. <\/p><p>Best for sweat and discharge, light flow days and spotting, a worry-free backup to a cup, disc or tampon, or as a pantyliner replacement.<\/p>",
-            "link_type": "filter",
+            "link_type": "url",
             "link_url": "",
             "filter_name": "Absorbency",
             "filter_val": "Light",
