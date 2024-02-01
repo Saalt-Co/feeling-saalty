@@ -76,7 +76,7 @@
         "b556c8a4-bad2-43ac-8e69-1b5b4650d635"
       ],
       "settings": {
-        "global_checkbox": true,
+        "global_checkbox": false,
         "section_id": "",
         "make_full_width": false,
         "mobile_min_width": "40%",
