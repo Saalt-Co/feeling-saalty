@@ -94,7 +94,7 @@
             "title": "<p><strong>Cleaning & Extras<\/strong><\/p>",
             "copy": "<p>Everything you need for a fully sustainable flow.<\/p>",
             "link_type": "url",
-            "link_url": "\/collections\/menstrual-cups-discs?sort_by=manual&filter.p.m.saalt.collection_filter_product_type=Cleaning+%26+Extras",
+            "link_url": "\/collections\/menstrual-cups-discs?filter.p.m.saalt.collection_filter_product_type=Cleaning+%26+Extras&sort_by=manual",
             "filter_name": "",
             "filter_val": "",
             "button_text": "Shop Extras"
