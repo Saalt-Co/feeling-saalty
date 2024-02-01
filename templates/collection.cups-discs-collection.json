@@ -51,8 +51,8 @@
             "display-box": false,
             "title": "<p><strong>Saalt Cups<\/strong><\/p>",
             "copy": "<p>No pads. No strings. Just comfort. Wear all day or night, stress free.<\/p>",
-            "link_type": "filter",
-            "link_url": "",
+            "link_type": "url",
+            "link_url": "shopify:\/\/collections\/saalt-cups",
             "filter_name": "Product Type",
             "filter_val": "Cups",
             "button_text": "Shop Cups"
