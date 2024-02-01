@@ -91,7 +91,7 @@
         "728939cb-8dd3-4a68-adec-a40e3de544b3"
       ],
       "settings": {
-        "global_checkbox": true,
+        "global_checkbox": false,
         "section_id": "",
         "make_full_width": false,
         "mobile_min_width": "40%",
