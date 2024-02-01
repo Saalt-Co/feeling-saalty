@@ -79,8 +79,8 @@
             "display-box": false,
             "title": "<p><strong>Bundles<\/strong><\/p>",
             "copy": "<p>Save up to 20% and skip the guesswork with bundles custom-designed by our Saalt Coaches for all your leak needs. <\/p>",
-            "link_type": "filter",
-            "link_url": "",
+            "link_type": "url",
+            "link_url": "\/collections\/teen?sort_by=manual&filter.p.m.saalt.collection_filter_product_type=Bundles",
             "filter_name": "Product Type",
             "filter_val": "Bundles",
             "button_text": "Shop Bundles"
