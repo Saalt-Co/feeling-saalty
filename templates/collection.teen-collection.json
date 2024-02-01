@@ -51,8 +51,8 @@
             "display-box": false,
             "title": "<p><strong>Saalt Teen Cup<\/strong><\/p>",
             "copy": "",
-            "link_type": "filter",
-            "link_url": "",
+            "link_type": "url",
+            "link_url": "\/collections\/teen?filter.p.m.saalt.collection_filter_product_type=Cups&sort_by=manual",
             "filter_name": "Product Type",
             "filter_val": "Cups",
             "button_text": "Shop Saalt Teen Cup"
@@ -65,8 +65,8 @@
             "display-box": false,
             "title": "<p><strong>Period Underwear<\/strong><\/p>",
             "copy": "",
-            "link_type": "filter",
-            "link_url": "",
+            "link_type": "url",
+            "link_url": "\/collections\/teen?sort_by=manual&filter.p.m.saalt.collection_filter_product_type=Saalt%20Wear",
             "filter_name": "Product Type",
             "filter_val": "Saalt Wear",
             "button_text": "Shop Period Underwear"
