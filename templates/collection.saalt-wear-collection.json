@@ -62,7 +62,7 @@
             "title": "<p><strong>Super Absorbency<\/strong><\/p>",
             "copy": "<p>Holds as much as 6+ pads or 8+ tampons. <\/p><p>Best for your heaviest flow days and overnight, postpartum wear, and bladder leaks.<\/p>",
             "link_type": "url",
-            "link_url": "https:\/\/*?sort_by=manual&filter.p.m.saalt.collection_filter_absorbency=Super",
+            "link_url": "#?sort_by=manual&filter.p.m.saalt.collection_filter_absorbency=Super",
             "filter_name": "Absorbency",
             "filter_val": "Super",
             "button_text": "Shop Super"
