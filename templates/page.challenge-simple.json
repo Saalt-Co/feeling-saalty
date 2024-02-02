@@ -62,7 +62,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "2",
-            "title": "Here’s your chance for you and your bestie to break up with the pads & tampons… forever."
+            "title": "Here’s your chance to break up with pads & tampons...forever."
           }
         },
         "section_icon_group_eECywe": {
@@ -149,7 +149,7 @@
           "type": "section_content",
           "settings": {
             "text_group_num": "2",
-            "text_content": "<h3><em>Ditch the Disposables<\/em><\/h3><p>Switch to a fully reusable, ultra-comfortable period with Saalt for <strong>2 cycles<\/strong>. When you <strong>invite 2+ friends<\/strong> to take the challenge together, you all get our best deal ever.<\/p>"
+            "text_content": "<h3><em>Ditch the Disposables<\/em><\/h3><p>Switch to a fully reusable, ultra-comfortable period with Saalt for 2 cycles. Choose one of our best-selling ChallengePacks below at our best price ever.<\/p><p>Post that you're taking thechallengeand tag your friends and @saaltco with #DitchTheDisposables for a chance to wina year's supply of Saalt Wear.<\/p>"
           }
         }
       },
@@ -398,11 +398,12 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "Step 1: Buy a Challenge Pack with your friends to get our best deal ever."
+            "title": "Step 1: Choose your challenge pack to join the reusable revolution."
           }
         },
         "section_content_LcXK3N": {
           "type": "section_content",
+          "disabled": true,
           "settings": {
             "text_content": "<p><em>Yes! You can mix and match any packs and choose different Saalt Wear sizes.<\/em><\/p>"
           }
@@ -425,7 +426,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Challenge-Trial-Pack-2_03_d1eb89dd-5311-4591-8adf-c6e7b2864e8c.jpg",
             "title": "Challenge Trial Pack",
-            "text_content": "<b>Buy 3 packs for $65 each\u2028<\/b><br>(Save 24%)<br>\n<br>\n<b>Buy 2 packs for $70 each<\/b><br>(Save 18%)<br>\n<br>\n<b>Buy 1 pack for $77 each<\/b><br>(Save 10%)<br>",
+            "text_content": "Just the best of the basics. The softest underwear you've ever worn (that also happens to protect against leaks). And one of each size of the best-selling Saalt Soft cup so you're covered for heavy and light days",
             "button_text": "Buy Challenge Trial Pack",
             "button_url": "\/products\/challenge-trial-pack-v2",
             "button_type": "primary",
@@ -440,7 +441,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Challenge-Accepted-Pack-2_02_63c9f17e-6bbd-40a9-ae66-4b593033e70f.jpg",
             "title": "Challenge Accepted Pack",
-            "text_content": "<b>Buy 3 packs for $86 each\u2028<\/b><br>(Save 30%)<br>\n<br>\n<b>Buy 2 packs for $97 each<\/b><br>(Save 21%)<br>\n<br>\n<b>Buy 1 pack for $111 each<\/b><br>\n(Save 10%)<br>",
+            "text_content": "The perfect starter pack. Two pairs of Saalt Wear that have your back(side) whether you're couch surfing (comfort), or heading to the gym in your best leggings (seamless). And our best selling Saalt Soft Cups for light and heavy days",
             "button_text": "Buy Challenge Accepted Pack",
             "button_url": "\/products\/challenge-test",
             "button_type": "primary",
@@ -455,7 +456,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Im-Commited-Pack-2_03_09d07510-4790-4e0a-8c21-764d6137c519.jpg",
             "title": "I'm Committed Pack",
-            "text_content": "<b>Buy 3 packs for $99 each\u2028<\/b><br>(Save 45%)<br>\n<br>\n<b>Buy 2 packs for $135 each<\/b>\n<br>(Save 25%)<br>\n<br>\n<b>Buy 1 pack for $153 each<\/b><br>(Save 15%)",
+            "text_content": "Because your friend can't stop raving. Our two most popular pairs of Saalt Wear that leave you dry and comfortable. And our best-selling Saalt Soft Cups, wash and a steamer to give your hard-working period queens a spa day.",
             "button_text": "Buy I'm Committed Pack",
             "button_url": "\/products\/im-committed-pack",
             "button_type": "primary",
@@ -497,7 +498,7 @@
         "section_content_dTjr3t": {
           "type": "section_content",
           "settings": {
-            "text_content": "<h3>Step 2: Post that you're taking the #DitchTheDisposables challenge and tag your friends and <a href=\"https:\/\/www.instagram.com\/saaltco\/\" target=\"_blank\">@saaltco<\/a>.<\/h3>"
+            "text_content": "<h3>Step 2: Post that you're taking the challenge and tag your friends and <a href=\"https:\/\/www.instagram.com\/saaltco\/\" target=\"_blank\">@saaltco<\/a>  with #DitchTheDisposables for a chance to win a year's supply of Saalt Wear. <\/h3>"
           }
         }
       },
@@ -535,7 +536,7 @@
         "section_content_dKxW7G": {
           "type": "section_content",
           "settings": {
-            "text_content": "<h3>Step 3: Use your fully reusable Saalt products for <strong>2 cycles with your besties<\/strong>, and have your most comfortable period ever.<\/h3>"
+            "text_content": "<h3>Step 3: Have your most comfortable period ever or your money back.<\/h3>"
           }
         }
       },
