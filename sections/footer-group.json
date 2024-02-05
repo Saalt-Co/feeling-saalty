@@ -95,6 +95,9 @@
         "52db0905-c8f6-43a5-9fa0-f8d4688dbb34",
         "d45b85e4-9b80-4201-a374-3617aea76e29"
       ],
+      "custom_css": [
+        "pag.site-footer {display: none;}"
+      ],
       "settings": {
         "footer_display": "flex",
         "mobile_h_gap": 2,
@@ -181,10 +184,10 @@
       ],
       "settings": {
         "height": 85,
-        "bg-color": "#fff",
+        "bg-color": "#ffffff",
         "top-border-color": "#e3e3e3",
         "top-border-width": 1,
-        "font-color": "#000",
+        "font-color": "#000000",
         "font-size": 11,
         "image-width": 45,
         "image-height": 45,
