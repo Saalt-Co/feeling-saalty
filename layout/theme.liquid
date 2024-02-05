@@ -361,7 +361,9 @@
       {{ content_for_layout }}
     </main>
 
-    {% sections 'footer-group' %}
+   {% unless template.name == 'page.challenge-simple' %}
+  {% sections 'footer-group' %}
+{% endunless %}
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
