@@ -96,7 +96,7 @@
         "d45b85e4-9b80-4201-a374-3617aea76e29"
       ],
       "custom_css": [
-
+        ".footer-group {display: none !important;}"
       ],
       "settings": {
         "footer_display": "flex",
