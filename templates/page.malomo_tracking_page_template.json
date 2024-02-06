@@ -1,20 +1,45 @@
 {
+  "order": [
+    "main",
+    "0825dc3725e14fb98e3"
+  ],
   "sections": {
-    "main": {
-      "type": "main-page",
+    "0825dc3725e14fb98e3": {
+      "type": "apps",
+      "blocks": {
+        "76160bd4-ee2a-4cd1-9ac2-d9f8de86e8a4": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "76160bd4-ee2a-4cd1-9ac2-d9f8de86e8a4"
+      ],
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
       }
     },
-    "shogun-helper": {
-      "type": "shogun-helper",
+    "main": {
+      "type": "malomo_order_tracking",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "malomo_shipment_tracker": {
+          "type": "shopify:\/\/apps\/malomo-order-tracking\/blocks\/shipment-tracker\/5cb158a1-dc52-4d21-aac7-e017083c11e2",
+          "settings": {
+            "publishable_api_key": "pk_59d37d3f6f685da71cb0a3af3a041f85"
+          }
+        }
+      },
+      "block_order": [
+        "malomo_shipment_tracker",
+        "image"
+      ],
       "settings": {
       }
     }
-  },
-  "order": [
-    "shogun-helper",
-    "main"
-  ]
+  }
 }
