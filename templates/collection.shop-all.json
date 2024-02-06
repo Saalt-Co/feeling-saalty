@@ -90,6 +90,7 @@
         "b8c80227-4dc1-412a-ac0a-2512bb438904",
         "728939cb-8dd3-4a68-adec-a40e3de544b3"
       ],
+      "disabled": true,
       "settings": {
         "global_checkbox": false,
         "section_id": "",
