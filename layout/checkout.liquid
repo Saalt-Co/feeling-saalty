@@ -66,10 +66,10 @@
             <div class="main">
               <header class="main__header" role="banner">
                 {{ content_for_logo }}
-                {{ breadcrumb }}
                 <div data-slt009-class="slt009-countdown-container-mobile">
                     <h3 data-slt009-class="slt009-countdown-title">Ships within 48 hours</h3>
                 </div>
+                {{ breadcrumb }}
                 {{ alternative_payment_methods }}
               </header>
               <main class="main__content" role="main">
@@ -225,6 +225,10 @@
               mainHeaderNav.insertAdjacentElement("afterend", termsWrapper);
             });
           }, false);
+
+          const $mobileBanner = document.querySelector('[data-slt009-class="slt009-countdown-container-mobile"]');
+          const $breadcrumg = document.querySelector('nav[aria-label="Breadcrumb"]');
+          $breadcrumb.appendChild($mobileBanner);
         </script>
       {% include 'ba-discounts' %}
     </body>
