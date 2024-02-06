@@ -63,7 +63,6 @@ class WindowDisplay extends HTMLElement {
   handleWindowFeatureClick(e) {
     this.toggleVisibility(e);
     this.filterByClicked(e);
-    this.filterByClickedMobile(e);
   }
 
   /**
@@ -94,20 +93,6 @@ class WindowDisplay extends HTMLElement {
        }else{
          e.preventDefault();
        }
-      return;
-    }
-    this.applyFilter(e);
-  }
-
-    filterByClickedMobile(e) {
-    if (!a11yClick(e)) return;
-    if (
-      this.isTouchDevice() == true &&
-      !e.target.classList.contains('window-feature-title') &&
-      !e.target.parentElement.classList.contains('window-feature-title')
-    ) {       
-         e.preventDefault();
-      
       return;
     }
     this.applyFilter(e);
