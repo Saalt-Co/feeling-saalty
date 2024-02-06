@@ -85,8 +85,8 @@ class WindowDisplay extends HTMLElement {
     if (!a11yClick(e)) return;
     if (
       this.isTouchDevice() == true &&
-      !e.target.classList.contains('window-feature-title') &&
-      !e.target.parentElement.classList.contains('window-feature-title')
+      !e.target.classList.contains('window-feature-button') &&
+      !e.target.parentElement.classList.contains('window-feature-button')
     ) {
        if (!e.target.classList.contains('ClickWorkingHere')){
       //e.preventDefault();
@@ -141,7 +141,7 @@ class WindowDisplay extends HTMLElement {
     const resizeableEls = [];
     for (const featureWrapper of [...windowFeatureWrappers]) {
       resizeableEls.push(featureWrapper.querySelector('.window-feature-title p'));
-      resizeableEls.push(featureWrapper.querySelector('.window-feature-title p'));
+      resizeableEls.push(featureWrapper.querySelector('.window-feature-button span'));
     }
     for (const el of [...resizeableEls]) {
       this.resizeText(el);
