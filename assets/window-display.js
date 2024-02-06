@@ -63,7 +63,7 @@ class WindowDisplay extends HTMLElement {
   handleWindowFeatureClick(e) {
     this.toggleVisibility(e);
     this.filterByClicked(e);
-    //this.filterByClickedMobile(e);
+    this.filterByClickedMobile(e);
   }
 
   /**
