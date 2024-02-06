@@ -89,7 +89,7 @@ class WindowDisplay extends HTMLElement {
       !e.target.parentElement.classList.contains('window-feature-button')
     ) {
        if (!e.target.classList.contains('ClickWorkingHere')){
-      e.preventDefault();
+      //e.preventDefault();
        }else{
          e.preventDefault();
        }
