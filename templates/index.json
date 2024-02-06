@@ -473,7 +473,7 @@
       "settings": {
         "global_checkbox": false,
         "section_id": "",
-        "make_full_width": false,
+        "make_full_width": true,
         "mobile_min_width": "40%",
         "mobile_max_width": "280px",
         "mobile_aspect_ratio": "1\/1.5",
