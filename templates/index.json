@@ -85,6 +85,12 @@
             "text_content": "<p>Don’t mind us—just showering you with a little affection.<\/p>"
           }
         },
+        "section_content_9pAVJA": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>USE CODE: <span style=\"text-decoration:underline\">SAALTLOVE<\/span><\/p>"
+          }
+        },
         "section_buttons_group_eW7nFK": {
           "type": "section_buttons_group",
           "settings": {
@@ -108,6 +114,7 @@
       "block_order": [
         "section_title_6g4AzF",
         "section_content_XyJ4tA",
+        "section_content_9pAVJA",
         "section_buttons_group_eW7nFK",
         "section_button_zUagVh"
       ],
