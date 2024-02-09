@@ -2,6 +2,15 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "cro_promo_GKUTEz": {
+      "type": "cro-promo",
+      "settings": {
+        "slt006-url": "",
+        "slt006-bg-color": "#f7d6c5",
+        "slt006-font-color": "#3f4759",
+        "slt006-font-size": 14
+      }
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -16,6 +25,7 @@
       "block_order": [
         "announcement_4DMPbF"
       ],
+      "disabled": true,
       "settings": {
         "theme_color_background": "theme-color-bg-0",
         "theme_color_text": "theme-color-text-0",
@@ -49,6 +59,7 @@
     }
   },
   "order": [
+    "cro_promo_GKUTEz",
     "announcement-bar",
     "header"
   ]
