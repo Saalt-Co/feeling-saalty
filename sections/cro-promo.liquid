@@ -1,6 +1,576 @@
+{% for block in section.blocks %}
+    {%- liquid
+        assign id = block.id | replace: ' ', '_' | replace: '-', '_' 
+        if block.settings.end-hour > 12
+            assign hours = block.settings.end-hour | minus: 12
+        else
+            assign hours = block.settings.end-hour
+        endif
+        assign endMsg = block.settings.ends | replace: '{month}', block.settings.end-month | replace: '{day}', block.settings.end-day | replace: '{hour}', hours | replace: '{minutes}', block.settings.end-mins
+    -%}
+    <style>
+        :root{
+            --slt006-{{ id }}-bg-color: {{ section.settings.slt006-bg-color }};
+            --slt006-{{ id }}-font-color: {{ section.settings.slt006-font-color }};
+            --slt006-{{ id }}-font-size: {{ section.settings.slt006-font-size }}px;
+        }
+        .slt006-{{ id }}-banner-countdown-wrap{
+            width: 100%;
+            height: auto;
+            min-height: 50px;
+            margin: 0;
+            padding: 0;
+            background-color: var(--slt006-{{ id }}-bg-color);
+            display: {%- if block.settings.desktop -%}flex{%- else -%}none{%- endif -%};
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        {%- if section.settings.slt006-url -%}
+            .slt006-{{ id }}-banner-countdown-link{
+                width: 100%;
+                height: auto;
+                min-height: 50px;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        {%- endif -%}
+
+        .slt006-{{ id }}-countdown-msg{
+            margin: 0 10px 0 0;
+            padding: 0 10px 0 0;
+            border-right: solid 1px var(--slt006-{{ id }}-font-color);
+            display: flex;
+            flex: 0 0 auto;
+            align-items: center;
+            font-size: var(--slt006-{{ id }}-font-size);
+            line-height: 22.4px;
+            letter-spacing: .05em;
+            color: var(--slt006-{{ id }}-font-color);
+            text-transform: uppercase;
+        }
+        .slt006-{{ id }}-countdown-msg strong{
+            text-align: center;
+        }
+        .slt006-{{ id }}-countdown-ends-in{
+            margin: 0 5px 0 0;
+            padding: 0;
+            display: flex;
+            flex: 0 0 auto;
+            align-items: center;
+            font-size: var(--slt006-{{ id }}-font-size);
+            font-weight: 700;
+            line-height: 22.4px;
+            letter-spacing: .05em;
+            color: var(--slt006-{{ id }}-font-color);
+            text-transform: uppercase;
+        }
+        [data-slt006-class="slt006-{{ id }}-desktop"]{
+            display: flex;
+        }
+        [data-slt006-class="slt006-{{ id }}-mobile"]{
+            display: none;
+        }
+        {%- if block.settings.use-countdown-timer != 'neither' -%}
+            [data-countdown-wrap]{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex: 0 0 auto;
+                justify-content: center;
+                align-items: center;
+            }
+            [data-countdown-wrap] > div{
+                margin: 0;
+                padding: 0 5px 0 0;
+                display: flex;
+                flex: 0 0 auto;
+                justify-content: center;
+                align-items: center;
+                color: var(--slt006-{{ id }}-font-color);
+            }
+            [data-countdown-days],
+            [data-countdown-hours],
+            [data-countdown-minutes],
+            [data-countdown-seconds]{
+                margin-right: 3px;
+                display: flex;
+                flex: 0 0 20px;
+                justify-content: center;
+                align-items: center;
+                color: var(--slt006-{{ id }}-font-color);
+            }
+            [data-slt006-class="slt006-{{ id }}-countdown"]{
+                font-weight: 700;
+            }
+        {%- endif -%}
+        @media all and (max-width: 767px) { 
+            [data-slt006-class="slt006-{{ id }}-desktop"]{
+                display: none;
+            }
+            [data-slt006-class="slt006-{{ id }}-mobile"]{
+                display: flex;
+            } 
+            [data-countdown-class="hide-mobile"]{
+                display: none;
+            }
+            .slt006-{{ id }}-banner-countdown-wrap{
+                min-height: 70px;
+                display: {%- if block.settings.mobile -%}flex{%- else -%}none{%- endif -%};
+                align-content: center;
+            }
+            .slt006-{{ id }}-countdown-msg{
+                margin-right: 0;
+                padding-right: 0;
+                border-right: none;
+                flex: 0 0 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+    <div class="slt006-{{ id }}-banner-countdown-wrap" data-slt006-class="slt006-{{ id }}-countdown-container">
+        {%- if section.settings.slt006-url -%}
+            <a href="{{ section.settings.slt006-url }}" class="slt006-{{ id }}-banner-countdown-link">
+        {%- endif -%}
+            <div class="slt006-{{ id }}-countdown-msg"><strong>{{ block.settings.msg }}</strong></div>
+            {%- case block.settings.use-countdown-timer -%}
+                {%- when 'desktop' %}
+                    <div data-slt006-class="slt006-{{ id }}-desktop">
+                        <div class="slt006-{{ id }}-countdown-ends-in">Ends in:</div>
+                        <div data-slt006-class="slt006-{{ id }}-countdown"></div>
+                    </div>
+                    <div data-slt006-class="slt006-{{ id }}-mobile">
+                        <div class="slt006-{{ id }}-countdown-ends-in">{{ endMsg }}</div>
+                    </div>
+                {%- when 'mobile' %}
+                    <div data-slt006-class="slt006-{{ id }}-desktop">
+                        <div class="slt006-{{ id }}-countdown-ends-in">{{ endMsg }}</div>
+                    </div>
+                    <div data-slt006-class="slt006-{{ id }}-mobile">
+                        <div class="slt006-{{ id }}-countdown-ends-in">Ends in:</div>
+                        <div data-slt006-class="slt006-{{ id }}-countdown"></div>
+                    </div>
+                {%- when 'both' %}
+                    <div class="slt006-{{ id }}-countdown-ends-in">Ends in:</div>
+                    <div data-slt006-class="slt006-{{ id }}-countdown"></div>
+                {%- when 'neither' %}
+                    <div class="slt006-{{ id }}-countdown-ends-in">{{ endMsg }}</div>
+            {%- endcase -%}
+        {%- if section.settings.slt006-url -%}
+            </a>
+        {%- endif -%}
+    </div>
+    <script>
+        if(typeof($wait4jQueryPromoMsg{{ id }}) === 'undefined'){
+            $wait4jQueryPromoMsg{{ id }} = ($callback) => {
+                let $jQuery = false;
+                let $w = setInterval(() => {
+                    if(typeof(jQuery) !== 'undefined'){
+                        clearInterval($w);
+                        $jQuery = true;
+                        $callback();
+                    }
+                }, 50);
+                setTimeout(() => {
+                    if(!$jQuery){
+                        clearInterval($w);
+                        console.log('no jQuery found...');
+                    }
+                }, 60000);
+            };
+        }
+        $wait4jQueryPromoMsg{{ id }}(()=>{
+            class $cro_slt006_{{ id }}_v1_class{
+                constructor($prop = {debug: true}){
+                    this.j = jQuery;
+                    this.setDebug = (typeof($prop.debug) !== 'undefined') ? $prop.debug : true;
+                    {%- if block.settings.use-countdown-timer != 'neither' -%}
+                        this.countdown = new $countdown(this.j);
+                    {%- endif -%}
+                }
+                hasNode($s){
+                    return (this.j($s).length > 0) ? true : false;
+                }
+                debug($s){
+                    if(this.setDebug){
+                        console.log('[QA slt006 DEBUG] -> ' + $s);
+                    }
+                }
+                wait($s, $f, $ef = ()=>{}, $i = 50, $o = 60000){
+                    const $t = this;
+                    let $v = false;
+                    let $w = setInterval(() => {
+                        if($t.hasNode($s)){
+                            clearInterval($w);
+                            $v = true;
+                            const $n = $t.j($s);
+                            $f($n);
+                        }
+                    },$i);
+                    setTimeout(() => {
+                        if(!$v){
+                            clearInterval($w);
+                            $ef();
+                        }
+                    }, $o);
+                }
+                each($data, $callback){
+                    for(let $c = 0; $c < $data.length; $c++){
+                        $callback($data[$c], $c);
+                    }
+                }
+                run(){
+                    const $t = this;
+                    const $currentDate = new Date();
+                    const $targetDates = [
+                        {
+                            start: {
+                                year: {{ block.settings.start-year }},
+                                month: {{ block.settings.start-month | minus: 1 }},
+                                day: {{ block.settings.start-day }},
+                                hours: {{ block.settings.start-hour }},
+                                minutes: {{ block.settings.start-mins }},
+                                seconds: 0
+                            },
+                            end: {
+                                year: {{ block.settings.end-year }},
+                                month: {{ block.settings.end-month | minus: 1 }},
+                                day: {{ block.settings.end-day }},
+                                hours: {{ block.settings.end-hour }},
+                                minutes: {{ block.settings.end-mins }},
+                                seconds: 59
+                            }
+                        }
+                    ];
+                    let $timeEval = false;
+                    let $position = -1;
+                    $t.each($targetDates, ($date, $c)=>{
+                        const $targetStart = new Date($date.start.year, $date.start.month, $date.start.day, $date.start.hours, $date.start.minutes, $date.start.seconds);
+                        const $targetEnd = new Date($date.end.year, $date.end.month, $date.end.day, $date.end.hours, $date.end.minutes, $date.end.seconds);
+                        if($currentDate.getTime() > $targetStart.getTime() && $currentDate.getTime() < $targetEnd.getTime()){
+                            if(!$timeEval && $position === -1){
+                                $timeEval = true;
+                                $position = $c;
+                            }
+                        }
+                    });
+                    if($timeEval && $position > -1 && $position < $targetDates.length){
+                        $t.debug('promo active');
+                        {%- if block.settings.use-countdown-timer != 'neither' -%}
+                            $t.wait('[data-slt006-class="slt006-{{ id }}-countdown"]', ()=>{
+                                $t.countdown.create('[data-slt006-class="slt006-{{ id }}-countdown"]', 'slt006-{{ id }}-countdown', $targetDates[$position].end, ()=>{});
+                            });
+                        {%- endif -%}
+                    }
+                    else{
+                        $t.debug('promo not active');
+                        $t.j('[data-slt006-class="slt006-{{ id }}-countdown-container"]').css({'display':'none'});
+                    }
+                
+                }
+            }
+    
+            {%- if block.settings.use-countdown-timer != 'neither' -%}
+                class $countdown{
+                    constructor($jQuery){
+                        this.j = $jQuery;
+                        this.dates = {
+                            current: '',
+                            end: ''
+                        };
+                    }
+                    setCurrentDate(){
+                        this.dates.current = new Date();
+                    }
+                    setEndDate($data){
+                        this.dates.end = new Date($data.year, $data.month, $data.day, $data.hours, $data.minutes, $data.seconds);
+                    }
+                    getDays(){
+                        const $e = this.dates.end.getTime() - this.dates.current.getTime();
+                        const $c = Math.floor($e / (24 * 60 * 60 * 1000));
+                        return ($c < 10 && $c >= 0) ? '0' + $c : $c;
+                    }
+                    getHours(){
+                        const $e = this.dates.end.getTime() - this.dates.current.getTime();
+                        const $d = Math.floor($e / (24 * 60 * 60 * 1000));
+                        const $h = Math.floor( ($e - $d * (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+                        return ($h < 10) ? '0' + $h : $h;
+                    }
+                    getMinutes(){
+                        const $e = this.dates.end.getTime() - this.dates.current.getTime();
+                        const $d = Math.floor($e / (24 * 60 * 60 * 1000));
+                        const $h = Math.floor(($e - $d * (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+                        const $m = Math.floor(($e - $d * (24 * 60 * 60 * 1000) - $h * (60 * 60 * 1000)) / 60000);
+                        return ($m < 10) ? '0' + $m : $m;
+                    }
+                    getSeconds(){
+                        const $e = this.dates.end.getTime() - this.dates.current.getTime();
+                        const $d = Math.floor($e / (24 * 60 * 60 * 1000));
+                        const $h = Math.floor(($e - $d * (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+                        const $m = Math.floor(($e - $d * (24 * 60 * 60 * 1000) - $h * (60 * 60 * 1000)) / 60000);
+                        const $s = Math.floor(($e - $d * (24 * 60 * 60 * 1000) - $h * (60 * 60 * 1000) - $m * (60000)) / 1000);
+                        return ($s < 10) ? '0' + $s : $s;
+                    }
+                    update($id, $callback){
+                        let $value = true;
+                        if(this.dates.end.getTime() > this.dates.current.getTime()){
+                            this.j('[data-countdown-days="' + $id + '"]').html(this.getDays());
+                            this.j('[data-countdown-hours="' + $id + '"]').html(this.getHours());
+                            this.j('[data-countdown-minutes="' + $id + '"]').html(this.getMinutes());
+                            this.j('[data-countdown-seconds="' + $id + '"]').html(this.getSeconds());
+                        }
+                        else{
+                            $callback();
+                            $value = false;
+                        }
+                        return $value;
+                    }
+                    start($id, $callback){
+                        const $t = this;
+                        $t.update($id, $callback);
+                        let $timer = setInterval(()=>{
+                            $t.setCurrentDate();
+                            const $time = $t.update($id, $callback);
+                            if(!$time){
+                                clearInterval($timer);
+                            }
+                        }, 1000);
+                    }
+                    create($selector, $id, $endData, $callback = ()=>{}){
+                        this.setCurrentDate();
+                        this.setEndDate($endData);
+                        this.j($selector).append(
+                            '<div data-countdown-wrap="' + $id + '">' +
+                                '<div><span data-countdown-days="' + $id + '"></span> D<span data-countdown-class="hide-mobile">ays</span>,</div>' +
+                                '<div><span data-countdown-hours="' + $id + '"></span> H<span data-countdown-class="hide-mobile">ours</span>,</div>' +
+                                '<div><span data-countdown-minutes="' + $id + '"></span> M<span data-countdown-class="hide-mobile">in</span>,</div>' +
+                                '<div><span data-countdown-seconds="' + $id + '"></span> S<span data-countdown-class="hide-mobile">ec</span></div>' +
+                            '</div>'
+                        );
+                        this.start($id, $callback);
+                    }
+                }
+            {%- endif -%}
+    
+            const $cro_slt006_{{ id }}_v1 = new $cro_slt006_{{ id }}_v1_class();
+            $cro_slt006_{{ id }}_v1.run();
+        });
+    </script>
+{%- endfor -%}
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Promo",
+    "settings": [
+        {
+            "type":"header",
+            "content":"Banner Settings"
+        },
+        {
+            "type":"url",
+            "id":"slt006-url",
+            "label":"Banner link"
+        },
+        {
+            "type":"color",
+            "id":"slt006-bg-color",
+            "label":"Banner background color",
+            "default":"#f7d6c5"
+        },
+        {
+            "type":"color",
+            "id":"slt006-font-color",
+            "label":"Banner font color",
+            "default":"#3f4759"
+        },
+        {
+            "type":"range",
+            "id":"slt006-font-size",
+            "label":"Font size",
+            "min": 10,
+            "max": 35,
+            "step": 0.5,
+            "default": 14,
+            "unit":"px"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "slt006-promo",
+            "name": "Promo Message",
+            "settings": [
+                {
+                "type": "checkbox",
+                "id": "desktop",
+                "label": "Display on desktop",
+                "default": true
+                },
+                {
+                "type": "checkbox",
+                "id": "mobile",
+                "label": "Display on mobile",
+                "default": true
+                },
+                {
+                "type": "header",
+                "content": "Promo message"
+                },
+                {
+                    "type": "text",
+                    "id": "msg",
+                    "label": "Message",
+                    "default":"BLACK FRIDAY SALE 20% OFF SITEWIDE & 30% OFF ORDERS OF $175+"
+                },
+                {
+                  "type": "text",
+                  "id": "ends",
+                  "label": "Ends message",
+                  "default": "Offer Ends on {month}/{day}",
+                  "info": "Use {month},{day},{hour} and/or {minutes} to place where place month, day, hour and/or minutes should be placed in your text. Example: Offer Ends on {month}/{day}"
+                },
+                {
+                  "type":"select",
+                  "id":"use-countdown-timer",
+                  "label":"Display countdown timer",
+                  "options":[
+                    {
+                      "value":"neither",
+                      "label":"Do not use"
+                    },
+                    {
+                      "value":"desktop",
+                      "label":"Desktop Only"
+                    },
+                    {
+                      "value":"mobile",
+                      "label":"Mobile Only"
+                    },
+                    {
+                      "value":"both",
+                      "label":"Both"
+                    }
+                  ],
+                  "default":"neither",
+                  "info":"This will display instead of the Ends message"
+                },
+                {
+                  "type": "header",
+                  "content": "Start date and time"
+                },
+                {
+                  "type": "range",
+                  "id": "start-month",
+                  "label": "Month",
+                  "min": 1,
+                  "max": 12,
+                  "step": 1,
+                  "default": 1
+                },
+                {
+                  "type": "range",
+                  "id": "start-day",
+                  "label": "Day",
+                  "min": 1,
+                  "max": 31,
+                  "step": 1,
+                  "default": 1
+                },
+                {
+                  "type": "number",
+                  "id": "start-year",
+                  "label": "Year",
+                  "default": 2024,
+                  "info": "(YYYY)"
+                },
+                {
+                  "type": "range",
+                  "id": "start-hour",
+                  "label": "Hour",
+                  "min": 0,
+                  "max": 23,
+                  "step": 1,
+                  "default": 0
+                },
+                {
+                  "type": "range",
+                  "id": "start-mins",
+                  "label": "Minutes",
+                  "min": 0,
+                  "max": 59,
+                  "step": 1,
+                  "default": 0
+                },
+                {
+                  "type": "header",
+                  "content": "End date and time"
+                },
+                {
+                  "type": "range",
+                  "id": "end-month",
+                  "label": "Month",
+                  "min": 1,
+                  "max": 12,
+                  "step": 1,
+                  "default": 1
+                },
+                {
+                  "type": "range",
+                  "id": "end-day",
+                  "label": "Day",
+                  "min": 1,
+                  "max": 31,
+                  "step": 1,
+                  "default": 1
+                },
+                {
+                  "type": "number",
+                  "id": "end-year",
+                  "label": "Year",
+                  "default": 2024,
+                  "info": "(YYYY)"
+                },
+                {
+                  "type": "range",
+                  "id": "end-hour",
+                  "label": "Hour",
+                  "min": 0,
+                  "max": 23,
+                  "step": 1,
+                  "default": 23
+                },
+                {
+                  "type": "range",
+                  "id": "end-mins",
+                  "label": "Minutes",
+                  "min": 0,
+                  "max": 59,
+                  "step": 1,
+                  "default": 59
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+          "category": "Header",
+          "name": "CRO Promo",
+          "settings":{},
+          "blocks":[
+            {
+                "type":"slt006-promo",
+                "settings": {
+                    "msg": "BLACK FRIDAY SALE 20% OFF SITEWIDE & 30% OFF ORDERS OF $175+"
+                }
+            }
+          ]
+      }
+    ],
+    "enabled_on": {
+      "groups": ["header"]
+    }
   }
 {% endschema %}
