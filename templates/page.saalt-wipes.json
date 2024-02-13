@@ -287,6 +287,85 @@
         "padding_bottom": 0
       }
     },
+    "multicolumn_NAXA94": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_NdUiWY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Wipes-Sophia-2461.jpg",
+            "title": "",
+            "rating": 5,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9nRJdr": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "rating": 5,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_k4Lgwj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Intimate-Cleansing-Wipes-30CT-PDP-03_02.jpg",
+            "title": "",
+            "rating": 5,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_f3LfGQ": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "rating": 0,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_NdUiWY",
+        "column_9nRJdr",
+        "column_k4Lgwj",
+        "column_f3LfGQ"
+      ],
+      "settings": {
+        "title": "9\/10 People Never Go Back",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "theme_color_background": "theme-color-bg-3",
+        "theme_color_text": "theme_default",
+        "background_style": "none",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "--palette-color-0",
+        "review_star_opacity_override": 100,
+        "button_text": "Button text",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "6dd777f2-c03d-4d36-b818-600b65ee03aa": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -419,83 +498,149 @@
         "padding_bottom": 0
       }
     },
-    "multicolumn_NAXA94": {
-      "type": "multicolumn",
+    "saalt_media_with_split_text_JF6CnW": {
+      "type": "saalt-media-with-split-text",
       "blocks": {
-        "column_NdUiWY": {
-          "type": "column",
+        "section_title_pQYWEn": {
+          "type": "section_title",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saalt-Wipes-Sophia-2461.jpg",
-            "title": "",
-            "rating": 5,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "text_group_num": "1",
+            "heading_tag": "1",
+            "title": "Section Title Goes Here"
           }
         },
-        "column_9nRJdr": {
-          "type": "column",
+        "section_content_iRdcqj": {
+          "type": "section_content",
           "settings": {
-            "title": "",
-            "rating": 5,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "text_group_num": "1",
+            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
           }
         },
-        "column_k4Lgwj": {
-          "type": "column",
+        "section_buttons_group_HbDiFd": {
+          "type": "section_buttons_group",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saalt-Intimate-Cleansing-Wipes-30CT-PDP-03_02.jpg",
-            "title": "",
-            "rating": 5,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "text_group_num": "1",
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
           }
         },
-        "column_f3LfGQ": {
-          "type": "column",
+        "section_button_reQWAL": {
+          "type": "section_button",
           "settings": {
-            "title": "Column",
-            "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "text_group_num": "1",
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "section_icon_group_WGUyVE": {
+          "type": "section_icon_group",
+          "settings": {
+            "text_group_num": "2",
+            "mobile_icons_display": "row",
+            "mobile_icon_group_horizontal_alignment": "center",
+            "mobile_icon_group_vertical_alignment": "flex-start",
+            "mobile_icon_grid_columns": 2,
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_text_size": "1.5rem",
+            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_vertical_alignment": "center",
+            "mobile_icon_min_width": "80px",
+            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "100px",
+            "use_max_icon_group_width": false,
+            "icon_group_max_width": "600px",
+            "desktop_icons_display": "row",
+            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_vertical_alignment": "center",
+            "desktop_icon_grid_columns": 2,
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_horizontal_alignment": "center",
+            "desktop_icon_vertical_alignment": "center",
+            "desktop_icon_min_width": "80px",
+            "desktop_icon_wrapper_max_width": "100px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "100px"
+          }
+        },
+        "section_icon_with_text_agn4fb": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "text_group_num": "2",
+            "icon_svg": "",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "section_icon_with_text_XmK6mp": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "text_group_num": "2",
+            "icon_svg": "",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "section_icon_with_text_zE89Le": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "text_group_num": "2",
+            "icon_svg": "",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "section_content_rXjwWr": {
+          "type": "section_content",
+          "settings": {
+            "text_group_num": "2",
+            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
           }
         }
       },
       "block_order": [
-        "column_NdUiWY",
-        "column_9nRJdr",
-        "column_k4Lgwj",
-        "column_f3LfGQ"
+        "section_title_pQYWEn",
+        "section_content_iRdcqj",
+        "section_buttons_group_HbDiFd",
+        "section_button_reQWAL",
+        "section_icon_group_WGUyVE",
+        "section_icon_with_text_agn4fb",
+        "section_icon_with_text_XmK6mp",
+        "section_icon_with_text_zE89Le",
+        "section_content_rXjwWr"
       ],
       "settings": {
-        "title": "9\/10 People Never Go Back",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "theme_color_background": "theme-color-bg-3",
+        "section_id": "",
+        "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
-        "background_style": "none",
-        "theme_color_column_secondary_bg": "theme_default",
-        "column_secondary_bg_opacity": 100,
-        "review_star_color_override": "--palette-color-0",
-        "review_star_opacity_override": 100,
-        "button_text": "Button text",
-        "button_url": "",
-        "button_type": "primary",
-        "theme_color_section_button_background": "theme_default",
-        "theme_color_text_section_button_text": "theme_default",
-        "theme_color_section_button_background_hover": "theme_default",
-        "theme_color_text_section_button_text_hover": "theme_default",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "media_type": "image",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
@@ -506,7 +651,8 @@
     "c2901525-3b0d-4212-83f5-38810d396e66",
     "f1b16d01-d3ea-4457-bea4-1ce2d36e34aa",
     "91242708-420b-4a93-8b84-092c3575b865",
+    "multicolumn_NAXA94",
     "6dd777f2-c03d-4d36-b818-600b65ee03aa",
-    "multicolumn_NAXA94"
+    "saalt_media_with_split_text_JF6CnW"
   ]
 }
