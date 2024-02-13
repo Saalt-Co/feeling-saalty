@@ -209,14 +209,14 @@
           "settings": {
             "text_group_num": "2",
             "heading_tag": "3",
-            "title": "Menstrual Health"
+            "title": "How to use"
           }
         },
         "template--15053077250129__f1b16d01-d3ea-4457-bea4-1ce2d36e34aa-section_content-1": {
           "type": "section_content",
           "settings": {
             "text_group_num": "2",
-            "text_content": "<p>Everyone should have the right to a safe and dignified period. We empower individuals with the knowledge and long-term solutions to improve their menstrual health, which increases gender equality and opens conversations that bring awareness and break down social stigmas.<\/p>"
+            "text_content": "<p><strong>Quick and Convenient:<\/strong><\/p><p>Use Saalt Intimat Wipes to stay clean, even on the go. No unnecessary fragrances or chemicals, just pure, simple ingredients that keep you feeling fresh.<\/p><p><strong>During Your Period:<\/strong><\/p><p>Designed to easily clean your menstrual cup or disc in the stall or on the go.<\/p><p><\/p><p><strong>Anywhere, Anytime:<\/strong><\/p><p>Public restrooms, backpacking, or wherver life takes you.<\/p><p><\/p><p><strong>Made for Your Vulva Too:<\/strong><\/p><p>Feeling cheeky? Yep, it's okay to use these on your booty, too. Safe for all external intimate areas.<\/p>"
           }
         }
       },
@@ -226,8 +226,8 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/menstrual_health_impact_page_12-12-23.png",
         "use_max_media_width": false,
@@ -238,7 +238,7 @@
         "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "left",
-        "use_max_text_width": false,
+        "use_max_text_width": true,
         "max_width": "600px",
         "padding_top": 0,
         "padding_bottom": 0
@@ -252,14 +252,14 @@
           "settings": {
             "text_group_num": "2",
             "heading_tag": "2",
-            "title": "Education & Empowerment"
+            "title": "Flush with Confidence"
           }
         },
         "template--15053077250129__91242708-420b-4a93-8b84-092c3575b865-section_content-2": {
           "type": "section_content",
           "settings": {
             "text_group_num": "2",
-            "text_content": "<p>Access to period care keeps girls in school, breaking the cycle of poverty for generations. We’re fueled by the power educated women have to lift their families and invest back into their local economy, bringing change to entire communities.<\/p>"
+            "text_content": "<p>Lab-Tested Flushability: Saalt Intimate Cleansing Wipes meet INDA GD4 guidelines, which means they're rigorously tested to be safely flushed one at a time in well-maintained systems. (your plumber will thank you.)<\/p>"
           }
         }
       },
@@ -269,8 +269,8 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/education_impact_page_12-12-23.png",
         "use_max_media_width": false,
@@ -325,84 +325,6 @@
         "desktop_text_position": "right",
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "2648b12f-cd30-4d03-9236-07bc69f07bc1": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "6ed87f99-2d29-4fdf-88f0-501a9ce7eb59": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "3",
-            "title": "We Walk the Walk"
-          }
-        }
-      },
-      "block_order": [
-        "6ed87f99-2d29-4fdf-88f0-501a9ce7eb59"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "image": "shopify:\/\/shop_images\/BeaconLogo-Secondary-Winner-2021-900px_1_Impact_Page.png",
-        "custom_code": "",
-        "use_max_media_width": true,
-        "max_media_width": "300px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "above",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "above",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "bea773c0-668d-4c1d-b4a3-7f7017fdaca5": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--21650857034001__bea773c0-668d-4c1d-b4a3-7f7017fdaca5-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "3",
-            "title": "Philanthropy Champion"
-          }
-        },
-        "template--21650857034001__bea773c0-668d-4c1d-b4a3-7f7017fdaca5-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>Saalt was awarded Beauty Independent’s prestigious Philanthropy Champion award measuring social impact significance.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--21650857034001__bea773c0-668d-4c1d-b4a3-7f7017fdaca5-section_title-1",
-        "template--21650857034001__bea773c0-668d-4c1d-b4a3-7f7017fdaca5-section_content-1"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "none",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "above",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": true,
         "max_width": "600px",
         "padding_top": 0,
         "padding_bottom": 0
@@ -540,54 +462,6 @@
         "padding_bottom": 0
       }
     },
-    "ced9cd50-1257-40f0-aa33-59bd4b2819a3": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "cca1bba8-6655-4e83-9079-d2dc73ab226c": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "center",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "7a7fee6b-1ebd-472f-8939-c03734e79b2a": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "VIEW ALL IMPACT REPORTS",
-            "button_url": "https:\/\/issuu.com\/saalt-impact",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme-color-bg-4",
-            "theme_color_text_section_button_text": "theme-color-text-1",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "cca1bba8-6655-4e83-9079-d2dc73ab226c",
-        "7a7fee6b-1ebd-472f-8939-c03734e79b2a"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme-color-bg-3",
-        "theme_color_text": "theme_default",
-        "media_type": "none",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "below",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 32,
-        "padding_bottom": 32
-      }
-    },
     "f47844f4-bf99-493b-b0ec-edf3a62931e8": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -640,10 +514,7 @@
     "f1b16d01-d3ea-4457-bea4-1ce2d36e34aa",
     "91242708-420b-4a93-8b84-092c3575b865",
     "0add3966-7c7f-4a60-bd20-c12dd57c3a86",
-    "2648b12f-cd30-4d03-9236-07bc69f07bc1",
-    "bea773c0-668d-4c1d-b4a3-7f7017fdaca5",
     "6dd777f2-c03d-4d36-b818-600b65ee03aa",
-    "ced9cd50-1257-40f0-aa33-59bd4b2819a3",
     "f47844f4-bf99-493b-b0ec-edf3a62931e8"
   ]
 }
