@@ -216,7 +216,7 @@
           "type": "section_content",
           "settings": {
             "text_group_num": "2",
-            "text_content": "<p><strong>Quick and Convenient:<\/strong><\/p><p>Use Saalt Intimat Wipes to stay clean, even on the go. No unnecessary fragrances or chemicals, just pure, simple ingredients that keep you feeling fresh.<\/p><p><strong>During Your Period:<\/strong><\/p><p>Designed to easily clean your menstrual cup or disc in the stall or on the go.<\/p><p><\/p><p><strong>Anywhere, Anytime:<\/strong><\/p><p>Public restrooms, backpacking, or wherver life takes you.<\/p><p><\/p><p><strong>Made for Your Vulva Too:<\/strong><\/p><p>Feeling cheeky? Yep, it's okay to use these on your booty, too. Safe for all external intimate areas.<\/p>"
+            "text_content": "<p><strong>Quick and Convenient:<\/strong>Use Saalt Intimat Wipes to stay clean, even on the go. No unnecessary fragrances or chemicals, just pure, simple ingredients that keep you feeling fresh.<\/p><p><strong>During Your Period: <\/strong>Designed to easily clean your menstrual cup or disc in the stall or on the go.<\/p><p><strong>Anywhere, Anytime: <\/strong>Public restrooms, backpacking, or wherver life takes you.<\/p><p><strong>Made for Your Vulva Too: <\/strong>Feeling cheeky? Yep, it's okay to use these on your booty, too. Safe for all external intimate areas.<\/p>"
           }
         }
       },
@@ -229,7 +229,7 @@
         "theme_color_background": "theme-color-bg-2",
         "theme_color_text": "theme-color-text-0",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/menstrual_health_impact_page_12-12-23.png",
+        "image": "shopify:\/\/shop_images\/Saalt-Intimate-Cleansing-Wipes-30CT-PDP-05_03.jpg",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 33,
@@ -280,49 +280,6 @@
         "content_font_size": "small",
         "mobile_text_alignment": "center",
         "desktop_text_position": "left",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "0add3966-7c7f-4a60-bd20-c12dd57c3a86": {
-      "type": "saalt-media-with-split-text",
-      "blocks": {
-        "template--15053077250129__0add3966-7c7f-4a60-bd20-c12dd57c3a86-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "text_group_num": "2",
-            "heading_tag": "2",
-            "title": "Sustainability"
-          }
-        },
-        "template--15053077250129__0add3966-7c7f-4a60-bd20-c12dd57c3a86-section_content-2": {
-          "type": "section_content",
-          "settings": {
-            "text_group_num": "2",
-            "text_content": "<p>Every consumer who chooses reusables saves thousands of single-use period products from our landfills and oceans. We provide consumers with sustainable solutions to decrease waste through product design that is healthy for both body and planet, and by funding direct cleanup efforts.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15053077250129__0add3966-7c7f-4a60-bd20-c12dd57c3a86-section_title-1",
-        "template--15053077250129__0add3966-7c7f-4a60-bd20-c12dd57c3a86-section_content-2"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "image": "shopify:\/\/shop_images\/sustainability_impact_page_12-12-23.png",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
         "max_width": "600px",
@@ -461,49 +418,6 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "f47844f4-bf99-493b-b0ec-edf3a62931e8": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--21650857034001__f47844f4-bf99-493b-b0ec-edf3a62931e8-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "3",
-            "title": "Education for one girl can break the cycle of poverty for generations."
-          }
-        },
-        "template--21650857034001__f47844f4-bf99-493b-b0ec-edf3a62931e8-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>“When I started Saalt, I knew girls' education would be a key part of our social mission. Education has done more to shape our confidence, prosperity, and fulfillment in life than any other single factor. Yet so many girls are halted early in their educational pursuits. The loss of potential is heartbreaking, and yet the solution is simple. We're passionate about the power one cup has to help a girl finish school, provide for her family, and afford her the confidence to care for her needs. I envision a world where our daughters and girls everywhere are limited by nothing but their own hard work and resolve to accomplish their dreams.”<br\/><br\/>— CHERIE, SAALT FOUNDER & MOTHER OF FIVE DAUGHTERS<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--21650857034001__f47844f4-bf99-493b-b0ec-edf3a62931e8-section_title-1",
-        "template--21650857034001__f47844f4-bf99-493b-b0ec-edf3a62931e8-section_content-1"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Impact-HER-2019-0028_Impact_Page.jpg",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
@@ -513,8 +427,6 @@
     "c2901525-3b0d-4212-83f5-38810d396e66",
     "f1b16d01-d3ea-4457-bea4-1ce2d36e34aa",
     "91242708-420b-4a93-8b84-092c3575b865",
-    "0add3966-7c7f-4a60-bd20-c12dd57c3a86",
-    "6dd777f2-c03d-4d36-b818-600b65ee03aa",
-    "f47844f4-bf99-493b-b0ec-edf3a62931e8"
+    "6dd777f2-c03d-4d36-b818-600b65ee03aa"
   ]
 }
