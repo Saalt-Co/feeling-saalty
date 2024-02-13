@@ -418,6 +418,85 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "multicolumn_NAXA94": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_NdUiWY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Wipes-Sophia-2461.jpg",
+            "title": "",
+            "rating": 5,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9nRJdr": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "rating": 5,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_k4Lgwj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Intimate-Cleansing-Wipes-30CT-PDP-03_02.jpg",
+            "title": "",
+            "rating": 5,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_f3LfGQ": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "rating": 0,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_NdUiWY",
+        "column_9nRJdr",
+        "column_k4Lgwj",
+        "column_f3LfGQ"
+      ],
+      "settings": {
+        "title": "9\/10 People Never Go Back",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "theme_color_background": "theme-color-bg-3",
+        "theme_color_text": "theme_default",
+        "background_style": "none",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "--palette-color-0",
+        "review_star_opacity_override": 100,
+        "button_text": "Button text",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -427,6 +506,7 @@
     "c2901525-3b0d-4212-83f5-38810d396e66",
     "f1b16d01-d3ea-4457-bea4-1ce2d36e34aa",
     "91242708-420b-4a93-8b84-092c3575b865",
-    "6dd777f2-c03d-4d36-b818-600b65ee03aa"
+    "6dd777f2-c03d-4d36-b818-600b65ee03aa",
+    "multicolumn_NAXA94"
   ]
 }
