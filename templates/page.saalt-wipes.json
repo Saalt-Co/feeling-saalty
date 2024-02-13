@@ -294,7 +294,7 @@
           "type": "heading",
           "settings": {
             "heading": "Made of just 7 clean ingredients.",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "text_qC8H3H": {
@@ -340,6 +340,9 @@
       "block_order": [
         "section_title_pQYWEn",
         "section_content_rXjwWr"
+      ],
+      "custom_css": [
+        "p {line-height: 1; \/* Adjust the value as needed *\/}"
       ],
       "settings": {
         "section_id": "",
@@ -395,23 +398,12 @@
             "link_label": "",
             "link": ""
           }
-        },
-        "column_f3LfGQ": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "column_NdUiWY",
         "column_9nRJdr",
-        "column_k4Lgwj",
-        "column_f3LfGQ"
+        "column_k4Lgwj"
       ],
       "settings": {
         "title": "9\/10 People Never Go Back",
@@ -427,7 +419,7 @@
         "column_secondary_bg_opacity": 100,
         "review_star_color_override": "--palette-color-0",
         "review_star_opacity_override": 100,
-        "button_text": "Button text",
+        "button_text": "",
         "button_url": "",
         "button_type": "primary",
         "theme_color_section_button_background": "theme_default",
