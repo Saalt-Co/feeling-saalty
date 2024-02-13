@@ -27,7 +27,7 @@
         "section_buttons_group_YrP4it": {
           "type": "section_buttons_group",
           "settings": {
-            "desktop_button_group_alignment": "center",
+            "desktop_button_group_alignment": "flex-start",
             "desktop_buttons_group_gap": "1rem"
           }
         },
@@ -63,45 +63,10 @@
         "content_font_size": "small",
         "mobile_text_position": "overlay",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "center",
-        "desktop_text_alignment": "center",
+        "desktop_text_position": "flex-start",
+        "desktop_text_alignment": "left",
         "use_max_text_width": true,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "303350fa-3085-44b8-bb82-8d7345eba2e2": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--15053077250129__303350fa-3085-44b8-bb82-8d7345eba2e2-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "3",
-            "title": "How Saalt is Helping"
-          }
-        }
-      },
-      "block_order": [
-        "template--15053077250129__303350fa-3085-44b8-bb82-8d7345eba2e2-section_title-1"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme-color-bg-4",
-        "theme_color_text": "theme-color-text-0",
-        "media_type": "none",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "max_width": "400px",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -109,6 +74,13 @@
     "c2901525-3b0d-4212-83f5-38810d396e66": {
       "type": "saalt-media-with-text",
       "blocks": {
+        "section_title_P7Pf6P": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Clean ingredients. Clean body. Clean planet."
+          }
+        },
         "c6150beb-6137-497a-94e5-6d6a8f480a78": {
           "type": "section_icon_group",
           "settings": {
@@ -175,6 +147,7 @@
         }
       },
       "block_order": [
+        "section_title_P7Pf6P",
         "c6150beb-6137-497a-94e5-6d6a8f480a78",
         "c8b6863d-043a-42e0-8c38-2ce361f1fb15",
         "2b6fb01a-3a07-4b51-83ca-a1b0065828e1",
@@ -216,13 +189,16 @@
           "type": "section_content",
           "settings": {
             "text_group_num": "2",
-            "text_content": "<p><strong>Quick and Convenient:<\/strong>Use Saalt Intimat Wipes to stay clean, even on the go. No unnecessary fragrances or chemicals, just pure, simple ingredients that keep you feeling fresh.<\/p><p><strong>During Your Period: <\/strong>Designed to easily clean your menstrual cup or disc in the stall or on the go.<\/p><p><strong>Anywhere, Anytime: <\/strong>Public restrooms, backpacking, or wherver life takes you.<\/p><p><strong>Made for Your Vulva Too: <\/strong>Feeling cheeky? Yep, it's okay to use these on your booty, too. Safe for all external intimate areas.<\/p>"
+            "text_content": "<p><strong>Quick and Convenient:<\/strong><\/p><p>Use Saalt Intimat Wipes to stay clean, even on the go. No unnecessary fragrances or chemicals, just pure, simple ingredients that keep you feeling fresh.<\/p><p><strong>During Your Period: <\/strong><\/p><p>Designed to easily clean your menstrual cup or disc in the stall or on the go.<\/p><p><strong>Anywhere, Anytime: <\/strong><\/p><p>Public restrooms, backpacking, or wherver life takes you.<\/p><p><strong>Made for Your Vulva Too:<\/strong><\/p><p><strong> <\/strong>Feeling cheeky? Yep, it's okay to use these on your booty, too. Safe for all external intimate areas.<\/p>"
           }
         }
       },
       "block_order": [
         "template--15053077250129__f1b16d01-d3ea-4457-bea4-1ce2d36e34aa-section_title-1",
         "template--15053077250129__f1b16d01-d3ea-4457-bea4-1ce2d36e34aa-section_content-1"
+      ],
+      "custom_css": [
+        "p {line-height: 1; \/* Adjust the value as needed *\/}"
       ],
       "settings": {
         "section_id": "",
@@ -568,7 +544,6 @@
   "order": [
     "main",
     "saalt_bg_media_with_text_PjkL4D",
-    "303350fa-3085-44b8-bb82-8d7345eba2e2",
     "c2901525-3b0d-4212-83f5-38810d396e66",
     "f1b16d01-d3ea-4457-bea4-1ce2d36e34aa",
     "91242708-420b-4a93-8b84-092c3575b865",
