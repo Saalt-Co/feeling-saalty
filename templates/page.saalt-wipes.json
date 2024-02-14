@@ -66,7 +66,7 @@
         "mobile_text_alignment": "center",
         "desktop_text_position": "flex-start",
         "desktop_text_alignment": "left",
-        "use_max_text_width": true,
+        "use_max_text_width": false,
         "max_width": "400px",
         "padding_top": 0,
         "padding_bottom": 0
@@ -239,7 +239,7 @@
         "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "left",
-        "use_max_text_width": true,
+        "use_max_text_width": false,
         "max_width": "600px",
         "padding_top": 0,
         "padding_bottom": 0
@@ -351,7 +351,7 @@
         "mobile_text_alignment": "center",
         "desktop_text_position": "flex-start",
         "desktop_text_alignment": "left",
-        "use_max_text_width": true,
+        "use_max_text_width": false,
         "max_width": "600px",
         "padding_top": 0,
         "padding_bottom": 0
