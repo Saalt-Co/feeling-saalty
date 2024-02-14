@@ -333,7 +333,7 @@
         "section_content_yDJRrW"
       ],
       "custom_css": [
-        "p {line-height: 0.8; \/* Adjust the value as needed *\/}"
+        "p {line-height: 1; \/* Adjust the value as needed *\/}"
       ],
       "settings": {
         "section_id": "",
