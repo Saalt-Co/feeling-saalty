@@ -67,7 +67,7 @@
         "desktop_text_position": "flex-start",
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
-        "max_width": "400px",
+        "max_width": "300px",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -309,6 +309,7 @@
         "heading_4K9r9e",
         "text_qC8H3H"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
