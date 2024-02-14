@@ -223,7 +223,7 @@
         "template--15053077250129__f1b16d01-d3ea-4457-bea4-1ce2d36e34aa-section_content-1"
       ],
       "custom_css": [
-        "p {line-height: 1; \/* Adjust the value as needed *\/}"
+        "p {line-height: 1.5; \/* Adjust the value as needed *\/}"
       ],
       "settings": {
         "section_id": "",
