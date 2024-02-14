@@ -295,6 +295,44 @@
         "padding_bottom": 0
       }
     },
+    "saalt_bg_media_with_text_FBzh94": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "section_content_yDJRrW": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p><strong>Aqua\/Water\/Eau<\/strong><\/p><p><em>naturally dispurses the other ingredients<\/em><\/p><p><strong>PEG-40 Hydrogenated Castor Oil<\/strong><\/p><p><em>conditions skin and removes oil and soil<\/em><\/p><p><strong>Sorbitan Caprylate<\/strong><\/p><p><em>maintains freshness<\/em><\/p><p><strong>Disodium EDTA<\/strong><\/p><p><em>helps keep formula shelf stable<\/em><\/p><p><strong>Citric Acid<\/strong><\/p><p><em>makes wipes pH balanced<\/em><\/p><p><strong>Sodium Benzoate<\/strong><\/p><p><em>keeps wipes fresh and clean<\/em><\/p><p><strong>Potassium Sorbate<\/strong><\/p><p><em>helps wipes last and prevents deterioration<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "section_content_yDJRrW"
+      ],
+      "custom_css": [
+        "p {line-height: 0.8; \/* Adjust the value as needed *\/}"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Intimate-Cleansing-Wipes-Landing-Page-Ingredients_03.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "overlay",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "flex-start",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "saalt_media_with_split_text_JF6CnW": {
       "type": "saalt-media-with-split-text",
       "blocks": {
@@ -326,7 +364,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Saalt-Intimate-Cleansing-Wipes-30CT-PDP-02_02.jpg",
+        "image": "shopify:\/\/shop_images\/Saalt-Intimate-Cleansing-Wipes-Landing-Page-Ingredients_03.jpg",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
@@ -549,6 +587,7 @@
     "f1b16d01-d3ea-4457-bea4-1ce2d36e34aa",
     "91242708-420b-4a93-8b84-092c3575b865",
     "rich_text_LgYFKk",
+    "saalt_bg_media_with_text_FBzh94",
     "saalt_media_with_split_text_JF6CnW",
     "multicolumn_NAXA94",
     "6dd777f2-c03d-4d36-b818-600b65ee03aa"
