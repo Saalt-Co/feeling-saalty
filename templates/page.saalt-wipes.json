@@ -327,7 +327,7 @@
         "column_NdUiWY": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saalt-Wipes-Sophia-2461.jpg",
+            "image": "shopify:\/\/shop_images\/Real_Stories_Real_Cleanliness-1.jpg",
             "title": "",
             "rating": 5,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -338,7 +338,7 @@
         "column_9nRJdr": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Saalt-Wipes-Alani-0262.jpg",
+            "image": "shopify:\/\/shop_images\/Real_Stories_Real_Cleanliness-2.jpg",
             "title": "",
             "rating": 5,
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -362,6 +362,9 @@
         "column_NdUiWY",
         "column_9nRJdr",
         "column_k4Lgwj"
+      ],
+      "custom_css": [
+        ".section-heading {text-align: center;}"
       ],
       "settings": {
         "title": "Real Stories, Real Cleanliness",
