@@ -324,33 +324,27 @@
     "saalt_bg_media_with_text_FBzh94": {
       "type": "saalt-bg-media-with-text",
       "blocks": {
-        "section_title_JXdHVN": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "Made of just 7 clean ingredients."
-          }
-        },
         "section_content_mEcWgP": {
           "type": "section_content",
+          "disabled": true,
           "settings": {
-            "text_content": "<p>No harsh chemicals. No fragrances. Just oh-so-fresh happiness.<\/p>"
+            "text_content": "<h2>Made of just 7 clean ingredients.<\/h2><h3><em>No harsh chemicals. No fragrances. Just oh-so-fresh happiness.<\/em><\/h3>"
           }
         },
         "section_content_yDJRrW": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p><strong>Aqua\/Water\/Eau<\/strong><em><br\/>naturally dispurses the other ingredients<\/em><\/p><p><strong>PEG-40 Hydrogenated Castor Oil<\/strong><em><br\/>conditions skin and removes oil and soil<\/em><\/p><p><strong>Sorbitan Caprylate<br\/><\/strong><em>maintains freshness<\/em><\/p><p><strong>Disodium EDTA<br\/><\/strong><em>helps keep formula shelf stable<\/em><\/p><p><strong>Citric Acid<br\/><\/strong><em>makes wipes pH balanced<\/em><\/p><p><strong>Sodium Benzoate<br\/><\/strong><em>keeps wipes fresh and clean<\/em><\/p><p><strong>Potassium Sorbate<br\/><\/strong><em>helps wipes last and prevents deterioration<\/em><\/p>"
+            "text_content": "<h2>Made of just 7 clean ingredients.<\/h2><h3><em>No harsh chemicals. No fragrances. Just oh-so-fresh happiness.<\/em><\/h3><p><strong>Aqua\/Water\/Eau<br\/><\/strong><em>naturally dispurses the other ingredients<\/em><\/p><p><strong>PEG-40 Hydrogenated Castor Oil<\/strong><em><br\/>conditions skin and removes oil and soil<\/em><\/p><p><strong>Sorbitan Caprylate<br\/><\/strong><em>maintains freshness<\/em><\/p><p><strong>Disodium EDTA<br\/><\/strong><em>helps keep formula shelf stable<\/em><\/p><p><strong>Citric Acid<br\/><\/strong><em>makes wipes pH balanced<\/em><\/p><p><strong>Sodium Benzoate<br\/><\/strong><em>keeps wipes fresh and clean<\/em><\/p><p><strong>Potassium Sorbate<br\/><\/strong><em>helps wipes last and prevents deterioration<\/em><\/p>"
           }
         }
       },
       "block_order": [
-        "section_title_JXdHVN",
         "section_content_mEcWgP",
         "section_content_yDJRrW"
       ],
       "custom_css": [
-        "p {line-height: 1; \/* Adjust the value as needed *\/}"
+        "p {line-height: 1.3; \/* Adjust the value as needed *\/ font-size: 12px;}",
+        "h3 {font-weight: 100;}"
       ],
       "settings": {
         "section_id": "",
