@@ -12,7 +12,7 @@
             "mobile": true,
             "msg": "15% off sitewide USE CODE: SAALTLOVE",
             "ends": "Offer Ends on {month}\/{day}",
-            "use-countdown-timer": "desktop",
+            "use-countdown-timer": "both",
             "start-month": 2,
             "start-day": 10,
             "start-year": 2024,
