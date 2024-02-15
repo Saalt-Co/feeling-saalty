@@ -4,6 +4,31 @@
   "sections": {
     "cro_promo_GKUTEz": {
       "type": "cro-promo",
+      "blocks": {
+        "slt006_promo_jkEbkJ": {
+          "type": "slt006-promo",
+          "settings": {
+            "desktop": true,
+            "mobile": true,
+            "msg": "15% off sitewide USE CODE: SAALTLOVE",
+            "ends": "Offer Ends on {month}\/{day}",
+            "use-countdown-timer": "both",
+            "start-month": 1,
+            "start-day": 1,
+            "start-year": 2024,
+            "start-hour": 2,
+            "start-mins": 10,
+            "end-month": 2,
+            "end-day": 15,
+            "end-year": 2024,
+            "end-hour": 23,
+            "end-mins": 59
+          }
+        }
+      },
+      "block_order": [
+        "slt006_promo_jkEbkJ"
+      ],
       "settings": {
         "slt006-url": "",
         "slt006-bg-color": "#f7d6c5",
