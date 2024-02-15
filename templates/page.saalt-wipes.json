@@ -37,8 +37,8 @@
             "button_text": "SHOP NOW",
             "button_url": "\/products\/saalt-intimate-cleansing-wipes",
             "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background": "theme-color-bg-4",
+            "theme_color_text_section_button_text": "theme-color-text-1",
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default"
           }
