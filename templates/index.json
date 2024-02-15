@@ -1,75 +1,5 @@
 {
   "sections": {
-    "saalt_bg_media_with_text_QYndnT": {
-      "type": "saalt-bg-media-with-text",
-      "blocks": {
-        "section_title_M34dVE": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "Meet the Cotton <br>Sleep Short:<br><span style=\"font-weight: lighter;\"><i><\/i><\/span>"
-          }
-        },
-        "section_content_GN3kPG": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>Period underwear that's got your back (and your front) covered all night long.<\/p>"
-          }
-        },
-        "section_buttons_group_9Tyh8C": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "flex-start",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "section_button_adt4QA": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "SHOP NOW",
-            "button_url": "shopify:\/\/products\/leakproof-cotton-sleep-short-super",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme-color-bg-1",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "section_title_M34dVE",
-        "section_content_GN3kPG",
-        "section_buttons_group_9Tyh8C",
-        "section_button_adt4QA"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "@media only screen and (min-width: 768px) {.text-wrapper {margin-left: 40px; }}",
-        "@media only screen and (max-width: 767px) {.text-wrapper h1:first-of-type {padding-left: 40px; padding-right: 40px; }}"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-Cotton-Sleep-Short-Hero-Update-mobile_08.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Cotton-Sleep-Short-Hero-Update-desktop_07.jpg",
-        "media_overlay_color": "--palette-color-1",
-        "media_overlay_opacity": 0,
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "flex-start",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": true,
-        "max_width": "300px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "saalt_bg_media_with_text_YT6MGT": {
       "type": "saalt-bg-media-with-text",
       "blocks": {
@@ -135,6 +65,149 @@
         "mobile_text_position": "below",
         "mobile_text_alignment": "center",
         "desktop_text_position": "flex-end",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "300px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "saalt_bg_media_with_text_GVLPbr": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "section_title_DgpwnL": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Get the all new Saalt Intimate Wipes for $5 with any purchase.<br><span style=\"font-weight: lighter;\"><i><\/i><\/span>"
+          }
+        },
+        "section_content_b3TLzU": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p><em><strong>Clean period. Clean ingredients.<\/strong><\/em><\/p>"
+          }
+        },
+        "section_content_ygQqiV": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Add wipes to cart and discount will auto apply at checkout.<\/p>"
+          }
+        },
+        "section_buttons_group_bB7FdP": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "flex-start",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_Gyf3FD": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "SHOP NOW",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-1",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_DgpwnL",
+        "section_content_b3TLzU",
+        "section_content_ygQqiV",
+        "section_buttons_group_bB7FdP",
+        "section_button_Gyf3FD"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/5-Off-Wipes-With-Any-Purchase-Homepage-Hero-mobile_02.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/5-Off-Wipes-With-Any-Purchase-Homepage-Hero-desktop_02.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "flex-end",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "300px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "saalt_bg_media_with_text_QYndnT": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "section_title_M34dVE": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Meet the Cotton <br>Sleep Short:<br><span style=\"font-weight: lighter;\"><i><\/i><\/span>"
+          }
+        },
+        "section_content_GN3kPG": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Period underwear that's got your back (and your front) covered all night long.<\/p>"
+          }
+        },
+        "section_buttons_group_9Tyh8C": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "flex-start",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_adt4QA": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "SHOP NOW",
+            "button_url": "shopify:\/\/products\/leakproof-cotton-sleep-short-super",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-1",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_M34dVE",
+        "section_content_GN3kPG",
+        "section_buttons_group_9Tyh8C",
+        "section_button_adt4QA"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media only screen and (min-width: 768px) {.text-wrapper {margin-left: 40px; }}",
+        "@media only screen and (max-width: 767px) {.text-wrapper h1:first-of-type {padding-left: 40px; padding-right: 40px; }}"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Cotton-Sleep-Short-Hero-Update-mobile_08.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Cotton-Sleep-Short-Hero-Update-desktop_07.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "flex-start",
         "desktop_text_alignment": "left",
         "use_max_text_width": true,
         "max_width": "300px",
@@ -1483,8 +1556,9 @@
     }
   },
   "order": [
-    "saalt_bg_media_with_text_QYndnT",
     "saalt_bg_media_with_text_YT6MGT",
+    "saalt_bg_media_with_text_GVLPbr",
+    "saalt_bg_media_with_text_QYndnT",
     "saalt_bg_media_with_text_Qbh4qn",
     "saalt_bg_media_with_text_Ud6TRK",
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
