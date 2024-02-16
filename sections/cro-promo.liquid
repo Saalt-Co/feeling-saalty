@@ -259,6 +259,8 @@
                             }
                         }
                     });
+                    $t.debug('$timeEval ' + $timeEval);
+                    $t.debug('$position ' + $position);
                     if($timeEval && $position > -1 && $position < $targetDates.length){
                         $t.debug('promo active');
                         {%- if block.settings.use-countdown-timer != 'neither' -%}
