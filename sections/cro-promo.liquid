@@ -226,7 +226,9 @@
                 }
                 run(){
                     const $t = this;
+                    $t.debug('run...');
                     const $currentDate = new Date();
+                    $t.debug('current time: ' + $currentDate.getTime());
                     const $targetDates = [
                         {
                             start: {
