@@ -249,6 +249,8 @@
                     ];
                     let $timeEval = false;
                     let $position = -1;
+                    $t.debug('$timeEval ' + $timeEval);
+                    $t.debug('$position ' + $position);
                     $t.each($targetDates, ($date, $c)=>{
                         const $targetStart = new Date($date.start.year, $date.start.month, $date.start.day, $date.start.hours, $date.start.minutes, $date.start.seconds);
                         const $targetEnd = new Date($date.end.year, $date.end.month, $date.end.day, $date.end.hours, $date.end.minutes, $date.end.seconds);
