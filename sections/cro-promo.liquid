@@ -166,6 +166,7 @@
         {%- endif -%}
     </div>
     <script>
+            console.log('[QA slt006 DEBUG] -> start of countdown script');
         if(typeof($wait4jQueryPromoMsg{{ id }}) === 'undefined'){
             $wait4jQueryPromoMsg{{ id }} = ($callback) => {
                 let $jQuery = false;
