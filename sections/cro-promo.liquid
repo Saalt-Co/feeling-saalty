@@ -365,6 +365,7 @@
             {%- endif -%}
     
             const $cro_slt006_{{ id }}_v1 = new $cro_slt006_{{ id }}_v1_class();
+            console.log('[QA slt006 DEBUG] -> typeof(): ' + typeof($cro_slt006_{{ id }}_v1.run));
             $cro_slt006_{{ id }}_v1.run();
         });
     </script>
