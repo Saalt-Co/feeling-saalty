@@ -14,7 +14,7 @@
         "section_title_cDyEzU": {
           "type": "section_title",
           "settings": {
-            "heading_tag": "1",
+            "heading_tag": "3",
             "title": "You asked, we delivered."
           }
         },
@@ -72,7 +72,7 @@
         "desktop_text_position": "flex-start",
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
-        "max_width": "300px",
+        "max_width": "400px",
         "padding_top": 0,
         "padding_bottom": 0
       }
