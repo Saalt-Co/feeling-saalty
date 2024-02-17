@@ -50,6 +50,10 @@
         "section_buttons_group_YrP4it",
         "section_button_ekAWEw"
       ],
+      "custom_css": [
+        "@media only screen and (min-width: 768px) {.text-wrapper {margin-left: 60px; }}",
+        "@media only screen and (max-width: 767px) {.text-wrapper h1:first-of-type {padding-left: 40px; padding-right: 40px; }}"
+      ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-0",
