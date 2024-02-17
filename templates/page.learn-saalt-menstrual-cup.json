@@ -29,6 +29,10 @@
         "template--15078825525329__fd4445e0-3160-476f-9e6f-f9f22e50a1dc-section_title-1",
         "template--15078825525329__fd4445e0-3160-476f-9e6f-f9f22e50a1dc-section_content-1"
       ],
+      "custom_css": [
+        "@media only screen and (min-width: 768px) {.text-wrapper {margin-left: 80px; }}",
+        "@media only screen and (max-width: 767px) {.text-wrapper h1:first-of-type {padding-left: 40px; padding-right: 40px; }}"
+      ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
