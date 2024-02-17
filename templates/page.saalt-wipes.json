@@ -244,8 +244,8 @@
         "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "use_max_text_width": true,
+        "max_width": "500px",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -287,8 +287,8 @@
         "mobile_text_alignment": "center",
         "desktop_text_position": "left",
         "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "use_max_text_width": true,
+        "max_width": "500px",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -348,7 +348,9 @@
       ],
       "custom_css": [
         "p {line-height: 1.3; \/* Adjust the value as needed *\/ font-size: 12px;}",
-        "h3 {font-weight: 100;}"
+        "h3 {font-weight: 100;}",
+        "@media only screen and (min-width: 768px) {.text-wrapper {margin-left: 60px; }}",
+        "@media only screen and (max-width: 767px) {.text-wrapper h1:first-of-type {padding-left: 40px; padding-right: 40px; }}"
       ],
       "settings": {
         "section_id": "",
