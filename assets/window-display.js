@@ -93,7 +93,7 @@ class WindowDisplay extends HTMLElement {
        }else{
          e.preventDefault();
        }
-       if (!e.target.classList.contains('ClickWorkingHere')){
+       if (!e.target.classList.contains('collection-card-image-anchor')){
          e.removeEventListener("click", elemEventHandler , false);
        }
       return;
