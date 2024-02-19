@@ -7,7 +7,7 @@
   data-filter-val="{{ block.settings.filter_val }}"
 >
   <a
-    class="window-feature {% if checkboxEnable %} {% else %}no-hover{% endif %}"
+    class="window-feature {% if checkboxEnable %} {% else %}no-hover{% endif %}  {% if block.settings.link_type == 'url' %}collection-card-image-anchor{% endif %}"
     tabindex="0"
     {% if block.settings.link_type == 'url' %}
       href="{{ block.settings.link_url }}"
