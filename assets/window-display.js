@@ -94,7 +94,7 @@ class WindowDisplay extends HTMLElement {
          e.preventDefault();
        }
        if (!e.target.classList.contains('collection-card-image-anchor')){
-         e.removeEventListener("click", elemEventHandler , false);
+        e.target.removeEventListener("click", this.filterByClicked, false);
        }
       return;
     }
