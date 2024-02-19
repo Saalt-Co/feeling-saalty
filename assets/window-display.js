@@ -93,6 +93,9 @@ class WindowDisplay extends HTMLElement {
        }else{
          e.preventDefault();
        }
+       if (!e.target.classList.contains('ClickWorkingHere')){
+         e.removeEventListener("click", elemEventHandler , false);
+       }
       return;
     }
     this.applyFilter(e);
