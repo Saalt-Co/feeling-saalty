@@ -122,6 +122,9 @@
         "section_buttons_group_bB7FdP",
         "section_button_Gyf3FD"
       ],
+      "custom_css": [
+        "@media only screen and (min-width: 768px) {.text-wrapper {margin-right: 5%; }}"
+      ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -140,7 +143,7 @@
         "desktop_text_position": "flex-end",
         "desktop_text_alignment": "left",
         "use_max_text_width": true,
-        "max_width": "40%",
+        "max_width": "34%",
         "padding_top": 0,
         "padding_bottom": 0
       }
