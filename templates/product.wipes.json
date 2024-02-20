@@ -438,6 +438,75 @@
         "padding_bottom": 0
       }
     },
+    "multicolumn_aDKNzp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_ADrxYB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Real_Stories_Real_Cleanliness-1.jpg",
+            "title": "",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_eX87cb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Real_Stories_Real_Cleanliness-2.jpg",
+            "title": "",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_MRYKH7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Saalt-Intimate-Cleansing-Wipes-30CT-PDP-03_02_6ae7c9ac-f85e-4d2f-a59b-91e1c6275d13.jpg",
+            "title": "",
+            "rating": 0,
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_ADrxYB",
+        "column_eX87cb",
+        "column_MRYKH7"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "theme_color_background": "theme-color-bg-3",
+        "theme_color_text": "theme_default",
+        "background_style": "none",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "saalt_media_with_text_dYeVnU": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -604,6 +673,7 @@
     "saalt_media_with_text_L4jNxN",
     "saalt_media_with_split_text_T8XDRU",
     "saalt_media_with_split_text_kneThn",
+    "multicolumn_aDKNzp",
     "saalt_media_with_text_dYeVnU",
     "a235a351-a7fc-42f3-acf2-717cc19658e9",
     "bef772d0-6e13-4a64-bb1e-f22e9b4887ed"
