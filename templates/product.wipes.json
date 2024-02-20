@@ -535,7 +535,7 @@
           "settings": {
             "button_text": "LEARN MORE",
             "button_url": "https:\/\/saalt.com\/pages\/impact",
-            "button_type": "primary",
+            "button_type": "secondary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
             "theme_color_section_button_background_hover": "theme_default",
@@ -551,7 +551,7 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme_default",
+        "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/B-Corp-Photo-2_Impact_Page.png",
