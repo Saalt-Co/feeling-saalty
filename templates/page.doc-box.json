@@ -83,9 +83,10 @@
       "blocks": {
         "section_title_P7Pf6P": {
           "type": "section_title",
+          "disabled": true,
           "settings": {
             "heading_tag": "1",
-            "title": "Patients interested in reusable products often look to their health professionals for guidance."
+            "title": ""
           }
         },
         "section_icon_group_ntYdhf": {
@@ -191,7 +192,7 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme-color-bg-5",
+        "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "none",
         "custom_code": "",
@@ -218,14 +219,14 @@
           "settings": {
             "text_group_num": "2",
             "heading_tag": "3",
-            "title": "Join Our Saalt Health Care Sample Box & Affiliate Program"
+            "title": "Patients interested in reusable products often look to their health professionals for guidance."
           }
         },
         "template--15053077250129__f1b16d01-d3ea-4457-bea4-1ce2d36e34aa-section_content-1": {
           "type": "section_content",
           "settings": {
             "text_group_num": "2",
-            "text_content": "<p><em>Perfect for OBGYNs, Pelvic Floor Therapists, Urologists, Aestheticians, and other Clinicians.<\/em>What you get as a Saalt Health Care Affiliate:<\/p><ul><li>Free sample box of Saalt products to show patients<\/li><li>15% discount for patients<\/li><li>10% commission for you when patients purchase<\/li><li>Direct contact to our dedicated Saalt Coaches to answer questions<\/li><\/ul>"
+            "text_content": "<p><strong>Join Our Saalt Health Care Sample Box & Affiliate Program<\/strong><\/p><p><em>Perfect for OBGYNs, Pelvic Floor Therapists, Urologists, Aestheticians, and other Clinicians.<\/em>What you get as a Saalt Health Care Affiliate:<\/p><ul><li>Free sample box of Saalt products to show patients<\/li><li>15% discount for patients<\/li><li>10% commission for you when patients purchase<\/li><li>Direct contact to our dedicated Saalt Coaches to answer questions<\/li><\/ul>"
           }
         }
       },
@@ -460,6 +461,129 @@
         "padding_bottom": 36
       }
     },
+    "collapsible_content_TEBQaX": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_cmjeJ4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does Saalt underwear work?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_fzVkBa": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does Saalt underwear also work for bladder leaks or postpartum?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_BNf4fd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do you wash Saalt underwear?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_h76Bic": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do Saalt menstrual cups work?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_6yWbf4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do Saalt menstrual discs work?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_3bpAJN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's the difference between menstrual cups and discs?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_HBgffn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do you clean a menstrual cup or disc?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_DCxaq6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Which product is best if I have a weak pelvic floor?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_YNxnDR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do menstrual cups cause prolapse?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_jPJ6Ph": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can menstrual cups cause TSS?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_cmjeJ4",
+        "collapsible_row_fzVkBa",
+        "collapsible_row_BNf4fd",
+        "collapsible_row_h76Bic",
+        "collapsible_row_6yWbf4",
+        "collapsible_row_3bpAJN",
+        "collapsible_row_HBgffn",
+        "collapsible_row_DCxaq6",
+        "collapsible_row_YNxnDR",
+        "collapsible_row_jPJ6Ph"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Questions about Reusable Products?",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "theme_color_container_background": "theme_default",
+        "theme_color_container_text": "theme_default",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "6dd777f2-c03d-4d36-b818-600b65ee03aa": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -591,6 +715,14 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "custom_liquid_ATPLbJ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div data-tf-live=\"01HP2TM9PEQMG3K6BCR5N0E2Q3\"><\/div>\n<script src=\"\/\/embed.typeform.com\/next\/embed.js\"><\/script>",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -602,6 +734,8 @@
     "saalt_bg_media_with_text_FBzh94",
     "featured_collection_hKKYVi",
     "multicolumn_NAXA94",
-    "6dd777f2-c03d-4d36-b818-600b65ee03aa"
+    "collapsible_content_TEBQaX",
+    "6dd777f2-c03d-4d36-b818-600b65ee03aa",
+    "custom_liquid_ATPLbJ"
   ]
 }
