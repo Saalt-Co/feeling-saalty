@@ -106,7 +106,7 @@
           "type": "section_button",
           "settings": {
             "button_text": "SHOP NOW",
-            "button_url": "",
+            "button_url": "shopify:\/\/products\/saalt-intimate-cleansing-wipes",
             "button_type": "primary",
             "theme_color_section_button_background": "theme-color-bg-1",
             "theme_color_text_section_button_text": "theme_default",
@@ -122,7 +122,6 @@
         "section_buttons_group_bB7FdP",
         "section_button_Gyf3FD"
       ],
-      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -407,6 +406,7 @@
         "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_button-1",
         "23149735-c736-46cc-8e03-56e849236f9d"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
