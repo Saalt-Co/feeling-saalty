@@ -357,19 +357,30 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_HKA38V": {
+          "type": "column",
+          "settings": {
+            "title": "Whitney",
+            "rating": 5,
+            "text": "<p>\"OMG- can I just start by saying wearing Saalt period underwear and using the cup has been an actual life changer! EVERY period I have had since then I have been overjoyed with the ease of use, quality of product, and comfort at having sustainable, toxic-free and lovely tools to ease the monthly cycle. So thank you!\"<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_neKh7Q",
         "column_WyweAV",
-        "column_8WTiFy"
+        "column_8WTiFy",
+        "column_HKA38V"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "column_alignment": "left",
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
