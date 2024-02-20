@@ -442,6 +442,92 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "saalt_media_with_split_text_T8XDRU": {
+      "type": "saalt-media-with-split-text",
+      "blocks": {
+        "section_title_YVpYDq": {
+          "type": "section_title",
+          "settings": {
+            "text_group_num": "1",
+            "heading_tag": "1",
+            "title": "Flush with Confidence"
+          }
+        },
+        "section_content_hAmh7F": {
+          "type": "section_content",
+          "settings": {
+            "text_group_num": "2",
+            "text_content": "<p>Lab-Tested Flushability: Saalt Intimate Cleansing Wipes meet INDA GD4 guidelines, which means they're rigorously tested to be safely flushed one at a time in well-maintained systems. (Your plumber will thank you.)<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_YVpYDq",
+        "section_content_hAmh7F"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "video",
+        "video": "shopify:\/\/files\/videos\/WipesCC.mp4",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "left",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "saalt_media_with_split_text_kneThn": {
+      "type": "saalt-media-with-split-text",
+      "blocks": {
+        "section_title_yiEAFB": {
+          "type": "section_title",
+          "settings": {
+            "text_group_num": "1",
+            "heading_tag": "1",
+            "title": "Quick and Convenient"
+          }
+        },
+        "section_content_adgGbr": {
+          "type": "section_content",
+          "settings": {
+            "text_group_num": "2",
+            "text_content": "<p>Use Saalt Intimate Cleansing Wipes to stay clean, even on the go. No unnecessary fragrances or chemicals, just pure, simple ingredients that keep you feeling fresh.<\/p><p><strong>During Your Period <\/strong><br\/>Designed to easily clean your menstrual cup or disc in the stall or on the go.<\/p><p><strong>Anywhere, Anytime <br\/><\/strong>Public restrooms, backpacking, or wherver life takes you.<\/p><p><strong>Made for Your Vulva Too<br\/><\/strong>Feeling cheeky? Yep, it's okay to use these on your booty, too. Safe for all external intimate areas.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_yiEAFB",
+        "section_content_adgGbr"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Saalt-Intimate-Cleansing-Wipes-30CT-PDP-05_03_1ec82cd1-9750-46dd-a140-ea3c542415a0.jpg",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -453,6 +539,8 @@
     "related-products",
     "a235a351-a7fc-42f3-acf2-717cc19658e9",
     "shogun-below",
-    "saalt_media_with_text_L4jNxN"
+    "saalt_media_with_text_L4jNxN",
+    "saalt_media_with_split_text_T8XDRU",
+    "saalt_media_with_split_text_kneThn"
   ]
 }
