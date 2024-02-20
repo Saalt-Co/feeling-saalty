@@ -2795,5 +2795,23 @@
         "info": "t:settings_schema.cart.settings.cart_drawer.collection.info"
       }
     ]
+  },
+  {
+    "name": "CRO Checkout Implementation",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_slt009_msg",
+        "label": "Show special checkout message",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "slt009_msg",
+        "label": "Special checkout message",
+        "default": "Ships within 48 hours",
+        "info": "Show a special message on the checkout page. Example: Ships within 48 hours"
+      }
+    ]
   }
 ]
