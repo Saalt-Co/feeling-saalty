@@ -290,6 +290,26 @@
         "use_graduated_bgs": true
       }
     },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "More to Love",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_swatches": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
     "2e4ed4ed-2f94-40cb-9564-c7df19d1376a": {
       "type": "multicolumn",
       "blocks": {
@@ -332,6 +352,7 @@
         "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-3",
         "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -362,26 +383,6 @@
     "bef772d0-6e13-4a64-bb1e-f22e9b4887ed": {
       "type": "reviews-list",
       "settings": {
-      }
-    },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "heading": "More to Love",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "show_swatches": false,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
       }
     },
     "d2711f17-56ea-4fa1-9caf-6e8d0a892eff": {
@@ -482,9 +483,9 @@
     "afb57bcf-95f9-4c58-bcb0-46be33b273c1",
     "main",
     "0b3e0dea-b65b-440a-97a7-f90ea555dd6d",
+    "related-products",
     "2e4ed4ed-2f94-40cb-9564-c7df19d1376a",
     "bef772d0-6e13-4a64-bb1e-f22e9b4887ed",
-    "related-products",
     "d2711f17-56ea-4fa1-9caf-6e8d0a892eff",
     "shogun-below"
   ]
