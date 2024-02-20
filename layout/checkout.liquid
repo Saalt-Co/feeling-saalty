@@ -1,235 +1,240 @@
 <!DOCTYPE html>
-    <html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
-      <head>
-        <!-- Begin Convert Experiences Code -->
-        <script type="text/javascript" src="//cdn-4.convertexperiments.com/js/10041221-10043535.js" async></script>
-        <!-- End Convert Experiences Code -->
+  <html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+    <head>
+      <!-- Begin Convert Experiences Code -->
+      <script type="text/javascript" src="//cdn-4.convertexperiments.com/js/10041221-10043535.js" async></script>
+      <!-- End Convert Experiences Code -->
+  
+      <!-- Begin BlackCrow Script Tag: DO NOT MODIFY! -->
+      <script
+        type="text/javascript"
+        async
+        src="https://shopify-init.blackcrow.ai/js/core/saalt-company.js?shopify_app_version=1.0.167&shop=saalt-company.myshopify.com"
+      ></script>
+      <!-- End BlackCrow Script Tag -->
+  
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0"
+      >
+      <meta name="referrer" content="origin">
+  
+      <title>{{ page_title }}</title>
+  
+      {{ content_for_header }}
+      {{ checkout_stylesheets }}
+      {{ checkout_scripts }}
+  
+      <!-- Gorgias Chat Widget Start -->
+      <script
+        id="gorgias-chat-widget-install-v2"
+        src="https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=23931"
+        async
+      ></script>
+      <!-- Gorgias Chat Widget End -->
     
-        <!-- Begin BlackCrow Script Tag: DO NOT MODIFY! -->
-        <script
-          type="text/javascript"
-          async
-          src="https://shopify-init.blackcrow.ai/js/core/saalt-company.js?shopify_app_version=1.0.167&shop=saalt-company.myshopify.com"
-        ></script>
-        <!-- End BlackCrow Script Tag -->
-    
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0"
-        >
-        <meta name="referrer" content="origin">
-    
-        <title>{{ page_title }}</title>
-    
-        {{ content_for_header }}
-        {{ checkout_stylesheets }}
-        {{ checkout_scripts }}
-    
-        <!-- Gorgias Chat Widget Start -->
-        <script
-          id="gorgias-chat-widget-install-v2"
-          src="https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=23931"
-          async
-        ></script>
-        <!-- Gorgias Chat Widget End -->
-      
-      {% include 'friendbuy' %}
-    {% include 'ba-common' %}
-    
-      {% render 'shogun-head' %}
-    </head>
-      <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript
-          ><iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-585TK2T"
-            height="0"
-            width="0"
-            style="display:none;visibility:hidden"
-          ></iframe
-        ></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-    
-        {{ skip_to_content_link }}
-    
-        <header class="banner" data-header role="banner">
-          <div class="wrap">
-            {{ content_for_logo }}
+    {% include 'friendbuy' %}
+  {% include 'ba-common' %}
+  
+    {% render 'shogun-head' %}
+  </head>
+    <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript
+        ><iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-585TK2T"
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden"
+        ></iframe
+      ></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+  
+      {{ skip_to_content_link }}
+  
+      <header class="banner" data-header role="banner">
+        <div class="wrap">
+          {{ content_for_logo }}
+        </div>
+      </header>
+  
+      {{ order_summary_toggle }}
+      <div class="content" data-content>
+        <div class="wrap">
+          <div class="main">
+            <header class="main__header" role="banner">
+              {{ content_for_logo }}
+              {%- if settings.show_slt009_msg -%}
+              <div data-slt009-class="slt009-countdown-container-mobile">
+                  <h3 data-slt009-class="slt009-countdown-title">{{ settings.slt009_msg }}</h3>
+              </div>
+              {%- endif -%}
+              {{ breadcrumb }}
+              {{ alternative_payment_methods }}
+            </header>
+            <main class="main__content" role="main">
+              {{ content_for_layout }}
+            </main>
+            <footer class="main__footer" role="contentinfo">
+              {{ content_for_footer }}
+            </footer>
           </div>
-        </header>
-    
-        {{ order_summary_toggle }}
-        <div class="content" data-content>
-          <div class="wrap">
-            <div class="main">
-              <header class="main__header" role="banner">
-                {{ content_for_logo }}
-                <div data-slt009-class="slt009-countdown-container-mobile">
-                    <h3 data-slt009-class="slt009-countdown-title">Ships within 48 hours</h3>
-                </div>
-                {{ breadcrumb }}
-                {{ alternative_payment_methods }}
-              </header>
-              <main class="main__content" role="main">
-                {{ content_for_layout }}
-              </main>
-              <footer class="main__footer" role="contentinfo">
-                {{ content_for_footer }}
-              </footer>
+          <aside class="sidebar" role="complementary">
+            <div class="sidebar__header">
+              {{ content_for_logo }}
             </div>
-            <aside class="sidebar" role="complementary">
-              <div class="sidebar__header">
-                {{ content_for_logo }}
+            {%- if settings.show_slt009_msg -%}
+              <div data-slt009-class="slt009-countdown-container-mobile">
+                  <h3 data-slt009-class="slt009-countdown-title">{{ settings.slt009_msg }}</h3>
               </div>
-              <div data-slt009-class="slt009-countdown-container">
-                  <h3 data-slt009-class="slt009-countdown-title">Ships within 48 hours</h3>
-              </div>
-              <div class="sidebar__content">
-                {{ content_for_order_summary }}
-              </div>
-            </aside>
-          </div>
+            {%- endif -%}
+            <div class="sidebar__content">
+              {{ content_for_order_summary }}
+            </div>
+          </aside>
         </div>
-        <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/1ob5zLVl0tGNVDAihObqpQ" async></script>
-        <div class="yotpo-widget-instance" data-yotpo-instance-id="508871"></div>
-        {{ tracking_code }}
-    
-        <div data-rebuy-id="79941"></div>
-        <script async src="https://cdn.rebuyengine.com/onsite/js/rebuy.js?shop=saalt-company.myshopify.com"></script>
-    
-        <style>
-          #terms-wrapper {
-            border: 1px #e6e6e6 solid;
+      </div>
+      <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/1ob5zLVl0tGNVDAihObqpQ" async></script>
+      <div class="yotpo-widget-instance" data-yotpo-instance-id="508871"></div>
+      {{ tracking_code }}
+  
+      <div data-rebuy-id="79941"></div>
+      <script async src="https://cdn.rebuyengine.com/onsite/js/rebuy.js?shop=saalt-company.myshopify.com"></script>
+  
+      <style>
+        #terms-wrapper {
+          border: 1px #e6e6e6 solid;
+          border-radius: 5px;
+          padding: 0.9285714286em 1.4285714286em 1.4285714286em;
+          margin-top: 2.2rem;
+        }
+        #terms-wrapper,
+        #terms-wrapper > * {
+          display: inline-block;
+        }
+        #terms-wrapper svg {
+          width: 18px;
+          height: 18px;
+          position: relative;
+          top: 4px;
+        }
+      {%- if settings.show_slt009_msg -%}
+        [data-slt009-class="slt009-countdown-container"]{
+            width: calc(100% - 50px);
+            height: auto;
+            margin: 0 0 20px;
+            padding: 25px;
+            background-color: #f7d6c5;
             border-radius: 5px;
-            padding: 0.9285714286em 1.4285714286em 1.4285714286em;
-            margin-top: 2.2rem;
-          }
-          #terms-wrapper,
-          #terms-wrapper > * {
-            display: inline-block;
-          }
-          #terms-wrapper svg {
-            width: 18px;
-            height: 18px;
-            position: relative;
-            top: 4px;
-          }
-
-          [data-slt009-class="slt009-countdown-container"]{
-              width: calc(100% - 50px);
-              height: auto;
-              margin: 0 0 20px;
-              padding: 25px;
-              background-color: #f7d6c5;
-              border-radius: 5px;
-              display: flex;
-              flex-direction: column;
-          }
-          [data-slt009-class="slt009-countdown-container-mobile"]{
-              display: none;
-          }
-          [data-slt009-class="slt009-countdown-title"]{
-              width: 100%;
-              height: auto;
-              margin: 0;
-              padding: 0;
-              display: flex;
-              flex: 0 0 auto;
-              justify-content: center;
-              align-items: center;
-              color: #535353;
-              text-transform: uppercase;
-              font-size: 18.31px;
-              letter-spacing: 1.14px;
-          }
-          [data-slt009-class="slt009-countdown-content"]{
-              width: 100%;
-              height: auto;
-              margin: 0;
-              padding: 0;
-              display: flex;
-              flex: 0 0 auto;
-              justify-content: center;
-              align-items: center;
-          }
-          [data-slt009-class="slt009-countdown-msg"]{
-              margin-right: 3px;
-              display: flex;
-              flex: 0 0 auto;
-              justify-content: center;
-              align-items: center;
-              color: #535353;
-          }
-          
-          @media all and (max-width: 767px) {  
-              [data-slt009-class="slt009-countdown-container"]{
-                  display: none;
-              }
-              [data-slt009-class="slt009-countdown-container-mobile"]{
-                  width: calc(100% - 50px);
-                  height: auto;
-                  margin: 0;
-                  padding: 25px;
-                  background-color: #f7d6c5;
-                  border-radius: 5px;
-                  display: flex;
-                  flex-direction: column;
-              }
-          }
-        </style>
-    
-        <div id="terms-wrapper">
-          <span>
-            <svg
-              width="100px"
-              height="100px"
-              viewBox="0 0 24.00 24.00"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              stroke="#000000"
-              stroke-width="0.00024000000000000003"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.144"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.53846C7.32682 3.53846 3.53846 7.32682 3.53846 12C3.53846 16.6732 7.32682 20.4615 12 20.4615C16.6732 20.4615 20.4615 16.6732 20.4615 12C20.4615 7.32682 16.6732 3.53846 12 3.53846ZM2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12Z" fill="#000000"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7.64103C12.4248 7.64103 12.7692 7.98542 12.7692 8.41026V12.5128C12.7692 12.9377 12.4248 13.2821 12 13.2821C11.5752 13.2821 11.2308 12.9377 11.2308 12.5128V8.41026C11.2308 7.98542 11.5752 7.64103 12 7.64103Z" fill="#000000"></path> <path d="M13.0256 15.5897C13.0256 16.1562 12.5664 16.6154 12 16.6154C11.4336 16.6154 10.9744 16.1562 10.9744 15.5897C10.9744 15.0233 11.4336 14.5641 12 14.5641C12.5664 14.5641 13.0256 15.0233 13.0256 15.5897Z" fill="#000000"></path> </g>
-            </svg>
-            You agree that your purchase, and/or your use of this site, are subject to the Terms of Service, which can be accessed
-            <a href="/policies/terms-of-service" target="_blank">HERE</a>.
-          </span>
-        </div>
-    
-        <script>
-          const elementReady = (selector) => {
-            return new Promise((resolve, reject) => {
-              let el = document.querySelector(selector);
-              if (el) {resolve(el);}
-              new MutationObserver((mutationRecords, observer) => {
-                {% comment %}// Query for elements matching the specified selector{% endcomment %}
-                Array.from(document.querySelectorAll(selector)).forEach((element) => {
-                  resolve(element);
-                  {% comment %}//Once we have resolved we don't need the observer anymore.{% endcomment %}
-                  observer.disconnect();
-                });
-              })
-              .observe(document.documentElement, {
-                childList: true,
-                subtree: true
+            display: flex;
+            flex-direction: column;
+        }
+        [data-slt009-class="slt009-countdown-container-mobile"]{
+            display: none;
+        }
+        [data-slt009-class="slt009-countdown-title"]{
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex: 0 0 auto;
+            justify-content: center;
+            align-items: center;
+            color: #535353;
+            text-transform: uppercase;
+            font-size: 18.31px;
+            letter-spacing: 1.14px;
+        }
+        [data-slt009-class="slt009-countdown-content"]{
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex: 0 0 auto;
+            justify-content: center;
+            align-items: center;
+        }
+        [data-slt009-class="slt009-countdown-msg"]{
+            margin-right: 3px;
+            display: flex;
+            flex: 0 0 auto;
+            justify-content: center;
+            align-items: center;
+            color: #535353;
+        }
+        
+        @media all and (max-width: 767px) {  
+            [data-slt009-class="slt009-countdown-container"]{
+                display: none;
+            }
+            [data-slt009-class="slt009-countdown-container-mobile"]{
+                width: calc(100% - 50px);
+                height: auto;
+                margin: 0;
+                padding: 25px;
+                background-color: #f7d6c5;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+      {%- endif -%}
+      </style>
+  
+      <div id="terms-wrapper">
+        <span>
+          <svg
+            width="100px"
+            height="100px"
+            viewBox="0 0 24.00 24.00"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#000000"
+            stroke-width="0.00024000000000000003"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.144"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.53846C7.32682 3.53846 3.53846 7.32682 3.53846 12C3.53846 16.6732 7.32682 20.4615 12 20.4615C16.6732 20.4615 20.4615 16.6732 20.4615 12C20.4615 7.32682 16.6732 3.53846 12 3.53846ZM2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12Z" fill="#000000"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7.64103C12.4248 7.64103 12.7692 7.98542 12.7692 8.41026V12.5128C12.7692 12.9377 12.4248 13.2821 12 13.2821C11.5752 13.2821 11.2308 12.9377 11.2308 12.5128V8.41026C11.2308 7.98542 11.5752 7.64103 12 7.64103Z" fill="#000000"></path> <path d="M13.0256 15.5897C13.0256 16.1562 12.5664 16.6154 12 16.6154C11.4336 16.6154 10.9744 16.1562 10.9744 15.5897C10.9744 15.0233 11.4336 14.5641 12 14.5641C12.5664 14.5641 13.0256 15.0233 13.0256 15.5897Z" fill="#000000"></path> </g>
+          </svg>
+          You agree that your purchase, and/or your use of this site, are subject to the Terms of Service, which can be accessed
+          <a href="/policies/terms-of-service" target="_blank">HERE</a>.
+        </span>
+      </div>
+  
+      <script>
+        const elementReady = (selector) => {
+          return new Promise((resolve, reject) => {
+            let el = document.querySelector(selector);
+            if (el) {resolve(el);}
+            new MutationObserver((mutationRecords, observer) => {
+              {% comment %}// Query for elements matching the specified selector{% endcomment %}
+              Array.from(document.querySelectorAll(selector)).forEach((element) => {
+                resolve(element);
+                {% comment %}//Once we have resolved we don't need the observer anymore.{% endcomment %}
+                observer.disconnect();
               });
+            })
+            .observe(document.documentElement, {
+              childList: true,
+              subtree: true
             });
-          }
-    
-          document.addEventListener('DOMContentLoaded', function () {
-            elementReady("#terms-wrapper").then(() => {
-              const termsWrapper = document.querySelector("#terms-wrapper");
-              const mainHeaderNav = document.querySelector(".main__header").querySelector("nav");
-              mainHeaderNav.insertAdjacentElement("afterend", termsWrapper);
-            });
-          }, false);
+          });
+        }
+  
+        document.addEventListener('DOMContentLoaded', function () {
+          elementReady("#terms-wrapper").then(() => {
+            const termsWrapper = document.querySelector("#terms-wrapper");
+            const mainHeaderNav = document.querySelector(".main__header").querySelector("nav");
+            mainHeaderNav.insertAdjacentElement("afterend", termsWrapper);
+          });
+        }, false);
 
-          const $mobileBanner = document.querySelector('[data-slt009-class="slt009-countdown-container-mobile"]');
-          const $breadcrumb = document.querySelector('nav[aria-label="Breadcrumb"]');
-          $breadcrumb.appendChild($mobileBanner);
-        </script>
-      {% include 'ba-discounts' %}
-    </body>
-    </html>
+        const $mobileBanner = document.querySelector('[data-slt009-class="slt009-countdown-container-mobile"]');
+        const $breadcrumb = document.querySelector('nav[aria-label="Breadcrumb"]');
+        $breadcrumb.appendChild($mobileBanner);
+      </script>
+    {% include 'ba-discounts' %}
+  </body>
+  </html>
