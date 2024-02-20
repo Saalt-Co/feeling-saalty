@@ -343,6 +343,41 @@
         "padding_bottom": 0
       }
     },
+    "featured_collection_hKKYVi": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "saalt-wipes",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "enable_desktop_slider": false,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "show_view_all": false,
+        "view_all_style": "button",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_swatches": false,
+        "enable_quick_add": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_NAXA94": {
       "type": "multicolumn",
       "blocks": {
@@ -555,6 +590,7 @@
     "f1b16d01-d3ea-4457-bea4-1ce2d36e34aa",
     "91242708-420b-4a93-8b84-092c3575b865",
     "saalt_bg_media_with_text_FBzh94",
+    "featured_collection_hKKYVi",
     "multicolumn_NAXA94",
     "6dd777f2-c03d-4d36-b818-600b65ee03aa"
   ]
