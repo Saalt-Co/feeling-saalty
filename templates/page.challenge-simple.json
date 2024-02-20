@@ -328,6 +328,16 @@
     "multicolumn_jQmETU": {
       "type": "multicolumn",
       "blocks": {
+        "column_HKA38V": {
+          "type": "column",
+          "settings": {
+            "title": "Whitney",
+            "rating": 5,
+            "text": "<p>\"OMG- can I just start by saying wearing Saalt period underwear and using the cup has been an actual life changer! EVERY period I have had since then I have been overjoyed with the ease of use, quality of product, and comfort at having sustainable, toxic-free and lovely tools to ease the monthly cycle. So thank you!\"<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_neKh7Q": {
           "type": "column",
           "settings": {
@@ -357,23 +367,13 @@
             "link_label": "",
             "link": ""
           }
-        },
-        "column_HKA38V": {
-          "type": "column",
-          "settings": {
-            "title": "Whitney",
-            "rating": 5,
-            "text": "<p>\"OMG- can I just start by saying wearing Saalt period underwear and using the cup has been an actual life changer! EVERY period I have had since then I have been overjoyed with the ease of use, quality of product, and comfort at having sustainable, toxic-free and lovely tools to ease the monthly cycle. So thank you!\"<\/p>",
-            "link_label": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
+        "column_HKA38V",
         "column_neKh7Q",
         "column_WyweAV",
-        "column_8WTiFy",
-        "column_HKA38V"
+        "column_8WTiFy"
       ],
       "settings": {
         "title": "",
