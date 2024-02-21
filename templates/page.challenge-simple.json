@@ -226,52 +226,6 @@
         "padding_bottom": 0
       }
     },
-    "e8f8ad80-7890-480a-8074-f9883439de49": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_title-1": {
-          "type": "section_title",
-          "disabled": true,
-          "settings": {
-            "heading_tag": "2",
-            "title": "The reviews are in!"
-          }
-        },
-        "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<h2>The reviews are in!<\/h2><p>From skeptical to never-going-back<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_title-1",
-        "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_content-1"
-      ],
-      "custom_css": [
-        "h2 {font-size: 34px;}"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme-color-bg-5",
-        "theme_color_text": "theme_default",
-        "media_type": "none",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "large",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": true,
-        "max_width": "800px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "saalt_testimonials_wDcdfJ": {
       "type": "saalt-testimonials",
       "blocks": {
@@ -323,83 +277,6 @@
         "image": "shopify:\/\/shop_images\/Testimonials.jpg",
         "image_behavior": "none",
         "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "multicolumn_jQmETU": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_HKA38V": {
-          "type": "column",
-          "settings": {
-            "title": "Whitney",
-            "rating": 5,
-            "text": "<p>\"OMG- can I just start by saying wearing Saalt period underwear and using the cup has been an actual life changer! EVERY period I have had since then I have been overjoyed with the ease of use, quality of product, and comfort at having sustainable, toxic-free and lovely tools to ease the monthly cycle. So thank you!\"<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_neKh7Q": {
-          "type": "column",
-          "settings": {
-            "title": "Jessica J.",
-            "rating": 5,
-            "text": "<p>“I've never tried period underwear before. I bought myself a few pairs and I'm not kidding when I say they are so comfortable and fit perfect, I would wear them every single day!!! I feel so good about replacing all the panty liners I use when I am on my period. Thank you Saalt!\"<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_WyweAV": {
-          "type": "column",
-          "settings": {
-            "title": "Carrie D.",
-            "rating": 5,
-            "text": "<p>“So, my friend gifted me this cup. I was so skeptical and thought she must be crazy, I was NOT about to insert that thing up my vagina. Then, my period came and I only had 2 pads left and did not feel like going to the supermarket to get more. I gave it a try and…now I am a pro at it and I will be gifting one of these to my other friend who is also skeptical,  just like I was before trying this. Thank you so much Saalt… I have no interest in going back to pads ever again.”<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_8WTiFy": {
-          "type": "column",
-          "settings": {
-            "title": "Lila",
-            "rating": 5,
-            "text": "<p>“I was initially nervous about switching from tampons, but this has been the easiest change for me. I love not carrying a dozen tampons with me on trips and worrying about leaking. Definitely recommend!”<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_HKA38V",
-        "column_neKh7Q",
-        "column_WyweAV",
-        "column_8WTiFy"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "theme_color_background": "theme-color-bg-5",
-        "theme_color_text": "theme_default",
-        "background_style": "primary",
-        "theme_color_column_secondary_bg": "--palette-color-0",
-        "column_secondary_bg_opacity": 100,
-        "review_star_color_override": "--palette-color-4",
-        "review_star_opacity_override": 100,
-        "button_text": "",
-        "button_url": "",
-        "button_type": "primary",
-        "theme_color_section_button_background": "theme_default",
-        "theme_color_text_section_button_text": "theme_default",
-        "theme_color_section_button_background_hover": "theme_default",
-        "theme_color_text_section_button_text_hover": "theme_default",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "saalt_style_1_tiles_section_nXBNLt": {
@@ -578,6 +455,129 @@
         "padding_top": 0,
         "padding_bottom": 32
       }
+    },
+    "e8f8ad80-7890-480a-8074-f9883439de49": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_title-1": {
+          "type": "section_title",
+          "disabled": true,
+          "settings": {
+            "heading_tag": "2",
+            "title": "The reviews are in!"
+          }
+        },
+        "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<h2>The reviews are in!<\/h2><p>From skeptical to never-going-back<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_title-1",
+        "template--15053077250129__e8f8ad80-7890-480a-8074-f9883439de49-section_content-1"
+      ],
+      "custom_css": [
+        "h2 {font-size: 34px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "large",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "800px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_jQmETU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_WyweAV": {
+          "type": "column",
+          "settings": {
+            "title": "Carrie D.",
+            "rating": 5,
+            "text": "<p>“So, my friend gifted me this cup. I was so skeptical and thought she must be crazy, I was NOT about to insert that thing up my vagina. Then, my period came and I only had 2 pads left and did not feel like going to the supermarket to get more. I gave it a try and…now I am a pro at it and I will be gifting one of these to my other friend who is also skeptical,  just like I was before trying this. Thank you so much Saalt… I have no interest in going back to pads ever again.”<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8WTiFy": {
+          "type": "column",
+          "settings": {
+            "title": "Lila",
+            "rating": 5,
+            "text": "<p>“I was initially nervous about switching from tampons, but this has been the easiest change for me. I love not carrying a dozen tampons with me on trips and worrying about leaking. Definitely recommend!”<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HKA38V": {
+          "type": "column",
+          "settings": {
+            "title": "Whitney",
+            "rating": 5,
+            "text": "<p>\"OMG- can I just start by saying wearing Saalt period underwear and using the cup has been an actual life changer! EVERY period I have had since then I have been overjoyed with the ease of use, quality of product, and comfort at having sustainable, toxic-free and lovely tools to ease the monthly cycle. So thank you!\"<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_neKh7Q": {
+          "type": "column",
+          "settings": {
+            "title": "Jessica J.",
+            "rating": 5,
+            "text": "<p>“I've never tried period underwear before. I bought myself a few pairs and I'm not kidding when I say they are so comfortable and fit perfect, I would wear them every single day!!! I feel so good about replacing all the panty liners I use when I am on my period. Thank you Saalt!\"<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_WyweAV",
+        "column_8WTiFy",
+        "column_HKA38V",
+        "column_neKh7Q"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "--palette-color-0",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "--palette-color-4",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -586,11 +586,11 @@
     "d7d7a243-f632-45c8-b506-96a010b8e74e",
     "f1b16d01-d3ea-4457-bea4-1ce2d36e34aa",
     "saalt_media_with_split_text_MrGGqR",
-    "e8f8ad80-7890-480a-8074-f9883439de49",
     "saalt_testimonials_wDcdfJ",
-    "multicolumn_jQmETU",
     "saalt_style_1_tiles_section_nXBNLt",
     "saalt_media_with_text_LHp9mg",
-    "saalt_media_with_text_UEtLNU"
+    "saalt_media_with_text_UEtLNU",
+    "e8f8ad80-7890-480a-8074-f9883439de49",
+    "multicolumn_jQmETU"
   ]
 }
