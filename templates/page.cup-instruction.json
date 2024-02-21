@@ -76,7 +76,7 @@
       "settings": {
         "custom_liquid": "<h2 align=\"center\">How-to Videos<\/h2>\n<p style=\"text-align: center;\">It's like we're holding your hand. But metaphorically... because you'll need your hand.<br><span style=\"font-size: 14px;\">Full how-to playlist <span style=\"text-decoration: underline; color: #b65a4a;\"><a href=\"https:\/\/www.youtube.com\/playlist?list=PL7YFdopVv8tOl9f7qi-ilE-kjXBxYv9TY\" style=\"color: #b65a4a; text-decoration: underline;\" target=\"_blank\">CLICK HERE<\/a><\/span><\/span><\/p>\n\n\n<center>\n<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/41I8Z9lwtqU?si=puIhb4nVk2hAlKzc?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe><\/center>",
         "padding_top": 20,
-        "padding_bottom": 52
+        "padding_bottom": 12
       }
     },
     "custom_liquid_AfKF9f": {
@@ -86,8 +86,8 @@
       ],
       "settings": {
         "custom_liquid": "<div class=\"video-row\" style=\"display: flex; overflow-x: auto;\">\n  <div class=\"video-container\" style=\"margin-right: 10px; margin-left: 10px;\">\n    <iframe src=\"https:\/\/www.youtube.com\/embed\/huwFi8qZuvQ?si=RGJ_cq_5oyLuUus2?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n    <p>How to Use a Menstrual Cup<\/p>\n  <\/div>\n  <div class=\"video-container\" style=\"margin-right: 10px;\">\n    <iframe src=\"https:\/\/www.youtube.com\/embed\/sNCFRK3gfPg?si=LgotSqkBQ7PIjH3q?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n    <p>How to Insert a Menstrual Cup<\/p>\n  <\/div>\n  <div class=\"video-container\" style=\"margin-right: 10px;\">\n    <iframe src=\"https:\/\/www.youtube.com\/embed\/Q3FZeE0Dn1U?si=AwhxAnp5HYGZZpCn?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n    <p>How to Clean your Menstrual Cup<\/p>\n  <\/div>\n  <div class=\"video-container\" style=\"margin-right: 10px;\">\n    <iframe src=\"https:\/\/www.youtube.com\/embed\/VTUcRDeSuCM?si=SmqF6ELTScHUYhzk?rel=0\" frameborder=\"0\" allowfullscreen><\/iframe>\n    <p>What Makes the Saalt Cup Different?<\/p>\n  <\/div>\n<\/div>",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 8,
+        "padding_bottom": 8
       }
     },
     "61a6a262-8f4f-498a-9f44-3642c01c9430": {
