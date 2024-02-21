@@ -53,6 +53,13 @@
           "settings": {
           }
         },
+        "text_MHWi4H": {
+          "type": "text",
+          "settings": {
+            "text": "<em><strong>20% Discount auto-applied at checkout<\/strong><\/em>",
+            "text_style": "body"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -170,6 +177,7 @@
         "caption",
         "a540459f-701c-470e-bfa0-1112dcf7d16d",
         "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7",
+        "text_MHWi4H",
         "price",
         "variant_picker",
         "quantity_selector",
