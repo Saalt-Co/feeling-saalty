@@ -100,7 +100,7 @@
     "custom_liquid_ATPLbJ": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<p><iframe height=\"1100\" width=\"100%\" src=\"https:\/\/www.affiliatly.com\/af-1011333\/affiliate.panel?mode=register&amp;frame=1\" qyyc9h5lf=\"\" staopkrmm=\"\" frameborder=\"0\"><\/iframe><\/p>",
+        "custom_liquid": "<iframe height=\"1100\" width=\"100%\" src=\"https:\/\/www.affiliatly.com\/af-1011333\/affiliate.panel?mode=register&amp;frame=1\" qyyc9h5lf=\"\" staopkrmm=\"\" frameborder=\"0\"><\/iframe>",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -113,7 +113,7 @@
           "settings": {
             "heading": "How does Saalt underwear work?",
             "icon": "none",
-            "row_content": "<ul><li>Saalt Wear is made with moisture-separating gusset technology that wicks away wetness to leave your skin feeling drier, longer. Our thin, but highly absorbent inner layer absorbs up to 3x its weight in liquid and traps moisture beneath the first layer until it’s time to wash. This patent-pending combination means Saalt Wear is thinner, drier, and more comfortable than other leakproof care options on the market. Bonus perk: it's better for the planet too.<\/li><\/ul>",
+            "row_content": "<p>Saalt Wear is made with moisture-separating gusset technology that wicks away wetness to leave your skin feeling drier, longer. Our thin, but highly absorbent inner layer absorbs up to 3x its weight in liquid and traps moisture beneath the first layer until it’s time to wash. This patent-pending combination means Saalt Wear is thinner, drier, and more comfortable than other leakproof care options on the market. Bonus perk: it's better for the planet too.<\/p>",
             "page": ""
           }
         },
