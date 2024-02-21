@@ -504,16 +504,6 @@
     "multicolumn_jQmETU": {
       "type": "multicolumn",
       "blocks": {
-        "column_neKh7Q": {
-          "type": "column",
-          "settings": {
-            "title": "Jessica J.",
-            "rating": 5,
-            "text": "<p>“I've never tried period underwear before. I bought myself a few pairs and I'm not kidding when I say they are so comfortable and fit perfect, I would wear them every single day!!! I feel so good about replacing all the panty liners I use when I am on my period. Thank you Saalt!\"<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column_WyweAV": {
           "type": "column",
           "settings": {
@@ -533,12 +523,22 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_neKh7Q": {
+          "type": "column",
+          "settings": {
+            "title": "Jessica J.",
+            "rating": 5,
+            "text": "<p>“I've never tried period underwear before. I bought myself a few pairs and I'm not kidding when I say they are so comfortable and fit perfect, I would wear them every single day!!! I feel so good about replacing all the panty liners I use when I am on my period. Thank you Saalt!\"<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "column_neKh7Q",
         "column_WyweAV",
-        "column_8WTiFy"
+        "column_8WTiFy",
+        "column_neKh7Q"
       ],
       "settings": {
         "title": "",
