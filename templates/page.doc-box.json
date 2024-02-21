@@ -23,7 +23,7 @@
           "type": "section_content",
           "settings": {
             "text_group_num": "2",
-            "text_content": "<p><strong>Join Our Saalt Health Care Sample Box & Affiliate Program<\/strong><\/p><p><em>Perfect for OBGYNs, Pelvic Floor Therapists, Urologists, Aestheticians, and other Clinicians.<\/em>What you get as a Saalt Health Care Affiliate:<\/p><ul><li>Free sample box of Saalt products to show patients<\/li><li>15% discount for patients<\/li><li>10% commission for you when patients purchase<\/li><li>Direct contact to our dedicated Saalt Coaches to answer questions<\/li><\/ul>"
+            "text_content": "<p><strong>Join Our Saalt Health Care Sample Box & Affiliate Program<\/strong><\/p><p><em>Perfect for OBGYNs, Pelvic Floor Therapists, Urologists, Aestheticians, and other Clinicians.<\/em><\/p><p>What you get as a Saalt Health Care Affiliate:<\/p><ul><li>Free sample box of Saalt products to show patients<\/li><li>15% discount for patients<\/li><li>10% commission for you when patients purchase<\/li><li>Direct contact to our dedicated Saalt Coaches to answer questions<\/li><\/ul>"
           }
         }
       },
@@ -70,7 +70,7 @@
           "settings": {
             "heading": "How does Saalt underwear work?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<ul><li>Saalt Wear is made with moisture-separating gusset technology that wicks away wetness to leave your skin feeling drier, longer. Our thin, but highly absorbent inner layer absorbs up to 3x its weight in liquid and traps moisture beneath the first layer until it’s time to wash. This patent-pending combination means Saalt Wear is thinner, drier, and more comfortable than other leakproof care options on the market. Bonus perk: it's better for the planet too.<\/li><\/ul>",
             "page": ""
           }
         },
@@ -79,7 +79,7 @@
           "settings": {
             "heading": "Does Saalt underwear also work for bladder leaks or postpartum?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>By absorbing as much as 6+ pads, Saalt Wear is a great option for bladder leaks and postpartum use. It traps liquids in the absorbent gusset so you can feel dry and comfortable, no matter what kind of wetness you experience.<\/p><p><\/p>",
             "page": ""
           }
         },
@@ -88,7 +88,7 @@
           "settings": {
             "heading": "How do you wash Saalt underwear?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>Take good care of Saalt Wear, and it will take great care of you. After use, rinse your Saalt Wear in cold water to help avoid staining. Then, hand wash or machine wash on cold, preferably in a wash bag made for delicates. You can use detergent, but pass on the fabric softener, bleach, and iron to protect the tech. Proudly hang dry—energy efficient, and free. We recommend avoiding putting Saalt Wear in the dryer, as high temperatures can degrade the elastics and fabric over time.<\/p>",
             "page": ""
           }
         },
@@ -97,7 +97,7 @@
           "settings": {
             "heading": "How do Saalt menstrual cups work?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>The Saalt Cup is a reusable soft silicone menstrual cup worn internally like a tampon that collects, rather than absorbs, your menstrual flow. Naturally odorless and non-toxic, the Saalt Cup is a healthy and sustainable alternative to pads and tampons. Because it has 3 to 4 times the capacity of a regular tampon, you can wear it for up to 12 hours before emptying. Yes, that means you only have to change it twice a day, and can sleep with it in. Once inserted, the Saalt Cup’s flexible design molds to your internal shape so you can comfortably wear it to hike, swim, or just relax.<\/p>",
             "page": ""
           }
         },
@@ -106,7 +106,7 @@
           "settings": {
             "heading": "How do Saalt menstrual discs work?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>The Saalt Disc is a reusable period disc made of soft silicone that is worn internally like a tampon or menstrual cup to collect your flow. It has a capacity 4 to 6 times that of a tampon and can be worn for up to 12 hours. That means you only have to change it twice a day, and can sleep with it in. Unlike period cups, the disc does not require suction to stay in place. Rather, it is held in place by its rim in the vaginal fornix (aka the wider space around the cervix) so you can comfortably hike, swim, and even have sex with your disc inserted.<\/p>",
             "page": ""
           }
         },
@@ -115,7 +115,7 @@
           "settings": {
             "heading": "What's the difference between menstrual cups and discs?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>Most menstrual cups, including the Saalt Cup, have air holes near the rim that are designed to form a seal between the vaginal wall and the cup. Menstrual cups sit lower in the vaginal canal than a tampon would, whereas menstrual discs position in the vaginal fornix (aka the wider space around the cervix). Saalt Cups can hold up to 30 mL of flow while Saalt Discs can hold up to 50 mL. Both are made with medical-grade silicone and are a great alternative to tampons or pads.<\/p>",
             "page": ""
           }
         },
@@ -124,7 +124,7 @@
           "settings": {
             "heading": "How do you clean a menstrual cup or disc?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>During your period, remove your cup or discs at least once every 12 hours (always use clean hands) and rinse first using cold water, then wash using warm water and mild soap like our Saalt Cup Wash (or other mild soap that is fragrance-free, oil-free, and rinses clean with no residue). Then rinse clean and it is ready to be reinserted.<\/p>",
             "page": ""
           }
         },
@@ -133,7 +133,7 @@
           "settings": {
             "heading": "Which product is best if I have a weak pelvic floor?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>We have found that those with weakened pelvic muscles typically find more success with a Saalt Disc because it is held in place by the rim in the vaginal fornix, meaning it doesn't rely on the pelvic floor muscles to keep it in place. Of course, everyone's anatomy is unique, and there are plenty of people with pelvic floor weakness who can comfortably use a Saalt Cup.<\/p>",
             "page": ""
           }
         },
@@ -142,7 +142,7 @@
           "settings": {
             "heading": "Do menstrual cups cause prolapse?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>We know this has been a topic of discussion recently, so we’ve undertaken some research to find out more. In short, we aren’t aware of any peer-reviewed studies that show a direct correlation between menstrual cup use and prolapse. Here at Saalt, we welcome any opportunity to learn, educate, and share informed answers that help people make informed decisions about their bodies, so we sought an expert to shed some light on the subject. You can read more about what we learned about prolapse in our blog post here: <a href=\"https:\/\/www.saaltco.com\/blog\/can-menstrual-cups-cause-prolapse\/\" target=\"_blank\">https:\/\/www.saaltco.com\/blog\/can-menstrual-cups-cause-prolapse\/<\/a>. Of course, we aren't medical professionals, and prolapse can be caused by any variety of conditions, so if you have any concerns that you may be experiencing prolapse, we recommend you reach out to a doctor.<\/p>",
             "page": ""
           }
         },
@@ -151,7 +151,7 @@
           "settings": {
             "heading": "Can menstrual cups cause TSS?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<ul><li>The short answer is that getting TSS while using a menstrual cup or disc is possible. While the risk is very low due to a variety of factors, it’s important to know what you can do to prevent getting this serious infection. We encourage you to learn more by reading our <a href=\"https:\/\/saalt.com\/blogs\/news\/how-to-prevent-tss\/?utm_source=cx&utm_medium=reply&utm_campaign=cxengagement&utm_content=tssblog\" target=\"_blank\">blog post<\/a>!<\/li><\/ul>",
             "page": ""
           }
         }
