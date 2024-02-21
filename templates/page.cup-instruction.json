@@ -485,7 +485,7 @@
         "bb741995-da76-455d-a30d-4eaa72d37573": {
           "type": "section_content",
           "settings": {
-            "text_content": "<h5>REINSERT<\/h5><ul><li>Wash your Saalt Cup by rinsing in cold water first to prevent staining, then wash using warm water with mild soap. Rinse thoroughly.<\/li><li>Your Saalt Cup is ready to reinsert! If you need more insertion coaching, refer to section “How to Saalt”. You got this.<\/li><\/ul>"
+            "text_content": "<h5>REINSERT<\/h5><ul><li>Wash your Saalt Cup by rinsing in cold water first to prevent staining, then wash using warm water with mild soap. Rinse thoroughly. (See more about how to clean your menstrual cup <a href=\"https:\/\/www.youtube.com\/watch?v=Q3FZeE0Dn1U&list=PL7YFdopVv8tOl9f7qi-ilE-kjXBxYv9TY&index=13&ab_channel=Saalt%E2%80%93SustainablePeriodCare\" target=\"_blank\" title=\"https:\/\/www.youtube.com\/watch?v=Q3FZeE0Dn1U&list=PL7YFdopVv8tOl9f7qi-ilE-kjXBxYv9TY&index=13&ab_channel=Saalt%E2%80%93SustainablePeriodCare\">on our YouTube channel<\/a>.)<\/li><li>Your Saalt Cup is ready to reinsert! If you need more insertion coaching, watch our video <a href=\"https:\/\/www.youtube.com\/watch?v=sNCFRK3gfPg\" title=\"https:\/\/www.youtube.com\/watch?v=sNCFRK3gfPg\">here<\/a>. You got this.<\/li><\/ul>"
           }
         }
       },
@@ -555,11 +555,12 @@
         "template--21580602507537__642fc74f-0994-49f6-b77d-5de71f78a897-column-3"
       ],
       "custom_css": [
-        ".multicolumn .title {margin-left: 30%;}",
+        ".multicolumn .title {text-align: center;}",
+        "@media only screen and (min-width: 768px) {.multicolumn .title {margin-left: 18%; }}",
         ".multicolumn-list h3 {text-align: center;}"
       ],
       "settings": {
-        "title": "Cleaning & Storing",
+        "title": "How to Clean Your Menstrual Cup",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
