@@ -210,8 +210,8 @@
         "mobile_text_alignment": "left",
         "desktop_text_position": "right",
         "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "use_max_text_width": true,
+        "max_width": "1100px",
         "padding_top": 0,
         "padding_bottom": 0
       }
