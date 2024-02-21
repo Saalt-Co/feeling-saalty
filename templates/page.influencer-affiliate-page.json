@@ -39,7 +39,7 @@
         "theme_color_background": "theme-color-bg-2",
         "theme_color_text": "theme-color-text-0",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/SW-CC-PDP-Square-Brief-Blue-Deep-Marine-Lifestyle-Full-Body.jpg",
+        "image": "shopify:\/\/shop_images\/Saalt-Wear-Learn-More-First-Things-First-Leakproof-Period-Underwear-Absorbent-mobile_bfc73327-17b5-44f1-a433-4304dca88b84.jpg",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 33,
@@ -99,6 +99,9 @@
     },
     "custom_liquid_ATPLbJ": {
       "type": "custom-liquid",
+      "custom_css": [
+
+      ],
       "settings": {
         "custom_liquid": "<iframe height=\"1100\" width=\"100%\" src=\"https:\/\/www.affiliatly.com\/af-1011333\/affiliate.panel?mode=register&amp;frame=1\" qyyc9h5lf=\"\" staopkrmm=\"\" frameborder=\"0\"><\/iframe>",
         "padding_top": 40,
