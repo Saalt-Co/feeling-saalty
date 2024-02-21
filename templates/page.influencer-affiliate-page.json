@@ -16,14 +16,14 @@
           "settings": {
             "text_group_num": "2",
             "heading_tag": "3",
-            "title": "Patients interested in reusable products often look to their health professionals for guidance."
+            "title": "We're creating a reusable revolution, and you're invited."
           }
         },
         "template--15053077250129__f1b16d01-d3ea-4457-bea4-1ce2d36e34aa-section_content-1": {
           "type": "section_content",
           "settings": {
             "text_group_num": "2",
-            "text_content": "<p><strong>Join Our Saalt Health Care Sample Box & Affiliate Program<\/strong><\/p><p><em>Perfect for OBGYNs, Pelvic Floor Therapists, Urologists, Aestheticians, and other Clinicians.<\/em><\/p><p>What you get as a Saalt Health Care Affiliate:<\/p><ul><li>Free sample box of Saalt products to show patients<\/li><li>15% discount for patients<\/li><li>10% commission for you when patients purchase<\/li><li>Direct contact to our dedicated Saalt Coaches to answer questions<\/li><\/ul>"
+            "text_content": "<p>We love partnering with friends who are passionate about promoting menstrual health, environmental sustainability, and ending global period poverty with reusable products. Let's do this.<\/p><p><\/p>"
           }
         }
       },
@@ -39,7 +39,7 @@
         "theme_color_background": "theme-color-bg-2",
         "theme_color_text": "theme-color-text-0",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/jeremy-alford-O13B7suRG4A-unsplash_1.jpg",
+        "image": "shopify:\/\/shop_images\/SW-CC-PDP-Square-Brief-Blue-Deep-Marine-Lifestyle-Full-Body.jpg",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 33,
@@ -54,10 +54,53 @@
         "padding_bottom": 0
       }
     },
+    "saalt_media_with_split_text_UUUd4p": {
+      "type": "saalt-media-with-split-text",
+      "blocks": {
+        "section_title_VqVyHG": {
+          "type": "section_title",
+          "settings": {
+            "text_group_num": "2",
+            "heading_tag": "3",
+            "title": "Join Our Saalt Affiliate Program"
+          }
+        },
+        "section_content_xqVWpM": {
+          "type": "section_content",
+          "settings": {
+            "text_group_num": "2",
+            "text_content": "<p><em><strong>AKA Pay & Perks when you help us #PassTheSaalt:<\/strong><\/em><\/p><p>What you get as a Saalt Affiliate:<\/p><ul><li>15% off for your friends, family and audience<\/li><li>10% commission<\/li><li>Exclusive discount for you<\/li><li>Exclusive access to campaigns with gifted products<\/li><li>First look at new products and collaborations<\/li><li>Earn rewards and additional product throughout the year<\/li><\/ul><p><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_VqVyHG",
+        "section_content_xqVWpM"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/SW-CC-PDP-Square-Brief-Blue-Deep-Marine-Lifestyle-Full-Body.jpg",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 33,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "left",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "500px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "custom_liquid_ATPLbJ": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div data-tf-live=\"01HP2TM9PEQMG3K6BCR5N0E2Q3\"><\/div>\n<script src=\"\/\/embed.typeform.com\/next\/embed.js\"><\/script>",
+        "custom_liquid": "<p><iframe height=\"1100\" width=\"100%\" src=\"https:\/\/www.affiliatly.com\/af-1011333\/affiliate.panel?mode=register&amp;frame=1\" qyyc9h5lf=\"\" staopkrmm=\"\" frameborder=\"0\"><\/iframe><\/p>",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -321,6 +364,7 @@
   "order": [
     "main",
     "f1b16d01-d3ea-4457-bea4-1ce2d36e34aa",
+    "saalt_media_with_split_text_UUUd4p",
     "custom_liquid_ATPLbJ",
     "collapsible_content_TEBQaX",
     "6dd777f2-c03d-4d36-b818-600b65ee03aa"
