@@ -103,7 +103,7 @@
 
       ],
       "settings": {
-        "custom_liquid": "<iframe height=\"1100\" width=\"100%\" src=\"https:\/\/www.affiliatly.com\/af-1011333\/affiliate.panel?mode=register&amp;frame=1\" qyyc9h5lf=\"\" staopkrmm=\"\" frameborder=\"0\"><\/iframe>",
+        "custom_liquid": "<p>&nbsp;<\/p>\n<p><iframe src=\"https:\/\/www.affiliatly.com\/af-1011333\/affiliate.panel?mode=register&amp;frame=1\" width=\"100%\" height=\"1100\" qyyc9h5lf=\"\" frameborder=\"0\" staopkrmm=\"\"><\/iframe><\/p>",
         "padding_top": 40,
         "padding_bottom": 52
       }
