@@ -48,6 +48,11 @@
           "settings": {
           }
         },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
         "text_MHWi4H": {
           "type": "text",
           "settings": {
@@ -68,11 +73,6 @@
         },
         "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7": {
           "type": "absorbency",
-          "settings": {
-          }
-        },
-        "price": {
-          "type": "price",
           "settings": {
           }
         },
@@ -176,10 +176,10 @@
         "title",
         "caption",
         "a540459f-701c-470e-bfa0-1112dcf7d16d",
+        "price",
         "text_MHWi4H",
         "8e16b700-b5d3-4d93-aa86-a2391fc38797",
         "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7",
-        "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
