@@ -263,8 +263,8 @@
             "desktop_icon_vertical_alignment": "center",
             "desktop_icon_min_width": "80px",
             "desktop_icon_wrapper_max_width": "130px",
-            "desktop_icon_max_width": "100%",
-            "desktop_icon_height": "100px"
+            "desktop_icon_max_width": "60%",
+            "desktop_icon_height": "50px"
           }
         },
         "section_icon_with_text_kMX3Wi": {
