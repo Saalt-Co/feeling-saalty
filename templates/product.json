@@ -92,6 +92,7 @@
         },
         "popup_RGqKTp": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.saalt.pop_up_text.value.on_page_copy.value }}",
             "page": "{{ product.metafields.saalt.pop_up_text.value.page.value }}"
