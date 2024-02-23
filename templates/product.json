@@ -90,6 +90,13 @@
           "settings": {
           }
         },
+        "popup_RGqKTp": {
+          "type": "popup",
+          "settings": {
+            "text": "{{ product.metafields.saalt.pop_up_text.value.on_page_copy.value }}",
+            "page": "{{ product.metafields.saalt.pop_up_text.value.page.value }}"
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
@@ -183,6 +190,7 @@
         "buy_buttons",
         "8e16b700-b5d3-4d93-aa86-a2391fc38797",
         "description",
+        "popup_RGqKTp",
         "collapsible-row-0",
         "b353a8cb-d34f-4c9e-9e49-2879eadc10c3",
         "e36443e9-994e-4493-962d-3a4290cafaad",
