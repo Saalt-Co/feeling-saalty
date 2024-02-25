@@ -115,6 +115,7 @@
         "section_buttons_group_bB7FdP",
         "section_button_Gyf3FD"
       ],
+      "disabled": true,
       "custom_css": [
         "@media only screen and (min-width: 768px) {.text-wrapper {margin-right: 5%; }}"
       ],
@@ -402,7 +403,6 @@
         "template--18370419818769__afbc1ae8-07fe-4461-9c01-064b82ac7529-section_button-1",
         "23149735-c736-46cc-8e03-56e849236f9d"
       ],
-      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
