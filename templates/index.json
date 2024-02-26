@@ -26,7 +26,7 @@
         "section_button_j4d3Bi": {
           "type": "section_button",
           "settings": {
-            "button_text": "SHOP SALE",
+            "button_text": "SHOP NOW",
             "button_url": "shopify:\/\/collections\/shop-all",
             "button_type": "primary",
             "theme_color_section_button_background": "theme-color-bg-1",
