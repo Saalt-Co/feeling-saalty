@@ -128,6 +128,15 @@
             "page": ""
           }
         },
+        "collapsible_tab_YReWAP": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Specifications",
+            "icon": "clipboard",
+            "content": "{{ product.metafields.saalt.product_specifications | metafield_tag }}",
+            "page": ""
+          }
+        },
         "collapsible-row-3": {
           "type": "collapsible_tab",
           "settings": {
@@ -180,6 +189,7 @@
         "b353a8cb-d34f-4c9e-9e49-2879eadc10c3",
         "e36443e9-994e-4493-962d-3a4290cafaad",
         "collapsible-row-2",
+        "collapsible_tab_YReWAP",
         "collapsible-row-3",
         "collapsible-row-1",
         "8e2f85d3-2d82-4239-820b-c26872aaf01a",
