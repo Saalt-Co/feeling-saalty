@@ -1,287 +1,5 @@
 {
   "sections": {
-    "saalt_bg_media_with_text_YT6MGT": {
-      "type": "saalt-bg-media-with-text",
-      "blocks": {
-        "section_title_6g4AzF": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "15% off sitewide, just for you.<br><span style=\"font-weight: lighter;\"><i><\/i><\/span>"
-          }
-        },
-        "section_content_XyJ4tA": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>Don’t mind us—just showering you with a little affection.<\/p>"
-          }
-        },
-        "section_content_9pAVJA": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>USE CODE: <span style=\"text-decoration:underline\">SAALTLOVE<\/span><\/p>"
-          }
-        },
-        "section_buttons_group_eW7nFK": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "flex-start",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "section_button_zUagVh": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "SHOP NOW",
-            "button_url": "shopify:\/\/collections\/shop-all",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme-color-bg-1",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "section_title_6g4AzF",
-        "section_content_XyJ4tA",
-        "section_content_9pAVJA",
-        "section_buttons_group_eW7nFK",
-        "section_button_zUagVh"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-Vday-Promo-mobile_02.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Vday-Promo_02.jpg",
-        "media_overlay_color": "--palette-color-1",
-        "media_overlay_opacity": 0,
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "flex-end",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": true,
-        "max_width": "300px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "saalt_bg_media_with_text_GVLPbr": {
-      "type": "saalt-bg-media-with-text",
-      "blocks": {
-        "section_title_DgpwnL": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "Get the all new Saalt Intimate Wipes for $5 with any purchase."
-          }
-        },
-        "section_content_ygQqiV": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p><em><strong>Clean period. Clean ingredients.<\/strong><\/em><\/p><p>Add wipes to cart and discount will auto apply at checkout.<\/p>"
-          }
-        },
-        "section_buttons_group_bB7FdP": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "flex-start",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "section_button_Gyf3FD": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "SHOP NOW",
-            "button_url": "shopify:\/\/products\/saalt-intimate-cleansing-wipes",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme-color-bg-1",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "section_title_DgpwnL",
-        "section_content_ygQqiV",
-        "section_buttons_group_bB7FdP",
-        "section_button_Gyf3FD"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "@media only screen and (min-width: 768px) {.text-wrapper {margin-right: 5%; }}"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/5-Off-Wipes-With-Any-Purchase-Homepage-Hero-mobile_02.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/5-Off-Wipes-With-Any-Purchase-Homepage-Hero-desktop_02.jpg",
-        "media_overlay_color": "--palette-color-1",
-        "media_overlay_opacity": 0,
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "flex-end",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": true,
-        "max_width": "34%",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "saalt_bg_media_with_text_QYndnT": {
-      "type": "saalt-bg-media-with-text",
-      "blocks": {
-        "section_title_M34dVE": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "Meet the Cotton <br>Sleep Short:<br><span style=\"font-weight: lighter;\"><i><\/i><\/span>"
-          }
-        },
-        "section_content_GN3kPG": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>Period underwear that's got your back (and your front) covered all night long.<\/p>"
-          }
-        },
-        "section_buttons_group_9Tyh8C": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "flex-start",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "section_button_adt4QA": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "SHOP NOW",
-            "button_url": "shopify:\/\/products\/leakproof-cotton-sleep-short-super",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme-color-bg-1",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "section_title_M34dVE",
-        "section_content_GN3kPG",
-        "section_buttons_group_9Tyh8C",
-        "section_button_adt4QA"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "@media only screen and (min-width: 768px) {.text-wrapper {margin-left: 40px; }}",
-        "@media only screen and (max-width: 767px) {.text-wrapper h1:first-of-type {padding-left: 40px; padding-right: 40px; }}"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-Cotton-Sleep-Short-Hero-Update-mobile_08.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Cotton-Sleep-Short-Hero-Update-desktop_07.jpg",
-        "media_overlay_color": "--palette-color-1",
-        "media_overlay_opacity": 0,
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "flex-start",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": true,
-        "max_width": "300px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "saalt_bg_media_with_text_Qbh4qn": {
-      "type": "saalt-bg-media-with-text",
-      "blocks": {
-        "section_title_B3LCTk": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "Saalt Wear Seamless:<br><span style=\"font-weight: lighter;\"><i>Now available in Super<\/i><\/span>"
-          }
-        },
-        "section_content_mcCiWU": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>The kind of Super that absorbs as much as 6+ pads or 8+ tampons without the waste.<\/p>"
-          }
-        },
-        "section_buttons_group_eXhiyy": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "flex-start",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "section_button_rDxjqk": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "SHOP NOW",
-            "button_url": "\/collections\/seamless",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme-color-bg-1",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "section_title_B3LCTk",
-        "section_content_mcCiWU",
-        "section_buttons_group_eXhiyy",
-        "section_button_rDxjqk"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "@media only screen and (min-width: 768px) {.text-wrapper {margin-left: 60px; }}",
-        "@media only screen and (max-width: 767px) {.text-wrapper h1:first-of-type {padding-left: 40px; padding-right: 40px; }}"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-Seamless-Super-Absorbency-Launch-Hero-Shopify-2-mobile.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Seamless-Super-Absorbency-Launch-Hero-Shopify-2-desktop.jpg",
-        "media_overlay_color": "--palette-color-1",
-        "media_overlay_opacity": 0,
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "flex-start",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": true,
-        "max_width": "400px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "saalt_bg_media_with_text_Ud6TRK": {
       "type": "saalt-bg-media-with-text",
       "blocks": {
@@ -289,13 +7,13 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "Shop Saalt Wear up to 50% off."
+            "title": "Buy any item and geta second for 50% off."
           }
         },
         "section_content_t4DM7D": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Shop last year’s Saalt Wear styles at this year’s best prices. No code needed.<\/p>"
+            "text_content": "<p>Because when you love something, you should get it in every color (...and cut and absorbency). <strong>Use code <\/strong><span style=\"text-decoration:underline\"><strong>BOGO50<\/strong><\/span><strong> at checkout.<\/strong><\/p>"
           }
         },
         "section_buttons_group_RxXwbF": {
@@ -309,7 +27,7 @@
           "type": "section_button",
           "settings": {
             "button_text": "SHOP SALE",
-            "button_url": "shopify:\/\/collections\/sale",
+            "button_url": "shopify:\/\/collections\/shop-all",
             "button_type": "primary",
             "theme_color_section_button_background": "theme-color-bg-1",
             "theme_color_text_section_button_text": "theme_default",
@@ -324,14 +42,13 @@
         "section_buttons_group_RxXwbF",
         "section_button_j4d3Bi"
       ],
-      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-Last-Seasons-Sales-Up-To-50-mobile_03.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Last-Seasons-Sales-Up-To-50-desktop-2_03.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/BOGO-50-Off-Feb-2024-v1-mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/BOGO-50-Off-Feb-2024-v1.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
@@ -1552,10 +1269,6 @@
     }
   },
   "order": [
-    "saalt_bg_media_with_text_YT6MGT",
-    "saalt_bg_media_with_text_GVLPbr",
-    "saalt_bg_media_with_text_QYndnT",
-    "saalt_bg_media_with_text_Qbh4qn",
     "saalt_bg_media_with_text_Ud6TRK",
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
     "saalt_media_with_split_text_g9QA77",
