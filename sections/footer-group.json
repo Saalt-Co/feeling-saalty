@@ -30,7 +30,7 @@
         "email_form_jWgVBW"
       ],
       "custom_css": [
-        ".newsletter__wrapper {background: #f7d6c5;}"
+        ".newsletter__wrapper {background: #f7d6c5; display: none;}"
       ],
       "settings": {
         "theme_color_background": "theme-color-bg-4",
@@ -96,7 +96,7 @@
         "d45b85e4-9b80-4201-a374-3617aea76e29"
       ],
       "custom_css": [
-        ".footer-group {display: none !important;}"
+        "footer {display: none;}"
       ],
       "settings": {
         "footer_display": "flex",
@@ -167,7 +167,6 @@
           "settings": {
             "label": "Bundles",
             "url": "shopify:\/\/collections\/preset-bundles",
-            "image": "shopify:\/\/shop_images\/SW-CT-BR-2-Pack-PDP-2_02.jpg",
             "image-scale": 1.4,
             "image-left": 0,
             "image-left-units": "px",
