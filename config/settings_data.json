@@ -130,6 +130,7 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "show_slt009_msg": true,
+    "slt009_msg": "Ships within 1-3 Business Days",
     "currency_code_enabled": true,
     "card_color_scheme": "background-2",
     "collection_card_color_scheme": "background-2",
