@@ -48,6 +48,18 @@
           "settings": {
           }
         },
+        "text_MHWi4H": {
+          "type": "text",
+          "settings": {
+            "text": "<em><strong>20% Discount auto-applied at checkout<\/strong><\/em>",
+            "text_style": "body"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
         "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7": {
           "type": "absorbency",
           "settings": {
@@ -64,18 +76,6 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": false
-          }
-        },
-        "text_MHWi4H": {
-          "type": "text",
-          "settings": {
-            "text": "<em><strong>20% Discount auto-applied at checkout<\/strong><\/em>",
-            "text_style": "body"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
           }
         },
         "quantity_selector": {
@@ -176,11 +176,11 @@
         "title",
         "caption",
         "a540459f-701c-470e-bfa0-1112dcf7d16d",
+        "text_MHWi4H",
+        "price",
         "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7",
         "variant_picker",
         "buy_buttons",
-        "text_MHWi4H",
-        "price",
         "quantity_selector",
         "8e16b700-b5d3-4d93-aa86-a2391fc38797",
         "description",
