@@ -346,6 +346,26 @@
         "padding_bottom": 36
       }
     },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "More to Love",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_swatches": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
     "05800195-0973-432c-8b31-763d10926bd6": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -887,26 +907,6 @@
         "padding_bottom": 0
       }
     },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "heading": "More to Love",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "show_swatches": false,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
-      }
-    },
     "shogun-below": {
       "type": "shogun-below",
       "settings": {
@@ -920,13 +920,13 @@
     "main",
     "0b3e0dea-b65b-440a-97a7-f90ea555dd6d",
     "2e4ed4ed-2f94-40cb-9564-c7df19d1376a",
+    "related-products",
     "05800195-0973-432c-8b31-763d10926bd6",
     "889a4838-ad90-48cd-a556-a83d2fb823f9",
     "2d583b85-1f0e-4af2-ac3a-c0c892abc13e",
     "20ef9c24-e6a4-4248-bc94-4ba5302b76cd",
     "bef772d0-6e13-4a64-bb1e-f22e9b4887ed",
     "d2711f17-56ea-4fa1-9caf-6e8d0a892eff",
-    "related-products",
     "shogun-below"
   ]
 }
