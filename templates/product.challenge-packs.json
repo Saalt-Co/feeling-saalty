@@ -48,6 +48,24 @@
           "settings": {
           }
         },
+        "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7": {
+          "type": "absorbency",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "color swatches"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
         "text_MHWi4H": {
           "type": "text",
           "settings": {
@@ -60,6 +78,11 @@
           "settings": {
           }
         },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
         "8e16b700-b5d3-4d93-aa86-a2391fc38797": {
           "type": "product_features",
           "settings": {
@@ -69,29 +92,6 @@
             "desktop_icon_max_width": "50%",
             "desktop_icon_height": "75px",
             "desktop_text_alignment": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.options__3.value"
-          }
-        },
-        "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7": {
-          "type": "absorbency",
-          "settings": {
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "color swatches"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": false
           }
         },
         "description": {
@@ -176,13 +176,13 @@
         "title",
         "caption",
         "a540459f-701c-470e-bfa0-1112dcf7d16d",
-        "text_MHWi4H",
-        "price",
-        "8e16b700-b5d3-4d93-aa86-a2391fc38797",
         "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons",
+        "text_MHWi4H",
+        "price",
+        "quantity_selector",
+        "8e16b700-b5d3-4d93-aa86-a2391fc38797",
         "description",
         "collapsible-row-0",
         "b353a8cb-d34f-4c9e-9e49-2879eadc10c3",
