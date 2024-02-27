@@ -1248,6 +1248,9 @@
         "template--18370419818769__e19ae371-ca3d-4f8c-9229-f22d18836f31-section_buttons_group-1",
         "template--18370419818769__e19ae371-ca3d-4f8c-9229-f22d18836f31-section_button-1"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
