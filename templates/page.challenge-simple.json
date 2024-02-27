@@ -709,7 +709,7 @@
     "custom_liquid_Nf8Hec": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n.template-page-challenge-simple footer,\n.template-page-challenge-simple   .newsletter {\n  display: none !important;\n}\n<\/style>",
+        "custom_liquid": "<style>\n.template-page-challenge-simple footer,\n.template-page-challenge-simple   .newsletter {\n  display: none;\n}\n<\/style>",
         "padding_top": 0,
         "padding_bottom": 0
       }
