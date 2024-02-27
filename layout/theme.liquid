@@ -414,6 +414,7 @@
     {%- endcase -%}
   {% render 'quantity-breaks-now', customer: customer, template: template, product: product, cart: cart %}
         {% include 'ba-discounts' %}
+    {%- comment -%} Klaviyo Add to Cart Event {%- endcomment -%}
     {% if product %}
       <script>
       window.addEventListener('load', function() {
@@ -462,5 +463,6 @@
       });
       </script>
     {% endif %}
+    {%- comment -%} End Klaviyo Add to Cart Event {%- endcomment -%}
 </body>
 </html>
