@@ -1,9 +1,7 @@
 <!-- CRO Cart DRAWER -->
-{%- if template contains 'cart' -%}
-    <!-- CRO Cart PAGE -->
-{%- else -%}
+{%- unless template contains 'cart' -%}
     <!-- CRO NOT Cart PAGE -->
-{%- endif -%}
+{%- endunless -%}
 
 {% schema %}
   {
