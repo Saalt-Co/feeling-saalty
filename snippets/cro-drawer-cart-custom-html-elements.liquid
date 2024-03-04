@@ -1,0 +1,29 @@
+<script>    
+    class cartDrawerBlock extends HTMLElement{
+        static observedAttributes = ['data-opened'];
+        constructor(){
+            super();
+        }
+        connectedCallback(){
+            console.log('slt010-cart-drawer-block added');
+            this.addOverlay();
+        }
+        addOverlay(){
+            if(this.querySelectorAll('slt010-cart-drawer-overlay').length === 0){
+                const $overlay = document.createElement('slt010-cart-drawer-overlay');
+                this.appendChild($overlay);
+            }
+        }
+        addCloseButton(){
+            if(this.querySelectorAll('slt010-cart-drawer-container').length === 1 && this.querySelectorAll('slt010-cart-drawer-close-button').length === 0){
+                const $closeButton = document.createElement('slt010-cart-drawer-close-button');
+                const $container = this.querySelectorAll('slt010-cart-drawer-container');
+                $container[0].appendChild($closeButton);
+            }
+        }
+        attributeChangedCallback(name, oldValue, newValue){
+            console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+        }
+    }
+    customElements.define('slt010-cart-drawer-block', cartDrawerBlock);
+</script>
