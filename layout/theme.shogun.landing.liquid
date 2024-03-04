@@ -22,6 +22,10 @@ This file can be re-written at any time.
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
+    
+    <!-- Begin Convert Experiences Code-->
+    <script type="text/javascript" src="//cdn-4.convertexperiments.com/js/10041221-10043535.js"></script>
+    <!-- End Convert Experiences Code -->
 
     <title>
       {{ page_title }}
@@ -343,16 +347,16 @@ This file can be re-written at any time.
     {%- endcase -%}
     <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/1ob5zLVl0tGNVDAihObqpQ" async></script>
 
-
   {% include 'friendbuy' %}
 {% include 'ba-common' %}
 
   {% render 'shogun-head' %}
+
 </head>
 
 
   
-<body class="gradient">
+<body class="gradient template-{{ template | handle }}">
   
   
   {{ content_for_layout }}
@@ -387,6 +391,52 @@ This file can be re-written at any time.
       };
     </script>
 <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+<script>
+      window.addEventListener('load', function() {
+      var _learnq = window._learnq || [];
+      function addedToCart() {
+        fetch(`${window.location.origin}/cart.js`)
+        .then(res => res.clone().json().then(data => {
+          var cart = {
+            total_price: data.total_price/100,
+            $value: data.total_price/100,
+            total_discount: data.total_discount,
+            original_total_price: data.original_total_price/100,
+            items: data.items
+          }
+          if (item !== 'undefined') {
+            cart = Object.assign(cart, item)
+          }
+          if (klAjax) {
+              _learnq.push(['track', 'Added to Cart', cart]);
+              klAjax = false;
+            }
+        }))
+      };
+      (function (ns, fetch) {
+        ns.fetch = function() {
+          const response = fetch.apply(this, arguments);
+          response.then(res => {
+            if (`${window.location.origin}/cart/add.js`
+            	.includes(res.url)) {
+              	addedToCart()
+            }
+          });
+          return response
+        }
+      }(window, window.fetch));
+      var klAjax = true;
+      var atcButtons = document.querySelectorAll("form[action*='/cart/add'] button[type='submit']");
+      for (var i = 0; i < atcButtons.length; i++) {
+          atcButtons[i].addEventListener("click", function() {
+            if (klAjax) {
+              _learnq.push(['track', 'Added to Cart', item]);
+              klAjax = false;
+            }
+          })
+      }
+      });
+      </script>
   <style type="text/css">
     body, html {
       width: 100% !important;
@@ -394,7 +444,6 @@ This file can be re-written at any time.
     }
   </style>
   
-{% include 'ba-discounts' %}
 </body>
 
 </html>
