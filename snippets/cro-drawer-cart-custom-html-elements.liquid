@@ -6,12 +6,13 @@
         }
         connectedCallback(){
             console.log('slt010-cart-drawer-block added');
+            console.log('[qa] children length ' + this.children.length);
             this.addOverlay();
             this.addCloseButton();
         }
         addOverlay(){
             let $hasOverlay = false;
-            console.log('children length ' + this.children.length);
+            console.log('[qa] children length ' + this.children.length);
             for(let $c = 0; $c < this.children.length; $c++){
                 console.log($c + ' [qa] ' + this.children[$c].tagName);
             }
