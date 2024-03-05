@@ -43,6 +43,7 @@
         transition-property: all;
         transition-timing-function: ease;
     }
+
     slt010-cart-drawer-block#{{ section.id }}-block slt010-cart-drawer-overlay{
         width: 100vw;
         height: 100vh;
@@ -66,6 +67,32 @@
         transition-delay: 1ms;
         transition-duration: 2000ms;
         transition-property: all;
+        transition-timing-function: ease;
+    }
+
+    slt010-cart-drawer-block#{{ section.id }}-block slt010-cart-drawer-container{
+        width: 90vw;
+        max-width: 400px;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex: 0 0 90vw;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        overflow: hidden;
+        z-index: 0;
+        transition-delay: 1ms;
+        transition-duration: 900ms;
+        transition-property: right;
+        transition-timing-function: ease;
+    }
+    slt010-cart-drawer-block#{{ section.id }}-block[data-opened="true"] slt010-cart-drawer-container{
+        right: 0;
+        transition-delay: 1ms;
+        transition-duration: 1000ms;
+        transition-property: right;
         transition-timing-function: ease;
     }
 </style>
