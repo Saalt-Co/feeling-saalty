@@ -36,6 +36,21 @@
         }
         attributeChangedCallback(name, oldValue, newValue){
             console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+            switch(name){
+                case 'data-opened':
+                    this.drawerOpened(newValue);
+                    break;
+                default:
+                    break;
+            }
+        }
+        drawerOpened($value){
+            if($value === 'true'){
+                document.body.classList.add('slt010-cart-drawer-block-open');
+            }
+            else{
+                document.body.classList.remove('slt010-cart-drawer-block-open');
+            }
         }
     }
     customElements.define('slt010-cart-drawer-block', cartDrawerBlock);
