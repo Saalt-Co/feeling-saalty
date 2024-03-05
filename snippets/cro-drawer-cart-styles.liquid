@@ -9,15 +9,20 @@
         top:0;
         left: 100%;
     }
-    #{{ section.id }} *{
+    #shopify-section-{{ section.id }} *{
         margin: 0;
         padding: 0;
         display: flex;
     }
     slt010-cart-drawer-block#{{ section.id }}{
+        width: 100%;
+        max-width: 100vw;
         height: 100%;
         position: absolute;
         top: 0;
         left: 0;
+    }
+    slt010-cart-drawer-block#{{ section.id }}[data-opened="true"] {
+        transform: translateX(-100%);
     }
 </style>
