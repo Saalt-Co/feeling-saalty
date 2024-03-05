@@ -10,17 +10,39 @@
             this.addCloseButton();
         }
         addOverlay(){
-            if(this.querySelectorAll('slt010-cart-drawer-overlay').length === 0){
-                const $overlay = document.createElement('slt010-cart-drawer-overlay');
-                this.appendChild($overlay);
+            if(this.children.length > 0){
+                const $children = this.children;
+                const $hasOverlay = false;
+                for(let $c = 0; $c < $children.length; $c++){
+                    if($children[$c].tagName.toLowerCase() === 'slt010-cart-drawer-overlay'){
+                        $hasOverlay = true;
+                    }
+                }
+                if(!$hasOverlay){
+                    const $overlay = document.createElement('slt010-cart-drawer-overlay');
+                    this.appendChild($overlay);
+                }
             }
         }
         addCloseButton(){
-            console.log('[qa imp slt010] ' + this.children.length);
-            if(this.children.length === 1 && this.querySelectorAll('slt010-cart-drawer-close-button').length === 0){
-                const $closeButton = document.createElement('slt010-cart-drawer-close-button');
-                const $container = this.querySelectorAll('slt010-cart-drawer-container');
-                $container[0].appendChild($closeButton);
+            if(this.children.length > 0){
+                const $children = this.children;
+                for(let $c = 0; $c < $children.length; $c++){
+                    if($children[$c].tagName.toLowerCase() === 'slt010-cart-drawer-container'){
+                        let $hasCloseButton = false;
+                        if($children[$c].children.length > 0){
+                            for(let $i = 0; $i < $children[$c].children.length; $i++){
+                                if($children[$c].children[$i].tagName.toLowerCase() === 'slt010-cart-drawer-close-button'){
+                                    $hasCloseButton = true;
+                                }
+                            }
+                            if(!$hasCloseButton){
+                                const $closeButton = document.createElement('slt010-cart-drawer-close-button');
+                                $children[$c].appendChild($closeButton);
+                            }
+                        } 
+                    }
+                }
             }
         }
         attributeChangedCallback(name, oldValue, newValue){
