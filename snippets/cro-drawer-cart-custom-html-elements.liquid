@@ -24,6 +24,7 @@
             if(this.querySelectorAll('slt010-cart-drawer-container').length > 0 && this.querySelectorAll('slt010-cart-drawer-close-button').length < 1){
                 const $container = this.querySelectorAll('slt010-cart-drawer-container');
                 const $closeButton = document.createElement('slt010-cart-drawer-close-button');
+                $closeButton.innerHTML = '&times;';
                 $closeButton.addEventListener('click', function($e){
                     $t.closeDrawer($e);
                 });
