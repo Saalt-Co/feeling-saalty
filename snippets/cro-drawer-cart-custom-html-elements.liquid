@@ -10,17 +10,28 @@
             this.addCloseButton();
         }
         addOverlay(){
+            const $t = this;
             if(this.querySelectorAll('slt010-cart-drawer-overlay').length < 1){
                 const $overlay = document.createElement('slt010-cart-drawer-overlay');
+                $overlay.addEventListener('click', function($e)=>{
+                    $t.closeDrawer($e);
+                });
                 this.appendChild($overlay);
             }
         }
         addCloseButton(){
+            const $t = this;
             if(this.querySelectorAll('slt010-cart-drawer-container').length > 0 && this.querySelectorAll('slt010-cart-drawer-close-button').length < 1){
                 const $container = this.querySelectorAll('slt010-cart-drawer-container');
                 const $closeButton = document.createElement('slt010-cart-drawer-close-button');
+                $closeButton.addEventListener('click', function($e)=>{
+                    $t.closeDrawer($e);
+                });
                 $container[0].appendChild($closeButton);
             }
+        }
+        closeDrawer($event){
+            $event.target.closest(this.tagName).setAttribute('data-opened', 'false');
         }
         attributeChangedCallback(name, oldValue, newValue){
             console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
