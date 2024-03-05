@@ -11,14 +11,15 @@
         }
         addOverlay(){
             let $hasOverlay = false;
+            console.log('children length ' + this.children.length);
             for(let $c = 0; $c < this.children.length; $c++){
                 console.log($c + ' [qa] ' + this.children[$c].tagName);
             }
 
-            if(this.querySelectorAll('slt010-cart-drawer-overlay').length < 1){
+            /*if(this.querySelectorAll('slt010-cart-drawer-overlay').length < 1){
                 const $overlay = document.createElement('slt010-cart-drawer-overlay');
                 this.appendChild($overlay);
-            }
+            }*/
         }
         addCloseButton(){
             
