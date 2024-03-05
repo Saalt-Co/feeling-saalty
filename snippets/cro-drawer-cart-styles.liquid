@@ -15,7 +15,7 @@
         padding: 0;
         display: flex;
     }
-    slt010-cart-drawer-block#{{ section.id }}-block{
+    slt010-cart-drawer-block{
         width: 0;
         height: 100%;
         margin: 0 auto;
@@ -32,7 +32,7 @@
         transition-property: all;
         transition-timing-function: ease;
     }
-    slt010-cart-drawer-block#{{ section.id }}-block[data-opened="true"] {
+    slt010-cart-drawer-block[data-opened="true"] {
         width: 100vw;
         display: flex;
         left: 0;
@@ -44,7 +44,7 @@
         transition-timing-function: ease;
     }
 
-    slt010-cart-drawer-block#{{ section.id }}-block slt010-cart-drawer-overlay{
+    slt010-cart-drawer-block slt010-cart-drawer-overlay{
         width: 100vw;
         height: 100vh;
         margin: 0;
@@ -61,7 +61,7 @@
         transition-property: all;
         transition-timing-function: ease;
     }
-    slt010-cart-drawer-block#{{ section.id }}-block[data-opened="true"] slt010-cart-drawer-overlay{
+    slt010-cart-drawer-block[data-opened="true"] slt010-cart-drawer-overlay{
         left: 0;
         opacity: 1;
         transition-delay: 1ms;
@@ -70,7 +70,7 @@
         transition-timing-function: ease;
     }
 
-    slt010-cart-drawer-block#{{ section.id }}-block slt010-cart-drawer-container{
+    slt010-cart-drawer-block slt010-cart-drawer-container{
         width: 90vw;
         max-width: 400px;
         height: 100%;
@@ -88,11 +88,22 @@
         transition-property: right;
         transition-timing-function: ease;
     }
-    slt010-cart-drawer-block#{{ section.id }}-block[data-opened="true"] slt010-cart-drawer-container{
+    slt010-cart-drawer-block[data-opened="true"] slt010-cart-drawer-container{
         right: 0;
         transition-delay: 1ms;
         transition-duration: 1000ms;
         transition-property: right;
         transition-timing-function: ease;
+    }
+    slt010-cart-drawer{
+        height: 100%;
+        margin: 0 auto;
+        padding: 25px;
+        display: flex;
+        flex: 0 0 100%;
+        position: relative;
+        background-color: #fff;
+        z-index: 0;
+        overflow: hidden;
     }
 </style>
