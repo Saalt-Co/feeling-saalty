@@ -10,18 +10,9 @@
             this.addCloseButton();
         }
         addOverlay(){
-            if(this.children.length > 0){
-                let $hasOverlay = false;
-                for(let $c = 0; $c < this.children.length; $c++){
-                    console.log('tagName ' + this.children[$c].tagName);
-                    if(this.children[$c].tagName.toLowerCase() === 'slt010-cart-drawer-overlay'){
-                        $hasOverlay = true;
-                    }
-                }
-                if(!$hasOverlay){
-                    const $overlay = document.createElement('slt010-cart-drawer-overlay');
-                    this.appendChild($overlay);
-                }
+            if(this.querySelectorAll('slt010-cart-drawer-overlay').length < 1){
+                const $overlay = document.createElement('slt010-cart-drawer-overlay');
+                this.appendChild($overlay);
             }
         }
         addCloseButton(){
