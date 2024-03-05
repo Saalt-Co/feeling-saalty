@@ -7,12 +7,12 @@
         connectedCallback(){
             console.log('slt010-cart-drawer-block added');
             this.addOverlay();
-            this.addCloseButton();
+            //this.addCloseButton();
         }
         addOverlay(){
             if(this.children.length > 0){
                 const $children = this.children;
-                const $hasOverlay = false;
+                let $hasOverlay = false;
                 for(let $c = 0; $c < $children.length; $c++){
                     if($children[$c].tagName.toLowerCase() === 'slt010-cart-drawer-overlay'){
                         $hasOverlay = true;
@@ -24,7 +24,7 @@
                 }
             }
         }
-        addCloseButton(){
+        /*addCloseButton(){
             if(this.children.length > 0){
                 const $children = this.children;
                 for(let $c = 0; $c < $children.length; $c++){
@@ -44,7 +44,7 @@
                     }
                 }
             }
-        }
+        }*/
         attributeChangedCallback(name, oldValue, newValue){
             console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
         }
