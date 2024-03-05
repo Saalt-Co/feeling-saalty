@@ -16,7 +16,7 @@
             }
         }
         addCloseButton(){
-            if(this.querySelectorAll('slt010-cart-drawer-container').length > 0 && this.querySelectorAll('slt010-cart-drawer-close-button') < 1){
+            if(this.querySelectorAll('slt010-cart-drawer-container').length > 0 && this.querySelectorAll('slt010-cart-drawer-close-button').length < 1){
                 const $container = this.querySelectorAll('slt010-cart-drawer-container');
                 const $closeButton = document.createElement('slt010-cart-drawer-close-button');
                 $container[0].appendChild($closeButton);
