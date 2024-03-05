@@ -1,7 +1,6 @@
 <!-- CRO Cart DRAWER -->
 {%- unless template contains 'cart' -%}
     <!-- CRO NOT Cart PAGE -->
-    {%- render 'cro-drawer-cart-custom-html-elements' -%}
     <slt010-cart-drawer-block id="{{ section.id }}-block" data-opened="false">
         <slt010-cart-drawer-container>
             <slt010-cart-drawer>
@@ -10,6 +9,7 @@
         <slt010-cart-drawer-overlay></slt010-cart-drawer-overlay>
     </slt010-cart-drawer-block>
     {%- render 'cro-drawer-cart-styles', section: section -%}
+    {%- render 'cro-drawer-cart-custom-html-elements' -%}
 {%- endunless -%}
 
 {% schema %}
