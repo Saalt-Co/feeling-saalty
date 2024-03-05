@@ -6,9 +6,8 @@
         }
         connectedCallback(){
             console.log('slt010-cart-drawer-block added');
-            console.log('[qa] children length ' + this.children.length);
             this.addOverlay();
-            //this.addCloseButton();
+            this.addCloseButton();
         }
         addOverlay(){
             if(this.querySelectorAll('slt010-cart-drawer-overlay').length < 1){
@@ -17,7 +16,11 @@
             }
         }
         addCloseButton(){
-            
+            if(this.querySelectorAll('slt010-cart-drawer-container').length > 0 && this.querySelectorAll('slt010-cart-drawer-close-button') < 1){
+                const $container = this.querySelectorAll('slt010-cart-drawer-container');
+                const $closeButton = document.createElement('slt010-cart-drawer-close-button');
+                $container[0].appendChild($closeButton);
+            }
         }
         attributeChangedCallback(name, oldValue, newValue){
             console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
