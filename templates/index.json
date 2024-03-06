@@ -65,6 +65,71 @@
         "padding_bottom": 0
       }
     },
+    "saalt_bg_media_with_text_iyXbMP": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "section_title_H6FdAJ": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Here’s your chance to break up with pads & tampons...forever."
+          }
+        },
+        "section_content_6pfcHz": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p><em>Ditch the Disposables<\/em> and try one of our best-selling Challenge Packs for a special introductory price.<\/p>"
+          }
+        },
+        "section_buttons_group_qTanBF": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "flex-start",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_dNTnBF": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Take the Challenge",
+            "button_url": "shopify:\/\/pages\/challenge",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-1",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_H6FdAJ",
+        "section_content_6pfcHz",
+        "section_buttons_group_qTanBF",
+        "section_button_dNTnBF"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Ditch-the-Disposables-mobile-1.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Ditch-the-Disposables-desktop.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "flex-end",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "400px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "afbc1ae8-07fe-4461-9c01-064b82ac7529": {
       "type": "saalt-bg-media-with-text",
       "blocks": {
@@ -1274,6 +1339,7 @@
   },
   "order": [
     "saalt_bg_media_with_text_Ud6TRK",
+    "saalt_bg_media_with_text_iyXbMP",
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
     "saalt_media_with_split_text_g9QA77",
     "dec81ce8-0726-4327-93a6-eb82628398dc",
