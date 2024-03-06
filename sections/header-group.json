@@ -42,7 +42,6 @@
       "blocks": {
         "announcement_4DMPbF": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Free domestic shipping on all orders $39+ | Shop Now",
             "link": "shopify:\/\/collections\/shop-all"
