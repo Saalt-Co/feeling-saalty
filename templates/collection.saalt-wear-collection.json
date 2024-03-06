@@ -1042,9 +1042,26 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {
+      }
+    },
+    "shogun-below": {
+      "type": "shogun-below",
+      "settings": {
+      }
+    },
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {
+      }
     }
   },
   "order": [
+    "shogun-helper",
+    "shogun-above",
     "banner",
     "4b7bcf70-9b6b-48c4-a538-0e13cf35a435",
     "product-grid",
@@ -1058,6 +1075,7 @@
     "b4f29bbb-7268-4349-91b5-1ab1f590f3c0",
     "1b9dee2b-76db-4cda-bad0-2f1cfeadc02f",
     "2421f247-3fb3-4d3e-83cf-d7f8823ef0a9",
-    "f3d28335-7123-4133-9323-a99fd5d9e99e"
+    "f3d28335-7123-4133-9323-a99fd5d9e99e",
+    "shogun-below"
   ]
 }
