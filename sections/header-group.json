@@ -42,14 +42,23 @@
       "blocks": {
         "announcement_4DMPbF": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Free domestic shipping on all orders $39+ | Shop Now",
             "link": "shopify:\/\/collections\/shop-all"
           }
+        },
+        "announcement_nHDyte": {
+          "type": "announcement",
+          "settings": {
+            "text": "Save automatically when you bundle Cups, Discs, or Underwear. Save 15% for 3+ items. Save 20% for 5+ items. Save 25% for 7+ items.",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement_4DMPbF"
+        "announcement_4DMPbF",
+        "announcement_nHDyte"
       ],
       "settings": {
         "theme_color_background": "theme-color-bg-2",
