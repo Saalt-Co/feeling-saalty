@@ -2,8 +2,7 @@
   "order": [
     "main",
     "0825dc3725e14fb98e3",
-    "featured_collection_kyqjfX",
-    "multicolumn_bf8gRG"
+    "featured_collection_kyqjfX"
   ],
   "sections": {
     "main": {
@@ -118,72 +117,6 @@
         "show_swatches": true,
         "enable_quick_add": true,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn_bf8gRG": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_yVXzci": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_pkHHVg": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_McdrQ9": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_yVXzci",
-        "column_pkHHVg",
-        "column_McdrQ9"
-      ],
-      "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "background_style": "primary",
-        "theme_color_column_secondary_bg": "theme_default",
-        "column_secondary_bg_opacity": 100,
-        "review_star_color_override": "theme_default",
-        "review_star_opacity_override": 100,
-        "button_text": "Button text",
-        "button_url": "",
-        "button_type": "primary",
-        "theme_color_section_button_background": "theme_default",
-        "theme_color_text_section_button_text": "theme_default",
-        "theme_color_section_button_background_hover": "theme_default",
-        "theme_color_text_section_button_text_hover": "theme_default",
-        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
