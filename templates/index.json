@@ -607,34 +607,13 @@
         "padding_bottom": 0
       }
     },
-    "1cc84965-363b-4c47-bbdb-bb260cf92b08": {
-      "type": "rich-text",
-      "blocks": {
-        "5581d031-0944-45c4-92cd-e6a3baeecb54": {
-          "type": "heading",
-          "settings": {
-            "heading": "Best Sellers",
-            "heading_size": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "5581d031-0944-45c4-92cd-e6a3baeecb54"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "full_width": true,
-        "padding_top": 20,
-        "padding_bottom": 0
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
+      "custom_css": [
+        "h2 {text-align: center;}"
+      ],
       "settings": {
-        "title": "",
+        "title": "Best Sellers",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -662,7 +641,7 @@
         "enable_quick_add": true,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 0,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -1349,7 +1328,6 @@
     "c70ba2b2-6085-4467-9f62-431ca94c36bc",
     "711b5233-473f-4666-9c41-450fb4683107",
     "e1791c3d-d73e-498f-9322-90696d73319e",
-    "1cc84965-363b-4c47-bbdb-bb260cf92b08",
     "featured_collection",
     "b3c19a52-1b41-4cc4-9b69-c12a7b1f1126",
     "be10f763-17a0-47a9-acef-75ab6afe0f30",
