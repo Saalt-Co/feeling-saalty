@@ -2,7 +2,8 @@
   "order": [
     "main",
     "0825dc3725e14fb98e3",
-    "featured_collection_kyqjfX"
+    "featured_collection_kyqjfX",
+    "multicolumn_bf8gRG"
   ],
   "sections": {
     "main": {
@@ -117,6 +118,61 @@
         "show_swatches": true,
         "enable_quick_add": true,
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_bf8gRG": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_yVXzci": {
+          "type": "column",
+          "settings": {
+            "title": "Alley",
+            "rating": 5,
+            "text": "<p>I just started yesterday and my mind is blown. So comfortable, easy to use, and it doesn’t interfere with my active lifestyle whatsoever. I’m so bummed I didn’t give it a chance sooner.<strong> This is truly what period freedom feels like!<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_pkHHVg": {
+          "type": "column",
+          "settings": {
+            "title": "Alex H.",
+            "rating": 5,
+            "text": "<p>This was my first time buying and using a period cup. There was definitely a learning curve, and some stress getting it out the first few times, but once I got the hang of it <strong>I am obsessed. Love that you can wear it all day long and so much more sustainable than tampons. <\/strong>So glad I decided to try! Thanks Saalt.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_yVXzci",
+        "column_pkHHVg"
+      ],
+      "settings": {
+        "title": "9\/10 People Never Go Back",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "--palette-color-4",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
