@@ -1,36 +1,40 @@
 {
   "order": [
     "main",
-    "0825dc3725e14fb98e3"
+    "0825dc3725e14fb98e3",
+    "featured_collection_kyqjfX",
+    "multicolumn_bf8gRG"
   ],
   "sections": {
-    "0825dc3725e14fb98e3": {
-      "type": "apps",
-      "blocks": {
-        "76160bd4-ee2a-4cd1-9ac2-d9f8de86e8a4": {
-          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "76160bd4-ee2a-4cd1-9ac2-d9f8de86e8a4"
-      ],
-      "settings": {
-      }
-    },
     "main": {
       "type": "malomo_order_tracking",
       "blocks": {
-        "image": {
-          "type": "image",
-          "settings": {
-          }
-        },
         "malomo_shipment_tracker": {
           "type": "shopify:\/\/apps\/malomo-order-tracking\/blocks\/shipment-tracker\/5cb158a1-dc52-4d21-aac7-e017083c11e2",
           "settings": {
-            "publishable_api_key": "pk_59d37d3f6f685da71cb0a3af3a041f85"
+            "publishable_api_key": "pk_59d37d3f6f685da71cb0a3af3a041f85",
+            "element": "shipmentTracker",
+            "block_width": 350,
+            "button_background_color": "#DEE4E7",
+            "button_border_color": "",
+            "button_border_radius": 3,
+            "button_border_width": 0,
+            "button_capitalization": "capitalize",
+            "button_height": 48,
+            "button_text_color": "#222222",
+            "input_background_color": "#FFFFFF",
+            "input_border_color": "#DDDDDD",
+            "input_border_radius": 3,
+            "input_border_width": 1,
+            "input_height": 42
+          }
+        },
+        "image": {
+          "type": "image",
+          "settings": {
+            "image_horizontal_alignment": "center",
+            "image_link_url": "",
+            "image_width": ""
           }
         }
       },
@@ -39,6 +43,150 @@
         "image"
       ],
       "settings": {
+        "background_image_enabled": true,
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_color": "transparent",
+        "height": "",
+        "padding": "20",
+        "header_background_color": "transparent",
+        "header_font": "sans-serif",
+        "header_font_size": "40",
+        "header_horizontal_alignment": "center",
+        "header_padding_top": "20",
+        "header_padding_bottom": "20",
+        "header_level": "h2",
+        "header_text": "",
+        "malomo_background_color": "#ffffff",
+        "malomo_border_color": "",
+        "malomo_border_radius": "0",
+        "malomo_border_style": "none",
+        "malomo_border_width": "0",
+        "malomo_padding": "40"
+      }
+    },
+    "0825dc3725e14fb98e3": {
+      "type": "apps",
+      "blocks": {
+        "76160bd4-ee2a-4cd1-9ac2-d9f8de86e8a4": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "76160bd4-ee2a-4cd1-9ac2-d9f8de86e8a4"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "featured_collection_kyqjfX": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {text-align: center;}"
+      ],
+      "settings": {
+        "title": "Best Sellers",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "best-sellers",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "enable_desktop_slider": false,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "show_view_all": true,
+        "view_all_style": "button",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_swatches": true,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_bf8gRG": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_yVXzci": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "rating": 0,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_pkHHVg": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "rating": 0,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_McdrQ9": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "rating": 0,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_yVXzci",
+        "column_pkHHVg",
+        "column_McdrQ9"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "Button text",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   }
