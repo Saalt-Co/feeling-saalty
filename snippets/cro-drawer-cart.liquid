@@ -1,4 +1,4 @@
 <script>
     console.log('cart JSON ' + JSON.stringify({{ cart | json }}));
-    window.sessionStorage.setItem('cro-drawer-cart-data', {{ cart | json }});
+    window.sessionStorage.setItem('cro-drawer-cart-data', JSON.stringify({{ cart | json }}));
 </script>
