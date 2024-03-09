@@ -1,0 +1,22 @@
+{%- liquid 
+    
+    for block in section.blocks
+        case block.type
+            when 'header'
+                render 'cro-drawer-cart-layout-header', block: block
+
+            when 'countdown'
+                render 'cro-drawer-cart-layout-countdown', block: block
+
+            when 'progress-bar'
+                render 'cro-drawer-cart-layout-progress-bar', block: block
+
+            when 'body'
+                render 'cro-drawer-cart-layout-body', block: block
+
+            when 'footer'
+                render 'cro-drawer-cart-layout-footer', block: block
+        endcase
+    endfor
+    
+-%}
