@@ -10,7 +10,7 @@
     <slt010-cart-drawer-block id="{{ section.id }}-block" data-opened="false">
         <slt010-cart-drawer-container>
             <slt010-cart-drawer>
-              {%- render 'cro-drawer-cart-layout', section: section -%}
+              {%- render 'cro-drawer-cart', section: section -%}
             </slt010-cart-drawer>
         </slt010-cart-drawer-container>
     </slt010-cart-drawer-block>
@@ -24,6 +24,31 @@
     "settings": [
     ],
     "blocks":[
+      {
+        "type":"header",
+        "name": "Header",
+        "settings":[]
+      },
+      {
+        "type":"progress-bar",
+        "name": "Progress Bar",
+        "settings":[]
+      },
+      {
+        "type":"countdown",
+        "name": "Countdown",
+        "settings":[]
+      },
+      {
+        "type":"body",
+        "name": "Body",
+        "settings":[]
+      },
+      {
+        "type":"footer",
+        "name": "footer",
+        "settings":[]
+      }
     ],
     "presets": [
       {
