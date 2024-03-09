@@ -1,6 +1,9 @@
 <!-- CRO Cart DRAWER -->
 {%- unless template contains 'cart' -%}
     <!-- CRO NOT Cart PAGE -->
+    <script>
+      window.sessionStorage.setItem('cro-drawer-cart-data', JSON.stringify({{ cart | json }}));
+    </script>
     <slt010-cart-drawer-block id="{{ section.id }}-block" data-opened="false">
         <slt010-cart-drawer-container>
             <slt010-cart-drawer>
