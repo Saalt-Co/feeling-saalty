@@ -27,7 +27,14 @@
       {
         "type":"header",
         "name": "Header",
-        "settings":[]
+        "settings":[
+          {
+            "type":"text",
+            "id":"title",
+            "label":"Title",
+            "default":"YOUR CART"
+          }
+        ]
       },
       {
         "type":"progress-bar",
@@ -53,7 +60,28 @@
     "presets": [
       {
         "category": "Footer",
-        "name": "CRO Cart Drawer"
+        "name": "CRO Cart Drawer",
+        "settings":{},
+        "blocks":[
+          {
+            "type":"header",
+            "settings": {
+                "title": "YOUR CART"
+            }
+          },
+          {
+            "type":"progress-bar"
+          },
+          {
+            "type":"countdown"
+          },
+          {
+            "type":"body"
+          },
+          {
+            "type":"footer"
+          }
+        ]
       }
     ],
     "enabled_on": {
