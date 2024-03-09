@@ -1,8 +1,11 @@
 <!-- CRO Cart DRAWER -->
 {%- unless template contains 'cart' -%}
     <!-- CRO NOT Cart PAGE -->
+    {%- liquid 
+      assign sessionTag = 'cro-drawer-cart-data'  
+    -%}
     <script>
-      window.sessionStorage.setItem('cro-drawer-cart-data', JSON.stringify({{ cart | json }}));
+      window.sessionStorage.setItem('{{ sessionTag }}', JSON.stringify({{ cart | json }}));
     </script>
     <slt010-cart-drawer-block id="{{ section.id }}-block" data-opened="false">
         <slt010-cart-drawer-container>
