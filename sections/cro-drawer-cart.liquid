@@ -10,7 +10,7 @@
     <slt010-cart-drawer-block id="{{ section.id }}-block" data-opened="false">
         <slt010-cart-drawer-container>
             <slt010-cart-drawer>
-              {%- render 'cro-drawer-cart', section: section -%}
+              {%- render 'cro-drawer-cart-layout', section: section -%}
             </slt010-cart-drawer>
         </slt010-cart-drawer-container>
     </slt010-cart-drawer-block>
@@ -53,7 +53,28 @@
         "type":"body",
         "name": "Body",
         "limit": 1,
-        "settings":[]
+        "settings":[
+          {
+            "type":"header",
+            "content":"Empty cart settings"
+          },
+          {
+            "type":"text",
+            "id":"title-empty",
+            "label":"Title",
+            "default":"Welcome to Saalt!"
+          },
+          {
+            "type":"textarea",
+            "id":"content-empty",
+            "label":"Content",
+            "default":"Your cart is empty"
+          },
+          {
+            "type":"header",
+            "content":"Upsell settings"
+          }
+        ]
       },
       {
         "type":"footer",
@@ -81,7 +102,11 @@
             "type":"countdown"
           },
           {
-            "type":"body"
+            "type":"body",
+            "settings":{
+              "title-empty":"Welcome to Saalt!",
+              "content-empty":"Your cart is empty"
+            }
           },
           {
             "type":"footer"
