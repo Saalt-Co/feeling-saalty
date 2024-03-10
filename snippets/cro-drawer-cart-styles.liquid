@@ -16,8 +16,6 @@
         z-index: 99;
     }
     #shopify-section-{{ section.id }} *{
-        margin: 0;
-        padding: 0;
         display: flex;
     }
     slt010-cart-drawer-block{
@@ -115,7 +113,7 @@
         overflow: hidden;
     }
 
-    #shopify-section-{{ section.id }} slt010-cart-drawer-header{
+    slt010-cart-drawer-header{
         width: 100%;
         margin: 0;
         padding: 10px 20px;
@@ -134,7 +132,11 @@
     }
     slt010-cart-drawer-progress-bar{
         width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
         flex: 0 0 auto;
+        flex-wrap: wrap;
     }
     slt010-cart-drawer-countdown{
         width: 100%;
@@ -142,11 +144,35 @@
     }
     slt010-cart-drawer-body{
         width: 100%;
+        margin: 0;
+        padding: 0 15px;
+        display: flex;
         flex: 1 1 100%;
+        flex-wrap: wrap;
+        overflow: auto;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(0,0,0,1) rgba(0,0,0,.3);
+    }
+    slt010-cart-drawer-body::-webkit-scrollbar{
+        width: 5px;
+    }
+    slt010-cart-drawer-body::-webkit-scrollbar-track{
+        background-color: rgba(0,0,0,.3);
+    }
+    slt010-cart-drawer-body::-webkit-scrollbar-thumb{
+        background-color: rgba(0,0,0,1);
     }
     slt010-cart-drawer-footer{
         width: 100%;
+        margin: 0;
+        padding: 20px;
+        border-top: solid 1px #e3e3e3;
+        display: flex;
         flex: 0 0 auto;
+        flex-wrap: wrap;
+    }
+    slt010-cart-drawer-footer:empty{
+        display: none;
     }
 
     slt010-cart-drawer-close-button{
