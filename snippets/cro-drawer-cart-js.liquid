@@ -2,13 +2,17 @@
     {%- if cart.item_count > 0 -%}
 
     {%- else -%}
-        function emptyCart(){
-            const $empty = document.createElement('slt010-cart-drawer-empty');
-            const $body = document.querySelector('slt010-cart-drawer-body');
-            $empty.innerHTML = '<h4>{{ section.blocks['body'].settings.title-empty }}</h4><p>{{ section.blocks['body'].settings.content-empty }}</p>';
-            $body.innerHTML = '';
-            $body.appendChild($empty);
-        }
-        emptyCart();
+        {%- for block in section.blocks -%}
+            {%- if block.type == 'body' -%}
+                function emptyCart(){
+                    const $empty = document.createElement('slt010-cart-drawer-empty');
+                    const $body = document.querySelector('slt010-cart-drawer-body');
+                    $empty.innerHTML = '<h4>{{ block.settings.title-empty }}</h4><p>{{ block.settings.content-empty }}</p>';
+                    $body.innerHTML = '';
+                    $body.appendChild($empty);
+                }
+                emptyCart();
+            {%- endif -%}
+        {%- endfor -%}
     {%- endif -%}
 </script>
