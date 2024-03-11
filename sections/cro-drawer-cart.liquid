@@ -10,13 +10,13 @@
     <slt010-cart-drawer-block id="{{ section.id }}-block" data-opened="false">
         <slt010-cart-drawer-container>
             <slt010-cart-drawer>
-              {%- render 'cro-drawer-cart-layout', section: section, sessionTag: sessionTag -%}
+              {%- render 'cro-drawer-cart-layout', section: section -%}
             </slt010-cart-drawer>
         </slt010-cart-drawer-container>
     </slt010-cart-drawer-block>
     {%- render 'cro-drawer-cart-styles', section: section -%}
     {%- render 'cro-drawer-cart-custom-html-elements' -%}
-    {%- render 'cro-drawer-cart-js', section: section -%}
+    {%- render 'cro-drawer-cart-js', section: section, sessionTag: sessionTag -%}
 {%- endunless -%}
 
 {% schema %}
