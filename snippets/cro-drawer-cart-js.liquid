@@ -29,7 +29,14 @@
         emptyCartBody(){
             const $empty = document.createElement('slt010-cart-drawer-empty');
             const $body = this.querySelector(this.slug + '-body');
-            $empty.innerHTML = '<h4>{{ block.settings.title-empty }}</h4><p>{{ block.settings.content-empty }}</p>';
+            
+            {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                    {%- when 'body' -%}
+                        $empty.innerHTML = '<h4>{{ block.settings.title-empty }}</h4><p>{{ block.settings.content-empty }}</p>';
+                {%- endcase -%}
+            {%- endfor -%}
+            
             $body.innerHTML = '';
             $body.appendChild($empty);
         }
