@@ -1,14 +1,14 @@
 {%- for block in section.blocks -%}
     {%- case block.type -%}
         {%- when 'header' -%}
-            {%- render 'cro-drawer-cart-layout-header', block: block -%}
+            <slt010-cart-drawer-header>{{ block.settings.title }}</slt010-cart-drawer-header>
         {%- when 'countdown' -%}
-            {%- render 'cro-drawer-cart-layout-countdown' -%}
+            <slt010-cart-drawer-countdown></slt010-cart-drawer-countdown>
         {%- when 'progress-bar' -%}
-            {%- render 'cro-drawer-cart-layout-progress-bar' -%}
+            <slt010-cart-drawer-progress-bar></slt010-cart-drawer-progress-bar>
         {%- when 'body' -%}
-            {%- render 'cro-drawer-cart-layout-body' -%}
+            <slt010-cart-drawer-body></slt010-cart-drawer-body>
         {%- when 'footer' -%}
-            {%- render 'cro-drawer-cart-layout-footer' -%}
+            <slt010-cart-drawer-footer></slt010-cart-drawer-footer>
     {%- endcase -%}
 {%- endfor -%}
