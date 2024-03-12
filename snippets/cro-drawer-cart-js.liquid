@@ -30,6 +30,8 @@
         updateFunctions(){
             this.updateCartBody();
             this.updateFooter();
+            this.updateProgressBar();
+            this.updateCountdown();
         }
         updateCartBody(){
             if(this.hasNode(this.slug + '-body')){
@@ -122,6 +124,22 @@
             if(this.hasNode(this.slug + '-footer')){
                 if(this.currentCart.item_count > 0){
                     const $footer = this.querySelector(this.slug + '-footer');
+                    $footer.setAttribute('data-cart-qty', this.currentCart.item_count);
+                }
+            }
+        }
+        updateProgressBar(){
+            if(this.hasNode(this.slug + '-progress-bar')){
+                if(this.currentCart.item_count > 0){
+                    const $footer = this.querySelector(this.slug + '-progress-bar');
+                    $footer.setAttribute('data-cart-qty', this.currentCart.item_count);
+                }
+            }
+        }
+        updateCountdown(){
+            if(this.hasNode(this.slug + '-countdown')){
+                if(this.currentCart.item_count > 0){
+                    const $footer = this.querySelector(this.slug + '-countdown');
                     $footer.setAttribute('data-cart-qty', this.currentCart.item_count);
                 }
             }
