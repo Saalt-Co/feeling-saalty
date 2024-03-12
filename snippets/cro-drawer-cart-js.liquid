@@ -256,6 +256,8 @@
                 const $val = ($sib > 0) ? $sib : 0;
                 $t.cart.update({id: $key, quantity: $val}, ($data)=>{
                     console.log('updated');
+                    console.log($key);
+                    console.log($val);
                 });
             });
         }
