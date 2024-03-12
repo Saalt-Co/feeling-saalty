@@ -116,7 +116,7 @@
         connectedCallback(){
             console.log('slt010-cart-drawer-remove-item added');
             this.addEventListener('click', function($e){
-                if($e.target.tagName.toLowerCase() === 'svg'){
+                if($e.target.tagName.toLowerCase() !== 'slt010-cart-drawer-remove-item'){
                     const $target = $e.target.closest('slt010-cart-drawer-remove-item').getAttribute('data-remove');
                     console.log('remove ' + $target);
                 }
