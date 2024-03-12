@@ -179,8 +179,8 @@
                 },
                 body: JSON.stringify($data)
             });
-            window.sessionStorage.setItem($t.sessionTag, cart.json());
-            $callBack(cart.json());
+            window.sessionStorage.setItem($t.sessionTag, $result.json());
+            $callBack($result.json());
     
     
     
