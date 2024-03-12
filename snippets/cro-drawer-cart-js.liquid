@@ -86,7 +86,7 @@
             '<div data-slt010-class="slt010-cart-drawer-body-list-item-qty-container">' +
                 '<div data-slt010-class="slt010-cart-drawer-body-list-item-qty-wrap">' +
                     '<button type="button" is="slt010-cart-drawer-minus-item" data-qty-minus="' + $data.key + '">-</button>' + 
-                    '<input type="number" is="slt010-cart-drawer-qty-item" data-qty="' + $data.key + '" value="' + $data.quantity + '" />' +
+                    '<input type="number" readonly="readonly" data-qty="' + $data.key + '" value="' + $data.quantity + '" />' +
                     '<button type="button" is="slt010-cart-drawer-add-item" data-qty-add="' + $data.key + '">+</button>' +
                 '</div>' +   
             '</div>' +
@@ -239,28 +239,4 @@
         }
     }
     customElements.define('slt010-cart-drawer-minus-item', $cro_slt010_drawer_cart_minus_item_class, {extends: 'button'});
-    
-    class $cro_slt010_drawer_cart_qty_item_class extends HTMLInputElement{
-        constructor(){
-            super();
-            this.cart = new $croShopifyCartClass('{{ sessionTag }}');
-        }
-        connectedCallback(){
-            const $t = this;
-            //console.log('slt010-cart-drawer-qty-item added');
-            this.addEventListener('change', function($e){
-                console.log('change ' + $e.target);
-                const $elm = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName) : $e.target;
-                const $key = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName).getAttribute('data-qty') : $e.target.getAttribute('data-qty');
-                const $sib = parseInt($elm.getAttribute('value'));
-                const $val = ($sib > 0) ? $sib : 0;
-                $t.cart.update({id: $key, quantity: $val}, ($data)=>{
-                    console.log('updated');
-                    console.log($key);
-                    console.log($val);
-                });
-            });
-        }
-    }
-    customElements.define('slt010-cart-drawer-qty-item', $cro_slt010_drawer_cart_qty_item_class, {extends: 'input'});
 </script>
