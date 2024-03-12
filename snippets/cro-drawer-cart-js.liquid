@@ -21,7 +21,7 @@
             const $t = this;
             this.updateCartBody();
             setInterval(()=>{
-                const $cart = window.sessionStorage.getItem($t.sessionTag);
+                const $cart = JSON.parse(window.sessionStorage.getItem($t.sessionTag));
                 console.log('cart items ' + $cart.item_count + ' - ' + $t.currentCart.item_count);
                 if($cart.item_count !== $t.currentCart.item_count){
                     this.updateCartBody();
