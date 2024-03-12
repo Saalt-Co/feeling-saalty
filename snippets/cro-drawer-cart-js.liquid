@@ -68,7 +68,7 @@
             $price = ($data.total_discount !== 0) ? '<span data-slt010-class="slt010-discount">$' + (($data.price - $data.total_discount) * .01).toFixed(2) + '</span>&nbsp;<s>' + $price + '</s>' : $price;
             const $variantTitle = ($data.variant_title !== null) ? $data.variant_title : '';
             let $discountTitle = '';
-            $t.each($data.discounts, ($discount, $dc)=>{
+            this.each($data.discounts, ($discount, $dc)=>{
                 $discountTitle += '<div data-discount-line="' + $dc + '">' + $discount.title + '</div>';
             });
             const $meta = document.createElement(this.slug + '-body-list-item-meta');
