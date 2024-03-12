@@ -151,12 +151,12 @@
         }
         async get($callBack){
             const $t = this;
-            const $cart = await fetch('/cart.json');
-            const $result = $cart.json();
-    
-            console.log('?? ' + JSON.stringify($cart));
-            window.sessionStorage.setItem($t.sessionTag, JSON.stringify($result));
-            $callBack($result);
+            const $cart = await fetch('/cart.json').then(($cart)=>{
+                const $result = $cart.json();
+                console.log('?? ' + JSON.stringify($cart));
+                window.sessionStorage.setItem($t.sessionTag, JSON.stringify($result));
+                $callBack($result);
+            });
     
             /*/var $x = new XMLHttpRequest();
             var $f = (typeof($func) === 'function') ? $func : function(){};
@@ -183,9 +183,10 @@
                     'Accept':'application/json'
                 },
                 body: JSON.stringify($data)
-            });
-            $t.get(($r)=>{
-                console.log('results: ');
+            }).then(()=>{
+                $t.get(($r)=>{
+                    console.log('results: ' + JSON.stringify($r));
+                });
             });
     
     
