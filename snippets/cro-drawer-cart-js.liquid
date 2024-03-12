@@ -87,7 +87,7 @@
                 '<div data-slt010-class="slt010-cart-drawer-body-list-item-qty-wrap">' +
                     '<button type="button" data-qty-minus="' + $data.key + '">-</button>' + 
                     '<input type="number" data-qty="' + $data.key + '" value="' + $data.quantity + '" />' +
-                    '<button type="button" data-qty-add="' + $data.key + '">+</button>' +
+                    '<button type="button" is="slt010-cart-drawer-add-item" data-qty-add="' + $data.key + '">+</button>' +
                 '</div>' +   
             '</div>' +
             '<div data-slt010-class="slt010-cart-drawer-body-list-item-price">' + $price + '</div>';
@@ -198,4 +198,24 @@
         }
     }
     customElements.define('slt010-cart-drawer-remove-item', $cro_slt010_drawer_cart_remove_item_class, {extends: 'button'});
+    
+    class $cro_slt010_drawer_cart_add_item_class extends HTMLButtonElement{
+        constructor(){
+            super();
+            this.cart = new $croShopifyCartClass('{{ sessionTag }}');
+        }
+        connectedCallback(){
+            const $t = this;
+            //console.log('slt010-cart-drawer-add-item added');
+            this.addEventListener('click', function($e){
+                const $elm = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName) : $e.target;
+                const $key = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName).getAttribute('data-qty-add') : $e.target.getAttribute('data-qty-add');
+                const $sib = parseInt($elm.previousElementSibling.getAttribute('value'));
+                $t.cart.add({id: $key, quantity: ($sib + 1)}, ($data)=>{
+                    console.log('updated');
+                });
+            });
+        }
+    }
+    customElements.define('slt010-cart-drawer-add-item', $cro_slt010_drawer_cart_add_item_class, {extends: 'button'});
 </script>
