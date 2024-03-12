@@ -19,7 +19,6 @@
             }
         }
         updateCart(){
-            console.log('update cart function');
             const $t = this;
             this.updateCartBody();
             setInterval(()=>{
@@ -30,7 +29,6 @@
             }, 50);
         }
         updateCartBody(){
-            console.log('update cart body function');
             if(this.hasNode(this.slug + '-body')){
                 if(this.currentCart.item_count > 0){
                     this.getCartItems();
