@@ -178,7 +178,7 @@
                     $callBack(JSON.parse(this.responseText));
                 }
                 if(this.status === 400){
-                    $callBack(JSON.parse(this.responseText));
+                    $callBack(this);
                 }
             };
             $x.send($data);
