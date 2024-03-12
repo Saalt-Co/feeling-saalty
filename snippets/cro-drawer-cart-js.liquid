@@ -168,7 +168,20 @@
          * $data is a JSON value with cart line item and quantity example: {line: LINE_NUMBER, quantity: NUMBER}
          */
         update($data, $callBack){
-            var $x = new XMLHttpRequest();
+            const $result = await fetch('/cart/change.json', {
+                method: 'POST',
+                headers: {
+                    'Content-Type':'application/json',
+                    'Accept':'application/json'
+                },
+                body: JSON.stringify($data)
+            });
+            window.sessionStorage.setItem($t.sessionTag, cart.json());
+            $callBack(cart.json());
+    
+    
+    
+            /*var $x = new XMLHttpRequest();
             var $f = (typeof($func) === 'function') ? $func : function(){};
             $x.open('POST','/cart/change.js', true);
             $x.setRequestHeader('Content-Type','application/json');
@@ -177,11 +190,8 @@
                     window.sessionStorage.setItem($t.sessionTag, JSON.parse(this.responseText));
                     $callBack(JSON.parse(this.responseText));
                 }
-                if(this.status === 400){
-                    $callBack(this);
-                }
             };
-            $x.send($data);
+            $x.send($data);*/
         }
     }
     
