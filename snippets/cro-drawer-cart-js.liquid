@@ -18,14 +18,17 @@
             }
         }
         updateCart(){
-            this.updateCartBody();
+            this.updateFunctions();
             setInterval(()=>{
                 const $cart = JSON.parse(window.sessionStorage.getItem(this.sessionTag));
                 if($cart.item_count !== this.currentCart.item_count){
                     this.currentCart = $cart;
-                    this.updateCartBody();
+                    this.updateFunctions();
                 }
             }, 1000);
+        }
+        updateFunctions(){
+            this.updateCartBody();
         }
         updateCartBody(){
             if(this.hasNode(this.slug + '-body')){
