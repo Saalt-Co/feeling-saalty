@@ -58,6 +58,13 @@
           "settings": {
           }
         },
+        "text_49f6xw": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.saalt.evergreen_offer.value }}",
+            "text_style": "body"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -171,6 +178,7 @@
         "a540459f-701c-470e-bfa0-1112dcf7d16d",
         "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7",
         "price",
+        "text_49f6xw",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -869,6 +877,18 @@
       "type": "shogun-below",
       "settings": {
       }
+    },
+    "rich_text_Jgeqtf": {
+      "type": "rich-text",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -885,6 +905,7 @@
     "c9a06b4e-fc2b-4ec6-bab4-42d6f2f63f95",
     "bef772d0-6e13-4a64-bb1e-f22e9b4887ed",
     "a235a351-a7fc-42f3-acf2-717cc19658e9",
-    "shogun-below"
+    "shogun-below",
+    "rich_text_Jgeqtf"
   ]
 }
