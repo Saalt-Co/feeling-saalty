@@ -75,12 +75,12 @@
             $meta.innerHTML = '<a href="' + $data.url + '" data-slt010-class="slt010-cart-drawer-body-list-item-title">' + $data.product_title + '</a>' +
             '<div data-slt010-class="slt010-cart-drawer-body-list-item-variant-title">' + $variantTitle + '</div>' +
             $discountTitle +
-            '<button type="button" data-remove="' + $index + '" data-slt010-class="slt010-cart-drawer-body-list-item-remove-btn">' + $icon + '</button>' +
+            '<button type="button" data-remove="' + $data.key + '" data-slt010-class="slt010-cart-drawer-body-list-item-remove-btn">' + $icon + '</button>' +
             '<div data-slt010-class="slt010-cart-drawer-body-list-item-qty-container">' +
                 '<div data-slt010-class="slt010-cart-drawer-body-list-item-qty-wrap">' +
-                    '<button type="button" data-qty-minus="' + $index + '">-</button>' + 
-                    '<input type="number" data-qty="' + $index + '" value="' + $data.quantity + '" />' +
-                    '<button type="button" data-qty-add="' + $index + '">+</button>' +
+                    '<button type="button" data-qty-minus="' + $data.key + '">-</button>' + 
+                    '<input type="number" data-qty="' + $data.key + '" value="' + $data.quantity + '" />' +
+                    '<button type="button" data-qty-add="' + $data.key + '">+</button>' +
                 '</div>' +   
             '</div>' +
             '<div data-slt010-class="slt010-cart-drawer-body-list-item-price">' + $price + '</div>';
