@@ -2,8 +2,8 @@
     class $cro_slt010_drawer_cart_class extends HTMLElement{
         constructor(){
             super();
-            this.sessionTag = {{ sessionTag }};
-            this.currentCart = '{{ cart | json }}'; //remove quotes when updating the liquid file
+            this.sessionTag = '{{ sessionTag }}';
+            this.currentCart = {{ cart | json }}; //remove quotes when updating the liquid file
             this.slug = 'slt010-cart-drawer';
         }
         connectedCallback(){
