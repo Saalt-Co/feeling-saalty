@@ -22,13 +22,13 @@
             this.updateCartBody();
             setInterval(()=>{
                 const $cart = window.sessionStorage.getItem($t.sessionTag);
+                console.log('cart items ' + $cart.item_count + ' - ' + $t.currentCart.item_count);
                 if($cart.item_count !== $t.currentCart.item_count){
                     this.updateCartBody();
                 }
             }, 1000);
         }
         updateCartBody(){
-            console.log('update cart body function');
             if(this.hasNode(this.slug + '-body')){
                 if(this.currentCart.item_count > 0){
                     this.getCartItems();
