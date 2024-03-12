@@ -18,12 +18,12 @@
             }
         }
         updateCart(){
-            const $t = this;
             this.updateCartBody();
             setInterval(()=>{
-                const $cart = JSON.parse(window.sessionStorage.getItem($t.sessionTag));
-                console.log('cart items ' + $cart.item_count + ' - ' + $t.currentCart.item_count);
-                if($cart.item_count !== $t.currentCart.item_count){
+                const $cart = JSON.parse(window.sessionStorage.getItem(this.sessionTag));
+                console.log('cart items ' + $cart.item_count + ' - ' + this.currentCart.item_count);
+                if($cart.item_count !== this.currentCart.item_count){
+                    this.currentCart = $cart;
                     this.updateCartBody();
                 }
             }, 1000);
@@ -125,49 +125,38 @@
          * $callBack = function ()=>{} what to do when the product is added to cart
          * $redirect = boolean set true to redirect to another page like the cart page or checkout page
          */
-        add($data, $callBack, $redirect = false){
+        async add($data, $callBack, $redirect = false){
             const $t = this;
             if($data.items.length > 0){
-                var $x = new XMLHttpRequest();
-                var $f = (typeof($func) === 'function') ? $func : function(){};
-                $x.open('POST','/cart/add.js', true);
-                $x.setRequestHeader('Content-Type','application/json');
-                $x.onreadystatechange = function(){
-                    if(this.readyState === 4 && this.status === 200){
-                        if($redirect){
-                            $callBack();
-                        }
-                        else{
-                            $t.get(($rq)=>{
-                                if($rq.item_count > 0){
-                                    $callBack($rq);
-                                }
-                            });
-                        }
+                const $t = this;
+                fetch('/cart/add.json', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type':'application/json',
+                        'Accept':'application/json'
+                    },
+                    body: JSON.stringify($data)
+                }).then(($res)=>{
+                    return $res.json();
+                }).then(($data)=>{
+                    window.sessionStorage.setItem($t.sessionTag, JSON.stringify($data));
+                    if($redirect){
+                        $callBack();
                     }
-                };
-                $x.send($data);
+                    else{
+                        $callBack($data);
+                    }
+                });
             }
         }
         async get($callBack){
             const $t = this;
-            fetch('/cart.json').then(($cart)=>{
-                const $result = $cart.json();
-                console.log('?? ' + JSON.stringify($cart));
-                window.sessionStorage.setItem($t.sessionTag, JSON.stringify($result));
-                $callBack($result);
+            fetch('/cart.json').then(($res)=>{
+                return $res.json();
+            }).then(($data)=>{
+                window.sessionStorage.setItem($t.sessionTag, JSON.stringify($data));
+                $callBack($data);
             });
-    
-            /*/var $x = new XMLHttpRequest();
-            var $f = (typeof($func) === 'function') ? $func : function(){};
-            $x.onreadystatechange = function(){
-                if(this.readyState === 4 && this.status === 200){
-                    window.sessionStorage.setItem($t.sessionTag, JSON.parse(this.responseText));
-                    $callBack(JSON.parse(this.responseText));
-                }
-            };
-            $x.open('GET','/cart.js', true);
-            $x.send();*/
         }
         /**
          * $data is a JSON value with key item and quantity example: {id: CART_ITEM_KEY, quantity: NUMBER}
@@ -204,7 +193,6 @@
                 const $key = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName).getAttribute('data-remove') : $e.target.getAttribute('data-remove');
                 $t.cart.update({id: $key, quantity: 0}, ($data)=>{
                     console.log('updated');
-                    console.log(JSON.stringify($data));
                 });
             });
         }
