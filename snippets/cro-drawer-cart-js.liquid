@@ -13,18 +13,51 @@
         hasNode($selector){
             return (this.querySelectorAll($selector).length > 0) ? true : false;
         }
+        each($data, $callback){
+            for(let $c = 0; $c < $data.length; $c++){
+                $callback($data[$c], $c);
+            }
+        }
         updateCart(){
             this.updateCartBody();
         }
         updateCartBody(){
             if(this.hasNode(this.slug + '-body')){
                 if(this.currentCart.item_count > 0){
-    
+                    this.getCartItems();
                 }
                 else{
                     this.emptyCartBody();
                 }
             }
+        }
+        getCartItems(){
+            const $t = this;
+            const $body = this.querySelector(this.slug + '-body');
+            const $list = document.createElement(this.slug + '-body-list');
+    
+            this.each(this.currentCart.items, ($item, $ic)=>{
+                $list.appendChild($t.getCartItem($item, $ic));
+            });
+    
+            $body.innerHTML = '';
+            $body.appendChild($list);
+        }
+        getCartItem($data, $count){
+            const $o = document.createElement(this.slug + '-body-list-item');
+            const $img = (typeof($data.featured_image.url) !== 'undefined' && $data.featured_image.url !== '') ? $data.featured_image.url : $data.image;
+            const $media = document.createElement('a');
+    
+            $a.setAttribute('href', $data.url);
+            $a.setAttribute('data-slt010-class', 'slt010-cart-drawer-body-list-item-media');
+            $a.innerHTML = '<picture data-slt010-class="slt010-cart-drawer-body-list-item-picture">' +
+                '<img src="' + $img + '" alt="' + $data.product_title + '" width="90" height="90" data-slt010-class="slt010-cart-drawer-body-list-item-image" />' +
+            '</picture>';
+            
+            $o.setAttribute('data-slt010-row', $count);
+            $o.appendChild($media);
+    
+            return $o;
         }
         emptyCartBody(){
             const $empty = document.createElement('slt010-cart-drawer-empty');
