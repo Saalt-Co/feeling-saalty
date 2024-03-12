@@ -116,16 +116,10 @@
         connectedCallback(){
             console.log('slt010-cart-drawer-remove-item added');
             this.addEventListener('click', function($e){
-                if($e.target.tagName.toLowerCase() !== 'slt010-cart-drawer-remove-item'){
-                    const $target = $e.target.closest('slt010-cart-drawer-remove-item').getAttribute('data-remove');
-                    console.log('remove ' + $target);
-                }
-                else{
-                    console.log('tagname ' + $e.target.tagName);
-                    console.log('remove ' + $e.currentTarget);
-                }
+                const $key = ($e.target.tagName.toLowerCase() !== 'slt010-cart-drawer-remove-item') ? $e.target.closest('slt010-cart-drawer-remove-item').getAttribute('data-remove') : $e.target.getAttribute('data-remove');
                 console.log('currenttarget ' + $e.currentTarget);
                 console.log('this ' + this);
+                console.log('remove ' + $target);
             });
         }
     }
