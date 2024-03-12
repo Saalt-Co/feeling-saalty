@@ -24,7 +24,7 @@
             setInterval(()=>{
                 const $cart = window.sessionStorage.getItem($t.sessionTag);
                 if($cart.item_count === $t.currentCart.item_count){
-                    this.updateCartBody();
+                    $t.updateCartBody();
                 }
             }, 50);
         }
