@@ -116,25 +116,6 @@
     }
     customElements.define('slt010-cart-drawer', $cro_slt010_drawer_cart_class);
     
-    class $cro_slt010_drawer_cart_remove_item_class extends HTMLElement{
-        constructor(){
-            super();
-            this.cart = new $croShopifyCartClass();
-        }
-        connectedCallback(){
-            const $t = this;
-            //console.log('slt010-cart-drawer-remove-item added');
-            this.addEventListener('click', function($e){
-                const $key = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName).getAttribute('data-remove') : $e.target.getAttribute('data-remove');
-                $t.cart.update({id: $key, quantity: 0}, ($data)=>{
-                    console.log('updated');
-                    console.log(JSON.stringify($data));
-                });
-            });
-        }
-    }
-    customElements.define('slt010-cart-drawer-remove-item', $cro_slt010_drawer_cart_remove_item_class);
-    
     class $croShopifyCartClass{
         constructor(){
             this.sessionTag = '{{ sessionTag }}';
@@ -200,4 +181,23 @@
             $x.send($data);
         }
     }
+    
+    class $cro_slt010_drawer_cart_remove_item_class extends HTMLElement{
+        constructor(){
+            super();
+            this.cart = new $croShopifyCartClass();
+        }
+        connectedCallback(){
+            const $t = this;
+            //console.log('slt010-cart-drawer-remove-item added');
+            this.addEventListener('click', function($e){
+                const $key = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName).getAttribute('data-remove') : $e.target.getAttribute('data-remove');
+                $t.cart.update({id: $key, quantity: 0}, ($data)=>{
+                    console.log('updated');
+                    console.log(JSON.stringify($data));
+                });
+            });
+        }
+    }
+    customElements.define('slt010-cart-drawer-remove-item', $cro_slt010_drawer_cart_remove_item_class);
 </script>
