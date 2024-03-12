@@ -174,40 +174,21 @@
          * or
          * $data is a JSON value with cart line item and quantity example: {line: LINE_NUMBER, quantity: NUMBER}
          */
-        update($data, $callBack){
+        async update($data, $callBack){
             const $t = this;
-            async function getCartJSON($cb = ()=>{}){
-                fetch('/cart/change.json', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type':'application/json',
-                        'Accept':'application/json'
-                    },
-                    body: JSON.stringify($data)
-                }).then(($res)=>{
-                    return $res.json();
-                }).then(($data)=>{
-                    console.log('??? ' + JSON.stringify($data));
-                    $cb($data);
-                });
-            }
-            getCartJSON(($data)=>{
+            fetch('/cart/change.json', {
+                method: 'POST',
+                headers: {
+                    'Content-Type':'application/json',
+                    'Accept':'application/json'
+                },
+                body: JSON.stringify($data)
+            }).then(($res)=>{
+                return $res.json();
+            }).then(($data)=>{
+                window.sessionStorage.setItem($t.sessionTag, JSON.stringify($data));
                 $callBack($data);
             });
-    
-    
-    
-            /*var $x = new XMLHttpRequest();
-            var $f = (typeof($func) === 'function') ? $func : function(){};
-            $x.open('POST','/cart/change.js', true);
-            $x.setRequestHeader('Content-Type','application/json');
-            $x.onreadystatechange = function(){
-                if(this.readyState === 4 && this.status === 200){
-                    window.sessionStorage.setItem($t.sessionTag, JSON.parse(this.responseText));
-                    $callBack(JSON.parse(this.responseText));
-                }
-            };
-            $x.send($data);*/
         }
     }
     
