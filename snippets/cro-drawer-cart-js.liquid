@@ -75,7 +75,7 @@
             $meta.innerHTML = '<a href="' + $data.url + '" data-slt010-class="slt010-cart-drawer-body-list-item-title">' + $data.product_title + '</a>' +
             '<div data-slt010-class="slt010-cart-drawer-body-list-item-variant-title">' + $variantTitle + '</div>' +
             $discountTitle +
-            '<button type="button" data-remove="' + $data.key + '" data-slt010-class="slt010-cart-drawer-body-list-item-remove-btn">' + $icon + '</button>' +
+            '<button type="button" is="slt010-cart-drawer-remove-item" data-remove="' + $data.key + '" data-slt010-class="slt010-cart-drawer-body-list-item-remove-btn">' + $icon + '</button>' +
             '<div data-slt010-class="slt010-cart-drawer-body-list-item-qty-container">' +
                 '<div data-slt010-class="slt010-cart-drawer-body-list-item-qty-wrap">' +
                     '<button type="button" data-qty-minus="' + $data.key + '">-</button>' + 
@@ -108,4 +108,17 @@
         }
     }
     customElements.define('slt010-cart-drawer', $cro_slt010_drawer_cart_class);
+    
+    class $cro_slt010_drawer_cart_remove_item_class extends HTMLElement{
+        constructor(){
+            super();
+        }
+        connectedCallback(){
+            console.log('slt010-cart-drawer-remove-item added');
+            this.addEventListener('click', function($e){
+                console.log('remove ' + $e.target.getAttribute('data-remove'));
+            });
+        }
+    }
+    customElements.define('slt010-cart-drawer-remove-item', $cro_slt010_drawer_cart_remove_item_class);
 </script>
