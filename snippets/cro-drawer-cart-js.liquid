@@ -218,4 +218,25 @@
         }
     }
     customElements.define('slt010-cart-drawer-add-item', $cro_slt010_drawer_cart_add_item_class, {extends: 'button'});
+    
+    class $cro_slt010_drawer_cart_minus_item_class extends HTMLButtonElement{
+        constructor(){
+            super();
+            this.cart = new $croShopifyCartClass('{{ sessionTag }}');
+        }
+        connectedCallback(){
+            const $t = this;
+            //console.log('slt010-cart-drawer-minus-item added');
+            this.addEventListener('click', function($e){
+                const $elm = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName) : $e.target;
+                const $key = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName).getAttribute('data-qty-add') : $e.target.getAttribute('data-qty-add');
+                const $sib = parseInt($elm.nextElementSibling.getAttribute('value'));
+                const $val = ($sib - 1 > 0) ? $sib - 1 : 0;
+                $t.cart.update({id: $key, quantity: $val}, ($data)=>{
+                    console.log('updated');
+                });
+            });
+        }
+    }
+    customElements.define('slt010-cart-drawer-minus-item', $cro_slt010_drawer_cart_minus_item_class, {extends: 'button'});
 </script>
