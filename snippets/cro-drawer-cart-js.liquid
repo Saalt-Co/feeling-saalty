@@ -29,6 +29,7 @@
         }
         updateFunctions(){
             this.updateCartBody();
+            this.updateFooter();
         }
         updateCartBody(){
             if(this.hasNode(this.slug + '-body')){
@@ -115,6 +116,15 @@
             
             $body.innerHTML = '';
             $body.appendChild($empty);
+        }
+        
+        updateFooter(){
+            if(this.hasNode(this.slug + '-footer')){
+                if(this.currentCart.item_count > 0){
+                    const $footer = this.querySelector(this.slug + '-footer');
+                    $footer.setAttribute('data-cart-qty', this.currentCart.item_count);
+                }
+            }
         }
     }
     customElements.define('slt010-cart-drawer', $cro_slt010_drawer_cart_class);
