@@ -169,7 +169,7 @@
          * or
          * $data is a JSON value with cart line item and quantity example: {line: LINE_NUMBER, quantity: NUMBER}
          */
-        update($data, $callBack){
+        async update($data, $callBack){
             const $result = await fetch('/cart/change.json', {
                 method: 'POST',
                 headers: {
