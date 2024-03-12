@@ -3,11 +3,10 @@
         constructor(){
             super();
             this.sessionTag = '{{ sessionTag }}';
-            this.currentCart = '{{ cart | json }}'; //remove quotes when updating the liquid file
+            this.currentCart = {{ cart | json }}; //remove quotes when updating the liquid file
             this.slug = 'slt010-cart-drawer';
         }
         connectedCallback(){
-            console.log('slt010-cart-drawer added');
             this.updateCart();
         }
         hasNode($selector){
@@ -23,12 +22,13 @@
             this.updateCartBody();
             setInterval(()=>{
                 const $cart = window.sessionStorage.getItem($t.sessionTag);
-                if($cart.item_count === $t.currentCart.item_count){
+                if($cart.item_count !== $t.currentCart.item_count){
                     this.updateCartBody();
                 }
-            }, 50);
+            }, 1000);
         }
         updateCartBody(){
+            console.log('update cart body function');
             if(this.hasNode(this.slug + '-body')){
                 if(this.currentCart.item_count > 0){
                     this.getCartItems();

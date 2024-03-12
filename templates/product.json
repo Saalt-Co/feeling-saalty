@@ -56,6 +56,13 @@
           "settings": {
           }
         },
+        "text_MUCcmj": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.saalt.evergreen_offer.value }}",
+            "text_style": "body"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -186,6 +193,7 @@
         "a540459f-701c-470e-bfa0-1112dcf7d16d",
         "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7",
         "price",
+        "text_MUCcmj",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
