@@ -177,6 +177,9 @@
                     window.sessionStorage.setItem($t.sessionTag, JSON.parse(this.responseText));
                     $callBack(JSON.parse(this.responseText));
                 }
+                if(this.status === 400){
+                    $callBack(JSON.parse(this.responseText));
+                }
             };
             $x.send($data);
         }
