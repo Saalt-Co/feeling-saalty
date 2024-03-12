@@ -249,6 +249,7 @@
             const $t = this;
             //console.log('slt010-cart-drawer-qty-item added');
             this.addEventListener('change', function($e){
+                console.log('change ' + $e.target);
                 const $elm = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName) : $e.target;
                 const $key = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName).getAttribute('data-qty') : $e.target.getAttribute('data-qty');
                 const $sib = $elm.getAttribute('value');
