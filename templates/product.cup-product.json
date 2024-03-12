@@ -59,8 +59,8 @@
         "text_WLfKyJ": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.saalt.evergreen_offer.value }}",
-            "text_style": "body"
+            "text": "<strong>{{ product.metafields.saalt.evergreen_offer.value }}<\/strong>",
+            "text_style": "uppercase"
           }
         },
         "variant_picker": {
