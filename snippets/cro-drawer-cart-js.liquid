@@ -78,6 +78,7 @@
             this.each($data.discounts, ($discount, $dc)=>{
                 $discountTitle += '<div data-discount-line="' + $dc + '">' + $discount.title + '</div>';
             });
+            $discountTitle = ($discountTitle !== '') ? '<div data-slt010-class="slt010-cart-drawer-body-list-item-discount-list">' + $discountTitle + '</div>' : '';
             const $meta = document.createElement(this.slug + '-body-list-item-meta');
             $meta.innerHTML = '<a href="' + $data.url + '" data-slt010-class="slt010-cart-drawer-body-list-item-title">' + $data.product_title + '</a>' +
             '<div data-slt010-class="slt010-cart-drawer-body-list-item-variant-title">' + $variantTitle + '</div>' +
