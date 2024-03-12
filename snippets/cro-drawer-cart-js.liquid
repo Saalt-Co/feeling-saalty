@@ -116,13 +116,13 @@
         connectedCallback(){
             console.log('slt010-cart-drawer-remove-item added');
             this.addEventListener('click', function($e){
-                if($e.currentTarget !== this){
-                    const $target = $e.currentTarget.closest('slt010-cart-drawer-remove-item').getAttribute('data-remove');
+                if($e.target.tagName.toLowerCase() === 'svg'){
+                    const $target = $e.target.closest('slt010-cart-drawer-remove-item').getAttribute('data-remove');
                     console.log('remove ' + $target);
                 }
                 else{
                     console.log('tagname ' + $e.target.tagName);
-                    console.log('remove ' + $e.targetcurrentTarget);
+                    console.log('remove ' + $e.currentTarget);
                 }
                 console.log('currenttarget ' + $e.currentTarget);
                 console.log('this ' + this);
