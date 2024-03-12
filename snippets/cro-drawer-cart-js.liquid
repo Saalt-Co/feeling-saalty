@@ -154,6 +154,7 @@
             const $cart = await fetch('/cart.json');
             const $result = $cart.json();
     
+            console.log('?? ' + JSON.stringify($cart));
             window.sessionStorage.setItem($t.sessionTag, JSON.stringify($result));
             $callBack($result);
     
