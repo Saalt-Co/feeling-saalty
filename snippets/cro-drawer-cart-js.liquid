@@ -116,7 +116,7 @@
         connectedCallback(){
             console.log('slt010-cart-drawer-remove-item added');
             this.addEventListener('click', function($e){
-                console.log($e.target.tagName);
+                console.log('this ' + $e.target);
                 console.log('remove ' + $e.target.getAttribute('data-remove'));
             });
         }
