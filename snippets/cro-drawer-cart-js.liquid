@@ -19,10 +19,18 @@
             }
         }
         updateCart(){
+            console.log('update cart function');
             const $t = this;
             this.updateCartBody();
+            setInterval(()=>{
+                const $cart = window.sessionStorage.getItem($t.sessionTag);
+                if($cart.item_count === $t.currentCart.item_count){
+                    this.updateCartBody();
+                }
+            }, 50);
         }
         updateCartBody(){
+            console.log('update cart body function');
             if(this.hasNode(this.slug + '-body')){
                 if(this.currentCart.item_count > 0){
                     this.getCartItems();
