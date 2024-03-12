@@ -19,7 +19,14 @@
             }
         }
         updateCart(){
+            const $t = this;
             this.updateCartBody();
+            setInterval(()=>{
+                const $cart = window.sessionStorage.getItem($t.sessionTag);
+                if($cart.item_count === $t.currentCart.item_count){
+                    this.updateCartBody();
+                }
+            }, 50);
         }
         updateCartBody(){
             if(this.hasNode(this.slug + '-body')){
@@ -112,16 +119,85 @@
     class $cro_slt010_drawer_cart_remove_item_class extends HTMLElement{
         constructor(){
             super();
+            this.cart = new $croShopifyCartClass();
         }
         connectedCallback(){
-            console.log('slt010-cart-drawer-remove-item added');
+            const $t = this;
+            //console.log('slt010-cart-drawer-remove-item added');
             this.addEventListener('click', function($e){
                 const $key = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName).getAttribute('data-remove') : $e.target.getAttribute('data-remove');
-                console.log('currenttarget ' + $e.currentTarget.tagName);
-                console.log('this ' + this.tagName);
-                console.log('remove ' + $key);
+                $t.cart.update({id: $key, quantity: 0}, ($data)=>{
+                    console.log('updated');
+                    console.log(JSON.stringify($data));
+                });
             });
         }
     }
     customElements.define('slt010-cart-drawer-remove-item', $cro_slt010_drawer_cart_remove_item_class);
+    
+    class $croShopifyCartClass{
+        constructor(){
+            this.sessionTag = '{{ sessionTag }}';
+        }
+        /**
+         * $data = object {items: [{id: NUMBER, quantity: NUMBER}]}
+         * $callBack = function ()=>{} what to do when the product is added to cart
+         * $redirect = boolean set true to redirect to another page like the cart page or checkout page
+         */
+        add($data, $callBack, $redirect = false){
+            const $t = this;
+            if($data.items.length > 0){
+                var $x = new XMLHttpRequest();
+                var $f = (typeof($func) === 'function') ? $func : function(){};
+                $x.open('POST','/cart/add.js', true);
+                $x.setRequestHeader('Content-Type','application/json');
+                $x.onreadystatechange = function(){
+                    if(this.readyState === 4 && this.status === 200){
+                        if($redirect){
+                            $callBack();
+                        }
+                        else{
+                            $t.get(($rq)=>{
+                                if($rq.item_count > 0){
+                                    $callBack($rq);
+                                }
+                            });
+                        }
+                    }
+                };
+                $x.send($data);
+            }
+        }
+        get($callBack){
+            const $t = this;
+            var $x = new XMLHttpRequest();
+            var $f = (typeof($func) === 'function') ? $func : function(){};
+            $x.onreadystatechange = function(){
+                if(this.readyState === 4 && this.status === 200){
+                    window.sessionStorage.setItem($t.sessionTag, JSON.parse(this.responseText));
+                    $callBack(JSON.parse(this.responseText));
+                }
+            };
+            $x.open('GET','/cart.js', true);
+            $x.send();
+        }
+        /**
+         * $data is a JSON value with key item and quantity example: {id: CART_ITEM_KEY, quantity: NUMBER}
+         * or
+         * $data is a JSON value with cart line item and quantity example: {line: LINE_NUMBER, quantity: NUMBER}
+         */
+        update($data, $callBack){
+            var $x = new XMLHttpRequest();
+            var $f = (typeof($func) === 'function') ? $func : function(){};
+            $x.open('POST','/cart/change.js', true);
+            $x.setRequestHeader('Content-Type','application/json');
+            $x.onreadystatechange = function(){
+                if(this.readyState === 4 && this.status === 200){
+                    window.sessionStorage.setItem($t.sessionTag, JSON.parse(this.responseText));
+                    $callBack(JSON.parse(this.responseText));
+                }
+            };
+            $x.send($data);
+        }
+    }
 </script>
