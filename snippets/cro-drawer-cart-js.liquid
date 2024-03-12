@@ -177,8 +177,8 @@
                 },
                 body: JSON.stringify($data)
             });
-            window.sessionStorage.setItem($t.sessionTag, JSON.parse($result));
-            $callBack(JSON.parse($result));
+            window.sessionStorage.setItem($t.sessionTag, $result);
+            $callBack($result);
     
     
     
