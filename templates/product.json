@@ -159,6 +159,15 @@
             "page": ""
           }
         },
+        "collapsible_tab_tiRXz7": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "{{ product.metafields.saalt.ethical_sustainable.value.title.value }}",
+            "icon": "chat_bubble",
+            "content": "{{ product.metafields.saalt.ethical_sustainable.value.detail | metafield_tag }}",
+            "page": ""
+          }
+        },
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
@@ -206,6 +215,7 @@
         "collapsible-row-2",
         "collapsible-row-3",
         "collapsible_tab_gEyCdL",
+        "collapsible_tab_tiRXz7",
         "collapsible-row-1",
         "8e2f85d3-2d82-4239-820b-c26872aaf01a",
         "share"
