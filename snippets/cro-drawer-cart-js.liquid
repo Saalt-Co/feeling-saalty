@@ -252,7 +252,7 @@
                 console.log('change ' + $e.target);
                 const $elm = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName) : $e.target;
                 const $key = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName).getAttribute('data-qty') : $e.target.getAttribute('data-qty');
-                const $sib = $elm.getAttribute('value');
+                const $sib = parseInt($elm.getAttribute('value'));
                 const $val = ($sib > 0) ? $sib : 0;
                 $t.cart.update({id: $key, quantity: $val}, ($data)=>{
                     console.log('updated');
