@@ -211,7 +211,7 @@
                 const $elm = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName) : $e.target;
                 const $key = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName).getAttribute('data-qty-add') : $e.target.getAttribute('data-qty-add');
                 const $sib = parseInt($elm.previousElementSibling.getAttribute('value'));
-                $t.cart.add({id: $key, quantity: ($sib + 1)}, ($data)=>{
+                $t.cart.add({items: [{id: $key, quantity: ($sib + 1)}]}, ($data)=>{
                     console.log('updated');
                 });
             });
