@@ -60,7 +60,7 @@
             super();
         }
         connectedCallback(){
-            console.log('slt010-cart-drawer-header added');
+            //console.log('slt010-cart-drawer-header added');
         }
     }
     customElements.define('slt010-cart-drawer-header', $cro_slt010_cartDrawerHeader);
@@ -72,10 +72,10 @@
             this.sessionTag = '{{ sessionTag }}';
         }
         connectedCallback(){
-            console.log('slt010-cart-drawer-footer added');
+            //console.log('slt010-cart-drawer-footer added');
         }
         attributeChangedCallback(name, oldValue, newValue){
-            console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+            //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
             switch(name){
                 case 'data-cart-qty':
                     this.update(newValue);
@@ -117,21 +117,61 @@
     customElements.define('slt010-cart-drawer-footer', $cro_slt010_cartDrawerFooter);
 
     class $cro_slt010_cartDrawerCountdown extends HTMLElement{
+        static observedAttributes = ['data-cart-qty'];
         constructor(){
             super();
+            this.sessionTag = '{{ sessionTag }}';
         }
         connectedCallback(){
-            console.log('slt010-cart-drawer-countdown added');
+            //console.log('slt010-cart-drawer-countdown added');
+        }
+        attributeChangedCallback(name, oldValue, newValue){
+            //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+            switch(name){
+                case 'data-cart-qty':
+                    this.update(newValue);
+                    break;
+                default:
+                    break;
+            }
+        }
+        update($value){
+            if(parseInt($value) > 0){
+                this.innerHTML = 'Update countdown';
+            }
+            else{
+                this.innerHTML = '';
+            }
         }
     }
     customElements.define('slt010-cart-drawer-countdown', $cro_slt010_cartDrawerCountdown);
 
     class $cro_slt010_cartDrawerProgressBar extends HTMLElement{
+        static observedAttributes = ['data-cart-qty'];
         constructor(){
             super();
+            this.sessionTag = '{{ sessionTag }}';
         }
         connectedCallback(){
-            console.log('slt010-cart-drawer-progress-bar added');
+            //console.log('slt010-cart-drawer-progress-bar added');
+        }
+        attributeChangedCallback(name, oldValue, newValue){
+            //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+            switch(name){
+                case 'data-cart-qty':
+                    this.update(newValue);
+                    break;
+                default:
+                    break;
+            }
+        }
+        update($value){
+            if(parseInt($value) > 0){
+                this.innerHTML = 'Update progress bar';
+            }
+            else{
+                this.innerHTML = '';
+            }
         }
     }
     customElements.define('slt010-cart-drawer-progress-bar', $cro_slt010_cartDrawerProgressBar);
@@ -141,7 +181,7 @@
             super();
         }
         connectedCallback(){
-            console.log('slt010-cart-drawer-message added');
+            //console.log('slt010-cart-drawer-message added');
         }
     }
     customElements.define('slt010-cart-drawer-message', $cro_slt010_cartDrawerMessage);
