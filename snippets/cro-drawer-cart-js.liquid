@@ -2,8 +2,8 @@
     class $cro_slt010_drawer_cart_class extends HTMLElement{
         constructor(){
             super();
-            this.sessionTag = '{{ sessionTag }}';
-            this.currentCart = {{ cart | json }}; //remove quotes when updating the liquid file
+            this.sessionTag = {{ sessionTag }};
+            this.currentCart = '{{ cart | json }}'; //remove quotes when updating the liquid file
             this.slug = 'slt010-cart-drawer';
         }
         connectedCallback(){
@@ -211,7 +211,7 @@
                 const $elm = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName) : $e.target;
                 const $key = ($e.target.tagName.toLowerCase() !== this.tagName) ? $e.target.closest(this.tagName).getAttribute('data-qty-add') : $e.target.getAttribute('data-qty-add');
                 const $sib = parseInt($elm.previousElementSibling.getAttribute('value'));
-                $t.cart.add({items: [{id: $key, quantity: ($sib + 1)}]}, ($data)=>{
+                $t.cart.update({id: $key, quantity: ($sib + 1)}, ($data)=>{
                     console.log('updated');
                 });
             });
