@@ -149,9 +149,15 @@
                 $x.send($data);
             }
         }
-        get($callBack){
+        async get($callBack){
             const $t = this;
-            var $x = new XMLHttpRequest();
+            const $cart = await fetch('/cart.json');
+            const $result = $cart.json();
+    
+            window.sessionStorage.setItem($t.sessionTag, JSON.stringify($result));
+            $callBack($result);
+    
+            /*/var $x = new XMLHttpRequest();
             var $f = (typeof($func) === 'function') ? $func : function(){};
             $x.onreadystatechange = function(){
                 if(this.readyState === 4 && this.status === 200){
@@ -160,7 +166,7 @@
                 }
             };
             $x.open('GET','/cart.js', true);
-            $x.send();
+            $x.send();*/
         }
         /**
          * $data is a JSON value with key item and quantity example: {id: CART_ITEM_KEY, quantity: NUMBER}
@@ -177,8 +183,9 @@
                 },
                 body: JSON.stringify($data)
             });
-            window.sessionStorage.setItem($t.sessionTag, JSON.stringify($result.json()));
-            $callBack($result.json());
+            $t.get(($r)=>{
+                console.log('results: ');
+            });
     
     
     
