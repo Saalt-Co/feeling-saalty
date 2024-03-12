@@ -21,12 +21,12 @@
         updateCart(){
             const $t = this;
             this.updateCartBody();
-            setInterval(()=>{
+            /*setInterval(()=>{
                 const $cart = window.sessionStorage.getItem($t.sessionTag);
                 if($cart.item_count === $t.currentCart.item_count){
                     $t.updateCartBody();
                 }
-            }, 50);
+            }, 50);*/
         }
         updateCartBody(){
             if(this.hasNode(this.slug + '-body')){
