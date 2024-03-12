@@ -151,7 +151,7 @@
         }
         async get($callBack){
             const $t = this;
-            const $cart = await fetch('/cart.json').then(($cart)=>{
+            fetch('/cart.json').then(($cart)=>{
                 const $result = $cart.json();
                 console.log('?? ' + JSON.stringify($cart));
                 window.sessionStorage.setItem($t.sessionTag, JSON.stringify($result));
@@ -174,19 +174,25 @@
          * or
          * $data is a JSON value with cart line item and quantity example: {line: LINE_NUMBER, quantity: NUMBER}
          */
-        async update($data, $callBack){
+        update($data, $callBack){
             const $t = this;
-            const $result = await fetch('/cart/change.json', {
-                method: 'POST',
-                headers: {
-                    'Content-Type':'application/json',
-                    'Accept':'application/json'
-                },
-                body: JSON.stringify($data)
-            }).then(()=>{
-                $t.get(($r)=>{
-                    console.log('results: ' + JSON.stringify($r));
+            async function getCartJSON($cb = ()=>{}){
+                fetch('/cart/change.json', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type':'application/json',
+                        'Accept':'application/json'
+                    },
+                    body: JSON.stringify($data)
+                }).then(($res)=>{
+                    return $res.json();
+                }).then(($data)=>{
+                    console.log('??? ' + JSON.stringify($data);)
+                    $cb($data);
                 });
+            }
+            getCartJSON(($data)=>{
+                $callBack($data);
             });
     
     
