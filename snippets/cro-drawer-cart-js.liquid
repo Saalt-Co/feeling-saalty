@@ -3,7 +3,7 @@
         constructor(){
             super();
             this.sessionTag = '{{ sessionTag }}';
-            this.currentCart = {{ cart | json }}; //remove quotes when updating the liquid file
+            this.currentCart = '{{ cart | json }}'; //remove quotes when updating the liquid file
             this.slug = 'slt010-cart-drawer';
         }
         connectedCallback(){
@@ -179,8 +179,8 @@
                 },
                 body: JSON.stringify($data)
             });
-            window.sessionStorage.setItem($t.sessionTag, $result.json());
-            $callBack($result.json());
+            window.sessionStorage.setItem($t.sessionTag, JSON.parse($result));
+            $callBack(JSON.parse($result));
     
     
     
