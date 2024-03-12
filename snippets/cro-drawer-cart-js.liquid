@@ -48,9 +48,9 @@
             const $img = (typeof($data.featured_image.url) !== 'undefined' && $data.featured_image.url !== '') ? $data.featured_image.url : $data.image;
             const $media = document.createElement('a');
     
-            $a.setAttribute('href', $data.url);
-            $a.setAttribute('data-slt010-class', 'slt010-cart-drawer-body-list-item-media');
-            $a.innerHTML = '<picture data-slt010-class="slt010-cart-drawer-body-list-item-picture">' +
+            $media.setAttribute('href', $data.url);
+            $media.setAttribute('data-slt010-class', 'slt010-cart-drawer-body-list-item-media');
+            $media.innerHTML = '<picture data-slt010-class="slt010-cart-drawer-body-list-item-picture">' +
                 '<img src="' + $img + '" alt="' + $data.product_title + '" width="90" height="90" data-slt010-class="slt010-cart-drawer-body-list-item-image" />' +
             '</picture>';
             
