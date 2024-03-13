@@ -221,24 +221,24 @@
                 const $w = ($cart.items_subtotal_price / this.shipData.min >= 100) ? 100 : $cart.items_subtotal_price / this.shipData.min * 100;
                 if($cart.items_subtotal_price < this.shipData.min){
                     const $diff = (this.shipData.min - $cart.items_subtotal_price) * .01;
-                    this.querySelector('[' + $t.nClass.msg + '="' + $id + '"]').innerHTML = $t.shipData.msg.below;
-                    this.querySelector('[' + $t.nClass.inner + '="' + $id +'"] [data-free-ship-difference]').innerHTML = ($diff.toFixed(2));
-                    this.querySelector('[' + $t.nClass.bar + '="' + $id + '"]').classList.remove($t.nClass.bar + '-complete');
-                    this.querySelector('[' + $t.nClass.bar + '="' + $id + '"]').style.width = $w + '%';
-                    this.querySelector('[' + $t.nClass.barWrp + '="' + $id + '"]').style.display = 'block';
+                    this.querySelector('[' + this.nClass.msg + '="' + $id + '"]').innerHTML = this.shipData.msg.below;
+                    this.querySelector('[' + this.nClass.inner + '="' + $id +'"] [data-free-ship-difference]').innerHTML = ($diff.toFixed(2));
+                    this.querySelector('[' + this.nClass.bar + '="' + $id + '"]').classList.remove(this.nClass.bar + '-complete');
+                    this.querySelector('[' + this.nClass.bar + '="' + $id + '"]').style.width = $w + '%';
+                    this.querySelector('[' + this.nClass.barWrp + '="' + $id + '"]').style.display = 'block';
                 }
                 else{
-                    this.querySelector('[' + $t.nClass.msg + '="' + $id + '"]').innerHTML = $t.shipData.msg.free;
-                    this.querySelector('[' + $t.nClass.bar + '="' + $id + '"]').classList.add($t.nClass.bar + '-complete');
-                    this.querySelector('[' + $t.nClass.bar + '="' + $id + '"]').style.width = $w + '%';
-                    this.querySelector('[' + $t.nClass.barWrp + '="' + $id + '"]').style.display = 'block';
+                    this.querySelector('[' + this.nClass.msg + '="' + $id + '"]').innerHTML = this.shipData.msg.free;
+                    this.querySelector('[' + this.nClass.bar + '="' + $id + '"]').classList.add(this.nClass.bar + '-complete');
+                    this.querySelector('[' + this.nClass.bar + '="' + $id + '"]').style.width = $w + '%';
+                    this.querySelector('[' + this.nClass.barWrp + '="' + $id + '"]').style.display = 'block';
                 }
             }
             else{
-                this.querySelector('[' + $t.nClass.msg + '="' + $id + '"]').innerHTML = $t.shipData.msg.default;
-                this.querySelector('[' + $t.nClass.bar + '="' + $id + '"]').classList.remove($t.nClass.bar + '-complete');
-                this.querySelector('[' + $t.nClass.bar + '="' + $id + '"]').style.width = '0';
-                this.querySelector('[' + $t.nClass.barWrp + '="' + $id + '"]').style.display = 'none';
+                this.querySelector('[' + this.nClass.msg + '="' + $id + '"]').innerHTML = this.shipData.msg.default;
+                this.querySelector('[' + this.nClass.bar + '="' + $id + '"]').classList.remove(this.nClass.bar + '-complete');
+                this.querySelector('[' + this.nClass.bar + '="' + $id + '"]').style.width = '0';
+                this.querySelector('[' + this.nClass.barWrp + '="' + $id + '"]').style.display = 'none';
             }
         }
     }
