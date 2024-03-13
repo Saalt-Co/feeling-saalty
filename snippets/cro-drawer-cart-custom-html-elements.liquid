@@ -123,8 +123,8 @@
             this.sessionTag = '{{ sessionTag }}';
             this.endTimeSession = 'cro-end-time';
             this.dates = {
-                current: '',
-                end: ''
+                current: new Date(),
+                end: new Date()
             };
             {%- for block in section.blocks -%}
                 {%- case block.type -%}
