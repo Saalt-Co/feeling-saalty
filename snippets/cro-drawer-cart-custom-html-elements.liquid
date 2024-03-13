@@ -121,6 +121,13 @@
         constructor(){
             super();
             this.sessionTag = '{{ sessionTag }}';
+            this.endTimeSession = 'cro-end-time';
+            {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                    {%- when 'countdown' -%}
+                        this.limit = {{ block.settings.limit }}
+                {%- endcase -%}
+            {%- endfor -%}
         }
         connectedCallback(){
             //console.log('slt010-cart-drawer-countdown added');
@@ -135,13 +142,47 @@
                     break;
             }
         }
+        hasNode($selector){
+            return (this.querySelectorAll($selector).length > 0) ? true : false;
+        }
         update($value){
             if(parseInt($value) > 0){
-                this.innerHTML = 'Update countdown';
+                if(!this.hasNode('[data-slt010-class="slt010-countdown-container"]')){
+                    this.innerHTML = '<div data-slt010-class="slt010-countdown-container">' + 
+                        '<h3 data-slt010-class="slt010-countdown-title">LIMITED STOCK!</h3>' +
+                        '<div data-slt010-class="slt010-countdown-content">' +
+                            '<div data-slt010-class="slt010-countdown-msg">We\'ve saved your cart for </div>' +
+                            '<div data-slt010-class="slt010-countdown"></div>' +
+                        '</div>' +
+                    '</div>';
+                }
             }
             else{
                 this.innerHTML = '';
             }
+        }
+        check($key){
+            return (this.get($key) !== null && this.get($key) !== '') ? true : false;
+        }
+        getEndTime($updateCookie = false){
+            const $d = new Date();
+            const $e = new Date($d.getTime() + (this.limit * 60 * 1000));
+            let $endTime = {
+                year: $e.getFullYear(),
+                month: $e.getMonth(),
+                day: $e.getDate(),
+                hours: $e.getHours(),
+                minutes: $e.getMinutes(),
+                seconds: $e.getSeconds()
+            };
+            if(!$updateCookie && this.check(this.endTimeSession)){
+                const $cookie = window.sessionStorage.getItem(this.endTimeSession);
+                $endTime = JSON.parse($cookie);
+            }
+            else{
+                window.sessionStorage.setItem(this.endTimeSession, JSON.stringify($endTime));
+            }
+            return $endTime;
         }
     }
     customElements.define('slt010-cart-drawer-countdown', $cro_slt010_cartDrawerCountdown);
