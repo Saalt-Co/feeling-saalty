@@ -1,5 +1,15 @@
 {
   "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {
+      }
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -88,6 +98,32 @@
         "desktop_aspect_ratio": "1\/1.5"
       }
     },
+    "rich_text_LahFNy": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LRUxV3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Buy 3+ save 15% | 5+ save 20% | 7+ save 25% on all Cups, Discs, and Underwear<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_LRUxV3"
+      ],
+      "custom_css": [
+        "p {background-color: #bfdbd9;}"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "center",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -107,7 +143,7 @@
         "filter_type": "vertical",
         "enable_sorting": true,
         "columns_mobile": "2",
-        "padding_top": 36,
+        "padding_top": 28,
         "padding_bottom": 36
       }
     },
@@ -953,108 +989,8 @@
         "padding_bottom": 0
       }
     },
-    "2421f247-3fb3-4d3e-83cf-d7f8823ef0a9": {
-      "type": "saalt-testimonials",
-      "blocks": {
-        "6331703f-fdcf-4aae-96c7-ab9cddb1af19": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "I am in love with these undies! I wore them on my heavier days for half a day, and they did a great job. No leaks, no stains! The fit was perfect; great for when you are wearing low rise pants.",
-            "author": "<strong>Kelsey R.<\/strong>",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "template--19610655392017__2421f247-3fb3-4d3e-83cf-d7f8823ef0a9-testimonial-2": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "Is it weird that I was actually looking forward to my period to be able to rock these cute undies? Like lots of people said, these are cuter than a lot of my regular underwear and it's so nice to finally ditch the backup pad. Can't wait to get more in different colors to get me through period week!",
-            "author": "<strong>Natalie E.<\/strong>",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "template--19610655392017__2421f247-3fb3-4d3e-83cf-d7f8823ef0a9-testimonial-1": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties. These are cute, they work, and I'm definitely going to buy more!",
-            "author": "<strong>Michelle C.<\/strong>",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "6331703f-fdcf-4aae-96c7-ab9cddb1af19",
-        "template--19610655392017__2421f247-3fb3-4d3e-83cf-d7f8823ef0a9-testimonial-2",
-        "template--19610655392017__2421f247-3fb3-4d3e-83cf-d7f8823ef0a9-testimonial-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "slide_height": "adapt_image",
-        "slider_visual": "dots",
-        "auto_rotate": true,
-        "change_slides_speed": 5,
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "include_img": true,
-        "image": "shopify:\/\/shop_images\/Testimonials_1.jpg",
-        "image_behavior": "none",
-        "accessibility_info": "Slideshow of customer reviews"
-      }
-    },
-    "f3d28335-7123-4133-9323-a99fd5d9e99e": {
-      "type": "newsletter",
-      "blocks": {
-        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Do you have a period? Great, we're here to make it better (starting with 15% off your first order). 😉",
-            "heading_size": "h1"
-          }
-        },
-        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-paragraph-1": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Subscribe to receive all you need to know about the period flow, pointers, and perks that come as often as your period does.<\/p>"
-          }
-        },
-        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-email_form-1": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-heading-1",
-        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-paragraph-1",
-        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-email_form-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "theme_color_background": "theme-color-bg-5",
-        "theme_color_text": "theme_default",
-        "input_opacity": 25,
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "shogun-above": {
-      "type": "shogun-above",
-      "settings": {
-      }
-    },
     "shogun-below": {
       "type": "shogun-below",
-      "settings": {
-      }
-    },
-    "shogun-helper": {
-      "type": "shogun-helper",
       "settings": {
       }
     }
@@ -1064,6 +1000,7 @@
     "shogun-above",
     "banner",
     "4b7bcf70-9b6b-48c4-a538-0e13cf35a435",
+    "rich_text_LahFNy",
     "product-grid",
     "826ab071-d85e-4cc1-981e-0f5623d9ae40",
     "14203610-b21b-4177-bf34-1181886aaa2c",
@@ -1074,8 +1011,6 @@
     "43429256-3f8c-4e7f-8078-fd40fcbd53b6",
     "b4f29bbb-7268-4349-91b5-1ab1f590f3c0",
     "1b9dee2b-76db-4cda-bad0-2f1cfeadc02f",
-    "2421f247-3fb3-4d3e-83cf-d7f8823ef0a9",
-    "f3d28335-7123-4133-9323-a99fd5d9e99e",
     "shogun-below"
   ]
 }
