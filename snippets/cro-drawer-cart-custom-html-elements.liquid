@@ -168,14 +168,14 @@
                         {%- assign thresholdShop = threshold | times: 100 -%}
                         {%- assign defaultMsg = block.setting.msg-below | replace: '{amount}', threshold -%}
                         {%- assign appendStr = '<span data-free-ship-difference="' | append: thresholdShop  | append: '"></span>' -%}
-                        {%- assign belowMsg =  block.settings.msg-complete | replace: '{amount}', appendStr -%}
+                        {%- assign belowMsg =  block.settings.msg-below | replace: '{amount}', appendStr -%}
 
                         this.shipData = {
                             min: {{ threshold | times: 100 }},
                             msg: {
-                                default: '{{ block.settings.msg-default }}',
-                                below: '{{ defaultMsg }}',
-                                free: '{{ belowMsg }}'
+                                default: '{{ defaultMsg }}',
+                                below: '{{ belowMsg }}',
+                                free: '{{ block.settings.msg-complete }}'
                             }
                         };
                 {%- endcase -%}
