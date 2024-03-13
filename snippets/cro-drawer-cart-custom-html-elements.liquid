@@ -139,7 +139,7 @@
             //console.log('slt010-cart-drawer-countdown added');
         }
         attributeChangedCallback(name, oldValue, newValue){
-            console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+            //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
             switch(name){
                 case 'data-cart-qty':
                     this.update(newValue, oldValue);
@@ -193,7 +193,6 @@
             else{
                 window.sessionStorage.setItem(this.endTimeSession, JSON.stringify($endTime));
             }
-            console.log('DATE: ' + JSON.stringify($endTime));
             return $endTime;
         }
         setCurrentDate(){
