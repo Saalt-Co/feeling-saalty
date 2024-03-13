@@ -164,7 +164,7 @@
                     '</div>';
                 }
                 this.querySelector('[data-slt010-class="slt010-countdown"]').innerHTML = '';
-                if($oldValue !== null || parseInt($oldValue) === 0){
+                if($oldValue !== null && parseInt($oldValue) !== 0){
                     this.querySelector('[data-slt010-class="slt010-countdown-container"]').style.display = 'flex';
                 }
                 this.create('[data-slt010-class="slt010-countdown"]', $endTime, ()=>{
