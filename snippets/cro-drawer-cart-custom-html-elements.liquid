@@ -138,7 +138,7 @@
             //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
             switch(name){
                 case 'data-cart-qty':
-                    this.update(newValue);
+                    this.update(newValue, oldValue);
                     break;
                 default:
                     break;
@@ -147,8 +147,9 @@
         hasNode($selector){
             return (this.querySelectorAll($selector).length > 0) ? true : false;
         }
-        update($value){
+        update($value, oldValue){
             if(parseInt($value) > 0){
+                const $endTime = (oldValue === null) ? this.getEndTime() : this.getEndTime(true);
                 if(!this.hasNode('[data-slt010-class="slt010-countdown-container"]')){
                     this.innerHTML = '<div data-slt010-class="slt010-countdown-container">' + 
                         '<h3 data-slt010-class="slt010-countdown-title">' + this.headline + '</h3>' +
@@ -158,6 +159,10 @@
                         '</div>' +
                     '</div>';
                 }
+                this.querySelector('[data-slt010-class="slt010-countdown"]').innerHTML = '';
+                this.create('[data-slt010-class="slt010-countdown"]', $endTime, ()=>{
+                    this.querySelector('[data-slt010-class="slt010-countdown-container"]').style.display = 'none';
+                });
             }
             else{
                 this.innerHTML = '';
@@ -185,6 +190,59 @@
                 window.sessionStorage.setItem(this.endTimeSession, JSON.stringify($endTime));
             }
             return $endTime;
+        }
+        setCurrentDate(){
+            this.dates.current = new Date();
+        }
+        setEndDate($data){
+            this.dates.end = new Date($data.year, $data.month, $data.day, $data.hours, $data.minutes, $data.seconds);
+        }
+        getMinutes(){
+            const $e = this.dates.end.getTime() - this.dates.current.getTime();
+            const $d = Math.floor($e / (24 * 60 * 60 * 1000));
+            const $h = Math.floor(($e - $d * (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+            const $m = Math.floor(($e - $d * (24 * 60 * 60 * 1000) - $h * (60 * 60 * 1000)) / 60000);
+            return ($m < 10) ? '0' + $m : $m;
+        }
+        getSeconds(){
+            const $e = this.dates.end.getTime() - this.dates.current.getTime();
+            const $d = Math.floor($e / (24 * 60 * 60 * 1000));
+            const $h = Math.floor(($e - $d * (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+            const $m = Math.floor(($e - $d * (24 * 60 * 60 * 1000) - $h * (60 * 60 * 1000)) / 60000);
+            const $s = Math.floor(($e - $d * (24 * 60 * 60 * 1000) - $h * (60 * 60 * 1000) - $m * (60000)) / 1000);
+            return ($s < 10) ? '0' + $s : $s;
+        }
+        update($callback){
+            let $value = true;
+            if(this.dates.end.getTime() > this.dates.current.getTime()){
+                this.querySelector('[data-countdown-minutes]').innerHTML = this.getMinutes();
+                this.querySelector('[data-countdown-seconds]').innerHTML = this.getSeconds();
+            }
+            else{
+                $callback();
+                $value = false;
+            }
+            return $value;
+        }
+        start($callback){
+            const $t = this;
+            $t.update($id, $callback);
+            let $timer = setInterval(()=>{
+                $t.setCurrentDate();
+                const $time = $t.update($callback);
+                if(!$time){
+                    clearInterval($timer);
+                }
+            }, 1000);
+        }
+        create($selector, $endData, $callback = ()=>{}){
+            this.setCurrentDate();
+            this.setEndDate($endData);
+            this.querySelector($selector).innerHTML = '<div data-countdown-wrap="' + this.tagName + '">' +
+                '<div><span data-countdown-minutes="' + this.tagName + '"></span></div>:' +
+                '<div><span data-countdown-seconds="' + this.tagName + '"></span></div>' +
+            '</div>';
+            this.start($id, $callback);
         }
     }
     customElements.define('slt010-cart-drawer-countdown', $cro_slt010_cartDrawerCountdown);
