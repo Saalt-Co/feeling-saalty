@@ -166,7 +166,7 @@
                     {%- when 'progress-bar' -%}
                         {%- assign threshold = block.settings.min -%}
                         {%- assign thresholdShop = threshold | times: 100 -%}
-                        {%- assign defaultMsg = block.setting.msg-default | replace: '{amount}', threshold -%}
+                        {%- assign defaultMsg = block.settings.msg-default | replace: '{amount}', threshold -%}
                         {%- assign appendStr = '<span data-free-ship-difference="' | append: thresholdShop  | append: '"></span>' -%}
                         {%- assign belowMsg =  block.settings.msg-below | replace: '{amount}', appendStr -%}
 
