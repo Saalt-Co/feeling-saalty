@@ -11,6 +11,6 @@
         {%- when 'footer' -%}
             <slt010-cart-drawer-footer></slt010-cart-drawer-footer>
         {%- when 'message' -%}
-            <slt010-cart-drawer-message></slt010-cart-drawer-message>
+            <slt010-cart-drawer-message>{{ block.settings.msg-banner }}</slt010-cart-drawer-message>
     {%- endcase -%}
 {%- endfor -%}
