@@ -1,727 +1,356 @@
-<style id="{{ section.id }}-style">
-    :root{
-        --data-shipping-progress-bar-bg-color: #fff;
-        --data-shipping-progress-bar-progress-bar-bg: #eee;
-        --data-shipping-progress-bar-progress-bar: #f7d6c5;
-        --data-shipping-progress-bar-progress-bar-complete: #f7d6c5;
-        --data-shipping-progress-bar-font-color: #3f3f3f;
-        --data-shipping-progress-bar-font-size: 14px;
-        --data-shipping-progress-bar-border-color: #e1e1e1;
-    }
-    
-    [data-countdown-days],
-    [data-countdown-hours]{
-        display: none;
-    }
-    [data-countdown-minutes],
-    [data-countdown-seconds]{
-        width: 20px;
-        display: flex;
-        justify-content: center;
-        color: #535353;
-    }
-    [data-slt010-class="slt010-countdown-container"]{
-        height: auto;
-        margin: 0 0 10px;
-        padding: 15px;
-        background-color: #f7d6c5;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-    }
-    [data-slt010-class="slt010-countdown-title"]{
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        align-items: center;
-        color: #535353;
-        text-transform: uppercase;
-        font-size: 18.31px !important;
-        letter-spacing: 1.14px;
-    }
-    [data-slt010-class="slt010-countdown-content"]{
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        align-items: center;
-    }
-    [data-slt010-class="slt010-countdown-msg"]{
-        margin-right: 3px;
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        align-items: center;
-        color: #535353;
-    }
-    [data-slt010-class="slt010-countdown"]{
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        align-items: center;
-    }
-    [data-countdown-wrap="SLT010-CART-DRAWER-COUNTDOWN"]{
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        align-items: center;
-        color: #535353;
-    }
-    [data-countdown-wrap="SLT010-CART-DRAWER-COUNTDOWN"] > div{
-        display: flex;
-        flex: 0 0 auto;
-    }
-    
-    [data-slt010-class="slt010-cart-page-countdown"]{
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-    [data-slt010-class="slt010-cart-page-countdown"] [data-slt010-class="slt010-countdown-container"]{
-        flex: 0 0 100%;
-        width: 100%;
-        max-width: 1000px;
-    }
-    
-    [data-shipping-progress-bar-inner] {
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 10px;
-        background-color: var(--data-shipping-progress-bar-bg-color);
-        border: solid 1px var(--data-shipping-progress-bar-border-color);
-        display: flex;
-    }
-    [data-shipping-progress-bar-wrap] {
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex: 0 0 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    [data-shipping-progress-bar-txt-wrap]{
-        width: auto;
-        max-width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 0 5px 0 0;
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        align-items: center;
-    }
-    [data-shipping-progress-bar-msg]{
-        color: var(--data-shipping-progress-bar-font-color);
-        text-align: center;
-        font-size: var(--data-shipping-progress-bar-font-size);
-    }
-    
-    [data-shipping-progress-bar-bar-wrap]{
-        width: 100%;
-        height: 10px;
-        margin: 5px 10px;
-        padding: 0;
-        background-color: var(--data-shipping-progress-bar-progress-bar-bg);
-        border-radius: 10px;
-        display: flex;
-        flex: 0 0 100%;
-        justify-content: flex-start;
-        align-items: center;
-        overflow: hidden;
-    }
-    [data-shipping-progress-bar-bar]{
-        width: 0;
-        height: 10px;
-        margin: 0;
-        padding: 0;
-        background-color: var(--data-shipping-progress-bar-progress-bar);
-        border-radius: 10px;
-        display: flex !important;
-        transition-delay: 100ms;
-        transition-duration: 1000ms;
-        transition-property: width;
-        transition-timing-function: ease;
-    }
-    [data-shipping-progress-bar-bar].data-shipping-progress-bar-bar-complete{
-        background-color: var(--data-shipping-progress-bar-progress-bar-complete);
-    }
-    
-    
-    @media all and (max-width: 767px) {  
-        [data-shipping-progress-bar-bar-wrap]{
-            margin-top: 8px;
+<script>    
+    class $cro_slt010_cartDrawerBlock extends HTMLElement{
+        static observedAttributes = ['data-opened'];
+        constructor(){
+            super();
+        }
+        connectedCallback(){
+            console.log('slt010-cart-drawer-block added');
+            this.addOverlay();
+            this.addCloseButton();
+        }
+        addOverlay(){
+            const $t = this;
+            if(this.querySelectorAll('slt010-cart-drawer-overlay').length < 1){
+                const $overlay = document.createElement('slt010-cart-drawer-overlay');
+                $overlay.addEventListener('click', function($e){
+                    $t.closeDrawer($e);
+                });
+                this.appendChild($overlay);
+            }
+        }
+        addCloseButton(){
+            const $t = this;
+            if(this.querySelectorAll('slt010-cart-drawer-container').length > 0 && this.querySelectorAll('slt010-cart-drawer-close-button').length < 1){
+                const $container = this.querySelectorAll('slt010-cart-drawer-container');
+                const $closeButton = document.createElement('slt010-cart-drawer-close-button');
+                $closeButton.innerHTML = '&times;';
+                $closeButton.addEventListener('click', function($e){
+                    $t.closeDrawer($e);
+                });
+                $container[0].appendChild($closeButton);
+            }
+        }
+        closeDrawer($event){
+            $event.target.closest(this.tagName).setAttribute('data-opened', 'false');
+        }
+        attributeChangedCallback(name, oldValue, newValue){
+            //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+            switch(name){
+                case 'data-opened':
+                    this.drawerOpened(newValue);
+                    break;
+                default:
+                    break;
+            }
+        }
+        drawerOpened($value){
+            if($value === 'true'){
+                document.body.classList.add('slt010-cart-drawer-block-open');
+            }
+            else{
+                document.body.classList.remove('slt010-cart-drawer-block-open');
+            }
         }
     }
-    body.slt010-cart-drawer-block-open{
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-    }
-    #shopify-section-{{ section.id }}{
-        width: 0;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-        display: block;
-        position: fixed;
-        top:0;
-        left: 100%;
-        z-index: 99;
-    }
+    customElements.define('slt010-cart-drawer-block', $cro_slt010_cartDrawerBlock);
 
-    slt010-cart-drawer-block{
-        width: 0;
-        height: 100%;
-        margin: 0 auto;
-        padding: 0;
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 100%;
-        opacity: 0;
-        overflow: hidden;
-        z-index: -9999;
-        transition-delay: 1ms;
-        transition-duration: 20ms;
-        transition-property: all;
-        transition-timing-function: ease;
-    }
-    slt010-cart-drawer-block[data-opened="true"] {
-        width: 100vw;
-        display: flex;
-        left: 0;
-        opacity: 1;
-        z-index: 99;
-        transition-delay: 1ms;
-        transition-duration: 20ms;
-        transition-property: all;
-        transition-timing-function: ease;
-    }
-
-    slt010-cart-drawer-block slt010-cart-drawer-overlay{
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-        display: flex !important;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(0,0,0,.5);
-        z-index: -1;
-        opacity: 0;
-        transition-delay: 1ms;
-        transition-duration: 1000ms;
-        transition-property: all;
-        transition-timing-function: ease;
-    }
-    slt010-cart-drawer-block[data-opened="true"] slt010-cart-drawer-overlay{
-        left: 0;
-        opacity: 1;
-        transition-delay: 1ms;
-        transition-duration: 2000ms;
-        transition-property: all;
-        transition-timing-function: ease;
-    }
-
-    slt010-cart-drawer-block slt010-cart-drawer-container{
-        width: 90vw;
-        max-width: 500px;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex: 0 0 90vw;
-        position: absolute;
-        top: 0;
-        right: -100%;
-        overflow: hidden;
-        z-index: 0;
-        transition-delay: 1ms;
-        transition-duration: 900ms;
-        transition-property: right;
-        transition-timing-function: ease;
-    }
-    slt010-cart-drawer-block[data-opened="true"] slt010-cart-drawer-container{
-        right: 0;
-        transition-delay: 1ms;
-        transition-duration: 1000ms;
-        transition-property: right;
-        transition-timing-function: ease;
-    }
-    slt010-cart-drawer{
-        height: 100%;
-        margin: 0 auto;
-        padding: 0;
-        display: flex;
-        flex: 0 0 100%;
-        flex-direction: column;
-        align-content: flex-start;
-        position: relative;
-        background-color: #fff;
-        border-radius: 15px;
-        z-index: 0;
-        overflow: hidden;
-    }
-
-    slt010-cart-drawer-header{
-        width: 100%;
-        margin: 0;
-        padding: 10px 20px;
-        border-bottom: solid 1px #e3e3e3;
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-        font-weight: 600;
-        text-align: center;
-        text-transform: uppercase;
-        letter-spacing: 0px;
-        line-height: 34px;
-        color: #232323;
-    }
-    slt010-cart-drawer-progress-bar{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex: 0 0 auto;
-        flex-wrap: wrap;
-    }
-    slt010-cart-drawer-countdown{
-        width: 100%;
-        flex: 0 0 auto;
-    }
-    slt010-cart-drawer-body{
-        width: 100%;
-        margin: 0;
-        padding: 0 15px;
-        display: flex;
-        flex: 1 1 100%;
-        flex-wrap: wrap;
-        overflow: auto;
-        scrollbar-width: thin;
-        scrollbar-color: rgba(0,0,0,1) rgba(0,0,0,.3);
-    }
-    slt010-cart-drawer-body::-webkit-scrollbar{
-        width: 5px;
-    }
-    slt010-cart-drawer-body::-webkit-scrollbar-track{
-        background-color: rgba(0,0,0,.3);
-    }
-    slt010-cart-drawer-body::-webkit-scrollbar-thumb{
-        background-color: rgba(0,0,0,1);
-    }
-    slt010-cart-drawer-body-list{
-        margin: 0;
-        padding: 0 5px;
-        display: flex;
-        flex: 0 0 100%;
-        flex-direction: column;
-    }
-    slt010-cart-drawer-body-list-item{
-        width: 100%;
-        margin: 0;
-        padding: 20px 0;
-        border-bottom: solid 1px #eee;
-        display: flex;
-        flex: 0 0 auto;
-    }
-    [data-slt010-class="slt010-cart-drawer-body-list-item-media"]{
-        width: 90px;
-        height: 90px;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex: 0 0 90px;
-    }
-    [data-slt010-class="slt010-cart-drawer-body-list-item-picture"]{
-        width: 100%;
-        height: 0;
-        margin: 0;
-        padding: 100% 0 0;
-        display: flex;
-        flex: 0 0 100%;
-        position: relative;
-    }
-    [data-slt010-class="slt010-cart-drawer-body-list-item-image"]{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    slt010-cart-drawer-body-list-item-meta{
-        margin: 0 0 0 20px;
-        padding: 0;
-        display: flex;
-        flex: 1 1 100%;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        position: relative;
-    }
-    [data-slt010-class="slt010-cart-drawer-body-list-item-title"]{
-        margin: 0;
-        padding: 0 30px 0 0;
-        display: flex;
-        flex: 0 0 100%;
-        align-items: center;
-        font-size: 14px;
-        font-weight: 700;
-        color: #535353;
-    }
-    [data-slt010-class="slt010-cart-drawer-body-list-item-variant-title"]{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex: 0 0 100%;
-        align-items: center;
-        font-size: 12px;
-        font-weight: 400;
-        color: #535353;
-    }
-    [data-slt010-class="slt010-cart-drawer-body-list-item-discount-list"]{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex: 0 0 100%;
-        align-items: center;
-        font-size: 12px;
-        font-weight: 400;
-        color: #44be70;
-    }
-    [data-slt010-class="slt010-discount"]{
-        color: #44be70;
-    }
-    [data-slt010-class="slt010-cart-drawer-body-list-item-remove-btn"]{
-        width: 15px;
-        min-width: auto;
-        height: 15px;
-        min-height: auto;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        top: 3px;
-        right: 0;
-        z-index: 1;
-        outline: none;
-        border: none;
-        box-shadow: none;
-        background: none;
-        cursor: pointer;
-        line-height: 20px;
-        color: #999;
-        font-size: 14px;
-        cursor: pointer;
-    }
-    [data-slt010-class="slt010-cart-drawer-body-list-item-remove-btn"] svg{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    [data-slt010-class="slt010-cart-drawer-body-list-item-qty-container"]{
-        margin: 5px 0 0;
-        padding: 0;
-        display: flex;
-        flex: 0 0 50%;
-        align-items: center;
-    }
-    [data-slt010-class="slt010-cart-drawer-body-list-item-qty-wrap"]{
-        border: solid 1px #e3e3e3;
-        display: flex;
-        flex: 0 0 auto;
-        align-items: center;
-    }
-    [data-slt010-class="slt010-cart-drawer-body-list-item-qty-wrap"] > button{
-        width: 36px;
-        height: 24px;
-        margin: 0;
-        padding: 0;
-        background-color: transparent;
-        border: 0;
-        display: flex;
-        flex: 0 0 36px;
-        align-items: center;
-        justify-content: center;
-        font-size: 16px;
-        font-weight: 700;
-        color: #232323;
-        cursor: pointer;
-    }
-    [data-slt010-class="slt010-cart-drawer-body-list-item-qty-wrap"] > input{
-        width: 36px;
-        height: 24px;
-        margin: 0;
-        padding: 0;
-        background-color: transparent;
-        border: solid 1px transparent;
-        border-left-color: #e3e3e3;
-        border-right-color: #e3e3e3;
-        display: flex;
-        flex: 0 0 36px;
-        align-items: center;
-        justify-content: center;
-        font-size: 12px;
-        font-weight: 700;
-        color: #232323;
-        text-align: center;
-    }
-    [data-slt010-class="slt010-cart-drawer-body-list-item-qty-wrap"] > input::-webkit-outer-spin-button,
-    [data-slt010-class="slt010-cart-drawer-body-list-item-qty-wrap"] > input::-webkit-inner-spin-button{
-        -webkit-appearance: none;
-        margin: 0;
-    }
-    [data-slt010-class="slt010-cart-drawer-body-list-item-qty-wrap"] > input{
-        -moz-appearance: textfield;
-    }
-    [data-slt010-class="slt010-cart-drawer-body-list-item-price"]{
-        margin: 5px 0 0;
-        padding: 0;
-        display: flex;
-        flex: 0 0 50%;
-        justify-content: flex-end;
-        align-items: center;
-        font-size: 12px;
-        font-weight: 400;
-        color: #535353;
-    }
-
-
-    [data-slt010-class="slt010-cart-drawer-upsell"]{
-        width: calc(100% + 30px);
-        margin: 0 -15px;
-        padding: 20px 25px;
-        background-color: #fafafa;
-        border-top: solid 1px #e3e3e3;
-        display: flex;
-        flex: 0 0 auto;
-        flex-wrap: wrap;
-    }
-    [data-slt010-class="slt010-cart-drawer-upsell"] > h4{
-        margin: 0;
-        display: flex;
-        flex: 0 0 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    [data-slt010-class="slt010-cart-drawer-upsell-item"]{
-        padding: 20px;
-        display: flex;
-        flex: 0 0 33.3333%;
-        flex-direction: column;
-        align-items: center;
-    }
-    [data-slt010-class="slt010-cart-drawer-upsell-image-link"]{
-        width: 100%;
-        max-width: 113px;
-        max-height: 113px;
-        margin: 0 0 10px;
-        padding: 0;
-        display: flex;
-        flex: 0 0 auto;
-    }
-    [data-slt010-class="slt010-cart-drawer-upsell-picture"]{
-        width: 100%;
-        height: 0;
-        margin: 0;
-        padding: 100% 0 0;
-        display: flex;
-        position: relative;
-    }
-    [data-slt010-class="slt010-cart-drawer-upsell-image"]{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    [data-slt010-class="slt010-cart-drawer-upsell-meta"]{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex: 1 1 100%;
-        flex-direction: column;
-    }
-    [data-slt010-class="slt010-cart-drawer-upsell-title-link"]{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex: 1 1 100%;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: center;
-        font-size: 14px;
-        line-height: 18px;
-        color: #535353;
-        text-decoration: none;
-    }
-    [data-slt010-class="slt010-cart-drawer-upsell-meta-price"]{
-        width: 100%;
-        margin: 0;
-        padding: 10px 0 0;
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        align-items: center;
-        font-size: 14px;
-        line-height: 18px;
-        color: #535353;
-    }
-    [data-slt010-class="slt010-cart-drawer-upsell-meta-form"]{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex: 0 0 auto;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    [data-slt010-class="slt010-cart-drawer-upsell-meta-form-select"]{
-        width: 100%;
-        margin: 20px 0;
-        padding: 10px 15px;
-        background-color: #fff;
-        border: solid 1px #ccc;
-        border-radius: 5px;
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        align-items: center;
-        color: #232323;
-    }
-    [data-slt010-class="slt010-cart-drawer-upsell-meta-form-select"][data-slt010-visible="slt010-hidden"]{
-        visibility: hidden;
-    }
-    [data-slt010-class="slt010-cart-drawer-upsell-meta-form-btn"]{
-        width: 100%;
-        margin: 0 0 20px;
-        padding: 10px 15px;
-        background: #f7d6c5;
-        border: solid 2px #f7d6c5;
-        border-radius: 5px;
-        display: flex;
-        flex: 0 0 auto;
-        justify-content: center;
-        align-items: center;
-        color: #3f4759;
-        font-size: 16px;
-    }
-
-    slt010-cart-drawer-empty{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex: 1 1 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    slt010-cart-drawer-footer{
-        width: 100%;
-        margin: 0;
-        padding: 20px;
-        border-top: solid 1px #e3e3e3;
-        display: flex;
-        flex: 0 0 auto;
-        flex-wrap: wrap;
-    }
-    slt010-cart-drawer-footer:empty{
-        display: none;
-    }
-    [data-slt010-class="slt010-cart-drawer-footer"]{
-        width: 100%;
-        margin: 0;
-        padding: 20px;
-        border-top: solid 1px #e3e3e3;
-        display: flex;
-        flex: 0 0 auto;
-        flex-wrap: wrap;
-    }
-    [data-slt010-class="slt010-cart-drawer-footer-subtotal"]{
-        display: flex;
-        flex: 0 0 100%;
-        justify-content: space-between;
-        align-items: center;
-    }
-    [data-slt010-class="slt010-cart-drawer-footer-subtotal-label"]{
-        display: flex;
-        flex: 0 0 auto;
-        align-items: center;
-        font-size: 13px;
-        font-weight: 700;
-        color: #232323;
-    }
-    [data-slt010-class="slt010-cart-drawer-footer-subtotal-amount"]{
-        display: flex;
-        flex: 0 0 auto;
-        align-items: center;
-        font-size: 13px;
-        font-weight: 700;
-        color: #232323;
-    }
-    [data-slt010-class="slt010-cart-drawer-footer-checkout-btn"]{
-        margin: 0;
-        padding: 10px 15px;
-        background-color: #f7d6c5;
-        border: solid 2px #f7d6c5;
-        border-radius: 5px;
-        display: flex;
-        flex: 100%;
-        justify-content: center;
-        align-items: center;
-        color: #3f4759;
-        font-size: 16px;
-        text-align: center;
-        text-transform: capitalize;
-    }
-
-    slt010-cart-drawer-close-button{
-        width: 30px;
-        height: 30px;
-        margin: 0;
-        padding: 0;
-        background-color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        font-size: 40px;
-        line-height: .7;
-        cursor: pointer;
-    }
-    @media all and (max-width: 767px) {  
-        slt010-cart-drawer{
-            width: 100vw;
+    class $cro_slt010_cartDrawerHeader extends HTMLElement{
+        constructor(){
+            super();
         }
-        [data-slt010-class="slt010-cart-drawer-body-list-item-price"]{
-            flex: 1 0 auto;
-        }
-        [data-slt010-class="slt010-cart-drawer-upsell-item"]{
-            flex: 0 0 50%;
+        connectedCallback(){
+            //console.log('slt010-cart-drawer-header added');
         }
     }
-</style>
+    customElements.define('slt010-cart-drawer-header', $cro_slt010_cartDrawerHeader);
+
+    class $cro_slt010_cartDrawerFooter extends HTMLElement{
+        static observedAttributes = ['data-cart-qty'];
+        constructor(){
+            super();
+            this.sessionTag = '{{ sessionTag }}';
+        }
+        connectedCallback(){
+            //console.log('slt010-cart-drawer-footer added');
+        }
+        attributeChangedCallback(name, oldValue, newValue){
+            //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+            switch(name){
+                case 'data-cart-qty':
+                    this.update(newValue);
+                    break;
+                default:
+                    break;
+            }
+        }
+        update($value){
+            if(parseInt($value) > 0){
+                const $cart = JSON.parse(window.sessionStorage.getItem(this.sessionTag));
+                const $btn = document.createElement('button');
+                const $items = ($cart.item_count === 1) ? ' (1 item)' : ' (' + $cart.item_count + ' items)';
+                const $price = ($cart.total_discount !== 0) ? '<span data-slt010-class="slt010-discount">$' + ($cart.items_subtotal_price * .01).toFixed(2) + '</span>&nbsp;<s>$' + ($cart.original_total_price * .01).toFixed(2) + '</s>' : '$' + ($cart.items_subtotal_price * .01).toFixed(2);
+                this.innerHTML = '<div data-slt010-class="slt010-cart-drawer-footer-subtotal">' + 
+                    '<div data-slt010-class="slt010-cart-drawer-footer-subtotal-label">' + 
+                        'Subtotal' + $items +
+                    '</div>' +
+                    '<div data-slt010-class="slt010-cart-drawer-footer-subtotal-amount">' + 
+                        $price +
+                    '</div>' +
+                '</div>';
+
+                $btn.type = 'button';
+                $btn.setAttribute('data-slt010-class','slt010-cart-drawer-footer-checkout-btn');
+                $btn.innerHTML = 'checkout';
+                $btn.addEventListener('click', function($e){
+                    $e.preventDefault();
+                    window.location.href = '/checkout/';
+                });
+
+                this.appendChild($btn);
+            }
+            else{
+                this.innerHTML = '';
+            }
+        }
+    }
+    customElements.define('slt010-cart-drawer-footer', $cro_slt010_cartDrawerFooter);
+
+    class $cro_slt010_cartDrawerCountdown extends HTMLElement{
+        static observedAttributes = ['data-cart-qty'];
+        constructor(){
+            super();
+            this.sessionTag = '{{ sessionTag }}';
+            this.endTimeSession = 'cro-end-time';
+            this.dates = {
+                current: new Date(),
+                end: new Date()
+            };
+            {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                    {%- when 'countdown' -%}
+                        this.limit = {{ block.settings.time }};
+                        this.headline = '{{ block.settings.headline }}';
+                        this.msg = '{{ block.settings.msg | escape }}';
+                {%- endcase -%}
+            {%- endfor -%}
+        }
+        connectedCallback(){
+            //console.log('slt010-cart-drawer-countdown added');
+        }
+        attributeChangedCallback(name, oldValue, newValue){
+            //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+            switch(name){
+                case 'data-cart-qty':
+                    this.update(newValue, oldValue);
+                    break;
+                default:
+                    break;
+            }
+        }
+        hasNode($selector){
+            return (this.querySelectorAll($selector).length > 0) ? true : false;
+        }
+        update($value, $oldValue){
+            if(parseInt($value) > 0){
+                const $endTime = ($oldValue === null) ? this.getEndTime() : this.getEndTime(true);
+                if(!this.hasNode('[data-slt010-class="slt010-countdown-container"]')){
+                    this.innerHTML = '<div data-slt010-class="slt010-countdown-container">' + 
+                        '<h3 data-slt010-class="slt010-countdown-title">' + this.headline + '</h3>' +
+                        '<div data-slt010-class="slt010-countdown-content">' +
+                            '<div data-slt010-class="slt010-countdown-msg">' + this.msg + ' </div>' +
+                            '<div data-slt010-class="slt010-countdown"></div>' +
+                        '</div>' +
+                    '</div>';
+                }
+                this.querySelector('[data-slt010-class="slt010-countdown"]').innerHTML = '';
+                this.create('[data-slt010-class="slt010-countdown"]', $endTime, ()=>{
+                    this.querySelector('[data-slt010-class="slt010-countdown-container"]').style.display = 'none';
+                });
+            }
+            else{
+                this.innerHTML = '';
+            }
+        }
+        check($key){
+            return (window.sessionStorage.getItem($key) !== null && window.sessionStorage.getItem($key) !== '') ? true : false;
+        }
+        getEndTime($updateCookie = false){
+            const $d = new Date();
+            const $e = new Date($d.getTime() + (this.limit * 60 * 1000));
+            let $endTime = {
+                year: $e.getFullYear(),
+                month: $e.getMonth(),
+                day: $e.getDate(),
+                hours: $e.getHours(),
+                minutes: $e.getMinutes(),
+                seconds: $e.getSeconds()
+            };
+            if(!$updateCookie && this.check(this.endTimeSession)){
+                const $cookie = window.sessionStorage.getItem(this.endTimeSession);
+                $endTime = JSON.parse($cookie);
+            }
+            else{
+                window.sessionStorage.setItem(this.endTimeSession, JSON.stringify($endTime));
+            }
+            return $endTime;
+        }
+        setCurrentDate(){
+            this.dates.current = new Date();
+        }
+        setEndDate($data){
+            this.dates.end = new Date($data.year, $data.month, $data.day, $data.hours, $data.minutes, $data.seconds);
+        }
+        getMinutes(){
+            const $e = this.dates.end.getTime() - this.dates.current.getTime();
+            const $d = Math.floor($e / (24 * 60 * 60 * 1000));
+            const $h = Math.floor(($e - $d * (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+            const $m = Math.floor(($e - $d * (24 * 60 * 60 * 1000) - $h * (60 * 60 * 1000)) / 60000);
+            return ($m < 10) ? '0' + $m : $m;
+        }
+        getSeconds(){
+            const $e = this.dates.end.getTime() - this.dates.current.getTime();
+            const $d = Math.floor($e / (24 * 60 * 60 * 1000));
+            const $h = Math.floor(($e - $d * (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+            const $m = Math.floor(($e - $d * (24 * 60 * 60 * 1000) - $h * (60 * 60 * 1000)) / 60000);
+            const $s = Math.floor(($e - $d * (24 * 60 * 60 * 1000) - $h * (60 * 60 * 1000) - $m * (60000)) / 1000);
+            return ($s < 10) ? '0' + $s : $s;
+        }
+        updateCountdown($callback = ()=>{}){
+            let $value = true;
+            if(this.dates.end.getTime() > this.dates.current.getTime()){
+                this.querySelector('[data-countdown-minutes]').innerHTML = this.getMinutes();
+                this.querySelector('[data-countdown-seconds]').innerHTML = this.getSeconds();
+            }
+            else{
+                $callback();
+                $value = false;
+            }
+            return $value;
+        }
+        start($callback = ()=>{}){
+            const $t = this;
+            $t.updateCountdown($callback);
+            let $timer = setInterval(()=>{
+                $t.setCurrentDate();
+                const $time = $t.updateCountdown($callback);
+                if(!$time){
+                    clearInterval($timer);
+                }
+            }, 1000);
+        }
+        create($selector, $endData, $callback = ()=>{}){
+            this.setCurrentDate();
+            this.setEndDate($endData);
+            this.querySelector($selector).innerHTML = '<div data-countdown-wrap="' + this.tagName + '">' +
+                '<div><span data-countdown-minutes="' + this.tagName + '"></span></div>:' +
+                '<div><span data-countdown-seconds="' + this.tagName + '"></span></div>' +
+            '</div>';
+            this.start($callback);
+        }
+    }
+    customElements.define('slt010-cart-drawer-countdown', $cro_slt010_cartDrawerCountdown);
+
+    class $cro_slt010_cartDrawerProgressBar extends HTMLElement{
+        static observedAttributes = ['data-cart-qty'];
+        constructor(){
+            super();
+            this.sessionTag = '{{ sessionTag }}';
+            this.nClass = {
+                inner: 'data-shipping-progress-bar-inner',
+                wrap: 'data-shipping-progress-bar-wrap',
+                txtWrp: 'data-shipping-progress-bar-txt-wrap',
+                msg: 'data-shipping-progress-bar-msg',
+                barWrp: 'data-shipping-progress-bar-bar-wrap',
+                bar: 'data-shipping-progress-bar-bar'
+            };
+            this.id = this.tagName;
+
+            {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                    {%- when 'progress-bar' -%}
+                        {%- assign threshold = block.settings.min -%}
+                        {%- assign thresholdShop = threshold | times: 100 -%}
+                        {%- assign defaultMsg = block.settings.msg-default | replace: '{amount}', threshold -%}
+                        {%- assign appendStr = '<span data-free-ship-difference="' | append: thresholdShop  | append: '"></span>' -%}
+                        {%- assign belowMsg =  block.settings.msg-below | replace: '{amount}', appendStr -%}
+
+                        this.shipData = {
+                            min: {{ threshold | times: 100 }},
+                            msg: {
+                                default: '{{ defaultMsg }}',
+                                below: '{{ belowMsg }}',
+                                free: '{{ block.settings.msg-complete }}'
+                            }
+                        };
+                {%- endcase -%}
+            {%- endfor -%}
+        }
+        connectedCallback(){
+            //console.log('slt010-cart-drawer-progress-bar added');
+        }
+        attributeChangedCallback(name, oldValue, newValue){
+            //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+            switch(name){
+                case 'data-cart-qty':
+                    this.update();
+                    break;
+                default:
+                    break;
+            }
+        }
+        hasNode($selector){
+            return (this.querySelectorAll($selector).length > 0) ? true : false;
+        }
+        update(){
+            if(!this.hasNode('[' + this.nClass.inner + '="' + this.id +'"]')){
+                this.innerHTML = '<div ' + this.nClass.inner + '="' + this.id +'">' +
+                    '<div ' + this.nClass.wrap + '="' + this.id +'">' +
+                        '<div ' + this.nClass.txtWrp + '="' + this.id +'">' +
+                            '<div ' + this.nClass.msg + '="' + this.id +'">' + this.shipData.msg.default + '</div>' +
+                        '</div>' +
+                        '<div ' + this.nClass.barWrp + '="' + this.id +'" style="display: none;"><div ' + this.nClass.bar + '="' + this.id +'"></div></div>' +
+                    '</div>' +
+                '</div>';
+            }
+            this.updateBar();
+        }
+        updateBar(){
+            const $cart = JSON.parse(window.sessionStorage.getItem(this.sessionTag));
+            if($cart.item_count > 0){
+                const $w = ($cart.items_subtotal_price / this.shipData.min >= 100) ? 100 : $cart.items_subtotal_price / this.shipData.min * 100;
+                if($cart.items_subtotal_price < this.shipData.min){
+                    const $diff = (this.shipData.min - $cart.items_subtotal_price) * .01;
+                    this.querySelector('[' + this.nClass.msg + '="' + this.id + '"]').innerHTML = this.shipData.msg.below;
+                    this.querySelector('[' + this.nClass.inner + '="' + this.id +'"] [data-free-ship-difference]').innerHTML = ($diff.toFixed(2));
+                    this.querySelector('[' + this.nClass.bar + '="' + this.id + '"]').classList.remove(this.nClass.bar + '-complete');
+                    this.querySelector('[' + this.nClass.bar + '="' + this.id + '"]').style.width = $w + '%';
+                    this.querySelector('[' + this.nClass.barWrp + '="' + this.id + '"]').style.display = 'block';
+                }
+                else{
+                    this.querySelector('[' + this.nClass.msg + '="' + this.id + '"]').innerHTML = this.shipData.msg.free;
+                    this.querySelector('[' + this.nClass.bar + '="' + this.id + '"]').classList.add(this.nClass.bar + '-complete');
+                    this.querySelector('[' + this.nClass.bar + '="' + this.id + '"]').style.width = $w + '%';
+                    this.querySelector('[' + this.nClass.barWrp + '="' + this.id + '"]').style.display = 'block';
+                }
+            }
+            else{
+                this.querySelector('[' + this.nClass.msg + '="' + this.id + '"]').innerHTML = this.shipData.msg.default;
+                this.querySelector('[' + this.nClass.bar + '="' + this.id + '"]').classList.remove(this.nClass.bar + '-complete');
+                this.querySelector('[' + this.nClass.bar + '="' + this.id + '"]').style.width = '0';
+                this.querySelector('[' + this.nClass.barWrp + '="' + this.id + '"]').style.display = 'none';
+            }
+        }
+    }
+    customElements.define('slt010-cart-drawer-progress-bar', $cro_slt010_cartDrawerProgressBar);
+
+    class $cro_slt010_cartDrawerMessage extends HTMLElement{
+        constructor(){
+            super();
+        }
+        connectedCallback(){
+            //console.log('slt010-cart-drawer-message added');
+        }
+    }
+    customElements.define('slt010-cart-drawer-message', $cro_slt010_cartDrawerMessage);
+</script>
