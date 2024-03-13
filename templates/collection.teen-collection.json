@@ -120,6 +120,32 @@
         "desktop_aspect_ratio": "1\/1.5"
       }
     },
+    "rich_text_bmjU6H": {
+      "type": "rich-text",
+      "blocks": {
+        "text_WLmW4B": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Buy 3+ save 15% | 5+ save 20% | 7+ save 25% on Cups, Discs, and Underwear<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_WLmW4B"
+      ],
+      "custom_css": [
+        "p {background-color: #bfdbd9;}"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "center",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -897,49 +923,13 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "f3d28335-7123-4133-9323-a99fd5d9e99e": {
-      "type": "newsletter",
-      "blocks": {
-        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Do you have a period? Great, we're here to make it better (starting with 15% off your first order). 😉",
-            "heading_size": "h1"
-          }
-        },
-        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-paragraph-1": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Subscribe to receive all you need to know about the period flow, pointers, and perks that come as often as your period does.<\/p>"
-          }
-        },
-        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-email_form-1": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-heading-1",
-        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-paragraph-1",
-        "template--19610655392017__f3d28335-7123-4133-9323-a99fd5d9e99e-email_form-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "theme_color_background": "theme-color-bg-5",
-        "theme_color_text": "theme_default",
-        "input_opacity": 25,
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "banner",
     "c2ba6bf2-8d02-40b3-a18a-92d46f619c3a",
     "4b7bcf70-9b6b-48c4-a538-0e13cf35a435",
+    "rich_text_bmjU6H",
     "product-grid",
     "ef361528-f55b-4ddc-8446-c41880f7f0b0",
     "1ba2232c-e878-4f74-8014-512c7091b4f3",
@@ -950,7 +940,6 @@
     "2da63b36-fad1-4233-af65-6338cd50d30c",
     "2421f247-3fb3-4d3e-83cf-d7f8823ef0a9",
     "322a376d-644b-4c45-afab-7de51bc02822",
-    "b4f29bbb-7268-4349-91b5-1ab1f590f3c0",
-    "f3d28335-7123-4133-9323-a99fd5d9e99e"
+    "b4f29bbb-7268-4349-91b5-1ab1f590f3c0"
   ]
 }
