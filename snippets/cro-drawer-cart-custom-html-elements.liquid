@@ -188,7 +188,7 @@
             //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
             switch(name){
                 case 'data-cart-qty':
-                    this.update(newValue);
+                    this.update();
                     break;
                 default:
                     break;
@@ -197,7 +197,7 @@
         hasNode($selector){
             return (this.querySelectorAll($selector).length > 0) ? true : false;
         }
-        update($value){
+        update(){
             if(!this.hasNode('[' + this.nClass.inner + '="' + this.id +'"]')){
                 this.innerHTML = '<div ' + this.nClass.inner + '="' + this.id +'">' +
                     '<div ' + this.nClass.wrap + '="' + this.id +'">' +
