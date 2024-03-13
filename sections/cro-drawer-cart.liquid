@@ -81,7 +81,30 @@
         "type":"countdown",
         "name": "Countdown",
         "limit": 1,
-        "settings":[]
+        "settings":[
+          {
+            "type":"range",
+            "id":"time",
+            "label":"Time",
+            "default":8,
+            "min":1,
+            "max":30,
+            "step":1
+          },
+          {
+            "type":"text",
+            "id":"headline",
+            "label":"Headline",
+            "default":"LIMITED STOCK!"
+          },
+          {
+            "type":"text",
+            "id":"msg",
+            "label":"Message",
+            "default":"We've saved your cart for",
+            "info":"Message before the time countdown.  Example: We've saved your cart for 8:00"
+          }
+        ]
       },
       {
         "type":"body",
@@ -145,7 +168,12 @@
             }
           },
           {
-            "type":"countdown"
+            "type":"countdown",
+            "settings":{
+              "time":8,
+              "headline":"LIMITED STOCK!",
+              "msg":"We've saved your cart for"
+            }
           },
           {
             "type":"body",
