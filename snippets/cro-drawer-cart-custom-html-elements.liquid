@@ -139,7 +139,7 @@
             //console.log('slt010-cart-drawer-countdown added');
         }
         attributeChangedCallback(name, oldValue, newValue){
-            //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+            console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
             switch(name){
                 case 'data-cart-qty':
                     this.update(newValue, oldValue);
@@ -151,9 +151,9 @@
         hasNode($selector){
             return (this.querySelectorAll($selector).length > 0) ? true : false;
         }
-        update($value, oldValue){
+        update($value, $oldValue){
             if(parseInt($value) > 0){
-                const $endTime = (oldValue === null) ? this.getEndTime() : this.getEndTime(true);
+                const $endTime = ($oldValue === null) ? this.getEndTime() : this.getEndTime(true);
                 if(!this.hasNode('[data-slt010-class="slt010-countdown-container"]')){
                     this.innerHTML = '<div data-slt010-class="slt010-countdown-container">' + 
                         '<h3 data-slt010-class="slt010-countdown-title">' + this.headline + '</h3>' +
