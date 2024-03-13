@@ -231,7 +231,7 @@
         }
         start($callback = ()=>{}){
             const $t = this;
-            $t.update($id, $callback);
+            $t.update($callback);
             let $timer = setInterval(()=>{
                 $t.setCurrentDate();
                 const $time = $t.update($callback);
