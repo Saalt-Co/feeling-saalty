@@ -103,6 +103,32 @@
         "desktop_aspect_ratio": "3\/4"
       }
     },
+    "rich_text_xTjH4h": {
+      "type": "rich-text",
+      "blocks": {
+        "text_6YTrre": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Buy 3+ save 15% | 5+ save 20% | 7+ save 25% on all Cups, Discs, and Underwear<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_6YTrre"
+      ],
+      "custom_css": [
+        "p {background-color: #BFDBD9;}"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "center",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -695,6 +721,7 @@
   "order": [
     "banner",
     "4b7bcf70-9b6b-48c4-a538-0e13cf35a435",
+    "rich_text_xTjH4h",
     "product-grid",
     "12b223cc-366c-40a6-9b61-19d26f7436fc",
     "fc031dea-6661-47b1-b752-79fa446b4dee",
