@@ -153,7 +153,7 @@
         }
         update($value, $oldValue){
             if(parseInt($value) > 0){
-                const $endTime = ($oldValue === null) ? this.getEndTime() : this.getEndTime(true);
+                const $endTime = ($oldValue === null || parseInt($oldValue) === 0) ? this.getEndTime() : this.getEndTime(true);
                 if(!this.hasNode('[data-slt010-class="slt010-countdown-container"]')){
                     this.innerHTML = '<div data-slt010-class="slt010-countdown-container">' + 
                         '<h3 data-slt010-class="slt010-countdown-title">' + this.headline + '</h3>' +
@@ -164,7 +164,7 @@
                     '</div>';
                 }
                 this.querySelector('[data-slt010-class="slt010-countdown"]').innerHTML = '';
-                if($oldValue !== null){
+                if($oldValue !== null || parseInt($oldValue) === 0){
                     this.querySelector('[data-slt010-class="slt010-countdown-container"]').style.display = 'flex';
                 }
                 this.create('[data-slt010-class="slt010-countdown"]', $endTime, ()=>{
