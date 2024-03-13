@@ -43,7 +43,39 @@
         "type":"progress-bar",
         "name": "Progress Bar",
         "limit": 1,
-        "settings":[]
+        "settings":[
+          {
+              "type": "number",
+              "id": "min",
+              "label": "Free shipping threshold:",
+              "default": 75
+          },
+          {
+              "type": "header",
+              "content": "Messages:"
+          },
+          {
+              "type": "inline_richtext",
+              "id": "msg-default",
+              "label": "Default:",
+              "default": "Free Shipping on orders over ${amount}!",
+              "info": "Use {amount} to place where the threshold amount should be placed in your text. Example: Free Shipping on orders over ${amount}!"
+          },
+          {
+              "type": "inline_richtext",
+              "id": "msg-below",
+              "label": "In progress:",
+              "default": "You are ${amount} away from <strong>FREE SHIPPING</strong>",
+              "info": "Use {amount} to place where the customer current amount should be placed in your text. Example: You are ${amount} away from FREE SHIPPING"
+          },
+          {
+              "type": "inline_richtext",
+              "id": "msg-complete",
+              "label": "Success:",
+              "default": "Free Shipping Unlocked!",
+              "info": "Example: Free Shipping Unlocked!"
+          }
+        ]
       },
       {
         "type":"countdown",
@@ -104,7 +136,13 @@
             }
           },
           {
-            "type":"progress-bar"
+            "type":"progress-bar",
+            "settings":{
+              "min":75,
+              "msg-default":"Free Shipping on orders over ${amount}!",
+              "msg-below": "You are ${amount} away from <strong>FREE SHIPPING</strong>",
+              "msg-complete":"Free Shipping Unlocked!"
+            }
           },
           {
             "type":"countdown"
