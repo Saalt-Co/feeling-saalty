@@ -184,12 +184,12 @@
         }
         update($value){
             if(parseInt($value) > 0){
-                this.innerHTML = '<div ' + $t.nClass.inner + '="' + this.id +'">' +
-                    '<div ' + $t.nClass.wrap + '="' + this.id +'">' +
-                        '<div ' + $t.nClass.txtWrp + '="' + this.id +'">' +
-                            '<div ' + $t.nClass.msg + '="' + this.id +'">' + $t.shipData.msg.default + '</div>' +
+                this.innerHTML = '<div ' + this.nClass.inner + '="' + this.id +'">' +
+                    '<div ' + this.nClass.wrap + '="' + this.id +'">' +
+                        '<div ' + this.nClass.txtWrp + '="' + this.id +'">' +
+                            '<div ' + this.nClass.msg + '="' + this.id +'">' + this.shipData.msg.default + '</div>' +
                         '</div>' +
-                        '<div ' + $t.nClass.barWrp + '="' + this.id +'" style="display: none;"><div ' + $t.nClass.bar + '="' + this.id +'"></div></div>' +
+                        '<div ' + this.nClass.barWrp + '="' + this.id +'" style="display: none;"><div ' + this.nClass.bar + '="' + this.id +'"></div></div>' +
                     '</div>' +
                 '</div>';
             }
