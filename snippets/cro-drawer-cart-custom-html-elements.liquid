@@ -122,6 +122,10 @@
             super();
             this.sessionTag = '{{ sessionTag }}';
             this.endTimeSession = 'cro-end-time';
+            this.dates = {
+                current: '',
+                end: ''
+            };
             {%- for block in section.blocks -%}
                 {%- case block.type -%}
                     {%- when 'countdown' -%}
