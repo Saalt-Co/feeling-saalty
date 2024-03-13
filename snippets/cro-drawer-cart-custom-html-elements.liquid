@@ -125,7 +125,7 @@
             {%- for block in section.blocks -%}
                 {%- case block.type -%}
                     {%- when 'countdown' -%}
-                        this.limit = {{ block.settings.limit }}
+                        this.limit = 8
                 {%- endcase -%}
             {%- endfor -%}
         }
