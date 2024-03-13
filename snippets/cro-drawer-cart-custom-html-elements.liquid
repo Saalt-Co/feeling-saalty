@@ -198,22 +198,17 @@
             return (this.querySelectorAll($selector).length > 0) ? true : false;
         }
         update($value){
-            if(parseInt($value) > 0){
-                if(!this.hasNode('[' + this.nClass.inner + '="' + this.id +'"]')){
-                    this.innerHTML = '<div ' + this.nClass.inner + '="' + this.id +'">' +
-                        '<div ' + this.nClass.wrap + '="' + this.id +'">' +
-                            '<div ' + this.nClass.txtWrp + '="' + this.id +'">' +
-                                '<div ' + this.nClass.msg + '="' + this.id +'">' + this.shipData.msg.default + '</div>' +
-                            '</div>' +
-                            '<div ' + this.nClass.barWrp + '="' + this.id +'" style="display: none;"><div ' + this.nClass.bar + '="' + this.id +'"></div></div>' +
+            if(!this.hasNode('[' + this.nClass.inner + '="' + this.id +'"]')){
+                this.innerHTML = '<div ' + this.nClass.inner + '="' + this.id +'">' +
+                    '<div ' + this.nClass.wrap + '="' + this.id +'">' +
+                        '<div ' + this.nClass.txtWrp + '="' + this.id +'">' +
+                            '<div ' + this.nClass.msg + '="' + this.id +'">' + this.shipData.msg.default + '</div>' +
                         '</div>' +
-                    '</div>';
-                }
-                this.updateBar();
+                        '<div ' + this.nClass.barWrp + '="' + this.id +'" style="display: none;"><div ' + this.nClass.bar + '="' + this.id +'"></div></div>' +
+                    '</div>' +
+                '</div>';
             }
-            else{
-                this.innerHTML = '';
-            }
+            this.updateBar();
         }
         updateBar(){
             const $cart = JSON.parse(window.sessionStorage.getItem(this.sessionTag));
