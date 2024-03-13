@@ -217,7 +217,7 @@
             const $s = Math.floor(($e - $d * (24 * 60 * 60 * 1000) - $h * (60 * 60 * 1000) - $m * (60000)) / 1000);
             return ($s < 10) ? '0' + $s : $s;
         }
-        update($callback){
+        update($callback = ()=>{}){
             let $value = true;
             if(this.dates.end.getTime() > this.dates.current.getTime()){
                 this.querySelector('[data-countdown-minutes]').innerHTML = this.getMinutes();
@@ -229,7 +229,7 @@
             }
             return $value;
         }
-        start($callback){
+        start($callback = ()=>{}){
             const $t = this;
             $t.update($id, $callback);
             let $timer = setInterval(()=>{
