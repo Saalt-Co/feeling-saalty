@@ -148,9 +148,26 @@
 
     class $cro_slt010_cartDrawerProgressBar extends HTMLElement{
         static observedAttributes = ['data-cart-qty'];
-        constructor(){
+        constructor($data = {min: 7500, msg: {default: 'Free Shipping on orders over $75!'}}){
             super();
             this.sessionTag = '{{ sessionTag }}';
+            this.shipData = {
+                min: (typeof($data.min) !== 'undefined') ? $data.min : 7500,
+                msg: {
+                    default: (typeof($data.msg.default) !== 'undefined') ? $data.msg.default : 'Free Shipping on orders over $75!',
+                    below: (typeof($data.msg.below) !== 'undefined') ? $data.msg.below : 'You are $<span data-free-ship-difference="7500"></span> away from <strong>FREE SHIPPING</strong>',
+                    free: (typeof($data.msg.free) !== 'undefined') ? $data.msg.free : 'Free Shipping Unlocked!'
+                }
+            };
+            this.nClass = {
+                inner: 'data-shipping-progress-bar-inner',
+                wrap: 'data-shipping-progress-bar-wrap',
+                txtWrp: 'data-shipping-progress-bar-txt-wrap',
+                msg: 'data-shipping-progress-bar-msg',
+                barWrp: 'data-shipping-progress-bar-bar-wrap',
+                bar: 'data-shipping-progress-bar-bar'
+            };
+            this.id = this.tagName;
         }
         connectedCallback(){
             //console.log('slt010-cart-drawer-progress-bar added');
@@ -167,7 +184,14 @@
         }
         update($value){
             if(parseInt($value) > 0){
-                this.innerHTML = 'Update progress bar';
+                this.innerHTML = '<div ' + $t.nClass.inner + '="' + this.id +'">' +
+                    '<div ' + $t.nClass.wrap + '="' + this.id +'">' +
+                        '<div ' + $t.nClass.txtWrp + '="' + this.id +'">' +
+                            '<div ' + $t.nClass.msg + '="' + this.id +'">' + $t.shipData.msg.default + '</div>' +
+                        '</div>' +
+                        '<div ' + $t.nClass.barWrp + '="' + this.id +'" style="display: none;"><div ' + $t.nClass.bar + '="' + this.id +'"></div></div>' +
+                    '</div>' +
+                '</div>';
             }
             else{
                 this.innerHTML = '';
