@@ -116,6 +116,9 @@
       "block_order": [
         "text_6YTrre"
       ],
+      "custom_css": [
+        "p {background-color: #BFDBD9;}"
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "center",
