@@ -109,15 +109,12 @@
         "text_6YTrre": {
           "type": "text",
           "settings": {
-            "text": "<p>Buy 3+ save 15% | 5+ save 20% | 7+ save 25% on all Cups, Discs, and Underwear<\/p>"
+            "text": "<p>Buy 3+ save 15% | 5+ save 20% | 7+&nbspsave 25% on Cups, Discs, and Underwear<\/p>"
           }
         }
       },
       "block_order": [
         "text_6YTrre"
-      ],
-      "custom_css": [
-        "p {background-color: #BFDBD9;}"
       ],
       "settings": {
         "desktop_content_position": "left",
