@@ -148,7 +148,7 @@
 
     class $cro_slt010_cartDrawerProgressBar extends HTMLElement{
         static observedAttributes = ['data-cart-qty'];
-        constructor($data = {min: 7500, msg: {default: 'Free Shipping on orders over $75!'}}){
+        constructor(){
             super();
             this.sessionTag = '{{ sessionTag }}';
             this.nClass = {
@@ -164,13 +164,14 @@
             {%- for block in section.blocks -%}
                 {%- case block.type -%}
                     {%- when 'progress-bar' -%}
-                        {%- assign thresholdShop = block.settings.min | times: 100 -%}
-                        {%- assign defaultMsg = block.setting.msg-below | replace: '{amount}', block.settings.min -%}
+                        {%- assign threshold = block.settings.min -%}
+                        {%- assign thresholdShop = threshold | times: 100 -%}
+                        {%- assign defaultMsg = block.setting.msg-below | replace: '{amount}', threshold -%}
                         {%- assign appendStr = '<span data-free-ship-difference="' | append: thresholdShop  | append: '"></span>' -%}
                         {%- assign belowMsg =  block.settings.msg-complete | replace: '{amount}', appendStr -%}
 
                         this.shipData = {
-                            min: {{ block.settings.min | times: 100 }},
+                            min: {{ threshold | times: 100 }},
                             msg: {
                                 default: '{{ block.settings.msg-default }}',
                                 below: '{{ defaultMsg }}',
