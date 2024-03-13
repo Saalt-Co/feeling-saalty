@@ -125,7 +125,9 @@
             {%- for block in section.blocks -%}
                 {%- case block.type -%}
                     {%- when 'countdown' -%}
-                        this.limit = 8
+                        this.limit = {{ block.settings.time }};
+                        this.headline = '{{ block.settings.headline }}';
+                        this.msg = '{{ block.settings.msg | replace: "'", "\'" }}';
                 {%- endcase -%}
             {%- endfor -%}
         }
@@ -149,9 +151,9 @@
             if(parseInt($value) > 0){
                 if(!this.hasNode('[data-slt010-class="slt010-countdown-container"]')){
                     this.innerHTML = '<div data-slt010-class="slt010-countdown-container">' + 
-                        '<h3 data-slt010-class="slt010-countdown-title">LIMITED STOCK!</h3>' +
+                        '<h3 data-slt010-class="slt010-countdown-title">' + this.headline + '</h3>' +
                         '<div data-slt010-class="slt010-countdown-content">' +
-                            '<div data-slt010-class="slt010-countdown-msg">We\'ve saved your cart for </div>' +
+                            '<div data-slt010-class="slt010-countdown-msg">' + this.msg + ' </div>' +
                             '<div data-slt010-class="slt010-countdown"></div>' +
                         '</div>' +
                     '</div>';
