@@ -1,167 +1,255 @@
-<!-- CRO Cart DRAWER -->
-{%- unless template contains 'cart' -%}
-    <!-- CRO NOT Cart PAGE -->
-    {%- liquid 
-      assign sessionTag = 'cro-drawer-cart-data'  
-    -%}
-    <script>
-      window.sessionStorage.setItem('{{ sessionTag }}', JSON.stringify({{ cart | json }}));
-    </script>
-    <slt010-cart-drawer-block id="{{ section.id }}-block" data-opened="false">
-        <slt010-cart-drawer-container>
-            <slt010-cart-drawer>
-              {%- render 'cro-drawer-cart-layout', section: section -%}
-            </slt010-cart-drawer>
-        </slt010-cart-drawer-container>
-    </slt010-cart-drawer-block>
-    {%- render 'cro-drawer-cart-styles', section: section -%}
-    {%- render 'cro-drawer-cart-custom-html-elements', section: section, sessionTag: sessionTag -%}
-    {%- render 'cro-drawer-cart-js', section: section, sessionTag: sessionTag -%}
-{%- endunless -%}
-
-{% schema %}
-  {
-    "name": "Cart Drawer",
-    "settings": [
-    ],
-    "limit": 1,
-    "blocks":[
-      {
-        "type":"header",
-        "name": "Header",
-        "limit": 1,
-        "settings":[
-          {
-            "type":"text",
-            "id":"title",
-            "label":"Title",
-            "default":"YOUR CART"
-          }
-        ]
-      },
-      {
-        "type":"progress-bar",
-        "name": "Progress Bar",
-        "limit": 1,
-        "settings":[
-          {
-              "type": "number",
-              "id": "min",
-              "label": "Free shipping threshold:",
-              "default": 75
-          },
-          {
-              "type": "header",
-              "content": "Messages:"
-          },
-          {
-              "type": "inline_richtext",
-              "id": "msg-default",
-              "label": "Default:",
-              "default": "Free Shipping on orders over ${amount}!",
-              "info": "Use {amount} to place where the threshold amount should be placed in your text. Example: Free Shipping on orders over ${amount}!"
-          },
-          {
-              "type": "inline_richtext",
-              "id": "msg-below",
-              "label": "In progress:",
-              "default": "You are ${amount} away from <strong>FREE SHIPPING</strong>",
-              "info": "Use {amount} to place where the customer current amount should be placed in your text. Example: You are ${amount} away from FREE SHIPPING"
-          },
-          {
-              "type": "inline_richtext",
-              "id": "msg-complete",
-              "label": "Success:",
-              "default": "Free Shipping Unlocked!",
-              "info": "Example: Free Shipping Unlocked!"
-          }
-        ]
-      },
-      {
-        "type":"countdown",
-        "name": "Countdown",
-        "limit": 1,
-        "settings":[]
-      },
-      {
-        "type":"body",
-        "name": "Body",
-        "limit": 1,
-        "settings":[
-          {
-            "type":"header",
-            "content":"Empty cart settings"
-          },
-          {
-            "type":"text",
-            "id":"title-empty",
-            "label":"Title",
-            "default":"Welcome to Saalt!"
-          },
-          {
-            "type":"textarea",
-            "id":"content-empty",
-            "label":"Content",
-            "default":"Your cart is empty"
-          },
-          {
-            "type":"header",
-            "content":"Upsell settings"
-          }
-        ]
-      },
-      {
-        "type":"footer",
-        "name": "Footer",
-        "limit": 1,
-        "settings":[]
-      },
-      {
-        "type":"message",
-        "name": "Message",
-        "limit": 1,
-        "settings":[]
-      }
-    ],
-    "presets": [
-      {
-        "category": "Footer",
-        "name": "CRO Cart Drawer",
-        "settings":{},
-        "blocks":[
-          {
-            "type":"header",
-            "settings": {
-                "title": "YOUR CART"
+<script>    
+    class $cro_slt010_cartDrawerBlock extends HTMLElement{
+        static observedAttributes = ['data-opened'];
+        constructor(){
+            super();
+        }
+        connectedCallback(){
+            console.log('slt010-cart-drawer-block added');
+            this.addOverlay();
+            this.addCloseButton();
+        }
+        addOverlay(){
+            const $t = this;
+            if(this.querySelectorAll('slt010-cart-drawer-overlay').length < 1){
+                const $overlay = document.createElement('slt010-cart-drawer-overlay');
+                $overlay.addEventListener('click', function($e){
+                    $t.closeDrawer($e);
+                });
+                this.appendChild($overlay);
             }
-          },
-          {
-            "type":"progress-bar",
-            "settings":{
-              "min":75,
-              "msg-default":"Free Shipping on orders over ${amount}!",
-              "msg-below": "You are ${amount} away from <strong>FREE SHIPPING</strong>",
-              "msg-complete":"Free Shipping Unlocked!"
+        }
+        addCloseButton(){
+            const $t = this;
+            if(this.querySelectorAll('slt010-cart-drawer-container').length > 0 && this.querySelectorAll('slt010-cart-drawer-close-button').length < 1){
+                const $container = this.querySelectorAll('slt010-cart-drawer-container');
+                const $closeButton = document.createElement('slt010-cart-drawer-close-button');
+                $closeButton.innerHTML = '&times;';
+                $closeButton.addEventListener('click', function($e){
+                    $t.closeDrawer($e);
+                });
+                $container[0].appendChild($closeButton);
             }
-          },
-          {
-            "type":"countdown"
-          },
-          {
-            "type":"body",
-            "settings":{
-              "title-empty":"Welcome to Saalt!",
-              "content-empty":"Your cart is empty"
+        }
+        closeDrawer($event){
+            $event.target.closest(this.tagName).setAttribute('data-opened', 'false');
+        }
+        attributeChangedCallback(name, oldValue, newValue){
+            //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+            switch(name){
+                case 'data-opened':
+                    this.drawerOpened(newValue);
+                    break;
+                default:
+                    break;
             }
-          },
-          {
-            "type":"footer"
-          }
-        ]
-      }
-    ],
-    "enabled_on": {
-      "groups": ["footer"]
+        }
+        drawerOpened($value){
+            if($value === 'true'){
+                document.body.classList.add('slt010-cart-drawer-block-open');
+            }
+            else{
+                document.body.classList.remove('slt010-cart-drawer-block-open');
+            }
+        }
     }
-  }
-{% endschema %}
+    customElements.define('slt010-cart-drawer-block', $cro_slt010_cartDrawerBlock);
+
+    class $cro_slt010_cartDrawerHeader extends HTMLElement{
+        constructor(){
+            super();
+        }
+        connectedCallback(){
+            //console.log('slt010-cart-drawer-header added');
+        }
+    }
+    customElements.define('slt010-cart-drawer-header', $cro_slt010_cartDrawerHeader);
+
+    class $cro_slt010_cartDrawerFooter extends HTMLElement{
+        static observedAttributes = ['data-cart-qty'];
+        constructor(){
+            super();
+            this.sessionTag = '{{ sessionTag }}';
+        }
+        connectedCallback(){
+            //console.log('slt010-cart-drawer-footer added');
+        }
+        attributeChangedCallback(name, oldValue, newValue){
+            //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+            switch(name){
+                case 'data-cart-qty':
+                    this.update(newValue);
+                    break;
+                default:
+                    break;
+            }
+        }
+        update($value){
+            if(parseInt($value) > 0){
+                const $cart = JSON.parse(window.sessionStorage.getItem(this.sessionTag));
+                const $btn = document.createElement('button');
+                const $items = ($cart.item_count === 1) ? ' (1 item)' : ' (' + $cart.item_count + ' items)';
+                const $price = ($cart.total_discount !== 0) ? '<span data-slt010-class="slt010-discount">$' + ($cart.items_subtotal_price * .01).toFixed(2) + '</span>&nbsp;<s>$' + ($cart.original_total_price * .01).toFixed(2) + '</s>' : '$' + ($cart.items_subtotal_price * .01).toFixed(2);
+                this.innerHTML = '<div data-slt010-class="slt010-cart-drawer-footer-subtotal">' + 
+                    '<div data-slt010-class="slt010-cart-drawer-footer-subtotal-label">' + 
+                        'Subtotal' + $items +
+                    '</div>' +
+                    '<div data-slt010-class="slt010-cart-drawer-footer-subtotal-amount">' + 
+                        $price +
+                    '</div>' +
+                '</div>';
+
+                $btn.type = 'button';
+                $btn.setAttribute('data-slt010-class','slt010-cart-drawer-footer-checkout-btn');
+                $btn.innerHTML = 'checkout';
+                $btn.addEventListener('click', function($e){
+                    $e.preventDefault();
+                    window.location.href = '/checkout/';
+                });
+
+                this.appendChild($btn);
+            }
+            else{
+                this.innerHTML = '';
+            }
+        }
+    }
+    customElements.define('slt010-cart-drawer-footer', $cro_slt010_cartDrawerFooter);
+
+    class $cro_slt010_cartDrawerCountdown extends HTMLElement{
+        static observedAttributes = ['data-cart-qty'];
+        constructor(){
+            super();
+            this.sessionTag = '{{ sessionTag }}';
+        }
+        connectedCallback(){
+            //console.log('slt010-cart-drawer-countdown added');
+        }
+        attributeChangedCallback(name, oldValue, newValue){
+            //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+            switch(name){
+                case 'data-cart-qty':
+                    this.update(newValue);
+                    break;
+                default:
+                    break;
+            }
+        }
+        update($value){
+            if(parseInt($value) > 0){
+                this.innerHTML = 'Update countdown';
+            }
+            else{
+                this.innerHTML = '';
+            }
+        }
+    }
+    customElements.define('slt010-cart-drawer-countdown', $cro_slt010_cartDrawerCountdown);
+
+    class $cro_slt010_cartDrawerProgressBar extends HTMLElement{
+        static observedAttributes = ['data-cart-qty'];
+        constructor($data = {min: 7500, msg: {default: 'Free Shipping on orders over $75!'}}){
+            super();
+            this.sessionTag = '{{ sessionTag }}';
+            this.nClass = {
+                inner: 'data-shipping-progress-bar-inner',
+                wrap: 'data-shipping-progress-bar-wrap',
+                txtWrp: 'data-shipping-progress-bar-txt-wrap',
+                msg: 'data-shipping-progress-bar-msg',
+                barWrp: 'data-shipping-progress-bar-bar-wrap',
+                bar: 'data-shipping-progress-bar-bar'
+            };
+            this.id = this.tagName;
+
+            {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                    {%- when 'progress-bar' -%}
+                        {%- assign thresholdShop = block.settings.min | times: 100 -%}
+                        {%- assign defaultMsg = block.setting.msg-below | replace: '{amount}', block.settings.min -%}
+                        {%- assign appendStr = '<span data-free-ship-difference="' | append: thresholdShop  | append: '"></span>' -%}
+                        {%- assign belowMsg =  block.settings.msg-complete | replace: '{amount}', appendStr -%}
+
+                        this.shipData = {
+                            min: {{ block.settings.min | times: 100 }},
+                            msg: {
+                                default: '{{ block.settings.msg-default }}',
+                                below: '{{ defaultMsg }}',
+                                free: '{{ belowMsg }}'
+                            }
+                        };
+                {%- endcase -%}
+            {%- endfor -%}
+        }
+        connectedCallback(){
+            //console.log('slt010-cart-drawer-progress-bar added');
+        }
+        attributeChangedCallback(name, oldValue, newValue){
+            //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+            switch(name){
+                case 'data-cart-qty':
+                    this.update(newValue);
+                    break;
+                default:
+                    break;
+            }
+        }
+        hasNode($selector){
+            return (this.querySelectorAll($selector).length > 0) ? true : false;
+        }
+        update($value){
+            if(parseInt($value) > 0){
+                if(!this.hasNode('[' + this.nClass.inner + '="' + this.id +'"]')){
+                    this.innerHTML = '<div ' + this.nClass.inner + '="' + this.id +'">' +
+                        '<div ' + this.nClass.wrap + '="' + this.id +'">' +
+                            '<div ' + this.nClass.txtWrp + '="' + this.id +'">' +
+                                '<div ' + this.nClass.msg + '="' + this.id +'">' + this.shipData.msg.default + '</div>' +
+                            '</div>' +
+                            '<div ' + this.nClass.barWrp + '="' + this.id +'" style="display: none;"><div ' + this.nClass.bar + '="' + this.id +'"></div></div>' +
+                        '</div>' +
+                    '</div>';
+                }
+                this.updateBar();
+            }
+            else{
+                this.innerHTML = '';
+            }
+        }
+        updateBar(){
+            const $cart = JSON.parse(window.sessionStorage.getItem(this.sessionTag));
+            if($cart.item_count > 0){
+                const $w = ($cart.items_subtotal_price / this.shipData.min >= 100) ? 100 : $cart.items_subtotal_price / this.shipData.min * 100;
+                if($cart.items_subtotal_price < this.shipData.min){
+                    const $diff = (this.shipData.min - $cart.items_subtotal_price) * .01;
+                    this.querySelector('[' + $t.nClass.msg + '="' + $id + '"]').innerHTML = $t.shipData.msg.below;
+                    this.querySelector('[' + $t.nClass.inner + '="' + $id +'"] [data-free-ship-difference]').innerHTML = ($diff.toFixed(2));
+                    this.querySelector('[' + $t.nClass.bar + '="' + $id + '"]').classList.remove($t.nClass.bar + '-complete');
+                    this.querySelector('[' + $t.nClass.bar + '="' + $id + '"]').style.width = $w + '%';
+                    this.querySelector('[' + $t.nClass.barWrp + '="' + $id + '"]').style.display = 'block';
+                }
+                else{
+                    this.querySelector('[' + $t.nClass.msg + '="' + $id + '"]').innerHTML = $t.shipData.msg.free;
+                    this.querySelector('[' + $t.nClass.bar + '="' + $id + '"]').classList.add($t.nClass.bar + '-complete');
+                    this.querySelector('[' + $t.nClass.bar + '="' + $id + '"]').style.width = $w + '%';
+                    this.querySelector('[' + $t.nClass.barWrp + '="' + $id + '"]').style.display = 'block';
+                }
+            }
+            else{
+                this.querySelector('[' + $t.nClass.msg + '="' + $id + '"]').innerHTML = $t.shipData.msg.default;
+                this.querySelector('[' + $t.nClass.bar + '="' + $id + '"]').classList.remove($t.nClass.bar + '-complete');
+                this.querySelector('[' + $t.nClass.bar + '="' + $id + '"]').style.width = '0';
+                this.querySelector('[' + $t.nClass.barWrp + '="' + $id + '"]').style.display = 'none';
+            }
+        }
+    }
+    customElements.define('slt010-cart-drawer-progress-bar', $cro_slt010_cartDrawerProgressBar);
+
+    class $cro_slt010_cartDrawerMessage extends HTMLElement{
+        constructor(){
+            super();
+        }
+        connectedCallback(){
+            //console.log('slt010-cart-drawer-message added');
+        }
+    }
+    customElements.define('slt010-cart-drawer-message', $cro_slt010_cartDrawerMessage);
+</script>
