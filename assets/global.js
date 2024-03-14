@@ -906,6 +906,7 @@ class VariantSelects extends HTMLElement {
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
     this.removeErrorMessage();
+    this.variantGroupImage();
     this.updateVariantStatuses();
 
     if (!this.currentVariant) {
@@ -921,6 +922,20 @@ class VariantSelects extends HTMLElement {
       this.updateAbsorbencyInfo();
     }
   }
+
+  variantGroupImage() {
+  console.log(this.currentVariant);
+  if (this.currentVariant.featured_image && this.currentVariant.featured_image.alt) {
+    const currentVariantAlt = this.currentVariant.featured_image.alt;
+    console.log(currentVariantAlt);
+    const dataAltSelector = `[data-alt='${currentVariantAlt}']`;
+    console.log(dataAltSelector);
+    document.querySelectorAll('[data-alt]').forEach(img => img.style.display = 'none');
+    document.querySelectorAll(dataAltSelector).forEach(img => img.style.display = 'block');
+  } else {
+    document.querySelectorAll('[data-alt]').forEach(img => img.style.display = 'block');
+  }
+}
 
   updateOptions() {
     this.options = Array.from(this.querySelectorAll('select'), (select) => select.value);
