@@ -1,6 +1,15 @@
 .window-display-inner-wrapper .text-wrapper .window-feature-copy p{
   text-align: left;
 }
+.video-content .media>*:not(.zoom):not(.deferred-media__poster-button){
+  position: relative;
+}
+.multicolumn:not(.background-none) .multicolumn-card.auto-height{
+  height: auto;
+}
+.video-content .media.media--transparent.media--adapt {
+    padding-bottom: 25px;
+}
 @media (min-width:768px) and (max-width:992px){
   .window-display-inner-wrapper .window-feature-wrapper:first-child .text-wrapper .window-feature-title{
   white-space:unset!important;
