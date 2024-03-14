@@ -1384,6 +1384,93 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "multicolumn_video_EYpmgU": {
+      "type": "multicolumn-video",
+      "blocks": {
+        "column_kLNCXC": {
+          "type": "column",
+          "settings": {
+            "video-play": true,
+            "video-only": true,
+            "video-shopify": "shopify:\/\/files\/videos\/5bc5fb4532b743fbab45daf3d7516501.mp4",
+            "controls": true,
+            "muted": false,
+            "autoplay": true,
+            "youtube-url": "",
+            "title": "Column",
+            "rating": 0,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_G99L8i": {
+          "type": "column",
+          "settings": {
+            "video-play": true,
+            "video-only": true,
+            "video-shopify": "shopify:\/\/files\/videos\/01005_320x480_revised.mp4",
+            "controls": true,
+            "muted": false,
+            "autoplay": true,
+            "youtube-url": "",
+            "title": "Column",
+            "rating": 0,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_zVkL6F": {
+          "type": "column",
+          "settings": {
+            "video-play": true,
+            "video-only": true,
+            "video-shopify": "shopify:\/\/files\/videos\/b4-Saalt_Portrait_r1_Duo_Rotation__27512.mp4",
+            "controls": true,
+            "muted": false,
+            "autoplay": true,
+            "youtube-url": "",
+            "title": "Column",
+            "rating": 0,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_kLNCXC",
+        "column_G99L8i",
+        "column_zVkL6F"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -1406,6 +1493,7 @@
     "036f19a9-251b-43a3-984d-1afa0ddf6984",
     "66ec97c7-efb9-4ba9-af0b-2623e8fd5389",
     "87af7d57-6029-4a10-9690-4dce6e83c58e",
-    "e19ae371-ca3d-4f8c-9229-f22d18836f31"
+    "e19ae371-ca3d-4f8c-9229-f22d18836f31",
+    "multicolumn_video_EYpmgU"
   ]
 }
