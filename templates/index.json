@@ -27,7 +27,7 @@
           "type": "section_button",
           "settings": {
             "button_text": "Shop Now",
-            "button_url": "\/collections\/saalt-period-underwear?sort_by=created-descending&filter.p.m.saalt.saalt_wear_collection=Lace+%26+Mesh",
+            "button_url": "shopify:\/\/collections\/lace-mesh",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -42,7 +42,6 @@
         "section_buttons_group_LBaFif",
         "section_button_nXmgDJ"
       ],
-      "disabled": true,
       "custom_css": [
         "@media only screen and (max-width: 767px) {p {color: #373737; } h1 {color: #373737; font-size: 26px !important; }}"
       ],
@@ -177,6 +176,7 @@
         "section_buttons_group_qTanBF",
         "section_button_dNTnBF"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
