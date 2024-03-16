@@ -225,7 +225,6 @@
         },
         "countdown_MfyFBU": {
           "type": "countdown",
-          "disabled": true,
           "settings": {
             "time": 8,
             "headline": "LIMITED STOCK!",
