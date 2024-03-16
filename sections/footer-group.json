@@ -216,7 +216,6 @@
         },
         "progress_bar_9JzWbk": {
           "type": "progress-bar",
-          "disabled": true,
           "settings": {
             "min": 75,
             "msg-default": "Free Shipping on orders over ${amount}!",
