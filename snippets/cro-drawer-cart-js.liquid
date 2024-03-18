@@ -3,7 +3,7 @@
         constructor(){
             super();
             this.sessionTag = '{{ sessionTag }}';
-            this.currentCart = '{{ cart | json }}'; //remove quotes when updating the liquid file
+            this.currentCart = {{ cart | json }}; //remove quotes when updating the liquid file
             this.slug = 'slt010-cart-drawer';
         }
         connectedCallback(){
@@ -380,35 +380,27 @@
                             else{
                                 $opt = '<select data-slt010-class="slt010-cart-drawer-upsell-meta-form-select" data-slt010-visible="slt010-visible">' + $opt + '</select>';
                             }
-                            const $o = $t.j(
-                                '<div data-slt010-class="slt010-cart-drawer-upsell-item" data-slt010-handle="' + $data.handle + '">' + 
-                                    '<a href="' + $data.url + '" data-slt010-class="slt010-cart-drawer-upsell-image-link">' +
-                                        '<picture data-slt010-class="slt010-cart-drawer-upsell-picture">' +
-                                            '<img src="' + $data.images[0] + '" alt="' + $data.title + '" width="113" height="113" data-slt010-class="slt010-cart-drawer-upsell-image" />' +
-                                        '</picture>' +
-                                    '</a>' +
-                                    '<div data-slt010-class="slt010-cart-drawer-upsell-meta">' +
-                                        '<a href="' + $data.url + '" data-slt010-class="slt010-cart-drawer-upsell-title-link">' +
-                                            $data.title +
-                                        '</a>' +
-                                        '<div data-slt010-class="slt010-cart-drawer-upsell-meta-price">' +
-                                            '$' + ($data.price * .01).toFixed(2) + 
-                                        '</div>' +
-                                        '<div data-slt010-class="slt010-cart-drawer-upsell-meta-form">' +
-                                            $opt +
-                                            '<button type="button" data-slt010-class="slt010-cart-drawer-upsell-meta-form-btn">Add</button>' +
-                                        '</div>' +
-                                    '</div>' +
-                                '</div>'
-                            );
-                            /*$o.find('[data-slt010-class="slt010-cart-drawer-upsell-meta-form-btn"]').on('click', function($e){
-                                $e.preventDefault();
-                                const $vid = $t.j(this).prev().val();
-                                const $data = {items: [{id: parseInt($vid), quantity: 1}]};
-                                $t.cart.add($data, ($r)=>{
-                                    $t.updateCartContent($r);
-                                });
-                            });*/
+                            const $o = document.createElement('div');
+                            $o.setAttribute('data-slt010-class', 'slt010-cart-drawer-upsell-item');
+                            $o.setAttribute('data-slt010-handle', $data.handle);
+                            $o.innerHTML = '<a href="' + $data.url + '" data-slt010-class="slt010-cart-drawer-upsell-image-link">' +
+                                '<picture data-slt010-class="slt010-cart-drawer-upsell-picture">' +
+                                    '<img src="' + $data.images[0] + '" alt="' + $data.title + '" width="113" height="113" data-slt010-class="slt010-cart-drawer-upsell-image" />' +
+                                '</picture>' +
+                            '</a>' +
+                            '<div data-slt010-class="slt010-cart-drawer-upsell-meta">' +
+                                '<a href="' + $data.url + '" data-slt010-class="slt010-cart-drawer-upsell-title-link">' +
+                                    $data.title +
+                                '</a>' +
+                                '<div data-slt010-class="slt010-cart-drawer-upsell-meta-price">' +
+                                    '$' + ($data.price * .01).toFixed(2) + 
+                                '</div>' +
+                                '<div data-slt010-class="slt010-cart-drawer-upsell-meta-form">' +
+                                    $opt +
+                                    '<button type="button" data-slt010-class="slt010-cart-drawer-upsell-meta-form-btn">Add</button>' +
+                                '</div>' +
+                            '</div>';
+                            
                             return $o;
                         }
                     }
