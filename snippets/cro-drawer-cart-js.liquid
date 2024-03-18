@@ -404,9 +404,8 @@
                                 const $vid = $e.target.previousElementSibling.value;
                                 const $data = {items: [{id: parseInt($vid), quantity: 1}]};
                                 console.log('add button click ' + JSON.stringify($data));
-                                $t.cart.add($data,($r)=>{
-                                    console.log('product added...');
-                                    console.log(JSON.stringify($r));
+                                $t.cart.add($data,()=>{
+                                    //console.log('product added...');
                                 });
                             });
                             
