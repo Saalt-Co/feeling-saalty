@@ -330,7 +330,7 @@
                                 if(this.querySelectorAll('h4').length === 0){
                                     this.innerHTML = '<h4>{{ block.settings.title-upsell }}</h4>';
                                 }
-    
+                                console.log('[qa] ' + $t.collection.length);
                                 $t.each($t.collection, ($product, $pc)=>{
                                     if($added < $t.limit && !$t.checkCart4UpsellItem($product.handle)){
                                         $added++;
