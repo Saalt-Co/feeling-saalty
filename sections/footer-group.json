@@ -236,9 +236,9 @@
           "settings": {
             "title-empty": "Welcome to Saalt!",
             "content-empty": "Your cart is empty",
-            "active-upsell": true,
+            "active-upsell": false,
             "title-upsell": "Have you tried these yet?",
-            "upsell-collection": ""
+            "upsell-collection": "best-sellers"
           }
         },
         "footer_TmCWeE": {
