@@ -3,7 +3,7 @@
         constructor(){
             super();
             this.sessionTag = '{{ sessionTag }}';
-            this.currentCart = {{ cart | json }}; //remove quotes when updating the liquid file
+            this.currentCart = '{{ cart | json }}'; //remove quotes when updating the liquid file
             this.slug = 'slt010-cart-drawer';
         }
         connectedCallback(){
@@ -333,7 +333,7 @@
                                     this.innerHTML = '<h4>{{ block.settings.title-upsell }}</h4>';
                                 }
     
-                                $t.each($collection, ($product, $pc)=>{
+                                $t.each($t.collection, ($product, $pc)=>{
                                     if($added < $t.limit && !$t.checkCart4UpsellItem($product.handle)){
                                         $added++;
                                         $upsellSection.appendChild($t.getUpsellItemHTML($product));
