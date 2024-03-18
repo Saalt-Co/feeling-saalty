@@ -3,7 +3,7 @@
         constructor(){
             super();
             this.sessionTag = '{{ sessionTag }}';
-            this.currentCart = '{{ cart | json }}'; //remove quotes when updating the liquid file
+            this.currentCart = {{ cart | json }}; //remove quotes when updating the liquid file
             this.slug = 'slt010-cart-drawer';
         }
         connectedCallback(){
@@ -406,6 +406,9 @@
                                 const $vid = $e.target.previousElementSibling.value;
                                 const $data = {items: [{id: parseInt($vid), quantity: 1}]};
                                 console.log('add button click ' + JSON.stringify($data));
+                                $t.cart.add($data,($r)=>{
+                                    window.sessionStorage.setItem(this.sessionTag, JSON.stringify($r));
+                                });
                             });
                             
                             return $o;
