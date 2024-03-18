@@ -730,13 +730,14 @@
                     width: 100%;
                     margin: 0;
                     padding: 5px 20px;
-                    background-color: #eee;
+                    background-color: {{ block.settings.bg-color }};
                     display: flex;
                     flex: 0 0 auto;
                     justify-content: center;
                     align-items: center;
-                    color: #232323;
+                    color: {{ block.settings.font-color }};
                     text-align: center;
+                    font-size: {{ block.settings.font-size }}px;
                 }
                 
         {%- endcase -%}
