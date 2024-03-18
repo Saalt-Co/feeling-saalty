@@ -228,7 +228,7 @@
             "msg-default": "Free Shipping on orders over ${amount}!",
             "msg-below": "You are ${amount} away from <strong>FREE SHIPPING<\/strong>",
             "msg-complete": "Free Shipping Unlocked!",
-            "position": "below",
+            "position": "above",
             "bg-color": "#fff",
             "bar-bg-color": "#eee",
             "bar-color": "#f7d6c5",
