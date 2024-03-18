@@ -223,12 +223,12 @@
                 
             {%- when 'progress-bar' -%}
                 :root{
-                    --data-shipping-progress-bar-bg-color: #fff;
-                    --data-shipping-progress-bar-progress-bar-bg: #eee;
-                    --data-shipping-progress-bar-progress-bar: #f7d6c5;
-                    --data-shipping-progress-bar-progress-bar-complete: #f7d6c5;
-                    --data-shipping-progress-bar-font-color: #3f3f3f;
-                    --data-shipping-progress-bar-font-size: 14px;
+                    --data-shipping-progress-bar-bg-color: {{ block.settings.bg-color }};
+                    --data-shipping-progress-bar-progress-bar-bg: {{ block.settings.bar-bg-color }};
+                    --data-shipping-progress-bar-progress-bar: {{ block.settings.bar-color }};
+                    --data-shipping-progress-bar-progress-bar-complete: {{ block.settings.bar-color-complete }};
+                    --data-shipping-progress-bar-font-color: {{ block.settings.font-color }};
+                    --data-shipping-progress-bar-font-size: {{ block.settings.font-size }}px;
                     --data-shipping-progress-bar-border-color: #e1e1e1;
                 }
                 slt010-cart-drawer-progress-bar{
