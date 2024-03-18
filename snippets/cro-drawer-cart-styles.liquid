@@ -506,136 +506,138 @@
                     color: #535353;
                 }
 
-                slt010-cart-drawer-upsell-block{
-                    width: calc(100% + 30px);
-                    margin: 0 -15px;
-                    padding: 20px 25px;
-                    background-color: #fafafa;
-                    border-top: solid 1px #e3e3e3;
-                    display: flex;
-                    flex: 0 0 auto;
-                    flex-wrap: wrap;
-                }
-                slt010-cart-drawer-upsell-block > h4{
-                    margin: 0;
-                    display: flex;
-                    flex: 0 0 100%;
-                    justify-content: center;
-                    align-items: center;
-                }
-                slt010-cart-drawer-upsell{
-                    margin: 0;
-                    padding: 0;
-                    display: flex;
-                    flex: 0 0 100%;
-                }
-                [data-slt010-class="slt010-cart-drawer-upsell-item"]{
-                    padding: 20px;
-                    display: flex;
-                    flex: 0 0 33.3333%;
-                    flex-direction: column;
-                    align-items: center;
-                }
-                [data-slt010-class="slt010-cart-drawer-upsell-image-link"]{
-                    width: 100%;
-                    max-width: 113px;
-                    max-height: 113px;
-                    margin: 0 0 10px;
-                    padding: 0;
-                    display: flex;
-                    flex: 0 0 auto;
-                }
-                [data-slt010-class="slt010-cart-drawer-upsell-picture"]{
-                    width: 100%;
-                    height: 0;
-                    margin: 0;
-                    padding: 100% 0 0;
-                    display: flex;
-                    position: relative;
-                }
-                [data-slt010-class="slt010-cart-drawer-upsell-image"]{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-                [data-slt010-class="slt010-cart-drawer-upsell-meta"]{
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
-                    display: flex;
-                    flex: 1 1 100%;
-                    flex-direction: column;
-                }
-                [data-slt010-class="slt010-cart-drawer-upsell-title-link"]{
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
-                    display: flex;
-                    flex: 1 1 100%;
-                    justify-content: center;
-                    align-items: flex-start;
-                    text-align: center;
-                    font-size: 14px;
-                    line-height: 18px;
-                    color: #535353;
-                    text-decoration: none;
-                }
-                [data-slt010-class="slt010-cart-drawer-upsell-meta-price"]{
-                    width: 100%;
-                    margin: 0;
-                    padding: 10px 0 0;
-                    display: flex;
-                    flex: 0 0 auto;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 14px;
-                    line-height: 18px;
-                    color: #535353;
-                }
-                [data-slt010-class="slt010-cart-drawer-upsell-meta-form"]{
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
-                    display: flex;
-                    flex: 0 0 auto;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-                [data-slt010-class="slt010-cart-drawer-upsell-meta-form-select"]{
-                    width: 100%;
-                    margin: 20px 0;
-                    padding: 10px 15px;
-                    background-color: #fff;
-                    border: solid 1px #ccc;
-                    border-radius: 5px;
-                    display: flex;
-                    flex: 0 0 auto;
-                    justify-content: center;
-                    align-items: center;
-                    color: #232323;
-                }
-                [data-slt010-class="slt010-cart-drawer-upsell-meta-form-select"][data-slt010-visible="slt010-hidden"]{
-                    visibility: hidden;
-                }
-                [data-slt010-class="slt010-cart-drawer-upsell-meta-form-btn"]{
-                    width: 100%;
-                    margin: 0 0 20px;
-                    padding: 10px 15px;
-                    background: #f7d6c5;
-                    border: solid 2px #f7d6c5;
-                    border-radius: 5px;
-                    display: flex;
-                    flex: 0 0 auto;
-                    justify-content: center;
-                    align-items: center;
-                    color: #3f4759;
-                    font-size: 16px;
-                }
+                {%- if block.settings.active-upsell -%}
+                    slt010-cart-drawer-upsell-block{
+                        width: calc(100% + 30px);
+                        margin: 0 -15px;
+                        padding: 20px 25px;
+                        background-color: #fafafa;
+                        border-top: solid 1px #e3e3e3;
+                        display: flex;
+                        flex: 0 0 auto;
+                        flex-wrap: wrap;
+                    }
+                    slt010-cart-drawer-upsell-block > h4{
+                        margin: 0;
+                        display: flex;
+                        flex: 0 0 100%;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    slt010-cart-drawer-upsell{
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        flex: 0 0 100%;
+                    }
+                    [data-slt010-class="slt010-cart-drawer-upsell-item"]{
+                        padding: 20px;
+                        display: flex;
+                        flex: 0 0 33.3333%;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    [data-slt010-class="slt010-cart-drawer-upsell-image-link"]{
+                        width: 100%;
+                        max-width: 113px;
+                        max-height: 113px;
+                        margin: 0 0 10px;
+                        padding: 0;
+                        display: flex;
+                        flex: 0 0 auto;
+                    }
+                    [data-slt010-class="slt010-cart-drawer-upsell-picture"]{
+                        width: 100%;
+                        height: 0;
+                        margin: 0;
+                        padding: 100% 0 0;
+                        display: flex;
+                        position: relative;
+                    }
+                    [data-slt010-class="slt010-cart-drawer-upsell-image"]{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    [data-slt010-class="slt010-cart-drawer-upsell-meta"]{
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        flex: 1 1 100%;
+                        flex-direction: column;
+                    }
+                    [data-slt010-class="slt010-cart-drawer-upsell-title-link"]{
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        flex: 1 1 100%;
+                        justify-content: center;
+                        align-items: flex-start;
+                        text-align: center;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #535353;
+                        text-decoration: none;
+                    }
+                    [data-slt010-class="slt010-cart-drawer-upsell-meta-price"]{
+                        width: 100%;
+                        margin: 0;
+                        padding: 10px 0 0;
+                        display: flex;
+                        flex: 0 0 auto;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #535353;
+                    }
+                    [data-slt010-class="slt010-cart-drawer-upsell-meta-form"]{
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        flex: 0 0 auto;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    [data-slt010-class="slt010-cart-drawer-upsell-meta-form-select"]{
+                        width: 100%;
+                        margin: 20px 0;
+                        padding: 10px 15px;
+                        background-color: #fff;
+                        border: solid 1px #ccc;
+                        border-radius: 5px;
+                        display: flex;
+                        flex: 0 0 auto;
+                        justify-content: center;
+                        align-items: center;
+                        color: #232323;
+                    }
+                    [data-slt010-class="slt010-cart-drawer-upsell-meta-form-select"][data-slt010-visible="slt010-hidden"]{
+                        visibility: hidden;
+                    }
+                    [data-slt010-class="slt010-cart-drawer-upsell-meta-form-btn"]{
+                        width: 100%;
+                        margin: 0 0 20px;
+                        padding: 10px 15px;
+                        background: #f7d6c5;
+                        border: solid 2px #f7d6c5;
+                        border-radius: 5px;
+                        display: flex;
+                        flex: 0 0 auto;
+                        justify-content: center;
+                        align-items: center;
+                        color: #3f4759;
+                        font-size: 16px;
+                    }
+                {%- endif -%}
             
                 slt010-cart-drawer-empty{
                     margin: 0;
