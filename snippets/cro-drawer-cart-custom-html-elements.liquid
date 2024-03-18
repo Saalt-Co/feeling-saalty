@@ -283,8 +283,8 @@
                         this.shipData = {
                             min: {{ threshold | times: 100 }},
                             msg: {
-                                default: '{{ defaultMsg | escape }}',
-                                below: '{{ belowMsg | escape }}',
+                                default: '{{ defaultMsg }}',
+                                below: '{{ belowMsg }}',
                                 free: '{{ block.settings.msg-complete | escape }}'
                             }
                         };
