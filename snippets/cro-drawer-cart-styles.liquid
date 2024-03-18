@@ -1,14 +1,4 @@
 <style id="{{ section.id }}-style">
-    :root{
-        --data-shipping-progress-bar-bg-color: #fff;
-        --data-shipping-progress-bar-progress-bar-bg: #eee;
-        --data-shipping-progress-bar-progress-bar: #f7d6c5;
-        --data-shipping-progress-bar-progress-bar-complete: #f7d6c5;
-        --data-shipping-progress-bar-font-color: #3f3f3f;
-        --data-shipping-progress-bar-font-size: 14px;
-        --data-shipping-progress-bar-border-color: #e1e1e1;
-    }
-
     body.slt010-cart-drawer-block-open{
         width: 100vw;
         height: 100vh;
@@ -227,6 +217,15 @@
                 }
                 
             {%- when 'progress-bar' -%}
+                :root{
+                    --data-shipping-progress-bar-bg-color: #fff;
+                    --data-shipping-progress-bar-progress-bar-bg: #eee;
+                    --data-shipping-progress-bar-progress-bar: #f7d6c5;
+                    --data-shipping-progress-bar-progress-bar-complete: #f7d6c5;
+                    --data-shipping-progress-bar-font-color: #3f3f3f;
+                    --data-shipping-progress-bar-font-size: 14px;
+                    --data-shipping-progress-bar-border-color: #e1e1e1;
+                }
                 slt010-cart-drawer-progress-bar{
                     width: 100%;
                     margin: 0;
@@ -317,6 +316,7 @@
                     display: flex;
                     flex: 1 1 100%;
                     flex-wrap: wrap;
+                    align-content: flex-start;
                     overflow: auto;
                     scrollbar-width: thin;
                     scrollbar-color: rgba(0,0,0,1) rgba(0,0,0,.3);
@@ -506,7 +506,7 @@
                     color: #535353;
                 }
 
-                [data-slt010-class="slt010-cart-drawer-upsell"]{
+                slt010-cart-drawer-upsell-block{
                     width: calc(100% + 30px);
                     margin: 0 -15px;
                     padding: 20px 25px;
@@ -516,12 +516,18 @@
                     flex: 0 0 auto;
                     flex-wrap: wrap;
                 }
-                [data-slt010-class="slt010-cart-drawer-upsell"] > h4{
+                slt010-cart-drawer-upsell-block > h4{
                     margin: 0;
                     display: flex;
                     flex: 0 0 100%;
                     justify-content: center;
                     align-items: center;
+                }
+                slt010-cart-drawer-upsell{
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex: 0 0 100%;
                 }
                 [data-slt010-class="slt010-cart-drawer-upsell-item"]{
                     padding: 20px;
