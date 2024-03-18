@@ -126,7 +126,6 @@
                 current: new Date(),
                 end: new Date()
             };
-            this.timer = null;
             {%- for block in section.blocks -%}
                 {%- case block.type -%}
                     {%- when 'countdown' -%}
@@ -171,7 +170,6 @@
                 this.create('[data-slt010-class="slt010-countdown"]', $endTime, ()=>{
                     if(this.querySelectorAll('[data-slt010-class="slt010-countdown-container"]').length > 0){
                         this.querySelector('[data-slt010-class="slt010-countdown-container"]').style.display = 'none';
-                        clearInterval(this.timer);
                     }
                 });
             }
@@ -225,7 +223,7 @@
         }
         updateCountdown($callback = ()=>{}){
             let $value = true;
-            if(this.dates.end.getTime() > this.dates.current.getTime()){
+            if(this.dates.end.getTime() > this.dates.current.getTime() && (this.querySelectorAll('[data-countdown-minutes]').length > 0 && this.querySelectorAll('[data-countdown-seconds]').length > 0)){
                 this.querySelector('[data-countdown-minutes]').innerHTML = this.getMinutes();
                 this.querySelector('[data-countdown-seconds]').innerHTML = this.getSeconds();
             }
@@ -238,11 +236,11 @@
         start($callback = ()=>{}){
             const $t = this;
             $t.updateCountdown($callback);
-            $t.timer = setInterval(()=>{
+            let $timer = setInterval(()=>{
                 $t.setCurrentDate();
                 const $time = $t.updateCountdown($callback);
                 if(!$time){
-                    clearInterval($t.timer);
+                    clearInterval($timer);
                 }
             }, 1000);
         }
