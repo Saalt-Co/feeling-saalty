@@ -269,6 +269,7 @@
                     flex: 0 0 auto;
                     justify-content: center;
                     align-items: center;
+                    order: {%- if block.settings.position == 'below' -%}1{%- else -%}2{%- endif -%};
                 }
                 [data-shipping-progress-bar-msg]{
                     color: var(--data-shipping-progress-bar-font-color);
@@ -288,6 +289,7 @@
                     justify-content: flex-start;
                     align-items: center;
                     overflow: hidden;
+                    order: {%- if block.settings.position == 'below' -%}2{%- else -%}1{%- endif -%};
                 }
                 [data-shipping-progress-bar-bar]{
                     width: 0;
