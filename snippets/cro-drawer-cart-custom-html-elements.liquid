@@ -285,7 +285,7 @@
                             msg: {
                                 default: '{{ defaultMsg }}',
                                 below: '{{ belowMsg }}',
-                                free: '{{ block.settings.msg-complete | replace: "'", "\'" }}'
+                                free: '{{ block.settings.msg-complete | replace: "\'", "_" }}'
                             }
                         };
                 {%- endcase -%}
