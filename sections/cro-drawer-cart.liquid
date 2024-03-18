@@ -119,7 +119,7 @@
           {
             "type":"text",
             "id":"title-empty",
-            "label":"Title",
+            "label":"headline",
             "default":"Welcome to Saalt!"
           },
           {
@@ -131,6 +131,18 @@
           {
             "type":"header",
             "content":"Upsell settings"
+          },
+          {
+            "type":"checkbox",
+            "id":"active-upsell",
+            "label":"Add upsell section",
+            "default":false
+          },
+          {
+            "type":"text",
+            "id":"title-upsell",
+            "label":"Headline",
+            "default":"Have you tried these yet?"
           }
         ]
       },
@@ -187,7 +199,8 @@
             "type":"body",
             "settings":{
               "title-empty":"Welcome to Saalt!",
-              "content-empty":"Your cart is empty"
+              "content-empty":"Your cart is empty",
+              "title-upsell":"Have you tried these yet?"
             }
           },
           {
