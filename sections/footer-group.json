@@ -239,7 +239,7 @@
             "active-upsell": true,
             "title-upsell": "Have you tried these yet?",
             "upsell-collection": "best-sellers",
-            "display": 3,
+            "display": 4,
             "desktop-pre-row": "2",
             "mobile-pre-row": "2"
           }
