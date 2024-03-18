@@ -209,9 +209,11 @@
         },
         "message_DE6wPe": {
           "type": "message",
-          "disabled": true,
           "settings": {
-            "msg-banner": "Save automatically when you bundle Cups, Discs, or Underwear. Save 15% for 3+ items. Save 20% for 5+ items. Save 25% for 7+ items."
+            "msg-banner": "Save automatically when you bundle Cups, Discs, or Underwear. Save 15% for 3+ items. Save 20% for 5+ items. Save 25% for 7+ items.",
+            "bg-color": "#eee",
+            "font-size": 13,
+            "font-color": "#232323"
           }
         },
         "progress_bar_9JzWbk": {
