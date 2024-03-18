@@ -333,7 +333,7 @@
                     this.querySelector('[' + this.nClass.barWrp + '="' + this.id + '"]').style.display = 'block';
                 }
                 else{
-                    this.querySelector('[' + this.nClass.msg + '="' + this.id + '"]').innerHTML = this.shipData.msg.free;
+                    this.querySelector('[' + this.nClass.msg + '="' + this.id + '"]').innerHTML = this.shipData.msg.free.replace(/_/g, '\'');
                     this.querySelector('[' + this.nClass.bar + '="' + this.id + '"]').classList.add(this.nClass.bar + '-complete');
                     this.querySelector('[' + this.nClass.bar + '="' + this.id + '"]').style.width = $w + '%';
                     this.querySelector('[' + this.nClass.barWrp + '="' + this.id + '"]').style.display = 'block';
