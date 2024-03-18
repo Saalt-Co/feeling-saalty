@@ -219,7 +219,7 @@
         "progress_bar_9JzWbk": {
           "type": "progress-bar",
           "settings": {
-            "min": 75,
+            "min": 39,
             "msg-default": "Free Shipping on orders over ${amount}!",
             "msg-below": "You are ${amount} away from <strong>FREE SHIPPING<\/strong>",
             "msg-complete": "Free Shipping Unlocked!"
