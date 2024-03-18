@@ -205,9 +205,9 @@
           "type": "header",
           "settings": {
             "title": "YOUR CART",
-            "bg-color": "#373737",
+            "bg-color": "#FFFFFF",
             "font-size": 30,
-            "font-color": "#FFFFFF"
+            "font-color": "#232323"
           }
         },
         "message_DE6wPe": {
