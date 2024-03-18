@@ -125,7 +125,7 @@
             {%- for block in section.blocks -%}
                 {%- case block.type -%}
                     {%- when 'body' -%}
-                        {%- if block.settings.active-upsell -%}
+                        {%- if block.settings.active-upsell and block.settings.upsell-collection != blank -%}
     
                         if(this.querySelectorAll('slt010-cart-drawer-upsell-block'.length === 0)){
                             const $body = this.querySelector(this.slug + '-body');
@@ -289,48 +289,54 @@
     }
     customElements.define('slt010-cart-drawer-minus-item', $cro_slt010_drawer_cart_minus_item_class, {extends: 'button'});
     
-    class $cro_slt010_cartDrawerUpsell extends HTMLElement{
-        static observedAttributes = ['data-cart-qty'];
-        constructor(){
-            super();
-            this.sessionTag = '{{ sessionTag }}';
-        }
-        connectedCallback(){
-            //console.log('slt010-cart-drawer-upsell-block added');
-        }
-        attributeChangedCallback(name, oldValue, newValue){
-            //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
-            switch(name){
-                case 'data-cart-qty':
-                    this.update(newValue);
-                    break;
-                default:
-                    break;
-            }
-        }
-        update($value){
-            if(parseInt($value) > 0){
-                const $cart = JSON.parse(window.sessionStorage.getItem(this.sessionTag));
-                const $upsellSection = (this.querySelectorAll('slt010-cart-drawer-upsell').length === 0) ? document.createElement('slt010-cart-drawer-upsell') : this.querySelector('slt010-cart-drawer-upsell');
-                $upsellSection.innerHTML = '';
     
-                {%- for block in section.blocks -%}
-                    {%- case block.type -%}
-                        {%- when 'body' -%}
-                            if(this.querySelectorAll('h4').length === 0){
-                                this.innerHTML = '<h4>{{ block.settings.title-upsell }}</h4>';
+    {%- for block in section.blocks -%}
+        {%- case block.type -%}
+            {%- when 'body' -%}
+                {%- if block.settings.active-upsell and block.settings.upsell-collection != blank -%}
+    
+                    class $cro_slt010_cartDrawerUpsell extends HTMLElement{
+                        static observedAttributes = ['data-cart-qty'];
+                        constructor(){
+                            super();
+                            this.sessionTag = '{{ sessionTag }}';
+                        }
+                        connectedCallback(){
+                            //console.log('slt010-cart-drawer-upsell-block added');
+                        }
+                        attributeChangedCallback(name, oldValue, newValue){
+                            //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+                            switch(name){
+                                case 'data-cart-qty':
+                                    this.update(newValue);
+                                    break;
+                                default:
+                                    break;
                             }
-                    {%- endcase -%}
-                {%- endfor -%}
+                        }
+                        update($value){
+                            if(parseInt($value) > 0){
+                                const $cart = JSON.parse(window.sessionStorage.getItem(this.sessionTag));
+                                const $upsellSection = (this.querySelectorAll('slt010-cart-drawer-upsell').length === 0) ? document.createElement('slt010-cart-drawer-upsell') : this.querySelector('slt010-cart-drawer-upsell');
+                                $upsellSection.innerHTML = '';
+                    
+                                if(this.querySelectorAll('h4').length === 0){
+                                    this.innerHTML = '<h4>{{ block.settings.title-upsell }}</h4>';
+                                }
+                    
+                                if(this.querySelectorAll('slt010-cart-drawer-upsell').length === 0){
+                                    this.appendChild($upsellSection);
+                                }
+                            }
+                            else{
+                                this.innerHTML = '';
+                            }
+                        }
+                    }
+                    customElements.define('slt010-cart-drawer-upsell-block', $cro_slt010_cartDrawerUpsell);
     
-                if(this.querySelectorAll('slt010-cart-drawer-upsell').length === 0){
-                    this.appendChild($upsellSection);
-                }
-            }
-            else{
-                this.innerHTML = '';
-            }
-        }
-    }
-    customElements.define('slt010-cart-drawer-upsell-block', $cro_slt010_cartDrawerUpsell);
+    
+                {%- endif -%}
+        {%- endcase -%}
+    {%- endfor -%}
 </script>
