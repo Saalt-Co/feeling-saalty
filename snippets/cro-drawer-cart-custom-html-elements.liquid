@@ -130,8 +130,8 @@
                 {%- case block.type -%}
                     {%- when 'countdown' -%}
                         this.limit = {{ block.settings.time }};
-                        this.headline = '{{ block.settings.headline }}';
-                        this.msg = '{{ block.settings.msg | escape }}';
+                        this.headline = '{{ block.settings.headline | replace: "'", "&#39;" }}';
+                        this.msg = '{{ block.settings.msg | replace: "'", "&#39;" }}';
                 {%- endcase -%}
             {%- endfor -%}
         }
