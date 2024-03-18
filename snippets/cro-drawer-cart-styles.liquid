@@ -526,7 +526,7 @@
                         width: calc(100% + 30px);
                         margin: 0 -15px;
                         padding: 20px 25px;
-                        background-color: #fafafa;
+                        background-color:{{ block.settings.bg-color }};
                         border-top: solid 1px #e3e3e3;
                         display: flex;
                         flex: 0 0 auto;
@@ -538,6 +538,7 @@
                         flex: 0 0 100%;
                         justify-content: center;
                         align-items: center;
+                        font-size: {{ block.settings.font-size-headline }}px;
                     }
                     slt010-cart-drawer-upsell{
                         margin: 0;
