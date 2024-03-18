@@ -534,7 +534,7 @@
                     [data-slt010-class="slt010-cart-drawer-upsell-item"]{
                         padding: 20px;
                         display: flex;
-                        flex: 0 0 33.3333%;
+                        flex: 0 0 calc(100% / {{ block.settings.desktop-pre-row }});
                         flex-direction: column;
                         align-items: center;
                     }
@@ -639,6 +639,11 @@
                         font-size: 16px;
                         cursor:pointer;
                     }
+                    @media all and (max-width: 767px) {  
+                        [data-slt010-class="slt010-cart-drawer-upsell-item"]{
+                            flex: 0 0 calc(100% / {{ block.settings.mobile-pre-row }});
+                        }
+                    }
                 {%- endif -%}
             
                 slt010-cart-drawer-empty{
@@ -657,9 +662,6 @@
                     }
                     [data-slt010-class="slt010-cart-drawer-body-list-item-price"]{
                         flex: 1 0 auto;
-                    }
-                    [data-slt010-class="slt010-cart-drawer-upsell-item"]{
-                        flex: 0 0 50%;
                     }
                 }
                 
