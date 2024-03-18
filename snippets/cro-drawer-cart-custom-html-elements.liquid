@@ -283,9 +283,9 @@
                         this.shipData = {
                             min: {{ threshold | times: 100 }},
                             msg: {
-                                default: '{{ defaultMsg }}',
-                                below: '{{ belowMsg }}',
-                                free: '{{ block.settings.msg-complete }}'
+                                default: '{{ defaultMsg | escape }}',
+                                below: '{{ belowMsg | escape }}',
+                                free: '{{ block.settings.msg-complete | escape }}'
                             }
                         };
                 {%- endcase -%}
