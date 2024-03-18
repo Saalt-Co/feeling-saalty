@@ -148,6 +148,51 @@
             "type":"collection",
             "id":"upsell-collection",
             "label":"Select a collection"
+          },
+          {
+            "type":"range",
+            "id":"display",
+            "label":"How many upsell items to display",
+            "min":1,
+            "max":10,
+            "step":1,
+            "default":6
+          },
+          {
+            "type":"select",
+            "id":"desktop-pre-row",
+            "label":"Products pre row (desktop)",
+            "options":[
+              {
+                "label":"1",
+                "value":"1"
+              },
+              {
+                "label":"2",
+                "value":"2"
+              },
+              {
+                "label":"3",
+                "value":"3"
+              }
+            ],
+            "default":"3"
+          },
+          {
+            "type":"select",
+            "id":"mobile-pre-row",
+            "label":"Products pre row (mobile)",
+            "options":[
+              {
+                "label":"1",
+                "value":"1"
+              },
+              {
+                "label":"2",
+                "value":"2"
+              }
+            ],
+            "default":"2"
           }
         ]
       },
