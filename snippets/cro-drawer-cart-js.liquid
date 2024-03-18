@@ -32,11 +32,13 @@
             this.updateFooter();
             this.updateProgressBar();
             this.updateCountdown();
+            this.updateUpsell();
         }
         updateCartBody(){
             if(this.hasNode(this.slug + '-body')){
                 if(this.currentCart.item_count > 0){
                     this.getCartItems();
+                    this.upsellCartBody();
                 }
                 else{
                     this.emptyCartBody();
@@ -119,6 +121,22 @@
             $body.innerHTML = '';
             $body.appendChild($empty);
         }
+        upsellCartBody(){
+            {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                    {%- when 'body' -%}
+                        {%- if block.settings.active-upsell -%}
+    
+                        if(this.querySelectorAll('slt010-cart-drawer-upsell-block'.length === 0)){
+                            const $body = this.querySelector(this.slug + '-body');
+                            const $upsell = document.createElement('slt010-cart-drawer-upsell-block');
+                            $body.appendChild($upsell);
+                        }
+    
+                        {%- endif -%}
+                {%- endcase -%}
+            {%- endfor -%}
+        }
         
         updateFooter(){
             if(this.hasNode(this.slug + '-footer')){
@@ -128,14 +146,20 @@
         }
         updateProgressBar(){
             if(this.hasNode(this.slug + '-progress-bar')){
-                const $footer = this.querySelector(this.slug + '-progress-bar');
-                $footer.setAttribute('data-cart-qty', this.currentCart.item_count);
+                const $progressBar = this.querySelector(this.slug + '-progress-bar');
+                $progressBar.setAttribute('data-cart-qty', this.currentCart.item_count);
             }
         }
         updateCountdown(){
             if(this.hasNode(this.slug + '-countdown')){
-                const $footer = this.querySelector(this.slug + '-countdown');
-                $footer.setAttribute('data-cart-qty', this.currentCart.item_count);
+                const $countdown = this.querySelector(this.slug + '-countdown');
+                $countdown.setAttribute('data-cart-qty', this.currentCart.item_count);
+            }
+        }
+        updateUpsell(){
+            if(this.hasNode(this.slug + '-upsell-block')){
+                const $upsell = this.querySelector(this.slug + '-upsell-block');
+                $upsell.setAttribute('data-cart-qty', this.currentCart.item_count);
             }
         }
     }
@@ -264,4 +288,49 @@
         }
     }
     customElements.define('slt010-cart-drawer-minus-item', $cro_slt010_drawer_cart_minus_item_class, {extends: 'button'});
+    
+    class $cro_slt010_cartDrawerUpsell extends HTMLElement{
+        static observedAttributes = ['data-cart-qty'];
+        constructor(){
+            super();
+            this.sessionTag = '{{ sessionTag }}';
+        }
+        connectedCallback(){
+            //console.log('slt010-cart-drawer-upsell-block added');
+        }
+        attributeChangedCallback(name, oldValue, newValue){
+            //console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+            switch(name){
+                case 'data-cart-qty':
+                    this.update(newValue);
+                    break;
+                default:
+                    break;
+            }
+        }
+        update($value){
+            if(parseInt($value) > 0){
+                const $cart = JSON.parse(window.sessionStorage.getItem(this.sessionTag));
+                const $upsellSection = (this.querySelectorAll('slt010-cart-drawer-upsell').length === 0) ? document.createElement('slt010-cart-drawer-upsell') : this.querySelector('slt010-cart-drawer-upsell');
+                $upsellSection.innerHTML = '';
+    
+                {%- for block in section.blocks -%}
+                    {%- case block.type -%}
+                        {%- when 'body' -%}
+                            if(this.querySelectorAll('h4').length === 0){
+                                this.innerHTML = '<h4>{{ block.settings.title-upsell }}</h4>';
+                            }
+                    {%- endcase -%}
+                {%- endfor -%}
+    
+                if(this.querySelectorAll('slt010-cart-drawer-upsell').length === 0){
+                    this.appendChild($upsellSection);
+                }
+            }
+            else{
+                this.innerHTML = '';
+            }
+        }
+    }
+    customElements.define('slt010-cart-drawer-upsell-block', $cro_slt010_cartDrawerUpsell);
 </script>
