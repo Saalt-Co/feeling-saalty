@@ -204,14 +204,17 @@
         "header_bgkLdy": {
           "type": "header",
           "settings": {
-            "title": "YOUR CART"
+            "title": "YOUR CART",
+            "bg-color": "#373737",
+            "font-size": 30,
+            "font-color": "#FFFFFF"
           }
         },
         "message_DE6wPe": {
           "type": "message",
           "settings": {
             "msg-banner": "Save automatically when you bundle Cups, Discs, or Underwear. Save 15% for 3+ items. Save 20% for 5+ items. Save 25% for 7+ items.",
-            "bg-color": "#eee",
+            "bg-color": "#eeeeee",
             "font-size": 13,
             "font-color": "#232323"
           }
