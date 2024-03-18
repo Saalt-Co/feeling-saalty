@@ -240,7 +240,7 @@
             "title-upsell": "Have you tried these yet?",
             "upsell-collection": "best-sellers",
             "display": 4,
-            "desktop-pre-row": "2",
+            "desktop-pre-row": "1",
             "mobile-pre-row": "2"
           }
         },
