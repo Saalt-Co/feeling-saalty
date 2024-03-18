@@ -126,6 +126,7 @@
                 current: new Date(),
                 end: new Date()
             };
+            this.timer = null;
             {%- for block in section.blocks -%}
                 {%- case block.type -%}
                     {%- when 'countdown' -%}
@@ -170,6 +171,7 @@
                 this.create('[data-slt010-class="slt010-countdown"]', $endTime, ()=>{
                     if(this.querySelectorAll('[data-slt010-class="slt010-countdown-container"]').length > 0){
                         this.querySelector('[data-slt010-class="slt010-countdown-container"]').style.display = 'none';
+                        clearInterval(this.timer);
                     }
                 });
             }
@@ -236,11 +238,11 @@
         start($callback = ()=>{}){
             const $t = this;
             $t.updateCountdown($callback);
-            let $timer = setInterval(()=>{
+            $t.timer = setInterval(()=>{
                 $t.setCurrentDate();
                 const $time = $t.updateCountdown($callback);
                 if(!$time){
-                    clearInterval($timer);
+                    clearInterval($t.timer);
                 }
             }, 1000);
         }
