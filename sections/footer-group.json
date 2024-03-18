@@ -238,7 +238,10 @@
             "content-empty": "Your cart is empty",
             "active-upsell": true,
             "title-upsell": "Have you tried these yet?",
-            "upsell-collection": "best-sellers"
+            "upsell-collection": "best-sellers",
+            "display": 3,
+            "desktop-pre-row": "3",
+            "mobile-pre-row": "2"
           }
         },
         "footer_TmCWeE": {
