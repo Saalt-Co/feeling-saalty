@@ -243,7 +243,13 @@
           "settings": {
             "time": 8,
             "headline": "LIMITED STOCK!",
-            "msg": "We've saved your cart for"
+            "msg": "We've saved your cart for",
+            "bg-color": "#cff7c5",
+            "font-color": "#535353",
+            "font-size-headline": 18,
+            "font-size-mobile-headline": 18,
+            "font-size": 16,
+            "font-size-mobile": 16
           }
         },
         "body_Npcgwi": {
