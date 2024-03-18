@@ -400,6 +400,11 @@
                                     '<button type="button" data-slt010-class="slt010-cart-drawer-upsell-meta-form-btn">Add</button>' +
                                 '</div>' +
                             '</div>';
+    
+                            $o.querySelector('[data-slt010-class="slt010-cart-drawer-upsell-meta-form-btn"]').addEventListener('click',function($e){
+                                $e.preventDefault();
+                                console.log('add button click');
+                            });
                             
                             return $o;
                         }
