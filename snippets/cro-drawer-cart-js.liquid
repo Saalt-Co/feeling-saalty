@@ -331,10 +331,7 @@
                                     this.innerHTML = '<h4>{{ block.settings.title-upsell }}</h4>';
                                 }
     
-                                console.log('[qa] ' + $t.collection.length);
                                 $t.each($t.collection, ($product, $pc)=>{
-                                    console.log('[qa] product count ' + $pc);
-                                    console.log('[qa] added: ' + $added);
                                     if(!$t.checkCart4UpsellItem($product.handle) && $added < $t.limit){
                                         $upsellSection.appendChild($t.getUpsellItemHTML($product));
                                         $added++;
