@@ -283,9 +283,9 @@
                         this.shipData = {
                             min: {{ threshold | times: 100 }},
                             msg: {
-                                default: '{{ defaultMsg }}',
-                                below: '{{ belowMsg }}',
-                                free: '{{ block.settings.msg-complete | replace: "'", "_" }}'
+                                default: '{{ defaultMsg | replace: "'", "&#39;" }}',
+                                below: '{{ belowMsg | replace: "'", "&#39;" }}',
+                                free: '{{ block.settings.msg-complete | replace: "'", "&#39;" }}'
                             }
                         };
                 {%- endcase -%}
@@ -333,7 +333,7 @@
                     this.querySelector('[' + this.nClass.barWrp + '="' + this.id + '"]').style.display = 'block';
                 }
                 else{
-                    this.querySelector('[' + this.nClass.msg + '="' + this.id + '"]').innerHTML = this.shipData.msg.free.replace(/_/g, '\'');
+                    this.querySelector('[' + this.nClass.msg + '="' + this.id + '"]').innerHTML = this.shipData.msg.free;
                     this.querySelector('[' + this.nClass.bar + '="' + this.id + '"]').classList.add(this.nClass.bar + '-complete');
                     this.querySelector('[' + this.nClass.bar + '="' + this.id + '"]').style.width = $w + '%';
                     this.querySelector('[' + this.nClass.barWrp + '="' + this.id + '"]').style.display = 'block';
