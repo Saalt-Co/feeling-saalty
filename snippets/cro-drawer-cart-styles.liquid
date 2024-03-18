@@ -130,6 +130,11 @@
                     letter-spacing: 0px;
                     color: {{ block.settings.font-color }};
                 }
+                @media all and (max-width: 767px) {  
+                    slt010-cart-drawer-header{
+                        font-size: {{ block.settings.font-size-mobile }}px;
+                    }
+                }
                 
             {%- when 'countdown' -%}
                 slt010-cart-drawer-countdown{
