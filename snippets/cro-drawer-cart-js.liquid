@@ -300,7 +300,7 @@
                             this.cart = new $croShopifyCartClass('{{ sessionTag }}');
                             this.sessionTag = '{{ sessionTag }}';
                             this.collection = {{ block.settings.upsell-collection.products | json }};
-                            this.limit = 6;
+                            this.limit = {{ block.settings.display }};
                         }
                         connectedCallback(){
                             //console.log('slt010-cart-drawer-upsell-block added');
