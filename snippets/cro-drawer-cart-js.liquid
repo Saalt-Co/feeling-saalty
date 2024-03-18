@@ -177,7 +177,6 @@
         async add($data, $callBack, $redirect = false){
             const $t = this;
             if($data.items.length > 0){
-                const $t = this;
                 fetch('/cart/add.json', {
                     method: 'POST',
                     headers: {
@@ -185,16 +184,15 @@
                         'Accept':'application/json'
                     },
                     body: JSON.stringify($data)
-                }).then(($res)=>{
-                    return $res.json();
-                }).then(($data)=>{
-                    window.sessionStorage.setItem($t.sessionTag, JSON.stringify($data));
-                    if($redirect){
-                        $callBack();
-                    }
-                    else{
-                        $callBack($data);
-                    }
+                }).then(()=>{
+                    $t.get(($r)=>{
+                        if($redirect){
+                            $callBack();
+                        }
+                        else{
+                            $callBack($r);
+                        }
+                    });
                 });
             }
         }
@@ -406,7 +404,7 @@
                                 const $vid = $e.target.previousElementSibling.value;
                                 const $data = {items: [{id: parseInt($vid), quantity: 1}]};
                                 console.log('add button click ' + JSON.stringify($data));
-                                $t.cart.add($data,($r)=>{
+                                $t.cart.add($data,()=>{
                                     console.log('product added...');
                                     console.log(JSON.stringify($r));
                                 });
