@@ -403,7 +403,7 @@
     
                             $o.querySelector('[data-slt010-class="slt010-cart-drawer-upsell-meta-form-btn"]').addEventListener('click',function($e){
                                 $e.preventDefault();
-                                const $vid = $e.target.previousElementSibling.getAttribute('value');
+                                const $vid = $e.target.previousElementSibling.value;
                                 const $data = {items: [{id: parseInt($vid), quantity: 1}]};
                                 console.log('add button click ' + JSON.stringify($data));
                             });
