@@ -168,7 +168,9 @@
                     this.querySelector('[data-slt010-class="slt010-countdown-container"]').style.display = 'flex';
                 }
                 this.create('[data-slt010-class="slt010-countdown"]', $endTime, ()=>{
-                    this.querySelector('[data-slt010-class="slt010-countdown-container"]').style.display = 'none';
+                    if(this.querySelectorAll('[data-slt010-class="slt010-countdown-container"]').length > 0){
+                        this.querySelector('[data-slt010-class="slt010-countdown-container"]').style.display = 'none';
+                    }
                 });
             }
             else{
