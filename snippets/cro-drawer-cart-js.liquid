@@ -3,7 +3,7 @@
         constructor(){
             super();
             this.sessionTag = '{{ sessionTag }}';
-            this.currentCart = {{ cart | json }}; //remove quotes when updating the liquid file
+            this.currentCart = '{{ cart | json }}'; //remove quotes when updating the liquid file
             this.slug = 'slt010-cart-drawer';
         }
         connectedCallback(){
@@ -403,7 +403,9 @@
     
                             $o.querySelector('[data-slt010-class="slt010-cart-drawer-upsell-meta-form-btn"]').addEventListener('click',function($e){
                                 $e.preventDefault();
-                                console.log('add button click');
+                                const $vid = $e.target.previousElementSibling.getAttribute('value');
+                                const $data = {items: [{id: parseInt($vid), quantity: 1}]};
+                                console.log('add button click ' + JSON.stringify($data));
                             });
                             
                             return $o;
