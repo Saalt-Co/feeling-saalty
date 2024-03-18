@@ -146,13 +146,13 @@
                     width: 20px;
                     display: flex;
                     justify-content: center;
-                    color: #535353;
+                    color: {{ block.settings.font-color }};
                 }
                 [data-slt010-class="slt010-countdown-container"]{
                     height: auto;
                     margin: 0 0 10px;
                     padding: 15px;
-                    background-color: #f7d6c5;
+                    background-color: {{ block.settings.bg-color }};
                     border-radius: 5px;
                     display: flex;
                     flex-direction: column;
@@ -166,9 +166,9 @@
                     flex: 0 0 auto;
                     justify-content: center;
                     align-items: center;
-                    color: #535353;
+                    color: {{ block.settings.font-color }};
                     text-transform: uppercase;
-                    font-size: 18.31px !important;
+                    font-size: {{ block.settings.font-size-headline }}px !important;
                     letter-spacing: 1.14px;
                 }
                 [data-slt010-class="slt010-countdown-content"]{
@@ -187,7 +187,8 @@
                     flex: 0 0 auto;
                     justify-content: center;
                     align-items: center;
-                    color: #535353;
+                    color: {{ block.settings.font-color }};
+                    font-size: {{ block.settings.font-size }}px !important;
                 }
                 [data-slt010-class="slt010-countdown"]{
                     display: flex;
@@ -200,7 +201,7 @@
                     flex: 0 0 auto;
                     justify-content: center;
                     align-items: center;
-                    color: #535353;
+                    color: {{ block.settings.font-color }};
                 }
                 [data-countdown-wrap="SLT010-CART-DRAWER-COUNTDOWN"] > div{
                     display: flex;
@@ -219,6 +220,14 @@
                     flex: 0 0 100%;
                     width: 100%;
                     max-width: 1000px;
+                }
+                @media all and (max-width: 767px) { 
+                    [data-slt010-class="slt010-countdown-title"]{
+                        font-size: {{ block.settings.font-size-mobile-headline }}px !important;
+                    }
+                    [data-slt010-class="slt010-countdown-msg"]{
+                        font-size: {{ block.settings.font-size-mobile }}px !important;
+                    }
                 }
                 
             {%- when 'progress-bar' -%}
@@ -307,7 +316,6 @@
                 [data-shipping-progress-bar-bar].data-shipping-progress-bar-bar-complete{
                     background-color: var(--data-shipping-progress-bar-progress-bar-complete);
                 }
-                
                 
                 @media all and (max-width: 767px) {  
                     [data-shipping-progress-bar-bar-wrap]{
