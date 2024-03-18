@@ -332,9 +332,9 @@
                                 }
                                 console.log('[qa] ' + $t.collection.length);
                                 $t.each($t.collection, ($product, $pc)=>{
-                                    if($added < $t.limit && !$t.checkCart4UpsellItem($product.handle)){
-                                        $added++;
+                                    if(!$t.checkCart4UpsellItem($product.handle) && $added < $t.limit){
                                         $upsellSection.appendChild($t.getUpsellItemHTML($product));
+                                        $added++;
                                     }
                                 });
                     
