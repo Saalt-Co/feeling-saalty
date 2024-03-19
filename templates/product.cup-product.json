@@ -176,6 +176,19 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "complementary_hfXDMr": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "",
+            "make_collapsible_row": false,
+            "icon": "none",
+            "product_list_limit": 10,
+            "products_per_page": 2,
+            "pagination_style": "dots",
+            "image_ratio": "square",
+            "enable_quick_add": true
+          }
         }
       },
       "block_order": [
@@ -199,7 +212,8 @@
         "collapsible_tab_dgdepD",
         "collapsible-row-1",
         "8e2f85d3-2d82-4239-820b-c26872aaf01a",
-        "share"
+        "share",
+        "complementary_hfXDMr"
       ],
       "settings": {
         "enable_sticky_info": true,
