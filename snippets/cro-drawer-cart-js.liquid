@@ -466,7 +466,7 @@
             const $links = document.querySelectorAll('a[href*="/cart"]');
             this.each($links, ($link, $lc)=>{
                 const $btn = document.createElement('slt010-cart-drawer-open-button');
-                $btn.on('click', function($e)=>{
+                $btn.on('click', function($e){
                     $e.preventDefault();
                     if(this.hasNode('#{{ section.id }}-block')){
                         document.querySelector('#{{ section.id }}-block').setAttribute('data-opened', 'true');
