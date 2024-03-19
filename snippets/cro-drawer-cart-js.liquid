@@ -468,7 +468,7 @@
                 const $btn = document.createElement('slt010-cart-drawer-open-button');
                 $btn.addEventListener('click', function($e){
                     $e.preventDefault();
-                    if(this.hasNode('#{{ section.id }}-block')){
+                    if($t.hasNode('#{{ section.id }}-block')){
                         document.querySelector('#{{ section.id }}-block').setAttribute('data-opened', 'true');
                     }
                 });
