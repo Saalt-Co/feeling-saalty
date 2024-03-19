@@ -424,6 +424,9 @@
             this.testMode = {%- if section.settings.test-mode -%}true{%- else -%}false{%- endif -%};
             this.sessionTag = 'slt010-test-mode';
         }
+        hasNode($selector){
+            return (this.querySelectorAll($selector).length > 0) ? true : false;
+        }
         each($data, $callback){
             for(let $c = 0; $c < $data.length; $c++){
                 $callback($data[$c], $c);
@@ -459,9 +462,18 @@
             this.updateCartPageLinks();
         }
         updateCartPageLinks(){
+            const $t = this;
             const $links = document.querySelectorAll('a[href*="/cart"]');
             this.each($links, ($link, $lc)=>{
+                const $btn = document.createElement('slt010-cart-drawer-open-button');
+                $btn.on('click', function($e)=>{
+                    $e.preventDefault();
+                    if(this.hasNode('#{{ section.id }}-block')){
+                        document.querySelector('#{{ section.id }}-block').setAttribute('data-opened', 'true');
+                    }
+                });
                 $link.setAttribute('slt010-cart-drawer-btn','true');
+                $link.appendChild($btn);
             });
         }
         updateATCbuttons(){
