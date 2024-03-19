@@ -444,11 +444,8 @@
             return (window.sessionStorage.getItem($key) !== null && window.sessionStorage.getItem($key) !== '') ? true : false;
         }
         startTestMode(){
-            console.log('starting test mode');
             const $search = window.location.search.indexOf('test-mode=true');
             const $testMode = (this.checkSession(this.sessionTag)) ? window.sessionStorage.getItem(this.sessionTag) : 0;
-            console.log('test mode: ' + $search);
-            console.log('test mode: ' + $testMode);
             if($search !== -1 || parseInt($testMode) === 1){
                 window.sessionStorage.setItem(this.sessionTag, 1);
                 this.updatePage();
@@ -465,6 +462,7 @@
             const $t = this;
             const $links = document.querySelectorAll('a[href*="/cart"]');
             this.each($links, ($link, $lc)=>{
+                const $wrp = document.createElement('slt010-cart-drawer-link-wrap');
                 const $btn = document.createElement('slt010-cart-drawer-open-button');
                 $btn.addEventListener('click', function($e){
                     $e.preventDefault();
@@ -472,8 +470,10 @@
                         document.querySelector('#{{ section.id }}-block').setAttribute('data-opened', 'true');
                     }
                 });
+                $link.parentNode.insertBefore($wrap, $link);
                 $link.setAttribute('slt010-cart-drawer-btn','true');
-                $link.appendChild($btn);
+                $wrap.appendChild($link);
+                $wrap.appendChild($btn);
             });
         }
         updateATCbuttons(){
