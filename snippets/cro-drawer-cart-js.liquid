@@ -462,7 +462,7 @@
             const $t = this;
             const $links = document.querySelectorAll('a[href*="/cart"]');
             this.each($links, ($link, $lc)=>{
-                const $wrp = document.createElement('slt010-cart-drawer-link-wrap');
+                const $wrap = document.createElement('slt010-cart-drawer-link-wrap');
                 const $btn = document.createElement('slt010-cart-drawer-open-button');
                 $btn.addEventListener('click', function($e){
                     $e.preventDefault();
