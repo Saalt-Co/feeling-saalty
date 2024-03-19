@@ -441,6 +441,7 @@
             return (this.get($key) !== null && this.get($key) !== '') ? true : false;
         }
         startTestMode(){
+            console.log('starting test mode');
             const $search = window.location.search.indexOf('test-mode=true');
             const $testMode = (this.checkSession(this.sessionTag)) ? window.sessionStorage.getItem($t.sessionTag) : 0;
             console.log('test mode: ' + $search);
