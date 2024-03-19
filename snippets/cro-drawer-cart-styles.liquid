@@ -16,7 +16,7 @@
         z-index: 99;
     }
     slt010-cart-drawer-block{
-        width: 0;
+        width: 100vw;
         height: 100%;
         margin: 0 auto;
         padding: 0;
@@ -27,20 +27,21 @@
         opacity: 0;
         overflow: hidden;
         z-index: -9999;
+        transform: transitionX(0);
         transition-delay: 1ms;
         transition-duration: 20ms;
-        transition-property: all;
+        transition-property:transform;
         transition-timing-function: ease;
     }
     slt010-cart-drawer-block[data-opened="true"] {
         width: 100vw;
         display: flex;
-        left: 0;
         opacity: 1;
         z-index: 99;
+        transform: transitionX(-100%);
         transition-delay: 1ms;
         transition-duration: 20ms;
-        transition-property: all;
+        transition-property:transform;
         transition-timing-function: ease;
     }
 
