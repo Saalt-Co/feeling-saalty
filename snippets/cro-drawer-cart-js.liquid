@@ -485,12 +485,15 @@
                 const $btn = document.createElement('slt010-cart-drawer-atc-button');
                 $btn.addEventListener('click', function($e){
                     $e.preventDefault();
-                    if($t.hasNode('#{{ section.id }}-block')){
-                        document.querySelector('#{{ section.id }}-block').setAttribute('data-opened', 'true');
+                    if(!$e.target.previousElementSibling.hasAttribute('disabled')){
+                        const $vid = $e.target.closest('form').querySelector('[name="id"]').value;
+                        console.log('id ' + $vid);
+                        if($t.hasNode('#{{ section.id }}-block')){
+                            document.querySelector('#{{ section.id }}-block').setAttribute('data-opened', 'true');
+                        }
                     }
                 });
                 $link.parentNode.insertBefore($wrap, $link);
-                $link.setAttribute('slt010-cart-drawer-btn','true');
                 $wrap.appendChild($link);
                 $wrap.appendChild($btn);
             });
