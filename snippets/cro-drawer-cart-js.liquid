@@ -438,7 +438,7 @@
             }
         }
         checkSession($key){
-            return (this.get($key) !== null && this.get($key) !== '') ? true : false;
+            return (window.sessionStorage.getItem($key) !== null && window.sessionStorage.getItem($key) !== '') ? true : false;
         }
         startTestMode(){
             console.log('starting test mode');
