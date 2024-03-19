@@ -42,6 +42,7 @@
       "blocks": {
         "announcement_nHDyte": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Save 15% off 3 items, 20% off 5 items, or 25% off 7+ items when you bundle Cups, Discs, or Underwear.",
             "link": ""
@@ -49,15 +50,24 @@
         },
         "announcement_4DMPbF": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Free domestic shipping on all orders $39+ | Shop Now",
             "link": "shopify:\/\/collections\/shop-all"
+          }
+        },
+        "announcement_HJkwjc": {
+          "type": "announcement",
+          "settings": {
+            "text": "Here's your chance to break up with pads & tampons forever... Shop Now and Ditch the Disposables",
+            "link": "shopify:\/\/pages\/challenge"
           }
         }
       },
       "block_order": [
         "announcement_nHDyte",
-        "announcement_4DMPbF"
+        "announcement_4DMPbF",
+        "announcement_HJkwjc"
       ],
       "settings": {
         "theme_color_background": "theme-color-bg-2",
