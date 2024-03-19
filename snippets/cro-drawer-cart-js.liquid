@@ -418,4 +418,53 @@
                 {%- endif -%}
         {%- endcase -%}
     {%- endfor -%}
+
+    class $cartSpecialFunctionClass{
+        constructor(){
+            this.testMode = {%- if section.settings.test-mode -%}true{%- else -%}false{%- endif -%};
+            this.sessionTag = 'slt010-test-mode';
+        }
+        each($data, $callback){
+            for(let $c = 0; $c < $data.length; $c++){
+                $callback($data[$c], $c);
+            }
+        }
+        run(){
+            if(this.testMode){
+                this.startTestMode();
+            }
+            else{
+                this.updatePage();
+            }
+        }
+        checkSession($key){
+            return (this.get($key) !== null && this.get($key) !== '') ? true : false;
+        }
+        startTestMode(){
+            const $search = window.location.search.indexOf('test-mode=true');
+            const $testMode = (this.checkSession(this.sessionTag)) ? window.sessionStorage.getItem($t.sessionTag) : 0;
+            if($search !== -1 || parseInt($testMode) === 1){
+                window.sessionStorage.setItem($t.sessionTag, 1);
+                this.updatePage():
+            }
+        }
+        updatePage(){
+            const $pathname = window.location.pathname.indexOf('/products/');
+            if($pathname !== -1){
+                this.updateATCbuttons();
+            }
+            this.updateCartPageLinks();
+        }
+        updateCartPageLinks(){
+            const $links = document.querySelectorAll('a[href*="/cart"]');
+            this.each($links, ($link, $lc)=>{
+                $link.setAttribute('slt010-cart-drawer-btn','true');
+            });
+        }
+        updateATCbuttons(){
+        
+        }
+    }
+    const $cartSpecialFunction = new $cartSpecialFunctionClass();
+    $cartSpecialFunction.run();
 </script>
