@@ -16,7 +16,7 @@
         z-index: 99;
     }
     slt010-cart-drawer-block{
-        width: 100vw;
+        width: 0;
         height: 100%;
         margin: 0 auto;
         padding: 0;
@@ -24,24 +24,24 @@
         position: fixed;
         top: 0;
         left: 100%;
-        opacity: 1;
+        opacity: 0;
         overflow: hidden;
         z-index: -9999;
-        transform: translateX(0);
         transition-delay: 1ms;
-        transition-duration: 1000ms;
-        transition-property:transform;
-        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 20ms;
+        transition-property: all;
+        transition-timing-function: ease;
     }
     slt010-cart-drawer-block[data-opened="true"] {
+        width: 100vw;
         display: flex;
+        left: 0;
         opacity: 1;
         z-index: 99;
-        transform: translateX(-100%);
         transition-delay: 1ms;
-        transition-duration: 1000ms;
-        transition-property:transform;
-        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 20ms;
+        transition-property: all;
+        transition-timing-function: ease;
     }
 
     slt010-cart-drawer-block slt010-cart-drawer-overlay{
@@ -57,7 +57,7 @@
         z-index: -1;
         opacity: 0;
         transition-delay: 1ms;
-        transition-duration: 1000ms;
+        transition-duration: 100ms;
         transition-property: all;
         transition-timing-function: ease;
     }
@@ -65,7 +65,7 @@
         left: 0;
         opacity: 1;
         transition-delay: 1ms;
-        transition-duration: 2000ms;
+        transition-duration: 100ms;
         transition-property: all;
         transition-timing-function: ease;
     }
@@ -86,14 +86,14 @@
         transition-delay: 1ms;
         transition-duration: 900ms;
         transition-property: right;
-        transition-timing-function: ease;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     slt010-cart-drawer-block[data-opened="true"] slt010-cart-drawer-container{
         right: 0;
-        transition-delay: 1ms;
+        transition-delay: 20ms;
         transition-duration: 1000ms;
         transition-property: right;
-        transition-timing-function: ease;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     slt010-cart-drawer{
         height: 100%;
