@@ -487,10 +487,12 @@
                     $e.preventDefault();
                     if(!$e.target.previousElementSibling.hasAttribute('disabled')){
                         const $vid = $e.target.closest('form').querySelector('[name="id"]').value;
-                        console.log('id ' + $vid);
-                        if($t.hasNode('#{{ section.id }}-block')){
-                            document.querySelector('#{{ section.id }}-block').setAttribute('data-opened', 'true');
-                        }
+                        const $qty = $e.target.closest('form').querySelector('[name="quantity"]').value;
+                        $t.cart.add({items: [{id: parseInt($vid), quantity: parseInt($aty)}]}, ()=>{
+                            if($t.hasNode('#{{ section.id }}-block')){
+                                document.querySelector('#{{ section.id }}-block').setAttribute('data-opened', 'true');
+                            }
+                        });
                     }
                 });
                 $link.parentNode.insertBefore($wrap, $link);
