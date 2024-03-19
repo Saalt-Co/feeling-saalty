@@ -443,6 +443,8 @@
         startTestMode(){
             const $search = window.location.search.indexOf('test-mode=true');
             const $testMode = (this.checkSession(this.sessionTag)) ? window.sessionStorage.getItem($t.sessionTag) : 0;
+            console.log('test mode: ' + $search);
+            console.log('test mode: ' + $testMode);
             if($search !== -1 || parseInt($testMode) === 1){
                 window.sessionStorage.setItem($t.sessionTag, 1);
                 this.updatePage():
