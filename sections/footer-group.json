@@ -262,7 +262,11 @@
             "upsell-collection": "best-sellers",
             "display": 6,
             "desktop-pre-row": "3",
-            "mobile-pre-row": "2"
+            "mobile-pre-row": "2",
+            "bg-color": "#fafafa",
+            "font-size-headline": 15,
+            "font-size-mobile-headline": 15,
+            "font-color": "#232323"
           }
         },
         "footer_TmCWeE": {
@@ -279,7 +283,6 @@
         "body_Npcgwi",
         "footer_TmCWeE"
       ],
-      "disabled": true,
       "settings": {
       }
     }
