@@ -171,10 +171,12 @@
                     $cartCount.querySelector('.visually-hidden').innerHTML = (this.currentCart.item_count === 1) ? this.currentCart.item_count + ' item' : this.currentCart.item_count + ' items'; 
                 }
                 else{
+                    const $navItem = document.querySelectorAll('header a[href*="/cart"]');
                     const $itemCount = (this.currentCart.item_count === 1) ? this.currentCart.item_count + ' item' : this.currentCart.item_count + ' items'; 
                     $cartCount.classList.add('cart-count-bubble');
                     $cartCount.style.background = 'rgb(var(--palette-color-2))';
                     $cartCount.innerHTML = '<span class="cart-count-number" style="color: rgb(var(--palette-color-0));" aria-hidden="true">' + this.currentCart.item_count + '</span><span class="visually-hidden">' + $itemCount + '</span>';
+                    $navItem[0].appendChild($cartCount);
                 }
             }
             else{
