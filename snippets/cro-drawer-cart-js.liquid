@@ -504,6 +504,7 @@
         updateATCbuttons(){
             const $t = this;
             const $links = document.querySelectorAll('[action="/cart/add"] button[type="submit"]');
+            console.log('[qa] button length: ' + $links.length);
             this.each($links, ($link, $lc)=>{
                 const $wrap = document.createElement('slt010-cart-drawer-atc-wrap');
                 const $btn = document.createElement('slt010-cart-drawer-atc-button');
