@@ -476,6 +476,7 @@
                 this.updateATCbuttons();
             }
             this.wait('quick-add-modal', ()=>{
+                console.log('[qa] has quick-add-modal tags');
                 this.updateATCbuttons();
             },()=>{
                 console.log('[qa] no quick-add-modal tags');
