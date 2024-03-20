@@ -33,6 +33,7 @@
             this.updateProgressBar();
             this.updateCountdown();
             this.updateUpsell();
+            this.updateNavCartCounter();
         }
         updateCartBody(){
             if(this.hasNode(this.slug + '-body')){
@@ -160,6 +161,26 @@
             if(this.hasNode(this.slug + '-upsell-block')){
                 const $upsell = this.querySelector(this.slug + '-upsell-block');
                 $upsell.setAttribute('data-cart-qty', this.currentCart.item_count);
+            }
+        }
+        updateNavCartCounter(){
+            const $cartCount = (document.querySelectorAll('cart-count-bubble').length > 0) ? document.querySelector('cart-count-bubble') : document.createElement('cart-count-bubble');
+            if(this.currentCart.item_count > 0){
+                if(document.querySelectorAll('cart-count-bubble').length > 0){
+                    $cartCount.querySelector('.cart-count-number').innerHTML = this.currentCart.item_count;  
+                    $cartCount.querySelector('.visually-hidden').innerHTML = (this.currentCart.item_count === 1) ? this.currentCart.item_count + ' item' : this.currentCart.item_count + ' items'; 
+                }
+                else{
+                    const $itemCount = (this.currentCart.item_count === 1) ? this.currentCart.item_count + ' item' : this.currentCart.item_count + ' items'; 
+                    $cartCount.classList.add('cart-count-bubble');
+                    $cartCount.style.background = 'rgb(var(--palette-color-2))';
+                    $cartCount.innerHTML = '<span class="cart-count-number" style="color: rgb(var(--palette-color-0));" aria-hidden="true">' + this.currentCart.item_count + '</span><span class="visually-hidden">' + $itemCount + '</span>';
+                }
+            }
+            else{
+                if(document.querySelectorAll('cart-count-bubble').length > 0){
+                    $cartCount.parentNode.removeChild($cartCount);
+                }
             }
         }
     }
