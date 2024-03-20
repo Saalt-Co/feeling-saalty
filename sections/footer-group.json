@@ -284,6 +284,7 @@
         "footer_TmCWeE"
       ],
       "settings": {
+        "hide-elements": "#chat-button",
         "test-mode": true
       }
     }
