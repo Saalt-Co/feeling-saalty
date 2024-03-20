@@ -488,7 +488,6 @@
                     if(!$e.target.nextElementSibling.hasAttribute('disabled')){
                         const $vid = $e.target.closest('form').querySelector('[name="id"]').value;
                         const $qty = $e.target.closest('.product__info-wrapper').querySelector('[name="quantity"]').valueAsNumber;
-                        console.log('qty ' + $qty);
                         $t.cart.add({items: [{id: parseInt($vid), quantity: parseInt($qty)}]}, ()=>{
                             if($t.hasNode('#{{ section.id }}-block')){
                                 document.querySelector('#{{ section.id }}-block').setAttribute('data-opened', 'true');
