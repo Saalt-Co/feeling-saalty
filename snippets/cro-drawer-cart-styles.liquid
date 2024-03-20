@@ -642,15 +642,15 @@
                         width: 100%;
                         margin: 0 0 20px;
                         padding: 10px 15px;
-                        background: #f7d6c5;
-                        border: solid 2px #f7d6c5;
+                        background: {{ block.settings.btn-bg-color }};
+                        border: solid 2px {{ block.settings.btn-bg-color }};
                         border-radius: 5px;
                         display: flex;
                         flex: 0 0 auto;
                         justify-content: center;
                         align-items: center;
-                        color: #3f4759;
-                        font-size: 16px;
+                        color: {{ block.settings.font-color-btn }};
+                        font-size: {{ block.settings.font-size-btn }}px;
                         cursor:pointer;
                     }
                     @media all and (max-width: 767px) {  
@@ -684,6 +684,7 @@
                     width: 100%;
                     margin: 0;
                     padding: 20px;
+                    background-color: {{ block.settings.bg-color }};
                     border-top: solid 1px #e3e3e3;
                     display: flex;
                     flex: 0 0 auto;
@@ -711,30 +712,30 @@
                     display: flex;
                     flex: 0 0 auto;
                     align-items: center;
-                    font-size: 13px;
+                    font-size: {{ block.settings.font-size-subtotal }}px;
                     font-weight: 700;
-                    color: #232323;
+                    color: {{ block.settings.font-color-subtotal }};
                 }
                 [data-slt010-class="slt010-cart-drawer-footer-subtotal-amount"]{
                     display: flex;
                     flex: 0 0 auto;
                     align-items: center;
-                    font-size: 13px;
+                    font-size: {{ block.settings.font-size-subtotal }}px;
                     font-weight: 700;
-                    color: #232323;
+                    color: {{ block.settings.font-color-subtotal }};
                 }
                 [data-slt010-class="slt010-cart-drawer-footer-checkout-btn"]{
                     margin: 0;
                     padding: 10px 15px;
-                    background-color: #f7d6c5;
-                    border: solid 2px #f7d6c5;
+                    background-color: {{ block.settings.btn-bg-color }};
+                    border: solid 2px {{ block.settings.btn-bg-color }};
                     border-radius: 5px;
                     display: flex;
                     flex: 100%;
                     justify-content: center;
                     align-items: center;
-                    color: #3f4759;
-                    font-size: 16px;
+                    color: {{ block.settings.font-color-btn }};
+                    font-size: {{ block.settings.font-size-btn }}px;
                     text-align: center;
                     text-transform: capitalize;
                 }
