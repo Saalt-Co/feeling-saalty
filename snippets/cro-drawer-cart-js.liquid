@@ -471,6 +471,7 @@
             }
         }
         updatePage(){
+            const $t = this;
             const $pathname = window.location.pathname.indexOf('/products/');
             if($pathname !== -1){
                 this.updateATCbuttons();
@@ -481,7 +482,7 @@
                 this.each($modals, ($modal, $mc)=>{
                     $modal.addEventListener('click', function(){
                         setTimeout(()=>{
-                            this.updateATCbuttons();
+                            $t.updateATCbuttons();
                         }, 1000);
                     });
                 });
