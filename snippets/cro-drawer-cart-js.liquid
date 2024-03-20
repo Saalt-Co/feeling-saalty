@@ -457,6 +457,9 @@
             if($pathname !== -1){
                 this.updateATCbuttons();
             }
+            if(this.hasNode('quick-add-modal')){
+                this.updateATCbuttons();
+            }
             this.updateCartPageLinks();
         }
         updateCartPageLinks(){
