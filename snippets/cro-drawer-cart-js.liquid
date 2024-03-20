@@ -475,9 +475,16 @@
             if($pathname !== -1){
                 this.updateATCbuttons();
             }
-            this.wait('quick-add-modal', ()=>{
+            this.wait('modal-opener', ()=>{
                 console.log('[qa] has quick-add-modal tags');
-                this.updateATCbuttons();
+                const $modals = document.querySelectorAll('modal-opener');
+                this.each($modals, ($modal, $mc)=>{
+                    $modal.addEventListener('click', function(){
+                        setTimeout(()=>{
+                            this.updateATCbuttons();
+                        }, 1000);
+                    });
+                });
             },()=>{
                 console.log('[qa] no quick-add-modal tags');
             }, 10, 1000);
