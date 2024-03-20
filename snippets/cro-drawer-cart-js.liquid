@@ -477,7 +477,9 @@
             }
             this.wait('quick-add-modal', ()=>{
                 this.updateATCbuttons();
-            });
+            },()=>{
+                console.log('[qa] no quick-add-modal tags');
+            }, 10, 1000);
             this.updateCartPageLinks();
         }
         updateCartPageLinks(){
