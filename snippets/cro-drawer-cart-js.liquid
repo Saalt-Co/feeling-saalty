@@ -454,6 +454,7 @@
         run(){
             if(this.testMode){
                 this.startTestMode();
+                this.addTestModeCSS();
             }
             else{
                 this.updatePage();
@@ -533,22 +534,22 @@
                 $wrap.appendChild($link);
             });
         }
+        addTestModeCSS(){
+            const $style = document.createElement('style');
+            $style.innerHTML = 'body #rebuy-cart, ' +
+            'body.rebuy-modal-visible #rebuy-cart{' +
+                'width: 0 !important;' +
+                'height: 0 !important;' +
+                'overflow: hidden !important;' +
+                'opacity: 0 !important;' +
+                'z-index: -99999 !important;' +
+                'left: -100% !important;' +
+                'visibility: hidden !important;' +
+                'display: none !important;' +
+            '}';
+            document.body.appendChild($style);
+        }
     }
     const $cartSpecialFunction = new $cartSpecialFunctionClass();
     $cartSpecialFunction.run();
 </script>
-{%- if section.settings.test-mode -%}
-    <style>
-        body #rebuy-cart,
-        body.rebuy-modal-visible #rebuy-cart{
-            width: 0 !important;
-            height: 0 !important;
-            overflow: hidden !important;
-            opacity: 0 !important;
-            z-index: -99999 !important;
-            left: -100% !important;
-            visibility: hidden !important;
-            display: none !important;
-        }
-    </style>
-{%- endif -%}
