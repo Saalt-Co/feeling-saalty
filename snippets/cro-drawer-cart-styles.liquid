@@ -815,4 +815,12 @@
         background-color: rgb(var(--color-button-hover));
         color: rgb(var(--color-button-hover-text));
     }
+    {%- if section.settings.hide-elements -%}
+        {%- assign elems = section.settings.hide-elements | split: ',' -%}
+        {%- for el in elems -%}
+            .slt010-cart-drawer-block-open {{ el }}{
+                z-index: -1 !important;
+            }
+        {%- endfor -%}
+    {%- endif -%}
 </style>
