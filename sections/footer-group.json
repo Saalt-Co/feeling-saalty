@@ -284,7 +284,7 @@
         "footer_TmCWeE"
       ],
       "settings": {
-        "hide-elements": "#chat-button",
+        "hide-elements": "#chat-button,#tc-capture-kit",
         "test-mode": true
       }
     }
