@@ -180,6 +180,13 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "popup_8Jtidn": {
+          "type": "popup",
+          "settings": {
+            "text": ".",
+            "page": "easter-egg"
+          }
         }
       },
       "block_order": [
@@ -203,7 +210,8 @@
         "collapsible_tab_hLzFXg",
         "collapsible-row-1",
         "8e2f85d3-2d82-4239-820b-c26872aaf01a",
-        "share"
+        "share",
+        "popup_8Jtidn"
       ],
       "settings": {
         "enable_sticky_info": true,
