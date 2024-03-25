@@ -2811,6 +2811,10 @@
         "label": "Special checkout message",
         "default": "Ships within 48 hours",
         "info": "Show a special message on the checkout page. Example: Ships within 48 hours"
+      },
+      {
+        "type": "header",
+        "content": "Trust Callout"
       }
     ]
   }
