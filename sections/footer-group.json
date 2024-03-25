@@ -293,7 +293,7 @@
         "footer_TmCWeE"
       ],
       "settings": {
-        "hide-elements": "#chat-button,#chat-window,#tc-capture-kit,.quick-add-modal[open]",
+        "hide-elements": "#chat-button,#chat-window,#chat-campaigns,#tc-capture-kit,.quick-add-modal[open]",
         "test-mode": true
       }
     }
