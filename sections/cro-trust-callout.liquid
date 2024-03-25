@@ -1,6 +1,52 @@
 {%- liquid 
     assign imageFile = section.settings.image | image_url  
 -%}
+<script id="{{ section.id }}-js">
+    if(typeof('trustCalloutBlock') === 'undefined'){
+        class trustCalloutBlock extends HTMLElement{
+            static observedAttributes = ['data-option-close'];
+            constructor(){
+                super();
+            }
+            connectedCallback(){
+                console.log('slt012-trust-callout-frame added');
+            }
+            attributeChangedCallback(name, oldValue, newValue){
+                console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
+                switch(name){
+                    case 'data-option-close':
+                        this.close(newValue);
+                        break;
+                    default:
+                        break;
+                }
+            }
+            close($value){
+                if($value.toLowerCase() === 'true'){
+                    if(this.querySelectorAll('slt012-trust-callout-close-button').length < 1){
+                        const $frame = this.querySelectorAll('slt012-trust-callout-block');
+                        const $closeBtn = document.createElement('slt012-trust-callout-close-button');
+                        $closeBtn.innerHTML = '&times;';
+                        $closeBtn.addEventListener('click', function($e){
+                            $e.preventDefault();
+                            $e.target.closest('slt012-trust-callout-block').style.display = 'none';
+                        });
+                        $frame[0].appendChild($closeBtn);
+                    }
+                }
+                else{
+                    if(this.querySelectorAll('slt012-trust-callout-close-button').length > 0){
+                        const $closeBtn = this.querySelectorAll('slt012-trust-callout-close-button');
+                        $closeBtn[0].parentNode.removeChild($closeBtn[0]);
+                    }
+                }
+            }
+        }
+    }
+    if(customElements.get('slt012-trust-callout-frame') === undefined){
+        customElements.define('slt012-trust-callout-frame', trustCalloutBlock);
+    }
+</script>
 <slt012-trust-callout-frame id="{{ section.id }}" data-option-close="{{ section.settings.close }}">
     <slt012-trust-callout-block>
         <slt012-trust-callout>
@@ -140,52 +186,6 @@
         {%- endif -%}
     }
 </style>
-<script id="{{ section.id }}-js">
-    if(typeof('trustCalloutBlock') === 'undefined'){
-        class trustCalloutBlock extends HTMLElement{
-            static observedAttributes = ['data-option-close'];
-            constructor(){
-                super();
-            }
-            connectedCallback(){
-                console.log('slt012-trust-callout-frame added');
-            }
-            attributeChangedCallback(name, oldValue, newValue){
-                console.log('attribute ' + name + ' has changed from ' + oldValue + ' to ' + newValue);
-                switch(name){
-                    case 'data-option-close':
-                        this.close(newValue);
-                        break;
-                    default:
-                        break;
-                }
-            }
-            close($value){
-                if($value.toLowerCase() === 'true'){
-                    if(this.querySelectorAll('slt012-trust-callout-close-button').length < 1){
-                        const $frame = this.querySelectorAll('slt012-trust-callout-block');
-                        const $closeBtn = document.createElement('slt012-trust-callout-close-button');
-                        $closeBtn.innerHTML = '&times;';
-                        $closeBtn.addEventListener('click', function($e){
-                            $e.preventDefault();
-                            $e.target.closest('slt012-trust-callout-block').style.display = 'none';
-                        });
-                        $frame[0].appendChild($closeBtn);
-                    }
-                }
-                else{
-                    if(this.querySelectorAll('slt012-trust-callout-close-button').length > 0){
-                        const $closeBtn = this.querySelectorAll('slt012-trust-callout-close-button');
-                        $closeBtn[0].parentNode.removeChild($closeBtn[0]);
-                    }
-                }
-            }
-        }
-    }
-    if(customElements.get('slt012-trust-callout-frame') === undefined){
-        customElements.define('slt012-trust-callout-frame', trustCalloutBlock);
-    }
-</script>
 {% schema %}
   {
     "name": "Trust Callout",
