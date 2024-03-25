@@ -275,7 +275,7 @@
         "footer_TmCWeE": {
           "type": "footer",
           "settings": {
-            "bg-color": "#fff",
+            "bg-color": "#ffffff",
             "font-size-subtotal": 13,
             "font-color-subtotal": "#232323",
             "btn-bg-color": "#f7d6c5",
@@ -296,12 +296,28 @@
         "hide-elements": "#chat-button,#chat-window,#chat-campaigns,#tc-capture-kit,.quick-add-modal[open]",
         "test-mode": true
       }
+    },
+    "cro_trust_callout_gKk9yi": {
+      "type": "cro-trust-callout",
+      "settings": {
+        "title": "Full Refund Guarantee",
+        "image": "shopify:\/\/shop_images\/Period-Bliss-Guarantee-icon-homepage_d2957e1e-ffd1-4781-a102-54996b086d5a.png",
+        "close": true,
+        "visiable-desktop": false,
+        "visiable-mobile": true,
+        "bg-color": "#fff",
+        "border-color": "#3f4759",
+        "border-width": "2px",
+        "font-color": "#3f4759",
+        "font-size": 14
+      }
     }
   },
   "order": [
     "b87941dd-a9cd-484d-861b-44ca88dec413",
     "footer",
     "cro_scrolling_mobile_menu_dGW39N",
-    "cro_drawer_cart_yJRJJy"
+    "cro_drawer_cart_yJRJJy",
+    "cro_trust_callout_gKk9yi"
   ]
 }
