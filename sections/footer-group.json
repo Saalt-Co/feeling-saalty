@@ -225,8 +225,8 @@
           "type": "progress-bar",
           "settings": {
             "min": 39,
-            "msg-default": "You are ${amount} away from <strong>FREE DOMESTIC SHIPPING<\/strong>",
-            "msg-below": "You are ${amount} away from <strong>FREE DOMESTIC SHIPPING<\/strong>",
+            "msg-default": "You are {$}{amount} away from <strong>FREE DOMESTIC SHIPPING<\/strong>",
+            "msg-below": "You are {$}{amount} away from <strong>FREE DOMESTIC SHIPPING<\/strong>",
             "msg-complete": "🎉 Congrats! You've unlocked <strong>FREE DOMESTIC SHIPPING!<\/strong>",
             "position": "above",
             "bg-color": "#ffffff",
@@ -266,12 +266,21 @@
             "bg-color": "#fafafa",
             "font-size-headline": 15,
             "font-size-mobile-headline": 15,
-            "font-color": "#232323"
+            "font-color": "#232323",
+            "btn-bg-color": "#f7d6c5",
+            "font-size-btn": 16,
+            "font-color-btn": "#3f4759"
           }
         },
         "footer_TmCWeE": {
           "type": "footer",
           "settings": {
+            "bg-color": "#fff",
+            "font-size-subtotal": 13,
+            "font-color-subtotal": "#232323",
+            "btn-bg-color": "#f7d6c5",
+            "font-size-btn": 16,
+            "font-color-btn": "#3f4759"
           }
         }
       },
