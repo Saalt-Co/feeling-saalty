@@ -275,9 +275,10 @@
             {%- for block in section.blocks -%}
                 {%- case block.type -%}
                     {%- when 'progress-bar' -%}
+                        {%- assign currencySymbol = cart.currency.symbol -%}
                         {%- assign threshold = block.settings.min -%}
                         {%- assign thresholdShop = threshold | times: 100 -%}
-                        {%- assign defaultMsg = block.settings.msg-default | replace: '{amount}', threshold -%}
+                        {%- assign defaultMsg = block.settings.msg-default | replace: '{amount}', threshold | replace: '{$}', currencySymbol -%}
                         {%- assign appendStr = '<span data-free-ship-difference="' | append: thresholdShop  | append: '"></span>' -%}
                         {%- assign belowMsg =  block.settings.msg-below | replace: '{amount}', appendStr -%}
 
