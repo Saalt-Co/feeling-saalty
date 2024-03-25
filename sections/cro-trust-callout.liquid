@@ -2,7 +2,7 @@
     <slt012-trust-callout-block>
         <slt012-trust-callout>
             <picture class="slt012-badge-picture">
-                <img src="{{ section.settings.image }}" alt="{{ section.settings.title }}" width="50" height="50" class="slt012-badge-image" />
+                <img src="{{ section.settings.image | default: '//cdn.shopify.com/s/files/1/2705/9430/files/Period-Bliss-Guarantee-icon-homepage_d2957e1e-ffd1-4781-a102-54996b086d5a_120x.png?v=1685135049' }}" alt="{{ section.settings.title }}" width="50" height="50" class="slt012-badge-image" />
             </picture>
             <div class="slt012-badge-headline">
                 {{ section.settings.title }}
