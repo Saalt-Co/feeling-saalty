@@ -299,13 +299,14 @@
     },
     "cro_trust_callout_gKk9yi": {
       "type": "cro-trust-callout",
-      "disabled": true,
       "settings": {
         "title": "Full Refund Guarantee",
         "image": "shopify:\/\/shop_images\/Period-Bliss-Guarantee-icon-homepage_d2957e1e-ffd1-4781-a102-54996b086d5a.png",
         "close": true,
         "visiable-desktop": false,
+        "width-desktop": 250,
         "visiable-mobile": true,
+        "width-mobile": 100,
         "bg-color": "#ffffff",
         "border-color": "#3f4759",
         "border-width": "2px",
