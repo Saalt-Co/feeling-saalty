@@ -299,6 +299,7 @@
     },
     "cro_trust_callout_gKk9yi": {
       "type": "cro-trust-callout",
+      "disabled": true,
       "settings": {
         "title": "Full Refund Guarantee",
         "image": "shopify:\/\/shop_images\/Period-Bliss-Guarantee-icon-homepage_d2957e1e-ffd1-4781-a102-54996b086d5a.png",
