@@ -20,6 +20,7 @@
         --slt012-border-width: {{ section.settings.border-width }};
         --slt012-font-color: {{ section.settings.font-color }};
         --slt012-font-size: {{ section.settings.font-size }}px;
+        --slt012-font-size-mobile: {{ section.settings.font-size-mobile }}px;
     }
     slt012-trust-callout-frame#{{ section.id }}{
         width: 0;
@@ -127,7 +128,7 @@
         .slt012-badge-headline{
             flex: 0 0 100%;
             line-height: 1.2;
-            font-size: 13px;
+            font-size: var(--slt012-font-size-mobile);
         }
         {%- if section.settings.visiable-mobile -%}
             slt012-trust-callout-frame#{{ section.id }}{
@@ -260,12 +261,22 @@
         {
             "type":"range",
             "id":"font-size",
-            "label":"Font size",
+            "label":"Font size (desktop)",
             "min":9,
             "max":20,
             "step":1,
             "unit":"px",
             "default":14
+        },
+        {
+            "type":"range",
+            "id":"font-size-mobile",
+            "label":"Font size (mobile)",
+            "min":9,
+            "max":20,
+            "step":1,
+            "unit":"px",
+            "default":13
         }
     ],
     "limit": 1,
