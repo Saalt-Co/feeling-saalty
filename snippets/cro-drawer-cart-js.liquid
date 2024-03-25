@@ -79,8 +79,8 @@
                     '<path d="M 45 74.991 c -1.657 0 -3 -1.343 -3 -3 V 29.747 c 0 -1.657 1.343 -3 3 -3 c 1.657 0 3 1.343 3 3 v 42.244 C 48 73.648 46.657 74.991 45 74.991 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />' +
                 '</g>' +
             '</svg>';
-            let $price = (typeof($data.compare_at_price) !== 'undefined') ? '{{ currency.symbol }}' + ($data.compare_at_price * .01).toFixed(2) : '{{ currency.symbol }}' + ($data.price * .01).toFixed(2);
-            $price = ($data.total_discount !== 0) ? '<span data-slt010-class="slt010-discount">{{ currency.symbol }}' + (($data.price - $data.total_discount) * .01).toFixed(2) + '</span>&nbsp;<s>' + $price + '</s>' : $price;
+            let $price = (typeof($data.compare_at_price) !== 'undefined') ? '{{ cart.currency.symbol }}' + ($data.compare_at_price * .01).toFixed(2) : '{{ cart.currency.symbol }}' + ($data.price * .01).toFixed(2);
+            $price = ($data.total_discount !== 0) ? '<span data-slt010-class="slt010-discount">{{ cart.currency.symbol }}' + (($data.price - $data.total_discount) * .01).toFixed(2) + '</span>&nbsp;<s>' + $price + '</s>' : $price;
             const $variantTitle = ($data.variant_title !== null) ? $data.variant_title : '';
             let $discountTitle = '';
             this.each($data.discounts, ($discount, $dc)=>{
@@ -414,7 +414,7 @@
                                     $data.title +
                                 '</a>' +
                                 '<div data-slt010-class="slt010-cart-drawer-upsell-meta-price">' +
-                                    '{{ currency.symbol }}' + ($data.price * .01).toFixed(2) + 
+                                    '{{ cart.currency.symbol }}' + ($data.price * .01).toFixed(2) + 
                                 '</div>' +
                                 '<div data-slt010-class="slt010-cart-drawer-upsell-meta-form">' +
                                     $opt +
