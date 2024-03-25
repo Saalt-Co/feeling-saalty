@@ -90,7 +90,7 @@
                 const $cart = JSON.parse(window.sessionStorage.getItem(this.sessionTag));
                 const $btn = document.createElement('button');
                 const $items = ($cart.item_count === 1) ? ' (1 item)' : ' (' + $cart.item_count + ' items)';
-                const $price = ($cart.total_discount !== 0) ? '<span data-slt010-class="slt010-discount">$' + ($cart.items_subtotal_price * .01).toFixed(2) + '</span>&nbsp;<s>$' + ($cart.original_total_price * .01).toFixed(2) + '</s>' : '$' + ($cart.items_subtotal_price * .01).toFixed(2);
+                const $price = ($cart.total_discount !== 0) ? '<span data-slt010-class="slt010-discount">{{ currency.symbol }}' + ($cart.items_subtotal_price * .01).toFixed(2) + '</span>&nbsp;<s>{{ currency.symbol }}' + ($cart.original_total_price * .01).toFixed(2) + '</s>' : '{{ currency.symbol }}' + ($cart.items_subtotal_price * .01).toFixed(2);
                 this.innerHTML = '<div data-slt010-class="slt010-cart-drawer-footer-subtotal">' + 
                     '<div data-slt010-class="slt010-cart-drawer-footer-subtotal-label">' + 
                         'Subtotal' + $items +
