@@ -280,7 +280,7 @@
                         {%- assign thresholdShop = threshold | times: 100 -%}
                         {%- assign defaultMsg = block.settings.msg-default | replace: '{amount}', threshold | replace: '{$}', currencySymbol -%}
                         {%- assign appendStr = '<span data-free-ship-difference="' | append: thresholdShop  | append: '"></span>' -%}
-                        {%- assign belowMsg =  block.settings.msg-below | replace: '{amount}', appendStr -%}
+                        {%- assign belowMsg =  block.settings.msg-below | replace: '{amount}', appendStr | replace: '{$}', currencySymbol -%}
 
                         this.shipData = {
                             min: {{ threshold | times: 100 }},
