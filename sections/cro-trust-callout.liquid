@@ -34,7 +34,7 @@
         z-index: 1;
     }
     slt012-trust-callout-block{
-        width: 250px;
+        width: {{ section.settings.width-desktop }}px;
         margin: 0;
         padding: 0;
         background-color: var(--slt012-bg-color);
@@ -109,7 +109,7 @@
     
     @media all and (max-width: 767px) {  
         slt012-trust-callout-block{
-            width: 100px;
+            width: {{ section.settings.width-mobile }}px;
             padding-bottom: 10px;
             border-radius: 20px;
             justify-content: center;
@@ -170,7 +170,6 @@
                         $e.preventDefault();
                         $e.target.closest('slt012-trust-callout-block').style.display = 'none';
                     });
-                    //console.log('[qa] frame length: ' + $frame.length);
                     $frame[0].appendChild($closeBtn);
                 }
             }
@@ -214,10 +213,24 @@
             "default":false
         },
         {
+            "type":"number",
+            "id":"width-desktop",
+            "label":"Desktop width",
+            "default":250,
+            "info":"px"
+        },
+        {
             "type":"checkbox",
             "id":"visiable-mobile",
             "label":"Display on mobile",
             "default":true
+        },
+        {
+            "type":"number",
+            "id":"width-mobile",
+            "label":"Mobile width",
+            "default":100,
+            "info":"px"
         },
         {
             "type":"color",
