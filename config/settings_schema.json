@@ -2817,6 +2817,12 @@
         "content": "Trust Callout"
       },
       {
+        "type": "checkbox",
+        "id": "slt012-active",
+        "label": "Activate Trust Callout",
+        "default": false
+      },
+      {
         "type": "text",
         "id": "slt012-title",
         "label": "Title",
