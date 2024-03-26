@@ -2934,10 +2934,62 @@
         "default": "Saalt Bliss Guarantee"
       },
       {
+        "type": "color",
+        "id": "slt012-popup-headline-font-color",
+        "label": "Font color",
+        "default": "#545454"
+      },
+      {
+        "type": "range",
+        "id": "slt012-popup-headline-font-size",
+        "label": "Font size (desktop)",
+        "min": 9,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "default": 18
+      },
+      {
+        "type": "range",
+        "id": "slt012-popup-headline-font-size-mobile",
+        "label": "Font size (mobile)",
+        "min": 9,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "default": 18
+      },
+      {
         "type": "inline_richtext",
         "id": "slt012-popup-content",
         "label": "Content",
         "default": "If you're not happy with your Saalt product, <a href=\"\/pages\/replacements\"><b>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/b><\/a><b>.<\/b> Why? We know that learning to use reusables can take time, but we're here to help and cheer you to Saalt bliss. Your Saalt(isfaction) guaranteed."
+      },
+      {
+        "type": "color",
+        "id": "slt012-popup-content-font-color",
+        "label": "Font color",
+        "default": "#545454"
+      },
+      {
+        "type": "range",
+        "id": "slt012-popup-content-font-size",
+        "label": "Font size (desktop)",
+        "min": 9,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "slt012-popup-content-font-size-mobile",
+        "label": "Font size (mobile)",
+        "min": 9,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "default": 16
       }
     ]
   }
