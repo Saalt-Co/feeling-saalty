@@ -2833,6 +2833,13 @@
         "info": "Show a special countdown message on the checkout page before the countdown timer. Example: We've saved your cart for"
       },
       {
+        "type": "number",
+        "id": "slt011-timer",
+        "label": "Timer amount",
+        "default": 8,
+        "info": "in minutes"
+      },
+      {
         "type": "header",
         "content": "Trust Callout"
       },
