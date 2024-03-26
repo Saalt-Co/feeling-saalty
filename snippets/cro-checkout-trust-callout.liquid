@@ -206,28 +206,30 @@
         }
         .shopify-checkout slt012-popup-content .section-title{
             margin: 18px 0;
-            font-size: 18px;
+            font-size: {{ settings.slt012-popup-headline-font-size }}px;
             font-family: Montserrat, sans-serif;
             font-weight: 600;
             line-height: 23.4px;
             letter-spacing: .6px;
+            color: {{ settings.slt012-popup-headline-font-color }};
         }
         .shopify-checkout slt012-popup-content .section-content,
         .shopify-checkout slt012-popup-content .section-content p{
             margin: 16px 0;
-            font-size: 16px;
+            font-size: {{ settings.slt012-popup-content-font-size }}px;
             font-family: Montserrat, sans-serif;
             font-weight: 400;
             line-height: 28.8px;
             letter-spacing: .6px;
+            color: {{ settings.slt012-popup-content-font-color }};
         }
         .shopify-checkout slt012-popup-content .section-content a,
         .shopify-checkout slt012-popup-content .section-content p a{
-            color:rgba(55, 55, 55, 0.9);
+            color: {{ settings.slt012-popup-content-font-color }};
             text-decoration: underline;
         }
         .shopify-checkout slt012-popup-content .section-content a b,
-        .shopify-checkout slt012-popup-content .section-content p a strong{
+        .shopify-checkout slt012-popup-content .section-content p a b{
             font-weight: 700;
         }
 
@@ -320,6 +322,13 @@
         @media all and (max-width: 767px) {  
             slt012-popup-wrap{
                 max-height: 600px;
+            }
+            .shopify-checkout slt012-popup-content .section-title{
+                font-size: {{ settings.slt012-popup-headline-font-size-mobile }}px;
+            }
+            .shopify-checkout slt012-popup-content .section-content,
+            .shopify-checkout slt012-popup-content .section-content p{
+                font-size: {{ settings.slt012-popup-content-font-size-mobile }}px;
             }
 
             slt012-trust-callout-block{
