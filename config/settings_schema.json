@@ -2813,6 +2813,26 @@
         "info": "Show a special message on the checkout page. Example: Ships within 48 hours"
       },
       {
+        "type": "checkbox",
+        "id": "show-slt011-countdown",
+        "label": "Show checkout countdown timer",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "slt011_headline",
+        "label": "Special checkout countdown headline",
+        "default": "LIMITED STOCK!",
+        "info": "Show a special message on the checkout page. Example: LIMITED STOCK!"
+      },
+      {
+        "type": "text",
+        "id": "slt011_msg",
+        "label": "Special checkout countdown message",
+        "default": "We've saved your cart for",
+        "info": "Show a special countdown message on the checkout page before the countdown timer. Example: We've saved your cart for"
+      },
+      {
         "type": "header",
         "content": "Trust Callout"
       },
