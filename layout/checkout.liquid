@@ -66,6 +66,19 @@
           <div class="main">
             <header class="main__header" role="banner">
               {{ content_for_logo }}
+
+              {%- if settings.show-slt011-countdown -%}
+                <div data-slt011-class="slt011-countdown-container-mobile" class="slt011-countdown-container-mobile">
+                  <h3 data-slt011-class="slt011-countdown-title">{{ settings.slt011_headline }}</h3>
+                  <div data-slt011-class="slt011-countdown-content">
+                    <div data-slt011-class="slt011-countdown-msg">{{ settings.slt011_msg }} </div>
+                    <div data-slt011-class="slt011-countdown">
+                      <slt011-countdown-block data-wrapper-class=".slt011-countdown-container-mobile"></slt011-countdown-block>
+                    </div>
+                  </div>
+                </div>
+              {%- endif -%}
+  
               {%- if settings.show_slt009_msg -%}
               <div data-slt009-class="slt009-countdown-container-mobile">
                   <h3 data-slt009-class="slt009-countdown-title">{{ settings.slt009_msg }}</h3>
@@ -85,6 +98,19 @@
             <div class="sidebar__header">
               {{ content_for_logo }}
             </div>
+
+            {%- if settings.show-slt011-countdown -%}
+              <div data-slt011-class="slt011-countdown-container" class="slt011-countdown-container">
+                <h3 data-slt011-class="slt011-countdown-title">{{ settings.slt011_headline }}</h3>
+                <div data-slt011-class="slt011-countdown-content">
+                  <div data-slt011-class="slt011-countdown-msg">{{ settings.slt011_msg }} </div>
+                  <div data-slt011-class="slt011-countdown">
+                    <slt011-countdown-block data-wrapper-class=".slt011-countdown-container"></slt011-countdown-block>
+                  </div>
+                </div>
+              </div>
+            {%- endif -%}
+
             {%- if settings.show_slt009_msg -%}
               <div data-slt009-class="slt009-countdown-container">
                   <h3 data-slt009-class="slt009-countdown-title">{{ settings.slt009_msg }}</h3>
@@ -183,6 +209,113 @@
             }
         }
       {%- endif -%}
+      {%- if settings.show-slt011-countdown -%}
+        [data-countdown-minutes],
+        [data-countdown-seconds]{
+            width: 20px;
+            display: flex;
+            justify-content: center;
+            color: #535353;
+            position: relative;
+        }
+        [data-countdown-minutes]:after{
+            width: 3px;
+            height: 100%;
+            content: ':';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            right: -1.5px;
+            transform: translateY(-50%);
+        }
+        [data-slt011-class="slt011-countdown-container"]{
+            width: calc(100% - 50px);
+            height: auto;
+            margin: 0;
+            padding: 25px;
+            background-color: #f7d6c5;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        [data-slt011-class="slt011-countdown-container-mobile"]{
+            display: none;
+        }
+        [data-slt011-class="slt011-countdown-title"]{
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex: 0 0 auto;
+            justify-content: center;
+            align-items: center;
+            color: #535353;
+            text-transform: uppercase;
+            font-size: 18.31px;
+            letter-spacing: 1.14px;
+        }
+        [data-slt011-class="slt011-countdown-content"]{
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex: 0 0 auto;
+            justify-content: center;
+            align-items: center;
+        }
+        [data-slt011-class="slt011-countdown-msg"]{
+            margin-right: 3px;
+            display: flex;
+            flex: 0 0 auto;
+            justify-content: center;
+            align-items: center;
+            color: #535353;
+        }
+        [data-slt011-class="slt011-countdown"]{
+            display: flex;
+            flex: 0 0 auto;
+            justify-content: center;
+            align-items: center;
+        }
+        slt011-countdown-block{
+            display: flex;
+            flex: 0 0 auto;
+            justify-content: center;
+            align-items: center;
+            color: #535353;
+        }
+        slt011-countdown-block > div{
+            display: flex;
+            flex: 0 0 auto;
+        }
+        
+        [data-slt011-class="slt011-countdown-container"] + [data-slt009-class="slt009-countdown-container"]{
+            margin-bottom: 0;
+            background-color: transparent;
+        }
+        @media all and (max-width: 767px) {  
+            [data-slt011-class="slt011-countdown-container"]{
+                display: none;
+            }
+            [data-slt011-class="slt011-countdown-container-mobile"]{
+                width: calc(100% - 50px);
+                height: auto;
+                margin: 0;
+                padding: 25px;
+                background-color: #f7d6c5;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+            }
+            [data-slt011-class="slt011-countdown-container-mobile"] + [data-slt009-class="slt009-countdown-container-mobile"]{
+                background-color: transparent;
+            }
+        }
+      {%- endif -%}
       </style>
   
       <div id="terms-wrapper">
@@ -235,6 +368,107 @@
         const $breadcrumb = document.querySelector('nav[aria-label="Breadcrumb"]');
         $breadcrumb.appendChild($mobileBanner);
       </script>
+    {%- if settings.show-slt011-countdown -%}  
+      <script>
+        class countdownBlock extends HTMLElement{
+            constructor(){
+                super();
+                this.dates = {
+                    current: '',
+                    end: ''
+                };
+            }
+            connectedCallback(){
+                console.log('slt011-countdown-block added');
+                this.create();
+            }
+        
+            each($data, $callback){
+                for(let $c = 0; $c < $data.length; $c++){
+                    $callback($data[$c], $c);
+                }
+            }
+            setCurrentDate(){
+                this.dates.current = new Date();
+            }
+            setEndDate($data){
+                this.dates.end = new Date($data.year, $data.month, $data.day, $data.hours, $data.minutes, $data.seconds);
+            }
+            getMinutes(){
+                const $e = this.dates.end.getTime() - this.dates.current.getTime();
+                const $d = Math.floor($e / (24 * 60 * 60 * 1000));
+                const $h = Math.floor(($e - $d * (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+                const $m = Math.floor(($e - $d * (24 * 60 * 60 * 1000) - $h * (60 * 60 * 1000)) / 60000);
+                return ($m < 10) ? '0' + $m : $m;
+            }
+            getSeconds(){
+                const $e = this.dates.end.getTime() - this.dates.current.getTime();
+                const $d = Math.floor($e / (24 * 60 * 60 * 1000));
+                const $h = Math.floor(($e - $d * (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+                const $m = Math.floor(($e - $d * (24 * 60 * 60 * 1000) - $h * (60 * 60 * 1000)) / 60000);
+                const $s = Math.floor(($e - $d * (24 * 60 * 60 * 1000) - $h * (60 * 60 * 1000) - $m * (60000)) / 1000);
+                return ($s < 10) ? '0' + $s : $s;
+            }
+            create(){
+                const $st = new Date();
+                const $et = new Date($st.getTime() + (8 * 60 * 1000));
+                const $endTime = {
+                    year: $et.getFullYear(),
+                    month: $et.getMonth(),
+                    day: $et.getDate(),
+                    hours: $et.getHours(),
+                    minutes: $et.getMinutes(),
+                    seconds: $et.getSeconds()
+                };
+                const $c = [
+                    'minutes',
+                    'seconds'
+                ];
+                const $w = document.createElement('div');
+                $w.setAttribute('data-countdown-wrap','wrapper');
+                this.each($c, ($a, $b)=>{
+                    const $d = document.createElement('div');
+                    const $s = document.createElement('span');
+                    $s.setAttribute('data-countdown-' + $a, $b);
+                    $d.appendChild($s);
+                    $w.appendChild($d);
+                });
+                this.appendChild($w);
+        
+                this.setCurrentDate();
+                this.setEndDate($endTime);
+                this.start();
+            }
+            start(){
+                const $t = this;
+                $t.update();
+                let $timer = setInterval(()=>{
+                    $t.setCurrentDate();
+                    const $time = $t.update();
+                    if(!$time){
+                        clearInterval($timer);
+                    }
+                }, 1000);
+            }
+            update(){
+                let $value = true;
+                if(this.dates.end.getTime() > this.dates.current.getTime()){
+                    this.querySelector('[data-countdown-minutes]').innerHTML = this.getMinutes();
+                    this.querySelector('[data-countdown-seconds]').innerHTML = this.getSeconds();
+                }
+                else{
+                    this.style.display = 'none';
+                    this.closest(this.getAttribute('data-wrapper-class')).style.display = 'none';
+                    $value = false;
+                }
+                return $value;
+            }
+        }
+        if(customElements.get('slt011-countdown-block') === undefined){
+          customElements.define('slt011-countdown-block', countdownBlock);
+        }
+      </script>
+    {%- endif -%}
     {% include 'ba-discounts' %}
     {%- render 'cro-checkout-trust-callout' -%}
   </body>
