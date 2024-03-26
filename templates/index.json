@@ -111,6 +111,9 @@
         "section_button_ggLY8P"
       ],
       "disabled": true,
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {p {color: #373737; } h1 {color: #373737; font-size: 26px !important; }}"
+      ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
