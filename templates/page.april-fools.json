@@ -20,7 +20,7 @@
         "section_content_bHJrfF": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p><em>Okay—you caught us. <\/em><\/p><h1>April Fools!<\/h1><p>We might not be offering custom cup engraving, but we are giving you 15% off your next Saalt Cup or Disc. Thanks for playing along!<\/p>"
+            "text_content": "<p><em>Okay—you caught us. <\/em><\/p><h1>April Fools!<\/h1><p>We might not be offering custom cup engraving, but we are giving you <strong>15% off your next Saalt Cup or Disc<\/strong>. Thanks for playing along!<\/p>"
           }
         }
       },
@@ -58,16 +58,16 @@
       "blocks": {
         "section_title_YhU4aR": {
           "type": "section_title",
-          "disabled": true,
           "settings": {
             "heading_tag": "3",
-            "title": "Use code FOOLMEONCE for 15% off Saalt Cups and Discs, including in the Sale Shop."
+            "title": "Use code <u>FOOLMEONCE<\/u> for 15% off Saalt Cups and Discs, including Sale items."
           }
         },
         "section_content_xgHqeR": {
           "type": "section_content",
+          "disabled": true,
           "settings": {
-            "text_content": "<h3>Use code <strong>FOOLMEONCE<\/strong> for 15% off Saalt Cups and Discs, including Sale items.<\/h3>"
+            "text_content": "<h3>Use code <\/h3><h2><strong>FOOLMEONCE<\/strong> <\/h2><h3>for 15% off Saalt Cups and Discs, including Sale items.<\/h3>"
           }
         }
       },
@@ -76,7 +76,8 @@
         "section_content_xgHqeR"
       ],
       "custom_css": [
-        "@media only screen and (min-width: 768px) {h3 {font-size: 24px; }}"
+        "@media only screen and (min-width: 768px) {h3 {font-size: 24px !important; }}",
+        "h2 {text-decoration: underline;}"
       ],
       "settings": {
         "section_id": "",
