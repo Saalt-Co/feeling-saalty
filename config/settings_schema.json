@@ -2922,6 +2922,22 @@
         "step": 1,
         "unit": "px",
         "default": 13
+      },
+      {
+        "type": "header",
+        "content": "Popup Trust Callout"
+      },
+      {
+        "type": "text",
+        "id": "slt012-popup-headline",
+        "label": "Headline",
+        "default": "Saalt Bliss Guarantee"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "slt012-popup-content",
+        "label": "Content",
+        "default": "If you're not happy with your Saalt product, <a href=\"\/pages\/replacements\"><b>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/b><\/a><b>.<\/b> Why? We know that learning to use reusables can take time, but we're here to help and cheer you to Saalt bliss. Your Saalt(isfaction) guaranteed."
       }
     ]
   }
