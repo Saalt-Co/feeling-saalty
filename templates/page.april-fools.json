@@ -75,6 +75,9 @@
         "section_title_YhU4aR",
         "section_content_xgHqeR"
       ],
+      "custom_css": [
+        "@media only screen and (min-width: 768px) {h3 {font-size: 24px; }}"
+      ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-4",
