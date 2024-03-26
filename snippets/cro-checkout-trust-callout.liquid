@@ -306,15 +306,11 @@
         font-size: var(--slt012-font-size);
     }
 
-    {%- if settings.visiable-desktop -%}
-        slt012-trust-callout-frame#{{ id }}{
-            display: flex;
-        }
-    {%- else -%}
+    {%- unless settings.slt012-visiable-desktop -%}
         slt012-trust-callout-frame#{{ id }}{
             display: none;
         }
-    {%- endif -%}
+    {%- endunless -%}
     
     @media all and (max-width: 767px) {  
         slt012-popup-wrap{
