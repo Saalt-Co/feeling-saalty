@@ -132,7 +132,7 @@
     "show_slt009_msg": true,
     "slt009_msg": "Ships within 1-3 Business Days",
     "show-slt011-countdown": true,
-    "slt011-timer": 8,
+    "slt011-timer": 10,
     "slt012-active": true,
     "slt012-image": "shopify:\/\/shop_images\/Period-Bliss-Guarantee-icon-homepage_d2957e1e-ffd1-4781-a102-54996b086d5a.png",
     "slt012-visiable-desktop": true,
