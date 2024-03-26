@@ -1,20 +1,142 @@
 {
   "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "disabled": true,
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
     },
-    "shogun-helper": {
-      "type": "shogun-helper",
+    "saalt_bg_media_with_text_MXLJ74": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "section_content_bHJrfF": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p><em>Okay—you caught us. <\/em><\/p><h1>April Fools!<\/h1><p>We might not be offering custom cup engraving, but we are giving you 15% off your next Saalt Cup or Disc. Thanks for playing along!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "section_content_bHJrfF"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 768px) {h1, p {padding-right: 15%; }}"
+      ],
       "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/April_Fools_hero_mobile.png",
+        "desktop_image": "shopify:\/\/shop_images\/April_Fools_Hero_wider.png",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "flex-end",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "500px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "saalt_media_with_text_VkUrFG": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "section_title_YhU4aR": {
+          "type": "section_title",
+          "disabled": true,
+          "settings": {
+            "heading_tag": "3",
+            "title": "Use code FOOLMEONCE for 15% off Saalt Cups and Discs, including in the Sale Shop."
+          }
+        },
+        "section_content_xgHqeR": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<h3>Use code <strong>FOOLMEONCE<\/strong> for 15% off Saalt Cups and Discs, including Sale items.<\/h3>"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_YhU4aR",
+        "section_content_xgHqeR"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-4",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_HNGUkC": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "menstrual-cups-discs",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "enable_desktop_slider": false,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "show_view_all": true,
+        "view_all_style": "button",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_swatches": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "shogun-helper",
-    "main"
+    "main",
+    "saalt_bg_media_with_text_MXLJ74",
+    "saalt_media_with_text_VkUrFG",
+    "featured_collection_HNGUkC"
   ]
 }
