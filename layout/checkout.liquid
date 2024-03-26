@@ -411,7 +411,7 @@
             }
             create(){
                 const $st = new Date();
-                const $et = new Date($st.getTime() + (8 * 60 * 1000));
+                const $et = new Date($st.getTime() + ({{ settings.slt011-timer }} * 60 * 1000));
                 const $endTime = {
                     year: $et.getFullYear(),
                     month: $et.getMonth(),
