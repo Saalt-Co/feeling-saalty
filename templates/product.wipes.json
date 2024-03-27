@@ -1,17 +1,5 @@
 {
   "sections": {
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "shogun-above": {
-      "type": "shogun-above",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "afb57bcf-95f9-4c58-bcb0-46be33b273c1": {
       "type": "breadcrumbs",
       "settings": {
@@ -238,11 +226,6 @@
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28
-      }
-    },
-    "shogun-below": {
-      "type": "shogun-below",
-      "settings": {
       }
     },
     "saalt_media_with_text_L4jNxN": {
@@ -692,12 +675,9 @@
     }
   },
   "order": [
-    "shogun-helper",
-    "shogun-above",
     "afb57bcf-95f9-4c58-bcb0-46be33b273c1",
     "main",
     "related-products",
-    "shogun-below",
     "saalt_media_with_text_L4jNxN",
     "saalt_media_with_split_text_T8XDRU",
     "saalt_media_with_split_text_kneThn",
