@@ -1,17 +1,5 @@
 {
   "sections": {
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "shogun-above": {
-      "type": "shogun-above",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "afb57bcf-95f9-4c58-bcb0-46be33b273c1": {
       "type": "breadcrumbs",
       "settings": {
@@ -872,16 +860,9 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "shogun-below": {
-      "type": "shogun-below",
-      "settings": {
-      }
     }
   },
   "order": [
-    "shogun-helper",
-    "shogun-above",
     "afb57bcf-95f9-4c58-bcb0-46be33b273c1",
     "main",
     "0b3e0dea-b65b-440a-97a7-f90ea555dd6d",
@@ -892,7 +873,6 @@
     "c9a06b4e-fc2b-4ec6-bab4-42d6f2f63f95",
     "bef772d0-6e13-4a64-bb1e-f22e9b4887ed",
     "related-products",
-    "a235a351-a7fc-42f3-acf2-717cc19658e9",
-    "shogun-below"
+    "a235a351-a7fc-42f3-acf2-717cc19658e9"
   ]
 }
