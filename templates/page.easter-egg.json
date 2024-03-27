@@ -1,11 +1,5 @@
 {
   "sections": {
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -82,7 +76,6 @@
     }
   },
   "order": [
-    "shogun-helper",
     "main",
     "multicolumn_6NiPyE"
   ]
