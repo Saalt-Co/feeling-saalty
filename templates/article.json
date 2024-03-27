@@ -36,15 +36,9 @@
       ],
       "settings": {
       }
-    },
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "settings": {
-      }
     }
   },
   "order": [
-    "shogun-helper",
     "main"
   ]
 }
