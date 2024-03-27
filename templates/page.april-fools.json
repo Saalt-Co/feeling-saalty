@@ -77,6 +77,8 @@
       ],
       "custom_css": [
         "@media only screen and (min-width: 768px) {h3 {font-size: 24px !important; }}",
+        "h2 {text-decoration: underline;}",
+        "@media only screen and (max-width: 767px) {h3 {font-size: 18px !important; max-width: 90%; margin: 0 auto; }}",
         "h2 {text-decoration: underline;}"
       ],
       "settings": {
