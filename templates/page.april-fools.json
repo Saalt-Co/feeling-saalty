@@ -28,7 +28,7 @@
         "section_content_bHJrfF"
       ],
       "custom_css": [
-        "@media only screen and (min-width: 768px) {h1, p {padding-right: 15%; }}"
+        "@media only screen and (min-width: 768px) {h1 {padding-right: 15%; font-size: 40px; } p {padding-right: 15%; font-size: 20px; }}"
       ],
       "settings": {
         "section_id": "",
@@ -48,7 +48,7 @@
         "desktop_text_position": "flex-end",
         "desktop_text_alignment": "center",
         "use_max_text_width": true,
-        "max_width": "500px",
+        "max_width": "550px",
         "padding_top": 0,
         "padding_bottom": 0
       }
