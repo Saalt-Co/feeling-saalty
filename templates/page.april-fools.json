@@ -1,11 +1,5 @@
 {
   "sections": {
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -145,7 +139,6 @@
     }
   },
   "order": [
-    "shogun-helper",
     "main",
     "saalt_bg_media_with_text_MXLJ74",
     "custom_liquid_a7kLCX",
