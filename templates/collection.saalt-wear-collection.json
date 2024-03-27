@@ -1,15 +1,5 @@
 {
   "sections": {
-    "shogun-helper": {
-      "type": "shogun-helper",
-      "settings": {
-      }
-    },
-    "shogun-above": {
-      "type": "shogun-above",
-      "settings": {
-      }
-    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -988,16 +978,9 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "shogun-below": {
-      "type": "shogun-below",
-      "settings": {
-      }
     }
   },
   "order": [
-    "shogun-helper",
-    "shogun-above",
     "banner",
     "4b7bcf70-9b6b-48c4-a538-0e13cf35a435",
     "rich_text_LahFNy",
@@ -1010,7 +993,6 @@
     "835cabec-b298-4b76-9a74-2ae85e6ea4be",
     "43429256-3f8c-4e7f-8078-fd40fcbd53b6",
     "b4f29bbb-7268-4349-91b5-1ab1f590f3c0",
-    "1b9dee2b-76db-4cda-bad0-2f1cfeadc02f",
-    "shogun-below"
+    "1b9dee2b-76db-4cda-bad0-2f1cfeadc02f"
   ]
 }
