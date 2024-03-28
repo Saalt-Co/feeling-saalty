@@ -15,9 +15,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Easter_Egg_Small_Purple.jpg",
-            "title": "Mountain Iris  Size Small",
+            "title": "Size Small",
             "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -26,9 +26,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Easter_Egg_Regular_Purple.jpg",
-            "title": "Column",
+            "title": "Size Regular",
             "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -37,22 +37,22 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Easter_Egg_Small_Green.jpg",
-            "title": "Column",
+            "title": "",
             "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "text": "",
+            "link_label": "Claim your size SMALL Seafoam Green cup",
+            "link": "https:\/\/saalt.com\/cart\/32616289042513:1"
           }
         },
         "column_MMaqrH": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Easter_Egg_Regular_Green.jpg",
-            "title": "Column",
+            "title": "",
             "rating": 0,
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "text": "",
+            "link_label": "Claim your size REGULAR Seafoam Green cup",
+            "link": "https:\/\/saalt.com\/cart\/32616289566801:1"
           }
         }
       },
@@ -63,7 +63,7 @@
         "column_MMaqrH"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "Choose one cup for free, just pay shipping",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
