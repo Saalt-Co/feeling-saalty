@@ -42,7 +42,6 @@
       "blocks": {
         "announcement_nHDyte": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Save 15% off 3 items, 20% off 5 items, or 25% off 7+ items when you bundle Cups, Discs, or Underwear.",
             "link": ""
@@ -50,7 +49,6 @@
         },
         "announcement_4DMPbF": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Free domestic shipping on all orders $39+ | Shop Now",
             "link": "shopify:\/\/collections\/shop-all"
