@@ -1,0 +1,235 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "saalt_bg_media_with_text_WEjbJL": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "section_title_wkBh6D": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "CONGRATULATIONS!"
+          }
+        },
+        "section_content_6qWYi7": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Use your code to claim <br\/>your free cup below!<\/p><h4>(Be sure you don't have popups blocked, and enter your email address when prompted to receive your code.)<\/h4>"
+          }
+        },
+        "section_buttons_group_7mEnX9": {
+          "type": "section_buttons_group",
+          "disabled": true,
+          "settings": {
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_RDeCe7": {
+          "type": "section_button",
+          "disabled": true,
+          "settings": {
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_wkBh6D",
+        "section_content_6qWYi7",
+        "section_buttons_group_7mEnX9",
+        "section_button_RDeCe7"
+      ],
+      "custom_css": [
+        "h4 {font-weight: 400; font-size: 14px;}",
+        "@media only screen and (max-width: 767px) {h1 {font-size: 24px !important; max-width: 90%; margin: 0 auto; }}"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Soft-Purple-Cup-1080x1080v2.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Easter_Cup_Hunt_Hero.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "medium",
+        "content_font_size": "medium",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "flex-end",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "500px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_6NiPyE": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_bgaXwz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Easter_Egg_Small_Purple.jpg",
+            "title": "",
+            "rating": 0,
+            "text": "",
+            "link_label": "Claim your size SMALL Mountain Iris cup",
+            "link": "https:\/\/saalt.com\/cart\/39556554686545:1"
+          }
+        },
+        "column_U3UMzD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Easter_Egg_Regular_Purple.jpg",
+            "title": "",
+            "rating": 0,
+            "text": "",
+            "link_label": "Claim your size REGULAR Mountain Iris cup",
+            "link": "https:\/\/saalt.com\/cart\/39556553703505:1"
+          }
+        },
+        "column_jPUh4e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Easter_Egg_Small_Green.jpg",
+            "title": "",
+            "rating": 0,
+            "text": "",
+            "link_label": "Claim your size SMALL Seafoam Green cup",
+            "link": "https:\/\/saalt.com\/cart\/32616289042513:1"
+          }
+        },
+        "column_MMaqrH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Easter_Egg_Regular_Green.jpg",
+            "title": "",
+            "rating": 0,
+            "text": "",
+            "link_label": "Claim your size REGULAR Seafoam Green cup",
+            "link": "https:\/\/saalt.com\/cart\/32616289566801:1"
+          }
+        }
+      },
+      "block_order": [
+        "column_bgaXwz",
+        "column_U3UMzD",
+        "column_jPUh4e",
+        "column_MMaqrH"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "SHOP ALL CUPS & EXTRAS",
+        "button_url": "shopify:\/\/collections\/menstrual-cups-discs",
+        "button_type": "secondary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "saalt_media_with_text_yUjgkr": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "section_title_erMekJ": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Section Title Goes Here"
+          }
+        },
+        "section_content_Vw9nkR": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
+          }
+        },
+        "section_buttons_group_CUgQnd": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "flex-start",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_YUEyNM": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_erMekJ",
+        "section_content_Vw9nkR",
+        "section_buttons_group_CUgQnd",
+        "section_button_YUEyNM"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Saalt-Soft-Purple-Cup-1080x1080v2.jpg",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "saalt_bg_media_with_text_WEjbJL",
+    "multicolumn_6NiPyE",
+    "saalt_media_with_text_yUjgkr"
+  ]
+}
