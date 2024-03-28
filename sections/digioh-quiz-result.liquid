@@ -184,7 +184,7 @@
                         <div class="quiz-result-cup-variant-swatch quiz-result-cup-variant-swatch-himalayan-pink"><label for="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="ColorSwatch ColorSwatch--large {% if downcase_value == 'white' %}ColorSwatch--white{% endif %}" data-tooltip="{{ value | escape }}" style="background-color: {{ value | replace: ' ', '' | downcase }}; {% if color_swatch_image != blank %}background-image: url({{ color_swatch_image | img_url: '64x64' }}){% endif %}"></label></div>
                         <h4 class="quiz-result-cup-variant-title">{{ value }}</h4>
                         {{ top_rec }}
-                        <p class="quiz-result-cup-variant-price">{{ cart.currency.symbol  }}{{ top_rec.price | money_without_currency | replace:',','.'}}</p>
+                        <p class="quiz-result-cup-variant-price ffdfd">{{ cart.currency.symbol  }}{{ top_rec.price | money_without_currency | replace:',','.'}}</p>
                         {% assign variants_id ='' %}
                         {% for variant in top_rec.variants %}
                           {% assign variant_size = value | append: ' / ' %}
