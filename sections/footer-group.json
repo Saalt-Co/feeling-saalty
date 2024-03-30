@@ -292,7 +292,6 @@
         "body_Npcgwi",
         "footer_TmCWeE"
       ],
-      "disabled": true,
       "settings": {
         "hide-elements": "#chat-button,#chat-window,#chat-campaigns,#tc-capture-kit,.quick-add-modal[open]",
         "test-mode": true
