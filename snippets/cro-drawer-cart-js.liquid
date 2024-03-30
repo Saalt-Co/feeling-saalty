@@ -477,7 +477,6 @@
         run(){
             if(this.testMode){
                 this.startTestMode();
-                this.addTestModeCSS();
             }
             else{
                 this.updatePage();
@@ -492,6 +491,7 @@
             if($search !== -1 || parseInt($testMode) === 1){
                 window.sessionStorage.setItem(this.sessionTag, 1);
                 this.updatePage();
+                this.addTestModeCSS();
             }
         }
         updatePage(){
