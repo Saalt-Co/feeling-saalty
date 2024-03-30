@@ -1,58 +1,34 @@
 {
   "sections": {
-    "saalt_bg_media_with_text_8TxrEn": {
+    "saalt_bg_media_with_text_Ud6TRK": {
       "type": "saalt-bg-media-with-text",
       "blocks": {
-        "section_title_FXRtax": {
+        "section_title_nkizAt": {
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "Meet the all new Saalt Wear Mesh styles."
+            "title": "Join the hunt for 100 Saalt Cups!"
           }
         },
-        "section_content_XmcYTq": {
+        "section_content_t4DM7D": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Lingerie-inspired leakproof underwear. Designed in Paris at the intersection of style & function.<\/p>"
-          }
-        },
-        "section_buttons_group_LBaFif": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "center",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "section_button_nXmgDJ": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Shop Now",
-            "button_url": "shopify:\/\/collections\/lace-mesh",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
+            "text_content": "<p>Join Saalt's Digital Easter Cup Hunt today at 10am PT\/1pm ET for your chance to win one of 100 free Saalt Cups. Hunt ends at midnight PT.<\/p><p>The hunt: Find a purple or green cup for a sweet treat. Find the golden cup and get a free Saalt Cup!<\/p>"
           }
         }
       },
       "block_order": [
-        "section_title_FXRtax",
-        "section_content_XmcYTq",
-        "section_buttons_group_LBaFif",
-        "section_button_nXmgDJ"
+        "section_title_nkizAt",
+        "section_content_t4DM7D"
       ],
       "disabled": true,
-      "custom_css": [
-        "@media only screen and (max-width: 767px) {p {color: #373737; } h1 {color: #373737; font-size: 26px !important; }}"
-      ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
-        "theme_color_text": "theme-color-text-0",
+        "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Mesh-Refresh-Launch-Hero-Saalt-v2-mobile.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Mesh-Refresh-Launch-Hero-Saalt-v2-desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Digital-Easter-Cup-Hunt-Saalt-mobile_02_1.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Digital-Easter-Cup-Hunt-Saalt-desktop_02.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
@@ -61,10 +37,10 @@
         "content_font_size": "small",
         "mobile_text_position": "below",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "center",
-        "desktop_text_alignment": "center",
+        "desktop_text_position": "flex-end",
+        "desktop_text_alignment": "left",
         "use_max_text_width": true,
-        "max_width": "375px",
+        "max_width": "400px",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -137,36 +113,36 @@
         "padding_bottom": 0
       }
     },
-    "saalt_bg_media_with_text_Ud6TRK": {
+    "saalt_bg_media_with_text_8TxrEn": {
       "type": "saalt-bg-media-with-text",
       "blocks": {
-        "section_title_nkizAt": {
+        "section_title_FXRtax": {
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "Buy any item and get a second item for 50% off."
+            "title": "Meet the all new Saalt Wear Mesh styles."
           }
         },
-        "section_content_t4DM7D": {
+        "section_content_XmcYTq": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Because when you love something, you should get it in every color (...and cut and absorbency). <strong>Use code <\/strong><span style=\"text-decoration:underline\"><strong>BOGO50<\/strong><\/span><strong> at checkout. *<\/strong><em>Excludes bundles<\/em><\/p>"
+            "text_content": "<p>Lingerie-inspired leakproof underwear. Designed in Paris at the intersection of style & function.<\/p>"
           }
         },
-        "section_buttons_group_RxXwbF": {
+        "section_buttons_group_LBaFif": {
           "type": "section_buttons_group",
           "settings": {
-            "desktop_button_group_alignment": "flex-start",
+            "desktop_button_group_alignment": "center",
             "desktop_buttons_group_gap": "1rem"
           }
         },
-        "section_button_j4d3Bi": {
+        "section_button_nXmgDJ": {
           "type": "section_button",
           "settings": {
-            "button_text": "SHOP NOW",
-            "button_url": "shopify:\/\/collections\/shop-all",
+            "button_text": "Shop Now",
+            "button_url": "shopify:\/\/collections\/lace-mesh",
             "button_type": "primary",
-            "theme_color_section_button_background": "theme-color-bg-1",
+            "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default"
@@ -174,19 +150,22 @@
         }
       },
       "block_order": [
-        "section_title_nkizAt",
-        "section_content_t4DM7D",
-        "section_buttons_group_RxXwbF",
-        "section_button_j4d3Bi"
+        "section_title_FXRtax",
+        "section_content_XmcYTq",
+        "section_buttons_group_LBaFif",
+        "section_button_nXmgDJ"
       ],
       "disabled": true,
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {p {color: #373737; } h1 {color: #373737; font-size: 26px !important; }}"
+      ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
+        "theme_color_text": "theme-color-text-0",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/BOGO-50-Off-SW-mobile-updated.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/BOGO-50-Off-SW-Updated-desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Mesh-Refresh-Launch-Hero-Saalt-v2-mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Mesh-Refresh-Launch-Hero-Saalt-v2-desktop.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
@@ -195,10 +174,10 @@
         "content_font_size": "small",
         "mobile_text_position": "below",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "flex-end",
-        "desktop_text_alignment": "left",
+        "desktop_text_position": "center",
+        "desktop_text_alignment": "center",
         "use_max_text_width": true,
-        "max_width": "400px",
+        "max_width": "375px",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -1544,9 +1523,9 @@
     }
   },
   "order": [
-    "saalt_bg_media_with_text_8TxrEn",
-    "saalt_bg_media_with_text_UnjVt3",
     "saalt_bg_media_with_text_Ud6TRK",
+    "saalt_bg_media_with_text_UnjVt3",
+    "saalt_bg_media_with_text_8TxrEn",
     "saalt_bg_media_with_text_iyXbMP",
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
     "saalt_media_with_split_text_g9QA77",
