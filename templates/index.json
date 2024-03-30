@@ -30,7 +30,7 @@
       ],
       "custom_css": [
         "@media only screen and (max-width: 767px) {h1 {display: none; } .icon-wrapper {text-align: center !important; }}",
-        "@media only screen and (min-width: 768px) {.icon-wrapper {display: none; }}"
+        "@media only screen and (min-width: 768px) {.icon-wrapper {width: 600px; text-align: left; }}"
       ],
       "settings": {
         "section_id": "",
