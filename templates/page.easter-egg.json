@@ -29,6 +29,7 @@
         "section_title_wkBh6D",
         "section_content_6qWYi7"
       ],
+      "disabled": true,
       "custom_css": [
         "h4 {font-weight: 400; font-size: 14px;}",
         "@media only screen and (max-width: 767px) {h1 {font-size: 24px !important; max-width: 90%; margin: 0 auto; }}"
@@ -90,7 +91,6 @@
         "section_buttons_group_HBtnFL",
         "section_button_niEtBq"
       ],
-      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -168,6 +168,7 @@
         "column_jPUh4e",
         "column_MMaqrH"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
