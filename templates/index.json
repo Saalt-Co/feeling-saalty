@@ -28,6 +28,7 @@
         "section_content_t4DM7D",
         "custom_liquid_code_wQhf84"
       ],
+      "disabled": true,
       "custom_css": [
         "@media only screen and (max-width: 767px) {h1 {display: none; } .icon-wrapper {text-align: center !important; }}",
         "@media only screen and (min-width: 768px) {.icon-wrapper {width: 600px; text-align: left; }}"
@@ -97,7 +98,6 @@
         "section_buttons_group_nHwEnN",
         "section_button_ggLY8P"
       ],
-      "disabled": true,
       "custom_css": [
         "@media only screen and (max-width: 767px) {p {color: #373737; } h1 {color: #373737; font-size: 26px !important; }}"
       ],
