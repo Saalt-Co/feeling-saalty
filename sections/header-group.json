@@ -47,13 +47,6 @@
             "link": ""
           }
         },
-        "announcement_4DMPbF": {
-          "type": "announcement",
-          "settings": {
-            "text": "Free domestic shipping on all orders $39+ | Shop Now",
-            "link": "shopify:\/\/collections\/shop-all"
-          }
-        },
         "announcement_HJkwjc": {
           "type": "announcement",
           "settings": {
@@ -64,7 +57,6 @@
       },
       "block_order": [
         "announcement_nHDyte",
-        "announcement_4DMPbF",
         "announcement_HJkwjc"
       ],
       "settings": {
