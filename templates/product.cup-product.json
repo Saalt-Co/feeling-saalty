@@ -1,5 +1,15 @@
 {
   "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {
+      }
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {
+      }
+    },
     "afb57bcf-95f9-4c58-bcb0-46be33b273c1": {
       "type": "breadcrumbs",
       "settings": {
@@ -85,6 +95,13 @@
         "description": {
           "type": "description",
           "settings": {
+          }
+        },
+        "text_QzDMmN": {
+          "type": "text",
+          "settings": {
+            "text": "Bag color varies based on availability.",
+            "text_style": "body"
           }
         },
         "collapsible-row-0": {
@@ -194,6 +211,7 @@
         "buy_buttons",
         "8e16b700-b5d3-4d93-aa86-a2391fc38797",
         "description",
+        "text_QzDMmN",
         "collapsible-row-0",
         "b353a8cb-d34f-4c9e-9e49-2879eadc10c3",
         "e36443e9-994e-4493-962d-3a4290cafaad",
@@ -929,18 +947,8 @@
         "padding_bottom": 0
       }
     },
-    "shogun-above": {
-      "type": "shogun-above",
-      "settings": {
-      }
-    },
     "shogun-below": {
       "type": "shogun-below",
-      "settings": {
-      }
-    },
-    "shogun-helper": {
-      "type": "shogun-helper",
       "settings": {
       }
     }
