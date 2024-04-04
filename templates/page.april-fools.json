@@ -14,7 +14,7 @@
         "section_content_bHJrfF": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p><em>Okay—you caught us. <\/em><\/p><h1>April Fools!<\/h1><p>We might not be offering custom cup engraving, but we are giving you <strong>15% off your next Saalt Cup or Disc<\/strong>. Thanks for playing along!<\/p>"
+            "text_content": "<p><em>Okay—you caught us. <\/em><\/p><h1>April Fools!<\/h1><p>We might not be offering custom cup engraving, but we do still offer the most comfortable, reliable, sustainable period care. Make the switch and find period bliss - no fooling.<\/p>"
           }
         }
       },
@@ -49,6 +49,7 @@
     },
     "custom_liquid_a7kLCX": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div style=\"background-color: #F7C6B5; padding: 20px; text-align: center;\">\n  <h3>\n    Use code <span style=\"text-decoration: underline;\">FOOLMEONCE<\/span> for 15% off Saalt Cups and Discs.\n  <\/h3>\n  <p style=\"font-size: 14px;\">\n    Offer expires April 2 at midnight PT\n  <\/p>\n<\/div>\n\n<style>\n  @media only screen and (min-width: 768px) {\n    h3 {\n      font-size: 24px !important;\n    }\n  }\n\n  @media only screen and (max-width: 767px) {\n    h3 {\n      font-size: 18px !important;\n      max-width: 90%;\n      margin: 0 auto;\n    }\n  }\n<\/style>",
         "padding_top": 0,
