@@ -15,8 +15,8 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Quiz-Mobile-Hero_Quiz_Page_12-16-23.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Quiz-hero-desktop_Quiz_Page_12-16-23.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Wear-Seamless-Collection-Hero-mobile_03.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Wear-Seamless-Collection-Hero-desktop_02.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
@@ -39,12 +39,13 @@
         "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_title-1": {
           "type": "section_title",
           "settings": {
-            "heading_tag": "2",
-            "title": "Saalt Cup & Disc Quiz"
+            "heading_tag": "1",
+            "title": "Saalt Leakproof & Period Underwear Quiz"
           }
         },
         "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_content-1": {
           "type": "section_content",
+          "disabled": true,
           "settings": {
             "text_content": "<p>Find the best period care for your most comfortable period.<br\/>You're only a few clicks away from period bliss!<\/p>"
           }
@@ -191,6 +192,7 @@
         "a2510798-3a5e-4cb8-b098-ae5c89b9feac",
         "c5deb881-78c6-4069-ab22-69f1649c36e4"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "how to use it",
         "theme_color_background": "theme-color-bg-4",
@@ -218,9 +220,9 @@
         "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-1": {
           "type": "column",
           "settings": {
-            "title": "- Marin F.",
+            "title": "- LKDubbs",
             "rating": 5,
-            "text": "<p><em>\"I was so excited to finally get this disc to try it out! <\/em><em><strong>Totally as good as I hoped.<\/strong><\/em><em> I wore it all through my period just ended with no leaks. Cleanup was a snap and I hope to use it for a long long time!\"<\/em><\/p>",
+            "text": "<p>\"I just finished my first period using this underwear and WOW. I previously used another brand and can sincerely say there is no comparison. The <strong>Saalt underwear was comfortable, fit well, and did not leak. It just overall made me feel good.<\/strong> I loved it so much I ordered more!\"<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -228,9 +230,9 @@
         "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-3": {
           "type": "column",
           "settings": {
-            "title": "- Kiara S.",
+            "title": "- Genevieve",
             "rating": 5,
-            "text": "<p><em>\"I have <\/em><em><strong>finally found a cup that works for me.<\/strong><\/em><em> I have tried 3 or 4 other cups before this one. Using the quiz on their website I was able to find the cup that fits me and now I feel comfortable using a cup!\"<\/em><\/p>",
+            "text": "<p><em>\"<\/em>I’ve tried several period underwear brands and <strong>these are absolutely the best<\/strong>. So soft and comfy, these fit perfectly and are the most seamless period underwear I’ve tried. I am now a strictly saalt customer! I got a bunch of different Saalt underwear to see which one I like most- they’re all a little different depending on what you want, I love them all for variety.\" <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -238,9 +240,9 @@
         "2e1e21a0-2b3b-4f28-8459-b3f123dcbdcd": {
           "type": "column",
           "settings": {
-            "title": "- Lizzy M.",
+            "title": "- Rach",
             "rating": 5,
-            "text": "<p><em>\"<\/em><em><strong>Amazing! <\/strong><\/em><em>I've used another cup for just over a year. My new saalt cup is <\/em><em><strong>so much better - easier to insert, comfier, seals better and easier to clean.<\/strong><\/em><em>\"<\/em><\/p>",
+            "text": "<p>\"This is my first time trying period underwear. The material is so, so soft! They stayed dry & comfortable throughout the day & I definitely prefer them to larger pads. <strong>So worth the investment for more comfortable periods & buying less disposable pads in the future<\/strong>!\"<\/p>",
             "link_label": "",
             "link": ""
           }
