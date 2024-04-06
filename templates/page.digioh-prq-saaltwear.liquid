@@ -166,6 +166,22 @@ SECTION: Display Recommended Products
         
 <div class="collection page-width">
   <div class="loading-overlay gradient"></div>
+<style>
+  .custom-card-product-image {
+    width: 60%; /* Set your desired width as a percentage */
+    max-width: 300px; /* Set a maximum width */
+    height: auto; /* Allow the height to adjust proportionally */
+     padding-top: 100%; /* Set your desired aspect ratio */
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (min-width: 768px) {
+    .custom-card-product-image {
+      width: 20%; /* Adjust for larger screens */
+    }
+  }
+</style>
   <ul id="product-grid" class="grid product-grid grid--2-col-tablet-down grid--3-col-desktop" style="justify-content: center;" >
 
   {% comment %} Loop over the passed in products {% endcomment %}
