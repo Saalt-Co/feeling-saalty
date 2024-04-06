@@ -55,6 +55,9 @@
         "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_title-1",
         "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_content-1"
       ],
+      "custom_css": [
+        "{background-color: #eef0f4 !important;}"
+      ],
       "settings": {
         "section_id": "how it works",
         "theme_color_background": "theme_default",
