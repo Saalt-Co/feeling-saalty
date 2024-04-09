@@ -146,6 +146,7 @@
       "block_order": [
         "text_K8XhcK"
       ],
+      "disabled": true,
       "custom_css": [
         "p {background-color: #bfdbd9;}"
       ],
