@@ -143,6 +143,7 @@
       "block_order": [
         "text_jWRx93"
       ],
+      "disabled": true,
       "custom_css": [
         "p {background-color: #bfdbd9;}"
       ],
