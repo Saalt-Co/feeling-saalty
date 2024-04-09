@@ -421,7 +421,7 @@
             "mobile_icon_max_width": "25%",
             "mobile_icon_height": "50px",
             "use_max_icon_group_width": true,
-            "icon_group_max_width": "700px",
+            "icon_group_max_width": "90%",
             "desktop_icons_display": "grid",
             "desktop_icon_group_horizontal_alignment": "center",
             "desktop_icon_group_vertical_alignment": "flex-start",
@@ -505,8 +505,8 @@
         "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "use_max_text_width": true,
+        "max_width": "75%",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -672,8 +672,8 @@
         "mobile_text_alignment": "left",
         "desktop_text_position": "left",
         "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "use_max_text_width": true,
+        "max_width": "80%",
         "padding_top": 0,
         "padding_bottom": 0
       }
