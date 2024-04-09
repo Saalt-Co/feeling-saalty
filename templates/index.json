@@ -27,7 +27,7 @@
           "type": "section_button",
           "settings": {
             "button_text": "SHOP SAALT WEAR",
-            "button_url": "\/collections\/saalt-period-underwear",
+            "button_url": "shopify:\/\/collections\/saalt-period-underwear",
             "button_type": "primary",
             "theme_color_section_button_background": "theme-color-bg-4",
             "theme_color_text_section_button_text": "theme-color-text-1",
@@ -39,10 +39,10 @@
           "type": "section_button",
           "settings": {
             "button_text": "SHOP CUPS & DISCS",
-            "button_url": "\/collections\/menstrual-cups-discs",
-            "button_type": "secondary",
+            "button_url": "shopify:\/\/collections\/menstrual-cups-discs",
+            "button_type": "primary",
             "theme_color_section_button_background": "theme-color-bg-4",
-            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_text_section_button_text": "theme-color-text-1",
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default"
           }
