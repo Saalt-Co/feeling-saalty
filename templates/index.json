@@ -84,13 +84,19 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "Psst...Get a free gift with any purchase."
+            "title": "Psst...Get a free gift with purchase."
           }
         },
         "section_content_g6CMfY": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Grab any Saalt Cup or Disc: Get a free Saalt Wash<\/p><p>Grab any new Saalt Wear: Get free Saalt Wipes<\/p>"
+            "text_content": "<p>Grab any Saalt Cup or Disc: Get a free Saalt Wash<\/p><p>Grab any Saalt Wear: Get free Saalt Wipes<\/p>"
+          }
+        },
+        "section_content_KPYrBQ": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<h6><em>Add both items to cart, discount automatically applies at checkout.<\/em><\/h6>"
           }
         },
         "section_buttons_group_qf9ViQ": {
@@ -128,11 +134,11 @@
       "block_order": [
         "section_title_QCYYnR",
         "section_content_g6CMfY",
+        "section_content_KPYrBQ",
         "section_buttons_group_qf9ViQ",
         "section_button_9VMqjh",
         "section_button_Ucp7tP"
       ],
-      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -198,6 +204,7 @@
         "section_buttons_group_nHwEnN",
         "section_button_ggLY8P"
       ],
+      "disabled": true,
       "custom_css": [
         "@media only screen and (max-width: 767px) {p {color: #373737; } h1 {color: #373737; font-size: 26px !important; }}"
       ],
