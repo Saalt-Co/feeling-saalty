@@ -116,8 +116,9 @@
       "block_order": [
         "text_6YTrre"
       ],
+      "disabled": true,
       "custom_css": [
-        "p {background-color: #BFDBD9;}"
+        "p {background-color: #bfdbd9;}"
       ],
       "settings": {
         "desktop_content_position": "left",
