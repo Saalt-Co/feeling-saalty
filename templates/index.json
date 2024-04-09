@@ -77,87 +77,6 @@
         "padding_bottom": 0
       }
     },
-    "saalt_media_with_split_text_g9QA77": {
-      "type": "saalt-media-with-split-text",
-      "blocks": {
-        "section_title_9XfVYM": {
-          "type": "section_title",
-          "settings": {
-            "text_group_num": "2",
-            "heading_tag": "1",
-            "title": "Period Care Simplified"
-          }
-        },
-        "section_content_YaCmrh": {
-          "type": "section_content",
-          "settings": {
-            "text_group_num": "2",
-            "text_content": "<p>Premium reusable menstrual cups, discs and leakproof period underwear.<\/p>"
-          }
-        },
-        "section_buttons_group_gNfAjf": {
-          "type": "section_buttons_group",
-          "settings": {
-            "text_group_num": "2",
-            "desktop_button_group_alignment": "flex-start",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "section_button_dRB8y9": {
-          "type": "section_button",
-          "settings": {
-            "text_group_num": "1",
-            "button_text": "SHOP SAALT WEAR",
-            "button_url": "shopify:\/\/collections\/saalt-period-underwear",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
-        "section_button_6bJtp3": {
-          "type": "section_button",
-          "settings": {
-            "text_group_num": "1",
-            "button_text": "SHOP CUPS & DISCS",
-            "button_url": "shopify:\/\/collections\/menstrual-cups-discs",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "section_title_9XfVYM",
-        "section_content_YaCmrh",
-        "section_buttons_group_gNfAjf",
-        "section_button_dRB8y9",
-        "section_button_6bJtp3"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme-color-bg-5",
-        "theme_color_text": "theme_default",
-        "media_type": "video",
-        "video": "shopify:\/\/files\/videos\/Video Homepage 2023.mp4",
-        "use_max_media_width": false,
-        "max_media_width": "600px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "saalt_bg_media_with_text_iMd9w8": {
       "type": "saalt-bg-media-with-text",
       "blocks": {
@@ -185,7 +104,7 @@
           "type": "section_button",
           "settings": {
             "button_text": "Shop Cups & Discs",
-            "button_url": "shopify:\/\/collections\/menstrual-cups-discs",
+            "button_url": "shopify:\/\/collections\/saalt-period-underwear",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -197,9 +116,9 @@
           "type": "section_button",
           "settings": {
             "button_text": "Shop Saalt Wear",
-            "button_url": "shopify:\/\/collections\/saalt-period-underwear",
+            "button_url": "shopify:\/\/collections\/menstrual-cups-discs",
             "button_type": "primary",
-            "theme_color_section_button_background": "theme-color-bg-1",
+            "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default"
@@ -1556,7 +1475,6 @@
   },
   "order": [
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
-    "saalt_media_with_split_text_g9QA77",
     "saalt_bg_media_with_text_iMd9w8",
     "saalt_bg_media_with_text_UnjVt3",
     "saalt_bg_media_with_text_8TxrEn",
