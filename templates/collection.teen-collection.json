@@ -133,6 +133,7 @@
       "block_order": [
         "text_WLmW4B"
       ],
+      "disabled": true,
       "custom_css": [
         "p {background-color: #bfdbd9;}"
       ],
