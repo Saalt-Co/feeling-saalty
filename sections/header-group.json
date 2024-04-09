@@ -42,7 +42,6 @@
       "blocks": {
         "announcement_nHDyte": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Save 15% off 3 items, 20% off 5 items, or 25% off 7+ items when you bundle Cups, Discs, or Underwear.",
             "link": ""
