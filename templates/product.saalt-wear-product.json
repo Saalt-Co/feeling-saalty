@@ -48,6 +48,7 @@
         },
         "text_49f6xw": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<strong>{{ product.metafields.saalt.evergreen_offer.value }}<\/strong>",
             "text_style": "uppercase"
