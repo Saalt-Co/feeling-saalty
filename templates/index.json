@@ -84,19 +84,19 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "Psst...Get a free gift with purchase."
+            "title": "Free gift with purchase"
           }
         },
         "section_content_g6CMfY": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Grab any Saalt Cup or Disc: Get a free Saalt Wash<\/p><p>Grab any Saalt Wear: Get free Saalt Wipes<\/p>"
+            "text_content": "<p><strong>Now through April 16<\/strong><\/p><p>Buy any Saalt Cup or Disc: Get a free Saalt Wash<\/p><p>Buy any Saalt Wear: Get free Saalt Wipes<\/p>"
           }
         },
         "section_content_KPYrBQ": {
           "type": "section_content",
           "settings": {
-            "text_content": "<h6><em>Free gifts will automatically be added in the shipment of qualifying orders.<\/em><\/h6>"
+            "text_content": "<h6><em>You won't see your free gift in your cart, but it will ship with your order automatically. <\/em><\/h6>"
           }
         },
         "section_buttons_group_qf9ViQ": {
@@ -106,11 +106,11 @@
             "desktop_buttons_group_gap": "1rem"
           }
         },
-        "section_button_9VMqjh": {
+        "section_button_Ucp7tP": {
           "type": "section_button",
           "settings": {
             "button_text": "Shop Cups & Discs",
-            "button_url": "shopify:\/\/collections\/saalt-period-underwear",
+            "button_url": "shopify:\/\/collections\/menstrual-cups-discs",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -118,11 +118,11 @@
             "theme_color_text_section_button_text_hover": "theme_default"
           }
         },
-        "section_button_Ucp7tP": {
+        "section_button_9VMqjh": {
           "type": "section_button",
           "settings": {
             "button_text": "Shop Saalt Wear",
-            "button_url": "shopify:\/\/collections\/menstrual-cups-discs",
+            "button_url": "shopify:\/\/collections\/saalt-period-underwear",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -136,8 +136,8 @@
         "section_content_g6CMfY",
         "section_content_KPYrBQ",
         "section_buttons_group_qf9ViQ",
-        "section_button_9VMqjh",
-        "section_button_Ucp7tP"
+        "section_button_Ucp7tP",
+        "section_button_9VMqjh"
       ],
       "settings": {
         "section_id": "",
