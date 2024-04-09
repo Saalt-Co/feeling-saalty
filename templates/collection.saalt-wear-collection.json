@@ -101,6 +101,7 @@
       "block_order": [
         "text_LRUxV3"
       ],
+      "disabled": true,
       "custom_css": [
         "p {background-color: #bfdbd9;}"
       ],
