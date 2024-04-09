@@ -224,7 +224,7 @@
         "progress_bar_9JzWbk": {
           "type": "progress-bar",
           "settings": {
-            "min": 39,
+            "min": 99,
             "msg-default": "You are {$}{amount} away from <strong>FREE DOMESTIC SHIPPING<\/strong>",
             "msg-below": "You are {$}{amount} away from <strong>FREE DOMESTIC SHIPPING<\/strong>",
             "msg-complete": "🎉 Congrats! You've unlocked <strong>FREE DOMESTIC SHIPPING!<\/strong>",
