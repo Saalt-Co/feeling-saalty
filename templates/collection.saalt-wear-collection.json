@@ -690,19 +690,30 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_cxwDte": {
+          "type": "column",
+          "settings": {
+            "title": "Lani D.",
+            "rating": 5,
+            "text": "<p>Love it!!! It's so soft and you wouldn't even know that it was a period panty. Will definitely purchase more & recommend to all my friends & family! I've already bought some for my teenager daughter. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-0",
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2",
-        "8ad13ac4-10e5-4131-bf07-17d6ff34bba2"
+        "8ad13ac4-10e5-4131-bf07-17d6ff34bba2",
+        "column_cxwDte"
       ],
       "settings": {
         "title": "9\/10 People Never Go Back",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "column_alignment": "left",
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
