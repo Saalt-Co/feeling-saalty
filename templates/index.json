@@ -889,7 +889,7 @@
         "show_view_all": true,
         "view_all_style": "button",
         "button_type": "primary",
-        "theme_color_section_button_background": "theme_default",
+        "theme_color_section_button_background": "theme-color-bg-6",
         "theme_color_text_section_button_text": "theme_default",
         "theme_color_section_button_background_hover": "theme_default",
         "theme_color_text_section_button_text_hover": "theme_default",
