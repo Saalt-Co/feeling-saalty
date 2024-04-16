@@ -888,7 +888,7 @@
         "theme_color_text": "theme_default",
         "show_view_all": true,
         "view_all_style": "button",
-        "button_type": "primary",
+        "button_type": "secondary",
         "theme_color_section_button_background": "theme_default",
         "theme_color_text_section_button_text": "theme_default",
         "theme_color_section_button_background_hover": "theme_default",
