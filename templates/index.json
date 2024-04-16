@@ -93,6 +93,13 @@
             "text_content": "<p>Switch to a plastic-free period to help us eliminate 100 million plastic tampons this earth day.<\/p>"
           }
         },
+        "section_content_CW9yir": {
+          "type": "section_content",
+          "disabled": true,
+          "settings": {
+            "text_content": "<h4>Today only, get 20% off Saalt Cups & Discs + free shipping! Use code PLANETOVERPLASTICS.<\/h4><h6>Ends April 22nd at midnight PST.<\/h6>"
+          }
+        },
         "section_buttons_group_anQEL4": {
           "type": "section_buttons_group",
           "settings": {
@@ -116,6 +123,7 @@
       "block_order": [
         "section_title_7KgcU4",
         "section_content_gwgfq3",
+        "section_content_CW9yir",
         "section_buttons_group_anQEL4",
         "section_button_3LnwhK"
       ],
@@ -138,7 +146,7 @@
         "desktop_text_position": "flex-end",
         "desktop_text_alignment": "center",
         "use_max_text_width": true,
-        "max_width": "25%",
+        "max_width": "27%",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -281,75 +289,6 @@
         "media_type": "image",
         "mobile_image": "shopify:\/\/shop_images\/Cotton-Tea-Dye-Launch-Hero-Saalt-mobile_03.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Cotton-Tea-Dye-Launch-Hero-Saalt-desktop_03.jpg",
-        "media_overlay_color": "--palette-color-1",
-        "media_overlay_opacity": 0,
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "center",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": true,
-        "max_width": "375px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "saalt_bg_media_with_text_8TxrEn": {
-      "type": "saalt-bg-media-with-text",
-      "blocks": {
-        "section_title_FXRtax": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "Meet the all new Saalt Wear Mesh styles."
-          }
-        },
-        "section_content_XmcYTq": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>Lingerie-inspired leakproof underwear. Designed in Paris at the intersection of style & function.<\/p>"
-          }
-        },
-        "section_buttons_group_LBaFif": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "center",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "section_button_nXmgDJ": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Shop Now",
-            "button_url": "shopify:\/\/collections\/lace-mesh",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "section_title_FXRtax",
-        "section_content_XmcYTq",
-        "section_buttons_group_LBaFif",
-        "section_button_nXmgDJ"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "@media only screen and (max-width: 767px) {p {color: #373737; } h1 {color: #373737; font-size: 26px !important; }}"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme-color-text-0",
-        "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Mesh-Refresh-Launch-Hero-Saalt-v2-mobile.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Mesh-Refresh-Launch-Hero-Saalt-v2-desktop.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
@@ -1560,7 +1499,6 @@
     "saalt_bg_media_with_text_aJTmjB",
     "saalt_bg_media_with_text_iMd9w8",
     "saalt_bg_media_with_text_UnjVt3",
-    "saalt_bg_media_with_text_8TxrEn",
     "saalt_bg_media_with_text_iyXbMP",
     "dec81ce8-0726-4327-93a6-eb82628398dc",
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
