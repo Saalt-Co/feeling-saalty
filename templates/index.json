@@ -77,6 +77,72 @@
         "padding_bottom": 0
       }
     },
+    "saalt_bg_media_with_text_aJTmjB": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "section_title_7KgcU4": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "1 Cup = 3,000 tampons"
+          }
+        },
+        "section_content_gwgfq3": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Switch to a plastic-free period to help us eliminate 100 million plastic tampons this earth day.<\/p>"
+          }
+        },
+        "section_buttons_group_anQEL4": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_3LnwhK": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "SHOP CUPS & DISCS",
+            "button_url": "shopify:\/\/collections\/menstrual-cups-discs",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_7KgcU4",
+        "section_content_gwgfq3",
+        "section_buttons_group_anQEL4",
+        "section_button_3LnwhK"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Earth-Day-mobile_02.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Earth-Day-desktop_02.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "flex-end",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "25%",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "saalt_bg_media_with_text_iMd9w8": {
       "type": "saalt-bg-media-with-text",
       "blocks": {
@@ -1491,6 +1557,7 @@
   },
   "order": [
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
+    "saalt_bg_media_with_text_aJTmjB",
     "saalt_bg_media_with_text_iMd9w8",
     "saalt_bg_media_with_text_UnjVt3",
     "saalt_bg_media_with_text_8TxrEn",
