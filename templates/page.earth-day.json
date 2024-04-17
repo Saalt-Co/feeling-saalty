@@ -51,7 +51,6 @@
         "section_button_f6anHG"
       ],
       "custom_css": [
-        "@media only screen and (min-width: 768px) {.text-wrapper {margin-left: 80px; }}",
         "@media only screen and (max-width: 767px) {.text-wrapper h1:first-of-type {padding-left: 10px; padding-right: 10px; } h1 {color: #373737; } p {color: #373737; }}"
       ],
       "settings": {
