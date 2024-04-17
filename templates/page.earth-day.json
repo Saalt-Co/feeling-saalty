@@ -218,6 +218,7 @@
         },
         "f7a5cbdf-a0cc-49a8-9c40-00242a8fee72": {
           "type": "section_content",
+          "disabled": true,
           "settings": {
             "text_content": "<p>We designed the Saalt Cup to be the easiest to use and most comfortable cup on the market. Our bulb shape forms a double seal to prevent leaks, and it’s made in the USA of  100% medical-grade silicone that’s velvety soft, odor free, and lasts 10 years.    Grab a match. It’s time to burn your last tampon.<\/p>"
           }
@@ -602,7 +603,7 @@
         "heading": "FAQs",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "row",
+        "layout": "none",
         "theme_color_background": "theme-color-bg-3",
         "theme_color_text": "theme-color-text-1",
         "theme_color_container_background": "theme-color-bg-3",
