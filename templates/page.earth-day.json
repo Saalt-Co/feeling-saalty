@@ -79,13 +79,16 @@
     },
     "featured_collection_g3GwyQ": {
       "type": "featured-collection",
+      "custom_css": [
+        "h2 {text-align: center}"
+      ],
       "settings": {
         "title": "Shop our Bestsellers",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "",
+        "collection": "cups-discs-for-shop-all-page",
         "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": false,
@@ -103,9 +106,9 @@
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
-        "show_rating": false,
-        "show_swatches": false,
-        "enable_quick_add": false,
+        "show_rating": true,
+        "show_swatches": true,
+        "enable_quick_add": true,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
