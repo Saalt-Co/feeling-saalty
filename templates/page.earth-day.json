@@ -15,19 +15,40 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "Meet the Saalt<br> Period Cup."
+            "title": "Help save 100 million tampons from landfills this Earth Day."
           }
         },
         "template--15078825525329__fd4445e0-3160-476f-9e6f-f9f22e50a1dc-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Goddess of the vulva, chalice of the cha-cha— it’s a reusable soft silicone cup worn internally like a tampon that collects, rather than absorbs, your period.<\/p>"
+            "text_content": "<p>Get 15% off + free shipping on Saalt Cups & Discs with code: <strong>NYT15<\/strong>.\u2028Offer valid through April 30th only.<\/p>"
+          }
+        },
+        "section_buttons_group_ajY7NE": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "flex-start",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_f6anHG": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "SHOP NOW",
+            "button_url": "shopify:\/\/collections\/menstrual-cups-discs",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-0",
+            "theme_color_text_section_button_text": "theme-color-text-1",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
           }
         }
       },
       "block_order": [
         "template--15078825525329__fd4445e0-3160-476f-9e6f-f9f22e50a1dc-section_title-1",
-        "template--15078825525329__fd4445e0-3160-476f-9e6f-f9f22e50a1dc-section_content-1"
+        "template--15078825525329__fd4445e0-3160-476f-9e6f-f9f22e50a1dc-section_content-1",
+        "section_buttons_group_ajY7NE",
+        "section_button_f6anHG"
       ],
       "custom_css": [
         "@media only screen and (min-width: 768px) {.text-wrapper {margin-left: 80px; }}",
@@ -36,10 +57,10 @@
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
+        "theme_color_text": "theme-color-text-0",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Learn-Cups-Hero-1-25-24.png",
-        "desktop_image": "shopify:\/\/shop_images\/Learn-Cups-Hero-1-25-24.png",
+        "mobile_image": "shopify:\/\/shop_images\/Earth-Day-Landing-Page-hero-mobile_02.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Earth-Day-Landing-Page-hero-desktop.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
@@ -48,76 +69,47 @@
         "content_font_size": "small",
         "mobile_text_position": "below",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "flex-start",
+        "desktop_text_position": "flex-end",
         "desktop_text_alignment": "left",
         "use_max_text_width": true,
-        "max_width": "40%",
+        "max_width": "26%",
         "padding_top": 0,
         "padding_bottom": 0
       }
     },
-    "c3c67c48-069b-41aa-83c9-2b9ee67d9d60": {
-      "type": "saalt-modular-nav-bar",
-      "blocks": {
-        "template--15078825525329__c3c67c48-069b-41aa-83c9-2b9ee67d9d60-nav_bar_link-1": {
-          "type": "nav_bar_link",
-          "settings": {
-            "nav_bar_link_text": "How it works",
-            "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "#how-it-works",
-            "nav_bar_link_dest": "#how it works"
-          }
-        },
-        "4527afb6-04da-4f97-a477-496cd83f6322": {
-          "type": "nav_bar_link",
-          "settings": {
-            "nav_bar_link_text": "How to use it",
-            "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "#how-to-use-it",
-            "nav_bar_link_dest": "#why it's better"
-          }
-        },
-        "bd2e6f19-eb06-4cd9-a36b-c83a7d840938": {
-          "type": "nav_bar_link",
-          "settings": {
-            "nav_bar_link_text": "Why it's better",
-            "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "#why-its-better",
-            "nav_bar_link_dest": "#absorbency guide"
-          }
-        },
-        "203f953b-dc7d-482f-9e5d-c6bb8a366b86": {
-          "type": "nav_bar_link",
-          "settings": {
-            "nav_bar_link_text": "Cup or disc?",
-            "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "#cup-or-disc",
-            "nav_bar_link_dest": "#how to wash"
-          }
-        },
-        "97c874e3-3dcf-4a4b-808e-cb386cef62e8": {
-          "type": "nav_bar_link",
-          "settings": {
-            "nav_bar_link_text": "How to clean",
-            "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "#how-to-clean",
-            "nav_bar_link_dest": "#how to wash"
-          }
-        }
-      },
-      "block_order": [
-        "template--15078825525329__c3c67c48-069b-41aa-83c9-2b9ee67d9d60-nav_bar_link-1",
-        "4527afb6-04da-4f97-a477-496cd83f6322",
-        "bd2e6f19-eb06-4cd9-a36b-c83a7d840938",
-        "203f953b-dc7d-482f-9e5d-c6bb8a366b86",
-        "97c874e3-3dcf-4a4b-808e-cb386cef62e8"
-      ],
+    "featured_collection_g3GwyQ": {
+      "type": "featured-collection",
       "settings": {
-        "section_id": "",
-        "theme_color_background": "theme-color-bg-4",
+        "title": "Shop our Bestsellers",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "enable_desktop_slider": false,
+        "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
-        "mobile_nav_link_gap": "3rem",
-        "desktop_nav_link_gap": "7rem"
+        "show_view_all": false,
+        "view_all_style": "button",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_swatches": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "205af4ea-20c2-45bc-98f3-082272cb19eb": {
@@ -141,6 +133,7 @@
         "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_title-1",
         "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_content-1"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "how it works",
         "theme_color_background": "theme_default",
@@ -184,6 +177,7 @@
         "template--15078825525329__11b4eb9a-18a9-488e-bfd7-23c248641695-section_title-1",
         "template--15078825525329__11b4eb9a-18a9-488e-bfd7-23c248641695-section_content-1"
       ],
+      "disabled": true,
       "custom_css": [
         "@media only screen and (min-width: 768px) {.text-wrapper {margin-left: 50px; }}",
         "@media only screen and (max-width: 767px) {.text-wrapper h1:first-of-type {padding-left: 40px; padding-right: 40px; }}"
@@ -249,92 +243,6 @@
         "desktop_text_alignment": "left",
         "use_max_text_width": true,
         "max_width": "500px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "27932570-f6dd-49ef-a41d-a62c5a6e210f": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "c1b44b28-e8c0-406e-b736-e8805091a928": {
-          "type": "section_icon_group",
-          "settings": {
-            "mobile_icons_display": "row",
-            "mobile_icon_group_horizontal_alignment": "center",
-            "mobile_icon_group_vertical_alignment": "center",
-            "mobile_icon_grid_columns": 2,
-            "mobile_icon_group_gap": "3.5rem",
-            "mobile_icon_text_size": "1.5rem",
-            "mobile_icon_horizontal_alignment": "center",
-            "mobile_icon_vertical_alignment": "center",
-            "mobile_icon_min_width": "70px",
-            "mobile_icon_wrapper_max_width": "100px",
-            "mobile_icon_max_width": "100%",
-            "mobile_icon_height": "70px",
-            "use_max_icon_group_width": false,
-            "icon_group_max_width": "600px",
-            "desktop_icons_display": "row",
-            "desktop_icon_group_horizontal_alignment": "center",
-            "desktop_icon_group_vertical_alignment": "center",
-            "desktop_icon_grid_columns": 2,
-            "desktop_icon_group_gap": "3.5rem",
-            "desktop_icon_text_size": "1.5rem",
-            "desktop_icon_horizontal_alignment": "center",
-            "desktop_icon_vertical_alignment": "center",
-            "desktop_icon_min_width": "70px",
-            "desktop_icon_wrapper_max_width": "70px",
-            "desktop_icon_max_width": "100%",
-            "desktop_icon_height": "70px"
-          }
-        },
-        "509bce37-e5ee-4185-86eb-b2a6cf78aa5d": {
-          "type": "section_icon_with_text",
-          "settings": {
-            "icon_svg": "<svg width=\"96\" height=\"55\" viewbox=\"0 0 96 96\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M95.0966 6.4007L94.9067 6.44663C94.6367 8.68379 92.8743 11.5699 86.2784 13.1463C78.7613 14.9449 70.8645 12.5329 65.9821 9.00974C65.273 8.4986 64.5535 7.97264 63.8132 7.46447C63.429 7.19778 63.0462 6.92666 62.6605 6.65553C56.9815 2.64642 50.3056 -0.291522 43.0362 0.301104H42.9932C42.9695 0.301104 42.9443 0.301104 42.922 0.309993C38.1836 0.71446 34.7492 2.16047 32.0373 4.08798C29.584 5.67466 27.4611 7.72024 25.7856 10.112C22.6821 14.5849 21.559 19.7422 22.6257 24.6447C22.6687 24.8432 22.737 25.0329 22.7874 25.2373C21.5746 25.1828 20.3595 25.2065 19.1498 25.3084C12.1178 25.8922 7.01441 30.368 3.90343 35.1949C1.38761 39.1063 0.326027 43.7753 0.903711 48.3882L1.0936 48.3438C1.36806 46.1051 3.12902 43.2205 9.72632 41.6427C17.2434 39.8455 25.1403 42.256 30.0226 45.7792C30.7318 46.2918 31.4513 46.8163 32.1916 47.3245C32.5758 47.5911 32.9585 47.8623 33.3443 48.1334C39.0218 52.141 45.6932 55.079 52.9626 54.4863H53.0071L53.0783 54.4775C57.8153 54.0715 61.2496 52.627 63.963 50.6995C66.4167 49.112 68.5396 47.0654 70.2147 44.6725C73.3182 40.1996 74.4413 35.0423 73.3746 30.1413C73.3316 29.9413 73.2633 29.7516 73.2129 29.5487C74.4257 29.603 75.6407 29.5797 76.8505 29.479C83.8825 28.8864 88.9859 24.418 92.0969 19.5911C94.612 15.6805 95.6736 11.0126 95.0966 6.4007V6.4007ZM72.753 30.3013C72.8613 30.8021 72.9355 31.3073 72.9963 31.814C73.7381 39.0188 67.8039 42.9746 62.5003 43.4724C55.1894 44.1598 49.7077 39.3062 42.9175 34.3919C42.4117 34.0274 41.8895 33.6511 41.345 33.257C35.1972 28.6834 30.0701 25.7307 23.4669 25.2669C23.3957 25.0047 23.3081 24.7484 23.2488 24.4787C23.1405 23.978 23.0663 23.4728 23.0055 22.9661C22.2103 15.4101 28.1979 11.8054 33.5015 11.3076C40.8109 10.6261 46.3 15.4857 53.0842 20.3926C53.5901 20.7585 54.1123 21.1334 54.6568 21.5275C60.8046 26.1011 65.9317 29.0538 72.5349 29.5175C72.6061 29.7813 72.6937 30.0361 72.753 30.3013Z\"><\/path>\n<\/svg>",
-            "icon_text": "",
-            "mobile_icon_text_position": "below",
-            "desktop_icon_text_position": "below",
-            "theme_color_icon_color": "theme-color-text-4",
-            "theme_color_icon_text_color": "match_text"
-          }
-        },
-        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "3",
-            "title": "Saalt Bliss Guarantee"
-          }
-        },
-        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>If you're not happy with your Saalt product, <a href=\"\/pages\/replacements\" title=\"\/pages\/replacements\"><span style=\"text-decoration:underline\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/span><\/a>. Why? We know that learning to use reusables can take time, but we’re here to help and cheer you to Saalt bliss. Your Saalt(isfaction) guaranteed.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "c1b44b28-e8c0-406e-b736-e8805091a928",
-        "509bce37-e5ee-4185-86eb-b2a6cf78aa5d",
-        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_title-1",
-        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_content-1"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "none",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "600px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": true,
-        "max_width": "600px",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -753,6 +661,92 @@
         "accessibility_info": "Slideshow of customer testimonials"
       }
     },
+    "27932570-f6dd-49ef-a41d-a62c5a6e210f": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "c1b44b28-e8c0-406e-b736-e8805091a928": {
+          "type": "section_icon_group",
+          "settings": {
+            "mobile_icons_display": "row",
+            "mobile_icon_group_horizontal_alignment": "center",
+            "mobile_icon_group_vertical_alignment": "center",
+            "mobile_icon_grid_columns": 2,
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_text_size": "1.5rem",
+            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_vertical_alignment": "center",
+            "mobile_icon_min_width": "70px",
+            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "70px",
+            "use_max_icon_group_width": false,
+            "icon_group_max_width": "600px",
+            "desktop_icons_display": "row",
+            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_vertical_alignment": "center",
+            "desktop_icon_grid_columns": 2,
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_horizontal_alignment": "center",
+            "desktop_icon_vertical_alignment": "center",
+            "desktop_icon_min_width": "70px",
+            "desktop_icon_wrapper_max_width": "70px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "70px"
+          }
+        },
+        "509bce37-e5ee-4185-86eb-b2a6cf78aa5d": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"96\" height=\"55\" viewbox=\"0 0 96 96\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M95.0966 6.4007L94.9067 6.44663C94.6367 8.68379 92.8743 11.5699 86.2784 13.1463C78.7613 14.9449 70.8645 12.5329 65.9821 9.00974C65.273 8.4986 64.5535 7.97264 63.8132 7.46447C63.429 7.19778 63.0462 6.92666 62.6605 6.65553C56.9815 2.64642 50.3056 -0.291522 43.0362 0.301104H42.9932C42.9695 0.301104 42.9443 0.301104 42.922 0.309993C38.1836 0.71446 34.7492 2.16047 32.0373 4.08798C29.584 5.67466 27.4611 7.72024 25.7856 10.112C22.6821 14.5849 21.559 19.7422 22.6257 24.6447C22.6687 24.8432 22.737 25.0329 22.7874 25.2373C21.5746 25.1828 20.3595 25.2065 19.1498 25.3084C12.1178 25.8922 7.01441 30.368 3.90343 35.1949C1.38761 39.1063 0.326027 43.7753 0.903711 48.3882L1.0936 48.3438C1.36806 46.1051 3.12902 43.2205 9.72632 41.6427C17.2434 39.8455 25.1403 42.256 30.0226 45.7792C30.7318 46.2918 31.4513 46.8163 32.1916 47.3245C32.5758 47.5911 32.9585 47.8623 33.3443 48.1334C39.0218 52.141 45.6932 55.079 52.9626 54.4863H53.0071L53.0783 54.4775C57.8153 54.0715 61.2496 52.627 63.963 50.6995C66.4167 49.112 68.5396 47.0654 70.2147 44.6725C73.3182 40.1996 74.4413 35.0423 73.3746 30.1413C73.3316 29.9413 73.2633 29.7516 73.2129 29.5487C74.4257 29.603 75.6407 29.5797 76.8505 29.479C83.8825 28.8864 88.9859 24.418 92.0969 19.5911C94.612 15.6805 95.6736 11.0126 95.0966 6.4007V6.4007ZM72.753 30.3013C72.8613 30.8021 72.9355 31.3073 72.9963 31.814C73.7381 39.0188 67.8039 42.9746 62.5003 43.4724C55.1894 44.1598 49.7077 39.3062 42.9175 34.3919C42.4117 34.0274 41.8895 33.6511 41.345 33.257C35.1972 28.6834 30.0701 25.7307 23.4669 25.2669C23.3957 25.0047 23.3081 24.7484 23.2488 24.4787C23.1405 23.978 23.0663 23.4728 23.0055 22.9661C22.2103 15.4101 28.1979 11.8054 33.5015 11.3076C40.8109 10.6261 46.3 15.4857 53.0842 20.3926C53.5901 20.7585 54.1123 21.1334 54.6568 21.5275C60.8046 26.1011 65.9317 29.0538 72.5349 29.5175C72.6061 29.7813 72.6937 30.0361 72.753 30.3013Z\"><\/path>\n<\/svg>",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "theme-color-text-4",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "3",
+            "title": "Saalt Bliss Guarantee"
+          }
+        },
+        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>If you're not happy with your Saalt product, <a href=\"\/pages\/replacements\" title=\"\/pages\/replacements\"><span style=\"text-decoration:underline\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/span><\/a>. Why? We know that learning to use reusables can take time, but we’re here to help and cheer you to Saalt bliss. Your Saalt(isfaction) guaranteed.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c1b44b28-e8c0-406e-b736-e8805091a928",
+        "509bce37-e5ee-4185-86eb-b2a6cf78aa5d",
+        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_title-1",
+        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_content-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "600px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "7dc8f187-d995-436e-9a49-5e215d0d4aa1": {
       "type": "collapsible-content",
       "blocks": {
@@ -902,6 +896,7 @@
         "1c7ae3d2-c727-46c4-b824-d5bf25842f3e",
         "9519e5cd-87f5-4d56-940e-220d20ebb13e"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -1022,6 +1017,7 @@
         "0120b5ec-4253-43e3-84d3-137b2f7fbaf7",
         "cfd9cf13-b98f-4894-8018-2e3f00aa7082"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-5",
@@ -1039,15 +1035,6 @@
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
         "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "custom_liquid_Hr4KgQ": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<div class=\"icon-wrapper\" style=\"text-align: center; background-color: #FDF7F3;\">\n    <a href=\"https:\/\/saalt.com\/pages\/easter-egg\">\n        <svg width=\"17\" height=\"29\" viewBox=\"0 0 17 29\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n    <defs>\n        <!-- Define a linear gradient for purple color -->\n        <linearGradient id=\"purpleGradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n            <stop offset=\"0%\" style=\"stop-color:#DAC7E0;stop-opacity:1\" \/>\n            <stop offset=\"30%\" style=\"stop-color:#DAC7E0 ;stop-opacity:1\" \/>\n            <stop offset=\"60%\" style=\"stop-color:#bba4c7 ;stop-opacity:1\" \/>\n            <stop offset=\"100%\" style=\"stop-color:#9C85AF;stop-opacity:1\" \/>\n        <\/linearGradient>\n    <\/defs>\n    <!-- Apply the purple gradient to the path -->\n    <path d=\"M16.0831 0.00194592H0.906076C0.906076 0.00194592 0 0.116755 0 0.929175C0 1.99943 0.902141 1.79024 0.933623 2.88288C0.938367 2.90233 0.941005 2.92222 0.941493 2.94223C0.941493 3.53476 0.838194 6.84574 0.838194 6.84574C0.860417 8.02783 0.978193 9.20627 1.19039 10.3698L1.1963 10.3805C1.1963 10.3805 1.51406 12.8586 5.10885 16.765C5.15273 16.8243 5.20143 16.88 5.25446 16.9314L5.26528 16.9412C5.50139 17.1941 5.75193 17.4536 6.0169 17.7195C6.41855 18.1696 6.78711 18.6476 7.11973 19.1498C7.20732 19.2838 7.27058 19.432 7.30665 19.5876C7.42405 20.1419 7.47817 20.7075 7.468 21.2737C7.468 21.3487 7.468 21.4314 7.468 21.5141V21.8303C7.468 22.2448 7.468 22.4462 7.468 22.7731V27.6379V27.6816C7.468 28.0017 7.47587 28.1156 7.47587 28.1555C7.47587 28.1555 7.47587 28.9484 8.42917 29H8.47737H8.51771H8.56591C9.5202 28.9484 9.5202 28.1555 9.5202 28.1555C9.5202 28.1156 9.5202 28.0017 9.52807 27.6816V27.634V22.7692C9.52807 22.4423 9.52807 22.2409 9.52807 21.8264V21.5141C9.52807 21.4314 9.52807 21.3487 9.52807 21.2737C9.51789 20.7075 9.57201 20.1419 9.68941 19.5876C9.72549 19.432 9.78874 19.2838 9.87633 19.1498C10.2084 18.6457 10.577 18.1661 10.9792 17.7147C11.2415 17.45 11.4921 17.1906 11.7308 16.9363L11.7416 16.9266C11.7956 16.8759 11.8456 16.8213 11.8911 16.7631C15.4859 12.8567 15.8027 10.3785 15.8027 10.3785L15.8086 10.3678C16.0216 9.20441 16.1397 8.02593 16.1618 6.84379C16.1618 6.84379 16.0575 3.53573 16.0575 2.94028C16.058 2.92028 16.0606 2.90038 16.0654 2.88093C16.0979 1.7883 17 1.99359 17 0.92723C17 0.114809 16.0939 0 16.0939 0\" fill=\"url(#purpleGradient)\"\/>\n<\/svg>\n\n    <\/a>\n<\/div>",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -1080,6 +1067,7 @@
         "template--15078825525329__ee2c8556-75bf-49e7-bfbb-644878ffb5af-section_content-1",
         "0f95b15d-936c-4ea7-81c0-9ce53aceb9f9"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-3",
@@ -1106,11 +1094,10 @@
   "order": [
     "main",
     "fd4445e0-3160-476f-9e6f-f9f22e50a1dc",
-    "c3c67c48-069b-41aa-83c9-2b9ee67d9d60",
+    "featured_collection_g3GwyQ",
     "205af4ea-20c2-45bc-98f3-082272cb19eb",
     "11b4eb9a-18a9-488e-bfd7-23c248641695",
     "1486f5ff-6753-4ad7-b1a9-6346e2f7f3b8",
-    "27932570-f6dd-49ef-a41d-a62c5a6e210f",
     "959d5c15-d6c3-425c-a8d3-5e2f73ff8944",
     "c8d699c2-ccef-4799-b100-f96128516185",
     "f91185b0-f65e-4125-81ae-3fa39f1e6d62",
@@ -1120,10 +1107,10 @@
     "10429312-ce7e-429d-b655-263692683976",
     "9f70e72a-5b16-482b-84b3-df444f15d0bd",
     "2a1f9c4e-eb99-4278-885c-23052a0fe53e",
+    "27932570-f6dd-49ef-a41d-a62c5a6e210f",
     "7dc8f187-d995-436e-9a49-5e215d0d4aa1",
     "6d90874c-c092-46f8-89ee-85bf53a9989d",
     "73a1b656-ec29-41c6-a6b6-981a3178cf8d",
-    "custom_liquid_Hr4KgQ",
     "ee2c8556-75bf-49e7-bfbb-644878ffb5af"
   ]
 }
