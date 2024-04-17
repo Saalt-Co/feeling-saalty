@@ -127,7 +127,6 @@
         "section_buttons_group_anQEL4",
         "section_button_3LnwhK"
       ],
-      "disabled": true,
       "custom_css": [
         "h6 {font-weight: 500;}"
       ],
@@ -216,6 +215,7 @@
         "section_button_Ucp7tP",
         "section_button_9VMqjh"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
