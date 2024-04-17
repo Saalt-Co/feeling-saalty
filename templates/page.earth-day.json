@@ -329,296 +329,15 @@
         "padding_bottom": 0
       }
     },
-    "959d5c15-d6c3-425c-a8d3-5e2f73ff8944": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "3",
-            "title": "Which size should I get?<br>Let’s break it down."
-          }
-        },
-        "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>The Saalt Cup comes in 3 different sizes to fit your body and flow. \u2028Most people can use any size, but one may be most comfortable.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_title-1",
-        "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_content-1"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme-color-bg-6",
-        "theme_color_text": "theme-color-text-0",
-        "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Saalt-Cup-Size-Guide-Learn_Cups_12-13-2023.jpg",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 40,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "above",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "left",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": true,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "c8d699c2-ccef-4799-b100-f96128516185": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "2",
-            "title": "Find the Perfect Fit"
-          }
-        },
-        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>Take the Saalt period cup quiz to find the best size and firmness for your most comfortable period.<\/p>"
-          }
-        },
-        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_button-1": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Button text",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_title-1",
-        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_content-1",
-        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_button-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "code",
-        "custom_code": "The Digioh quiz code here",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 66,
-        "title_font_size": "large",
-        "content_font_size": "small",
-        "mobile_text_position": "above",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "left",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "f91185b0-f65e-4125-81ae-3fa39f1e6d62": {
-      "type": "saalt-style-1-tiles-section",
-      "blocks": {
-        "56acc760-8d94-4c0c-aed3-5c6bf3f52f9c": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "2",
-            "title": "Saalt reusable period cup of disc?"
-          }
-        },
-        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-section_tiles_group-1": {
-          "type": "section_tiles_group",
-          "settings": {
-            "theme_color_mobile_text_color": "match_text",
-            "tile_mobile_text_alignment": "center",
-            "theme_color_desktop_text_color": "match_text",
-            "theme_color_desktop_text_hover_focus_color": "match_text",
-            "tile_desktop_text_alignment": "center",
-            "desktop_text_placement": "center",
-            "tile_desktop_text_alignment_hover_focus": "center",
-            "desktop_text_hover_placement": "center"
-          }
-        },
-        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-1": {
-          "type": "saalt_style_1_tile",
-          "settings": {
-            "title": "",
-            "text_content": "",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
-        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-2": {
-          "type": "saalt_style_1_tile",
-          "settings": {
-            "title": "",
-            "text_content": "",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "56acc760-8d94-4c0c-aed3-5c6bf3f52f9c",
-        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-section_tiles_group-1",
-        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-1",
-        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_id": "cup or disc",
-        "theme_color_background": "theme-color-bg-5",
-        "theme_color_text": "theme_default",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_alignment": "center",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "bec6a799-d547-4f72-a599-8edc58d4bcc3": {
-      "type": "saalt-unstyled-liquid-section",
-      "blocks": {
-        "a9820dcb-bb69-4453-874f-0f5037ef5b01": {
-          "type": "custom_liquid_code",
-          "settings": {
-            "liquid_code": "<div id=\"cup-or-disc\"> <\/div>"
-          }
-        }
-      },
-      "block_order": [
-        "a9820dcb-bb69-4453-874f-0f5037ef5b01"
-      ],
-      "settings": {
-        "section_id": "cup or disc"
-      }
-    },
-    "4979ad3b-9b05-4c86-8a59-644c6f717625": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/cup_placement.jpg",
-            "title": "Saalt Cup",
-            "rating": 0,
-            "text": "<h4>Sits in the vaginal canal.<\/h4><ul><li>Seal keeps the cup in place<\/li><li>Rests in vaginal canal<\/li><li>Great for beginners<\/li><li>Two firmness options<\/li><li>Collects 3—4x more than a tampon<\/li><\/ul>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/disc_placement.jpg",
-            "title": "Saalt Disc",
-            "rating": 0,
-            "text": "<h4>Sits in the fornix directly under the cervix.<\/h4><ul><li>No suction<\/li><li>Rests in vaginal fornix<\/li><li>Custom removal notch<\/li><li>No-mess period sex<\/li><li>Collects 4—6x more than a tampon<\/li><\/ul>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-1",
-        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-2"
-      ],
-      "settings": {
-        "title": "Saalt Period Cup or Period Disc?",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "background_style": "primary",
-        "theme_color_column_secondary_bg": "--palette-color-5",
-        "column_secondary_bg_opacity": 100,
-        "review_star_color_override": "theme_default",
-        "review_star_opacity_override": 100,
-        "button_text": "",
-        "button_url": "",
-        "button_type": "primary",
-        "theme_color_section_button_background": "theme_default",
-        "theme_color_text_section_button_text": "theme_default",
-        "theme_color_section_button_background_hover": "theme_default",
-        "theme_color_text_section_button_text_hover": "theme_default",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "61266f32-54d6-459e-a625-fb59fc4b6f40": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--21642631840017__61266f32-54d6-459e-a625-fb59fc4b6f40-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "2",
-            "title": "How to clean your menstrual cup"
-          }
-        }
-      },
-      "block_order": [
-        "template--21642631840017__61266f32-54d6-459e-a625-fb59fc4b6f40-section_title-1"
-      ],
-      "settings": {
-        "section_id": "how to clean",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "code",
-        "custom_code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/RsV27S_8t_U?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
-        "use_max_media_width": true,
-        "max_media_width": "900px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "above",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "above",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "10429312-ce7e-429d-b655-263692683976": {
       "type": "multicolumn",
       "blocks": {
         "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-1": {
           "type": "column",
           "settings": {
-            "title": "Alley",
+            "title": "Kaitlin",
             "rating": 0,
-            "text": "<p>I just started yesterday and my mind is blown. So comfortable, easy to use, and it doesn’t interfere with my active lifestyle whatsoever. I’m so bummed I didn’t give it a chance sooner.<strong> This is truly what period freedom feels like!<\/strong><\/p>",
+            "text": "<p>\"I couldn't believe how well it worked, I was like, OMG, I just discovered FIRE!\"<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -626,9 +345,9 @@
         "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-2": {
           "type": "column",
           "settings": {
-            "title": "Alex H.",
+            "title": "Lila",
             "rating": 0,
-            "text": "<p>This was my first time buying and using a period cup. There was definitely a learning curve, and some stress getting it out the first few times, but once I got the hang of it <strong>I am obsessed. Love that you can wear it all day long and so much more sustainable than tampons. <\/strong>So glad I decided to try! Thanks Saalt.<\/p>",
+            "text": "<p>“I was initially nervous about switching from tampons, but this has been the easiest change for me. I love not carrying a dozen tampons with me on trips and worrying about leaking. Definitely recommend!”<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -638,6 +357,9 @@
         "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-1",
         "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-2"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "title": "9\/10 People Never Go Back",
         "heading_size": "h1",
@@ -645,7 +367,7 @@
         "image_ratio": "adapt",
         "columns_desktop": 2,
         "column_alignment": "left",
-        "theme_color_background": "theme-color-bg-5",
+        "theme_color_background": "theme-color-bg-6",
         "theme_color_text": "theme_default",
         "background_style": "primary",
         "theme_color_column_secondary_bg": "--palette-color-0",
@@ -660,7 +382,7 @@
         "theme_color_section_button_background_hover": "theme_default",
         "theme_color_text_section_button_text_hover": "theme_default",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -1180,12 +902,6 @@
     "205af4ea-20c2-45bc-98f3-082272cb19eb",
     "11b4eb9a-18a9-488e-bfd7-23c248641695",
     "1486f5ff-6753-4ad7-b1a9-6346e2f7f3b8",
-    "959d5c15-d6c3-425c-a8d3-5e2f73ff8944",
-    "c8d699c2-ccef-4799-b100-f96128516185",
-    "f91185b0-f65e-4125-81ae-3fa39f1e6d62",
-    "bec6a799-d547-4f72-a599-8edc58d4bcc3",
-    "4979ad3b-9b05-4c86-8a59-644c6f717625",
-    "61266f32-54d6-459e-a625-fb59fc4b6f40",
     "10429312-ce7e-429d-b655-263692683976",
     "9f70e72a-5b16-482b-84b3-df444f15d0bd",
     "2a1f9c4e-eb99-4278-885c-23052a0fe53e",
