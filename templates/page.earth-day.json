@@ -309,7 +309,7 @@
         "section_icon_with_text_Uby3DM"
       ],
       "settings": {
-        "section_id": "why it's better",
+        "section_id": "",
         "theme_color_background": "theme-color-bg-2",
         "theme_color_text": "theme-color-text-0",
         "media_type": "video",
@@ -320,7 +320,7 @@
         "media_width": 50,
         "title_font_size": "small",
         "content_font_size": "small",
-        "mobile_text_position": "above",
+        "mobile_text_position": "below",
         "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "left",
@@ -611,8 +611,8 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "6d90874c-c092-46f8-89ee-85bf53a9989d": {
