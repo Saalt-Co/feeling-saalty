@@ -82,7 +82,7 @@
         "h2 {text-align: center;}"
       ],
       "settings": {
-        "title": "Shop our Bestsellers",
+        "title": "Shop Bestsellers",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -109,7 +109,7 @@
         "show_swatches": true,
         "enable_quick_add": true,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
