@@ -90,14 +90,14 @@
         "section_content_gwgfq3": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Switch to a plastic-free period to help us eliminate 100 million plastic tampons this earth day.<\/p>"
+            "text_content": "<p>Switch to a plastic-free period and help us eliminate 100 million plastic tampons this Earth Day.<\/p>"
           }
         },
         "section_content_CW9yir": {
           "type": "section_content",
           "disabled": true,
           "settings": {
-            "text_content": "<h4>Today only, get 20% off Saalt Cups & Discs + free shipping! Use code PLANETOVERPLASTICS.<\/h4><h6>Ends April 22nd at midnight PST.<\/h6>"
+            "text_content": "<h4>Today only, get 20% off Saalt Cups & Discs + free shipping! Use code PLANETOVERPLASTICS.<\/h4><h6>Ends April 22nd at 11:59 pm PDT.<\/h6>"
           }
         },
         "section_buttons_group_anQEL4": {
@@ -128,6 +128,9 @@
         "section_button_3LnwhK"
       ],
       "disabled": true,
+      "custom_css": [
+        "h6 {font-weight: 500;}"
+      ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
