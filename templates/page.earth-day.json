@@ -338,7 +338,7 @@
           "settings": {
             "title": "Kaitlin",
             "rating": 0,
-            "text": "<p>\"I couldn't believe how well it worked, I was like, OMG, I just discovered FIRE!\"<\/p>",
+            "text": "<p>\"I couldn't believe how well it worked, I was like, <strong>OMG, I just discovered FIRE!<\/strong>\"<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -348,7 +348,27 @@
           "settings": {
             "title": "Lila",
             "rating": 0,
-            "text": "<p>“I was initially nervous about switching from tampons, but this has been the easiest change for me. I love not carrying a dozen tampons with me on trips and worrying about leaking. Definitely recommend!”<\/p>",
+            "text": "<p>“I was initially nervous about switching from tampons, but <strong>this has been the easiest change for me. <\/strong>I love not carrying a dozen tampons with me on trips and worrying about leaking. <strong>Definitely recommend!<\/strong>”<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_AqKdfT": {
+          "type": "column",
+          "settings": {
+            "title": "Alex H.",
+            "rating": 0,
+            "text": "<p><strong>\"I am obsessed.<\/strong> Love that you can wear it all day long and <strong>so much more sustainable than tampons.<\/strong> So glad I decided to try! Thanks Saalt.\"<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_QkGfXb": {
+          "type": "column",
+          "settings": {
+            "title": "Alley",
+            "rating": 0,
+            "text": "<p>\"I just started yesterday and <strong>my mind is blown.<\/strong> So comfortable, easy to use, and it doesn't interfere with my active lifestyle whatsoever. I'm so bummed I didn't give it a chance sooner. <strong>This is truly what period freedom feels like!\"<\/strong><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -356,7 +376,9 @@
       },
       "block_order": [
         "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-1",
-        "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-2"
+        "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-2",
+        "column_AqKdfT",
+        "column_QkGfXb"
       ],
       "custom_css": [
 
@@ -366,7 +388,7 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 2,
+        "columns_desktop": 4,
         "column_alignment": "left",
         "theme_color_background": "theme-color-bg-6",
         "theme_color_text": "theme_default",
