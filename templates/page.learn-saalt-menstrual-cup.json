@@ -779,7 +779,7 @@
           "settings": {
             "heading": "What size should I get?",
             "icon": "none",
-            "row_content": "<p>When it comes to choosing a size, there are a few factors to consider like age, pelvic floor health, and cervix height. The easiest way to find your perfect size is to take our Saalt cup quiz on this page.<\/p>",
+            "row_content": "<p>When it comes to choosing a size, there are a few factors to consider like age, pelvic floor health, and cervix height. The easiest way to find your perfect size is to take our <a href=\"\/pages\/cup-quiz\" title=\"\/pages\/cup-quiz\">Saalt cup quiz<\/a>.<\/p>",
             "page": ""
           }
         },
