@@ -13,9 +13,8 @@
       "blocks": {
         "vendor": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "{{ product.vendor }}",
+            "text": "Voted NYT Wirecutter's Best Menstrual Disc",
             "text_style": "uppercase"
           }
         },
