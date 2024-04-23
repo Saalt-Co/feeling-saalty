@@ -12,13 +12,13 @@
         },
         "section_content_gwgfq3": {
           "type": "section_content",
-          "disabled": true,
           "settings": {
             "text_content": "<p>Switch to a plastic-free period and help us eliminate 100 million plastic tampons this Earth Day.<\/p>"
           }
         },
         "section_content_CW9yir": {
           "type": "section_content",
+          "disabled": true,
           "settings": {
             "text_content": "<h4>Today only, get 20% off Saalt Cups & Discs + free shipping! Use code PLANETOVERPLASTICS.<\/h4><h6>Ends April 22nd at 11:59 pm PDT.<\/h6>"
           }
