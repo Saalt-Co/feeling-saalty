@@ -153,92 +153,6 @@
         "padding_bottom": 0
       }
     },
-    "saalt_bg_media_with_text_iMd9w8": {
-      "type": "saalt-bg-media-with-text",
-      "blocks": {
-        "section_title_QCYYnR": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "Pssst...Free gift with purchase"
-          }
-        },
-        "section_content_g6CMfY": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p><strong>Now through April 16<\/strong><\/p><p>Buy any Saalt Cup or Disc: Get a free Saalt Wash<\/p><p>Buy any Saalt Wear: Get free Saalt Wipes<\/p>"
-          }
-        },
-        "section_content_KPYrBQ": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<h6><em>You won't see your free gift in your cart, but it will ship with your order automatically. <\/em><\/h6>"
-          }
-        },
-        "section_buttons_group_qf9ViQ": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "flex-start",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "section_button_Ucp7tP": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Shop Cups & Discs",
-            "button_url": "shopify:\/\/collections\/menstrual-cups-discs",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
-        "section_button_9VMqjh": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Shop Saalt Wear",
-            "button_url": "shopify:\/\/collections\/saalt-period-underwear",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "section_title_QCYYnR",
-        "section_content_g6CMfY",
-        "section_content_KPYrBQ",
-        "section_buttons_group_qf9ViQ",
-        "section_button_Ucp7tP",
-        "section_button_9VMqjh"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Gift-With-A-Purchase-mobile_03.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Gift-With-A-Purchase-desktop_03.jpg",
-        "media_overlay_color": "--palette-color-1",
-        "media_overlay_opacity": 0,
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "flex-end",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": true,
-        "max_width": "40%",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "saalt_bg_media_with_text_UnjVt3": {
       "type": "saalt-bg-media-with-text",
       "blocks": {
@@ -246,13 +160,13 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "Meet the new Cotton Tea Dye Saalt Wear."
+            "title": "The perfect gift for those who have always had our backs."
           }
         },
         "section_content_H6jfLA": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Beautiful new colors in the same cozy, comfy, sustainably-sourced cotton you love.<\/p>"
+            "text_content": "<p>Leak-free confidence lasts longer than flowers. We've got their back(side). <\/p><p><strong>Shop our most popular bundles for $10 off their already discounted prices.<\/strong><\/p><p><em>Now through 5.7 - Use code SAVE10 + free shipping.<\/em><\/p>"
           }
         },
         "section_buttons_group_nHwEnN": {
@@ -285,6 +199,72 @@
       "custom_css": [
         "@media only screen and (max-width: 767px) {p {color: #373737; } h1 {color: #373737; font-size: 26px !important; }}"
       ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Mothers-Day-Hero-mobile_02.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Mothers-Day-Hero-desktop.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "center",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "375px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "saalt_bg_media_with_text_DAQ8cU": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "section_title_3p7khw": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Meet the new Cotton Tea Dye Saalt Wear."
+          }
+        },
+        "section_content_xABq68": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Beautiful new colors in the same cozy, comfy, sustainably-sourced cotton you love.<\/p>"
+          }
+        },
+        "section_buttons_group_cwjkYz": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_Ahe9Ka": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_url": "shopify:\/\/collections\/cotton",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_3p7khw",
+        "section_content_xABq68",
+        "section_buttons_group_cwjkYz",
+        "section_button_Ahe9Ka"
+      ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -1500,8 +1480,8 @@
   "order": [
     "afbc1ae8-07fe-4461-9c01-064b82ac7529",
     "saalt_bg_media_with_text_aJTmjB",
-    "saalt_bg_media_with_text_iMd9w8",
     "saalt_bg_media_with_text_UnjVt3",
+    "saalt_bg_media_with_text_DAQ8cU",
     "saalt_bg_media_with_text_iyXbMP",
     "dec81ce8-0726-4327-93a6-eb82628398dc",
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
