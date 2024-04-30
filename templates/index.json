@@ -160,13 +160,20 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "The perfect gift for those who have always had our backs."
+            "title": "The perfect gift for those who've always had our&nbspbacks."
           }
         },
         "section_content_H6jfLA": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Leak-free confidence lasts longer than flowers. We've got their back(side). <\/p><p><strong>Shop our most popular bundles for $10 off their already discounted prices.<\/strong><\/p><p><em>Now through 5.7 - Use code SAVE10 + free shipping.<\/em><\/p>"
+            "text_content": "<p>Leak-free confidence lasts longer than flowers. We've got their back(side).<\/p>"
+          }
+        },
+        "section_title_c7DKgx": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "3",
+            "title": "Shop our most popular bundles for $10 off + free shipping. Now through May 7. Use&nbspcode&nbspSAVE10"
           }
         },
         "section_buttons_group_nHwEnN": {
@@ -192,12 +199,14 @@
       "block_order": [
         "section_title_mCVUfn",
         "section_content_H6jfLA",
+        "section_title_c7DKgx",
         "section_buttons_group_nHwEnN",
         "section_button_ggLY8P"
       ],
       "disabled": true,
       "custom_css": [
-        "@media only screen and (max-width: 767px) {p {color: #373737; } h1 {color: #373737; font-size: 26px !important; }}"
+        "h3 {font-size: 16px !important; line-height: 1.5 !important;}",
+        "@media only screen and (max-width: 767px) {p {color: #373737 !important; } h1 {color: #373737; font-size: 26px !important; } h3 {color: #373737; }}"
       ],
       "settings": {
         "section_id": "",
@@ -217,7 +226,7 @@
         "desktop_text_position": "center",
         "desktop_text_alignment": "center",
         "use_max_text_width": true,
-        "max_width": "375px",
+        "max_width": "70%",
         "padding_top": 0,
         "padding_bottom": 0
       }
