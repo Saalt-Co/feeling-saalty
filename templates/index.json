@@ -127,6 +127,7 @@
         "section_buttons_group_anQEL4",
         "section_button_3LnwhK"
       ],
+      "disabled": true,
       "custom_css": [
         "h6 {font-weight: 500;}"
       ],
@@ -203,7 +204,6 @@
         "section_buttons_group_nHwEnN",
         "section_button_ggLY8P"
       ],
-      "disabled": true,
       "custom_css": [
         "h3 {font-size: 16px !important; line-height: 1.5 !important;}",
         "@media only screen and (max-width: 767px) {p {color: #373737 !important; } h1 {color: #373737; font-size: 26px !important; } h3 {color: #373737; }}"
