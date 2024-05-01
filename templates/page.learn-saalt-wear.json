@@ -607,6 +607,21 @@
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default"
           }
+        },
+        "saalt_style_1_tile_JHeznm": {
+          "type": "saalt_style_1_tile",
+          "disabled": true,
+          "settings": {
+            "title": "Hanky Panky+ [powered by Saalt]",
+            "text_content": "Saalt and Hanky Panky spent a year collaborating on the perfect pairing of lace and absorbent technology to build Hanky Panky’s first-ever confidence panty. Hanky Panky’s signature stretch lace is super-soft, stretches to move with your body, and never, ever binds or cuts in.",
+            "button_text": "Shop Hanky Panky+",
+            "button_url": "shopify:\/\/collections\/hanky-panky",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
         }
       },
       "block_order": [
@@ -615,7 +630,8 @@
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-1",
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-2",
         "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-3",
-        "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-4"
+        "template--15078825525329__4c9959e6-dc6b-446a-8308-172a787dab27-saalt_style_1_tile-4",
+        "saalt_style_1_tile_JHeznm"
       ],
       "settings": {
         "section_id": "",
