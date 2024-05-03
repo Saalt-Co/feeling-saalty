@@ -12,6 +12,7 @@
     },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -49,85 +50,6 @@
         "full_width": true,
         "padding_top": 20,
         "padding_bottom": 16
-      }
-    },
-    "4b7bcf70-9b6b-48c4-a538-0e13cf35a435": {
-      "type": "saalt-window-display",
-      "blocks": {
-        "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-0": {
-          "type": "window-feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/SC-HP-SOManifest-1597.jpg",
-            "display-box": false,
-            "title": "<p><strong>Saalt Cups<\/strong><\/p>",
-            "copy": "<p>No pads. No strings. Just comfort. Wear all day or night, stress free.<\/p>",
-            "link_type": "url",
-            "link_url": "\/collections\/menstrual-cups-discs?sort_by=manual&filter.p.m.saalt.collection_filter_product_type=Cups",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Shop Cups"
-          }
-        },
-        "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-1": {
-          "type": "window-feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/SD-CB-Alani-Jessie-9242.jpg",
-            "display-box": false,
-            "title": "<p><strong>Saalt Discs<\/strong><\/p>",
-            "copy": "<p>Flexible, flat fit allows for no-mess period sex. Custom finger notch for easy removal. 4 to 6 tampon capacity.<\/p>",
-            "link_type": "url",
-            "link_url": "\/collections\/menstrual-cups-discs?sort_by=manual&filter.p.m.saalt.collection_filter_product_type=Discs",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Shop Discs"
-          }
-        },
-        "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-2": {
-          "type": "window-feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Bundle-Preset-1080x1080-Web-0995.jpg",
-            "display-box": false,
-            "title": "<p><strong>Bundles<\/strong><\/p>",
-            "copy": "<p>Save up to 20% and skip the guesswork with bundles custom-designed by our Saalt Coaches for all your leak needs. <\/p>",
-            "link_type": "url",
-            "link_url": "\/collections\/menstrual-cups-discs?sort_by=manual&filter.p.m.saalt.collection_filter_product_type=Bundles",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Shop Bundles"
-          }
-        },
-        "b556c8a4-bad2-43ac-8e69-1b5b4650d635": {
-          "type": "window-feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Shop_by_Category_-_Accessories_1.jpg",
-            "display-box": false,
-            "title": "<p><strong>Cleaning & Extras<\/strong><\/p>",
-            "copy": "<p>Everything you need for a fully sustainable flow.<\/p>",
-            "link_type": "url",
-            "link_url": "\/collections\/menstrual-cups-discs?filter.p.m.saalt.collection_filter_product_type=Cleaning+%26+Extras&sort_by=manual",
-            "filter_name": "",
-            "filter_val": "",
-            "button_text": "Shop Extras"
-          }
-        }
-      },
-      "block_order": [
-        "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-0",
-        "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-1",
-        "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-2",
-        "b556c8a4-bad2-43ac-8e69-1b5b4650d635"
-      ],
-      "disabled": true,
-      "settings": {
-        "global_checkbox": false,
-        "section_id": "",
-        "make_full_width": false,
-        "mobile_min_width": "40%",
-        "mobile_max_width": "280px",
-        "mobile_aspect_ratio": "1\/1.5",
-        "desktop_min_width": "auto",
-        "desktop_max_width": "25%",
-        "desktop_aspect_ratio": "1\/1.5"
       }
     },
     "rich_text_GQGPqY": {
@@ -786,7 +708,6 @@
     "shogun-above",
     "banner",
     "c2ba6bf2-8d02-40b3-a18a-92d46f619c3a",
-    "4b7bcf70-9b6b-48c4-a538-0e13cf35a435",
     "rich_text_GQGPqY",
     "product-grid",
     "ef361528-f55b-4ddc-8446-c41880f7f0b0",
