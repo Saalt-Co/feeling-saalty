@@ -12,7 +12,6 @@
     },
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -41,7 +40,6 @@
         "template--21571779264785__c2ba6bf2-8d02-40b3-a18a-92d46f619c3a-heading-1",
         "template--21571779264785__c2ba6bf2-8d02-40b3-a18a-92d46f619c3a-text-1"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
