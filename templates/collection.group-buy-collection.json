@@ -26,14 +26,14 @@
         "template--21571779264785__c2ba6bf2-8d02-40b3-a18a-92d46f619c3a-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Saalt Menstrual Cups and Discs",
+            "heading": "Saalt Cups and Discs + Carry Bag",
             "heading_size": "h2"
           }
         },
         "template--21571779264785__c2ba6bf2-8d02-40b3-a18a-92d46f619c3a-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Upgrade your period with Saalt reusable menstrual cups and discs.<\/strong><\/p><p>Easy to use and comfortable. Live free of the tampon aisle—forever. Wear up to 12 hours to swim, run, bike, hike, or fly to Bora Bora.<\/p>"
+            "text": "<p>(bulk orders for preparedness and emergency purchases only - not for resale)<\/p><p><strong>Minimum order quantity of 10 to receive bulk pricing. Discount is automatically applied at checkout.<\/strong><\/p><p>Easy to use and comfortable. Live free of the tampon aisle—forever. Wear up to 12 hours to swim, run, bike, hike, or fly to Bora Bora.<\/p>"
           }
         }
       },
@@ -56,6 +56,7 @@
       "blocks": {
         "text_jWRx93": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Buy 3+ save 15% | 5+ save 20% | 7+ save 25% on Cups, Discs, and Underwear<\/p>"
           }
