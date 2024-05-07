@@ -9,85 +9,6 @@
         "theme_color_text": "theme_default"
       }
     },
-    "4b7bcf70-9b6b-48c4-a538-0e13cf35a435": {
-      "type": "saalt-window-display",
-      "blocks": {
-        "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-0": {
-          "type": "window-feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/SW-TH-QB-Meuller-7092-Web.jpg",
-            "display-box": false,
-            "title": "<p><strong>Light Absorbency<\/strong><\/p>",
-            "copy": "<p>Holds as much as 1 liner or 1 - 2 light tampons. <\/p><p>Best for sweat and discharge, light flow days and spotting, a worry-free backup to a cup, disc or tampon, or as a pantyliner replacement.<\/p>",
-            "link_type": "url",
-            "link_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.p.m.saalt.collection_filter_absorbency=Light",
-            "filter_name": "Absorbency",
-            "filter_val": "Light",
-            "button_text": "Shop Light"
-          }
-        },
-        "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-1": {
-          "type": "window-feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/SW-SM-HW-MS-Ampersand-278.jpg",
-            "display-box": false,
-            "title": "<p><strong>Regular Absorbency<\/strong><\/p>",
-            "copy": "<p>Holds as much as 2 pads or 2 - 3 tampons. <\/p><p>Best for sweat and discharge, regular period flow, light bladder leaks, or as a worry-free backup to a cup, disc or tampon.<\/p>",
-            "link_type": "url",
-            "link_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.p.m.saalt.collection_filter_absorbency=Regular",
-            "filter_name": "Absorbency",
-            "filter_val": "Regular",
-            "button_text": "Shop Regular"
-          }
-        },
-        "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-2": {
-          "type": "window-feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Saalt-Window-Display-Shop-Heavy_03.jpg",
-            "display-box": false,
-            "title": "<p><strong>Heavy Absorbency<\/strong><\/p>",
-            "copy": "<p>Holds as much as 3 pads or 3 - 4 tampons. <\/p><p>Best for heavy flow days and overnight, postpartum wear, and bladder leaks.<\/p>",
-            "link_type": "url",
-            "link_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.p.m.saalt.collection_filter_absorbency=Heavy",
-            "filter_name": "Absorbency",
-            "filter_val": "Heavy",
-            "button_text": "Shop Heavy"
-          }
-        },
-        "b556c8a4-bad2-43ac-8e69-1b5b4650d635": {
-          "type": "window-feature",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Saalt-Window-Display-Shop-Super_02.jpg",
-            "display-box": false,
-            "title": "<p><strong>Super Absorbency<\/strong><\/p>",
-            "copy": "<p>Holds as much as 6+ pads or 8+ tampons. <\/p><p>Best for your heaviest flow days and overnight, postpartum wear, and bladder leaks.<\/p>",
-            "link_type": "url",
-            "link_url": "\/collections\/saalt-period-underwear?sort_by=manual&filter.p.m.saalt.collection_filter_absorbency=Super",
-            "filter_name": "Absorbency",
-            "filter_val": "Super",
-            "button_text": "Shop Super"
-          }
-        }
-      },
-      "block_order": [
-        "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-0",
-        "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-1",
-        "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-2",
-        "b556c8a4-bad2-43ac-8e69-1b5b4650d635"
-      ],
-      "disabled": true,
-      "settings": {
-        "global_checkbox": false,
-        "section_id": "",
-        "make_full_width": false,
-        "mobile_min_width": "40%",
-        "mobile_max_width": "280px",
-        "mobile_aspect_ratio": "1\/1.5",
-        "desktop_min_width": "auto",
-        "desktop_max_width": "25%",
-        "desktop_aspect_ratio": "1\/1.5"
-      }
-    },
     "rich_text_LahFNy": {
       "type": "rich-text",
       "blocks": {
@@ -150,7 +71,7 @@
         "template--19610655392017__826ab071-d85e-4cc1-981e-0f5623d9ae40-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Yes! Saalt Wear period underwear and leakproof panties are designed to replace liners, pads, and tampons while leaving you feeling (magically) dry.<\/p>"
+            "text_content": "<p>Yes! Hanky Panky+ [powered by Saalt] are designed to replace liners, pads, and tampons while leaving you feeling (magically) dry.<\/p>"
           }
         }
       },
@@ -163,7 +84,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "video",
-        "video": "shopify:\/\/files\/videos\/Nov New PDP.mp4",
+        "video": "shopify:\/\/files\/videos\/HANKY-PANKY-KEY-BENEFITS-15-TEXT-UPDATE-16X9.mov",
         "custom_code": "",
         "use_max_media_width": true,
         "max_media_width": "700px",
@@ -186,7 +107,7 @@
         "template--19610655392017__14203610-b21b-4177-bf34-1181886aaa2c-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<h2>Premium Design. Comfortable Fit.<\/h2><p>Periods. Bladder leaks. Overnight protection. Postpartum care. <\/p><p>The most comfortable leakproof period underwear that does it all, just like you.<\/p>"
+            "text_content": "<h2>Premium Design. Comfortable Fit.<\/h2><p>Feel confident and protected in your favorite Hanky Panky Signature Lace styles, now with leak proof confidence added in.<\/p>"
           }
         },
         "93e8d39c-1d8a-44fd-b85e-097b75f3b704": {
@@ -227,7 +148,7 @@
             "icon_text": "<p>Patent-pending gusset technology<\/p>",
             "mobile_icon_text_position": "below",
             "desktop_icon_text_position": "right",
-            "theme_color_icon_color": "ignore_text_color",
+            "theme_color_icon_color": "match_text",
             "theme_color_icon_text_color": "match_text"
           }
         },
@@ -256,8 +177,8 @@
         "959add34-7646-4222-bfbf-b002700741cc": {
           "type": "section_icon_with_text",
           "settings": {
-            "icon_svg": "<svg width=\"66\" height=\"65\" viewbox=\"0 0 66 65\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g clip-path=\"url(#clip0_103_977)\">\n<path d=\"M37.9602 11.1704C44.2061 12.387 49.7686 15.8465 53.565 20.8757C57.3613 25.9048 59.12 32.1438 58.4988 38.3784C57.8775 44.613 54.9208 50.3972 50.204 54.6052C45.4872 58.8132 39.3478 61.144 32.9806 61.144C26.6135 61.144 20.4741 58.8132 15.7573 54.6052C11.0405 50.3972 8.08372 44.613 7.46248 38.3784C6.84124 32.1438 8.59995 25.9048 12.3963 20.8757C16.1927 15.8465 21.7551 12.387 28.0011 11.1704\" stroke=\"white\" stroke-width=\"2\"><\/path>\n<path d=\"M38.0541 8.75549V18.4002C37.9575 21.0551 38.7303 23.6704 40.2585 25.8606C41.9314 28.291 47.5442 37.0281 51.3121 42.7811C51.6606 43.3264 51.8532 43.9541 51.8698 44.5981C51.8864 45.242 51.7262 45.8785 51.4062 46.4405C51.0862 47.0025 50.6182 47.4692 50.0514 47.7916C49.4845 48.114 48.8399 48.2802 48.1852 48.2726H18.0107C17.356 48.2802 16.7114 48.114 16.1445 47.7916C15.5777 47.4692 15.1097 47.0025 14.7897 46.4405C14.4697 45.8785 14.3096 45.242 14.3261 44.5981C14.3427 43.9541 14.5353 43.3264 14.8838 42.7811C18.6361 36.9205 24.2645 28.1833 25.9374 25.8606C27.4521 23.6648 28.2186 21.0524 28.1262 18.4002V8.75549\" stroke=\"white\" stroke-width=\"2\"><\/path>\n<path d=\"M26.2344 6.55578C26.2494 5.97404 26.4965 5.42148 26.9223 5.01755C27.1325 4.7979 27.3872 4.62414 27.67 4.50755C27.9528 4.39096 28.2574 4.33412 28.5639 4.34073H37.5537C38.0096 4.35058 38.4523 4.4927 38.8263 4.74926C39.2003 5.00582 39.4889 5.36538 39.656 5.78278C39.823 6.20018 39.861 6.65683 39.7651 7.09539C39.6692 7.53395 39.4438 7.93488 39.1172 8.24783C38.705 8.66247 38.1431 8.90019 37.5537 8.90927H28.5639C27.9488 8.90928 27.3586 8.66992 26.9222 8.24341C26.4857 7.81691 26.2385 7.23789 26.2344 6.63269V6.55578Z\" stroke=\"white\" stroke-width=\"2\"><\/path>\n<path d=\"M20.3245 34.4285H45.9962\" stroke=\"white\" stroke-width=\"2\"><\/path>\n<path d=\"M14.7588 53.5487L51.2652 17.1696\" stroke=\"white\" stroke-width=\"2\"><\/path>\n<\/g>\n<defs>\n<clippath id=\"clip0_103_977\">\n<rect width=\"65.6647\" height=\"64.6056\" fill=\"white\" transform=\"translate(0.34375 0.402832)\"><\/rect>\n<\/clippath>\n<\/defs>\n<\/svg>",
-            "icon_text": "<p>Not treated with PFAS aka polyfluoroalkyl substances<\/p>",
+            "icon_svg": "<svg width=\"66\" height=\"65\" viewbox=\"0 0 66 65\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g clip-path=\"url(#clip0_103_977)\">\n<path d=\"M37.9602 11.1704C44.2061 12.387 49.7686 15.8465 53.565 20.8757C57.3613 25.9048 59.12 32.1438 58.4988 38.3784C57.8775 44.613 54.9208 50.3972 50.204 54.6052C45.4872 58.8132 39.3478 61.144 32.9806 61.144C26.6135 61.144 20.4741 58.8132 15.7573 54.6052C11.0405 50.3972 8.08372 44.613 7.46248 38.3784C6.84124 32.1438 8.59995 25.9048 12.3963 20.8757C16.1927 15.8465 21.7551 12.387 28.0011 11.1704\" stroke=\"#373737\" stroke-width=\"2\"><\/path>\n<path d=\"M38.0541 8.75549V18.4002C37.9575 21.0551 38.7303 23.6704 40.2585 25.8606C41.9314 28.291 47.5442 37.0281 51.3121 42.7811C51.6606 43.3264 51.8532 43.9541 51.8698 44.5981C51.8864 45.242 51.7262 45.8785 51.4062 46.4405C51.0862 47.0025 50.6182 47.4692 50.0514 47.7916C49.4845 48.114 48.8399 48.2802 48.1852 48.2726H18.0107C17.356 48.2802 16.7114 48.114 16.1445 47.7916C15.5777 47.4692 15.1097 47.0025 14.7897 46.4405C14.4697 45.8785 14.3096 45.242 14.3261 44.5981C14.3427 43.9541 14.5353 43.3264 14.8838 42.7811C18.6361 36.9205 24.2645 28.1833 25.9374 25.8606C27.4521 23.6648 28.2186 21.0524 28.1262 18.4002V8.75549\" stroke=\"#373737\" stroke-width=\"2\"><\/path>\n<path d=\"M26.2344 6.55578C26.2494 5.97404 26.4965 5.42148 26.9223 5.01755C27.1325 4.7979 27.3872 4.62414 27.67 4.50755C27.9528 4.39096 28.2574 4.33412 28.5639 4.34073H37.5537C38.0096 4.35058 38.4523 4.4927 38.8263 4.74926C39.2003 5.00582 39.4889 5.36538 39.656 5.78278C39.823 6.20018 39.861 6.65683 39.7651 7.09539C39.6692 7.53395 39.4438 7.93488 39.1172 8.24783C38.705 8.66247 38.1431 8.90019 37.5537 8.90927H28.5639C27.9488 8.90928 27.3586 8.66992 26.9222 8.24341C26.4857 7.81691 26.2385 7.23789 26.2344 6.63269V6.55578Z\" stroke=\"#373737\" stroke-width=\"2\"><\/path>\n<path d=\"M20.3245 34.4285H45.9962\" stroke=\"#373737\" stroke-width=\"2\"><\/path>\n<path d=\"M14.7588 53.5487L51.2652 17.1696\" stroke=\"#373737\" stroke-width=\"2\"><\/path>\n<\/g>\n<defs>\n<clippath id=\"clip0_103_977\">\n<rect width=\"65.6647\" height=\"64.6056\" fill=\"#373737\" transform=\"translate(0.34375 0.402832)\"><\/rect>\n<\/clippath>\n<\/defs>\n<\/svg>",
+            "icon_text": "<p>Not treated with PFAS<\/p>",
             "mobile_icon_text_position": "below",
             "desktop_icon_text_position": "right",
             "theme_color_icon_color": "ignore_text_color",
@@ -275,8 +196,8 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme-color-bg-3",
-        "theme_color_text": "theme-color-text-0",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme-color-text-2",
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/Saalt-Wear-Premium-Design-Comfortable-Fit-1-Image-Collection_03.jpg",
         "custom_code": "",
@@ -430,7 +351,7 @@
         "template--18370419720465__608ca706-ad50-41fb-bcb5-660ee4c39ec0-1687976107730f0061-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<h2>Take good care of Saalt Wear leakproof underwear and it will take great care of you.<\/h2>"
+            "text_content": "<h2>Take good care of Hanky Panky+ [powered by Saalt] underwear and it will take great care of you.<\/h2>"
           }
         },
         "a2a5abc9-3c1a-4339-a852-c8f31ebb0d08": {
@@ -836,6 +757,7 @@
         "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-3",
         "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-4"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -858,7 +780,7 @@
           "settings": {
             "heading": "Will period underwear smell?",
             "icon": "none",
-            "row_content": "<p>No, when cared for properly, your Saalt Wear should not smell! Saalt Wear is treated with a bio-based solution for odor control that removes sweat odor and eliminates bacteria to keep you fresh and odor-free.<\/p>",
+            "row_content": "<p>No, when cared for properly, your Hanky Panky+ underwear should not smell! The Saalt-powered gusset is treated with a bio-based solution for odor control that removes sweat odor and eliminates bacteria to keep you fresh and odor-free.<\/p>",
             "page": ""
           }
         },
@@ -867,7 +789,7 @@
           "settings": {
             "heading": "Can I put it in the dryer?",
             "icon": "none",
-            "row_content": "<p>Take good care of Saalt Wear, and it will take great care of you. <\/p><p>After use, rinse your Saalt Wear leakproof underwear in cold water to help avoid staining. Then, hand wash or machine wash on cold, preferably in a <a href=\"\/products\/saalt-mesh-laundry-bag\" title=\"\/products\/saalt-mesh-laundry-bag\"><span style=\"text-decoration:underline\">Saalt Mesh Laundry Bag<\/span><\/a> intended for delicates. You can use detergent but pass on the fabric softener, bleach, and iron to protect the tech. Proudly hang dry—energy efficient and free. We recommend avoiding putting Saalt Wear in the dryer, as high temperatures can degrade the elastics and fabric over time.<\/p>",
+            "row_content": "<p>Take good care of Hanky Panky+, and it will take great care of you. <\/p><p>After use, rinse your leakproof underwear in cold water to help avoid staining. Then, hand wash or machine wash on cold, preferably in a <a href=\"\/products\/saalt-mesh-laundry-bag\" title=\"\/products\/saalt-mesh-laundry-bag\"><span style=\"text-decoration:underline\">Saalt Mesh Laundry Bag<\/span><\/a> intended for delicates. You can use detergent but pass on the fabric softener, bleach, and iron to protect the tech. Proudly hang dry—energy efficient and free. We recommend avoiding putting Hanky Panky+ in the dryer, as high temperatures can degrade the elastics and fabric over time.<\/p>",
             "page": ""
           }
         },
@@ -876,16 +798,16 @@
           "settings": {
             "heading": "Can I wear them all day?",
             "icon": "none",
-            "row_content": "<p>Go with your flow! How long you can wear your Saalt Wear leakproof underwear before needing to change will depend on your flow and the absorbency level of the style you choose. If you are free bleeding on your heavy day, you may need to change into a fresh pair after a few hours of wear. If you’re wearing your Saalt Wear as a backup to a cup or on a light day, you may be able to wear it all day. We recommend trying Saalt Wear for the first time at home so you can see how your pair works best for your body and ~flow~.<\/p>",
+            "row_content": "<p>Go with your flow! How long you can wear your leakproof underwear before needing to change will depend on your flow and the absorbency level of the style you choose. If you are free bleeding on your heavy day, you may need to change into a fresh pair after a few hours of wear. If you’re wearing your Hanky Panky+ as a backup to a cup or on a light day, you may be able to wear it all day. We recommend trying for the first time at home so you can see how your pair works best for your body and ~flow~.<\/p>",
             "page": ""
           }
         },
         "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Does Saalt Wear have PFAS (polyfluoroalkyl substances)",
+            "heading": "Does Hanky Panky+ [powered by Saalt] have PFAS?",
             "icon": "none",
-            "row_content": "<p>You can rest easy knowing that Saalt does not use any PFAS in our fabric finishes. We test all materials for a wide range of known hazardous substances, including PFAS and other known harmful chemicals. As a B Corp, we’re committed to providing the safest, most effective, and responsibly-produced leakproof underwear on the market for our customers. We source our materials from factories known for making safe, green textiles. Some of our fabrics are OEKO-TEX®️ and bluesign®️ approved, which are internationally recognized standards for making textiles cleaner and more environmentally friendly. You can <a href=\"\/blogs\/news\/everything-you-need-to-know-about-pfas-and-period-underwear\" title=\"\/blogs\/news\/everything-you-need-to-know-about-pfas-and-period-underwear\"><span style=\"text-decoration:underline\">learn even more about PFAS on our blog<\/span><\/a>.<\/p>",
+            "row_content": "<p>You can rest easy knowing that Saalt does not treat our fabrics with PFAS. You can <a href=\"\/blogs\/news\/everything-you-need-to-know-about-pfas-and-period-underwear\" title=\"\/blogs\/news\/everything-you-need-to-know-about-pfas-and-period-underwear\"><span style=\"text-decoration:underline\">learn even more about PFAS on our blog<\/span><\/a>.<\/p>",
             "page": ""
           }
         }
@@ -898,7 +820,7 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "Saalt Wear FAQs",
+        "heading": "Hanky Panky+ [powered by Saalt] FAQs",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
@@ -1002,7 +924,6 @@
   },
   "order": [
     "banner",
-    "4b7bcf70-9b6b-48c4-a538-0e13cf35a435",
     "rich_text_LahFNy",
     "product-grid",
     "826ab071-d85e-4cc1-981e-0f5623d9ae40",
