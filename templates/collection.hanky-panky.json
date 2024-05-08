@@ -148,7 +148,7 @@
             "icon_text": "<p>Patent-pending gusset technology<\/p>",
             "mobile_icon_text_position": "below",
             "desktop_icon_text_position": "right",
-            "theme_color_icon_color": "match_text",
+            "theme_color_icon_color": "theme-color-text-1",
             "theme_color_icon_text_color": "match_text"
           }
         },
@@ -159,7 +159,7 @@
             "icon_text": "<p>Reusable & replaces hundreds of pads and liners<\/p>",
             "mobile_icon_text_position": "below",
             "desktop_icon_text_position": "right",
-            "theme_color_icon_color": "match_text",
+            "theme_color_icon_color": "theme-color-text-1",
             "theme_color_icon_text_color": "match_text"
           }
         },
@@ -197,7 +197,7 @@
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-5",
-        "theme_color_text": "theme-color-text-2",
+        "theme_color_text": "theme_default",
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/Saalt-Wear-Premium-Design-Comfortable-Fit-1-Image-Collection_03.jpg",
         "custom_code": "",
