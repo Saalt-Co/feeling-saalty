@@ -22,6 +22,7 @@
       "block_order": [
         "text_LRUxV3"
       ],
+      "disabled": true,
       "custom_css": [
         "p {background-color: #bfdbd9;}"
       ],
@@ -821,7 +822,7 @@
       "settings": {
         "caption": "",
         "heading": "Hanky Panky+ [powered by Saalt] FAQs",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "heading_alignment": "center",
         "layout": "none",
         "theme_color_background": "theme_default",
