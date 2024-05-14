@@ -299,6 +299,9 @@
     },
     "cro_trust_callout_gKk9yi": {
       "type": "cro-trust-callout",
+      "custom_css": [
+        "img {height: 40px; width: 40px;}"
+      ],
       "settings": {
         "title": "Full Refund Guarantee",
         "image": "shopify:\/\/shop_images\/Period-Bliss-Guarantee-icon-homepage_d2957e1e-ffd1-4781-a102-54996b086d5a.png",
@@ -312,7 +315,7 @@
         "border-width": "2px",
         "font-color": "#3f4759",
         "font-size": 14,
-        "font-size-mobile": 10
+        "font-size-mobile": 11
       }
     }
   },
