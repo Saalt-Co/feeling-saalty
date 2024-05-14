@@ -306,13 +306,13 @@
         "visiable-desktop": false,
         "width-desktop": 250,
         "visiable-mobile": true,
-        "width-mobile": 100,
+        "width-mobile": 75,
         "bg-color": "#ffffff",
         "border-color": "#3f4759",
         "border-width": "2px",
         "font-color": "#3f4759",
         "font-size": 14,
-        "font-size-mobile": 13
+        "font-size-mobile": 10
       }
     }
   },
