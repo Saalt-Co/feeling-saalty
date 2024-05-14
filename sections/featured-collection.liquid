@@ -85,7 +85,7 @@
             class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             data-cascade
           >
-            {% render 'card-product',
+             {% render 'card-product',
               card_product: product,
               media_aspect_ratio: section.settings.image_ratio,
               image_shape: section.settings.image_shape,
@@ -94,7 +94,11 @@
               show_rating: section.settings.show_rating,
               show_swatches: section.settings.show_swatches,
               show_quick_add: section.settings.enable_quick_add,
-              section_id: section.id
+              section_id: section.id,
+              button_style: section.settings.button_type,
+              theme_btn_background: section.settings.theme_color_background,
+              theme_btn_color: section.settings.theme_color_text,
+              button_type_data: section.settings.button_type
             %}
           </li>
         {%- else -%}
