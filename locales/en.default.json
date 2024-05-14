@@ -483,5 +483,20 @@
       "message": "Message",
       "max_characters": "{{ max_chars }} characters max"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "order_summary": {
+        "tip_label": "Period Poverty Donation"
+      },
+      "tips": {
+        "title": "Help End Period Poverty",
+        "description": "All donations go towards ending period poverty around the world.",
+        "presets_description": "Donation percentage",
+        "custom_label": "Custom Donation",
+        "add_tip": "Confirm Donation",
+        "update_tip": "Update Donation"
+      }
+    }
   }
 }
