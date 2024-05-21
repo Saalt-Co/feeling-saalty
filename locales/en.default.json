@@ -495,7 +495,8 @@
         "presets_description": "Donation percentage",
         "custom_label": "Custom Donation",
         "add_tip": "Confirm Donation",
-        "update_tip": "Update Donation"
+        "update_tip": "Update Donation",
+        "message": "Thank you for (period) caring."
       }
     }
   }
