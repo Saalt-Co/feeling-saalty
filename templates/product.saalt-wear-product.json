@@ -214,7 +214,7 @@
           "settings": {
             "absorbency_name": "Super",
             "theme_color_card_background": "--palette-color-3",
-            "theme_color_card_background_opacity": 25,
+            "theme_color_card_background_opacity": 80,
             "theme_color_card_text": "theme_default",
             "button_text": "",
             "button_url": "",
@@ -230,7 +230,7 @@
           "settings": {
             "absorbency_name": "Heavy",
             "theme_color_card_background": "--palette-color-3",
-            "theme_color_card_background_opacity": 25,
+            "theme_color_card_background_opacity": 60,
             "theme_color_card_text": "theme_default",
             "button_text": "",
             "button_url": "",
@@ -246,7 +246,7 @@
           "settings": {
             "absorbency_name": "Regular",
             "theme_color_card_background": "--palette-color-3",
-            "theme_color_card_background_opacity": 25,
+            "theme_color_card_background_opacity": 40,
             "theme_color_card_text": "theme_default",
             "button_text": "",
             "button_url": "",
@@ -262,7 +262,7 @@
           "settings": {
             "absorbency_name": "Light",
             "theme_color_card_background": "--palette-color-3",
-            "theme_color_card_background_opacity": 25,
+            "theme_color_card_background_opacity": 20,
             "theme_color_card_text": "theme_default",
             "button_text": "",
             "button_url": "",
@@ -285,7 +285,7 @@
         "theme_color_background": "theme_default",
         "max_num_of_drops": 5,
         "best_for_list_style": "vertical",
-        "use_graduated_bgs": true
+        "use_graduated_bgs": false
       }
     },
     "2e4ed4ed-2f94-40cb-9564-c7df19d1376a": {
