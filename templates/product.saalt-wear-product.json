@@ -209,26 +209,10 @@
     "0b3e0dea-b65b-440a-97a7-f90ea555dd6d": {
       "type": "absorbency-chart-modal",
       "blocks": {
-        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-1": {
+        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-4": {
           "type": "absorbency_card",
           "settings": {
-            "absorbency_name": "Light",
-            "theme_color_card_background": "--palette-color-3",
-            "theme_color_card_background_opacity": 25,
-            "theme_color_card_text": "theme_default",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
-        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-2": {
-          "type": "absorbency_card",
-          "settings": {
-            "absorbency_name": "Regular",
+            "absorbency_name": "Super",
             "theme_color_card_background": "--palette-color-3",
             "theme_color_card_background_opacity": 25,
             "theme_color_card_text": "theme_default",
@@ -257,10 +241,26 @@
             "theme_color_text_section_button_text_hover": "theme_default"
           }
         },
-        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-4": {
+        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-2": {
           "type": "absorbency_card",
           "settings": {
-            "absorbency_name": "Super",
+            "absorbency_name": "Regular",
+            "theme_color_card_background": "--palette-color-3",
+            "theme_color_card_background_opacity": 25,
+            "theme_color_card_text": "theme_default",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-1": {
+          "type": "absorbency_card",
+          "settings": {
+            "absorbency_name": "Light",
             "theme_color_card_background": "--palette-color-3",
             "theme_color_card_background_opacity": 25,
             "theme_color_card_text": "theme_default",
@@ -275,10 +275,10 @@
         }
       },
       "block_order": [
-        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-1",
-        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-2",
+        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-4",
         "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-3",
-        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-4"
+        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-2",
+        "template--18370419851537__0b3e0dea-b65b-440a-97a7-f90ea555dd6d-absorbency_card-1"
       ],
       "settings": {
         "section_id": "",
