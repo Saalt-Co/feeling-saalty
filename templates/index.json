@@ -90,14 +90,14 @@
         "section_content_H6jfLA": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>We’re celebrating early with 15% off on saalt.com, starting right now.<\/p>"
+            "text_content": "<p>We’re celebrating early with 15% off, starting right now.<\/p>"
           }
         },
         "section_title_c7DKgx": {
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "USE CODE: MHD15 FOR 15% OFF"
+            "title": "USE CODE: <u>MHD15<\/u> FOR 15% OFF"
           }
         },
         "section_buttons_group_nHwEnN": {
@@ -113,8 +113,8 @@
             "button_text": "Shop Now",
             "button_url": "shopify:\/\/collections\/shop-all",
             "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background": "theme-color-bg-7",
+            "theme_color_text_section_button_text": "theme-color-text-1",
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default"
           }
