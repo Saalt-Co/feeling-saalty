@@ -10,6 +10,20 @@
 .video-content .media.media--transparent.media--adapt {
     padding-bottom: 25px;
 }
+@media (max-width: 767px) {
+  .product--thumbnail .product__media-item:not(.is-active),
+  .product--thumbnail_slider .product__media-item:not(.is-active) {
+    display: block; /* No !important needed */
+  }
+}
+
+/* For desktop devices */
+@media (min-width: 768px) {
+  .product--thumbnail .product__media-item:not(.is-active),
+  .product--thumbnail_slider .product__media-item:not(.is-active) {
+    display: none !important; /* Apply !important for desktop */
+  }
+}
 @media (min-width:768px) and (max-width:992px){
   .window-display-inner-wrapper .window-feature-wrapper:first-child .text-wrapper .window-feature-title{
   white-space:unset!important;
