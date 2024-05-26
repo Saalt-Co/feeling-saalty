@@ -1,5 +1,82 @@
 {
   "sections": {
+    "saalt_bg_media_with_text_UnjVt3": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "section_title_mCVUfn": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Menstrual Hygiene Day is Tuesday, May 28th."
+          }
+        },
+        "section_content_H6jfLA": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>We’re celebrating early with 15% off, starting right&nbspnow.<\/p>"
+          }
+        },
+        "section_title_c7DKgx": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "3",
+            "title": "USE CODE: MHD15 FOR 15% OFF"
+          }
+        },
+        "section_buttons_group_nHwEnN": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_ggLY8P": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_url": "shopify:\/\/collections\/shop-all",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-7",
+            "theme_color_text_section_button_text": "theme-color-text-1",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_mCVUfn",
+        "section_content_H6jfLA",
+        "section_title_c7DKgx",
+        "section_buttons_group_nHwEnN",
+        "section_button_ggLY8P"
+      ],
+      "custom_css": [
+        "h3 {font-size: 16px !important; line-height: 1.5 !important;}",
+        "@media only screen and (max-width: 767px) {p {color: #373737 !important; } h1 {color: #373737; font-size: 26px !important; } h3 {color: #373737; }}"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Menstrual-Hygiene-Day-Saalt-Hero-mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Menstrual-Hygiene-Day-Saalt-Hero-desktop.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "flex-end",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "40%",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "afbc1ae8-07fe-4461-9c01-064b82ac7529": {
       "type": "saalt-bg-media-with-text",
       "blocks": {
@@ -73,84 +150,6 @@
         "desktop_text_alignment": "left",
         "use_max_text_width": true,
         "max_width": "28%",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "saalt_bg_media_with_text_UnjVt3": {
-      "type": "saalt-bg-media-with-text",
-      "blocks": {
-        "section_title_mCVUfn": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "Menstrual Hygiene Day is Tuesday, May 28th."
-          }
-        },
-        "section_content_H6jfLA": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>We’re celebrating early with 15% off, starting right&nbspnow.<\/p>"
-          }
-        },
-        "section_title_c7DKgx": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "3",
-            "title": "USE CODE: MHD15 FOR 15% OFF"
-          }
-        },
-        "section_buttons_group_nHwEnN": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "center",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "section_button_ggLY8P": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Shop Now",
-            "button_url": "shopify:\/\/collections\/shop-all",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme-color-bg-7",
-            "theme_color_text_section_button_text": "theme-color-text-1",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "section_title_mCVUfn",
-        "section_content_H6jfLA",
-        "section_title_c7DKgx",
-        "section_buttons_group_nHwEnN",
-        "section_button_ggLY8P"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h3 {font-size: 16px !important; line-height: 1.5 !important;}",
-        "@media only screen and (max-width: 767px) {p {color: #373737 !important; } h1 {color: #373737; font-size: 26px !important; } h3 {color: #373737; }}"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme-color-text-0",
-        "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Menstrual-Hygiene-Day-Saalt-Hero-mobile.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Menstrual-Hygiene-Day-Saalt-Hero-desktop.jpg",
-        "media_overlay_color": "--palette-color-1",
-        "media_overlay_opacity": 0,
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "flex-end",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": true,
-        "max_width": "40%",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -1488,8 +1487,8 @@
     }
   },
   "order": [
-    "afbc1ae8-07fe-4461-9c01-064b82ac7529",
     "saalt_bg_media_with_text_UnjVt3",
+    "afbc1ae8-07fe-4461-9c01-064b82ac7529",
     "saalt_bg_media_with_text_aJTmjB",
     "saalt_bg_media_with_text_DAQ8cU",
     "saalt_bg_media_with_text_iyXbMP",
