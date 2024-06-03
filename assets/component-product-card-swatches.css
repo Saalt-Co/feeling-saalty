@@ -71,7 +71,9 @@ product-card-swatches input[type='radio'] + label.variant_swatch .swatch-name-to
 .abs-swatch-name-tooltip{
   padding: 0px 1rem;
 }
-
+.absorbency-radio-buttons{
+  position: relative;
+}
 product-card-swatches input[type='radio'] + label.variant_swatch .swatch-name-tooltip:before, .abs-swatch-name-tooltip:before{
   content: '';
   position: absolute;
