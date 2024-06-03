@@ -220,51 +220,6 @@
               show_price_range: show_price_range,
               show_strikethrough_price: show_strikethrough_price
             %}
-      
-<style>
-label.absorbency-option {
-   display: flex;
-   border: 1px solid #E0E0E0;
-   padding: 0px 5px;
-   cursor: pointer;
-   border-radius: 7px;
-}
-.absorbency-radio-buttons {
-    display: flex;
-    gap: 3px;
-    flex-wrap: wrap;
-}
-.absorbency-drops_inner-icon-wrapper.empty svg.absorbency-icon {
-    fill: #E0E0E0;
-    color: transparent;
-}
-.absorbency-drops_inner-icon-wrapper svg.absorbency-icon {
-    fill: rgba(var(--color-icons), var(--color-icons-opacity));
-    color: #CDCDCD;
-    stroke: #CDCDCD;
-    stroke-width: 1px;
-}
-.absorbency-drops_inner-icon-wrapper {
-    padding: 1px;
-}
-.abs-swatch {
-    display: flex;
-    flex-direction: column-reverse;
-}
-.absorbency-option.selected {
-  box-shadow: 0px 0px 0px 1px #000;
-}
-  @media screen and (max-width: 576px)
-  .card__information {
-    position: relative;
-    z-index: 2;
-}
-  .card__heading a:after{
-    pointer-events: none;
-  }
-  }
-</style>
-
 <product-card-swatches data-show-strikethrough-price="{{ show_strikethrough_price }}">
   <form action="post" class="abs-swatch">
     {%- for option in card_product.options_with_values -%}
