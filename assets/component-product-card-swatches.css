@@ -47,11 +47,11 @@ product-card-swatches input[type='radio'] + label.variant_swatch {
   margin-right: 0.5rem;
 }
 
-product-card-swatches input[type='radio'] + label.variant_swatch:hover {
+product-card-swatches input[type='radio'] + label.variant_swatch:hover, .abs-swatch-name-tooltip:hover {
   z-index: 2;
 }
 
-product-card-swatches input[type='radio'] + label.variant_swatch .swatch-name-tooltip {
+product-card-swatches input[type='radio'] + label.variant_swatch .swatch-name-tooltip, .abs-swatch-name-tooltip {
   display: block;
   position: absolute;
   background: rgb(var(--color-site-background));
@@ -68,8 +68,11 @@ product-card-swatches input[type='radio'] + label.variant_swatch .swatch-name-to
   transform: translateX(-50%);
   visibility: hidden;
 }
+.abs-swatch-name-tooltip{
+  padding: 0px 1rem;
+}
 
-product-card-swatches input[type='radio'] + label.variant_swatch .swatch-name-tooltip:before, .abs-swatch-name-tooltip:before {
+product-card-swatches input[type='radio'] + label.variant_swatch .swatch-name-tooltip:before, .abs-swatch-name-tooltip:before{
   content: '';
   position: absolute;
   top: 71%;
