@@ -69,7 +69,7 @@ product-card-swatches input[type='radio'] + label.variant_swatch .swatch-name-to
   visibility: hidden;
 }
 
-product-card-swatches input[type='radio'] + label.variant_swatch .swatch-name-tooltip:before {
+product-card-swatches input[type='radio'] + label.variant_swatch .swatch-name-tooltip:before, .abs-swatch-name-tooltip:before {
   content: '';
   position: absolute;
   top: 71%;
@@ -83,7 +83,7 @@ product-card-swatches input[type='radio'] + label.variant_swatch .swatch-name-to
 }
 
 @media (hover: hover) and (pointer: fine) and (min-width: 750px) {
-  product-card-swatches input[type='radio'] + label.variant_swatch:hover .swatch-name-tooltip {
+  product-card-swatches input[type='radio'] + label.variant_swatch:hover .swatch-name-tooltip, .absorbency-option:hover .abs-swatch-name-tooltip {
     bottom: 85%;
     opacity: 1;
     transition: all 0.2s ease-in-out;
