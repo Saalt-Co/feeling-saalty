@@ -54,6 +54,7 @@ product-card-swatches input[type='radio'] + label.variant_swatch:hover, .abs-swa
 product-card-swatches input[type='radio'] + label.variant_swatch .swatch-name-tooltip, .abs-swatch-name-tooltip {
   display: block;
   position: absolute;
+  z-index: 2;
   background: rgb(var(--color-site-background));
   border-radius: 0.5rem;
   box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity));
