@@ -462,5 +462,37 @@
       </script>
     {% endif %}
     {%- comment -%} End Klaviyo Add to Cart Event {%- endcomment -%}
+     <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous" defer></script>
+<script>
+    $(document).ready(function() {
+      // Listen for changes in the radio buttons
+      $('input[name="absorbencyData"]').change(function() {
+        // Remove the 'selected' class from all absorbency options
+        $('.absorbency-option').removeClass('selected');
+        
+        // Add the 'selected' class to the currently selected absorbency option
+        $(this).closest('.absorbency-option').addClass('selected');
+        
+        // Store the selected value in localStorage
+        const selectedValue = $(this).val();
+        localStorage.setItem('selectedAbsorbency', selectedValue);
+      });
+    });
+
+</script>
+  <script>
+$(window).on('load', function() {
+  // Retrieve the selected absorbency value from localStorage
+  const selectedValue = localStorage.getItem('selectedAbsorbency');
+  console.log(selectedValue);
+  if (selectedValue) {    
+    $(`input[name="Absorbency"][value="${selectedValue}"]`).trigger('click');
+  }
+});
+
+  </script>
 </body>
 </html>
