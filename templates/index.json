@@ -239,13 +239,13 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "Meet the new Cotton Tea Dye Saalt Wear."
+            "title": "Saalt Wear in Cotton just got a Super upgrade."
           }
         },
         "section_content_xABq68": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Beautiful new colors in the same cozy, comfy, sustainably-sourced cotton you love.<\/p>"
+            "text_content": "<p>Our best-selling Cotton Bikini, now with extra absorbency (super) powers absorbing 6+ pads or 8+ tampons, for all-day, all-night, all-of-life’s-leaks confidence.<\/p>"
           }
         },
         "section_buttons_group_cwjkYz": {
@@ -259,9 +259,9 @@
           "type": "section_button",
           "settings": {
             "button_text": "Shop Now",
-            "button_url": "",
+            "button_url": "\/products\/leakproof-cotton-bikini?variant=41558335160401",
             "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
+            "theme_color_section_button_background": "theme-color-bg-1",
             "theme_color_text_section_button_text": "theme_default",
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default"
@@ -280,8 +280,8 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme-color-text-0",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Cotton-Tea-Dye-Launch-Hero-Saalt-mobile_03.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Cotton-Tea-Dye-Launch-Hero-Saalt-desktop_03.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Cotton-Super-Hero-mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Cotton-Super-Hero-desktop.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
@@ -293,7 +293,7 @@
         "desktop_text_position": "center",
         "desktop_text_alignment": "center",
         "use_max_text_width": true,
-        "max_width": "375px",
+        "max_width": "495px",
         "padding_top": 0,
         "padding_bottom": 0
       }
