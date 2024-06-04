@@ -46,10 +46,18 @@
             "text": "Save up to 25% when you bundle Cups, Discs, or Underwear.",
             "link": "shopify:\/\/collections\/shop-all"
           }
+        },
+        "announcement_cHJNjJ": {
+          "type": "announcement",
+          "settings": {
+            "text": "Cotton Bikini now available in Super",
+            "link": "\/products\/leakproof-cotton-bikini?variant=41558335160401"
+          }
         }
       },
       "block_order": [
-        "announcement_nHDyte"
+        "announcement_nHDyte",
+        "announcement_cHJNjJ"
       ],
       "settings": {
         "theme_color_background": "theme-color-bg-2",
