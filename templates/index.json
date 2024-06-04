@@ -175,7 +175,7 @@
         "section_content_gwgfq3": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Buy any Lace or Mesh underwear (made from ocean-bound recycled water bottles), and get one 50% off.<\/p><p>Free Saalt Wash with any cup or disc purchase<\/p>"
+            "text_content": "<p>Buy any Lace or Mesh underwear (made from ocean-bound recycled water bottles), and get one 50% off.<\/p><p>Free Saalt Wash when you purchase any&nbspcup&nbspor&nbspdisc.<\/p>"
           }
         },
         "section_content_CW9yir": {
@@ -229,7 +229,7 @@
       "disabled": true,
       "custom_css": [
         "h6 {font-weight: 500;}",
-        "h3 {font-weight: 400 !important; font-size: 20px !important; line-height: 1.25 !important;}",
+        "h3 {font-weight: 500 !important; font-size: 20px !important; line-height: 1.25 !important;}",
         "p {font-size: 15px; line-height: 1.25;}"
       ],
       "settings": {
