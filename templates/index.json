@@ -162,13 +162,26 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "1 Cup = 3,000 tampons"
+            "title": "Happy World Oceans&nbspDay!"
+          }
+        },
+        "section_title_UxCKPX": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "3",
+            "title": "The ocean deserves better. And&nbspso&nbspdo&nbspyou."
           }
         },
         "section_content_gwgfq3": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Switch to a plastic-free period and help us eliminate 100 million plastic tampons this Earth Day.<\/p>"
+            "text_content": "<p>Buy any Lace or Mesh underwear (made from ocean-bound recycled water bottles), and get one 50% off.<\/p>"
+          }
+        },
+        "section_content_hQXmVw": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Free Saalt Wash with any cup or disc purchase<\/p>"
           }
         },
         "section_content_CW9yir": {
@@ -183,6 +196,18 @@
           "settings": {
             "desktop_button_group_alignment": "center",
             "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_gHrdFj": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "SHOP LACE & MESH",
+            "button_url": "shopify:\/\/collections\/lace-mesh",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
           }
         },
         "section_button_3LnwhK": {
@@ -200,22 +225,27 @@
       },
       "block_order": [
         "section_title_7KgcU4",
+        "section_title_UxCKPX",
         "section_content_gwgfq3",
+        "section_content_hQXmVw",
         "section_content_CW9yir",
         "section_buttons_group_anQEL4",
+        "section_button_gHrdFj",
         "section_button_3LnwhK"
       ],
       "disabled": true,
       "custom_css": [
-        "h6 {font-weight: 500;}"
+        "h6 {font-weight: 500;}",
+        "h3 {font-weight: 400 !important; font-size: 20px !important;}",
+        "p {font-size: 14px;}"
       ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-Earth-Day-mobile_02.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Earth-Day-desktop_02.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-World-Oceans-Day-mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-World-Oceans-Day-desktop.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
@@ -296,72 +326,6 @@
         "desktop_text_alignment": "center",
         "use_max_text_width": true,
         "max_width": "495px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "saalt_bg_media_with_text_iyXbMP": {
-      "type": "saalt-bg-media-with-text",
-      "blocks": {
-        "section_title_H6FdAJ": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "Here’s your chance to break up with pads & tampons...forever and save 20% off our most popular items"
-          }
-        },
-        "section_content_6pfcHz": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p><em>Ditch the Disposables<\/em> and try one of our best-selling Challenge Packs for a special introductory price.<\/p>"
-          }
-        },
-        "section_buttons_group_qTanBF": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "flex-start",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "section_button_dNTnBF": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Take the Challenge",
-            "button_url": "shopify:\/\/pages\/challenge",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme-color-bg-1",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "section_title_H6FdAJ",
-        "section_content_6pfcHz",
-        "section_buttons_group_qTanBF",
-        "section_button_dNTnBF"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Ditch-the-Disposables-mobile-1.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Ditch-the-Disposables-desktop.jpg",
-        "media_overlay_color": "--palette-color-1",
-        "media_overlay_opacity": 0,
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "flex-end",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": true,
-        "max_width": "400px",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -1494,7 +1458,6 @@
     "saalt_bg_media_with_text_UnjVt3",
     "saalt_bg_media_with_text_aJTmjB",
     "saalt_bg_media_with_text_DAQ8cU",
-    "saalt_bg_media_with_text_iyXbMP",
     "dec81ce8-0726-4327-93a6-eb82628398dc",
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
     "2b94c719-9c4c-4651-96ed-88c41a9f7159",
