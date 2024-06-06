@@ -100,11 +100,6 @@
           <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }}{% endif %}">
             <div class="media media--transparent media--hover-effect">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-              <a
-              href="{{ card_data.url | within: collection | default: '#' }}"
-              class="full-unstyled-link"
-              aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
-            >
               <img
                 srcset="
                   {%- if card_data.featured_media.width >= 165 -%}{{ card_data.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
@@ -146,9 +141,7 @@
                   height="{{ secondary_image.height }}"
                 >
               {%- endif -%}
-              </a>
             </div>
-
           </div>
         {%- endif -%}
         {%- if show_swatches == true -%}
