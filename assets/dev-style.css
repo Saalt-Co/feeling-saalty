@@ -101,7 +101,7 @@ label.absorbency-option {
     position: relative;
     z-index: 2;
 }
-  .card__heading a:after{
+  /* .card__heading a:after{
     pointer-events: none;
-  }
+  } */
   }
