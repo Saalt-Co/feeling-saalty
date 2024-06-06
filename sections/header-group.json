@@ -50,7 +50,6 @@
         },
         "announcement_cHJNjJ": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "BOGO50 On Lace and Mesh Underwear",
             "link": "shopify:\/\/collections\/lace-mesh-for-standard-collection"
