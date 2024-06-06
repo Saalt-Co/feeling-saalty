@@ -97,7 +97,7 @@ label.absorbency-option {
   box-shadow: 0px 0px 0px 1px #000;
 }
   @media screen and (max-width: 576px)
-  .card__information {
+  .card-information {
     position: relative;
     z-index: 2;
 }
