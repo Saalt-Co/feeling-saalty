@@ -104,7 +104,7 @@ label.absorbency-option {
   /* .card__heading a:after{
     pointer-events: none;
   } */
-.absorbency-options {
+.absorbency-options, product-card-swatches {
     z-index: 44;
     position: relative;
 }
