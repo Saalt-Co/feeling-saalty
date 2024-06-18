@@ -80,12 +80,12 @@
     "header": {
       "type": "header",
       "settings": {
-        "logo_position": "top-left",
+        "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
         "use_hover": true,
         "sticky_header_type": "reduce-logo-size",
-        "show_line_separator": true,
+        "show_line_separator": false,
         "theme_color_background": "theme_default",
         "theme_color_text": "theme-color-text-2",
         "search_input_opacity": 25,
