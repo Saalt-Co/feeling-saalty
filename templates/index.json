@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "afbc1ae8-07fe-4461-9c01-064b82ac7529": {
@@ -281,7 +290,7 @@
         "section_button_Ahe9Ka": {
           "type": "section_button",
           "settings": {
-            "button_text": "Shop Now",
+            "button_text": "SHOP NOW",
             "button_url": "\/products\/leakproof-cotton-bikini?variant=41558335160401",
             "button_type": "primary",
             "theme_color_section_button_background": "theme-color-bg-1",
@@ -300,6 +309,72 @@
       "custom_css": [
         "@media only screen and (max-width: 767px) {p {color: #373737 !important; } h1 {color: #373737; font-size: 26px !important; } h3 {color: #373737; }}"
       ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-Cotton-Super-Hero-mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-Cotton-Super-Hero-desktop.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "center",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "495px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "saalt_bg_media_with_text_7RJUiz": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "section_title_RB7pnT": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "It's World Continence Week"
+          }
+        },
+        "section_content_pgzqyn": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Ditch your daily panty liners. Saalt Wear absorbent underwear has your back(side) for all of life’s leaks. <\/p><p><em>Yep – even bladder leaks.<\/em><\/p><h4>Upgrade your underwear drawer. Take $25 off your purchase of $125 or more<\/h4>"
+          }
+        },
+        "section_buttons_group_X9DErJ": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_LgfxPq": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "SHOP NOW",
+            "button_url": "shopify:\/\/collections\/shop-all",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme-color-bg-1",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_RB7pnT",
+        "section_content_pgzqyn",
+        "section_buttons_group_X9DErJ",
+        "section_button_LgfxPq"
+      ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -1289,6 +1364,7 @@
     "saalt_bg_media_with_text_UnjVt3",
     "saalt_bg_media_with_text_aJTmjB",
     "saalt_bg_media_with_text_DAQ8cU",
+    "saalt_bg_media_with_text_7RJUiz",
     "dec81ce8-0726-4327-93a6-eb82628398dc",
     "35251dc7-4eb4-46b5-9a5b-4759bf4effd7",
     "2b94c719-9c4c-4651-96ed-88c41a9f7159",
