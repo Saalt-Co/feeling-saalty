@@ -339,13 +339,13 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "It's World Continence Week"
+            "title": "Take $25 off your purchase of $125 or more"
           }
         },
         "section_content_pgzqyn": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Ditch your daily panty liners. Saalt Wear absorbent underwear has your back(side) for all of life’s leaks. <\/p><p><em>Yep – even bladder leaks.<\/em><\/p><h4>Upgrade your underwear drawer. Take $25 off your purchase of $125 or more<\/h4>"
+            "text_content": "<p>It's World Continence Week: time to ditch your daily panty liners. Saalt Wear absorbent underwear has your back(side) for all of life’s leaks. <\/p><p><em>Yep – even bladder leaks.<\/em><\/p>"
           }
         },
         "section_buttons_group_X9DErJ": {
@@ -380,8 +380,8 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme-color-text-0",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-Cotton-Super-Hero-mobile.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Cotton-Super-Hero-desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/UK-World-Continence-Week-Hero-mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/UK-World-Continence-Week-Hero-desktop.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
