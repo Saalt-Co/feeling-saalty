@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -902,6 +911,15 @@
     "7dc8f187-d995-436e-9a49-5e215d0d4aa1": {
       "type": "collapsible-content",
       "blocks": {
+        "collapsible_row_R8ApBy": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does period underwear work?",
+            "icon": "none",
+            "row_content": "<p>Yes! Period underwear works to absorb all sorts of leaks - from period flow and bladder leaks to daily discharge and sweat. <\/p><p>That being said, not all period underwear is the same. Saalt leakproof underwear uses proprietary, patent-pending technology to wick moisture way from your body to keep you feeling dry. You can learn more about what makes Saalt unique here: <a href=\"\/blogs\/news\/the-magic-behind-saalt-s-leak-proof-underwear\" title=\"\/blogs\/news\/the-magic-behind-saalt-s-leak-proof-underwear\">The Magic Behind Saalt's Leakproof Underwear<\/a>.<\/p>",
+            "page": ""
+          }
+        },
         "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-1": {
           "type": "collapsible_row",
           "settings": {
@@ -931,6 +949,7 @@
         }
       },
       "block_order": [
+        "collapsible_row_R8ApBy",
         "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-1",
         "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-2",
         "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-3"
