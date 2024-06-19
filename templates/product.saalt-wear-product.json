@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "afb57bcf-95f9-4c58-bcb0-46be33b273c1": {
@@ -48,6 +57,7 @@
         },
         "text_49f6xw": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<strong>{{ product.metafields.saalt.evergreen_offer.value }}<\/strong>",
             "text_style": "uppercase"
