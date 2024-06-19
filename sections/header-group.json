@@ -51,6 +51,7 @@
       "blocks": {
         "announcement_nHDyte": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Save up to 25% when you bundle Cups, Discs, or Underwear.",
             "link": "shopify:\/\/collections\/shop-all"
@@ -58,9 +59,8 @@
         },
         "announcement_cHJNjJ": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "BOGO50 On Lace and Mesh Underwear",
+            "text": "$25 Off Orders Of $125+",
             "link": "shopify:\/\/collections\/lace-mesh"
           }
         }
