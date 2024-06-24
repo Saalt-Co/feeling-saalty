@@ -51,7 +51,6 @@
       "blocks": {
         "announcement_nHDyte": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Save up to 25% when you bundle Cups, Discs, or Underwear.",
             "link": "shopify:\/\/collections\/shop-all"
