@@ -58,6 +58,7 @@
         },
         "announcement_cHJNjJ": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "$25 Off Orders Of $125+",
             "link": "shopify:\/\/collections\/shop-all"
