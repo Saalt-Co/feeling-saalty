@@ -1181,15 +1181,25 @@ class VariantRadios extends VariantSelects {
     super();
   }
 
-  setInputAvailability(listOfOptions, listOfAvailableOptions) {
-    listOfOptions.forEach((input) => {
-      if (listOfAvailableOptions.includes(input.getAttribute('value'))) {
-        input.classList.remove('disabled');
-      } else {
-        input.classList.add('disabled');
+ setInputAvailability(listOfOptions, listOfAvailableOptions) {
+  listOfOptions.forEach((input) => {
+    const inputValue = input.getAttribute('value');
+    //console.log(inputValue);
+    const label = document.querySelector(`label[for="${input.getAttribute('id')}"]`);
+
+    if (listOfAvailableOptions.includes(inputValue)) {
+      input.classList.remove('disabled');
+      if (label) {
+        label.classList.remove('disabled');
       }
-    });
-  }
+    } else {
+      input.classList.add('disabled');
+      if (label) {
+        label.classList.add('disabled');
+      }
+    }
+  });
+}
 
   updateOptions() {
     const fieldsets = Array.from(this.querySelectorAll('fieldset'));
