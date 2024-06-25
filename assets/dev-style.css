@@ -114,7 +114,7 @@ label.variant_swatch.disabled:after {
     left: 0;
 }
   @media screen and (max-width: 576px){
-  .card__information {
+  .card-information {
     position: relative;
     z-index: 2;
 }
