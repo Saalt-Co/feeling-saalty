@@ -923,10 +923,15 @@ class VariantSelects extends HTMLElement {
     }
   }
 
-  variantGroupImage() {
+variantGroupImage() {
+  if (this.currentVariant === undefined) {
+    console.log("currentVariant is undefined");
+    return;
+  }
+
   console.log(this.currentVariant);
-  if (this.currentVariant.featured_image && this.currentVariant.featured_image.alt) {
-    const currentVariantAlt = this.currentVariant.featured_image.alt;
+  if (this.currentVariant.featured_media && this.currentVariant.featured_media.alt) {
+    const currentVariantAlt = this.currentVariant.featured_media.alt;
     console.log(currentVariantAlt);
     const dataAltSelector = `[data-alt='${currentVariantAlt}']`;
     console.log(dataAltSelector);
