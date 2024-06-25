@@ -417,30 +417,66 @@
   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
   crossorigin="anonymous" defer></script>
 <script>
-    $(document).ready(function() {
-      // Listen for changes in the radio buttons
-      $('input[name="absorbencyData"]').change(function() {
-        // Remove the 'selected' class from all absorbency options
-        $('.absorbency-option').removeClass('selected');
-        
-        // Add the 'selected' class to the currently selected absorbency option
-        $(this).closest('.absorbency-option').addClass('selected');
-        
-        // Store the selected value in localStorage
-        const selectedValue = $(this).val();
-        localStorage.setItem('selectedAbsorbency', selectedValue);
-      });
-    });
+$(document).ready(function() {
 
-</script>
-  <script>
-$(window).on('load', function() {
+  // Listen for clicks on the labels with class 'absorbency-option'
+  $(document).on('click', '.absorbency-option', function() {
+    var radioId = $(this).attr('for');
+    
+    // Uncheck all radio buttons
+    $('input[name="Absorbency"]').prop('checked', false);
+
+    // Check the associated radio button
+    $('#' + radioId).prop('checked', true);
+
+    // Remove 'selected' class from all labels
+    $('.absorbency-option').removeClass('selected');
+
+    // Add 'selected' class to the clicked label
+    $(this).addClass('selected');
+
+    // Store the selected value in localStorage
+    const selectedValue = $('#' + radioId).val();
+    //console.log(selectedValue);
+    localStorage.setItem('selectedAbsorbency', selectedValue);
+
+    // Console log the checked value
+   // console.log('Checked value:', selectedValue);
+  });
+});
+
+
+$(document).ready(function() {
   // Retrieve the selected absorbency value from localStorage
   const selectedValue = localStorage.getItem('selectedAbsorbency');
-  console.log(selectedValue);
   if (selectedValue) {    
     $(`input[name="Absorbency"][value="${selectedValue}"]`).trigger('click');
   }
+});
+
+setTimeout(function() {
+    localStorage.removeItem('selectedAbsorbency');
+  }, 2000);
+  
+      $(document).ready(function(){
+  $(document).on("change", 'input[name="Absorbency"]', function(){
+    setTimeout(function() {
+      // Find the currently checked radio button
+      var currentChecked = $("input[name='Color']:checked");
+      
+      // Check if the currentChecked radio button has the class 'disabled'
+      if (currentChecked.hasClass('disabled')) {
+        
+        // Find the next radio button that is not disabled
+       var nextRadioButton = $("input[name='Color']").not('.disabled').first();
+        
+        // Check if the next radio button exists and trigger it
+        if (nextRadioButton.length > 0) {
+          nextRadioButton.click();
+        }
+      }
+    }, 1000);
+  });
 });
 
   </script>
