@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -23,7 +32,7 @@
           "type": "section_content",
           "settings": {
             "text_group_num": "2",
-            "text_content": "<p><strong>Join Our Saalt Health Care Sample Box & Affiliate Program<\/strong><\/p><p><em>Perfect for OBGYNs, Pelvic Floor Therapists, Urologists, Aestheticians, and other Clinicians.<\/em><\/p><p>What you get as a Saalt Health Care Affiliate:<\/p><ul><li>Free sample box of Saalt products to show patients<\/li><li>15% discount for patients<\/li><li>10% commission for you when patients purchase<\/li><li>Direct contact to our dedicated Saalt Coaches to answer questions<\/li><\/ul>"
+            "text_content": "<p><strong>Join Our Saalt Health Care Sample Box & Affiliate Program<\/strong><\/p><p><em>Perfect for OBGYNs, Pelvic Floor Therapists, Urologists, Aestheticians, and other Clinicians.<\/em><\/p><p>What you get as a Saalt Health Care Affiliate:<\/p><ul><li>Free sample box of Saalt products to show patients<\/li><li>20% discount for patients<\/li><li>Direct contact to our dedicated Saalt Coaches to answer questions<\/li><\/ul>"
           }
         }
       },
