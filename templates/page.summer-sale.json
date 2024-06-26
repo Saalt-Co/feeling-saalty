@@ -1,0 +1,416 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "305013c5-7a91-4dbd-8f10-41528c4e9651": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18711414571281__305013c5-7a91-4dbd-8f10-41528c4e9651-slide-1": {
+          "type": "slide",
+          "settings": {
+            "heading": "Summer Sale!",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default",
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "theme_color_background": "theme_default",
+            "theme_color_text": "theme_default",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18711414571281__305013c5-7a91-4dbd-8f10-41528c4e9651-slide-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "numbers",
+        "auto_rotate": false,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "saalt_bg_media_with_text_GFtDPN": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "section_title_QeGRfP": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Section Title Goes Here"
+          }
+        },
+        "section_content_qX7FpY": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
+          }
+        },
+        "section_buttons_group_xiAUzR": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "center",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_TNfyrF": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_QeGRfP",
+        "section_content_qX7FpY",
+        "section_buttons_group_xiAUzR",
+        "section_button_TNfyrF"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "overlay",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "center",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "saalt_modular_nav_bar_gq46L6": {
+      "type": "saalt-modular-nav-bar",
+      "blocks": {
+        "nav_bar_link_mHDE6q": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "In the Wild",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "#in-the-wild",
+            "nav_bar_link_dest": ""
+          }
+        },
+        "nav_bar_link_TFp8rE": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "Beach Day",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "",
+            "nav_bar_link_dest": ""
+          }
+        },
+        "nav_bar_link_EXWVUM": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "Road Trip",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "",
+            "nav_bar_link_dest": ""
+          }
+        },
+        "nav_bar_link_jTYKeJ": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "Summer Camp",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "",
+            "nav_bar_link_dest": ""
+          }
+        },
+        "nav_bar_link_hwMMX9": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "Staycation",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "",
+            "nav_bar_link_dest": ""
+          }
+        }
+      },
+      "block_order": [
+        "nav_bar_link_mHDE6q",
+        "nav_bar_link_TFp8rE",
+        "nav_bar_link_EXWVUM",
+        "nav_bar_link_jTYKeJ",
+        "nav_bar_link_hwMMX9"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "mobile_nav_link_gap": "3rem",
+        "desktop_nav_link_gap": "7rem"
+      }
+    },
+    "saalt_media_with_text_wjLmz3": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "section_title_fVzKCz": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Section Title Goes Here"
+          }
+        },
+        "section_content_GzKKk4": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.<\/p>"
+          }
+        },
+        "section_buttons_group_BWx7tF": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "flex-start",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_L4M3RB": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_fVzKCz",
+        "section_content_GzKKk4",
+        "section_buttons_group_BWx7tF",
+        "section_button_L4M3RB"
+      ],
+      "settings": {
+        "section_id": "in the wild",
+        "theme_color_background": "theme-color-bg-7",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_NyinTc": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "enable_desktop_slider": false,
+        "theme_color_background": "theme-color-bg-7",
+        "theme_color_text": "theme_default",
+        "show_view_all": true,
+        "view_all_style": "button",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_swatches": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_video_LHq693": {
+      "type": "multicolumn-video",
+      "blocks": {
+        "column_qzKV7c": {
+          "type": "column",
+          "settings": {
+            "video-play": true,
+            "video-shopify": "shopify:\/\/files\/videos\/Rotating cup with benefits.mp4",
+            "controls": false,
+            "muted": false,
+            "autoplay": true,
+            "youtube-url": "https:\/\/www.youtube.com\/embed\/O7wZ1V7JQFQ",
+            "video-only": false,
+            "title": "Column",
+            "rating": 5,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_y96eFW": {
+          "type": "column",
+          "settings": {
+            "video-play": true,
+            "controls": false,
+            "muted": false,
+            "autoplay": false,
+            "youtube-url": "https:\/\/www.youtube.com\/embed\/O7wZ1V7JQFQ",
+            "video-only": true,
+            "title": "Column",
+            "rating": 5,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_YTg6Ag": {
+          "type": "column",
+          "settings": {
+            "video-play": true,
+            "controls": true,
+            "muted": false,
+            "autoplay": true,
+            "youtube-url": "",
+            "video-only": true,
+            "title": "Column",
+            "rating": 0,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_YmGpJx": {
+          "type": "column",
+          "settings": {
+            "video-play": true,
+            "controls": true,
+            "muted": false,
+            "autoplay": true,
+            "youtube-url": "",
+            "video-only": true,
+            "title": "Column",
+            "rating": 0,
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_qzKV7c",
+        "column_y96eFW",
+        "column_YTg6Ag",
+        "column_YmGpJx"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "theme_default",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "Button text",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "816c8e6d-21b0-4b3c-8abc-a0c695d1ae2f": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script type=\"text\/javascript\"> (function e(){var e=document.createElement(\"script\");e.type=\"text\/javascript\",e.async=!0, e.src=\"\/\/staticw2.yotpo.com\/2BPjkSRu2swwJBLujLtxxrBFxxqEta1k91QDxm4V\/widget.js\";var t=document.getElementsByTagName(\"script\")[0]; t.parentNode.insertBefore(e,t)})(); <\/script>\n<div id='yotpo-testimonials-custom-tab'><\/div>",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_afkfF4": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"icon-wrapper\">\n    <a href=\"https:\/\/saalt.com\/pages\/easter-egg\">\n        <svg width=\"17\" height=\"29\" viewBox=\"0 0 17 29\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n            <path d=\"M16.0831 0.00194592H0.906076C0.906076 0.00194592 0 0.116755 0 0.929175C0 1.99943 0.902141 1.79024 0.933623 2.88288C0.938367 2.90233 0.941005 2.92222 0.941493 2.94223C0.941493 3.53476 0.838194 6.84574 0.838194 6.84574C0.860417 8.02783 0.978193 9.20627 1.19039 10.3698L1.1963 10.3805C1.1963 10.3805 1.51406 12.8586 5.10885 16.765C5.15273 16.8243 5.20143 16.88 5.25446 16.9314L5.26528 16.9412C5.50139 17.1941 5.75193 17.4536 6.0169 17.7195C6.41855 18.1696 6.78711 18.6476 7.11973 19.1498C7.20732 19.2838 7.27058 19.432 7.30665 19.5876C7.42405 20.1419 7.47817 20.7075 7.468 21.2737C7.468 21.3487 7.468 21.4314 7.468 21.5141V21.8303C7.468 22.2448 7.468 22.4462 7.468 22.7731V27.6379V27.6816C7.468 28.0017 7.47587 28.1156 7.47587 28.1555C7.47587 28.1555 7.47587 28.9484 8.42917 29H8.47737H8.51771H8.56591C9.5202 28.9484 9.5202 28.1555 9.5202 28.1555C9.5202 28.1156 9.5202 28.0017 9.52807 27.6816V27.634V22.7692C9.52807 22.4423 9.52807 22.2409 9.52807 21.8264V21.5141C9.52807 21.4314 9.52807 21.3487 9.52807 21.2737C9.51789 20.7075 9.57201 20.1419 9.68941 19.5876C9.72549 19.432 9.78874 19.2838 9.87633 19.1498C10.2084 18.6457 10.577 18.1661 10.9792 17.7147C11.2415 17.45 11.4921 17.1906 11.7308 16.9363L11.7416 16.9266C11.7956 16.8759 11.8456 16.8213 11.8911 16.7631C15.4859 12.8567 15.8027 10.3785 15.8027 10.3785L15.8086 10.3678C16.0216 9.20441 16.1397 8.02593 16.1618 6.84379C16.1618 6.84379 16.0575 3.53573 16.0575 2.94028C16.058 2.92028 16.0606 2.90038 16.0654 2.88093C16.0979 1.7883 17 1.99359 17 0.92723C17 0.114809 16.0939 0 16.0939 0\" fill=\"#A9B6C6\"\/>\n        <\/svg>\n    <\/a>\n<\/div>",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "305013c5-7a91-4dbd-8f10-41528c4e9651",
+    "saalt_bg_media_with_text_GFtDPN",
+    "saalt_modular_nav_bar_gq46L6",
+    "saalt_media_with_text_wjLmz3",
+    "featured_collection_NyinTc",
+    "multicolumn_video_LHq693",
+    "816c8e6d-21b0-4b3c-8abc-a0c695d1ae2f",
+    "custom_liquid_afkfF4"
+  ]
+}
