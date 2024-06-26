@@ -71,6 +71,23 @@
         "padding_bottom": 52
       }
     },
+    "1719428917ec3aa5a3": {
+      "type": "apps",
+      "blocks": {
+        "snowball_affiliate_marketing_affiliate_sign_up_mbPxrA": {
+          "type": "shopify:\/\/apps\/snowball-affiliate-marketing\/blocks\/affiliate-sign-up\/6e5feda3-ec24-4171-ae41-64028b660bc7",
+          "settings": {
+            "form_id": "82858b29-1836-4623-a50d-167f7daffbcd"
+          }
+        }
+      },
+      "block_order": [
+        "snowball_affiliate_marketing_affiliate_sign_up_mbPxrA"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "collapsible_content_TEBQaX": {
       "type": "collapsible-content",
       "blocks": {
@@ -331,6 +348,7 @@
     "main",
     "f1b16d01-d3ea-4457-bea4-1ce2d36e34aa",
     "custom_liquid_ATPLbJ",
+    "1719428917ec3aa5a3",
     "collapsible_content_TEBQaX",
     "6dd777f2-c03d-4d36-b818-600b65ee03aa"
   ]
