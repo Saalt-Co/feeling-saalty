@@ -108,7 +108,7 @@
           "settings": {
             "nav_bar_link_text": "Beach Day",
             "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "",
+            "nav_bar_element_selector": "#beach-day",
             "nav_bar_link_dest": ""
           }
         },
@@ -117,16 +117,16 @@
           "settings": {
             "nav_bar_link_text": "Road Trip",
             "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "",
+            "nav_bar_element_selector": "#road-trip",
             "nav_bar_link_dest": ""
           }
         },
         "nav_bar_link_jTYKeJ": {
           "type": "nav_bar_link",
           "settings": {
-            "nav_bar_link_text": "Summer Camp",
+            "nav_bar_link_text": "Wedding Season",
             "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "",
+            "nav_bar_element_selector": "#wedding-season",
             "nav_bar_link_dest": ""
           }
         },
@@ -135,7 +135,7 @@
           "settings": {
             "nav_bar_link_text": "Staycation",
             "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "",
+            "nav_bar_element_selector": "#staycation-vibes",
             "nav_bar_link_dest": ""
           }
         }
@@ -177,7 +177,7 @@
         "section_content_GzKKk4"
       ],
       "settings": {
-        "section_id": "in the wild",
+        "section_id": "in-the-wild",
         "theme_color_background": "theme-color-bg-0",
         "theme_color_text": "theme_default",
         "media_type": "image",
@@ -198,41 +198,6 @@
       }
     },
     "featured_collection_NyinTc": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "enable_desktop_slider": false,
-        "theme_color_background": "theme-color-bg-0",
-        "theme_color_text": "theme_default",
-        "show_view_all": false,
-        "view_all_style": "button",
-        "button_type": "primary",
-        "theme_color_section_button_background": "theme_default",
-        "theme_color_text_section_button_text": "theme_default",
-        "theme_color_section_button_background_hover": "theme_default",
-        "theme_color_text_section_button_text_hover": "theme_default",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "show_swatches": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 4,
-        "padding_bottom": 8
-      }
-    },
-    "featured_collection_YbwzYK": {
       "type": "featured-collection",
       "settings": {
         "title": "",
@@ -310,70 +275,7 @@
         "section_button_iT4TPc"
       ],
       "settings": {
-        "section_id": "",
-        "theme_color_background": "theme-color-bg-5",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "saalt_media_with_text_fxYEhV": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "section_title_RRPnem": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "1",
-            "title": "Dive Right In"
-          }
-        },
-        "section_content_f4mEeq": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<h4><em>Swimming, Beach Day, Boating<\/em><\/h4><p>Make a splash with confidence! Enjoy the waves, the sun, and leave the worries behind with our summer must-haves.<\/p>"
-          }
-        },
-        "section_buttons_group_gGQ3Q7": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "flex-start",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "section_button_CdmQgq": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Button text",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "section_title_RRPnem",
-        "section_content_f4mEeq",
-        "section_buttons_group_gGQ3Q7",
-        "section_button_CdmQgq"
-      ],
-      "settings": {
-        "section_id": "",
+        "section_id": "beach-day",
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "image",
@@ -450,7 +352,7 @@
         "section_content_ehq6YU"
       ],
       "settings": {
-        "section_id": "in the wild",
+        "section_id": "road-trip",
         "theme_color_background": "theme-color-bg-0",
         "theme_color_text": "theme_default",
         "media_type": "image",
@@ -471,6 +373,181 @@
       }
     },
     "featured_collection_baxztB": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "enable_desktop_slider": false,
+        "theme_color_background": "theme-color-bg-0",
+        "theme_color_text": "theme_default",
+        "show_view_all": false,
+        "view_all_style": "button",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_swatches": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 4,
+        "padding_bottom": 8
+      }
+    },
+    "saalt_media_with_text_fxYEhV": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "section_title_RRPnem": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Wedding Season"
+          }
+        },
+        "section_content_f4mEeq": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<h4><em>Brides, Bridesmaids, and Guests<\/em><\/h4><p>Dance the night away with essentials designed for ultimate comfort and a flawless fit. Enjoy every moment of the celebration without any distractions.<\/p>"
+          }
+        },
+        "section_buttons_group_gGQ3Q7": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "flex-start",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_CdmQgq": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_RRPnem",
+        "section_content_f4mEeq",
+        "section_buttons_group_gGQ3Q7",
+        "section_button_CdmQgq"
+      ],
+      "settings": {
+        "section_id": "wedding-season",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_LfxVMt": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "enable_desktop_slider": false,
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "show_view_all": false,
+        "view_all_style": "button",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_swatches": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 4,
+        "padding_bottom": 8
+      }
+    },
+    "saalt_media_with_text_BMn9HQ": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "section_title_tTJNEr": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Staycation Vibes"
+          }
+        },
+        "section_content_aMfVtP": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<h4><em>When relaxing is priority #1<\/em><\/h4><p>Bring the festival fun home with cozy essentials perfect for lounging, exploring, and everything in between. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_tTJNEr",
+        "section_content_aMfVtP"
+      ],
+      "settings": {
+        "section_id": "staycation-vibes",
+        "theme_color_background": "theme-color-bg-0",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_YbwzYK": {
       "type": "featured-collection",
       "settings": {
         "title": "",
@@ -616,12 +693,14 @@
     "saalt_modular_nav_bar_gq46L6",
     "saalt_media_with_text_wjLmz3",
     "featured_collection_NyinTc",
-    "featured_collection_YbwzYK",
     "saalt_media_with_text_EcnXeR",
-    "saalt_media_with_text_fxYEhV",
     "featured_collection_qYeNm7",
     "saalt_media_with_text_bnEY9B",
     "featured_collection_baxztB",
+    "saalt_media_with_text_fxYEhV",
+    "featured_collection_LfxVMt",
+    "saalt_media_with_text_BMn9HQ",
+    "featured_collection_YbwzYK",
     "multicolumn_video_LHq693"
   ]
 }
