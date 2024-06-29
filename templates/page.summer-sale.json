@@ -181,6 +181,7 @@
         "theme_color_background": "theme-color-bg-0",
         "theme_color_text": "theme_default",
         "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Summer_Sale_In_the_Wild.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -247,38 +248,18 @@
           "settings": {
             "text_content": "<h4><em>Swimming, Beach Day, Boating<\/em><\/h4><p>Make a splash with confidence! Enjoy the waves, the sun, and leave the worries behind with our summer must-haves.<\/p>"
           }
-        },
-        "section_buttons_group_mPF8Jz": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "flex-start",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "section_button_iT4TPc": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Button text",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
         }
       },
       "block_order": [
         "section_title_rjabym",
-        "section_content_Tfkimq",
-        "section_buttons_group_mPF8Jz",
-        "section_button_iT4TPc"
+        "section_content_Tfkimq"
       ],
       "settings": {
         "section_id": "beach-day",
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Summer_Sale_Beach_Day.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -287,7 +268,7 @@
         "content_font_size": "small",
         "mobile_text_position": "below",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
+        "desktop_text_position": "left",
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
         "max_width": "600px",
@@ -531,6 +512,7 @@
         "theme_color_background": "theme-color-bg-0",
         "theme_color_text": "theme_default",
         "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Summer_Sale_Staycation.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
