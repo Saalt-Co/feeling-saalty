@@ -171,53 +171,28 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "Happy World Oceans&nbspDay!"
+            "title": "Celebrate your independence from disposables with <br><span style=\"font-weight: 500 !important; font-style: italic;\">15% off everything<\/span>"
           }
         },
         "section_title_UxCKPX": {
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "The ocean deserves better. And&nbspso&nbspdo&nbspyou."
-          }
-        },
-        "section_content_gwgfq3": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>Save on products made with recycled ocean-bound water bottles:<\/p><h4>Buy any Lace or Mesh underwear and get one 50% off.<\/h4><h4>Get a free Saalt Wash when you purchase any cup or disc.<\/h4>"
-          }
-        },
-        "section_content_CW9yir": {
-          "type": "section_content",
-          "disabled": true,
-          "settings": {
-            "text_content": "<h4>Today only, get 20% off Saalt Cups & Discs + free shipping! Use code PLANETOVERPLASTICS.<\/h4><h6>Ends April 22nd at 11:59 pm PDT.<\/h6>"
+            "title": "<p>Use code <u>PERIODFREEDOM<\/u> at checkout.<\/p>"
           }
         },
         "section_buttons_group_anQEL4": {
           "type": "section_buttons_group",
           "settings": {
-            "desktop_button_group_alignment": "center",
+            "desktop_button_group_alignment": "flex-start",
             "desktop_buttons_group_gap": "1rem"
           }
         },
         "section_button_gHrdFj": {
           "type": "section_button",
           "settings": {
-            "button_text": "SHOP LACE & MESH",
-            "button_url": "shopify:\/\/collections\/lace-mesh",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
-        "section_button_3LnwhK": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "SHOP CUPS & DISCS",
-            "button_url": "shopify:\/\/collections\/menstrual-cups-discs",
+            "button_text": "SHOP NOW",
+            "button_url": "shopify:\/\/collections\/shop-all",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -229,16 +204,13 @@
       "block_order": [
         "section_title_7KgcU4",
         "section_title_UxCKPX",
-        "section_content_gwgfq3",
-        "section_content_CW9yir",
         "section_buttons_group_anQEL4",
-        "section_button_gHrdFj",
-        "section_button_3LnwhK"
+        "section_button_gHrdFj"
       ],
       "disabled": true,
       "custom_css": [
         "h6 {font-weight: 500;}",
-        "h3 {font-weight: 500 !important; font-size: 20px !important; line-height: 1.25 !important;}",
+        "h3 {font-weight: 500 !important; font-size: 26px !important; line-height: 1 !important; font-style: italic;}",
         "p {font-size: 15px; line-height: 1.25;}"
       ],
       "settings": {
@@ -246,8 +218,8 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-World-Oceans-Day-mobile.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-World-Oceans-Day-desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/4th-July-Saalt-15-Off-Sale-mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/4th-July-Saalt-15-Off-Sale-desktop.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
