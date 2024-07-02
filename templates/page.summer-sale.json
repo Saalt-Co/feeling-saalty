@@ -168,7 +168,7 @@
         "section_content_GzKKk4": {
           "type": "section_content",
           "settings": {
-            "text_content": "<h4><em>Hiking, Backpacking, Camping<\/em><\/h4><p><br\/>Stay fresh on the trail with essentials that offer comfort and durability. <\/p><ul><li>The Saalt Cup: Lasts 12 hours, holds 3-4x more than tampons, odor free, and leaves no trace without packing used tampons in and out.<\/li><li>Seamless Saalt Wear: <\/li><li>Travel Accessories Bundle:<\/li><\/ul>"
+            "text_content": "<h4><em>Hiking, Backpacking, Camping<\/em><\/h4><ul><li><strong>The Saalt Cup<\/strong>: lasts 12 hours, holds 3-4x more than tampons, odor free, and leaves no trace without packing pads in and out. <\/li><li><strong>Seamless Saalt Wear<\/strong>: stretchy, move-with-you fabric that keeps you dry from sweat and leaks.<\/li><li><strong>Travel Accessories Bundle<\/strong>: stay fresh on the trail with biodegradable wipes and all you need to clean your cup on-the-go.<\/li><\/ul>"
           }
         }
       },
@@ -189,7 +189,7 @@
         "title_font_size": "small",
         "content_font_size": "small",
         "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
+        "mobile_text_alignment": "left",
         "desktop_text_position": "right",
         "desktop_text_alignment": "left",
         "use_max_text_width": false,
