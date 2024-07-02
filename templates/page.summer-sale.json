@@ -162,13 +162,13 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "In The Wild"
+            "title": "In the Wild"
           }
         },
         "section_content_GzKKk4": {
           "type": "section_content",
           "settings": {
-            "text_content": "<h4><em>Hiking, Backpacking, Camping<\/em><\/h4><p><br\/>Stay fresh on the trail with essentials that offer comfort and durability. You'll be ready to conquer any peak without missing a beat.<\/p>"
+            "text_content": "<h4><em>Hiking, Backpacking, Camping<\/em><\/h4><p><br\/>Stay fresh on the trail with essentials that offer comfort and durability. <\/p><ul><li>The Saalt Cup: Lasts 12 hours, holds 3-4x more than tampons, odor free, and leaves no trace without packing used tampons in and out.<\/li><li>Seamless Saalt Wear: <\/li><li>Travel Accessories Bundle:<\/li><\/ul>"
           }
         }
       },
@@ -538,7 +538,7 @@
         "show_vendor": false,
         "show_rating": false,
         "show_swatches": false,
-        "enable_quick_add": false,
+        "enable_quick_add": true,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 4,
