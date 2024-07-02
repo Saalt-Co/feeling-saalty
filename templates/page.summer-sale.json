@@ -246,7 +246,7 @@
         "section_content_Tfkimq": {
           "type": "section_content",
           "settings": {
-            "text_content": "<h4><em>Swimming, Beach Day, Boating<\/em><\/h4><ul><li><strong>Saalt Cups & Discs<\/strong>: Swim free without soggy tampons absorbing pool or lake bacteria. Lasts 12 hours, holds 3-6x more than tampons, and odor free.<\/li><li><strong>Travel Accessories Bundle<\/strong>: biodegradable wipes + all you need to clean your cup or disc on-the-go.<\/li><\/ul>"
+            "text_content": "<h4><em>Swimming, Beach Day, Boating<\/em><\/h4><ul><li><strong>Saalt Cups & Discs<\/strong>: Swim free without soggy tampons absorbing pool or lake bacteria. Lasts 12 hours, holds 3-6x more than tampons, and odor free.<\/li><li><strong>Travel Accessories Bundle<\/strong>: biodegradable wipes and all you need to stay clean on-the-go.<\/li><\/ul>"
           }
         }
       },
@@ -363,8 +363,8 @@
         "show_description": false,
         "description_style": "body",
         "collection": "travel-in-style",
-        "products_to_show": 5,
-        "columns_desktop": 5,
+        "products_to_show": 4,
+        "columns_desktop": 4,
         "full_width": false,
         "enable_desktop_slider": false,
         "theme_color_background": "theme-color-bg-0",
@@ -382,7 +382,7 @@
         "show_vendor": false,
         "show_rating": false,
         "show_swatches": false,
-        "enable_quick_add": false,
+        "enable_quick_add": true,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 4,
@@ -402,7 +402,7 @@
         "section_content_f4mEeq": {
           "type": "section_content",
           "settings": {
-            "text_content": "<h4><em>Brides, Bridesmaids, and Guests<\/em><\/h4><p>Dance the night away with essentials designed for ultimate comfort and a flawless fit. Enjoy every moment of the celebration without any distractions.<\/p>"
+            "text_content": "<h4><em>Brides, Bridesmaids, and Guests<\/em><\/h4><ul><li>Saalt Disc: <\/li><li><strong>Seamless Saalt Wear<\/strong>: stretchy, move-with-you fabric that keeps you dry from sweat and leaks.<\/li><\/ul>"
           }
         }
       },
