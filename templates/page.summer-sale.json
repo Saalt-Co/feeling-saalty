@@ -176,6 +176,10 @@
         "section_title_fVzKCz",
         "section_content_GzKKk4"
       ],
+      "custom_css": [
+        ".section-title {margin-bottom: 10px;}",
+        ".section-content {margin-top: 0;}"
+      ],
       "settings": {
         "section_id": "in-the-wild",
         "theme_color_background": "theme-color-bg-0",
@@ -253,6 +257,10 @@
       "block_order": [
         "section_title_rjabym",
         "section_content_Tfkimq"
+      ],
+      "custom_css": [
+        ".section-title {margin-bottom: 10px;}",
+        ".section-content {margin-top: 0;}"
       ],
       "settings": {
         "section_id": "beach-day",
@@ -332,6 +340,10 @@
         "section_title_RtG3Xh",
         "section_content_ehq6YU"
       ],
+      "custom_css": [
+        ".section-title {margin-bottom: 10px;}",
+        ".section-content {margin-top: 0;}"
+      ],
       "settings": {
         "section_id": "road-trip",
         "theme_color_background": "theme-color-bg-0",
@@ -410,6 +422,10 @@
         "section_title_RRPnem",
         "section_content_f4mEeq"
       ],
+      "custom_css": [
+        ".section-title {margin-bottom: 10px;}",
+        ".section-content {margin-top: 0;}"
+      ],
       "settings": {
         "section_id": "wedding-season",
         "theme_color_background": "theme-color-bg-5",
@@ -487,6 +503,10 @@
       "block_order": [
         "section_title_tTJNEr",
         "section_content_aMfVtP"
+      ],
+      "custom_css": [
+        ".section-title {margin-bottom: 10px;}",
+        ".section-content {margin-top: 0;}"
       ],
       "settings": {
         "section_id": "staycation-vibes",
