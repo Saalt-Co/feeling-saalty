@@ -49,25 +49,24 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_mKnhtH": {
+          "type": "announcement",
+          "settings": {
+            "text": "15% Off With Code: PERIODFREEDOM",
+            "link": ""
+          }
+        },
         "announcement_nHDyte": {
           "type": "announcement",
           "settings": {
             "text": "Save up to 25% when you bundle Cups, Discs, or Underwear.",
             "link": "shopify:\/\/collections\/shop-all"
           }
-        },
-        "announcement_cHJNjJ": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "text": "$25 Off Orders Of $125+",
-            "link": "shopify:\/\/collections\/shop-all"
-          }
         }
       },
       "block_order": [
-        "announcement_nHDyte",
-        "announcement_cHJNjJ"
+        "announcement_mKnhtH",
+        "announcement_nHDyte"
       ],
       "settings": {
         "theme_color_background": "theme-color-bg-2",
