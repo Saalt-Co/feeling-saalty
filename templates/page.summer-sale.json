@@ -23,7 +23,7 @@
         "heading_HLgKnd": {
           "type": "heading",
           "settings": {
-            "heading": "Summer Essentials",
+            "heading": "Leak-free Summer Essentials",
             "heading_size": "h1"
           }
         },
@@ -224,7 +224,7 @@
         "theme_color_text_section_button_text": "theme_default",
         "theme_color_section_button_background_hover": "theme_default",
         "theme_color_text_section_button_text_hover": "theme_default",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
@@ -306,7 +306,7 @@
         "theme_color_text_section_button_text": "theme_default",
         "theme_color_section_button_background_hover": "theme_default",
         "theme_color_text_section_button_text_hover": "theme_default",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
@@ -388,7 +388,7 @@
         "theme_color_text_section_button_text": "theme_default",
         "theme_color_section_button_background_hover": "theme_default",
         "theme_color_text_section_button_text_hover": "theme_default",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
@@ -470,7 +470,7 @@
         "theme_color_text_section_button_text": "theme_default",
         "theme_color_section_button_background_hover": "theme_default",
         "theme_color_text_section_button_text_hover": "theme_default",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
@@ -552,7 +552,7 @@
         "theme_color_text_section_button_text": "theme_default",
         "theme_color_section_button_background_hover": "theme_default",
         "theme_color_text_section_button_text_hover": "theme_default",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
