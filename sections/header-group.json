@@ -51,6 +51,7 @@
       "blocks": {
         "announcement_mKnhtH": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "15% Off With Code: PERIODFREEDOM",
             "link": "shopify:\/\/collections\/shop-all"
