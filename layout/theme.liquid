@@ -480,5 +480,14 @@ setTimeout(function() {
 });
 
   </script>
+
+    <div
+        id="swell-customer-identification"
+        data-authenticated="true"
+        data-email="{{ customer.email }}"
+        data-id="{{ customer.id }}"
+        data-tags="{{ customer.tags | json }}"
+        style="display:none;"
+       ></div>
 </body>
 </html>
