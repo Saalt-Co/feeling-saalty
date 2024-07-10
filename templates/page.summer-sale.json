@@ -113,6 +113,9 @@
         "nav_bar_link_jTYKeJ",
         "nav_bar_link_hwMMX9"
       ],
+      "custom_css": [
+        ".modular-nav-bar {position: -webkit-sticky; \/* For Safari *\/ position: sticky; top: 50px; z-index: 1000; \/* Ensure it stays on top of other elements *\/}"
+      ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-5",
