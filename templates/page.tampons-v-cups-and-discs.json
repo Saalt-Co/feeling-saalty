@@ -24,11 +24,12 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "Meet the Saalt<br> Period Disc, at your cervix."
+            "title": "Worried about toxins in Tampons?"
           }
         },
         "template--15078825525329__fd4445e0-3160-476f-9e6f-f9f22e50a1dc-section_content-1": {
           "type": "section_content",
+          "disabled": true,
           "settings": {
             "text_content": "<p>The Saalt Disc is a soft, reusable silicone disc that collects your flow without relying on suction to stay in place. High capacity, sustainable, simple to use, and you can wear it during sex.<\/p>"
           }
@@ -38,25 +39,28 @@
         "template--15078825525329__fd4445e0-3160-476f-9e6f-f9f22e50a1dc-section_title-1",
         "template--15078825525329__fd4445e0-3160-476f-9e6f-f9f22e50a1dc-section_content-1"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Learn-Saalt-Disc-Header-Mobile.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Learn-Saalt-Disc-Header-Desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Tampon-v-Cup-mobile_v2.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Tampon-v-Cup_desktop_v2.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
         "max_media_width": "60%",
         "title_font_size": "small",
         "content_font_size": "small",
-        "mobile_text_position": "below",
+        "mobile_text_position": "overlay",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "flex-end",
-        "desktop_text_alignment": "left",
+        "desktop_text_position": "center",
+        "desktop_text_alignment": "center",
         "use_max_text_width": true,
-        "max_width": "40%",
+        "max_width": "80%",
         "padding_top": 0,
         "padding_bottom": 0
       }
