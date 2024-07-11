@@ -49,32 +49,31 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_mKnhtH": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "text": "15% Off With Code: LEAKFREESUMMER",
-            "link": "shopify:\/\/collections\/shop-all"
-          }
-        },
         "announcement_nHDyte": {
           "type": "announcement",
           "settings": {
             "text": "Save up to 25% when you bundle Cups, Discs, or Underwear.",
             "link": "shopify:\/\/collections\/shop-all"
           }
+        },
+        "announcement_mKnhtH": {
+          "type": "announcement",
+          "settings": {
+            "text": "15% Off With Code: LEAKFREESUMMER",
+            "link": "shopify:\/\/collections\/shop-all"
+          }
         }
       },
       "block_order": [
-        "announcement_mKnhtH",
-        "announcement_nHDyte"
+        "announcement_nHDyte",
+        "announcement_mKnhtH"
       ],
       "settings": {
         "theme_color_background": "theme-color-bg-2",
         "theme_color_text": "theme-color-text-0",
         "show_line_separator": true,
-        "auto_rotate": false,
-        "change_slides_speed": 5
+        "auto_rotate": true,
+        "change_slides_speed": 7
       }
     },
     "header": {
