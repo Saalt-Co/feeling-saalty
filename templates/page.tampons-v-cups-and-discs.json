@@ -99,24 +99,13 @@
             "nav_bar_element_selector": "#cup-or-disc",
             "nav_bar_link_dest": "#how to wash"
           }
-        },
-        "97c874e3-3dcf-4a4b-808e-cb386cef62e8": {
-          "type": "nav_bar_link",
-          "disabled": true,
-          "settings": {
-            "nav_bar_link_text": "How to clean",
-            "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "#how-to-clean",
-            "nav_bar_link_dest": "#how to wash"
-          }
         }
       },
       "block_order": [
         "template--15078825525329__c3c67c48-069b-41aa-83c9-2b9ee67d9d60-nav_bar_link-1",
         "4527afb6-04da-4f97-a477-496cd83f6322",
         "bd2e6f19-eb06-4cd9-a36b-c83a7d840938",
-        "203f953b-dc7d-482f-9e5d-c6bb8a366b86",
-        "97c874e3-3dcf-4a4b-808e-cb386cef62e8"
+        "203f953b-dc7d-482f-9e5d-c6bb8a366b86"
       ],
       "settings": {
         "section_id": "",
@@ -251,92 +240,6 @@
         "desktop_text_alignment": "left",
         "use_max_text_width": true,
         "max_width": "80%",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "27932570-f6dd-49ef-a41d-a62c5a6e210f": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "c1b44b28-e8c0-406e-b736-e8805091a928": {
-          "type": "section_icon_group",
-          "settings": {
-            "mobile_icons_display": "row",
-            "mobile_icon_group_horizontal_alignment": "center",
-            "mobile_icon_group_vertical_alignment": "center",
-            "mobile_icon_grid_columns": 2,
-            "mobile_icon_group_gap": "3.5rem",
-            "mobile_icon_text_size": "1.5rem",
-            "mobile_icon_horizontal_alignment": "center",
-            "mobile_icon_vertical_alignment": "center",
-            "mobile_icon_min_width": "70px",
-            "mobile_icon_wrapper_max_width": "100px",
-            "mobile_icon_max_width": "100%",
-            "mobile_icon_height": "70px",
-            "use_max_icon_group_width": false,
-            "icon_group_max_width": "600px",
-            "desktop_icons_display": "row",
-            "desktop_icon_group_horizontal_alignment": "center",
-            "desktop_icon_group_vertical_alignment": "center",
-            "desktop_icon_grid_columns": 2,
-            "desktop_icon_group_gap": "3.5rem",
-            "desktop_icon_text_size": "1.5rem",
-            "desktop_icon_horizontal_alignment": "center",
-            "desktop_icon_vertical_alignment": "center",
-            "desktop_icon_min_width": "70px",
-            "desktop_icon_wrapper_max_width": "70px",
-            "desktop_icon_max_width": "100%",
-            "desktop_icon_height": "70px"
-          }
-        },
-        "509bce37-e5ee-4185-86eb-b2a6cf78aa5d": {
-          "type": "section_icon_with_text",
-          "settings": {
-            "icon_svg": "<svg width=\"96\" height=\"55\" viewbox=\"0 0 96 96\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M95.0966 6.4007L94.9067 6.44663C94.6367 8.68379 92.8743 11.5699 86.2784 13.1463C78.7613 14.9449 70.8645 12.5329 65.9821 9.00974C65.273 8.4986 64.5535 7.97264 63.8132 7.46447C63.429 7.19778 63.0462 6.92666 62.6605 6.65553C56.9815 2.64642 50.3056 -0.291522 43.0362 0.301104H42.9932C42.9695 0.301104 42.9443 0.301104 42.922 0.309993C38.1836 0.71446 34.7492 2.16047 32.0373 4.08798C29.584 5.67466 27.4611 7.72024 25.7856 10.112C22.6821 14.5849 21.559 19.7422 22.6257 24.6447C22.6687 24.8432 22.737 25.0329 22.7874 25.2373C21.5746 25.1828 20.3595 25.2065 19.1498 25.3084C12.1178 25.8922 7.01441 30.368 3.90343 35.1949C1.38761 39.1063 0.326027 43.7753 0.903711 48.3882L1.0936 48.3438C1.36806 46.1051 3.12902 43.2205 9.72632 41.6427C17.2434 39.8455 25.1403 42.256 30.0226 45.7792C30.7318 46.2918 31.4513 46.8163 32.1916 47.3245C32.5758 47.5911 32.9585 47.8623 33.3443 48.1334C39.0218 52.141 45.6932 55.079 52.9626 54.4863H53.0071L53.0783 54.4775C57.8153 54.0715 61.2496 52.627 63.963 50.6995C66.4167 49.112 68.5396 47.0654 70.2147 44.6725C73.3182 40.1996 74.4413 35.0423 73.3746 30.1413C73.3316 29.9413 73.2633 29.7516 73.2129 29.5487C74.4257 29.603 75.6407 29.5797 76.8505 29.479C83.8825 28.8864 88.9859 24.418 92.0969 19.5911C94.612 15.6805 95.6736 11.0126 95.0966 6.4007V6.4007ZM72.753 30.3013C72.8613 30.8021 72.9355 31.3073 72.9963 31.814C73.7381 39.0188 67.8039 42.9746 62.5003 43.4724C55.1894 44.1598 49.7077 39.3062 42.9175 34.3919C42.4117 34.0274 41.8895 33.6511 41.345 33.257C35.1972 28.6834 30.0701 25.7307 23.4669 25.2669C23.3957 25.0047 23.3081 24.7484 23.2488 24.4787C23.1405 23.978 23.0663 23.4728 23.0055 22.9661C22.2103 15.4101 28.1979 11.8054 33.5015 11.3076C40.8109 10.6261 46.3 15.4857 53.0842 20.3926C53.5901 20.7585 54.1123 21.1334 54.6568 21.5275C60.8046 26.1011 65.9317 29.0538 72.5349 29.5175C72.6061 29.7813 72.6937 30.0361 72.753 30.3013Z\"><\/path>\n<\/svg>",
-            "icon_text": "",
-            "mobile_icon_text_position": "below",
-            "desktop_icon_text_position": "below",
-            "theme_color_icon_color": "theme-color-text-4",
-            "theme_color_icon_text_color": "match_text"
-          }
-        },
-        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "3",
-            "title": "Saalt Bliss Guarantee"
-          }
-        },
-        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>If you're not happy with your Saalt product, <a href=\"\/pages\/replacements\" title=\"\/pages\/replacements\"><span style=\"text-decoration:underline\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/span><\/a>. Why? We know that learning to use reusables can take time, but we’re here to help and cheer you to Saalt bliss. Your Saalt(isfaction) guaranteed.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "c1b44b28-e8c0-406e-b736-e8805091a928",
-        "509bce37-e5ee-4185-86eb-b2a6cf78aa5d",
-        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_title-1",
-        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_content-1"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "none",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "600px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": true,
-        "max_width": "600px",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -588,37 +491,24 @@
         "padding_bottom": 36
       }
     },
-    "61266f32-54d6-459e-a625-fb59fc4b6f40": {
-      "type": "saalt-media-with-text",
-      "settings": {
-        "section_id": "how to clean",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "code",
-        "custom_code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/xEli4yiKgVM?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
-        "use_max_media_width": true,
-        "max_media_width": "900px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "above",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "above",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "7b50f505-ae19-4a09-8e7d-e62d26122e64": {
       "type": "multicolumn",
       "blocks": {
+        "column_VPNYE3": {
+          "type": "column",
+          "settings": {
+            "title": "Alley",
+            "rating": 5,
+            "text": "<p>I just started yesterday and my mind is blown. So comfortable, easy to use, and it doesn’t interfere with my active lifestyle whatsoever. I’m so bummed I didn’t give it a chance sooner.<strong> This is truly what period freedom feels like!<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-1": {
           "type": "column",
           "settings": {
             "title": "Sarah B.",
-            "rating": 0,
+            "rating": 5,
             "text": "<p>I've used a reusable menstrual disc before, but it wasn't quite right. It didn't fit perfectly, so there was some leakage, and it was difficult to remove. <strong>The Saalt Disc fits my body perfectly—no leaks! And the notch makes removal so much easier. <\/strong>I'm really happy with it!<\/p>",
             "link_label": "",
             "link": ""
@@ -628,30 +518,42 @@
           "type": "column",
           "settings": {
             "title": "Jordan E.",
-            "rating": 0,
+            "rating": 5,
             "text": "<p>I've tried many cups and discs but <strong>this is the best disc I've used<\/strong> so far. I love the grip part because it makes it easy to remove it! It also doesn't collect the blood smell and the Saalt Wash is a great addition. I've used it for two cycles now and so far it's held up very well to boiling temps. I do not regret making this purchase at all. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_i7n8ge": {
+          "type": "column",
+          "settings": {
+            "title": "Alex H.",
+            "rating": 5,
+            "text": "<p>This was my first time buying and using a period cup. There was definitely a learning curve, and some stress getting it out the first few times, but once I got the hang of it <strong>I am obsessed. Love that you can wear it all day long and so much more sustainable than tampons. <\/strong>So glad I decided to try! Thanks Saalt.<\/p>",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
+        "column_VPNYE3",
         "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-1",
-        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-3"
+        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-3",
+        "column_i7n8ge"
       ],
       "settings": {
         "title": "9\/10 People Never Go Back",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 2,
+        "columns_desktop": 4,
         "column_alignment": "left",
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "background_style": "primary",
         "theme_color_column_secondary_bg": "--palette-color-0",
         "column_secondary_bg_opacity": 100,
-        "review_star_color_override": "theme_default",
+        "review_star_color_override": "--palette-color-4",
         "review_star_opacity_override": 100,
         "button_text": "",
         "button_url": "",
@@ -664,6 +566,92 @@
         "swipe_on_mobile": false,
         "padding_top": 64,
         "padding_bottom": 36
+      }
+    },
+    "27932570-f6dd-49ef-a41d-a62c5a6e210f": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "c1b44b28-e8c0-406e-b736-e8805091a928": {
+          "type": "section_icon_group",
+          "settings": {
+            "mobile_icons_display": "row",
+            "mobile_icon_group_horizontal_alignment": "center",
+            "mobile_icon_group_vertical_alignment": "center",
+            "mobile_icon_grid_columns": 2,
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_text_size": "1.5rem",
+            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_vertical_alignment": "center",
+            "mobile_icon_min_width": "70px",
+            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "70px",
+            "use_max_icon_group_width": false,
+            "icon_group_max_width": "600px",
+            "desktop_icons_display": "row",
+            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_vertical_alignment": "center",
+            "desktop_icon_grid_columns": 2,
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_horizontal_alignment": "center",
+            "desktop_icon_vertical_alignment": "center",
+            "desktop_icon_min_width": "70px",
+            "desktop_icon_wrapper_max_width": "70px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "70px"
+          }
+        },
+        "509bce37-e5ee-4185-86eb-b2a6cf78aa5d": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"96\" height=\"55\" viewbox=\"0 0 96 96\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M95.0966 6.4007L94.9067 6.44663C94.6367 8.68379 92.8743 11.5699 86.2784 13.1463C78.7613 14.9449 70.8645 12.5329 65.9821 9.00974C65.273 8.4986 64.5535 7.97264 63.8132 7.46447C63.429 7.19778 63.0462 6.92666 62.6605 6.65553C56.9815 2.64642 50.3056 -0.291522 43.0362 0.301104H42.9932C42.9695 0.301104 42.9443 0.301104 42.922 0.309993C38.1836 0.71446 34.7492 2.16047 32.0373 4.08798C29.584 5.67466 27.4611 7.72024 25.7856 10.112C22.6821 14.5849 21.559 19.7422 22.6257 24.6447C22.6687 24.8432 22.737 25.0329 22.7874 25.2373C21.5746 25.1828 20.3595 25.2065 19.1498 25.3084C12.1178 25.8922 7.01441 30.368 3.90343 35.1949C1.38761 39.1063 0.326027 43.7753 0.903711 48.3882L1.0936 48.3438C1.36806 46.1051 3.12902 43.2205 9.72632 41.6427C17.2434 39.8455 25.1403 42.256 30.0226 45.7792C30.7318 46.2918 31.4513 46.8163 32.1916 47.3245C32.5758 47.5911 32.9585 47.8623 33.3443 48.1334C39.0218 52.141 45.6932 55.079 52.9626 54.4863H53.0071L53.0783 54.4775C57.8153 54.0715 61.2496 52.627 63.963 50.6995C66.4167 49.112 68.5396 47.0654 70.2147 44.6725C73.3182 40.1996 74.4413 35.0423 73.3746 30.1413C73.3316 29.9413 73.2633 29.7516 73.2129 29.5487C74.4257 29.603 75.6407 29.5797 76.8505 29.479C83.8825 28.8864 88.9859 24.418 92.0969 19.5911C94.612 15.6805 95.6736 11.0126 95.0966 6.4007V6.4007ZM72.753 30.3013C72.8613 30.8021 72.9355 31.3073 72.9963 31.814C73.7381 39.0188 67.8039 42.9746 62.5003 43.4724C55.1894 44.1598 49.7077 39.3062 42.9175 34.3919C42.4117 34.0274 41.8895 33.6511 41.345 33.257C35.1972 28.6834 30.0701 25.7307 23.4669 25.2669C23.3957 25.0047 23.3081 24.7484 23.2488 24.4787C23.1405 23.978 23.0663 23.4728 23.0055 22.9661C22.2103 15.4101 28.1979 11.8054 33.5015 11.3076C40.8109 10.6261 46.3 15.4857 53.0842 20.3926C53.5901 20.7585 54.1123 21.1334 54.6568 21.5275C60.8046 26.1011 65.9317 29.0538 72.5349 29.5175C72.6061 29.7813 72.6937 30.0361 72.753 30.3013Z\"><\/path>\n<\/svg>",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "theme-color-text-4",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "3",
+            "title": "Saalt Bliss Guarantee"
+          }
+        },
+        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>If you're not happy with your Saalt product, <a href=\"\/pages\/replacements\" title=\"\/pages\/replacements\"><span style=\"text-decoration:underline\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/span><\/a>. Why? We know that learning to use reusables can take time, but we’re here to help and cheer you to Saalt bliss. Your Saalt(isfaction) guaranteed.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c1b44b28-e8c0-406e-b736-e8805091a928",
+        "509bce37-e5ee-4185-86eb-b2a6cf78aa5d",
+        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_title-1",
+        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_content-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "600px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "9f70e72a-5b16-482b-84b3-df444f15d0bd": {
@@ -1083,14 +1071,13 @@
     "205af4ea-20c2-45bc-98f3-082272cb19eb",
     "11b4eb9a-18a9-488e-bfd7-23c248641695",
     "1486f5ff-6753-4ad7-b1a9-6346e2f7f3b8",
-    "27932570-f6dd-49ef-a41d-a62c5a6e210f",
     "959d5c15-d6c3-425c-a8d3-5e2f73ff8944",
     "c8d699c2-ccef-4799-b100-f96128516185",
     "f91185b0-f65e-4125-81ae-3fa39f1e6d62",
     "bec6a799-d547-4f72-a599-8edc58d4bcc3",
     "4979ad3b-9b05-4c86-8a59-644c6f717625",
-    "61266f32-54d6-459e-a625-fb59fc4b6f40",
     "7b50f505-ae19-4a09-8e7d-e62d26122e64",
+    "27932570-f6dd-49ef-a41d-a62c5a6e210f",
     "9f70e72a-5b16-482b-84b3-df444f15d0bd",
     "2a1f9c4e-eb99-4278-885c-23052a0fe53e",
     "7dc8f187-d995-436e-9a49-5e215d0d4aa1",
