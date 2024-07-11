@@ -65,6 +65,49 @@
         "padding_bottom": 0
       }
     },
+    "saalt_media_with_text_V79CTd": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "section_title_6qEB3V": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "5 reasons why 9\/10 people who make the switch to menstrual cups and discs never go back:"
+          }
+        },
+        "section_content_WLNmkq": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<ul><li><h3>Hold 3-6x more than tampons.<\/h3><\/li><li><h3>Are made of 100% medical-grade silicone that is biocompatible, hypoallergenic, and odor free.<\/h3><\/li><li><h3>Wear up to 12 hours to hike, bike, swim, or fly to Bora Bora.<\/h3><\/li><li><h3>Lasts up to 10 years. Psst...that's as long as your passport!<\/h3><\/li><li><h3>Won't disrupt your natural vaginal pH levels.<\/h3><\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_6qEB3V",
+        "section_content_WLNmkq"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "image": "shopify:\/\/shop_images\/SC-Duo-Alex-0002.jpg",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "left",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "75%",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "c3c67c48-069b-41aa-83c9-2b9ee67d9d60": {
       "type": "saalt-modular-nav-bar",
       "blocks": {
@@ -111,98 +154,13 @@
         "bd2e6f19-eb06-4cd9-a36b-c83a7d840938",
         "203f953b-dc7d-482f-9e5d-c6bb8a366b86"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-4",
         "theme_color_text": "theme_default",
         "mobile_nav_link_gap": "3rem",
         "desktop_nav_link_gap": "7rem"
-      }
-    },
-    "205af4ea-20c2-45bc-98f3-082272cb19eb": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "2",
-            "title": "Here’s how it works."
-          }
-        },
-        "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>The Saalt Disc is inserted like a tampon, but collects rather than absorbs your flow. The disc rests around the cervix for leak-free comfort, all day or night. Flexible, flat fit allows for mess-free intimacy.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_title-1",
-        "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_content-1"
-      ],
-      "settings": {
-        "section_id": "how it works",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Disc_learn_how_it_works_12-13-23.jpg",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "above",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "11b4eb9a-18a9-488e-bfd7-23c248641695": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--15078825525329__11b4eb9a-18a9-488e-bfd7-23c248641695-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "2",
-            "title": "And here’s how<br>you use it."
-          }
-        },
-        "template--15078825525329__11b4eb9a-18a9-488e-bfd7-23c248641695-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p><strong>1: Fold<br\/><\/strong>With clean hands, pinch your disc into a figure 8.<\/p><p><strong>2: Insert<br\/><\/strong>Insert the disc fully and tuck behind your pubic bone.<\/p><p><strong>3: Remove<br\/><\/strong>After up to 12 hours of wearing your disc, simply remove it by hooking your finger in the custom finger hold and gently pulling out your disc. Then wash your disc, insert, and get back to living your best life.<br\/><\/p><p><a href=\"\/pages\/disc-instructions\" title=\"\/pages\/disc-instructions\"><strong>See our full menstrual disc instructions here.<\/strong><\/a><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15078825525329__11b4eb9a-18a9-488e-bfd7-23c248641695-section_title-1",
-        "template--15078825525329__11b4eb9a-18a9-488e-bfd7-23c248641695-section_content-1"
-      ],
-      "settings": {
-        "section_id": "how to use it",
-        "theme_color_background": "theme-color-bg-4",
-        "theme_color_text": "theme_default",
-        "media_type": "video",
-        "video": "shopify:\/\/files\/videos\/Vertical - How to Insert a Disc - Learn discs 12-13-23.mp4",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 30,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "above",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "left",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": true,
-        "max_width": "80%",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "1486f5ff-6753-4ad7-b1a9-6346e2f7f3b8": {
@@ -212,13 +170,13 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "2",
-            "title": "Not all menstrual discs are created equal."
+            "title": "Not all menstrual cups and discs are created equal."
           }
         },
         "f7a5cbdf-a0cc-49a8-9c40-00242a8fee72": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>We designed the Saalt Disc to be the easiest to use and most comfortable disc on the market.  With a smooth flexible rim, custom removal notch, and high-capacity, ultra comfortable basin, the Saalt Disc feels like nothing, but fills like whoa. <\/p><p>Grab a match. It’s time to burn your last tampon.<\/p>"
+            "text_content": "<p>Saalt menstrual cups, discs, and raw materials are sourced exclusively in the United States and are FDA-compliant and tested for safety. <\/p><p>For a medical device used in such a sensitive area, we wanted to have ultimate control and visibility of our supply chain. The result is a remarkably safe and simple solution for period care.<\/p><p>Grab a match. It’s time to burn your last tampon.<\/p>"
           }
         }
       },
@@ -248,6 +206,118 @@
         "padding_bottom": 0
       }
     },
+    "featured_collection_cX9MtK": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "cup-disc-fan-favorites",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "enable_desktop_slider": false,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "show_view_all": false,
+        "view_all_style": "button",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_swatches": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "7b50f505-ae19-4a09-8e7d-e62d26122e64": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_VPNYE3": {
+          "type": "column",
+          "settings": {
+            "title": "Alley",
+            "rating": 5,
+            "text": "<p>I just started yesterday and my mind is blown. So comfortable, easy to use, and it doesn’t interfere with my active lifestyle whatsoever. I’m so bummed I didn’t give it a chance sooner.<strong> This is truly what period freedom feels like!<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Sarah B.",
+            "rating": 5,
+            "text": "<p>I've used a reusable menstrual disc before, but it wasn't quite right. It didn't fit perfectly, so there was some leakage, and it was difficult to remove. <strong>The Saalt Disc fits my body perfectly—no leaks! And the notch makes removal so much easier. <\/strong>I'm really happy with it!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Jordan E.",
+            "rating": 5,
+            "text": "<p>I've tried many cups and discs but <strong>this is the best disc I've used<\/strong> so far. I love the grip part because it makes it easy to remove it! It also doesn't collect the blood smell and the Saalt Wash is a great addition. I've used it for two cycles now and so far it's held up very well to boiling temps. I do not regret making this purchase at all. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_i7n8ge": {
+          "type": "column",
+          "settings": {
+            "title": "Alex H.",
+            "rating": 5,
+            "text": "<p>This was my first time buying and using a period cup. There was definitely a learning curve, and some stress getting it out the first few times, but once I got the hang of it <strong>I am obsessed. Love that you can wear it all day long and so much more sustainable than tampons. <\/strong>So glad I decided to try! Thanks Saalt.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_VPNYE3",
+        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-1",
+        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-3",
+        "column_i7n8ge"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "--palette-color-0",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "--palette-color-4",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 64,
+        "padding_bottom": 36
+      }
+    },
     "959d5c15-d6c3-425c-a8d3-5e2f73ff8944": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -270,6 +340,7 @@
         "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_title-1",
         "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_content-1"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "absorbency guide",
         "theme_color_background": "theme-color-bg-6",
@@ -492,83 +563,6 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "7b50f505-ae19-4a09-8e7d-e62d26122e64": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_VPNYE3": {
-          "type": "column",
-          "settings": {
-            "title": "Alley",
-            "rating": 5,
-            "text": "<p>I just started yesterday and my mind is blown. So comfortable, easy to use, and it doesn’t interfere with my active lifestyle whatsoever. I’m so bummed I didn’t give it a chance sooner.<strong> This is truly what period freedom feels like!<\/strong><\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-1": {
-          "type": "column",
-          "settings": {
-            "title": "Sarah B.",
-            "rating": 5,
-            "text": "<p>I've used a reusable menstrual disc before, but it wasn't quite right. It didn't fit perfectly, so there was some leakage, and it was difficult to remove. <strong>The Saalt Disc fits my body perfectly—no leaks! And the notch makes removal so much easier. <\/strong>I'm really happy with it!<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-3": {
-          "type": "column",
-          "settings": {
-            "title": "Jordan E.",
-            "rating": 5,
-            "text": "<p>I've tried many cups and discs but <strong>this is the best disc I've used<\/strong> so far. I love the grip part because it makes it easy to remove it! It also doesn't collect the blood smell and the Saalt Wash is a great addition. I've used it for two cycles now and so far it's held up very well to boiling temps. I do not regret making this purchase at all. <\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_i7n8ge": {
-          "type": "column",
-          "settings": {
-            "title": "Alex H.",
-            "rating": 5,
-            "text": "<p>This was my first time buying and using a period cup. There was definitely a learning curve, and some stress getting it out the first few times, but once I got the hang of it <strong>I am obsessed. Love that you can wear it all day long and so much more sustainable than tampons. <\/strong>So glad I decided to try! Thanks Saalt.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_VPNYE3",
-        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-1",
-        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-3",
-        "column_i7n8ge"
-      ],
-      "settings": {
-        "title": "9\/10 People Never Go Back",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "theme_color_background": "theme-color-bg-5",
-        "theme_color_text": "theme_default",
-        "background_style": "primary",
-        "theme_color_column_secondary_bg": "--palette-color-0",
-        "column_secondary_bg_opacity": 100,
-        "review_star_color_override": "--palette-color-4",
-        "review_star_opacity_override": 100,
-        "button_text": "",
-        "button_url": "",
-        "button_type": "primary",
-        "theme_color_section_button_background": "theme_default",
-        "theme_color_text_section_button_text": "theme_default",
-        "theme_color_section_button_background_hover": "theme_default",
-        "theme_color_text_section_button_text_hover": "theme_default",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 64,
         "padding_bottom": 36
       }
     },
@@ -1071,16 +1065,16 @@
   "order": [
     "main",
     "fd4445e0-3160-476f-9e6f-f9f22e50a1dc",
+    "saalt_media_with_text_V79CTd",
     "c3c67c48-069b-41aa-83c9-2b9ee67d9d60",
-    "205af4ea-20c2-45bc-98f3-082272cb19eb",
-    "11b4eb9a-18a9-488e-bfd7-23c248641695",
     "1486f5ff-6753-4ad7-b1a9-6346e2f7f3b8",
+    "featured_collection_cX9MtK",
+    "7b50f505-ae19-4a09-8e7d-e62d26122e64",
     "959d5c15-d6c3-425c-a8d3-5e2f73ff8944",
     "c8d699c2-ccef-4799-b100-f96128516185",
     "f91185b0-f65e-4125-81ae-3fa39f1e6d62",
     "bec6a799-d547-4f72-a599-8edc58d4bcc3",
     "4979ad3b-9b05-4c86-8a59-644c6f717625",
-    "7b50f505-ae19-4a09-8e7d-e62d26122e64",
     "27932570-f6dd-49ef-a41d-a62c5a6e210f",
     "9f70e72a-5b16-482b-84b3-df444f15d0bd",
     "2a1f9c4e-eb99-4278-885c-23052a0fe53e",
