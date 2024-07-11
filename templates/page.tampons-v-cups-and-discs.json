@@ -47,15 +47,15 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Tampon-v-Cup-mobile_v2.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Tampon-v-Cup_desktop_v2.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/tampons2-unsplash.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/tampons2-unsplash-desktop.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
         "max_media_width": "60%",
         "title_font_size": "small",
         "content_font_size": "small",
-        "mobile_text_position": "overlay",
+        "mobile_text_position": "below",
         "mobile_text_alignment": "center",
         "desktop_text_position": "center",
         "desktop_text_alignment": "center",
@@ -70,15 +70,16 @@
       "blocks": {
         "section_title_6qEB3V": {
           "type": "section_title",
+          "disabled": true,
           "settings": {
-            "heading_tag": "2",
+            "heading_tag": "3",
             "title": "5 reasons why 9\/10 people who make the switch to menstrual cups and discs never go back:"
           }
         },
         "section_content_WLNmkq": {
           "type": "section_content",
           "settings": {
-            "text_content": "<ul><li><h3>Hold 3-6x more than tampons.<\/h3><\/li><li><h3>Are made of 100% medical-grade silicone that is biocompatible, hypoallergenic, and odor free.<\/h3><\/li><li><h3>Wear up to 12 hours to hike, bike, swim, or fly to Bora Bora.<\/h3><\/li><li><h3>Lasts up to 10 years. Psst...that's as long as your passport!<\/h3><\/li><li><h3>Won't disrupt your natural vaginal pH levels.<\/h3><\/li><\/ul>"
+            "text_content": "<h3>5 reasons why 9\/10 people who make the switch to menstrual cups and discs never go back:<\/h3><ul><li>Hold 3-6x more than tampons.<\/li><li>Are made of 100% medical-grade silicone that is biocompatible, hypoallergenic, and odor free.<\/li><li>Wear up to 12 hours to hike, bike, swim, or fly to Bora Bora.<\/li><li>Lasts up to 10 years. Psst...that's as long as your passport!<\/li><li>Won't disrupt your natural vaginal pH levels.<\/li><\/ul>"
           }
         }
       },
@@ -90,7 +91,7 @@
         "section_id": "",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
-        "media_type": "none",
+        "media_type": "image",
         "image": "shopify:\/\/shop_images\/SC-Duo-Alex-0002.jpg",
         "custom_code": "",
         "use_max_media_width": false,
@@ -838,7 +839,7 @@
         "template--15078825525329__6d90874c-c092-46f8-89ee-85bf53a9989d-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>As a certified B Corp, we commit 2% of our revenue to donate period care to regions with the most need, and help fund initiatives in menstrual health, education, and sustainability.<\/p>"
+            "text_content": "<p>As a certified B Corp, we commit a portion of our revenue to donate period care to regions with the most need, and help fund initiatives in menstrual health, education, and sustainability.<\/p>"
           }
         },
         "1c7ae3d2-c727-46c4-b824-d5bf25842f3e": {
@@ -989,6 +990,7 @@
         "0120b5ec-4253-43e3-84d3-137b2f7fbaf7",
         "cfd9cf13-b98f-4894-8018-2e3f00aa7082"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-5",
