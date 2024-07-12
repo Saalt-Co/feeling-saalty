@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -1065,11 +1074,12 @@
         "template--15078825525329__ee2c8556-75bf-49e7-bfbb-644878ffb5af-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>We don’t hush period talk. \u2028Even in a library. Reach out to our Saalt Coaches anytime to find your perfect cup size and fit.\u2028<\/p><p>TMI always welcome.<\/p>"
+            "text_content": "<p>We don’t hush period talk. \u2028Even in a library. Reach out to our Saalt Coaches anytime to find your perfect cup size and fit.\u2028<\/p><p>TMI always welcome.<\/p><p><\/p><p><a href=\"\/pages\/contact-us\" title=\"Contact Us\">CONTACT US<\/a><\/p>"
           }
         },
         "0f95b15d-936c-4ea7-81c0-9ce53aceb9f9": {
           "type": "saalt_contact_links",
+          "disabled": true,
           "settings": {
             "theme_color_contacts_icon_color": "match_text"
           }
