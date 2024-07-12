@@ -625,12 +625,22 @@
             "row_content": "",
             "page": ""
           }
+        },
+        "collapsible_row_JiGBmT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do menstrual discs work?",
+            "icon": "none",
+            "row_content": "<p>A menstrual disc is worn internally like a tampon but collects—rather than absorbs—your menstrual flow. The Saalt Disc is a reusable menstrual disc made of soft silicone that is naturally odorless, biocompatible, and a healthy and sustainable alternative to pads and tampons. Because the Saalt Disc has a capacity 4–6 times that of a regular tampon, you can wear it for up to 12 hours before emptying. Yes, that means you may only have to change it twice a day and can sleep with it in. Unlike period cups, the disc does not require suction to stay in place. Rather, it is held in place by its rim in the vaginal fornix (aka the space around the cervix) so you can comfortably hike, swim, and even have sex with your disc inserted.*<\/p><p>* A <em>Saalt Disc will not prevent pregnancy or protect against sexually transmitted infections (STIs).<\/em><\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-1",
         "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-2",
-        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-3"
+        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-3",
+        "collapsible_row_JiGBmT"
       ],
       "settings": {
         "caption": "",
