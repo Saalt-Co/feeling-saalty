@@ -19,7 +19,7 @@
           "settings": {
             "desktop": true,
             "mobile": true,
-            "msg": "Buy One Get One 50% OFF! USE CODE: BOGO50",
+            "msg": "15% Off With Code: LEAKFREESUMMER",
             "ends": "Offer Ends on {month}\/{day}",
             "use-countdown-timer": "both",
             "start-month": 2,
@@ -27,8 +27,8 @@
             "start-year": 2024,
             "start-hour": 1,
             "start-mins": 1,
-            "end-month": 3,
-            "end-day": 5,
+            "end-month": 7,
+            "end-day": 15,
             "end-year": 2024,
             "end-hour": 23,
             "end-mins": 59
@@ -38,7 +38,6 @@
       "block_order": [
         "slt006_promo_jkEbkJ"
       ],
-      "disabled": true,
       "settings": {
         "slt006-url": "",
         "slt006-bg-color": "#f7d6c5",
