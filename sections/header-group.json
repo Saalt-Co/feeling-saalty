@@ -67,6 +67,7 @@
         "announcement_nHDyte",
         "announcement_mKnhtH"
       ],
+      "disabled": true,
       "settings": {
         "theme_color_background": "theme-color-bg-2",
         "theme_color_text": "theme-color-text-0",
