@@ -22,6 +22,7 @@
       "blocks": {
         "caption_k6CRRm": {
           "type": "caption",
+          "disabled": true,
           "settings": {
             "caption": "Take 15% off with code LEAKFREESUMMER",
             "text_style": "subtitle",
