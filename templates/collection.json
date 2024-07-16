@@ -102,7 +102,7 @@
       "settings": {
         "products_per_page": 24,
         "columns_desktop": 4,
-        "image_ratio": "portrait",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_price_range": true,
