@@ -38,6 +38,7 @@
       "block_order": [
         "slt006_promo_jkEbkJ"
       ],
+      "disabled": true,
       "settings": {
         "slt006-url": "",
         "slt006-bg-color": "#f7d6c5",
@@ -57,6 +58,7 @@
         },
         "announcement_mKnhtH": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "15% Off With Code: LEAKFREESUMMER",
             "link": "shopify:\/\/collections\/shop-all"
@@ -67,7 +69,6 @@
         "announcement_nHDyte",
         "announcement_mKnhtH"
       ],
-      "disabled": true,
       "settings": {
         "theme_color_background": "theme-color-bg-2",
         "theme_color_text": "theme-color-text-0",

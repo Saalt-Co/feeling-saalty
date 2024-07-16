@@ -129,6 +129,7 @@
         "section_buttons_group_anQEL4",
         "section_button_gHrdFj"
       ],
+      "disabled": true,
       "custom_css": [
         "h6 {font-weight: 500;}",
         "h3 {font-weight: 500 !important; font-size: 26px !important; line-height: 1 !important; font-style: italic;}",
