@@ -169,12 +169,6 @@
 
     ],
     "blocks": {
-      "2102808784413787648": {
-        "type": "shopify:\/\/apps\/krtbite\/blocks\/main-app-embed\/147a6f7f-6771-4f9b-8dc6-c14e6b24f32c",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "855628211100114053": {
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
@@ -241,6 +235,12 @@
       "9942305003020345738": {
         "type": "shopify:\/\/apps\/advanced-preorder-partial-pay\/blocks\/app-embed\/1e2e5cca-bfda-4196-a3b1-7faf2b23c326",
         "disabled": true,
+        "settings": {
+        }
+      },
+      "2102808784413787648": {
+        "type": "shopify:\/\/apps\/kb-back-in-stock\/blocks\/main-app-embed\/147a6f7f-6771-4f9b-8dc6-c14e6b24f32c",
+        "disabled": false,
         "settings": {
         }
       }
