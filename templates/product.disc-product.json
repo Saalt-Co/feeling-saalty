@@ -98,7 +98,7 @@
         "text_MTBJAh": {
           "type": "text",
           "settings": {
-            "text": "Bag color varies based on availability.",
+            "text": "<em>Bag may vary based on availability.<\/em>",
             "text_style": "body"
           }
         },
