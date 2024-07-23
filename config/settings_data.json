@@ -234,6 +234,12 @@
       },
       "16987187365865460165": {
         "type": "shopify:\/\/apps\/ez-preorder\/blocks\/pre-order\/27f5c03b-584b-4f19-8dc2-99bf52c8c09f",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "9942305003020345738": {
+        "type": "shopify:\/\/apps\/advanced-preorder-partial-pay\/blocks\/app-embed\/1e2e5cca-bfda-4196-a3b1-7faf2b23c326",
         "disabled": false,
         "settings": {
         }
