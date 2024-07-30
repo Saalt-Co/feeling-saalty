@@ -73,10 +73,17 @@
           "settings": {
           }
         },
+        "text_xEyRrj": {
+          "type": "text",
+          "settings": {
+            "text": "Preorder now, ships in September",
+            "text_style": "subtitle"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
         },
@@ -187,6 +194,7 @@
         "text_49f6xw",
         "variant_picker",
         "quantity_selector",
+        "text_xEyRrj",
         "buy_buttons",
         "8e16b700-b5d3-4d93-aa86-a2391fc38797",
         "description",
