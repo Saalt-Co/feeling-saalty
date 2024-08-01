@@ -304,13 +304,13 @@
             "mobile_icon_wrapper_max_width": "300px",
             "mobile_icon_max_width": "25%",
             "mobile_icon_height": "100px",
-            "use_max_icon_group_width": false,
+            "use_max_icon_group_width": true,
             "icon_group_max_width": "600px",
-            "desktop_icons_display": "grid",
+            "desktop_icons_display": "row",
             "desktop_icon_group_horizontal_alignment": "center",
             "desktop_icon_group_vertical_alignment": "center",
             "desktop_icon_grid_columns": 2,
-            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_group_gap": "2.5rem",
             "desktop_icon_text_size": "1.5rem",
             "desktop_icon_horizontal_alignment": "center",
             "desktop_icon_vertical_alignment": "center",
@@ -369,6 +369,9 @@
         "b74f7636-b15a-4869-8cb8-070e377d1732",
         "template--21571779264785__2fb027ce-8afd-492d-ab6a-1a544630c5df-section_buttons_group-1",
         "template--21571779264785__2fb027ce-8afd-492d-ab6a-1a544630c5df-section_button-1"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "section_id": "",
