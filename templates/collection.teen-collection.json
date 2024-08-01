@@ -630,9 +630,9 @@
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-0": {
           "type": "column",
           "settings": {
-            "title": "Mackenzie",
+            "title": "John",
             "rating": 5,
-            "text": "<p>This wonderful thing has already saved me so much time and money. I couldn't be happier!<\/p>",
+            "text": "<p>I bought these for my 13 year old daughter - she uses Saalt Wear almost exclusively now. <strong>Worry free...incredible product.<\/strong><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -649,10 +649,21 @@
         },
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Jillian M.",
             "rating": 5,
             "text": "<p>If you have not used a cup or a disc for period care, you are missing out on so much freedom! No more stock piles of supplies in your bathroom, purse, car. Insert and go! Done and done.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_PzhW3b": {
+          "type": "column",
+          "settings": {
+            "title": "Christy B.",
+            "rating": 5,
+            "text": "<p>I purchased these for my daughter who, up until now, used pads. I remember what a pain pads are so when I saw these I was intrigued. ... When my daughter called me and told me they just make her feel better as a person I was elated for her. I know how free I felt when I purchased my first cup (saalt obviously lol). <strong>It’s odd the amount of weight that comes off your shoulders when you find products like these. You don’t think, at any point, about how much stress you carry around over period management until it’s magically lifted.<\/strong> My daughter and myself highly recommend finding your perfect Saalt fit for you. If you're on the fence just do it. You will not regret it! My only regret is using tampons until I was 40! Never again!!! 🎉🎉🎉 <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -661,7 +672,8 @@
       "block_order": [
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-0",
         "8ad13ac4-10e5-4131-bf07-17d6ff34bba2",
-        "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2"
+        "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2",
+        "column_PzhW3b"
       ],
       "settings": {
         "title": "9\/10 People Never Go Back",
