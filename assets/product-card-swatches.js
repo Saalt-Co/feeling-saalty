@@ -39,12 +39,27 @@ class ProductCardSwatches extends HTMLElement {
     this.toggleSaleBadge(checkedRadio);
   }
 
-  checkSelected(e) {
-    let currentlySelected = e.target.closest('product-card-swatches').querySelector('input[type="radio"]:checked');
-    currentlySelected.checked = false;
-    e.target.previousSibling.checked = true;
-    return e.target.closest('product-card-swatches').querySelector('input[type="radio"]:checked');
-  }
+ checkSelected(e) {
+    // Find the closest product-card-swatches element
+    const swatchesElement = e.target.closest('product-card-swatches');
+    if (!swatchesElement) {
+        return null;
+    }
+
+    // Get the currently selected input
+    const currentlySelected = swatchesElement.querySelector('input[name="colorSwatch"]:checked');
+    if (currentlySelected) {
+        currentlySelected.checked = false;
+    }
+
+    // Check the previous sibling input if it exists and is an input element
+    if (e.target.previousSibling && e.target.previousSibling.tagName === 'INPUT') {
+        e.target.previousSibling.checked = true;
+    }
+
+    // Return the newly selected input
+    return swatchesElement.querySelector('input[name="colorSwatch"]:checked');
+}
 
   updateCardImage(checkedRadio) {
     const imgUrl = checkedRadio.dataset.imageUrl;
