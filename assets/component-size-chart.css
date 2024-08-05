@@ -128,37 +128,44 @@ size-chart .size-chart-content-containers .size-chart-content-container img {
   height: auto;
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear img {
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear img,
+size-chart .size-chart-content-containers .size-chart-content-container.teen-saalt-wear img {
   grid-area: waist-diagram;
   max-width: 200px;
   margin-left: auto;
 }
 
 @media screen and (min-width: 750px) {
-  size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear img {
+  size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear img,
+  size-chart .size-chart-content-containers .size-chart-content-container.teen-saalt-wear img {
     max-width: 360px;
   }
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper {
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper,
+size-chart .size-chart-content-containers .size-chart-content-container.teen-saalt-wear .fit-instructions-wrapper {
   grid-area: fit-instructions;
   display: flex;
   align-items: center;
 }
 
 @media screen and (min-width: 480px) and (max-width: 750px) {
-  size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper {
+  size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper,
+  size-chart .size-chart-content-containers .size-chart-content-container.teen-saalt-wear .fit-instructions-wrapper 
+  {
     max-width: 80%;
   }
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper ol {
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper ol,
+size-chart .size-chart-content-containers .size-chart-content-container.teen-saalt-wear .fit-instructions-wrapper ol {
   list-style: none;
   counter-reset: steps;
   padding-left: 3.25rem;
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper ol li {
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper ol li,
+size-chart .size-chart-content-containers .size-chart-content-container.teen-saalt-wear .fit-instructions-wrapper ol li {
   counter-increment: steps;
   text-indent: -2.75rem;
   margin-bottom: 1rem;
@@ -169,6 +176,12 @@ size-chart
   .size-chart-content-container.saalt-wear
   .fit-instructions-wrapper
   ol
+  li:last-of-type,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.teen-saalt-wear
+  .fit-instructions-wrapper
+  ol
   li:last-of-type {
   margin-bottom: unset;
 }
@@ -176,6 +189,12 @@ size-chart
 size-chart
   .size-chart-content-containers
   .size-chart-content-container.saalt-wear
+  .fit-instructions-wrapper
+  ol
+  li:before,
+size-chart
+  .size-chart-content-containers
+  .size-chart-content-container.teen-saalt-wear
   .fit-instructions-wrapper
   ol
   li:before {
@@ -196,16 +215,19 @@ size-chart
   position: relative;
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper {
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-instructions-wrapper,
+size-chart .size-chart-content-containers .size-chart-content-container.teeen-saalt-wear .fit-instructions-wrapper {
   grid-area: fit-instructions;
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-ranges {
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear .fit-ranges,
+size-chart .size-chart-content-containers .size-chart-content-container.teen-saalt-wear .fit-ranges {
   grid-area: fit-ranges;
   padding-bottom: calc(var(--grid-desktop-horizontal-spacing) * 2);
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear {
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear,
+size-chart .size-chart-content-containers .size-chart-content-container.teen-saalt-wear {
   grid-template-columns: repeat(2, minmax(0, auto));
   grid-template-areas:
     'monogram monogram'
@@ -216,7 +238,8 @@ size-chart .size-chart-content-containers .size-chart-content-container.saalt-we
 }
 
 @media screen and (min-width: 750px) {
-  size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear {
+  size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear,
+  size-chart .size-chart-content-containers .size-chart-content-container.teen-saalt-wear {
     grid-template-columns: unset;
     grid-template-areas:
       'monogram monogram'
