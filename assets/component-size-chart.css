@@ -116,7 +116,8 @@ size-chart .size-chart-content-containers .size-chart-content-container .size-ch
   grid-area: size-chart-title;
 }
 
-size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear table {
+size-chart .size-chart-content-containers .size-chart-content-container.saalt-wear table,
+size-chart .size-chart-content-containers .size-chart-content-container.teen-saalt-wear table {
   grid-area: size-table;
   max-width: 100%;
   margin: 0 auto;
