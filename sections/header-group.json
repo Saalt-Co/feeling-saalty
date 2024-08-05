@@ -58,9 +58,8 @@
         },
         "announcement_mKnhtH": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "15% Off With Code: LEAKFREESUMMER",
+            "text": "Flash Sale! Limited Uses, Codes: 20OFF, 15OFF, 10OFF",
             "link": "shopify:\/\/collections\/shop-all"
           }
         }
