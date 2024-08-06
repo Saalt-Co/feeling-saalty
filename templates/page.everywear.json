@@ -417,58 +417,6 @@
         "padding_bottom": 0
       }
     },
-    "2a1f9c4e-eb99-4278-885c-23052a0fe53e": {
-      "type": "saalt-testimonials",
-      "blocks": {
-        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-1": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "I am in love with these undies! I wore them on my heavier days for half a day, and they did a great job. No leaks, no stains! The fit was perfect; great for when you are wearing low rise pants.",
-            "author": "<strong>Kelsey R.<\/strong>",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-2": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "Is it weird that I was actually looking forward to my period to be able to rock these cute undies? Like lots of people said, these are cuter than a lot of my regular underwear and it’s so nice to finally ditch the backup pad. Can’t wait to get more in different colors to get me through period week!",
-            "author": "<strong>Natalie E.<\/strong>",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "16dbc45b-abe6-491e-b9ad-02da4749d08b": {
-          "type": "testimonial",
-          "settings": {
-            "quote": "These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties. These are cute, they work, and I'm definitely going to buy more!",
-            "author": "Michelle C.",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-1",
-        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-2",
-        "16dbc45b-abe6-491e-b9ad-02da4749d08b"
-      ],
-      "settings": {
-        "slide_height": "adapt_image",
-        "slider_visual": "dots",
-        "auto_rotate": true,
-        "change_slides_speed": 5,
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "include_img": true,
-        "image": "shopify:\/\/shop_images\/Testimonials_1.jpg",
-        "image_behavior": "none",
-        "accessibility_info": "Slideshow of customer testimonials"
-      }
-    },
     "6d90874c-c092-46f8-89ee-85bf53a9989d": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -554,6 +502,58 @@
         "max_width": "600px",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "2a1f9c4e-eb99-4278-885c-23052a0fe53e": {
+      "type": "saalt-testimonials",
+      "blocks": {
+        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "I am in love with these undies! I wore them on my heavier days for half a day, and they did a great job. No leaks, no stains! The fit was perfect; great for when you are wearing low rise pants.",
+            "author": "<strong>Kelsey R.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Is it weird that I was actually looking forward to my period to be able to rock these cute undies? Like lots of people said, these are cuter than a lot of my regular underwear and it’s so nice to finally ditch the backup pad. Can’t wait to get more in different colors to get me through period week!",
+            "author": "<strong>Natalie E.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "16dbc45b-abe6-491e-b9ad-02da4749d08b": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties. These are cute, they work, and I'm definitely going to buy more!",
+            "author": "Michelle C.",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-1",
+        "template--15078825525329__2a1f9c4e-eb99-4278-885c-23052a0fe53e-testimonial-2",
+        "16dbc45b-abe6-491e-b9ad-02da4749d08b"
+      ],
+      "settings": {
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "include_img": true,
+        "image": "shopify:\/\/shop_images\/Testimonials_1.jpg",
+        "image_behavior": "none",
+        "accessibility_info": "Slideshow of customer testimonials"
       }
     },
     "2962b7c9-d4c6-4356-a45d-61b549a0df16": {
@@ -891,8 +891,8 @@
     "24bfdb1d-9a25-447e-86cc-489d73bf61a4",
     "959d5c15-d6c3-425c-a8d3-5e2f73ff8944",
     "11b4eb9a-18a9-488e-bfd7-23c248641695",
-    "2a1f9c4e-eb99-4278-885c-23052a0fe53e",
     "6d90874c-c092-46f8-89ee-85bf53a9989d",
+    "2a1f9c4e-eb99-4278-885c-23052a0fe53e",
     "2962b7c9-d4c6-4356-a45d-61b549a0df16",
     "7dc8f187-d995-436e-9a49-5e215d0d4aa1",
     "27932570-f6dd-49ef-a41d-a62c5a6e210f",
