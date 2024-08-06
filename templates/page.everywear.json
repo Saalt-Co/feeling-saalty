@@ -235,7 +235,7 @@
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": true,
-        "max_media_width": "80%",
+        "max_media_width": "60%",
         "title_font_size": "small",
         "content_font_size": "small",
         "mobile_text_position": "overlay",
@@ -245,7 +245,7 @@
         "use_max_text_width": true,
         "max_width": "600px",
         "padding_top": 32,
-        "padding_bottom": 32
+        "padding_bottom": 48
       }
     },
     "custom_liquid_VyaDiP": {
