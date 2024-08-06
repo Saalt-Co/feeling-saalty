@@ -1,0 +1,42 @@
+<script>
+  const preorderCustom = {
+      render: function(){
+          this.initSelectors()
+          this.handleEvents()
+      },
+      initSelectors: function(){
+          window.GloboPreorderParams = window.GloboPreorderParams || {};
+          window.GloboPreorderParams.selectors = window.GloboPreorderParams.selectors || {};
+          window.GloboPreorderParams.selectors.collectionFilterSelector += ", #FacetFiltersForm .facet-filters__sort, #FacetFiltersForm facet-remove, #FacetFiltersForm .facets__label";
+      },
+      handleEvents: function(){
+          const app = this;
+
+          window.addEventListener('load', () => {
+              app.handleFilterChange()
+          })
+      },
+      handleFilterChange: function(){
+          const app = this;
+
+          if(window?.Globo?.Preorder){
+              window.Globo.Preorder.initPreorder()
+
+              let collectionFilterSelectors = document.querySelectorAll(window.GloboPreorderParams.selectors.collectionFilterSelector)
+
+              if(collectionFilterSelectors.length){
+                  collectionFilterSelectors.forEach(collectionFilterSelector => {
+                      ['click', 'change'].forEach(action => {
+                          collectionFilterSelector.addEventListener(action, () => {
+                              window.Globo.Preorder.appSetInterval(() => {
+                                  app.handleFilterChange()
+                              }, 2500, 2)
+                          })
+                      })
+                  })
+              }
+          }
+      }
+  }
+  preorderCustom.render()
+</script>
