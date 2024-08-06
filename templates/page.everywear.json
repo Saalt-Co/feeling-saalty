@@ -231,6 +231,91 @@
         "padding_bottom": 12
       }
     },
+    "saalt_media_with_text_DgpdMW": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "section_content_KxrEpz": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>FDA Registered & Compliant<\/p>"
+          }
+        },
+        "section_icon_group_f4nbzm": {
+          "type": "section_icon_group",
+          "settings": {
+            "mobile_icons_display": "column",
+            "mobile_icon_group_horizontal_alignment": "center",
+            "mobile_icon_group_vertical_alignment": "center",
+            "mobile_icon_grid_columns": 1,
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_text_size": "1.5rem",
+            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_vertical_alignment": "center",
+            "mobile_icon_min_width": "80px",
+            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "100px",
+            "use_max_icon_group_width": true,
+            "icon_group_max_width": "100px",
+            "desktop_icons_display": "grid",
+            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_vertical_alignment": "center",
+            "desktop_icon_grid_columns": 2,
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_horizontal_alignment": "center",
+            "desktop_icon_vertical_alignment": "center",
+            "desktop_icon_min_width": "80px",
+            "desktop_icon_wrapper_max_width": "100px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "100px"
+          }
+        },
+        "section_icon_with_text_r74L3r": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"35\" height=\"34\" viewbox=\"0 0 35 34\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g clip-path=\"url(#clip0_1037_6914)\">\n<path d=\"M20.05 5.66675C23.3791 6.30701 26.344 8.12765 28.3675 10.7743C30.391 13.421 31.3284 16.7044 30.9973 19.9855C30.6662 23.2666 29.0902 26.3106 26.5761 28.5252C24.062 30.7397 20.7896 31.9664 17.3958 31.9664C14.002 31.9664 10.7297 30.7397 8.21557 28.5252C5.70147 26.3106 4.12549 23.2666 3.79436 19.9855C3.46324 16.7044 4.40064 13.421 6.42415 10.7743C8.44766 8.12765 11.4125 6.30701 14.7417 5.66675\" stroke=\"white\"><\/path>\n<path d=\"M20.1 4.39575V9.47146C20.0486 10.8687 20.4605 12.245 21.275 13.3977C22.1667 14.6767 25.1584 19.2748 27.1667 22.3024C27.3525 22.5894 27.4551 22.9197 27.464 23.2586C27.4728 23.5975 27.3874 23.9325 27.2169 24.2282C27.0463 24.524 26.7968 24.7696 26.4947 24.9393C26.1926 25.109 25.849 25.1964 25.5 25.1924H9.4167C9.06775 25.1964 8.72413 25.109 8.42201 24.9393C8.11989 24.7696 7.87042 24.524 7.69986 24.2282C7.5293 23.9325 7.44394 23.5975 7.45277 23.2586C7.4616 22.9197 7.56429 22.5894 7.75004 22.3024C9.75004 19.2181 12.75 14.62 13.6417 13.3977C14.4491 12.2421 14.8576 10.8672 14.8084 9.47146V4.39575\" stroke=\"white\"><\/path>\n<path d=\"M13.7999 3.23813C13.8079 2.93198 13.9397 2.64118 14.1666 2.42861C14.2786 2.31301 14.4144 2.22157 14.5651 2.16021C14.7159 2.09885 14.8782 2.06894 15.0416 2.07242H19.8333C20.0762 2.0776 20.3122 2.1524 20.5116 2.28741C20.7109 2.42243 20.8648 2.61166 20.9538 2.83133C21.0428 3.05099 21.063 3.29131 21.012 3.52211C20.9609 3.75291 20.8407 3.96391 20.6666 4.12861C20.4469 4.34682 20.1474 4.47193 19.8333 4.4767H15.0416C14.7137 4.47671 14.3992 4.35074 14.1665 4.12628C13.9339 3.90183 13.8021 3.59711 13.7999 3.27861V3.23813Z\" stroke=\"white\"><\/path>\n<path d=\"M10.65 17.9067H24.3334\" stroke=\"white\"><\/path>\n<path d=\"M7.68335 27.9691L27.1417 8.82385\" stroke=\"white\"><\/path>\n<\/g>\n<defs>\n<clippath id=\"clip0_1037_6914\">\n<rect width=\"35\" height=\"34\" fill=\"white\"><\/rect>\n<\/clippath>\n<\/defs>\n<\/svg>",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "ignore_text_color",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "section_content_HWAiQf": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Not treated with PFAS or other harmful substances<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "section_content_KxrEpz",
+        "section_icon_group_f4nbzm",
+        "section_icon_with_text_r74L3r",
+        "section_content_HWAiQf"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-3",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "24bfdb1d-9a25-447e-86cc-489d73bf61a4": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -815,89 +900,29 @@
         "padding_bottom": 0
       }
     },
-    "saalt_media_with_text_DgpdMW": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "section_content_KxrEpz": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>FDA Registered & Compliant<\/p>"
-          }
-        },
-        "section_icon_group_f4nbzm": {
-          "type": "section_icon_group",
-          "settings": {
-            "mobile_icons_display": "column",
-            "mobile_icon_group_horizontal_alignment": "center",
-            "mobile_icon_group_vertical_alignment": "center",
-            "mobile_icon_grid_columns": 1,
-            "mobile_icon_group_gap": "3.5rem",
-            "mobile_icon_text_size": "1.5rem",
-            "mobile_icon_horizontal_alignment": "center",
-            "mobile_icon_vertical_alignment": "center",
-            "mobile_icon_min_width": "80px",
-            "mobile_icon_wrapper_max_width": "100px",
-            "mobile_icon_max_width": "100%",
-            "mobile_icon_height": "100px",
-            "use_max_icon_group_width": true,
-            "icon_group_max_width": "100px",
-            "desktop_icons_display": "grid",
-            "desktop_icon_group_horizontal_alignment": "center",
-            "desktop_icon_group_vertical_alignment": "center",
-            "desktop_icon_grid_columns": 2,
-            "desktop_icon_group_gap": "3.5rem",
-            "desktop_icon_text_size": "1.5rem",
-            "desktop_icon_horizontal_alignment": "center",
-            "desktop_icon_vertical_alignment": "center",
-            "desktop_icon_min_width": "80px",
-            "desktop_icon_wrapper_max_width": "100px",
-            "desktop_icon_max_width": "100%",
-            "desktop_icon_height": "100px"
-          }
-        },
-        "section_icon_with_text_r74L3r": {
-          "type": "section_icon_with_text",
-          "settings": {
-            "icon_svg": "<svg width=\"35\" height=\"34\" viewbox=\"0 0 35 34\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g clip-path=\"url(#clip0_1037_6914)\">\n<path d=\"M20.05 5.66675C23.3791 6.30701 26.344 8.12765 28.3675 10.7743C30.391 13.421 31.3284 16.7044 30.9973 19.9855C30.6662 23.2666 29.0902 26.3106 26.5761 28.5252C24.062 30.7397 20.7896 31.9664 17.3958 31.9664C14.002 31.9664 10.7297 30.7397 8.21557 28.5252C5.70147 26.3106 4.12549 23.2666 3.79436 19.9855C3.46324 16.7044 4.40064 13.421 6.42415 10.7743C8.44766 8.12765 11.4125 6.30701 14.7417 5.66675\" stroke=\"white\"><\/path>\n<path d=\"M20.1 4.39575V9.47146C20.0486 10.8687 20.4605 12.245 21.275 13.3977C22.1667 14.6767 25.1584 19.2748 27.1667 22.3024C27.3525 22.5894 27.4551 22.9197 27.464 23.2586C27.4728 23.5975 27.3874 23.9325 27.2169 24.2282C27.0463 24.524 26.7968 24.7696 26.4947 24.9393C26.1926 25.109 25.849 25.1964 25.5 25.1924H9.4167C9.06775 25.1964 8.72413 25.109 8.42201 24.9393C8.11989 24.7696 7.87042 24.524 7.69986 24.2282C7.5293 23.9325 7.44394 23.5975 7.45277 23.2586C7.4616 22.9197 7.56429 22.5894 7.75004 22.3024C9.75004 19.2181 12.75 14.62 13.6417 13.3977C14.4491 12.2421 14.8576 10.8672 14.8084 9.47146V4.39575\" stroke=\"white\"><\/path>\n<path d=\"M13.7999 3.23813C13.8079 2.93198 13.9397 2.64118 14.1666 2.42861C14.2786 2.31301 14.4144 2.22157 14.5651 2.16021C14.7159 2.09885 14.8782 2.06894 15.0416 2.07242H19.8333C20.0762 2.0776 20.3122 2.1524 20.5116 2.28741C20.7109 2.42243 20.8648 2.61166 20.9538 2.83133C21.0428 3.05099 21.063 3.29131 21.012 3.52211C20.9609 3.75291 20.8407 3.96391 20.6666 4.12861C20.4469 4.34682 20.1474 4.47193 19.8333 4.4767H15.0416C14.7137 4.47671 14.3992 4.35074 14.1665 4.12628C13.9339 3.90183 13.8021 3.59711 13.7999 3.27861V3.23813Z\" stroke=\"white\"><\/path>\n<path d=\"M10.65 17.9067H24.3334\" stroke=\"white\"><\/path>\n<path d=\"M7.68335 27.9691L27.1417 8.82385\" stroke=\"white\"><\/path>\n<\/g>\n<defs>\n<clippath id=\"clip0_1037_6914\">\n<rect width=\"35\" height=\"34\" fill=\"white\"><\/rect>\n<\/clippath>\n<\/defs>\n<\/svg>",
-            "icon_text": "",
-            "mobile_icon_text_position": "below",
-            "desktop_icon_text_position": "below",
-            "theme_color_icon_color": "ignore_text_color",
-            "theme_color_icon_text_color": "match_text"
-          }
-        },
-        "section_content_HWAiQf": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>Not treated with PFAS or other harmful substances<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "section_content_KxrEpz",
-        "section_icon_group_f4nbzm",
-        "section_icon_with_text_r74L3r",
-        "section_content_HWAiQf"
-      ],
+    "saalt_bg_media_with_text_EdDn7B": {
+      "type": "saalt-bg-media-with-text",
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme-color-bg-3",
-        "theme_color_text": "theme-color-text-0",
-        "media_type": "none",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/tech_layers_mobile.png",
+        "desktop_image": "shopify:\/\/shop_images\/tech_layers_desktop.png",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": true,
+        "max_media_width": "80%",
         "title_font_size": "small",
         "content_font_size": "small",
-        "mobile_text_position": "below",
+        "mobile_text_position": "overlay",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
+        "desktop_text_position": "center",
         "desktop_text_alignment": "center",
-        "use_max_text_width": false,
+        "use_max_text_width": true,
         "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     }
   },
@@ -907,6 +932,7 @@
     "b0e32c79-33fb-47c5-91b5-6c4ccc4ca927",
     "205af4ea-20c2-45bc-98f3-082272cb19eb",
     "custom_liquid_VyaDiP",
+    "saalt_media_with_text_DgpdMW",
     "24bfdb1d-9a25-447e-86cc-489d73bf61a4",
     "959d5c15-d6c3-425c-a8d3-5e2f73ff8944",
     "11b4eb9a-18a9-488e-bfd7-23c248641695",
@@ -916,6 +942,6 @@
     "7dc8f187-d995-436e-9a49-5e215d0d4aa1",
     "27932570-f6dd-49ef-a41d-a62c5a6e210f",
     "ee2c8556-75bf-49e7-bfbb-644878ffb5af",
-    "saalt_media_with_text_DgpdMW"
+    "saalt_bg_media_with_text_EdDn7B"
   ]
 }
