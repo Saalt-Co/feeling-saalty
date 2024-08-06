@@ -341,7 +341,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "Sustainable never felt so good"
+            "title": "Sustainable never felt so good."
           }
         },
         "section_icon_group_jc3KrP": {
@@ -349,29 +349,29 @@
           "settings": {
             "mobile_icons_display": "row",
             "mobile_icon_group_horizontal_alignment": "center",
-            "mobile_icon_group_vertical_alignment": "flex-start",
+            "mobile_icon_group_vertical_alignment": "center",
             "mobile_icon_grid_columns": 1,
             "mobile_icon_group_gap": "3.5rem",
-            "mobile_icon_text_size": "1.5rem",
-            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_text_size": "1.25rem",
+            "mobile_icon_horizontal_alignment": "flex-start",
             "mobile_icon_vertical_alignment": "center",
             "mobile_icon_min_width": "80px",
-            "mobile_icon_wrapper_max_width": "100px",
-            "mobile_icon_max_width": "100%",
+            "mobile_icon_wrapper_max_width": "90%",
+            "mobile_icon_max_width": "20%",
             "mobile_icon_height": "100px",
-            "use_max_icon_group_width": true,
+            "use_max_icon_group_width": false,
             "icon_group_max_width": "600px",
             "desktop_icons_display": "row",
-            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_horizontal_alignment": "flex-start",
             "desktop_icon_group_vertical_alignment": "center",
-            "desktop_icon_grid_columns": 2,
+            "desktop_icon_grid_columns": 1,
             "desktop_icon_group_gap": "3.5rem",
             "desktop_icon_text_size": "1.5rem",
             "desktop_icon_horizontal_alignment": "flex-start",
             "desktop_icon_vertical_alignment": "center",
             "desktop_icon_min_width": "80px",
-            "desktop_icon_wrapper_max_width": "100px",
-            "desktop_icon_max_width": "100%",
+            "desktop_icon_wrapper_max_width": "600px",
+            "desktop_icon_max_width": "25%",
             "desktop_icon_height": "100px"
           }
         },
@@ -382,7 +382,7 @@
             "icon_text": "<p>Made of soft and breathable biodegradable natural cotton that is Standard 100 OEKO-TEX Certified. This is a 3rd party certification that ensures our fabrics are free from a wide list of harmful chemicals.<\/p>",
             "mobile_icon_text_position": "right",
             "desktop_icon_text_position": "right",
-            "theme_color_icon_color": "match_text",
+            "theme_color_icon_color": "theme-color-text-0",
             "theme_color_icon_text_color": "match_text"
           }
         }
@@ -397,8 +397,8 @@
       ],
       "settings": {
         "section_id": "why it's better",
-        "theme_color_background": "theme-color-bg-4",
-        "theme_color_text": "theme_default",
+        "theme_color_background": "theme-color-bg-6",
+        "theme_color_text": "theme-color-text-0",
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/What_makes_saalt_better__2.jpg",
         "custom_code": "",
