@@ -43,7 +43,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/SW-CC-BK-VB-Alex-6310_mobile.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/EveryWear_banner_mobile.png",
         "desktop_image": "shopify:\/\/shop_images\/banner_desktop.png",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
@@ -161,7 +161,7 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme_default",
+        "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "none",
         "custom_code": "",
@@ -203,8 +203,8 @@
       ],
       "settings": {
         "section_id": "how it works",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
         "media_type": "video",
         "video": "shopify:\/\/files\/videos\/Learn Page Tech Video.mp4",
         "custom_code": "",
@@ -396,18 +396,18 @@
         "h3 {font-size: 18px !important;}"
       ],
       "settings": {
-        "section_id": "why it's better",
+        "section_id": "",
         "theme_color_background": "theme-color-bg-6",
         "theme_color_text": "theme-color-text-0",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/What_makes_saalt_better__2.jpg",
+        "image": "shopify:\/\/shop_images\/Everywear_fabric.png",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
         "title_font_size": "small",
         "content_font_size": "small",
-        "mobile_text_position": "above",
+        "mobile_text_position": "below",
         "mobile_text_alignment": "center",
         "desktop_text_position": "left",
         "desktop_text_alignment": "left",
@@ -472,7 +472,7 @@
         "template--15078825525329__6d90874c-c092-46f8-89ee-85bf53a9989d-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>As a certified B Corp, we commit 2% of our revenue to donate period care to regions with the most need, and help fund initiatives in menstrual health, education, and sustainability.<\/p>"
+            "text_content": "<p>As a certified B Corp, we commit a portion of our revenue to donate period care to regions with the most need, and help fund initiatives in menstrual health, education, and sustainability.<\/p>"
           }
         }
       },
