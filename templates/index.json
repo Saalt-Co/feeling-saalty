@@ -179,7 +179,7 @@
         "section_content_H6jfLA": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>The same confidence-inspiring tech and full-coverage cut you love, in colors chosen by teens. Now available for preorder.<\/p>"
+            "text_content": "<p>The same confidence-inspiring tech and full-coverage cut you love, in colors chosen by teens. Now available for&nbsppreorder.<\/p>"
           }
         },
         "section_title_c7DKgx": {
@@ -239,7 +239,7 @@
         "desktop_text_position": "flex-end",
         "desktop_text_alignment": "left",
         "use_max_text_width": true,
-        "max_width": "33%",
+        "max_width": "35%",
         "padding_top": 0,
         "padding_bottom": 0
       }
