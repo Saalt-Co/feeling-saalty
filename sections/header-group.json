@@ -58,10 +58,9 @@
         },
         "announcement_mKnhtH": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "Underwear Flash Sale! Limited Uses. Codes: 20OFF, 15OFF, 10OFF",
-            "link": "shopify:\/\/collections\/shop-all"
+            "text": "Pre-Order Now: Saalt Teen Brief",
+            "link": "shopify:\/\/products\/leakproof-teen-brief"
           }
         }
       },
