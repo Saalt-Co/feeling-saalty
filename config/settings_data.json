@@ -243,6 +243,18 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "4705145147225299685": {
+        "type": "shopify:\/\/apps\/tolstoy-shoppable-video-ugc\/blocks\/widget-block\/06fa8282-42ff-403e-b67c-1936776aed11",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "6237893613548423713": {
+        "type": "shopify:\/\/apps\/bundles-upsell-pickystory\/blocks\/main-widget-loader-script\/f54ff67e-3f69-4df2-845e-7476ce633252",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
