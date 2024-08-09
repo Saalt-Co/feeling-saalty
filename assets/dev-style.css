@@ -122,3 +122,82 @@ label.variant_swatch.disabled:after {
 label.variant_swatch.disabled {
     opacity: .3;
 }
+
+/*header Update*/
+.header__icons.header__icons--localization.header__localization {
+    width: 20%;
+    margin-left: auto;
+}
+header.header.header--top-left.header--mobile-left.page-width.header--has-menu.header--has-social.header--has-account {
+    width: 100%;
+    display: flex;
+}
+h1.header__heading {
+    width: 10%;
+}
+.header__icons.header__icons--localization.header__localization {
+    width: 20%;
+    margin-left: auto;
+}
+nav.header__inline-menu {
+    width: 64%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header__menu-item span {
+    font-weight: 500;
+}
+.header__active-menu-item{
+  font-weight: 700 !important;
+}
+
+
+// Code By AS
+.header__menu-item:hover{
+  text-decoration:none;
+  border-bottom:none;
+}
+.header__menu-item:hover span{
+  text-decoration:none;
+  border-bottom:none;
+}
+body .mega-menu__link:hover{
+  text-decoration:none;
+  border-bottom:none;
+}
+body .mega-menu__link:hover span{
+  text-decoration:none;
+  border-bottom:none;
+}
+body .mega-menu__link--active{
+  text-decoration:none;
+  border-bottom:none;
+}
+body .mega-menu .header__menu-item.link:hover{
+  text-decoration:none;
+  border-bottom:none;
+}
+body .mega-menu .header__menu-item.link:hover span{
+  text-decoration:none;
+  border-bottom:none;
+}
+body details[open]>.header__menu-item{
+  text-decoration:none;
+}
+
+body .mega-menu .mega-menu__content:not(.non-megamenu) .mega-menu__list .mega-menu__link--level-2{
+  text-decoration:underline!important;
+}
+body .mega-menu.non-megamenu-top .mega-menu__content .mega-menu__list li .mega-menu__link--level-2:hover{
+  font-weight:700!important;
+}
+body .mega-menu:not(.non-megamenu-top) .mega-menu__content .mega-menu__list li .mega-menu__link--level-3 a:hover .link-title{
+  font-weight:700!important;
+}
+
+body .mega-menu .mega-menu__content:not(.non-megamenu) .mega-menu__list .mega-menu__link--level-2.no-child{
+  text-decoration:none!important;
+}
+body .mega-menu .mega-menu__content:not(.non-megamenu) .mega-menu__list .mega-menu__link--level-2.no-child:hover{
+  font-weight:bold;
+}
