@@ -8,6 +8,9 @@ label.variant_swatch.disabled {
 .video-content .media>*:not(.zoom):not(.deferred-media__poster-button){
   position: relative;
 }
+.header__menu-item span:hover {
+    font-weight: 700 !important;
+}
 .multicolumn:not(.background-none) .multicolumn-card.auto-height{
   height: auto;
 }
