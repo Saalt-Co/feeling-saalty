@@ -118,6 +118,10 @@ label.variant_swatch.disabled:after {
     position: relative;
     z-index: 2;
 }
+    .header__heading-logo {
+        height: auto;
+        max-width: none;
+    }
   }
 label.variant_swatch.disabled {
     opacity: .3;
