@@ -122,6 +122,10 @@ label.variant_swatch.disabled:after {
         height: auto;
         max-width: none;
     }
+      .header__icons.header__icons--localization.header__localization {
+        width: auto !important;
+        margin-left: auto !important;
+    }
   }
 label.variant_swatch.disabled {
     opacity: .3;
