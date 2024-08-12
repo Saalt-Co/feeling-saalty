@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "afb57bcf-95f9-4c58-bcb0-46be33b273c1": {
@@ -184,6 +193,12 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "tolstoy_shoppable_video_ugc_stories_block_me3QRw": {
+          "type": "shopify:\/\/apps\/tolstoy-shoppable-video-ugc\/blocks\/stories-block\/06fa8282-42ff-403e-b67c-1936776aed11",
+          "settings": {
+            "publishId": "publishId"
+          }
         }
       },
       "block_order": [
@@ -209,7 +224,8 @@
         "collapsible_tab_tiRXz7",
         "collapsible-row-1",
         "8e2f85d3-2d82-4239-820b-c26872aaf01a",
-        "share"
+        "share",
+        "tolstoy_shoppable_video_ugc_stories_block_me3QRw"
       ],
       "settings": {
         "enable_sticky_info": true,
