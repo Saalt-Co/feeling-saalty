@@ -505,7 +505,7 @@
         "template--18370419720465__6f86141b-6e50-4f99-a4bf-ce75e198df4c-1687976107730f0061-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Saalt is a B Corp. That means we use business as a force for good and give 2% of revenue to donate period care to women and girls in need.<\/p>"
+            "text_content": "<p>Saalt is a B Corp. That means we use business as a force for good and give 1% of revenue to donate period care to women and girls in need.<\/p>"
           }
         },
         "2fcca7a3-941c-4dcb-b9d2-1315997612d0": {
@@ -688,43 +688,6 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa": {
-      "type": "newsletter",
-      "blocks": {
-        "template--19641079136529__7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Do you have a period? Great, we're here to make it better (starting with 15% off your first order). 😉",
-            "heading_size": "h2"
-          }
-        },
-        "template--19641079136529__7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa-paragraph-1": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Subscribe to receive all you need to know about the period flow, pointers, and perks that come as often as your period does.<\/p>"
-          }
-        },
-        "template--19641079136529__7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa-email_form-1": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--19641079136529__7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa-heading-1",
-        "template--19641079136529__7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa-paragraph-1",
-        "template--19641079136529__7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa-email_form-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "theme_color_background": "theme-color-bg-4",
-        "theme_color_text": "theme_default",
-        "input_opacity": 25,
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
@@ -737,7 +700,6 @@
     "608ca706-ad50-41fb-bcb5-660ee4c39ec0",
     "835cabec-b298-4b76-9a74-2ae85e6ea4be",
     "6f86141b-6e50-4f99-a4bf-ce75e198df4c",
-    "6484ec1d-c35f-44e1-975e-1cd40fab13b6",
-    "7c99dbd2-e7b4-4452-84b2-c9d23a92fcaa"
+    "6484ec1d-c35f-44e1-975e-1cd40fab13b6"
   ]
 }
