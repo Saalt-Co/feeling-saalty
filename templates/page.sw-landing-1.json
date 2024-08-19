@@ -748,8 +748,8 @@
         "column_6kWHQU"
       ],
       "settings": {
-        "title": "You don't have to take our word for it - 9 out of 10 customers never go back!",
-        "heading_size": "h1",
+        "title": "",
+        "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
