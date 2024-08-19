@@ -789,7 +789,7 @@
         "template--18370419818769__8e2fb083-d1d9-431e-9e29-68dd05ca68eb-section_buttons_group-1": {
           "type": "section_buttons_group",
           "settings": {
-            "desktop_button_group_alignment": "center",
+            "desktop_button_group_alignment": "flex-start",
             "desktop_buttons_group_gap": "1rem"
           }
         },
