@@ -200,8 +200,8 @@
             "mobile_icon_wrapper_max_width": "60px",
             "mobile_icon_max_width": "100%",
             "mobile_icon_height": "100px",
-            "use_max_icon_group_width": false,
-            "icon_group_max_width": "600px",
+            "use_max_icon_group_width": true,
+            "icon_group_max_width": "90%",
             "desktop_icons_display": "row",
             "desktop_icon_group_horizontal_alignment": "flex-start",
             "desktop_icon_group_vertical_alignment": "center",
@@ -231,7 +231,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "2",
-            "title": "What makes Saalt better? Glad you asked."
+            "title": "What makes Saalt better? Glad&nbspyou&nbspasked."
           }
         },
         "template--15078825525329__6d90874c-c092-46f8-89ee-85bf53a9989d-section_content-1": {
@@ -263,8 +263,8 @@
         "mobile_text_alignment": "center",
         "desktop_text_position": "right",
         "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "use_max_text_width": true,
+        "max_width": "90%",
         "padding_top": 0,
         "padding_bottom": 0
       }
