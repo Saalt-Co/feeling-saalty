@@ -653,7 +653,7 @@
         "template--21644091687185__2d583b85-1f0e-4af2-ac3a-c0c892abc13e-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Saalt menstrual cups are designed for the doers. Wear up to 12 hours to swim, hike, bike, run, sleep, take the long flight — no problem.<\/p>"
+            "text_content": "<p>Saalt menstrual cups are designed for the doers. Wear up to 12 hours to swim, hike, bike, run, sleep, take the long flight — no&nbspproblem.<\/p>"
           }
         }
       },
@@ -677,8 +677,8 @@
         "mobile_text_alignment": "left",
         "desktop_text_position": "left",
         "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
+        "use_max_text_width": true,
+        "max_width": "80%",
         "padding_top": 0,
         "padding_bottom": 0
       }
