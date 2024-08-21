@@ -251,7 +251,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "You work hard, your period care should,&nbsptoo."
+            "title": "You work hard, and so should your period&nbspcare."
           }
         },
         "section_content_pgzqyn": {
@@ -264,7 +264,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "Use code LABORDAY15 at checkout to claim your discount. <small>See terms.<\/small>"
+            "title": "Use code LABORDAY15 at checkout to claim your discount. <small><a href=\"https:\/\/saalt.com\/pages\/offer-terms\">See terms.<\/a><\/small>"
           }
         },
         "section_buttons_group_X9DErJ": {
@@ -280,7 +280,7 @@
             "button_text": "SHOP NOW",
             "button_url": "shopify:\/\/collections\/shop-all",
             "button_type": "primary",
-            "theme_color_section_button_background": "theme-color-bg-0",
+            "theme_color_section_button_background": "theme-color-bg-5",
             "theme_color_text_section_button_text": "theme-color-text-1",
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default"
@@ -296,12 +296,11 @@
       ],
       "disabled": true,
       "custom_css": [
-        "h3 {font-size: 16px !important; line-height: 1.5 !important;}",
-        "@media only screen and (max-width: 767px) {p {color: #373737 !important; } h1 {color: #373737; font-size: 26px !important; } h3 {color: #373737; }}"
+        "h3 {font-size: 16px !important; line-height: 1.5 !important;}"
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme_default",
+        "theme_color_background": "theme-color-bg-1",
         "theme_color_text": "theme-color-text-0",
         "media_type": "image",
         "mobile_image": "shopify:\/\/shop_images\/Saalt-Labor-Day-2024-Hero-mobile_03.jpg",
