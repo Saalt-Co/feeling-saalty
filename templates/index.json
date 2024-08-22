@@ -256,6 +256,7 @@
         },
         "section_content_pgzqyn": {
           "type": "section_content",
+          "disabled": true,
           "settings": {
             "text_content": "<p>Take 15% off sitewide - because you deserve it.<\/p>"
           }
@@ -264,7 +265,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "Use code LABORDAY15 at checkout to claim your discount. <small><a href=\"https:\/\/saalt.com\/pages\/offer-terms\">See terms.<\/a><\/small>"
+            "title": "Take 15% off sitewide—because you deserve it. Use code <u>LABORDAY15<\/u> at checkout to claim your discount. <small><a href=\"https:\/\/saalt.com\/pages\/offer-terms\">See terms.<\/a><\/small>"
           }
         },
         "section_buttons_group_X9DErJ": {
@@ -296,7 +297,7 @@
       ],
       "disabled": true,
       "custom_css": [
-        "h3 {font-size: 16px !important; line-height: 1.5 !important;}"
+        "h3 {font-size: 16px !important; line-height: 1.5 !important; font-weight: 400 !important;}"
       ],
       "settings": {
         "section_id": "",
