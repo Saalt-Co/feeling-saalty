@@ -342,17 +342,6 @@
     },
     "172426863259d3f188": {
       "type": "apps",
-      "blocks": {
-        "tolstoy_shoppable_video_ugc_carousel_block_HCPc9A": {
-          "type": "shopify:\/\/apps\/tolstoy-shoppable-video-ugc\/blocks\/carousel-block\/06fa8282-42ff-403e-b67c-1936776aed11",
-          "settings": {
-            "publishId": "qdga894w7z49f"
-          }
-        }
-      },
-      "block_order": [
-        "tolstoy_shoppable_video_ugc_carousel_block_HCPc9A"
-      ],
       "settings": {
         "include_margins": true
       }
