@@ -49,6 +49,13 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_hyiLFC": {
+          "type": "announcement",
+          "settings": {
+            "text": "Get 15% off for Labor Day using code: LABORDAY15",
+            "link": ""
+          }
+        },
         "announcement_nHDyte": {
           "type": "announcement",
           "settings": {
@@ -58,6 +65,7 @@
         },
         "announcement_mKnhtH": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Pre-Order Now: Saalt Teen Brief",
             "link": "shopify:\/\/products\/leakproof-teen-brief"
@@ -65,6 +73,7 @@
         }
       },
       "block_order": [
+        "announcement_hyiLFC",
         "announcement_nHDyte",
         "announcement_mKnhtH"
       ],
