@@ -422,6 +422,71 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
     }
+  ],
+    "blocks": [
+    {
+      "type": "promo_banner",
+      "name": "Promo Banner",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image-banner-desktop",
+          "label": "Promo Image Desktop"
+        },
+        {
+          "type": "image_picker",
+          "id": "image-banner-mobile",
+          "label": "Promo Image Mobile"
+        },
+        {
+          "type": "image_picker",
+          "id": "image-banner-single",
+          "label": "Promo Image Single Column"
+        },
+        {
+          "type": "url",
+          "id": "url-promo",
+          "label": "URL",
+          "info": "If you do not want the link on the promo banner, leave this field blank."
+        },
+        {
+          "type": "checkbox",
+          "id": "video-checked",
+          "label": "Show Hosted Video",
+          "default": false,
+          "info": "If this checkbox is selected, the hosted video will display on the page"
+        },        
+        {
+            "type": "video",
+            "id": "video-shopify",
+            "label": "Hosted Video"
+        },
+        {
+          "type": "checkbox",
+          "id": "controls",
+          "label": "Controls",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "muted",
+          "label": "Mute",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "autoplay",
+          "label": "Autoplay",
+          "default": true
+        },
+        {
+          "type": "number",
+          "id": "banner_position",
+          "label": "Position",
+          "default": 4
+        }
+      ]
+    }
   ]
 }
 {% endschema %}
