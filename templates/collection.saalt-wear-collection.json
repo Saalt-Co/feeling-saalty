@@ -125,6 +125,25 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "blocks": {
+        "promo_banner_8FBcCq": {
+          "type": "promo_banner",
+          "settings": {
+            "image-banner-desktop": "shopify:\/\/shop_images\/Collection-Tiles-480x395-two-column-01.jpg",
+            "image-banner-mobile": "shopify:\/\/shop_images\/Collection-Tiles-360x100-mobile-01.jpg",
+            "image-banner-single": "shopify:\/\/shop_images\/Collection-Tiles-395x500-single-column-01.jpg",
+            "url-promo": "",
+            "video-checked": false,
+            "controls": true,
+            "muted": true,
+            "autoplay": true,
+            "banner_position": 5
+          }
+        }
+      },
+      "block_order": [
+        "promo_banner_8FBcCq"
+      ],
       "settings": {
         "products_per_page": 24,
         "columns_desktop": 4,
