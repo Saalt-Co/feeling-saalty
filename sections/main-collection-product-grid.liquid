@@ -146,46 +146,262 @@
             </div>
           </div>
         {%- else -%}
-          <div class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}">
+           <div class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}">
             <div class="loading-overlay gradient"></div>
+            {% if section.settings.columns_desktop == 4 %}
+              <ul
+                id="product-grid"
+                data-id="{{ section.id }}"
+                class="four-column
+                  grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
+                  grid--{{ section.settings.columns_desktop }}-col-desktop
+                  {% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %}
+                "
+              >
+                {% assign skip_card_product_styles = false %}
+                {% assign promo_banners = section.blocks
+                  | where: 'type', 'promo_banner'
+                  | sort: 'settings.banner_position'
+                %}
+                {% assign current_banner_index = 0 %}
+                {% assign total_banners = promo_banners.size %}
 
-            <ul
-              id="product-grid"
-              data-id="{{ section.id }}"
-              class="
-                grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
-                grid--{{ section.settings.columns_desktop }}-col-desktop
-              "
-            >
-              {%- for product in collection.products -%}
-                {% assign lazy_load = false %}
-                {%- if forloop.index > 2 -%}
-                  {%- assign lazy_load = true -%}
-                {%- endif -%}
-                <li
-                  class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                  {% if settings.animations_reveal_on_scroll %}
-                    data-cascade
-                  {% endif %}
-                >
-                  {% render 'card-product',
-                    card_product: product,
-                    media_aspect_ratio: section.settings.image_ratio,
-                    image_shape: section.settings.image_shape,
-                    show_secondary_image: section.settings.show_secondary_image,
-                    show_vendor: section.settings.show_vendor,
-                    show_rating: section.settings.show_rating,
-                    show_swatches: section.settings.show_swatches,
-                    lazy_load: lazy_load,
-                    show_quick_add: section.settings.enable_quick_add,
-                    section_id: section.id,
-                    show_price_range: section.settings.show_price_range,
-                    show_strikethrough_price: section.settings.show_strikethrough_price,
-                    use_lowest_priced_variant: section.settings.use_lowest_priced_variant
-                  %}
-                </li>
-              {%- endfor -%}
-            </ul>
+                {%- for product in collection.products -%}
+                  {% assign lazy_load = false %}
+                  {%- if forloop.index > 2 -%}
+                    {%- assign lazy_load = true -%}
+                  {%- endif -%}
+
+                  {%- if current_banner_index < total_banners
+                    and promo_banners[current_banner_index].settings.banner_position == forloop.index
+                  -%}
+                    {% assign banner_block = promo_banners[current_banner_index] %}
+                    {% if banner_block.settings['image-banner-desktop'] != blank %}
+                      <li class="grid__item set-width">
+                        {% if banner_block.settings.video-checked %}
+                           <div class="promo-banner-content desktop-use">
+                        {% assign controls_handle = banner_block.settings.controls %}
+                        {% assign sound_handle = banner_block.settings.muted %}
+                        {% assign auto_handle = banner_block.settings.autoplay %}
+                          {{
+                          banner_block.settings['video-shopify']
+                          | video_tag:
+                            controls: controls_handle,
+                            muted: sound_handle,
+                            playsinline: true,
+                            autoplay: auto_handle,
+                            id: 'collection-promo-video',
+                            width: '100%'
+                          }}
+                         </div>
+                           <div class="promo-banner-content mobile-use">
+                        {% assign controls_handle = banner_block.settings.controls %}
+                        {% assign sound_handle = banner_block.settings.muted %}
+                        {% assign auto_handle = banner_block.settings.autoplay %}
+                          {{
+                          banner_block.settings['video-shopify']
+                          | video_tag:
+                            controls: controls_handle,
+                            muted: sound_handle,
+                            playsinline: true,
+                            autoplay: auto_handle,
+                            id: 'collection-promo-video',
+                            width: '100%'
+                          }}
+                         </div>
+                     
+                        {% else %}
+                        {% if banner_block.settings.url-promo != blank %}
+                          <a href="{{ banner_block.settings.url-promo }}">
+                        {% endif %}
+                        
+                        <div class="promo-banner-content desktop-use">
+                          <img src="{{ banner_block.settings.image-banner-desktop | image_url }}" alt="Desktop Banner" height="" width="">
+                        </div>
+                        
+                        <div class="promo-banner-content mobile-use">
+                          <img src="{{ banner_block.settings.image-banner-mobile | image_url }}" alt="Mobile Banner" height="" width="">
+                        </div>
+                        
+                        {% if banner_block.settings.url-promo != blank %}
+                          </a>
+                        {% endif %}
+
+                        {% endif %}
+                      </li>
+                    {% endif %}
+                    {% assign current_banner_index = current_banner_index | plus: 1 %}
+                  {%- endif -%}
+
+                  <li
+                    class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                    {% if settings.animations_reveal_on_scroll %}
+                      data-cascade
+                      style="--animation-order: {{ forloop.index }};"
+                    {% endif %}
+                  >
+                    {% render 'card-product',
+                      card_product: product,
+                      media_aspect_ratio: section.settings.image_ratio,
+                      image_shape: section.settings.image_shape,
+                      show_secondary_image: section.settings.show_secondary_image,
+                      show_vendor: section.settings.show_vendor,
+                      show_rating: section.settings.show_rating,
+                      lazy_load: lazy_load,
+                      skip_styles: skip_card_product_styles,
+                      quick_add: section.settings.quick_add,
+                      section_id: section.id
+                    %}
+                  </li>
+                  {%- assign skip_card_product_styles = true -%}
+                {%- endfor -%}
+              </ul>
+
+            {% elsif section.settings.columns_desktop == 3 %}
+              <ul
+                id="product-grid"
+                data-id="{{ section.id }}"
+                class="three-column
+                  grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
+                  grid--{{ section.settings.columns_desktop }}-col-desktop
+                  {% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %}
+                "
+              >
+                {% assign skip_card_product_styles = false %}
+                {% assign promo_banners = section.blocks
+                  | where: 'type', 'promo_banner'
+                  | sort: 'settings.banner_position'
+                %}
+                {% assign current_banner_index = 0 %}
+                {% assign total_banners = promo_banners.size %}
+
+                {%- for product in collection.products -%}
+                  {% assign lazy_load = false %}
+                  {%- if forloop.index > 2 -%}
+                    {%- assign lazy_load = true -%}
+                  {%- endif -%}
+
+                  {%- if current_banner_index < total_banners
+                    and promo_banners[current_banner_index].settings.banner_position == forloop.index
+                  -%}
+                    {% assign banner_block = promo_banners[current_banner_index] %}
+                   <li class="grid__item set-width three-column-view">
+                         {% if banner_block.settings.video-checked %}
+                           <div class="promo-banner-content desktop-use">
+                        {% assign controls_handle = banner_block.settings.controls %}
+                        {% assign sound_handle = banner_block.settings.muted %}
+                        {% assign auto_handle = banner_block.settings.autoplay %}
+                          {{
+                          banner_block.settings['video-shopify']
+                          | video_tag:
+                            controls: controls_handle,
+                            muted: sound_handle,
+                            playsinline: true,
+                            autoplay: auto_handle,
+                            id: 'collection-promo-video',
+                            width: '100%'
+                          }}
+                         </div>
+                           <div class="promo-banner-content mobile-use">
+                        {% assign controls_handle = banner_block.settings.controls %}
+                        {% assign sound_handle = banner_block.settings.muted %}
+                        {% assign auto_handle = banner_block.settings.autoplay %}
+                          {{
+                          banner_block.settings['video-shopify']
+                          | video_tag:
+                            controls: controls_handle,
+                            muted: sound_handle,
+                            playsinline: true,
+                            autoplay: auto_handle,
+                            id: 'collection-promo-video',
+                            width: '100%'
+                          }}
+                         </div>
+                     
+                        {% else %}
+                       {% if banner_block.settings.url-promo != blank %}
+                          <a href="{{ banner_block.settings.url-promo }}">
+                        {% endif %}
+                        
+                        <div class="promo-banner-content desktop-use">
+                          <img src="{{ banner_block.settings.image-banner-desktop | image_url }}" alt="Desktop Banner" height="" width="">
+                        </div>
+                        
+                        <div class="promo-banner-content mobile-use">
+                          <img src="{{ banner_block.settings.image-banner-mobile | image_url }}" alt="Mobile Banner" height="" width="">
+                        </div>
+                        
+                        {% if banner_block.settings.url-promo != blank %}
+                          </a>
+                        {% endif %}
+
+                        {% endif %}
+                      </li>
+                    {% assign current_banner_index = current_banner_index | plus: 1 %}
+                  {%- endif -%}
+
+                  <li
+                    class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                    {% if settings.animations_reveal_on_scroll %}
+                      data-cascade
+                      style="--animation-order: {{ forloop.index }};"
+                    {% endif %}
+                  >
+                    {% render 'card-product',
+                      card_product: product,
+                      media_aspect_ratio: section.settings.image_ratio,
+                      image_shape: section.settings.image_shape,
+                      show_secondary_image: section.settings.show_secondary_image,
+                      show_vendor: section.settings.show_vendor,
+                      show_rating: section.settings.show_rating,
+                      lazy_load: lazy_load,
+                      skip_styles: skip_card_product_styles,
+                      quick_add: section.settings.quick_add,
+                      section_id: section.id
+                    %}
+                  </li>
+                  {%- assign skip_card_product_styles = true -%}
+                {%- endfor -%}
+              </ul>
+            {% else %}
+              <ul
+                id="product-grid"
+                data-id="{{ section.id }}"
+                class="
+                  grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
+                  grid--{{ section.settings.columns_desktop }}-col-desktop
+                "
+              >
+                {%- for product in collection.products -%}
+                  {% assign lazy_load = false %}
+                  {%- if forloop.index > 2 -%}
+                    {%- assign lazy_load = true -%}
+                  {%- endif -%}
+                  <li
+                    class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                    {% if settings.animations_reveal_on_scroll %}
+                      data-cascade
+                    {% endif %}
+                  >
+                    {% render 'card-product',
+                      card_product: product,
+                      media_aspect_ratio: section.settings.image_ratio,
+                      image_shape: section.settings.image_shape,
+                      show_secondary_image: section.settings.show_secondary_image,
+                      show_vendor: section.settings.show_vendor,
+                      show_rating: section.settings.show_rating,
+                      show_swatches: section.settings.show_swatches,
+                      lazy_load: lazy_load,
+                      show_quick_add: section.settings.enable_quick_add,
+                      section_id: section.id,
+                      show_price_range: section.settings.show_price_range,
+                      show_strikethrough_price: section.settings.show_strikethrough_price,
+                      use_lowest_priced_variant: section.settings.use_lowest_priced_variant
+                    %}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {% endif %}
 
             {%- if paginate.pages > 1 -%}
               {% render 'pagination', paginate: paginate, anchor: '' %}
