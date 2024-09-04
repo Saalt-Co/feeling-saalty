@@ -140,10 +140,25 @@
             "autoplay": true,
             "banner_position": 5
           }
+        },
+        "promo_banner_CLjWBn": {
+          "type": "promo_banner",
+          "settings": {
+            "image-banner-desktop": "shopify:\/\/shop_images\/Collection-Tiles-480x395-two-column-02.jpg",
+            "image-banner-mobile": "shopify:\/\/shop_images\/Collection-Tiles-395x500-single-column-02.jpg",
+            "url-promo": "",
+            "video-checked": true,
+            "video-shopify": "shopify:\/\/files\/videos\/New Tech Video w 6 pads info.mp4",
+            "controls": true,
+            "muted": true,
+            "autoplay": true,
+            "banner_position": 13
+          }
         }
       },
       "block_order": [
-        "promo_banner_8FBcCq"
+        "promo_banner_8FBcCq",
+        "promo_banner_CLjWBn"
       ],
       "settings": {
         "products_per_page": 24,
