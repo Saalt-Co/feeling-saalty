@@ -138,6 +138,10 @@ label.variant_swatch.disabled:after {
     position: relative;
     z-index: 2;
 }
+      .card__heading a:after{
+    pointer-events: none;
+
+  }
   .card__heading a:after{
     pointer-events: none;
   }
