@@ -296,6 +296,7 @@
         "section_buttons_group_X9DErJ",
         "section_button_LgfxPq"
       ],
+      "disabled": true,
       "custom_css": [
         "h3 {font-size: 16px !important; line-height: 1.5 !important; font-weight: 400 !important;}",
         ".section-inner {background-color: #40443e !important;}"
