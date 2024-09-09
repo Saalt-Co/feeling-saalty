@@ -64,6 +64,7 @@
         },
         "promo_banner_CLjWBn": {
           "type": "promo_banner",
+          "disabled": true,
           "settings": {
             "image-banner-desktop": "shopify:\/\/shop_images\/Collection-Tiles-480x395-two-column-02.jpg",
             "image-banner-mobile": "shopify:\/\/shop_images\/Collection-Tiles-395x500-single-column-02.jpg",
@@ -123,6 +124,7 @@
         "template--19610655392017__826ab071-d85e-4cc1-981e-0f5623d9ae40-section_title-1",
         "template--19610655392017__826ab071-d85e-4cc1-981e-0f5623d9ae40-section_content-1"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -348,6 +350,7 @@
         "f0812bee-53a0-45c2-acf8-a06f24b6d71d",
         "c8cb7502-f102-47a4-a6fd-3ea00c892598"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
@@ -376,9 +379,9 @@
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-0": {
           "type": "column",
           "settings": {
-            "title": "Kelsey R.",
+            "title": "Saber",
             "rating": 5,
-            "text": "<p>I am in love with these undies! I wore them on my heavier days for half a day, and they did a great job. No leaks, no stains! The fit was perfect; great for when you are wearing low rise pants.<\/p>",
+            "text": "<p>So far, I have purchased 8 pairs of this underwear. Yes, they cost a lot more than the packaged underwear at the big box store, but they are worth every penny! First, these are soft and smooth. You feel like you are not wearing any underwear at all. They do not cut into your skin or show under your clothing. Next, they are pretty! No matter what style you wear, they have them. Along with a fantastic money back guarantee, there is no reason not to try this underwear. <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -386,9 +389,9 @@
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2": {
           "type": "column",
           "settings": {
-            "title": "Natalie E.",
+            "title": "@Ecp23",
             "rating": 5,
-            "text": "<p>Is it weird that I was actually looking forward to my period to be able to rock these cute undies? Like lots of people said, these are cuter than a lot of my regular underwear and it's so nice to finally ditch the backup pad. Can't wait to get more in different colors to get me through period week!<\/p>",
+            "text": "<p>When they say seamless, they MEAN it!!! I tried these on with too small leggings & you couldn’t see an outline at all! I want to buy more just for everyday.<\/p>",
             "link_label": "",
             "link": ""
           }
