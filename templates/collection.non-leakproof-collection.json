@@ -398,10 +398,11 @@
         },
         "8ad13ac4-10e5-4131-bf07-17d6ff34bba2": {
           "type": "column",
+          "disabled": true,
           "settings": {
-            "title": "Michelle C.",
+            "title": "Bridget F.",
             "rating": 5,
-            "text": "<p>These are great! The period panties I've ordered from other brands feel like thin diapers mixed with granny panties. These are cute, they work, and I'm definitely going to buy more!<\/p>",
+            "text": "<p>I love seamless underwear but was kind so of worried it wouldn’t work. But these are my fav under work pants underwear now. <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -409,9 +410,9 @@
         "column_cxwDte": {
           "type": "column",
           "settings": {
-            "title": "Lani D.",
+            "title": "Saal",
             "rating": 5,
-            "text": "<p>Love it!!! It's so soft and you wouldn't even know that it was a period panty. Will definitely purchase more & recommend to all my friends & family! I've already bought some for my teenager daughter. <\/p>",
+            "text": "<p>I love these seamless thongs. I bought some a few months ago and they are now my go-to everyday thong. The material holds up and keep their shape and stretch without cutting into my love handles. They stay up and don't fall. I have literally cleared out my panty drawer and have replaced them with a sea of black and teracotta seamless thongs. I love these thongs...did I mention that!<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -428,7 +429,7 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "column_alignment": "left",
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
@@ -446,175 +447,6 @@
         "theme_color_text_section_button_text_hover": "theme_default",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "43429256-3f8c-4e7f-8078-fd40fcbd53b6": {
-      "type": "saalt-style-1-tiles-section",
-      "blocks": {
-        "c597b96e-faab-4e3b-8847-4fce180151f1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "2",
-            "title": "Meet the collections"
-          }
-        },
-        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-section_tiles_group-1": {
-          "type": "section_tiles_group",
-          "settings": {
-            "theme_color_mobile_text_color": "match_text",
-            "tile_mobile_text_alignment": "center",
-            "theme_color_desktop_text_color": "--palette-color-0",
-            "theme_color_desktop_text_hover_focus_color": "--palette-color-1",
-            "tile_desktop_text_alignment": "center",
-            "desktop_text_placement": "center",
-            "tile_desktop_text_alignment_hover_focus": "left",
-            "desktop_text_hover_placement": "flex-start"
-          }
-        },
-        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-1": {
-          "type": "saalt_style_1_tile",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Seamless-darker.jpg",
-            "title": "SEAMLESS",
-            "text_content": "Sleek and super-stretchy for all of the freedom with none of the panty lines.\n\nMade with ultra-durable LYCRA®️ XTRA LIFE™️ fiber which resists fit loss and provides you with the confidence that your garment will last after repeated wash and wear.",
-            "button_text": "Shop Seamless",
-            "button_url": "\/collections\/seamless",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
-        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-2": {
-          "type": "saalt_style_1_tile",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Comfort-Modal-darker.jpg",
-            "title": "COMFORT",
-            "text_content": "The softest fabric to ever be used in period underwear.\n\nMade from soft-stretch TENCEL™️ Modal, aka dreamy soft fabric made from sustainably regenerated cellulose fiber that comes from renewable beech wood.",
-            "button_text": "Shop Comfort",
-            "button_url": "shopify:\/\/collections\/comfort",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
-        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-3": {
-          "type": "saalt_style_1_tile",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Lace-Mesh-darker.jpg",
-            "title": "LACE & MESH",
-            "text_content": "Strong, sustainable, stunning. \"The Lamborghini of period underwear.\" -Katie Couric Media\n\nBeautifully designed in Paris. Each pair is made with an average of 3 post-consumer recycled water bottles to help clean up landfill- and ocean-bound plastic.",
-            "button_text": "Shop Lace & Mesh",
-            "button_url": "\/collections\/lace-mesh",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
-        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-4": {
-          "type": "saalt_style_1_tile",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Cotton-darker.jpg",
-            "title": "COTTON",
-            "text_content": "Just like your favorite cotton tee, but for your booty. ;)\n\nMade of soft and breathable biodegradable natural cotton that is Standard 100 OEKO-TEX®️ Certified. This is a 3rd party certification that our product is free from a wide list of harmful chemicals.",
-            "button_text": "Shop Cotton",
-            "button_url": "\/collections\/cotton",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "c597b96e-faab-4e3b-8847-4fce180151f1",
-        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-section_tiles_group-1",
-        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-1",
-        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-2",
-        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-3",
-        "template--19610655392017__43429256-3f8c-4e7f-8078-fd40fcbd53b6-saalt_style_1_tile-4"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_alignment": "center",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "b4f29bbb-7268-4349-91b5-1ab1f590f3c0": {
-      "type": "collapsible-content",
-      "blocks": {
-        "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-0": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Will period underwear smell?",
-            "icon": "none",
-            "row_content": "<p>No, when cared for properly, your Saalt Wear should not smell! Saalt Wear is treated with a bio-based solution for odor control that removes sweat odor and eliminates bacteria to keep you fresh and odor-free.<br\/><br\/><a href=\"https:\/\/saalt.com\/blogs\/news\/how-to-wash-your-saalt-wear\" title=\"https:\/\/saalt.com\/blogs\/news\/how-to-wash-your-saalt-wear\">How to wash period underwear<\/a>.<\/p>",
-            "page": ""
-          }
-        },
-        "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-1": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I put it in the dryer?",
-            "icon": "none",
-            "row_content": "<p>Take good care of Saalt Wear, and it will take great care of you. <\/p><p>After use, rinse your Saalt Wear leakproof underwear in cold water to help avoid staining. Then, hand wash or machine wash on cold, preferably in a <a href=\"\/products\/saalt-mesh-laundry-bag\" title=\"\/products\/saalt-mesh-laundry-bag\"><span style=\"text-decoration:underline\">Saalt Mesh Laundry Bag<\/span><\/a> intended for delicates. You can use detergent but pass on the fabric softener, bleach, and iron to protect the tech. Proudly hang dry—energy efficient and free. We recommend avoiding putting Saalt Wear in the dryer, as high temperatures can degrade the elastics and fabric over time.<\/p>",
-            "page": ""
-          }
-        },
-        "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-2": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I wear them all day?",
-            "icon": "none",
-            "row_content": "<p>Go with your flow! How long you can wear your Saalt Wear leakproof underwear before needing to change will depend on your flow and the absorbency level of the style you choose. If you are free bleeding on your heavy day, you may need to change into a fresh pair after a few hours of wear. If you’re wearing your Saalt Wear as a backup to a cup or on a light day, you may be able to wear it all day. We recommend trying Saalt Wear for the first time at home so you can see how your pair works best for your body and ~flow~.<\/p>",
-            "page": ""
-          }
-        },
-        "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Does Saalt Wear have PFAS (polyfluoroalkyl substances)",
-            "icon": "none",
-            "row_content": "<p>You can rest easy knowing that Saalt does not use any PFAS in our fabric finishes. We test all materials for a wide range of known hazardous substances, including PFAS and other known harmful chemicals. As a B Corp, we’re committed to providing the safest, most effective, and responsibly-produced leakproof underwear on the market for our customers. We source our materials from factories known for making safe, green textiles. Some of our fabrics are OEKO-TEX®️ and bluesign®️ approved, which are internationally recognized standards for making textiles cleaner and more environmentally friendly. You can <a href=\"\/blogs\/news\/everything-you-need-to-know-about-pfas-and-period-underwear\" title=\"\/blogs\/news\/everything-you-need-to-know-about-pfas-and-period-underwear\"><span style=\"text-decoration:underline\">learn even more about PFAS on our blog<\/span><\/a>.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-0",
-        "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-1",
-        "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-2",
-        "template--18370419720465__b4f29bbb-7268-4349-91b5-1ab1f590f3c0-168797666624c32235-3"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "Saalt Wear FAQs",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "theme_color_container_background": "theme-color-bg-4",
-        "theme_color_container_text": "theme_default",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -720,7 +552,7 @@
           "type": "section_content",
           "settings": {
             "text_group_num": "2",
-            "text_content": "<p>Saalt is a B Corp. That means we use business as a force for good and give 1% of revenue to donate cups and period underwear for women and girls in need.<\/p>"
+            "text_content": "<p>Saalt is a B Corp. That means we use business as a force for good and give 1% of revenue to donate period care to women and girls in need.<\/p>"
           }
         },
         "section_icon_group_yJQHti": {
@@ -829,8 +661,6 @@
     "14203610-b21b-4177-bf34-1181886aaa2c",
     "608ca706-ad50-41fb-bcb5-660ee4c39ec0",
     "835cabec-b298-4b76-9a74-2ae85e6ea4be",
-    "43429256-3f8c-4e7f-8078-fd40fcbd53b6",
-    "b4f29bbb-7268-4349-91b5-1ab1f590f3c0",
     "1b9dee2b-76db-4cda-bad0-2f1cfeadc02f",
     "saalt_media_with_split_text_kgQmkB"
   ]
