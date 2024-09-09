@@ -252,7 +252,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "1",
-            "title": "Take 15% off sitewide with code <u>LABORDAY15<\/u>"
+            "title": "New Saalt Wear Teen Brief - shipping&nbspNOW!"
           }
         },
         "section_content_pgzqyn": {
@@ -266,7 +266,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "You work hard, and so should your period&nbspcare. <br>\n<small><a href=\"https:\/\/saalt.com\/pages\/offer-terms\">See terms<\/a><\/small>"
+            "title": "The same confidence-inspiring tech and full-coverage cut you love, in colors chosen by teens."
           }
         },
         "section_buttons_group_X9DErJ": {
@@ -280,7 +280,7 @@
           "type": "section_button",
           "settings": {
             "button_text": "SHOP NOW",
-            "button_url": "shopify:\/\/collections\/shop-all",
+            "button_url": "shopify:\/\/products\/leakproof-teen-brief",
             "button_type": "primary",
             "theme_color_section_button_background": "theme-color-bg-5",
             "theme_color_text_section_button_text": "theme-color-text-1",
@@ -306,8 +306,8 @@
         "theme_color_background": "theme-color-bg-1",
         "theme_color_text": "theme-color-text-0",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-Labor-Day-2024-Hero-mobile_03.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Labor-Day-2024-Hero_04.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/SW-TC-Banner-Blocks-Hero-Homepage-mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/SW-TC-Banner-Blocks-Hero.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
