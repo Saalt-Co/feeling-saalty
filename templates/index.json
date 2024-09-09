@@ -179,7 +179,7 @@
         "section_content_H6jfLA": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>The same confidence-inspiring tech and full-coverage cut you love, in colors chosen by teens. Now available for preorder in youth&nbspsizes&nbspS-XL.<\/p>"
+            "text_content": "<p>The same confidence-inspiring tech and full-coverage cut you love, in colors chosen by teens. Now available for preorder in youth sizes S-XL.<\/p>"
           }
         },
         "section_title_c7DKgx": {
@@ -266,7 +266,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "The same confidence-inspiring tech and full-coverage cut you love, in colors chosen by teens."
+            "title": "The same confidence-inspiring tech and full-coverage cut you love, in colors chosen by teens. Now available in youth sizes&nbspS-XL."
           }
         },
         "section_buttons_group_X9DErJ": {
@@ -299,7 +299,7 @@
       "disabled": true,
       "custom_css": [
         "h3 {font-size: 16px !important; line-height: 1.5 !important; font-weight: 400 !important;}",
-        ".section-inner {background-color: #40443e !important;}"
+        ".section-inner {background-color: #a9b6c6 !important;}"
       ],
       "settings": {
         "section_id": "",
