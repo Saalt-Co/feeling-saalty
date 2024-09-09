@@ -75,6 +75,7 @@
         },
         "text_xEyRrj": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<strong>Pre-Order now, ships in September<\/strong>",
             "text_style": "subtitle"
