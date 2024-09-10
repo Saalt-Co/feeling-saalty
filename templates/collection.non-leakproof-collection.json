@@ -153,7 +153,7 @@
         "template--19610655392017__14203610-b21b-4177-bf34-1181886aaa2c-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<h2>Premium Design. Comfortable Fit.<\/h2><p>Periods. Bladder leaks. Overnight protection. Postpartum care. <\/p><p>The most comfortable leakproof period underwear that does it all, just like you.<\/p>"
+            "text_content": "<h2>Premium Design. Comfortable Fit.<\/h2><p>Designed to flex with you through yoga class or a night out and stay invisible under your tailored workwear.<\/p>"
           }
         },
         "93e8d39c-1d8a-44fd-b85e-097b75f3b704": {
@@ -381,28 +381,17 @@
           "settings": {
             "title": "Saber",
             "rating": 5,
-            "text": "<p>So far, I have purchased 8 pairs of this underwear. Yes, they cost a lot more than the packaged underwear at the big box store, but they are worth every penny! First, these are soft and smooth. You feel like you are not wearing any underwear at all. They do not cut into your skin or show under your clothing. Next, they are pretty! No matter what style you wear, they have them. Along with a fantastic money back guarantee, there is no reason not to try this underwear. <\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2": {
-          "type": "column",
-          "settings": {
-            "title": "@Ecp23",
-            "rating": 5,
-            "text": "<p>When they say seamless, they MEAN it!!! I tried these on with too small leggings & you couldn’t see an outline at all! I want to buy more just for everyday.<\/p>",
+            "text": "<p>So far, I have purchased 8 pairs of this underwear. They are worth every penny! First, these are soft and smooth. You feel like you are not wearing any underwear at all. They do not cut into your skin or show under your clothing. Next, they are pretty! No matter what style you wear, they have them. Along with a fantastic money back guarantee, there is no reason not to try this underwear. <\/p>",
             "link_label": "",
             "link": ""
           }
         },
         "8ad13ac4-10e5-4131-bf07-17d6ff34bba2": {
           "type": "column",
-          "disabled": true,
           "settings": {
-            "title": "Bridget F.",
+            "title": "Tricia",
             "rating": 5,
-            "text": "<p>I love seamless underwear but was kind so of worried it wouldn’t work. But these are my fav under work pants underwear now. <\/p>",
+            "text": "<p>I have tried so many styles and brands and my new Saalt are by far my favorite ever. The seamless fabric is amazing, light and soft. I have a bigger bottom so full back coverage can be tricky for me to find, these work very well. Sizing wise, these are very stretchy. I got a medium and was worried they'd be too small on my shape, but they were perfect. Love the higher waist, they didn't roll down and kept everything in. <\/p>",
             "link_label": "",
             "link": ""
           }
@@ -412,7 +401,18 @@
           "settings": {
             "title": "Saal",
             "rating": 5,
-            "text": "<p>I love these seamless thongs. I bought some a few months ago and they are now my go-to everyday thong. The material holds up and keep their shape and stretch without cutting into my love handles. They stay up and don't fall. I have literally cleared out my panty drawer and have replaced them with a sea of black and teracotta seamless thongs. I love these thongs...did I mention that!<\/p>",
+            "text": "<p>I love these seamless thongs. I bought some a few months ago and they are now my go-to everyday thong. The material holds up and keep their shape and stretch without cutting into my love handles. They stay up and don't fall. I have literally cleared out my panty drawer and have replaced them with a sea of black and terracotta seamless thongs. I love these thongs...did I mention that?!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "@Ecp23",
+            "rating": 5,
+            "text": "<p>When they say seamless, they MEAN it!!! I tried these on with too small leggings & you couldn’t see an outline at all! I want to buy more just for everyday.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -420,12 +420,12 @@
       },
       "block_order": [
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-0",
-        "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2",
         "8ad13ac4-10e5-4131-bf07-17d6ff34bba2",
-        "column_cxwDte"
+        "column_cxwDte",
+        "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2"
       ],
       "settings": {
-        "title": "9\/10 People Never Go Back",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
