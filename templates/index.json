@@ -725,7 +725,7 @@
         "column3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/peyttonb_square_1-8-24.png",
+            "image": "shopify:\/\/shop_images\/peyttonb_square_1-8-24_05ec35bf-ac98-4097-aa27-f51c645a6bb7.png",
             "title": "Peytton",
             "rating": 5,
             "text": "<p><strong>The Saalt Period Cup has saved me so much money<\/strong> because I'm not buying tampons every single month. I was so worried when I switched to a period cup that I would be uncomfortable. This is flexible, it molds to your body, it's soft, and when you insert it <strong>you can't even feel it.<\/strong><\/p>",
@@ -736,7 +736,7 @@
         "column1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/kelsvaughne_square_1-8-24.png",
+            "image": "shopify:\/\/shop_images\/kelsvaughne_square_1-8-24_4120b1a4-2016-41d3-abc1-5f3592698158.png",
             "title": "Kels",
             "rating": 5,
             "text": "<p><strong>The Saalt Cup is my new bestie!<\/strong> Well technically not new, we've been best friends for about 5 years. <strong>Imagine how much money I've saved not buying tampons!<\/strong><\/p>",
@@ -747,7 +747,7 @@
         "column2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/euna.ugc_square_1-8-24.png",
+            "image": "shopify:\/\/shop_images\/euna.ugc_square_1-8-24_0fff0127-40a0-450e-b8ca-6d9998870623.png",
             "title": "Euna",
             "rating": 5,
             "text": "<p>I wanted to avoid panty lines and the bulk of pads while still wearing leggings at the gym. My solution was Saalt's seamless underwear. I was skeptical at first, but honestly they're <strong>very thin and comfortable making it the perfect thing to wear under leggings.<\/strong><\/p>",
@@ -758,7 +758,7 @@
         "b928608f-5149-4293-bab7-c644352b3dd1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Dava_square_1-8-24.jpg",
+            "image": "shopify:\/\/shop_images\/Dava_square_1-8-24_ce5f898c-297d-4633-823d-8d2d3e5736e3.jpg",
             "title": "Dava",
             "rating": 5,
             "text": "<p><strong>Truly the best invention ever!! <\/strong>There is a learning curve to it of course…but I promise this will change your life for the better!! Once you get it down you will love it!<\/p>",
@@ -847,8 +847,8 @@
         "theme_color_background": "theme-color-bg-3",
         "theme_color_text": "theme-color-text-0",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt_Cup-Hero_Mobile_Home_Page.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt_Cup_-_Sec_B_Home_Page.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt_Cup-Hero_Mobile_Home_Page_ca3d3f63-3f5f-45e5-80c7-e0c340afec14.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt_Cup_-_Sec_B_Home_Page_bbfea667-163e-4f64-a711-7d7213d09065.jpg",
         "media_overlay_color": "--palette-color-0",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
@@ -1209,7 +1209,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Creatably-Home-Screen-v2.jpg",
+        "image": "shopify:\/\/shop_images\/Creatably-Home-Screen-v2_e975456c-55b8-49d6-beba-379790c9ad31.jpg",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
