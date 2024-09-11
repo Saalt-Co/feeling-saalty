@@ -1,0 +1,1101 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "fd4445e0-3160-476f-9e6f-f9f22e50a1dc": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "template--15078825525329__fd4445e0-3160-476f-9e6f-f9f22e50a1dc-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Meet the Saalt<br> Period Disc, at your cervix."
+          }
+        },
+        "template--15078825525329__fd4445e0-3160-476f-9e6f-f9f22e50a1dc-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>The Saalt Disc is a soft, reusable silicone disc that collects your flow without relying on suction to stay in place. High capacity, sustainable, simple to use, and you can wear it during sex.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15078825525329__fd4445e0-3160-476f-9e6f-f9f22e50a1dc-section_title-1",
+        "template--15078825525329__fd4445e0-3160-476f-9e6f-f9f22e50a1dc-section_content-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify:\/\/shop_images\/Learn-Saalt-Disc-Header-Mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Learn-Saalt-Disc-Header-Desktop.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "60%",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "flex-end",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "40%",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "c3c67c48-069b-41aa-83c9-2b9ee67d9d60": {
+      "type": "saalt-modular-nav-bar",
+      "blocks": {
+        "template--15078825525329__c3c67c48-069b-41aa-83c9-2b9ee67d9d60-nav_bar_link-1": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "How it works",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "#how-it-works",
+            "nav_bar_link_dest": "#how it works"
+          }
+        },
+        "4527afb6-04da-4f97-a477-496cd83f6322": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "How to use it",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "#how-to-use-it",
+            "nav_bar_link_dest": "#why it's better"
+          }
+        },
+        "bd2e6f19-eb06-4cd9-a36b-c83a7d840938": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "Why it's better",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "#why-its-better",
+            "nav_bar_link_dest": "#absorbency guide"
+          }
+        },
+        "203f953b-dc7d-482f-9e5d-c6bb8a366b86": {
+          "type": "nav_bar_link",
+          "settings": {
+            "nav_bar_link_text": "Disc or cup?",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "#cup-or-disc",
+            "nav_bar_link_dest": "#how to wash"
+          }
+        },
+        "97c874e3-3dcf-4a4b-808e-cb386cef62e8": {
+          "type": "nav_bar_link",
+          "disabled": true,
+          "settings": {
+            "nav_bar_link_text": "How to clean",
+            "click_behavior": "scroll_to",
+            "nav_bar_element_selector": "#how-to-clean",
+            "nav_bar_link_dest": "#how to wash"
+          }
+        }
+      },
+      "block_order": [
+        "template--15078825525329__c3c67c48-069b-41aa-83c9-2b9ee67d9d60-nav_bar_link-1",
+        "4527afb6-04da-4f97-a477-496cd83f6322",
+        "bd2e6f19-eb06-4cd9-a36b-c83a7d840938",
+        "203f953b-dc7d-482f-9e5d-c6bb8a366b86",
+        "97c874e3-3dcf-4a4b-808e-cb386cef62e8"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-4",
+        "theme_color_text": "theme_default",
+        "mobile_nav_link_gap": "3rem",
+        "desktop_nav_link_gap": "7rem"
+      }
+    },
+    "205af4ea-20c2-45bc-98f3-082272cb19eb": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Here’s how it works."
+          }
+        },
+        "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>The Saalt Disc is inserted like a tampon, but collects rather than absorbs your flow. The disc rests around the cervix for leak-free comfort, all day or night. Flexible, flat fit allows for mess-free intimacy.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_title-1",
+        "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_content-1"
+      ],
+      "settings": {
+        "section_id": "how it works",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Disc_learn_how_it_works_12-13-23.jpg",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "11b4eb9a-18a9-488e-bfd7-23c248641695": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--15078825525329__11b4eb9a-18a9-488e-bfd7-23c248641695-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "And here’s how<br>you use it."
+          }
+        },
+        "template--15078825525329__11b4eb9a-18a9-488e-bfd7-23c248641695-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p><strong>1: Fold<br\/><\/strong>With clean hands, pinch your disc into a figure 8.<\/p><p><strong>2: Insert<br\/><\/strong>Insert the disc fully and tuck behind your pubic bone.<\/p><p><strong>3: Remove<br\/><\/strong>After up to 12 hours of wearing your disc, simply remove it by hooking your finger in the custom finger hold and gently pulling out your disc. Then wash your disc, insert, and get back to living your best life.<br\/><\/p><p><a href=\"\/pages\/disc-instructions\" title=\"\/pages\/disc-instructions\"><strong>See our full menstrual disc instructions here.<\/strong><\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15078825525329__11b4eb9a-18a9-488e-bfd7-23c248641695-section_title-1",
+        "template--15078825525329__11b4eb9a-18a9-488e-bfd7-23c248641695-section_content-1"
+      ],
+      "settings": {
+        "section_id": "how to use it",
+        "theme_color_background": "theme-color-bg-4",
+        "theme_color_text": "theme_default",
+        "media_type": "video",
+        "video": "shopify:\/\/files\/videos\/Vertical - How to Insert a Disc - Learn discs 12-13-23.mp4",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 30,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "left",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "80%",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1486f5ff-6753-4ad7-b1a9-6346e2f7f3b8": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "7c31b41b-4479-419c-a9c7-464a157cacda": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Not all menstrual discs are created equal."
+          }
+        },
+        "f7a5cbdf-a0cc-49a8-9c40-00242a8fee72": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>We designed the Saalt Disc to be the easiest to use and most comfortable disc on the market.  With a smooth flexible rim, custom removal notch, and high-capacity, ultra comfortable basin, the Saalt Disc feels like nothing, but fills like whoa. <\/p><p>Grab a match. It’s time to burn your last tampon.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "7c31b41b-4479-419c-a9c7-464a157cacda",
+        "f7a5cbdf-a0cc-49a8-9c40-00242a8fee72"
+      ],
+      "settings": {
+        "section_id": "why it's better",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Saalt-Disc-Promo-January-February-Menstrual-Disc-Cup-15-Off-Hero-mobile.jpg",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "80%",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "27932570-f6dd-49ef-a41d-a62c5a6e210f": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "c1b44b28-e8c0-406e-b736-e8805091a928": {
+          "type": "section_icon_group",
+          "settings": {
+            "mobile_icons_display": "row",
+            "mobile_icon_group_horizontal_alignment": "center",
+            "mobile_icon_group_vertical_alignment": "center",
+            "mobile_icon_grid_columns": 2,
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_text_size": "1.5rem",
+            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_vertical_alignment": "center",
+            "mobile_icon_min_width": "70px",
+            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "70px",
+            "use_max_icon_group_width": false,
+            "icon_group_max_width": "600px",
+            "desktop_icons_display": "row",
+            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_vertical_alignment": "center",
+            "desktop_icon_grid_columns": 2,
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_horizontal_alignment": "center",
+            "desktop_icon_vertical_alignment": "center",
+            "desktop_icon_min_width": "70px",
+            "desktop_icon_wrapper_max_width": "70px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "70px"
+          }
+        },
+        "509bce37-e5ee-4185-86eb-b2a6cf78aa5d": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"96\" height=\"55\" viewbox=\"0 0 96 96\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M95.0966 6.4007L94.9067 6.44663C94.6367 8.68379 92.8743 11.5699 86.2784 13.1463C78.7613 14.9449 70.8645 12.5329 65.9821 9.00974C65.273 8.4986 64.5535 7.97264 63.8132 7.46447C63.429 7.19778 63.0462 6.92666 62.6605 6.65553C56.9815 2.64642 50.3056 -0.291522 43.0362 0.301104H42.9932C42.9695 0.301104 42.9443 0.301104 42.922 0.309993C38.1836 0.71446 34.7492 2.16047 32.0373 4.08798C29.584 5.67466 27.4611 7.72024 25.7856 10.112C22.6821 14.5849 21.559 19.7422 22.6257 24.6447C22.6687 24.8432 22.737 25.0329 22.7874 25.2373C21.5746 25.1828 20.3595 25.2065 19.1498 25.3084C12.1178 25.8922 7.01441 30.368 3.90343 35.1949C1.38761 39.1063 0.326027 43.7753 0.903711 48.3882L1.0936 48.3438C1.36806 46.1051 3.12902 43.2205 9.72632 41.6427C17.2434 39.8455 25.1403 42.256 30.0226 45.7792C30.7318 46.2918 31.4513 46.8163 32.1916 47.3245C32.5758 47.5911 32.9585 47.8623 33.3443 48.1334C39.0218 52.141 45.6932 55.079 52.9626 54.4863H53.0071L53.0783 54.4775C57.8153 54.0715 61.2496 52.627 63.963 50.6995C66.4167 49.112 68.5396 47.0654 70.2147 44.6725C73.3182 40.1996 74.4413 35.0423 73.3746 30.1413C73.3316 29.9413 73.2633 29.7516 73.2129 29.5487C74.4257 29.603 75.6407 29.5797 76.8505 29.479C83.8825 28.8864 88.9859 24.418 92.0969 19.5911C94.612 15.6805 95.6736 11.0126 95.0966 6.4007V6.4007ZM72.753 30.3013C72.8613 30.8021 72.9355 31.3073 72.9963 31.814C73.7381 39.0188 67.8039 42.9746 62.5003 43.4724C55.1894 44.1598 49.7077 39.3062 42.9175 34.3919C42.4117 34.0274 41.8895 33.6511 41.345 33.257C35.1972 28.6834 30.0701 25.7307 23.4669 25.2669C23.3957 25.0047 23.3081 24.7484 23.2488 24.4787C23.1405 23.978 23.0663 23.4728 23.0055 22.9661C22.2103 15.4101 28.1979 11.8054 33.5015 11.3076C40.8109 10.6261 46.3 15.4857 53.0842 20.3926C53.5901 20.7585 54.1123 21.1334 54.6568 21.5275C60.8046 26.1011 65.9317 29.0538 72.5349 29.5175C72.6061 29.7813 72.6937 30.0361 72.753 30.3013Z\"><\/path>\n<\/svg>",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "theme-color-text-4",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "3",
+            "title": "Saalt Bliss Guarantee"
+          }
+        },
+        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>If you're not happy with your Saalt product, <a href=\"\/pages\/replacements\" title=\"\/pages\/replacements\"><span style=\"text-decoration:underline\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/span><\/a>. Why? We know that learning to use reusables can take time, but we’re here to help and cheer you to Saalt bliss. Your Saalt(isfaction) guaranteed.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c1b44b28-e8c0-406e-b736-e8805091a928",
+        "509bce37-e5ee-4185-86eb-b2a6cf78aa5d",
+        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_title-1",
+        "template--15078825525329__27932570-f6dd-49ef-a41d-a62c5a6e210f-section_content-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "600px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "959d5c15-d6c3-425c-a8d3-5e2f73ff8944": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Which size should I get?<br>Let’s break it down."
+          }
+        },
+        "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_content-1": {
+          "type": "section_content",
+          "disabled": true,
+          "settings": {
+            "text_content": "<h2>Which size should I get?<br\/>Let’s break it down.<\/h2>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_title-1",
+        "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_content-1"
+      ],
+      "settings": {
+        "section_id": "absorbency guide",
+        "theme_color_background": "theme-color-bg-6",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Disc_size_chart_learn_discs_12-13-23.jpg",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "x-large",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "c8d699c2-ccef-4799-b100-f96128516185": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Find the Perfect Fit"
+          }
+        },
+        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Take the Saalt period cup quiz to find the best size and firmness for your most comfortable period.<\/p>"
+          }
+        },
+        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_button-1": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_title-1",
+        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_content-1",
+        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "code",
+        "custom_code": "The Digioh quiz code here",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 66,
+        "title_font_size": "large",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "left",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "f91185b0-f65e-4125-81ae-3fa39f1e6d62": {
+      "type": "saalt-style-1-tiles-section",
+      "blocks": {
+        "56acc760-8d94-4c0c-aed3-5c6bf3f52f9c": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Saalt reusable period cup of disc?"
+          }
+        },
+        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-section_tiles_group-1": {
+          "type": "section_tiles_group",
+          "settings": {
+            "theme_color_mobile_text_color": "match_text",
+            "tile_mobile_text_alignment": "center",
+            "theme_color_desktop_text_color": "match_text",
+            "theme_color_desktop_text_hover_focus_color": "match_text",
+            "tile_desktop_text_alignment": "center",
+            "desktop_text_placement": "center",
+            "tile_desktop_text_alignment_hover_focus": "center",
+            "desktop_text_hover_placement": "center"
+          }
+        },
+        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-1": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "title": "",
+            "text_content": "",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        },
+        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-2": {
+          "type": "saalt_style_1_tile",
+          "settings": {
+            "title": "",
+            "text_content": "",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "56acc760-8d94-4c0c-aed3-5c6bf3f52f9c",
+        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-section_tiles_group-1",
+        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-1",
+        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "cup or disc",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_alignment": "center",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "bec6a799-d547-4f72-a599-8edc58d4bcc3": {
+      "type": "saalt-unstyled-liquid-section",
+      "blocks": {
+        "a9820dcb-bb69-4453-874f-0f5037ef5b01": {
+          "type": "custom_liquid_code",
+          "settings": {
+            "liquid_code": "<div id=\"cup-or-disc\"> <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "a9820dcb-bb69-4453-874f-0f5037ef5b01"
+      ],
+      "settings": {
+        "section_id": "cup or disc"
+      }
+    },
+    "4979ad3b-9b05-4c86-8a59-644c6f717625": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/disc_placement.jpg",
+            "title": "Saalt Disc",
+            "rating": 0,
+            "text": "<h4>Sits in the fornix directly under the cervix.<\/h4><ul><li>No suction<\/li><li>Rests in vaginal fornix<\/li><li>Custom removal notch<\/li><li>No-mess period sex<\/li><li>Collects 4—6x more than a tampon<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cup_placement.jpg",
+            "title": "Saalt Cup",
+            "rating": 0,
+            "text": "<h4>Sits in the vaginal canal.<\/h4><ul><li>Seal keeps the cup in place<\/li><li>Rests in vaginal canal<\/li><li>Great for beginners<\/li><li>Two firmness options<\/li><li>Collects 3—4x more than a tampon<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-2",
+        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-1"
+      ],
+      "settings": {
+        "title": "Saalt Period Disc or Period Cup?",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "--palette-color-5",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "61266f32-54d6-459e-a625-fb59fc4b6f40": {
+      "type": "saalt-media-with-text",
+      "settings": {
+        "section_id": "how to clean",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "code",
+        "custom_code": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/xEli4yiKgVM?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "use_max_media_width": true,
+        "max_media_width": "900px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "above",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "7b50f505-ae19-4a09-8e7d-e62d26122e64": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Sarah B.",
+            "rating": 0,
+            "text": "<p>I've used a reusable menstrual disc before, but it wasn't quite right. It didn't fit perfectly, so there was some leakage, and it was difficult to remove. <strong>The Saalt Disc fits my body perfectly—no leaks! And the notch makes removal so much easier. <\/strong>I'm really happy with it!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Jordan E.",
+            "rating": 0,
+            "text": "<p>I've tried many cups and discs but <strong>this is the best disc I've used<\/strong> so far. I love the grip part because it makes it easy to remove it! It also doesn't collect the blood smell and the Saalt Wash is a great addition. I've used it for two cycles now and so far it's held up very well to boiling temps. I do not regret making this purchase at all. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-1",
+        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-3"
+      ],
+      "settings": {
+        "title": "9\/10 People Never Go Back",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "--palette-color-0",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "theme_default",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 64,
+        "padding_bottom": 36
+      }
+    },
+    "9f70e72a-5b16-482b-84b3-df444f15d0bd": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "c8e1740d-f77e-4a9e-9d0a-1ee3334097a4": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "9\/10 People Never Go Back"
+          }
+        }
+      },
+      "block_order": [
+        "c8e1740d-f77e-4a9e-9d0a-1ee3334097a4"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "YouTube embed here",
+        "use_max_media_width": true,
+        "max_media_width": "900px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "above",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "2a1f9c4e-eb99-4278-885c-23052a0fe53e": {
+      "type": "saalt-testimonials",
+      "blocks": {
+        "16dbc45b-abe6-491e-b9ad-02da4749d08b": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "I've used a reusable menstrual disc before, but it wasn't quite right. It didn't fit perfectly, so there was some leakage, and it was difficult to remove. <strong>The Saalt Disc fits my body perfectly—no leaks! And the notch makes removal so much easier. <\/strong>I'm really happy with it!",
+            "author": "Sarah B.",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "90ef17fc-815b-44d7-84c3-489096577077": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "I've tried many cups and discs but <strong>this is the best disc I've used<\/strong> so far. I love the grip part because it makes it easy to remove it! It also doesn't collect the blood smell and the Saalt Wash is a great addition. I've used it for two cycles now and so far it's held up very well to boiling temps. I do not regret making this purchase at all.",
+            "author": "<strong>Jordan E.<\/strong>",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16dbc45b-abe6-491e-b9ad-02da4749d08b",
+        "90ef17fc-815b-44d7-84c3-489096577077"
+      ],
+      "disabled": true,
+      "settings": {
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "include_img": true,
+        "image": "shopify:\/\/shop_images\/Testimonials_1.jpg",
+        "image_behavior": "none",
+        "accessibility_info": "Slideshow of customer testimonials"
+      }
+    },
+    "7dc8f187-d995-436e-9a49-5e215d0d4aa1": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are menstrual discs messy?",
+            "icon": "none",
+            "row_content": "<p>The Saalt Disc finger notch helps make removal clean and comfortable. With some practice, you’ll find your perfect removal technique for a mess-free period with your disc!<\/p>",
+            "page": ""
+          }
+        },
+        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What size should I get?",
+            "icon": "none",
+            "row_content": "<p>In general, we recommend that most new disc users start with the size regular, unless you have a low cervix, or you’re a teen or young adult.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will my menstrual disc leak?",
+            "icon": "none",
+            "row_content": "<p>Your Saalt Disc won’t leak when it’s in the right spot. Enjoy period week without the leaks.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-1",
+        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-2",
+        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQs",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
+        "theme_color_container_background": "theme-color-bg-5",
+        "theme_color_container_text": "theme-color-text-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "6d90874c-c092-46f8-89ee-85bf53a9989d": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "68fe5f6c-7322-4e01-98a4-e2259acfeb94": {
+          "type": "section_icon_group",
+          "settings": {
+            "mobile_icons_display": "row",
+            "mobile_icon_group_horizontal_alignment": "center",
+            "mobile_icon_group_vertical_alignment": "flex-start",
+            "mobile_icon_grid_columns": 2,
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_text_size": "1.5rem",
+            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_vertical_alignment": "center",
+            "mobile_icon_min_width": "60px",
+            "mobile_icon_wrapper_max_width": "60px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "100px",
+            "use_max_icon_group_width": false,
+            "icon_group_max_width": "600px",
+            "desktop_icons_display": "row",
+            "desktop_icon_group_horizontal_alignment": "flex-start",
+            "desktop_icon_group_vertical_alignment": "center",
+            "desktop_icon_grid_columns": 2,
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_horizontal_alignment": "center",
+            "desktop_icon_vertical_alignment": "center",
+            "desktop_icon_min_width": "50px",
+            "desktop_icon_wrapper_max_width": "50px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "100px"
+          }
+        },
+        "1c5adb37-de67-4c63-9b06-5cc2fbbb4c66": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" class=\"b-corp-logo\" width=\"92\" height=\"140\" viewbox=\"0 0 92 140\"><g><path d=\"M5.929 66.724c-.095 21.18 17.085 37.582 36.964 38.16 21.9.638 40.433-17.422 39.283-40.002-.515-10.13-4.469-18.763-11.81-25.71-7.904-7.48-17.394-10.922-28.3-10.467-18.949.79-36.195 16.763-36.137 38.02m82.125.07c-.12 25.948-21.435 44.254-44.434 43.908C18.2 110.321-.925 89.343.097 64.933 1.112 40.704 21.224 22.17 45.088 22.8c25.468.674 43.19 21.57 42.966 43.996M44.077 134.36l43.014.001c.859 0 .858 0 .858.86v4.002c0 .773 0 .775-.793.775H1.07c-.845 0-.844 0-.844-.825 0-1.432.011-2.864-.008-4.296-.005-.377.1-.554.494-.518.194.017.392.002.588.002h42.777zM15.34 5.765c-1.069 0-2.082.017-3.094-.02-.14-.004-.335-.249-.397-.421-.5-1.383-1.524-2.123-2.927-2.294-1.627-.199-3 .401-3.774 1.844-1.18 2.201-1.259 4.51-.064 6.752.709 1.331 1.892 1.983 3.419 1.983 1.427 0 2.488-.604 3.116-1.898.17-.348.31-.724.38-1.102.067-.354.191-.51.568-.5.764.022 1.529.019 2.293.002.45-.01.565.169.519.61-.303 2.89-2.431 5.168-5.307 5.65-2.668.448-5.077-.075-7.037-2.016-1.31-1.298-1.966-2.939-2.148-4.772C.666 7.361.94 5.23 2.189 3.332 3.793.895 6.16-.036 8.997.089c1.872.082 3.517.714 4.804 2.123.896.98 1.374 2.149 1.54 3.553m69.658 4.802c-.137-.707-.21-1.35-.39-1.962-.267-.91-.883-1.555-1.832-1.7-1.083-.165-2.104.047-2.676 1.119-.818 1.533-.808 3.13-.072 4.676.442.927 1.25 1.44 2.323 1.4 1.02-.037 1.766-.556 2.133-1.482.261-.66.354-1.386.514-2.05m-.135 4.368c-1.7 2.133-5.26 1.75-6.717.29-.984-.986-1.487-2.185-1.697-3.528-.306-1.95-.031-3.783 1.157-5.416 1.564-2.149 4.922-2.428 6.71-.7.079.076.193.114.385.224.028-.27.066-.468.067-.667.004-1.354.015-2.708-.007-4.062-.007-.44.156-.596.583-.586.686.014 1.373.006 2.059-.016.383-.012.572.092.57.526-.01 4.867-.008 9.733-.001 14.6 0 .41-.164.56-.564.546a24.243 24.243 0 0 0-1.766 0c-.482.02-.76-.114-.691-.663.018-.14-.044-.29-.088-.548M22.095 9.285c.645 0 1.291-.015 1.936.005.508.016.633-.212.478-.653-.36-1.023-.814-1.879-2.642-1.759-1.002.066-1.967.875-2.146 1.848-.07.385.044.561.437.56.646-.004 1.291-.002 1.937 0m1.685 1.974c-1.176 0-2.352.006-3.529-.003-.428-.004-.635.073-.552.606.176 1.132.75 1.89 1.863 2.151 1.17.274 2.243.03 3.014-.946.298-.378.597-.495 1.04-.468.468.028.94 0 1.41.008.543.01.61.141.399.645-.803 1.914-2.24 2.96-4.3 3.141-1.534.135-3.008-.032-4.321-.934-1.407-.967-2.092-2.375-2.277-4.005-.276-2.434.344-4.572 2.47-6.021 2.46-1.677 6.54-1.344 8.126 1.917.521 1.073.75 2.218.729 3.414-.007.374-.165.508-.544.502-1.176-.018-2.352-.006-3.528-.007m45.93-1.976c.628 0 1.255.005 1.882-.001.594-.006.725-.154.525-.706-.357-.983-.784-1.804-2.64-1.701-1 .056-1.835.753-2.126 1.798-.134.483.06.611.478.611h1.882m1.648 1.975c-1.157 0-2.314-.006-3.471.002-.614.004-.668.12-.56.701.21 1.121.814 1.861 1.95 2.073 1.205.224 2.243-.078 3.044-1.074.144-.18.429-.32.661-.34.545-.05 1.097-.02 1.646-.015.571.005.619.094.418.61-.833 2.13-2.47 3.09-4.675 3.209-1.354.072-2.652-.122-3.823-.88-1.356-.876-2.084-2.166-2.345-3.707-.307-1.814-.116-3.576 1.038-5.091 1.443-1.894 3.407-2.54 5.718-2.188 3.379.514 4.639 3.817 4.493 6.303-.021.353-.21.404-.506.401-1.196-.01-2.392-.004-3.588-.004m-17.091 4.882c-1.508 0-1.508 0-1.508-1.521 0-2.374-.014-4.748.012-7.121.005-.505-.164-.63-.64-.626-1.25.014-1.25-.006-1.25-1.235 0-.894 0-.894.923-.893.137 0 .275-.01.411.002.402.035.544-.13.557-.542.018-.542.048-1.107.214-1.615.405-1.238 1.337-1.915 2.607-2.053.735-.08 1.487-.006 2.231-.015.359-.004.495.156.456.504-.017.155.003.313-.004.47-.02.427.097.965-.118 1.244-.16.207-.755.078-1.157.1-.794.042-1.387.935-1.06 1.643.06.13.302.232.47.249a7.29 7.29 0 0 0 1.116.008c.35-.02.518.117.508.47-.002.038 0 .078.001.117.051 1.534.051 1.556-1.463 1.544-.561-.004-.686.203-.68.728.024 2.55.01 5.1.01 7.65 0 .891.001.891-.871.892h-.765m-14.804-5.545c0-1.06-.017-2.119.01-3.178.01-.419-.14-.536-.542-.543-1.355-.022-1.354-.036-1.347-1.377.005-.728.027-.751.77-.753 1.257-.004 1.101.108 1.108-1.093.004-.589.018-1.178-.006-1.765-.014-.37.09-.542.49-.53a39.2 39.2 0 0 0 2.118 0c.4-.009.564.137.55.55-.024.726.014 1.453-.014 2.178-.019.477.147.694.64.665.39-.023.783 0 1.176-.006.335-.007.516.13.51.484-.037 2.012.308 1.613-1.488 1.652-.831.019-.831.006-.83.852 0 1.451-.005 2.903.003 4.355.001.272.034.547.084.815.125.675.38.878 1.076.893 1.155.024 1.155.024 1.155 1.16 0 1.265 0 1.319-1.261 1.326-.874.004-1.76-.102-2.618-.275-.943-.192-1.569-1.167-1.582-2.29-.012-1.04-.003-2.08-.002-3.12M9.374 120.209c-.236 0-.484.046-.703-.014-.204-.057-.468-.183-.55-.354-.41-.853-1.011-1.453-1.978-1.56-1.18-.13-2.199.187-2.785 1.306-.838 1.598-.869 3.24.02 4.818.597 1.06 1.616 1.487 2.803 1.297 1.126-.18 1.743-.948 2.017-2.037.041-.166.287-.378.456-.395.525-.052 1.057-.014 1.587-.024.351-.007.448.17.391.483-.345 1.912-1.57 3.608-3.845 3.972-1.98.317-3.74-.105-5.118-1.654-1.093-1.228-1.439-2.715-1.384-4.309.071-2.087.844-3.851 2.714-4.907 2.341-1.322 5.533-.781 6.88 1.359.305.485.459 1.071.634 1.626.027.088-.185.34-.32.372-.26.06-.545.017-.82.017v.004zm24.229 3.478c-.096-.543-.126-1.001-.265-1.423-.23-.692-.683-1.18-1.46-1.273-.781-.092-1.426.161-1.774.87-.52 1.056-.545 2.171-.028 3.231.281.578.778.955 1.498.965.744.01 1.324-.256 1.62-.934.207-.473.29-1 .41-1.436m-3.819 3.087c0 1.076-.024 2.014.01 2.95.019.541-.158.754-.71.68a4.186 4.186 0 0 0-.999.001c-.437.048-.536-.154-.535-.543.008-3.297.01-6.593 0-9.89-.002-.418.153-.573.56-.515.153.022.313 0 .47.006.538.022 1.24-.238 1.138.955.8-.93 1.645-1.169 2.61-1.142 1.606.046 2.928 1.191 3.267 2.773.279 1.304.266 2.55-.293 3.786-.824 1.82-3.157 2.505-4.812 1.388-.19-.128-.385-.246-.706-.45M32.441 6.45c.616-1.01 1.497-1.64 2.638-1.9.114-.026.228-.057.344-.07 1.064-.11 1.19.005 1.19 1.072 0 .45-.022.903.007 1.352.026.418-.145.54-.547.544-.6.007-1.24-.037-1.793.15-1.53.514-1.87 1.83-1.909 3.244a102.739 102.739 0 0 0 0 4.587c.01.533-.16.75-.707.721a23.212 23.212 0 0 0-1.94-.004c-.39.012-.513-.155-.512-.525.007-3.45.007-6.9.001-10.35 0-.353.086-.549.497-.533.685.027 1.372.023 2.057.001.371-.012.487.152.479.49-.01.396-.003.792-.003 1.19l.198.03m25.274 117.758c-.032-.048-.187-.397-.272-.381-.818.155-1.666.274-2.422.599-.673.29-.57 1.335.092 1.664 1.268.632 2.56-.209 2.602-1.882zm2.225 3.321c-.708-.206-1.659.459-2.338-.59-.826.727-1.834.837-2.892.793-1.398-.058-2.398-.968-2.403-2.359-.004-1.25.602-2.096 2.13-2.374.692-.126 1.395-.2 2.092-.303.731-.108 1.188-.477 1.17-.939-.023-.61-.502-.967-1.296-.991-.706-.02-1.268.163-1.544.9-.053.142-.286.29-.446.303-.487.04-.979.022-1.468.01-.346-.007-.4-.171-.319-.507.235-.966.826-1.585 1.747-1.882 1.42-.457 2.85-.464 4.253.058.91.339 1.323 1.046 1.316 2.014-.008 1.078-.002 2.156-.002 3.235v2.632zm-20.91-4.05.056.019c.03.33.046.662.095.99.114.75.745 1.426 1.421 1.544.895.156 1.595-.152 2.005-.947.443-.856.419-1.763.2-2.68-.191-.796-.803-1.351-1.586-1.421-.915-.082-1.523.244-1.853 1.09-.174.444-.23.935-.338 1.405m1.995 4.25c-2.454.132-4.204-1.6-4.175-4.223.028-2.63 1.588-4.225 4.189-4.223 2.524.003 4.136 1.635 4.168 4.147.034 2.63-1.717 4.416-4.182 4.298m-25.172-1.674c.678.006 1.228-.307 1.544-1.02.419-.941.41-1.908.096-2.854-.257-.77-.829-1.202-1.687-1.208-.845-.005-1.436.373-1.728 1.149-.364.968-.36 1.945.07 2.909.317.71.864 1.027 1.705 1.024m-.128 1.674c-2.477.088-4.158-1.606-4.148-4.218.01-2.517 1.512-4.275 4.267-4.23 2.676.045 4.137 1.747 4.121 4.264-.016 2.623-1.625 4.256-4.24 4.184m57.005-4.328c.084.489.133.896.227 1.292.177.75.766 1.285 1.447 1.35.955.094 1.561-.19 1.926-.991.45-.988.428-2.01.04-3.015-.288-.747-.875-1.053-1.658-1.058-.77-.006-1.343.331-1.636 1.019-.194.456-.245.973-.346 1.403m1.92 4.328c-2.274.109-4.213-1.566-4.108-4.418.087-2.363 1.601-4.096 4.331-4.036 2.442.054 4.01 1.711 4.022 4.297.013 2.543-1.79 4.329-4.245 4.157m7.844-7.507c.616-.301 1.176-.707 1.795-.84.609-.13 1.296-.073 1.914.063.745.165 1.287.687 1.448 1.467.133.65.235 1.314.254 1.975.038 1.352 0 2.707.019 4.061.005.426-.128.619-.573.587a8.783 8.783 0 0 0-1.118-.001c-.413.023-.554-.16-.55-.558.013-1.255.014-2.512 0-3.767a4.628 4.628 0 0 0-.124-1.047c-.205-.833-.636-1.144-1.474-1.12-.729.021-1.282.492-1.426 1.24a4.15 4.15 0 0 0-.06.76c-.006 1.295-.013 2.59.004 3.885.006.424-.143.613-.577.606-1.996-.031-1.673.252-1.689-1.608-.015-1.923.01-3.846-.011-5.77-.006-.536.177-.774.721-.694.096.015.196.003.294.003.931.002.931.002 1.153.758M59.927 10.415c0-1.646.017-3.29-.01-4.936-.008-.541.12-.796.719-.744.583.05 1.176.042 1.76.001.548-.038.718.175.715.707-.016 3.173-.008 6.345-.008 9.518 0 1.181 0 1.18-1.168 1.18-.47 0-.942-.023-1.41.007-.474.03-.61-.175-.605-.622.017-1.704.007-3.407.007-5.111m-13.473.003c0-1.667.015-3.334-.008-5-.008-.514.171-.705.683-.68.626.031 1.255.024 1.881.002.447-.016.634.142.632.609-.011 3.412-.01 6.824 0 10.235 0 .41-.172.565-.563.56a57.942 57.942 0 0 0-2.058.001c-.438.01-.576-.19-.573-.61.014-1.705.006-3.411.006-5.117M62.178 123.67c0-.707-.02-1.414.007-2.118.017-.434-.128-.595-.57-.583-.667.02-1.083-.752-.69-1.312.105-.15.448-.19.678-.184.43.012.61-.128.582-.575a7.822 7.822 0 0 1 .012-1.409c.018-.155.262-.285.405-.424.01-.01.039-.002.058-.002 2.116.038 1.704-.318 1.744 1.645.015.741.013.74.756.76.277.008.752.02.79.141.114.357.084.772.041 1.156-.01.087-.298.205-.458.204-1.347-.002-1.113.008-1.125 1.157-.01.901-.007 1.804 0 2.706.006.812.215 1.051 1.015.99.529-.041.628.153.62.621-.025 1.385.08 1.183-1.212 1.18a5.973 5.973 0 0 1-1.33-.15c-.897-.21-1.306-.753-1.32-1.686-.012-.706-.003-1.412-.003-2.118m-38.687-3.062c.544-.705 1.16-1.182 2.004-1.299.801-.11.936-.008.935.791v.118c0 1.074 0 1.074-1.038 1.127-1.13.057-1.943 1.016-1.971 2.367a72.249 72.249 0 0 0 .003 3.174c.01.477-.141.654-.638.653-1.6-.001-1.6.016-1.6-1.552 0-1.96.014-3.92-.01-5.879-.006-.507.134-.74.664-.649.133.023.274.005.41.004.932 0 .931 0 1.086.911.009.05.06.094.155.234m25.309.002c.208-.189.34-.318.481-.433.273-.22.522-.502.834-.634.512-.216 1.228-.556 1.575-.083.286.39.128 1.117.116 1.694-.001.07-.325.21-.48.188-1.483-.209-2.532.918-2.473 2.488.039 1.038-.006 2.08.015 3.118.008.424-.124.619-.57.587a11.19 11.19 0 0 0-1.177-.004c-.354.013-.493-.15-.492-.493.005-2.353.005-4.706.001-7.06 0-.357.11-.57.512-.519.116.015.236.004.353.004 1.095.003 1.095.003 1.305 1.147m18.363 2.886c0-1.156.011-2.311-.006-3.467-.006-.417.112-.618.57-.575a7.54 7.54 0 0 0 1.173 0c.363-.023.496.137.496.478-.002 2.37-.002 4.74.003 7.109 0 .343-.143.476-.493.495-1.743.096-1.743.104-1.743-1.632v-2.408M48.024 3.038c-1.567.002-1.567.002-1.57-1.567 0-.156.012-.315-.004-.47-.037-.35.109-.508.463-.505.745.007 1.489.006 2.233 0 .332-.002.51.112.496.482a21.1 21.1 0 0 0 0 1.586c.013.374-.173.482-.502.476-.372-.007-.744-.002-1.116-.002m13.439.002c-1.535 0-1.535 0-1.535-1.536 0-.137.014-.276-.003-.41-.06-.467.143-.625.6-.605.664.028 1.33.02 1.994.003.414-.01.619.122.59.573-.029.467-.029.94 0 1.407.028.451-.177.592-.59.572-.352-.017-.704-.004-1.056-.004m6.68 113.373c1.33.026 1.252-.284 1.257 1.386.001.315-.095.479-.432.47-.47-.01-.94-.002-1.411-.003-.059 0-.138.015-.172-.017-.472-.427-.141-.979-.193-1.47-.011-.105.267-.297.442-.352.196-.062.427-.014.51-.014m22.85-.373h.304v1.518h-.304v-.813l-.492.813h-.165l-.454-.813v.813h-.29l-.049-1.518h.339l.538 1.024zm-2.498 1.487v-1.233h-.632v-.196h1.508a2.72 2.72 0 0 0 0 .196h-.588v1.233h-.288z\"><\/path><path d=\"M40.695 47.369v-.033c-2.529 0-5.058.017-7.587-.012-.598-.007-.762.178-.76.77.023 4.766.013 9.532.013 14.298 0 .807.012.821.82.821 4 .001 8 .002 11.999 0 1.942 0 3.88-.066 5.76-.618 2-.587 3.714-1.573 4.653-3.552.94-1.979.949-4.044.54-6.147-.423-2.185-1.623-3.806-3.696-4.576-1.32-.49-2.755-.83-4.157-.91-2.52-.144-5.056-.041-7.585-.041m.952 38.782c2.372 0 4.745-.02 7.117.008 1.324.015 2.614-.113 3.88-.521 1.935-.624 3.503-1.73 4.544-3.491 1.201-2.031 1.528-4.228 1.16-6.556-.34-2.156-1.356-3.846-3.225-5.001-2.014-1.245-4.256-1.671-6.57-1.69-5.156-.04-10.314-.006-15.47-.021-.57-.002-.735.191-.733.753.018 5.257.02 10.513-.002 15.77-.003.606.184.766.769.76 2.843-.025 5.686-.01 8.53-.01m14.058-20.916c.929.327 1.749.574 2.537.9 3.066 1.268 5.215 3.45 6.194 6.631 1.73 5.618.65 10.663-3.442 14.93-1.93 2.015-4.386 3.22-7.136 3.686a28.589 28.589 0 0 1-4.61.395c-7.593.039-15.185.018-22.777.017-.852 0-.852 0-.852-.827V42.4c0-.802 0-.801.808-.801 5.67 0 11.34-.028 17.01.012 2.584.019 5.173.094 7.75.292 2.063.159 4.132.474 5.966 1.563 2.61 1.549 4.469 3.733 5.329 6.666 1.106 3.77.77 7.392-1.385 10.748-1.22 1.902-2.975 3.19-5.003 4.131-.1.047-.191.11-.389.225\"><\/path><\/g><\/svg>",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "theme-color-text-1",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "template--15078825525329__6d90874c-c092-46f8-89ee-85bf53a9989d-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "B is for Better"
+          }
+        },
+        "template--15078825525329__6d90874c-c092-46f8-89ee-85bf53a9989d-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>As a certified B Corp, we commit 1% of our revenue to donate period care to regions with the most need, and help fund initiatives in menstrual health, education, and sustainability.<\/p>"
+          }
+        },
+        "1c7ae3d2-c727-46c4-b824-d5bf25842f3e": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "flex-start",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "9519e5cd-87f5-4d56-940e-220d20ebb13e": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "LEARN MORE",
+            "button_url": "\/pages\/impact",
+            "button_type": "secondary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "68fe5f6c-7322-4e01-98a4-e2259acfeb94",
+        "1c5adb37-de67-4c63-9b06-5cc2fbbb4c66",
+        "template--15078825525329__6d90874c-c092-46f8-89ee-85bf53a9989d-section_title-1",
+        "template--15078825525329__6d90874c-c092-46f8-89ee-85bf53a9989d-section_content-1",
+        "1c7ae3d2-c727-46c4-b824-d5bf25842f3e",
+        "9519e5cd-87f5-4d56-940e-220d20ebb13e"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/B-Corp-Photo-2_c43a2c45-76d3-4be2-9edd-51a0db5a3c19.png",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "73a1b656-ec29-41c6-a6b6-981a3178cf8d": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "ffc69630-4860-41a7-80f0-f9af7aa5c087": {
+          "type": "section_icon_group",
+          "settings": {
+            "mobile_icons_display": "row",
+            "mobile_icon_group_horizontal_alignment": "center",
+            "mobile_icon_group_vertical_alignment": "flex-start",
+            "mobile_icon_grid_columns": 2,
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_text_size": "clamp(.75rem, 1.5vw, 1.5rem)",
+            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_vertical_alignment": "center",
+            "mobile_icon_min_width": "100px",
+            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "100px",
+            "use_max_icon_group_width": true,
+            "icon_group_max_width": "1100px",
+            "desktop_icons_display": "grid",
+            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_vertical_alignment": "center",
+            "desktop_icon_grid_columns": 5,
+            "desktop_icon_group_gap": "2.5rem",
+            "desktop_icon_text_size": "clamp(.75rem, 1.5vw, 1.25rem)",
+            "desktop_icon_horizontal_alignment": "center",
+            "desktop_icon_vertical_alignment": "center",
+            "desktop_icon_min_width": "140px",
+            "desktop_icon_wrapper_max_width": "200px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "100px"
+          }
+        },
+        "40d040d2-2f72-4e19-8e26-d559cb427554": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"193\" height=\"193\" viewbox=\"0 0 193 193\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M96.6246 192.712C77.5979 192.712 58.9985 187.059 43.1788 176.468C27.3591 165.877 15.0297 150.824 7.74994 133.213C0.470158 115.601 -1.433 96.2227 2.28118 77.5276C5.99537 58.8326 15.16 41.6608 28.6161 28.1843C42.0722 14.7078 59.2153 5.53169 77.8771 1.8167C96.539 -1.89829 115.881 0.0148053 133.458 7.31371C151.034 14.6126 166.056 26.9696 176.622 42.8219C187.188 58.6742 192.825 77.3097 192.818 96.3715C192.786 121.918 182.639 146.408 164.606 164.469C146.572 182.53 122.124 192.687 96.6246 192.712ZM96.6246 2.21296C78.0361 2.21296 59.8649 7.73527 44.4091 18.0815C28.9534 28.4278 16.9071 43.1332 9.79356 60.3385C2.68005 77.5437 0.818854 96.4759 4.44529 114.741C8.07173 133.006 17.0229 149.783 30.167 162.952C43.311 176.12 60.0577 185.088 78.289 188.721C96.5203 192.354 115.418 190.489 132.591 183.363C149.765 176.236 164.443 164.167 174.77 148.683C185.097 133.199 190.61 114.994 190.61 96.3715C190.585 71.4067 180.675 47.4714 163.055 29.8186C145.434 12.1658 121.543 2.23771 96.6246 2.21296V2.21296Z\" fill=\"currentColor\"><\/path>\n<path d=\"M130.286 98.3973C130.426 98.634 130.469 98.916 130.405 99.1835C130.341 99.4511 130.175 99.6834 129.944 99.8311L128.668 100.673C123.421 104.128 118.908 108.589 115.39 113.799C111.871 119.009 109.416 124.866 108.166 131.03C108.132 131.201 108.054 131.36 107.94 131.492C107.825 131.623 107.678 131.722 107.513 131.778C105.611 132.371 103.626 132.655 101.633 132.62C99.5328 132.624 97.4408 132.351 95.4111 131.809C95.2342 131.754 95.0749 131.653 94.9493 131.516C94.8238 131.379 94.7363 131.212 94.6957 131.03C93.6312 127.252 92.1056 123.619 90.1535 120.215C90.5579 119.467 90.9 118.656 91.2422 117.877C93.5298 121.657 95.3082 125.723 96.5311 129.97C99.6906 130.73 102.985 130.73 106.144 129.97C107.531 123.483 110.204 117.34 114.003 111.906C117.803 106.472 122.652 101.857 128.264 98.3349L128.7 98.0545C128.823 97.9643 128.965 97.9011 129.115 97.8694C129.265 97.8377 129.42 97.8382 129.569 97.8705C129.719 97.9029 129.86 97.9666 129.984 98.0574C130.107 98.1481 130.21 98.2639 130.286 98.3973V98.3973Z\" fill=\"currentColor\"><\/path>\n<path d=\"M160.837 82.907C160.849 83.042 160.835 83.1781 160.794 83.3076C160.754 83.4371 160.689 83.5574 160.602 83.6616C160.515 83.7658 160.409 83.8518 160.289 83.9148C160.169 83.9779 160.038 84.0167 159.903 84.029C159.769 84.0412 159.633 84.0267 159.503 83.9864C159.374 83.946 159.254 83.8807 159.15 83.7938C159.046 83.707 158.96 83.6004 158.897 83.4803C158.834 83.3602 158.796 83.229 158.783 83.094V81.9718L157.415 66.6684C120.346 72.0262 82.7024 72.0262 45.6342 66.6684L43.8297 87.5822C55.0273 89.0186 65.7061 93.1696 74.9403 99.6754H71.2382C62.5615 94.1644 52.7579 90.6809 42.5542 89.4834C42.2928 89.4446 42.0563 89.3064 41.8941 89.0974C41.7318 88.8884 41.6562 88.6248 41.6831 88.3614L43.6431 65.3906C43.6593 65.2501 43.7035 65.1142 43.773 64.9911C43.8424 64.868 43.9358 64.76 44.0475 64.6736C44.2789 64.4988 44.5688 64.4206 44.8565 64.4554C82.408 70.0484 120.578 70.0484 158.13 64.4554C158.273 64.4327 158.418 64.4406 158.558 64.4782C158.697 64.5158 158.827 64.5823 158.939 64.6736C159.052 64.7558 159.145 64.8634 159.21 64.9879C159.275 65.1123 159.31 65.2503 159.312 65.3906L160.775 81.8472L160.837 82.907Z\" fill=\"currentColor\"><\/path>\n<path d=\"M150.415 147.705H149.637C148.545 147.705 147.497 147.273 146.722 146.502C145.947 145.731 145.507 144.685 145.499 143.591V128.63C135.419 125.139 128.17 110.335 128.17 92.974C128.17 92.3195 128.17 91.6339 128.17 90.917C127.29 90.6912 126.508 90.181 125.946 89.4656C125.384 88.7501 125.072 87.8692 125.059 86.9587V86.1795C125.059 85.0854 125.491 84.0357 126.26 83.2592C127.03 82.4827 128.074 82.0423 129.166 82.0341H170.543C171.638 82.0422 172.686 82.4816 173.46 83.2573C174.234 84.0329 174.673 85.0826 174.681 86.1795V86.9587C174.668 87.8692 174.357 88.7501 173.794 89.4656C173.232 90.181 172.45 90.6912 171.57 90.917C171.57 91.6339 171.57 92.3195 171.57 92.974C171.57 110.335 164.352 125.139 154.241 128.63V143.591C154.244 144.635 153.85 145.641 153.139 146.405C152.429 147.169 151.455 147.634 150.415 147.705V147.705ZM129.415 84.0289C128.868 84.037 128.345 84.2606 127.961 84.6513C127.577 85.042 127.362 85.5686 127.362 86.1171V86.8963C127.362 87.4365 127.574 87.955 127.952 88.3399C128.33 88.7248 128.845 88.9453 129.384 88.9534C129.663 88.9574 129.931 89.069 130.13 89.2651C130.314 89.4826 130.414 89.7592 130.411 90.0443C130.411 91.0105 130.411 92.0078 130.411 92.9117C130.411 109.524 137.535 124.08 146.993 126.822C147.206 126.878 147.396 127.003 147.531 127.178C147.666 127.353 147.739 127.567 147.739 127.789V143.373C147.747 143.921 147.97 144.444 148.36 144.829C148.751 145.214 149.276 145.43 149.824 145.43H150.601C151.143 145.422 151.661 145.202 152.044 144.818C152.428 144.434 152.646 143.916 152.655 143.373V127.789C152.66 127.569 152.735 127.356 152.869 127.183C153.004 127.009 153.19 126.882 153.401 126.822C162.735 124.111 169.983 109.524 169.983 92.9117C169.983 92.0078 169.983 91.0105 169.983 90.0443C169.98 89.7592 170.079 89.4826 170.263 89.2651C170.452 89.0709 170.709 88.959 170.979 88.9534C171.518 88.9453 172.032 88.7248 172.411 88.3399C172.789 87.955 173.001 87.4365 173.001 86.8963V86.1171C173.005 85.8443 172.955 85.5735 172.854 85.3204C172.752 85.0672 172.602 84.8367 172.411 84.6424C172.22 84.448 171.992 84.2936 171.741 84.1883C171.49 84.0829 171.22 84.0288 170.948 84.0289H129.415Z\" fill=\"currentColor\"><\/path>\n<path d=\"M60.3806 140.225C57.4067 140.218 54.4465 139.82 51.5763 139.04C45.8574 137.338 40.6649 134.207 36.4876 129.939C33.7974 127.271 31.5217 124.214 29.7366 120.87C29.2388 119.903 28.8033 118.906 28.3677 117.909C27.6787 116.072 26.7363 114.341 25.5678 112.766C25.432 112.582 25.2867 112.405 25.1323 112.236L24.7278 111.987C24.1679 111.644 23.6389 111.27 23.1412 110.896C22.1854 110.098 21.5274 108.999 21.2745 107.779C21.1519 107.321 21.0789 106.85 21.0568 106.376V104.787C21.0418 104.61 21.0418 104.433 21.0568 104.257C21.2778 103.347 21.7078 102.501 22.3127 101.787C22.9176 101.072 23.6808 100.509 24.5412 100.143H24.9767C25.1559 100.052 25.3434 99.9791 25.5367 99.9246H25.7545L26.8433 99.6442C28.1056 99.3245 29.3995 99.1466 30.701 99.1142H88.4112C90.1524 99.0667 91.8937 99.2026 93.6066 99.5194H94.1355H94.3844L94.6956 99.7064L95.7844 100.112H96.0334H96.2512C97.4091 100.651 98.3651 101.546 98.9805 102.667C99.596 103.788 99.8386 105.077 99.6732 106.345V106.345C99.6732 106.875 99.6732 107.343 99.4554 107.779C99.1913 108.995 98.5355 110.09 97.5889 110.896C97.0772 111.308 96.5365 111.683 95.9711 112.018L95.5355 112.267C95.4407 112.436 95.3258 112.593 95.1933 112.735C94.0215 114.285 93.0784 115.996 92.3933 117.815L92.1757 118.283C91.8469 119.103 91.4729 119.904 91.0556 120.683C89.2797 124.141 86.9698 127.297 84.2112 130.033C80.0435 134.319 74.8487 137.463 69.1226 139.165C66.2674 139.9 63.3283 140.256 60.3806 140.225V140.225ZM26.5012 101.452H26.0656H25.6611H25.35C24.7713 101.709 24.2565 102.091 23.8423 102.57C23.4282 103.05 23.125 103.615 22.9545 104.226V105.909C22.9918 106.266 23.0542 106.62 23.1412 106.969C23.2922 107.784 23.721 108.522 24.3545 109.057C24.804 109.394 25.2713 109.706 25.7545 109.992L26.4389 110.491C26.7189 110.771 26.9055 111.02 27.0922 111.239C28.3873 112.93 29.4349 114.798 30.2032 116.787C30.6388 117.722 31.0433 118.688 31.5411 119.623C33.2405 122.792 35.4003 125.691 37.9498 128.225C41.8823 132.272 46.7898 135.235 52.1985 136.828C57.6354 138.324 63.3745 138.324 68.8115 136.828C74.2202 135.235 79.1276 132.272 83.0601 128.225C85.6192 125.7 87.7802 122.799 89.4689 119.623V119.405C89.8422 118.657 90.1845 117.909 90.5267 117.129L90.7134 116.662C91.4965 114.71 92.5433 112.874 93.8244 111.207C94.0471 110.924 94.286 110.653 94.5399 110.397L95.1933 110.304C95.5977 110.023 96.0022 109.774 96.3755 109.462C96.9892 108.942 97.4064 108.227 97.5577 107.436C97.6501 107.057 97.7125 106.672 97.7444 106.283H98.7088H97.7444C97.8665 105.395 97.6954 104.49 97.2574 103.708C96.8193 102.926 96.1382 102.309 95.3177 101.951H95.0689L94.0111 101.545H93.7933H93.6378H93.2645C91.6427 101.255 89.9958 101.13 88.3489 101.171H30.7633C29.5267 101.198 28.2962 101.355 27.0922 101.639L26.5012 101.452Z\"><\/path>\n<\/svg>",
+            "icon_text": "<p>High-Performance Products<\/p>",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "135382fb-a7af-48f6-af55-3a4a868d05e6": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"193\" height=\"193\" viewbox=\"0 0 193 193\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M99.2179 140.624C94.7805 140.709 90.3708 139.904 86.2474 138.254C80.1844 135.974 74.71 132.351 70.2301 127.655C65.7502 122.959 62.3798 117.31 60.3687 111.127C54.6902 93.2294 60.0894 71.5902 65.6438 56.5612C69.3093 46.7003 73.8149 37.1757 79.1106 28.0935C79.2229 27.9328 79.3714 27.8012 79.5439 27.7091C79.7165 27.617 79.9083 27.5671 80.1036 27.5635C80.2941 27.5667 80.4805 27.6203 80.6439 27.7188C80.8073 27.8173 80.9419 27.9573 81.0345 28.1247C90.5606 45.4298 102.755 56.1871 113.492 65.5412C126.555 77.0779 137.85 87.0245 139.898 104.766C140.496 109.849 139.699 115 137.593 119.66C135.487 124.321 132.153 128.314 127.952 131.207C119.575 137.259 109.535 140.549 99.2179 140.624V140.624ZM80.0415 30.8686C75.2233 39.3646 71.0734 48.2261 67.6295 57.3719C62.2304 72.0579 56.9243 93.167 62.4166 110.379C64.3296 116.262 67.5384 121.635 71.8041 126.1C76.0698 130.564 81.2824 134.005 87.0542 136.165C98.0388 140.842 115.415 137.911 126.586 129.492C130.472 126.824 133.558 123.139 135.51 118.836C137.463 114.533 138.207 109.775 137.664 105.078C135.678 88.2093 124.694 78.5122 111.971 67.2561C101.514 58.0267 89.5987 47.5189 80.0415 30.8686V30.8686Z\" fill=\"currentColor\"><\/path>\n<path d=\"M131.675 165.256C128.758 165.256 124.135 160.548 114.578 136.539C111.102 131.987 107.503 126.904 103.966 121.448C89.2264 98.6546 72.9357 64.0132 79.1417 28.4987C79.1716 28.245 79.2916 28.0106 79.4798 27.8387C79.6679 27.6669 79.9115 27.5691 80.1657 27.5634C80.4153 27.5535 80.661 27.628 80.8635 27.775C81.0659 27.9219 81.2136 28.1329 81.2828 28.3741C81.2828 28.7171 91.4606 63.2961 103.004 96.971C108.217 113.465 112.747 125.937 116.377 135.292C123.284 144.495 130.877 153.157 139.091 161.203C139.23 161.337 139.331 161.506 139.385 161.692C139.44 161.877 139.445 162.074 139.402 162.263C139.36 162.447 139.273 162.618 139.148 162.76C139.024 162.902 138.865 163.01 138.688 163.073L132.265 165.225L131.675 165.256ZM119.48 142.931C127.486 161.639 130.62 163.292 131.582 163.042L136.206 161.483C130.302 155.606 124.719 149.413 119.48 142.931V142.931ZM80.3209 33.7994C76.349 69.4386 94.2222 104.142 111.351 128.276C108.248 120.013 104.648 109.973 100.552 97.7505C91.7399 71.4654 83.641 44.6189 80.4449 33.8617L80.3209 33.7994Z\" fill=\"currentColor\"><\/path>\n<path d=\"M96.5805 192.788C77.6019 192.795 59.0477 187.145 43.265 176.553C27.4823 165.962 15.18 150.905 7.91441 133.287C0.648769 115.67 -1.25378 96.2822 2.44726 77.5776C6.1483 58.873 15.2868 41.6916 28.7067 28.2066C42.1266 14.7216 59.225 5.53873 77.8393 1.81973C96.4535 -1.89927 115.747 0.0127079 133.28 7.3136C150.813 14.6145 165.797 26.9764 176.337 42.8357C186.877 58.695 192.5 77.3392 192.494 96.4099C192.42 121.948 182.291 146.419 164.32 164.478C146.349 182.536 121.996 192.714 96.5805 192.788V192.788ZM96.5805 2.21386C78.0389 2.2077 59.912 7.7269 44.4923 18.0735C29.0725 28.4202 17.0526 43.1295 9.95282 60.341C2.85302 77.5525 0.992229 96.4931 4.60575 114.767C8.21926 133.042 17.1448 149.829 30.2535 163.005C43.3622 176.182 60.0652 185.157 78.2501 188.794C96.4349 192.431 115.285 190.567 132.416 183.439C149.546 176.31 164.188 164.237 174.49 148.746C184.792 133.254 190.291 115.041 190.291 96.4099C190.266 71.4406 180.386 47.5005 162.818 29.8416C145.25 12.1826 121.429 2.24688 96.5805 2.21386Z\"><\/path>\n<\/svg>",
+            "icon_text": "<p>Clean, Ethical & Sustainable<\/p>",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "e8c3ebb0-2a5a-43c0-8924-e0345522fe6a": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"193\" height=\"193\" viewbox=\"0 0 193 193\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M126.731 81.3484C125.762 78.8311 124.163 76.6039 122.087 74.8795C120.01 73.1552 117.525 71.9913 114.87 71.4993C106.192 70.3772 99.2625 76.7355 96.7966 79.2601C94.4243 76.7355 87.4323 70.3772 78.7234 71.4993C76.0679 71.9913 73.583 73.1552 71.5063 74.8795C69.4297 76.6039 67.8305 78.8311 66.8617 81.3484C65.457 85.3068 65.3011 91.6651 72.6365 99.4882C77.0731 104.378 81.9183 108.883 87.1199 112.953C88.114 113.899 89.1558 114.793 90.2414 115.633L95.2046 119.716C93.1007 121.464 91.7215 123.93 91.334 126.635C91.3246 127.338 91.4876 128.031 91.8086 128.656C92.1296 129.281 92.5989 129.818 93.1756 130.22C94.2667 130.967 95.5675 131.349 96.8901 131.311C97.5505 131.384 98.219 131.323 98.8551 131.131C99.4913 130.94 100.082 130.622 100.592 130.197C101.102 129.772 101.521 129.249 101.824 128.658C102.127 128.068 102.306 127.422 102.353 126.76C101.999 123.945 100.567 121.375 98.3573 119.591C99.044 118.937 99.7932 118.314 100.542 117.69C101.292 117.067 102.29 116.225 103.071 115.602L103.851 114.947L106.223 113.046C111.456 108.945 116.332 104.409 120.801 99.4882C128.292 91.6027 128.136 85.3691 126.731 81.3484ZM100.48 126.76C100.48 128.443 98.7318 129.222 97.1087 129.222C95.4855 129.222 93.6751 128.693 93.6751 126.635C94.1106 124.439 95.3036 122.465 97.0464 121.056C98.8527 122.473 100.075 124.503 100.48 126.76V126.76ZM119.49 98.0544C115.421 102.548 111.006 106.716 106.286 110.522V110.522L105.162 111.488L104.788 111.799L101.978 114.044L99.1689 116.381L96.9839 118.189C95.4231 116.818 93.7064 115.509 92.1456 114.293L91.8021 114.044L88.9929 111.799L88.5559 111.425L88.2751 111.145C83.2639 107.181 78.5867 102.813 74.2908 98.0856C69.0467 92.5066 67.2052 86.9586 68.9532 82.0653C69.7972 79.914 71.173 78.0112 72.9524 76.5342C74.7318 75.0572 76.8566 74.0542 79.129 73.6187C79.7108 73.5723 80.2953 73.5723 80.877 73.6187C89.2425 73.6187 95.8288 81.286 96.1098 81.6289C96.2097 81.7464 96.3341 81.8409 96.4742 81.9055C96.6144 81.9701 96.767 82.0032 96.9214 82.0029V82.0029C97.0758 82.0032 97.2284 81.9701 97.3685 81.9055C97.5087 81.8409 97.6331 81.7464 97.733 81.6289C98.0451 81.2548 105.537 72.5591 114.714 73.7435C116.986 74.179 119.111 75.1818 120.891 76.6588C122.67 78.1358 124.046 80.0386 124.89 82.1899C126.513 86.9274 124.671 92.4754 119.427 98.0544H119.49Z\" fill=\"currentColor\"><\/path>\n<path d=\"M96.5155 51.0843C96.368 51.0843 96.2219 51.0553 96.0855 50.9989C95.9492 50.9425 95.8254 50.8598 95.7211 50.7556C95.6167 50.6514 95.5339 50.5278 95.4774 50.3917C95.4209 50.2556 95.3918 50.1097 95.3918 49.9623V28.1447C95.436 27.8832 95.5715 27.6457 95.7744 27.4744C95.9773 27.3031 96.2342 27.209 96.4999 27.209C96.7656 27.209 97.0227 27.3031 97.2256 27.4744C97.4285 27.6457 97.564 27.8832 97.6082 28.1447V49.9623C97.6083 50.2546 97.494 50.5354 97.29 50.745C97.086 50.9545 96.8081 51.0762 96.5155 51.0843V51.0843Z\" fill=\"currentColor\"><\/path>\n<path d=\"M96.5155 165.72C96.3679 165.72 96.2218 165.691 96.0855 165.635C95.9492 165.578 95.8254 165.496 95.721 165.392C95.6167 165.287 95.5338 165.164 95.4774 165.027C95.4209 164.891 95.3918 164.745 95.3918 164.598V142.78C95.3647 142.62 95.373 142.455 95.4162 142.297C95.4594 142.14 95.5365 141.994 95.642 141.87C95.7475 141.745 95.8788 141.645 96.027 141.576C96.1752 141.508 96.3365 141.472 96.4999 141.472C96.6632 141.472 96.8247 141.508 96.9729 141.576C97.1211 141.645 97.2525 141.745 97.358 141.87C97.4635 141.994 97.5405 142.14 97.5837 142.297C97.6269 142.455 97.6353 142.62 97.6081 142.78V164.598C97.6082 164.89 97.494 165.171 97.29 165.381C97.0859 165.59 96.8081 165.712 96.5155 165.72V165.72Z\" fill=\"currentColor\"><\/path>\n<path d=\"M164.844 97.4622H142.994C142.732 97.4182 142.494 97.2828 142.323 97.0802C142.151 96.8777 142.057 96.6211 142.057 96.3558C142.057 96.0905 142.151 95.8338 142.323 95.6312C142.494 95.4287 142.732 95.2933 142.994 95.2492H164.844C165.005 95.2221 165.171 95.2304 165.328 95.2736C165.486 95.3167 165.632 95.3937 165.757 95.499C165.881 95.6043 165.982 95.7355 166.05 95.8835C166.119 96.0314 166.155 96.1927 166.155 96.3558C166.155 96.5189 166.119 96.68 166.05 96.828C165.982 96.9759 165.881 97.1071 165.757 97.2124C165.632 97.3178 165.486 97.3947 165.328 97.4379C165.171 97.481 165.005 97.4893 164.844 97.4622V97.4622Z\" fill=\"currentColor\"><\/path>\n<path d=\"M49.9121 97.4623H28.0619C27.7999 97.4182 27.5621 97.2828 27.3905 97.0803C27.219 96.8777 27.1249 96.6211 27.1249 96.3559C27.1249 96.0906 27.219 95.8338 27.3905 95.6313C27.5621 95.4287 27.7999 95.2933 28.0619 95.2493H49.9121C50.1741 95.2933 50.412 95.4287 50.5835 95.6313C50.7551 95.8338 50.8493 96.0906 50.8493 96.3559C50.8493 96.6211 50.7551 96.8777 50.5835 97.0803C50.412 97.2828 50.1741 97.4182 49.9121 97.4623V97.4623Z\" fill=\"currentColor\"><\/path>\n<path d=\"M129.447 64.5801C129.152 64.5726 128.872 64.4493 128.667 64.2371C128.563 64.1355 128.48 64.0144 128.424 63.8806C128.368 63.7468 128.339 63.603 128.339 63.4579C128.339 63.3128 128.368 63.1692 128.424 63.0354C128.48 62.9016 128.563 62.7803 128.667 62.6787L144.18 47.3441C144.387 47.1375 144.668 47.0215 144.961 47.0215C145.253 47.0215 145.534 47.1375 145.741 47.3441C145.948 47.5508 146.064 47.8311 146.064 48.1233C146.064 48.4156 145.948 48.6959 145.741 48.9025L130.352 64.2371C130.237 64.358 130.095 64.4517 129.938 64.511C129.782 64.5704 129.614 64.5939 129.447 64.5801Z\" fill=\"currentColor\"><\/path>\n<path d=\"M48.1641 145.741C47.869 145.734 47.5887 145.611 47.3838 145.399C47.2799 145.297 47.1975 145.176 47.1412 145.042C47.0849 144.908 47.0559 144.765 47.0559 144.619C47.0559 144.474 47.0849 144.331 47.1412 144.197C47.1975 144.063 47.2799 143.942 47.3838 143.84L62.7725 128.474C62.8743 128.371 62.9958 128.288 63.1298 128.232C63.2638 128.176 63.4076 128.147 63.5529 128.147C63.6983 128.147 63.8422 128.176 63.9762 128.232C64.1102 128.288 64.2315 128.371 64.3333 128.474C64.438 128.579 64.5212 128.703 64.5779 128.839C64.6346 128.975 64.6638 129.122 64.6638 129.269C64.6638 129.417 64.6346 129.563 64.5779 129.7C64.5212 129.836 64.438 129.96 64.3333 130.064L48.9445 145.399C48.8452 145.507 48.7246 145.593 48.5903 145.652C48.456 145.711 48.3109 145.741 48.1641 145.741V145.741Z\" fill=\"currentColor\"><\/path>\n<path d=\"M144.836 145.741C144.541 145.734 144.26 145.611 144.056 145.399L128.573 130.064C128.468 129.96 128.385 129.836 128.328 129.7C128.272 129.563 128.242 129.417 128.242 129.269C128.242 129.122 128.272 128.975 128.328 128.839C128.385 128.703 128.468 128.579 128.573 128.474C128.675 128.371 128.796 128.288 128.93 128.232C129.064 128.176 129.208 128.147 129.353 128.147C129.499 128.147 129.642 128.176 129.776 128.232C129.91 128.288 130.032 128.371 130.134 128.474L145.522 143.84C145.626 143.942 145.709 144.063 145.765 144.197C145.822 144.331 145.85 144.474 145.85 144.619C145.85 144.765 145.822 144.908 145.765 145.042C145.709 145.176 145.626 145.297 145.522 145.399C145.341 145.59 145.098 145.711 144.836 145.741V145.741Z\" fill=\"currentColor\"><\/path>\n<path d=\"M63.5529 64.5801C63.2578 64.5726 62.9775 64.4493 62.7726 64.2371L47.415 48.9025C47.2081 48.6959 47.0917 48.4156 47.0917 48.1233C47.0917 47.8311 47.2081 47.5508 47.415 47.3441C47.622 47.1375 47.9027 47.0215 48.1954 47.0215C48.4881 47.0215 48.7688 47.1375 48.9757 47.3441L64.3645 62.6787C64.4684 62.7803 64.5509 62.9016 64.6073 63.0354C64.6636 63.1692 64.6924 63.3128 64.6924 63.4579C64.6924 63.603 64.6636 63.7468 64.6073 63.8806C64.5509 64.0144 64.4684 64.1355 64.3645 64.2371C64.2594 64.3459 64.1332 64.4325 63.9938 64.4915C63.8543 64.5504 63.7044 64.5805 63.5529 64.5801V64.5801Z\" fill=\"currentColor\"><\/path>\n<path d=\"M96.5156 192.712C77.4239 192.718 58.7595 187.07 42.8828 176.483C27.0061 165.896 14.6306 150.845 7.32166 133.234C0.0127561 115.623 -1.90132 96.2438 1.82176 77.5467C5.54484 58.8496 14.7378 41.675 28.2376 28.1954C41.7374 14.7157 58.9377 5.53651 77.6628 1.81899C96.3879 -1.89852 115.797 0.0126904 133.434 7.31068C151.071 14.6087 166.144 26.9657 176.747 42.8187C187.35 58.6716 193.006 77.3084 193 96.3715C192.926 121.9 182.737 146.361 164.658 164.412C146.58 182.464 122.082 192.638 96.5156 192.712V192.712ZM96.5156 2.21297C77.8636 2.2068 59.6287 7.72381 44.1172 18.0663C28.6056 28.4088 16.5143 43.1123 9.37222 60.317C2.23014 77.5216 0.358071 96.4547 3.99311 114.722C7.62814 132.989 16.607 149.769 29.7938 162.941C42.9805 176.112 59.7829 185.083 78.076 188.718C96.3691 192.354 115.331 190.491 132.564 183.365C149.797 176.24 164.526 164.171 174.889 148.686C185.252 133.201 190.784 114.996 190.784 96.3715C190.759 71.4121 180.82 47.4815 163.148 29.8297C145.475 12.1778 121.512 2.24597 96.5156 2.21297Z\"><\/path>\n<\/svg>",
+            "icon_text": "<p>Saalt Bliss Guarantee<\/p>",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "0120b5ec-4253-43e3-84d3-137b2f7fbaf7": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" viewbox=\"0 0 216 213\" style=\"enable-background:new 0 0 216 213;\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" xml:space=\"preserve\">\n<style type=\"text\/css\">\n\t.st0{clip-path:url(#SVGID_00000110450151814709658540000013965385898327266955_);}\n<\/style>\n<g>\n\t<g>\n\t\t<defs>\n\t\t\t<rect id=\"SVGID_1_\" width=\"216\" height=\"213\"><\/rect>\n\t\t<\/defs>\n\t\t<clippath id=\"SVGID_00000176022687669493971010000013920647252396167607_\">\n\t\t\t<use xlink:href=\"#SVGID_1_\" style=\"overflow:visible;\"><\/use>\n\t\t<\/clippath>\n\t\t<g style=\"clip-path:url(#SVGID_00000176022687669493971010000013920647252396167607_);\">\n\t\t\t<path d=\"M108,213C48.4,213,0,165.2,0,106.5S48.4,0,108,0s108,47.8,108,106.5S167.6,213,108,213L108,213z M108,2.4\n\t\t\t\tC49.8,2.4,2.5,49.1,2.5,106.5S49.8,210.6,108,210.6s105.5-46.7,105.5-104.1S166.2,2.4,108,2.4z\"><\/path>\n\t\t\t<g>\n\t\t\t\t<path d=\"M126.3,67.7c-5.5,0-10.1-4.4-10.1-10s4.6-10,10.1-10c5.5,0,10.1,4.4,10.1,10C136.4,63.2,131.8,67.7,126.3,67.7z\n\t\t\t\t\t M126.3,50.8c-3.9,0-7,3.1-7,6.9s3.2,6.9,7,6.9c3.8,0,7-3.1,7-6.9S130.2,50.8,126.3,50.8z\"><\/path>\n\t\t\t\t<path d=\"M146.7,120.7c-5.5,0-10.1-4.4-10.1-10c0-5.5,4.6-10,10.1-10c5.5,0,10.1,4.4,10.1,10\n\t\t\t\t\tC156.8,116.2,152.2,120.7,146.7,120.7z M146.7,103.8c-3.9,0-7,3.1-7,6.9c0,3.8,3.2,6.9,7,6.9c3.8,0,7-3.1,7-6.9\n\t\t\t\t\tC153.7,107,150.5,103.8,146.7,103.8z\"><\/path>\n\t\t\t\t<path d=\"M111,120.7c-0.2,0-0.6-0.1-0.9-0.2c-0.7-0.5-0.9-1.5-0.4-2.1l50.8-70c0.5-0.7,1.5-0.9,2.1-0.4c0.7,0.5,0.9,1.5,0.4,2.1\n\t\t\t\t\tl-50.8,70C112,120.5,111.5,120.7,111,120.7z\"><\/path>\n\t\t\t\t<path d=\"M61.3,62c8.5-4.8,17-9.6,25.6-14.5c1.2-0.7,2.4-1.4,3.6-2c-0.8-0.4-1.5-0.9-2.3-1.3c0,4.1,0,8.3,0,12.4\n\t\t\t\t\tc0,9.9,0,19.9,0,29.8c0,12,0,24,0,35.9c0,10.4,0,20.8,0,31.2c0,5-0.2,10.1,0,15.1c0,0.1,0,0.1,0,0.2c0,2,3.1,2,3.1,0\n\t\t\t\t\tc0-4.1,0-8.3,0-12.4c0-9.9,0-19.9,0-29.8c0-12,0-24,0-35.9c0-10.4,0-20.8,0-31.2c0-5,0.2-10.1,0-15.1c0-0.1,0-0.1,0-0.2\n\t\t\t\t\tc0-1.2-1.3-1.9-2.3-1.3c-8.5,4.8-17,9.6-25.6,14.5c-1.2,0.7-2.4,1.4-3.6,2C58.1,60.3,59.6,62.9,61.3,62L61.3,62z\"><\/path>\n\t\t\t<\/g>\n\t\t<\/g>\n\t<\/g>\n<\/g>\n<\/svg>",
+            "icon_text": "<p>1% Give-Back<\/p>",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "cfd9cf13-b98f-4894-8018-2e3f00aa7082": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"195\" height=\"193\" viewbox=\"0 0 195 193\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M70.41 124.791H68.185V68.719C68.0729 60.9529 71.0688 53.4607 76.5135 47.8904C81.9582 42.3201 89.4058 39.128 97.2179 39.0165C105.03 38.9049 112.567 41.8831 118.17 47.2957C123.774 52.7082 126.985 60.1118 127.097 67.8779H124.872C124.768 60.6984 121.8 53.854 116.619 48.8504C111.439 43.8468 104.471 41.0938 97.2493 41.1971C90.0272 41.3003 83.1421 44.2515 78.1088 49.4012C73.0754 54.5508 70.3061 61.4772 70.41 68.6566V124.791Z\" fill=\"currentColor\"><\/path>\n<path d=\"M126.031 76.1018C125.732 76.1018 125.445 75.9835 125.234 75.7732C125.022 75.5629 124.903 75.2778 124.903 74.9804V73.3293C124.903 73.0372 125.018 72.7565 125.223 72.5471C125.427 72.3376 125.706 72.216 126 72.2079C126.294 72.2078 126.576 72.3216 126.787 72.5252C126.998 72.7288 127.12 73.0061 127.128 73.2981V74.9804C127.128 75.2725 127.014 75.5531 126.809 75.7626C126.604 75.972 126.325 76.0936 126.031 76.1018V76.1018Z\" fill=\"currentColor\"><\/path>\n<path d=\"M100.148 165.443C99.8848 165.399 99.646 165.263 99.4738 165.061C99.3016 164.858 99.2072 164.602 99.2072 164.337C99.2072 164.072 99.3016 163.815 99.4738 163.613C99.646 163.41 99.8848 163.275 100.148 163.231C101.276 163.231 102.341 163.231 103.281 163.231C103.575 163.222 103.861 163.328 104.078 163.526C104.294 163.724 104.425 163.998 104.441 164.29C104.449 164.436 104.428 164.582 104.379 164.719C104.33 164.857 104.253 164.983 104.154 165.09C104.054 165.198 103.934 165.285 103.801 165.345C103.667 165.406 103.522 165.439 103.376 165.443C102.31 165.443 101.182 165.443 100.054 165.443H100.148ZM93.5987 165.443H90.2771C89.9833 165.419 89.7105 165.281 89.5172 165.06C89.3239 164.839 89.2256 164.551 89.2429 164.259C89.2509 164.116 89.2872 163.975 89.3498 163.846C89.4125 163.717 89.5003 163.601 89.6081 163.506C89.7158 163.41 89.8412 163.337 89.9776 163.29C90.1139 163.242 90.2583 163.222 90.4024 163.231H93.536C93.8297 163.247 94.1054 163.377 94.3044 163.592C94.5035 163.807 94.6099 164.091 94.6013 164.384C94.5871 164.646 94.4778 164.895 94.2935 165.084C94.1092 165.273 93.8625 165.389 93.5987 165.411V165.443ZM109.956 164.82C109.687 164.815 109.43 164.715 109.228 164.538C109.027 164.361 108.897 164.118 108.859 163.854C108.837 163.711 108.844 163.564 108.88 163.424C108.915 163.283 108.978 163.151 109.066 163.035C109.153 162.919 109.263 162.821 109.389 162.748C109.515 162.674 109.655 162.627 109.799 162.608C110.855 162.472 111.901 162.274 112.933 162.016C113.224 161.951 113.529 162.003 113.781 162.16C114.034 162.318 114.213 162.568 114.28 162.857C114.317 162.996 114.326 163.142 114.304 163.284C114.283 163.427 114.233 163.563 114.156 163.686C114.08 163.808 113.98 163.914 113.861 163.996C113.742 164.079 113.608 164.136 113.466 164.166C112.371 164.432 111.262 164.64 110.144 164.788L109.956 164.82ZM83.8219 164.57H83.6025C82.491 164.377 81.3921 164.117 80.312 163.792C80.1721 163.751 80.0417 163.683 79.9282 163.592C79.8147 163.501 79.7203 163.388 79.6505 163.261C79.5806 163.134 79.5367 162.994 79.5212 162.85C79.5057 162.706 79.5189 162.56 79.56 162.421C79.6012 162.282 79.6695 162.152 79.761 162.039C79.8526 161.927 79.9656 161.833 80.0936 161.763C80.2217 161.694 80.3623 161.65 80.5073 161.635C80.6523 161.619 80.7989 161.632 80.9388 161.673C81.9675 161.976 83.014 162.215 84.0724 162.39C84.362 162.45 84.6163 162.621 84.7805 162.866C84.9446 163.11 85.0055 163.409 84.9499 163.698C84.8914 163.948 84.7462 164.169 84.5399 164.323C84.3335 164.477 84.0794 164.553 83.8219 164.539V164.57ZM119.263 161.86C119.069 161.86 118.879 161.811 118.709 161.718C118.54 161.626 118.396 161.493 118.292 161.331C118.143 161.074 118.103 160.77 118.179 160.484C118.255 160.198 118.442 159.954 118.699 159.804C119.562 159.299 120.362 158.692 121.08 157.997C121.182 157.894 121.304 157.812 121.439 157.755C121.573 157.699 121.718 157.67 121.864 157.67C122.01 157.67 122.154 157.699 122.289 157.755C122.423 157.812 122.545 157.894 122.647 157.997C122.752 158.102 122.836 158.225 122.893 158.362C122.95 158.498 122.979 158.644 122.979 158.792C122.979 158.939 122.95 159.086 122.893 159.222C122.836 159.358 122.752 159.482 122.647 159.586C121.798 160.392 120.863 161.102 119.858 161.704C119.678 161.808 119.47 161.852 119.263 161.829V161.86ZM74.7343 161.019C74.4929 161.013 74.2608 160.925 74.0762 160.77C73.1266 160.074 72.2732 159.257 71.538 158.34C71.404 158.11 71.3568 157.84 71.4049 157.578C71.4529 157.316 71.593 157.079 71.8002 156.911C72.0074 156.742 72.2683 156.653 72.536 156.658C72.8037 156.663 73.0608 156.762 73.2614 156.938C73.8951 157.718 74.6211 158.419 75.4236 159.026C75.6038 159.17 75.735 159.367 75.7991 159.588C75.8631 159.809 75.857 160.045 75.7817 160.263C75.7064 160.48 75.5655 160.67 75.3781 160.805C75.1907 160.941 74.9659 161.015 74.7343 161.019V161.019ZM125.154 154.384H124.841C124.561 154.298 124.326 154.106 124.185 153.85C124.045 153.594 124.01 153.294 124.089 153.013C124.392 151.996 124.602 150.953 124.715 149.898C124.731 149.752 124.776 149.61 124.848 149.481C124.92 149.352 125.017 149.239 125.134 149.149C125.252 149.059 125.386 148.993 125.529 148.956C125.673 148.919 125.822 148.911 125.969 148.933C126.257 148.972 126.519 149.12 126.7 149.346C126.881 149.572 126.967 149.86 126.94 150.148C126.806 151.289 126.565 152.415 126.219 153.512C126.168 153.753 126.034 153.97 125.839 154.123C125.645 154.277 125.402 154.358 125.154 154.353V154.384ZM69.6265 152.858C69.3655 152.862 69.1117 152.773 68.9107 152.607C68.7096 152.442 68.5746 152.21 68.5299 151.954C68.2968 150.835 68.1501 149.7 68.0911 148.559C68.0639 148.398 68.0722 148.233 68.1156 148.076C68.1589 147.919 68.2361 147.773 68.342 147.649C68.4479 147.524 68.58 147.424 68.7288 147.355C68.8775 147.287 69.0395 147.251 69.2035 147.251C69.3675 147.251 69.5296 147.287 69.6784 147.355C69.8271 147.424 69.959 147.524 70.0649 147.649C70.1708 147.773 70.2482 147.919 70.2916 148.076C70.3349 148.233 70.3431 148.398 70.3158 148.559C70.3708 149.604 70.4966 150.645 70.692 151.674C70.7242 151.815 70.7278 151.961 70.7026 152.104C70.6773 152.246 70.6237 152.383 70.545 152.504C70.4662 152.626 70.3637 152.731 70.2437 152.813C70.1237 152.895 69.9885 152.953 69.8459 152.982L69.6265 152.858ZM126.031 144.634C125.732 144.634 125.445 144.516 125.234 144.305C125.022 144.095 124.903 143.81 124.903 143.512V140.397C124.876 140.237 124.884 140.072 124.928 139.915C124.971 139.757 125.048 139.611 125.154 139.487C125.26 139.362 125.392 139.262 125.541 139.194C125.69 139.125 125.852 139.09 126.016 139.09C126.18 139.09 126.342 139.125 126.491 139.194C126.639 139.262 126.771 139.362 126.877 139.487C126.983 139.611 127.06 139.757 127.104 139.915C127.147 140.072 127.155 140.237 127.128 140.397V143.512C127.128 143.805 127.014 144.085 126.809 144.295C126.604 144.504 126.325 144.626 126.031 144.634V144.634ZM69.3133 143.107C69.0195 143.099 68.7404 142.977 68.5356 142.768C68.3308 142.559 68.2163 142.278 68.2164 141.986V138.871C68.1891 138.71 68.1975 138.545 68.2409 138.388C68.2842 138.231 68.3616 138.085 68.4675 137.96C68.5734 137.836 68.7053 137.736 68.854 137.667C69.0028 137.599 69.1649 137.563 69.3289 137.563C69.4929 137.563 69.6549 137.599 69.8036 137.667C69.9524 137.736 70.0843 137.836 70.1902 137.96C70.2961 138.085 70.3735 138.231 70.4168 138.388C70.4602 138.545 70.4685 138.71 70.4413 138.871V141.986C70.4414 142.136 70.4112 142.284 70.3526 142.422C70.2939 142.561 70.208 142.686 70.0999 142.79C69.9918 142.895 69.8636 142.977 69.7231 143.031C69.5826 143.086 69.4326 143.112 69.2819 143.107H69.3133ZM126.031 134.821C125.738 134.821 125.455 134.707 125.245 134.504C125.034 134.3 124.912 134.023 124.903 133.731V130.616C124.876 130.455 124.884 130.29 124.928 130.133C124.971 129.976 125.048 129.83 125.154 129.706C125.26 129.581 125.392 129.481 125.541 129.412C125.69 129.344 125.852 129.308 126.016 129.308C126.18 129.308 126.342 129.344 126.491 129.412C126.639 129.481 126.771 129.581 126.877 129.706C126.983 129.83 127.06 129.976 127.104 130.133C127.147 130.29 127.155 130.455 127.128 130.616V133.731C127.128 134.02 127.013 134.297 126.807 134.502C126.601 134.706 126.322 134.821 126.031 134.821ZM126.031 125.04C125.732 125.04 125.445 124.922 125.234 124.711C125.022 124.501 124.903 124.216 124.903 123.918V120.803C124.876 120.642 124.884 120.478 124.928 120.321C124.971 120.163 125.048 120.017 125.154 119.893C125.26 119.768 125.392 119.668 125.541 119.6C125.69 119.531 125.852 119.496 126.016 119.496C126.18 119.496 126.342 119.531 126.491 119.6C126.639 119.668 126.771 119.768 126.877 119.893C126.983 120.017 127.06 120.163 127.104 120.321C127.147 120.478 127.155 120.642 127.128 120.803V123.918C127.128 124.21 127.014 124.491 126.809 124.701C126.604 124.91 126.325 125.032 126.031 125.04V125.04ZM126.031 115.258C125.883 115.258 125.737 115.229 125.6 115.173C125.463 115.117 125.338 115.034 125.234 114.93C125.129 114.826 125.046 114.702 124.989 114.566C124.933 114.43 124.903 114.284 124.903 114.137V110.866C124.948 110.605 125.084 110.367 125.287 110.196C125.491 110.025 125.749 109.931 126.016 109.931C126.282 109.931 126.541 110.025 126.744 110.196C126.948 110.367 127.084 110.605 127.128 110.866V114.137C127.128 114.429 127.014 114.71 126.809 114.919C126.604 115.129 126.325 115.25 126.031 115.258ZM126.031 105.446C125.738 105.446 125.455 105.332 125.245 105.129C125.034 104.925 124.912 104.648 124.903 104.356V101.022C124.876 100.862 124.884 100.697 124.928 100.54C124.971 100.383 125.048 100.237 125.154 100.112C125.26 99.9876 125.392 99.8876 125.541 99.8189C125.69 99.7503 125.852 99.7148 126.016 99.7148C126.18 99.7148 126.342 99.7503 126.491 99.8189C126.639 99.8876 126.771 99.9876 126.877 100.112C126.983 100.237 127.06 100.383 127.104 100.54C127.147 100.697 127.155 100.862 127.128 101.022V104.293C127.128 104.582 127.013 104.86 126.807 105.064C126.601 105.269 126.322 105.384 126.031 105.384V105.446ZM126.031 95.6646C125.738 95.6647 125.455 95.5507 125.245 95.3471C125.034 95.1435 124.912 94.8662 124.903 94.5742V91.4591C124.876 91.2983 124.884 91.1336 124.928 90.9764C124.971 90.8191 125.048 90.6733 125.154 90.5488C125.26 90.4243 125.392 90.3242 125.541 90.2556C125.69 90.187 125.852 90.1514 126.016 90.1514C126.18 90.1514 126.342 90.187 126.491 90.2556C126.639 90.3242 126.771 90.4243 126.877 90.5488C126.983 90.6733 127.06 90.8191 127.104 90.9764C127.147 91.1336 127.155 91.2983 127.128 91.4591V94.5742C127.128 94.8663 127.014 95.147 126.809 95.3564C126.604 95.5658 126.325 95.6875 126.031 95.6956V95.6646ZM126.031 85.8832C125.732 85.8832 125.445 85.7649 125.234 85.5546C125.022 85.3443 124.903 85.0592 124.903 84.7618V81.6467C124.948 81.3852 125.084 81.1477 125.287 80.9765C125.491 80.8053 125.749 80.7114 126.016 80.7114C126.282 80.7114 126.541 80.8053 126.744 80.9765C126.948 81.1477 127.084 81.3852 127.128 81.6467V84.7618C127.128 85.0539 127.014 85.3343 126.809 85.5438C126.604 85.7532 126.325 85.875 126.031 85.8832V85.8832Z\" fill=\"currentColor\"><\/path>\n<path d=\"M69.282 133.357C68.9911 133.357 68.7121 133.242 68.5064 133.038C68.3007 132.833 68.1851 132.556 68.1851 132.267V130.616C68.1579 130.455 68.1662 130.29 68.2096 130.133C68.2529 129.976 68.3303 129.83 68.4362 129.706C68.5421 129.581 68.674 129.481 68.8228 129.412C68.9715 129.344 69.1337 129.308 69.2977 129.308C69.4617 129.308 69.6236 129.344 69.7724 129.412C69.9211 129.481 70.053 129.581 70.1589 129.706C70.2648 129.83 70.3422 129.976 70.3855 130.133C70.4289 130.29 70.4373 130.455 70.41 130.616V132.173C70.4234 132.327 70.4039 132.481 70.3528 132.627C70.3017 132.772 70.2202 132.905 70.1136 133.017C70.007 133.129 69.8776 133.217 69.7343 133.276C69.591 133.334 69.4369 133.362 69.282 133.357V133.357Z\" fill=\"currentColor\"><\/path>\n<path d=\"M105.318 46.6953H89.9637C87.8444 46.6953 85.812 45.8584 84.3135 44.3687C82.8149 42.879 81.973 40.8586 81.973 38.7518V35.3875C81.973 33.2779 82.8139 31.2543 84.3116 29.7596C85.8092 28.265 87.8415 27.4211 89.9637 27.4128H105.318C107.446 27.4128 109.486 28.2531 110.991 29.7486C112.495 31.2441 113.34 33.2725 113.34 35.3875V38.7206C113.34 40.8357 112.495 42.864 110.991 44.3595C109.486 45.8551 107.446 46.6953 105.318 46.6953ZM89.9637 29.6558C88.4345 29.6558 86.9679 30.2596 85.8866 31.3345C84.8053 32.4094 84.198 33.8673 84.198 35.3875V38.7206C84.198 40.2408 84.8053 41.6987 85.8866 42.7737C86.9679 43.8486 88.4345 44.4525 89.9637 44.4525H105.318C106.851 44.4525 108.32 43.8496 109.407 42.7756C110.493 41.7015 111.107 40.2437 111.116 38.7206V35.3563C111.116 34.601 110.965 33.8532 110.674 33.1557C110.382 32.4583 109.955 31.8249 109.416 31.2923C108.877 30.7596 108.238 30.3381 107.535 30.0518C106.831 29.7656 106.078 29.6205 105.318 29.6246L89.9637 29.6558Z\" fill=\"currentColor\"><\/path>\n<path d=\"M164.55 28.3318L29.1212 162.961L30.6944 164.525L166.124 29.8957L164.55 28.3318Z\" fill=\"currentColor\"><\/path>\n<path d=\"M97.6411 192.887C78.4283 192.887 59.647 187.223 43.6721 176.612C27.6972 166.001 15.2463 150.919 7.89383 133.274C0.541406 115.628 -1.38239 96.2116 2.36585 77.4793C6.11408 58.7469 15.366 41.5402 28.9516 28.035C42.5371 14.5297 59.846 5.33238 78.6897 1.60628C97.5333 -2.11981 117.065 -0.207378 134.816 7.10162C152.566 14.4106 167.737 26.788 178.412 42.6685C189.086 58.549 194.783 77.2194 194.783 96.3187C194.783 121.93 184.548 146.493 166.331 164.603C148.113 182.713 123.405 192.887 97.6411 192.887V192.887ZM97.6411 2.21185C78.8931 2.21185 60.566 7.73837 44.9776 18.0927C29.3892 28.447 17.2396 43.1638 10.065 60.3824C2.89047 77.601 1.01336 96.5478 4.67091 114.827C8.32846 133.106 17.3566 149.897 30.6134 163.075C43.8703 176.254 60.7604 185.228 79.1481 188.864C97.5359 192.5 116.595 190.634 133.916 183.502C151.237 176.37 166.042 164.292 176.457 148.796C186.873 133.299 192.433 115.081 192.433 96.4435C192.408 71.4593 182.413 47.5054 164.641 29.8389C146.87 12.1724 122.774 2.23659 97.6411 2.21185Z\"><\/path>\n<\/svg>",
+            "icon_text": "<p>Certified Plastic Negative<\/p>",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        }
+      },
+      "block_order": [
+        "ffc69630-4860-41a7-80f0-f9af7aa5c087",
+        "40d040d2-2f72-4e19-8e26-d559cb427554",
+        "135382fb-a7af-48f6-af55-3a4a868d05e6",
+        "e8c3ebb0-2a5a-43c0-8924-e0345522fe6a",
+        "0120b5ec-4253-43e3-84d3-137b2f7fbaf7",
+        "cfd9cf13-b98f-4894-8018-2e3f00aa7082"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ee2c8556-75bf-49e7-bfbb-644878ffb5af": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--15078825525329__ee2c8556-75bf-49e7-bfbb-644878ffb5af-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Questions?<br> You don't have to whisper period."
+          }
+        },
+        "template--15078825525329__ee2c8556-75bf-49e7-bfbb-644878ffb5af-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>We don’t hush period talk. \u2028Even in a library. Reach out to our Saalt Coaches anytime to find your perfect disc size and fit.\u2028<\/p><p>TMI always welcome.<br\/><\/p><p><br\/><a href=\"\/pages\/contact-us\" title=\"Contact Us\">CONTACT US<\/a><\/p>"
+          }
+        },
+        "0f95b15d-936c-4ea7-81c0-9ce53aceb9f9": {
+          "type": "saalt_contact_links",
+          "disabled": true,
+          "settings": {
+            "theme_color_contacts_icon_color": "match_text"
+          }
+        }
+      },
+      "block_order": [
+        "template--15078825525329__ee2c8556-75bf-49e7-bfbb-644878ffb5af-section_title-1",
+        "template--15078825525329__ee2c8556-75bf-49e7-bfbb-644878ffb5af-section_content-1",
+        "0f95b15d-936c-4ea7-81c0-9ce53aceb9f9"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-3",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Questions_you_dont_have_to_whisper.jpg",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "450px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "fd4445e0-3160-476f-9e6f-f9f22e50a1dc",
+    "c3c67c48-069b-41aa-83c9-2b9ee67d9d60",
+    "205af4ea-20c2-45bc-98f3-082272cb19eb",
+    "11b4eb9a-18a9-488e-bfd7-23c248641695",
+    "1486f5ff-6753-4ad7-b1a9-6346e2f7f3b8",
+    "27932570-f6dd-49ef-a41d-a62c5a6e210f",
+    "959d5c15-d6c3-425c-a8d3-5e2f73ff8944",
+    "c8d699c2-ccef-4799-b100-f96128516185",
+    "f91185b0-f65e-4125-81ae-3fa39f1e6d62",
+    "bec6a799-d547-4f72-a599-8edc58d4bcc3",
+    "4979ad3b-9b05-4c86-8a59-644c6f717625",
+    "61266f32-54d6-459e-a625-fb59fc4b6f40",
+    "7b50f505-ae19-4a09-8e7d-e62d26122e64",
+    "9f70e72a-5b16-482b-84b3-df444f15d0bd",
+    "2a1f9c4e-eb99-4278-885c-23052a0fe53e",
+    "7dc8f187-d995-436e-9a49-5e215d0d4aa1",
+    "6d90874c-c092-46f8-89ee-85bf53a9989d",
+    "73a1b656-ec29-41c6-a6b6-981a3178cf8d",
+    "ee2c8556-75bf-49e7-bfbb-644878ffb5af"
+  ]
+}
