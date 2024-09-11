@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -412,9 +421,10 @@
         "section_id": "",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
-        "media_type": "image",
+        "media_type": "video",
         "mobile_image": "shopify:\/\/shop_images\/Saalt-Careers-Adjectives.gif",
         "desktop_image": "shopify:\/\/shop_images\/Saalt-Careers-Adjectives-2.gif",
+        "video": "shopify:\/\/files\/videos\/Saalt-Careers-Adjectives_2.mp4",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
