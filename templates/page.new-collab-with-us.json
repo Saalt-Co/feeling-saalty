@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -233,7 +242,7 @@
             "image": "shopify:\/\/shop_images\/Saalt-Influencer-Affiliate-Page-Influencer-Creators_03.jpg",
             "title": "Influencers & Creators",
             "text_content": "For influencers and content creators looking to partner with Saalt and earn commissions for sharing with their followers.",
-            "button_text": "Apply Now!",
+            "button_text": "BECOME A PARTNER",
             "button_url": "shopify:\/\/pages\/become-an-affiliate",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
@@ -248,7 +257,7 @@
             "image": "shopify:\/\/shop_images\/Saalt-Influencer-Affiliate-Page-Partnerships_03.jpg",
             "title": "Publications",
             "text_content": "For journalists, bloggers, and other websites or publications that want to feature or promote Saalt and earn commissions on all referred sales.",
-            "button_text": "Apply Now!",
+            "button_text": "BECOME AN AFFILIATE",
             "button_url": "https:\/\/www.shareasale.com\/shareasale.cfm?merchantID=104216",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
@@ -263,7 +272,7 @@
             "image": "shopify:\/\/shop_images\/Saalt-Influencer-Affiliate-Page-Healthcare_03.jpg",
             "title": "Healthcare Professionals & Clinicians",
             "text_content": "For medical professionals interested in learning more about reusable period care and sharing Saalt with your patients. Pelvic Floor Physical Therapist, OBGYN, Midwife, Doula, Aesthetician or others.",
-            "button_text": "Learn More",
+            "button_text": "SUPPORT YOUR PATIENTS",
             "button_url": "shopify:\/\/pages\/doc-box",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
@@ -278,7 +287,7 @@
             "image": "shopify:\/\/shop_images\/Saalt-Influencer-Affiliate-Page-COLLEGE-AMB_03.jpg",
             "title": "College Ambassadors",
             "text_content": "For students, athletes, coaches, and other looking to promote menstrual health, sustainability, and empowerment on college and university campuses.",
-            "button_text": "Learn More",
+            "button_text": "BECOME AN AMBASSADOR",
             "button_url": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSfjubbicyt_IJinZ7FdD0-qavLwdXZH0IDLhjRVczUb5tUMTw\/viewform",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
@@ -293,7 +302,7 @@
             "image": "shopify:\/\/shop_images\/Saalt-Influencer-Affiliate-Page-Superfans_03.jpg",
             "title": "Saalt Superfans",
             "text_content": "For Saalt superfans, passionate about sharing Saalt and joining us on our mission to make reusable period care accessible to all.",
-            "button_text": "Learn More",
+            "button_text": "CALLING ALL SUPERFANS",
             "button_url": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSc9iAj47y_U4XLfZQt8gqFwxbcGUlV1RD-jj-fcxioMMLRaZw\/viewform",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
