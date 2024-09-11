@@ -119,7 +119,7 @@
         "footer_display": "flex",
         "mobile_h_gap": 2,
         "mobile_v_gap": 1,
-        "desktop_h_gap": 3,
+        "desktop_h_gap": 4,
         "desktop_v_gap": 1,
         "theme_color_background": "theme-color-bg-2",
         "theme_color_text": "theme-color-text-0",
