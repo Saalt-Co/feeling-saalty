@@ -94,13 +94,6 @@
             "heading": "",
             "menu": "footer"
           }
-        },
-        "text_6x9WVD": {
-          "type": "text",
-          "settings": {
-            "heading": "Accessibility",
-            "subtext": "<h5>Saalt is committed to making our website's content accessible and user-friendly to everyone. If you are having difficulty viewing or navigating the content on this website, or notice any content, feature, or functionality that you believe is not fully accessible to people with disabilities, please email our team at <a href=\"mailto:sayhey@saalt.com\" title=\"mailto:sayhey@saalt.com\">sayhey@saalt.com<\/a> with “Disabled Access” in the subject line and provide a description of the specific feature you feel is not fully accessible or a suggestion for improvement. We take your feedback seriously and will consider it as we evaluate ways to accommodate all of our customers and our overall accessibility policies. Additionally, while we do not control such vendors, we strongly encourage vendors of third-party digital content to provide content that is accessible and user-friendly.<\/h5>"
-          }
         }
       },
       "block_order": [
@@ -109,8 +102,7 @@
         "145cfba4-b7eb-42c4-9791-72f73c77ab02",
         "footer-1",
         "52db0905-c8f6-43a5-9fa0-f8d4688dbb34",
-        "d45b85e4-9b80-4201-a374-3617aea76e29",
-        "text_6x9WVD"
+        "d45b85e4-9b80-4201-a374-3617aea76e29"
       ],
       "custom_css": [
 
@@ -119,7 +111,7 @@
         "footer_display": "flex",
         "mobile_h_gap": 2,
         "mobile_v_gap": 1,
-        "desktop_h_gap": 4,
+        "desktop_h_gap": 3,
         "desktop_v_gap": 1,
         "theme_color_background": "theme-color-bg-2",
         "theme_color_text": "theme-color-text-0",
