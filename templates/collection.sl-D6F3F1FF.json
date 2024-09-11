@@ -49,6 +49,7 @@
       "blocks": {
         "promo_banner_8FBcCq": {
           "type": "promo_banner",
+          "disabled": true,
           "settings": {
             "image-banner-desktop": "shopify:\/\/shop_images\/Collection-Tiles-480x395-two-column-01.jpg",
             "image-banner-mobile": "shopify:\/\/shop_images\/Collection-Tiles-360x100-mobile-01.jpg",
@@ -64,6 +65,7 @@
         },
         "promo_banner_CLjWBn": {
           "type": "promo_banner",
+          "disabled": true,
           "settings": {
             "image-banner-desktop": "shopify:\/\/shop_images\/Collection-Tiles-480x395-two-column-02.jpg",
             "image-banner-mobile": "shopify:\/\/shop_images\/Collection-Tiles-395x500-single-column-02.jpg",
