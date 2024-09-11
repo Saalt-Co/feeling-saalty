@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -85,6 +94,13 @@
             "heading": "",
             "menu": "footer"
           }
+        },
+        "text_6x9WVD": {
+          "type": "text",
+          "settings": {
+            "heading": "Accessibility",
+            "subtext": "<h5>Saalt is committed to making our website's content accessible and user-friendly to everyone. If you are having difficulty viewing or navigating the content on this website, or notice any content, feature, or functionality that you believe is not fully accessible to people with disabilities, please email our team at sayhey@saalt.com with “Disabled Access” in the subject line and provide a description of the specific feature you feel is not fully accessible or a suggestion for improvement. We take your feedback seriously and will consider it as we evaluate ways to accommodate all of our customers and our overall accessibility policies. Additionally, while we do not control such vendors, we strongly encourage vendors of third-party digital content to provide content that is accessible and user-friendly.<\/h5>"
+          }
         }
       },
       "block_order": [
@@ -93,7 +109,8 @@
         "145cfba4-b7eb-42c4-9791-72f73c77ab02",
         "footer-1",
         "52db0905-c8f6-43a5-9fa0-f8d4688dbb34",
-        "d45b85e4-9b80-4201-a374-3617aea76e29"
+        "d45b85e4-9b80-4201-a374-3617aea76e29",
+        "text_6x9WVD"
       ],
       "custom_css": [
 
