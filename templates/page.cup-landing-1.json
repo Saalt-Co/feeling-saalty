@@ -496,6 +496,75 @@
         "padding_bottom": 0
       }
     },
+    "multicolumn_j7ANxP": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JatF67": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/peyttonb_square_1-8-24_05ec35bf-ac98-4097-aa27-f51c645a6bb7.png",
+            "title": "Peytton",
+            "rating": 5,
+            "text": "<p><strong>The Saalt Period Cup has saved me so much money<\/strong> because I'm not buying tampons every single month. I was so worried when I switched to a period cup that I would be uncomfortable. This is flexible, it molds to your body, it's soft, and when you insert it <strong>you can't even feel it.<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mhcqDH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kelsvaughne_square_1-8-24_4120b1a4-2016-41d3-abc1-5f3592698158.png",
+            "title": "Kels",
+            "rating": 5,
+            "text": "<p><strong>The Saalt Cup is my new bestie!<\/strong> Well technically not new, we've been best friends for about 5 years. <strong>Imagine how much money I've saved not buying tampons!<\/strong><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_TqWVHM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dava_square_1-8-24_ce5f898c-297d-4633-823d-8d2d3e5736e3.jpg",
+            "title": "Dava",
+            "rating": 5,
+            "text": "<p><strong>Truly the best invention ever!! <\/strong>There is a learning curve to it of course…but I promise this will change your life for the better!! Once you get it down you will love it!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_JatF67",
+        "column_mhcqDH",
+        "column_TqWVHM"
+      ],
+      "settings": {
+        "title": "9\/10 people never go back!",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "--palette-color-0",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "--palette-color-4",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "10429312-ce7e-429d-b655-263692683976": {
       "type": "multicolumn",
       "blocks": {
@@ -524,6 +593,7 @@
         "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-1",
         "template--21642631840017__10429312-ce7e-429d-b655-263692683976-column-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "9\/10 People Never Go Back",
         "heading_size": "h1",
@@ -889,6 +959,7 @@
     "205af4ea-20c2-45bc-98f3-082272cb19eb",
     "1486f5ff-6753-4ad7-b1a9-6346e2f7f3b8",
     "27932570-f6dd-49ef-a41d-a62c5a6e210f",
+    "multicolumn_j7ANxP",
     "10429312-ce7e-429d-b655-263692683976",
     "featured_collection_wGknnB",
     "73a1b656-ec29-41c6-a6b6-981a3178cf8d",
