@@ -417,7 +417,7 @@
         "media_width": 50,
         "title_font_size": "small",
         "content_font_size": "small",
-        "mobile_text_position": "above",
+        "mobile_text_position": "below",
         "mobile_text_alignment": "center",
         "desktop_text_position": "left",
         "desktop_text_alignment": "left",
