@@ -207,7 +207,7 @@
         "section_icon_with_text_HbB3Az"
       ],
       "custom_css": [
-        "@media only screen and (max-width: 600px) {h3 {font-size: 24px!important; }}"
+        "@media only screen and (max-width: 767px) {h3 {font-size: 24px !important; }}"
       ],
       "settings": {
         "section_id": "",
