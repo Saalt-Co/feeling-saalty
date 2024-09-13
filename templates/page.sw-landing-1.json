@@ -236,7 +236,7 @@
         "show_description": false,
         "description_style": "body",
         "collection": "fan-favorites-saalt-wear",
-        "products_to_show": 6,
+        "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": true,
         "enable_desktop_slider": true,
