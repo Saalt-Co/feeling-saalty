@@ -232,6 +232,9 @@
         "section_icon_with_text_fdeKwP",
         "section_icon_with_text_Y8XptP"
       ],
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {h3 {font-size: 26px !important; }}"
+      ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-5",
@@ -730,34 +733,13 @@
           "settings": {
             "text_content": "<p>As a certified B Corp, we commit 1% of our revenue to donate period care to regions with the most need, and help fund initiatives in menstrual health, education, and sustainability.<\/p>"
           }
-        },
-        "1c7ae3d2-c727-46c4-b824-d5bf25842f3e": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "flex-start",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "9519e5cd-87f5-4d56-940e-220d20ebb13e": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "LEARN MORE",
-            "button_url": "\/pages\/impact",
-            "button_type": "secondary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
         }
       },
       "block_order": [
         "68fe5f6c-7322-4e01-98a4-e2259acfeb94",
         "1c5adb37-de67-4c63-9b06-5cc2fbbb4c66",
         "template--15078825525329__6d90874c-c092-46f8-89ee-85bf53a9989d-section_title-1",
-        "template--15078825525329__6d90874c-c092-46f8-89ee-85bf53a9989d-section_content-1",
-        "1c7ae3d2-c727-46c4-b824-d5bf25842f3e",
-        "9519e5cd-87f5-4d56-940e-220d20ebb13e"
+        "template--15078825525329__6d90874c-c092-46f8-89ee-85bf53a9989d-section_content-1"
       ],
       "settings": {
         "section_id": "",
