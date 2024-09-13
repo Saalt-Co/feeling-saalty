@@ -206,6 +206,9 @@
         "section_icon_with_text_ktTRMY",
         "section_icon_with_text_HbB3Az"
       ],
+      "custom_css": [
+        "@media only screen and (max-width: 600px) {h3 {font-size: 24px!important; }}"
+      ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-5",
