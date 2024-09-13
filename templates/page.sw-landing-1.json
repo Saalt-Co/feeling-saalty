@@ -472,7 +472,7 @@
         "theme_color_section_button_background_hover": "theme_default",
         "theme_color_text_section_button_text_hover": "theme_default",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
