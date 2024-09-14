@@ -201,6 +201,49 @@
         "include_margins": true
       }
     },
+    "959d5c15-d6c3-425c-a8d3-5e2f73ff8944": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Top 5 Reasons to Make the Switch to the Saalt Disc"
+          }
+        },
+        "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_content-1": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<ol><li><strong>Holds 4-6xs more than tampons <\/strong>and can<strong> <\/strong>be worn for up to 12 hours, so you can bike, hike, run, swim, or fly to Bora Bora.<\/li><li><strong>Saves $1500 and lasts 10 years. <\/strong>Psst. That's as long as your passport. Plus extra cash for 400 lattes...or your next car deposit.<\/li><li><strong>Naturally biocompatible. <\/strong>No bleached cotton, synthetic rayon, or harsh chemicals. Only 100% medical-grade silicone that's safe and maintains your natural pH.<\/li><li><strong>Odor free. <\/strong>No<strong> <\/strong>odor down under or in your bathroom trash can.<\/li><li><strong>Saves 3,000 pads & tampons<\/strong> from landfills. Clean period, clean planet.<\/li><\/ol>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_title-1",
+        "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_content-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Disc_Top_5_resized.jpg",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "left",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "90%",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "1486f5ff-6753-4ad7-b1a9-6346e2f7f3b8": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -330,254 +373,9 @@
         "padding_bottom": 0
       }
     },
-    "959d5c15-d6c3-425c-a8d3-5e2f73ff8944": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "2",
-            "title": "Top 5 Reasons to Make the Switch to the Saalt Disc"
-          }
-        },
-        "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<ol><li><strong>Holds 4-6xs more than tampons <\/strong>and can<strong> <\/strong>be worn for up to 12 hours, so you can bike, hike, run, swim, or fly to Bora Bora.<\/li><li><strong>Saves $1500 and lasts 10 years. <\/strong>Psst. That's as long as your passport. Plus extra cash for 400 lattes...or your next car deposit.<\/li><li><strong>Naturally biocompatible. <\/strong>No bleached cotton, synthetic rayon, or harsh chemicals. Only 100% medical-grade silicone that's safe and maintains your natural pH.<\/li><li><strong>Odor free. <\/strong>No<strong> <\/strong>odor down under or in your bathroom trash can.<\/li><li><strong>Saves 3,000 pads & tampons<\/strong> from landfills. Clean period, clean planet.<\/li><\/ol>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_title-1",
-        "template--15078825525329__959d5c15-d6c3-425c-a8d3-5e2f73ff8944-section_content-1"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Disc_size_chart_learn_discs_12-13-23.jpg",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "left",
-        "desktop_text_position": "right",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": true,
-        "max_width": "90%",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "c8d699c2-ccef-4799-b100-f96128516185": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_title-1": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "2",
-            "title": "Find the Perfect Fit"
-          }
-        },
-        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_content-1": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>Take the Saalt period cup quiz to find the best size and firmness for your most comfortable period.<\/p>"
-          }
-        },
-        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_button-1": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Button text",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_title-1",
-        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_content-1",
-        "template--21642631840017__c8d699c2-ccef-4799-b100-f96128516185-section_button-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "code",
-        "custom_code": "The Digioh quiz code here",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 66,
-        "title_font_size": "large",
-        "content_font_size": "small",
-        "mobile_text_position": "above",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "left",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "f91185b0-f65e-4125-81ae-3fa39f1e6d62": {
-      "type": "saalt-style-1-tiles-section",
-      "blocks": {
-        "56acc760-8d94-4c0c-aed3-5c6bf3f52f9c": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "2",
-            "title": "Saalt reusable period cup of disc?"
-          }
-        },
-        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-section_tiles_group-1": {
-          "type": "section_tiles_group",
-          "settings": {
-            "theme_color_mobile_text_color": "match_text",
-            "tile_mobile_text_alignment": "center",
-            "theme_color_desktop_text_color": "match_text",
-            "theme_color_desktop_text_hover_focus_color": "match_text",
-            "tile_desktop_text_alignment": "center",
-            "desktop_text_placement": "center",
-            "tile_desktop_text_alignment_hover_focus": "center",
-            "desktop_text_hover_placement": "center"
-          }
-        },
-        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-1": {
-          "type": "saalt_style_1_tile",
-          "settings": {
-            "title": "",
-            "text_content": "",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        },
-        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-2": {
-          "type": "saalt_style_1_tile",
-          "settings": {
-            "title": "",
-            "text_content": "",
-            "button_text": "",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
-          }
-        }
-      },
-      "block_order": [
-        "56acc760-8d94-4c0c-aed3-5c6bf3f52f9c",
-        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-section_tiles_group-1",
-        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-1",
-        "template--21642631840017__f91185b0-f65e-4125-81ae-3fa39f1e6d62-saalt_style_1_tile-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_id": "cup or disc",
-        "theme_color_background": "theme-color-bg-5",
-        "theme_color_text": "theme_default",
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_alignment": "center",
-        "desktop_text_alignment": "center",
-        "use_max_text_width": false,
-        "max_width": "600px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "bec6a799-d547-4f72-a599-8edc58d4bcc3": {
-      "type": "saalt-unstyled-liquid-section",
-      "blocks": {
-        "a9820dcb-bb69-4453-874f-0f5037ef5b01": {
-          "type": "custom_liquid_code",
-          "settings": {
-            "liquid_code": "<div id=\"cup-or-disc\"> <\/div>"
-          }
-        }
-      },
-      "block_order": [
-        "a9820dcb-bb69-4453-874f-0f5037ef5b01"
-      ],
-      "settings": {
-        "section_id": "cup or disc"
-      }
-    },
-    "4979ad3b-9b05-4c86-8a59-644c6f717625": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/disc_placement.jpg",
-            "title": "Saalt Disc",
-            "rating": 0,
-            "text": "<h4>Sits in the fornix directly under the cervix.<\/h4><ul><li>No suction<\/li><li>Rests in vaginal fornix<\/li><li>Custom removal notch<\/li><li>No-mess period sex<\/li><li>Collects 4—6x more than a tampon<\/li><\/ul>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/cup_placement.jpg",
-            "title": "Saalt Cup",
-            "rating": 0,
-            "text": "<h4>Sits in the vaginal canal.<\/h4><ul><li>Seal keeps the cup in place<\/li><li>Rests in vaginal canal<\/li><li>Great for beginners<\/li><li>Two firmness options<\/li><li>Collects 3—4x more than a tampon<\/li><\/ul>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-2",
-        "template--21642631840017__4979ad3b-9b05-4c86-8a59-644c6f717625-column-1"
-      ],
-      "settings": {
-        "title": "Saalt Period Disc or Period Cup?",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "background_style": "primary",
-        "theme_color_column_secondary_bg": "--palette-color-5",
-        "column_secondary_bg_opacity": 100,
-        "review_star_color_override": "theme_default",
-        "review_star_opacity_override": 100,
-        "button_text": "",
-        "button_url": "",
-        "button_type": "primary",
-        "theme_color_section_button_background": "theme_default",
-        "theme_color_text_section_button_text": "theme_default",
-        "theme_color_section_button_background_hover": "theme_default",
-        "theme_color_text_section_button_text_hover": "theme_default",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "61266f32-54d6-459e-a625-fb59fc4b6f40": {
       "type": "saalt-media-with-text",
+      "disabled": true,
       "settings": {
         "section_id": "how to clean",
         "theme_color_background": "theme_default",
@@ -732,59 +530,6 @@
         "accessibility_info": "Slideshow of customer testimonials"
       }
     },
-    "7dc8f187-d995-436e-9a49-5e215d0d4aa1": {
-      "type": "collapsible-content",
-      "blocks": {
-        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-1": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Are menstrual discs messy?",
-            "icon": "none",
-            "row_content": "<p>The Saalt Disc finger notch helps make removal clean and comfortable. With some practice, you’ll find your perfect removal technique for a mess-free period with your disc!<\/p>",
-            "page": ""
-          }
-        },
-        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-2": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What size should I get?",
-            "icon": "none",
-            "row_content": "<p>In general, we recommend that most new disc users start with the size regular, unless you have a low cervix, or you’re a teen or young adult.<\/p>",
-            "page": ""
-          }
-        },
-        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Will my menstrual disc leak?",
-            "icon": "none",
-            "row_content": "<p>Your Saalt Disc won’t leak when it’s in the right spot. Enjoy period week without the leaks.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-1",
-        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-2",
-        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-3"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "FAQs",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "row",
-        "theme_color_background": "theme-color-bg-2",
-        "theme_color_text": "theme-color-text-0",
-        "theme_color_container_background": "theme-color-bg-5",
-        "theme_color_container_text": "theme-color-text-2",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "6d90874c-c092-46f8-89ee-85bf53a9989d": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -902,22 +647,22 @@
             "mobile_icons_display": "row",
             "mobile_icon_group_horizontal_alignment": "center",
             "mobile_icon_group_vertical_alignment": "flex-start",
-            "mobile_icon_grid_columns": 2,
-            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_grid_columns": 3,
+            "mobile_icon_group_gap": "1.5rem",
             "mobile_icon_text_size": "clamp(.75rem, 1.5vw, 1.5rem)",
             "mobile_icon_horizontal_alignment": "center",
             "mobile_icon_vertical_alignment": "center",
-            "mobile_icon_min_width": "100px",
-            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_min_width": "70px",
+            "mobile_icon_wrapper_max_width": "90px",
             "mobile_icon_max_width": "100%",
-            "mobile_icon_height": "100px",
+            "mobile_icon_height": "70px",
             "use_max_icon_group_width": true,
             "icon_group_max_width": "1100px",
             "desktop_icons_display": "grid",
             "desktop_icon_group_horizontal_alignment": "center",
             "desktop_icon_group_vertical_alignment": "center",
             "desktop_icon_grid_columns": 5,
-            "desktop_icon_group_gap": "2.5rem",
+            "desktop_icon_group_gap": "3.5rem",
             "desktop_icon_text_size": "clamp(.75rem, 1.5vw, 1.25rem)",
             "desktop_icon_horizontal_alignment": "center",
             "desktop_icon_vertical_alignment": "center",
@@ -993,7 +738,7 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme-color-bg-5",
+        "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "none",
         "custom_code": "",
@@ -1009,7 +754,7 @@
         "use_max_text_width": false,
         "max_width": "600px",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 36
       }
     },
     "ee2c8556-75bf-49e7-bfbb-644878ffb5af": {
@@ -1041,6 +786,7 @@
         "template--15078825525329__ee2c8556-75bf-49e7-bfbb-644878ffb5af-section_content-1",
         "0f95b15d-936c-4ea7-81c0-9ce53aceb9f9"
       ],
+      "disabled": true,
       "settings": {
         "section_id": "",
         "theme_color_background": "theme-color-bg-3",
@@ -1150,6 +896,60 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "7dc8f187-d995-436e-9a49-5e215d0d4aa1": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are menstrual discs messy?",
+            "icon": "none",
+            "row_content": "<p>The Saalt Disc finger notch helps make removal clean and comfortable. With some practice, you’ll find your perfect removal technique for a mess-free period with your disc!<\/p>",
+            "page": ""
+          }
+        },
+        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What size should I get?",
+            "icon": "none",
+            "row_content": "<p>In general, we recommend that most new disc users start with the size regular, unless you have a low cervix, or you’re a teen or young adult.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will my menstrual disc leak?",
+            "icon": "none",
+            "row_content": "<p>Your Saalt Disc won’t leak when it’s in the right spot. Enjoy period week without the leaks.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-1",
+        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-2",
+        "template--15078825525329__7dc8f187-d995-436e-9a49-5e215d0d4aa1-collapsible_row-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "FAQs",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
+        "theme_color_container_background": "theme-color-bg-5",
+        "theme_color_container_text": "theme-color-text-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -1158,22 +958,18 @@
     "custom_liquid_bKdwXN",
     "saalt_media_with_text_VBcpRf",
     "1726260410c01663e4",
+    "959d5c15-d6c3-425c-a8d3-5e2f73ff8944",
     "1486f5ff-6753-4ad7-b1a9-6346e2f7f3b8",
     "27932570-f6dd-49ef-a41d-a62c5a6e210f",
-    "959d5c15-d6c3-425c-a8d3-5e2f73ff8944",
-    "c8d699c2-ccef-4799-b100-f96128516185",
-    "f91185b0-f65e-4125-81ae-3fa39f1e6d62",
-    "bec6a799-d547-4f72-a599-8edc58d4bcc3",
-    "4979ad3b-9b05-4c86-8a59-644c6f717625",
     "61266f32-54d6-459e-a625-fb59fc4b6f40",
     "7b50f505-ae19-4a09-8e7d-e62d26122e64",
     "9f70e72a-5b16-482b-84b3-df444f15d0bd",
     "2a1f9c4e-eb99-4278-885c-23052a0fe53e",
-    "7dc8f187-d995-436e-9a49-5e215d0d4aa1",
     "6d90874c-c092-46f8-89ee-85bf53a9989d",
     "73a1b656-ec29-41c6-a6b6-981a3178cf8d",
     "ee2c8556-75bf-49e7-bfbb-644878ffb5af",
     "205af4ea-20c2-45bc-98f3-082272cb19eb",
-    "11b4eb9a-18a9-488e-bfd7-23c248641695"
+    "11b4eb9a-18a9-488e-bfd7-23c248641695",
+    "7dc8f187-d995-436e-9a49-5e215d0d4aa1"
   ]
 }
