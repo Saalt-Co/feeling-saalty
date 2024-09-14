@@ -65,71 +65,6 @@
         "padding_bottom": 0
       }
     },
-    "c3c67c48-069b-41aa-83c9-2b9ee67d9d60": {
-      "type": "saalt-modular-nav-bar",
-      "blocks": {
-        "template--15078825525329__c3c67c48-069b-41aa-83c9-2b9ee67d9d60-nav_bar_link-1": {
-          "type": "nav_bar_link",
-          "settings": {
-            "nav_bar_link_text": "How it works",
-            "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "#how-it-works",
-            "nav_bar_link_dest": "#how it works"
-          }
-        },
-        "4527afb6-04da-4f97-a477-496cd83f6322": {
-          "type": "nav_bar_link",
-          "settings": {
-            "nav_bar_link_text": "How to use it",
-            "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "#how-to-use-it",
-            "nav_bar_link_dest": "#why it's better"
-          }
-        },
-        "bd2e6f19-eb06-4cd9-a36b-c83a7d840938": {
-          "type": "nav_bar_link",
-          "settings": {
-            "nav_bar_link_text": "Why it's better",
-            "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "#why-its-better",
-            "nav_bar_link_dest": "#absorbency guide"
-          }
-        },
-        "203f953b-dc7d-482f-9e5d-c6bb8a366b86": {
-          "type": "nav_bar_link",
-          "settings": {
-            "nav_bar_link_text": "Cup or disc?",
-            "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "#cup-or-disc",
-            "nav_bar_link_dest": "#how to wash"
-          }
-        },
-        "97c874e3-3dcf-4a4b-808e-cb386cef62e8": {
-          "type": "nav_bar_link",
-          "settings": {
-            "nav_bar_link_text": "How to clean",
-            "click_behavior": "scroll_to",
-            "nav_bar_element_selector": "#how-to-clean",
-            "nav_bar_link_dest": "#how to wash"
-          }
-        }
-      },
-      "block_order": [
-        "template--15078825525329__c3c67c48-069b-41aa-83c9-2b9ee67d9d60-nav_bar_link-1",
-        "4527afb6-04da-4f97-a477-496cd83f6322",
-        "bd2e6f19-eb06-4cd9-a36b-c83a7d840938",
-        "203f953b-dc7d-482f-9e5d-c6bb8a366b86",
-        "97c874e3-3dcf-4a4b-808e-cb386cef62e8"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme-color-bg-4",
-        "theme_color_text": "theme_default",
-        "mobile_nav_link_gap": "3rem",
-        "desktop_nav_link_gap": "7rem"
-      }
-    },
     "custom_liquid_PexmKi": {
       "type": "custom-liquid",
       "settings": {
@@ -400,7 +335,7 @@
         "f7a5cbdf-a0cc-49a8-9c40-00242a8fee72": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>We designed the Saalt Cup to be the easiest to use and most comfortable cup on the market. Our bulb shape forms a double seal to prevent leaks, and it’s made in the USA of  100% medical-grade silicone that’s velvety soft, odor free, and lasts 10 years.    Grab a match. It’s time to burn your last tampon.<\/p>"
+            "text_content": "<p>We designed the Saalt Cup to be the easiest to use and most comfortable cup on the market. Our bulb shape forms a double seal to prevent leaks, and it’s made in the USA of  100% medical-grade silicone that’s velvety soft, odor free, and lasts 10 years.    <\/p><p>Grab a match. It’s time to burn your last tampon.<\/p>"
           }
         }
       },
@@ -953,7 +888,6 @@
   "order": [
     "main",
     "fd4445e0-3160-476f-9e6f-f9f22e50a1dc",
-    "c3c67c48-069b-41aa-83c9-2b9ee67d9d60",
     "custom_liquid_PexmKi",
     "saalt_media_with_text_nGw8Mb",
     "17262604504d46d039",
