@@ -170,22 +170,22 @@
         "section_title_7KgcU4": {
           "type": "section_title",
           "settings": {
-            "heading_tag": "1",
-            "title": "Ready to toss your tampons? <br><span style=\"font-weight: 500 !important; font-style: italic;\"><\/span>"
-          }
-        },
-        "section_title_UxCKPX": {
-          "type": "section_title",
-          "disabled": true,
-          "settings": {
-            "heading_tag": "3",
-            "title": "<p>Use code <u>LEAKFREESUMMER<\/u> at&nbspcheckout. <a href=\"https:\/\/saalt.com\/pages\/offer-terms\" style=\"text-decoration: none;\"><small> See&nbspterms<\/small><\/a><\/p>"
+            "heading_tag": "2",
+            "title": "Take $25 off when you spend $125<br><span style=\"font-weight: 500 !important; font-style: italic;\"><\/span>"
           }
         },
         "section_content_PVxE6C": {
           "type": "section_content",
+          "disabled": true,
           "settings": {
-            "text_content": "<p>This is what freedom from the tampon aisle looks&nbsplike.<\/p>"
+            "text_content": "<p>So you can say ta-ta to tampons and pads, and hello to undies that keep you dry even on the heaviest days. <\/p>"
+          }
+        },
+        "section_title_UxCKPX": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "3",
+            "title": "So you can say ta-ta to tampons and pads, and hello to undies that keep you dry even on the heaviest&nbspdays. Just use code <u><strong>SAALT25<\/strong><\/u> at&nbspcheckout. <a href=\"https:\/\/saalt.com\/pages\/offer-terms\" style=\"text-decoration: none;\"><small> See&nbspterms<\/small><\/a>"
           }
         },
         "section_buttons_group_anQEL4": {
@@ -198,8 +198,8 @@
         "section_button_gHrdFj": {
           "type": "section_button",
           "settings": {
-            "button_text": "SHOP SAALT CUPS & DISCS",
-            "button_url": "shopify:\/\/collections\/menstrual-cups-discs",
+            "button_text": "SHOP NOW",
+            "button_url": "shopify:\/\/collections\/shop-all",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -210,15 +210,15 @@
       },
       "block_order": [
         "section_title_7KgcU4",
-        "section_title_UxCKPX",
         "section_content_PVxE6C",
+        "section_title_UxCKPX",
         "section_buttons_group_anQEL4",
         "section_button_gHrdFj"
       ],
       "disabled": true,
       "custom_css": [
         "h6 {font-weight: 500;}",
-        "h3 {font-weight: 500 !important; font-size: 26px !important; line-height: 1 !important; font-style: italic;}",
+        "h3 {font-weight: 400 !important; font-size: 16px !important; line-height: 1.25 !important;}",
         "p {font-size: 16px; line-height: 1.25;}"
       ],
       "settings": {
@@ -226,8 +226,8 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify:\/\/shop_images\/Saalt-Tampon-Aisle-Hero-mobile.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Saalt-Tampon-Aisle-Hero-desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Saalt-25-off-125-mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Saalt-25-off-125-desktop.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
