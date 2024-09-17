@@ -51,32 +51,23 @@
       "blocks": {
         "announcement_hyiLFC": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "Get 15% off for Labor Day using code: LABORDAY15",
+            "text": "Take $25 OFF when you spend $125 with code: SAALT25",
             "link": ""
           }
         },
         "announcement_nHDyte": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Save up to 25% when you bundle Cups, Discs, or Underwear.",
             "link": "shopify:\/\/collections\/shop-all"
-          }
-        },
-        "announcement_mKnhtH": {
-          "type": "announcement",
-          "disabled": true,
-          "settings": {
-            "text": "Pre-Order Now: Saalt Teen Brief",
-            "link": "shopify:\/\/products\/leakproof-teen-brief"
           }
         }
       },
       "block_order": [
         "announcement_hyiLFC",
-        "announcement_nHDyte",
-        "announcement_mKnhtH"
+        "announcement_nHDyte"
       ],
       "settings": {
         "theme_color_background": "theme-color-bg-2",
