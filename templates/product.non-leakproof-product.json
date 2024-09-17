@@ -344,7 +344,7 @@
         "template--18370419851537__2e4ed4ed-2f94-40cb-9564-c7df19d1376a-column-2"
       ],
       "settings": {
-        "title": "9\/10 People Never Go Back",
+        "title": "So comfy, we made it for every day.",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -514,8 +514,8 @@
         "section_id": "",
         "theme_color_background": "theme-color-bg-4",
         "theme_color_text": "theme_default",
-        "media_type": "video",
-        "video": "shopify:\/\/files\/videos\/Nov New PDP.mp4",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Saalt-Wear-PDP-Your-One-Stop-Shop.jpg",
         "use_max_media_width": false,
         "max_media_width": "700px",
         "media_width": 50,
@@ -556,7 +556,7 @@
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Saalt-Wear-PDP-Your-One-Stop-Shop.jpg",
+        "image": "shopify:\/\/shop_images\/Seamless-Non-Leakproof-Collection-mobile.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
