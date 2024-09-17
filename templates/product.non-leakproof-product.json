@@ -50,6 +50,17 @@
           "settings": {
           }
         },
+        "8e16b700-b5d3-4d93-aa86-a2391fc38797": {
+          "type": "product_features",
+          "settings": {
+            "mobile_icon_max_width": "3rem",
+            "desktop_icon_width": "3rem",
+            "product_features_orientation": "vertical",
+            "desktop_icon_max_width": "50%",
+            "desktop_icon_height": "75px",
+            "desktop_text_alignment": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.options__3.value"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -84,17 +95,6 @@
           "type": "shopify:\/\/apps\/tolstoy-shoppable-video-ugc\/blocks\/stories-block\/06fa8282-42ff-403e-b67c-1936776aed11",
           "settings": {
             "publishId": "x7y9v9rvuaahp"
-          }
-        },
-        "8e16b700-b5d3-4d93-aa86-a2391fc38797": {
-          "type": "product_features",
-          "settings": {
-            "mobile_icon_max_width": "3rem",
-            "desktop_icon_width": "3rem",
-            "product_features_orientation": "vertical",
-            "desktop_icon_max_width": "50%",
-            "desktop_icon_height": "75px",
-            "desktop_text_alignment": "t:sections.main-product.blocks.product_features.settings.desktop_text_alignment.options__3.value"
           }
         },
         "description": {
@@ -189,13 +189,13 @@
         "caption",
         "a540459f-701c-470e-bfa0-1112dcf7d16d",
         "f67077c2-1eb2-42b6-8ba2-0bdbe3f0e8f7",
+        "8e16b700-b5d3-4d93-aa86-a2391fc38797",
         "price",
         "text_49f6xw",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "tolstoy_shoppable_video_ugc_stories_block_RGaq8G",
-        "8e16b700-b5d3-4d93-aa86-a2391fc38797",
         "description",
         "collapsible-row-0",
         "b353a8cb-d34f-4c9e-9e49-2879eadc10c3",
