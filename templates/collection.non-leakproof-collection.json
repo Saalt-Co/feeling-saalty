@@ -147,49 +147,6 @@
         "padding_bottom": 0
       }
     },
-    "608ca706-ad50-41fb-bcb5-660ee4c39ec0": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "section_title_EjYWQ8": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "2",
-            "title": "Wear-every-day breathability with no&nbspleakproof&nbsplining."
-          }
-        },
-        "c8cb7502-f102-47a4-a6fd-3ea00c892598": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<ul><li>Zero absorbency<\/li><li>Seamless with no VPL<\/li><li>100% cotton gusset<\/li><\/ul>"
-          }
-        }
-      },
-      "block_order": [
-        "section_title_EjYWQ8",
-        "c8cb7502-f102-47a4-a6fd-3ea00c892598"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme_default",
-        "theme_color_text": "theme_default",
-        "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Take_good_care_Saalt_Wear_collection_page_1-8-24.png",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "left",
-        "desktop_text_position": "left",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": true,
-        "max_width": "80%",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "14203610-b21b-4177-bf34-1181886aaa2c": {
       "type": "saalt-media-with-text",
       "blocks": {
@@ -303,6 +260,49 @@
         "desktop_text_alignment": "center",
         "use_max_text_width": true,
         "max_width": "450px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "608ca706-ad50-41fb-bcb5-660ee4c39ec0": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "section_title_EjYWQ8": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Wear-every-day breathability with no&nbspleakproof&nbsplining."
+          }
+        },
+        "c8cb7502-f102-47a4-a6fd-3ea00c892598": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<ul><li>Zero absorbency<\/li><li>Seamless with no VPL<\/li><li>100% cotton gusset<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_EjYWQ8",
+        "c8cb7502-f102-47a4-a6fd-3ea00c892598"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "image": "shopify:\/\/shop_images\/Saalt-Wear-PDP-Your-One-Stop-Shop.jpg",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "left",
+        "desktop_text_position": "left",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "80%",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -592,8 +592,8 @@
     "rich_text_LahFNy",
     "product-grid",
     "826ab071-d85e-4cc1-981e-0f5623d9ae40",
-    "608ca706-ad50-41fb-bcb5-660ee4c39ec0",
     "14203610-b21b-4177-bf34-1181886aaa2c",
+    "608ca706-ad50-41fb-bcb5-660ee4c39ec0",
     "835cabec-b298-4b76-9a74-2ae85e6ea4be",
     "1b9dee2b-76db-4cda-bad0-2f1cfeadc02f",
     "saalt_media_with_split_text_kgQmkB"
