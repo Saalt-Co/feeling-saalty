@@ -512,8 +512,8 @@
       ],
       "settings": {
         "section_id": "",
-        "theme_color_background": "theme-color-bg-4",
-        "theme_color_text": "theme_default",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
         "media_type": "image",
         "image": "shopify:\/\/shop_images\/Seamless-Non-Leakproof-Collection.jpg",
         "use_max_media_width": false,
