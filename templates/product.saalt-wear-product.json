@@ -673,7 +673,7 @@
         "content_font_size": "small",
         "mobile_text_position": "below",
         "mobile_text_alignment": "center",
-        "desktop_text_position": "left",
+        "desktop_text_position": "right",
         "desktop_text_alignment": "center",
         "use_max_text_width": false,
         "max_width": "600px",
