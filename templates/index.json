@@ -250,14 +250,14 @@
         "section_title_mCVUfn": {
           "type": "section_title",
           "settings": {
-            "heading_tag": "1",
-            "title": "New!"
+            "heading_tag": "2",
+            "title": "Introducing Saalt Wear Seamless Non&#8209;Leakproof"
           }
         },
         "section_content_H6jfLA": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>100% cotton gusset Seamless non-leakproof underwear for every day<\/p>"
+            "text_content": "<p>100% cotton gusset seamless non-leakproof underwear for every day<\/p>"
           }
         },
         "section_title_c7DKgx": {
@@ -303,7 +303,7 @@
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
-        "theme_color_text": "theme-color-text-0",
+        "theme_color_text": "theme_default",
         "media_type": "image",
         "mobile_image": "shopify:\/\/shop_images\/Seamless-Non-leakproof-MOBILE.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Seamless-Non-leakproof-DESKTOP.jpg",
