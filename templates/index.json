@@ -298,7 +298,8 @@
       "disabled": true,
       "custom_css": [
         "h3 {font-size: 16px !important; line-height: 1.5 !important;}",
-        "@media only screen and (max-width: 767px) {p {color: #373737 !important; } h1 {color: #373737; font-size: 26px !important; } h3 {color: #373737; }}"
+        "@media only screen and (max-width: 767px) {p {color: #373737 !important; } h1 {color: #373737; font-size: 26px !important; } h3 {color: #373737; }}",
+        ".text-wrapper {background-color: #dde2e8 !important;}"
       ],
       "settings": {
         "section_id": "",
