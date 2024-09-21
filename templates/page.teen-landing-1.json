@@ -23,7 +23,7 @@
         "section_content_bHJrfF": {
           "type": "section_content",
           "settings": {
-            "text_content": "<h1>Feel Comfortable, Confident, and Empowered<\/h1><p>Meet the perfect duo for teens: <strong>Sustainable period underwear & menstrual cups<\/strong>. Designed with young bodies in mind, backed by science, and trusted by parents.<\/p>"
+            "text_content": "<h3>Feel Comfortable, Confident, and&nbspEmpowered<\/h3><p>The perfect period duo for school, sleep, sport and anywhere in between: <strong>Sustainable period underwear & menstrual cups<\/strong>. <\/p><p>Designed with young bodies in mind, backed by science, and trusted for comfort and reliability.<\/p>"
           }
         }
       },
@@ -31,7 +31,8 @@
         "section_content_bHJrfF"
       ],
       "custom_css": [
-
+        "h3 {font-size: 30px !important; line-height: 1.5 !important;}",
+        ".section-inner {background-color: #3f4759 !important;}"
       ],
       "settings": {
         "section_id": "",
