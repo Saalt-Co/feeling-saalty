@@ -183,6 +183,130 @@
         "padding_bottom": 0
       }
     },
+    "featured_product_LwLiya": {
+      "type": "featured-product",
+      "blocks": {
+        "title_qbExEp": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_xjXEhw": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "rating_mHjepn": {
+          "type": "rating",
+          "settings": {
+          }
+        },
+        "variant_picker_fXhpkw": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_cg9NdB": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons_ftgzqF": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "custom_liquid_Wyym7m": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<h3>Top 5 Reasons to Make the Switch to the Saalt Cup<\/h3><ul><li><strong>Holds 2x more than tampons <\/strong>and can be worn for up to 12 hours, so you can bike, hike, run, swim, or fly to Bora Bora.<\/li>\n<li><strong>Saves $1500 and lasts 10 years. <\/strong>Psst. That's as long as your passport. Plus extra cash for 400 lattes...or your next car deposit.<\/li>\n<li><strong>Naturally biocompatible. <\/strong>No bleached cotton, synthetic rayon, or harsh chemicals. Only 100% medical-grade silicone that's safe and maintains your natural pH.<\/li>\n<li><strong>Odor free. <\/strong>No<strong> <\/strong>odor down under or in your bathroom trash can.<\/li><li><strong>Saves 3,000 pads & tampons<\/strong> from landfills. Clean period, clean planet.<\/li>"
+          }
+        }
+      },
+      "block_order": [
+        "title_qbExEp",
+        "price_xjXEhw",
+        "rating_mHjepn",
+        "variant_picker_fXhpkw",
+        "quantity_selector_cg9NdB",
+        "buy_buttons_ftgzqF",
+        "custom_liquid_Wyym7m"
+      ],
+      "settings": {
+        "product": "saalt-teen-cup",
+        "theme_color_background": "theme_default",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_9P9NKe": {
+      "type": "featured-product",
+      "blocks": {
+        "title_d6pXXj": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_AXbhJy": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker_AtJzNj": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "quantity_selector_6nap7D": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons_J938CA": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        }
+      },
+      "block_order": [
+        "title_d6pXXj",
+        "price_AXbhJy",
+        "variant_picker_AtJzNj",
+        "quantity_selector_6nap7D",
+        "buy_buttons_J938CA"
+      ],
+      "settings": {
+        "product": "leakproof-teen-brief",
+        "theme_color_background": "theme_default",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "right",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection_HNGUkC": {
       "type": "featured-collection",
       "settings": {
@@ -217,146 +341,6 @@
         "padding_top": 36,
         "padding_bottom": 56
       }
-    },
-    "featured_product_LwLiya": {
-      "type": "featured-product",
-      "blocks": {
-        "text_fmjzz9": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_qbExEp": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_xjXEhw": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker_fXhpkw": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "quantity_selector_cg9NdB": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons_ftgzqF": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "share_PJqRgK": {
-          "type": "share",
-          "disabled": true,
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "text_fmjzz9",
-        "title_qbExEp",
-        "price_xjXEhw",
-        "variant_picker_fXhpkw",
-        "quantity_selector_cg9NdB",
-        "buy_buttons_ftgzqF",
-        "share_PJqRgK"
-      ],
-      "settings": {
-        "product": "saalt-teen-cup",
-        "theme_color_background": "theme_default",
-        "secondary_background": false,
-        "media_size": "small",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "none",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "featured_product_9P9NKe": {
-      "type": "featured-product",
-      "blocks": {
-        "text_nzegYz": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_d6pXXj": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_AXbhJy": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker_AtJzNj": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "quantity_selector_6nap7D": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons_J938CA": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "share_VLwRpP": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "text_nzegYz",
-        "title_d6pXXj",
-        "price_AXbhJy",
-        "variant_picker_AtJzNj",
-        "quantity_selector_6nap7D",
-        "buy_buttons_J938CA",
-        "share_VLwRpP"
-      ],
-      "settings": {
-        "product": "leakproof-teen-brief",
-        "theme_color_background": "theme_default",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -364,8 +348,8 @@
     "saalt_bg_media_with_text_MXLJ74",
     "custom_liquid_EKTqbj",
     "saalt_media_with_text_gBtHmM",
-    "featured_collection_HNGUkC",
     "featured_product_LwLiya",
-    "featured_product_9P9NKe"
+    "featured_product_9P9NKe",
+    "featured_collection_HNGUkC"
   ]
 }
