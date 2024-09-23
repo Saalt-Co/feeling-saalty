@@ -281,6 +281,12 @@
           "settings": {
           }
         },
+        "buy_buttons_ftgzqF": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
         "variant_picker_fXhpkw": {
           "type": "variant_picker",
           "disabled": true,
@@ -299,22 +305,16 @@
           "settings": {
             "custom_liquid": "<div style=\"background-color: #FDF7F3; padding: 20px;\">\n<h3>Top 5 Reasons to Make the Switch to the Saalt Teen Cup</h3>\n<ul style=\"font-size: 14px;\"><li><strong>Holds 2x more than tampons </strong>and can be worn for up to 12 hours, so you can bike, hike, run, swim, or breeze through that epic sleepover leak-free.</li>\n<li><strong>Saves $1500 and lasts 10 years. </strong>Psst. That's  way longer than your cell phone. Plus extra cash for 250 bubble teas, concert tickets, or allll those cute hoodies you’ve been eyeing!\n</li>\n<li><strong>Body-Friendly. </strong>No bleached cotton, synthetic rayon, or harsh chemicals. Only 100% medical-grade silicone that's safe and maintains your natural pH.</li>\n<li><strong>Fresh Vibes Only. </strong>No<strong> </strong>odor down under or in your bathroom trash can.</li><li><strong>Saves 3,000 pads & tampons</strong> from landfills. Clean period, clean planet.</li>\n</div>"
           }
-        },
-        "buy_buttons_ftgzqF": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false
-          }
         }
       },
       "block_order": [
         "title_qbExEp",
         "price_xjXEhw",
         "rating_mHjepn",
+        "buy_buttons_ftgzqF",
         "variant_picker_fXhpkw",
         "quantity_selector_cg9NdB",
-        "custom_liquid_Wyym7m",
-        "buy_buttons_ftgzqF"
+        "custom_liquid_Wyym7m"
       ],
       "settings": {
         "product": "saalt-teen-cup",
