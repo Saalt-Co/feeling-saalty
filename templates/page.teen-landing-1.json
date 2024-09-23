@@ -243,7 +243,8 @@
         "section_id": "",
         "theme_color_background": "theme-color-bg-2",
         "theme_color_text": "theme-color-text-0",
-        "media_type": "video",
+        "media_type": "image",
+        "image": "shopify://shop_images/SW-TC-Banner-Blocks-How-To-Use-Teen-Cup.jpg",
         "video": "shopify://files/videos/Rotating cup with benefits.mp4",
         "custom_code": "",
         "use_max_media_width": false,
@@ -302,7 +303,7 @@
         "custom_liquid_Wyym7m": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div style=\"background-color: #FDF7F3; padding: 20px;\">\n<h3>Top 5 Reasons to Make the Switch to the Saalt Teen Cup</h3>\n<ul style=\"font-size: 14px;\"><li><strong>Holds 2x more than tampons </strong>and can be worn for up to 12 hours, so you can bike, hike, run, swim, or breeze through that epic sleepover leak-free.</li>\n<li><strong>Saves $1500 and lasts 10 years. </strong>Psst. That's as long as ****************. Plus extra cash for 250 bubble teas, concert tickets, or allll those cute hoodies you’ve been eyeing!\n</li>\n<li><strong>Body-Friendly. </strong>No bleached cotton, synthetic rayon, or harsh chemicals. Only 100% medical-grade silicone that's safe and maintains your natural pH.</li>\n<li><strong>Fresh Vibes Only. </strong>No<strong> </strong>odor down under or in your bathroom trash can.</li><li><strong>Saves 3,000 pads & tampons</strong> from landfills. Clean period, clean planet.</li>\n</div>"
+            "custom_liquid": "<div style=\"background-color: #FDF7F3; padding: 20px;\">\n<h3>Top 5 Reasons to Make the Switch to the Saalt Teen Cup</h3>\n<ul style=\"font-size: 14px;\"><li><strong>Holds 2x more than tampons </strong>and can be worn for up to 12 hours, so you can bike, hike, run, swim, or breeze through that epic sleepover leak-free.</li>\n<li><strong>Saves $1500 and lasts 10 years. </strong>Psst. That's  way longer than your cell phone. Plus extra cash for 250 bubble teas, concert tickets, or allll those cute hoodies you’ve been eyeing!\n</li>\n<li><strong>Body-Friendly. </strong>No bleached cotton, synthetic rayon, or harsh chemicals. Only 100% medical-grade silicone that's safe and maintains your natural pH.</li>\n<li><strong>Fresh Vibes Only. </strong>No<strong> </strong>odor down under or in your bathroom trash can.</li><li><strong>Saves 3,000 pads & tampons</strong> from landfills. Clean period, clean planet.</li>\n</div>"
           }
         }
       },
