@@ -392,6 +392,70 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "saalt_media_with_text_TmVdFe": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "section_title_TWi4XF": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Section Title Goes Here"
+          }
+        },
+        "section_content_XbkYct": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.</p>"
+          }
+        },
+        "section_buttons_group_nqxH6W": {
+          "type": "section_buttons_group",
+          "settings": {
+            "desktop_button_group_alignment": "flex-start",
+            "desktop_buttons_group_gap": "1rem"
+          }
+        },
+        "section_button_8m9Cpq": {
+          "type": "section_button",
+          "settings": {
+            "button_text": "Button text",
+            "button_url": "",
+            "button_type": "primary",
+            "theme_color_section_button_background": "theme_default",
+            "theme_color_text_section_button_text": "theme_default",
+            "theme_color_section_button_background_hover": "theme_default",
+            "theme_color_text_section_button_text_hover": "theme_default"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_TWi4XF",
+        "section_content_XbkYct",
+        "section_buttons_group_nqxH6W",
+        "section_button_8m9Cpq"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "image": "shopify://shop_images/SW-TC-Banner-Blocks-Sustainability-Never-Felt-So-Good.jpg",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -402,6 +466,7 @@
     "featured_collection_HNGUkC",
     "saalt_media_with_text_ir3hWH",
     "featured_product_LwLiya",
-    "featured_product_9P9NKe"
+    "featured_product_9P9NKe",
+    "saalt_media_with_text_TmVdFe"
   ]
 }
