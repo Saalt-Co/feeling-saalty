@@ -362,6 +362,12 @@
           "settings": {
             "show_dynamic_checkout": false
           }
+        },
+        "custom_liquid_rWqK4b": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"background-color: #FDF7F3; padding: 20px;\">\n<h3>Top 5 Reasons to Make the Switch to Saalt Teen Period Underwear</h3>\n<ul style=\"font-size: 14px;\"><li><strong>Thinnest and driest gusset. </strong> Saalt's patent-pending moisture-wicking technology keeps you dry and fresh.\n</li>\n<li><strong>No strings, no sticky liners, no bulk. </strong>Just built-in comfort that moves with you.\n</li>\n<li><strong>Replaces up to 3 pads or 4 tampons of flow. </strong>Whoa.</li>\n<li><strong>Fresh Vibes Only. </strong>No odor down under or in your bathroom trash can.</li><li><strong>Not treated with PFAS chemicals.</strong> Clean & safe for you and the planet.</li>\n</div>"
+          }
         }
       },
       "block_order": [
@@ -369,7 +375,8 @@
         "price_AXbhJy",
         "variant_picker_AtJzNj",
         "quantity_selector_6nap7D",
-        "buy_buttons_J938CA"
+        "buy_buttons_J938CA",
+        "custom_liquid_rWqK4b"
       ],
       "settings": {
         "product": "leakproof-teen-brief",
