@@ -398,6 +398,7 @@
       "blocks": {
         "section_title_TWi4XF": {
           "type": "section_title",
+          "disabled": true,
           "settings": {
             "heading_tag": "1",
             "title": "Section Title Goes Here"
@@ -406,34 +407,93 @@
         "section_content_XbkYct": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.</p>"
+            "text_content": "<h2>Sustainable never felt so good.</h2><p>You (and your teen) have enough things to worry about. Your period shouldn’t be one of them. We’ve got you covered from your first class through soccer practice.</p>"
           }
         },
-        "section_buttons_group_nqxH6W": {
-          "type": "section_buttons_group",
+        "section_icon_group_e3GnnX": {
+          "type": "section_icon_group",
           "settings": {
-            "desktop_button_group_alignment": "flex-start",
-            "desktop_buttons_group_gap": "1rem"
+            "mobile_icons_display": "grid",
+            "mobile_icon_group_horizontal_alignment": "center",
+            "mobile_icon_group_vertical_alignment": "flex-start",
+            "mobile_icon_grid_columns": 2,
+            "mobile_icon_group_gap": "1.5rem",
+            "mobile_icon_text_size": "1.25rem",
+            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_vertical_alignment": "center",
+            "mobile_icon_min_width": "80px",
+            "mobile_icon_wrapper_max_width": "200px",
+            "mobile_icon_max_width": "40%",
+            "mobile_icon_height": "100px",
+            "use_max_icon_group_width": false,
+            "icon_group_max_width": "600px",
+            "desktop_icons_display": "row",
+            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_vertical_alignment": "center",
+            "desktop_icon_grid_columns": 2,
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_horizontal_alignment": "center",
+            "desktop_icon_vertical_alignment": "center",
+            "desktop_icon_min_width": "80px",
+            "desktop_icon_wrapper_max_width": "100px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "100px"
           }
         },
-        "section_button_8m9Cpq": {
-          "type": "section_button",
+        "section_icon_with_text_kE834U": {
+          "type": "section_icon_with_text",
           "settings": {
-            "button_text": "Button text",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
+            "icon_svg": "",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "section_icon_with_text_RfxRQJ": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "section_icon_with_text_hDR8TV": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "section_icon_with_text_ifPrAq": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
           }
         }
       },
       "block_order": [
         "section_title_TWi4XF",
         "section_content_XbkYct",
-        "section_buttons_group_nqxH6W",
-        "section_button_8m9Cpq"
+        "section_icon_group_e3GnnX",
+        "section_icon_with_text_kE834U",
+        "section_icon_with_text_RfxRQJ",
+        "section_icon_with_text_hDR8TV",
+        "section_icon_with_text_ifPrAq"
       ],
       "settings": {
         "section_id": "",
