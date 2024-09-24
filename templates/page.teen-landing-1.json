@@ -577,50 +577,73 @@
     "saalt_media_with_text_KdmF4z": {
       "type": "saalt-media-with-text",
       "blocks": {
+        "section_icon_group_9XrpkD": {
+          "type": "section_icon_group",
+          "settings": {
+            "mobile_icons_display": "row",
+            "mobile_icon_group_horizontal_alignment": "center",
+            "mobile_icon_group_vertical_alignment": "flex-start",
+            "mobile_icon_grid_columns": 2,
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_text_size": "1.5rem",
+            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_vertical_alignment": "center",
+            "mobile_icon_min_width": "80px",
+            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "100px",
+            "use_max_icon_group_width": false,
+            "icon_group_max_width": "600px",
+            "desktop_icons_display": "row",
+            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_vertical_alignment": "center",
+            "desktop_icon_grid_columns": 2,
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_horizontal_alignment": "center",
+            "desktop_icon_vertical_alignment": "center",
+            "desktop_icon_min_width": "80px",
+            "desktop_icon_wrapper_max_width": "100px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "100px"
+          }
+        },
+        "section_icon_with_text_YiFgne": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"126\" height=\"126\" viewbox=\"0 0 126 126\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_493_7014)\">\n<path d=\"M110.097 42.4007L109.907 42.4467C109.637 44.6838 107.874 47.5699 101.278 49.1463C93.7613 50.9449 85.8645 48.5329 80.9821 45.0098C80.273 44.4986 79.5535 43.9727 78.8132 43.4645C78.429 43.1978 78.0462 42.9267 77.6605 42.6556C71.9815 38.6465 65.3056 35.7085 58.0362 36.3011H57.9932C57.9695 36.3011 57.9443 36.3011 57.922 36.31C53.1836 36.7145 49.7492 38.1605 47.0373 40.088C44.584 41.6747 42.4611 43.7203 40.7856 46.1121C37.6821 50.5849 36.559 55.7422 37.6257 60.6447C37.6687 60.8432 37.737 61.0329 37.7874 61.2373C36.5746 61.1828 35.3595 61.2065 34.1498 61.3085C27.1178 61.8922 22.0144 66.368 18.9034 71.1949C16.3876 75.1063 15.326 79.7754 15.9037 84.3883L16.0936 84.3438C16.3681 82.1052 18.129 79.2206 24.7263 77.6427C32.2434 75.8456 40.1403 78.2561 45.0226 81.7792C45.7318 82.2918 46.4513 82.8163 47.1916 83.3245C47.5758 83.5912 47.9585 83.8623 48.3443 84.1334C54.0218 88.1411 60.6932 91.079 67.9626 90.4864H68.0071L68.0783 90.4775C72.8153 90.0715 76.2496 88.627 78.963 86.6995C81.4167 85.112 83.5396 83.0654 85.2147 80.6725C88.3182 76.1997 89.4413 71.0423 88.3746 66.1413C88.3316 65.9413 88.2633 65.7517 88.2129 65.5487C89.4257 65.603 90.6407 65.5798 91.8505 65.4791C98.8825 64.8864 103.986 60.418 107.097 55.5911C109.612 51.6805 110.674 47.0126 110.097 42.4007V42.4007ZM87.753 66.3013C87.8613 66.8021 87.9355 67.3073 87.9963 67.814C88.7381 75.0188 82.8039 78.9746 77.5003 79.4724C70.1894 80.1599 64.7077 75.3063 57.9175 70.3919C57.4117 70.0275 56.8895 69.6511 56.345 69.257C50.1972 64.6835 45.0701 61.7307 38.4669 61.267C38.3957 61.0047 38.3081 60.7484 38.2488 60.4788C38.1405 59.978 38.0663 59.4728 38.0055 58.9661C37.2103 51.4101 43.1979 47.8055 48.5015 47.3077C55.8109 46.6262 61.3 51.4857 68.0842 56.3926C68.5901 56.7586 69.1123 57.1334 69.6568 57.5275C75.8046 62.1011 80.9317 65.0538 87.5349 65.5176C87.6061 65.7813 87.6937 66.0361 87.753 66.3013Z\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_493_7014\">\n<rect width=\"126\" height=\"126\"></rect>\n</clippath>\n</defs>\n</svg>",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "theme-color-text-4",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
         "section_title_9Mcg8a": {
           "type": "section_title",
           "settings": {
-            "heading_tag": "1",
-            "title": "Section Title Goes Here"
+            "heading_tag": "3",
+            "title": "Saalt Bliss Guarantee"
           }
         },
         "section_content_7rUTME": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia eveniet dicta rerum? Possimus nesciunt molestiae voluptatibus reprehenderit nostrum.</p>"
-          }
-        },
-        "section_buttons_group_EzYDkM": {
-          "type": "section_buttons_group",
-          "settings": {
-            "desktop_button_group_alignment": "flex-start",
-            "desktop_buttons_group_gap": "1rem"
-          }
-        },
-        "section_button_8yVnDt": {
-          "type": "section_button",
-          "settings": {
-            "button_text": "Button text",
-            "button_url": "",
-            "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
-            "theme_color_text_section_button_text": "theme_default",
-            "theme_color_section_button_background_hover": "theme_default",
-            "theme_color_text_section_button_text_hover": "theme_default"
+            "text_content": "<p>If you're not happy with your Saalt product,<strong> </strong><a href=\"/pages/replacements\" title=\"Replacements\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase</strong></a><strong>.</strong> Why? We know that learning to use reusables can take time, but we're here to help and cheer you to Saalt bliss. <br/>Your Saalt(isfaction) guaranteed.</p>"
           }
         }
       },
       "block_order": [
+        "section_icon_group_9XrpkD",
+        "section_icon_with_text_YiFgne",
         "section_title_9Mcg8a",
-        "section_content_7rUTME",
-        "section_buttons_group_EzYDkM",
-        "section_button_8yVnDt"
+        "section_content_7rUTME"
       ],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
-        "media_type": "image",
+        "media_type": "none",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -630,8 +653,8 @@
         "mobile_text_position": "below",
         "mobile_text_alignment": "center",
         "desktop_text_position": "right",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": false,
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
         "max_width": "600px",
         "padding_top": 0,
         "padding_bottom": 0
