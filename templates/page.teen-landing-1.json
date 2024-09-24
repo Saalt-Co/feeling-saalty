@@ -331,83 +331,13 @@
         "padding_bottom": 36
       }
     },
-    "featured_product_9P9NKe": {
-      "type": "featured-product",
-      "blocks": {
-        "title_d6pXXj": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_AXbhJy": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker_AtJzNj": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "dropdown"
-          }
-        },
-        "quantity_selector_6nap7D": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "buy_buttons_J938CA": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false
-          }
-        },
-        "custom_liquid_rWqK4b": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div style=\"background-color: #FDF7F3; padding: 20px;\">\n<h3>Top 5 Reasons to Make the Switch to Saalt Teen Period Underwear</h3>\n<ul style=\"font-size: 14px;\"><li><strong>Thinnest and driest gusset. </strong> Saalt's patent-pending moisture-wicking technology keeps you dry and fresh.\n</li>\n<li><strong>No strings, no sticky liners, no bulk. </strong>Just built-in comfort that moves with you.\n</li>\n<li><strong>Replaces up to 3 pads or 4 tampons of flow. </strong>Whoa.</li>\n<li><strong>Works for all leaks. </strong>Periods, bladder leaks, sweat, discharge...it absorbs it all.</li><li><strong>Not treated with PFAS chemicals.</strong> Clean & safe for you and the planet.</li>\n</div>"
-          }
-        }
-      },
-      "block_order": [
-        "title_d6pXXj",
-        "price_AXbhJy",
-        "variant_picker_AtJzNj",
-        "quantity_selector_6nap7D",
-        "buy_buttons_J938CA",
-        "custom_liquid_rWqK4b"
-      ],
-      "settings": {
-        "product": "leakproof-teen-brief",
-        "theme_color_background": "theme_default",
-        "secondary_background": false,
-        "media_size": "small",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "right",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "saalt_media_with_text_TmVdFe": {
       "type": "saalt-media-with-text",
       "blocks": {
-        "section_title_TWi4XF": {
-          "type": "section_title",
-          "disabled": true,
-          "settings": {
-            "heading_tag": "1",
-            "title": "Section Title Goes Here"
-          }
-        },
         "section_content_XbkYct": {
           "type": "section_content",
           "settings": {
-            "text_content": "<h2>Sustainable never felt so good.</h2><p>You (and your teen) have enough things to worry about. Your period shouldn’t be one of them. We’ve got you covered from your first class through soccer practice.</p>"
+            "text_content": "<h2>Sustainable never felt so good.</h2><p>You have enough things to worry about. Your period shouldn’t be one of them. Saalt Wear Teen period underwear has got you covered from your first class through soccer&nbsppractice.</p>"
           }
         },
         "section_icon_group_e3GnnX": {
@@ -487,7 +417,6 @@
         }
       },
       "block_order": [
-        "section_title_TWi4XF",
         "section_content_XbkYct",
         "section_icon_group_e3GnnX",
         "section_icon_with_text_kE834U",
@@ -516,6 +445,134 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "featured_product_9P9NKe": {
+      "type": "featured-product",
+      "blocks": {
+        "title_d6pXXj": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_AXbhJy": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker_AtJzNj": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "quantity_selector_6nap7D": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons_J938CA": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "custom_liquid_rWqK4b": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"background-color: #FDF7F3; padding: 20px;\">\n<h3>Top 5 Reasons to Make the Switch to Saalt Teen Period Underwear</h3>\n<ul style=\"font-size: 14px;\"><li><strong>Thinnest and driest gusset. </strong> Saalt's patent-pending moisture-wicking technology keeps you dry and fresh.\n</li>\n<li><strong>No strings, no sticky liners, no bulk. </strong>Just built-in comfort that moves with you.\n</li>\n<li><strong>Replaces up to 3 pads or 4 tampons of flow. </strong>Whoa.</li>\n<li><strong>Works for all leaks. </strong>Periods, bladder leaks, sweat, discharge...it absorbs it all.</li><li><strong>Not treated with PFAS chemicals.</strong> Clean & safe for you and the planet.</li>\n</div>"
+          }
+        }
+      },
+      "block_order": [
+        "title_d6pXXj",
+        "price_AXbhJy",
+        "variant_picker_AtJzNj",
+        "quantity_selector_6nap7D",
+        "buy_buttons_J938CA",
+        "custom_liquid_rWqK4b"
+      ],
+      "settings": {
+        "product": "leakproof-teen-brief",
+        "theme_color_background": "theme_default",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "right",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_7YPDjd": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_P8GhGG": {
+          "type": "column",
+          "settings": {
+            "title": "John",
+            "rating": 5,
+            "text": "<p>I bought these for my 13 year old daughter - she uses Saalt Wear almost exclusively now. <strong>Worry free...incredible product.</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_dPDknk": {
+          "type": "column",
+          "settings": {
+            "title": "Rebekah W.",
+            "rating": 5,
+            "text": "<p>I am a 15 y/o and I cannot wear tampons. I am very active (dance, running, swimming, biking, etc) and I’ve always had to deal with pads. As I have gotten older, my flow has gotten heavier and wearing pads while dancing in tight clothes just doesn’t work. <strong>This cup is a life saver!</strong> I was a little nervous to try it, but I did and it is amazing!</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iQ3CiQ": {
+          "type": "column",
+          "settings": {
+            "title": "Christy B.",
+            "rating": 5,
+            "text": "<p>I purchased these for my daughter who, up until now, used pads. I remember what a pain pads are so when I saw these I was intrigued. <strong>My daughter told me they just make her feel better as a person. </strong>I was elated for her.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_P8GhGG",
+        "column_dPDknk",
+        "column_iQ3CiQ"
+      ],
+      "settings": {
+        "title": "9/10 People Never Go Back",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "theme_color_background": "theme-color-bg-3",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "--palette-color-0",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "--palette-color-4",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -526,7 +583,8 @@
     "featured_collection_HNGUkC",
     "saalt_media_with_text_ir3hWH",
     "featured_product_LwLiya",
+    "saalt_media_with_text_TmVdFe",
     "featured_product_9P9NKe",
-    "saalt_media_with_text_TmVdFe"
+    "multicolumn_7YPDjd"
   ]
 }
