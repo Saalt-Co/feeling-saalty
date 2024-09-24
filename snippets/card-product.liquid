@@ -287,6 +287,8 @@
             {%- assign num_of_drops = 4 -%}
         {%- when 'Super' -%}
             {%- assign num_of_drops = 5 -%}
+      {%- when 'Zero' -%}
+      {%- assign num_of_drops = 0 -%}
     {%- endcase -%}
     {%- for i in (1..5) -%}
         <div class="absorbency-drops_inner-icon-wrapper{% if i > num_of_drops %} empty{% endif %}">
