@@ -20,7 +20,7 @@
             "desktop": true,
             "mobile": true,
             "msg": "15% Off With Code: LEAKFREESUMMER",
-            "ends": "Offer Ends on {month}\/{day}",
+            "ends": "Offer Ends on {month}/{day}",
             "use-countdown-timer": "both",
             "start-month": 2,
             "start-day": 7,
@@ -51,6 +51,7 @@
       "blocks": {
         "announcement_hyiLFC": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Take $25 OFF when you spend $125 with code: SAALT25",
             "link": ""
@@ -58,10 +59,9 @@
         },
         "announcement_nHDyte": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Save up to 25% when you bundle Cups, Discs, or Underwear.",
-            "link": "shopify:\/\/collections\/shop-all"
+            "link": "shopify://collections/shop-all"
           }
         }
       },
