@@ -218,50 +218,6 @@
         "padding_bottom": 56
       }
     },
-    "saalt_media_with_text_ir3hWH": {
-      "type": "saalt-media-with-text",
-      "blocks": {
-        "section_title_NQ8X4y": {
-          "type": "section_title",
-          "settings": {
-            "heading_tag": "2",
-            "title": "Not all menstrual cups are created equal."
-          }
-        },
-        "section_content_Y9HHMX": {
-          "type": "section_content",
-          "settings": {
-            "text_content": "<p>The Saalt Teen Cup was designed by experts, in collaboration with teens. It's the easiest to use and most comfortable cup on the market. Our bulb shape forms a double seal to prevent leaks, and it’s made in the USA of  100% medical-grade silicone that’s velvety soft, odor free, and lasts 10 years.    </p><p>Grab a match. It’s time to burn your last tampon.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "section_title_NQ8X4y",
-        "section_content_Y9HHMX"
-      ],
-      "settings": {
-        "section_id": "",
-        "theme_color_background": "theme-color-bg-2",
-        "theme_color_text": "theme-color-text-0",
-        "media_type": "image",
-        "image": "shopify://shop_images/SW-TC-Banner-Blocks-How-To-Use-Teen-Cup.jpg",
-        "video": "shopify://files/videos/Rotating cup with benefits.mp4",
-        "custom_code": "",
-        "use_max_media_width": false,
-        "max_media_width": "700px",
-        "media_width": 50,
-        "title_font_size": "small",
-        "content_font_size": "small",
-        "mobile_text_position": "below",
-        "mobile_text_alignment": "center",
-        "desktop_text_position": "right",
-        "desktop_text_alignment": "left",
-        "use_max_text_width": true,
-        "max_width": "500px",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "featured_product_LwLiya": {
       "type": "featured-product",
       "blocks": {
@@ -508,6 +464,50 @@
         "padding_bottom": 36
       }
     },
+    "saalt_media_with_text_ir3hWH": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "section_title_NQ8X4y": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Not all menstrual cups are created equal."
+          }
+        },
+        "section_content_Y9HHMX": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>The Saalt Teen Cup was designed by experts, in collaboration with teens. It's the easiest to use and most comfortable cup on the market. Our bulb shape forms a double seal to prevent leaks, and it’s made in the USA of  100% medical-grade silicone that’s velvety soft, odor free, and lasts 10 years.    </p><p>Grab a match. It’s time to burn your last tampon.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_NQ8X4y",
+        "section_content_Y9HHMX"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme-color-bg-2",
+        "theme_color_text": "theme-color-text-0",
+        "media_type": "image",
+        "image": "shopify://shop_images/SW-TC-Banner-Blocks-How-To-Use-Teen-Cup.jpg",
+        "video": "shopify://files/videos/Rotating cup with benefits.mp4",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "500px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "multicolumn_7YPDjd": {
       "type": "multicolumn",
       "blocks": {
@@ -667,10 +667,10 @@
     "custom_liquid_EKTqbj",
     "saalt_media_with_text_gBtHmM",
     "featured_collection_HNGUkC",
-    "saalt_media_with_text_ir3hWH",
-    "featured_product_LwLiya",
     "saalt_media_with_text_TmVdFe",
     "featured_product_9P9NKe",
+    "saalt_media_with_text_ir3hWH",
+    "featured_product_LwLiya",
     "multicolumn_7YPDjd",
     "saalt_media_with_text_KdmF4z"
   ]
