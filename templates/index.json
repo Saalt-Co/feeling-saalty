@@ -202,7 +202,7 @@
             "button_text": "SHOP NOW",
             "button_url": "shopify://collections/shop-all",
             "button_type": "primary",
-            "theme_color_section_button_background": "theme_default",
+            "theme_color_section_button_background": "theme-color-bg-1",
             "theme_color_text_section_button_text": "theme_default",
             "theme_color_section_button_background_hover": "theme_default",
             "theme_color_text_section_button_text_hover": "theme_default"
@@ -220,7 +220,8 @@
       "custom_css": [
         "h6 {font-weight: 500;}",
         "h3 {font-weight: 400 !important; font-size: 16px !important; line-height: 1.25 !important;}",
-        "p {font-size: 16px; line-height: 1.25;}"
+        "p {font-size: 16px; line-height: 1.25;}",
+        ".text-wrapper {background-color: #fcefe8 !important;}"
       ],
       "settings": {
         "section_id": "",
