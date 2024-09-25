@@ -172,7 +172,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "2",
-            "title": "Take $25 off when you spend $125<br><span style=\"font-weight: 500 !important; font-style: italic;\"></span>"
+            "title": "Buy One, Get One 25%&nbspOFF"
           }
         },
         "section_content_PVxE6C": {
@@ -186,7 +186,7 @@
           "type": "section_title",
           "settings": {
             "heading_tag": "3",
-            "title": "So you can say ta-ta to tampons and pads, and hello to undies that keep you dry even on the heaviest&nbspdays. Just use code <u><strong>SAALT25</strong></u> at&nbspcheckout. <a href=\"https://saalt.com/pages/offer-terms\" style=\"text-decoration: none;\"><small> See&nbspterms</small></a>"
+            "title": "Looking for a sign to treat yourself? This is it. Use code <u><strong>BOGO25</strong></u> to get your second item 25%&nbspoff.<a href=\"https://saalt.com/pages/offer-terms\" style=\"text-decoration: none;\"><small> See&nbspterms</small></a>"
           }
         },
         "section_buttons_group_anQEL4": {
@@ -227,8 +227,8 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "mobile_image": "shopify://shop_images/Saalt-25-off-125-mobile.jpg",
-        "desktop_image": "shopify://shop_images/Saalt-25-off-125-desktop.jpg",
+        "mobile_image": "shopify://shop_images/Saalt-BOGO-25-mobile.jpg",
+        "desktop_image": "shopify://shop_images/Saalt-BOGO-25-desktop.jpg",
         "media_overlay_color": "--palette-color-1",
         "media_overlay_opacity": 0,
         "use_max_media_width": false,
@@ -240,7 +240,7 @@
         "desktop_text_position": "flex-end",
         "desktop_text_alignment": "left",
         "use_max_text_width": true,
-        "max_width": "40%",
+        "max_width": "26%",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -263,7 +263,6 @@
         },
         "section_title_c7DKgx": {
           "type": "section_title",
-          "disabled": true,
           "settings": {
             "heading_tag": "3",
             "title": "USE CODE: MHD15 FOR 15% OFF"
