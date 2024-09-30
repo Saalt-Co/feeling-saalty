@@ -3019,5 +3019,59 @@
         "default": 16
       }
     ]
-  }
+  },
+  {
+  "name": "CTA Button Settings",
+  "settings": [
+    {
+      "type": "select",
+      "id": "button_text_case",
+      "label": "Button Text Case",
+      "default": "uppercase",
+      "options": [
+        {
+          "value": "uppercase",
+          "label": "UPPERCASE"
+        },
+        {
+          "value": "capitalize",
+          "label": "Capitalize"
+        },
+        {
+          "value":"unset",
+          "label":"Original Case"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "button_font_weight",
+      "label": "Button Font Weight",
+      "default": "400",
+      "options": [
+        {
+          "value": "400",
+          "label": "400 (Normal)"
+        },
+        {
+          "value": "500",
+          "label": "500"
+        },
+        {
+          "value": "600",
+          "label": "600 (Semi Bold)"
+        },
+        {
+          "value": "700",
+          "label": "700 (Bold)"
+        },
+        {
+          "value": "900",
+          "label": "900 (Black)"
+        }
+      ]
+    }
+  ]
+}
+
 ]
