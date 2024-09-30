@@ -36,7 +36,7 @@
         {{ placeholder_name | placeholder_svg_tag }}
       {%- endif -%}
     </div>
-    <div class="text-wrapper">
+    <div class="text-wrapper" {% if checkboxEnable %} {% else %}show-title{% endif %}"  {% if checkboxEnable %}style="opacity:{{ bgOpacity }}%;background:{{ backgroundColor }};color:{{ textColor }}" {% else %} style="opacity:1;background:unset;color:{{ textColor }}"  {% endif %}>
       {%- if block.settings.title != blank -%}
         <div class="window-feature-title">
           {{ block.settings.title }}
