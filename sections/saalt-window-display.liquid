@@ -37,7 +37,10 @@
               block: block,
               window_display_count: window_display_count,
               forloop_index: forloop.index,
-              checkboxEnable: block.settings.display-box
+              checkboxEnable: block.settings.display-box,
+              bgOpacity: block.settings.overlay_transparency,
+              backgroundColor: block.settings.background_color,
+              textColor : block.settings.text_color
             %}
             {%- endcapture -%}
             {%- assign window_feature_code = window_feature_code | append: captured_code -%}
@@ -52,8 +55,29 @@
 </section>
 
 {%- style -%}
+    #section-{{ section.id }} .window-feature-wrapper .show-title .window-feature-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 1; /* Ensure the title appears above the image */
+}
+
+ #section-{{ section.id }} .window-feature-wrapper .show-title .text-wrapper {
+  position: relative;
+}
+
+ #section-{{ section.id }} .image-wrapper {
+  position: relative; /* To ensure the title is positioned relative to the image */
+}
+
+ #section-{{ section.id }} .window-feature-wrapper .show-title .window-feature-copy {
+  display: none; /* Hide the copy text if only the title should be shown */
+}
   .window-feature.no-hover:hover .text-wrapper, .global_no_hover .window-feature:hover .text-wrapper, .window-feature.no-hover .text-wrapper.visible {
-        top: calc(100% - 3.45rem) !important;
+        top: 100%!important;
     }
     .button-disabled .window-feature-button-wrapper {
       display: none !important;
@@ -135,30 +159,45 @@
     object-position: 50% 50%;
   }
 
+  
   #section-{{ section.id }} .window-feature .text-wrapper {
-    display: block;
+    visibility: hidden; /* Start with hidden opacity */
     position: absolute;
-    background: rgba(255, 255, 255, .9);
+    display:flex;
+    align-items:center;
     width: 100%;
     height: 100%;
     padding: .25rem 1rem 25% 1rem;
     font-size: clamp(1rem, 1.5rem, 1.7rem);
-    top: calc(100% - 3.45rem);
-    transition: .25s;
-  }
+    top: 100%;
+    transition: top 0.25s ease-in-out, visibility 0.25s ease-in-out;
+}
+
+  #section-{{ section.id }} .window-feature.no-hover .text-wrapper{
+   visibility: visible!important; 
+    top: 0!important; 
+}
+
+
+#section-{{ section.id }} .window-feature:not(.no-hover):hover .text-wrapper {
+    visibility: visible; 
+    top: 0; 
+}
 
   #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title, #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper, #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper .window-feature-button {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: inherit;
-    white-space: nowrap;
+    white-space: break-spaces;
     flex-wrap: nowrap;
     width: 100%;
-    height: 34px;
-    border-bottom: 1px solid;
+    height: auto;
+    /* border-bottom: 1px solid; */
     padding: .25rem;
+    max-width:70%;
   }
+
   #section-{{ section.id }} .window-feature-wrapper .window-feature-button-wrapper {
     border-bottom: none;
     padding: 0;
@@ -201,6 +240,16 @@
   #section-{{ section.id }} .window-feature .text-wrapper.visible {
     top: 0;
   }
+
+    #section-{{ section.id }} .window-feature-wrapper .window-feature:not(.no-hover):hover .window-feature-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 1; /* Ensure the title appears above the image */
+}
   @media (min-width: 750px) {
     #section-{{ section.id }} .window-feature .text-wrapper .window-feature-title > p {
       margin: 15px 0;
@@ -235,6 +284,7 @@
       top: 0;
     }
   }
+
 {%- endstyle -%}
 
 {% schema %}
@@ -418,13 +468,36 @@
           "info": "This is the title inside the popup on desktop and the content section on mobile",
           "default": "<p>Window feature</p>"
         },
+        //{
+        //  "type": "richtext",
+        //  "id": "copy",
+        //  "label": "Window Display Copy",
+         // "info": "This is the copy inside the popup on desktop and the content section on mobile",
+         // "default": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!</p>"
+        //},
         {
-          "type": "richtext",
-          "id": "copy",
-          "label": "Window Display Copy",
-          "info": "This is the copy inside the popup on desktop and the content section on mobile",
-          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, est magni veritatis culpa magnam alias similique adipisci dolore placeat nulla dolor tenetur. Quidem minus repellat quod mollitia fuga veniam voluptate!</p>"
+          "type": "range",
+          "id": "overlay_transparency",
+          "label": "Image Background Overlay Transparency",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 50
         },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Image Background Color",
+          "default": "#ffffff"
+        },
+
+         {
+          "type": "color",
+          "id": "text_color",
+          "label": "Image Hover Text Color",
+          "default": "#ffffff"
+        },
+        
         {
           "type": "radio",
           "id": "link_type",
