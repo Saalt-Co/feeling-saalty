@@ -10,9 +10,9 @@
 {
   "current": {
     "reviews_platform": "yotpo",
-    "logo": "shopify:\/\/shop_images\/saalt-logo_b97682b6-a4e2-4deb-b083-58d4811c6d46.png",
+    "logo": "shopify://shop_images/saalt-logo_b97682b6-a4e2-4deb-b083-58d4811c6d46.png",
     "logo_width": 90,
-    "favicon": "shopify:\/\/shop_images\/Fancy-Monogram-header_03.png",
+    "favicon": "shopify://shop_images/Fancy-Monogram-header_03.png",
     "colors_solid_button_labels": "#fff",
     "colors_accent_1": "#3f4759",
     "gradient_accent_1": "",
@@ -121,14 +121,14 @@
     "badge_position": "top left",
     "badge_corner_radius": 40,
     "brand_headline": "@saaltco",
-    "brand_description": "<p>We openly talk about periods to break taboos and educate. Join the conversation to bring uteruses out of the dark ages.<\/p>",
-    "social_facebook_link": "https:\/\/facebook.com\/saaltco",
-    "social_instagram_link": "http:\/\/instagram.com\/saaltco",
-    "social_youtube_link": "https:\/\/youtube.com\/@saaltco",
-    "social_tiktok_link": "https:\/\/www.tiktok.com\/@saaltco",
+    "brand_description": "<p>We openly talk about periods to break taboos and educate. Join the conversation to bring uteruses out of the dark ages.</p>",
+    "social_facebook_link": "https://facebook.com/saaltco",
+    "social_instagram_link": "http://instagram.com/saaltco",
+    "social_youtube_link": "https://youtube.com/@saaltco",
+    "social_tiktok_link": "https://www.tiktok.com/@saaltco",
     "social_twitter_link": "",
     "social_snapchat_link": "",
-    "social_pinterest_link": "https:\/\/pinterest.com\/saaltco",
+    "social_pinterest_link": "https://pinterest.com/saaltco",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
@@ -141,8 +141,9 @@
     "show_slt009_msg": false,
     "slt009_msg": "",
     "slt012-active": true,
-    "slt012-image": "shopify:\/\/shop_images\/Period-Bliss-Guarantee-icon-homepage_d2957e1e-ffd1-4781-a102-54996b086d5a.png",
+    "slt012-image": "shopify://shop_images/Period-Bliss-Guarantee-icon-homepage_d2957e1e-ffd1-4781-a102-54996b086d5a.png",
     "slt012-visiable-desktop": true,
+    "button_font_weight": "600",
     "currency_code_enabled": true,
     "card_color_scheme": "background-2",
     "collection_card_color_scheme": "background-2",
@@ -170,19 +171,19 @@
     ],
     "blocks": {
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
         }
       },
       "1291562577487733835": {
-        "type": "shopify:\/\/apps\/black-crow-more-new-customers\/blocks\/blackcrow_ai_script\/3e73f597-cb71-47a1-8a06-0c931482ecd2",
+        "type": "shopify://apps/black-crow-more-new-customers/blocks/blackcrow_ai_script/3e73f597-cb71-47a1-8a06-0c931482ecd2",
         "disabled": false,
         "settings": {
         }
       },
       "8962992520437913685": {
-        "type": "shopify:\/\/apps\/yotpo-loyalty-rewards\/blocks\/loader-app-embed-block\/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
+        "type": "shopify://apps/yotpo-loyalty-rewards/blocks/loader-app-embed-block/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
         "disabled": false,
         "settings": {
           "inject_modules_loader": true,
@@ -190,68 +191,68 @@
         }
       },
       "14339172867238703359": {
-        "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews_tab\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "type": "shopify://apps/yotpo-product-photo-reviews/blocks/reviews_tab/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
         "disabled": false,
         "settings": {
           "product": ""
         }
       },
       "7570552984445421165": {
-        "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/settings\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "type": "shopify://apps/yotpo-product-photo-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
         "disabled": false,
         "settings": {
         }
       },
       "10641372206048101839": {
-        "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-global-embed\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+        "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-global-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
         "disabled": false,
         "settings": {
         }
       },
       "17428600031447253342": {
-        "type": "shopify:\/\/apps\/attentive\/blocks\/attn-tag\/8df62c72-8fe4-407e-a5b3-72132be30a0d",
+        "type": "shopify://apps/attentive/blocks/attn-tag/8df62c72-8fe4-407e-a5b3-72132be30a0d",
         "disabled": false,
         "settings": {
         }
       },
       "15879463164198068590": {
-        "type": "shopify:\/\/apps\/tapcart-mobile-app\/blocks\/ck_loader\/604cad6b-3841-4da3-b864-b96622b4adb8",
+        "type": "shopify://apps/tapcart-mobile-app/blocks/ck_loader/604cad6b-3841-4da3-b864-b96622b4adb8",
         "disabled": false,
         "settings": {
         }
       },
       "10864971697205422121": {
-        "type": "shopify:\/\/apps\/gorgias-live-chat-helpdesk\/blocks\/gorgias\/a66db725-7b96-4e3f-916e-6c8e6f87aaaa",
+        "type": "shopify://apps/gorgias-live-chat-helpdesk/blocks/gorgias/a66db725-7b96-4e3f-916e-6c8e6f87aaaa",
         "disabled": false,
         "settings": {
         }
       },
       "2102808784413787648": {
-        "type": "shopify:\/\/apps\/kb-back-in-stock\/blocks\/main-app-embed\/147a6f7f-6771-4f9b-8dc6-c14e6b24f32c",
+        "type": "shopify://apps/kb-back-in-stock/blocks/main-app-embed/147a6f7f-6771-4f9b-8dc6-c14e6b24f32c",
         "disabled": false,
         "settings": {
         }
       },
       "16987187365865460165": {
-        "type": "shopify:\/\/apps\/ez-preorder\/blocks\/pre-order\/27f5c03b-584b-4f19-8dc2-99bf52c8c09f",
+        "type": "shopify://apps/ez-preorder/blocks/pre-order/27f5c03b-584b-4f19-8dc2-99bf52c8c09f",
         "disabled": false,
         "settings": {
         }
       },
       "5439026248262864547": {
-        "type": "shopify:\/\/apps\/preorder-globo\/blocks\/app-embed\/e547a0ad-8212-4bcc-b02f-761faa9b8af2",
+        "type": "shopify://apps/preorder-globo/blocks/app-embed/e547a0ad-8212-4bcc-b02f-761faa9b8af2",
         "disabled": false,
         "settings": {
         }
       },
       "4705145147225299685": {
-        "type": "shopify:\/\/apps\/tolstoy-shoppable-video-ugc\/blocks\/widget-block\/06fa8282-42ff-403e-b67c-1936776aed11",
+        "type": "shopify://apps/tolstoy-shoppable-video-ugc/blocks/widget-block/06fa8282-42ff-403e-b67c-1936776aed11",
         "disabled": false,
         "settings": {
         }
       },
       "6237893613548423713": {
-        "type": "shopify:\/\/apps\/bundles-upsell-pickystory\/blocks\/main-widget-loader-script\/f54ff67e-3f69-4df2-845e-7476ce633252",
+        "type": "shopify://apps/bundles-upsell-pickystory/blocks/main-widget-loader-script/f54ff67e-3f69-4df2-845e-7476ce633252",
         "disabled": false,
         "settings": {
         }
