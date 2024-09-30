@@ -389,7 +389,7 @@
           "type": "window-feature",
           "settings": {
             "image": "shopify://shop_images/Shop_by_Category_-_Leakproof_Underwear.jpg",
-            "display-box": true,
+            "display-box": false,
             "title": "<p><strong>Leakproof Underwear</strong></p>",
             "overlay_transparency": 57,
             "background_color": "#5a5353",
@@ -406,7 +406,7 @@
           "settings": {
             "image": "shopify://shop_images/Shop_by_Category_-_Cups_Discs.jpg",
             "display-box": false,
-            "title": "<p><strong>Cups & Discs</strong></p>",
+            "title": "<p><strong>Menstrual Cups & Discs</strong></p>",
             "overlay_transparency": 50,
             "background_color": "#ffffff",
             "text_color": "#ffffff",
