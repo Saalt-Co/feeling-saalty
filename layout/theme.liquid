@@ -333,6 +333,13 @@
         {% render 'third-party-head-scripts_us' %}
     {%- endcase -%}
 
+     {% style %}
+      .button.button--primary, .button.button--secondary, .button, .customer button, #button1_wrapper.button1{
+        text-transform: {{ settings.button_text_case }};
+        font-weight: {{ settings.button_font_weight }};
+      }  
+    {% endstyle %}
+
 </head>
 
   <body class="gradient template-{{ template | handle }}">
