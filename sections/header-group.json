@@ -51,7 +51,6 @@
       "blocks": {
         "announcement_hyiLFC": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "Buy One, Get One 25% OFF With Code: BOGO25",
             "link": ""
@@ -59,6 +58,7 @@
         },
         "announcement_nHDyte": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Save up to 25% when you bundle Cups, Discs, or Underwear.",
             "link": "shopify://collections/shop-all"
