@@ -31,7 +31,7 @@
         "template--21571779264785__c2ba6bf2-8d02-40b3-a18a-92d46f619c3a-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Upgrade your period with Saalt reusable menstrual cups and discs.<\/strong><\/p><p>Easy to use and comfortable. Live free of the tampon aisle—forever. Wear up to 12 hours to swim, run, bike, hike, or fly to Bora Bora.<\/p>"
+            "text": "<p><strong>Upgrade your period with Saalt reusable menstrual cups and discs.</strong></p><p>Easy to use and comfortable. Live free of the tampon aisle—forever. Wear up to 12 hours to swim, run, bike, hike, or fly to Bora Bora.</p>"
           }
         }
       },
@@ -56,12 +56,14 @@
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-0": {
           "type": "window-feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SC-HP-SOManifest-1597.jpg",
+            "image": "shopify://shop_images/SC-HP-SOManifest-1597.jpg",
             "display-box": false,
-            "title": "<p><strong>Saalt Cups<\/strong><\/p>",
-            "copy": "<p>No pads. No strings. Just comfort. Wear all day or night, stress free.<\/p>",
+            "title": "<p><strong>Saalt Cups</strong></p>",
+            "overlay_transparency": 50,
+            "background_color": "#ffffff",
+            "text_color": "#ffffff",
             "link_type": "url",
-            "link_url": "\/collections\/menstrual-cups-discs?sort_by=manual&filter.p.m.saalt.collection_filter_product_type=Cups",
+            "link_url": "/collections/menstrual-cups-discs?sort_by=manual&filter.p.m.saalt.collection_filter_product_type=Cups",
             "filter_name": "",
             "filter_val": "",
             "button_text": "Shop Cups"
@@ -70,12 +72,14 @@
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-1": {
           "type": "window-feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SD-CB-Alani-Jessie-9242.jpg",
+            "image": "shopify://shop_images/SD-CB-Alani-Jessie-9242.jpg",
             "display-box": false,
-            "title": "<p><strong>Saalt Discs<\/strong><\/p>",
-            "copy": "<p>Flexible, flat fit allows for no-mess period sex. Custom finger notch for easy removal. 4 to 6 tampon capacity.<\/p>",
+            "title": "<p><strong>Saalt Discs</strong></p>",
+            "overlay_transparency": 50,
+            "background_color": "#ffffff",
+            "text_color": "#ffffff",
             "link_type": "url",
-            "link_url": "\/collections\/menstrual-cups-discs?sort_by=manual&filter.p.m.saalt.collection_filter_product_type=Discs",
+            "link_url": "/collections/menstrual-cups-discs?sort_by=manual&filter.p.m.saalt.collection_filter_product_type=Discs",
             "filter_name": "",
             "filter_val": "",
             "button_text": "Shop Discs"
@@ -84,12 +88,14 @@
         "template--18370419720465__4b7bcf70-9b6b-48c4-a538-0e13cf35a435-1687961965a8afbaaf-2": {
           "type": "window-feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Bundle-Preset-1080x1080-Web-0995.jpg",
+            "image": "shopify://shop_images/Bundle-Preset-1080x1080-Web-0995.jpg",
             "display-box": false,
-            "title": "<p><strong>Bundles<\/strong><\/p>",
-            "copy": "<p>Save up to 20% and skip the guesswork with bundles custom-designed by our Saalt Coaches for all your leak needs. <\/p>",
+            "title": "<p><strong>Bundles</strong></p>",
+            "overlay_transparency": 50,
+            "background_color": "#ffffff",
+            "text_color": "#ffffff",
             "link_type": "url",
-            "link_url": "\/collections\/menstrual-cups-discs?sort_by=manual&filter.p.m.saalt.collection_filter_product_type=Bundles",
+            "link_url": "/collections/menstrual-cups-discs?sort_by=manual&filter.p.m.saalt.collection_filter_product_type=Bundles",
             "filter_name": "",
             "filter_val": "",
             "button_text": "Shop Bundles"
@@ -98,12 +104,14 @@
         "b556c8a4-bad2-43ac-8e69-1b5b4650d635": {
           "type": "window-feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Shop_by_Category_-_Accessories_1.jpg",
+            "image": "shopify://shop_images/Shop_by_Category_-_Accessories_1.jpg",
             "display-box": false,
-            "title": "<p><strong>Cleaning & Extras<\/strong><\/p>",
-            "copy": "<p>Everything you need for a fully sustainable flow.<\/p>",
+            "title": "<p><strong>Cleaning & Extras</strong></p>",
+            "overlay_transparency": 50,
+            "background_color": "#ffffff",
+            "text_color": "#ffffff",
             "link_type": "url",
-            "link_url": "\/collections\/menstrual-cups-discs?filter.p.m.saalt.collection_filter_product_type=Cleaning+%26+Extras&sort_by=manual",
+            "link_url": "/collections/menstrual-cups-discs?filter.p.m.saalt.collection_filter_product_type=Cleaning+%26+Extras&sort_by=manual",
             "filter_name": "",
             "filter_val": "",
             "button_text": "Shop Extras"
@@ -123,10 +131,10 @@
         "make_full_width": false,
         "mobile_min_width": "40%",
         "mobile_max_width": "280px",
-        "mobile_aspect_ratio": "1\/1.5",
+        "mobile_aspect_ratio": "1/1.5",
         "desktop_min_width": "auto",
         "desktop_max_width": "25%",
-        "desktop_aspect_ratio": "1\/1.5"
+        "desktop_aspect_ratio": "1/1.5"
       }
     },
     "rich_text_GQGPqY": {
@@ -135,7 +143,7 @@
         "text_jWRx93": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Buy 3+ save 15% | 5+ save 20% | 7+ save 25% <\/strong>(Cups, Discs, and Underwear only)<\/p>"
+            "text": "<p><strong>Buy 3+ save 15% | 5+ save 20% | 7+ save 25% </strong>(Cups, Discs, and Underwear only)</p>"
           }
         }
       },
@@ -191,7 +199,7 @@
         "template--21571779264785__ef361528-f55b-4ddc-8446-c41880f7f0b0-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>Take the Saalt period cup quiz to find the best size and firmness for your most comfortable period.<\/p>"
+            "text_content": "<p>Take the Saalt period cup quiz to find the best size and firmness for your most comfortable period.</p>"
           }
         }
       },
@@ -227,10 +235,10 @@
         "template--21571779264785__1ba2232c-e878-4f74-8014-512c7091b4f3-column-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cup_placement.jpg",
+            "image": "shopify://shop_images/cup_placement.jpg",
             "title": "Saalt Cup",
             "rating": 0,
-            "text": "<h4>Sits in the vaginal canal.<\/h4><ul><li>Seal keeps the cup in place<\/li><li>Rests in vaginal canal<\/li><li>Great for beginners<\/li><li>Two firmness options<\/li><li>Collects 3—4x more than a tampon<\/li><\/ul>",
+            "text": "<h4>Sits in the vaginal canal.</h4><ul><li>Seal keeps the cup in place</li><li>Rests in vaginal canal</li><li>Great for beginners</li><li>Two firmness options</li><li>Collects 3—4x more than a tampon</li></ul>",
             "link_label": "",
             "link": ""
           }
@@ -238,10 +246,10 @@
         "template--21571779264785__1ba2232c-e878-4f74-8014-512c7091b4f3-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/disc_placement.jpg",
+            "image": "shopify://shop_images/disc_placement.jpg",
             "title": "Saalt Disc",
             "rating": 0,
-            "text": "<h4>Sits in the fornix directly under the cervix.<\/h4><ul><li>No suction<\/li><li>Rests in vaginal fornix<\/li><li>Custom removal notch<\/li><li>No-mess <a href=\"https:\/\/saalt.com\/blogs\/news\/period-sex-with-a-menstrual-disc\" title=\"https:\/\/saalt.com\/blogs\/news\/period-sex-with-a-menstrual-disc\">period sex<\/a><\/li><li>Collects 4—6x more than a tampon<\/li><\/ul>",
+            "text": "<h4>Sits in the fornix directly under the cervix.</h4><ul><li>No suction</li><li>Rests in vaginal fornix</li><li>Custom removal notch</li><li>No-mess <a href=\"https://saalt.com/blogs/news/period-sex-with-a-menstrual-disc\" title=\"https://saalt.com/blogs/news/period-sex-with-a-menstrual-disc\">period sex</a></li><li>Collects 4—6x more than a tampon</li></ul>",
             "link_label": "",
             "link": ""
           }
@@ -322,8 +330,8 @@
         "af2ea8e2-9eaa-4bce-aaf2-ace0a5f4eff5": {
           "type": "section_icon_with_text",
           "settings": {
-            "icon_svg": "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0\" y=\"0\" viewbox=\"0 0 250 250\" style=\"enable-background:new 0 0 250 250\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" xml:space=\"preserve\"><style>.st1{clip-path:url(#SVGID_00000036227586678926446620000001845576865868857516_)}<\/style>\n<path d=\"M125 0c69 0 125 56 125 125s-56 125-125 125S0 194 0 125 56 0 125 0z\" style=\"fill:#414856\"><\/path><defs><circle id=\"SVGID_1_\" cx=\"125\" cy=\"125\" r=\"125\"><\/circle><\/defs><clippath id=\"SVGID_00000093872996939542730530000007748128233328039610_\"><use xlink:href=\"#SVGID_1_\" style=\"overflow:visible\"><\/use><\/clippath><g style=\"clip-path:url(#SVGID_00000093872996939542730530000007748128233328039610_)\"><path d=\"M29.4 173.3c10.6-8.9 17.9-21 23.8-33.3 3.3-6.9 6.7-13.5 10.3-20.2 3-5.5 5.8-11.1 7.9-17 1.8-5 3.9-10 8.2-13.5 7-5.7 18.5-3.6 27.9-4.6 13.5-1.4 22-4.6 35.2-1.5 7.6 1.8 14.8 6.7 22.1 9.3 7.3 2.6 15.1 4.9 20.3 10.7 6 6.7 1.5 14.5-6.5 15.1-14.3 1.1-27.7-4.4-41.7-5.6-11.1-1-23.4-.8-33.5 3.9-.3.1 13 10.7 14.4 11.4 5.6 2.5 11.8 3.6 17.9 3.4 14.4-.6 28.7-5.1 43.2-3.7 2.2.2 4.5.6 6.3 1.8 1.8 1.2 3.2 3.5 2.7 5.6-.7 3.3-4.7 4.4-8 5-13.9 2.4-27.9 4.7-41.8 7.3-12.2 2.3-23.9 6.4-35.5 10.7-10 3.7-35.1 14.2-35.2 14.3-7.6 3.2-10.3 14.2-13.8 20.9-6.3 12.2-12.8 24.2-19.1 36.4-.4.7-20.3-11-21.8-12.1-5.4-3.8-12.8-9.4-12.7-16.8.3-12.3 21.5-20.9 29.4-27.5z\" style=\"fill:#fff;stroke:#b3b2b2;stroke-width:2.3152;stroke-miterlimit:10\"><\/path><path d=\"M101.4 111.8c2.6-.9 5.1-2 7.7-2.8 4-1.3 8.2-2 12.3-2.6 3.1-.5 6.1-1.6 9.1-1.6 11.9-.2 24 3.4 35.8 5.3 0-.7-.1-1.8-.1-2.5-7.9-2.4-15.8-4.8-23.6-7.3-.4-.1-.7-.2-1.1-.3-.5 0-1 .1-1.5.2-1.4.3-2.9.4-4.4.5-7.6.7-15.2 1.4-22.7 2.1-1.3.1-2.7.2-4 .6-1.7.5-3.2 1.4-4.6 2.3-.9.6-1.8 1.3-2.3 2.2-1.2 2-.6 4.7.7 6.7 1.3 2-.2 1.2 3.9 4.4\" style=\"fill:none;stroke:#b3b2b2;stroke-width:2.3152;stroke-miterlimit:10\"><\/path><path d=\"M193.5 117.2h.4c3.4-.4 7.5-1.7 9.8-4.4 3.5-4-.5-8-4.4-9.5-9.8-3.6-23.2-3.7-31.5 3.4-5.3 4.6-6.7 13.3-3.3 19.4 2.2 3.9 7.4 6 11.5 7.2 4.8 1.4 9.9 2.3 15 2.1 4.2-.1 8.9-.9 11.6-4.5 1.7-2.2 2.5-4.5 1.9-7.3-.8-3.7-3.9-4.8-7.3-5.1-1.8-.1-3.5-.2-5.3-.1-1.9 0-3.7.1-5.6.2-1 0-2 0-3 .1h-1.5c-.2 0-1.2.2-.9-.3 0-.1.1-.1.2-.2.6-.3 1.2-.2 1.8-.3 1-.1 2-.1 3.1-.2 2.6-.2 5.1-.2 7.5-.5z\" style=\"fill:#b8deef;stroke:#87a9b2;stroke-width:2.3152;stroke-miterlimit:10\"><\/path><path d=\"M174.3 113.3c1-.8 2.3-1.4 3.6-1.8 4.1-1.2 8.7-1 13-1.2 1.8-.1 7.5.1 7.5-.5.3-2.2-5.9-2.2-8.9-2.3-4.1-.1-8.2.4-12.2 1.4-2.3.6-4.6 1.7-6.2 3.5-2.2 2.5-2.5 6.5-.9 9.4 3.4 6.1 12.1 7.4 18.4 7.1 2.5-.1 5.1-.3 7.5-.8.5-.1 2.4-.4 2.3-1.2-.1-.9-1.2-1.1-2.1-1.1-5.4 0-10.9.5-16.2-.8-2.5-.6-5.4-2.1-6.8-4.3-1.5-2.3-1.3-5.5 1-7.4z\" style=\"fill:none;stroke:#87a9b2;stroke-width:2.3152;stroke-miterlimit:10\"><\/path><\/g><\/svg>",
-            "icon_text": "<p>First, fold your cup and insert it horizontally toward your tailbone.<\/p>",
+            "icon_svg": "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" x=\"0\" y=\"0\" viewbox=\"0 0 250 250\" style=\"enable-background:new 0 0 250 250\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\"><style>.st1{clip-path:url(#SVGID_00000036227586678926446620000001845576865868857516_)}</style>\n<path d=\"M125 0c69 0 125 56 125 125s-56 125-125 125S0 194 0 125 56 0 125 0z\" style=\"fill:#414856\"></path><defs><circle id=\"SVGID_1_\" cx=\"125\" cy=\"125\" r=\"125\"></circle></defs><clippath id=\"SVGID_00000093872996939542730530000007748128233328039610_\"><use xlink:href=\"#SVGID_1_\" style=\"overflow:visible\"></use></clippath><g style=\"clip-path:url(#SVGID_00000093872996939542730530000007748128233328039610_)\"><path d=\"M29.4 173.3c10.6-8.9 17.9-21 23.8-33.3 3.3-6.9 6.7-13.5 10.3-20.2 3-5.5 5.8-11.1 7.9-17 1.8-5 3.9-10 8.2-13.5 7-5.7 18.5-3.6 27.9-4.6 13.5-1.4 22-4.6 35.2-1.5 7.6 1.8 14.8 6.7 22.1 9.3 7.3 2.6 15.1 4.9 20.3 10.7 6 6.7 1.5 14.5-6.5 15.1-14.3 1.1-27.7-4.4-41.7-5.6-11.1-1-23.4-.8-33.5 3.9-.3.1 13 10.7 14.4 11.4 5.6 2.5 11.8 3.6 17.9 3.4 14.4-.6 28.7-5.1 43.2-3.7 2.2.2 4.5.6 6.3 1.8 1.8 1.2 3.2 3.5 2.7 5.6-.7 3.3-4.7 4.4-8 5-13.9 2.4-27.9 4.7-41.8 7.3-12.2 2.3-23.9 6.4-35.5 10.7-10 3.7-35.1 14.2-35.2 14.3-7.6 3.2-10.3 14.2-13.8 20.9-6.3 12.2-12.8 24.2-19.1 36.4-.4.7-20.3-11-21.8-12.1-5.4-3.8-12.8-9.4-12.7-16.8.3-12.3 21.5-20.9 29.4-27.5z\" style=\"fill:#fff;stroke:#b3b2b2;stroke-width:2.3152;stroke-miterlimit:10\"></path><path d=\"M101.4 111.8c2.6-.9 5.1-2 7.7-2.8 4-1.3 8.2-2 12.3-2.6 3.1-.5 6.1-1.6 9.1-1.6 11.9-.2 24 3.4 35.8 5.3 0-.7-.1-1.8-.1-2.5-7.9-2.4-15.8-4.8-23.6-7.3-.4-.1-.7-.2-1.1-.3-.5 0-1 .1-1.5.2-1.4.3-2.9.4-4.4.5-7.6.7-15.2 1.4-22.7 2.1-1.3.1-2.7.2-4 .6-1.7.5-3.2 1.4-4.6 2.3-.9.6-1.8 1.3-2.3 2.2-1.2 2-.6 4.7.7 6.7 1.3 2-.2 1.2 3.9 4.4\" style=\"fill:none;stroke:#b3b2b2;stroke-width:2.3152;stroke-miterlimit:10\"></path><path d=\"M193.5 117.2h.4c3.4-.4 7.5-1.7 9.8-4.4 3.5-4-.5-8-4.4-9.5-9.8-3.6-23.2-3.7-31.5 3.4-5.3 4.6-6.7 13.3-3.3 19.4 2.2 3.9 7.4 6 11.5 7.2 4.8 1.4 9.9 2.3 15 2.1 4.2-.1 8.9-.9 11.6-4.5 1.7-2.2 2.5-4.5 1.9-7.3-.8-3.7-3.9-4.8-7.3-5.1-1.8-.1-3.5-.2-5.3-.1-1.9 0-3.7.1-5.6.2-1 0-2 0-3 .1h-1.5c-.2 0-1.2.2-.9-.3 0-.1.1-.1.2-.2.6-.3 1.2-.2 1.8-.3 1-.1 2-.1 3.1-.2 2.6-.2 5.1-.2 7.5-.5z\" style=\"fill:#b8deef;stroke:#87a9b2;stroke-width:2.3152;stroke-miterlimit:10\"></path><path d=\"M174.3 113.3c1-.8 2.3-1.4 3.6-1.8 4.1-1.2 8.7-1 13-1.2 1.8-.1 7.5.1 7.5-.5.3-2.2-5.9-2.2-8.9-2.3-4.1-.1-8.2.4-12.2 1.4-2.3.6-4.6 1.7-6.2 3.5-2.2 2.5-2.5 6.5-.9 9.4 3.4 6.1 12.1 7.4 18.4 7.1 2.5-.1 5.1-.3 7.5-.8.5-.1 2.4-.4 2.3-1.2-.1-.9-1.2-1.1-2.1-1.1-5.4 0-10.9.5-16.2-.8-2.5-.6-5.4-2.1-6.8-4.3-1.5-2.3-1.3-5.5 1-7.4z\" style=\"fill:none;stroke:#87a9b2;stroke-width:2.3152;stroke-miterlimit:10\"></path></g></svg>",
+            "icon_text": "<p>First, fold your cup and insert it horizontally toward your tailbone.</p>",
             "mobile_icon_text_position": "right",
             "desktop_icon_text_position": "below",
             "theme_color_icon_color": "ignore_text_color",
@@ -333,8 +341,8 @@
         "b74f7636-b15a-4869-8cb8-070e377d1732": {
           "type": "section_icon_with_text",
           "settings": {
-            "icon_svg": "<!--?xml version=\"1.0\" encoding=\"utf-8\"?-->\n<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" viewbox=\"0 0 250 250\" style=\"enable-background:new 0 0 250 250;\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" xml:space=\"preserve\">\n<style type=\"text\/css\">\n\t.st0{fill:#414856;}\n\t.st1{clip-path:url(#SVGID_00000046308662360323123530000011739217607672590229_);}\n\t.st2{fill:#C7E2F1;}\n\t.st3{fill:#FFFFFF;}\n\t.st4{fill:none;stroke:#B3B2B2;stroke-width:2.3152;stroke-miterlimit:10;}\n\t.st5{fill:none;stroke:#98B2BA;stroke-width:2.3152;stroke-miterlimit:10;}\n\t.st6{fill:none;stroke:#AAC7D0;stroke-width:2.3152;stroke-miterlimit:10;}\n\t.st7{fill:#C7E2F1;stroke:#98B2BA;stroke-width:2.3152;stroke-miterlimit:10;}\n<\/style>\n<path class=\"st0\" d=\"M125,0c69,0,125,56,125,125s-56,125-125,125S0,194,0,125S56,0,125,0z\"><\/path>\n<g>\n\t<defs>\n\t\t<path id=\"SVGID_1_\" d=\"M125,0c69,0,125,56,125,125s-56,125-125,125S0,194,0,125S56,0,125,0z\"><\/path>\n\t<\/defs>\n\t<clippath id=\"SVGID_00000010281630962291889790000013511231713910038428_\">\n\t\t<use xlink:href=\"#SVGID_1_\" style=\"overflow:visible;\"><\/use>\n\t<\/clippath>\n\t<g style=\"clip-path:url(#SVGID_00000010281630962291889790000013511231713910038428_);\">\n\t\t<path class=\"st2\" d=\"M180.8,47.5c-2.6-4.3-6.2-7.2-10.9-8.7c-7.4-2.3-18.2-1-19.1,8.5c-0.2,2,0,4.1,0.5,6l-1.8-0.9\n\t\t\tc0,0-18.9,22.9-19.5,24.4c-0.6,1.5-10.9,16.1-5,24.7s7,14.1,22.3,12.1c15.3-2,20.1-11.6,20.1-11.6l5.4-15.8l3.7-18.3\n\t\t\tc1.8-0.8,3.5-2,4.7-3.6C185.1,59.3,183.8,52.6,180.8,47.5z\"><\/path>\n\t\t<path class=\"st3\" d=\"M164.2,89.7c-0.6-0.7-1.4-1.1-2.2-1.4c-8.2-3.1-18.4,1-25.4,5.3c-4.7,2.9-8.2,7.3-12.6,10.5\n\t\t\tc-7.9,5.8-18,12.8-27.8,14.5c-2.7,0.5-6.5,0.2-9.8-1l37.3-25.7l5.5-14.7l1.6-2.4l5.5-7.8c-12,0.9-26.6,1.4-30.5,3.2\n\t\t\tc-10,4.7-24.2,13.9-33.3,20.1c-4.7,3.3-9.5,6.2-14.2,9.6c-3.4,2.5-8.8,5-11,8.8c-3,5-1.5,9.3-0.6,15.3c1.1,7.5,1.5,16,2.1,23.6\n\t\t\tc0.8,11.5,2.7,36.5,2.7,36.5c-2.4,12.8-3.4,15.5-6.5,30.3c-2.5,11.8-6.9,22.6-8.1,34.5l42.5,6.6c0,0,4.2-48.1,3.8-59.8\n\t\t\tc-0.4-11.7,3.9-19,3.9-19c5.6-6.4,11.2-12.7,16.8-19.1c3.3-3.7,6.9-7.4,10-11.3c3.7-4.6,5.7-10.1,8.3-15.3\n\t\t\tc2.6-5.2,5.6-8.8,9.9-12.6c6.3-5.5,13.3-10.1,20-15.1C154.7,101.5,168,94.3,164.2,89.7z\"><\/path>\n\t\t<path class=\"st4\" d=\"M36.8,249c1.3-11.9,5.7-22.7,8.1-34.5c3.1-14.8,4.1-17.5,6.5-30.3c0,0-2-24.9-2.7-36.5\n\t\t\tc-0.5-7.5-0.9-16.1-2.1-23.6c-0.9-6-2.4-10.3,0.6-15.3c2.2-3.7,7.6-6.3,11-8.8c4.7-3.4,9.5-6.3,14.2-9.6\n\t\t\tc9.1-6.2,23.3-15.5,33.3-20.1c3.9-1.8,20.5-2.4,32.4-3.2\"><\/path>\n\t\t<polyline class=\"st4\" points=\"125.8,86 107.7,93.7 82,114.3 \t\t\"><\/polyline>\n\t\t<path class=\"st4\" d=\"M122.8,93.1c-5.2,1-35.4,24.4-35.4,24.4\"><\/path>\n\t\t<path class=\"st5\" d=\"M152.5,112.8c11.3-3.1,15.1-10.6,15.1-10.6l5.4-15.8l3.9-19.3\"><\/path>\n\t\t<path class=\"st5\" d=\"M137.8,113.8c1.4,0.3,3.1,0.4,5,0.4\"><\/path>\n\t\t<path class=\"st5\" d=\"M150.9,50.5c0,0-20.2,25-20.8,26.5c-0.6,1.5-10.9,16.1-5,24.7c0.2,0.3,0.5,0.7,0.7,1\"><\/path>\n\t\t<path class=\"st6\" d=\"M136.4,81.2c0,0,0-5.8,8.1-11.8c0,0,7.7-12.1,11.9-11.8c2.3,0.2,6.9,3.6,6.9,3.6\"><\/path>\n\t\t<path class=\"st5\" d=\"M132.8,87.6c0,0,5.3-11.2,8.1-12.7c2.9-1.5,10.5-11,10.5-11\"><\/path>\n\t\t<path class=\"st5\" d=\"M155.9,61.9c0,0,9.7,6,17.2,0c0,0,9.1-5,2.6-14.1c0,0-3.2-9.3-13.8-5.8c-2.6,0.9-5.2,2.6-5.2,5.7\n\t\t\tc0,2.9,1.7,5.5,3.9,7.3c2.4,1.9,4,4,2.3,7.1c0,0-2.3-4.1-10-2.2c-1,0.2-1.7,1.8-1.8,2.6c-0.2,2.2,1.6,4.2,3.3,5.4\n\t\t\tc4.6,3.2,11.6,2.4,16.8,1.6c3.8-0.6,7.8-2,10.2-5.1c3.9-5,2.6-11.7-0.4-16.8c-2.6-4.3-6.2-7.2-10.9-8.7c-7.4-2.3-18.2-1-19.1,8.5\n\t\t\tc-0.3,2.7,0.2,5.4,1,8\"><\/path>\n\t\t<path class=\"st7\" d=\"M148.5,128.9c-2.8,0-4-2.9-4.6-5.2c-0.7-2.5-1.2-6.5-1.1-9.6c1.4,0,3-0.2,4.7-0.4c1.8-0.2,3.5-0.6,5-1\n\t\t\tc0.1,1.6,0.3,3.3,0.5,4.2C153.7,120.5,154.1,129,148.5,128.9z\"><\/path>\n\t\t<path class=\"st4\" d=\"M125.3,81.7c0.7-0.1-8.9,1.4-8.9,1.4c-5.4,3.8-10.7,7.6-16.1,11.4c-3.8,2.7-7.7,5.4-11.5,8.1\n\t\t\tc-3.8,2.7-8.5,4-6.8,8.4c0.5,1.4-2,2.5,0.3,4.5c3.6,3,10,3.9,13.9,3.2c9.8-1.7,19.9-8.7,27.8-14.5c4.4-3.2,7.9-7.6,12.6-10.5\n\t\t\tc7-4.3,17.2-8.4,25.4-5.3c0.8,0.3,1.6,0.7,2.2,1.4c3.8,4.6-9.5,11.7-12.2,13.7c-6.7,5-13.7,9.6-20,15.1c-4.4,3.8-7.4,7.4-9.9,12.6\n\t\t\tc-2.6,5.2-4.7,10.7-8.3,15.3c-3.1,3.9-6.7,7.5-10,11.3c-5.6,6.4-11.2,12.7-16.8,19.1c0,0-4.3,7.3-3.9,19\n\t\t\tc0.4,11.7-3.8,59.8-3.8,59.8\"><\/path>\n\t<\/g>\n<\/g>\n<\/svg>",
-            "icon_text": "<p>Once filled (or after 12 hours), simply empty, clean, and reinsert the cup.<\/p>",
+            "icon_svg": "<!--?xml version=\"1.0\" encoding=\"utf-8\"?-->\n<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\n<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" viewbox=\"0 0 250 250\" style=\"enable-background:new 0 0 250 250;\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\">\n<style type=\"text/css\">\n\t.st0{fill:#414856;}\n\t.st1{clip-path:url(#SVGID_00000046308662360323123530000011739217607672590229_);}\n\t.st2{fill:#C7E2F1;}\n\t.st3{fill:#FFFFFF;}\n\t.st4{fill:none;stroke:#B3B2B2;stroke-width:2.3152;stroke-miterlimit:10;}\n\t.st5{fill:none;stroke:#98B2BA;stroke-width:2.3152;stroke-miterlimit:10;}\n\t.st6{fill:none;stroke:#AAC7D0;stroke-width:2.3152;stroke-miterlimit:10;}\n\t.st7{fill:#C7E2F1;stroke:#98B2BA;stroke-width:2.3152;stroke-miterlimit:10;}\n</style>\n<path class=\"st0\" d=\"M125,0c69,0,125,56,125,125s-56,125-125,125S0,194,0,125S56,0,125,0z\"></path>\n<g>\n\t<defs>\n\t\t<path id=\"SVGID_1_\" d=\"M125,0c69,0,125,56,125,125s-56,125-125,125S0,194,0,125S56,0,125,0z\"></path>\n\t</defs>\n\t<clippath id=\"SVGID_00000010281630962291889790000013511231713910038428_\">\n\t\t<use xlink:href=\"#SVGID_1_\" style=\"overflow:visible;\"></use>\n\t</clippath>\n\t<g style=\"clip-path:url(#SVGID_00000010281630962291889790000013511231713910038428_);\">\n\t\t<path class=\"st2\" d=\"M180.8,47.5c-2.6-4.3-6.2-7.2-10.9-8.7c-7.4-2.3-18.2-1-19.1,8.5c-0.2,2,0,4.1,0.5,6l-1.8-0.9\n\t\t\tc0,0-18.9,22.9-19.5,24.4c-0.6,1.5-10.9,16.1-5,24.7s7,14.1,22.3,12.1c15.3-2,20.1-11.6,20.1-11.6l5.4-15.8l3.7-18.3\n\t\t\tc1.8-0.8,3.5-2,4.7-3.6C185.1,59.3,183.8,52.6,180.8,47.5z\"></path>\n\t\t<path class=\"st3\" d=\"M164.2,89.7c-0.6-0.7-1.4-1.1-2.2-1.4c-8.2-3.1-18.4,1-25.4,5.3c-4.7,2.9-8.2,7.3-12.6,10.5\n\t\t\tc-7.9,5.8-18,12.8-27.8,14.5c-2.7,0.5-6.5,0.2-9.8-1l37.3-25.7l5.5-14.7l1.6-2.4l5.5-7.8c-12,0.9-26.6,1.4-30.5,3.2\n\t\t\tc-10,4.7-24.2,13.9-33.3,20.1c-4.7,3.3-9.5,6.2-14.2,9.6c-3.4,2.5-8.8,5-11,8.8c-3,5-1.5,9.3-0.6,15.3c1.1,7.5,1.5,16,2.1,23.6\n\t\t\tc0.8,11.5,2.7,36.5,2.7,36.5c-2.4,12.8-3.4,15.5-6.5,30.3c-2.5,11.8-6.9,22.6-8.1,34.5l42.5,6.6c0,0,4.2-48.1,3.8-59.8\n\t\t\tc-0.4-11.7,3.9-19,3.9-19c5.6-6.4,11.2-12.7,16.8-19.1c3.3-3.7,6.9-7.4,10-11.3c3.7-4.6,5.7-10.1,8.3-15.3\n\t\t\tc2.6-5.2,5.6-8.8,9.9-12.6c6.3-5.5,13.3-10.1,20-15.1C154.7,101.5,168,94.3,164.2,89.7z\"></path>\n\t\t<path class=\"st4\" d=\"M36.8,249c1.3-11.9,5.7-22.7,8.1-34.5c3.1-14.8,4.1-17.5,6.5-30.3c0,0-2-24.9-2.7-36.5\n\t\t\tc-0.5-7.5-0.9-16.1-2.1-23.6c-0.9-6-2.4-10.3,0.6-15.3c2.2-3.7,7.6-6.3,11-8.8c4.7-3.4,9.5-6.3,14.2-9.6\n\t\t\tc9.1-6.2,23.3-15.5,33.3-20.1c3.9-1.8,20.5-2.4,32.4-3.2\"></path>\n\t\t<polyline class=\"st4\" points=\"125.8,86 107.7,93.7 82,114.3 \t\t\"></polyline>\n\t\t<path class=\"st4\" d=\"M122.8,93.1c-5.2,1-35.4,24.4-35.4,24.4\"></path>\n\t\t<path class=\"st5\" d=\"M152.5,112.8c11.3-3.1,15.1-10.6,15.1-10.6l5.4-15.8l3.9-19.3\"></path>\n\t\t<path class=\"st5\" d=\"M137.8,113.8c1.4,0.3,3.1,0.4,5,0.4\"></path>\n\t\t<path class=\"st5\" d=\"M150.9,50.5c0,0-20.2,25-20.8,26.5c-0.6,1.5-10.9,16.1-5,24.7c0.2,0.3,0.5,0.7,0.7,1\"></path>\n\t\t<path class=\"st6\" d=\"M136.4,81.2c0,0,0-5.8,8.1-11.8c0,0,7.7-12.1,11.9-11.8c2.3,0.2,6.9,3.6,6.9,3.6\"></path>\n\t\t<path class=\"st5\" d=\"M132.8,87.6c0,0,5.3-11.2,8.1-12.7c2.9-1.5,10.5-11,10.5-11\"></path>\n\t\t<path class=\"st5\" d=\"M155.9,61.9c0,0,9.7,6,17.2,0c0,0,9.1-5,2.6-14.1c0,0-3.2-9.3-13.8-5.8c-2.6,0.9-5.2,2.6-5.2,5.7\n\t\t\tc0,2.9,1.7,5.5,3.9,7.3c2.4,1.9,4,4,2.3,7.1c0,0-2.3-4.1-10-2.2c-1,0.2-1.7,1.8-1.8,2.6c-0.2,2.2,1.6,4.2,3.3,5.4\n\t\t\tc4.6,3.2,11.6,2.4,16.8,1.6c3.8-0.6,7.8-2,10.2-5.1c3.9-5,2.6-11.7-0.4-16.8c-2.6-4.3-6.2-7.2-10.9-8.7c-7.4-2.3-18.2-1-19.1,8.5\n\t\t\tc-0.3,2.7,0.2,5.4,1,8\"></path>\n\t\t<path class=\"st7\" d=\"M148.5,128.9c-2.8,0-4-2.9-4.6-5.2c-0.7-2.5-1.2-6.5-1.1-9.6c1.4,0,3-0.2,4.7-0.4c1.8-0.2,3.5-0.6,5-1\n\t\t\tc0.1,1.6,0.3,3.3,0.5,4.2C153.7,120.5,154.1,129,148.5,128.9z\"></path>\n\t\t<path class=\"st4\" d=\"M125.3,81.7c0.7-0.1-8.9,1.4-8.9,1.4c-5.4,3.8-10.7,7.6-16.1,11.4c-3.8,2.7-7.7,5.4-11.5,8.1\n\t\t\tc-3.8,2.7-8.5,4-6.8,8.4c0.5,1.4-2,2.5,0.3,4.5c3.6,3,10,3.9,13.9,3.2c9.8-1.7,19.9-8.7,27.8-14.5c4.4-3.2,7.9-7.6,12.6-10.5\n\t\t\tc7-4.3,17.2-8.4,25.4-5.3c0.8,0.3,1.6,0.7,2.2,1.4c3.8,4.6-9.5,11.7-12.2,13.7c-6.7,5-13.7,9.6-20,15.1c-4.4,3.8-7.4,7.4-9.9,12.6\n\t\t\tc-2.6,5.2-4.7,10.7-8.3,15.3c-3.1,3.9-6.7,7.5-10,11.3c-5.6,6.4-11.2,12.7-16.8,19.1c0,0-4.3,7.3-3.9,19\n\t\t\tc0.4,11.7-3.8,59.8-3.8,59.8\"></path>\n\t</g>\n</g>\n</svg>",
+            "icon_text": "<p>Once filled (or after 12 hours), simply empty, clean, and reinsert the cup.</p>",
             "mobile_icon_text_position": "right",
             "desktop_icon_text_position": "below",
             "theme_color_icon_color": "ignore_text_color",
@@ -352,7 +360,7 @@
           "type": "section_button",
           "settings": {
             "button_text": "LEARN MORE",
-            "button_url": "\/pages\/learn-saalt-menstrual-cups",
+            "button_url": "/pages/learn-saalt-menstrual-cups",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -374,7 +382,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/Saalt-How-to-use-a-Cup-Image-Collection_03.jpg",
+        "image": "shopify://shop_images/Saalt-How-to-use-a-Cup-Image-Collection_03.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -435,8 +443,8 @@
         "aaca8849-bf7d-46d3-8677-c386e940b50e": {
           "type": "section_icon_with_text",
           "settings": {
-            "icon_svg": "<svg width=\"95\" height=\"95\" viewbox=\"0 0 95 95\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g id=\"2\">\n<circle id=\"Ellipse\" cx=\"47.25\" cy=\"47.625\" r=\"47.25\" fill=\"#424657\"><\/circle>\n<g id=\"2_2\">\n<path id=\"New shape 9\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M46.7749 38.5391L53.9249 43.9016L60 45.0933L64 53.7329L65 60.2871L81.5 80.3748C81.5 80.3748 78 83.9998 74.5 86.3748C70.0498 89.2996 67.5 90.3748 67.5 90.3748L53.9249 65.6496L42.3061 60.287L35.454 56.712L27.7081 55.5204C27.7081 55.5204 24.214 55.1181 22.942 53.7328C23.578 50.6792 37.54 54.7756 37.54 52.5412C37.54 50.3068 21.9858 48.1967 22.9428 45.0932C23.5835 40.6393 38.7353 48.3703 38.7353 48.3703L46.7749 38.5391Z\" fill=\"white\"><\/path>\n<path id=\"New shape 2\" d=\"M53.8008 43.875L46.6602 38.542\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path id=\"New shape 3\" d=\"M67.5 89.8748C67.5 89.8748 54.673 66.6554 53.8096 65.6525C52.9461 64.6497 52.1111 65.1062 46.0637 62.3755C40.0163 59.6447 38.6448 58.0753 36.8282 57.3108C35.0116 56.5464 22.6768 56.1686 22.8261 53.4379C22.9754 50.7072 35.9442 54.0827 36.828 53.4379C37.7119 52.793 37.2743 52.2961 36.828 51.9487C36.3817 51.6014 22.4478 47.5889 22.8259 45.0966C23.204 42.6043 25.9046 42.7037 38.6161 48.0758C38.7354 47.7678 46.6599 38.8398 46.6599 38.8398\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<g id=\"New shape 5\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M38.4374 40.9225C38.4374 40.9225 39.8084 43.06 39.5105 44.5001C39.2126 45.9403 38.4573 46.6747 37.1271 46.5856C35.797 46.4964 33.9292 44.4105 33.8501 42.1168C33.7709 39.8231 35.6779 39.6041 35.6376 39.4355\" fill=\"white\"><\/path>\n<path d=\"M38.4374 40.9225C38.4374 40.9225 39.8084 43.06 39.5105 44.5001C39.2126 45.9403 38.4573 46.6747 37.1271 46.5856C35.797 46.4964 33.9292 44.4105 33.8501 42.1168C33.7709 39.8231 35.6779 39.6041 35.6376 39.4355\" stroke=\"#808080\"><\/path>\n<\/g>\n<g id=\"New shape 4\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M37.1286 35.2646C37.1286 35.2646 34.6854 35.5127 34.4474 37.3501C34.2094 39.1875 37.1098 40.756 38.9161 40.9251\" fill=\"white\"><\/path>\n<path d=\"M37.1286 35.2646C37.1286 35.2646 34.6854 35.5127 34.4474 37.3501C34.2094 39.1875 37.1098 40.756 38.9161 40.9251\" stroke=\"#808080\"><\/path>\n<\/g>\n<path id=\"New shape 6\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M39.212 42.713C38.5766 37.6784 36.7886 35.0367 36.8288 31.0941C36.8689 27.1516 39.4501 23.5365 43.0851 23.646C46.72 23.7555 48.8635 27.2706 48.7454 31.0941C48.6273 34.9176 46.0043 39.2469 46.0642 42.713C46.1242 46.179 47.8314 48.264 48.1497 49.863C48.468 51.462 49.4402 56.6253 44.2766 57.3107C39.1131 57.9961 37.9803 51.9185 38.6163 48.3734C38.8943 46.6159 39.0631 46.5413 39.2121 45.6922C39.3611 44.2771 39.2813 44.2918 39.212 42.713Z\" fill=\"#B9E1EC\" stroke=\"#7FA5B1\"><\/path>\n<path id=\"New shape\" d=\"M80.999 79.875L64.999 60.375C64.999 60.375 65.1123 57.8054 64.8319 56.1193C64.5516 54.4332 61.9418 47.2909 60.6611 45.6922C59.3804 44.0935 55.209 44.1924 51.4257 43.3089C47.6423 42.4253 47.5222 41.5409 46.659 41.8193C45.7958 42.0976 45.2584 45.0265 47.5527 46.5858C49.847 48.145 52.1103 48.6015 55.0005 49.267C57.8906 49.9325 58.0994 49.8602 58.0994 49.8602\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path id=\"New shape 6 Copy\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M40.8207 40.9254C40.6205 38.1746 39.488 36.0464 39.5101 32.7025C39.5322 29.3586 40.9512 26.2925 42.9495 26.3854C44.9479 26.4782 46.1263 29.4596 46.0613 32.7025C45.9964 35.9454 44.5544 39.6173 44.5874 42.557C44.6203 45.4968 45.5589 47.2652 45.7338 48.6214C45.9088 49.9775 46.8172 54.6441 43.9785 55.2254C41.1398 55.8067 40.4705 51.0822 40.8201 48.0754C41.1698 45.0686 41.0209 43.6762 40.8207 40.9254Z\" fill=\"#B9E1EC\" stroke=\"#7FA5B1\"><\/path>\n<path id=\"New shape 7\" d=\"M49.6373 47.7773C49.6373 47.7773 49.4766 52.1168 54.7018 57.3107\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path id=\"New shape 8\" d=\"M53.8086 65.6525C53.8086 65.6525 56.9455 65.3842 62.4482 60.29\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/g>\n<\/g>\n<\/svg>",
-            "icon_text": "<p>Pinch into a figure 8, then insert the disc fully and tuck behind your pubic bone.<\/p>",
+            "icon_svg": "<svg width=\"95\" height=\"95\" viewbox=\"0 0 95 95\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g id=\"2\">\n<circle id=\"Ellipse\" cx=\"47.25\" cy=\"47.625\" r=\"47.25\" fill=\"#424657\"></circle>\n<g id=\"2_2\">\n<path id=\"New shape 9\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M46.7749 38.5391L53.9249 43.9016L60 45.0933L64 53.7329L65 60.2871L81.5 80.3748C81.5 80.3748 78 83.9998 74.5 86.3748C70.0498 89.2996 67.5 90.3748 67.5 90.3748L53.9249 65.6496L42.3061 60.287L35.454 56.712L27.7081 55.5204C27.7081 55.5204 24.214 55.1181 22.942 53.7328C23.578 50.6792 37.54 54.7756 37.54 52.5412C37.54 50.3068 21.9858 48.1967 22.9428 45.0932C23.5835 40.6393 38.7353 48.3703 38.7353 48.3703L46.7749 38.5391Z\" fill=\"white\"></path>\n<path id=\"New shape 2\" d=\"M53.8008 43.875L46.6602 38.542\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path id=\"New shape 3\" d=\"M67.5 89.8748C67.5 89.8748 54.673 66.6554 53.8096 65.6525C52.9461 64.6497 52.1111 65.1062 46.0637 62.3755C40.0163 59.6447 38.6448 58.0753 36.8282 57.3108C35.0116 56.5464 22.6768 56.1686 22.8261 53.4379C22.9754 50.7072 35.9442 54.0827 36.828 53.4379C37.7119 52.793 37.2743 52.2961 36.828 51.9487C36.3817 51.6014 22.4478 47.5889 22.8259 45.0966C23.204 42.6043 25.9046 42.7037 38.6161 48.0758C38.7354 47.7678 46.6599 38.8398 46.6599 38.8398\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<g id=\"New shape 5\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M38.4374 40.9225C38.4374 40.9225 39.8084 43.06 39.5105 44.5001C39.2126 45.9403 38.4573 46.6747 37.1271 46.5856C35.797 46.4964 33.9292 44.4105 33.8501 42.1168C33.7709 39.8231 35.6779 39.6041 35.6376 39.4355\" fill=\"white\"></path>\n<path d=\"M38.4374 40.9225C38.4374 40.9225 39.8084 43.06 39.5105 44.5001C39.2126 45.9403 38.4573 46.6747 37.1271 46.5856C35.797 46.4964 33.9292 44.4105 33.8501 42.1168C33.7709 39.8231 35.6779 39.6041 35.6376 39.4355\" stroke=\"#808080\"></path>\n</g>\n<g id=\"New shape 4\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M37.1286 35.2646C37.1286 35.2646 34.6854 35.5127 34.4474 37.3501C34.2094 39.1875 37.1098 40.756 38.9161 40.9251\" fill=\"white\"></path>\n<path d=\"M37.1286 35.2646C37.1286 35.2646 34.6854 35.5127 34.4474 37.3501C34.2094 39.1875 37.1098 40.756 38.9161 40.9251\" stroke=\"#808080\"></path>\n</g>\n<path id=\"New shape 6\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M39.212 42.713C38.5766 37.6784 36.7886 35.0367 36.8288 31.0941C36.8689 27.1516 39.4501 23.5365 43.0851 23.646C46.72 23.7555 48.8635 27.2706 48.7454 31.0941C48.6273 34.9176 46.0043 39.2469 46.0642 42.713C46.1242 46.179 47.8314 48.264 48.1497 49.863C48.468 51.462 49.4402 56.6253 44.2766 57.3107C39.1131 57.9961 37.9803 51.9185 38.6163 48.3734C38.8943 46.6159 39.0631 46.5413 39.2121 45.6922C39.3611 44.2771 39.2813 44.2918 39.212 42.713Z\" fill=\"#B9E1EC\" stroke=\"#7FA5B1\"></path>\n<path id=\"New shape\" d=\"M80.999 79.875L64.999 60.375C64.999 60.375 65.1123 57.8054 64.8319 56.1193C64.5516 54.4332 61.9418 47.2909 60.6611 45.6922C59.3804 44.0935 55.209 44.1924 51.4257 43.3089C47.6423 42.4253 47.5222 41.5409 46.659 41.8193C45.7958 42.0976 45.2584 45.0265 47.5527 46.5858C49.847 48.145 52.1103 48.6015 55.0005 49.267C57.8906 49.9325 58.0994 49.8602 58.0994 49.8602\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path id=\"New shape 6 Copy\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M40.8207 40.9254C40.6205 38.1746 39.488 36.0464 39.5101 32.7025C39.5322 29.3586 40.9512 26.2925 42.9495 26.3854C44.9479 26.4782 46.1263 29.4596 46.0613 32.7025C45.9964 35.9454 44.5544 39.6173 44.5874 42.557C44.6203 45.4968 45.5589 47.2652 45.7338 48.6214C45.9088 49.9775 46.8172 54.6441 43.9785 55.2254C41.1398 55.8067 40.4705 51.0822 40.8201 48.0754C41.1698 45.0686 41.0209 43.6762 40.8207 40.9254Z\" fill=\"#B9E1EC\" stroke=\"#7FA5B1\"></path>\n<path id=\"New shape 7\" d=\"M49.6373 47.7773C49.6373 47.7773 49.4766 52.1168 54.7018 57.3107\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path id=\"New shape 8\" d=\"M53.8086 65.6525C53.8086 65.6525 56.9455 65.3842 62.4482 60.29\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</g>\n</g>\n</svg>",
+            "icon_text": "<p>Pinch into a figure 8, then insert the disc fully and tuck behind your pubic bone.</p>",
             "mobile_icon_text_position": "right",
             "desktop_icon_text_position": "below",
             "theme_color_icon_color": "ignore_text_color",
@@ -446,8 +454,8 @@
         "bf417db3-257e-4a31-9f32-e0d128a07ad3": {
           "type": "section_icon_with_text",
           "settings": {
-            "icon_svg": "<svg width=\"96\" height=\"96\" viewbox=\"0 0 96 96\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g id=\"3\">\n<circle id=\"Ellipse\" cx=\"48.3477\" cy=\"47.9756\" r=\"47.25\" fill=\"#424657\"><\/circle>\n<g id=\"Group 8\">\n<path id=\"New shape\" d=\"M42.1602 0.835449C42.1602 0.835449 42.6968 18.0996 42.1602 23.5723C41.6236 29.0449 41.354 43.8679 42.1602 45.6775C42.9664 47.4872 25 49.1807 25 49.1807\" stroke=\"#808080\"><\/path>\n<path id=\"New shape 2\" d=\"M21 85.8428C21 85.8428 46.4356 85.4781 54.0854 85.8426C61.7352 86.2071 64.4209 89.1453 70.5 89.1809\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<path id=\"New shape 3\" d=\"M45.5156 60.5853C45.5156 60.5853 69.0309 64.1525 71.2539 54.4343C72.5083 46.6374 55.0035 33.0011 66.7775 24.7762C76.8173 18.0622 85.2746 30.5408 85.8013 39.3248C85.88 41.2267 85.9696 42.2328 85.8013 44.3591C85.433 47.4365 86.3934 63.2709 71.2537 67.2996C56.1138 71.3282 51.0322 65.509 48.8728 65.0615\" stroke=\"#808080\"><\/path>\n<path id=\"New shape 4\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M65.0992 33.7282C64.26 28.6926 68.4569 25.8948 68.4569 25.8948C68.4569 25.8948 72.8252 23.4893 76.849 26.4547C80.8728 29.42 87.5412 38.0924 81.8847 55.5497C80.0335 58.8508 77.0217 59.5781 76.849 58.9069C76.6763 58.2356 79.7581 55.5497 79.6466 47.7163C78.9199 38.4842 77.7167 32.0497 72.9323 32.6092C70.2735 33.5045 72.457 36.61 75.1704 41.0021C76.7091 44.3871 77.3812 46.6814 76.849 52.1926C76.3179 58.935 72.9323 58.9068 72.9323 58.9068C72.9323 58.9068 73.8008 53.3676 71.2545 46.5973C68.9887 41.114 65.9385 38.7639 65.0992 33.7282Z\" fill=\"white\" stroke=\"#808080\"><\/path>\n<path id=\"New shape 10\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3 33.6807L12.5047 43.7997L25.9333 51.633L30.969 49.9544L38.2428 53.8711L39.3619 56.6687L38.2428 60.5854L8.58808 53.8711L1 49.9543V43.7996L3 33.6807Z\" fill=\"white\"><\/path>\n<g id=\"New shape 6\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M74.6116 62.8232C74.6116 62.8232 71.2031 67.3552 65.6592 67.2994C60.1154 67.2437 54.4688 64.5018 54.4688 64.5018\" fill=\"#B9E1EC\"><\/path>\n<path d=\"M74.6116 62.8232C74.6116 62.8232 71.2031 67.3552 65.6592 67.2994C60.1154 67.2437 54.4688 64.5018 54.4688 64.5018\" stroke=\"#7FA5B1\"><\/path>\n<\/g>\n<path id=\"New shape 5\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M65.6575 62.2629C70.2184 61.7035 73.2706 60.809 74.6093 61.1445C75.948 61.48 75.5101 64.4449 65.6572 64.5009C55.8043 64.5569 53.9683 64.9489 53.9097 63.3826C53.7935 61.9283 60.4819 62.5427 65.6575 62.2629Z\" fill=\"#B9E1EC\" stroke=\"#7FA5B1\"><\/path>\n<g id=\"New shape 8\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1 50.1807L24.2547 65.6211C24.2547 65.6211 26.001 66.5727 27.0523 66.7401C28.1036 66.9076 37.1161 63.4393 52.7905 65.6211C55.4832 64.5949 52.4845 62.3945 50.5524 61.7044C48.6203 61.0143 38.9816 58.1798 30.969 60.0258\" fill=\"white\"><\/path>\n<path d=\"M1 50.1807L24.2547 65.6211C24.2547 65.6211 26.001 66.5727 27.0523 66.7401C28.1036 66.9076 37.1161 63.4393 52.7905 65.6211C55.4832 64.5949 52.4845 62.3945 50.5524 61.7044C48.6203 61.0143 38.9816 58.1798 30.969 60.0258\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/g>\n<g id=\"New shape 7\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3 34.1807L11.9455 42.6806C11.9455 42.6806 20.9274 46.0569 23.136 47.7163C25.3446 49.3758 28.0898 55.1584 29.8503 54.9901C31.6109 54.8218 34.9538 53.2187 36.5646 54.9901C38.1754 56.7616 29.8503 60.5854 29.8503 60.5854L16.9813 56.1092\" fill=\"white\"><\/path>\n<path d=\"M3 34.1807L11.9455 42.6806C11.9455 42.6806 20.9274 46.0569 23.136 47.7163C25.3446 49.3758 28.0898 55.1584 29.8503 54.9901C31.6109 54.8218 34.9538 53.2187 36.5646 54.9901C38.1754 56.7616 29.8503 60.5854 29.8503 60.5854L16.9813 56.1092\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/g>\n<path id=\"New shape 9\" d=\"M38.8017 59.4663C38.8017 59.4663 39.5033 56.2775 38.8017 54.9901C38.1001 53.7028 32.8633 49.787 31.5279 49.9544C30.1925 50.1219 26.4922 51.633 26.4922 51.633\" stroke=\"#808080\"><\/path>\n<\/g>\n<\/g>\n<\/svg>",
-            "icon_text": "<p>Once filled (or after 12 hours), simply empty, clean, and reinsert the disc.<\/p>",
+            "icon_svg": "<svg width=\"96\" height=\"96\" viewbox=\"0 0 96 96\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g id=\"3\">\n<circle id=\"Ellipse\" cx=\"48.3477\" cy=\"47.9756\" r=\"47.25\" fill=\"#424657\"></circle>\n<g id=\"Group 8\">\n<path id=\"New shape\" d=\"M42.1602 0.835449C42.1602 0.835449 42.6968 18.0996 42.1602 23.5723C41.6236 29.0449 41.354 43.8679 42.1602 45.6775C42.9664 47.4872 25 49.1807 25 49.1807\" stroke=\"#808080\"></path>\n<path id=\"New shape 2\" d=\"M21 85.8428C21 85.8428 46.4356 85.4781 54.0854 85.8426C61.7352 86.2071 64.4209 89.1453 70.5 89.1809\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path id=\"New shape 3\" d=\"M45.5156 60.5853C45.5156 60.5853 69.0309 64.1525 71.2539 54.4343C72.5083 46.6374 55.0035 33.0011 66.7775 24.7762C76.8173 18.0622 85.2746 30.5408 85.8013 39.3248C85.88 41.2267 85.9696 42.2328 85.8013 44.3591C85.433 47.4365 86.3934 63.2709 71.2537 67.2996C56.1138 71.3282 51.0322 65.509 48.8728 65.0615\" stroke=\"#808080\"></path>\n<path id=\"New shape 4\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M65.0992 33.7282C64.26 28.6926 68.4569 25.8948 68.4569 25.8948C68.4569 25.8948 72.8252 23.4893 76.849 26.4547C80.8728 29.42 87.5412 38.0924 81.8847 55.5497C80.0335 58.8508 77.0217 59.5781 76.849 58.9069C76.6763 58.2356 79.7581 55.5497 79.6466 47.7163C78.9199 38.4842 77.7167 32.0497 72.9323 32.6092C70.2735 33.5045 72.457 36.61 75.1704 41.0021C76.7091 44.3871 77.3812 46.6814 76.849 52.1926C76.3179 58.935 72.9323 58.9068 72.9323 58.9068C72.9323 58.9068 73.8008 53.3676 71.2545 46.5973C68.9887 41.114 65.9385 38.7639 65.0992 33.7282Z\" fill=\"white\" stroke=\"#808080\"></path>\n<path id=\"New shape 10\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3 33.6807L12.5047 43.7997L25.9333 51.633L30.969 49.9544L38.2428 53.8711L39.3619 56.6687L38.2428 60.5854L8.58808 53.8711L1 49.9543V43.7996L3 33.6807Z\" fill=\"white\"></path>\n<g id=\"New shape 6\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M74.6116 62.8232C74.6116 62.8232 71.2031 67.3552 65.6592 67.2994C60.1154 67.2437 54.4688 64.5018 54.4688 64.5018\" fill=\"#B9E1EC\"></path>\n<path d=\"M74.6116 62.8232C74.6116 62.8232 71.2031 67.3552 65.6592 67.2994C60.1154 67.2437 54.4688 64.5018 54.4688 64.5018\" stroke=\"#7FA5B1\"></path>\n</g>\n<path id=\"New shape 5\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M65.6575 62.2629C70.2184 61.7035 73.2706 60.809 74.6093 61.1445C75.948 61.48 75.5101 64.4449 65.6572 64.5009C55.8043 64.5569 53.9683 64.9489 53.9097 63.3826C53.7935 61.9283 60.4819 62.5427 65.6575 62.2629Z\" fill=\"#B9E1EC\" stroke=\"#7FA5B1\"></path>\n<g id=\"New shape 8\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1 50.1807L24.2547 65.6211C24.2547 65.6211 26.001 66.5727 27.0523 66.7401C28.1036 66.9076 37.1161 63.4393 52.7905 65.6211C55.4832 64.5949 52.4845 62.3945 50.5524 61.7044C48.6203 61.0143 38.9816 58.1798 30.969 60.0258\" fill=\"white\"></path>\n<path d=\"M1 50.1807L24.2547 65.6211C24.2547 65.6211 26.001 66.5727 27.0523 66.7401C28.1036 66.9076 37.1161 63.4393 52.7905 65.6211C55.4832 64.5949 52.4845 62.3945 50.5524 61.7044C48.6203 61.0143 38.9816 58.1798 30.969 60.0258\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</g>\n<g id=\"New shape 7\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3 34.1807L11.9455 42.6806C11.9455 42.6806 20.9274 46.0569 23.136 47.7163C25.3446 49.3758 28.0898 55.1584 29.8503 54.9901C31.6109 54.8218 34.9538 53.2187 36.5646 54.9901C38.1754 56.7616 29.8503 60.5854 29.8503 60.5854L16.9813 56.1092\" fill=\"white\"></path>\n<path d=\"M3 34.1807L11.9455 42.6806C11.9455 42.6806 20.9274 46.0569 23.136 47.7163C25.3446 49.3758 28.0898 55.1584 29.8503 54.9901C31.6109 54.8218 34.9538 53.2187 36.5646 54.9901C38.1754 56.7616 29.8503 60.5854 29.8503 60.5854L16.9813 56.1092\" stroke=\"#808080\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</g>\n<path id=\"New shape 9\" d=\"M38.8017 59.4663C38.8017 59.4663 39.5033 56.2775 38.8017 54.9901C38.1001 53.7028 32.8633 49.787 31.5279 49.9544C30.1925 50.1219 26.4922 51.633 26.4922 51.633\" stroke=\"#808080\"></path>\n</g>\n</g>\n</svg>",
+            "icon_text": "<p>Once filled (or after 12 hours), simply empty, clean, and reinsert the disc.</p>",
             "mobile_icon_text_position": "right",
             "desktop_icon_text_position": "below",
             "theme_color_icon_color": "ignore_text_color",
@@ -465,7 +473,7 @@
           "type": "section_button",
           "settings": {
             "button_text": "LEARN MORE",
-            "button_url": "\/pages\/learn-about-saalt-discs",
+            "button_url": "/pages/learn-about-saalt-discs",
             "button_type": "primary",
             "theme_color_section_button_background": "theme_default",
             "theme_color_text_section_button_text": "theme_default",
@@ -487,7 +495,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "media_type": "image",
-        "image": "shopify:\/\/shop_images\/How_to_use_a_saalt_disc.jpg",
+        "image": "shopify://shop_images/How_to_use_a_saalt_disc.jpg",
         "custom_code": "",
         "use_max_media_width": false,
         "max_media_width": "700px",
@@ -512,7 +520,7 @@
           "settings": {
             "title": "Mackenzie",
             "rating": 5,
-            "text": "<p>This wonderful thing has already saved me so much time and money. I couldn't be happier!<\/p>",
+            "text": "<p>This wonderful thing has already saved me so much time and money. I couldn't be happier!</p>",
             "link_label": "",
             "link": ""
           }
@@ -522,7 +530,7 @@
           "settings": {
             "title": "Jillian M.",
             "rating": 5,
-            "text": "<p>If you have not used a cup or a disc for period care, you are missing out on so much freedom! No more stock piles of supplies in your bathroom, purse, car. Insert and go! Done and done.<\/p>",
+            "text": "<p>If you have not used a cup or a disc for period care, you are missing out on so much freedom! No more stock piles of supplies in your bathroom, purse, car. Insert and go! Done and done.</p>",
             "link_label": "",
             "link": ""
           }
@@ -532,7 +540,17 @@
           "settings": {
             "title": "Coleen S.",
             "rating": 5,
-            "text": "<p>I have been using the Saalt Cup for about 2 years now and really liked it so I was excited when they announced the Saalt Disc. I have used it for two cycles and I'm sold! It's comfortable, easy to use and I haven't had one leak despite my heavy flow.<\/p>",
+            "text": "<p>I have been using the Saalt Cup for about 2 years now and really liked it so I was excited when they announced the Saalt Disc. I have used it for two cycles and I'm sold! It's comfortable, easy to use and I haven't had one leak despite my heavy flow.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_LwUjGW": {
+          "type": "column",
+          "settings": {
+            "title": "Sarah C.",
+            "rating": 5,
+            "text": "<p>Saalt is the best menstrual cup brand I've ever used. It's so much more comfortable than the others, and their support and customer service is way better, too.</p>",
             "link_label": "",
             "link": ""
           }
@@ -541,14 +559,15 @@
       "block_order": [
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-0",
         "template--18370419720465__835cabec-b298-4b76-9a74-2ae85e6ea4be-16879843030c819397-2",
-        "8ad13ac4-10e5-4131-bf07-17d6ff34bba2"
+        "8ad13ac4-10e5-4131-bf07-17d6ff34bba2",
+        "column_LwUjGW"
       ],
       "settings": {
-        "title": "9\/10 People Never Go Back",
+        "title": "9/10 People Never Go Back",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "column_alignment": "left",
         "theme_color_background": "theme-color-bg-5",
         "theme_color_text": "theme_default",
@@ -577,7 +596,7 @@
           "type": "testimonial",
           "settings": {
             "quote": "This wonderful thing has already saved me so much time and money. I couldn't be happier!",
-            "author": "<strong>Mackenzie<\/strong>",
+            "author": "<strong>Mackenzie</strong>",
             "show_text_box": true,
             "text_alignment": "center",
             "text_alignment_mobile": "center"
@@ -587,7 +606,7 @@
           "type": "testimonial",
           "settings": {
             "quote": "If you have not used a cup or a disc for period care, you are missing out on so much freedom! No more stock piles of supplies in your bathroom, purse, car. Insert and go! Done and done.",
-            "author": "<strong>Jillian M.<\/strong>",
+            "author": "<strong>Jillian M.</strong>",
             "show_text_box": true,
             "text_alignment": "center",
             "text_alignment_mobile": "center"
@@ -597,7 +616,7 @@
           "type": "testimonial",
           "settings": {
             "quote": "I have been using the Saalt Cup for about 2 years now and really liked it so I was excited when they announced the Saalt Disc. I have used it for two cycles and I'm sold! It's comfortable, easy to use and I haven't had one leak despite my heavy flow.",
-            "author": "<strong>Colleen S.<\/strong>",
+            "author": "<strong>Colleen S.</strong>",
             "show_text_box": true,
             "text_alignment": "center",
             "text_alignment_mobile": "center"
@@ -618,7 +637,7 @@
         "theme_color_background": "theme_default",
         "theme_color_text": "theme_default",
         "include_img": true,
-        "image": "shopify:\/\/shop_images\/Testimonials_1.jpg",
+        "image": "shopify://shop_images/Testimonials_1.jpg",
         "image_behavior": "none",
         "accessibility_info": "Slideshow of customer reviews"
       }
@@ -660,7 +679,7 @@
         "670aff44-664c-4a98-a9c1-48f83485ec25": {
           "type": "section_icon_with_text",
           "settings": {
-            "icon_svg": "<svg width=\"126\" height=\"126\" viewbox=\"0 0 126 126\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g clip-path=\"url(#clip0_493_7014)\">\n<path d=\"M110.097 42.4007L109.907 42.4467C109.637 44.6838 107.874 47.5699 101.278 49.1463C93.7613 50.9449 85.8645 48.5329 80.9821 45.0098C80.273 44.4986 79.5535 43.9727 78.8132 43.4645C78.429 43.1978 78.0462 42.9267 77.6605 42.6556C71.9815 38.6465 65.3056 35.7085 58.0362 36.3011H57.9932C57.9695 36.3011 57.9443 36.3011 57.922 36.31C53.1836 36.7145 49.7492 38.1605 47.0373 40.088C44.584 41.6747 42.4611 43.7203 40.7856 46.1121C37.6821 50.5849 36.559 55.7422 37.6257 60.6447C37.6687 60.8432 37.737 61.0329 37.7874 61.2373C36.5746 61.1828 35.3595 61.2065 34.1498 61.3085C27.1178 61.8922 22.0144 66.368 18.9034 71.1949C16.3876 75.1063 15.326 79.7754 15.9037 84.3883L16.0936 84.3438C16.3681 82.1052 18.129 79.2206 24.7263 77.6427C32.2434 75.8456 40.1403 78.2561 45.0226 81.7792C45.7318 82.2918 46.4513 82.8163 47.1916 83.3245C47.5758 83.5912 47.9585 83.8623 48.3443 84.1334C54.0218 88.1411 60.6932 91.079 67.9626 90.4864H68.0071L68.0783 90.4775C72.8153 90.0715 76.2496 88.627 78.963 86.6995C81.4167 85.112 83.5396 83.0654 85.2147 80.6725C88.3182 76.1997 89.4413 71.0423 88.3746 66.1413C88.3316 65.9413 88.2633 65.7517 88.2129 65.5487C89.4257 65.603 90.6407 65.5798 91.8505 65.4791C98.8825 64.8864 103.986 60.418 107.097 55.5911C109.612 51.6805 110.674 47.0126 110.097 42.4007V42.4007ZM87.753 66.3013C87.8613 66.8021 87.9355 67.3073 87.9963 67.814C88.7381 75.0188 82.8039 78.9746 77.5003 79.4724C70.1894 80.1599 64.7077 75.3063 57.9175 70.3919C57.4117 70.0275 56.8895 69.6511 56.345 69.257C50.1972 64.6835 45.0701 61.7307 38.4669 61.267C38.3957 61.0047 38.3081 60.7484 38.2488 60.4788C38.1405 59.978 38.0663 59.4728 38.0055 58.9661C37.2103 51.4101 43.1979 47.8055 48.5015 47.3077C55.8109 46.6262 61.3 51.4857 68.0842 56.3926C68.5901 56.7586 69.1123 57.1334 69.6568 57.5275C75.8046 62.1011 80.9317 65.0538 87.5349 65.5176C87.6061 65.7813 87.6937 66.0361 87.753 66.3013Z\"><\/path>\n<\/g>\n<defs>\n<clippath id=\"clip0_493_7014\">\n<rect width=\"126\" height=\"126\"><\/rect>\n<\/clippath>\n<\/defs>\n<\/svg>",
+            "icon_svg": "<svg width=\"126\" height=\"126\" viewbox=\"0 0 126 126\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_493_7014)\">\n<path d=\"M110.097 42.4007L109.907 42.4467C109.637 44.6838 107.874 47.5699 101.278 49.1463C93.7613 50.9449 85.8645 48.5329 80.9821 45.0098C80.273 44.4986 79.5535 43.9727 78.8132 43.4645C78.429 43.1978 78.0462 42.9267 77.6605 42.6556C71.9815 38.6465 65.3056 35.7085 58.0362 36.3011H57.9932C57.9695 36.3011 57.9443 36.3011 57.922 36.31C53.1836 36.7145 49.7492 38.1605 47.0373 40.088C44.584 41.6747 42.4611 43.7203 40.7856 46.1121C37.6821 50.5849 36.559 55.7422 37.6257 60.6447C37.6687 60.8432 37.737 61.0329 37.7874 61.2373C36.5746 61.1828 35.3595 61.2065 34.1498 61.3085C27.1178 61.8922 22.0144 66.368 18.9034 71.1949C16.3876 75.1063 15.326 79.7754 15.9037 84.3883L16.0936 84.3438C16.3681 82.1052 18.129 79.2206 24.7263 77.6427C32.2434 75.8456 40.1403 78.2561 45.0226 81.7792C45.7318 82.2918 46.4513 82.8163 47.1916 83.3245C47.5758 83.5912 47.9585 83.8623 48.3443 84.1334C54.0218 88.1411 60.6932 91.079 67.9626 90.4864H68.0071L68.0783 90.4775C72.8153 90.0715 76.2496 88.627 78.963 86.6995C81.4167 85.112 83.5396 83.0654 85.2147 80.6725C88.3182 76.1997 89.4413 71.0423 88.3746 66.1413C88.3316 65.9413 88.2633 65.7517 88.2129 65.5487C89.4257 65.603 90.6407 65.5798 91.8505 65.4791C98.8825 64.8864 103.986 60.418 107.097 55.5911C109.612 51.6805 110.674 47.0126 110.097 42.4007V42.4007ZM87.753 66.3013C87.8613 66.8021 87.9355 67.3073 87.9963 67.814C88.7381 75.0188 82.8039 78.9746 77.5003 79.4724C70.1894 80.1599 64.7077 75.3063 57.9175 70.3919C57.4117 70.0275 56.8895 69.6511 56.345 69.257C50.1972 64.6835 45.0701 61.7307 38.4669 61.267C38.3957 61.0047 38.3081 60.7484 38.2488 60.4788C38.1405 59.978 38.0663 59.4728 38.0055 58.9661C37.2103 51.4101 43.1979 47.8055 48.5015 47.3077C55.8109 46.6262 61.3 51.4857 68.0842 56.3926C68.5901 56.7586 69.1123 57.1334 69.6568 57.5275C75.8046 62.1011 80.9317 65.0538 87.5349 65.5176C87.6061 65.7813 87.6937 66.0361 87.753 66.3013Z\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_493_7014\">\n<rect width=\"126\" height=\"126\"></rect>\n</clippath>\n</defs>\n</svg>",
             "icon_text": "",
             "mobile_icon_text_position": "below",
             "desktop_icon_text_position": "below",
@@ -678,7 +697,7 @@
         "template--21571779264785__322a376d-644b-4c45-afab-7de51bc02822-section_content-1": {
           "type": "section_content",
           "settings": {
-            "text_content": "<p>If you're not happy with your Saalt product,<strong> <\/strong><a href=\"\/pages\/replacements\" title=\"Replacements\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase<\/strong><\/a><strong>.<\/strong> Why? We know that learning to use reusables can take time, but we're here to help and cheer you to Saalt bliss. <br\/>Your Saalt(isfaction) guaranteed.<\/p>"
+            "text_content": "<p>If you're not happy with your Saalt product,<strong> </strong><a href=\"/pages/replacements\" title=\"Replacements\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase</strong></a><strong>.</strong> Why? We know that learning to use reusables can take time, but we're here to help and cheer you to Saalt bliss. <br/>Your Saalt(isfaction) guaranteed.</p>"
           }
         }
       },
@@ -717,7 +736,7 @@
           "settings": {
             "heading": "Will period underwear smell?",
             "icon": "none",
-            "row_content": "<p>No, when cared for properly, your Saalt Wear should not smell! Saalt Wear is treated with a bio-based solution for odor control that removes sweat odor and eliminates bacteria to keep you fresh and odor-free.<\/p>",
+            "row_content": "<p>No, when cared for properly, your Saalt Wear should not smell! Saalt Wear is treated with a bio-based solution for odor control that removes sweat odor and eliminates bacteria to keep you fresh and odor-free.</p>",
             "page": ""
           }
         },
@@ -726,7 +745,7 @@
           "settings": {
             "heading": "Can I put it in the dryer?",
             "icon": "none",
-            "row_content": "<p>Take good care of Saalt Wear, and it will take great care of you. <\/p><p>After use, rinse your Saalt Wear leakproof underwear in cold water to help avoid staining. Then, hand wash or machine wash on cold, preferably in a <a href=\"\/products\/saalt-mesh-laundry-bag\" title=\"\/products\/saalt-mesh-laundry-bag\"><span style=\"text-decoration:underline\">Saalt Mesh Laundry Bag<\/span><\/a> intended for delicates. You can use detergent but pass on the fabric softener, bleach, and iron to protect the tech. Proudly hang dry—energy efficient and free. We recommend avoiding putting Saalt Wear in the dryer, as high temperatures can degrade the elastics and fabric over time.<\/p>",
+            "row_content": "<p>Take good care of Saalt Wear, and it will take great care of you. </p><p>After use, rinse your Saalt Wear leakproof underwear in cold water to help avoid staining. Then, hand wash or machine wash on cold, preferably in a <a href=\"/products/saalt-mesh-laundry-bag\" title=\"/products/saalt-mesh-laundry-bag\"><span style=\"text-decoration:underline\">Saalt Mesh Laundry Bag</span></a> intended for delicates. You can use detergent but pass on the fabric softener, bleach, and iron to protect the tech. Proudly hang dry—energy efficient and free. We recommend avoiding putting Saalt Wear in the dryer, as high temperatures can degrade the elastics and fabric over time.</p>",
             "page": ""
           }
         },
@@ -735,7 +754,7 @@
           "settings": {
             "heading": "Can I wear them all day?",
             "icon": "none",
-            "row_content": "<p>Go with your flow! How long you can wear your Saalt Wear leakproof underwear before needing to change will depend on your flow and the absorbency level of the style you choose. If you are free bleeding on your heavy day, you may need to change into a fresh pair after a few hours of wear. If you’re wearing your Saalt Wear as a backup to a cup or on a light day, you may be able to wear it all day. We recommend trying Saalt Wear for the first time at home so you can see how your pair works best for your body and ~flow~.<\/p>",
+            "row_content": "<p>Go with your flow! How long you can wear your Saalt Wear leakproof underwear before needing to change will depend on your flow and the absorbency level of the style you choose. If you are free bleeding on your heavy day, you may need to change into a fresh pair after a few hours of wear. If you’re wearing your Saalt Wear as a backup to a cup or on a light day, you may be able to wear it all day. We recommend trying Saalt Wear for the first time at home so you can see how your pair works best for your body and ~flow~.</p>",
             "page": ""
           }
         },
@@ -744,7 +763,7 @@
           "settings": {
             "heading": "Does Saalt Wear have PFAS",
             "icon": "none",
-            "row_content": "<p>You can rest easy knowing that Saalt does not use any PFAS in our fabric finishes. We test all materials for a wide range of known hazardous substances, including PFAS and other known harmful chemicals. As a B Corp, we’re committed to providing the safest, most effective, and responsibly-produced leakproof underwear on the market for our customers. We source our materials from factories known for making safe, green textiles. Some of our fabrics are OEKO-TEX®️ and bluesign®️ approved, which are internationally recognized standards for making textiles cleaner and more environmentally friendly. You can <a href=\"\/blogs\/news\/everything-you-need-to-know-about-pfas-and-period-underwear\" title=\"\/blogs\/news\/everything-you-need-to-know-about-pfas-and-period-underwear\"><span style=\"text-decoration:underline\">learn even more about PFAS on our blog<\/span><\/a>.<\/p>",
+            "row_content": "<p>You can rest easy knowing that Saalt does not use any PFAS in our fabric finishes. We test all materials for a wide range of known hazardous substances, including PFAS and other known harmful chemicals. As a B Corp, we’re committed to providing the safest, most effective, and responsibly-produced leakproof underwear on the market for our customers. We source our materials from factories known for making safe, green textiles. Some of our fabrics are OEKO-TEX®️ and bluesign®️ approved, which are internationally recognized standards for making textiles cleaner and more environmentally friendly. You can <a href=\"/blogs/news/everything-you-need-to-know-about-pfas-and-period-underwear\" title=\"/blogs/news/everything-you-need-to-know-about-pfas-and-period-underwear\"><span style=\"text-decoration:underline\">learn even more about PFAS on our blog</span></a>.</p>",
             "page": ""
           }
         }
