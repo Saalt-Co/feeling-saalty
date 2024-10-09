@@ -1,0 +1,413 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "fd4445e0-3160-476f-9e6f-f9f22e50a1dc": {
+      "type": "saalt-bg-media-with-text",
+      "blocks": {
+        "section_title_pTA4AE": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Saalt Leakproof & Period Underwear Quiz"
+          }
+        },
+        "section_content_nNQc3K": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>Quick quiz, perfect pair – say hello to leakproof&nbspconfidence.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "section_title_pTA4AE",
+        "section_content_nNQc3K"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "image",
+        "mobile_image": "shopify://shop_images/Saalt-Wear-Quiz-Hero-mobile.jpg",
+        "desktop_image": "shopify://shop_images/Saalt-Wear-Quiz-Hero.jpg",
+        "media_overlay_color": "--palette-color-1",
+        "media_overlay_opacity": 0,
+        "use_max_media_width": false,
+        "max_media_width": "60%",
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "flex-end",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "35%",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "205af4ea-20c2-45bc-98f3-082272cb19eb": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_title-1": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "Saalt Leakproof & Period Underwear Quiz"
+          }
+        }
+      },
+      "block_order": [
+        "template--15078825525329__205af4ea-20c2-45bc-98f3-082272cb19eb-section_title-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "{background-color: #eef0f4 !important;}"
+      ],
+      "settings": {
+        "section_id": "how it works",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": false,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "145a2af9-149a-4dad-acd0-ab8f163dc90b": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div id='lightbox-inline-form-43b8df01-724f-4ade-b3c6-8d50d2485056' style='text-align: center;'><div class='box_loading_placeholder' style='position: relative; text-align: center;border-style: none;border-width: 0px;background-color: #fff;height: 750px;width: 100%;'><div class='box_loading_placeholder_overlay' style='position: absolute;top: 0;left: 0;width: 100%;height: 100%; background: rgba(255, 255, 255, 0.25);'></div><div style='width: 100%; font-family: Montserrat, sans-serif; font-size: 18px; line-height: 28px; color: #222525; position: relative; top: 50%; transform: translateY(-50%);'><img class='box_loading_placeholder_image' src='https://s3.lightboxcdn.com/vendors/357ae127-e66b-4e0b-a8d7-51c895139da9/uploads/dfd54a0c-fdce-4dd2-8dc1-e8a4e47aa231/Eclipse1s200px7.gif' style='margin: 0 auto; max-height: 100%; max-width: 100%;'/><p><a href='https://www.digioh.com/' target='_blank' style='color: inherit; text-decoration: none;'>Quiz Loading</a></p></div></div></div>",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "11b4eb9a-18a9-488e-bfd7-23c248641695": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "2d5c6d55-fc5c-42d7-926c-72f5ff3f1e74": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "1",
+            "title": "91% never go back"
+          }
+        },
+        "cefe45c5-848e-4edd-8f9c-2f8f6bfa82dd": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>91% of first-time Saalt menstrual cup and disc users choose cups over pads and tampons and recommend to friends.</p><p>Here's why:</p>"
+          }
+        },
+        "411ff8b8-c3e8-433a-a3a9-e3c5547102f1": {
+          "type": "section_icon_group",
+          "settings": {
+            "mobile_icons_display": "row",
+            "mobile_icon_group_horizontal_alignment": "center",
+            "mobile_icon_group_vertical_alignment": "flex-start",
+            "mobile_icon_grid_columns": 2,
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_text_size": "1.5rem",
+            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_vertical_alignment": "center",
+            "mobile_icon_min_width": "80px",
+            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "100px",
+            "use_max_icon_group_width": false,
+            "icon_group_max_width": "600px",
+            "desktop_icons_display": "row",
+            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_vertical_alignment": "center",
+            "desktop_icon_grid_columns": 2,
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_horizontal_alignment": "center",
+            "desktop_icon_vertical_alignment": "center",
+            "desktop_icon_min_width": "80px",
+            "desktop_icon_wrapper_max_width": "100px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "100px"
+          }
+        },
+        "a874d5c7-0de5-4674-aa38-09483946f208": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<!--?xml version=\"1.0\" encoding=\"UTF-8\"?-->\n<svg width=\"18px\" height=\"18px\" viewbox=\"0 0 18 18\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n    <!-- Generator: sketchtool 51.3 (57544) - http://www.bohemiancoding.com/sketch -->\n    <title>03F95406-0CEE-4E89-854B-D3518D316F3D</title>\n    <desc>Created with sketchtool.</desc>\n    <defs></defs>\n    <g id=\"Page-1\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\n        <g id=\"PDP--Disk\" transform=\"translate(-820.998000, -279.574340)\" stroke=\"#3F4759\">\n            <g id=\"1\" transform=\"translate(38.400390, 145.274410)\">\n                <g id=\"right\" transform=\"translate(781.498050, 0.000000)\">\n                    <g id=\"saalt\" transform=\"translate(1.498047, 0.000000)\">\n                        <g id=\"1\" transform=\"translate(0.207031, 135.100040)\">\n                            <g id=\"time\">\n                                <circle id=\"Ellipse\" cx=\"8\" cy=\"8\" r=\"8\"></circle>\n                                <polyline id=\"New-shape\" points=\"8 4 8 8.8888903 11.5555558 8.8888903\"></polyline>\n                            </g>\n                        </g>\n                    </g>\n                </g>\n            </g>\n        </g>\n    </g>\n</svg>",
+            "icon_text": "<h4><strong>12 hours</strong></h4><h4>Wear all day or night.</h4>",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "3d0c348c-640a-4444-9e55-ec3aa8c01c53": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"40\" height=\"40\" viewbox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M24.3441 19.7064C23.2987 18.6982 21.9708 18.4377 20.9041 18.37V12.1177C21.6446 12.2387 22.33 12.5767 22.8694 13.0868C23.4668 13.6599 23.4667 14.0846 23.4667 15.1136C23.4789 15.3263 23.574 15.5264 23.7325 15.6727C23.8909 15.8191 24.1007 15.9006 24.3187 15.9006C24.5368 15.9006 24.7466 15.8191 24.905 15.6727C25.0635 15.5264 25.1586 15.3263 25.1707 15.1136C25.1707 13.97 25.1707 12.98 24.0827 11.9145C23.2229 11.093 22.1072 10.575 20.9121 10.4427V9.58037C20.9121 9.35859 20.8219 9.14589 20.6614 8.98907C20.5008 8.83224 20.2831 8.74414 20.0561 8.74414C19.8291 8.74414 19.6113 8.83224 19.4508 8.98907C19.2903 9.14589 19.2001 9.35859 19.2001 9.58037V10.4713C18.2641 10.5755 17.2854 10.8543 16.5334 11.5889C14.4454 13.6287 14.3521 16.747 16.3281 18.6774C17.1521 19.4797 18.3121 19.7975 19.2001 19.9304V26.9642C18.5706 26.7803 17.9979 26.4464 17.5334 25.9925C16.5148 24.9947 15.9788 24.2783 16.0774 23.3353C16.099 23.116 16.0309 22.8974 15.888 22.727C15.7451 22.5567 15.539 22.4485 15.3148 22.4261C15.2032 22.4138 15.0902 22.4235 14.9825 22.4545C14.8748 22.4856 14.7745 22.5373 14.6876 22.6067C14.6006 22.6761 14.5287 22.7618 14.4762 22.8587C14.4236 22.9557 14.3914 23.0619 14.3814 23.1711C14.2028 24.927 15.2454 26.1097 16.3308 27.1674C17.113 27.9369 18.1117 28.4619 19.2001 28.6757V29.9131C19.2001 30.1335 19.2897 30.3449 19.4492 30.5007C19.6088 30.6566 19.8251 30.7441 20.0508 30.7441C20.2764 30.7441 20.4927 30.6566 20.6523 30.5007C20.8118 30.3449 20.9014 30.1335 20.9014 29.9131V28.7591C22.2021 28.6373 23.4186 28.0762 24.3414 27.1726C26.5547 25.0129 26.5547 21.866 24.3441 19.7064ZM17.5334 17.4894C16.2454 16.2286 16.3468 14.1028 17.7388 12.7534C18.1457 12.3997 18.6577 12.1824 19.2001 12.1334V18.2423C18.5833 18.1487 18.0059 17.8879 17.5334 17.4894ZM23.1414 25.9925C22.5355 26.5814 21.7505 26.9626 20.9041 27.0788V20.045C21.9174 20.1154 22.6214 20.3837 23.1414 20.8917C24.6881 22.3922 24.6881 24.4867 23.1414 25.9925Z\" fill=\"#3F4759\"></path>\n</svg>",
+            "icon_text": "<h4><strong>Cha-Ching</strong></h4><h4>Save your wallet and the planet</h4>",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "0ba696d0-b380-47d9-aa20-dbd27225ccde": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"40\" height=\"40\" viewbox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M31.6614 16.2319C31.5787 16.1775 31.4862 16.14 31.3891 16.1214C31.2919 16.1028 31.1921 16.1035 31.0952 16.1236C30.9983 16.1437 30.9064 16.1827 30.8246 16.2383C30.7429 16.294 30.6729 16.3652 30.6187 16.4479L29.712 17.8266C29.2566 15.8647 28.2849 14.0602 26.8974 12.6003C25.51 11.1403 23.7573 10.078 21.8211 9.52333C19.8849 8.96869 17.8356 8.94194 15.8856 9.44586C13.9355 9.94977 12.1558 10.966 10.7307 12.3893C10.5892 12.5307 10.5098 12.7226 10.5098 12.9226C10.5098 13.1226 10.5892 13.3145 10.7307 13.4559C10.8721 13.5974 11.064 13.6768 11.264 13.6768C11.4641 13.6768 11.6559 13.5974 11.7973 13.4559C13.0423 12.209 14.601 11.3216 16.3088 10.8878C18.0166 10.454 19.8099 10.4898 21.499 10.9914C23.1881 11.4931 24.7102 12.4419 25.9043 13.7376C27.0985 15.0333 27.9202 16.6276 28.2827 18.3519L26.6667 17.2426C26.5849 17.1869 26.493 17.1479 26.3961 17.1277C26.2993 17.1076 26.1994 17.1067 26.1022 17.1252C26.005 17.1436 25.9124 17.181 25.8297 17.2353C25.7469 17.2895 25.6757 17.3595 25.62 17.4413C25.5643 17.523 25.5253 17.615 25.5052 17.7118C25.485 17.8087 25.4841 17.9086 25.5026 18.0057C25.521 18.1029 25.5584 18.1955 25.6127 18.2783C25.6669 18.361 25.7369 18.4323 25.8187 18.4879L28.816 20.5333C28.8373 20.5333 28.8613 20.5519 28.88 20.5626C28.9274 20.5905 28.9774 20.6138 29.0293 20.6319C29.0927 20.6499 29.1582 20.6589 29.224 20.6586H29.2427C29.2992 20.6567 29.3555 20.6496 29.4107 20.6373C29.4316 20.6304 29.452 20.6224 29.472 20.6133C29.5098 20.604 29.5465 20.5905 29.5813 20.5733C29.6 20.5733 29.6187 20.5439 29.64 20.5333C29.6719 20.5134 29.7022 20.4912 29.7307 20.4666C29.7512 20.4487 29.7692 20.4281 29.784 20.4053C29.809 20.383 29.8313 20.3579 29.8507 20.3306L31.8587 17.2719C31.9688 17.1074 32.0098 16.9061 31.9729 16.7115C31.936 16.517 31.8241 16.3447 31.6614 16.2319Z\" fill=\"#3F4759\"></path>\n<path d=\"M28.2053 26.3387C26.28 28.2667 23.7333 29.424 21.2106 29.4053C18.7306 29.3867 16.256 28.2267 14.368 26.3387C13.0342 24.9951 12.1189 23.2934 11.7333 21.44L13.36 22.5493C13.4415 22.605 13.5333 22.6441 13.63 22.6643C13.7267 22.6845 13.8264 22.6855 13.9235 22.6672C14.0206 22.6488 14.1131 22.6116 14.1957 22.5575C14.2784 22.5034 14.3496 22.4336 14.4053 22.352C14.461 22.2704 14.5 22.1786 14.5202 22.0819C14.5405 21.9853 14.5414 21.8855 14.5231 21.7885C14.5048 21.6914 14.4675 21.5989 14.4135 21.5162C14.3594 21.4335 14.2895 21.3623 14.208 21.3067L11.184 19.2507H11.1706C11.1147 19.214 11.0536 19.1861 10.9893 19.168H10.9653H10.9333C10.8661 19.1515 10.7971 19.1444 10.728 19.1467H10.6933C10.6261 19.152 10.5599 19.1654 10.496 19.1867C10.4298 19.2108 10.3677 19.245 10.312 19.288L10.2826 19.312C10.2288 19.356 10.1813 19.4071 10.1413 19.464L8.12262 22.5173C8.06834 22.6 8.03087 22.6925 8.01235 22.7896C7.99383 22.8867 7.99462 22.9866 8.01468 23.0834C8.03473 23.1802 8.07367 23.2721 8.12925 23.3539C8.18483 23.4357 8.25598 23.5057 8.33862 23.56C8.42127 23.6143 8.51379 23.6517 8.61092 23.6703C8.70805 23.6888 8.80787 23.688 8.90469 23.6679C9.00151 23.6479 9.09343 23.6089 9.17521 23.5534C9.25698 23.4978 9.32701 23.4266 9.38129 23.344L10.288 21.9653C10.7631 24.0249 11.8083 25.9092 13.304 27.4027C15.504 29.6027 18.32 30.912 21.2106 30.912C24.1013 30.912 27.0773 29.6027 29.2693 27.4027C29.4107 27.2612 29.4902 27.0694 29.4902 26.8693C29.4902 26.6693 29.4107 26.4774 29.2693 26.336C29.1278 26.1945 28.936 26.1151 28.736 26.1151C28.5359 26.1151 28.3441 26.1945 28.2026 26.336L28.2053 26.3387Z\" fill=\"#3F4759\"></path>\n</svg>",
+            "icon_text": "<h4><strong>Waste Less</strong></h4><h4>Zero waste, <br/>zero worries.</h4>",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "a2510798-3a5e-4cb8-b098-ae5c89b9feac": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"40\" height=\"40\" viewbox=\"0 0 40 40\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M24.9145 11.2694C28.3518 11.2694 30.3678 13.9761 30.3678 16.7254C30.3384 17.4818 30.157 18.2246 29.8345 18.9094C28.8532 20.8614 19.9998 28.7307 19.9998 28.7307C19.9998 28.7307 11.1652 20.8587 10.1812 18.9094C9.82934 18.2346 9.64117 17.4864 9.63183 16.7254C9.63183 13.9974 11.6558 11.2694 15.0932 11.2694C16.5598 11.2694 19.0238 13.6001 19.9998 14.5441C20.9838 13.6001 23.4478 11.2694 24.9145 11.2694ZM24.9145 9.63208C23.6212 9.63208 22.1145 10.4454 20.0052 12.3147C17.8932 10.4481 16.3865 9.63208 15.0932 9.63208C12.5305 9.63208 10.3225 10.8321 9.03449 12.9227C8.41695 13.9249 8.06411 15.0676 8.00907 16.2434C7.95403 17.4193 8.19859 18.5899 8.71983 19.6454C9.76249 21.7121 16.7865 28.0588 18.9145 29.9548C19.2142 30.2213 19.6014 30.3685 20.0025 30.3685C20.4036 30.3685 20.7907 30.2213 21.0905 29.9548C23.2238 28.0588 30.2585 21.7147 31.2932 19.6374C31.8104 18.5773 32.0504 17.4034 31.9907 16.2254C31.931 15.0474 31.5736 13.9038 30.9518 12.9014C29.6665 10.8241 27.4665 9.63208 24.9145 9.63208Z\" fill=\"#3F4759\"></path>\n</svg>",
+            "icon_text": "<h4><strong>Just comfort</strong></h4><h4>No pads. <br/>No strings</h4>",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "match_text",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "c5deb881-78c6-4069-ab22-69f1649c36e4": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>No waste. No leaks. No worries.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "2d5c6d55-fc5c-42d7-926c-72f5ff3f1e74",
+        "cefe45c5-848e-4edd-8f9c-2f8f6bfa82dd",
+        "411ff8b8-c3e8-433a-a3a9-e3c5547102f1",
+        "a874d5c7-0de5-4674-aa38-09483946f208",
+        "3d0c348c-640a-4444-9e55-ec3aa8c01c53",
+        "0ba696d0-b380-47d9-aa20-dbd27225ccde",
+        "a2510798-3a5e-4cb8-b098-ae5c89b9feac",
+        "c5deb881-78c6-4069-ab22-69f1649c36e4"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "how to use it",
+        "theme_color_background": "theme-color-bg-4",
+        "theme_color_text": "theme_default",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "large",
+        "content_font_size": "large",
+        "mobile_text_position": "above",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "left",
+        "use_max_text_width": true,
+        "max_width": "800px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "7b50f505-ae19-4a09-8e7d-e62d26122e64": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "- LKDubbs",
+            "rating": 5,
+            "text": "<p>\"I just finished my first period using this underwear and WOW. I previously used another brand and can sincerely say there is no comparison. The <strong>Saalt underwear was comfortable, fit well, and did not leak. It just overall made me feel good.</strong> I loved it so much I ordered more!\"</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "- Genevieve",
+            "rating": 5,
+            "text": "<p><em>\"</em>I’ve tried several period underwear brands and <strong>these are absolutely the best</strong>. So soft and comfy, these fit perfectly and are the most seamless period underwear I’ve tried. I am now a strictly saalt customer! I got a bunch of different Saalt underwear to see which one I like most- they’re all a little different depending on what you want, I love them all for variety.\" </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "2e1e21a0-2b3b-4f28-8459-b3f123dcbdcd": {
+          "type": "column",
+          "settings": {
+            "title": "- Rach",
+            "rating": 5,
+            "text": "<p>\"This is my first time trying period underwear. The material is so, so soft! They stayed dry & comfortable throughout the day & I definitely prefer them to larger pads. <strong>So worth the investment for more comfortable periods & buying less disposable pads in the future</strong>!\"</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-1",
+        "template--21650837471505__7b50f505-ae19-4a09-8e7d-e62d26122e64-column-3",
+        "2e1e21a0-2b3b-4f28-8459-b3f123dcbdcd"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "theme_color_background": "theme-color-bg-5",
+        "theme_color_text": "theme_default",
+        "background_style": "primary",
+        "theme_color_column_secondary_bg": "--palette-color-0",
+        "column_secondary_bg_opacity": 100,
+        "review_star_color_override": "--palette-color-4",
+        "review_star_opacity_override": 100,
+        "button_text": "",
+        "button_url": "",
+        "button_type": "primary",
+        "theme_color_section_button_background": "theme_default",
+        "theme_color_text_section_button_text": "theme_default",
+        "theme_color_section_button_background_hover": "theme_default",
+        "theme_color_text_section_button_text_hover": "theme_default",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "custom_liquid_hjQzWp": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"icon-wrapper\" style=\"text-align: left; margin-left: 3%\">\n    <a href=\"https://saalt.com/pages/easter-egg\">\n        <svg width=\"17\" height=\"29\" viewBox=\"0 0 17 29\" xmlns=\"http://www.w3.org/2000/svg\">\n    <defs>\n        <!-- Define a linear gradient for green color -->\n        <linearGradient id=\"greenGradient\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\">\n            <stop offset=\"0%\" style=\"stop-color:#6EBA92;stop-opacity:1\" />\n            <stop offset=\"20%\" style=\"stop-color:#9bc9b1 ;stop-opacity:1\" />\n            <stop offset=\"50%\" style=\"stop-color:#BCD3C7 ;stop-opacity:1\" /> 9bc9b1\n            <stop offset=\"100%\" style=\"stop-color:#BCD3C7;stop-opacity:1\" />\n        </linearGradient>\n    </defs>\n    <!-- Apply the green gradient to the path -->\n    <path d=\"M16.0831 0.00194592H0.906076C0.906076 0.00194592 0 0.116755 0 0.929175C0 1.99943 0.902141 1.79024 0.933623 2.88288C0.938367 2.90233 0.941005 2.92222 0.941493 2.94223C0.941493 3.53476 0.838194 6.84574 0.838194 6.84574C0.860417 8.02783 0.978193 9.20627 1.19039 10.3698L1.1963 10.3805C1.1963 10.3805 1.51406 12.8586 5.10885 16.765C5.15273 16.8243 5.20143 16.88 5.25446 16.9314L5.26528 16.9412C5.50139 17.1941 5.75193 17.4536 6.0169 17.7195C6.41855 18.1696 6.78711 18.6476 7.11973 19.1498C7.20732 19.2838 7.27058 19.432 7.30665 19.5876C7.42405 20.1419 7.47817 20.7075 7.468 21.2737C7.468 21.3487 7.468 21.4314 7.468 21.5141V21.8303C7.468 22.2448 7.468 22.4462 7.468 22.7731V27.6379V27.6816C7.468 28.0017 7.47587 28.1156 7.47587 28.1555C7.47587 28.1555 7.47587 28.9484 8.42917 29H8.47737H8.51771H8.56591C9.5202 28.9484 9.5202 28.1555 9.5202 28.1555C9.5202 28.1156 9.5202 28.0017 9.52807 27.6816V27.634V22.7692C9.52807 22.4423 9.52807 22.2409 9.52807 21.8264V21.5141C9.52807 21.4314 9.52807 21.3487 9.52807 21.2737C9.51789 20.7075 9.57201 20.1419 9.68941 19.5876C9.72549 19.432 9.78874 19.2838 9.87633 19.1498C10.2084 18.6457 10.577 18.1661 10.9792 17.7147C11.2415 17.45 11.4921 17.1906 11.7308 16.9363L11.7416 16.9266C11.7956 16.8759 11.8456 16.8213 11.8911 16.7631C15.4859 12.8567 15.8027 10.3785 15.8027 10.3785L15.8086 10.3678C16.0216 9.20441 16.1397 8.02593 16.1618 6.84379C16.1618 6.84379 16.0575 3.53573 16.0575 2.94028C16.058 2.92028 16.0606 2.90038 16.0654 2.88093C16.0979 1.7883 17 1.99359 17 0.92723C17 0.114809 16.0939 0 16.0939 0\" fill=\"url(#greenGradient)\"/>\n</svg>\n\n    </a>\n</div>",
+        "padding_top": 32,
+        "padding_bottom": 0
+      }
+    },
+    "ee2c8556-75bf-49e7-bfbb-644878ffb5af": {
+      "type": "saalt-media-with-text",
+      "blocks": {
+        "d9e3a085-ff0a-40e7-b85e-50a64caf1d1b": {
+          "type": "section_icon_group",
+          "settings": {
+            "mobile_icons_display": "row",
+            "mobile_icon_group_horizontal_alignment": "center",
+            "mobile_icon_group_vertical_alignment": "flex-start",
+            "mobile_icon_grid_columns": 2,
+            "mobile_icon_group_gap": "3.5rem",
+            "mobile_icon_text_size": "1.5rem",
+            "mobile_icon_horizontal_alignment": "center",
+            "mobile_icon_vertical_alignment": "center",
+            "mobile_icon_min_width": "80px",
+            "mobile_icon_wrapper_max_width": "100px",
+            "mobile_icon_max_width": "100%",
+            "mobile_icon_height": "100px",
+            "use_max_icon_group_width": false,
+            "icon_group_max_width": "600px",
+            "desktop_icons_display": "row",
+            "desktop_icon_group_horizontal_alignment": "center",
+            "desktop_icon_group_vertical_alignment": "center",
+            "desktop_icon_grid_columns": 2,
+            "desktop_icon_group_gap": "3.5rem",
+            "desktop_icon_text_size": "1.5rem",
+            "desktop_icon_horizontal_alignment": "center",
+            "desktop_icon_vertical_alignment": "center",
+            "desktop_icon_min_width": "80px",
+            "desktop_icon_wrapper_max_width": "100px",
+            "desktop_icon_max_width": "100%",
+            "desktop_icon_height": "100px"
+          }
+        },
+        "0709bb7e-cb8e-4eac-ad6f-15d203d252e3": {
+          "type": "section_icon_with_text",
+          "settings": {
+            "icon_svg": "<svg width=\"126\" height=\"126\" viewbox=\"0 0 126 126\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_493_7014)\">\n<path d=\"M110.097 42.4007L109.907 42.4467C109.637 44.6838 107.874 47.5699 101.278 49.1463C93.7613 50.9449 85.8645 48.5329 80.9821 45.0098C80.273 44.4986 79.5535 43.9727 78.8132 43.4645C78.429 43.1978 78.0462 42.9267 77.6605 42.6556C71.9815 38.6465 65.3056 35.7085 58.0362 36.3011H57.9932C57.9695 36.3011 57.9443 36.3011 57.922 36.31C53.1836 36.7145 49.7492 38.1605 47.0373 40.088C44.584 41.6747 42.4611 43.7203 40.7856 46.1121C37.6821 50.5849 36.559 55.7422 37.6257 60.6447C37.6687 60.8432 37.737 61.0329 37.7874 61.2373C36.5746 61.1828 35.3595 61.2065 34.1498 61.3085C27.1178 61.8922 22.0144 66.368 18.9034 71.1949C16.3876 75.1063 15.326 79.7754 15.9037 84.3883L16.0936 84.3438C16.3681 82.1052 18.129 79.2206 24.7263 77.6427C32.2434 75.8456 40.1403 78.2561 45.0226 81.7792C45.7318 82.2918 46.4513 82.8163 47.1916 83.3245C47.5758 83.5912 47.9585 83.8623 48.3443 84.1334C54.0218 88.1411 60.6932 91.079 67.9626 90.4864H68.0071L68.0783 90.4775C72.8153 90.0715 76.2496 88.627 78.963 86.6995C81.4167 85.112 83.5396 83.0654 85.2147 80.6725C88.3182 76.1997 89.4413 71.0423 88.3746 66.1413C88.3316 65.9413 88.2633 65.7517 88.2129 65.5487C89.4257 65.603 90.6407 65.5798 91.8505 65.4791C98.8825 64.8864 103.986 60.418 107.097 55.5911C109.612 51.6805 110.674 47.0126 110.097 42.4007V42.4007ZM87.753 66.3013C87.8613 66.8021 87.9355 67.3073 87.9963 67.814C88.7381 75.0188 82.8039 78.9746 77.5003 79.4724C70.1894 80.1599 64.7077 75.3063 57.9175 70.3919C57.4117 70.0275 56.8895 69.6511 56.345 69.257C50.1972 64.6835 45.0701 61.7307 38.4669 61.267C38.3957 61.0047 38.3081 60.7484 38.2488 60.4788C38.1405 59.978 38.0663 59.4728 38.0055 58.9661C37.2103 51.4101 43.1979 47.8055 48.5015 47.3077C55.8109 46.6262 61.3 51.4857 68.0842 56.3926C68.5901 56.7586 69.1123 57.1334 69.6568 57.5275C75.8046 62.1011 80.9317 65.0538 87.5349 65.5176C87.6061 65.7813 87.6937 66.0361 87.753 66.3013Z\" fill=\"#F7D6C5\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_493_7014\">\n<rect width=\"126\" height=\"126\" fill=\"white\"></rect>\n</clippath>\n</defs>\n</svg>",
+            "icon_text": "",
+            "mobile_icon_text_position": "below",
+            "desktop_icon_text_position": "below",
+            "theme_color_icon_color": "theme-color-text-4",
+            "theme_color_icon_text_color": "match_text"
+          }
+        },
+        "ccdc44f3-ddc0-4042-bdcc-162bbf1312a0": {
+          "type": "section_title",
+          "settings": {
+            "heading_tag": "2",
+            "title": "Saalt Bliss Guarantee"
+          }
+        },
+        "fd7af4ca-34a7-4349-9916-eb0b80b3addf": {
+          "type": "section_content",
+          "settings": {
+            "text_content": "<p>If you're not happy with your Saalt product, <a href=\"/pages/replacements\" title=\"/pages/replacements\"><strong>we'll send you a replacement you'll love or your money back up to a full year from purchase</strong></a><strong>. </strong>Your Saalt(isfaction) guaranteed.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "d9e3a085-ff0a-40e7-b85e-50a64caf1d1b",
+        "0709bb7e-cb8e-4eac-ad6f-15d203d252e3",
+        "ccdc44f3-ddc0-4042-bdcc-162bbf1312a0",
+        "fd7af4ca-34a7-4349-9916-eb0b80b3addf"
+      ],
+      "settings": {
+        "section_id": "",
+        "theme_color_background": "theme_default",
+        "theme_color_text": "theme-color-text-2",
+        "media_type": "none",
+        "custom_code": "",
+        "use_max_media_width": false,
+        "max_media_width": "700px",
+        "media_width": 50,
+        "title_font_size": "small",
+        "content_font_size": "small",
+        "mobile_text_position": "below",
+        "mobile_text_alignment": "center",
+        "desktop_text_position": "right",
+        "desktop_text_alignment": "center",
+        "use_max_text_width": true,
+        "max_width": "600px",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "fd4445e0-3160-476f-9e6f-f9f22e50a1dc",
+    "205af4ea-20c2-45bc-98f3-082272cb19eb",
+    "145a2af9-149a-4dad-acd0-ab8f163dc90b",
+    "11b4eb9a-18a9-488e-bfd7-23c248641695",
+    "7b50f505-ae19-4a09-8e7d-e62d26122e64",
+    "custom_liquid_hjQzWp",
+    "ee2c8556-75bf-49e7-bfbb-644878ffb5af"
+  ]
+}
