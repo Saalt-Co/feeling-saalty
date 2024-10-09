@@ -2797,6 +2797,17 @@
     ]
   },
   {
+    "name": "Floating Add to cart Button",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "floating-btn",
+        "label": "Show Floating add to cart Button on Mobile",
+        "default": false
+      }
+    ]
+  },
+  {
     "name": "CRO Checkout Implementation",
     "settings": [
       {
