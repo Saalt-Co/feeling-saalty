@@ -138,9 +138,6 @@ label.variant_swatch.disabled:after {
     position: relative;
     z-index: 2;
 }
-  .card__heading a:after{
-    pointer-events: none;
-  }
     .header__icons.header__icons--localization.header__localization {
         width: auto !important;
         margin-left: auto !important;
@@ -344,4 +341,10 @@ li.grid__item.set-width  {
 .promo-banner-3-col{
   width: 66%;
   max-width: 66%;
+}
+.announcement-bar .slider-button--prev {
+    margin-left: -1.4rem;
+}
+.announcement-bar .slider-button--next {
+    margin-right: -1.4rem;
 }
