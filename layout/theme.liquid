@@ -488,5 +488,69 @@ setTimeout(function() {
        ></div>
 
     {% render 'globo.preorder.custom' %}
+        {% if settings.floating-btn == true %}
+<script>
+$(document).ready(function() {
+    var $mainButton = $('.product-form__submit');
+    var $floatingButton = $('<div class="floating-submit-button"></div>').append($mainButton.clone());
+    $('body').append($floatingButton);
+
+    // Function to check if the main button is offscreen
+    function checkButtonPosition() {
+        var buttonOffsetTop = $mainButton.offset().top;
+        var buttonHeight = $mainButton.outerHeight();
+        var scrollPosition = $(window).scrollTop();
+        var windowHeight = $(window).height();
+
+        // Show the floating button if the main button is out of view (above or below viewport)
+        if (buttonOffsetTop + buttonHeight < scrollPosition || buttonOffsetTop > scrollPosition + windowHeight) {
+            $floatingButton.show();
+        } else {
+            $floatingButton.hide();
+        }
+    }
+
+    // Trigger the original Add to Cart button's click when the floating button is clicked
+    $floatingButton.on('click', function() {
+        $mainButton.trigger('click');
+    });
+
+    // Run check on scroll and on page load
+    $(window).on('scroll resize', checkButtonPosition);
+    checkButtonPosition();
+});
+</script>
+<style>
+@media (max-width: 767px) {   
+.floating-submit-button {
+        position: fixed;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px 0;
+        background: white;
+    }
+  .floating-submit-button button:hover{
+  background-color: rgb(var(--color-button-hover)) !important;
+    color: rgb(var(--color-button-hover-text)) !important;
+  }
+.floating-submit-button button {
+    width: 91.8%;
+    padding: 10px;
+    background: rgb(var(--color-button-secondary-text)) !important;
+    color: #fff !important;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  .product-page .data-mobileMenu-inner-active {
+    display: none !important;
+}
+   }
+    </style>
+      
+ {% endif %}
 </body>
 </html>
