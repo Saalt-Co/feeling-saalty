@@ -138,6 +138,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "floating-btn": true,
     "show_slt009_msg": false,
     "slt009_msg": "",
     "slt012-active": true,
