@@ -348,9 +348,10 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {% if page.url != '/pages/learn-about-saalt-discs' %}
-    {% sections 'header-group' %}
-    {%- endif -%}
+    {% assign hidden_header_pages = '/pages/learn-about-saalt-discs,/pages/learn-saalt-menstrual-cups' | split: ',' %}
+    {% unless hidden_header_pages contains page.url %}
+      {% sections 'header-group' %}
+    {%- endunless -%}
 
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
