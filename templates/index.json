@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "afbc1ae8-07fe-4461-9c01-064b82ac7529": {
@@ -344,17 +344,6 @@
     },
     "172426863259d3f188": {
       "type": "apps",
-      "blocks": {
-        "tolstoy_shoppable_video_ugc_carousel_block_HCPc9A": {
-          "type": "shopify://apps/tolstoy-shoppable-video-ugc/blocks/carousel-block/06fa8282-42ff-403e-b67c-1936776aed11",
-          "settings": {
-            "publishId": "qdga894w7z49f"
-          }
-        }
-      },
-      "block_order": [
-        "tolstoy_shoppable_video_ugc_carousel_block_HCPc9A"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -444,7 +433,7 @@
             "background_color": "#ffffff",
             "text_color": "#ffffff",
             "link_type": "url",
-            "link_url": "shopify://collections/teen",
+            "link_url": "shopify://collections/period-panties-teens",
             "filter_name": "",
             "filter_val": "",
             "button_text": "Shop Teen"
@@ -1213,9 +1202,7 @@
         "template--18370419818769__e19ae371-ca3d-4f8c-9229-f22d18836f31-section_buttons_group-1",
         "template--18370419818769__e19ae371-ca3d-4f8c-9229-f22d18836f31-section_button-1"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "section_id": "",
         "theme_color_background": "theme_default",

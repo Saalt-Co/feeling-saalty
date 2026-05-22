@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -191,7 +191,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "teen",
+        "collection": "period-panties-teens",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
@@ -229,13 +229,11 @@
         },
         "price_xjXEhw": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "rating_mHjepn": {
           "type": "rating",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons_ftgzqF": {
           "type": "buy_buttons",
@@ -253,8 +251,7 @@
         "quantity_selector_cg9NdB": {
           "type": "quantity_selector",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "custom_liquid_Wyym7m": {
           "type": "custom_liquid",
@@ -413,8 +410,7 @@
         },
         "price_AXbhJy": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker_AtJzNj": {
           "type": "variant_picker",
@@ -425,8 +421,7 @@
         "quantity_selector_6nap7D": {
           "type": "quantity_selector",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons_J938CA": {
           "type": "buy_buttons",
