@@ -1,13 +1,13 @@
 {{ 'digioh-customization.css' | asset_url | stylesheet_tag }}
 {% assign queryString = '' %}
-{% assign show_hero = false; %}
-{% assign rowlenN = ''; %}
-{% assign rowlen1 = ''; %}
-{% assign rowlen2 = ''; %}
-{% assign rowlen3 = ''; %}
-{% assign rowlen4 = ''; %}
-{% assign rowlen5 = ''; %}
-{% assign hide_oos = false; %}
+{% assign show_hero = false %}
+{% assign rowlenN = '' %}
+{% assign rowlen1 = '' %}
+{% assign rowlen2 = '' %}
+{% assign rowlen3 = '' %}
+{% assign rowlen4 = '' %}
+{% assign rowlen5 = '' %}
+{% assign hide_oos = false %}
 {% assign top_rec = blank %}
 {% assign products = '' %}
 {% assign p_size = blank %}
@@ -409,4 +409,34 @@ $(document).ready(function() {
     });
   });
 });
-</script>
+</script>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% assign show_hero = false; %}"
+  to: "{% assign show_hero = false %}"
+  position: 92..122
+- from: "{% assign rowlenN = ''; %}"
+  to: "{% assign rowlenN = '' %}"
+  position: 123..148
+- from: "{% assign rowlen1 = ''; %}"
+  to: "{% assign rowlen1 = '' %}"
+  position: 149..174
+- from: "{% assign rowlen2 = ''; %}"
+  to: "{% assign rowlen2 = '' %}"
+  position: 175..200
+- from: "{% assign rowlen3 = ''; %}"
+  to: "{% assign rowlen3 = '' %}"
+  position: 201..226
+- from: "{% assign rowlen4 = ''; %}"
+  to: "{% assign rowlen4 = '' %}"
+  position: 227..252
+- from: "{% assign rowlen5 = ''; %}"
+  to: "{% assign rowlen5 = '' %}"
+  position: 253..278
+- from: "{% assign hide_oos = false; %}"
+  to: "{% assign hide_oos = false %}"
+  position: 279..308
+{%- endcomment -%}
